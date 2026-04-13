@@ -48,7 +48,12 @@ jobs:
               print("Marker not found in README.")
               sys.exit(1)
 
-          updated = content.replace(marker, marker + new_row + '\n', 1)
+          separator = '|------------|------|-------|\n'
+          if separator not in content:
+              print("Table separator not found in README.")
+              sys.exit(1)
+
+          updated = content.replace(separator, separator + new_row + '\n', 1)
 
           with open('README.md', 'w') as fh:
               fh.write(updated)

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Luke Simmons NZ</title>
+<style>
+:root {
+  --bg-base:            #0a0a0a;
+  --bg-surface:         #111;
+  --bg-card:            #141414;
+  --bg-card-hover:      #1c1c1c;
+  --border:             #1e1e1e;
+  --border-hover:       #3a3a3a;
+  --text-primary:       #f0f0f0;
+  --text-secondary:     #aaa;
+  --text-muted:         #555;
+  --accent-tech:        #8888ff;
+  --accent-tech-dim:    #5555bb;
+  --accent-tech-bg:     #1a1a3a;
+  --accent-tech-border: #2a2a5a;
+  --accent-gaming:      #88cc88;
+  --accent-gaming-bg:   #1a2a1a;
+  --accent-gaming-border:#2a4a2a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);color:var(--text-primary);min-height:100vh}
+
+/* ── Navigation ── */
+.site-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);height:50px}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-size:.9rem;font-weight:700;color:rgba(255,255,255,.85);text-decoration:none;letter-spacing:.03em}
+.nav-logo:hover{color:#fff}
+.nav-links{display:flex;gap:.2rem}
+.nav-link{padding:.35rem .8rem;font-size:.82rem;color:var(--text-muted);text-decoration:none;border-radius:6px;transition:color .2s,background .2s}
+.nav-link:hover{color:var(--text-secondary);background:rgba(255,255,255,.05)}
+.nav-link.active{color:var(--text-primary);background:rgba(255,255,255,.07)}
+
+/* ── Page Header ── */
+.page-header{padding:5rem 2.5rem 2rem;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0d0d1a 0%,var(--bg-base) 100%)}
+.page-header-inner{max-width:1200px;margin:0 auto}
+.page-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-tech-dim);margin-bottom:.5rem}
+.page-header h1{font-size:2rem;font-weight:700;color:var(--text-primary)}
+.page-header p{font-size:.92rem;color:var(--text-secondary);margin-top:.4rem}
+
+/* ── Content ── */
+.page-content{max-width:1200px;margin:0 auto;padding:2rem 2.5rem 4rem}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+.section-title{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--text-muted);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+
+/* ── Email CTA ── */
+.email-cta{display:flex;flex-direction:column;gap:1.5rem}
+.email-card{background:linear-gradient(135deg,#0d0d20 0%,#0d150d 100%);border:1px solid var(--accent-tech-border);border-radius:12px;padding:2rem;text-align:center}
+.email-card-icon{font-size:2.2rem;margin-bottom:.75rem}
+.email-card h2{font-size:1.1rem;font-weight:600;color:var(--text-primary);margin-bottom:.3rem}
+.email-card p{font-size:.84rem;color:var(--text-secondary);margin-bottom:1.25rem;line-height:1.6}
+.email-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;background:var(--accent-tech-bg);border:1px solid var(--accent-tech-border);border-radius:8px;color:var(--accent-tech);font-size:.88rem;text-decoration:none;transition:background .2s,border-color .2s,color .2s}
+.email-btn:hover{background:#22225a;border-color:#5555cc;color:#aaaaff}
+.email-btn svg{width:15px;height:15px;fill:currentColor;flex-shrink:0}
+
+/* ── Info Cards ── */
+.info-cards{display:flex;flex-direction:column;gap:.75rem}
+.info-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;display:flex;align-items:center;gap:.85rem}
+.info-icon{font-size:1.2rem;flex-shrink:0;width:32px;text-align:center}
+.info-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted);margin-bottom:.15rem}
+.info-value{font-size:.88rem;color:var(--text-primary);font-weight:500}
+.info-sub{font-size:.75rem;color:var(--text-muted);margin-top:.1rem}
+.status-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;margin-right:.4rem;animation:pulse 2.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* ── Social Grid ── */
+.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.5rem}
+.social-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;text-decoration:none;color:inherit;display:flex;align-items:center;gap:.7rem;transition:background .2s,border-color .2s}
+.social-card:hover{background:var(--bg-card-hover);border-color:var(--border-hover)}
+.social-card-icon{width:32px;height:32px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+.social-card-name{font-size:.82rem;font-weight:500;color:var(--text-primary)}
+.social-card-handle{font-size:.72rem;color:var(--text-muted);margin-top:.05rem}
+.social-card-arrow{margin-left:auto;color:#333;font-size:.8rem;flex-shrink:0}
+
+/* ── Footer ── */
+.footer{text-align:center;padding:1rem;font-size:.75rem;color:#333;border-top:1px solid var(--border)}
+
+@media(max-width:768px){.page-header{padding:4.5rem 1.5rem 1.5rem}.page-content{padding:1.5rem 1.5rem 3rem}.contact-layout{grid-template-columns:1fr}}
+@media(max-width:480px){.nav-inner{padding:0 1rem}.nav-link{padding:.3rem .5rem;font-size:.75rem}.nav-logo{font-size:.82rem}.page-header h1{font-size:1.5rem}.social-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Luke Simmons</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="gaming.html" class="nav-link">Gaming</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-label">Get in Touch</div>
+    <h1>Contact</h1>
+    <p>Open to remote work, collaborations, and interesting conversations.</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="contact-layout">
+
+    <!-- Left: Email + Info -->
+    <div class="email-cta">
+      <div>
+        <div class="section-title">Direct Contact</div>
+        <div class="email-card">
+          <div class="email-card-icon">✉️</div>
+          <h2>Say hello</h2>
+          <p>Whether you have a project in mind, a remote opportunity, or just want to connect — my inbox is always open.</p>
+          <a class="email-btn" href="mailto:luke@lukesimmonsnz.kiwi">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            luke@lukesimmonsnz.kiwi
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Details</div>
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <div class="info-label">Location</div>
+              <div class="info-value">New Zealand</div>
+              <div class="info-sub">UTC+12 / UTC+13 (NZST / NZDT)</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">💼</div>
+            <div>
+              <div class="info-label">Availability</div>
+              <div class="info-value"><span class="status-dot"></span>Open to opportunities</div>
+              <div class="info-sub">Remote work · AI & software roles</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🎓</div>
+            <div>
+              <div class="info-label">Currently Studying</div>
+              <div class="info-value">AI Engineering · Backend Dev</div>
+              <div class="info-sub">Codecademy · Self-directed</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">⚡</div>
+            <div>
+              <div class="info-label">Interests</div>
+              <div class="info-value">AI / ML · Cybersecurity · Game Dev</div>
+              <div class="info-sub">Python · Chess · Gaming</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Social Links -->
+    <div>
+      <div class="section-title">Find Me Online</div>
+      <div class="social-grid">
+
+        <a class="social-card" href="https://github.com/lukesimmonsnz" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#161616">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#ccc"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div>
+            <div class="social-card-name">GitHub</div>
+            <div class="social-card-handle">@lukesimmonsnz</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+        <a class="social-card" href="https://www.twitch.tv/nzgamerluke" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#1a0e30">🎮</div>
+          <div>
+            <div class="social-card-name">Twitch</div>
+            <div class="social-card-handle">nzgamerluke</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+        <a class="social-card" href="https://www.youtube.com/@nzgamerluke" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#2a1a1a">▶</div>
+          <div>
+            <div class="social-card-name">YouTube</div>
+            <div class="social-card-handle">NZGAMERLUKE</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+        <a class="social-card" href="https://www.youtube.com/@lukesimmonsnz" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#2a1a1a">▶</div>
+          <div>
+            <div class="social-card-name">YouTube</div>
+            <div class="social-card-handle">Luke Simmons NZ</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+        <a class="social-card" href="https://www.chess.com/member/nzgamerluke" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#1a2a1a">♟</div>
+          <div>
+            <div class="social-card-name">Chess.com</div>
+            <div class="social-card-handle">Diamond · nzgamerluke</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+        <a class="social-card" href="https://www.instagram.com/nzgamerluke" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#2a1828">📸</div>
+          <div>
+            <div class="social-card-name">Instagram</div>
+            <div class="social-card-handle">@nzgamerluke</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+        <a class="social-card" href="https://www.codecademy.com/profiles/lukesimmonsnz" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#1a2a3a">🎓</div>
+          <div>
+            <div class="social-card-name">Codecademy</div>
+            <div class="social-card-handle">lukesimmonsnz</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+        <a class="social-card" href="https://www.facebook.com/lukesimmonsnz" target="_blank" rel="noopener">
+          <div class="social-card-icon" style="background:#1a1f2e">
+            <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:#8888cc"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <div>
+            <div class="social-card-name">Facebook</div>
+            <div class="social-card-handle">lukesimmonsnz</div>
+          </div>
+          <span class="social-card-arrow">›</span>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">lukesimmonsnz.kiwi &nbsp;·&nbsp; New Zealand</div>
+
+</body>
+</html>
