@@ -568,7 +568,7 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
         <p id="gh-handle">lukesimmonsnz.kiwi</p>
       </div>
     </div>
-    <span class="hero-pill" id="gh-location">📍 New Zealand &nbsp;·&nbsp; Remote work wanted</span>
+    <span class="hero-pill" id="gh-location">📍 New Zealand &nbsp;·&nbsp; Remote work wanted!</span>
   </div>
 </div>
 
@@ -800,7 +800,7 @@ fetch('https://api.github.com/users/lukesimmonsnz')
 
     // Location — hero pill + identity card
     if (d.location) {
-      document.getElementById('gh-location').textContent = '📍 ' + d.location + ' · Remote work wanted';
+      document.getElementById('gh-location').textContent = '📍 ' + d.location + ' · Remote work wanted!';
       document.getElementById('gh-location-card').textContent = d.location;
     }
 
