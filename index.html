@@ -91,6 +91,16 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
   color: rgba(255,255,255,0.65);
   text-shadow: 0 1px 8px rgba(0,0,0,0.8);
 }
+.hero-email {
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+  margin-top: 0.15rem;
+  transition: color 0.2s;
+}
+.hero-email:hover { color: rgba(255,255,255,0.9); }
 .hero-pill {
   padding: 0.4rem 1rem;
   background: rgba(255,255,255,0.1);
@@ -136,8 +146,16 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
   font-size: 0.83rem;
   color: #ddd;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 260px;
 }
+.gh-stat { display: flex; gap: 1rem; flex-wrap: wrap; }
+.gh-stat span { display: flex; flex-direction: column; align-items: center; }
+.gh-stat strong { font-size: 1rem; color: #eee; line-height: 1; }
+.gh-stat em { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; font-style: normal; margin-top: 2px; }
 .identity-socials {
   margin-left: auto;
   display: flex;
@@ -440,13 +458,14 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-left">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/41935641?v=4" alt="Luke Simmons">
+      <img class="avatar" id="gh-avatar" src="https://avatars.githubusercontent.com/u/41935641?v=4" alt="Luke Simmons">
       <div class="hero-text">
-        <h1>Luke Simmons</h1>
-        <p>lukesimmonsnz.kiwi</p>
+        <h1 id="gh-name">Luke Simmons</h1>
+        <a class="hero-email" href="mailto:luke@lukesimmonsnz.kiwi">luke@lukesimmonsnz.kiwi</a>
+        <p id="gh-handle">lukesimmonsnz.kiwi</p>
       </div>
     </div>
-    <span class="hero-pill">📍 New Zealand &nbsp;·&nbsp; Remote work wanted</span>
+    <span class="hero-pill" id="gh-location">📍 New Zealand &nbsp;·&nbsp; Remote work wanted</span>
   </div>
 </div>
 
@@ -454,25 +473,38 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
      IDENTITY STRIP  —  Bio + Socials merged
      ═══════════════════════════════════════════════════════════ -->
 <div class="identity-strip">
-  <div class="id-card">
-    <span class="id-icon">🤖</span>
-    <div>
-      <div class="id-label">Currently</div>
-      <div class="id-value">AI &amp; Software Student</div>
+  <div class="id-card" style="flex:2;min-width:200px">
+    <span class="id-icon">💬</span>
+    <div style="min-width:0">
+      <div class="id-label">About</div>
+      <div class="id-value" id="gh-bio" title="">AI &amp; Software Student · Aspiring AI Engineer · Gamer</div>
     </div>
   </div>
   <div class="id-card">
-    <span class="id-icon">🎮</span>
+    <span class="id-icon">📍</span>
     <div>
-      <div class="id-label">Hobbies</div>
-      <div class="id-value">Gaming &amp; Chess</div>
+      <div class="id-label">Location</div>
+      <div class="id-value" id="gh-location-card">New Zealand</div>
     </div>
   </div>
   <div class="id-card">
-    <span class="id-icon">🚀</span>
+    <span class="id-icon" style="font-size:0.9rem">
+      <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#ccc"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </span>
     <div>
-      <div class="id-label">Goal</div>
-      <div class="id-value">AI Engineer &amp; Researcher</div>
+      <div class="id-label">GitHub</div>
+      <div class="gh-stat">
+        <span><strong id="gh-followers">—</strong><em>followers</em></span>
+        <span><strong id="gh-following">—</strong><em>following</em></span>
+        <span><strong id="gh-repos">—</strong><em>repos</em></span>
+      </div>
+    </div>
+  </div>
+  <div class="id-card">
+    <span class="id-icon">📅</span>
+    <div>
+      <div class="id-label">Member since</div>
+      <div class="id-value" id="gh-since">GitHub</div>
     </div>
   </div>
   <div class="identity-socials">
@@ -614,6 +646,50 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
 </div>
 
 <div class="footer">lukesimmonsnz.kiwi &nbsp;·&nbsp; New Zealand</div>
+
+<script>
+fetch('https://api.github.com/users/lukesimmonsnz')
+  .then(r => r.json())
+  .then(d => {
+    // Avatar
+    if (d.avatar_url) document.getElementById('gh-avatar').src = d.avatar_url + '&s=160';
+
+    // Name
+    if (d.name) document.getElementById('gh-name').textContent = d.name;
+
+    // Bio
+    if (d.bio) {
+      const bioEl = document.getElementById('gh-bio');
+      bioEl.textContent = d.bio;
+      bioEl.title = d.bio;
+    }
+
+    // Location — hero pill + identity card
+    if (d.location) {
+      document.getElementById('gh-location').textContent = '📍 ' + d.location + ' · Remote work wanted';
+      document.getElementById('gh-location-card').textContent = d.location;
+    }
+
+    // Stats
+    document.getElementById('gh-followers').textContent = d.followers.toLocaleString();
+    document.getElementById('gh-following').textContent = d.following.toLocaleString();
+    document.getElementById('gh-repos').textContent = d.public_repos.toLocaleString();
+
+    // Member since
+    if (d.created_at) {
+      const date = new Date(d.created_at);
+      document.getElementById('gh-since').textContent =
+        date.toLocaleString('default', { month: 'long', year: 'numeric' });
+    }
+
+    // Blog / website as handle subtitle
+    if (d.blog) {
+      const clean = d.blog.replace(/^https?:\/\//, '');
+      document.getElementById('gh-handle').textContent = clean;
+    }
+  })
+  .catch(() => {}); // Keep static fallback if API unavailable
+</script>
 
 </body>
 </html>
