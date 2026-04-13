@@ -36,6 +36,7 @@ Software Development & AI student at Codecademy, aspiring AI Engineer & Research
 <!-- CHANGELOG_START -->
 | Date (UTC) | What | Files |
 |------------|------|-------|
+| 2026-04-13 11:16 | Remove website handle from hero section | `index.html` |
 | 2026-04-13 11:07 | Add exclamation mark to Remote work wanted pill | `index.html` |
 | 2026-04-13 11:04 | Remove cluttered details cards from contact page | `contact.html` |
 | 2026-04-13 11:01 | Add site-wide footer with page links, email, and AI acknowledgement | `blog.html`, `contact.html`, `gaming.html`, `index.html`, `projects.html` |
