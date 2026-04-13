@@ -58,25 +58,43 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
 
 /* ── Loading / Empty ── */
 .loading-msg{color:var(--text-muted);font-size:.85rem;padding:2rem 0}
-.section-title{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;color:var(--text-muted);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
 
 /* ── GitHub CTA ── */
 .gh-cta{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.25rem;background:var(--accent-tech-bg);border:1px solid var(--accent-tech-border);border-radius:8px;color:var(--accent-tech);font-size:.85rem;text-decoration:none;transition:background .2s,border-color .2s}
 .gh-cta:hover{background:#22225a;border-color:#4444aa}
 .gh-cta svg{width:16px;height:16px;fill:currentColor}
 
+/* ── Accordion ── */
+.accordion{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:.75rem}
+.accordion[open]{border-color:var(--border-hover)}
+.accordion summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;cursor:pointer;user-select:none;gap:1rem;transition:background .2s}
+.accordion summary::-webkit-details-marker{display:none}
+.accordion summary:hover{background:var(--bg-card-hover)}
+.accordion-label{display:flex;align-items:center;gap:.75rem}
+.accordion-icon{font-size:1.1rem;flex-shrink:0}
+.accordion-title{font-size:.95rem;font-weight:600;color:var(--text-primary)}
+.accordion-sub{font-size:.75rem;color:var(--text-muted);margin-top:.1rem}
+.accordion-chevron{font-size:.9rem;color:var(--text-muted);transition:transform .25s;flex-shrink:0}
+.accordion[open] .accordion-chevron{transform:rotate(90deg)}
+.accordion-body{padding:0 1.4rem 1.4rem;border-top:1px solid var(--border)}
+
 /* ── Roadmap Card ── */
-.roadmap-card{background:#0c0c18;border:1px solid #252545;border-radius:12px;overflow:hidden;margin-top:2.5rem}
+.roadmap-card{background:#0c0c18;border:1px solid #252545;border-radius:12px;overflow:hidden;margin-top:1rem}
 .roadmap-card-header{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem;border-bottom:1px solid #1e1e38}
 .roadmap-card-title{font-size:.78rem;font-weight:600;color:#9999dd;text-transform:uppercase;letter-spacing:.07em}
 .roadmap-card-link{font-size:.72rem;color:#5555bb;text-decoration:none;transition:color .2s}
 .roadmap-card-link:hover{color:var(--accent-tech)}
-.roadmap-img-wrap{position:relative;overflow:hidden;max-height:290px}
+.roadmap-img-wrap{position:relative;overflow:hidden;max-height:340px}
 .roadmap-img-wrap img{width:100%;display:block;opacity:.88;transition:opacity .3s}
 .roadmap-img-wrap:hover img{opacity:1}
 .roadmap-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(12,12,24,.96) 100%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:1.1rem}
 .roadmap-cta{padding:.5rem 1.1rem;background:rgba(68,68,160,.28);border:1px solid rgba(136,136,255,.28);border-radius:6px;color:#aaaaff;font-size:.78rem;text-decoration:none;transition:background .2s,border-color .2s}
 .roadmap-cta:hover{background:rgba(68,68,160,.48);border-color:rgba(136,136,255,.55)}
+
+/* ── Archive placeholder ── */
+.archive-placeholder{padding:2.5rem;text-align:center;border:1px dashed #2a2a3a;border-radius:10px;margin-top:1rem}
+.archive-placeholder h3{font-size:1rem;font-weight:600;color:var(--text-secondary);margin-bottom:.5rem}
+.archive-placeholder p{font-size:.84rem;color:var(--text-muted);line-height:1.65;max-width:440px;margin:0 auto}
 
 /* ── Footer ── */
 .footer{text-align:center;padding:1rem;font-size:.75rem;color:#333;border-top:1px solid var(--border)}
@@ -110,30 +128,80 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
 
 <div class="page-content">
 
-  <div class="section-title">GitHub Repositories</div>
-  <div class="repo-grid" id="repo-grid">
-    <p class="loading-msg">Loading repositories…</p>
-  </div>
-
-  <div style="margin-top:2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
-    <a class="gh-cta" href="https://github.com/lukesimmonsnz" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      View all on GitHub ↗
-    </a>
-  </div>
-
-  <div class="roadmap-card">
-    <div class="roadmap-card-header">
-      <span class="roadmap-card-title">Backend Developer Roadmap</span>
-      <a class="roadmap-card-link" href="https://roadmap.sh/backend" target="_blank" rel="noopener">View interactive ›</a>
-    </div>
-    <div class="roadmap-img-wrap">
-      <img src="https://roadmap.sh/roadmaps/backend.png" alt="Backend Developer Roadmap" loading="lazy">
-      <div class="roadmap-img-overlay">
-        <a class="roadmap-cta" href="https://roadmap.sh/backend" target="_blank" rel="noopener">Open Interactive Version ↗</a>
+  <!-- ① GitHub Repositories -->
+  <details class="accordion" open>
+    <summary>
+      <div class="accordion-label">
+        <span class="accordion-icon">
+          <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#aaa"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </span>
+        <div>
+          <div class="accordion-title">GitHub Repositories</div>
+          <div class="accordion-sub">Live from @lukesimmonsnz</div>
+        </div>
+      </div>
+      <span class="accordion-chevron">›</span>
+    </summary>
+    <div class="accordion-body">
+      <div class="repo-grid" id="repo-grid" style="margin-top:1rem">
+        <p class="loading-msg">Loading repositories…</p>
+      </div>
+      <div style="margin-top:1.5rem">
+        <a class="gh-cta" href="https://github.com/lukesimmonsnz" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          View all on GitHub ↗
+        </a>
       </div>
     </div>
-  </div>
+  </details>
+
+  <!-- ② Backend Developer Roadmap -->
+  <details class="accordion">
+    <summary>
+      <div class="accordion-label">
+        <span class="accordion-icon">🗺️</span>
+        <div>
+          <div class="accordion-title">Backend Developer Roadmap</div>
+          <div class="accordion-sub">roadmap.sh · Interactive version available</div>
+        </div>
+      </div>
+      <span class="accordion-chevron">›</span>
+    </summary>
+    <div class="accordion-body">
+      <div class="roadmap-card">
+        <div class="roadmap-card-header">
+          <span class="roadmap-card-title">Backend Developer Roadmap</span>
+          <a class="roadmap-card-link" href="https://roadmap.sh/backend" target="_blank" rel="noopener">View interactive ›</a>
+        </div>
+        <div class="roadmap-img-wrap">
+          <img src="https://roadmap.sh/roadmaps/backend.png" alt="Backend Developer Roadmap" loading="lazy">
+          <div class="roadmap-img-overlay">
+            <a class="roadmap-cta" href="https://roadmap.sh/backend" target="_blank" rel="noopener">Open Interactive Version ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <!-- ③ David Simmons Archive -->
+  <details class="accordion">
+    <summary>
+      <div class="accordion-label">
+        <span class="accordion-icon">📁</span>
+        <div>
+          <div class="accordion-title">David Simmons Archive</div>
+          <div class="accordion-sub">Personal archive project</div>
+        </div>
+      </div>
+      <span class="accordion-chevron">›</span>
+    </summary>
+    <div class="accordion-body">
+      <div class="archive-placeholder">
+        <h3>Coming Soon</h3>
+        <p>Content for the David Simmons Archive will be added here. Check back soon.</p>
+      </div>
+    </div>
+  </details>
 
 </div>
 
