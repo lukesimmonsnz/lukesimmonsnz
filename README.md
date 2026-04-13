@@ -36,6 +36,7 @@ Software Development & AI student at Codecademy, aspiring AI Engineer & Research
 <!-- CHANGELOG_START -->
 | Date (UTC) | What | Files |
 |------------|------|-------|
+| 2026-04-13 10:16 | Fix changelog action for merge commits | `.github/workflows/update-readme.yml` |
 | 2026-04-13 09:43 | Add auto-changelog GitHub Action and backfill README history | `.github/workflows/update-readme.yml` |
 | 2026-04-13 | Add GitHub profile link and live stats cards to Tech section | `index.html` |
 | 2026-04-13 | Update README with site overview and Claude AI acknowledgement | `README.md` |
