@@ -431,6 +431,50 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
 }
 .contact-btn svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
 
+/* ── Navigation ──────────────────────────────────────────── */
+.site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(10,10,10,0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  height: 50px;
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.nav-logo:hover { color: #fff; }
+.nav-links { display: flex; gap: 0.2rem; }
+.nav-link {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-link:hover { color: var(--text-secondary); background: rgba(255,255,255,0.05); }
+.nav-link.active { color: var(--text-primary); background: rgba(255,255,255,0.07); }
+@media (max-width: 480px) {
+  .nav-inner { padding: 0 1rem; }
+  .nav-link { padding: 0.3rem 0.5rem; font-size: 0.75rem; }
+  .nav-logo { font-size: 0.82rem; }
+}
+
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
   text-align: center;
@@ -463,6 +507,19 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
 </style>
 </head>
 <body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">Luke Simmons</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="gaming.html" class="nav-link">Gaming</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
 
 <!-- ═══════════════════════════════════════════════════════════
      HERO  —  NZ Landscape
