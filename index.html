@@ -335,15 +335,41 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
   flex-shrink: 0;
 }
 
-/* ── GitHub Stats Cards ──────────────────────────────────── */
+/* ── GitHub Stats Grid ───────────────────────────────────── */
 .gh-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.6rem;
   margin-top: 1rem;
 }
-.gh-stats-full { grid-column: 1 / -1; }
-.gh-stats img {
+.gh-stat-box {
+  background: #0c0c18;
+  border: 1px solid #252545;
+  border-radius: 8px;
+  padding: 0.85rem 0.75rem;
+  text-align: center;
+}
+.gh-stat-box strong {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ccccee;
+  line-height: 1.2;
+}
+.gh-stat-box em {
+  display: block;
+  font-size: 0.65rem;
+  color: #666688;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-style: normal;
+  margin-top: 0.2rem;
+}
+.gh-streak-wrap {
+  grid-column: 1 / -1;
+  margin-top: 0.2rem;
+}
+.gh-streak-wrap img {
   width: 100%;
   border-radius: 8px;
   border: 1px solid #252545;
@@ -630,19 +656,19 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
       </div>
 
       <div class="gh-stats">
-        <div class="gh-stats-full">
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=lukesimmonsnz&show_icons=true&hide_border=true&bg_color=0c0c18&title_color=9999dd&text_color=ccccee&icon_color=8888ff&rank_icon=github&include_all_commits=true&count_private=true"
-            alt="GitHub Stats"
-            loading="lazy">
+        <div class="gh-stat-box">
+          <strong id="stat-repos">—</strong>
+          <em>Public Repos</em>
         </div>
-        <div>
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=lukesimmonsnz&hide_border=true&bg_color=0c0c18&title_color=9999dd&text_color=ccccee&layout=compact&langs_count=6"
-            alt="Top Languages"
-            loading="lazy">
+        <div class="gh-stat-box">
+          <strong id="stat-followers">—</strong>
+          <em>Followers</em>
         </div>
-        <div>
+        <div class="gh-stat-box">
+          <strong id="stat-following">—</strong>
+          <em>Following</em>
+        </div>
+        <div class="gh-streak-wrap">
           <img
             src="https://github-readme-streak-stats.herokuapp.com?user=lukesimmonsnz&hide_border=true&background=0c0c18&stroke=252545&ring=8888ff&fire=8888ff&currStreakLabel=9999dd&sideLabels=9999dd&currStreakNum=ccccee&sideNums=ccccee&dates=666688"
             alt="GitHub Streak"
@@ -756,10 +782,14 @@ fetch('https://api.github.com/users/lukesimmonsnz')
       document.getElementById('gh-location-card').textContent = d.location;
     }
 
-    // Stats
+    // Stats — identity strip
     document.getElementById('gh-followers').textContent = d.followers.toLocaleString();
     document.getElementById('gh-following').textContent = d.following.toLocaleString();
     document.getElementById('gh-repos').textContent = d.public_repos.toLocaleString();
+    // Stats — tech section boxes
+    document.getElementById('stat-repos').textContent = d.public_repos.toLocaleString();
+    document.getElementById('stat-followers').textContent = d.followers.toLocaleString();
+    document.getElementById('stat-following').textContent = d.following.toLocaleString();
 
     // Member since
     if (d.created_at) {
