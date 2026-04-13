@@ -36,6 +36,7 @@ Software Development & AI student at Codecademy, aspiring AI Engineer & Research
 <!-- CHANGELOG_START -->
 | Date (UTC) | What | Files |
 |------------|------|-------|
+| 2026-04-13 10:28 | Use NZ landscape background image on all page headers | `blog.html`, `contact.html`, `gaming.html`, `projects.html` |
 | 2026-04-13 10:24 | Add Backend Developer Roadmap card to projects page | `projects.html` |
 | 2026-04-13 10:16 | Fix changelog action for merge commits | `.github/workflows/update-readme.yml` |
 | 2026-04-13 09:43 | Add auto-changelog GitHub Action and backfill README history | `.github/workflows/update-readme.yml` |
