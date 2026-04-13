@@ -1,0 +1,65 @@
+name: Update README Changelog
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - README.md
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Update changelog
+        run: |
+          python3 << 'EOF'
+          import subprocess, sys, re
+          from datetime import datetime, timezone
+
+          date = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
+
+          msg = subprocess.check_output(
+              ['git', 'log', '-1', '--format=%s']
+          ).decode().strip()
+
+          files = subprocess.check_output(
+              ['git', 'diff-tree', '--no-commit-id', '-r', '--name-only', 'HEAD']
+          ).decode().strip().splitlines()
+
+          files = [f for f in files if f and f != 'README.md']
+          if not files:
+              print("No relevant files changed, skipping.")
+              sys.exit(0)
+
+          files_str = ', '.join(f'`{f}`' for f in files)
+          new_row = f'| {date} | {msg} | {files_str} |'
+
+          with open('README.md', 'r') as fh:
+              content = fh.read()
+
+          marker = '<!-- CHANGELOG_START -->\n'
+          if marker not in content:
+              print("Marker not found in README.")
+              sys.exit(1)
+
+          updated = content.replace(marker, marker + new_row + '\n', 1)
+
+          with open('README.md', 'w') as fh:
+              fh.write(updated)
+
+          print(f"Added row: {new_row}")
+          EOF
+
+      - name: Commit updated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: auto-update README changelog"
+          git push

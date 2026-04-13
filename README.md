@@ -31,19 +31,20 @@ Software Development & AI student at Codecademy, aspiring AI Engineer & Research
 
 ---
 
-## Recent changes
+## Changelog
 
-| What | Description |
-|------|-------------|
-| Website redesign | Replaced the original Linktree-style layout with a full custom dark-themed design |
-| Cinematic hero | NZ landscape photo (`Cover Photo.jpg`) as a full-height background with improved gradient and positioning |
-| GitHub API integration | Avatar, bio, location, followers, following, public repos, and member-since date all pulled live from the GitHub API |
-| Identity strip | Replaced static bio bar with dynamic cards showing live GitHub profile data |
-| Roadmap card | Backend Developer Roadmap displayed as a featured card with overlay CTA linking to the interactive version on roadmap.sh |
-| Asymmetric grid | Tech/AI section (60%) and Gaming section (40%) side by side |
-| Email link | Clickable email address shown under name in the hero |
-| New-tab links | All external links open in a new tab |
-| Profile picture | GitHub avatar used for the profile photo, always in sync with the GitHub profile |
+<!-- CHANGELOG_START -->
+| Date (UTC) | What | Files |
+|------------|------|-------|
+| 2026-04-13 | Add GitHub profile link and live stats cards to Tech section | `index.html` |
+| 2026-04-13 | Update README with site overview and Claude AI acknowledgement | `README.md` |
+| 2026-04-13 | Expand bio card to show up to 3 lines of text | `index.html` |
+| 2026-04-13 | Open all external links in a new tab | `index.html` |
+| 2026-04-13 | Pull live GitHub profile data onto the page via API | `index.html` |
+| 2026-04-13 | Use GitHub avatar for profile picture | `index.html` |
+| 2026-04-13 | Fix hero background image filename to match Cover Photo.jpg | `index.html` |
+| 2026-04-13 | Website redesign — hero, identity strip, roadmap card, asymmetric grid, contact strip | `index.html` |
+<!-- CHANGELOG_END -->
 
 ---
 
