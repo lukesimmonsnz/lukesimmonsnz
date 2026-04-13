@@ -565,7 +565,6 @@ body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);co
       <div class="hero-text">
         <h1 id="gh-name">Luke Simmons</h1>
         <a class="hero-email" href="mailto:luke@lukesimmonsnz.kiwi">luke@lukesimmonsnz.kiwi</a>
-        <p id="gh-handle">lukesimmonsnz.kiwi</p>
       </div>
     </div>
     <span class="hero-pill" id="gh-location">📍 New Zealand &nbsp;·&nbsp; Remote work wanted!</span>
@@ -820,11 +819,6 @@ fetch('https://api.github.com/users/lukesimmonsnz')
         date.toLocaleString('default', { month: 'long', year: 'numeric' });
     }
 
-    // Blog / website as handle subtitle
-    if (d.blog) {
-      const clean = d.blog.replace(/^https?:\/\//, '');
-      document.getElementById('gh-handle').textContent = clean;
-    }
   })
   .catch(() => {}); // Keep static fallback if API unavailable
 </script>
