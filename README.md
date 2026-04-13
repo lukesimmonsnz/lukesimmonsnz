@@ -34,6 +34,7 @@ Software Development & AI student at Codecademy, aspiring AI Engineer & Research
 ## Changelog
 
 <!-- CHANGELOG_START -->
+| 2026-04-13 09:43 | Add auto-changelog GitHub Action and backfill README history | `.github/workflows/update-readme.yml` |
 | Date (UTC) | What | Files |
 |------------|------|-------|
 | 2026-04-13 | Add GitHub profile link and live stats cards to Tech section | `index.html` |
