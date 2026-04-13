@@ -5,184 +5,623 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luke Simmons NZ</title>
 <style>
+/* ── Variables ────────────────────────────────────────────── */
+:root {
+  --bg-base:            #0a0a0a;
+  --bg-surface:         #111;
+  --bg-card:            #141414;
+  --bg-card-hover:      #1c1c1c;
+  --border:             #1e1e1e;
+  --border-hover:       #3a3a3a;
+  --text-primary:       #f0f0f0;
+  --text-secondary:     #aaa;
+  --text-muted:         #555;
+  --accent-tech:        #8888ff;
+  --accent-tech-dim:    #5555bb;
+  --accent-tech-bg:     #1a1a3a;
+  --accent-tech-border: #2a2a5a;
+  --accent-gaming:      #88cc88;
+  --accent-gaming-bg:   #1a2a1a;
+  --accent-gaming-border:#2a4a2a;
+}
+
+/* ── Reset ───────────────────────────────────────────────── */
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0a;color:#f0f0f0;min-height:100vh}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg-base);color:var(--text-primary);min-height:100vh}
 
-.hero{position:relative;width:100%;height:320px;overflow:hidden}
-.hero img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.1) 0%,rgba(10,10,10,0.85) 100%)}
-.hero-content{position:absolute;bottom:0;left:0;right:0;padding:2rem;display:flex;align-items:flex-end;gap:1.25rem}
-.avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,0.2);flex-shrink:0}
-.hero-text h1{font-size:1.6rem;font-weight:600;margin-bottom:0.15rem}
-.hero-text p{font-size:0.85rem;color:#aaa}
+/* ── Hero ────────────────────────────────────────────────── */
+/*
+  To use your own NZ landscape photo:
+  1. Add the photo to this repo as  photos/nz-landscape.jpg
+  2. Change the background-image line below to:
+     background-image: url('photos/nz-landscape.jpg');
+*/
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  background-image: url('https://ugc.production.linktr.ee/e298c181-e463-4f18-b300-6ce32a39caba_FDt-gZvDKKI-j1s8FyPYuQGIy2EwxTY-JODPqPNk8A6hiWOJS0UrgnXld1MXe8DhSshtXgs-s900-c-k-c0x00ffffff-no-rj.jpeg');
+  background-size: cover;
+  background-position: center 30%;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 40%,
+    rgba(10,10,10,0.55) 65%,
+    #0a0a0a 100%
+  );
+}
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.hero-left {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.25rem;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2a2a6a, #1a3a2a);
+  border: 3px solid rgba(255,255,255,0.2);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.04em;
+}
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.8);
+  margin-bottom: 0.2rem;
+}
+.hero-text p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+}
+.hero-pill {
+  padding: 0.4rem 1rem;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.8);
+  white-space: nowrap;
+}
 
-.bio-bar{background:#111;border-bottom:1px solid #1e1e1e;padding:1rem 1.5rem;font-size:0.88rem;color:#bbb;line-height:1.6;text-align:center}
+/* ── Identity Strip ──────────────────────────────────────── */
+.identity-strip {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1.1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.id-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.9rem;
+  background: #161616;
+  border: 1px solid #222;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 150px;
+}
+.id-icon { font-size: 1rem; flex-shrink: 0; }
+.id-label {
+  font-size: 0.67rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.id-value {
+  font-size: 0.83rem;
+  color: #ddd;
+  font-weight: 500;
+  line-height: 1;
+}
+.identity-socials {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.social-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+.social-icon:hover { border-color: #555; }
+.social-icon svg { width: 15px; height: 15px; fill: #ccc; }
 
-.socials{display:flex;gap:0.75rem;padding:1rem 1.5rem;justify-content:center;background:#0f0f0f;border-bottom:1px solid #1a1a1a}
-.social-icon{width:34px;height:34px;border-radius:50%;background:#1e1e1e;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:border-color 0.2s}
-.social-icon:hover{border-color:#555}
-.social-icon svg{width:16px;height:16px;fill:#ccc}
+/* ── Sections Grid ───────────────────────────────────────── */
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.sections {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
 
-.sections{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.section { padding: 1.75rem 2rem; }
+.section-tech {
+  border-right: 1px solid #1a1a1a;
+  background: #0d0d14;
+}
+.section-gaming { background: #0d0d0a; }
 
-.section{padding:1.5rem}
-.section-tech{border-right:1px solid #1a1a1a;background:#0d0d12}
-.section-gaming{background:#0d0d0a}
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.badge-tech {
+  background: var(--accent-tech-bg);
+  color: var(--accent-tech);
+  border: 1px solid var(--accent-tech-border);
+}
+.badge-gaming {
+  background: var(--accent-gaming-bg);
+  color: var(--accent-gaming);
+  border: 1px solid var(--accent-gaming-border);
+}
+.section-title { font-size: 0.95rem; font-weight: 500; color: #ddd; }
 
-.section-header{display:flex;align-items:center;gap:0.6rem;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:1px solid #1e1e1e}
-.section-header .badge{font-size:0.7rem;font-weight:500;padding:3px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:0.06em}
-.badge-tech{background:#1a1a3a;color:#8888ff;border:1px solid #2a2a5a}
-.badge-gaming{background:#1a2a1a;color:#88cc88;border:1px solid #2a4a2a}
-.section-title{font-size:0.95rem;font-weight:500;color:#ddd}
+/* ── Roadmap Card ────────────────────────────────────────── */
+.roadmap-card {
+  background: #0c0c18;
+  border: 1px solid #252545;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.roadmap-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #1e1e38;
+}
+.roadmap-card-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #9999dd;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.roadmap-card-link {
+  font-size: 0.72rem;
+  color: var(--accent-tech-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.roadmap-card-link:hover { color: var(--accent-tech); }
+.roadmap-img-wrap {
+  position: relative;
+  overflow: hidden;
+  max-height: 290px;
+}
+.roadmap-img-wrap img {
+  width: 100%;
+  display: block;
+  opacity: 0.88;
+  transition: opacity 0.3s;
+}
+.roadmap-img-wrap:hover img { opacity: 1; }
+.roadmap-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(12,12,24,0.96) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.1rem;
+}
+.roadmap-cta {
+  padding: 0.5rem 1.1rem;
+  background: rgba(68,68,160,0.28);
+  border: 1px solid rgba(136,136,255,0.28);
+  border-radius: 6px;
+  color: #aaaaff;
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+.roadmap-cta:hover {
+  background: rgba(68,68,160,0.48);
+  border-color: rgba(136,136,255,0.55);
+}
 
-.roadmap-img{width:100%;border-radius:8px;border:1px solid #222;margin-bottom:1rem;opacity:0.9}
+/* ── Link Buttons ────────────────────────────────────────── */
+.links { display: flex; flex-direction: column; gap: 0.6rem; }
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--bg-card);
+  border: 1px solid #222;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  font-size: 0.88rem;
+}
+.link-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateX(3px);
+}
+.link-btn .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+.link-btn .text strong {
+  display: block;
+  font-weight: 500;
+  font-size: 0.83rem;
+}
+.link-btn .text span {
+  display: block;
+  font-size: 0.73rem;
+  color: #666;
+  margin-top: 1px;
+}
+.link-btn .arrow {
+  color: #444;
+  font-size: 0.8rem;
+  margin-left: auto;
+  flex-shrink: 0;
+}
 
-.links{display:flex;flex-direction:column;gap:0.6rem}
-.link-btn{display:flex;align-items:center;gap:0.65rem;padding:0.7rem 0.85rem;background:#141414;border:1px solid #222;border-radius:10px;text-decoration:none;color:#f0f0f0;transition:background 0.2s,border-color 0.2s;font-size:0.88rem}
-.link-btn:hover{background:#1c1c1c;border-color:#3a3a3a}
-.link-btn .icon{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px}
-.link-btn .text strong{display:block;font-weight:500;font-size:0.83rem}
-.link-btn .text span{display:block;font-size:0.73rem;color:#666;margin-top:1px}
-.link-btn .arrow{color:#444;font-size:0.8rem;margin-left:auto}
+/* ── Studying Tags ───────────────────────────────────────── */
+.studying-section { margin-top: 1.1rem; }
+.studying-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.studying-label::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-tech-dim);
+  display: inline-block;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+  font-size: 0.73rem;
+  padding: 3px 10px;
+  background: var(--accent-tech-bg);
+  border: 1px solid var(--accent-tech-border);
+  border-radius: 4px;
+  color: #8888cc;
+}
 
-.sub-label{font-size:0.7rem;color:#444;text-transform:uppercase;letter-spacing:0.07em;margin:0.9rem 0 0.4rem}
+/* ── Contact Strip ───────────────────────────────────────── */
+.contact-strip {
+  background: linear-gradient(135deg, #0d0d1a 0%, #0d120d 100%);
+  border-top: 1px solid #1e1e2e;
+  padding: 2rem 2.5rem;
+}
+.contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.contact-text strong {
+  display: block;
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0.2rem;
+}
+.contact-text span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  background: #14142a;
+  border: 1px solid var(--accent-tech-border);
+  border-radius: 8px;
+  color: #9999dd;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.contact-btn:hover {
+  background: #1c1c3a;
+  border-color: #5555aa;
+  color: #bbbbff;
+}
+.contact-btn svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
 
-.contact-bar{background:#0f0f0f;border-top:1px solid #1a1a1a;padding:1rem 1.5rem;display:flex;justify-content:center}
-.contact-bar a{display:flex;align-items:center;gap:0.5rem;padding:0.65rem 1.25rem;background:#141414;border:1px solid #222;border-radius:8px;text-decoration:none;color:#aaa;font-size:0.85rem;transition:border-color 0.2s}
-.contact-bar a:hover{border-color:#444;color:#ddd}
+/* ── Footer ──────────────────────────────────────────────── */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: #333;
+}
 
-.footer{text-align:center;padding:1rem;font-size:0.75rem;color:#333}
-
-@media(max-width:600px){
-  .sections{grid-template-columns:1fr}
-  .section-tech{border-right:none;border-bottom:1px solid #1a1a1a}
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero { min-height: 50vh; }
+  .hero-content { padding: 1.5rem; }
+  .sections { grid-template-columns: 1fr; }
+  .section-tech { border-right: none; border-bottom: 1px solid #1a1a1a; }
+  .identity-strip { padding: 1rem 1.5rem; }
+  .section { padding: 1.5rem; }
+  .roadmap-img-wrap { max-height: 240px; }
+  .contact-strip { padding: 1.5rem; }
+}
+@media (max-width: 480px) {
+  .hero { min-height: 45vh; }
+  .hero-text h1 { font-size: 1.5rem; }
+  .hero-content { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .hero-pill { align-self: flex-start; }
+  .avatar { width: 64px; height: 64px; font-size: 1.1rem; }
+  .identity-strip { flex-direction: column; align-items: stretch; }
+  .identity-socials { margin-left: 0; justify-content: center; }
+  .contact-inner { flex-direction: column; align-items: flex-start; }
 }
 </style>
 </head>
 <body>
 
+<!-- ═══════════════════════════════════════════════════════════
+     HERO  —  NZ Landscape
+     To use your own photo: add photos/nz-landscape.jpg to the
+     repo, then update the background-image URL in CSS above.
+     ═══════════════════════════════════════════════════════════ -->
 <div class="hero">
-  <img src="https://ugc.production.linktr.ee/e298c181-e463-4f18-b300-6ce32a39caba_FDt-gZvDKKI-j1s8FyPYuQGIy2EwxTY-JODPqPNk8A6hiWOJS0UrgnXld1MXe8DhSshtXgs-s900-c-k-c0x00ffffff-no-rj.jpeg" alt="NZ Landscape" style="display:none" id="bgFallback">
-  <div style="position:absolute;inset:0;background:url('https://ugc.production.linktr.ee/e298c181-e463-4f18-b300-6ce32a39caba_FDt-gZvDKKI-j1s8FyPYuQGIy2EwxTY-JODPqPNk8A6hiWOJS0UrgnXld1MXe8DhSshtXgs-s900-c-k-c0x00ffffff-no-rj.jpeg') center 60%/cover no-repeat"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <img class="avatar" src="https://ugc.production.linktr.ee/e298c181-e463-4f18-b300-6ce32a39caba_FDt-gZvDKKI-j1s8FyPYuQGIy2EwxTY-JODPqPNk8A6hiWOJS0UrgnXld1MXe8DhSshtXgs-s900-c-k-c0x00ffffff-no-rj.jpeg" alt="Luke Simmons">
-    <div class="hero-text">
-      <h1>Luke Simmons</h1>
-      <p>📍 New Zealand &nbsp;·&nbsp; Remote work wanted</p>
+    <div class="hero-left">
+      <div class="avatar">LS</div>
+      <div class="hero-text">
+        <h1>Luke Simmons</h1>
+        <p>lukesimmonsnz.kiwi</p>
+      </div>
     </div>
+    <span class="hero-pill">📍 New Zealand &nbsp;·&nbsp; Remote work wanted</span>
   </div>
 </div>
 
-<div class="bio-bar">
-  Software Development &amp; AI student at Codecademy &nbsp;·&nbsp; Aspiring AI Engineer &amp; Researcher &nbsp;·&nbsp; Gamer &amp; Chess enthusiast
-</div>
-
-<div class="socials">
-  <a class="social-icon" href="https://www.instagram.com/nzgamerluke" title="Instagram">
-    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-  </a>
-  <a class="social-icon" href="https://www.facebook.com/lukesimmonsnz" title="Facebook">
-    <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-  </a>
-  <a class="social-icon" href="https://www.twitch.tv/nzgamerluke" title="Twitch">
-    <svg viewBox="0 0 24 24"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
-  </a>
-  <a class="social-icon" href="https://www.youtube.com/@lukesimmonsnz" title="YouTube">
-    <svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-  </a>
-</div>
-
-<div class="sections">
-
-  <div class="section section-tech">
-    <div class="section-header">
-      <span class="badge badge-tech">Tech &amp; AI</span>
-      <span class="section-title">Aspiring AI Engineer</span>
-    </div>
-
-    <img class="roadmap-img" src="https://roadmap.sh/roadmaps/backend.png" alt="Backend Developer Roadmap" onerror="this.style.display='none'">
-
-    <div class="links">
-      <a class="link-btn" href="https://www.codecademy.com/profiles/lukesimmonsnz">
-        <div class="icon" style="background:#1a2a3a">🎓</div>
-        <div class="text">
-          <strong>Codecademy</strong>
-          <span>Software Dev · AI · Cybersecurity</span>
-        </div>
-        <span class="arrow">›</span>
-      </a>
-    </div>
-
-    <div class="sub-label">Currently studying</div>
-    <div style="display:flex;flex-wrap:wrap;gap:6px">
-      <span style="font-size:0.73rem;padding:3px 9px;background:#1a1a2a;border:1px solid #2a2a4a;border-radius:4px;color:#8888cc">Python</span>
-      <span style="font-size:0.73rem;padding:3px 9px;background:#1a1a2a;border:1px solid #2a2a4a;border-radius:4px;color:#8888cc">Machine Learning</span>
-      <span style="font-size:0.73rem;padding:3px 9px;background:#1a1a2a;border:1px solid #2a2a4a;border-radius:4px;color:#8888cc">Cybersecurity</span>
-      <span style="font-size:0.73rem;padding:3px 9px;background:#1a1a2a;border:1px solid #2a2a4a;border-radius:4px;color:#8888cc">Game Dev</span>
+<!-- ═══════════════════════════════════════════════════════════
+     IDENTITY STRIP  —  Bio + Socials merged
+     ═══════════════════════════════════════════════════════════ -->
+<div class="identity-strip">
+  <div class="id-card">
+    <span class="id-icon">🤖</span>
+    <div>
+      <div class="id-label">Currently</div>
+      <div class="id-value">AI &amp; Software Student</div>
     </div>
   </div>
-
-  <div class="section section-gaming">
-    <div class="section-header">
-      <span class="badge badge-gaming">Gaming</span>
-      <span class="section-title">nzgamerluke</span>
-    </div>
-
-    <div class="links">
-      <a class="link-btn" href="https://www.twitch.tv/nzgamerluke">
-        <div class="icon" style="background:#1e1028">🎮</div>
-        <div class="text">
-          <strong>Twitch</strong>
-          <span>RuneScape &amp; World of Tanks</span>
-        </div>
-        <span class="arrow">›</span>
-      </a>
-      <a class="link-btn" href="https://www.youtube.com/@nzgamerluke?sub_confirmation=1">
-        <div class="icon" style="background:#2a1a1a">▶</div>
-        <div class="text">
-          <strong>YouTube — NZGAMERLUKE</strong>
-          <span>Gaming channel</span>
-        </div>
-        <span class="arrow">›</span>
-      </a>
-      <a class="link-btn" href="https://www.youtube.com/@lukesimmonsnz?sub_confirmation=1">
-        <div class="icon" style="background:#2a1a1a">▶</div>
-        <div class="text">
-          <strong>YouTube — Luke Simmons NZ</strong>
-          <span>Main channel</span>
-        </div>
-        <span class="arrow">›</span>
-      </a>
-      <a class="link-btn" href="https://www.chess.com/member/nzgamerluke">
-        <div class="icon" style="background:#1a1a28">♟</div>
-        <div class="text">
-          <strong>Chess.com</strong>
-          <span>Diamond Member, NZ</span>
-        </div>
-        <span class="arrow">›</span>
-      </a>
-      <a class="link-btn" href="https://www.instagram.com/nzgamerluke">
-        <div class="icon" style="background:#2a1828">📸</div>
-        <div class="text">
-          <strong>Instagram</strong>
-          <span>@nzgamerluke</span>
-        </div>
-        <span class="arrow">›</span>
-      </a>
+  <div class="id-card">
+    <span class="id-icon">🎮</span>
+    <div>
+      <div class="id-label">Hobbies</div>
+      <div class="id-value">Gaming &amp; Chess</div>
     </div>
   </div>
-
+  <div class="id-card">
+    <span class="id-icon">🚀</span>
+    <div>
+      <div class="id-label">Goal</div>
+      <div class="id-value">AI Engineer &amp; Researcher</div>
+    </div>
+  </div>
+  <div class="identity-socials">
+    <a class="social-icon" href="https://www.instagram.com/nzgamerluke" title="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a class="social-icon" href="https://www.facebook.com/lukesimmonsnz" title="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a class="social-icon" href="https://www.twitch.tv/nzgamerluke" title="Twitch">
+      <svg viewBox="0 0 24 24"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+    </a>
+    <a class="social-icon" href="https://www.youtube.com/@lukesimmonsnz" title="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+    </a>
+  </div>
 </div>
 
-<div class="contact-bar">
-  <a href="mailto:luke@lukesimmonsnz.kiwi">
-    <span>✉</span>
-    <span>luke@lukesimmonsnz.kiwi</span>
-  </a>
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN CONTENT  —  Asymmetric 3:2 grid
+     ═══════════════════════════════════════════════════════════ -->
+<div class="page-wrap">
+  <div class="sections">
+
+    <!-- LEFT: Tech & AI (60%) -->
+    <div class="section section-tech">
+      <div class="section-header">
+        <span class="badge badge-tech">Tech &amp; AI</span>
+        <span class="section-title">Aspiring AI Engineer</span>
+      </div>
+
+      <div class="roadmap-card">
+        <div class="roadmap-card-header">
+          <span class="roadmap-card-title">Backend Developer Roadmap</span>
+          <a class="roadmap-card-link" href="https://roadmap.sh/backend" target="_blank" rel="noopener">
+            View interactive ›
+          </a>
+        </div>
+        <div class="roadmap-img-wrap">
+          <img src="https://roadmap.sh/roadmaps/backend.png" alt="Backend Developer Roadmap" loading="lazy">
+          <div class="roadmap-img-overlay">
+            <a class="roadmap-cta" href="https://roadmap.sh/backend" target="_blank" rel="noopener">
+              Open Interactive Version ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="links">
+        <a class="link-btn" href="https://www.codecademy.com/profiles/lukesimmonsnz">
+          <div class="icon" style="background:#1a2a3a">🎓</div>
+          <div class="text">
+            <strong>Codecademy</strong>
+            <span>Software Dev · AI · Cybersecurity</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+      </div>
+
+      <div class="studying-section">
+        <div class="studying-label">Currently studying</div>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Game Dev</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Gaming (40%) -->
+    <div class="section section-gaming">
+      <div class="section-header">
+        <span class="badge badge-gaming">Gaming</span>
+        <span class="section-title">nzgamerluke</span>
+      </div>
+
+      <div class="links">
+        <a class="link-btn" href="https://www.twitch.tv/nzgamerluke">
+          <div class="icon" style="background:#1a0e30">🎮</div>
+          <div class="text">
+            <strong>Twitch</strong>
+            <span>RuneScape &amp; World of Tanks</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+        <a class="link-btn" href="https://www.youtube.com/@nzgamerluke?sub_confirmation=1">
+          <div class="icon" style="background:#2a1a1a">▶</div>
+          <div class="text">
+            <strong>YouTube — NZGAMERLUKE</strong>
+            <span>Gaming channel</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+        <a class="link-btn" href="https://www.youtube.com/@lukesimmonsnz?sub_confirmation=1">
+          <div class="icon" style="background:#2a1a1a">▶</div>
+          <div class="text">
+            <strong>YouTube — Luke Simmons NZ</strong>
+            <span>Main channel</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+        <a class="link-btn" href="https://www.chess.com/member/nzgamerluke">
+          <div class="icon" style="background:#1a2a1a">♟</div>
+          <div class="text">
+            <strong>Chess.com</strong>
+            <span>Diamond Member, NZ</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+        <a class="link-btn" href="https://www.instagram.com/nzgamerluke">
+          <div class="icon" style="background:#2a1828">📸</div>
+          <div class="text">
+            <strong>Instagram</strong>
+            <span>@nzgamerluke</span>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div class="footer">lukesimmonsnz.kiwi · New Zealand</div>
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT + FOOTER
+     ═══════════════════════════════════════════════════════════ -->
+<div class="contact-strip">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <strong>Get in touch</strong>
+      <span>Open to remote opportunities and collaborations</span>
+    </div>
+    <a class="contact-btn" href="mailto:luke@lukesimmonsnz.kiwi">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      luke@lukesimmonsnz.kiwi
+    </a>
+  </div>
+</div>
+
+<div class="footer">lukesimmonsnz.kiwi &nbsp;·&nbsp; New Zealand</div>
 
 </body>
 </html>
