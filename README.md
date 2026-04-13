@@ -36,6 +36,7 @@ Software Development & AI student at Codecademy, aspiring AI Engineer & Research
 <!-- CHANGELOG_START -->
 | Date (UTC) | What | Files |
 |------------|------|-------|
+| 2026-04-13 10:45 | Replace broken github-readme-stats images with native API stat boxes | `index.html` |
 | 2026-04-13 10:41 | Add Manukau City Baptist Church experience and dates to contact page | `contact.html` |
 | 2026-04-13 10:38 | Add audio engineering experience section to contact page | `contact.html` |
 | 2026-04-13 10:35 | Add draft watermark and Claude template badge to blog post cards | `blog.html` |
