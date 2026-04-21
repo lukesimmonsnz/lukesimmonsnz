@@ -36,6 +36,7 @@ Software Development & AI student at Codecademy, aspiring AI Engineer & Research
 <!-- CHANGELOG_START -->
 | Date (UTC) | What | Files |
 |------------|------|-------|
+| 2026-04-21 08:21 | Delete CNAME | `CNAME` |
 | 2026-04-13 11:16 | Remove website handle from hero section | `index.html` |
 | 2026-04-13 11:07 | Add exclamation mark to Remote work wanted pill | `index.html` |
 | 2026-04-13 11:04 | Remove cluttered details cards from contact page | `contact.html` |
