@@ -1,0 +1,13 @@
+id: evidence.real_prices_vs_wages_1985_2022
+statement: "Between 1985 and 2022 Auckland dwelling prices rose roughly fivefold in real terms, while real wages roughly doubled. The gap between price growth and wage growth is the structural source of the affordability deterioration."
+value: null
+unit: null
+geography: "Auckland region"
+time_period: "1985–2022"
+confidence: medium
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.stats_nz_household_income
+  - source.demographia_affordability
+notes: "Long-run real-price multiple varies by data series; the 5× figure is a commonly-cited approximation. Worth confirming against current QV and RBNZ series."

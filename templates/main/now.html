@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Now · Luke Simmons{% endblock %}
+{% block meta_description %}What Luke Simmons is currently focused on.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([('Home', url_for('main.home')), ('Now', None)]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Current focus</span>
+    <h1>Now</h1>
+    <hr class="rule">
+    <p class="lede">
+      What I&rsquo;m actively working on, at the moment.
+    </p>
+    <p class="small">Last updated {{ last_updated }}.</p>
+  </header>
+
+  <div class="prose">
+    <h2>Building a personal AI agent</h2>
+    <p>
+      Most of my focus right now is on a personalised AI agent that runs
+      directly on my own system &mdash; not in the cloud, not through a hosted API.
+      It&rsquo;s an evolution of the earlier LAWO prototype I built to keep my
+      websites up to date; the direction now is more general, more personal,
+      and a lot more opinionated about staying local.
+    </p>
+    <p>
+      The work sits at the intersection of what I&rsquo;m studying (AI, backend,
+      systems) and what I actually want to exist: an agent I can trust to
+      know about my work, because it physically cannot share anything outside
+      my network.
+    </p>
+
+    <h2>Also, quietly</h2>
+    <p>
+      Continuing to build out this site &mdash; expanding the research notes,
+      deepening the David Simmons archive &mdash; and volunteering most Sundays
+      on the audio desk at Gracecity Church.
+    </p>
+
+    <aside class="notice">
+      <strong>About this page.</strong> It follows the
+      <a href="https://nownownow.com/about" target="_blank" rel="noopener">/now/ convention</a> &mdash;
+      a simple, hand-updated status page rather than a feed. I refresh it
+      when something meaningfully changes.
+    </aside>
+  </div>
+</div>
+{% endblock %}

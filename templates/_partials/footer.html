@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-nav">
+      <a href="{{ url_for('main.home') }}">Home</a>
+      <span class="sep">·</span>
+      <a href="{{ url_for('main.projects') }}">Projects</a>
+      <span class="sep">·</span>
+      <a href="{{ url_for('blog.index') }}">Blog</a>
+      <span class="sep">·</span>
+      <a href="{{ url_for('research.index') }}">Research</a>
+      <span class="sep">·</span>
+      <a href="{{ url_for('davidsimmons.index') }}">David Simmons</a>
+      <span class="sep">·</span>
+      <a href="{{ url_for('main.now') }}">Now</a>
+      <span class="sep">·</span>
+      <a href="{{ url_for('main.contact') }}">Contact</a>
+      <span class="sep">·</span>
+      <a href="{{ url_for('main.sitemap_html') }}">Sitemap</a>
+    </div>
+    <div>
+      &copy; Luke Simmons &middot; All rights reserved &middot; New Zealand
+    </div>
+    <div class="footer-meta">
+      Built with Flask, Jinja, and
+      <a href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude</a>
+    </div>
+  </div>
+</footer>

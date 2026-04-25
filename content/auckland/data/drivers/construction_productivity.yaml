@@ -1,0 +1,14 @@
+id: driver.construction_productivity
+name: Weak construction-sector productivity growth
+description: >
+  New Zealand's construction sector has had close to flat labour productivity
+  growth for decades, among the lowest in the OECD. Without structural change
+  — prefabrication, standardisation, workforce reform — the cost of producing
+  a dwelling will continue to rise relative to the rest of the economy. The
+  constraint is both economic (small domestic market) and regulatory
+  (consenting regimes poorly suited to mass production).
+consensus: consensus
+category: economic
+timescale: long
+affects:
+  - problem.housing.supply_economics

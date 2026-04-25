@@ -1,0 +1,40 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}{{ section_title }} · Auckland · Research · Luke Simmons{% endblock %}
+{% block meta_description %}{{ section_title }} — subpages in the Auckland research project.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Auckland', url_for('auckland.index')),
+    (section_title, None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Section</span>
+    <h1>{{ section_title }}</h1>
+    <hr class="rule">
+  </header>
+
+  <article class="prose">
+    <ol class="post-list">
+      {% for p in pages %}
+      <li class="post-entry">
+        <h2 class="post-entry-title">
+          <a href="{{ url_for('auckland.page', section=p.section, subpage=p.subpage) }}">{{ p.title }}</a>
+        </h2>
+        {% if p.summary %}<p class="post-entry-summary">{{ p.summary }}</p>{% endif %}
+        {% if p.status %}
+        <div class="chips">
+          <span class="chip">{{ p.status }}</span>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </article>
+</div>
+{% endblock %}

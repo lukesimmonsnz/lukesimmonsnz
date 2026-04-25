@@ -1,0 +1,40 @@
+id: camp.industrial_transformation
+name: Industrial transformation of construction
+core_claim: >
+  The real long-run supply constraint is weak construction-sector
+  productivity. Shifting from site-based craft construction to
+  factory-based prefabrication, standardised components, and a stable
+  workforce pipeline is the only way to materially change the cost of
+  delivering a dwelling in Auckland.
+flagship_moves:
+  - Scale prefabrication and off-site manufacturing capacity.
+  - Standardised dwelling designs suitable for volume production.
+  - Building code reform to remove barriers to manufactured housing.
+  - Public procurement as an anchor for domestic prefab demand.
+  - Expanded trades training, apprenticeships, and skills immigration pathways.
+tensions:
+  - Small domestic market limits the efficiency gains from standardisation.
+  - Prefabrication has repeatedly over-promised and under-delivered over multiple decades.
+  - Large up-front capital investment required before productivity gains materialise.
+  - Workforce training has a decade-long payback and is itself pro-cyclical.
+addresses:
+  - problem.housing.supply_economics
+interventions:
+  - description: "Invest in prefabrication and modern methods of construction to raise sector productivity."
+    state_variable: construction_cost_index
+    expected_sign: "-"
+    side_effects:
+      - displacement_of_site_based_trades
+      - concentration_of_supply_in_fewer_large_producers
+  - description: "Expand workforce pipeline through training, apprenticeships, and targeted skills immigration."
+    constraint_relaxed: labour_force_skill_mix
+    state_variable: workforce_size
+    expected_sign: "+"
+    side_effects:
+      - requires_stable_long_horizon_policy_commitment
+advocates:
+  - Prefab industry associations
+  - NZ Productivity Commission (historical)
+  - OECD construction-productivity analyses
+  - Parts of the infrastructure engineering community
+tensions_with: []

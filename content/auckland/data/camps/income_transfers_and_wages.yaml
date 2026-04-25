@@ -1,0 +1,41 @@
+id: camp.income_transfers_and_wages
+name: Income-side — transfers and wages
+core_claim: >
+  Affordability is a ratio between housing cost and income; the cleanest
+  long-run lever is the income side. Direct transfers (an Accommodation
+  Supplement uprated to current rents, income-related rents in state and
+  community housing) address the lower end; structural wage growth
+  through productivity and labour-market reform addresses the middle
+  and upper end.
+flagship_moves:
+  - Uprate the Accommodation Supplement to track current market rents.
+  - Expand income-related rents across state and community housing.
+  - Raise the statutory minimum wage and pursue living-wage policy.
+  - Invest in productivity growth to raise real wages over time.
+  - Reform the tax-transfer system to reduce the effective marginal tax rate on low-to-middle incomes.
+tensions:
+  - In supply-inelastic markets, cash transfers can be partially captured by landlords as higher rents.
+  - Wage growth is an outcome of the economy, not a policy dial.
+  - Productivity investment has decade-long payback.
+  - Fiscal cost of expanded transfers.
+addresses:
+  - problem.housing.affordability
+interventions:
+  - description: "Direct income transfers targeted at housing cost at the lower end of the income distribution."
+    state_variable: rent_to_income_ratio
+    expected_sign: "-"
+    side_effects:
+      - partial_landlord_capture_in_inelastic_markets
+      - fiscal_cost
+  - description: "Structural wage growth through productivity, training, and labour-market reform."
+    state_variable: price_to_income_ratio
+    expected_sign: "-"
+    side_effects:
+      - long_payback_decade_plus
+advocates:
+  - The Helen Clark Foundation
+  - Unions and the living-wage movement
+  - Parts of the welfare-economics academic literature
+  - NZ Productivity Commission (on the productivity side)
+tensions_with:
+  - camp.ownership_reform_and_tax

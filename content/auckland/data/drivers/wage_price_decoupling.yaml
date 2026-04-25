@@ -1,0 +1,14 @@
+id: driver.wage_price_decoupling
+name: Wage–price decoupling
+description: >
+  Over the past 40 years Auckland dwelling prices and rents have grown
+  substantially faster than median household incomes. Affordability is a
+  ratio, and the ratio has deteriorated primarily because the numerator
+  (cost) has outrun the denominator (earnings). Closing the gap requires
+  either slower price growth, faster wage growth, or both — the
+  arithmetic does not permit a third option.
+consensus: consensus
+category: economic
+timescale: long
+affects:
+  - problem.housing.affordability

@@ -1,0 +1,15 @@
+id: driver.credit_cycle_dominance
+name: Credit-cycle dominance of short-run prices
+description: >
+  Short-run movements in Auckland dwelling prices are driven more by
+  credit availability — interest rates, macroprudential rules, bank
+  lending criteria — than by short-run changes in supply. The 2021
+  low-rate credit surge drove prices up faster than any plausible supply
+  response; the subsequent rate rise drove them back faster than supply
+  could have. Over decades the credit cycle is a first-order input to
+  the affordability outcome.
+consensus: consensus
+category: economic
+timescale: medium
+affects:
+  - problem.housing.affordability

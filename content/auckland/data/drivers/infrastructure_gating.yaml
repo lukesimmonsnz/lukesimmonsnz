@@ -1,0 +1,13 @@
+id: driver.infrastructure_gating
+name: Infrastructure as a supply gate
+description: >
+  Even where land is available and zoning permits, new dwellings cannot be
+  delivered without adequate trunk capacity for water, wastewater,
+  stormwater, and transport. Infrastructure investment timelines (5–15
+  years) run longer than market demand cycles (2–5 years), so trunk capacity
+  chronically lags demand and becomes a binding supply constraint.
+consensus: consensus
+category: institutional
+timescale: long
+affects:
+  - problem.housing.supply_economics

@@ -1,0 +1,12 @@
+id: evidence.hunua_area_ha
+statement: "The Hunua Ranges Regional Park covers approximately 17,000 hectares in the south-east of the Auckland region."
+value: 17000
+unit: hectares
+geography: "Hunua Ranges, south-east Auckland"
+time_period: current
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.ac_rimu
+notes: "Regional park area; to be verified against Auckland Council parks GIS layer."

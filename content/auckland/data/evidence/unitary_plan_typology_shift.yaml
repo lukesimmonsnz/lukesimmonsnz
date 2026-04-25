@@ -1,0 +1,13 @@
+id: evidence.unitary_plan_typology_shift
+statement: "Since the 2016 Auckland Unitary Plan, consents in the region have shifted from detached-dominated to majority multi-unit (townhouses and apartments). This is one of the most visible structural effects of the upzoning."
+value: null
+unit: null
+geography: "Auckland region"
+time_period: "2016–2025"
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.ac_rimu
+  - source.greenaway_mcgrevy_upzoning
+notes: "Widely reported in Auckland Council RIMU monitoring reports and in the Greenaway-McGrevy papers; exact share of multi-unit by year should be confirmed."

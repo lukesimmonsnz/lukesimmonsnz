@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Sitemap · Luke Simmons{% endblock %}
+{% block meta_description %}A human-readable inventory of every public URL on this site, the content behind each, and current content counts.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Sitemap', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Documentation</span>
+    <h1>Sitemap</h1>
+    <hr class="rule">
+    <p class="lede">
+      Every public page on this site, together with citation, copyright,
+      privacy, and accessibility notes. A machine-readable sitemap for
+      search engines lives at
+      <a href="{{ url_for('main.sitemap_xml') }}">/sitemap.xml</a>.
+    </p>
+  </header>
+
+  <article class="prose">
+    {{ body_html|safe }}
+  </article>
+</div>
+{% endblock %}

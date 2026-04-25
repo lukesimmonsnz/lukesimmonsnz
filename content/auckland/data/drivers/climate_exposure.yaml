@@ -1,0 +1,15 @@
+id: driver.climate_exposure
+name: Climate-driven loss of coastal and flood-exposed land
+description: >
+  Sea level rise, increased storm intensity, and pluvial flooding reduce Auckland's
+  effective developable area at the coastal and low-lying margins over 50- and
+  100-year horizons. The direction of travel is established; the rate depends on
+  global emissions pathway.
+consensus: consensus
+category: climate
+timescale: long
+affects:
+  - problem.housing.land
+  - problem.housing.supply_economics
+evidence_ids:
+  - evidence.sea_level_rise_2100_m

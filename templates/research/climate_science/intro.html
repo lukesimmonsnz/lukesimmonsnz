@@ -1,0 +1,67 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Introduction &middot; Climate Science &amp; AI &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Overview of how advancements in artificial intelligence are shaping climate science through predictive modelling, data analysis, and sustainable solutions.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Climate Science &amp; AI', url_for('research.climate_index')),
+    ('Introduction', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Climate Science</span>
+    <h1>Introduction</h1>
+    <hr class="rule">
+    <p class="lede">Climate change is an increasingly pressing issue that demands the attention of scientists and policymakers alike. This introductory article provides a comprehensive overview of how advancements in artificial intelligence (AI) are shaping our understanding of climate science &mdash; particularly through predictive modelling, data analysis, and the development of innovative solutions for sustainable energy production and environmental conservation.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This article introduces the intersection of climate science and artificial intelligence, focusing on how AI techniques enhance predictive modelling, data analysis, and innovative solutions for sustainable energy production and environmental conservation. It also highlights current challenges and future opportunities in this interdisciplinary field.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#climate-science">Climate Science Overview</a></li>
+        <li><a href="#ai-techniques">AI Techniques in Climate Research</a></li>
+        <li><a href="#applications">Applications of AI in Environmental Conservation</a></li>
+        <li><a href="#challenges-and-opportunities">Challenges and Opportunities</a></li>
+        <li><a href="#future-directions">Future Directions for AI Integration</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="climate-science">Climate Science Overview</h2>
+    <p>Climate science encompasses the study of Earth&rsquo;s climate system, including interactions between atmosphere, oceans, land surfaces, ice, and biosphere<sup><a href="{{ url_for('research.climate_references') }}#ref-1">[1]</a></sup>. As global temperatures rise due to increased greenhouse gas emissions from human activities, understanding these complex systems becomes crucial. The World Meteorological Organization confirmed 2024 as the warmest year on record, with global mean surface temperature approximately 1.55&nbsp;&deg;C above the 1850&ndash;1900 pre-industrial baseline &mdash; the first calendar year to cross 1.5&nbsp;&deg;C in the consolidated multi-dataset analysis<sup><a href="{{ url_for('research.climate_references') }}#ref-21">[21]</a></sup>.</p>
+
+    <h3 id="ai-techniques">AI Techniques in Climate Research</h3>
+    <p>The integration of AI into climate research has contributed to notable advances in predictive modelling. Machine learning algorithms can process large volumes of data on temperature patterns, precipitation trends, and other environmental factors, and &mdash; used in combination with process-based models &mdash; can improve aspects of forecast skill<sup><a href="{{ url_for('research.climate_references') }}#ref-2">[2]</a></sup>. This is particularly relevant for regions prone to extreme weather events.</p>
+
+    <h3 id="applications">Applications of AI in Environmental Conservation</h3>
+    <p>In addition to predictive modelling, AI also plays a vital role in environmental conservation efforts. For example, microbial fuel cells (MFCs) represent a green technology that not only treats wastewater but also generates renewable energy<sup><a href="{{ url_for('research.climate_references') }}#ref-3">[3]</a></sup>. By employing MFCs powered by nanotechnology, sustainable practices can be implemented more effectively.</p>
+
+    <h2 id="challenges-and-opportunities">Challenges and Opportunities</h2>
+    <p>Despite the numerous benefits AI brings to climate research and environmental conservation, there are also significant challenges. Data scarcity, computational limitations, and ethical considerations pose hurdles that need to be addressed<sup><a href="{{ url_for('research.climate_references') }}#ref-4">[4]</a></sup>. Addressing these issues will require collaborative efforts across multiple disciplines.</p>
+
+    <h2 id="future-directions">Future Directions for AI Integration</h2>
+    <p>The future of AI in climate science holds immense potential. Continued advancements in technology, coupled with a growing awareness of environmental issues, could lead to even more precise predictions and innovative solutions<sup><a href="{{ url_for('research.climate_references') }}#ref-5">[5]</a></sup>. Ongoing research will play a key role in shaping this trajectory.</p>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>The intersection of climate science with AI presents unique opportunities for advancing our understanding of Earth&rsquo;s climate systems and developing sustainable solutions. As we move forward, it is essential to continue exploring these synergies while addressing associated challenges.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.climate_index'), 'title': 'Climate Science & AI'},
+      next={'url': url_for('research.climate_history'), 'title': 'Historical Context'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

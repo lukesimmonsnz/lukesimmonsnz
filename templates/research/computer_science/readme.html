@@ -1,0 +1,131 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}README &middot; Computer Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}About the Computer Science research section: its purpose, structure, navigation, citation style, and licensing.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Computer Science', url_for('research.cs_index')),
+    ('README', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Computer Science</span>
+    <h1>README &mdash; Section Documentation</h1>
+    <hr class="rule">
+    <p class="lede">Everything you need to know about this section: its purpose, structure, how to navigate it, the citation style, and the licence that governs reuse.</p>
+  </header>
+
+  <div class="prose">
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#about">About This Section</a></li>
+        <li><a href="#structure">Section Structure</a></li>
+        <li><a href="#navigation">Navigation Guide</a></li>
+        <li><a href="#citation-style">Citation Style</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#acknowledgements">Acknowledgements</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="about">1. About This Section</h2>
+
+    <p>This is the Computer Science branch of the research area on lukesimmonsnz.kiwi &mdash; a self-contained academic reference covering four interconnected domains of computing:</p>
+
+    <ul>
+      <li><strong>Computer Science</strong> &mdash; theoretical and applied foundations</li>
+      <li><strong>Python</strong> &mdash; language design, internals, and the scientific/ML ecosystem</li>
+      <li><strong>Rust</strong> &mdash; memory safety, ownership, and systems programming</li>
+      <li><strong>AI &amp; IT Ecosystem</strong> &mdash; how networking, cloud, ML, and LLMs form one connected stack</li>
+    </ul>
+
+    <p>The section is intended as a <em>reference</em> and <em>study guide</em> rather than a tutorial. Each page is structured as an academic article with inline citations, key definitions, code examples, and summary tables.</p>
+
+    <aside class="notice">
+      <strong>Audience.</strong> The content assumes a reader with some programming experience but is designed to be accessible from undergraduate level upward. Mathematical notation is used where it adds precision; informal explanations accompany every formula.
+    </aside>
+
+    <h2 id="structure">2. Section Structure</h2>
+
+    <p>The Computer Science branch lives under <code>/research/computer-science/</code> and is organised as follows:</p>
+
+    <ul>
+      <li><a href="{{ url_for('research.cs_index') }}">Computer Science</a> &mdash; index &amp; overview of the branch; CS foundations (theory, algorithms, architecture, OS, networks)</li>
+      <li><a href="{{ url_for('research.cs_python') }}">Python</a> &mdash; language design, CPython internals, scientific stack, ML ecosystem</li>
+      <li><a href="{{ url_for('research.cs_rust') }}">Rust</a> &mdash; ownership, lifetimes, traits, async, ecosystem</li>
+      <li><a href="{{ url_for('research.cs_ai_it') }}">AI &amp; IT Ecosystem</a> &mdash; infrastructure, cloud, ML history, transformers, LLMs</li>
+      <li><a href="{{ url_for('research.cs_references') }}">References</a> &mdash; full bibliography (APA 7th ed.) with DOI links</li>
+      <li><a href="{{ url_for('research.cs_readme') }}">README</a> &mdash; this page</li>
+    </ul>
+
+    <h2 id="navigation">3. Navigation Guide</h2>
+
+    <h3>3.1 Page-to-Page Navigation</h3>
+    <p>Use the sub-nav above to move between pages within the Computer Science branch. Breadcrumbs at the top of each page let you move back up to the Research index or the site home page.</p>
+
+    <h3>3.2 In-Page Navigation</h3>
+    <p>Each content page opens with a <strong>Table of Contents</strong> linking to sections via anchor IDs (e.g., <code>#ownership</code>, <code>#ml-history</code>). Use your browser&rsquo;s back button to return after following an anchor link.</p>
+
+    <h3>3.3 Citations</h3>
+    <p>Inline citations appear as superscript bracketed numbers, e.g., <sup>[1]</sup>. Each citation is a hyperlink that jumps directly to the corresponding entry on the <a href="{{ url_for('research.cs_references') }}">References</a> page (using anchor IDs like <code>#ref-1</code>). Many reference entries link to publisher DOI pages or arXiv preprints for the full paper.</p>
+
+    <h3>3.4 Reading Order</h3>
+    <p>The section is designed to be read in any order, but the intended linear progression is:</p>
+    <ol>
+      <li><a href="{{ url_for('research.cs_index') }}">Computer Science</a> &mdash; establishes the theoretical and systems foundations</li>
+      <li><a href="{{ url_for('research.cs_python') }}">Python</a> &mdash; shows how a high-level language builds on those foundations</li>
+      <li><a href="{{ url_for('research.cs_rust') }}">Rust</a> &mdash; contrasts with Python at the systems level; deepens understanding of memory and type theory</li>
+      <li><a href="{{ url_for('research.cs_ai_it') }}">AI &amp; IT Ecosystem</a> &mdash; zooms out to show how everything connects at global scale</li>
+      <li><a href="{{ url_for('research.cs_references') }}">References</a> &mdash; primary sources for any topic you want to study further</li>
+    </ol>
+
+    <h2 id="citation-style">4. Citation Style</h2>
+
+    <p>This section uses <strong>APA 7th edition</strong> for all references. Key rules applied:</p>
+    <ul>
+      <li>Author surnames, initials &mdash; up to 20 authors listed; for 21+, the first 19 are listed, then an ellipsis, then the final author.</li>
+      <li>Year in parentheses immediately after the author list.</li>
+      <li>Article titles in sentence case; journal names in title case and italicised.</li>
+      <li>Volume in italics; issue in parentheses, not italicised.</li>
+      <li>DOIs formatted as hyperlinks: <code>https://doi.org/10.xxxx/xxxxx</code>.</li>
+      <li>arXiv preprints cited by their stable arXiv URL.</li>
+    </ul>
+
+    <h2 id="license">5. License</h2>
+
+    <p>The <strong>content</strong> of this section (all text, tables, and original code examples) is released under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> licence. You are free to share and adapt the material for any purpose, including commercially, provided you give appropriate credit.</p>
+
+    <p>The <strong>code examples</strong> embedded in the pages are additionally released under the <a href="https://opensource.org/licenses/MIT">MIT Licence</a> &mdash; use them freely in your own projects.</p>
+
+    <p>Third-party works cited in the references remain under their original copyrights. Links to DOI pages and arXiv preprints are provided where open-access copies are available.</p>
+
+    <h2 id="acknowledgements">6. Acknowledgements</h2>
+
+    <p>This reference section draws on a long tradition of openly published academic work. Particular acknowledgements are due to:</p>
+
+    <ul>
+      <li>The authors of the foundational papers cited throughout &mdash; Turing, Shannon, Dijkstra, Knuth, Cerf, Kahn, and the generations of researchers who built on their work.</li>
+      <li>The open-source communities behind Python, Rust, NumPy, PyTorch, and the Linux kernel, whose work is documented here.</li>
+      <li>The arXiv preprint server (Cornell University), which makes thousands of ML and CS papers openly accessible.</li>
+      <li>The Semantic Scholar and ACM Digital Library open-access initiatives, which have made primary literature more widely available.</li>
+    </ul>
+
+    <aside class="notice">
+      <strong>Corrections &amp; updates.</strong> If you find a factual error, a broken DOI link, or a significant omission, please get in touch via the contact page. Each article is maintained as a Jinja2 template in the site repository and is straightforward to correct.
+    </aside>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.cs_references'), 'title': 'References'},
+      next={'url': url_for('research.cs_index'), 'title': 'Back to Foundations'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

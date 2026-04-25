@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block subnav %}
+<div class="subnav">
+  <div class="subnav-inner">
+    <a href="{{ url_for('davidsimmons.index') }}"
+       class="{% if request.endpoint == 'davidsimmons.index' %}active{% endif %}">Overview</a>
+    <a href="{{ url_for('davidsimmons.about') }}"
+       class="{% if request.endpoint == 'davidsimmons.about' %}active{% endif %}">About</a>
+    <a href="{{ url_for('davidsimmons.timeline') }}"
+       class="{% if request.endpoint == 'davidsimmons.timeline' %}active{% endif %}">Timeline</a>
+    <a href="{{ url_for('davidsimmons.works') }}"
+       class="{% if request.endpoint == 'davidsimmons.works' %}active{% endif %}">Works</a>
+    <a href="{{ url_for('davidsimmons.references') }}"
+       class="{% if request.endpoint == 'davidsimmons.references' %}active{% endif %}">References</a>
+  </div>
+</div>
+{% endblock %}

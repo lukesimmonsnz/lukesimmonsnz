@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Contact · Luke Simmons{% endblock %}
+{% block meta_description %}Send a message to Luke Simmons via the site contact form.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([('Home', url_for('main.home')), ('Contact', None)]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Contact</h1>
+    <hr class="rule">
+    <p class="lede">
+      Leave a note and I&rsquo;ll read it. No email address is published on
+      this site &mdash; messages come in through the form below.
+    </p>
+  </header>
+
+  {% if submitted %}
+    <div class="notice">
+      <strong>Thank you.</strong> Your message has been sent &mdash; I&rsquo;ll follow up when I can.
+    </div>
+    <p><a class="btn ghost" href="{{ url_for('main.contact') }}">Send another message</a></p>
+  {% else %}
+    <div id="contact-error" class="notice" role="alert" hidden>
+      <strong>Sorry.</strong> <span id="contact-error-text"></span>
+    </div>
+    <script>
+      (function () {
+        var msgs = {
+          'name':              'Please enter your name.',
+          'email':             'Please enter your email address.',
+          'email-format':      'That email address doesn\u2019t look valid.',
+          'topic':             'Please pick a topic.',
+          'message':           'Please write a message.',
+          'turnstile-missing': 'The bot-check widget wasn\u2019t loaded \u2014 please reload the page and try again.',
+          'turnstile-failed':  'The bot-check didn\u2019t pass. Please tick the challenge and resend.',
+          'send-failed':       'The message didn\u2019t send. Please try again in a minute.',
+          'bad-request':       'The form data didn\u2019t parse. Please refresh and try again.'
+        };
+        var code = new URLSearchParams(location.search).get('error');
+        if (code && msgs[code]) {
+          var el = document.getElementById('contact-error');
+          document.getElementById('contact-error-text').textContent = msgs[code];
+          el.hidden = false;
+        }
+      })();
+    </script>
+    <form method="post"
+          action="{{ contact_submit_url or url_for('main.contact') }}"
+          class="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required
+               value="{{ (form.name if form else '') | e }}">
+        {% if errors and errors.name %}<span class="error">{{ errors.name }}</span>{% endif %}
+      </div>
+
+      <div class="field">
+        <label for="email">Email (so I can reply)</label>
+        <input type="email" id="email" name="email" required
+               value="{{ (form.email if form else '') | e }}">
+        {% if errors and errors.email %}<span class="error">{{ errors.email }}</span>{% endif %}
+      </div>
+
+      {% set selected_topic = form.topic if form else '' %}
+      <div class="field">
+        <label for="topic">What&rsquo;s this about?</label>
+        <select id="topic" name="topic" required>
+          <option value="" {% if not selected_topic %}selected{% endif %} disabled>&mdash; Select a topic &mdash;</option>
+          <option value="david-simmons" {% if selected_topic == 'david-simmons' %}selected{% endif %}>David Simmons archive</option>
+          <option value="research" {% if selected_topic == 'research' %}selected{% endif %}>Research notes (Computer Science, etc.)</option>
+          <option value="projects" {% if selected_topic == 'projects' %}selected{% endif %}>Projects (this site, AI agent)</option>
+          <option value="blog" {% if selected_topic == 'blog' %}selected{% endif %}>A blog post</option>
+          <option value="correction" {% if selected_topic == 'correction' %}selected{% endif %}>Correction or site issue</option>
+          <option value="other" {% if selected_topic == 'other' %}selected{% endif %}>Something else</option>
+        </select>
+        {% if errors and errors.topic %}<span class="error">{{ errors.topic }}</span>{% endif %}
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required>{{ (form.message if form else '') | e }}</textarea>
+        {% if errors and errors.message %}<span class="error">{{ errors.message }}</span>{% endif %}
+      </div>
+
+      {% if turnstile_site_key %}
+      <div class="field">
+        <div class="cf-turnstile" data-sitekey="{{ turnstile_site_key }}" data-theme="light"></div>
+      </div>
+      {% endif %}
+
+      <button type="submit">Send message</button>
+    </form>
+
+    {% if turnstile_site_key %}
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    {% endif %}
+
+    <p class="small" style="max-width: 42rem;">
+      Messages sent through the form reach me by email &mdash; I&rsquo;ll reply
+      from my own address once you write. No email addresses are published on
+      this site, and the form is protected against automated submissions by
+      Cloudflare Turnstile.
+    </p>
+  {% endif %}
+
+  <section style="margin-top: var(--s-6);">
+    <span class="eyebrow">Find me elsewhere</span>
+    <h2>Handles</h2>
+    <ul class="handles">
+      <li>
+        <span class="handle-label">GitHub</span>
+        <a href="https://github.com/lukesimmonsnz" target="_blank" rel="noopener">github.com/lukesimmonsnz</a>
+      </li>
+      <li>
+        <span class="handle-label">LinkedIn</span>
+        <a href="https://linkedin.com/in/lukesimmonsnz" target="_blank" rel="noopener">linkedin.com/in/lukesimmonsnz</a>
+      </li>
+      <li>
+        <span class="handle-label">YouTube</span>
+        <a href="https://youtube.com/@lukesimmonsnz" target="_blank" rel="noopener">@lukesimmonsnz</a>
+        <span class="handle-note">main channel</span>
+      </li>
+      <li>
+        <span class="handle-label">YouTube</span>
+        <a href="https://youtube.com/@nzgamerluke" target="_blank" rel="noopener">@nzgamerluke</a>
+        <span class="handle-note">gaming</span>
+      </li>
+      <li>
+        <span class="handle-label">Twitch</span>
+        <a href="https://twitch.tv/nzgamerluke" target="_blank" rel="noopener">twitch.tv/nzgamerluke</a>
+      </li>
+      <li>
+        <span class="handle-label">Chess.com</span>
+        <a href="https://chess.com/member/nzgamerluke" target="_blank" rel="noopener">nzgamerluke</a>
+      </li>
+      <li>
+        <span class="handle-label">Instagram</span>
+        <a href="https://instagram.com/nzgamerluke" target="_blank" rel="noopener">@nzgamerluke</a>
+      </li>
+    </ul>
+    <p class="small" style="margin-top: var(--s-3);">
+      For anything that deserves a reply, please use the form above &mdash; I read it more reliably than any feed.
+    </p>
+  </section>
+</div>
+{% endblock %}

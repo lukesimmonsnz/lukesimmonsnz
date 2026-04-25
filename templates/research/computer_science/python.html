@@ -1,0 +1,255 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Python &middot; Computer Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Python&rsquo;s rise from scripting convenience to the dominant language of data science, machine learning, and scientific computing &mdash; its design, internals, and ecosystem.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Computer Science', url_for('research.cs_index')),
+    ('Python', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Computer Science</span>
+    <h1>Python: Language Design, Internals &amp; the Scientific Ecosystem</h1>
+    <hr class="rule">
+    <p class="lede">Python evolved from a scripting convenience into the dominant language of data science, machine learning, and scientific computing &mdash; a rise driven by deliberate design choices and a thriving open-source community.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This section covers Python&rsquo;s origins and design philosophy, the internals of the CPython reference implementation (including the Global Interpreter Lock), the scientific computing stack (NumPy, SciPy, Pandas, Matplotlib), the machine learning ecosystem (scikit-learn, TensorFlow, PyTorch), and Python&rsquo;s role in modern AI pipelines. Academic and community sources are cited throughout.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#history">History &amp; Design Philosophy</a></li>
+        <li><a href="#language">Language Features</a></li>
+        <li><a href="#cpython">CPython Internals &amp; the GIL</a></li>
+        <li><a href="#scientific">The Scientific Stack</a></li>
+        <li><a href="#ml">Machine Learning Ecosystem</a></li>
+        <li><a href="#async">Async Python</a></li>
+        <li><a href="#packaging">Packaging &amp; Environments</a></li>
+        <li><a href="#future">Python&rsquo;s Future</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="history">1. History &amp; Design Philosophy</h2>
+
+    <p>Guido van Rossum began developing Python in December 1989 at Centrum Wiskunde &amp; Informatica (CWI) in the Netherlands as a successor to the ABC language. Python 1.0 was released in January 1994, Python 2.0 in 2000, and the landmark Python 3.0 in 2008 &mdash; a deliberately backward-incompatible release that cleaned up long-standing design decisions at the cost of a difficult decade-long transition<sup><a href="{{ url_for('research.cs_references') }}#ref-18">[18]</a></sup>.</p>
+
+    <p>The language&rsquo;s design is governed by <strong>Python Enhancement Proposals (PEPs)</strong>. PEP 20, &ldquo;The Zen of Python&rdquo; &mdash; originally posted by Tim Peters to the python-list mailing list in 1999 and formally submitted as PEP 20 in 2004 &mdash; encodes 19 guiding aphorisms accessible by typing <code>import this</code> in any Python interpreter:</p>
+
+    <blockquote>
+      &ldquo;Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Readability counts.&rdquo;<br>
+      <cite>&mdash; Tim Peters, PEP 20: The Zen of Python</cite>
+    </blockquote>
+
+    <p>This philosophy &mdash; prioritising programmer productivity and code readability over raw performance &mdash; directly shaped Python&rsquo;s syntax (significant whitespace, no semicolons, no type annotations required) and its library design principles.</p>
+
+    <h2 id="language">2. Core Language Features</h2>
+
+    <h3>2.1 Dynamic Typing &amp; Duck Typing</h3>
+    <p>Python uses <strong>dynamic typing</strong>: variable types are determined at runtime, not at compile time. This reduces boilerplate but transfers certain classes of errors from compile time to runtime. Python&rsquo;s object model is duck-typed &mdash; an object&rsquo;s suitability is determined by its methods and properties, not its declared class:</p>
+
+    <pre><code># Duck typing: anything with __len__ works here
+def print_length(obj):
+    print(f"Length: {len(obj)}")
+
+print_length([1, 2, 3])        # list
+print_length("hello")          # str
+print_length({"a": 1, "b": 2}) # dict — all work</code></pre>
+
+    <h3>2.2 First-Class Functions &amp; Closures</h3>
+    <p>Functions in Python are first-class objects: they can be stored in variables, passed as arguments, and returned from other functions. This enables functional programming patterns such as <strong>map</strong>, <strong>filter</strong>, and <strong>decorators</strong> &mdash; a widely used metaprogramming mechanism formalised in PEP 318.</p>
+
+    <pre><code>import functools
+
+def memoize(fn):
+    cache = {}
+    @functools.wraps(fn)
+    def wrapper(*args):
+        if args not in cache:
+            cache[args] = fn(*args)
+        return cache[args]
+    return wrapper
+
+@memoize
+def fib(n):
+    return n if n < 2 else fib(n-1) + fib(n-2)</code></pre>
+
+    <h3>2.3 Generators &amp; Iterators</h3>
+    <p>Python&rsquo;s <strong>iterator protocol</strong> (<code>__iter__</code>, <code>__next__</code>) and <strong>generators</strong> (functions using <code>yield</code>) enable lazy evaluation of potentially infinite sequences. This is the basis of memory-efficient data pipelines &mdash; a pattern central to PyTorch&rsquo;s <code>DataLoader</code> and TensorFlow&rsquo;s <code>tf.data</code>.</p>
+
+    <pre><code># Lazy infinite Fibonacci sequence
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+gen = fibonacci()
+first_ten = [next(gen) for _ in range(10)]
+# [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]</code></pre>
+
+    <h3>2.4 Type Hints (PEP 484)</h3>
+    <p>PEP 484 (van Rossum, Lehtosalo &amp; Langa, 2014; accepted for Python 3.5 in 2015) introduced optional type hints, enabling static analysis tools such as <code>mypy</code>, <code>pyright</code>, and <code>ruff</code> to catch type errors before runtime without changing execution semantics. This represents a pragmatic middle ground between fully dynamic and fully static typing:</p>
+
+    <pre><code>from typing import Sequence
+
+def mean(values: Sequence[float]) -> float:
+    return sum(values) / len(values)</code></pre>
+
+    <h2 id="cpython">3. CPython Internals &amp; the GIL</h2>
+
+    <h3>3.1 The Reference Implementation</h3>
+    <p>CPython is the canonical Python interpreter, written in C. Python source is compiled to <strong>bytecode</strong> (.pyc files) and executed by the CPython virtual machine. The bytecode instruction set can be inspected with the <code>dis</code> module. Alternative implementations include PyPy (JIT-compiled, 5&ndash;10&times; faster for CPU-bound loops), Jython (runs on the JVM), and MicroPython (for microcontrollers).</p>
+
+    <h3>3.2 The Global Interpreter Lock (GIL)</h3>
+    <p>CPython uses reference counting for memory management, protected by a single mutex: the <strong>Global Interpreter Lock</strong>. The GIL ensures that only one thread executes Python bytecode at a time, preventing data corruption in reference counts. The practical consequence is that CPU-bound Python threads cannot achieve true parallelism on multi-core hardware<sup><a href="{{ url_for('research.cs_references') }}#ref-19">[19]</a></sup>.</p>
+
+    <aside class="notice">
+      <strong>GIL removal: PEP 703.</strong> Python 3.13 (2024) shipped an experimental &ldquo;free-threaded&rdquo; build (PEP 703) that removes the GIL, enabled via <code>python3.13t</code>. Extension authors must audit their C extensions for thread safety. Full ecosystem support is expected in Python 3.15+.
+    </aside>
+
+    <p>Common workarounds for the GIL include:</p>
+    <ul>
+      <li><strong><code>multiprocessing</code></strong> &mdash; spawns separate OS processes, each with its own GIL</li>
+      <li><strong>C extensions</strong> &mdash; NumPy, SciPy release the GIL around BLAS/LAPACK calls</li>
+      <li><strong><code>concurrent.futures</code></strong> &mdash; thread pool useful for I/O-bound tasks</li>
+    </ul>
+
+    <h3>3.3 Memory Management</h3>
+    <p>CPython allocates small objects (&lt; 512 bytes) from a pool allocator (pymalloc) for performance. Every Python object carries a reference count; when this reaches zero, the object is immediately deallocated. A cyclic garbage collector (based on Bacon &amp; Rajan&rsquo;s trial-deletion algorithm) handles reference cycles &mdash; for example, objects that reference each other.</p>
+
+    <h2 id="scientific">4. The Scientific Computing Stack</h2>
+
+    <p>Oliphant&rsquo;s 2007 paper<sup><a href="{{ url_for('research.cs_references') }}#ref-20">[20]</a></sup> describes Python&rsquo;s early role in scientific computing and argues for its suitability due to interactive development, open source libraries, and interoperability with Fortran and C. Today, the scientific Python ecosystem is maintained under the <strong>Scientific Python</strong> project umbrella.</p>
+
+    <h3>4.1 NumPy</h3>
+    <p>NumPy (Numerical Python)<sup><a href="{{ url_for('research.cs_references') }}#ref-21">[21]</a></sup> provides the <code>ndarray</code> &mdash; an N-dimensional, typed array stored in contiguous memory. NumPy operations are implemented in C and Fortran (via BLAS/LAPACK for linear algebra) and run with no GIL overhead. <strong>Vectorisation</strong> &mdash; replacing Python loops with array operations &mdash; is the primary technique for achieving performance:</p>
+
+    <pre><code>import numpy as np
+
+# Python loop: ~1000× slower
+result = [x**2 for x in range(1_000_000)]
+
+# NumPy vectorised: executes in C
+arr = np.arange(1_000_000, dtype=np.float64)
+result = arr ** 2  # ≈1ms vs ≈200ms</code></pre>
+
+    <h3>4.2 SciPy</h3>
+    <p>SciPy extends NumPy with algorithms for integration, optimisation, interpolation, signal processing, linear algebra, and statistics &mdash; wrapping well-tested Fortran libraries (QUADPACK, MINPACK, LAPACK) in a Python API.</p>
+
+    <h3>4.3 Pandas</h3>
+    <p>McKinney&rsquo;s 2010 paper<sup><a href="{{ url_for('research.cs_references') }}#ref-22">[22]</a></sup> introduced Pandas, which provides the <code>DataFrame</code> &mdash; a table of labelled, heterogeneous columns. Pandas is the dominant tool for data wrangling and exploratory analysis, drawing on ideas from R&rsquo;s data.frame and SQL. The <code>groupby</code> operation, in particular, implements split-apply-combine &mdash; a pattern identified by Wickham (2011) as fundamental to data analysis.</p>
+
+    <h3>4.4 Matplotlib &amp; Visualisation</h3>
+    <p>Hunter&rsquo;s Matplotlib (2007)<sup><a href="{{ url_for('research.cs_references') }}#ref-23">[23]</a></sup> provides publication-quality 2D plotting in a MATLAB-compatible API. The modern ecosystem also includes Seaborn (statistical visualisation), Plotly (interactive web plots), and Altair (declarative grammar of graphics based on Vega-Lite).</p>
+
+    <h2 id="ml">5. Machine Learning Ecosystem</h2>
+
+    <p>Python became the standard language for machine learning research not by design but by network effects: once Google&rsquo;s TensorFlow (2015) and Facebook&rsquo;s PyTorch (2016) chose Python APIs, the entire research community converged on the language.</p>
+
+    <h3>5.1 scikit-learn</h3>
+    <p>Pedregosa <em>et al.</em> (2011)<sup><a href="{{ url_for('research.cs_references') }}#ref-24">[24]</a></sup> described scikit-learn as a unified, consistent API for classical machine learning: a <code>fit</code>/<code>predict</code>/<code>transform</code> interface covering linear models, SVMs, decision trees, ensemble methods, clustering, and dimensionality reduction. Its <code>Pipeline</code> API chains preprocessing and modelling steps, preventing data leakage in cross-validation.</p>
+
+    <pre><code>from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
+from sklearn.model_selection import cross_val_score
+
+pipe = Pipeline([
+    ("scaler", StandardScaler()),
+    ("svm",    SVC(kernel="rbf", C=1.0)),
+])
+scores = cross_val_score(pipe, X, y, cv=5)
+print(f"Accuracy: {scores.mean():.3f} ± {scores.std():.3f}")</code></pre>
+
+    <h3>5.2 PyTorch</h3>
+    <p>PyTorch<sup><a href="{{ url_for('research.cs_references') }}#ref-25">[25]</a></sup> provides <em>define-by-run</em> (dynamic) computation graphs via its <code>autograd</code> engine, recording operations on tensors and computing gradients via reverse-mode automatic differentiation. This imperative style made debugging deep models significantly easier than TensorFlow 1.x&rsquo;s static graph approach, driving rapid academic adoption.</p>
+
+    <pre><code>import torch
+import torch.nn as nn
+
+class MLP(nn.Module):
+    def __init__(self, in_dim, hidden, out_dim):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(in_dim, hidden),
+            nn.ReLU(),
+            nn.Linear(hidden, out_dim),
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        return self.net(x)</code></pre>
+
+    <h3>5.3 The Hugging Face Ecosystem</h3>
+    <p>Hugging Face&rsquo;s <code>transformers</code> library (Wolf <em>et al.</em>, 2020)<sup><a href="{{ url_for('research.cs_references') }}#ref-26">[26]</a></sup> standardised access to pre-trained transformer models (BERT, GPT, T5, LLaMA) with a consistent API for fine-tuning and inference. The Hugging Face Hub has become the de facto model registry of the NLP/AI community, hosting hundreds of thousands of model checkpoints.</p>
+
+    <h2 id="async">6. Async Python</h2>
+
+    <p>PEP 492 (Selivanov, 2015) introduced <code>async</code>/<code>await</code> syntax in Python 3.5, building on the <code>asyncio</code> event loop introduced in Python 3.4. Asynchronous Python enables I/O-bound concurrency (network requests, database queries, file I/O) without threads, using cooperative multitasking within a single OS thread:</p>
+
+    <pre><code>import asyncio
+import aiohttp
+
+async def fetch(session: aiohttp.ClientSession, url: str) -> str:
+    async with session.get(url) as resp:
+        return await resp.text()
+
+async def main():
+    async with aiohttp.ClientSession() as session:
+        pages = await asyncio.gather(
+            fetch(session, "https://example.com"),
+            fetch(session, "https://example.org"),
+        )
+    return pages</code></pre>
+
+    <p>Web frameworks built on asyncio &mdash; FastAPI, Starlette, aiohttp &mdash; have become standard choices for building high-throughput Python API servers, particularly for AI model inference endpoints.</p>
+
+    <h2 id="packaging">7. Packaging &amp; Environments</h2>
+
+    <p>Python&rsquo;s packaging story evolved from <code>distutils</code> (1998) through <code>setuptools</code>, <code>pip</code>, and <code>virtualenv</code>, to the modern PEP 517/518 build system standard. The <strong>pyproject.toml</strong> file (PEP 518, 2016) is now the single source of truth for project metadata and build configuration.</p>
+
+    <table>
+      <thead><tr><th>Tool</th><th>Purpose</th><th>Year</th></tr></thead>
+      <tbody>
+        <tr><td>pip</td><td>Package installer from PyPI</td><td>2008</td></tr>
+        <tr><td>virtualenv / venv</td><td>Isolated environment creation</td><td>2007 / 2012</td></tr>
+        <tr><td>conda</td><td>Environment + binary package manager (Anaconda)</td><td>2012</td></tr>
+        <tr><td>Poetry</td><td>Dependency resolver + build backend</td><td>2018</td></tr>
+        <tr><td>uv</td><td>Rust-powered extremely fast pip replacement</td><td>2024</td></tr>
+        <tr><td>rye</td><td>End-to-end project manager, uses uv internally</td><td>2023</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="future">8. Python&rsquo;s Future</h2>
+
+    <p>Python&rsquo;s trajectory in the 2020s is shaped by several convergent forces:</p>
+    <ul>
+      <li><strong>GIL removal</strong> (PEP 703, Python 3.13+) &mdash; true multi-threaded parallelism</li>
+      <li><strong>JIT compilation</strong> (PEP 744, Python 3.13) &mdash; copy-and-patch JIT improving startup and loop performance</li>
+      <li><strong>Sub-interpreters</strong> (PEP 554) &mdash; lightweight concurrency using multiple Python interpreters in one process</li>
+      <li><strong>Mojo</strong> (Modular, 2023) &mdash; a Python-compatible language with hardware-level performance, designed for AI workloads</li>
+    </ul>
+
+    <aside class="notice">
+      <strong>Performance landscape.</strong> For numerically intensive code, Python&rsquo;s performance is effectively that of the underlying C/Fortran/CUDA libraries it calls. Python overhead typically amounts to &lt;1% of total runtime in well-vectorised ML training loops.
+    </aside>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.cs_index'), 'title': 'Foundations of Computer Science'},
+      next={'url': url_for('research.cs_rust'), 'title': 'Rust'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

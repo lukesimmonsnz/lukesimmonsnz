@@ -1,0 +1,14 @@
+id: driver.supply_cyclicality
+name: Cyclicality of the construction sector
+description: >
+  Housing supply in Auckland, as in most market economies, moves in boom-bust
+  cycles of roughly 7–15 years. Each downturn destroys firms and skilled
+  workforce that are slow and expensive to rebuild, producing hysteresis in
+  supply elasticity. Over 50- and 100-year windows the cycle is a
+  first-class structural feature, not noise around a trend.
+consensus: consensus
+category: economic
+timescale: long
+affects:
+  - problem.housing.supply_economics
+  - problem.housing.affordability

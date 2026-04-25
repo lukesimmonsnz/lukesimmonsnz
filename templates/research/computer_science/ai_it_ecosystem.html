@@ -1,0 +1,197 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}AI &amp; IT Ecosystem &middot; Computer Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}The full vertical stack of modern computing &mdash; from undersea fibre cables and data centres to transformers and large language models &mdash; as one interconnected global system.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Computer Science', url_for('research.cs_index')),
+    ('AI &amp; IT Ecosystem', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Computer Science</span>
+    <h1>The AI &amp; IT Ecosystem: How the World Connects</h1>
+    <hr class="rule">
+    <p class="lede">Information technology is not a collection of independent disciplines &mdash; it is a single global system of interdependent layers, from undersea fibre cables to the transformer attention heads that generate text, each layer built on and constrained by the layers beneath it.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This section traces the full vertical stack of modern computing: physical networking infrastructure, cloud and edge architectures, virtualisation and containers, the history and mathematics of machine learning and deep learning, the transformer architecture and large language models, and the sociotechnical implications of AI integration across industry. Connections between all layers are emphasised throughout, with formal academic citations grounding each claim.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#physical">Physical Infrastructure: Cables, Data Centres &amp; Radio</a></li>
+        <li><a href="#cloud">Cloud Computing &amp; Virtualisation</a></li>
+        <li><a href="#edge">Edge Computing &amp; IoT</a></li>
+        <li><a href="#ml-history">Machine Learning: Historical Arc</a></li>
+        <li><a href="#deep-learning">Deep Learning Revolution</a></li>
+        <li><a href="#transformers">Transformers &amp; Large Language Models</a></li>
+        <li><a href="#mlops">MLOps &amp; the AI Production Stack</a></li>
+        <li><a href="#security-ai">Security in the AI Era</a></li>
+        <li><a href="#connections">How It All Connects</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="physical">1. Physical Infrastructure: Cables, Data Centres &amp; Radio</h2>
+
+    <h3>1.1 The Internet&rsquo;s Physical Layer</h3>
+    <p>The Internet is a physical object. As of the mid-2020s, well over 1 million kilometres of submarine fibre-optic cables carry the overwhelming majority of intercontinental Internet traffic. Each cable uses dense wavelength-division multiplexing (DWDM) to carry dozens of channels, each at 100&ndash;400 Gbps, amplified by erbium-doped fibre amplifiers (EDFAs) every ~80 km or so. The 2Africa cable &mdash; at ~45,000 km, the longest submarine cable ever built &mdash; connects 33 countries across Africa, Europe, and Asia, with a design capacity of ~180 Tbps across 16 fibre pairs; its core system entered service in late 2025.</p>
+
+    <h3>1.2 Data Centres</h3>
+    <p>A hyperscale data centre is a thermodynamic and logistical challenge as much as a computing one. Google, Microsoft, Meta, and Amazon each operate many dozens of facilities worldwide, consuming tens of gigawatts of power collectively. Power Usage Effectiveness (PUE) &mdash; the ratio of total facility power to IT equipment power &mdash; has fallen dramatically from industry averages well above 2.0 in the late 2000s to roughly 1.1 at leading hyperscale sites today (Google reported a global fleet-wide PUE of ~1.09 in 2024), driven by liquid cooling, custom hardware, and workload scheduling.</p>
+
+    <h3>1.3 Wireless: From 4G to 5G to Wi-Fi 7</h3>
+    <p>Mobile broadband (LTE/4G) uses OFDMA modulation on licensed spectrum, providing ~50&ndash;150 Mbps. 5G New Radio (3GPP Release 15, 2018) introduces millimetre-wave bands (24&ndash;100 GHz) for multi-gigabit throughput with sub-millisecond latency &mdash; critical for autonomous vehicles and real-time industrial IoT. Wi-Fi 7 (IEEE 802.11be, 2024) extends this to unlicensed spectrum, achieving 46 Gbps theoretical throughput via 320 MHz channels and 4096-QAM modulation.</p>
+
+    <h2 id="cloud">2. Cloud Computing &amp; Virtualisation</h2>
+
+    <p>Cloud computing formalised the utility model of computing: pay for what you use, provision in seconds, release immediately. NIST&rsquo;s 2011 definition<sup><a href="{{ url_for('research.cs_references') }}#ref-29">[29]</a></sup> characterises cloud by five essential characteristics: on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.</p>
+
+    <h3>2.1 Virtualisation</h3>
+    <p>IBM&rsquo;s VM/370 (announced 1972, building on the earlier CP/CMS research system) brought commercial virtual machine technology to the mainstream. Modern hypervisors are either <strong>Type 1</strong> (bare metal: VMware ESXi, KVM, Hyper-V) or <strong>Type 2</strong> (hosted: VirtualBox, Parallels). The Intel VT-x (2005) and AMD-V (2006) hardware virtualisation extensions enabled near-native VM performance by moving privilege transitions into hardware.</p>
+
+    <p><strong>Containers</strong> (popularised by Docker, 2013) virtualise the OS rather than the hardware, sharing the host kernel while isolating filesystems, network namespaces, and process trees via Linux cgroups and namespaces. Container images (typically layered ext4 filesystems, OCI format) are the dominant packaging unit for cloud-native software.</p>
+
+    <h3>2.2 Kubernetes &amp; Orchestration</h3>
+    <p>Kubernetes (Google, 2014; open-sourced from the internal Borg system<sup><a href="{{ url_for('research.cs_references') }}#ref-30">[30]</a></sup>) automates container scheduling, scaling, service discovery, and rolling updates across clusters of thousands of nodes. The control plane (etcd, API server, scheduler, controller manager) and the data plane (kubelet, kube-proxy on each node) together form the backbone of cloud-native application deployment globally.</p>
+
+    <h3>2.3 Serverless &amp; FaaS</h3>
+    <p>Function-as-a-Service (FaaS) &mdash; AWS Lambda (2014), Google Cloud Functions, Cloudflare Workers &mdash; abstracts away servers entirely. A function is uploaded as a package, invoked per HTTP request or event, and billed in 100-millisecond increments. Cloudflare Workers uses V8 isolates (the JavaScript engine from Chrome) rather than containers for cold starts in the single-digit millisecond range.</p>
+
+    <h2 id="edge">3. Edge Computing &amp; IoT</h2>
+
+    <p>The Internet of Things connects an estimated 18&ndash;19 billion devices globally by the end of 2024 (IoT Analytics, State of IoT 2024) &mdash; sensors, cameras, industrial controllers, vehicles &mdash; generating data faster than it can be economically sent to centralised clouds. <strong>Edge computing</strong> moves compute to the data source: a factory floor server, a cell tower, a vehicle&rsquo;s onboard computer.</p>
+
+    <p>The MQTT protocol (ISO/IEC 20922, 2016) &mdash; a lightweight publish/subscribe protocol over TCP &mdash; is the dominant IoT messaging standard, designed for constrained devices with limited bandwidth. Edge inference (running ML models locally) is driven by frameworks like TensorFlow Lite and ONNX Runtime, which quantise float32 models to int8 for deployment on ARM Cortex-M or RISC-V microcontrollers.</p>
+
+    <h2 id="ml-history">4. Machine Learning: Historical Arc</h2>
+
+    <p>Machine learning is the study of algorithms that improve with experience (Mitchell, 1997). Its history is one of alternating booms and winters, driven by the interplay of algorithms, data, and compute.</p>
+
+    <table>
+      <thead><tr><th>Era</th><th>Key Development</th><th>Citation</th></tr></thead>
+      <tbody>
+        <tr><td>1943</td><td>McCulloch &amp; Pitts artificial neuron &mdash; logical model of biological neurons</td><td><sup><a href="{{ url_for('research.cs_references') }}#ref-31">[31]</a></sup></td></tr>
+        <tr><td>1958</td><td>Rosenblatt&rsquo;s perceptron &mdash; first learning algorithm</td><td><sup><a href="{{ url_for('research.cs_references') }}#ref-32">[32]</a></sup></td></tr>
+        <tr><td>1969</td><td>Minsky &amp; Papert prove perceptrons cannot learn XOR &mdash; first AI winter</td><td></td></tr>
+        <tr><td>1986</td><td>Rumelhart, Hinton &amp; Williams &mdash; backpropagation popularised</td><td><sup><a href="{{ url_for('research.cs_references') }}#ref-33">[33]</a></sup></td></tr>
+        <tr><td>1995</td><td>Vapnik introduces SVMs &mdash; kernel methods dominate 2000s</td><td></td></tr>
+        <tr><td>1998</td><td>LeCun&rsquo;s LeNet &mdash; convolutional networks for digit recognition</td><td><sup><a href="{{ url_for('research.cs_references') }}#ref-34">[34]</a></sup></td></tr>
+        <tr><td>2012</td><td>AlexNet wins ImageNet &mdash; GPU-accelerated deep CNNs revive the field</td><td><sup><a href="{{ url_for('research.cs_references') }}#ref-35">[35]</a></sup></td></tr>
+        <tr><td>2017</td><td>Transformer architecture (Vaswani et al.) &mdash; foundation of modern NLP</td><td><sup><a href="{{ url_for('research.cs_references') }}#ref-36">[36]</a></sup></td></tr>
+        <tr><td>2020</td><td>GPT-3 (Brown et al.) &mdash; few-shot learning emergent in large models</td><td><sup><a href="{{ url_for('research.cs_references') }}#ref-37">[37]</a></sup></td></tr>
+        <tr><td>2022&ndash;24</td><td>ChatGPT, Gemini, Claude, LLaMA &mdash; LLMs enter mainstream deployment</td><td></td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="deep-learning">5. Deep Learning Revolution</h2>
+
+    <p>LeCun, Bengio, and Hinton&rsquo;s 2015 <em>Nature</em> review<sup><a href="{{ url_for('research.cs_references') }}#ref-38">[38]</a></sup> marked the field&rsquo;s mainstream arrival. Deep learning is characterised by end-to-end learning of representations directly from raw data, in contrast to earlier ML workflows that required hand-crafted features.</p>
+
+    <h3>5.1 Convolutional Neural Networks (CNNs)</h3>
+    <p>CNNs exploit the spatial structure of images via learnable filters applied across the input (convolutional layers), followed by subsampling (pooling) and fully connected layers. The AlexNet result (Krizhevsky, Sutskever, Hinton, 2012)<sup><a href="{{ url_for('research.cs_references') }}#ref-35">[35]</a></sup> &mdash; a 15.3% top-5 error rate vs the 26.2% runner-up &mdash; was the inflection point that triggered the current era of deep learning.</p>
+
+    <h3>5.2 Recurrent Networks &amp; LSTM</h3>
+    <p>Recurrent Neural Networks (RNNs) process sequential data by maintaining a hidden state. The <strong>Long Short-Term Memory</strong> (LSTM) cell (Hochreiter &amp; Schmidhuber, 1997) solves the vanishing gradient problem in vanilla RNNs using a gated memory mechanism, enabling modelling of long-range dependencies in text and speech.</p>
+
+    <h3>5.3 The Hardware Substrate: GPUs &amp; TPUs</h3>
+    <p>Deep learning training is dominated by <strong>matrix multiplication</strong> &mdash; the core operation of both fully connected layers (linear algebra) and attention mechanisms (dot-product attention). NVIDIA&rsquo;s CUDA platform (2007) made it practical to express these computations on massively parallel GPU hardware. Google&rsquo;s Tensor Processing Units (TPUs, 2016)<sup><a href="{{ url_for('research.cs_references') }}#ref-39">[39]</a></sup> are custom ASICs optimised specifically for the 8-bit integer matrix multiplications used in inference, providing 30&ndash;100&times; the energy efficiency of GPUs for production inference.</p>
+
+    <h2 id="transformers">6. Transformers &amp; Large Language Models</h2>
+
+    <h3>6.1 The Transformer Architecture</h3>
+    <p>Vaswani <em>et al.</em>&rsquo;s 2017 paper, &ldquo;Attention Is All You Need&rdquo;<sup><a href="{{ url_for('research.cs_references') }}#ref-36">[36]</a></sup>, replaced recurrence with a pure attention mechanism. <strong>Scaled dot-product attention</strong> computes, for a query Q, key K, and value V:</p>
+
+    <pre><code>Attention(Q, K, V) = softmax(QKᵀ / √dₖ) · V</code></pre>
+
+    <p><strong>Multi-head attention</strong> runs h parallel attention heads and concatenates their outputs, learning different aspects of the input at each position. The transformer&rsquo;s <strong>self-attention</strong> allows each token to attend to all other tokens in O(n&sup2;) complexity &mdash; the key limitation that positional encoding extensions (RoPE, ALiBi) and efficient attention variants (FlashAttention, linear attention) work to address.</p>
+
+    <h3>6.2 Scaling Laws</h3>
+    <p>Kaplan <em>et al.</em> (2020)<sup><a href="{{ url_for('research.cs_references') }}#ref-40">[40]</a></sup> empirically established that transformer language model performance follows power-law scaling with respect to model parameters (N), training tokens (D), and compute (C), with near-perfect predictability across seven orders of magnitude. Chinchilla scaling (Hoffmann <em>et al.</em>, 2022)<sup><a href="{{ url_for('research.cs_references') }}#ref-41">[41]</a></sup> refined the optimal compute allocation, showing that prior large models were significantly undertrained relative to their parameter count.</p>
+
+    <h3>6.3 RLHF &amp; Instruction Tuning</h3>
+    <p>Pre-trained language models are raw next-token predictors. Ouyang <em>et al.</em> (2022, InstructGPT)<sup><a href="{{ url_for('research.cs_references') }}#ref-42">[42]</a></sup> introduced <strong>Reinforcement Learning from Human Feedback (RLHF)</strong>: first fine-tune the model on demonstrations of desired behaviour (SFT), then train a reward model on human preference comparisons, then optimise the language model against the reward model using PPO. This process converts a capable but unsteerable language model into a usable AI assistant.</p>
+
+    <h3>6.4 Current Frontier Models</h3>
+    <table>
+      <thead><tr><th>Model</th><th>Organisation</th><th>Key Contribution</th></tr></thead>
+      <tbody>
+        <tr><td>GPT-4 (2023)</td><td>OpenAI</td><td>Multimodal, RLHF at scale, strong reasoning</td></tr>
+        <tr><td>Gemini 1.5 (2024)</td><td>Google DeepMind</td><td>1M+ token context window, MoE architecture</td></tr>
+        <tr><td>Claude 3.x (2024)</td><td>Anthropic</td><td>Constitutional AI, long-context, safety focus</td></tr>
+        <tr><td>LLaMA 3 (2024)</td><td>Meta AI</td><td>Open weights, competitive at 70B+ parameter scale</td></tr>
+        <tr><td>DeepSeek-V3 (2024)</td><td>DeepSeek</td><td>MoE, mixture-of-experts efficiency at low training cost</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="mlops">7. MLOps &amp; the AI Production Stack</h2>
+
+    <p>Taking an ML model from research notebook to production system requires a discipline sometimes called <strong>MLOps</strong> &mdash; the application of DevOps principles to machine learning workflows. Sculley <em>et al.</em> (2015)<sup><a href="{{ url_for('research.cs_references') }}#ref-43">[43]</a></sup> described the &ldquo;hidden technical debt in machine learning systems&rdquo;: ML code is typically a small fraction of a production ML system; the majority is data pipelines, feature engineering, configuration management, and monitoring.</p>
+
+    <h3>7.1 The ML Pipeline</h3>
+    <ol>
+      <li><strong>Data ingestion &amp; versioning</strong> &mdash; DVC, LakeFS, Delta Lake</li>
+      <li><strong>Feature engineering</strong> &mdash; Feast (feature store), Tecton</li>
+      <li><strong>Training orchestration</strong> &mdash; Kubeflow, MLflow, Weights &amp; Biases</li>
+      <li><strong>Model registry</strong> &mdash; MLflow Models, Hugging Face Hub</li>
+      <li><strong>Serving &amp; inference</strong> &mdash; TorchServe, Triton Inference Server, vLLM</li>
+      <li><strong>Monitoring</strong> &mdash; Evidently AI, Arize, Grafana + custom metrics</li>
+    </ol>
+
+    <h3>7.2 LLM Inference Infrastructure</h3>
+    <p>Serving large transformer models at scale requires innovations beyond standard ML serving. <strong>Continuous batching</strong> (Orca, 2022) groups requests of varying lengths dynamically, improving GPU utilisation from ~30% to ~70%. <strong>PagedAttention</strong> (Kwon <em>et al.</em>, 2023, vLLM) adapts OS virtual memory techniques to manage the KV cache across requests, reducing memory waste and enabling 24&times; throughput improvements over naive implementations.</p>
+
+    <h2 id="security-ai">8. Security in the AI Era</h2>
+
+    <p>AI systems introduce novel attack surfaces alongside classical vulnerabilities:</p>
+
+    <ul>
+      <li><strong>Prompt injection</strong> &mdash; adversarial inputs causing LLMs to deviate from intended behaviour (Greshake <em>et al.</em>, 2023)</li>
+      <li><strong>Training data poisoning</strong> &mdash; inserting malicious examples to corrupt model behaviour at specific inputs (backdoor attacks)</li>
+      <li><strong>Model extraction</strong> &mdash; querying a model to reconstruct its weights or decision boundary</li>
+      <li><strong>Adversarial examples</strong> &mdash; imperceptible input perturbations that cause misclassification (Goodfellow <em>et al.</em>, 2014)<sup><a href="{{ url_for('research.cs_references') }}#ref-44">[44]</a></sup></li>
+      <li><strong>Membership inference</strong> &mdash; determining whether a specific data point was in the training set (privacy leak)</li>
+    </ul>
+
+    <p>The field of <strong>AI safety</strong> studies both near-term (misuse, misalignment with user intent) and long-term (value alignment, superintelligence) risks. Anthropic&rsquo;s Constitutional AI approach<sup><a href="{{ url_for('research.cs_references') }}#ref-45">[45]</a></sup> attempts to encode safety principles directly into model training via a process of self-critique and revision.</p>
+
+    <h2 id="connections">9. How It All Connects: The Full Stack</h2>
+
+    <p>The complete path from a user&rsquo;s query to an AI-generated response illustrates how every layer described in this reference site participates:</p>
+
+    <ol>
+      <li><strong>User device</strong> &rarr; HTTP/3 request over QUIC/UDP, TLS 1.3 encrypted (CS: networking, cryptography)</li>
+      <li><strong>DNS resolution</strong> &rarr; Anycast routing to the nearest edge PoP (CS: networking, distributed systems)</li>
+      <li><strong>Edge proxy</strong> &rarr; Cloudflare Pingora (written in Rust), terminates TLS, rate-limits, routes (Rust)</li>
+      <li><strong>Load balancer</strong> &rarr; distributes to a Kubernetes pod in the nearest region (CS: distributed systems, cloud)</li>
+      <li><strong>Inference server</strong> &rarr; Python FastAPI application calls vLLM (AI: LLM serving)</li>
+      <li><strong>vLLM</strong> &rarr; schedules the request onto GPU batch, manages KV cache with PagedAttention (AI: inference infrastructure)</li>
+      <li><strong>GPU kernel</strong> &rarr; FlashAttention CUDA kernel performs the transformer forward pass (CS: computer architecture, parallel computing)</li>
+      <li><strong>Token streaming</strong> &rarr; Server-Sent Events over HTTP/2, buffered in async Python (Python: asyncio)</li>
+      <li><strong>Client</strong> &rarr; JavaScript renders the token stream in the browser</li>
+    </ol>
+
+    <p>Every discipline in this reference site &mdash; algorithms, operating systems, networking, Python, Rust, distributed systems, and machine learning &mdash; touches this single user interaction. This is why a <em>broad</em> understanding of computer science is not merely academic: the performance, security, cost, and reliability of AI products depend on expertise at every layer of this stack.</p>
+
+    <aside class="notice">
+      <strong>Key insight.</strong> No AI company builds only AI. Every frontier lab also builds and operates global network infrastructure, custom silicon, distributed storage systems, safety classifiers, and developer tooling. The &ldquo;AI stack&rdquo; is the entire IT stack, end to end.
+    </aside>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.cs_rust'), 'title': 'Rust'},
+      next={'url': url_for('research.cs_references'), 'title': 'References'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

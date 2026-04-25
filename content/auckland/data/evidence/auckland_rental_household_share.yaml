@@ -1,0 +1,13 @@
+id: evidence.auckland_rental_household_share
+statement: "Approximately one in three Auckland households rent their dwelling rather than owning it. Rent-to-income ratios for the lower-income quartile regularly exceed the 30% cost-burden threshold and in many cases the 50% severe-burden threshold."
+value: null
+unit: percentage
+geography: "Auckland region"
+time_period: "mid-2020s"
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.mbie_tenancy_bond
+  - source.stats_nz_household_income
+notes: "Rental share has trended up with the decline in under-40 homeownership. Exact share to be confirmed against current Census tenure data."

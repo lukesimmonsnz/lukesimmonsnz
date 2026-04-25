@@ -1,0 +1,438 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}References &middot; Computer Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Full bibliography for the Computer Science research section, formatted in APA 7th edition style with DOIs and stable URLs.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Computer Science', url_for('research.cs_index')),
+    ('References', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Computer Science</span>
+    <h1>Bibliography &amp; References</h1>
+    <hr class="rule">
+    <p class="lede">All sources cited across this reference site, formatted in APA 7th edition style. DOIs and stable URLs are provided where available.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Citation format.</strong> References follow APA 7th edition. In-text citations use bracketed numbers (e.g., <sup>[1]</sup>) linked to entries below. Where a DOI is available, the title links directly to the publisher&rsquo;s canonical page or arXiv preprint.
+    </aside>
+
+    <h2>Bibliography</h2>
+
+    <h3>Computer Science Foundations</h3>
+    <ol class="references-list">
+
+      <li id="ref-1">
+        Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem.
+        <em>Proceedings of the London Mathematical Society</em>, <em>s2-42</em>(1), 230&ndash;265.
+        <a href="https://doi.org/10.1112/plms/s2-42.1.230">https://doi.org/10.1112/plms/s2-42.1.230</a>
+      </li>
+
+      <li id="ref-2">
+        Shannon, C. E. (1948). A mathematical theory of communication.
+        <em>The Bell System Technical Journal</em>, <em>27</em>(3), 379&ndash;423.
+        <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</a>
+      </li>
+
+      <li id="ref-6">
+        Cook, S. A. (1971). The complexity of theorem-proving procedures.
+        <em>Proceedings of the 3rd Annual ACM Symposium on Theory of Computing</em> (pp. 151&ndash;158). ACM.
+        <a href="https://doi.org/10.1145/800157.805047">https://doi.org/10.1145/800157.805047</a>
+      </li>
+
+      <li id="ref-7">
+        Knuth, D. E. (1997). <em>The art of computer programming, Vol. 1: Fundamental algorithms</em> (3rd ed.). Addison-Wesley.
+        ISBN 978-0-201-89683-1.
+      </li>
+
+      <li id="ref-8">
+        Cormen, T. H., Leiserson, C. E., Rivest, R. L., &amp; Stein, C. (2022).
+        <em>Introduction to algorithms</em> (4th ed.). MIT Press.
+        ISBN 978-0-262-04630-5.
+      </li>
+
+      <li id="ref-9">
+        Aho, A. V., Lam, M. S., Sethi, R., &amp; Ullman, J. D. (2006).
+        <em>Compilers: Principles, techniques, and tools</em> (2nd ed.). Pearson/Addison-Wesley.
+        ISBN 978-0-321-48681-3.
+      </li>
+
+      <li id="ref-10">
+        Lattner, C., &amp; Adve, V. (2004). LLVM: A compilation framework for lifelong program analysis and transformation.
+        <em>Proceedings of the International Symposium on Code Generation and Optimization (CGO)</em>, 75&ndash;86.
+        <a href="https://doi.org/10.1109/CGO.2004.1281665">https://doi.org/10.1109/CGO.2004.1281665</a>
+      </li>
+
+      <li id="ref-11">
+        Patterson, D. A., &amp; Hennessy, J. L. (2020).
+        <em>Computer organisation and design RISC-V edition: The hardware/software interface</em> (2nd ed.). Morgan Kaufmann.
+        ISBN 978-0-128-12275-4.
+      </li>
+
+      <li id="ref-12">
+        Hennessy, J. L., &amp; Patterson, D. A. (2019).
+        <em>Computer architecture: A quantitative approach</em> (6th ed.). Morgan Kaufmann.
+        ISBN 978-0-128-11906-8.
+      </li>
+
+      <li id="ref-13">
+        Tanenbaum, A. S., &amp; Bos, H. (2014).
+        <em>Modern operating systems</em> (4th ed.). Pearson.
+        ISBN 978-0-133-59162-0.
+      </li>
+
+      <li id="ref-14">
+        Silberschatz, A., Galvin, P. B., &amp; Gagne, G. (2021).
+        <em>Operating system concepts</em> (10th ed.). Wiley.
+        ISBN 978-1-119-32091-3.
+      </li>
+
+      <li id="ref-15">
+        Cerf, V., &amp; Kahn, R. (1974). A protocol for packet network intercommunication.
+        <em>IEEE Transactions on Communications</em>, <em>22</em>(5), 637&ndash;648.
+        <a href="https://doi.org/10.1109/TCOM.1974.1092259">https://doi.org/10.1109/TCOM.1974.1092259</a>
+      </li>
+
+      <li id="ref-16">
+        Berners-Lee, T., Cailliau, R., Luotonen, A., Nielsen, H. F., &amp; Secret, A. (1994). The World-Wide Web.
+        <em>Communications of the ACM</em>, <em>37</em>(8), 76&ndash;82.
+        <a href="https://doi.org/10.1145/179606.179671">https://doi.org/10.1145/179606.179671</a>
+      </li>
+
+      <li id="ref-17">
+        Codd, E. F. (1970). A relational model of data for large shared data banks.
+        <em>Communications of the ACM</em>, <em>13</em>(6), 377&ndash;387.
+        <a href="https://doi.org/10.1145/362384.362685">https://doi.org/10.1145/362384.362685</a>
+      </li>
+
+    </ol>
+
+    <h3>Python</h3>
+    <ol class="references-list">
+
+      <li id="ref-18">
+        van Rossum, G. (1995). <em>Python reference manual</em> (CWI Report CS-R9525). CWI.
+        Retrieved from <a href="https://ir.cwi.nl/pub/5007">https://ir.cwi.nl/pub/5007</a>
+      </li>
+
+      <li id="ref-19">
+        Beazley, D. (2010). Understanding the Python GIL.
+        <em>PyCon 2010 Proceedings</em>. Atlanta, GA.
+        Retrieved from <a href="https://www.dabeaz.com/python/UnderstandingGIL.pdf">https://www.dabeaz.com/python/UnderstandingGIL.pdf</a>
+      </li>
+
+      <li id="ref-20">
+        Oliphant, T. E. (2007). Python for scientific computing.
+        <em>Computing in Science &amp; Engineering</em>, <em>9</em>(3), 10&ndash;20.
+        <a href="https://doi.org/10.1109/MCSE.2007.58">https://doi.org/10.1109/MCSE.2007.58</a>
+      </li>
+
+      <li id="ref-21">
+        Harris, C. R., Millman, K. J., van der Walt, S. J., et al. (2020). Array programming with NumPy.
+        <em>Nature</em>, <em>585</em>(7825), 357&ndash;362.
+        <a href="https://doi.org/10.1038/s41586-020-2649-2">https://doi.org/10.1038/s41586-020-2649-2</a>
+      </li>
+
+      <li id="ref-22">
+        McKinney, W. (2010). Data structures for statistical computing in Python.
+        <em>Proceedings of the 9th Python in Science Conference</em>, 445, 51&ndash;56.
+        <a href="https://doi.org/10.25080/Majora-92bf1922-00a">https://doi.org/10.25080/Majora-92bf1922-00a</a>
+      </li>
+
+      <li id="ref-23">
+        Hunter, J. D. (2007). Matplotlib: A 2D graphics environment.
+        <em>Computing in Science &amp; Engineering</em>, <em>9</em>(3), 90&ndash;95.
+        <a href="https://doi.org/10.1109/MCSE.2007.55">https://doi.org/10.1109/MCSE.2007.55</a>
+      </li>
+
+      <li id="ref-24">
+        Pedregosa, F., Varoquaux, G., Gramfort, A., et al. (2011). Scikit-learn: Machine learning in Python.
+        <em>Journal of Machine Learning Research</em>, <em>12</em>, 2825&ndash;2830.
+        Retrieved from <a href="https://jmlr.org/papers/v12/pedregosa11a.html">https://jmlr.org/papers/v12/pedregosa11a.html</a>
+      </li>
+
+      <li id="ref-25">
+        Paszke, A., Gross, S., Massa, F., et al. (2019). PyTorch: An imperative style, high-performance deep learning library.
+        <em>Advances in Neural Information Processing Systems</em>, <em>32</em>, 8024&ndash;8035.
+        Retrieved from <a href="https://arxiv.org/abs/1912.01703">https://arxiv.org/abs/1912.01703</a>
+      </li>
+
+      <li id="ref-26">
+        Wolf, T., Debut, L., Sanh, V., et al. (2020). Transformers: State-of-the-art natural language processing.
+        <em>Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</em>, 38&ndash;45.
+        <a href="https://doi.org/10.18653/v1/2020.emnlp-demos.6">https://doi.org/10.18653/v1/2020.emnlp-demos.6</a>
+      </li>
+
+    </ol>
+
+    <h3>Rust</h3>
+    <ol class="references-list">
+
+      <li id="ref-27">
+        Matsakis, N. D., &amp; Klock, F. S. (2014). The Rust language.
+        <em>ACM SIGAda Ada Letters</em>, <em>34</em>(3), 103&ndash;104.
+        <a href="https://doi.org/10.1145/2692956.2663188">https://doi.org/10.1145/2692956.2663188</a>
+      </li>
+
+      <li id="ref-28">
+        Jung, R., Jourdan, J.-H., Krebbers, R., &amp; Dreyer, D. (2017). RustBelt: Securing the foundations of the Rust programming language.
+        <em>Proceedings of the ACM on Programming Languages</em>, <em>2</em>(POPL), 1&ndash;34.
+        <a href="https://doi.org/10.1145/3158154">https://doi.org/10.1145/3158154</a>
+      </li>
+
+      <li id="ref-klabnik">
+        Klabnik, S., &amp; Nichols, C. (2023). <em>The Rust programming language</em> (2nd ed.). No Starch Press.
+        ISBN 978-1-718-50310-4. Also available at <a href="https://doc.rust-lang.org/book/">https://doc.rust-lang.org/book/</a>
+      </li>
+
+      <li id="ref-blandy">
+        Blandy, J., Orendorff, J., &amp; Tindall, L. F. S. (2021).
+        <em>Programming Rust: Fast, safe systems development</em> (2nd ed.). O&rsquo;Reilly Media.
+        ISBN 978-1-492-05259-1.
+      </li>
+
+    </ol>
+
+    <h3>AI &amp; IT Ecosystem</h3>
+    <ol class="references-list">
+
+      <li id="ref-3">
+        Goodfellow, I., Bengio, Y., &amp; Courville, A. (2016). <em>Deep learning</em>. MIT Press.
+        ISBN 978-0-262-03561-3. Also at <a href="https://www.deeplearningbook.org/">https://www.deeplearningbook.org/</a>
+      </li>
+
+      <li id="ref-4">
+        Virtanen, P., Gommers, R., Oliphant, T. E., et al. (2020). SciPy 1.0: Fundamental algorithms for scientific computing in Python.
+        <em>Nature Methods</em>, <em>17</em>(3), 261&ndash;272.
+        <a href="https://doi.org/10.1038/s41592-019-0686-2">https://doi.org/10.1038/s41592-019-0686-2</a>
+      </li>
+
+      <li id="ref-5">
+        Jung, R., Jourdan, J.-H., Krebbers, R., &amp; Dreyer, D. (2021). Safe systems programming in Rust.
+        <em>Communications of the ACM</em>, <em>64</em>(4), 144&ndash;152.
+        <a href="https://doi.org/10.1145/3418295">https://doi.org/10.1145/3418295</a>
+      </li>
+
+      <li id="ref-29">
+        Mell, P., &amp; Grance, T. (2011). <em>The NIST definition of cloud computing</em> (NIST Special Publication 800-145). National Institute of Standards and Technology.
+        <a href="https://doi.org/10.6028/NIST.SP.800-145">https://doi.org/10.6028/NIST.SP.800-145</a>
+      </li>
+
+      <li id="ref-30">
+        Verma, A., Pedrosa, L., Korupolu, M., Oppenheimer, D., Tune, E., &amp; Wilkes, J. (2015). Large-scale cluster management at Google with Borg.
+        <em>Proceedings of the 10th European Conference on Computer Systems (EuroSys)</em>.
+        <a href="https://doi.org/10.1145/2741948.2741964">https://doi.org/10.1145/2741948.2741964</a>
+      </li>
+
+      <li id="ref-31">
+        McCulloch, W. S., &amp; Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity.
+        <em>The Bulletin of Mathematical Biophysics</em>, <em>5</em>(4), 115&ndash;133.
+        <a href="https://doi.org/10.1007/BF02478259">https://doi.org/10.1007/BF02478259</a>
+      </li>
+
+      <li id="ref-32">
+        Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain.
+        <em>Psychological Review</em>, <em>65</em>(6), 386&ndash;408.
+        <a href="https://doi.org/10.1037/h0042519">https://doi.org/10.1037/h0042519</a>
+      </li>
+
+      <li id="ref-33">
+        Rumelhart, D. E., Hinton, G. E., &amp; Williams, R. J. (1986). Learning representations by back-propagating errors.
+        <em>Nature</em>, <em>323</em>(6088), 533&ndash;536.
+        <a href="https://doi.org/10.1038/323533a0">https://doi.org/10.1038/323533a0</a>
+      </li>
+
+      <li id="ref-34">
+        LeCun, Y., Bottou, L., Bengio, Y., &amp; Haffner, P. (1998). Gradient-based learning applied to document recognition.
+        <em>Proceedings of the IEEE</em>, <em>86</em>(11), 2278&ndash;2324.
+        <a href="https://doi.org/10.1109/5.726791">https://doi.org/10.1109/5.726791</a>
+      </li>
+
+      <li id="ref-35">
+        Krizhevsky, A., Sutskever, I., &amp; Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks.
+        <em>Advances in Neural Information Processing Systems</em>, <em>25</em>, 1097&ndash;1105.
+        Retrieved from <a href="https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html">NeurIPS Proceedings</a>
+      </li>
+
+      <li id="ref-36">
+        Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, &#321;., &amp; Polosukhin, I. (2017). Attention is all you need.
+        <em>Advances in Neural Information Processing Systems</em>, <em>30</em>.
+        Retrieved from <a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a>
+      </li>
+
+      <li id="ref-37">
+        Brown, T., Mann, B., Ryder, N., et al. (2020). Language models are few-shot learners.
+        <em>Advances in Neural Information Processing Systems</em>, <em>33</em>, 1877&ndash;1901.
+        Retrieved from <a href="https://arxiv.org/abs/2005.14165">https://arxiv.org/abs/2005.14165</a>
+      </li>
+
+      <li id="ref-38">
+        LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning.
+        <em>Nature</em>, <em>521</em>(7553), 436&ndash;444.
+        <a href="https://doi.org/10.1038/nature14539">https://doi.org/10.1038/nature14539</a>
+      </li>
+
+      <li id="ref-39">
+        Jouppi, N. P., Young, C., Patil, N., et al. (2017). In-datacenter performance analysis of a tensor processing unit.
+        <em>Proceedings of the 44th Annual International Symposium on Computer Architecture (ISCA)</em>, 1&ndash;12.
+        <a href="https://doi.org/10.1145/3079856.3080246">https://doi.org/10.1145/3079856.3080246</a>
+      </li>
+
+      <li id="ref-40">
+        Kaplan, J., McCandlish, S., Henighan, T., et al. (2020). Scaling laws for neural language models.
+        arXiv preprint arXiv:2001.08361.
+        Retrieved from <a href="https://arxiv.org/abs/2001.08361">https://arxiv.org/abs/2001.08361</a>
+      </li>
+
+      <li id="ref-41">
+        Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022). Training compute-optimal large language models.
+        <em>Advances in Neural Information Processing Systems</em>, <em>35</em>.
+        Retrieved from <a href="https://arxiv.org/abs/2203.15556">https://arxiv.org/abs/2203.15556</a>
+      </li>
+
+      <li id="ref-42">
+        Ouyang, L., Wu, J., Jiang, X., et al. (2022). Training language models to follow instructions with human feedback.
+        <em>Advances in Neural Information Processing Systems</em>, <em>35</em>, 27730&ndash;27744.
+        Retrieved from <a href="https://arxiv.org/abs/2203.02155">https://arxiv.org/abs/2203.02155</a>
+      </li>
+
+      <li id="ref-43">
+        Sculley, D., Holt, G., Golovin, D., et al. (2015). Hidden technical debt in machine learning systems.
+        <em>Advances in Neural Information Processing Systems</em>, <em>28</em>.
+        Retrieved from <a href="https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html">NeurIPS Proceedings</a>
+      </li>
+
+      <li id="ref-44">
+        Goodfellow, I. J., Shlens, J., &amp; Szegedy, C. (2015). Explaining and harnessing adversarial examples.
+        <em>Proceedings of the International Conference on Learning Representations (ICLR 2015)</em>.
+        Retrieved from <a href="https://arxiv.org/abs/1412.6572">https://arxiv.org/abs/1412.6572</a>
+      </li>
+
+      <li id="ref-45">
+        Bai, Y., Jones, A., Ndousse, K., et al. (2022). Training a helpful and harmless assistant with reinforcement learning from human feedback.
+        arXiv preprint arXiv:2204.05862.
+        Retrieved from <a href="https://arxiv.org/abs/2204.05862">https://arxiv.org/abs/2204.05862</a>
+      </li>
+
+    </ol>
+
+    <h3>Further Reading &amp; Textbooks</h3>
+    <ol class="references-list">
+
+      <li>
+        Sipser, M. (2012). <em>Introduction to the theory of computation</em> (3rd ed.). Cengage Learning.
+        ISBN 978-1-133-18779-0. &mdash; Definitive undergraduate text on computability and complexity theory.
+      </li>
+
+      <li>
+        Lamport, L. (1978). Time, clocks, and the ordering of events in a distributed system.
+        <em>Communications of the ACM</em>, <em>21</em>(7), 558&ndash;565.
+        <a href="https://doi.org/10.1145/359545.359563">https://doi.org/10.1145/359545.359563</a>
+        &mdash; Foundational distributed systems paper introducing logical clocks.
+      </li>
+
+      <li>
+        Brewer, E. (2000). Towards robust distributed systems [Keynote].
+        <em>Proceedings of the 19th Annual ACM Symposium on Principles of Distributed Computing (PODC)</em>.
+        &mdash; Introduced the CAP theorem (Consistency, Availability, Partition tolerance).
+      </li>
+
+      <li>
+        Dean, J., &amp; Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters.
+        <em>Proceedings of the 6th USENIX Symposium on Operating Systems Design and Implementation (OSDI)</em>, 137&ndash;150.
+        Retrieved from <a href="https://research.google/pubs/pub62/">https://research.google/pubs/pub62/</a>
+      </li>
+
+      <li>
+        Hochreiter, S., &amp; Schmidhuber, J. (1997). Long short-term memory.
+        <em>Neural Computation</em>, <em>9</em>(8), 1735&ndash;1780.
+        <a href="https://doi.org/10.1162/neco.1997.9.8.1735">https://doi.org/10.1162/neco.1997.9.8.1735</a>
+      </li>
+
+      <li>
+        Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding.
+        <em>Proceedings of NAACL-HLT 2019</em>, 4171&ndash;4186.
+        Retrieved from <a href="https://arxiv.org/abs/1810.04805">https://arxiv.org/abs/1810.04805</a>
+      </li>
+
+      <li>
+        Dijkstra, E. W. (1968). Go to statement considered harmful.
+        <em>Communications of the ACM</em>, <em>11</em>(3), 147&ndash;148.
+        <a href="https://doi.org/10.1145/362929.362947">https://doi.org/10.1145/362929.362947</a>
+      </li>
+
+      <li>
+        Rivest, R. L., Shamir, A., &amp; Adleman, L. (1978). A method for obtaining digital signatures and public-key cryptosystems.
+        <em>Communications of the ACM</em>, <em>21</em>(2), 120&ndash;126.
+        <a href="https://doi.org/10.1145/359340.359342">https://doi.org/10.1145/359340.359342</a>
+      </li>
+
+      <li>
+        Russell, S., &amp; Norvig, P. (2020). <em>Artificial intelligence: A modern approach</em> (4th ed.). Pearson.
+        ISBN 978-0-134-61099-3. &mdash; The standard AI textbook covering search, knowledge representation, planning, learning, and perception.
+      </li>
+
+      <li>
+        Dreyfus, H. L. (1972). <em>What computers can&rsquo;t do: A critique of artificial reason</em>. MIT Press.
+        &mdash; Philosophical critique of AI; historically important for understanding the field&rsquo;s limitations and the debates that shaped its development.
+      </li>
+
+    </ol>
+
+    <h3>Standards, RFCs &amp; Technical Reports</h3>
+    <ol class="references-list">
+
+      <li>
+        Postel, J. (1981). <em>Transmission control protocol</em> (RFC 793). IETF.
+        <a href="https://www.rfc-editor.org/rfc/rfc793">https://www.rfc-editor.org/rfc/rfc793</a>
+      </li>
+
+      <li>
+        Fielding, R. T., &amp; Reschke, J. (2014). <em>Hypertext Transfer Protocol (HTTP/1.1): Message syntax and routing</em> (RFC 7230). IETF.
+        <a href="https://www.rfc-editor.org/rfc/rfc7230">https://www.rfc-editor.org/rfc/rfc7230</a>
+      </li>
+
+      <li>
+        Bishop, M. (Ed.). (2022). <em>HTTP/3</em> (RFC 9114). IETF.
+        <a href="https://www.rfc-editor.org/rfc/rfc9114">https://www.rfc-editor.org/rfc/rfc9114</a>
+      </li>
+
+      <li>
+        National Institute of Standards and Technology. (2024). <em>Module-lattice-based key-encapsulation mechanism standard</em> (FIPS 203). U.S. Department of Commerce.
+        <a href="https://doi.org/10.6028/NIST.FIPS.203">https://doi.org/10.6028/NIST.FIPS.203</a>
+      </li>
+
+      <li>
+        ISO/IEC. (2017). <em>Information technology &mdash; Programming languages &mdash; C</em> (ISO/IEC 9899:2018). ISO.
+      </li>
+
+      <li>
+        The Rust Reference. (2024). <em>The Rust reference</em>. The Rust Project.
+        <a href="https://doc.rust-lang.org/reference/">https://doc.rust-lang.org/reference/</a>
+      </li>
+
+      <li>
+        Python Software Foundation. (2024). <em>Python language reference, version 3.13</em>.
+        <a href="https://docs.python.org/3/reference/">https://docs.python.org/3/reference/</a>
+      </li>
+
+    </ol>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.cs_ai_it'), 'title': 'AI & IT Ecosystem'},
+      next={'url': url_for('research.cs_readme'), 'title': 'Readme'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

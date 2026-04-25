@@ -1,0 +1,21 @@
+id: sea-level-rise-2100
+title: Auckland coastal inundation — 1% AEP storm tide + 1m sea-level rise
+subtitle: Mainstream 2100 exposure scenario; modelled by NIWA for Auckland Council
+feature_service:
+  url: https://services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Coastal_Inundation_1_AEP_1m_sea_level_rise/FeatureServer
+  layer: 0
+  where: "1=1"
+  out_fields: [OBJECTID]
+  page_size: 2000
+  # 0.002 deg ≈ 220 m, ≈ 2 px in a 720×480 viewport of the Auckland region.
+  # Visually indistinguishable from un-simplified at that scale.
+  max_allowable_offset: 0.002
+style:
+  stroke: "#2e6f7b"
+  stroke_width: 0.4
+  fill: "#2e6f7b"
+  fill_opacity: 0.55
+source:
+  label: Auckland Council Open Data — Coastal Inundation 1% AEP 1m sea-level rise (NIWA 2019)
+  url: https://data-aucklandcouncil.opendata.arcgis.com/datasets/aucklandcouncil::coastal-inundation-1-aep-1m-sea-level-rise
+status: verified

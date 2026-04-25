@@ -1,0 +1,13 @@
+id: evidence.auckland_price_to_income_peak
+statement: "Auckland's median-dwelling-price-to-median-household-income ratio rose from roughly 3–4× in the mid-1980s to roughly 8–10× at peak in the early 2020s, with partial correction since. This puts Auckland consistently among the least affordable OECD metropolitan markets on the Demographia methodology."
+value: null
+unit: ratio
+geography: "Auckland region"
+time_period: "1985–2025"
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.demographia_affordability
+  - source.stats_nz_household_income
+notes: "Headline ratios vary by source and methodology; the range is robust but specific annual values should be verified before publication."

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/messages.jsonl
+.server.pid
+server.log
+server.err
+agent/logs/
+agent/daily_drafts/*.md
+_site/
+.wrangler/
+.secrets-*.md

@@ -1,0 +1,64 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Historical Context &middot; Climate Science &amp; AI &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Historical progression of climate models from early statistical methods to advanced process-based models and the integration of AI.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Climate Science &amp; AI', url_for('research.climate_index')),
+    ('Historical Context', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Climate Science</span>
+    <h1>Historical Context</h1>
+    <hr class="rule">
+    <p class="lede">This page explores the historical context of climate modelling and the integration of artificial intelligence into these models over time. It provides an overview of key developments, challenges, and future directions.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This page examines the historical progression of climate models from early statistical methods to advanced process-based models. It highlights significant milestones, including the application of machine learning and other AI techniques that enhance predictive accuracy for climate impacts on agriculture and ecosystem resilience.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#climate-models-evolution">Evolution of Climate Models</a></li>
+        <li><a href="#ai-integration-challenges">Challenges in Integrating AI into Climate Modelling</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="climate-models-evolution">Evolution of Climate Models</h2>
+    <p>The evolution of climate models has been a critical aspect of understanding global environmental changes. In the general-circulation tradition, the Charney Report of 1979 provided one of the earliest rigorous estimates of equilibrium climate sensitivity at 1.5&ndash;4.5&nbsp;&deg;C for a doubling of CO&#8322;, a range that held up remarkably well through decades of subsequent work<sup><a href="{{ url_for('research.climate_references') }}#ref-22">[22]</a></sup>. In the narrower domain of climate-impact studies for agriculture, early efforts relied heavily on statistical methods which were later complemented by process-based crop models such as DSSAT and APSIM<sup><a href="{{ url_for('research.climate_references') }}#ref-6">[6]</a></sup>.</p>
+
+    <h3>Early Statistical Models</h3>
+    <p>The initial climate impact studies often used simple linear regression or similar techniques to forecast crop yields based on historical weather data.</p>
+
+    <h3>Process-Based Modelling Era</h3>
+    <p>With advancements in computer technology, more complex process-based models emerged. These simulate various components of the Earth system interactively and aim to provide a more realistic representation of the underlying physics than purely empirical fits<sup><a href="{{ url_for('research.climate_references') }}#ref-7">[7]</a></sup>.</p>
+
+    <h4>Recent Developments</h4>
+    <p>The latest generation of climate models incorporates sophisticated cloud microphysics and other advanced features, though cloud feedbacks and convective parameterisation remain among the largest sources of uncertainty in long-range projections.</p>
+
+    <h2 id="ai-integration-challenges">Challenges in Integrating AI into Climate Modelling</h2>
+    <h3>Data Quality Issues</h3>
+    <p>Integrating artificial intelligence techniques requires high-quality, comprehensive datasets which are not always available. For example, historical records may lack sufficient detail for certain regions.</p>
+
+    <h4>Model Calibration and Validation</h4>
+    <p>A major challenge is ensuring that AI-enhanced models can be accurately calibrated and validated against real-world observations.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.climate_intro'), 'title': 'Introduction'},
+      next={'url': url_for('research.climate_methods'), 'title': 'Methodologies'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+id: camp.regulatory_deregulation
+name: Market reform — regulatory deregulation
+core_claim: >
+  The binding constraints on new supply are regulatory consenting time,
+  infrastructure-contribution complexity, and the appeal pathways that
+  delay or kill projects. Remove this friction and the existing market
+  will deliver more housing.
+flagship_moves:
+  - Compressed statutory consenting timelines with default-approve thresholds.
+  - Expanded permitted-activity intensification along rapid-transit corridors.
+  - Simpler and more predictable development-contribution frameworks.
+  - Reduction and streamlining of appeal pathways.
+tensions:
+  - Regulatory deregulation cannot overcome hard constraints on labour, land, or infrastructure capacity.
+  - Risk of lower build quality or weaker environmental standards in the rush to approve.
+  - Heritage, character, and amenity interests are real and have durable political weight.
+  - Does not address the finance-side cyclicality that drives project cancellations.
+addresses:
+  - problem.housing.supply_economics
+interventions:
+  - description: "Reduce consenting friction and appeal pathways to shorten time-to-build."
+    constraint_relaxed: regulatory_consenting_time
+    state_variable: annual_consents
+    expected_sign: "+"
+    side_effects:
+      - potential_quality_and_amenity_tradeoffs
+      - uncertain_effect_on_actual_completions_if_other_constraints_bind
+advocates:
+  - Market-oriented economic commentators
+  - Some development industry bodies
+  - Sections of central-government planning reform
+tensions_with:
+  - camp.non_market_delivery_at_scale

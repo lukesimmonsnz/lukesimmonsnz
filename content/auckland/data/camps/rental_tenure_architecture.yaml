@@ -1,0 +1,41 @@
+id: camp.rental_tenure_architecture
+name: Rental tenure architecture
+core_claim: >
+  Affordability for the roughly one-in-three Auckland households who rent
+  is as much about security and predictability as about the headline rent
+  level. A European-style rental regime — longer tenure, constrained
+  termination, rent predictability over decades, and growth of
+  institutional build-to-rent landlords — would change what affordability
+  means for renters, independent of market rent movements.
+flagship_moves:
+  - Statutory long-tenancy frameworks with grounds-based termination only.
+  - Rent-increase rules tied to a predictable index rather than market movements.
+  - Tax and regulatory settings conducive to large-scale institutional build-to-rent.
+  - Tenant registries and dispute-resolution reform.
+  - Transition pathways for individual landlords who no longer wish to operate under the regime.
+tensions:
+  - International evidence on rent regulation is mixed — tenant protection in the short run, potential supply suppression in the long run.
+  - Private landlord exit at the margin if regulation is too restrictive.
+  - Cultural resistance in a homeowner-oriented society; political opposition from existing landlords.
+  - Design-dependent — the same name (rent regulation) covers regimes that work very differently.
+addresses:
+  - problem.housing.affordability
+interventions:
+  - description: "Legal architecture for long-term, predictable rental tenure."
+    constraint_relaxed: political_acceptability_of_rent_regulation
+    state_variable: residual_income_after_housing
+    expected_sign: "+"
+    side_effects:
+      - risk_of_rental_supply_contraction_if_poorly_designed
+      - stabilises_household_location_over_decades
+  - description: "Shift the rental market toward large institutional landlords through BTR tax and regulatory settings."
+    state_variable: tenure_mix
+    expected_sign: "0"
+    side_effects:
+      - displaces_individual_landlord_market
+      - improves_tenancy_predictability
+advocates:
+  - Renters United and tenant advocacy groups
+  - "International reference cases — Germany, Austria, Switzerland, Netherlands"
+  - Build-to-rent industry associations (on the BTR dimension specifically)
+tensions_with: []

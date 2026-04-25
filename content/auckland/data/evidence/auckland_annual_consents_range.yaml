@@ -1,0 +1,12 @@
+id: evidence.auckland_annual_consents_range
+statement: "Auckland has consented roughly 10,000–20,000 new dwellings per year over the past decade, with a peak around 2022 and material contraction since. Completions lag consents by 12–24 months and are typically 10–20% lower due to cancellations and project delays."
+value: null
+unit: dwellings_per_year
+geography: "Auckland region"
+time_period: "2015–2025"
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.stats_nz_building_consents
+notes: "Range is approximate across the decade; precise annual figures to be confirmed against the current Stats NZ series."

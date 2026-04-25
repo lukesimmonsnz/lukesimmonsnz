@@ -1,0 +1,59 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Future Directions &middot; Climate Science &amp; AI &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Future directions in climate science: Wolbachia-based mosquito control, plant health under changing climates, and AI in sustainable building design.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Climate Science &amp; AI', url_for('research.climate_index')),
+    ('Future Directions', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Climate Science</span>
+    <h1>Future Directions</h1>
+    <hr class="rule">
+    <p class="lede">This page explores future directions in climate science, focusing on advancements and research avenues &mdash; Wolbachia-based mosquito control strategies, plant health under changing climates, and AI&rsquo;s role in sustainable building design.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> Future directions in climate science explore sustainable solutions for vector-borne disease control, plant health resilience, and the integration of AI technologies to address environmental challenges.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#wolbachia">Wolbachia-Based Mosquito Control</a></li>
+        <li><a href="#plantHealth">Plant Health Under Climate Change</a></li>
+        <li><a href="#sustainableBuildings">AI in Sustainable Building Design</a></li>
+        <li><a href="#climateModeling">Next Generation Climate Modelling</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="wolbachia">Wolbachia-Based Mosquito Control</h2>
+    <p>The introduction of <em>Wolbachia</em> into mosquito populations aims at reducing their ability to transmit diseases such as dengue, Zika, and chikungunya. These bacteria limit the replication of pathogenic viruses within mosquitoes, making them less effective vectors for disease transmission<sup><a href="{{ url_for('research.climate_references') }}#ref-14">[14]</a></sup>. With climate change influencing vector ecology, this approach offers a sustainable alternative to chemical interventions.</p>
+
+    <h2 id="plantHealth">Plant Health Under Climate Change</h2>
+    <p>Increasing temperatures and variable weather patterns pose significant challenges to global plant health. Research is focusing on developing crops with enhanced resilience against diseases and pests. This involves understanding how climate change affects biotic interactions at molecular levels, aiming to build a more robust plant immune system<sup><a href="{{ url_for('research.climate_references') }}#ref-15">[15]</a></sup>.</p>
+
+    <h2 id="sustainableBuildings">AI in Sustainable Building Design</h2>
+    <p>The integration of artificial intelligence technologies is reshaping architectural practices, enabling designs that better address climate change challenges. AI tools such as large language models and multimodal systems are being utilised to generate sustainable building solutions<sup><a href="{{ url_for('research.climate_references') }}#ref-16">[16]</a></sup>. This section explores how these advancements impact future urban landscapes.</p>
+
+    <h3 id="climateModeling">Next Generation Climate Modelling</h3>
+    <p>The reliance on a single regional climate model for assessing the impacts of climate change is shifting towards an ensemble approach using multiple models. This strategy aims to reduce uncertainties and provide more reliable projections<sup><a href="{{ url_for('research.climate_references') }}#ref-17">[17]</a></sup>.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.climate_challenges'), 'title': 'Challenges and Limitations'},
+      next={'url': url_for('research.climate_references'), 'title': 'References'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

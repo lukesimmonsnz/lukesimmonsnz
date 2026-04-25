@@ -1,0 +1,73 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Drug Discovery &middot; Medical Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Machine learning across the drug discovery pipeline &mdash; molecular property prediction, generative chemistry (SMILES, graph, diffusion), deep-learning docking with DiffDock, and multi-task ADMET modelling.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Medical Science', url_for('research.medsci_index')),
+    ('Drug Discovery', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Medical Science</span>
+    <h1>The Intersection of Machine Learning and Drug Discovery</h1>
+    <hr class="rule">
+    <p class="lede">A comprehensive guide to leveraging advanced machine learning techniques across the drug discovery process &mdash; from molecular property prediction and generative chemistry to protein structure, docking, and ADMET modelling.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> Machine learning has become indispensable in modern drug discovery, offering solutions across stages from target identification to lead optimisation. This article covers molecular property prediction, generative models (SMILES-based RNNs, graph VAEs, normalising flows, and diffusion models), deep-learning-based protein docking (DiffDock, EquiBind), and multi-task ADMET prediction with uncertainty quantification.
+    </aside>
+
+    <h2 id="introduction">1. Introduction</h2>
+    <p>Machine learning has become an indispensable tool in advancing modern drug discovery processes, offering innovative solutions across various stages from target identification and validation to lead optimisation. This article explores the applications of machine learning models in predicting molecular properties, designing novel molecules, understanding protein structures, and evaluating ADMET profiles.</p>
+
+    <h2 id="molecular-property-prediction">2. Molecular Property Prediction</h2>
+    <p>Machine learning algorithms can predict molecular properties such as biological activity, toxicity, and physicochemical characteristics<sup><a href="{{ url_for('research.medsci_references') }}#ref-33">[33]</a></sup>. These predictions are crucial for prioritising compounds in the early stages of drug development.</p>
+
+    <h3 id="smiles-based-approaches">2.1 SMILES-Based Approaches</h3>
+    <p>Models like REINVENT use SMILES strings to generate novel molecular designs by employing RNNs fine-tuned via reinforcement learning. This approach enables rapid iteration and optimisation in industrial settings.</p>
+
+    <h3 id="graph-approaches">2.2 Graph Approaches</h3>
+    <p>Junction Tree Variational Autoencoders (JT-VAE)<sup><a href="{{ url_for('research.medsci_references') }}#ref-34">[34]</a></sup> generate molecular graphs directly, ensuring valence validity by construction and facilitating scaffold hopping. MoFlow employs normalising flows to estimate exact likelihoods for efficient sampling.</p>
+
+    <h3 id="diffusion-models">2.3 Diffusion Models</h3>
+    <p>Models like DiffSBDD<sup><a href="{{ url_for('research.medsci_references') }}#ref-35">[35]</a></sup> condition ligand generation on protein pocket geometry, producing drug-like molecules with high binding affinities. These models outperform traditional autoregressive generators in terms of accuracy and drug-likeness.</p>
+
+    <h2 id="protein-structure-and-docking">3. Protein Structure and Molecular Docking</h2>
+    <p>The advent of deep learning techniques has revolutionised protein structure prediction and molecular docking, enabling the design of highly effective drugs against previously unapproachable targets.</p>
+
+    <h3 id="classical-docking-methods">3.1 Classical Docking Methods</h3>
+    <p>Tackling large-scale conformational sampling remains computationally intensive with traditional methods like AutoDock Vina. They provide approximate energy scoring functions but struggle with protein flexibility and large ligand libraries.</p>
+
+    <h3 id="deep-learning-docking">3.2 Deep Learning Docking</h3>
+    <p>DiffDock<sup><a href="{{ url_for('research.medsci_references') }}#ref-36">[36]</a></sup> utilises an equivariant graph neural network to guide the diffusion process over SE(3) space, predicting docked poses more accurately and efficiently than classical methods. EquiBind further accelerates this process by predicting poses directly in a single forward pass.</p>
+
+    <h3 id="alphafold3">3.3 Joint Structure Prediction with AlphaFold 3</h3>
+    <p>AlphaFold 3 (Abramson <em>et al.</em>, 2024)<sup><a href="{{ url_for('research.medsci_references') }}#ref-39">[39]</a></sup> generalises the AlphaFold 2 framework to jointly predict structures of complexes spanning proteins, nucleic acids, small-molecule ligands, ions, and post-translational modifications. Its Pairformer backbone is coupled to a diffusion module that directly denoises atomic coordinates, and on benchmark protein&ndash;ligand tasks it reports accuracy well above classical docking while also handling targets that previously required separate specialised tools.</p>
+
+    <h2 id="admet-prediction">4. ADMET Prediction</h2>
+    <p>Predicting the ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) properties of drug candidates early in development is critical for reducing late-stage clinical trial failures<sup><a href="{{ url_for('research.medsci_references') }}#ref-37">[37]</a></sup>. Machine learning models trained on large datasets can predict these endpoints accurately.</p>
+
+    <h3 id="admet-endpoints">4.1 Key ADMET Endpoints</h3>
+    <p>Vital ADMET endpoints include Caco-2 permeability, plasma protein binding, microsomal stability, renal clearance, and hERG channel inhibition. These are commonly predicted using multi-task learning approaches.</p>
+
+    <h3 id="multi-task-learning-and-uncertainty">4.2 Multi-Task Learning &amp; Uncertainty</h3>
+    <p>Sharing a common molecular encoder across related tasks improves performance on sparse-data endpoints through transfer learning. Essential for out-of-distribution compounds, uncertainty quantification flags low-confidence predictions to prevent overextrapolation.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.medsci_clinical'), 'title': 'Clinical AI'},
+      next={'url': url_for('research.medsci_references'), 'title': 'References'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "davidsimmons/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Works · David Roy Simmons · Luke Simmons{% endblock %}
+{% block meta_description %}Publications and exhibitions of David Roy Simmons — a major bibliography of Māori ethnology and art scholarship.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('David Simmons', url_for('davidsimmons.index')),
+    ('Works', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Archive &middot; Bibliography</span>
+    <h1>Works</h1>
+    <hr class="rule">
+    <p class="lede">
+      Over five decades, {{ person.name }} produced a body of scholarship that
+      reshaped the study of M&#257;ori art, history, tattooing, carving, and
+      place names. The works are grouped below by category, ordered by year.
+    </p>
+  </header>
+
+  {% for category, items in by_category.items() %}
+  <section>
+    <span class="eyebrow">{{ category | replace('_', ' ') | title }}</span>
+    <h2>{% if category == 'curation' %}Exhibition &amp; curation{% else %}Publications{% endif %}</h2>
+
+    {% for w in items %}
+    <article class="work">
+      {% if w.cover %}
+      <figure class="work-cover">
+        <img src="{{ url_for('static', filename='img/ds/' + w.cover) }}"
+             alt="Cover of {{ w.title }}"
+             loading="lazy">
+        {% if w.cover_credit %}<figcaption>{{ w.cover_credit }}</figcaption>{% endif %}
+      </figure>
+      {% endif %}
+      <div class="work-body">
+        <div class="work-meta">
+          <strong>{{ w.year }}</strong>
+          {% if w.publisher %} &middot; {{ w.publisher }}{% endif %}
+          {% if w.pages %} &middot; {{ w.pages }} pages{% endif %}
+        </div>
+        <h3 class="work-title"><em>{{ w.title }}</em></h3>
+        {% if w.subtitle %}<div class="work-subtitle">{{ w.subtitle }}</div>{% endif %}
+        {% if w.coauthor %}<p class="small">With {{ w.coauthor }}</p>{% endif %}
+        <p>{{ w.description }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+  {% endfor %}
+
+  <section>
+    <p class="small">Publication details and page counts drawn from the National Library of New Zealand catalogue, Auckland War Memorial Museum archival records, and published obituaries. See the <a href="{{ url_for('davidsimmons.references') }}">References</a> page for full source list.</p>
+  </section>
+</div>
+{% endblock %}

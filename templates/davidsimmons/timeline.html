@@ -1,0 +1,50 @@
+{% extends "davidsimmons/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Timeline · David Roy Simmons · Luke Simmons{% endblock %}
+{% block meta_description %}A chronological record of the life and career of David Roy Simmons (1930–2015).{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('David Simmons', url_for('davidsimmons.index')),
+    ('Timeline', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Archive &middot; Chronology</span>
+    <h1>Timeline</h1>
+    <hr class="rule">
+    <p class="lede">
+      {{ events | length }} events across {{ person.name }}&rsquo;s life &mdash;
+      {{ events[0].year }} to {{ events[-1].year }}. Grouped chronologically; the
+      event <em>type</em> chip indicates life, education, career, publication,
+      scholarship, or award.
+    </p>
+  </header>
+
+  <section>
+    <div class="timeline">
+      {% for e in events %}
+      <div class="timeline-entry">
+        <div class="timeline-year">{{ e.year }}</div>
+        <div>
+          <div class="timeline-event">{{ e.event | safe }}</div>
+          <span class="timeline-type">{{ e.type }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Event types</span>
+    <h2>Legend</h2>
+    <div class="chips">
+      {% for t in types %}<span class="chip">{{ t }}</span>{% endfor %}
+    </div>
+    <p class="small">The canonical source for this timeline is a family-provided chronology supplemented by obituaries and museum records &mdash; see the <a href="{{ url_for('davidsimmons.references') }}">References</a> page.</p>
+  </section>
+</div>
+{% endblock %}

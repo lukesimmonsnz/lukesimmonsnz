@@ -1,0 +1,59 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Methodologies &middot; Climate Science &amp; AI &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Methodologies combining AI and climate science: data collection, hybrid physics-AI architectures, deep learning approaches, and uncertainty quantification.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Climate Science &amp; AI', url_for('research.climate_index')),
+    ('Methodologies', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Climate Science</span>
+    <h1>Methodologies</h1>
+    <hr class="rule">
+    <p class="lede">This section discusses methodologies combining AI and climate science to predict future environmental conditions. We explore data collection, preprocessing, hybrid model architectures, and evaluation techniques used in this interdisciplinary field.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Overview.</strong> Integrating artificial intelligence with climate science requires robust pipelines spanning data ingestion from satellites and reanalysis products, hybrid architectures that embed physical constraints into neural networks, and rigorous evaluation against observational baselines. This page surveys the main methodological approaches in current use.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#section1">Data Collection and Preprocessing</a></li>
+        <li><a href="#section2">Hybrid Physics&ndash;AI Model Architectures</a></li>
+        <li><a href="#section3">Deep Learning Approaches</a></li>
+        <li><a href="#section4">Evaluation and Uncertainty Quantification</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="section1">Data Collection and Preprocessing</h2>
+    <p>Climate AI systems draw on diverse observational streams: satellite remote sensing (e.g. MODIS, ERA5 reanalysis), radiosonde profiles, ocean buoy networks, and ground-based station records. A critical preprocessing challenge is harmonising datasets with different spatial resolutions, missing-data patterns, and temporal coverage<sup><a href="{{ url_for('research.climate_references') }}#ref-8">[8]</a></sup>. Techniques include spatial regridding, temporal interpolation, and anomaly detection to remove instrument drift or calibration artefacts before model ingestion.</p>
+
+    <h2 id="section2">Hybrid Physics&ndash;AI Model Architectures</h2>
+    <p>A dominant methodological trend is embedding known physical laws directly into neural network architectures rather than treating climate prediction as a purely data-driven problem. Physics-informed neural networks (PINNs) incorporate differential equation constraints as loss-function terms, ensuring outputs respect conservation of mass, energy, and momentum<sup><a href="{{ url_for('research.climate_references') }}#ref-9">[9]</a></sup>. This hybrid approach substantially reduces data requirements and improves out-of-distribution generalisation &mdash; critical when extrapolating to future climate states not present in the training record.</p>
+
+    <h2 id="section3">Deep Learning Approaches</h2>
+    <p>Convolutional neural networks (CNNs) are widely applied to gridded climate fields because they can efficiently learn local spatial patterns from raster data. Recurrent architectures (LSTMs, transformers) capture temporal dependencies in climate time series, enabling medium-range weather and seasonal forecasting<sup><a href="{{ url_for('research.climate_references') }}#ref-5">[5]</a></sup>. Graph neural networks have more recently been applied to irregular observation networks and to learning interactions between discrete Earth system components. Rolnick <em>et al.</em> (2022) provide a comprehensive survey of how these architectures are deployed across mitigation and adaptation problems<sup><a href="{{ url_for('research.climate_references') }}#ref-4">[4]</a></sup>.</p>
+
+    <h2 id="section4">Evaluation and Uncertainty Quantification</h2>
+    <p>Evaluating climate AI models requires metrics that reflect physical plausibility, not only statistical accuracy. Skill scores (e.g. anomaly correlation coefficient, RMSE relative to climatological baseline) are standard, but models must also be tested for their ability to reproduce extreme-value statistics and teleconnection patterns absent from training data<sup><a href="{{ url_for('research.climate_references') }}#ref-5">[5]</a></sup>. Ensemble approaches and Bayesian deep learning methods are increasingly used to quantify predictive uncertainty &mdash; essential for communicating risk to policymakers.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.climate_history'), 'title': 'Historical Context'},
+      next={'url': url_for('research.climate_applications'), 'title': 'Applications'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

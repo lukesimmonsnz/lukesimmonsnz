@@ -1,0 +1,37 @@
+id: camp.maori_led
+name: Māori-led land use / papakāinga
+core_claim: >
+  Significant housing capacity exists on iwi-owned and Māori freehold land, and the
+  barriers are primarily regulatory and financial rather than physical.
+flagship_moves:
+  - Reform Te Ture Whenua Māori Act to enable development without alienation.
+  - Crown funding and finance for papakāinga and iwi-led master plans.
+  - Crown role as co-investor rather than deliverer.
+  - Streamlined consenting for Māori-land developments.
+tensions:
+  - Expectations of non-Māori landowners about parity of regulatory treatment.
+  - Pace of Treaty-settlement implementation.
+  - Capacity constraints of iwi development arms.
+  - Durability of legal protections against future alienation.
+addresses:
+  - problem.housing.land
+interventions:
+  - description: "Reform Te Ture Whenua to unlock multiply-owned Māori land for development."
+    constraint_relaxed: te_ture_whenua_multiply_owned_maori_land
+    state_variable: zoned_capacity_dwellings
+    expected_sign: "+"
+    side_effects:
+      - requires_intergenerational_governance_structures
+  - description: "Crown-funded papakāinga infrastructure and finance."
+    state_variable: ownership_distribution_by_actor
+    expected_sign: "0"
+    side_effects:
+      - increases_iwi_share_of_housing_delivery
+advocates:
+  - Te Matapihi
+  - Iwi housing arms and CHPs
+  - Te Puni Kōkiri programmes
+  - Te Pāti Māori
+evidence_ids:
+  - evidence.ngati_whatua_orakei_homes
+tensions_with: []

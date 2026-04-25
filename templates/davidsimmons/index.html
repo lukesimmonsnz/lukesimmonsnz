@@ -1,0 +1,120 @@
+{% extends "davidsimmons/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}David Roy Simmons · Luke Simmons{% endblock %}
+{% block meta_description %}An archive of the life and works of David Roy Simmons (Rawiri Te Puru Terehou, 1930–2015), New Zealand ethnologist and M.B.E.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([('Home', url_for('main.home')), ('David Simmons', None)]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Archive &middot; Biography</span>
+    <h1>{{ person.name }}</h1>
+    <p class="lede" style="font-family: var(--font-display); font-style: italic;">
+      {{ person.maori_name }}
+    </p>
+    <hr class="rule">
+    <p class="lede">
+      {{ person.bio_short }}
+    </p>
+  </header>
+
+  <section>
+    <div class="bio-panel">
+      <figure>
+        <img src="{{ url_for('static', filename='img/david-simmons.jpg') }}"
+             alt="Portrait photograph of {{ person.name }}">
+        <figcaption>David Simmons, late in life. Family collection.</figcaption>
+      </figure>
+
+      <dl class="bio-details">
+        <dt>Born</dt>
+        <dd>{{ person.born }} &middot; {{ person.born_place }}</dd>
+
+        <dt>Died</dt>
+        <dd>{{ person.died }}</dd>
+
+        <dt>Resting place</dt>
+        <dd>{{ person.resting_place }}</dd>
+
+        <dt>Spouse</dt>
+        <dd>{{ person.spouse }}</dd>
+
+        <dt>Children</dt>
+        <dd>{{ person.children | join(', ') }}</dd>
+
+        <dt>Grandchildren</dt>
+        <dd>{{ person.grandchildren | join(', ') }}</dd>
+
+        <dt>Residence</dt>
+        <dd>{{ person.residence }}</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Recognition</span>
+    <h2>Awards &amp; honours</h2>
+    <table>
+      <thead>
+        <tr><th style="width: 5.5rem;">Year</th><th>Honour</th><th>Body</th></tr>
+      </thead>
+      <tbody>
+        {% for a in awards %}
+        <tr>
+          <td><strong>{{ a.year }}</strong></td>
+          <td>{{ a.title }}<br><span class="small">{{ a.description }}</span></td>
+          <td>{{ a.body }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  {% if recent_works %}
+  <section>
+    <span class="eyebrow">Selected works</span>
+    <h2>Later publications</h2>
+    <p class="prose">A few of the major works from the latter half of his career. See the complete list on the <a href="{{ url_for('davidsimmons.works') }}">Works</a> page.</p>
+    <div class="card-grid">
+      {% for w in recent_works %}
+        <div class="card" style="cursor:default;">
+          <div class="meta">{{ w.year }}</div>
+          <h3 style="font-style: italic;">{{ w.title }}</h3>
+          {% if w.subtitle %}<p><em>{{ w.subtitle }}</em></p>{% endif %}
+          {% if w.publisher %}<p class="small">{{ w.publisher }}</p>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section>
+    <span class="eyebrow">Explore</span>
+    <h2>In this archive</h2>
+    <div class="card-grid">
+      <a class="card" href="{{ url_for('davidsimmons.about') }}">
+        <div class="meta">Long-form</div>
+        <h3>About</h3>
+        <p>Biographical essay &mdash; early life, study in Paris, career at Otago and Auckland museums, and scholarly legacy.</p>
+      </a>
+      <a class="card" href="{{ url_for('davidsimmons.timeline') }}">
+        <div class="meta">Chronology</div>
+        <h3>Timeline</h3>
+        <p>A year-by-year record of key life, education, career, publication, and award events.</p>
+      </a>
+      <a class="card" href="{{ url_for('davidsimmons.works') }}">
+        <div class="meta">Bibliography</div>
+        <h3>Works</h3>
+        <p>Thirteen major publications and the Te Maori touring exhibition (1984&ndash;1987).</p>
+      </a>
+      <a class="card" href="{{ url_for('davidsimmons.references') }}">
+        <div class="meta">Sources</div>
+        <h3>References</h3>
+        <p>Family records, museum archives, obituaries, and the National Library catalogue.</p>
+      </a>
+    </div>
+  </section>
+</div>
+{% endblock %}

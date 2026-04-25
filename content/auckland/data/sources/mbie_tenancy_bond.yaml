@@ -1,0 +1,9 @@
+id: source.mbie_tenancy_bond
+title: "MBIE Tenancy Bond Data — NZ rental market"
+author: null
+publisher: "Ministry of Business, Innovation and Employment (Tenancy Services)"
+year: null
+url: "https://www.tenancy.govt.nz/about-tenancy-services/data-and-statistics/"
+type: primary-data
+credibility: official
+notes: "Administrative data from tenancy-bond lodgements — the authoritative source for NZ rental-market rents by region, bedroom count, and tenancy term."

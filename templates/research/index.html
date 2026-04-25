@@ -1,0 +1,97 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Research · Luke Simmons{% endblock %}
+{% block meta_description %}Research notes and references across computer science, climate science, and medical science.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([('Home', url_for('main.home')), ('Research', None)]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Collection</span>
+    <h1>Research</h1>
+    <hr class="rule">
+    <p class="lede">
+      Working references on topics I&rsquo;m studying. Each branch is an ongoing
+      document &mdash; structured like a small academic reference, not a blog.
+      Computer science is the first one ready to read; the others are on the
+      way.
+    </p>
+  </header>
+
+  <section>
+    <span class="eyebrow">Branches</span>
+    <h2>What&rsquo;s in the collection</h2>
+
+    <div class="card-grid">
+      <a class="card" href="{{ url_for('research.cs_index') }}">
+        <div class="meta">Branch &middot; 01 &middot; Ready</div>
+        <h3>Computer Science</h3>
+        <p>Foundations, Python, Rust, and notes on the broader AI and IT ecosystem.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_index') }}">
+        <div class="meta">Branch &middot; 02 &middot; Ready</div>
+        <h3>Climate Science &amp; AI</h3>
+        <p>Climate modelling, data assimilation, and the role of machine learning in earth-system science.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.medsci_index') }}">
+        <div class="meta">Branch &middot; 03 &middot; Ready</div>
+        <h3>Medical Science</h3>
+        <p>Neuroscience, bioinformatics, medical imaging, and clinical AI.</p>
+      </a>
+      <a class="card" href="{{ url_for('auckland.index') }}">
+        <div class="meta">Branch &middot; 04 &middot; In progress</div>
+        <h3>Auckland</h3>
+        <p>A long-horizon, systems-engineering analysis of Auckland&rsquo;s problems and the solution camps that address them. Content-as-data, rendered from a typed entity graph.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">How these are made</span>
+    <h2>Two authorship regimes</h2>
+    <p class="prose">
+      Not all four branches are made the same way. I want that to be obvious
+      rather than buried in a disclosure at the bottom of the page, because
+      it changes how much weight you should give any particular claim.
+    </p>
+
+    <div class="authorship-split">
+      <div class="authorship-regime">
+        <span class="author-chip author-agent">agent</span>
+        <h3>Computer Science, Climate Science &amp; AI, Medical Science</h3>
+        <p class="prose">
+          These three branches are <strong>AI-drafted reference notes</strong>
+          I commissioned for my own study and publish unedited, in case
+          they&rsquo;re useful to someone moving through similar material.
+          Treat them as machine-written study notes &mdash; useful for
+          orientation, not authoritative; verify any claim before citing.
+        </p>
+      </div>
+
+      <div class="authorship-regime">
+        <span class="author-chip author-agent-edited">agent + luke</span>
+        <h3>Auckland</h3>
+        <p class="prose">
+          The Auckland branch is AI-drafted <strong>in iterative dialogue
+          with me</strong> &mdash; I read the material and work through it
+          with the agent by question and answer, shaping framing and scope.
+          Every claim cites a primary source via a lint-gated entity graph,
+          which is a structural check &mdash; independent per-claim
+          fact-checking by me is a step that should sit between drafting and
+          publication and is not yet in place.
+        </p>
+      </div>
+    </div>
+
+    <p class="prose">
+      Both regimes are a deliberate choice, not an accident. The first gets
+      me reading material faster than I could write it myself. The second
+      applies editorial discipline where the subject actually needs it.
+      Neither set of pages is peer-reviewed scholarship or original
+      research.
+    </p>
+  </section>
+</div>
+{% endblock %}

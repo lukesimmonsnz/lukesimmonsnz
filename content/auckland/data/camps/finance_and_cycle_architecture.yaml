@@ -1,0 +1,41 @@
+id: camp.finance_and_cycle_architecture
+name: Finance architecture and cycle management
+core_claim: >
+  The bank-debt-and-pre-sales financing model is itself a major source of
+  boom-bust cyclicality, and policy tools that smooth demand (credit-cycle
+  regulation, stable immigration, tax stability) are under-used. New
+  financing architectures — build-to-rent equity, pension capital,
+  infrastructure bonds, a state development bank — would stabilise
+  delivery across cycles.
+flagship_moves:
+  - Tax and regulatory settings conducive to long-term build-to-rent equity.
+  - Channels for KiwiSaver and pension capital into housing delivery.
+  - A state development bank or equivalent for counter-cyclical construction finance.
+  - Macroprudential rules explicitly linked to the construction cycle.
+  - Stable, long-horizon immigration settings that reduce demand shocks.
+tensions:
+  - Untested at New Zealand scale; international precedents are mixed.
+  - Cross-cutting with national monetary, immigration, and tax policy — requires coordination beyond Auckland.
+  - May reduce cyclicality at the cost of a lower long-run average build rate.
+  - Risks distorting what gets built toward products favoured by particular finance vehicles.
+addresses:
+  - problem.housing.supply_economics
+interventions:
+  - description: "Develop finance architectures suited to long-horizon, counter-cyclical housing delivery (BTR equity, pension capital, state development bank)."
+    state_variable: developer_margin
+    expected_sign: "0"
+    side_effects:
+      - shifts_cost_of_capital
+      - changes_mix_of_what_gets_built
+  - description: "Damp the housing cycle through macroprudential and demand-management tools."
+    state_variable: annual_consents
+    expected_sign: "0"
+    side_effects:
+      - trades_variance_for_lower_peaks
+      - requires_national_policy_coordination
+advocates:
+  - Reserve Bank of New Zealand (on macroprudential dimension)
+  - Sections of the housing-finance academic literature
+  - Build-to-rent industry associations
+  - International examples (Nordic pension-backed housing; German cooperatives)
+tensions_with: []

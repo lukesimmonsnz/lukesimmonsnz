@@ -1,0 +1,378 @@
+id: problem.housing.supply_economics
+title: "Supply Economics — How Auckland's Housing Gets Built"
+section: housing
+subpage: supply-economics
+parent: problem.housing
+order: 2
+updated: "2026-04-23"
+summary: >
+  Land is the stock. Supply Economics is the flow. This page describes the
+  system that produces dwellings on top of the land substrate: who builds,
+  at what cost, under what constraints, and in response to what signals.
+  International archetypes (Tokyo, Vienna, Houston, London, Singapore)
+  anchor what different supply regimes look like in practice.
+status: draft-v0
+
+systems_model:
+  state_variables:
+    - annual_consents
+    - annual_completions
+    - dwelling_stock
+    - housing_typology_mix
+    - construction_cost_index
+    - developer_margin
+    - industry_firm_count
+    - workforce_size
+    - share_of_supply_by_actor_type
+  inputs:
+    - price_signals_sale_and_rent
+    - interest_rates
+    - population_growth
+    - migration_flows
+    - infrastructure_capacity_investment
+    - zoning_decisions
+    - public_investment
+    - skills_immigration
+  constraints:
+    - land_availability
+    - regulatory_consenting_time
+    - infrastructure_pipeline
+    - construction_firm_capacity
+    - labour_force_skill_mix
+    - finance_availability
+    - materials_supply_chain
+    - building_code
+  feedback_loops:
+    - "prices -> developer_margin -> new_supply -> prices (negative feedback, lagged 2–4 years — the classic market response)"
+    - "cyclical_contraction -> firm_exits -> workforce_exits -> loss_of_capacity -> slower_response_in_next_upturn (hysteresis)"
+    - "infrastructure_capacity <-> supply_rate (bidirectional — capacity gates supply; supply-driven rates revenue funds capacity)"
+    - "public_builder_counter_cyclical_investment -> stabilised_workforce -> maintained_private_capacity (claimed; empirically contested)"
+    - "building_code_tightening -> hard_construction_cost_rise -> supply_reduction (clear sign; magnitude debated)"
+
+figures:
+  - id: fig.auckland_annual_consents_series
+    caption: "Annual dwelling consents issued in the Auckland region, long-run series. Placeholder — to be produced from Stats NZ building consents data."
+    image: /static/img/auckland/supply-annual-consents.svg
+    alt: "Line chart of annual dwelling consents issued in the Auckland region over the past twenty to thirty years, showing the cyclical pattern and the post-2016 shift."
+    status: placeholder
+  - id: fig.consents_by_typology
+    caption: "Consents in Auckland by dwelling typology (detached, townhouse, apartment) over time, showing the intensification shift following the 2016 Unitary Plan. Placeholder — to be produced from RIMU data."
+    image: /static/img/auckland/supply-consents-by-typology.svg
+    alt: "Stacked area chart showing the share of Auckland dwelling consents by typology over time, with multi-unit dwellings overtaking detached housing in the late 2010s."
+    status: placeholder
+  - id: fig.price_to_consents_lag
+    caption: "Auckland dwelling prices vs. consents issued, illustrating the cyclical lag of supply response to price signals. Placeholder — to be produced from REINZ/CoreLogic and Stats NZ data."
+    image: /static/img/auckland/supply-price-consents-lag.svg
+    alt: "Dual-axis time series chart showing Auckland dwelling prices against consents issued, with consents lagging prices by roughly two to four years."
+    status: placeholder
+  - id: fig.nz_construction_productivity
+    caption: "New Zealand construction-sector labour productivity compared to other sectors. Placeholder — to be produced from Stats NZ productivity data and OECD cross-country comparisons."
+    image: /static/img/auckland/supply-construction-productivity.svg
+    alt: "Line chart comparing labour productivity growth in the New Zealand construction sector against other major sectors, showing flat or declining construction productivity over decades."
+    status: placeholder
+  - id: fig.international_elasticity_comparison
+    caption: "Approximate supply elasticity of major rich-country cities — Tokyo, Houston, Vienna, Singapore, London, Sydney, Auckland. Placeholder — to be produced from OECD and city-specific housing statistics."
+    image: /static/img/auckland/supply-international-elasticity.svg
+    alt: "Bar chart comparing approximate housing supply elasticity across Tokyo, Houston, Vienna, Singapore, London, Sydney, Melbourne, and Auckland, showing the range from highly elastic to highly inelastic regimes."
+    status: placeholder
+
+driver_ids:
+  - driver.regulatory_regime
+  - driver.supply_cyclicality
+  - driver.construction_productivity
+  - driver.infrastructure_gating
+  - driver.fragmented_builder_ecosystem
+  - driver.finance_procyclicality
+  - driver.climate_exposure
+  - driver.iwi_intergenerational_ownership
+
+camp_ids:
+  - camp.regulatory_deregulation
+  - camp.non_market_delivery_at_scale
+  - camp.industrial_transformation
+  - camp.trunk_infrastructure_capacity
+  - camp.finance_and_cycle_architecture
+
+evidence_ids:
+  - evidence.auckland_dwelling_stock
+  - evidence.auckland_annual_consents_range
+  - evidence.unitary_plan_typology_shift
+  - evidence.nz_construction_productivity_flat
+  - evidence.post_covid_construction_cost_rise
+
+source_ids:
+  - source.stats_nz_building_consents
+  - source.ac_rimu
+  - source.nz_productivity_commission
+  - source.te_waihanga_infrastructure
+  - source.greenaway_mcgrevy_upzoning
+  - source.oecd_housing_toolkit
+  - source.tokyo_metropolitan_housing
+  - source.vienna_wohnfonds
+
+narrative:
+  - heading: Introduction
+    body: |
+      Land is the stock. Supply Economics is the flow. The Land sub-page
+      described what ground is available in Auckland, who owns it, and how
+      it is zoned. This page picks up one level downstream: the system that
+      produces new dwellings on top of that ground — who builds, at what
+      cost, under what constraints, and in response to what signals.
+
+      On a 10-, 50-, or 100-year horizon, the headline-political question
+      of whether supply was high or low in any particular year is
+      uninteresting. What matters is the **shape** of the system — its
+      actors, its cost structure, its feedback loops, and the binding
+      constraints that will still apply when today's political cycle has
+      long passed.
+
+  - heading: Scale and history
+    body: |
+      Auckland consents roughly ten to twenty thousand new dwellings per
+      year, and completions lag consents by a year or two and fall short of
+      them by a modest margin. The region's stock is in the order of six
+      hundred thousand dwellings, and net additions — the difference
+      between new builds and demolitions — are small relative to that
+      base. Even at sustained high build rates, the built environment
+      turns over slowly.
+
+      The most visible structural shift over the last decade has been in
+      **typology**. Historically, Auckland housing was detached-dominated:
+      the suburban detached house on its own section was the default
+      dwelling. Since the 2016 Auckland Unitary Plan, consents have
+      shifted sharply toward multi-unit housing — townhouses and
+      apartments now make up the majority of new consents. This is the
+      single clearest supply-side signal that upzoning works, whatever
+      debates remain about magnitude.
+
+      Auckland's supply has also always been **cyclical**. The sector
+      boom-busts on roughly decadal rhythms, with downturns after the
+      1970s oil shock, the 1987 market crash, the 2008 Global Financial
+      Crisis, and a further contraction from 2022. Each downturn destroys
+      productive capacity — firms exit, skilled workers leave the
+      industry, apprenticeships are abandoned — and that capacity is slow
+      to rebuild when the next upturn arrives.
+
+      <figure>
+        <img src="/static/img/auckland/supply-annual-consents.svg" alt="Line chart of annual dwelling consents issued in the Auckland region over the past twenty to thirty years, showing the cyclical pattern and the post-2016 shift.">
+        <figcaption>Figure 1. Annual dwelling consents issued in the Auckland region, long-run series. Placeholder — to be produced from Stats NZ building consents data.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/static/img/auckland/supply-consents-by-typology.svg" alt="Stacked area chart showing the share of Auckland dwelling consents by typology over time, with multi-unit dwellings overtaking detached housing in the late 2010s.">
+        <figcaption>Figure 2. Consents in Auckland by dwelling typology (detached, townhouse, apartment) over time. Placeholder — to be produced from RIMU data.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/static/img/auckland/supply-price-consents-lag.svg" alt="Dual-axis time series chart showing Auckland dwelling prices against consents issued, with consents lagging prices by roughly two to four years.">
+        <figcaption>Figure 3. Auckland dwelling prices vs. consents issued, illustrating the cyclical lag of supply response. Placeholder — to be produced from REINZ/CoreLogic and Stats NZ data.</figcaption>
+      </figure>
+
+  - heading: Who builds
+    body: |
+      Auckland's supply is delivered by a heterogeneous mix of actors with
+      very different time horizons, financial structures, and motivations.
+      This heterogeneity is a durable structural feature of the system.
+
+      - **Small-scale residential builders** — one to twenty houses a year,
+        historically the majority of detached supply, highly cyclical, and
+        first to exit on every downturn.
+      - **Mid-size developers** specialising in townhouses and small
+        apartments. Fastest-growing segment since the Unitary Plan enabled
+        intensification zones.
+      - **Large-scale developers** — apartment towers, master-planned
+        communities. Capital-intensive, concentrated in a handful of
+        firms, dependent on pre-sales and project finance.
+      - **Group-home builders** such as Fletcher Living, GJ Gardner, and
+        Mike Greer. National scale, standardised product, modest
+        productivity gains from volume.
+      - **Kāinga Ora**, the Crown public-housing builder. A significant
+        delivery channel through the 2020s, and politically cyclical.
+      - **Community Housing Providers** — third-sector builders,
+        including iwi-linked entities, growing as a share of the total.
+      - **Iwi development arms** — Ngāti Whātua Ōrākei, Tainui Group
+        Holdings, and regional iwi entities. Intergenerationally
+        motivated; they cannot sell and exit the way a private
+        speculator can.
+      - **Owner-builders and self-builders**. A small but genuine
+        component of detached supply, long under-counted.
+
+      Alongside these sits a category that is **under-described in the
+      policy literature**: intergenerational family trusts. Under New
+      Zealand's Trusts Act, beneficiary information is protected, which
+      means a meaningful share of significant land and property assets
+      is held in trust vehicles that do not appear in public statistics.
+      Structurally these trusts behave more like iwi than like private
+      speculators — long-horizon, typically non-exiting, often with
+      explicit intergenerational or conservation mandates written into
+      their deeds. Over 50- and 100-year windows they are a real
+      delivery and custodianship vector, even though public-facing
+      analyses rarely name them.
+
+      The durable point is that no single actor dominates. This is both
+      a source of resilience — no single-point failure can collapse
+      delivery — and a coordination problem, since no single policy
+      lever can move the aggregate supply rate at will.
+
+  - heading: The cost stack
+    body: |
+      A new Auckland dwelling's delivered cost is a stack of distinct
+      components, each with its own drivers and its own long-run
+      behaviour. Structural categories matter more than point figures,
+      because the point figures shift with every interest-rate cycle and
+      every commodity shock; the structure of the stack is the durable
+      object.
+
+      | Component                                        | Driver of variation                                    |
+      |--------------------------------------------------|--------------------------------------------------------|
+      | Serviced land                                    | Location, zoning, infrastructure, title fragmentation  |
+      | Hard construction cost                           | Materials, labour, complexity, code requirements       |
+      | Finance cost during build                        | Interest rates, project duration, debt/equity mix      |
+      | Infrastructure contributions and levies          | Council settings, infrastructure need                  |
+      | Consenting and design                            | Regulatory complexity, reviewer capacity, appeals      |
+      | Developer margin required to fund the next project | Risk premium, cost of capital                        |
+      | GST and other compliance                         | National tax settings                                  |
+
+      On a 50-year view, the share of the stack taken by each component
+      drifts more than its absolute level. Materials and labour have
+      trended up as a share, because New Zealand construction-sector
+      labour productivity growth has been close to flat for decades
+      while the rest of the economy has grown faster. Developer margin
+      is load-bearing: a project that does not clear roughly fifteen to
+      twenty per cent margin on cost typically cannot finance the next
+      one. When costs rise faster than sale prices, margin compresses,
+      projects get cancelled, and the pipeline thins regardless of the
+      underlying demand — which is the main mechanism by which housing
+      affordability crises become self-perpetuating.
+
+      <figure>
+        <img src="/static/img/auckland/supply-construction-productivity.svg" alt="Line chart comparing labour productivity growth in the New Zealand construction sector against other major sectors, showing flat or declining construction productivity over decades.">
+        <figcaption>Figure 4. New Zealand construction-sector labour productivity compared to other sectors. Placeholder — to be produced from Stats NZ productivity data and OECD cross-country comparisons.</figcaption>
+      </figure>
+
+  - heading: International comparators
+    body: |
+      The engineering move in a problem like this is to compare. Auckland
+      is one of a small number of major English-speaking metropolitan
+      housing markets with broadly similar legal inheritance, and a
+      larger set of rich-country metropolitan markets that solve the
+      supply problem differently. Each archetype reveals which of the
+      constraints described above is most binding in practice.
+
+      **Tokyo.** National-level permissive zoning, a large population of
+      small private builders, and a culture of continual stock
+      replacement produce the highest supply elasticity of any major
+      rich-country city. Tokyo's population has been broadly steady for
+      decades, yet its housing stock is continually renewed. The
+      archetype shows what happens when regulatory and land constraints
+      are genuinely relaxed.
+
+      **Houston and Dallas.** Permissive land-use, greenfield expansion
+      at the metropolitan edge, and lightly regulated construction
+      produce a supply-elastic regime — at the price of car dependence,
+      infrastructure sprawl, and climate exposure. The archetype shows
+      the cost of pursuing elasticity primarily through land release.
+
+      **Vienna.** A dominant public and cooperative housing sector
+      delivers around half of new supply. Prices and rents are
+      stabilised across market cycles by the sheer scale of non-market
+      delivery. Vienna is the clearest illustration of a supply regime
+      where **market share**, not market reform, is the lever.
+
+      **Singapore.** The HDB, a government builder, has delivered the
+      majority of Singapore's housing; private freehold is the
+      exception rather than the default. The model is not easily
+      transplantable — it rests on specific political and constitutional
+      foundations — but it is instructive about what non-market delivery
+      at real scale can achieve.
+
+      **London, Sydney, and Melbourne.** Close structural analogues to
+      Auckland — supply-inelastic, high prices, similar regulatory
+      politics, similar demographic pressures. Worth comparing directly,
+      because they are the cities Auckland's problems most resemble and
+      whose policy experiments Auckland can learn from fastest.
+
+      **Nordic prefabrication** — Sweden, Finland, Norway. Heavy use of
+      factory-built modular components has raised construction
+      productivity materially. The archetype shows what is possible on
+      the industrial-transformation front, and also what scale is
+      required to make prefabrication work.
+
+      Auckland's current supply elasticity sits somewhere between its
+      pre-2016 self and the middle of the rich-country distribution. It
+      is lower than Tokyo or Houston; it is higher than Sydney or
+      London. The question for a 50- or 100-year frame is which
+      archetype Auckland is drifting toward — or whether it will
+      sustain a distinct hybrid.
+
+      <figure>
+        <img src="/static/img/auckland/supply-international-elasticity.svg" alt="Bar chart comparing approximate housing supply elasticity across Tokyo, Houston, Vienna, Singapore, London, Sydney, Melbourne, and Auckland, showing the range from highly elastic to highly inelastic regimes.">
+        <figcaption>Figure 5. Approximate supply elasticity of major rich-country cities. Placeholder — to be produced from OECD and city-specific housing statistics.</figcaption>
+      </figure>
+
+  - heading: Durable constraints
+    body: |
+      Features of the supply system that a reader in 2076 or 2126 will
+      still recognise. They are presented without ranking; different
+      observers disagree about which is most binding.
+
+      1. **Cyclicality.** The sector boom-busts every seven to fifteen
+         years, destroying firms and workforce each time.
+      2. **Weak productivity growth.** Without structural change,
+         construction costs will keep rising relative to the economy.
+      3. **Labour force constraints.** Construction depends on a
+         slow-to-train workforce; skill shortages recur in every boom.
+      4. **Infrastructure-gated capacity.** Even where zoning permits,
+         developments stall on water, wastewater, stormwater, and
+         transport capacity.
+      5. **Finance pro-cyclicality.** Banks tighten lending at the
+         moment developers most need finance.
+      6. **Material import dependence.** New Zealand imports most
+         structural materials; global supply shocks feed into local
+         costs with limited substitution.
+      7. **Small domestic market.** Auckland is too small to support
+         Tokyo- or Houston-scale standardised mass production;
+         productivity gains via scale are structurally limited.
+      8. **Regulatory regime instability.** Consenting rules, heritage
+         overlays, and the broader resource-management regime change on
+         decadal timescales.
+      9. **Political cyclicality of public builders.** Kāinga Ora's
+         build rate rises and falls with government, so non-market
+         supply is not a full counter-cyclical stabiliser unless its
+         funding is insulated from electoral cycles.
+      10. **Long-horizon builders are the minority.** Iwi development
+          arms and intergenerational family trusts are the only actors
+          structurally committed to 50-plus-year delivery. Everyone
+          else can, and eventually does, exit.
+
+  - heading: The durable long-run questions
+    body: |
+      Questions that still matter in 2076 regardless of who is in
+      government. A defensible document can describe the terrain and
+      present the camps; it cannot and should not resolve them.
+
+      - What supply elasticity should Auckland aim for, and is that
+        achievable given the city's physical and market size?
+      - How is the boom-bust cycle to be damped — through
+        counter-cyclical public build, credit-cycle regulation, or
+        accepting it as a fact of life?
+      - Should the housing-production system rely on a diverse ecosystem
+        of builders, or concentrate on a few large actors at scale?
+      - How is construction productivity to be raised — through
+        prefabrication and modern methods of construction, regulatory
+        standardisation, skills immigration, or structural
+        consolidation?
+      - What share of new supply should come from non-market actors
+        (Crown, community housing providers, iwi, long-horizon trusts)
+        on a 50-year horizon?
+      - How should the building code be balanced between resilience and
+        thermal performance on the one hand and affordability on the
+        other?
+      - What financing architecture produces stable delivery across
+        cycles?
+      - How does climate adaptation — insurance pricing, managed retreat
+        — re-shape where and what gets built over the century?
+
+      The rest of this page presents the solution camps that attempt to
+      answer these questions. They overlap in practice; a serious policy
+      programme combines several.

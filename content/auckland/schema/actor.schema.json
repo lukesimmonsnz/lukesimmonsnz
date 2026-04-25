@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aucklandproject://schema/actor.schema.json",
+  "title": "Actor",
+  "description": "An institution or individual that appears in the analysis.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "type"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^actor\\.[a-z0-9_.]+$"},
+    "name": {"type": "string"},
+    "type": {"enum": ["iwi", "hapu", "crown-agency", "council", "ccos", "political-party", "ngo", "academic-institution", "business", "individual", "tribunal"]},
+    "description": {"type": "string"},
+    "roles": {"type": "array", "items": {"type": "string"}},
+    "source_ids": {"type": "array", "items": {"type": "string", "pattern": "^source\\."}}
+  }
+}

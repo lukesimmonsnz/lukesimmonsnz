@@ -1,0 +1,73 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Challenges and Limitations &middot; Climate Science &amp; AI &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Technical, data, and governance challenges facing AI applied to climate science &mdash; from generalisation to novel climate states to equity concerns.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Climate Science &amp; AI', url_for('research.climate_index')),
+    ('Challenges and Limitations', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Climate Science</span>
+    <h1>Challenges and Limitations</h1>
+    <hr class="rule">
+    <p class="lede">Despite remarkable progress, applying AI to climate science faces genuine technical, data, and governance challenges. Understanding these limitations is essential for setting realistic expectations and directing research efforts where they are most needed.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Summary.</strong> AI holds substantial promise for climate science, but faces real limitations: sparse and inconsistent historical data, poor generalisation to unseen climate states, lack of interpretability, high computational cost, difficulty modelling rare extreme events, and governance gaps around who benefits from AI-enhanced climate tools. Addressing these challenges requires close collaboration between AI researchers and domain scientists.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#data-challenges">Data Quality and Availability</a></li>
+        <li><a href="#generalisation">Generalisation Beyond Training Data</a></li>
+        <li><a href="#interpretability">Interpretability and Trust</a></li>
+        <li><a href="#compute">Computational Cost</a></li>
+        <li><a href="#extreme-events">Extreme Events and Nonlinearity</a></li>
+        <li><a href="#governance">Governance and Equity</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="data-challenges">Data Quality and Availability</h2>
+    <p>Climate AI models are only as reliable as their training data. Historical climate records are spatially uneven &mdash; dense in Western Europe and North America but sparse across much of Africa, the polar regions, and the deep ocean. Pre-instrumental records (tree rings, ice cores, pollen) introduce additional uncertainties when used to extend training datasets back centuries.</p>
+    <p>Reanalysis products &mdash; gridded historical datasets produced by assimilating observational records into numerical models &mdash; have improved coverage dramatically, but carry their own biases. AI systems trained on reanalysis data may inadvertently learn artefacts of the assimilation process rather than true atmospheric dynamics<sup><a href="{{ url_for('research.climate_references') }}#ref-8">[8]</a></sup>.</p>
+
+    <h2 id="generalisation">Generalisation Beyond Training Data</h2>
+    <p>A fundamental challenge is that climate AI systems are typically trained on data from a climate system operating within a relatively narrow range of conditions. With the NOAA global mean atmospheric CO&#8322; reaching a record 422.8&nbsp;ppm in 2024 &mdash; and the annual growth rate itself a record 3.75&nbsp;ppm<sup><a href="{{ url_for('research.climate_references') }}#ref-23">[23]</a></sup> &mdash; the climate is moving further outside the training envelope of reanalysis-era records, and models may extrapolate poorly. Neural networks are particularly prone to overconfident predictions in out-of-distribution conditions.</p>
+    <p>Precipitation extremes offer a clear example: the statistical relationship between large-scale atmospheric dynamics and local rainfall intensity may shift substantially in warmer climates, rendering models calibrated on historical data unreliable for projecting future extremes<sup><a href="{{ url_for('research.climate_references') }}#ref-11">[11]</a></sup>.</p>
+
+    <h2 id="interpretability">Interpretability and Trust</h2>
+    <p>Climate scientists require not just accurate predictions but explainable ones. Regulatory bodies, policymakers, and the public need to understand <em>why</em> a model predicts a particular outcome &mdash; especially when those predictions inform costly adaptation decisions. The opaque nature of deep neural networks creates a trust deficit that limits their adoption in operational forecasting and policy contexts.</p>
+    <p>Physics-informed AI approaches &mdash; which embed known physical laws as constraints &mdash; partially address this by ensuring outputs remain physically consistent, but fully interpretable AI remains an open research problem.</p>
+
+    <h2 id="compute">Computational Cost</h2>
+    <p>Training large AI models requires substantial compute. For climate applications specifically, generating the high-resolution simulation data needed to train emulators can itself require significant supercomputer time, creating a bootstrapping problem. Running AI-based forecasting systems at global scale in real time adds further infrastructure demands.</p>
+    <p>The carbon footprint of large-scale AI training is also a live concern &mdash; the irony of energy-intensive model training for climate prediction has not been lost on the research community.</p>
+
+    <h2 id="extreme-events">Extreme Events and Nonlinearity</h2>
+    <p>Rare extreme events &mdash; the tail of climate distributions &mdash; are precisely those of greatest societal concern, yet they are by definition underrepresented in training data. AI systems trained to minimise average error may systematically underestimate the frequency and intensity of extremes. Invasive species outbreaks, compound fire-drought events, and abrupt sea-ice loss are examples where AI models have shown limited skill<sup><a href="{{ url_for('research.climate_references') }}#ref-12">[12]</a></sup>.</p>
+    <p>Climate tipping points &mdash; where small changes trigger large irreversible shifts &mdash; present an especially difficult challenge because such transitions may never have occurred in the observational record at all.</p>
+
+    <h2 id="governance">Governance and Equity</h2>
+    <p>Beyond technical challenges, there are important governance questions. Climate AI tools developed by wealthy institutions may not address the needs of the communities most vulnerable to climate change. Bias in training data &mdash; particularly under-representation of Global South weather stations &mdash; can produce systems that perform well for temperate regions but poorly for the tropics where climate impacts are most severe.</p>
+    <p>Governance frameworks for climate AI are still nascent. Questions of accountability, transparency, and equitable access to AI-enhanced climate projections require international collaboration to resolve<sup><a href="{{ url_for('research.climate_references') }}#ref-13">[13]</a></sup>.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.climate_applications'), 'title': 'Applications'},
+      next={'url': url_for('research.climate_future'), 'title': 'Future Directions'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% block meta_description %}{{ site_tagline }}{% endblock %}">
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
+
+  {# --- Open Graph / social cards --------------------------------------- #}
+  {# Pages can override og_title / og_description / og_image / og_type.   #}
+  {# Defaults fall through to <title>, meta_description, cover.jpg, website. #}
+  <meta property="og:site_name" content="{{ site_name }}">
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
+  <meta property="og:url" content="{{ site_url }}{{ request.path }}">
+  <meta property="og:image" content="{% block og_image %}{{ site_url }}{{ url_for('static', filename='img/cover.jpg') }}{% endblock %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ self.og_title() }}">
+  <meta name="twitter:description" content="{{ self.og_description() }}">
+  <meta name="twitter:image" content="{{ self.og_image() }}">
+
+  <link rel="canonical" href="{{ site_url }}{{ request.path }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site_name }} — Blog" href="{{ url_for('blog.feed') }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+  {% include "_partials/nav.html" %}
+  {% block subnav %}{% endblock %}
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include "_partials/footer.html" %}
+
+  <script>
+    // Adds a § anchor link to every .prose heading with an id.
+    // Click it to copy the permalink to clipboard. No external deps.
+    (function () {
+      const headings = document.querySelectorAll('.prose h2[id], .prose h3[id]');
+      headings.forEach(function (h) {
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.className = 'anchor-link';
+        a.setAttribute('aria-label', 'Copy link to section: ' + h.textContent.trim());
+        a.textContent = '\u00a7';
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          const url = location.origin + location.pathname + '#' + h.id;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).catch(function () { });
+          }
+          history.replaceState(null, '', '#' + h.id);
+          a.classList.add('copied');
+          window.setTimeout(function () { a.classList.remove('copied'); }, 1500);
+        });
+        h.appendChild(a);
+      });
+    })();
+  </script>
+</body>
+</html>

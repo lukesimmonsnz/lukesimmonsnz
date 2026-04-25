@@ -1,0 +1,12 @@
+id: evidence.waitakere_area_ha
+statement: "The Waitākere Ranges Regional Park covers approximately 16,000 hectares in the west of the Auckland region."
+value: 16000
+unit: hectares
+geography: "Waitākere Ranges, west Auckland"
+time_period: current
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.ac_rimu
+notes: "Regional park area; to be verified against Auckland Council parks GIS layer."

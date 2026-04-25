@@ -1,0 +1,40 @@
+id: camp.compact_city
+name: Compact city / intensification-first
+core_claim: >
+  Auckland should accommodate growth within its existing urban footprint, because
+  peripheral land is ecologically and economically costly to urbanise.
+flagship_moves:
+  - Hold or tighten the Rural Urban Boundary.
+  - Remove remaining special character overlays.
+  - Upzone aggressively along rapid-transit corridors.
+  - Strengthen density bonuses near transit nodes.
+tensions:
+  - Heritage preservation and character area politics.
+  - Rural and lifestyle-block landowner expectations.
+  - Household preferences for detached housing.
+  - Construction-sector capacity to deliver dense product at scale.
+addresses:
+  - problem.housing.land
+interventions:
+  - description: "Increase zoned capacity within existing urban footprint."
+    state_variable: zoned_capacity_dwellings
+    expected_sign: "+"
+    side_effects:
+      - amenity_pressure_in_upzoned_areas
+  - description: "Remove character overlays to allow demolition and redevelopment of heritage stock."
+    constraint_relaxed: heritage_and_character_overlays
+    state_variable: developable_area_hectares
+    expected_sign: "+"
+    side_effects:
+      - loss_of_heritage_character
+      - political_opposition_in_inner_isthmus
+advocates:
+  - Greater Auckland commentariat
+  - Ryan Greenaway-McGrevy and collaborators
+  - Parts of The Helen Clark Foundation
+  - Parts of Treasury
+evidence_ids:
+  - evidence.native_land_court_year
+tensions_with:
+  - camp.conservation_first
+  - camp.greenfield_expansion

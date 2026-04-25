@@ -1,0 +1,13 @@
+id: driver.regulatory_regime
+name: The regulatory regime over land use
+description: >
+  Zoning, the Resource Management Act (and its successors), heritage overlays,
+  viewshafts, the Rural Urban Boundary, and the Future Urban Zone collectively
+  decide what can be built where. The particular statutes change on decadal
+  timescales; the underlying allocation problem persists.
+consensus: consensus
+category: regulatory
+timescale: medium
+affects:
+  - problem.housing.land
+  - problem.housing.supply_economics

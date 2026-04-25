@@ -1,0 +1,66 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Bioinformatics &middot; Medical Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Machine learning for genomic analysis &mdash; multi-omics integration in ulcerative colitis, and multimodal protein structure prediction with ESM-3.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Medical Science', url_for('research.medsci_index')),
+    ('Bioinformatics', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Medical Science</span>
+    <h1>Bioinformatics: Multi-Omics Integration and Protein Structure</h1>
+    <hr class="rule">
+    <p class="lede">High-throughput genomic technologies have enabled detailed investigation into the genetic and molecular underpinnings of complex diseases. Machine learning &mdash; through multi-omics factor analysis and multimodal language models &mdash; is now central to extracting mechanism from these datasets.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> Two case studies illustrate the role of machine learning in modern bioinformatics: an integrative multi-omics analysis of ulcerative colitis using MOFA+ to identify dysregulated regulatory pathways, and the ESM-3 protein language model, which conditions on sequence, structure, and function to enable fine-grained protein design for drug discovery.
+    </aside>
+
+    <h2 id="uc">1. Mechanistic Analysis of Genomic Processes Using Machine Learning: A Case Study on Ulcerative Colitis</h2>
+
+    <h3>1.1 Introduction</h3>
+    <p>The advent of high-throughput genomic technologies has enabled detailed investigation into the genetic and molecular underpinnings of complex diseases such as ulcerative colitis (UC). Despite significant progress in understanding UC, a comprehensive mechanistic analysis integrating diverse genomics data remains challenging. This section presents a machine learning approach to elucidate the regulatory mechanisms contributing to UC by integrating multiple omics layers.</p>
+
+    <h3>1.2 Methods</h3>
+
+    <h4>Data Collection and Preprocessing</h4>
+    <p>ATAC-seq, RNA-seq, and protein data are collected from affected and unaffected colonic tissues of patients diagnosed with ulcerative colitis. The raw sequencing reads are processed using standard pipelines to generate aligned BAM files and quantified gene expression matrices.</p>
+
+    <h4>Data Integration</h4>
+    <p>To integrate the heterogeneous omics datasets, MOFA+ (multi-omics factor analysis) is employed to learn shared latent factors across modalities. This approach identifies common regulatory processes underlying UC pathogenesis by leveraging both transcriptomic and epigenetic information.</p>
+
+    <h3>1.3 Results</h3>
+    <p>The integrated analysis reveals several key regulatory pathways that are dysregulated in ulcerative colitis tissues compared to healthy controls. Specifically, a set of transcription factors (TFs) and chromatin modifiers are identified whose activity is altered, leading to aberrant gene expression patterns associated with inflammation.</p>
+
+    <h3>1.4 Discussion</h3>
+    <p>This case study demonstrates the power of machine learning in uncovering mechanistic insights into complex diseases by integrating multiple omics layers. The regulatory network identified offers a promising framework for further investigation into UC pathogenesis and potential therapeutic targets.</p>
+
+    <h2 id="esm3">2. Advancing Protein Structure Prediction with ESM-3: A Comprehensive Model for Multimodal Protein Design</h2>
+
+    <p>The development of effective protein structure prediction models has been instrumental in advancing our understanding of biological systems. Building upon the groundbreaking work of AlphaFold 2<sup><a href="{{ url_for('research.medsci_references') }}#ref-17">[17]</a></sup> and ESMFold<sup><a href="{{ url_for('research.medsci_references') }}#ref-18">[18]</a></sup>, the recent introduction of ESM3 (Hayes <em>et al.</em>, 2025)<sup><a href="{{ url_for('research.medsci_references') }}#ref-40">[40]</a></sup> represents a significant leap forward.</p>
+
+    <h3>2.1 ESM-3 Architecture</h3>
+    <p>ESM-3 is designed to condition on sequence, structure, and functional annotations simultaneously. This multimodal conditioning enables fine-grained control over protein design across all three modalities, facilitating the creation of proteins with specific desired properties.</p>
+
+    <h3>2.2 Applications in Drug Design</h3>
+    <p>The ability to predict atomic-level structures without relying on multiple sequence alignments (MSAs) makes ESM-3 highly valuable for drug discovery. It can rapidly screen large protein databases and design novel binders, accelerating the process of identifying potential therapeutic candidates.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.medsci_neuroscience'), 'title': 'Neuroscience & AI'},
+      next={'url': url_for('research.medsci_imaging'), 'title': 'Medical Imaging AI'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

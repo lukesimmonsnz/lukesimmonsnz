@@ -1,0 +1,230 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Computer Science · Research · Luke Simmons{% endblock %}
+{% block meta_description %}Foundations of computer science: theoretical foundations, algorithms, languages, architecture, operating systems, and networking.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Computer Science', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research · Branch 01</span>
+    <h1>Computer Science</h1>
+    <hr class="rule">
+    <p class="lede">From Turing&rsquo;s abstract machines to modern cloud-distributed systems, computer science provides the mathematical and engineering bedrock on which every software system is built.</p>
+    <div class="chips" style="margin-top: 1.25rem;">
+      <span class="chip">Computability &amp; complexity</span>
+      <span class="chip">Algorithms</span>
+      <span class="chip">Programming languages</span>
+      <span class="chip">Architecture</span>
+      <span class="chip">Operating systems</span>
+      <span class="chip">Networking</span>
+      <span class="chip">Databases</span>
+      <span class="chip">Cryptography</span>
+    </div>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This page surveys the major sub-disciplines of computer science: theoretical foundations (computability, complexity, and information theory); algorithms and data structures; programming language theory; computer architecture; operating systems; and computer networking. Each topic is contextualised with landmark papers and textbooks that remain essential reading for practitioners and researchers alike.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#theoretical">Theoretical foundations</a></li>
+        <li><a href="#algorithms">Algorithms &amp; data structures</a></li>
+        <li><a href="#pl">Programming language theory</a></li>
+        <li><a href="#architecture">Computer architecture</a></li>
+        <li><a href="#os">Operating systems</a></li>
+        <li><a href="#networking">Computer networking</a></li>
+        <li><a href="#databases">Databases &amp; storage</a></li>
+        <li><a href="#security">Security &amp; cryptography</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="theoretical">1. Theoretical foundations</h2>
+
+    <h3>1.1 Computability theory</h3>
+    <p>Modern computer science begins with Alan Turing&rsquo;s 1936 paper on computable numbers, which formalised the concept of an algorithm and proved the existence of undecidable problems<sup><a href="{{ url_for('research.cs_references') }}#ref-1">[1]</a></sup>. The <strong>Turing Machine</strong> &mdash; an abstract device with a tape, head, and state table &mdash; remains the canonical model of general-purpose computation. Alonzo Church developed an equivalent formalism through the <strong>lambda calculus</strong>, leading to the Church&ndash;Turing thesis: any effectively computable function can be computed by a Turing machine.</p>
+
+    <p>G&ouml;del&rsquo;s incompleteness theorems (1931), predating Turing, established that no sufficiently powerful formal system can be both complete and consistent, a result with deep implications for automated theorem proving and formal verification.</p>
+
+    <h3>1.2 Information theory</h3>
+    <p>Claude Shannon&rsquo;s 1948 paper, <em>A Mathematical Theory of Communication</em><sup><a href="{{ url_for('research.cs_references') }}#ref-2">[2]</a></sup>, introduced the <strong>bit</strong> as the fundamental unit of information and defined <strong>entropy</strong> as a measure of uncertainty:</p>
+
+    <pre><code>H(X) = -∑ P(xᵢ) · log₂ P(xᵢ)</code></pre>
+
+    <p>Shannon also proved the <strong>channel capacity theorem</strong>: every noisy channel has a maximum error-free transmission rate (Shannon limit) that no code can exceed. These results underpin data compression (ZIP, PNG, MP3), error-correcting codes (used in every storage device and wireless protocol), and, by extension, the entire telecommunications industry.</p>
+
+    <h3>1.3 Complexity theory</h3>
+    <p>Complexity theory classifies problems by the resources (time, space) required to solve them. The most famous open question in all of mathematics and computer science is whether <strong>P = NP</strong> &mdash; that is, whether every problem whose solution can be verified quickly can also be <em>solved</em> quickly<sup><a href="{{ url_for('research.cs_references') }}#ref-6">[6]</a></sup>. The conjecture that P &ne; NP undergirds modern public-key cryptography: factoring large integers is assumed to be in NP but not in P.</p>
+
+    <table>
+      <thead><tr><th>Class</th><th>Informal definition</th><th>Example problem</th></tr></thead>
+      <tbody>
+        <tr><td><code>P</code></td><td>Solvable in polynomial time</td><td>Sorting, shortest path</td></tr>
+        <tr><td><code>NP</code></td><td>Solution verifiable in polynomial time</td><td>Boolean satisfiability (SAT)</td></tr>
+        <tr><td><code>NP-complete</code></td><td>In NP; every NP problem reduces to it</td><td>Travelling salesman (decision)</td></tr>
+        <tr><td><code>PSPACE</code></td><td>Solvable using polynomial space</td><td>Quantified Boolean formula</td></tr>
+        <tr><td><code>EXP</code></td><td>Solvable in exponential time</td><td>Generalised chess</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="algorithms">2. Algorithms &amp; data structures</h2>
+
+    <p>Knuth&rsquo;s multi-volume <em>The Art of Computer Programming</em><sup><a href="{{ url_for('research.cs_references') }}#ref-7">[7]</a></sup> and Cormen <em>et al.</em>&rsquo;s <em>Introduction to Algorithms</em><sup><a href="{{ url_for('research.cs_references') }}#ref-8">[8]</a></sup> (CLRS) define the canonical curriculum. Algorithm analysis uses <strong>asymptotic notation</strong> (Big-O, &Theta;, &Omega;) to characterise performance independent of hardware.</p>
+
+    <h3>2.1 Fundamental data structures</h3>
+    <ul>
+      <li><strong>Arrays &amp; linked lists</strong> &mdash; O(1) random access vs. O(1) insertion</li>
+      <li><strong>Hash tables</strong> &mdash; average O(1) lookup; collision resolution via chaining or open addressing</li>
+      <li><strong>Binary search trees / balanced trees</strong> (AVL, red-black) &mdash; O(log n) operations guaranteed</li>
+      <li><strong>Heaps</strong> &mdash; O(1) find-min, O(log n) insert; backbone of priority queues</li>
+      <li><strong>Graphs</strong> &mdash; adjacency lists/matrices; vertices and edges model networks, dependencies, state machines</li>
+    </ul>
+
+    <h3>2.2 Landmark algorithms</h3>
+
+    <blockquote>
+      &ldquo;An algorithm must be seen to be believed.&rdquo;<br>
+      <cite>&mdash; Donald E. Knuth, <em>The Art of Computer Programming</em><sup><a href="{{ url_for('research.cs_references') }}#ref-7">[7]</a></sup></cite>
+    </blockquote>
+
+    <table>
+      <thead><tr><th>Algorithm</th><th>Year</th><th>Complexity</th><th>Application</th></tr></thead>
+      <tbody>
+        <tr><td>Merge sort</td><td>1945 (von Neumann)</td><td>O(n log n)</td><td>External/internal sorting</td></tr>
+        <tr><td>Dijkstra&rsquo;s shortest path</td><td>1956 / pub. 1959</td><td>O((V+E) log V)</td><td>Routing protocols (OSPF)</td></tr>
+        <tr><td>Fast Fourier Transform</td><td>1965 (Cooley&ndash;Tukey)</td><td>O(n log n)</td><td>Signal processing, polynomial multiplication</td></tr>
+        <tr><td>RSA</td><td>1977</td><td>O(k&sup3;) key gen</td><td>Public-key encryption</td></tr>
+        <tr><td>PageRank</td><td>1998 (Page et al.)</td><td>O(n &middot; iter)</td><td>Web search ranking</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.3 Dynamic programming &amp; divide-and-conquer</h3>
+    <p>Richard Bellman formalised <strong>dynamic programming</strong> in the 1950s: decompose a problem into overlapping subproblems and cache results (memoisation). Classic applications include the Bellman&ndash;Ford shortest-path algorithm, sequence alignment in bioinformatics (Smith&ndash;Waterman), and the Viterbi algorithm used in speech recognition and error-correcting codes.</p>
+
+    <h2 id="pl">3. Programming language theory</h2>
+
+    <h3>3.1 Paradigms</h3>
+    <p>Programming paradigms are fundamental styles of computation. No real-world language is purely one paradigm; most modern languages are <em>multi-paradigm</em>.</p>
+    <ul>
+      <li><strong>Imperative</strong> &mdash; explicit sequences of statements mutating state (C, Assembly)</li>
+      <li><strong>Object-oriented</strong> &mdash; encapsulation, inheritance, polymorphism (Java, C++, Python)</li>
+      <li><strong>Functional</strong> &mdash; first-class functions, immutability, referential transparency (Haskell, Lisp, Erlang)</li>
+      <li><strong>Logic / declarative</strong> &mdash; state <em>what</em> is true, not how to compute it (Prolog, SQL)</li>
+      <li><strong>Concurrent / reactive</strong> &mdash; model computation as communicating processes (Go, Erlang, Rust async)</li>
+    </ul>
+
+    <h3>3.2 Type systems</h3>
+    <p>A type system is a formal method for classifying values and preventing certain categories of errors. The Hindley&ndash;Milner type inference algorithm (used in Haskell and ML) derives types automatically without explicit annotations. Rust&rsquo;s type system extends this with <em>lifetime</em> annotations, enabling compile-time memory safety proofs (see the <a href="{{ url_for('research.cs_rust') }}">Rust</a> page).</p>
+
+    <h3>3.3 Compilation pipeline</h3>
+    <p>Aho, Lam, Sethi, and Ullman&rsquo;s <em>Compilers: Principles, Techniques, and Tools</em><sup><a href="{{ url_for('research.cs_references') }}#ref-9">[9]</a></sup> (the &ldquo;Dragon Book&rdquo;) is the definitive text. A compiler pipeline typically includes:</p>
+    <ol>
+      <li><strong>Lexical analysis</strong> &mdash; tokenisation via finite automata</li>
+      <li><strong>Parsing</strong> &mdash; syntax tree construction via context-free grammars</li>
+      <li><strong>Semantic analysis</strong> &mdash; type checking, scope resolution</li>
+      <li><strong>Intermediate representation</strong> &mdash; e.g., LLVM IR, SSA form</li>
+      <li><strong>Optimisation</strong> &mdash; dead-code elimination, inlining, vectorisation</li>
+      <li><strong>Code generation</strong> &mdash; target-specific machine code</li>
+    </ol>
+
+    <p>LLVM (Low Level Virtual Machine)<sup><a href="{{ url_for('research.cs_references') }}#ref-10">[10]</a></sup> has become the dominant compiler infrastructure, used as the backend for Clang (C/C++), rustc (Rust), and Swift, among others.</p>
+
+    <h2 id="architecture">4. Computer architecture</h2>
+
+    <p>Patterson and Hennessy&rsquo;s <em>Computer Organisation and Design</em><sup><a href="{{ url_for('research.cs_references') }}#ref-11">[11]</a></sup> and <em>Computer Architecture: A Quantitative Approach</em><sup><a href="{{ url_for('research.cs_references') }}#ref-12">[12]</a></sup> remain the standard texts. The <strong>von Neumann architecture</strong> (1945) &mdash; shared memory for instructions and data, a single bus &mdash; underpins nearly every processor manufactured to this day, with its primary bottleneck being the von Neumann bottleneck (limited memory bandwidth).</p>
+
+    <h3>4.1 The memory hierarchy</h3>
+    <p>Performance in modern systems is dominated by <strong>memory latency</strong>, not raw computation. The hierarchy from fastest/smallest to slowest/largest:</p>
+
+    <table>
+      <thead><tr><th>Level</th><th>Typical latency</th><th>Typical size</th></tr></thead>
+      <tbody>
+        <tr><td>CPU registers</td><td>&lt; 1 ns</td><td>~1 KB</td></tr>
+        <tr><td>L1 cache</td><td>~1&ndash;3 ns</td><td>32&ndash;64 KB</td></tr>
+        <tr><td>L2 cache</td><td>~5&ndash;10 ns</td><td>256 KB &ndash; 1 MB</td></tr>
+        <tr><td>L3 cache</td><td>~20&ndash;40 ns</td><td>4&ndash;64 MB</td></tr>
+        <tr><td>Main RAM (DRAM)</td><td>~60&ndash;100 ns</td><td>8&ndash;512 GB</td></tr>
+        <tr><td>NVMe SSD</td><td>~100 &micro;s</td><td>1&ndash;8 TB</td></tr>
+        <tr><td>HDD</td><td>~5&ndash;10 ms</td><td>1&ndash;20 TB</td></tr>
+      </tbody>
+    </table>
+
+    <h3>4.2 Instruction set architectures</h3>
+    <p>The two dominant ISA philosophies are <strong>CISC</strong> (Complex Instruction Set Computing, exemplified by x86-64) and <strong>RISC</strong> (Reduced Instruction Set Computing, exemplified by ARM and RISC-V). The post-2020 era saw ARM ascend to dominance in mobile and, with Apple Silicon, in high-performance laptops and servers. RISC-V, an open royalty-free ISA, is gaining traction in embedded systems and research processors.</p>
+
+    <h3>4.3 Parallelism</h3>
+    <p>Flynn&rsquo;s taxonomy classifies parallel architectures: SISD, SIMD (vector units in modern CPUs and GPUs), MISD, and MIMD (multi-core CPUs, distributed systems). GPU architecture &mdash; thousands of simple cores executing the same instruction over different data &mdash; is the hardware foundation of modern deep learning<sup><a href="{{ url_for('research.cs_references') }}#ref-3">[3]</a></sup>.</p>
+
+    <h2 id="os">5. Operating systems</h2>
+
+    <p>Tanenbaum&rsquo;s <em>Modern Operating Systems</em><sup><a href="{{ url_for('research.cs_references') }}#ref-13">[13]</a></sup> and Silberschatz <em>et al.</em>&rsquo;s <em>Operating System Concepts</em><sup><a href="{{ url_for('research.cs_references') }}#ref-14">[14]</a></sup> cover the field comprehensively. An OS provides three core abstractions:</p>
+
+    <ul>
+      <li><strong>Process</strong> &mdash; an instance of a running program with isolated address space</li>
+      <li><strong>File system</strong> &mdash; a hierarchical namespace mapping names to persistent byte sequences</li>
+      <li><strong>Network socket</strong> &mdash; an endpoint for inter-process communication, local or remote</li>
+    </ul>
+
+    <h3>5.1 The Linux kernel</h3>
+    <p>Linus Torvalds released Linux 0.01 in 1991. Today the Linux kernel powers the vast majority of servers, cloud instances, Android devices, and supercomputers. Its monolithic architecture (with loadable modules) contrasts with Tanenbaum&rsquo;s MINIX microkernel design, a debate that played out in a famous public exchange on the comp.os.minix newsgroup in 1992. The kernel&rsquo;s scheduler, memory manager, virtual file system (VFS), and networking stack are each complex subsystems studied in graduate-level OS courses.</p>
+
+    <h3>5.2 Concurrency &amp; synchronisation</h3>
+    <p>Dijkstra introduced the <strong>semaphore</strong> in the early 1960s (ca. 1962&ndash;63, during work on the THE multiprogramming system) as a primitive for mutual exclusion, and in 1965 formulated the dining philosophers problem as a canonical illustration of deadlock. Modern kernels use <strong>futexes</strong> (fast userspace mutexes) to implement synchronisation with minimal system-call overhead. Lock-free data structures based on compare-and-swap (CAS) hardware primitives are essential for high-performance concurrent systems.</p>
+
+    <h2 id="networking">6. Computer networking</h2>
+
+    <p>The Internet&rsquo;s foundational protocol, TCP/IP, was designed by Cerf and Kahn in 1974<sup><a href="{{ url_for('research.cs_references') }}#ref-15">[15]</a></sup>. The OSI reference model (1984) provides a conceptual seven-layer framework for understanding protocol composition, though the practical Internet maps more directly to a four-layer TCP/IP model.</p>
+
+    <h3>6.1 The Internet protocol stack</h3>
+    <table>
+      <thead><tr><th>Layer</th><th>Protocol examples</th><th>Key concept</th></tr></thead>
+      <tbody>
+        <tr><td>Application</td><td>HTTP/3, DNS, SMTP, TLS</td><td>Semantics for user-facing services</td></tr>
+        <tr><td>Transport</td><td>TCP, UDP, QUIC</td><td>Reliable / unreliable end-to-end delivery</td></tr>
+        <tr><td>Network</td><td>IPv4, IPv6, ICMP, BGP</td><td>Global routing and addressing</td></tr>
+        <tr><td>Link</td><td>Ethernet, Wi-Fi (802.11), ARP</td><td>Hop-by-hop delivery on a single link</td></tr>
+      </tbody>
+    </table>
+
+    <h3>6.2 The World Wide Web</h3>
+    <p>Tim Berners-Lee invented the World Wide Web at CERN in 1989, publishing a proposal for a hypertext information system. His 1994 paper<sup><a href="{{ url_for('research.cs_references') }}#ref-16">[16]</a></sup> describes the three technologies that underpin the Web to this day: HTML (HyperText Markup Language), URI (Uniform Resource Identifier), and HTTP (HyperText Transfer Protocol). The Web transitioned from a document-retrieval system to an application platform through JavaScript, AJAX (2005), and modern frameworks like React and WebAssembly.</p>
+
+    <h2 id="databases">7. Databases &amp; storage</h2>
+
+    <p>Codd&rsquo;s 1970 paper<sup><a href="{{ url_for('research.cs_references') }}#ref-17">[17]</a></sup> introduced the <strong>relational model</strong>, formalising data as tables (relations) with a declarative query language that became SQL. The ACID properties &mdash; Atomicity, Consistency, Isolation, Durability &mdash; define the correctness guarantees of relational transactions.</p>
+
+    <p>The NoSQL movement (2009 onwards) sacrificed some of these guarantees for horizontal scalability, giving rise to the <strong>CAP theorem</strong> (Brewer, 2000): a distributed system can guarantee at most two of Consistency, Availability, and Partition tolerance. This theorem motivated the design of systems like Amazon Dynamo (AP), Google Bigtable (CP), and Apache Kafka (distributed log).</p>
+
+    <h2 id="security">8. Security &amp; cryptography</h2>
+
+    <p>Rivest, Shamir, and Adleman introduced the RSA public-key cryptosystem in 1977, based on the difficulty of factoring large composites. Diffie and Hellman&rsquo;s 1976 paper on public-key exchange laid the conceptual groundwork. Modern secure communication relies on a combination of:</p>
+
+    <ul>
+      <li><strong>Asymmetric cryptography</strong> (RSA, ECC) &mdash; key exchange and digital signatures</li>
+      <li><strong>Symmetric cryptography</strong> (AES-256) &mdash; bulk data encryption</li>
+      <li><strong>Hash functions</strong> (SHA-256, SHA-3) &mdash; integrity verification</li>
+      <li><strong>TLS 1.3</strong> &mdash; the protocol binding all of the above for the modern Web</li>
+    </ul>
+
+    <aside class="notice">
+      <strong>Post-quantum cryptography.</strong> NIST finalised its first post-quantum cryptographic standards in 2024 (FIPS 203&ndash;205), including ML-KEM (Kyber) for key encapsulation and ML-DSA (Dilithium) for digital signatures, in response to the threat posed by Shor&rsquo;s algorithm on quantum hardware.
+    </aside>
+
+    {{ pagination_pair(
+      next={'url': url_for('research.cs_python'), 'title': 'Python'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

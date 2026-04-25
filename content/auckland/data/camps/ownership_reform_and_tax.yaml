@@ -1,0 +1,50 @@
+id: camp.ownership_reform_and_tax
+name: Ownership reform and tax
+core_claim: >
+  The structural barrier to ownership and the compounding of housing
+  wealth require structural responses: first-home pathways (shared
+  equity, rent-to-own, KiwiSaver access), inclusionary zoning that
+  delivers below-market product through planning rules, and
+  comprehensive tax reform (land value tax, capital gains tax,
+  inheritance framework) that changes the compounding dynamic over
+  decades.
+flagship_moves:
+  - Shared-equity schemes and state-backed low-deposit first-home pathways.
+  - Expanded KiwiSaver access for first-home deposits.
+  - Inclusionary zoning rules requiring affordable shares in large developments (the French SRU archetype).
+  - A comprehensive capital gains tax including on owner-occupied dwellings.
+  - A land value tax on site value.
+  - Review of intergenerational wealth transfer, including the absence of inheritance tax.
+tensions:
+  - First-home subsidies often capitalise into prices, benefiting sellers more than buyers.
+  - Inclusionary zoning raises the cost of market housing at the margin and delivers only a small share of total supply.
+  - Comprehensive tax reform on housing is politically difficult in every comparable country.
+  - Transition effects on current owners, including retirees dependent on housing wealth.
+  - Substantial overlap with the Tax Reform subpage; detail lives there.
+addresses:
+  - problem.housing.affordability
+interventions:
+  - description: "First-home pathways and alternative tenure forms to bridge the gap between renting and full ownership."
+    state_variable: homeownership_rate_by_cohort
+    expected_sign: "+"
+    side_effects:
+      - risk_of_capitalising_into_prices
+      - changes_tenure_mix_composition
+  - description: "Structural tax reform on housing as an asset (LVT, CGT, inheritance)."
+    constraint_relaxed: tax_advantaged_housing_asset
+    state_variable: price_to_income_ratio
+    expected_sign: "-"
+    side_effects:
+      - transition_effects_on_existing_owners
+      - political_resistance
+      - intergenerational_equity_improvement_over_decades
+advocates:
+  - The Opportunities Party (on LVT)
+  - Max Rashbrooke and inequality-focused commentators
+  - Parts of the academic tax community
+  - "International reference cases — France (inclusionary zoning), Singapore (shared equity)"
+evidence_ids:
+  - evidence.auckland_under_40_homeownership_decline
+  - evidence.auckland_deposit_gap_expansion
+tensions_with:
+  - camp.income_transfers_and_wages

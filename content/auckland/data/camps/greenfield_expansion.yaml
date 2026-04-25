@@ -1,0 +1,39 @@
+id: camp.greenfield_expansion
+name: Greenfield expansion
+core_claim: >
+  Intensification alone cannot deliver enough housing at acceptable cost, and the
+  metropolitan boundary must move outward to absorb demand.
+flagship_moves:
+  - Release Future Urban Zone land faster.
+  - Extend the Rural Urban Boundary.
+  - Invest in infrastructure to greenfield areas.
+  - Underwrite edge development via targeted rates and financing.
+tensions:
+  - Ecology and biodiversity loss on the urban fringe.
+  - Carbon emissions from car-dependent peripheral development.
+  - Infrastructure cost per dwelling at the margin.
+  - Loss of productive rural and horticultural land.
+  - Climate-exposed nature of many candidate expansion areas.
+addresses:
+  - problem.housing.land
+interventions:
+  - description: "Accelerate release of Future Urban Zone for urbanisation."
+    constraint_relaxed: resource_management_statutory_regime
+    state_variable: developable_area_hectares
+    expected_sign: "+"
+    side_effects:
+      - greater_infrastructure_capital_demand
+      - loss_of_peri_urban_ecology
+  - description: "Extend the Rural Urban Boundary outward."
+    constraint_relaxed: resource_management_statutory_regime
+    state_variable: developable_area_hectares
+    expected_sign: "+"
+    side_effects:
+      - conflict_with_conservation_first_goals
+advocates:
+  - Development industry associations
+  - Some outer-suburb local boards
+  - Parts of the affordability advocacy community
+tensions_with:
+  - camp.compact_city
+  - camp.conservation_first

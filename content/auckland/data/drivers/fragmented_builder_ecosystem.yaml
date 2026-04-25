@@ -1,0 +1,14 @@
+id: driver.fragmented_builder_ecosystem
+name: Fragmented builder ecosystem
+description: >
+  Auckland supply is delivered by a heterogeneous mix of actors — small
+  builders, mid-size developers, group-home builders, large apartment
+  developers, Kāinga Ora, community housing providers, iwi development
+  arms, owner-builders, and intergenerational family trusts. No single
+  actor dominates. This is a source of resilience (no single-point failure)
+  and a coordination problem (no single lever moves supply at scale).
+consensus: mostly-agreed
+category: economic
+timescale: long
+affects:
+  - problem.housing.supply_economics

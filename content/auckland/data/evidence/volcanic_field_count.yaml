@@ -1,0 +1,12 @@
+id: evidence.volcanic_field_count
+statement: "The Auckland Volcanic Field comprises approximately 50 scoria cones, maars, and tuff rings erupted over the past ~250,000 years."
+value: 50
+unit: volcanic_features
+geography: "Auckland Volcanic Field"
+time_period: "Quaternary to present"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.gns_volcanic_field
+notes: "Counts in the literature range from ~49 to ~53 depending on which features are included. GNS Science publications are the reference."

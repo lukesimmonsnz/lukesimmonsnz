@@ -1,0 +1,28 @@
+id: supply-construction-productivity
+title: NZ labour productivity by sector, index (2010 = 100)
+subtitle: Gross value added per hour worked; OECD series starts 2010 for New Zealand
+type: line
+data: series/nz-construction-productivity.csv
+x: year
+y_label: Index (2010 = 100)
+y:
+  - column: construction
+    label: Construction
+  - column: manufacturing
+    label: Manufacturing
+  - column: services
+    label: Services (trade, transport, accommodation)
+fetcher:
+  name: oecd.productivity_by_industry
+  params:
+    country: NZL
+    start_year: 2010
+    rebase_year: 2010
+    industries:
+      - {code: F, label: construction}
+      - {code: C, label: manufacturing}
+      - {code: GTI, label: services}
+source:
+  label: OECD Productivity by Industry (DSD_PDB@DF_PDB_ISIC4_I4), gross value added per hour worked
+  url: https://data-explorer.oecd.org/vis?df%5Bag%5D=OECD.SDD.TPS&df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_PDB%40DF_PDB_ISIC4_I4
+status: verified

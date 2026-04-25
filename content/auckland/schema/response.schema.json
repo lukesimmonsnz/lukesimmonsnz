@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aucklandproject://schema/response.schema.json",
+  "title": "Response",
+  "description": "An existing or proposed policy / programme response to one or more problems.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "actor", "status", "addresses"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^response\\.[a-z0-9_.]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "actor": {"enum": ["crown", "council", "ccos", "iwi", "market", "community", "third-sector"]},
+    "status": {"enum": ["active", "proposed", "retired", "modified"]},
+    "year_started": {"type": ["integer", "null"]},
+    "year_ended": {"type": ["integer", "null"]},
+    "addresses": {"type": "array", "items": {"type": "string", "pattern": "^problem\\."}, "minItems": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^evidence\\."}},
+    "source_ids": {"type": "array", "items": {"type": "string", "pattern": "^source\\."}}
+  }
+}

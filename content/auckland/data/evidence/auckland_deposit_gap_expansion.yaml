@@ -1,0 +1,13 @@
+id: evidence.auckland_deposit_gap_expansion
+statement: "The 'deposit gap' — the number of years of median saving required to assemble a typical 20% deposit on a median Auckland dwelling — expanded from roughly 2–3 years in the 1990s to roughly 8–12 years at peak in the early 2020s. The entry barrier to ownership has risen more sharply than the running cost of owning."
+value: null
+unit: years
+geography: "Auckland region"
+time_period: "1990–2025"
+confidence: medium
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.stats_nz_household_income
+  - source.demographia_affordability
+notes: "Depends on assumptions about savings rate; a plausible range rather than a point figure. Worth explicitly framing the assumption set when published."

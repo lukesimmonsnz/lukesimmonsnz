@@ -1,0 +1,13 @@
+id: evidence.post_covid_construction_cost_rise
+statement: "Construction costs in New Zealand rose approximately 30–40% between 2020 and 2023 on the Capital Goods Price Index for construction, driven by materials and labour cost inflation. The rise has only partially unwound since."
+value: null
+unit: percent
+geography: "New Zealand"
+time_period: "2020–2023"
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.stats_nz_building_consents
+  - source.nz_productivity_commission
+notes: "To be verified against current Stats NZ Capital Goods Price Index (CGPI) for construction. Range may shift modestly with revisions."

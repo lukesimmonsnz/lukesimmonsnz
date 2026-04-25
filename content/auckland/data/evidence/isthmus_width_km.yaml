@@ -1,0 +1,12 @@
+id: evidence.isthmus_width_km
+statement: "The Auckland isthmus is approximately 2 km wide at its narrowest point between the Waitematā and Manukau harbours."
+value: 2
+unit: km
+geography: "Auckland isthmus, narrowest point"
+time_period: permanent
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.linz
+notes: "Topographic measurement; figure is widely reported in geographic and planning literature. Worth confirming against LINZ Topo50 before publication."

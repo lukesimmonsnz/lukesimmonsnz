@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aucklandproject://schema/source.schema.json",
+  "title": "Source",
+  "description": "A bibliographic entry that Evidence, Drivers, and Responses can cite.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "type"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^source\\.[a-z0-9_.]+$"},
+    "title": {"type": "string"},
+    "author": {"type": ["string", "null"]},
+    "publisher": {"type": ["string", "null"]},
+    "year": {"type": ["integer", "null"]},
+    "url": {"type": ["string", "null"]},
+    "type": {"enum": ["primary-data", "primary-legislation", "academic", "government-report", "news-media", "commentary", "iwi-publication", "tribunal", "technical-standard"]},
+    "credibility": {"enum": ["peer-reviewed", "official", "reputable", "partisan", "unverified"]},
+    "notes": {"type": ["string", "null"]}
+  }
+}

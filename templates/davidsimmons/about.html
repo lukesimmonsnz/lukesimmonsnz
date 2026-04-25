@@ -1,0 +1,155 @@
+{% extends "davidsimmons/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}About · David Roy Simmons · Luke Simmons{% endblock %}
+{% block meta_description %}Biographical essay on David Roy Simmons — his early life, study in France, museum career, and scholarship on Māori art and history.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('David Simmons', url_for('davidsimmons.index')),
+    ('About', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Archive &middot; Long-form</span>
+    <h1>A life in scholarship</h1>
+    <hr class="rule">
+    <p class="lede">
+      David Roy Simmons MBE (6 September 1930 &ndash; 30 November 2015) &mdash; M&#257;ori name
+      <em>Rawiri Te Puru Terehou</em> &mdash; was one of New Zealand&rsquo;s foremost ethnologists
+      and a dedicated scholar of M&#257;ori culture, art, and history. Over a career spanning
+      more than two decades at the Otago Museum and Auckland War Memorial Museum, he
+      reshaped scholarly understanding of M&#257;ori migration, tattooing, carving, and place
+      names.
+    </p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Summary.</strong> Born in Auckland, David Roy Simmons was educated across eight institutions in New Zealand and France before joining the Otago Museum in 1959. He moved to Auckland War Memorial Museum in 1968, became Assistant Director in 1972, and retired in 1986. His most influential work, <em>The Great New Zealand Myth</em> (1976), systematically dismantled Percy Smith&rsquo;s fabricated &lsquo;Great Fleet&rsquo; hypothesis. He received the Elsdon Best Memorial Medal (1978), the M.B.E. (1985), and the Auckland Museum Medal (2013). He co-curated the landmark <em>Te Maori</em> international exhibition in 1984 alongside Douglas Newton and Hirini Moko Mead. He published thirteen major works and passed away in Auckland on 30 November 2015, aged 85.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#biography">Biography</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#te-maori">Te Maori Exhibition</a></li>
+        <li><a href="#awards">Awards &amp; honours</a></li>
+        <li><a href="#further">Further reading within this archive</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="biography">Biography</h2>
+
+    <p>David Roy Simmons was born on 6 September 1930 in Auckland, New Zealand. His M&#257;ori name was Rawiri Te Puru Terehou. He was raised in Auckland and attended Sacred Heart College for his secondary education before embarking on an unusually broad academic journey spanning New Zealand and France.</p>
+
+    <p>In 1955 he married Winifred Mary Harwood; she predeceased him in 2003. They had two sons, Christopher and Nigel, and three grandchildren &mdash; Luke, Jason, and Michelle. Simmons lived in Remuera, Auckland, for much of his adult life, and was buried at Purewa Cemetery, Auckland, following his death on 30 November 2015 at the age of 85.</p>
+
+    <p>Beyond his formal scholarly output, Simmons was described by colleagues as a meticulous researcher whose command of both M&#257;ori oral tradition and European documentary sources set him apart. His willingness to challenge accepted narratives &mdash; particularly Percy Smith&rsquo;s long-dominant &lsquo;Great Fleet&rsquo; theory &mdash; marked him as a scholar of genuine intellectual courage.</p>
+
+    <figure style="max-width: 26rem;">
+      <img src="{{ url_for('static', filename='img/david-simmons-2003.jpg') }}"
+           alt="David Simmons laughing on the phone, Christmas 2003">
+      <figcaption>David on the phone, Christmas 2003.</figcaption>
+    </figure>
+
+    <h2 id="education">Education</h2>
+
+    <p>Simmons received one of the most internationally diverse educations of any New Zealand scholar of his generation, studying across eight institutions in New Zealand, Paris, and Brittany over more than a decade.</p>
+
+    <table>
+      <thead>
+        <tr><th>Institution</th><th>Location</th><th>Period / qualification</th></tr>
+      </thead>
+      <tbody>
+        {% for e in education %}
+        <tr>
+          <td>{{ e.institution }}</td>
+          <td>{{ e.location }}</td>
+          <td>{{ e.years }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <p>His Sorbonne and Rennes diplomas reflect a deep engagement with European scholarship at a time when few New Zealand academics sought training in France. The Celtic studies diploma at Rennes was unusual for a M&#257;ori scholar, but speaks to Simmons&rsquo; broader comparative interest in indigenous oral traditions and their relationship to written historiography.</p>
+
+    <h2 id="career">Career</h2>
+
+    <p>Simmons began his museum career in 1959 when he was appointed Keeper in Anthropology at the Otago Museum in Dunedin &mdash; a position he held while completing his MA at the University of Auckland in 1960. This combination of institutional employment and continuing study typified his approach to scholarship: rigorous, patient, and never satisfied with a partial answer.</p>
+
+    <p>In 1968 he was appointed Ethnologist at the Auckland Institute and Museum (now Auckland War Memorial Museum), the institution with which he would be most closely associated. Four years later, in 1972, he was elevated to Assistant Director &mdash; one of the most senior curatorial roles in New Zealand&rsquo;s museum sector. He held this position until his retirement in 1986.</p>
+
+    <p>During his eighteen years at Auckland Museum, Simmons produced some of his most important scholarly work. His 1969 article demolishing the &lsquo;Great Fleet&rsquo; hypothesis appeared while he was still finding his feet in Auckland; by the mid-1970s he had expanded this into the landmark 504-page monograph <em>The Great New Zealand Myth</em> (1976). He also built the museum&rsquo;s M&#257;ori collections, contributed to exhibition design, and mentored a generation of younger researchers.</p>
+
+    <figure style="max-width: 32rem;">
+      <img src="{{ url_for('static', filename='img/david-simmons-garden.jpg') }}"
+           alt="David Simmons standing beside a tree fern in his Auckland garden">
+      <figcaption>At home in Auckland, beside a ponga in the back garden.</figcaption>
+    </figure>
+
+    <h3>Key career appointments</h3>
+    <table>
+      <thead>
+        <tr><th style="width: 5rem;">Year</th><th>Position</th><th>Institution</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1959</td><td>Keeper in Anthropology</td><td>Otago Museum, Dunedin</td></tr>
+        <tr><td>1968</td><td>Ethnologist</td><td>Auckland Institute and Museum</td></tr>
+        <tr><td>1972</td><td>Assistant Director</td><td>Auckland War Memorial Museum</td></tr>
+        <tr><td>1984</td><td>Co-curator, <em>Te Maori</em> international exhibition</td><td>Auckland War Memorial Museum / Metropolitan Museum of Art</td></tr>
+        <tr><td>1986</td><td>Retired from Auckland War Memorial Museum</td><td>&mdash;</td></tr>
+        <tr><td>2013</td><td>Associate Emeritus</td><td>Auckland War Memorial Museum</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="te-maori">Te Maori Exhibition (1984&ndash;1987)</h2>
+
+    <p>The pinnacle of Simmons&rsquo; curatorial career was his co-curation of <em>Te Maori</em> &mdash; the landmark international touring exhibition that brought M&#257;ori taonga to audiences across the United States before returning home to New Zealand. Organised alongside Douglas Newton of the Metropolitan Museum of Art and Hirini Moko Mead, the exhibition opened at The Metropolitan Museum of Art in New York in 1984.</p>
+
+    <p>The exhibition was the first of its kind: a major presentation of M&#257;ori art and cultural objects outside New Zealand, designed not merely as an anthropological display but as a living affirmation of M&#257;ori identity and artistry. It toured American museums for three years, drawing enormous crowds and critical acclaim, before returning to New Zealand in 1987 as <em>Te Hokinga Mai</em> (The Coming Home).</p>
+
+    <p>The impact of <em>Te Maori</em> on the global recognition of M&#257;ori art and culture cannot be overstated. It fundamentally shifted how international audiences understood M&#257;ori taonga &mdash; not as ethnographic curiosities but as works of profound artistic and spiritual significance. For Simmons, it was the synthesis of a career: his deep knowledge of artefact history, his relationships with iwi, and his ability to convey that knowledge to international audiences.</p>
+
+    <aside class="notice">
+      <strong>Te Maori &mdash; key facts.</strong><br>
+      Co-curators: David Roy Simmons, Douglas Newton (Metropolitan Museum of Art), Hirini Moko Mead.<br>
+      Opened: 1984, The Metropolitan Museum of Art, New York.<br>
+      Tour: major U.S. museums, 1984&ndash;1987.<br>
+      Return to New Zealand: 1987 &mdash; <em>Te Hokinga Mai</em> (The Coming Home).<br>
+      Significance: marked a turning point in global recognition of M&#257;ori art and culture.
+    </aside>
+
+    <h2 id="awards">Awards &amp; honours</h2>
+
+    <table>
+      <thead>
+        <tr><th style="width: 5rem;">Year</th><th>Award</th><th>Awarding body</th><th>Citation</th></tr>
+      </thead>
+      <tbody>
+        {% for a in awards %}
+        <tr>
+          <td>{{ a.year }}</td>
+          <td>{{ a.title }}</td>
+          <td>{{ a.body }}</td>
+          <td>{{ a.description }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h2 id="further">Further reading within this archive</h2>
+    <ul>
+      <li><a href="{{ url_for('davidsimmons.works') }}">Works</a> &mdash; his thirteen major publications and the Te Maori curation, with full bibliographic detail.</li>
+      <li><a href="{{ url_for('davidsimmons.timeline') }}">Timeline</a> &mdash; a year-by-year chronology from 1930 to 2015.</li>
+      <li><a href="{{ url_for('davidsimmons.references') }}">References</a> &mdash; sources drawn on for this archive.</li>
+    </ul>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% macro pagination_pair(prev=None, next=None) %}
+<nav class="pagination-pair" aria-label="Sibling pages">
+  {% if prev %}
+    <a class="prev" href="{{ prev.url }}">
+      <span class="label">&larr; Previous</span>
+      <span class="title">{{ prev.title }}</span>
+    </a>
+  {% else %}
+    <span class="prev empty" aria-hidden="true"></span>
+  {% endif %}
+
+  {% if next %}
+    <a class="next" href="{{ next.url }}">
+      <span class="label">Next &rarr;</span>
+      <span class="title">{{ next.title }}</span>
+    </a>
+  {% else %}
+    <span class="next empty" aria-hidden="true"></span>
+  {% endif %}
+</nav>
+{% endmacro %}

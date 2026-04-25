@@ -1,0 +1,134 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Clinical AI &middot; Medical Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Machine learning and large language models in clinical practice &mdash; EHR analytics, biomedical transformers, ambient documentation, algorithmic bias, and regulatory frameworks for medical AI.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Medical Science', url_for('research.medsci_index')),
+    ('Clinical AI', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Medical Science</span>
+    <h1>Clinical AI and Large Language Models in Healthcare</h1>
+    <hr class="rule">
+    <p class="lede">The application of artificial intelligence in clinical settings has expanded rapidly, driven by advances in machine learning and natural language processing &mdash; extracting insight from electronic health records, improving care through predictive analytics, and reshaping clinical documentation.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This article covers four pillars of clinical AI: predictive modelling on electronic health records (RETAIN, BEHRT), biomedical language models for clinical NLP (BioBERT, ClinicalBERT, GatorTron, BioMedLM, Med-PaLM 2), large language models in clinical practice (ambient documentation, medical QA), and the regulatory landscape governing deployment. Throughout, the challenges of safety, equity, and algorithmic bias in healthcare AI are emphasised.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#ehr-analytics">Electronic Health Record Analytics</a></li>
+        <li><a href="#clinical-nlp">Clinical Natural Language Processing</a></li>
+        <li><a href="#llm-clinical">Large Language Models in Clinical Practice</a></li>
+        <li><a href="#regulatory">Regulatory Frameworks</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="overview">1. Overview</h2>
+    <p>The application of artificial intelligence (AI) in clinical settings has expanded rapidly, driven by advances in machine learning and natural language processing. This document explores how these technologies are being used to extract meaningful insights from electronic health records (EHRs), improve patient care through predictive analytics, and enhance documentation efficiency.</p>
+
+    <h2 id="ehr-analytics">2. Electronic Health Record Analytics</h2>
+
+    <p>The advent of machine learning has revolutionised how we analyse EHR data. By leveraging complex algorithms, researchers can now predict disease outcomes and personalise treatments with unprecedented accuracy.</p>
+
+    <h3>2.1 Reverse Time Attention Mechanism (RETAIN)</h3>
+    <p>RETAIN (Choi <em>et al.</em>, 2016)<sup><a href="{{ url_for('research.medsci_references') }}#ref-27">[27]</a></sup> processes patient records in reverse chronological order to better capture the impact of recent medical events, thereby enhancing predictive performance for tasks such as disease onset prediction and readmission risk assessment.</p>
+
+    <h3>2.2 BERT-Style Transformers</h3>
+    <p>Transformers have been adapted to the medical domain, enabling the extraction of rich clinical insights from structured and unstructured data. Models like BEHRT<sup><a href="{{ url_for('research.medsci_references') }}#ref-28">[28]</a></sup> pre-trained on large-scale EHR corpora demonstrate superior performance in predicting disease onset compared to traditional methods.</p>
+
+    <aside class="notice">
+      <strong>Generalisation warning.</strong> Even widely deployed clinical prediction systems &mdash; including a well-known proprietary sepsis model &mdash; have shown substantially weaker performance in external validation than in the training sites<sup><a href="{{ url_for('research.medsci_references') }}#ref-29">[29]</a></sup>. Rigorous site-level validation is essential before clinical deployment.
+    </aside>
+
+    <h2 id="clinical-nlp">3. Clinical Natural Language Processing (NLP)</h2>
+
+    <p>The vast majority of patient information within EHRs is unstructured text, necessitating sophisticated NLP techniques to unlock this data&rsquo;s value. Tasks range from identifying medical entities and relations to generating machine-readable summaries.</p>
+
+    <h3 id="biomedical-lms">3.1 Biomedical Language Models</h3>
+    <p>Language models trained on biomedical text have significantly advanced the field of clinical NLP, outperforming traditional approaches in tasks such as named entity recognition and de-identification<sup><a href="{{ url_for('research.medsci_references') }}#ref-30">[30]</a></sup>.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Architecture</th>
+          <th>Training Corpus</th>
+          <th>Parameters (M)</th>
+          <th>Key Tasks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BioBERT</td>
+          <td>BERT</td>
+          <td>PubMed + PMC (4.5B words)</td>
+          <td>110M</td>
+          <td>NER, QA, RE</td>
+        </tr>
+        <tr>
+          <td>ClinicalBERT</td>
+          <td>BERT</td>
+          <td>MIMIC-III notes</td>
+          <td>110M</td>
+          <td>NER, de-id, readmission</td>
+        </tr>
+        <tr>
+          <td>GatorTron</td>
+          <td>Megatron-BERT</td>
+          <td>UF Health (&gt;82B clinical words) + PubMed + Wiki</td>
+          <td>345M / 3.9B / 8.9B</td>
+          <td>NER, relation, QA, NLI</td>
+        </tr>
+        <tr>
+          <td>BioMedLM</td>
+          <td>GPT-2</td>
+          <td>PubMed (4.5B tokens)</td>
+          <td>2.7B</td>
+          <td>Medical QA (MedQA)</td>
+        </tr>
+        <tr>
+          <td>Med-PaLM 2</td>
+          <td>PaLM 2</td>
+          <td>Medical web + textbooks + RLHF</td>
+          <td>undisclosed (PaLM 2 base)</td>
+          <td>QA, reasoning</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="llm-clinical">4. Large Language Models in Clinical Practice</h2>
+
+    <p>Recent advances in large language model technology have sparked interest in their potential applications within healthcare<sup><a href="{{ url_for('research.medsci_references') }}#ref-31">[31]</a></sup>. However, the deployment of such models presents significant challenges related to safety, equity, and regulatory compliance.</p>
+
+    <h3>4.1 Ambient Documentation Assistants</h3>
+    <p>LLMs are being utilised to draft clinical documentation in real-time, significantly reducing physician workload. However, this convenience comes with risks including inaccuracies and biases that must be rigorously managed.</p>
+
+    <aside class="notice">
+      <strong>Algorithmic bias.</strong> Obermeyer <em>et al.</em> (2019)<sup><a href="{{ url_for('research.medsci_references') }}#ref-32">[32]</a></sup> showed that a widely used commercial algorithm for managing population health systematically under-referred Black patients for extra care &mdash; because its proxy target (healthcare costs) was itself racially biased. Similar critical audits must accompany any deployed clinical AI.
+    </aside>
+
+    <h3 id="regulatory">4.2 Regulatory Frameworks for Medical AI</h3>
+    <p>The deployment of AI in healthcare is subject to stringent regulatory oversight. Both the FDA (in the United States) and the European Union have established guidelines aimed at ensuring the safety, efficacy, and ethical use of medical AI products. The FDA&rsquo;s &ldquo;Software as a Medical Device&rdquo; framework and the EU AI Act both treat most clinical decision-support AI as high-risk, imposing requirements on validation, transparency, and post-market surveillance.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.medsci_imaging'), 'title': 'Medical Imaging AI'},
+      next={'url': url_for('research.medsci_drugs'), 'title': 'Drug Discovery'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

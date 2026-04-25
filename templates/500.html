@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Something broke · Luke Simmons{% endblock %}
+{% block meta_description %}The site hit an unexpected error.{% endblock %}
+
+{% block content %}
+<div class="page error-page">
+  <header class="page-header">
+    <p class="eyebrow">500</p>
+    <h1>Something broke.</h1>
+    <hr class="rule">
+    <p class="lede">The page you asked for exists, but something went wrong rendering it. That's on me, not you.</p>
+  </header>
+
+  <section class="prose">
+    <p>Reloading once in a while helps. If it keeps happening, drop me a <a href="{{ url_for('main.contact') }}">line via the contact form</a> with the URL and roughly what you were trying to do &mdash; I'll take a look.</p>
+    <p>In the meantime, the <a href="{{ url_for('main.home') }}">home page</a> should always be a safe fallback.</p>
+  </section>
+</div>
+{% endblock %}

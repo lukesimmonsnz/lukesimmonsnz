@@ -1,0 +1,16 @@
+id: driver.physical_geography
+name: Physical geography of the isthmus
+description: >
+  The Auckland isthmus, twin harbours, volcanic field, and surrounding ranges impose
+  permanent constraints on where housing can physically be built. These features
+  change on geological rather than political timescales.
+consensus: consensus
+category: physical
+timescale: permanent
+affects:
+  - problem.housing.land
+evidence_ids:
+  - evidence.isthmus_width_km
+  - evidence.volcanic_field_count
+  - evidence.waitakere_area_ha
+  - evidence.hunua_area_ha

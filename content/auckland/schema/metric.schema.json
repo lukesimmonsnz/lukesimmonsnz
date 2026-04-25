@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aucklandproject://schema/metric.schema.json",
+  "title": "Metric",
+  "description": "A measurable indicator, optionally with time-series data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "unit", "geography"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^metric\\.[a-z0-9_.]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "unit": {"type": "string"},
+    "geography": {"type": "string"},
+    "source_ids": {"type": "array", "items": {"type": "string", "pattern": "^source\\."}},
+    "measures": {"type": "array", "items": {"type": "string", "pattern": "^problem\\."}},
+    "series": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["period", "value"],
+        "properties": {
+          "period": {"type": "string"},
+          "value": {"type": "number"},
+          "note": {"type": "string"}
+        }
+      }
+    }
+  }
+}

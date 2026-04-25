@@ -1,0 +1,264 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}References &middot; Medical Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Full bibliography for the Medical Science research branch, covering neuroscience, bioinformatics, medical imaging, clinical AI, and drug discovery.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Medical Science', url_for('research.medsci_index')),
+    ('References', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Medical Science</span>
+    <h1>Bibliography &amp; References</h1>
+    <hr class="rule">
+    <p class="lede">Full bibliography for the Medical Science branch. Entries are grouped by topic area and cross-referenced from inline citations throughout the articles.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Citation format.</strong> In-text citations use bracketed numbers (e.g., <sup>[1]</sup>) linked to entries below. Where a DOI or stable URL is available, it is provided alongside the entry.
+    </aside>
+
+    <h2>Bibliography</h2>
+
+    <h3>Neuroscience &amp; AI</h3>
+    <ol class="references-list">
+
+      <li id="ref-1">
+        Poirazi, P., &amp; Papoutsi, A. (2020). Illuminating dendritic function with computational models.
+        <em>Nature Reviews Neuroscience</em>, <em>21</em>, 541&ndash;553.
+      </li>
+
+      <li id="ref-2">
+        Olshausen, B. A., &amp; Field, D. J. (1996). Emergence of simple-cell receptive field properties by learning a sparse code for natural images.
+        <em>Nature</em>, <em>381</em>, 607&ndash;609.
+      </li>
+
+      <li id="ref-3">
+        Bi, G. Q., &amp; Poo, M. M. (1998). Synaptic modifications in cultured hippocampal neurons: Dependence on spike timing, synaptic strength, and postsynaptic cell type.
+        <em>Journal of Neuroscience</em>, <em>18</em>(24), 10464&ndash;10472.
+      </li>
+
+      <li id="ref-4">
+        Rao, R. P. N., &amp; Ballard, D. H. (1999). Predictive coding in the visual cortex.
+        <em>Nature Neuroscience</em>, <em>2</em>, 79&ndash;87.
+      </li>
+
+      <li id="ref-5">
+        Neftci, E. O., Mostafa, H., &amp; Zenke, F. (2019). Surrogate gradient learning in spiking neural networks.
+        <em>IEEE Signal Processing Magazine</em>, <em>36</em>(6), 51&ndash;63.
+      </li>
+
+      <li id="ref-6">
+        Davies, M., <em>et al.</em> (2021). Advancing neuromorphic computing with Loihi: A survey of results and outlook.
+        <em>Proceedings of the IEEE</em>, <em>109</em>(5), 911&ndash;934.
+      </li>
+
+      <li id="ref-7">
+        Hochberg, L. R., <em>et al.</em> (2012). Reach and grasp by people with tetraplegia using a neurally controlled robotic arm.
+        <em>Nature</em>, <em>485</em>, 372&ndash;375.
+      </li>
+
+      <li id="ref-8">
+        Pandarinath, C., <em>et al.</em> (2018). Inferring single-trial neural population dynamics using sequential auto-encoders.
+        <em>Nature Methods</em>, <em>15</em>, 805&ndash;815.
+      </li>
+
+      <li id="ref-9">
+        Willett, F. R., <em>et al.</em> (2021). High-performance brain-to-text communication via handwriting.
+        <em>Nature</em>, <em>593</em>, 249&ndash;254.
+      </li>
+
+      <li id="ref-10">
+        Willett, F. R., <em>et al.</em> (2023). A high-performance speech neuroprosthesis.
+        <em>Nature</em>, <em>620</em>, 1031&ndash;1036.
+      </li>
+
+      <li id="ref-11">
+        Dorkenwald, S., <em>et al.</em> (2024). Neuronal wiring diagram of an adult brain.
+        <em>Nature</em>, <em>634</em>, 124&ndash;138.
+      </li>
+
+      <li id="ref-12">
+        Pachitariu, M., <em>et al.</em> (2017). Suite2p: Beyond 10,000 neurons with standard two-photon microscopy.
+        <em>bioRxiv</em>.
+      </li>
+
+    </ol>
+
+    <h3>Bioinformatics</h3>
+    <ol class="references-list">
+
+      <li id="ref-13">
+        Eddy, S. R. (2011). Accelerated profile HMM searches.
+        <em>PLOS Computational Biology</em>, <em>7</em>(10), e1002195.
+      </li>
+
+      <li id="ref-14">
+        Poplin, R., <em>et al.</em> (2018). A universal SNP and small-indel variant caller using deep neural networks.
+        <em>Nature Biotechnology</em>, <em>36</em>, 983&ndash;987.
+      </li>
+
+      <li id="ref-15">
+        Avsec, &Zcaron;., <em>et al.</em> (2021). Effective gene expression prediction from sequence by integrating long-range interactions.
+        <em>Nature Methods</em>, <em>18</em>, 1196&ndash;1203.
+      </li>
+
+      <li id="ref-16">
+        Lopez, R., <em>et al.</em> (2018). Deep generative modelling for single-cell transcriptomics.
+        <em>Nature Methods</em>, <em>15</em>, 1053&ndash;1058.
+      </li>
+
+      <li id="ref-17">
+        Jumper, J., <em>et al.</em> (2021). Highly accurate protein structure prediction with AlphaFold.
+        <em>Nature</em>, <em>596</em>, 583&ndash;589.
+      </li>
+
+      <li id="ref-18">
+        Lin, Z., <em>et al.</em> (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model.
+        <em>Science</em>, <em>379</em>, 1123&ndash;1130.
+      </li>
+
+      <li id="ref-40">
+        Hayes, T., <em>et al.</em> (2025). Simulating 500 million years of evolution with a language model.
+        <em>Science</em>, <em>387</em>, 850&ndash;858.
+      </li>
+
+    </ol>
+
+    <h3>Medical Imaging AI</h3>
+    <ol class="references-list">
+
+      <li id="ref-19">
+        Rajpurkar, P., <em>et al.</em> (2017). CheXNet: Radiologist-level pneumonia detection on chest x-rays with deep learning.
+        <em>arXiv:1711.05225</em>.
+      </li>
+
+      <li id="ref-20">
+        Gulshan, V., <em>et al.</em> (2016). Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs.
+        <em>JAMA</em>, <em>316</em>(22), 2402&ndash;2410.
+      </li>
+
+      <li id="ref-21">
+        McKinney, S. M., <em>et al.</em> (2020). International evaluation of an AI system for breast cancer screening.
+        <em>Nature</em>, <em>577</em>, 89&ndash;94.
+      </li>
+
+      <li id="ref-22">
+        Ronneberger, O., Fischer, P., &amp; Brox, T. (2015). U-Net: Convolutional networks for biomedical image segmentation.
+        <em>Medical Image Computing and Computer-Assisted Intervention (MICCAI)</em>.
+      </li>
+
+      <li id="ref-23">
+        Isensee, F., <em>et al.</em> (2021). nnU-Net: A self-configuring method for deep learning-based biomedical image segmentation.
+        <em>Nature Methods</em>, <em>18</em>, 203&ndash;211.
+      </li>
+
+      <li id="ref-24">
+        Ma, J., <em>et al.</em> (2024). Segment anything in medical images.
+        <em>Nature Communications</em>, <em>15</em>, 654.
+      </li>
+
+      <li id="ref-25">
+        Lu, M. Y., <em>et al.</em> (2021). Data-efficient and weakly supervised computational pathology on whole-slide images.
+        <em>Nature Biomedical Engineering</em>, <em>5</em>, 555&ndash;570.
+      </li>
+
+      <li id="ref-26">
+        Zech, J. R., <em>et al.</em> (2018). Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs.
+        <em>PLOS Medicine</em>, <em>15</em>(11), e1002686.
+      </li>
+
+      <li id="ref-38">
+        Zhou, Y., <em>et al.</em> (2023). A foundation model for generalizable disease detection from retinal images.
+        <em>Nature</em>, <em>622</em>, 156&ndash;163.
+      </li>
+
+    </ol>
+
+    <h3>Clinical AI</h3>
+    <ol class="references-list">
+
+      <li id="ref-27">
+        Choi, E., <em>et al.</em> (2016). RETAIN: An interpretable predictive model for healthcare using reverse time attention mechanism.
+        <em>Advances in Neural Information Processing Systems</em>, <em>29</em>.
+      </li>
+
+      <li id="ref-28">
+        Li, Y., <em>et al.</em> (2020). BEHRT: Transformer for electronic health records.
+        <em>Scientific Reports</em>, <em>10</em>, 7155.
+      </li>
+
+      <li id="ref-29">
+        Wong, A., <em>et al.</em> (2021). External validation of a widely implemented proprietary sepsis prediction model in hospitalized patients.
+        <em>JAMA Internal Medicine</em>, <em>181</em>(8), 1065&ndash;1070.
+      </li>
+
+      <li id="ref-30">
+        Lee, J., <em>et al.</em> (2020). BioBERT: A pre-trained biomedical language representation model for biomedical text mining.
+        <em>Bioinformatics</em>, <em>36</em>(4), 1234&ndash;1240.
+      </li>
+
+      <li id="ref-31">
+        Singhal, K., <em>et al.</em> (2023). Large language models encode clinical knowledge.
+        <em>Nature</em>, <em>620</em>, 172&ndash;180.
+      </li>
+
+      <li id="ref-32">
+        Obermeyer, Z., <em>et al.</em> (2019). Dissecting racial bias in an algorithm used to manage the health of populations.
+        <em>Science</em>, <em>366</em>(6464), 447&ndash;453.
+      </li>
+
+    </ol>
+
+    <h3>Drug Discovery</h3>
+    <ol class="references-list">
+
+      <li id="ref-33">
+        Yang, K., <em>et al.</em> (2019). Analyzing learned molecular representations for property prediction.
+        <em>Journal of Chemical Information and Modeling</em>, <em>59</em>(8), 3370&ndash;3388.
+      </li>
+
+      <li id="ref-34">
+        Jin, W., Barzilay, R., &amp; Jaakkola, T. (2018). Junction tree variational autoencoder for molecular graph generation.
+        <em>International Conference on Machine Learning (ICML)</em>.
+      </li>
+
+      <li id="ref-35">
+        Schneuing, A., <em>et al.</em> (2022). Structure-based drug design with equivariant diffusion models.
+        <em>arXiv:2210.13695</em>.
+      </li>
+
+      <li id="ref-36">
+        Corso, G., <em>et al.</em> (2023). DiffDock: Diffusion steps, twists, and turns for molecular docking.
+        <em>International Conference on Learning Representations (ICLR 2023)</em>.
+      </li>
+
+      <li id="ref-37">
+        Huang, K., <em>et al.</em> (2021). Therapeutics Data Commons: Machine learning datasets and tasks for drug discovery and development.
+        <em>Advances in Neural Information Processing Systems</em>.
+      </li>
+
+      <li id="ref-39">
+        Abramson, J., <em>et al.</em> (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3.
+        <em>Nature</em>, <em>630</em>, 493&ndash;500.
+      </li>
+
+    </ol>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.medsci_drugs'), 'title': 'Drug Discovery'},
+      next={'url': url_for('research.medsci_index'), 'title': 'Medical Science overview'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

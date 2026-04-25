@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Projects · Luke Simmons{% endblock %}
+{% block meta_description %}Things Luke Simmons has built or is actively building.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([('Home', url_for('main.home')), ('Projects', None)]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Work</span>
+    <h1>Projects</h1>
+    <hr class="rule">
+    <p class="lede">
+      Things I&rsquo;ve built or am actively building. Short list on purpose &mdash;
+      I&rsquo;d rather finish a few than tinker with many.
+    </p>
+  </header>
+
+  <div class="prose">
+    {% for p in projects %}
+    <article class="work">
+      <div class="work-body">
+        <div class="work-meta">
+          <strong>{{ p.status | title }}</strong>
+          {% if p.year %} &middot; {{ p.year }}{% endif %}
+        </div>
+        <h2 class="work-title">{{ p.title }}</h2>
+        {% if p.subtitle %}<div class="work-subtitle">{{ p.subtitle }}</div>{% endif %}
+
+        {% if p.stack %}
+        <div class="chips">
+          {% for tag in p.stack %}<span class="chip">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
+
+        <p>{{ p.summary }}</p>
+        {% if p.description %}{{ p.description | safe }}{% endif %}
+
+        {% if p.links %}
+        <p class="small">
+          {% for link in p.links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} &rarr;</a>{% if not loop.last %} &middot; {% endif %}
+          {% endfor %}
+        </p>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

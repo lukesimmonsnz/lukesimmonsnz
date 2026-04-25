@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Page not found · Luke Simmons{% endblock %}
+{% block meta_description %}The page you asked for isn't here.{% endblock %}
+
+{% block content %}
+<div class="page error-page">
+  <header class="page-header">
+    <p class="eyebrow">404</p>
+    <h1>This page doesn't exist.</h1>
+    <hr class="rule">
+    <p class="lede">Either it never did, or it moved. Either way &mdash; sorry for the cul-de-sac.</p>
+  </header>
+
+  <section class="prose">
+    <p>Here are the likely places you meant to be:</p>
+    <ul>
+      <li><a href="{{ url_for('main.home') }}">Home</a></li>
+      <li><a href="{{ url_for('blog.index') }}">Blog</a></li>
+      <li><a href="{{ url_for('research.index') }}">Research</a></li>
+      <li><a href="{{ url_for('davidsimmons.index') }}">David Simmons</a></li>
+      <li><a href="{{ url_for('main.contact') }}">Contact</a> &mdash; if you followed a broken link from somewhere, tell me where and I'll fix it.</li>
+    </ul>
+  </section>
+</div>
+{% endblock %}

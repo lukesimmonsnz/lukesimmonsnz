@@ -1,0 +1,37 @@
+id: camp.trunk_infrastructure_capacity
+name: Infrastructure-first / trunk capacity
+core_claim: >
+  Zoning without infrastructure is theatre. Supply is gated by the capacity
+  of water, wastewater, stormwater, and transport networks. Building trunk
+  capacity ahead of private demand — rather than in response to it — is a
+  precondition for any other supply lever to work.
+flagship_moves:
+  - Sustained Crown and Council investment in trunk infrastructure ahead of demand.
+  - Growth-focused funding for Watercare and equivalent infrastructure entities.
+  - Land-value-capture and betterment levies to fund up-front infrastructure.
+  - Long-duration infrastructure bonds and wholesale borrowing arrangements.
+tensions:
+  - Fiscal cost of building capacity before it is used.
+  - Timing risk — capacity may precede demand by years or decades.
+  - Inter-regional equity concerns about national funding concentrated on Auckland.
+  - Political feasibility of pre-investment across electoral cycles.
+addresses:
+  - problem.housing.supply_economics
+interventions:
+  - description: "Fund and build trunk infrastructure ahead of projected demand, not in response to it."
+    constraint_relaxed: infrastructure_pipeline
+    state_variable: annual_consents
+    expected_sign: "+"
+    side_effects:
+      - counter_cyclical_fiscal_commitment
+      - requires_multi_decade_political_consensus
+  - description: "Introduce land-value-capture or betterment levies to recycle uplift into infrastructure."
+    state_variable: developer_margin
+    expected_sign: "0"
+    side_effects:
+      - internalises_infrastructure_cost_into_land_price
+advocates:
+  - Te Waihanga New Zealand Infrastructure Commission
+  - Sections of the local-government reform community
+  - Some infrastructure economists
+tensions_with: []

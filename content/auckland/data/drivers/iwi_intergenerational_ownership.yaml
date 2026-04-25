@@ -1,0 +1,16 @@
+id: driver.iwi_intergenerational_ownership
+name: Iwi as intergenerational landowners
+description: >
+  Post-settlement iwi and Māori freehold landowners are structurally different from
+  private freehold owners: they are intergenerationally constrained, typically
+  cannot sell and exit, and hold on century-plus horizons. Over 50 and 100 years
+  this produces a meaningfully different land-use pattern from market-driven
+  private ownership.
+consensus: mostly-agreed
+category: cultural
+timescale: long
+affects:
+  - problem.housing.land
+  - problem.housing.supply_economics
+evidence_ids:
+  - evidence.ngati_whatua_orakei_homes

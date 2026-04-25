@@ -1,0 +1,12 @@
+id: evidence.ngati_whatua_orakei_homes
+statement: "Ngāti Whātua Ōrākei has built and operates several hundred homes at Ōrākei, with further development planned."
+value: null
+unit: homes
+geography: "Ōrākei, central Auckland"
+time_period: "mid-2020s"
+confidence: medium
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.ngati_whatua_orakei
+notes: "Figures in the public domain have ranged from ~700 homes upward. To be verified against Ngāti Whātua Ōrākei's own annual reporting before publication — iwi-published data is the appropriate source."

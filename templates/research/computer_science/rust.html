@@ -1,0 +1,246 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Rust &middot; Computer Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Rust&rsquo;s ownership type system, borrowing, lifetimes, zero-cost abstractions, async runtime, and formal safety proofs &mdash; C-level performance without undefined behaviour.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Computer Science', url_for('research.cs_index')),
+    ('Rust', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Computer Science</span>
+    <h1>Rust: Ownership, Memory Safety &amp; Systems Programming</h1>
+    <hr class="rule">
+    <p class="lede">Rust solves the fundamental tension in systems programming &mdash; achieving C-level performance without undefined behaviour &mdash; through a novel ownership type system that proves memory safety at compile time.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This section examines Rust&rsquo;s origins at Mozilla Research, its ownership and borrowing model, lifetime analysis, zero-cost abstractions, trait system, and the async/await ecosystem. We situate Rust within the broader landscape of safe systems programming, survey its adoption in operating systems, embedded devices, WebAssembly, and cloud infrastructure, and discuss the formal verification work (RustBelt) that provides mathematical foundations for Rust&rsquo;s safety claims.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#history">Origins &amp; Motivation</a></li>
+        <li><a href="#ownership">Ownership &amp; Borrowing</a></li>
+        <li><a href="#lifetimes">Lifetimes</a></li>
+        <li><a href="#traits">Traits &amp; Generics</a></li>
+        <li><a href="#zero-cost">Zero-Cost Abstractions</a></li>
+        <li><a href="#async">Async Rust</a></li>
+        <li><a href="#unsafe">Unsafe Rust &amp; FFI</a></li>
+        <li><a href="#ecosystem">Ecosystem &amp; Adoption</a></li>
+        <li><a href="#formal">Formal Verification: RustBelt</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="history">1. Origins &amp; Motivation</h2>
+
+    <p>Rust began as a personal project of Graydon Hoare at Mozilla Research in 2006. Mozilla sponsored the project from 2009, and the first stable release (Rust 1.0) shipped in May 2015. Matsakis and Klock&rsquo;s 2014 paper<sup><a href="{{ url_for('research.cs_references') }}#ref-27">[27]</a></sup> is the canonical academic description of the language&rsquo;s goals.</p>
+
+    <p>The motivation was direct: C and C++ remain dominant in systems programming, but their manual memory management leads to a category of vulnerabilities &mdash; buffer overflows, use-after-free, dangling pointers, data races &mdash; that are widely reported to account for roughly two-thirds of critical security bugs in large codebases (Microsoft Security Response Center&rsquo;s 2019 analysis put the share at around 70% of assigned CVEs; Google&rsquo;s Project Zero and Chromium team have reported comparable proportions). Rust eliminates this entire class of errors without a garbage collector, by encoding the rules of safe memory access in the type system itself.</p>
+
+    <blockquote>
+      &ldquo;Rust is a systems programming language focused on three goals: safety, speed, and concurrency.&rdquo;<br>
+      <cite>&mdash; Matsakis &amp; Klock, <em>The Rust Language</em>, ACM SIGAda Ada Letters, 2014<sup><a href="{{ url_for('research.cs_references') }}#ref-27">[27]</a></sup></cite>
+    </blockquote>
+
+    <h2 id="ownership">2. Ownership &amp; Borrowing</h2>
+
+    <p>Rust&rsquo;s central innovation is its <strong>ownership system</strong>: every value has exactly one owner at any given time, and the value is dropped (freed) when the owner goes out of scope. This is enforced at compile time with no runtime overhead.</p>
+
+    <h3>2.1 The Three Rules of Ownership</h3>
+    <ol>
+      <li>Every value in Rust has a variable that is its <em>owner</em>.</li>
+      <li>There can only be <em>one owner</em> at a time.</li>
+      <li>When the owner goes out of scope, the value will be <em>dropped</em>.</li>
+    </ol>
+
+    <pre><code>fn main() {
+    let s1 = String::from("hello"); // s1 owns the String
+    let s2 = s1;                    // ownership MOVED to s2; s1 invalid
+    // println!("{}", s1);          // ← compile error: value moved
+    println!("{}", s2);             // fine
+} // s2 dropped here; heap memory freed automatically</code></pre>
+
+    <h3>2.2 Borrowing</h3>
+    <p>Rather than transferring ownership, Rust allows <strong>references</strong> &mdash; borrows. The borrow checker enforces one invariant: you may have <em>either</em> any number of shared (<code>&amp;T</code>) references, <em>or</em> exactly one exclusive (<code>&amp;mut T</code>) reference, but never both simultaneously. This is equivalent to a readers-writer lock enforced at compile time &mdash; it is why Rust programs have no data races by construction.</p>
+
+    <pre><code>fn length(s: &amp;String) -> usize {
+    s.len() // borrow; s is not moved
+}
+
+fn main() {
+    let s = String::from("hello");
+    let len = length(&amp;s); // pass a reference
+    println!("{} has {} characters", s, len); // s still valid
+}
+
+// Mutable borrow — exclusive access
+fn append(s: &amp;mut String) {
+    s.push_str(", world");
+}
+
+fn main() {
+    let mut s = String::from("hello");
+    append(&amp;mut s);
+    println!("{}", s); // "hello, world"
+}</code></pre>
+
+    <h2 id="lifetimes">3. Lifetimes</h2>
+
+    <p>Lifetimes are Rust&rsquo;s mechanism for ensuring that references never outlive the data they point to &mdash; preventing dangling pointers. Most lifetimes are inferred by the compiler; explicit lifetime annotations are only needed when the compiler cannot infer them, typically in function signatures returning references:</p>
+
+    <pre><code>// 'a is a lifetime parameter: the returned reference lives
+// at least as long as the shorter of x and y
+fn longest&lt;'a&gt;(x: &amp;'a str, y: &amp;'a str) -> &amp;'a str {
+    if x.len() > y.len() { x } else { y }
+}</code></pre>
+
+    <p>Lifetimes allow Rust to implement zero-copy parsing, arena allocation, and self-referential data structures safely, patterns that require manual auditing in C and are simply impossible in safe Python or Java.</p>
+
+    <h2 id="traits">4. Traits &amp; Generics</h2>
+
+    <p>Rust&rsquo;s <strong>traits</strong> are its mechanism for polymorphism &mdash; analogous to Haskell&rsquo;s type classes and Java&rsquo;s interfaces, but with no virtual dispatch overhead when used with generics (monomorphisation). A trait defines a set of methods a type must implement:</p>
+
+    <pre><code>trait Summary {
+    fn summarise(&amp;self) -> String;
+    fn preview(&amp;self) -> String {
+        format!("{}...", &amp;self.summarise()[..50])
+    }
+}
+
+struct Article { title: String, body: String }
+
+impl Summary for Article {
+    fn summarise(&amp;self) -> String {
+        format!("{}: {}", self.title, self.body)
+    }
+}
+
+// Generic function — monomorphised at compile time (zero overhead)
+fn notify(item: &amp;impl Summary) {
+    println!("Breaking: {}", item.summarise());
+}</code></pre>
+
+    <h3>4.1 Key Standard Library Traits</h3>
+    <table>
+      <thead><tr><th>Trait</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><code>Clone</code> / <code>Copy</code></td><td>Explicit / implicit bitwise copy semantics</td></tr>
+        <tr><td><code>Send</code> / <code>Sync</code></td><td>Marker traits: safe to transfer / share across threads</td></tr>
+        <tr><td><code>Iterator</code></td><td>Lazy sequence protocol; enables <code>map</code>, <code>filter</code>, <code>fold</code> chains compiled to tight loops</td></tr>
+        <tr><td><code>From</code> / <code>Into</code></td><td>Infallible type conversions</td></tr>
+        <tr><td><code>Error</code></td><td>Standard error trait; enables <code>?</code> operator ergonomics</td></tr>
+        <tr><td><code>Display</code> / <code>Debug</code></td><td>Human / developer string formatting</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="zero-cost">5. Zero-Cost Abstractions</h2>
+
+    <p>Bjarne Stroustrup coined the term &ldquo;zero-overhead principle&rdquo; for C++: what you don&rsquo;t use, you don&rsquo;t pay for, and what you do use, you couldn&rsquo;t hand-code better. Rust inherits and strengthens this principle. Iterator chains, for example, are compiled by LLVM to the same machine code as hand-written loops:</p>
+
+    <pre><code>// High-level iterator chain
+let sum: i64 = (0..1_000_000_i64)
+    .filter(|x| x % 2 == 0)
+    .map(|x| x * x)
+    .sum();
+
+// LLVM compiles this to a single tight loop with SIMD vectorisation —
+// equivalent to the best hand-written C</code></pre>
+
+    <h3>5.1 Enums &amp; Pattern Matching</h3>
+    <p>Rust&rsquo;s <code>enum</code> types are <strong>algebraic data types</strong> (sum types) &mdash; each variant can carry different data. The <code>Option&lt;T&gt;</code> and <code>Result&lt;T, E&gt;</code> enums replace null pointers and exceptions respectively, making error paths explicit and exhaustively checked at compile time:</p>
+
+    <pre><code>use std::num::ParseIntError;
+
+fn parse_double(s: &amp;str) -> Result&lt;i32, ParseIntError&gt; {
+    let n: i32 = s.trim().parse()?; // ? propagates errors
+    Ok(n * 2)
+}
+
+match parse_double("21") {
+    Ok(v)  => println!("Got {}", v),   // 42
+    Err(e) => eprintln!("Error: {}", e),
+}</code></pre>
+
+    <h2 id="async">6. Async Rust</h2>
+
+    <p>Rust&rsquo;s async/await (stabilised in Rust 1.39, November 2019) enables zero-cost asynchronous programming. Unlike Python&rsquo;s asyncio (which is single-threaded), Rust async futures are <strong>poll-based</strong> state machines compiled at zero overhead, and they can execute on multi-threaded runtimes like Tokio:</p>
+
+    <pre><code>use tokio::net::TcpListener;
+use tokio::io::{AsyncReadExt, AsyncWriteExt};
+
+#[tokio::main]
+async fn main() -> anyhow::Result&lt;()&gt; {
+    let listener = TcpListener::bind("127.0.0.1:8080").await?;
+    loop {
+        let (mut socket, _) = listener.accept().await?;
+        tokio::spawn(async move {
+            let mut buf = [0u8; 1024];
+            let n = socket.read(&amp;mut buf).await.unwrap();
+            socket.write_all(&amp;buf[..n]).await.unwrap();
+        });
+    }
+}</code></pre>
+
+    <p>Tokio (the dominant async runtime) powers Cloudflare Workers, the AWS Lambda runtime, and numerous high-performance network services. The <code>axum</code> and <code>actix-web</code> frameworks sit atop Tokio, offering ergonomic HTTP server APIs with performance benchmarks competitive with Go and Node.js.</p>
+
+    <h2 id="unsafe">7. Unsafe Rust &amp; FFI</h2>
+
+    <p>The <code>unsafe</code> keyword creates a block in which the programmer assumes responsibility for a set of invariants the compiler cannot verify: raw pointer dereferencing, calling unsafe functions (including C FFI), implementing unsafe traits. The key insight is that unsafe code is <em>localised</em> &mdash; a small audited surface wraps unsafe operations, and the rest of the codebase remains safe.</p>
+
+    <pre><code>// FFI to a C function
+extern "C" {
+    fn abs(x: i32) -> i32;
+}
+
+fn safe_abs(x: i32) -> i32 {
+    unsafe { abs(x) }
+    // Unsafe is contained; callers see a safe API
+}</code></pre>
+
+    <p>PyO3 is the canonical Rust/Python bridge: it allows writing Python extension modules in Rust with zero-cost type conversions and GIL-aware designs. The <code>uv</code> package manager, <code>ruff</code> linter, and Polars DataFrame library are all written in Rust with PyO3 bindings &mdash; demonstrating the complementary relationship between the two languages.</p>
+
+    <h2 id="ecosystem">8. Ecosystem &amp; Adoption</h2>
+
+    <table>
+      <thead><tr><th>Domain</th><th>Notable Rust Project</th><th>Replaces / Complements</th></tr></thead>
+      <tbody>
+        <tr><td>Web browser</td><td>Firefox (Servo, Stylo, WebRender)</td><td>C++ components</td></tr>
+        <tr><td>OS kernel</td><td>Linux 6.1+ (Rust subsystem)</td><td>C driver code</td></tr>
+        <tr><td>Cloud runtime</td><td>AWS Firecracker (microVM)</td><td>QEMU/KVM</td></tr>
+        <tr><td>WebAssembly</td><td>wasm-bindgen, wasmtime</td><td>C/C++ WASM toolchains</td></tr>
+        <tr><td>Tooling</td><td>ruff, uv, ripgrep, fd</td><td>Python/Go equivalents</td></tr>
+        <tr><td>Networking</td><td>Cloudflare Pingora (proxy)</td><td>NGINX (C)</td></tr>
+        <tr><td>Data processing</td><td>Polars DataFrame</td><td>Pandas (via PyO3 API)</td></tr>
+        <tr><td>Cryptography</td><td>rustls</td><td>OpenSSL</td></tr>
+      </tbody>
+    </table>
+
+    <p>Rust has consistently ranked as the most admired (formerly &ldquo;most loved&rdquo;) programming language in the Stack Overflow Developer Survey, retaining that position for multiple consecutive years. Its inclusion in the Linux kernel &mdash; initial Rust infrastructure was merged into Linux 6.1, released in December 2022 &mdash; is a landmark moment, marking the first time an additional language has joined C for mainline kernel development in the kernel&rsquo;s roughly three-decade history.</p>
+
+    <h2 id="formal">9. Formal Verification: RustBelt</h2>
+
+    <p>Jung <em>et al.</em>&rsquo;s RustBelt project<sup><a href="{{ url_for('research.cs_references') }}#ref-28">[28]</a></sup> provides the first formal proof of Rust&rsquo;s safety guarantees. Using the Iris separation logic framework on top of the Coq proof assistant, RustBelt proves that Rust&rsquo;s type system correctly enforces memory safety and thread safety &mdash; not just for safe Rust, but for code that uses <code>unsafe</code> in the standard library (e.g., <code>Mutex&lt;T&gt;</code>, <code>Arc&lt;T&gt;</code>).</p>
+
+    <aside class="notice">
+      <strong>Research impact.</strong> RustBelt&rsquo;s methodology &mdash; modular separation logic proofs for concurrent data structures &mdash; has influenced formal verification work in other languages, including formal models for Swift&rsquo;s ARC system and C++&rsquo;s proposed Profiles safety framework.
+    </aside>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.cs_python'), 'title': 'Python'},
+      next={'url': url_for('research.cs_ai_it'), 'title': 'AI & IT Ecosystem'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

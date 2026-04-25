@@ -1,0 +1,37 @@
+id: camp.land_market_reform
+name: Land-market reform / value taxation
+core_claim: >
+  The structure of land rights and taxation, not zoning alone, determines how land
+  is used over the long run.
+flagship_moves:
+  - Land value tax applied annually on site value.
+  - Betterment levy on rezoning uplift.
+  - Vacant-land tax on undeveloped zoned residential land.
+  - Reform of heritage compensation frameworks.
+tensions:
+  - Resistance from existing landowners, including asset-rich retirees.
+  - Practical challenges of mass valuation in the New Zealand context.
+  - Political feasibility of shifting the tax base toward land.
+  - Transition effects on current owners under pre-existing expectations.
+addresses:
+  - problem.housing.land
+interventions:
+  - description: "Introduce a land value tax to incentivise productive use of zoned land."
+    state_variable: title_fragmentation_index
+    expected_sign: "-"
+    side_effects:
+      - downward_pressure_on_land_prices
+      - fiscal_revenue_diversification
+  - description: "Levy rezoning uplift to fund associated infrastructure."
+    state_variable: ownership_distribution_by_actor
+    expected_sign: "0"
+    side_effects:
+      - reduces_speculative_landbanking_incentive
+advocates:
+  - The Opportunities Party (TOP)
+  - Parts of the NZ Initiative on LVT specifically
+  - Max Rashbrooke and related inequality-focused commentators
+  - Elements of the academic tax community
+evidence_ids: []
+tensions_with:
+  - camp.devolved_governance

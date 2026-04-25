@@ -1,0 +1,13 @@
+id: evidence.nz_construction_productivity_flat
+statement: "New Zealand construction-sector labour productivity growth has been close to flat for decades, among the lowest in the OECD. Without structural change, the cost of producing a dwelling will continue to rise relative to the rest of the economy."
+value: null
+unit: null
+geography: "New Zealand"
+time_period: "long-run, roughly 1990–present"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nz_productivity_commission
+  - source.oecd_housing_toolkit
+notes: "A well-documented finding in NZ Productivity Commission and OECD sector productivity analyses. Headline magnitude and methodology vary slightly between sources."

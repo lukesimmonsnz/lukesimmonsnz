@@ -1,0 +1,12 @@
+id: evidence.sea_level_rise_2100_m
+statement: "NIWA projects sea-level rise of approximately 0.3 to 1.2 metres by 2100 for the Auckland region, depending on global emissions pathway."
+value: null
+unit: metres
+geography: "Auckland region coast"
+time_period: "by 2100"
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.niwa_coastal_hazards
+notes: "Range depends on which IPCC scenario is assumed. Latest NIWA coastal hazard guidance should be checked for Auckland-specific localised projections, which vary by site due to vertical land movement."

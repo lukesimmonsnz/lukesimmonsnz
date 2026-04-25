@@ -1,0 +1,13 @@
+id: evidence.auckland_dwelling_stock
+statement: "Auckland region has approximately 600,000 dwellings, with net additions of roughly 10,000–20,000 per year over the past decade. The stock turns over slowly relative to its size, so even sustained high-supply regimes change the built environment gradually."
+value: 600000
+unit: dwellings
+geography: "Auckland region"
+time_period: "mid-2020s"
+confidence: high
+verification_status: needs_verification
+last_verified: null
+source_ids:
+  - source.stats_nz_building_consents
+  - source.ac_rimu
+notes: "Both stock and annual additions to be verified against the current Stats NZ dwelling counts release and RIMU's Auckland-specific reporting."

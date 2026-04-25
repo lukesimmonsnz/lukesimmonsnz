@@ -1,0 +1,102 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/pagination.html" import pagination_pair %}
+
+{% block title %}Medical Imaging AI &middot; Medical Science &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Deep learning in medical imaging &mdash; radiologist-level diagnostic systems, U-Net and nnU-Net for segmentation, computational pathology foundation models, and the clinical-validation gap.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Medical Science', url_for('research.medsci_index')),
+    ('Medical Imaging AI', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Medical Science</span>
+    <h1>Medical Imaging AI: Radiology, Segmentation, and Digital Pathology</h1>
+    <hr class="rule">
+    <p class="lede">The application of deep learning to medical imaging has progressed from radiologist-level diagnostic classifiers to foundation models trained on whole-slide pathology images, with segmentation architectures like U-Net and nnU-Net defining the modern clinical toolkit.</p>
+  </header>
+
+  <div class="prose">
+
+    <aside class="notice">
+      <strong>Abstract.</strong> This article surveys deep learning for medical image analysis across radiology and pathology. It covers CNN-based diagnostic systems (CheXNet, the McKinney mammography model), segmentation architectures (U-Net, Attention U-Net, 3D U-Net/V-Net, nnU-Net, TransUNet, MedSAM), whole-slide imaging in digital pathology with multiple-instance learning and the UNI foundation model, and the central challenge of distribution shift between training and deployment sites.
+    </aside>
+
+    <nav aria-label="Contents" class="prose">
+      <span class="eyebrow">Contents</span>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#radiology">Radiology</a></li>
+        <li><a href="#segmentation">Segmentation Architectures</a></li>
+        <li><a href="#digital-pathology">Digital Pathology</a></li>
+        <li><a href="#clinical-validation">Clinical Validation</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="introduction">1. Introduction</h2>
+    <p>The application of deep learning in medical imaging has seen significant advancements over the past decade. This article provides an overview of various models and techniques used in medical image analysis, focusing on radiology and pathology.</p>
+
+    <h2 id="radiology">2. Radiology</h2>
+
+    <h3 id="chest-x-rays">2.1 Chest X-Rays</h3>
+    <p>CheXNet (Rajpurkar <em>et al.</em>, 2017)<sup><a href="{{ url_for('research.medsci_references') }}#ref-19">[19]</a></sup> demonstrated a deep learning algorithm&rsquo;s ability to detect pneumonia on chest x-rays at radiologist-level performance. However, distribution shift can significantly impact model performance when used in external hospitals<sup><a href="{{ url_for('research.medsci_references') }}#ref-26">[26]</a></sup>.</p>
+
+    <h3 id="mammography">2.2 Mammography</h3>
+    <p>The use of AI models like McKinney <em>et al.</em>&rsquo;s (2020)<sup><a href="{{ url_for('research.medsci_references') }}#ref-21">[21]</a></sup> system has shown promising results for breast cancer screening. These systems reduce false positives and negatives, potentially improving the efficiency and accuracy of mammograms.</p>
+
+    <h3 id="retina">2.3 Retinal Imaging</h3>
+    <p>In ophthalmology, Gulshan <em>et al.</em> (2016)<sup><a href="{{ url_for('research.medsci_references') }}#ref-20">[20]</a></sup> trained a CNN to detect referable diabetic retinopathy from fundus photographs at specialist-level sensitivity and specificity. More recently, RETFound (Zhou <em>et al.</em>, 2023)<sup><a href="{{ url_for('research.medsci_references') }}#ref-38">[38]</a></sup> applied masked autoencoder self-supervision to 1.6 million unlabelled retinal images, producing a foundation model that generalises to downstream tasks ranging from sight-threatening eye disease to prediction of systemic events such as heart failure.</p>
+
+    <table>
+      <thead>
+        <tr><th>Model</th><th>Achievements</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CheXNet</td><td>Radiologist-level pneumonia detection on chest x-rays with deep learning (Rajpurkar <em>et al.</em>, 2017)</td></tr>
+        <tr><td>McKinney Model</td><td>Reduces false positives and negatives in mammography screening (McKinney <em>et al.</em>, 2020)</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="segmentation">3. Segmentation Architectures</h2>
+    <p>Medical image segmentation involves identifying and delineating structures within images, which is essential for accurate diagnosis and treatment planning. Common architectures include U-Net, its variants like Attention U-Net, 3D U-Net/V-Net, nnU-Net, TransUNet, and MedSAM.</p>
+
+    <h3 id="unet">3.1 U-Net</h3>
+    <p>U-Net (Ronneberger <em>et al.</em>, 2015)<sup><a href="{{ url_for('research.medsci_references') }}#ref-22">[22]</a></sup> introduced skip connections to improve segmentation of fine details. Variants like Attention U-Net further enhance performance by suppressing irrelevant background features. nnU-Net<sup><a href="{{ url_for('research.medsci_references') }}#ref-23">[23]</a></sup> provides a self-configuring framework that has set strong baselines across many biomedical segmentation tasks, while MedSAM<sup><a href="{{ url_for('research.medsci_references') }}#ref-24">[24]</a></sup> adapts the Segment Anything foundation model to the medical domain.</p>
+
+    <table>
+      <thead><tr><th>Architecture</th><th>Innovation</th><th>Use Case</th></tr></thead>
+      <tbody>
+        <tr><td>U-Net</td><td>Encoder&ndash;decoder + skip connections</td><td>Histology, cell segmentation</td></tr>
+        <tr><td>3D U-Net / V-Net</td><td>Volumetric convolutions</td><td>Organ segmentation in CT/MRI</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="digital-pathology">4. Digital Pathology</h2>
+    <p>The field of digital pathology is rapidly advancing, driven by whole-slide imaging (WSI). Foundation models demonstrate the utility of large-scale pre-training and promptable segmentation for various applications.</p>
+
+    <h3>4.1 Multiple-Instance Learning (MIL)</h3>
+    <p>MIL techniques enable models to learn from WSIs without requiring pixel-level annotations. Attention-based MIL<sup><a href="{{ url_for('research.medsci_references') }}#ref-25">[25]</a></sup> improves interpretability by highlighting key diagnostic features within images.</p>
+
+    <table>
+      <thead><tr><th>Model</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>UNI (Chen <em>et al.</em>, 2024)</td><td>A large pathology foundation model trained on WSIs, showing transfer learning benefits across various downstream tasks.</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="clinical-validation">5. Clinical Validation</h2>
+    <p>While deep learning models have achieved impressive results in medical imaging, their performance often declines when deployed at external sites due to distribution shift<sup><a href="{{ url_for('research.medsci_references') }}#ref-26">[26]</a></sup>. Strategies like multi-site training and domain adaptation help mitigate this issue.</p>
+
+    {{ pagination_pair(
+      prev={'url': url_for('research.medsci_bioinformatics'), 'title': 'Bioinformatics'},
+      next={'url': url_for('research.medsci_clinical'), 'title': 'Clinical AI'}
+    ) }}
+
+  </div>
+</div>
+{% endblock %}

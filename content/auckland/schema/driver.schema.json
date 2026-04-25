@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aucklandproject://schema/driver.schema.json",
+  "title": "Driver",
+  "description": "A causal factor that shapes one or more problems.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "consensus", "affects"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^driver\\.[a-z0-9_.]+$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "consensus": {"enum": ["consensus", "mostly-agreed", "contested", "disputed"]},
+    "category": {"enum": ["physical", "climate", "economic", "demographic", "institutional", "cultural", "regulatory"]},
+    "affects": {"type": "array", "items": {"type": "string", "pattern": "^problem\\."}, "minItems": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^evidence\\."}},
+    "timescale": {"enum": ["short", "medium", "long", "permanent"]}
+  }
+}

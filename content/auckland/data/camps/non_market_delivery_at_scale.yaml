@@ -1,0 +1,42 @@
+id: camp.non_market_delivery_at_scale
+name: Non-market delivery at scale
+core_claim: >
+  Market supply is pro-cyclical and systematically under-delivers at the
+  bottom of the market. Scaling non-market builders — Kāinga Ora,
+  community housing providers, iwi development arms, and intergenerational
+  private trusts — produces counter-cyclical, durable supply that the
+  market cannot.
+flagship_moves:
+  - Recapitalise Kāinga Ora and insulate its mandate from electoral cycles.
+  - Scale community housing providers with stable long-term finance.
+  - Crown co-investment in iwi-led housing pipelines.
+  - Enabling frameworks for intergenerational family trusts and similar long-horizon private vehicles.
+tensions:
+  - Fiscal cost and ongoing political fragility of public builders.
+  - Historical concerns over Kāinga Ora build cost and efficiency.
+  - Scale constraints on iwi and CHP sectors over a decade or less.
+  - Intergenerational trust delivery is largely invisible to policy and hard to design incentives for.
+addresses:
+  - problem.housing.supply_economics
+interventions:
+  - description: "Expand and stabilise non-market builders (state, community, iwi, long-horizon trusts) as a durable delivery channel."
+    state_variable: share_of_supply_by_actor_type
+    expected_sign: "+"
+    side_effects:
+      - counter_cyclical_stabilisation
+      - fiscal_cost_to_crown
+      - dependence_on_political_will
+  - description: "Finance vehicles suited to long-horizon (50-year+) holders rather than short-cycle private capital."
+    state_variable: developer_margin
+    expected_sign: "0"
+    side_effects:
+      - shifts_cost_of_capital_profile
+advocates:
+  - Community Housing Aotearoa and the third sector
+  - Te Matapihi and iwi housing advocates
+  - Centre-left housing economists
+  - Sections of international social-housing literature (Vienna archetype)
+evidence_ids:
+  - evidence.ngati_whatua_orakei_homes
+tensions_with:
+  - camp.regulatory_deregulation

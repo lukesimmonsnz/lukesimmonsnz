@@ -1,0 +1,80 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Medical Science &middot; Research &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Academic reference at the intersection of medical science and computer science &mdash; neuroscience, bioinformatics, medical imaging, clinical AI, and computational drug discovery.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Medical Science', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Branch 03</span>
+    <h1>Medical Science</h1>
+    <hr class="rule">
+    <p class="lede">The convergence of computer science and medical science is reshaping how we understand disease, design therapies, and deliver care. From deep learning models that outperform radiologists on specific imaging tasks to graph neural networks mapping protein interactions, computational methods are becoming indispensable across biomedical research.</p>
+    <div class="chips" style="margin-top: 1.25rem;">
+      <span class="chip">Neuroscience &amp; AI</span>
+      <span class="chip">Bioinformatics</span>
+      <span class="chip">Medical Imaging</span>
+      <span class="chip">Clinical AI</span>
+      <span class="chip">Drug Discovery</span>
+    </div>
+  </header>
+
+  <section>
+    <span class="eyebrow">Sections</span>
+    <h2>What&rsquo;s in this branch</h2>
+
+    <div class="card-grid">
+      <a class="card" href="{{ url_for('research.medsci_neuroscience') }}">
+        <div class="meta">01 &middot; Neural computation</div>
+        <h3>Neuroscience &amp; AI</h3>
+        <p>Neural dynamics, brain&ndash;computer interfaces, motor and speech decoding, connectomics, and calcium imaging analysis.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.medsci_bioinformatics') }}">
+        <div class="meta">02 &middot; Genomics</div>
+        <h3>Bioinformatics</h3>
+        <p>Multi-omics integration, machine learning for disease mechanism, and protein structure prediction with ESM-3.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.medsci_imaging') }}">
+        <div class="meta">03 &middot; Diagnostics</div>
+        <h3>Medical Imaging AI</h3>
+        <p>CNN diagnostics, segmentation architectures (U-Net, nnU-Net, MedSAM), computational pathology, and clinical validation.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.medsci_clinical') }}">
+        <div class="meta">04 &middot; Clinical practice</div>
+        <h3>Clinical AI</h3>
+        <p>EHR analytics, clinical NLP, biomedical language models, LLMs in medicine, and regulatory frameworks.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.medsci_drugs') }}">
+        <div class="meta">05 &middot; Therapeutics</div>
+        <h3>Drug Discovery</h3>
+        <p>Molecular property prediction, generative chemistry, deep-learning docking (DiffDock), and ADMET modelling.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.medsci_references') }}">
+        <div class="meta">06 &middot; Bibliography</div>
+        <h3>References</h3>
+        <p>Full bibliography for the Medical Science branch, with journal citations and arXiv preprints.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">How to read it</span>
+    <h2>Conventions</h2>
+    <p class="prose">
+      Each page is a standalone academic note with inline citations that
+      resolve to the master
+      <a href="{{ url_for('research.medsci_references') }}">References</a>
+      page within this branch. Sources are drawn primarily from peer-reviewed
+      journals (<em>Nature</em>, <em>Science</em>, <em>Nature Methods</em>,
+      <em>Nature Biotechnology</em>) and arXiv preprints.
+    </p>
+  </section>
+</div>
+{% endblock %}

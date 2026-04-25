@@ -1,0 +1,14 @@
+id: driver.tax_advantaged_housing_asset
+name: Tax-advantaged treatment of housing as an asset
+description: >
+  The absence of a comprehensive capital gains tax on owner-occupied
+  dwellings, the effective tax-free status of imputed rent, and the
+  historical deductibility treatment of rental-property expenses together
+  make housing tax-advantaged relative to most other assets. Over 30–50
+  years these advantages compound into the concentrated housing-wealth
+  structure the affordability outcome reflects.
+consensus: mostly-agreed
+category: institutional
+timescale: long
+affects:
+  - problem.housing.affordability

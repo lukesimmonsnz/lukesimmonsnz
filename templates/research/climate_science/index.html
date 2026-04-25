@@ -1,0 +1,86 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Climate Science &amp; AI &middot; Research &middot; Luke Simmons{% endblock %}
+{% block meta_description %}Academic overviews of key topics at the intersection of climate science and artificial intelligence &mdash; modelling, data assimilation, and machine learning for earth-system science.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Climate Science &amp; AI', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research &middot; Branch 02</span>
+    <h1>Climate Science &amp; AI</h1>
+    <hr class="rule">
+    <p class="lede">Academic overviews of key topics at the intersection of climate science and artificial intelligence &mdash; from physics-informed neural networks to operational AI weather forecasting, with inline citations sourced from peer-reviewed literature and arXiv preprints.</p>
+    <div class="chips" style="margin-top: 1.25rem;">
+      <span class="chip">Introduction</span>
+      <span class="chip">Historical context</span>
+      <span class="chip">Methodologies</span>
+      <span class="chip">Applications</span>
+      <span class="chip">Challenges</span>
+      <span class="chip">Future directions</span>
+    </div>
+  </header>
+
+  <section>
+    <span class="eyebrow">Sections</span>
+    <h2>What&rsquo;s in this branch</h2>
+
+    <div class="card-grid">
+      <a class="card" href="{{ url_for('research.climate_intro') }}">
+        <div class="meta">01 &middot; Overview</div>
+        <h3>Introduction</h3>
+        <p>Overview of the climate science and AI intersection: predictive modelling, data analysis, and sustainable energy solutions.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_history') }}">
+        <div class="meta">02 &middot; Background</div>
+        <h3>Historical Context</h3>
+        <p>Evolution of climate modelling from early statistical methods to process-based models and the integration of AI.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_methods') }}">
+        <div class="meta">03 &middot; Techniques</div>
+        <h3>Methodologies</h3>
+        <p>Data pipelines, hybrid physics&ndash;AI architectures, deep learning approaches, and uncertainty quantification.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_applications') }}">
+        <div class="meta">04 &middot; In practice</div>
+        <h3>Applications</h3>
+        <p>AI weather forecasting, extreme-event detection, renewable energy optimisation, emissions monitoring, and adaptation.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_challenges') }}">
+        <div class="meta">05 &middot; Limitations</div>
+        <h3>Challenges &amp; Limitations</h3>
+        <p>Data quality, generalisation to novel climate states, interpretability, compute cost, extremes, and governance.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_future') }}">
+        <div class="meta">06 &middot; Looking ahead</div>
+        <h3>Future Directions</h3>
+        <p>Next-generation climate modelling, sustainable building design, plant health, and emerging research avenues.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_references') }}">
+        <div class="meta">07 &middot; Bibliography</div>
+        <h3>References</h3>
+        <p>Full bibliography for the Climate Science &amp; AI branch, with DOIs and stable URLs where available.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">How to read it</span>
+    <h2>Conventions</h2>
+    <p class="prose">
+      Each page is a standalone academic note with inline bracketed
+      citations (e.g., <sup>[1]</sup>) that resolve to the master
+      <a href="{{ url_for('research.climate_references') }}">References</a>
+      page within this branch. Sources are drawn primarily from peer-reviewed
+      journals (<em>Nature</em>, <em>Science</em>, <em>ACM Computing Surveys</em>,
+      <em>Geophysical Research Letters</em>) and arXiv preprints.
+    </p>
+  </section>
+</div>
+{% endblock %}

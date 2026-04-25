@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block subnav %}
+<div class="subnav">
+  <div class="subnav-inner">
+    <a href="{{ url_for('research.index') }}"
+       class="{% if request.endpoint == 'research.index' %}active{% endif %}">Overview</a>
+    <a href="{{ url_for('research.cs_index') }}"
+       class="{% if request.endpoint and request.endpoint.startswith('research.cs_') %}active{% endif %}">Computer Science</a>
+    <a href="{{ url_for('research.climate_index') }}"
+       class="{% if request.endpoint and request.endpoint.startswith('research.climate_') %}active{% endif %}">Climate Science &amp; AI</a>
+    <a href="{{ url_for('research.medsci_index') }}"
+       class="{% if request.endpoint and request.endpoint.startswith('research.medsci_') %}active{% endif %}">Medical Science</a>
+    <a href="{{ url_for('auckland.index') }}"
+       class="{% if request.blueprint == 'auckland' %}active{% endif %}">Auckland</a>
+  </div>
+</div>
+
+{% if request.endpoint and request.endpoint.startswith('research.cs_') %}
+<div class="subnav subnav-secondary" aria-label="Computer Science pages">
+  <div class="subnav-inner">
+    <span class="subnav-label">In this branch:</span>
+    <a href="{{ url_for('research.cs_index') }}"
+       class="{% if request.endpoint == 'research.cs_index' %}active{% endif %}">Foundations</a>
+    <a href="{{ url_for('research.cs_python') }}"
+       class="{% if request.endpoint == 'research.cs_python' %}active{% endif %}">Python</a>
+    <a href="{{ url_for('research.cs_rust') }}"
+       class="{% if request.endpoint == 'research.cs_rust' %}active{% endif %}">Rust</a>
+    <a href="{{ url_for('research.cs_ai_it') }}"
+       class="{% if request.endpoint == 'research.cs_ai_it' %}active{% endif %}">AI &amp; IT Ecosystem</a>
+    <a href="{{ url_for('research.cs_references') }}"
+       class="{% if request.endpoint == 'research.cs_references' %}active{% endif %}">References</a>
+    <a href="{{ url_for('research.cs_readme') }}"
+       class="{% if request.endpoint == 'research.cs_readme' %}active{% endif %}">Readme</a>
+  </div>
+</div>
+{% endif %}
+
+{% if request.endpoint and request.endpoint.startswith('research.climate_') %}
+<div class="subnav subnav-secondary" aria-label="Climate Science pages">
+  <div class="subnav-inner">
+    <span class="subnav-label">In this branch:</span>
+    <a href="{{ url_for('research.climate_index') }}"
+       class="{% if request.endpoint == 'research.climate_index' %}active{% endif %}">Overview</a>
+    <a href="{{ url_for('research.climate_intro') }}"
+       class="{% if request.endpoint == 'research.climate_intro' %}active{% endif %}">Intro</a>
+    <a href="{{ url_for('research.climate_history') }}"
+       class="{% if request.endpoint == 'research.climate_history' %}active{% endif %}">History</a>
+    <a href="{{ url_for('research.climate_methods') }}"
+       class="{% if request.endpoint == 'research.climate_methods' %}active{% endif %}">Methods</a>
+    <a href="{{ url_for('research.climate_applications') }}"
+       class="{% if request.endpoint == 'research.climate_applications' %}active{% endif %}">Applications</a>
+    <a href="{{ url_for('research.climate_challenges') }}"
+       class="{% if request.endpoint == 'research.climate_challenges' %}active{% endif %}">Challenges</a>
+    <a href="{{ url_for('research.climate_future') }}"
+       class="{% if request.endpoint == 'research.climate_future' %}active{% endif %}">Future</a>
+    <a href="{{ url_for('research.climate_references') }}"
+       class="{% if request.endpoint == 'research.climate_references' %}active{% endif %}">References</a>
+  </div>
+</div>
+{% endif %}
+
+{% if request.endpoint and request.endpoint.startswith('research.medsci_') %}
+<div class="subnav subnav-secondary" aria-label="Medical Science pages">
+  <div class="subnav-inner">
+    <span class="subnav-label">In this branch:</span>
+    <a href="{{ url_for('research.medsci_index') }}"
+       class="{% if request.endpoint == 'research.medsci_index' %}active{% endif %}">Overview</a>
+    <a href="{{ url_for('research.medsci_neuroscience') }}"
+       class="{% if request.endpoint == 'research.medsci_neuroscience' %}active{% endif %}">Neuroscience</a>
+    <a href="{{ url_for('research.medsci_bioinformatics') }}"
+       class="{% if request.endpoint == 'research.medsci_bioinformatics' %}active{% endif %}">Bioinformatics</a>
+    <a href="{{ url_for('research.medsci_imaging') }}"
+       class="{% if request.endpoint == 'research.medsci_imaging' %}active{% endif %}">Imaging</a>
+    <a href="{{ url_for('research.medsci_clinical') }}"
+       class="{% if request.endpoint == 'research.medsci_clinical' %}active{% endif %}">Clinical AI</a>
+    <a href="{{ url_for('research.medsci_drugs') }}"
+       class="{% if request.endpoint == 'research.medsci_drugs' %}active{% endif %}">Drug Discovery</a>
+    <a href="{{ url_for('research.medsci_references') }}"
+       class="{% if request.endpoint == 'research.medsci_references' %}active{% endif %}">References</a>
+  </div>
+</div>
+{% endif %}
+
+{% if request.blueprint == 'auckland' %}
+<div class="subnav subnav-secondary" aria-label="Auckland pages">
+  <div class="subnav-inner">
+    <span class="subnav-label">In this branch:</span>
+    <a href="{{ url_for('auckland.index') }}"
+       class="{% if request.endpoint == 'auckland.index' %}active{% endif %}">Overview</a>
+    <a href="{{ url_for('auckland.section', section='framing') }}"
+       class="{% if request.view_args and request.view_args.get('section') == 'framing' %}active{% endif %}">Framing</a>
+    <a href="{{ url_for('auckland.section', section='housing') }}"
+       class="{% if request.view_args and request.view_args.get('section') == 'housing' %}active{% endif %}">Housing</a>
+  </div>
+</div>
+{% endif %}
+
+{# --- Branch authorship banner ------------------------------------------- #}
+{# Auckland is AI-drafted with Luke editing/reviewing throughout; the other #}
+{# three research branches are AI-drafted notes that Luke has not edited.   #}
+{# The overview page (/research/) carries a fuller explanation; this banner #}
+{# is the per-page reminder for any page inside a branch.                   #}
+{% if request.blueprint == 'auckland' %}
+<aside class="branch-authorship branch-authorship-edited" role="note" aria-label="Authorship">
+  <div class="branch-authorship-inner">
+    <span class="author-chip author-agent-edited">agent + luke</span>
+    <span>AI-drafted in iterative dialogue with Luke, who reads it and works through it with the agent by question and answer. Every claim must cite a primary source by lint, which is a structural check &mdash; independent per-claim verification by Luke is not yet part of the flow.</span>
+  </div>
+</aside>
+{% elif request.endpoint and request.endpoint.startswith('research.') and request.endpoint != 'research.index' %}
+<aside class="branch-authorship" role="note" aria-label="Authorship">
+  <div class="branch-authorship-inner">
+    <span class="author-chip author-agent">agent</span>
+    <span>These pages are AI-drafted reference notes that Luke has not edited. Treat them as machine-written study notes &mdash; useful for orientation, not authoritative; verify any claim against primary sources before citing.</span>
+  </div>
+</aside>
+{% endif %}
+{% endblock %}

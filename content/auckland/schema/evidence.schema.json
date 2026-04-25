@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aucklandproject://schema/evidence.schema.json",
+  "title": "Evidence",
+  "description": "An atomic factual claim with traceable sourcing.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "statement", "confidence", "verification_status", "source_ids"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^evidence\\.[a-z0-9_.]+$"},
+    "statement": {"type": "string"},
+    "value": {"type": ["number", "string", "null"]},
+    "unit": {"type": ["string", "null"]},
+    "time_period": {"type": ["string", "null"]},
+    "geography": {"type": ["string", "null"]},
+    "confidence": {"enum": ["high", "medium", "low", "disputed"]},
+    "verification_status": {"enum": ["verified", "needs_verification", "cited_only"]},
+    "last_verified": {"type": ["string", "null"], "format": "date"},
+    "source_ids": {"type": "array", "items": {"type": "string", "pattern": "^source\\."}, "minItems": 1},
+    "notes": {"type": ["string", "null"]}
+  }
+}

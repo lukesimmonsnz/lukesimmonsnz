@@ -1,0 +1,12 @@
+id: driver.fragmented_title
+name: Fragmented private freehold title
+description: >
+  The majority of Auckland's urban residential land is held across hundreds of
+  thousands of small private titles. This fragmentation imposes high transaction
+  costs on any development that requires assembling contiguous parcels, and is not
+  easily reduced by regulation alone.
+consensus: consensus
+category: institutional
+timescale: long
+affects:
+  - problem.housing.land

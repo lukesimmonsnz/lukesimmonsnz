@@ -1,0 +1,37 @@
+id: camp.conservation_first
+name: Conservation-first / biophysical limits
+core_claim: >
+  A growing share of Auckland's land should be permanently returned to, or retained
+  in, ecological function, and urban density should absorb the resulting growth.
+flagship_moves:
+  - Expand regional parks and conservation reserves.
+  - Make the Rural Urban Boundary effectively permanent.
+  - Offer private-land conservation incentives such as QEII-style covenants.
+  - Introduce biodiversity-net-gain requirements for new development.
+tensions:
+  - Housing supply and affordability in the short to medium term.
+  - Equity implications of foreclosing peripheral expansion for first-home buyers.
+  - Opportunity cost of agricultural and horticultural land.
+addresses:
+  - problem.housing.land
+interventions:
+  - description: "Permanently lock the Rural Urban Boundary against outward expansion."
+    state_variable: developable_area_hectares
+    expected_sign: "-"
+    side_effects:
+      - upward_pressure_on_intra_boundary_land_prices
+      - forces_intensification_debate
+  - description: "Expand biodiversity protections onto private land via covenants and incentives."
+    state_variable: ownership_distribution_by_actor
+    expected_sign: "0"
+    side_effects:
+      - long_run_ecological_capacity_protected
+advocates:
+  - Forest & Bird
+  - QEII National Trust
+  - Sections of the academic ecology community
+  - Some iwi environmental arms
+tensions_with:
+  - camp.compact_city
+  - camp.greenfield_expansion
+  - camp.polycentric

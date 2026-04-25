@@ -1,0 +1,37 @@
+id: camp.devolved_governance
+name: Devolved governance / institutional reform
+core_claim: >
+  The binding long-run constraint is the Crown–Council fiscal relationship and
+  Auckland's limited ability to finance its own strategy on land and infrastructure.
+flagship_moves:
+  - Crown-backed wholesale borrowing for Council infrastructure investment.
+  - Expanded land-value-capture tools for rezoning uplift.
+  - Greater constitutional autonomy for Auckland within the national system.
+  - Regional-level fiscal instruments (infrastructure levies, targeted rates).
+tensions:
+  - National-government political economy and central-local dynamics.
+  - Inter-regional equity across the rest of New Zealand.
+  - Accountability risks of concentrating power at metropolitan level.
+  - Credit-rating and sovereign-debt implications.
+addresses:
+  - problem.housing.land
+interventions:
+  - description: "Enable Auckland Council to borrow at Crown-equivalent wholesale rates for infrastructure."
+    constraint_relaxed: resource_management_statutory_regime
+    state_variable: zoned_capacity_dwellings
+    expected_sign: "+"
+    side_effects:
+      - higher_council_debt_stock
+      - precedent_for_other_regions
+  - description: "Introduce a land-value-capture levy on rezoning uplift."
+    state_variable: ownership_distribution_by_actor
+    expected_sign: "0"
+    side_effects:
+      - funds_infrastructure_from_beneficiaries
+      - political_opposition_from_landowners
+advocates:
+  - Sections of local-government reform advocates
+  - Some infrastructure economists
+  - Elements of the Auckland Council executive over time
+tensions_with:
+  - camp.land_market_reform

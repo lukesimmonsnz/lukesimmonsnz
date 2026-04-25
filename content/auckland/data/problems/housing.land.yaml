@@ -1,0 +1,330 @@
+id: problem.housing.land
+title: "Land — Auckland's Physical, Legal, and Cultural Substrate"
+section: housing
+subpage: land
+parent: problem.housing
+order: 1
+updated: "2026-04-22"
+summary: >
+  Land is the foundation of Auckland's housing question — the physical
+  geography, the history of ownership, the regulatory regimes layered on
+  top, and the features that persist whoever is in government. This page
+  describes what is durable and sets out the long-run questions the rest
+  of the Housing section tries to answer.
+status: draft-v0
+
+systems_model:
+  state_variables:
+    - developable_area_hectares
+    - ownership_distribution_by_actor
+    - zoned_capacity_dwellings
+    - title_fragmentation_index
+    - coastal_land_at_risk_sea_level
+    - heritage_overlay_area
+  inputs:
+    - rezoning_decisions
+    - infrastructure_investment
+    - treaty_settlements
+    - climate_change_trajectory
+    - demographic_change
+  constraints:
+    - physical_geography_and_volcanic_field
+    - coastlines_and_sea_level_rise
+    - heritage_and_character_overlays
+    - tupuna_maunga_co_governance
+    - fragmented_private_freehold_title
+    - te_ture_whenua_multiply_owned_maori_land
+    - resource_management_statutory_regime
+  feedback_loops:
+    - "price_of_land -> investor_demand_for_landbanking -> reduced_supply_of_developable_land -> price_of_land (+)"
+    - "density -> amenity_pressure -> heritage_designation -> future_density_constraint (-)"
+    - "infrastructure_capacity <-> development_pattern (bidirectional)"
+    - "iwi_post_settlement_holdings -> intergenerational_development_capacity (+)"
+    - "coastal_risk_disclosure -> insurance_retreat -> managed_retreat_pressure (+)"
+
+figures:
+  - id: fig.land_use_by_category
+    caption: "Land use in the Auckland region by category. Placeholder — to be produced from LINZ and Auckland Council RIMU data."
+    image: /static/img/auckland/land-use-by-category.svg
+    alt: "Map of the Auckland region showing land use by category: urban footprint, rural, regional parks and conservation, Māori freehold and iwi-settlement lands, and water bodies."
+    status: placeholder
+  - id: fig.sea_level_rise_2100
+    caption: "Land exposed to higher inundation risk under NIWA sea-level rise scenarios for 2100. Placeholder — to be produced from NIWA coastal hazard datasets."
+    image: /static/img/auckland/sea-level-rise-2100.svg
+    alt: "Map of the Auckland region showing land at risk of inundation or elevated flood frequency under a range of 2100 sea-level rise scenarios."
+    status: placeholder
+  - id: fig.volcanic_cones_viewshafts
+    caption: "The Auckland Volcanic Field and its protected viewshafts. Placeholder — to be produced from GNS Science and Auckland Council data."
+    image: /static/img/auckland/volcanic-cones-viewshafts.svg
+    alt: "Map of the Auckland Volcanic Field showing cones, maars and tuff rings, and the protected viewshafts that radiate from the principal cones."
+    status: placeholder
+
+driver_ids:
+  - driver.physical_geography
+  - driver.climate_exposure
+  - driver.fragmented_title
+  - driver.regulatory_regime
+  - driver.iwi_intergenerational_ownership
+
+camp_ids:
+  - camp.compact_city
+  - camp.conservation_first
+  - camp.devolved_governance
+  - camp.greenfield_expansion
+  - camp.land_market_reform
+  - camp.maori_led
+  - camp.polycentric
+
+evidence_ids:
+  - evidence.isthmus_width_km
+  - evidence.volcanic_field_count
+  - evidence.waitakere_area_ha
+  - evidence.hunua_area_ha
+  - evidence.sea_level_rise_2100_m
+  - evidence.ngati_whatua_orakei_homes
+  - evidence.native_land_court_year
+
+source_ids:
+  - source.linz
+  - source.niwa_coastal_hazards
+  - source.gns_volcanic_field
+  - source.ac_rimu
+  - source.greenaway_mcgrevy_upzoning
+  - source.wai_388_tamaki_makaurau
+  - source.doc_conservation_estate
+
+narrative:
+  - heading: Introduction
+    body: |
+      Housing in Auckland begins with the ground itself. Before any argument about zoning,
+      affordability, or the role of the state, there is a specific stretch of land — an isthmus
+      between two harbours, punctuated by volcanic cones, bounded by ranges to the west and south,
+      and surrounded by one of the longest coastlines of any urban region in the world. That
+      ground has a legal and cultural history that precedes the modern city by centuries.
+      Everything that follows in this section — supply economics, affordability, homelessness,
+      public housing, Māori housing, tax reform, infrastructure, climate, and the quality of the
+      existing stock — rests on the substrate described here.
+
+      The discussion that follows is deliberately structural. It emphasises features of Auckland's
+      land that will still be recognisable to a reader fifty or one hundred years from now.
+      Current political debates are mentioned only where they illustrate a durable tension, not as
+      ends in themselves.
+
+  - heading: The physical substrate
+    body: |
+      Auckland sits on a narrow isthmus, roughly two kilometres wide at its narrowest point,
+      between the Waitematā harbour to the east and the Manukau harbour to the west. That
+      geometry is permanent on any civilisational timescale, and it is the single most
+      consequential fact about the city's land. It concentrates transport, amenity, and
+      commercial gravity onto a thin strip, forces every north–south journey through a small
+      number of chokepoints, and makes any land close to either harbour structurally scarce.
+
+      The isthmus is also the surface expression of the **Auckland Volcanic Field**, a collection
+      of roughly fifty scoria cones, maars, and tuff rings erupted over the past quarter of a
+      million years. The field is geologically active rather than extinct; future eruptions are
+      considered a low-probability but real component of the region's long-term hazard profile.
+      Many of the cones are protected as reserves and viewshafts, and the 2014 Tāmaki Makaurau
+      Collective settlement places fourteen of the most significant maunga under the
+      co-governance of the Tūpuna Maunga Authority — a legal arrangement designed to endure.
+
+      To the west, the **Waitākere Ranges** (approximately sixteen thousand hectares) and, to the
+      south-east, the **Hunua Ranges** (approximately seventeen thousand hectares) are regional
+      parks. They are, for practical purposes, permanently removed from the developable land
+      base. The same is broadly true of the Hauraki Gulf islands gazetted as reserves and of the
+      extensive marine and coastal park systems.
+
+      <figure>
+        <img src="/static/img/auckland/land-use-by-category.svg" alt="Map of the Auckland region showing land use by category: urban footprint, rural, regional parks and conservation, Māori freehold and iwi-settlement lands, and water bodies.">
+        <figcaption>Figure 1. Land use in the Auckland region by category. Placeholder — to be produced from LINZ and Auckland Council RIMU data.</figcaption>
+      </figure>
+
+      The Auckland region has a coastline of several thousand kilometres, exceptionally long for
+      a metropolitan area of its size. A significant fraction of that coastline sits at
+      elevations that are vulnerable on fifty- and hundred-year horizons. Projections from the
+      National Institute of Water and Atmospheric Research suggest sea-level rise in the order of
+      0.3 to 1.2 metres by 2100, depending on the global emissions pathway. The practical
+      consequence is that parts of the low-lying Tāmaki estuary, Māngere, the western reaches of
+      the Manukau harbour, and a number of north-shore bays are already on trajectories toward
+      higher flood frequency, reduced insurability, and eventual managed retreat. The January
+      2023 Auckland Anniversary floods made the existing flood-plain maps politically visible in
+      a way they had not previously been.
+
+      <figure>
+        <img src="/static/img/auckland/sea-level-rise-2100.svg" alt="Map of the Auckland region showing land at risk of inundation or elevated flood frequency under a range of 2100 sea-level rise scenarios.">
+        <figcaption>Figure 2. Land exposed to higher inundation risk under NIWA sea-level rise scenarios for 2100. Placeholder — to be produced from NIWA coastal hazard datasets.</figcaption>
+      </figure>
+
+      The topography of the region is less flat than its administrative footprint suggests.
+      Ridgelines, steep valleys, unstable soils in the west, and extensive alluvial flood plains
+      across the south and north-west all reduce the share of land on which housing can be built
+      at low infrastructure cost. For planning purposes, the region's *physically developable*
+      land base is smaller than its total area — and is shrinking at the coastal margin even as
+      the population grows.
+
+      <figure>
+        <img src="/static/img/auckland/volcanic-cones-viewshafts.svg" alt="Map of the Auckland Volcanic Field showing cones, maars and tuff rings, and the protected viewshafts that radiate from the principal cones.">
+        <figcaption>Figure 3. The Auckland Volcanic Field and its protected viewshafts. Placeholder — to be produced from GNS Science and Auckland Council data.</figcaption>
+      </figure>
+
+  - heading: Tangata whenua and the long historical arc
+    body: |
+      Tāmaki Makaurau — "Tāmaki desired by many" — has been one of the most contested and most
+      populous parts of Aotearoa for centuries. Its twin-harbour portage, volcanic soils, fishing
+      grounds, and strategic position made it valuable to a number of iwi and hapū whose
+      interests overlap rather than divide cleanly.
+
+      Iwi with mana whenua interests in the Auckland isthmus and its surrounds include Ngāti
+      Whātua (with Ngāti Whātua Ōrākei in the central isthmus), Te Kawerau ā Maki in the west,
+      Ngāi Tai ki Tāmaki in the east and inner Gulf, Ngāti Pāoa and the wider Marutūāhu
+      confederation in the east and Hauraki, Waikato–Tainui in the south and south-west, and
+      Te Ākitai Waiohua in the Māngere and Ihumātao areas, among others with specific site-based
+      interests. Overlapping interests are the norm rather than the exception, and any framing
+      that implies a single mana whenua voice for the region is incorrect.
+
+      The arc from pre-colonial land use, through nineteenth-century Crown purchases, the 1860s
+      wars, the Native Land Court's individualisation of customary title, twentieth-century
+      urban displacement, and the Treaty-settlement process since the 1990s is too large to do
+      justice to on a housing page. Three points matter for the purposes of this section.
+
+      First, by the late twentieth century the overwhelming majority of Auckland region land had
+      passed out of Māori hands, with the single largest mechanism of loss being the
+      individualisation and piecemeal sale of customary title through the Native Land Court from
+      1865 onward, not direct confiscation.
+
+      Second, Treaty settlements from the 1990s to the present have returned meaningful — though
+      modest relative to historical loss — land, commercial redress, and cultural instruments.
+      Post-settlement iwi are now significant Auckland landowners and developers. Ngāti Whātua
+      Ōrākei has built and operates several hundred homes at Ōrākei, with further development
+      planned; multiple iwi hold commercial property portfolios and are increasingly active in
+      master-planned housing.
+
+      Third, this is a durable structural shift. Over fifty- and hundred-year horizons, iwi are
+      likely to be among the most consequential long-term landowners and developers in the
+      region, because unlike most private landowners they are intergenerationally constrained —
+      land returned through settlement is held for descendants, not for resale and exit.
+
+      A fuller treatment of mana whenua perspectives on land and housing is the subject of a
+      dedicated sub-page and is deliberately reserved here.
+
+  - heading: Contemporary patterns of ownership
+    body: |
+      Auckland's land is held by a heterogeneous mix of actors whose time horizons and
+      motivations differ substantially. In rough terms:
+
+      - **Private freehold** dominates the residential footprint and much of the rural
+        surrounds. It is highly fragmented — hundreds of thousands of small titles — which makes
+        the assembly of development-sized parcels expensive and slow.
+      - **Auckland Council and its council-controlled organisations** hold the regional and
+        local park estate, community facilities, stormwater reserves, water and wastewater
+        infrastructure land through Watercare, the port land, and the transport corridors.
+        Measured by strategic significance, the Council is arguably the single most consequential
+        landowner in the region.
+      - **The Crown** holds the Department of Conservation estate (smaller in Auckland than in
+        the South Island), the Kāinga Ora public-housing portfolio, state highway land,
+        Defence land, and the school estate.
+      - **Iwi and post-settlement entities** hold an expanding portfolio concentrated in specific
+        areas including Ōrākei, the Ihumātao vicinity, parts of south Auckland, and the Hauraki
+        Gulf islands.
+      - **Māori freehold land** under Te Ture Whenua Māori Act is a small share of the region,
+        typically multiply-owned, with development heavily constrained by title complexity rather
+        than by physical capacity.
+      - **Heritage trusts, churches, universities, and hospitals** hold non-trivial portfolios
+        that are often protected from sale.
+      - **Landbanked private holdings** — zoned-but-undeveloped land held for capital
+        appreciation rather than use — matter particularly at the metropolitan edge, in the
+        Future Urban Zone.
+
+      Two structural features of this pattern stand out. The first is **fragmentation**: the
+      sheer number of small private titles means that any proposal which requires assembling
+      contiguous parcels — for large-scale intensification, infrastructure corridors, or
+      master-planned development — runs into high transaction costs that are not easily reduced
+      by regulation alone. The second is **title-locked land**: significant areas cannot easily
+      change use on any reasonable timescale. Treaty-settlement lands with cultural covenants,
+      heritage-listed sites, regional parks, the tūpuna maunga, and DOC reserves should be
+      understood as permanent fixtures of the developable map, not contingent ones.
+
+  - heading: The regulatory layer
+    body: |
+      Zoning and land-use regulation sit on top of physical land and decide what can be built
+      where. The full history of Auckland's planning regimes is a story for another page; the
+      points that matter for a structural view are these.
+
+      Until 2016, land-use rules in the Auckland region were the patchwork of eight separate
+      district plans inherited from the pre-amalgamation councils. The 2016 **Auckland Unitary
+      Plan** consolidated these into a single instrument, introduced a hierarchy of residential
+      zones designed to enable intensification, and upzoned a large portion of the existing
+      urban footprint. On current evidence, it is the most consequential land-use decision made
+      in the region in a generation.
+
+      Layered over the Unitary Plan are a number of overlays and boundaries that matter
+      structurally:
+
+      - **Special character overlays** restrict demolition and form in heritage areas of the
+        inner isthmus. Once designated, such overlays have historically been very difficult to
+        remove; a reader in 2076 should expect many of today's character areas still to exist.
+      - **Viewshafts** radiate from a number of volcanic cones and constrain building height in
+        specific corridors.
+      - A **Rural Urban Boundary** separates the area where urban development is expected from
+        the land where it is not. Its position is politically contested and periodically
+        revised.
+      - The **Future Urban Zone** designates land earmarked for eventual urbanisation, typically
+        awaiting infrastructure investment and structure planning.
+
+      Underneath all of this sits the **Resource Management Act** (1991), currently being
+      replaced. On any century-scale view, the near-certainty is that whatever statute replaces
+      the RMA will itself be replaced again within fifty years. Regulatory regimes come and go;
+      the physical inventory of categories — character, maunga, harbour-adjacent, flood-prone,
+      Māori-title-constrained, iwi-settlement — persists far longer than the particular statutes
+      that govern them.
+
+  - heading: Features that persist across political cycles
+    body: |
+      A reader in 2076 or 2126 will still recognise most of the following:
+
+      1. **The isthmus geometry and the twin harbours.** Permanent on any meaningful timescale.
+         Everything routes around them.
+      2. **The volcanic field and its viewshafts.** The cones are culturally and legally
+         protected; the viewshafts will persist.
+      3. **The Waitākere and Hunua ranges as land banks of last resort.** Conservation estate is
+         politically sticky.
+      4. **Climate-driven loss of coastal developable land.** The trajectory accelerates through
+         the century.
+      5. **Heritage character zones in the inner isthmus.** Once designated, near-impossible to
+         remove at scale.
+      6. **Fragmented private freehold.** High assembly costs will continue to shape what gets
+         built, and where.
+      7. **Iwi as permanent, intergenerational landowners.** A growing share, a long time
+         horizon, and — uniquely among major landowners — no exit option.
+      8. **Auckland Council as the largest strategic landowner.** Through parks, reserves,
+         corridors, and its CCOs, the portfolio outlasts any particular elected administration.
+      9. **Central Crown holdings** in housing, transport, defence, and education. Subject to
+         national political cycles, but slow to change in aggregate.
+      10. **Regulatory regime instability.** The specific statute changes; the underlying
+          question of how to allocate land-use rights does not.
+
+  - heading: The durable questions this section cannot resolve
+    body: |
+      The following are the long-run questions that still matter in 2076 regardless of who is in
+      government. A defensible public document on Auckland's land can describe them, set out the
+      evidence, and present the camps. It cannot, and should not, resolve them.
+
+      - How much of Auckland's land base should be permanently held in conservation, open space,
+        or ecological function, and what is being traded off against housing supply, carbon,
+        biodiversity, amenity, and climate resilience?
+      - What is the right long-run split between intensification of the existing urban footprint
+        and greenfield expansion at the metropolitan edge or in concentrated satellite towns?
+      - How can the development of multiply-owned Māori land be enabled without alienating it,
+        and who decides?
+      - Who captures the uplift when land changes use — the landowner, the developer, the
+        community, or the Crown through land-value taxation or a betterment levy?
+      - How is climate-driven managed retreat to be funded, governed, and allocated over the
+        coming century? Who pays, and who stays?
+      - Should urban-limit regulation be tighter, to protect ecology and force intensification,
+        or looser, to deliver cheaper housing at the margin?
+      - What is the right long-run ownership mix between private freehold, iwi, community, and
+        public hands?
+      - How are the values of place and permanence — cones, heritage, mana whenua sites,
+        long-standing neighbourhoods — to be weighed against the urgency of the housing need?
+
+      These questions are the spine of the Housing section. Every subsequent sub-page can be
+      read as an attempt to inform a particular slice of them.

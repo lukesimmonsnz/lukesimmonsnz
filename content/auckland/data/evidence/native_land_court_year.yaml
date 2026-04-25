@@ -1,0 +1,12 @@
+id: evidence.native_land_court_year
+statement: "The Native Land Court began operating in 1865, individualising Māori customary title into freehold. Over the subsequent century, piecemeal sale of individualised titles became the single largest mechanism of Māori land loss in the Auckland region, larger than direct confiscation."
+value: 1865
+unit: year
+geography: "Aotearoa New Zealand"
+time_period: "1865 onwards"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.wai_388_tamaki_makaurau
+notes: "Foundational legal history; extensively discussed in Waitangi Tribunal district reports and mainstream NZ historical literature."

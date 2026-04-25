@@ -1,0 +1,17 @@
+id: driver.tenure_legal_architecture
+name: Tenure legal architecture
+description: >
+  The legal framework governing rental tenure — typical tenancy length,
+  grounds for termination, rent-increase rules — shapes what
+  affordability "feels" like for the third of Auckland households who
+  rent, independent of headline rent levels. New Zealand's rental
+  tenure protections are weaker than those in Germany, Switzerland,
+  Austria, and much of continental Europe. Renters therefore face
+  affordability stress that is partly a cost problem and partly an
+  insecurity problem, and the distinction matters for which interventions
+  work.
+consensus: mostly-agreed
+category: institutional
+timescale: long
+affects:
+  - problem.housing.affordability

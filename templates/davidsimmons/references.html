@@ -1,0 +1,45 @@
+{% extends "davidsimmons/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}References · David Roy Simmons · Luke Simmons{% endblock %}
+{% block meta_description %}Source materials for the David Roy Simmons archive — family records, museum archives, obituaries, encyclopaedias, and academic sources.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('David Simmons', url_for('davidsimmons.index')),
+    ('References', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Archive &middot; Sources</span>
+    <h1>References</h1>
+    <hr class="rule">
+    <p class="lede">
+      The archive draws primarily on a family-provided chronology, supplemented
+      by museum records, published obituaries, and the National Library of
+      New Zealand catalogue. Full source list below, grouped by category.
+    </p>
+  </header>
+
+  {% for group in references %}
+  <section>
+    <span class="eyebrow">{{ loop.index }} &middot; {{ group.category }}</span>
+    <h2>{{ group.category }}</h2>
+    <ul class="prose">
+      {% for src in group.sources %}
+      <li style="margin-bottom: 1rem;">
+        {% if src.url %}
+          <a href="{{ src.url }}" target="_blank" rel="noopener"><strong>{{ src.title }}</strong></a>
+        {% else %}
+          <strong>{{ src.title }}</strong>
+        {% endif %}
+        {% if src.detail %}<br><span class="small">{{ src.detail }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}
