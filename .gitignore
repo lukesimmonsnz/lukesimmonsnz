@@ -19,3 +19,4 @@ ml-daemon.log
 ml-daemon.err
 # HuggingFace model cache if ever redirected into project dir
 .hf_cache/
+.fuse_hidden*
