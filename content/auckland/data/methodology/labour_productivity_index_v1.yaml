@@ -1,0 +1,7 @@
+id: methodology.labour_productivity_index_v1
+name: "Labour Productivity Index"
+version: 1
+kind: measurement
+applies_to: [Claim]
+discharged_by: "json_schema"
+description: "GDP per hour worked, indexed to an OECD peer group; used to benchmark New Zealand and Auckland productivity against comparable economies."

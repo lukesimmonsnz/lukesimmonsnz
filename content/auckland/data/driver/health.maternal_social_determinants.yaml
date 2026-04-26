@@ -1,0 +1,19 @@
+id: driver.auckland.health.maternal_social_determinants
+name: "Social Determinants of Maternal and Child Health"
+description: >
+  Poverty, housing instability, food insecurity, and family violence
+  exposure during pregnancy and the first two years of life are the
+  primary determinants of maternal and child health disparities.
+  These upstream factors explain most of the disparity in preterm birth
+  and developmental outcomes between high- and low-deprivation Auckland
+  populations.
+theme: health
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.health.maternal_child_health
+claim_ids:
+  - claim.auckland.health.first_1000_days
+  - claim.auckland.health.preterm_birth_disparity

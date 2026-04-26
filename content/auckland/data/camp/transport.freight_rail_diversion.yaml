@@ -1,0 +1,45 @@
+id: camp.auckland.transport.freight_rail_diversion
+name: "Freight rail diversion and port consolidation"
+theme: transport
+core_claim: >
+  Auckland's freight network will remain a source of congestion and
+  inefficiency as long as the Ports of Auckland remain on the CBD
+  waterfront generating truck-heavy freight through inner-city streets.
+  Relocating the port, electrifying and expanding the freight rail
+  network, and routing port traffic via the inland port at Wiri reduces
+  both congestion and freight-sector emissions.
+flagship_moves:
+  - "Progress the Ports of Auckland relocation to Northport or an alternative site, with a dedicated freight rail connection to the inland port at Wiri"
+  - "Electrify the Auckland freight rail network (Wiri–Westfield–Port) to reduce both cost and emissions on the highest-frequency freight corridors"
+  - "Establish a last-mile urban freight consolidation hub in the inner suburbs, reducing the number of delivery vehicles circulating in the city centre"
+tensions:
+  - >
+    Port relocation is a multi-billion-dollar, multi-decade project with
+    significant political, commercial, and planning complexity; the
+    congestion relief is real but the implementation horizon makes it
+    irrelevant to current network performance.
+  - >
+    Shifting freight to rail requires volumes and consistency that are
+    difficult to achieve for the diverse range of goods currently handled
+    at Ports of Auckland; not all freight types are rail-compatible.
+addresses:
+  - problem.auckland.transport.congestion
+interventions:
+  - description: >
+      Establish a rail freight shuttle from the Ports of Auckland to the
+      Wiri inland port (Metroport) operating at ≥10 services/day, targeting
+      a 30% shift of port-bound truck traffic to rail by 2030.
+    state_variable: "vehicle_kilometres_travelled"
+    constraint_relaxed: "absence of frequent port-to-inland rail service"
+    expected_sign: "-"
+  - description: >
+      Designate a network of city freight consolidation centres at the
+      urban fringe with last-mile delivery by electric cargo vehicles,
+      reducing the number of large delivery trucks circulating in the
+      inner city.
+    state_variable: "average_travel_time"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.transport.network_optimisation
+applicable_in:
+  - auckland

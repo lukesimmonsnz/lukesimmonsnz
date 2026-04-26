@@ -1,0 +1,44 @@
+id: camp.auckland.infrastructure.rural_fibre_extension
+name: "Rural and peri-urban fibre extension"
+theme: infrastructure
+core_claim: >
+  Fixed wireless and satellite broadband are inferior substitutes for
+  fibre in terms of latency, reliability, and peak throughput. Extending
+  fibre to rural and peri-urban Auckland — through targeted Crown
+  subsidy of commercial build-out or direct public investment — creates
+  the conditions for genuine digital inclusion and economic participation
+  in these areas.
+flagship_moves:
+  - "Extend the Ultra-Fast Broadband programme to all urban fringe settlements in Auckland above 50 premises, funded by a targeted Crown top-up to the existing UFB contract"
+  - "Require fibre provision as a condition of greenfield subdivision consent for developments above 20 lots within the Auckland rural boundary"
+  - "Fund community-owned fibre networks in isolated rural settlements through a contestable grant programme"
+tensions:
+  - >
+    Per-premises cost of fibre in rural areas is 5–20× urban build
+    cost; subsidising rural fibre at scale diverts resources from
+    digital inclusion interventions that reach far more households
+    per dollar in urban areas.
+  - >
+    Greenfield fibre mandates increase subdivision cost and may reduce
+    housing supply viability in rural fringe areas where margins are
+    already thin.
+addresses:
+  - problem.auckland.infrastructure.digital_connectivity
+interventions:
+  - description: >
+      Extend UFB coverage to all Auckland rural settlements above
+      50 premises, with Crown subsidy of up to 80% of incremental
+      build cost, targeting completion by 2028.
+    state_variable: "fibre_coverage_rate"
+    constraint_relaxed: "commercial unviability of rural fibre build-out"
+    expected_sign: "+"
+  - description: >
+      Mandatory fibre provision in all new subdivisions above 20 lots
+      within Auckland's Rural Urban Boundary, funded through development
+      contributions.
+    state_variable: "fibre_coverage_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.infrastructure.digital_inclusion_programme
+applicable_in:
+  - auckland

@@ -1,0 +1,45 @@
+id: camp.auckland.transport.road_pricing
+name: "Road pricing and demand management"
+theme: transport
+core_claim: >
+  Car travel in Auckland is systematically underpriced: drivers pay fuel
+  excise and registration but face no direct charge for the congestion,
+  emissions, and road wear they impose on others. Congestion pricing —
+  charging for road use at the point of demand, calibrated to time and
+  location — is the most cost-effective tool for reducing peak demand,
+  funding network investment, and revealing the true cost of car dependency.
+flagship_moves:
+  - "Introduce area-based congestion pricing for the Auckland city centre and major isthmus corridors, with revenue hypothecated to PT operations and active mode infrastructure"
+  - "Replace the flat motorway network with distance- and time-of-day-based road user charging as EVs erode fuel excise revenue"
+  - "Use pricing revenue to fund free or heavily discounted PT passes for low-income households, ensuring distributional neutrality"
+tensions:
+  - >
+    Road pricing is regressive in the absence of PT alternatives: lower-income
+    households who cannot afford to live near PT and cannot work from home
+    bear the highest burden of a congestion charge applied before adequate
+    alternatives exist.
+  - >
+    The political economy of road pricing is extremely difficult — every
+    driver votes, and the beneficiaries of reduced congestion are diffuse
+    while the cost is concentrated and visible. Multiple international
+    attempts have failed at the implementation stage.
+addresses:
+  - problem.auckland.transport.accessibility
+interventions:
+  - description: >
+      Pilot a cordon-based congestion charge of $3–5 per entry for the
+      Auckland CBD during peak hours (7–9am, 4–6pm), with full revenue
+      recycled to the AT operational budget.
+    state_variable: "vehicle_kilometres_travelled"
+    constraint_relaxed: "zero marginal price of road use at peak"
+    expected_sign: "-"
+  - description: >
+      Establish a PT fare-waiver programme for Community Services Card
+      holders funded from congestion charge revenue, insulating low-income
+      households from the distributional impact of road pricing.
+    state_variable: "pt_mode_share"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.transport.transit_oriented_development
+applicable_in:
+  - auckland

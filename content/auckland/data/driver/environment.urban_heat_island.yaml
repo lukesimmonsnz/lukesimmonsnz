@@ -1,0 +1,21 @@
+id: driver.auckland.environment.urban_heat_island
+name: "Urban heat island effect"
+description: >
+  Auckland's low-canopy urban areas experience significantly higher
+  temperatures than surrounding rural and vegetated land. The combination
+  of dark impervious surfaces (roads, roofs), reduced evapotranspiration
+  from vegetation loss, and waste heat from buildings and vehicles creates
+  a heat island where summer temperatures consistently exceed rural
+  equivalents by 3–5°C. The effect is spatially correlated with
+  deprivation: areas with low canopy cover and high housing density
+  lack both the passive cooling from shade and the income to afford
+  air conditioning.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.environment.urban_heat
+claim_ids:
+  - claim.auckland.environment.tree_canopy_inequity

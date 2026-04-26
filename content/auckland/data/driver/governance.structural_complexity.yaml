@@ -1,0 +1,18 @@
+id: driver.auckland.governance.structural_complexity
+name: "Structural Governance Complexity"
+description: >
+  Auckland's post-amalgamation governance structure is complex enough
+  that many residents cannot identify which body is responsible for
+  which decisions; accountability is diffuse, making it difficult for
+  citizens to hold decision-makers responsible for outcomes. The CCO
+  model creates arm's-length entities with less democratic accountability
+  than direct Council management.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.governance.democratic_participation
+claim_ids:
+  - claim.auckland.governance.council_complexity

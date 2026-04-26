@@ -1,0 +1,20 @@
+id: driver.auckland.environment.habitat_loss_and_fragmentation
+name: "Habitat loss and landscape fragmentation"
+description: >
+  Urban expansion and agricultural conversion have removed or degraded
+  native habitat across most of the Auckland region, leaving remnant
+  patches isolated by inhospitable matrix. Fragmentation reduces
+  population viability below minimum thresholds for many species, cuts
+  off genetic exchange between populations, and prevents recolonisation
+  after local extinction events. Kauri dieback has accelerated habitat
+  loss in the Waitākere Ranges by threatening the dominant canopy species.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.environment.biodiversity
+claim_ids:
+  - claim.auckland.environment.habitat_fragmentation
+  - claim.auckland.environment.native_species_decline

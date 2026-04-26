@@ -1,0 +1,17 @@
+id: driver.auckland.climate.stormwater_infrastructure_undersizing
+name: "Stormwater Infrastructure Undersizing"
+description: >
+  Auckland's stormwater infrastructure was designed to manage historical
+  rainfall intensity levels; projected increases in extreme precipitation
+  under climate change will exceed the design capacity of existing
+  infrastructure, producing increased flooding frequency before
+  adaptation investment is complete.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.climate.flood_resilience
+claim_ids:
+  - claim.auckland.climate.flood_intensification

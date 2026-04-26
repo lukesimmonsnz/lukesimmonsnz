@@ -1,0 +1,65 @@
+id: problem.auckland.inequality.income_polarisation
+title: "Income and wealth polarisation"
+theme: inequality
+section: inequality
+subpage: income-polarisation
+parent: problem.auckland.inequality.economic_disadvantage
+order: 3
+updated: "2026-04-26"
+summary: >
+  The gap between top and bottom income deciles in Auckland has widened
+  substantially since the 1990s, driven primarily by housing-cost growth
+  absorbing an increasing share of low-income household budgets. Wealth
+  concentration is more extreme than income concentration: the top 10% of
+  households hold approximately 60% of net household wealth, with housing
+  equity as the primary vehicle. Households without intergenerational
+  property wealth face compounding exclusion from the main asset class
+  driving wealth accumulation.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "income_decile_bottom_real"
+    - "wealth_share_top10pct"
+    - "after_housing_cost_inequality_ratio"
+  inputs:
+    - "rental_cost_share_of_low_income_budget"
+    - "capital_gains_realised_top_decile"
+    - "tax_transfer_redistribution_rate"
+    - "intergenerational_wealth_transfer_access"
+  constraints:
+    - "No capital gains tax on housing equity, concentrating returns in owning households"
+    - "Working for Families abatement structure limits effective income gains for households entering work at low wages"
+    - "Wealth data published at national level only; Auckland-specific estimates rely on modelling"
+  feedback_loops:
+    - "Rising wealth concentration -> greater intergenerational transfer -> fewer first-home buyers from non-owning households -> widening homeownership gap -> further wealth concentration"
+    - "After-housing-cost income squeeze on low deciles -> reduced savings capacity -> inability to accumulate non-housing assets -> permanent exclusion from wealth accumulation"
+narrative:
+  - heading: "The housing-cost channel"
+    body: >
+      Income inequality in New Zealand is moderate by OECD standards
+      before housing costs, but Auckland's rental market transforms this
+      picture substantially. When housing costs are deducted, the bottom
+      two income deciles have experienced near-zero real income growth
+      over three decades. The mechanism is straightforward: rents have
+      risen faster than wages for low-wage workers, and the share of
+      income absorbed by rent has grown from roughly 25% in the mid-1990s
+      to 40-50% for low-income renters in the 2020s. This is not a
+      distribution story about who earns what; it is a story about who
+      owns what and who bears the cost when the housing market inflates.
+  - heading: "Wealth versus income"
+    body: >
+      Wealth inequality is structurally more extreme and more durable than
+      income inequality. The top 10% of New Zealand households own
+      approximately 60% of net household wealth; the bottom 50% own less
+      than 5%. This distribution is self-reinforcing: home equity is the
+      primary savings vehicle for middle- and upper-income households,
+      and households who entered the housing market before 2000 have
+      accumulated equity inaccessible to renters of equivalent income.
+      Intergenerational transfer now extends this divide: parental equity
+      provides deposit assistance that is structurally unavailable to the
+      majority without family ownership.
+claim_ids:
+  - claim.auckland.inequality.income_decile_gap
+  - claim.auckland.inequality.wealth_concentration
+status: draft

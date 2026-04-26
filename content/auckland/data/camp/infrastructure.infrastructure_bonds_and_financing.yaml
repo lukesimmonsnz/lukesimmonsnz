@@ -1,0 +1,45 @@
+id: camp.auckland.infrastructure.infrastructure_bonds_and_financing
+name: "Infrastructure bonds and long-term financing"
+theme: infrastructure
+core_claim: >
+  The infrastructure funding gap is primarily a financing problem, not
+  a resources problem. Long-duration infrastructure bonds — backed by
+  Crown guarantee, user charges, or land-value capture — can spread
+  the cost of multi-generational assets across the lifetimes of those
+  who benefit, matching the financing horizon to the asset life and
+  reducing the annual budget pressure that causes deferral.
+flagship_moves:
+  - "Establish a Crown-guaranteed Auckland Infrastructure Bond programme allowing Council to borrow at near-sovereign rates for 30–50 year asset-class investments"
+  - "Introduce land-value-capture mechanisms that direct a portion of infrastructure-driven land uplift to the infrastructure funding pool"
+  - "Reform the Local Government Funding Agency (LGFA) to extend maximum loan tenors to 40 years for qualifying three-waters and transport assets"
+tensions:
+  - >
+    Long-term debt defers cost to future ratepayers and taxpayers who
+    cannot consent; intergenerational equity requires that debt is
+    matched to durable assets and not used to fund operating costs
+    or short-lived infrastructure.
+  - >
+    Land-value capture is politically difficult to implement because
+    it requires identifying which land value is attributable to
+    public infrastructure investment, which is contested and
+    methodologically complex.
+addresses:
+  - problem.auckland.infrastructure.access
+interventions:
+  - description: >
+      Crown-backed 40-year Auckland Infrastructure Bond facility
+      capped at $5B, ring-fenced to three-waters renewal and
+      rapid transit enabling works.
+    state_variable: "infrastructure_investment_rate"
+    constraint_relaxed: "short-tenor borrowing constraint on multi-generational assets"
+    expected_sign: "+"
+  - description: >
+      Value uplift levy of 30% of rezoning-attributable land value
+      increase, collected at sale, hypothecated to the infrastructure
+      bond fund.
+    state_variable: "infrastructure_funding_gap"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.infrastructure.user_pays_pricing
+applicable_in:
+  - auckland

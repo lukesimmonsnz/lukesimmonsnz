@@ -1,0 +1,23 @@
+id: claim.auckland.climate.auckland_emissions_profile
+statement: >
+  Auckland accounts for approximately 30% of New Zealand's transport
+  emissions and 25% of total energy emissions; transport is the largest
+  single emissions source in Auckland, overwhelmingly from private
+  vehicles. Auckland's emissions reduction trajectory under current
+  policy settings is insufficient to meet New Zealand's 2050 net-zero
+  target contribution from the transport sector.
+value: 30
+unit: "percent of NZ transport emissions"
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mfe_emissions_2023
+  - source.auckland_council_climate_plan_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.sea_level_projection_v1

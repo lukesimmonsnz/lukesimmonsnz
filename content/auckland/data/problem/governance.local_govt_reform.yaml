@@ -1,0 +1,62 @@
+id: problem.auckland.governance.local_govt_reform
+title: "Local Government Structure and Revenue"
+theme: governance
+section: governance
+subpage: local-govt-reform
+parent: problem.auckland.governance.democratic_participation
+order: 1
+updated: "2026-04-26"
+summary: >
+  Auckland's 2010 amalgamation projected efficiency savings that have
+  not materialised at scale. CCOs operate with limited democratic
+  accountability. The three waters centralisation debate exposed
+  deep tensions between scale efficiency and democratic control.
+  Auckland Council's mandate substantially exceeds its revenue
+  instruments; rates alone cannot fund the infrastructure and services
+  a growing city of 1.8 million requires. The debate is between
+  revenue reform and devolution as the primary response.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "council_revenue_adequacy_index"
+    - "infrastructure_cost_recovery_rate"
+    - "local_board_decision_authority_index"
+    - "community_self_determination_index"
+  inputs:
+    - "gst_share_legislation"
+    - "development_contribution_schedule"
+    - "local_board_budget_transfer"
+    - "community_org_capital_grants"
+  constraints:
+    - "Crown-Council revenue sharing: political economy of central government ceding GST is unfavourable"
+    - "Devolution capacity: local boards lack technical capacity for complex capital decisions"
+    - "Cross-subsidy: devolution with ring-fenced budgets reduces ability to redistribute from affluent to deprived areas"
+  feedback_loops:
+    - "Revenue inadequacy → deferred infrastructure → higher future cost → wider fiscal gap"
+    - "Centralised decisions → community disengagement → lower mandate quality → less effective governance"
+narrative:
+  - heading: "The revenue-mandate mismatch"
+    body: >
+      Auckland Council is responsible for the infrastructure, services,
+      and planning decisions of a large city. It finances this
+      responsibility primarily through a property tax (general rates)
+      that grows more slowly than the economy, creates regressive
+      distributional effects, and generates intense political resistance
+      to necessary increases. The result is chronic under-investment
+      in the infrastructure Auckland needs, not because the money does
+      not exist in the economy but because the fiscal instrument does
+      not capture it.
+  - heading: "Scale versus accountability"
+    body: >
+      The three waters debate was at its core about this tradeoff:
+      a national water entity could borrow more cheaply and invest at
+      scale; but it was not accountable to the communities whose water
+      it managed. The same tension runs through Auckland Council's CCO
+      model. There is no optimal resolution — only a series of
+      institutional design choices that trade one value against another.
+claim_ids:
+  - claim.auckland.governance.local_govt_amalgamation_lessons
+  - claim.auckland.governance.cco_accountability_gap
+  - claim.auckland.governance.three_waters_centralisation
+status: draft

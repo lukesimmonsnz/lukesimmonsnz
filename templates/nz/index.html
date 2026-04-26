@@ -1,0 +1,87 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Aotearoa New Zealand · Research · Luke Simmons{% endblock %}
+{% block meta_description %}National patterns in housing, transport, infrastructure, environment and other systems across Aotearoa New Zealand — a cross-regional synthesis from the typed entity graph.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Aotearoa NZ', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">National rollup</span>
+    <h1>Aotearoa New Zealand</h1>
+    <hr class="rule">
+    <p class="lede">
+      Cross-regional patterns observed across two or more regions of
+      Aotearoa. Each pattern is a generalisation grounded in region-specific
+      evidence; follow the theme links for the backing claims and their
+      sources.
+    </p>
+  </header>
+
+  <article class="prose">
+    {% if by_theme %}
+      <p class="muted">
+        {{ total_pattern_count }} pattern{{ 's' if total_pattern_count != 1 }} across
+        {{ by_theme | length }} theme{{ 's' if by_theme | length != 1 }}.
+      </p>
+
+      {% for theme_slug, patterns in by_theme.items() %}
+      <section>
+        <h2>
+          <a href="{{ url_for('nz.theme', theme=theme_slug) }}">
+            {{ theme_titles.get(theme_slug, theme_slug.replace('_', ' ').title()) }}
+          </a>
+          <span class="muted" style="font-size:0.75em; font-weight:normal;">
+            ({{ patterns | length }})
+          </span>
+        </h2>
+        <ul>
+          {% for p in patterns %}
+          <li>
+            <strong>{{ p.name }}</strong>
+            {% if p.statement %}
+            <br><span class="muted">{{ p.statement }}</span>
+            {% endif %}
+            <br>
+            <span class="muted small">
+              Manifests in:
+              {% for r in (p.manifests_in or []) %}
+                <code>{{ r }}</code>{% if not loop.last %}, {% endif %}
+              {% endfor %}
+              &mdash;
+              {{ (p.evidenced_by or []) | length }} supporting claim{{ 's' if (p.evidenced_by or []) | length != 1 }}
+            </span>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}
+
+    {% else %}
+      <aside class="notice">
+        <strong>No patterns yet.</strong> National patterns are authored in
+        <code>content/nz/data/pattern/</code> once enough regional evidence
+        exists to ground them — typically after 3–4 regions are populated.
+        See <code>docs/MIGRATION-auckland-to-aotearoa.md</code> §4 for the
+        sequencing rationale.
+      </aside>
+
+      <section>
+        <h2>Themes in scope</h2>
+        <p class="muted">These themes will have national rollup pages once patterns are authored:</p>
+        <ul>
+          {% for slug, title in theme_titles.items() %}
+          <li>{{ title }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  </article>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+id: camp.auckland.education.attendance_and_engagement
+name: "Attendance Recovery and Re-engagement"
+theme: education
+core_claim: >
+  Resourcing does not help students who are not in school; the post-COVID
+  attendance crisis is the most urgent educational problem in Auckland
+  and requires direct intervention — truancy services, school-based
+  welfare support, and making school environments welcoming enough that
+  students choose to attend. Without restoring attendance norms, no
+  amount of classroom investment will close the achievement gap.
+flagship_moves:
+  - "Fund 200 additional school attendance officers in Auckland, with authority to coordinate with families and social services."
+  - "Establish in-school social workers in all Auckland decile 1-3 secondary schools as a first point of contact for disengagement."
+  - "Fund flexible re-engagement programmes (alternative education, online hybrid) for persistently absent students."
+tensions:
+  - >
+    Attendance enforcement without addressing the reasons for absence
+    (health, family stress, housing, school safety) is counterproductive;
+    enforcement-heavy approaches can further alienate students.
+  - >
+    Alternative education programmes vary widely in quality; some
+    function as holding environments rather than genuine learning
+    pathways, with poor transition rates back to mainstream or into
+    employment.
+addresses:
+  - problem.auckland.education.achievement
+interventions:
+  - description: >
+      Fund 200 additional attendance officers and in-school social
+      workers across Auckland decile 1-3 secondary schools, with
+      a response within 3 days of a student reaching 5 days absence.
+    state_variable: "persistent_absence_rate"
+    constraint_relaxed: "Absence response capacity gap"
+    expected_sign: "-"
+  - description: >
+      Fund flexible re-engagement hubs in each Auckland Local Board
+      area offering accredited NCEA courses in a non-traditional
+      environment for students who have left mainstream schooling.
+    state_variable: "ncea_attainment_maori_pacific"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.equity_resourcing
+applicable_in:
+  - auckland

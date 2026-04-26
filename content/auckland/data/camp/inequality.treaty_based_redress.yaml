@@ -1,0 +1,42 @@
+id: camp.auckland.inequality.treaty_based_redress
+name: "Treaty-Based Redress and Tino Rangatiratanga"
+theme: inequality
+core_claim: >
+  The ethnic wealth gap cannot be closed by colour-blind redistribution
+  because its root cause is a specific historical legal wrong — Crown
+  land alienation. Treaty-based redress (asset return, co-governance,
+  papakaina housing on whenua Maori) addresses the structural deficit
+  directly, producing lasting iwi capital bases rather than recurring
+  transfer dependence.
+flagship_moves:
+  - "Accelerate Waitangi Tribunal remediation including land and asset return to iwi."
+  - "Co-governance arrangements over natural resources as economic base for iwi enterprises."
+  - "Papakaina housing programmes on whenua Maori with Crown capital support and streamlined consenting."
+tensions:
+  - >
+    Treaty-based approaches to inequality are politically contested;
+    framing redistribution as reparation invites backlash that can
+    undermine support for the underlying transfers.
+  - >
+    Iwi governance structures vary in capacity; asset return without
+    management support may not translate into improved outcomes for
+    urban Maori disconnected from their rohe.
+addresses:
+  - problem.auckland.inequality.ethnic_wealth_gap
+interventions:
+  - description: >
+      Fund papakaina housing development on multiply-owned Maori land
+      with Crown-backed low-interest financing and streamlined RMA
+      process, targeting 500 additional dwellings per year in Auckland.
+    state_variable: "maori_homeownership_rate"
+    constraint_relaxed: "Financing and consenting barriers on whenua Maori"
+    expected_sign: "+"
+  - description: >
+      Accelerate Treaty settlement payments and direct a portion to
+      iwi housing investment funds with Auckland-region mandate.
+    state_variable: "ethnic_wealth_gap"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.inequality.universal_service_investment
+applicable_in:
+  - auckland

@@ -1,0 +1,43 @@
+id: camp.auckland.governance.institutional_accountability
+name: "Institutional Accountability and Governance Simplification"
+theme: governance
+core_claim: >
+  Democratic engagement cannot be restored by logistics fixes; it
+  requires genuine accountability — citizens seeing that their votes
+  produce identifiable decisions. Simplifying Auckland's governance
+  structure (reducing CCO number, clarifying Local Board mandates,
+  strengthening the Auditor-General's role with Auckland Council)
+  creates the clear lines of accountability that make holding
+  representatives responsible possible.
+flagship_moves:
+  - "Reduce Auckland's CCOs from 7 to 3, with direct Council oversight of merged entities."
+  - "Clarify Local Board decision-making authority with binding resolutions over defined local matters."
+  - "Strengthen public reporting requirements: all Council decisions over $10M must include a public impact summary."
+tensions:
+  - >
+    CCO amalgamation creates large entities with their own
+    bureaucratic complexity; the accountability gain from
+    consolidation may be offset by the management challenge of
+    integrating disparate organisations.
+  - >
+    Strengthening Local Board authority over local matters reduces
+    the efficiency of at-scale decisions (transport, water,
+    stormwater) that require citywide coordination.
+addresses:
+  - problem.auckland.governance.democratic_participation
+interventions:
+  - description: >
+      Legislate a CCO rationalisation to reduce Auckland's
+      council-controlled organisations from 7 to 3 (transport,
+      infrastructure and water, economic development) by 2027.
+    state_variable: "cco_accountability_index"
+    expected_sign: "+"
+  - description: >
+      Require all Auckland Council decisions over $10M to include
+      a published equity impact assessment within 30 days of decision.
+    state_variable: "council_decision_transparency_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.participatory_reform
+applicable_in:
+  - auckland

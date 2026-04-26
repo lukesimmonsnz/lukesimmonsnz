@@ -1,0 +1,18 @@
+id: driver.auckland.health.mh_funding_gap
+name: "Mental Health Underfunding Relative to Burden"
+description: >
+  Mental health accounts for approximately 20% of New Zealand's disease
+  burden but receives approximately 9% of health spending; Auckland's
+  mental health services have been chronically underfunded relative to
+  population growth and rising need. Funding increments under the 2019
+  Inquiry response have not kept pace with demand growth.
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.health.mental_health
+claim_ids:
+  - claim.auckland.health.mental_health_unmet_need
+  - claim.auckland.health.mh_workforce_vacancy

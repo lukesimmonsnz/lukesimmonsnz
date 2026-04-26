@@ -8,6 +8,7 @@ from blueprints.research import research_bp
 from blueprints.davidsimmons import davidsimmons_bp
 from blueprints.blog import blog_bp
 from blueprints.auckland import auckland_bp
+from blueprints.nz import nz_bp
 
 
 # Absolute base for feeds, sitemap, and Open Graph tags. Default is local-only.
@@ -50,7 +51,8 @@ def create_app():
     app.register_blueprint(research_bp, url_prefix="/research")
     app.register_blueprint(davidsimmons_bp, url_prefix="/davidsimmons")
     app.register_blueprint(blog_bp, url_prefix="/blog")
-    app.register_blueprint(auckland_bp, url_prefix="/research/auckland")
+    app.register_blueprint(auckland_bp)  # url_prefix="/research/auckland" embedded in blueprint
+    app.register_blueprint(nz_bp)        # url_prefix="/research/nz" embedded in blueprint
 
     # Deployment switches — populated from the process environment so the
     # same templates render correctly under both the local Flask origin

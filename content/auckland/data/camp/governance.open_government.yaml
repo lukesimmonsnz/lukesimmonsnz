@@ -1,0 +1,46 @@
+id: camp.auckland.governance.open_government
+name: "Open Government and Radical Transparency"
+theme: governance
+core_claim: >
+  Trust in Auckland Council can only be restored by making its
+  decisions visible in real time; proactive publication of contracts,
+  meeting recordings, performance data, and OIA responses creates
+  an accountability environment where poor decisions are harder to
+  sustain. Open government is not a communications strategy — it
+  is a structural commitment to making governance visible.
+flagship_moves:
+  - "Proactively publish all Auckland Council and CCO contracts over $500,000 within 30 days of signing."
+  - "Live-stream and archive all governing body and CCO board meetings with searchable transcripts."
+  - "Create a public dashboard tracking Council and CCO performance against LTP commitments in real time."
+tensions:
+  - >
+    Proactive disclosure of commercial contracts may reduce the
+    Council's negotiating position in future procurements if
+    counterparties can see all prior pricing; commercial sensitivity
+    provisions exist for legitimate reasons.
+  - >
+    Publishing meeting transcripts and all documentation increases
+    the administrative burden on Council staff and may reduce the
+    quality of internal deliberation if officials self-censor
+    in anticipation of public scrutiny.
+addresses:
+  - problem.auckland.governance.accountability
+interventions:
+  - description: >
+      Amend Auckland Council's LGOIMA publication schedule to
+      proactively publish all contracts over $500,000 within 30 days
+      of signing, with redaction limited to specific commercial
+      IP provisions.
+    state_variable: "council_transparency_index"
+    constraint_relaxed: "Commercial sensitivity provisions used to restrict public access"
+    expected_sign: "+"
+  - description: >
+      Create a publicly accessible LTP performance dashboard updated
+      quarterly showing actuals versus targets for all Council and
+      CCO KPIs.
+    state_variable: "public_trust_council"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.integrity_enforcement
+applicable_in:
+  - auckland

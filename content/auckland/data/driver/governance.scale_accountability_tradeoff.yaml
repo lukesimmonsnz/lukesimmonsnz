@@ -1,0 +1,19 @@
+id: driver.auckland.governance.scale_accountability_tradeoff
+name: "Scale-Accountability Tradeoff in Local Governance"
+description: >
+  Infrastructure efficiency benefits from scale (large entities can
+  invest in specialist capacity, borrow at lower rates) while
+  democratic accountability benefits from proximity (smaller units
+  are more responsive to community preferences). Auckland's current
+  structure attempts to capture scale through CCOs while preserving
+  proximity through local boards; neither goal is fully achieved.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.governance.local_govt_reform
+claim_ids:
+  - claim.auckland.governance.local_govt_amalgamation_lessons
+  - claim.auckland.governance.cco_accountability_gap

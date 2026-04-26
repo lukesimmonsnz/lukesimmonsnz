@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/claim.schema.json",
+  "title": "Claim",
+  "description": "An atomic factual or analytical claim with traceable sourcing. Renamed from 'evidence' per ratified decision §5.5 (CLAUDE.md §5). A Claim is implicitly quantitative iff value ≠ null (ratified §5.5 — no stored boolean). Cross-entity invariants P2 (must cite), P5′ (comparison pinning), P6′ (national_assertion coherence), P7′ (region_mentions coherence), P9 (indicator unit), P10/P11 (supersession DAG/freshness), P16 (methodology for quantitative) are Layer 1c Python predicates; their YAML fields are defined here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "statement",
+    "confidence",
+    "verification_status",
+    "source_ids",
+    "scoped_to"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^claim\\.[a-z0-9_.]+$"
+    },
+    "statement": {
+      "description": "Human-readable assertion. Comparison claims (matching §5a Rule R3 regex) trigger P5′ checks.",
+      "type": "string"
+    },
+    "value": {
+      "description": "Numeric or symbolic value. Non-null implies quantitative Claim; triggers P16 (methodology_tag required).",
+      "type": ["number", "string", "null"]
+    },
+    "unit": {
+      "description": "Measurement unit string. Must match Indicator.unit when measured_by_ids is non-empty (P9, cross-entity — Python).",
+      "type": ["string", "null"]
+    },
+    "time_period": {
+      "description": "ISO 8601 date, year, or descriptive period string (e.g. '2018-2023', 'FY2024').",
+      "type": ["string", "null"]
+    },
+    "confidence": {
+      "description": "Claim confidence level (claim_provenance_v1).",
+      "enum": ["high", "medium", "low", "disputed"]
+    },
+    "verification_status": {
+      "description": "Verification state (claim_provenance_v1).",
+      "enum": ["verified", "needs_verification", "cited_only"]
+    },
+    "last_verified": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "source_ids": {
+      "description": "YAML representation of E_cites edges (Claim → Source). ≥1 required (P2). Graph builder materialises to E_cites at load time.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^source\\."
+      },
+      "minItems": 1
+    },
+    "scoped_to": {
+      "description": "Regions this Claim is scoped to. ≥1 required. Graph builder materialises to E_scoped_to. When |scoped_to| ≥ 2 and statement matches comparison regex, P5′ fires.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "national_assertion": {
+      "description": "True iff the claim makes a national-level proposition. Typed YAML field for P6′: national_assertion → 'nz' ∈ scoped_to (Python invariant).",
+      "type": "boolean",
+      "default": false
+    },
+    "region_mentions": {
+      "description": "Regions explicitly named in the statement text. Typed YAML field for P7′: region_mentions ⊆ scoped_to (Python invariant). A lint warning may additionally flag unregistered mentions by canonical-name matching.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "methodology_tag": {
+      "description": "Full ID of the Methodology used to produce this claim's quantity or comparison (e.g. 'methodology.median_multiple_v1'). Required for quantitative claims (P16) and comparison claims (P5′). Graph builder materialises to E_follows. Matches methodology.id pattern (ratified Option C, 2026-04-26).",
+      "type": ["string", "null"],
+      "pattern": "^methodology\\.[a-z][a-z0-9_]*_v[0-9]+$"
+    },
+    "supersedes_id": {
+      "description": "ID of the Claim this supersedes (the source vertex is the newer Claim, per §2 row 13). Graph builder materialises to E_supersedes. Supersession DAG acyclicity and freshness-monotonicity enforced in Python (P10, P11).",
+      "type": ["string", "null"],
+      "pattern": "^claim\\."
+    },
+    "invokes_ids": {
+      "description": "Pattern IDs that this (regional Instance) Claim invokes as national-scale explanation. Graph builder materialises to E_invokes.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^pattern\\."
+      },
+      "default": []
+    },
+    "measured_by_ids": {
+      "description": "Indicator IDs that operationalise this Claim. Graph builder materialises to E_measured_by. Unit coherence enforced by P9 (Python).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^indicator\\."
+      },
+      "default": []
+    },
+    "iwi_scope": {
+      "description": "Iwi whose rohe this claim intersects — parallel spatial axis to scoped_to (ratified §5.4). Full Iwi enum is PI-tunable; maintained in content/_schema/iwi.py. Cross-entity handle for P17.",
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "engagement_record_id": {
+      "description": "Reference into migration_log.yaml for the iwi engagement record. Required when iwi_scope ≠ [] (P17 — soft-warn until Mana Ōrite governance workflow is operational).",      "type": ["string", "null"]
+    },
+    "notes": {"type": ["string", "null"]}
+  }
+}

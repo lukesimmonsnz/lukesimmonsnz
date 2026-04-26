@@ -1,0 +1,46 @@
+id: camp.auckland.education.labour_market_aligned_tertiary
+name: "Labour-Market Aligned Tertiary Investment"
+theme: education
+core_claim: >
+  Tertiary investment should be directed to fields where Auckland has
+  labour shortages; subsidising fields with poor employment outcomes
+  while health, trades, and engineering remain under-enrolled produces
+  skills mismatches that harm both graduates and employers. Performance-
+  based funding that rewards completion and employment outcomes in
+  high-demand fields provides better returns than unconditional
+  per-student funding.
+flagship_moves:
+  - "Weight performance-based tertiary funding to completion rates and employment outcomes in high-demand fields."
+  - "Fund industry-designed micro-credential programmes in construction, health, and digital skills at Auckland ITPs."
+  - "Publish comprehensive field-of-study employment and wage outcome data to inform student enrolment decisions."
+tensions:
+  - >
+    Labour market signals are lagging; fields that appear oversupplied
+    today may face shortages when current students graduate in 3-4 years.
+    Performance-based funding may deter investment in fields with
+    long training cycles (medicine, law, engineering) whose graduates
+    have excellent long-run outcomes.
+  - >
+    Fields with poor employment outcomes are often fields with high
+    Maori and Pacific enrolment; outcome-weighted funding may
+    inadvertently reduce resources for institutions serving these
+    communities.
+addresses:
+  - problem.auckland.education.tertiary_access
+interventions:
+  - description: >
+      Introduce field-of-study employment outcome weighting into PBRF
+      and TEC funding, increasing the weight on completion and
+      employment in high-shortage fields by 20%.
+    state_variable: "skills_shortage_fields_enrolment"
+    expected_sign: "+"
+  - description: >
+      Fund 10 industry-designed micro-credential programmes at Auckland
+      ITPs in construction, health care, and digital skills with
+      employer co-design and guaranteed pathway to employment.
+    state_variable: "tertiary_completion_rate_maori_pacific"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.living_cost_support
+applicable_in:
+  - auckland

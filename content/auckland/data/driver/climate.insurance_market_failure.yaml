@@ -1,0 +1,19 @@
+id: driver.auckland.climate.insurance_market_failure
+name: "Insurance Market Withdrawal from High-Risk Areas"
+description: >
+  Insurance withdrawal from flood and coastal risk areas in Auckland
+  is a market signal that private risk transfer cannot price chronic
+  climate risk; once properties become uninsurable, value collapse
+  follows, creating unmanaged retreat without the public support of
+  a managed retreat programme. The market is ahead of public policy
+  in signalling which properties face existential risk.
+theme: climate-adaptation
+consensus: consensus
+category: economic
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.climate.flood_resilience
+claim_ids:
+  - claim.auckland.climate.insurance_withdrawal_risk
+  - claim.auckland.climate.repetitive_flood_loss

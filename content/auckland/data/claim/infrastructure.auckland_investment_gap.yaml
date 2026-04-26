@@ -1,0 +1,27 @@
+id: claim.auckland.infrastructure.auckland_investment_gap
+statement: >
+  Auckland faces a multi-billion-dollar infrastructure investment gap
+  across water, wastewater, stormwater, transport, and digital networks.
+  The gap reflects decades of deferred renewal, growth-driven capacity
+  requirements, and a local government funding model that relies on
+  property rates and development contributions — tools structurally
+  insufficient to fund the scale of investment required for a rapidly
+  growing city.
+value: null
+unit: null
+time_period: "2020-2030"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.infrastructure_nz_2023
+  - source.auckland_council_dev_strategy_2022
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Auckland Council's own Long-term Plan documents the investment
+  requirement; the "gap" figure depends on the definition of required
+  vs affordable investment.

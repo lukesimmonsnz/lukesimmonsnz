@@ -1,0 +1,43 @@
+id: camp.auckland.housing.tenancy_law_reform
+name: "Tenancy law reform and rent stabilisation"
+theme: housing
+core_claim: >
+  Renter households need stronger legal protections — including caps or
+  limits on rent increases, longer notice periods, and greater security
+  against no-cause eviction — to make renting a viable long-term tenure
+  independent of homeownership constraints.
+flagship_moves:
+  - "Introduce annual rent increase caps linked to CPI or a fixed percentage to limit speculative rent uplift"
+  - "Extend minimum notice periods and restrict termination grounds to further protect long-term tenants"
+  - "Establish a rental warrant of fitness to ensure minimum habitability standards as a condition of tenancy"
+tensions:
+  - >
+    Rent stabilisation reduces the return on investment for landlords and
+    risks accelerating the exit of private landlords from the market,
+    reducing rental supply in the short run — particularly for smaller
+    landlords with thin margins who cross-subsidise below-market rents
+    for long-term tenants.
+  - >
+    Habitability standards enforcement requires adequate inspection
+    capacity and legal aid for tenants; without these, minimum standards
+    on paper do not translate to improved conditions in practice.
+addresses:
+  - problem.auckland.housing.rental_affordability
+interventions:
+  - description: >
+      Cap annual rent increases at CPI + 2% with a two-year phase-in to
+      prevent pre-cap speculative increases.
+    state_variable: "median_rent_level"
+    expected_sign: "-"
+  - description: >
+      Mandate a rental warrant of fitness covering heating, insulation,
+      moisture control, and ventilation as a condition of bond lodgement.
+    state_variable: "rental_housing_quality"
+    expected_sign: "+"
+claim_ids:
+  - claim.auckland.housing.rental_tenure_insecurity
+  - claim.auckland.housing.rental_cost_burden
+tensions_with:
+  - camp.auckland.housing.build_to_rent
+applicable_in:
+  - auckland

@@ -1,0 +1,22 @@
+id: claim.auckland.governance.maori_population_urban_shift
+statement: >
+  Approximately 70% of New Zealand Maori live in urban areas; Auckland
+  has the largest urban Maori population. Urban Maori governance
+  bodies (pan-tribal, not iwi-specific) represent the needs of this
+  population but lack the Treaty settlement assets and formal co-
+  governance mandates that mana whenua iwi hold; this creates a
+  governance gap for the majority of Maori Aucklanders.
+value: 70
+unit: "percent urban"
+time_period: "2018-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.waitangi_tribunal_2023
+  - source.stats_nz_census_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.voter_turnout_rate_v1

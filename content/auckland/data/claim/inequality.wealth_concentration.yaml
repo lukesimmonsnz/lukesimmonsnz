@@ -1,0 +1,28 @@
+id: claim.auckland.inequality.wealth_concentration
+statement: >
+  Wealth concentration in New Zealand — and Auckland — is substantially
+  higher than income concentration. The top 10% of households own
+  approximately 60% of net household wealth, with housing equity being
+  the primary wealth-building vehicle for the top half and largely
+  inaccessible to the bottom half. The intergenerational transfer of
+  housing equity is compounding this concentration: households with
+  owning parents have access to deposit assistance unavailable to those
+  without.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.msd_household_incomes_2023
+  - source.stats_nz_census_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []
+notes: >
+  The 60% wealth share is from RBNZ and Stats NZ wealth surveys.
+  Auckland-specific wealth distribution is not separately published
+  but is likely more concentrated given Auckland's housing market
+  dominance in national wealth.

@@ -1,0 +1,21 @@
+id: driver.auckland.governance.disengagement_driver
+name: "Democratic Disengagement in High-Deprivation Communities"
+description: >
+  Low local election turnout in South and West Auckland reflects a
+  rational response to perceived powerlessness: communities that have
+  seen decades of council decisions that do not reflect their priorities
+  (infrastructure investment in affluent areas, inadequate public
+  transport in their suburbs) learn that voting does not change outcomes.
+  Disengagement is self-reinforcing: low turnout means fewer votes
+  from these communities, which reduces their political leverage,
+  which confirms their sense of powerlessness.
+theme: governance
+consensus: consensus
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.governance.democratic_participation
+claim_ids:
+  - claim.auckland.governance.auckland_voter_turnout
+  - claim.auckland.governance.democratic_deficit_south_auckland

@@ -1,0 +1,21 @@
+id: driver.auckland.infrastructure.growth_ahead_of_provision
+name: "Growth ahead of infrastructure provision"
+description: >
+  Auckland's population has grown faster than infrastructure investment,
+  particularly in greenfield and urban fringe areas where development
+  consents are issued before trunk water, wastewater, and transport
+  networks are in place. This sequence — development first, infrastructure
+  later — creates communities structurally dependent on private vehicles,
+  overloads existing networks, and imposes remediation costs higher than
+  those of forward provision. The development contributions system
+  recovers some of these costs but not at the scale or speed required.
+theme: infrastructure
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.infrastructure.access
+claim_ids:
+  - claim.auckland.infrastructure.auckland_investment_gap
+  - claim.auckland.infrastructure.renewal_backlog

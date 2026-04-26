@@ -1,0 +1,21 @@
+id: claim.auckland.governance.three_waters_centralisation
+statement: >
+  The three waters (drinking water, wastewater, stormwater) reform
+  debate exposed fundamental tensions in New Zealand local government
+  about the appropriate scale of infrastructure entities; the Crown's
+  proposed centralisation was rejected partly on democratic
+  accountability grounds, with councils and Maori arguing that
+  community ownership and iwi co-governance rights were extinguished
+  by national entity proposals.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.dpmc_three_waters_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []

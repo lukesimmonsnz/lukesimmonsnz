@@ -1,0 +1,18 @@
+id: driver.auckland.housing.population_growth
+name: "Population and household growth"
+description: >
+  Auckland's population grew strongly through the 2010s, driven by net overseas
+  migration (NOM) and internal migration from other New Zealand regions.
+  Simultaneous decline in average household size amplified the derived demand
+  for dwellings: even a stable population generates rising household counts as
+  occupancy rates fall. Supply constraints meant this demand was absorbed almost
+  entirely into price and rent rather than new stock.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.housing.affordability
+claim_ids:
+  - claim.auckland.housing.supply_deficit_2010s

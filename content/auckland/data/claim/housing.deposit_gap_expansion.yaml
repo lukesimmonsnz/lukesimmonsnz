@@ -1,0 +1,27 @@
+id: claim.auckland.housing.deposit_gap_expansion
+statement: >
+  The deposit gap — the number of years of median saving required to
+  assemble a 20% deposit on a median Auckland dwelling — expanded from
+  roughly 2–3 years in the 1990s to roughly 8–12 years at peak in the
+  early 2020s. This shift means the entry barrier to ownership has become
+  a multi-decade savings project for households without parental equity
+  transfer, structurally decoupling ownership access from income trajectory.
+value: null
+unit: null
+time_period: "1990-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_census_2023
+  - source.demographia_2024
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Assumes 20% savings rate on gross median household income. The range
+  (8–12 years) reflects sensitivity to the savings rate assumption.
+  A methodology_tag is not assigned as no single quantitative point value
+  is claimed; the deposit_gap_v1 methodology applies conceptually.

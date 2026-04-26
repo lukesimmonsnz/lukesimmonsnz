@@ -1,0 +1,26 @@
+id: claim.auckland.environment.tree_canopy_inequity
+statement: >
+  Urban tree canopy cover in Auckland varies from above 40% in affluent
+  suburbs (Remuera, Epsom, Howick) to below 10% in high-deprivation
+  areas (Māngere, Ōtara, Flat Bush). This canopy inequity maps closely
+  onto socioeconomic deprivation and is associated with urban heat island
+  effects: canopy-poor areas experience peak summer temperatures 3–5°C
+  above canopy-rich areas, increasing heat stress risk for the households
+  least able to afford air conditioning.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_state_of_environment_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Auckland Council's urban tree canopy analysis uses LiDAR data. The
+  canopy-temperature relationship is well-established in urban heat island
+  literature and supported by Auckland-specific monitoring.

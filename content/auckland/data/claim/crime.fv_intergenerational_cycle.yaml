@@ -1,0 +1,19 @@
+id: claim.auckland.crime.fv_intergenerational_cycle
+statement: >
+  Children who witness family violence are at substantially elevated risk
+  of becoming either perpetrators or victims of family violence as adults;
+  the intergenerational transmission effect means that interventions
+  which protect children from exposure have both immediate safety and
+  long-run crime reduction value.
+value: null
+unit: null
+time_period: "2010-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.msd_family_violence_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []

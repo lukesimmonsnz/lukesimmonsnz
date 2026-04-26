@@ -1,0 +1,46 @@
+id: camp.auckland.governance.treaty_partnership_model
+name: "Treaty Partnership and Tino Rangatiratanga"
+theme: governance
+core_claim: >
+  The Treaty of Waitangi guarantees tino rangatiratanga — the authority
+  of Maori to exercise self-determination over their people, lands, and
+  taonga. Co-governance of natural resources and public services affecting
+  Maori is a fulfilment of this obligation, not a departure from
+  democracy; the Treaty is a constitutional foundation that shapes
+  how democracy operates in New Zealand, not an exception to it.
+flagship_moves:
+  - "Entrench the Independent Maori Statutory Board's role in Auckland Council with binding recommendations on Treaty obligations."
+  - "Establish a formal co-governance mechanism for Auckland's natural resources (harbours, freshwater, whenua) with mana whenua."
+  - "Fund urban Maori governance bodies (Manukau Urban Maori Authority, etc.) with equivalent status to mana whenua for decisions affecting Auckland Maori."
+tensions:
+  - >
+    Co-governance based on ethnicity is contested in constitutional
+    terms; arguments about democratic equality are not simply bad
+    faith — they reflect genuine disagreement about how the Treaty
+    relates to universal suffrage.
+  - >
+    The distinction between mana whenua (iwi with Treaty claims to
+    Auckland land) and urban Maori creates a governance hierarchy
+    within Maoridom that some pan-tribal organisations and activists
+    reject.
+addresses:
+  - problem.auckland.governance.treaty_co_governance
+interventions:
+  - description: >
+      Legislate binding Treaty compliance obligations for Auckland
+      Council decisions affecting natural resources and Maori
+      communities, with enforcement through Waitangi Tribunal
+      fast-track process.
+    state_variable: "treaty_compliance_index"
+    constraint_relaxed: "Non-binding status of IMSB recommendations"
+    expected_sign: "+"
+  - description: >
+      Establish and fund an Urban Maori Co-Governance body for
+      Auckland with equal status to mana whenua on decisions affecting
+      Auckland Maori regardless of tribal affiliation.
+    state_variable: "urban_maori_governance_representation"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.one_person_one_vote
+applicable_in:
+  - auckland

@@ -1,0 +1,58 @@
+id: problem.auckland.inequality.ethnic_wealth_gap
+title: "Ethnic Wealth and Income Gap"
+theme: inequality
+section: inequality
+subpage: ethnic-wealth-gap
+parent: problem.auckland.inequality.economic_disadvantage
+order: 2
+updated: "2026-04-26"
+summary: >
+  Persistent wealth and income disparities between Maori/Pacific and
+  Pakeha Aucklanders are rooted in colonial land alienation and sustained
+  by occupational segregation. Maori homeownership in Auckland is roughly
+  half the Pakeha rate; Maori and Pacific workers earn median wages 20-25%
+  below Pakeha workers. These gaps have not narrowed with economic growth
+  and require structural rather than cyclical intervention.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "maori_homeownership_rate"
+    - "ethnic_pay_gap"
+    - "ethnic_wealth_gap"
+    - "occupational_segregation_index"
+  inputs:
+    - "treaty_settlement_transfers"
+    - "papakaina_housing_supply"
+    - "education_quality_deprivation_areas"
+    - "credential_recognition_policy"
+  constraints:
+    - "Colonial deficit: no inherited land equity to draw on for deposit"
+    - "Occupational lock-in: credential and network barriers slow sector mobility"
+    - "Political contestation: ethnicity-based policy faces coalition-building challenges"
+  feedback_loops:
+    - "Low homeownership → no equity accumulation → persistent wealth gap (intergenerational lock-in)"
+    - "Occupational segregation → lower income → lower savings rate → lower asset accumulation"
+narrative:
+  - heading: "The homeownership gap"
+    body: >
+      Homeownership is the primary wealth accumulation vehicle in Auckland.
+      Maori homeownership at approximately 28% versus 55% for Pakeha means
+      that Maori households are systematically excluded from the equity
+      appreciation that has been the main engine of Auckland wealth growth
+      over thirty years. This is not a gap that closes with rising incomes
+      alone: the deposit requirement for entry grows in proportion to house
+      prices, creating a self-reinforcing exclusion.
+  - heading: "The pay gap and occupational lock"
+    body: >
+      A 20-25% pay gap persists even after controlling for age and
+      education, reflecting occupational concentration in lower-wage
+      service sectors and ongoing credential and network barriers. The
+      gap is not explained by educational attainment alone: Pacific
+      graduates also experience a persistent pay discount, suggesting
+      discrimination and network effects independent of human capital.
+claim_ids:
+  - claim.auckland.inequality.maori_homeownership_gap
+  - claim.auckland.inequality.ethnic_pay_gap
+  - claim.auckland.inequality.colonial_land_loss
+status: draft

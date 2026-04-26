@@ -1,0 +1,25 @@
+id: claim.auckland.environment.rural_stream_nutrient_loading
+statement: >
+  Rural and peri-urban streams in Auckland's Rodney and Franklin areas
+  show elevated nutrient loads (nitrate and phosphorus) from pastoral
+  farming, with levels that contribute to freshwater algal blooms and
+  degraded macroinvertebrate communities. While less visible than urban
+  stormwater contamination, diffuse agricultural runoff is the dominant
+  nutrient source in catchments that are not yet fully urbanised.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mfe_freshwater_2023
+  - source.auckland_council_state_of_environment_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The rural-urban freshwater quality gradient is well-documented in
+  Auckland's state of environment reporting.

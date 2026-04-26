@@ -1,0 +1,20 @@
+id: claim.auckland.education.ece_quality_gradient
+statement: >
+  ECE quality in South and West Auckland is lower on average than in
+  high-income Auckland suburbs; qualified teacher ratios, teacher
+  turnover, and physical environment quality all show a deprivation
+  gradient. Low-income families are more likely to use lower-quality
+  ECE, undermining the developmental benefit of participation alone.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.moe_ece_participation_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

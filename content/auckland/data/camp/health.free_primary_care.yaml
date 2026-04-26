@@ -1,0 +1,42 @@
+id: camp.auckland.health.free_primary_care
+name: "Free Primary Care and Equity-Focused Access"
+theme: health
+core_claim: >
+  The cost barrier to primary care is the primary driver of avoidable
+  ED demand and inequitable health outcomes. Removing the co-payment
+  for all Aucklanders enrolled at Very Low Cost Access (VLCA) practices,
+  and expanding VLCA eligibility to cover all high-deprivation areas,
+  would shift demand from ED to primary care, improve chronic disease
+  management, and reduce the amenable mortality gap.
+flagship_moves:
+  - "Expand VLCA (free GP) eligibility to all NZDep decile 7-10 areas in Auckland."
+  - "Fund 20 new community health centres in South and West Auckland collocated with social services."
+  - "Increase Maori and Pacific health provider funding to expand kaupapa Maori primary care capacity."
+tensions:
+  - >
+    Free primary care increases demand; without workforce expansion,
+    removing the price signal will increase GP wait times and
+    shift the access barrier from cost to availability.
+  - >
+    VLCA expansion requires significant Crown funding; fiscal constraints
+    force prioritisation against other health and social spending.
+addresses:
+  - problem.auckland.health.system_access
+interventions:
+  - description: >
+      Expand VLCA eligibility to all adults in NZDep decile 8-10
+      Auckland meshblocks, removing GP co-payments for approximately
+      300,000 additional Aucklanders.
+    state_variable: "primary_care_utilisation_rate"
+    constraint_relaxed: "Co-payment cost barrier"
+    expected_sign: "+"
+  - description: >
+      Fund 20 integrated community health centres in high-deprivation
+      Auckland areas, combining GP, mental health, social work, and
+      pharmacy under one roof.
+    state_variable: "avoidable_ed_presentation_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.health.hospital_system_investment
+applicable_in:
+  - auckland

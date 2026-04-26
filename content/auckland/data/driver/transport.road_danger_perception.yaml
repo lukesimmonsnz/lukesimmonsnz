@@ -1,0 +1,23 @@
+id: driver.auckland.transport.road_danger_perception
+name: "Road danger and safety perception"
+description: >
+  The primary barrier to cycling adoption in Auckland is not topography,
+  distance, or weather — international evidence and Auckland's own survey
+  data consistently identify perceived road danger as the dominant constraint.
+  Approximately 60–70% of non-cyclists describe themselves as "interested
+  but concerned" about cycling — a population that would cycle if
+  infrastructure felt safe. Auckland's arterial road design (wide lanes,
+  high speeds, no physical separation) is objectively dangerous for
+  cyclists: Auckland has cycling fatality rates substantially above
+  Dutch or Danish cities. Physical separation from motor traffic,
+  not painted lines, is the infrastructure solution that changes
+  both actual and perceived safety.
+theme: transport
+consensus: mostly-agreed
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.transport.active_modes
+claim_ids:
+  - claim.auckland.transport.cycling_mode_share_low

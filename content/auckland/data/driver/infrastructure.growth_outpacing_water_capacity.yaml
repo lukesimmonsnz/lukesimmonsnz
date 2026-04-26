@@ -1,0 +1,21 @@
+id: driver.auckland.infrastructure.growth_outpacing_water_capacity
+name: "Population growth outpacing water and wastewater capacity"
+description: >
+  Auckland's population growth has consistently generated wastewater
+  flows and water demand that outpace the capacity of the existing
+  network. New developments connect to networks designed for lower
+  densities and populations, increasing both peak flows and baseline
+  demand beyond design parameters. Climate change compounds the problem:
+  higher rainfall intensity in storm events increases combined sewer
+  overflow frequency, while longer droughts reduce reservoir inflow
+  and increase per-capita demand from garden irrigation.
+theme: infrastructure
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.infrastructure.water_and_wastewater
+claim_ids:
+  - claim.auckland.infrastructure.water_supply_resilience
+  - claim.auckland.infrastructure.wastewater_overflow_events

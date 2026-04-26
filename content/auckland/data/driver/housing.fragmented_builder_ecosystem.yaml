@@ -1,0 +1,20 @@
+id: driver.auckland.housing.fragmented_builder_ecosystem
+name: "Fragmented builder ecosystem"
+description: >
+  Auckland's housing supply is delivered by a heterogeneous mix of actors —
+  small builders, mid-size developers, group-home builders, large apartment
+  developers, Kāinga Ora, and community housing providers — with limited
+  coordination, no dominant platform for standardised delivery, and high
+  transaction costs between design, consent, construction, and finance.
+  This fragmentation prevents the scale economies that enable cost reduction
+  in comparable markets and amplifies cyclical workforce losses, since small
+  firms exit fastest in downturns.
+theme: housing
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.housing.supply_economics
+claim_ids:
+  - claim.auckland.housing.productivity_stagnation

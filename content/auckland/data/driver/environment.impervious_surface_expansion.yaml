@@ -1,0 +1,21 @@
+id: driver.auckland.environment.impervious_surface_expansion
+name: "Urban impervious surface expansion"
+description: >
+  Urbanisation converts permeable land to impervious surfaces — roads,
+  carparks, buildings — that generate stormwater runoff instead of
+  allowing rainfall to infiltrate. Each additional hectare of impervious
+  surface in Auckland's urban area adds an estimated 1.5–3.5 ML/year of
+  direct stormwater discharge to receiving environments, carrying the
+  contaminants accumulated on urban surfaces. As Auckland intensifies,
+  impervious surface increases within the existing urban footprint as
+  well as at the urban fringe.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.environment.water_quality
+claim_ids:
+  - claim.auckland.environment.urban_stream_quality
+  - claim.auckland.environment.harbour_contamination

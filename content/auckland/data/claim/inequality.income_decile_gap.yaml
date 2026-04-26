@@ -1,0 +1,26 @@
+id: claim.auckland.inequality.income_decile_gap
+statement: >
+  The gap between the top and bottom income deciles in Auckland has
+  widened over the past three decades. Households in the top income
+  decile have seen real income growth substantially above those in the
+  bottom two deciles, where real incomes (after housing costs) have been
+  largely stagnant. Housing costs are the primary driver of widening
+  after-housing-cost inequality: rental cost increases have absorbed a
+  growing share of lower-income household budgets.
+value: null
+unit: null
+time_period: "1990-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.msd_household_incomes_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The housing cost channel is the dominant driver of after-housing-cost
+  inequality growth in Auckland, consistent with MSD's analysis of
+  the poverty drivers.

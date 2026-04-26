@@ -1,0 +1,21 @@
+id: driver.auckland.inequality.housing_cost_poverty_driver
+name: "Housing cost as a driver of poverty"
+description: >
+  Rising housing costs in Auckland have been the primary driver of
+  widening after-housing-cost poverty over the past two decades. Rent
+  increases absorb a disproportionate share of income growth for lower-
+  income households, leaving less for food, healthcare, and children's
+  needs. The housing cost channel means that policies that reduce income
+  poverty on a before-housing-cost basis (wage increases, benefit uplifts)
+  are partially or fully offset by housing cost growth for those in the
+  private rental market.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.inequality.economic_disadvantage
+claim_ids:
+  - claim.auckland.inequality.child_poverty_rate_auckland
+  - claim.auckland.inequality.income_decile_gap

@@ -1,0 +1,44 @@
+id: camp.auckland.economy.business_enablement
+name: "Business Enablement and Regulatory Simplification"
+theme: economy
+core_claim: >
+  Auckland businesses face excessive compliance costs relative to the
+  regulatory benefit delivered; RMA reform, digital-first government
+  services, and SME-specific exemptions from the most burdensome
+  compliance requirements would reduce the cost of doing business
+  without materially reducing worker or environmental protection.
+  Reducing compliance friction is particularly important for
+  the small businesses that drive employment in South and West Auckland.
+flagship_moves:
+  - "Implement RMA fast-track process for commercial development under $10M in Auckland with 60-day decision target."
+  - "Digitise and simplify Auckland Council's business licensing and compliance portal."
+  - "Exempt micro-businesses (under 5 employees) from the most burdensome secondary compliance obligations."
+tensions:
+  - >
+    Compliance simplification for SMEs risks creating enforcement gaps
+    in environmental, employment, and health and safety law where
+    small businesses are disproportionately the violators.
+  - >
+    RMA fast-track processes have historically been captured by
+    large developers rather than benefiting small commercial operators
+    as intended.
+addresses:
+  - problem.auckland.economy.business_environment
+interventions:
+  - description: >
+      Create a single Auckland business licensing portal covering
+      all Council and central government compliance in one
+      application with a 15-day processing guarantee.
+    state_variable: "compliance_time_cost_sme"
+    constraint_relaxed: "Fragmented licensing and compliance system"
+    expected_sign: "-"
+  - description: >
+      Implement a commercial development fast-track for projects
+      under $10M in designated Auckland employment zones with
+      60-day consent target.
+    state_variable: "commercial_development_consent_time"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.economy.capital_market_development
+applicable_in:
+  - auckland

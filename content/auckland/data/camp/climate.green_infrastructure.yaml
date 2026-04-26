@@ -1,0 +1,43 @@
+id: camp.auckland.climate.green_infrastructure
+name: "Green Infrastructure and Urban Cooling"
+theme: climate-adaptation
+core_claim: >
+  Urban heat and flood risk can be substantially mitigated through
+  green infrastructure investment — tree planting, permeable surfaces,
+  green roofs, urban waterways restoration — that cools the city,
+  absorbs stormwater, and delivers health and biodiversity co-benefits.
+  Green infrastructure is cost-effective relative to grey engineering
+  alternatives and produces co-benefits that hard infrastructure cannot.
+flagship_moves:
+  - "Plant 1 million trees in South and West Auckland over 10 years, prioritising canopy in low-income, high-heat areas."
+  - "Require green roofs or permeable surfaces on all new Auckland commercial buildings over 500m2."
+  - "Restore 20km of Auckland urban waterways as blue-green flood corridors."
+tensions:
+  - >
+    Tree planting takes decades to deliver canopy cover; it is a
+    long-run investment that does not address the near-term heat and
+    flood exposure of current residents.
+  - >
+    Green roof requirements increase construction cost; in an
+    affordability-constrained housing market, additional construction
+    cost requirements are in tension with housing supply targets.
+addresses:
+  - problem.auckland.climate.urban_heat
+interventions:
+  - description: >
+      Fund a 1-million-tree planting programme in South and West
+      Auckland suburbs over 10 years, prioritising streets with
+      lowest canopy cover and highest heat exposure.
+    state_variable: "urban_canopy_cover_percent"
+    constraint_relaxed: "Canopy cover deficit in high-deprivation areas"
+    expected_sign: "+"
+  - description: >
+      Mandate permeable surface coverage for all new commercial car
+      parks over 20 spaces in Auckland, with a 5-year retrofit
+      requirement for existing large car parks.
+    state_variable: "impervious_surface_coverage"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.climate.heat_resilience_buildings
+applicable_in:
+  - auckland

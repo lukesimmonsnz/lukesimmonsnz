@@ -1,0 +1,46 @@
+id: camp.auckland.economy.innovation_and_rd
+name: "Innovation Investment and R&D Tax Incentives"
+theme: economy
+core_claim: >
+  Auckland's productivity gap is an investment gap; firms do not invest
+  in R&D at the rates required to sustain productivity growth because
+  the returns are partly captured by others (knowledge spillovers) and
+  the domestic market is too small to justify the fixed cost.
+  Government co-investment — R&D tax credits at international rates,
+  a sovereign innovation fund, and university-industry research
+  partnerships — corrects the market failure and builds the knowledge
+  base that drives long-run productivity growth.
+flagship_moves:
+  - "Increase R&D tax credit rate to 15% and extend eligibility to software and service sector R&D."
+  - "Establish an Auckland Innovation Fund of $200M over 5 years, co-invested with university and private capital."
+  - "Fund three Auckland-based university-industry research institutes in health technology, agri-tech, and clean energy."
+tensions:
+  - >
+    R&D tax credits are captured by large firms with existing
+    R&D capacity; startups and SMEs — the majority of Auckland
+    businesses — may not benefit proportionately unless there is
+    also direct grant support for early-stage innovation.
+  - >
+    Innovation investment has long lags before it appears in
+    productivity statistics; political cycles favour interventions
+    with shorter payoffs.
+addresses:
+  - problem.auckland.economy.productivity
+interventions:
+  - description: >
+      Increase R&D tax credit from 12.5% to 15% and extend the
+      definition of eligible R&D to include software product
+      development and service innovation.
+    state_variable: "business_rd_as_gdp_share"
+    constraint_relaxed: "Partial-appropriability market failure in R&D"
+    expected_sign: "+"
+  - description: >
+      Establish a $200M Auckland Innovation Fund administered by
+      Callaghan Innovation, requiring 1:1 private co-investment
+      and 5-year commercialisation milestones.
+    state_variable: "labour_productivity_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.economy.urban_productivity
+applicable_in:
+  - auckland

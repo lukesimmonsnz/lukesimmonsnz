@@ -1,0 +1,41 @@
+id: camp.auckland.housing.demand_management
+name: "Demand management"
+theme: housing
+core_claim: >
+  Speculative investor demand, tax incentives, and financialisation of
+  residential property have materially amplified Auckland's affordability
+  problem; demand-side interventions are necessary complements to any
+  supply-side programme.
+flagship_moves:
+  - "Reform tax treatment of residential investment property: extend bright-line tests, remove negative-gearing advantages"
+  - "Introduce a land value tax to impose holding costs on underdeveloped zoned land, countering land-banking"
+tensions:
+  - >
+    Demand-side interventions risk chilling private-sector development finance
+    and reducing rental supply in the short run, worsening conditions for
+    renters before the medium-term benefits materialise.
+  - >
+    Removing investor tax advantages may reduce build-to-rent and
+    boarding-house investment, increasing pressure on the lowest-income
+    rental segment that public supply cannot absorb quickly.
+addresses:
+  - problem.auckland.housing.affordability
+interventions:
+  - description: >
+      Extend the bright-line property tax to 10+ years to deter speculative
+      short-term churn and reduce the premium bid for non-owner-occupied
+      residential assets.
+    state_variable: "median_house_price"
+    expected_sign: "-"
+  - description: >
+      Introduce an annual land value tax on the unimproved value of
+      residential land to impose holding costs on underdeveloped parcels
+      in high-demand zones, accelerating supply response from existing owners.
+    state_variable: "housing_stock_per_capita"
+    expected_sign: "+"
+claim_ids:
+  - claim.auckland.housing.affordability_ratio_2023
+tensions_with:
+  - camp.auckland.housing.supply_reform
+applicable_in:
+  - auckland

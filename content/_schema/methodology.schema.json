@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/methodology.schema.json",
+  "title": "Methodology",
+  "description": "A named, versioned analytical methodology in the shared registry. Methodology is a full typed entity (unlike Region and Theme) because it carries definition, version, parameters, and references. Registry seeded from Layer 1a §4 of SCHEMA-DESIGN-aotearoa.md (15 entries). Claim.methodology_tag references id values here; the graph builder materialises the tag to an E_follows edge.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "version", "kind", "applies_to", "discharged_by", "description"],
+  "properties": {
+    "id": {
+      "description": "Stable prefixed identifier following the uniform entity-ID convention (e.g. 'methodology.median_multiple_v1'). Matches the pattern required by Claim.methodology_tag (ratified Option C, 2026-04-26).",
+      "type": "string",
+      "pattern": "^methodology\\.[a-z][a-z0-9_]*_v[0-9]+$"
+    },
+    "name": {
+      "description": "Human-readable title.",
+      "type": "string"
+    },
+    "version": {
+      "description": "Monotonically increasing integer. Increment on any breaking change to parameters or semantics.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "kind": {
+      "description": "Category of methodology. Controls how the methodology is applied at lint time. measurement = analytical ratio or index methodology pinned to quantitative Claims via methodology_tag (P16); graph_invariant = cross-entity structural predicate; source_typology = source/driver/actor classification enum; provenance_tier = confidence/credibility classification; systems_frame = Forrester-style structural frame (systems_model, intervention sign); layout_rule = figure-in-narrative and rendering rules.",
+      "enum": [
+        "graph_invariant",
+        "source_typology",
+        "provenance_tier",
+        "systems_frame",
+        "layout_rule",
+        "measurement"
+      ]
+    },
+    "applies_to": {
+      "description": "Entity types that invoke this methodology.",
+      "type": "array",
+      "items": {
+        "enum": [
+          "Claim",
+          "Source",
+          "Problem",
+          "Driver",
+          "Camp",
+          "Indicator",
+          "Actor",
+          "Response",
+          "Pattern",
+          "IbisNode",
+          "Region",
+          "Theme",
+          "Methodology"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "predicate": {
+      "description": "Stable predicate ID from §3 of SCHEMA-DESIGN-aotearoa.md that this methodology discharges (e.g. 'P1', 'P5prime'). Null if the methodology does not correspond to a named predicate.",
+      "type": ["string", "null"]
+    },
+    "discharged_by": {
+      "description": "Where this methodology's constraint is enforced.",
+      "enum": ["json_schema", "python_invariant", "both"]
+    },
+    "parameters": {
+      "description": "Optional free-form parameter map for methodology-specific configuration (e.g. thresholds, regex strings). PI defines structure per methodology.",
+      "type": "object"
+    },
+    "description": {
+      "description": "One-paragraph description of the methodology, its origin, and its analytical commitment.",
+      "type": "string"
+    },
+    "source_ids": {
+      "description": "Sources from which this methodology is derived (e.g. lint.py line reference, original publication).",
+      "type": "array",
+      "items": {"type": "string", "pattern": "^source\\."}
+    }
+  }
+}

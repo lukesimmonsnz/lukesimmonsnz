@@ -1,0 +1,66 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}{{ theme_title }} — Aotearoa NZ · Research · Luke Simmons{% endblock %}
+{% block meta_description %}Cross-regional patterns in {{ theme_title | lower }} observed across Aotearoa New Zealand, grounded in region-specific evidence from the typed entity graph.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Aotearoa NZ', url_for('nz.index')),
+    (theme_title, None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">National pattern rollup &mdash; {{ theme_title }}</span>
+    <h1>{{ theme_title }}</h1>
+    <hr class="rule">
+    <p class="lede">
+      Patterns in {{ theme_title | lower }} observed across two or more regions
+      of Aotearoa. Each pattern is a cross-regional generalisation; the
+      underlying region-specific claims are the evidence base.
+    </p>
+  </header>
+
+  <article class="prose">
+    <p class="muted">
+      {{ patterns | length }} pattern{{ 's' if patterns | length != 1 }}.
+    </p>
+
+    {% for p in patterns %}
+    <section>
+      <h2>{{ p.name }}</h2>
+
+      {% if p.statement %}
+      <p>{{ p.statement }}</p>
+      {% endif %}
+
+      <dl>
+        <dt>Manifests in</dt>
+        <dd>
+          {% for r in (p.manifests_in or []) %}
+            <code>{{ r }}</code>{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        </dd>
+
+        {% if p.evidenced_by %}
+        <dt>Supporting claims</dt>
+        <dd>
+          <ul>
+            {% for claim_id in p.evidenced_by %}
+            <li><code>{{ claim_id }}</code></li>
+            {% endfor %}
+          </ul>
+        </dd>
+        {% endif %}
+      </dl>
+    </section>
+    {% endfor %}
+
+    <hr class="rule">
+    <p><a href="{{ url_for('nz.index') }}">&larr; All national themes</a></p>
+  </article>
+</div>
+{% endblock %}

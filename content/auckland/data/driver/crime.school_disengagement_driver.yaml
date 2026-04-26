@@ -1,0 +1,17 @@
+id: driver.auckland.crime.school_disengagement_driver
+name: "School Disengagement and Credential Exclusion"
+description: >
+  Persistent absenteeism, stand-downs, and exclusions in South and West
+  Auckland secondary schools remove young people from structured
+  environments and legitimate credential pathways, concentrating idle
+  time and illegitimate opportunity. School disengagement by age 13
+  is the strongest community-level predictor of youth justice involvement.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.crime.youth_offending
+claim_ids:
+  - claim.auckland.crime.school_disengagement_pipeline

@@ -1,0 +1,62 @@
+id: problem.auckland.inequality.economic_disadvantage
+title: "Income inequality and economic disadvantage"
+theme: inequality
+section: inequality
+subpage: economic-disadvantage
+parent: null
+order: 0
+updated: "2026-04-26"
+summary: >
+  Auckland has approximately 20–24% of children living below the poverty
+  line after housing costs — high for an OECD city of its income level.
+  The after-housing-cost poverty rate has grown as rental costs absorbed
+  a rising share of lower-income household budgets. Wealth is highly
+  concentrated, with housing equity as the primary vehicle, compounding
+  intergenerational inequality. Pacific and Māori children face poverty
+  rates roughly double those of Pākehā, reflecting both income and
+  housing cost disadvantages concentrated in South and West Auckland.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "child_poverty_rate"
+    - "income_decile_bottom_real"
+    - "wealth_gini"
+    - "intergenerational_mobility_index"
+  inputs:
+    - "benefit_adequacy"
+    - "housing_cost_to_income_ratio"
+    - "wage_floor"
+    - "early_childhood_investment"
+  constraints:
+    - "Housing cost absorption: rental increases offset income gains for lower deciles"
+    - "Intergenerational transmission: disadvantage reproduces across generations through education and wealth mechanisms"
+    - "Ethnic concentration: Māori and Pacific households overrepresented at bottom of income and wealth distributions"
+  feedback_loops:
+    - "Low income → poor housing → worse health and education outcomes → lower adult income (intergenerational reproduction)"
+    - "Housing wealth appreciation → top decile wealth grows faster than income → wealth Gini widens"
+narrative:
+  - heading: "Child poverty"
+    body: >
+      One in five Auckland children lives in a household that cannot
+      afford adequate food, clothing, and housing after paying rent.
+      The rate is highest in South and West Auckland, where Māori and
+      Pacific families are concentrated and where housing cost increases
+      have been most severe relative to incomes. Child poverty at this
+      scale has documented long-run consequences for educational
+      attainment, health, and adult earning — it is not a temporary
+      hardship but a structural disadvantage that shapes life outcomes.
+  - heading: "The housing-poverty link"
+    body: >
+      Auckland's income inequality is amplified by housing costs.
+      Before housing costs, New Zealand's income inequality is moderate
+      by OECD standards. After housing costs, Auckland's poverty rates
+      are substantially higher — because rental cost growth has outpaced
+      income growth for the bottom two deciles. This means the poverty
+      problem and the housing problem are the same problem viewed from
+      different angles.
+claim_ids:
+  - claim.auckland.inequality.child_poverty_rate_auckland
+  - claim.auckland.inequality.income_decile_gap
+  - claim.auckland.inequality.wealth_concentration
+status: draft

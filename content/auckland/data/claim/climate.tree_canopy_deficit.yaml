@@ -1,0 +1,21 @@
+id: claim.auckland.climate.tree_canopy_deficit
+statement: >
+  Auckland's urban tree canopy cover is approximately 18%, below the
+  20-30% range recommended for climate and health co-benefits; canopy
+  cover is substantially lower in high-deprivation South and West
+  Auckland suburbs than in affluent North Shore and Eastern Beach
+  neighbourhoods, creating a spatial inequality in heat exposure.
+value: 18
+unit: "percent canopy cover"
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_climate_plan_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.sea_level_projection_v1

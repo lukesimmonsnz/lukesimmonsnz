@@ -1,0 +1,46 @@
+id: camp.auckland.transport.fare_reform
+name: "Fare reform and free or low-cost PT"
+theme: transport
+core_claim: >
+  Fare revenue covers only 30–40% of Auckland PT operating costs; the
+  remainder is already subsidised. Reducing or eliminating fares —
+  particularly for under-18s, Community Services Card holders, and
+  off-peak travel — would increase ridership, reduce car trips, and
+  improve equity for low-income households who depend on PT but face
+  regressive fare structures. The marginal cost of an additional PT
+  passenger is close to zero on existing services.
+flagship_moves:
+  - "Extend the free-fares-for-under-25s programme to all Auckland PT services, funded by central government as a demand-building measure ahead of CRL opening"
+  - "Introduce income-tested deeply discounted or free AT HOP passes for Community Services Card holders"
+  - "Pilot off-peak free travel across the rail network to shift demand away from peak hours and improve average seat utilisation"
+tensions:
+  - >
+    Fare reduction increases operating subsidy requirements at a time
+    of fiscal constraint; the AT funding gap is already significant
+    and free fares would widen it without a new funding mechanism.
+  - >
+    Free PT primarily increases discretionary and recreational trips
+    rather than shifting committed car commuters; the mode shift effect
+    per dollar of foregone revenue may be modest compared with
+    frequency improvements or infrastructure investment.
+addresses:
+  - problem.auckland.transport.public_transport
+interventions:
+  - description: >
+      Free AT HOP travel for all Community Services Card holders,
+      funded by a $50M/year central government top-up to AT's
+      operating budget, targeting a 15% ridership increase among
+      low-income households.
+    state_variable: "pt_mode_share"
+    constraint_relaxed: "fare barrier for low-income PT-dependent households"
+    expected_sign: "+"
+  - description: >
+      Distance-tapered fare structure replacing the current zone system,
+      making longer trips (outer suburbs) proportionally cheaper relative
+      to shorter inner-city trips, reducing fare regressivity.
+    state_variable: "pt_fare_affordability"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.transport.rapid_transit_expansion
+applicable_in:
+  - auckland

@@ -1,0 +1,43 @@
+id: camp.auckland.education.academic_excellence_focus
+name: "Academic Achievement and University Access"
+theme: education
+core_claim: >
+  The achievement gap for Maori and Pacific students is an academic
+  achievement gap, not a pathways gap; the solution is higher NCEA
+  attainment so that Maori and Pacific students have genuine access
+  to university pathways rather than being channelled into vocational
+  tracks. Investing in academic support, tutoring, and university
+  access programmes gives students more options, not fewer.
+flagship_moves:
+  - "Fund academic mentoring and tutoring programmes in South and West Auckland secondary schools, targeting NCEA Level 2 and 3."
+  - "Expand university bridging and access programmes (e.g. Manawa Aho) for Maori and Pacific Auckland students."
+  - "Invest in high-quality school library and learning infrastructure in decile 1-3 Auckland schools."
+tensions:
+  - >
+    University access programmes help those who reach NCEA Level 3;
+    they do not help the 30-40% of Maori and Pacific students who
+    do not attain NCEA Level 2, for whom vocational and trades pathways
+    are the relevant alternative.
+  - >
+    Academic focus without addressing attendance means that increased
+    academic support is received by a smaller fraction of the target
+    population than intended.
+addresses:
+  - problem.auckland.education.secondary_transition
+interventions:
+  - description: >
+      Fund after-school academic tutoring for 5,000 Maori and Pacific
+      Auckland secondary students per year, delivered by near-peer
+      tutors from the same communities.
+    state_variable: "ncea_attainment_maori_pacific"
+    expected_sign: "+"
+  - description: >
+      Expand Manawa Aho and equivalent university access programmes
+      to cover all Auckland decile 1-3 secondary schools with 20
+      places per school per year.
+    state_variable: "university_enrolment_rate_maori_pacific"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.vocational_pathway_investment
+applicable_in:
+  - auckland

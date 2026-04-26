@@ -1,0 +1,43 @@
+id: camp.auckland.governance.participatory_reform
+name: "Participatory Democracy Reform"
+theme: governance
+core_claim: >
+  Low turnout in Auckland is not primarily a logistics problem; it is
+  a trust and relevance problem. Reforms that make local democracy more
+  accessible — online voting, ward boundary adjustments that give
+  South and West Auckland more seats, participatory budgeting for
+  local board spending — build the connection between voting and visible
+  local outcomes that is the precondition for engagement.
+flagship_moves:
+  - "Implement online voting for Auckland local elections with the 2025 trial already legislated."
+  - "Adjust ward boundaries and add two wards in South Auckland to increase proportional representation."
+  - "Introduce participatory budgeting for 10% of local board discretionary spending."
+tensions:
+  - >
+    Online voting increases accessibility but raises cybersecurity and
+    integrity concerns; the integrity-access tradeoff is unresolved
+    and online voting trials have produced mixed results internationally.
+  - >
+    Participatory budgeting over small sums may increase engagement
+    without changing the structural decisions (infrastructure, zoning,
+    transport) that most affect high-deprivation communities.
+addresses:
+  - problem.auckland.governance.democratic_participation
+interventions:
+  - description: >
+      Implement online voting for the 2025 Auckland local elections
+      with the legislated trial framework, targeting a 10 percentage
+      point turnout increase in South and West Auckland wards.
+    state_variable: "south_west_auckland_voter_turnout"
+    constraint_relaxed: "Postal voting access barrier for mobile and renting population"
+    expected_sign: "+"
+  - description: >
+      Introduce participatory budgeting for 10% of each local board's
+      discretionary budget, with dedicated community facilitation
+      in Maori and Pacific languages in relevant wards.
+    state_variable: "community_governance_engagement_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.institutional_accountability
+applicable_in:
+  - auckland

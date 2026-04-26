@@ -1,0 +1,19 @@
+id: driver.auckland.climate.just_transition_gap
+name: "Just Transition Investment Gap"
+description: >
+  Decarbonisation in Auckland's transport, logistics, and construction
+  sectors will displace workers in fossil-fuel dependent roles without
+  a just transition programme to reskill and redirect them. The absence
+  of a structured transition support framework means that the costs
+  of decarbonisation are distributed regressively, falling on lower-
+  skilled workers while the benefits (lower emissions) are shared
+  broadly.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.climate.transition_economy
+claim_ids:
+  - claim.auckland.climate.transition_jobs_risk

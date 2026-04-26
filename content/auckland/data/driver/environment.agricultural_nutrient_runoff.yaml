@@ -1,0 +1,19 @@
+id: driver.auckland.environment.agricultural_nutrient_runoff
+name: "Agricultural nutrient runoff in rural catchments"
+description: >
+  Pastoral farming in Auckland's rural catchments (Rodney, Franklin)
+  contributes diffuse nitrogen and phosphorus loads to waterways through
+  animal effluent, fertiliser application, and riparian erosion. Unlike
+  urban stormwater — a point-source problem addressable through
+  stormwater devices — agricultural nutrient runoff is diffuse and
+  requires catchment-scale management changes including riparian
+  planting, reduced stocking rates, and effluent system upgrades.
+theme: environment
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.environment.water_quality
+claim_ids:
+  - claim.auckland.environment.rural_stream_nutrient_loading

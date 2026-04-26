@@ -1,0 +1,21 @@
+id: driver.auckland.housing.land_use_constraint
+name: "Restrictive land-use regulation"
+description: >
+  Auckland's planning rules — particularly minimum lot sizes, height limits,
+  mandatory setbacks, and the former Metropolitan Urban Limit — restricted
+  residential density and curtailed the land supply available for development.
+  The result was a supply-side regime that decoupled planning permission from
+  market signals: prices could rise substantially without triggering a
+  proportionate supply response. The NPS-UD (2021) began relaxing these
+  constraints but enforcement and infrastructure co-investment remain incomplete.
+theme: housing
+consensus: consensus
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.housing.affordability
+  - problem.auckland.housing.land_supply
+claim_ids:
+  - claim.auckland.housing.supply_deficit_2010s
+  

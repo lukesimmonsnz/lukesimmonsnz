@@ -1,0 +1,18 @@
+id: driver.auckland.economy.regulatory_burden
+name: "Regulatory Compliance Burden on SMEs"
+description: >
+  Cumulative compliance obligations (RMA, H&S, employment law, tax)
+  impose a disproportionate time and cost burden on small businesses.
+  RMA consent complexity for commercial development in Auckland is
+  a documented barrier to new business entry and expansion in
+  manufacturing and food production.
+theme: economy
+consensus: contested
+category: regulatory
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.economy.business_environment
+claim_ids:
+  - claim.auckland.economy.regulatory_compliance_cost
+  - claim.auckland.economy.auckland_business_cost

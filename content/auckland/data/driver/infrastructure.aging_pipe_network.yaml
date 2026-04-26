@@ -1,0 +1,21 @@
+id: driver.auckland.infrastructure.aging_pipe_network
+name: "Aging three-waters pipe network"
+description: >
+  Large portions of Auckland's water, wastewater, and stormwater pipe
+  network were installed in the 1950s–1970s with design lives of 50–80
+  years. Substantial sections are now approaching or past their expected
+  end of life, with rising failure rates, increased blockage frequency,
+  and growing leak losses. The Central Interceptor — a major new
+  wastewater tunnel — will address part of the capacity deficit when
+  complete but cannot address the distributed renewal backlog across
+  thousands of kilometres of smaller-diameter pipes.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.infrastructure.water_and_wastewater
+claim_ids:
+  - claim.auckland.infrastructure.renewal_backlog
+  - claim.auckland.infrastructure.wastewater_overflow_events

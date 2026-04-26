@@ -1,0 +1,44 @@
+id: camp.auckland.housing.trunk_infrastructure_capacity
+name: "Infrastructure-first / trunk capacity investment"
+theme: housing
+core_claim: >
+  Zoning without infrastructure is theatre. Supply is gated by the capacity
+  of water, wastewater, stormwater, and transport networks. Building trunk
+  capacity ahead of private demand — rather than in response to it — is a
+  precondition for any other supply lever to work at the volumes required
+  to change Auckland's affordability trajectory.
+flagship_moves:
+  - "Sustained Crown and Council co-investment in trunk infrastructure ahead of demand, funded by long-term infrastructure bonds"
+  - "Reform Watercare and Auckland Transport funding models to enable forward-looking investment without requiring development contributions at the point of consent"
+  - "Establish a land-value-capture mechanism that recycles rezoning uplift into infrastructure funding, breaking the infrastructure-consent chicken-and-egg"
+tensions:
+  - >
+    Infrastructure-first investment requires Crown willingness to fund
+    capacity before private development confirms demand; the fiscal risk
+    of stranded assets is non-trivial if growth assumptions do not
+    materialise at projected density.
+  - >
+    Prioritising trunk capacity investment crowds out other housing
+    expenditure; without parallel supply-side reforms, new infrastructure
+    may simply be captured by land value uplift rather than translating
+    to more affordable supply.
+addresses:
+  - problem.auckland.housing.supply_economics
+interventions:
+  - description: >
+      Multi-decade infrastructure investment programme for the Northwest
+      and Southern growth corridors, co-funded Crown/Council at 70/30,
+      unlocking consented capacity for ≥50,000 dwellings within 15 years.
+    state_variable: "annual_consents"
+    constraint_relaxed: "infrastructure capacity gate on supply"
+    expected_sign: "+"
+  - description: >
+      Mandatory land-value-capture levy on rezoning uplift, ring-fenced
+      to infrastructure funding, reducing the net fiscal cost of the
+      infrastructure-first programme.
+    state_variable: "construction_cost_index"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.housing.industrial_transformation
+applicable_in:
+  - auckland

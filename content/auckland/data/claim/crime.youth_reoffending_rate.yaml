@@ -1,0 +1,20 @@
+id: claim.auckland.crime.youth_reoffending_rate
+statement: >
+  Approximately 40% of young people who enter the youth justice system
+  in Auckland reoffend within 12 months of their first family group
+  conference; reoffending rates are higher for those placed in residential
+  care than those managed in the community.
+value: 40
+unit: "percent"
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.oranga_tamariki_youth_justice_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.victimisation_rate_v1

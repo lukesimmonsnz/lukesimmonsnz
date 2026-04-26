@@ -1,0 +1,21 @@
+id: claim.auckland.economy.sme_capital_access
+statement: >
+  Auckland SMEs have limited access to growth capital; New Zealand's
+  venture capital market is small, bank lending is secured primarily
+  against property rather than business assets, and the NZX is thin
+  for small-company equity raising. High-growth SMEs face a
+  valley-of-death funding gap between angel investment and institutional
+  capital.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mbie_business_nz_2023
+  - source.nzier_productivity_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []

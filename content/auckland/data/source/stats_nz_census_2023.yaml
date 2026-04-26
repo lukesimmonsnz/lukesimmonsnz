@@ -1,0 +1,11 @@
+id: source.stats_nz_census_2023
+title: "Statistics New Zealand — 2023 Census of Population and Dwellings"
+type: primary-data
+url: "https://www.stats.govt.nz/2023-census/"
+year: 2023
+publisher: "Statistics New Zealand (Stats NZ)"
+notes: >
+  Five-yearly Census providing authoritative data on housing tenure,
+  household income, dwelling type, occupancy, and demographic characteristics.
+  The 2023 Census is the current authoritative source for Auckland homeownership
+  rates by age cohort and household income distribution.

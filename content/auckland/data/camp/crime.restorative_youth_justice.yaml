@@ -1,0 +1,42 @@
+id: camp.auckland.crime.restorative_youth_justice
+name: "Restorative Youth Justice and Oranga Tamariki Reform"
+theme: crime
+core_claim: >
+  Youth offending is best addressed through restorative approaches that
+  keep young people in community settings, repair relationships with
+  victims, and address the underlying care, education, and family
+  stability deficits. Residential placements are criminogenic and should
+  be a last resort; community-based sentences with intensive support
+  produce better reoffending outcomes at lower cost.
+flagship_moves:
+  - "Expand community-based youth justice residences as alternatives to group homes in South Auckland."
+  - "Mandate school re-engagement plans for all youth justice participants who are not in education."
+  - "Fund kaupapa Maori youth justice providers in Auckland to manage a higher share of Maori youth cases."
+tensions:
+  - >
+    Restorative approaches require victim willingness to participate;
+    for violent offending, victims may not consent, limiting applicability.
+  - >
+    Community management of high-risk youth requires intensive caseworker
+    ratios that are expensive; cost savings only materialise if residential
+    care is genuinely reduced, not just supplemented.
+addresses:
+  - problem.auckland.crime.youth_offending
+interventions:
+  - description: >
+      Fund 200 additional Oranga Tamariki community youth workers in
+      Auckland with caseloads capped at 10, focused on 12-17 year olds
+      with three or more prior justice contacts.
+    state_variable: "youth_reoffending_rate"
+    constraint_relaxed: "Caseworker capacity constraint in community management"
+    expected_sign: "-"
+  - description: >
+      Establish six kaupapa Maori youth justice hubs in Auckland's
+      highest-referral areas, with authority to manage family group
+      conference outcomes and community sentences.
+    state_variable: "maori_youth_justice_disproportionality"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.crime.accountability_and_consequences
+applicable_in:
+  - auckland

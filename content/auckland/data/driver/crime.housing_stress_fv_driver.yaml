@@ -1,0 +1,17 @@
+id: driver.auckland.crime.housing_stress_fv_driver
+name: "Housing Stress and Overcrowding as Family Violence Amplifier"
+description: >
+  Overcrowded, insecure, and unaffordable housing raises the ambient
+  stress level in households and removes the physical space needed for
+  de-escalation. Auckland's housing crisis concentrates this stress in
+  South and West suburbs where family violence call rates are highest.
+  Tenancy loss events are acute violence risk moments.
+theme: crime
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.crime.family_violence
+claim_ids:
+  - claim.auckland.crime.fv_housing_stress_link

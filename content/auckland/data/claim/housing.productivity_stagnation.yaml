@@ -1,0 +1,26 @@
+id: claim.auckland.housing.productivity_stagnation
+statement: >
+  New Zealand construction-sector labour productivity growth has been close
+  to flat for decades — among the lowest in the OECD. Output per worker
+  in residential construction has not improved materially since the 1990s,
+  meaning that rising dwelling costs reflect real resource inputs rather than
+  speculative margin, and that supply-side cost reduction requires structural
+  change to the production model, not incremental reform.
+value: null
+unit: null
+time_period: "1990-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nz_productivity_commission_2012
+  - source.mhud_housing_aotearoa_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []
+notes: >
+  A well-documented finding in NZ Productivity Commission and OECD sector
+  productivity analyses. Auckland-specific construction productivity is not
+  separately measured; the national figure applies with equal force to the
+  Auckland market.

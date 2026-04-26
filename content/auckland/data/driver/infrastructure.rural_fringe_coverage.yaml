@@ -1,0 +1,20 @@
+id: driver.auckland.infrastructure.rural_fringe_coverage
+name: "Rural and peri-urban coverage gaps"
+description: >
+  Auckland's rural and peri-urban areas — Rodney, Franklin, and scattered
+  Waitākere settlements — lie beyond the economic reach of commercial
+  fibre build-out. Fixed wireless access (Starlink and 4G/5G) partially
+  fills the gap but at higher cost and lower reliability than fibre.
+  The coverage gap is not closing rapidly: commercial providers have
+  limited incentive to extend fibre to low-density areas, and government
+  subsidy programmes have targeted rural New Zealand broadly rather than
+  Auckland's specific peri-urban geography.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.infrastructure.digital_connectivity
+claim_ids:
+  - claim.auckland.infrastructure.fibre_coverage_gap

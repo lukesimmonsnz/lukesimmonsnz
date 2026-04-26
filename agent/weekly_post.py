@@ -46,6 +46,10 @@ except Exception:  # pragma: no cover
 
 import requests
 
+from agent._env import load_dotenv
+
+load_dotenv()
+
 # Force UTF-8 on Windows consoles so macrons etc. don't blow up cp1252 stdout.
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -338,6 +342,10 @@ def write_post(
     elif "weekly-digest" not in tags:
         tags = ["weekly-digest"] + tags
 
+    # Always write as draft. freeze.py skips status=draft posts when
+    # building the static site, so this is the production gate. Use
+    # `scripts/publish_weekly.bat` to flip status and deploy, or
+    # `scripts/reject_weekly.bat` to delete the draft.
     fm_lines = [
         "---",
         f"title: \"{escape_yaml(title)}\"",
@@ -345,14 +353,81 @@ def write_post(
         "author: agent",
         f"summary: \"{escape_yaml(summary)}\"",
         "tags: [" + ", ".join(tags) + "]",
+        "status: draft",
         "---",
         "",
         body_markdown.strip(),
         "",
     ]
     path.write_text("\n".join(fm_lines), encoding="utf-8")
-    log(f"Wrote {path.name}")
+    log(f"Wrote {path.name} (status=draft; not yet public)")
     return path
+
+
+# ---------------------------------------------------------------------------
+# Review-email notification
+# ---------------------------------------------------------------------------
+
+
+def send_review_email(post_path: Path, title: str, summary: str) -> bool:
+    """Email the draft to CONTACT_TO so Luke can review on phone/desktop.
+
+    Reads RESEND_API_KEY, CONTACT_FROM, CONTACT_TO from env (or .env file
+    in project root). If any are missing, logs and returns False — the
+    weekly run is *not* failed because of email issues; the draft is
+    still on disk and visible at /blog/ in local Flask.
+    """
+    api_key = os.environ.get("RESEND_API_KEY")
+    sender = os.environ.get("CONTACT_FROM", "form@lukesimmonsnz.kiwi")
+    recipient = os.environ.get("CONTACT_TO")
+
+    if not api_key:
+        log("Skipping review email: RESEND_API_KEY not set (check .env).")
+        return False
+    if not recipient:
+        log("Skipping review email: CONTACT_TO not set (check .env).")
+        return False
+
+    body_md = post_path.read_text(encoding="utf-8")
+
+    text = (
+        f"Weekly digest draft is ready: {post_path.name}\n\n"
+        f"Title:    {title}\n"
+        f"Summary:  {summary}\n\n"
+        "Decide:\n"
+        "  publish  →  scripts\\publish_weekly.bat\n"
+        "  reject   →  scripts\\reject_weekly.bat\n\n"
+        "(Both commands operate on the most recent draft weekly digest "
+        "in content/blog/. Publish flips status, freezes the site, and "
+        "deploys to Cloudflare Pages. Reject deletes the draft file.)\n\n"
+        "----- DRAFT BODY BELOW -----\n\n"
+        f"{body_md}"
+    )
+    subject = f"[lukesimmonsnz weekly DRAFT] {title}"
+
+    try:
+        r = requests.post(
+            "https://api.resend.com/emails",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "from": sender,
+                "to": [recipient],
+                "subject": subject,
+                "text": text,
+            },
+            timeout=30,
+        )
+        if r.status_code >= 400:
+            log(f"Resend returned {r.status_code}: {r.text[:300]}")
+            return False
+        log(f"Sent review email to {recipient} via Resend.")
+        return True
+    except Exception as exc:
+        log(f"Review email failed: {exc}")
+        return False
 
 
 # ---------------------------------------------------------------------------
@@ -442,7 +517,12 @@ def main() -> int:
         return 5
 
     path = write_post(title, summary, body, tags, post_date, force=args.force)
-    log(f"Done. Post available at /blog/{path.stem}/")
+    log(f"Draft saved to content/blog/{path.name} (status=draft).")
+
+    # Email Luke for review — non-fatal if it fails.
+    send_review_email(path, title, summary)
+
+    log("Done. Use scripts\\publish_weekly.bat to ship, scripts\\reject_weekly.bat to discard.")
     return 0
 
 

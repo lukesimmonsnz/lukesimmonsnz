@@ -1,0 +1,45 @@
+id: camp.auckland.climate.managed_retreat_programme
+name: "Managed Retreat and Proactive Adaptation"
+theme: climate-adaptation
+core_claim: >
+  Delaying managed retreat from high-risk coastal areas increases the
+  ultimate cost; properties bought early at pre-risk prices cost less
+  than properties bought after insurers withdraw and values collapse.
+  A national managed retreat fund, with clear criteria and fair
+  compensation, is necessary infrastructure for a country with
+  significant coastal exposure. Voluntary purchase first; compulsory
+  acquisition only when voluntary fails.
+flagship_moves:
+  - "Establish a national Managed Retreat Fund with $500M initial capitalisation, with Auckland as the first implementation region."
+  - "Map all Auckland properties at risk at 0.3m, 0.5m, and 1.0m sea level rise thresholds and disclose to owners."
+  - "Offer voluntary buyouts at pre-risk market value for highest-risk Category 3 Auckland properties."
+tensions:
+  - >
+    Managed retreat creates winners (those who sell at full value
+    before risk is priced in) and losers (those who sell after
+    risk disclosure suppresses values); the timing and disclosure
+    regime has large distributional consequences.
+  - >
+    Crown liability concerns dominate managed retreat policy; once
+    the Crown acknowledges risk and maps properties, it may face
+    compensation claims that exceed the buyout programme budget.
+addresses:
+  - problem.auckland.climate.sea_level_rise
+interventions:
+  - description: >
+      Legislate a National Managed Retreat Framework with voluntary
+      buyout priority for Auckland Category 3 properties (0.5m
+      sea level rise threshold) at pre-risk market valuation.
+    state_variable: "high_risk_coastal_property_count"
+    constraint_relaxed: "Absence of legal framework and funding for managed retreat"
+    expected_sign: "-"
+  - description: >
+      Complete full sea level rise risk mapping for all Auckland
+      coastal properties at 0.3m, 0.5m, and 1.0m thresholds and
+      publish as public information with Council property records.
+    state_variable: "coastal_risk_disclosure_coverage"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.climate.protection_and_adaptation_in_place
+applicable_in:
+  - auckland

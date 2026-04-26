@@ -1,0 +1,20 @@
+id: driver.auckland.housing.public_housing_stock_shortage
+name: "Public housing stock shortage"
+description: >
+  The absolute stock of public housing in Auckland is insufficient to house
+  all households that cannot access the private market. The 1990s state
+  housing sell-off reduced the stock significantly; Kāinga Ora's subsequent
+  build programme has been insufficient to fully restore it relative to
+  population growth and rising need. The result is a structural backlog
+  that manifests as waitlist growth and emergency housing pressure regardless
+  of short-term programme fluctuations.
+theme: housing
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.housing.social_housing
+claim_ids:
+  - claim.auckland.housing.public_stock_deficit
+  - claim.auckland.housing.waitlist_size_2023

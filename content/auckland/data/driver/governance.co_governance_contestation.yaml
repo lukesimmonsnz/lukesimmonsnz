@@ -1,0 +1,18 @@
+id: driver.auckland.governance.co_governance_contestation
+name: "Political Contestation of Co-Governance"
+description: >
+  Treaty co-governance arrangements face sustained political opposition
+  framing them as inconsistent with democratic equality; this
+  contestation produces implementation instability, with co-governance
+  arrangements established by one government reversed by the next.
+  Political instability undermines the long-run relationship-building
+  and resource development that Treaty partnership requires.
+theme: governance
+consensus: contested
+category: cultural
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.governance.treaty_co_governance
+claim_ids:
+  - claim.auckland.governance.treaty_co_governance_debate

@@ -1,0 +1,24 @@
+id: claim.auckland.housing.infill_greenfield_split
+statement: >
+  Auckland Council's Future Development Strategy projects that the majority of
+  Auckland's 30-year housing growth — approximately two-thirds — will occur
+  through intensification within the existing urban area rather than greenfield
+  expansion at the fringe, reflecting both zoned capacity distribution and
+  infrastructure investment priorities.
+value: null
+unit: null
+time_period: "2022-2052"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_dev_strategy_2022
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The two-thirds infill proportion is a planning projection, not an outturn.
+  Actual split depends on developer demand, infrastructure sequencing, and
+  future plan changes.

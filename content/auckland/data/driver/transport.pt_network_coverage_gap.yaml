@@ -1,0 +1,22 @@
+id: driver.auckland.transport.pt_network_coverage_gap
+name: "Incomplete rapid transit network coverage"
+description: >
+  More than half of Auckland's residential land area lies beyond 800m of
+  any rapid transit stop. The Northwest, most of the North Shore beyond
+  Albany, and the outer South have no rapid transit connection, meaning
+  residents in these areas are structurally dependent on car or infrequent
+  bus services regardless of their preferences. This coverage gap is both
+  a legacy of historical underinvestment and a product of the dispersion
+  of development ahead of infrastructure: urban growth has consistently
+  outpaced rapid transit extension, locking new communities into car
+  dependency before alternatives are available.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.transport.public_transport
+claim_ids:
+  - claim.auckland.transport.rapid_transit_coverage_gap
+  - claim.auckland.transport.car_mode_share_2023

@@ -1,0 +1,20 @@
+id: driver.auckland.housing.infrastructure_funding_gap
+name: "Infrastructure funding and financing gap"
+description: >
+  Even where land is zoned for intensification, development is constrained by
+  the cost and availability of reticulated infrastructure. Auckland Council's
+  capital programme cannot keep pace with the demand created by upzoning:
+  development contributions are either too high to leave developer margin or
+  insufficient to fund the full upgrade. The gap between what developers can
+  pay and what infrastructure actually costs is absorbed as either deferred
+  development or reduced housing supply. This driver operates independently
+  of planning rules — it persists even under fully liberalised zoning.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.housing.land_supply
+claim_ids:
+  - claim.auckland.housing.infrastructure_barrier

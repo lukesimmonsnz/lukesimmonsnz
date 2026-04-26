@@ -1,0 +1,18 @@
+id: driver.auckland.crime.illicit_drug_market
+name: "Illicit Drug Market as Organised Crime Anchor"
+description: >
+  The illicit drug market (primarily methamphetamine) provides the
+  primary revenue base for Auckland organised crime. Drug prohibition
+  creates monopoly rents enforced through violence; the market
+  concentration in South Auckland gangs is a structural product of
+  the legal regime, not primarily of individual choices.
+theme: crime
+consensus: contested
+category: regulatory
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.crime.organised_crime
+claim_ids:
+  - claim.auckland.crime.drug_market_concentration
+  - claim.auckland.crime.meth_harm_concentration

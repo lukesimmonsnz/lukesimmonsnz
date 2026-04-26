@@ -1,0 +1,11 @@
+id: source.at_patronage_data_2023
+title: "Auckland Transport — Public Transport Patronage Statistics 2023"
+type: primary-data
+url: "https://at.govt.nz/about-us/reports-publications/at-metro-patronage-report/"
+year: 2023
+publisher: "Auckland Transport (AT)"
+notes: >
+  Monthly and annual public transport patronage counts by mode (rail, bus,
+  ferry) for the Auckland network. The primary source for Auckland PT
+  ridership, service reliability, and fare revenue data. Includes the
+  post-COVID recovery trajectory and City Rail Link construction impact.

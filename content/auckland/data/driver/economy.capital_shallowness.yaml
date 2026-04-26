@@ -1,0 +1,18 @@
+id: driver.auckland.economy.capital_shallowness
+name: "Capital Shallowness and Low R&D Investment"
+description: >
+  New Zealand businesses are capital-shallow relative to OECD peers;
+  low machinery-to-worker ratios and below-average R&D investment
+  constrain productivity growth. Auckland's distance from global
+  capital markets and small domestic market size make technology
+  adoption more expensive per unit of output, compounding the gap.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.economy.productivity
+claim_ids:
+  - claim.auckland.economy.nz_productivity_gap
+  - claim.auckland.economy.low_rd_investment

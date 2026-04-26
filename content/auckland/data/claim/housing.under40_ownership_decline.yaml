@@ -1,0 +1,26 @@
+id: claim.auckland.housing.under40_ownership_decline
+statement: >
+  The homeownership rate among Auckland residents aged under 40 has fallen
+  from roughly 60% in 1986 to roughly 40% in the mid-2020s — a 20
+  percentage point contraction over four decades. On a cohort view, this
+  is the most consequential affordability metric: it represents a structural
+  shift in who accumulates housing wealth across a lifetime, with compounding
+  intergenerational consequences.
+value: null
+unit: null
+time_period: "1986-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_census_2023
+  - source.mhud_housing_aotearoa_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Based on Census tenure data by age band. Exact figures by specific cohort
+  to be confirmed against the 2018 and 2023 Census releases. The directional
+  finding is robust; the precise magnitude varies by age cut.

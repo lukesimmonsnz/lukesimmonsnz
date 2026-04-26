@@ -1,0 +1,19 @@
+id: driver.auckland.environment.dark_surface_materials
+name: "Dark surface materials and heat absorption"
+description: >
+  Standard urban building and road materials — dark asphalt, dark roofs,
+  exposed concrete — absorb solar radiation and re-emit it as heat,
+  contributing to the urban heat island. In Auckland's summers, road
+  and roof surface temperatures can exceed 60°C on hot days. Cool roof
+  standards, light-coloured pavements, and green roofs reduce surface
+  temperature absorption and the consequent ambient air temperature rise,
+  but are not currently required in Auckland's building codes.
+theme: environment
+consensus: mostly-agreed
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.environment.urban_heat
+claim_ids:
+  - claim.auckland.environment.tree_canopy_inequity

@@ -1,0 +1,77 @@
+id: problem.auckland.housing.affordability
+title: "Housing unaffordability in Tāmaki Makaurau Auckland"
+theme: housing
+section: housing
+subpage: affordability
+order: 1
+updated: "2026-04-26"
+summary: >
+  Auckland's housing market is among the least affordable globally relative to
+  household incomes. A structural supply deficit accumulated across the 2010s
+  despite strong population growth, driven by restrictive zoning and
+  infrastructure financing constraints. The active policy debate centres on
+  whether supply-side liberalisation, demand-side management, or a combination
+  of both is the appropriate response.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "housing_stock_per_capita"
+    - "median_house_price"
+    - "housing_affordability_ratio"
+  inputs:
+    - "annual_building_consents"
+    - "net_migration"
+    - "household_dissolution_rate"
+  constraints:
+    - "restrictive_residential_zoning"
+    - "infrastructure_provision_capacity"
+    - "construction_sector_capacity"
+  feedback_loops:
+    - >
+      Price-signal-to-supply: high prices should incentivise development, but
+      planning constraints and land-banking attenuate the market response,
+      creating a regime where price rises do not clear into commensurate
+      new supply.
+    - >
+      Affordability-migration loop: sustained unaffordability drives
+      outmigration of working households, providing partial and lagged demand
+      relief but at the cost of labour-market thinning in high-wage sectors.
+    - >
+      Investor-demand amplification: in a low-affordability regime, residential
+      property becomes attractive as a yield-bearing asset; investor entry bids
+      up prices at the margin, reinforcing unaffordability.
+narrative:
+  - heading: "Scale of the problem"
+    body: >
+      Auckland consistently ranks among the most unaffordable major housing
+      markets globally by the median multiple measure. A ratio of 10.7 in 2023
+      (claim.auckland.housing.affordability_ratio_2023) means a median-income
+      household must devote more than a decade of gross income to purchase a
+      median-priced dwelling — a ceiling that structurally excludes the majority
+      of renter households from home ownership at current income and price levels.
+  - heading: "Structural supply deficit of the 2010s"
+    body: >
+      The decade preceding the NPS-UD was characterised by a structural supply
+      deficit: annual building consents consistently fell short of the dwelling
+      additions required to match population growth and household formation
+      (claim.auckland.housing.supply_deficit_2010s). Restrictive zoning, a
+      tightly drawn Metropolitan Urban Limit, mandatory minimum lot sizes, and
+      constrained infrastructure funding combined to limit developable land and
+      suppress the supply response to rising prices.
+  - heading: "Policy response: NPS-UD and the consent surge"
+    body: >
+      The National Policy Statement on Urban Development 2021 (NPS-UD) mandated
+      significant upzoning of Auckland's residential land, enabling
+      intensification near transit corridors as-of-right. Building consents
+      reached record volumes by 2022, indicating the supply response that
+      previous planning rules had suppressed was latent in the market
+      (claim.auckland.housing.nps_ud_upzoning). Whether this correction is
+      sufficient — and whether demand-side complementary measures are needed —
+      is the active policy debate between the supply-reform and demand-management
+      camps.
+claim_ids:
+  - claim.auckland.housing.affordability_ratio_2023
+  - claim.auckland.housing.supply_deficit_2010s
+  - claim.auckland.housing.nps_ud_upzoning
+status: draft

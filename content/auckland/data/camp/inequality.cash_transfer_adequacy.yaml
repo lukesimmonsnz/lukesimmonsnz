@@ -1,0 +1,44 @@
+id: camp.auckland.inequality.cash_transfer_adequacy
+name: "Cash transfer adequacy and income floor"
+theme: inequality
+core_claim: >
+  Child poverty is primarily an income problem: households with children
+  do not have enough money to meet basic needs. The most direct, fastest-
+  acting solution is to increase the income floor — higher benefits,
+  higher minimum wage, higher Working for Families payments — so that
+  no household with children falls below the cost of basic necessities
+  in Auckland. Services and early intervention are valuable but cannot
+  substitute for adequate income.
+flagship_moves:
+  - "Raise the main benefit to a minimum of 80% of the minimum wage plus an Auckland housing supplement that reflects actual median rents"
+  - "Extend the Best Start payment to $100/week for all children in households below 160% of median income for the first 3 years"
+  - "Eliminate the benefit sanction regime for parents of children under 5, removing income penalties that worsen child hardship"
+tensions:
+  - >
+    Cash transfers without accompanying housing supply increase the
+    risk of rent capitalisation in a constrained market, particularly
+    for accommodation supplement increases in a low-vacancy rental
+    environment.
+  - >
+    Unconditioned income increases may reduce work incentives at the
+    margin; evidence on this effect is mixed but is a persistent concern
+    in fiscal debates about transfer adequacy.
+addresses:
+  - problem.auckland.inequality.child_poverty
+interventions:
+  - description: >
+      Raise the core benefit for families with children to a minimum
+      of 80% of the minimum wage, indexed to wage growth.
+    state_variable: "material_hardship_rate"
+    constraint_relaxed: "benefit levels below cost of basic necessities in Auckland"
+    expected_sign: "-"
+  - description: >
+      Auckland housing supplement of up to $200/week for benefit
+      recipients in the private rental market, capped per bedroom
+      and reviewed annually against AT HOP rent tracker data.
+    state_variable: "child_poverty_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.inequality.early_intervention
+applicable_in:
+  - auckland

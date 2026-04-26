@@ -1,0 +1,19 @@
+id: driver.auckland.climate.coastal_development_legacy
+name: "Legacy Coastal Development in Flood Risk Areas"
+description: >
+  Decades of coastal and low-lying development in Auckland before
+  comprehensive flood risk mapping created a large stock of properties
+  in areas that face material risk from sea level rise and intensified
+  storm events. The planning system cannot easily remediate this legacy;
+  insurance withdrawal is the market signal but creates hardship without
+  a public-funded alternative.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.climate.sea_level_rise
+claim_ids:
+  - claim.auckland.climate.auckland_sea_level_exposure
+  - claim.auckland.climate.managed_retreat_necessity

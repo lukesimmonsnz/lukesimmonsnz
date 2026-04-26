@@ -1,0 +1,44 @@
+id: camp.auckland.governance.local_govt_revenue_reform
+name: "Local Government Revenue Reform"
+theme: governance
+core_claim: >
+  Auckland Council cannot fulfil its mandate with rates as its primary
+  revenue instrument; rates are regressive, grow slowly, and create
+  political pressure against necessary infrastructure investment.
+  Revenue reform — a local share of GST, a development levy with
+  automatic adjustment, or a land value tax replacing general rates —
+  gives Auckland the revenue base to match its infrastructure and
+  service responsibilities.
+flagship_moves:
+  - "Legislate a 1% Auckland GST share returned to Council for infrastructure investment."
+  - "Introduce an automatic infrastructure development levy on all new Auckland developments."
+  - "Commission a transition plan for Auckland to move from current value general rates to site value (land) rates."
+tensions:
+  - >
+    A local GST share requires Crown-Council revenue sharing
+    legislation that the Crown has historically resisted; political
+    economy of central government ceding revenue is unfavourable.
+  - >
+    Land value tax transition is complex for existing landowners;
+    the transition period creates windfall and hardship effects
+    that require mitigation.
+addresses:
+  - problem.auckland.governance.local_govt_reform
+interventions:
+  - description: >
+      Legislate a 1 percentage point GST return to Auckland Council
+      from GST collected within the Auckland region, estimated at
+      $400-500M per year at current GST levels.
+    state_variable: "council_revenue_adequacy_index"
+    constraint_relaxed: "Revenue growth constraint from rates-only base"
+    expected_sign: "+"
+  - description: >
+      Introduce a mandatory infrastructure development contribution
+      schedule for Auckland with automatic annual CPI adjustment,
+      replacing the current negotiated consent condition system.
+    state_variable: "infrastructure_cost_recovery_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.devolution_and_local_control
+applicable_in:
+  - auckland

@@ -1,0 +1,44 @@
+id: camp.auckland.housing.income_and_wage_floor
+name: "Income-side — transfers and wages"
+theme: housing
+core_claim: >
+  Affordability is a ratio between housing cost and income. The cleanest
+  long-run lever is the income side. Direct transfers — an Accommodation
+  Supplement uprated to current market rents, income-related rents in
+  state and community housing — address the lower end of the distribution
+  immediately. Structural wage growth through productivity and labour-market
+  reform addresses the middle and upper end over time.
+flagship_moves:
+  - "Uprate the Accommodation Supplement to current median market rents in Auckland, indexed annually to the MBIE rent tracker rather than fixed at historical benchmarks"
+  - "Extend income-related rent subsidy to community housing provider tenants, creating parity with Kāinga Ora residents"
+  - "Establish a living wage floor linked to Auckland housing costs, reviewed by an independent Wages Council"
+tensions:
+  - >
+    Accommodation Supplement increases in a low-vacancy rental market
+    can capitalise directly into rents — landlords with pricing power
+    capture the subsidy value — without improving tenants' net housing
+    cost position.
+  - >
+    Income-side interventions address current affordability stress but
+    do not change the structural trajectory of prices relative to incomes;
+    they are a necessary short-run measure that risks substituting for
+    the structural reforms required to permanently improve the ratio.
+addresses:
+  - problem.auckland.housing.ownership_and_finance
+interventions:
+  - description: >
+      Rebase Accommodation Supplement rates to current median market rents
+      by Auckland zone, with annual CPI-plus-rent-growth indexation.
+    state_variable: "renter_net_housing_cost"
+    constraint_relaxed: "AS rate frozen below current market rents"
+    expected_sign: "-"
+  - description: >
+      Extend income-related rent subsidy eligibility to all Community
+      Housing Provider tenants, reducing the two-tier gap between
+      Kāinga Ora and CHPs.
+    state_variable: "social_housing_affordability_gap"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.housing.ownership_tax_reform
+applicable_in:
+  - auckland

@@ -1,0 +1,43 @@
+id: camp.auckland.crime.integrated_fv_response
+name: "Integrated Family Violence Response and Safe Exits"
+theme: crime
+core_claim: >
+  Family violence requires a whole-system response: safe housing for
+  victims as a first step, perpetrator accountability programmes, and
+  child protection wraparound. Currently these are delivered by
+  separate agencies with poor handoffs. Co-location of police, social
+  workers, and housing navigators at family violence specialist units
+  in South and West Auckland would close the gap between first call and
+  sustained safety.
+flagship_moves:
+  - "Establish family violence specialist co-responder units (police + social worker) in the ten highest-call Auckland stations."
+  - "Fund 200 emergency refuge spaces and 500 longer-term safe houses in Auckland for victim-with-children situations."
+  - "Mandate perpetrator accountability programmes as a bail condition for all repeat family harm offenders."
+tensions:
+  - >
+    Safe housing provision for victims is expensive; without sustained
+    investment in refuge capacity, victims return to dangerous situations
+    because there is nowhere else to go.
+  - >
+    Co-responder models require police and social services to share
+    information in real time; privacy frameworks create friction that
+    slows response and risks gaps in victim safety plans.
+addresses:
+  - problem.auckland.crime.family_violence
+interventions:
+  - description: >
+      Fund co-responder pairs (sworn officer + social worker) at all
+      Auckland family harm high-call stations, operational 24 hours.
+    state_variable: "fv_repeat_call_rate"
+    constraint_relaxed: "Gap between police attendance and social service follow-up"
+    expected_sign: "-"
+  - description: >
+      Create a dedicated Auckland family violence safe housing pathway
+      with 200 emergency and 500 transitional units, managed by a
+      single agency with direct referral from police.
+    state_variable: "victim_safe_exit_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.crime.perpetrator_focus
+applicable_in:
+  - auckland

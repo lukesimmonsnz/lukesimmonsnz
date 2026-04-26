@@ -1,0 +1,21 @@
+id: claim.auckland.crime.fv_police_call_rate
+statement: >
+  New Zealand has one of the highest family violence police call rates
+  in the OECD; Auckland police receive approximately 150,000 family
+  harm calls per year, representing roughly 40% of all Auckland police
+  calls. The majority of incidents involve repeat addresses.
+value: 150000
+unit: "calls/year"
+time_period: "2022-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nz_police_recorded_crime_2023
+  - source.msd_family_violence_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.family_violence_call_rate_v1

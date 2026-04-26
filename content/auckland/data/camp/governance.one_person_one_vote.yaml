@@ -1,0 +1,44 @@
+id: camp.auckland.governance.one_person_one_vote
+name: "Equal Citizenship and Universal Suffrage"
+theme: governance
+core_claim: >
+  Democratic legitimacy requires equal political weight for all
+  citizens regardless of ethnicity; co-governance arrangements that
+  give Maori a structural veto or joint authority over public decisions
+  violate the principle of equal citizenship. The Crown can fulfil
+  Treaty obligations through Treaty settlements (asset return,
+  economic redress) without creating permanent ethnic differentiation
+  in public governance structures.
+flagship_moves:
+  - "Remove ethnicity-based appointment provisions from Auckland Council governance structures."
+  - "Direct Treaty fulfilment through economic settlements and asset return rather than governance co-design."
+  - "Increase Maori electoral participation through community engagement and lowering barriers to standing for election."
+tensions:
+  - >
+    Removing co-governance provisions does not address the power
+    imbalance that produced them; a formal equality that ignores
+    structural disadvantage is not substantive equality.
+  - >
+    Economic settlements without governance rights have historically
+    not translated into political influence for Maori; the Treaty
+    guarantee of tino rangatiratanga requires governance, not just
+    property.
+addresses:
+  - problem.auckland.governance.treaty_co_governance
+interventions:
+  - description: >
+      Replace ethnicity-based Auckland Council advisory and appointment
+      mechanisms with deprivation-indexed community representation
+      that benefits Maori communities without ethnic specification.
+    state_variable: "community_equity_representation_index"
+    expected_sign: "+"
+  - description: >
+      Fund targeted electoral participation programmes for Maori
+      and Pacific Aucklanders to increase representation through
+      general democratic channels.
+    state_variable: "south_west_auckland_voter_turnout"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.treaty_partnership_model
+applicable_in:
+  - auckland

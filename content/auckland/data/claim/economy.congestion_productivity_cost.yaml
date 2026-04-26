@@ -1,0 +1,22 @@
+id: claim.auckland.economy.congestion_productivity_cost
+statement: >
+  Auckland's transport congestion costs the economy approximately
+  $1.3 billion per year in lost productivity through delayed freight,
+  missed appointments, and worker commute time; agglomeration
+  productivity benefits of Auckland's city-scale are partially negated
+  by the friction cost of a car-dependent, congested transport network.
+value: 1300
+unit: "NZD millions/year"
+time_period: "2022-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.treasury_lsf_2023
+  - source.nzier_productivity_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.labour_productivity_index_v1

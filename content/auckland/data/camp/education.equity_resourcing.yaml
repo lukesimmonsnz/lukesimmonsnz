@@ -1,0 +1,43 @@
+id: camp.auckland.education.equity_resourcing
+name: "Equity-Weighted Resourcing and Targeted Investment"
+theme: education
+core_claim: >
+  The achievement gap between Auckland's high- and low-deprivation
+  schools is primarily a resourcing problem; higher per-pupil investment
+  in high-need schools — more teachers, smaller class sizes, specialist
+  literacy and learning support — would close the gap. The current
+  decile-based funding model underestimates the true cost differential
+  of educating students with multiple disadvantages.
+flagship_moves:
+  - "Increase per-pupil funding in Auckland decile 1-3 schools by 50% to reach effective parity with high-decile schools."
+  - "Fund specialist literacy and numeracy coaches in all South and West Auckland primary schools."
+  - "Establish teacher retention incentives (salary supplements, housing assistance) for experienced teachers in high-need Auckland schools."
+tensions:
+  - >
+    Per-pupil funding increases require a sustained fiscal commitment
+    that is hard to protect across political cycles; funding uplifts
+    can be reversed when budgets tighten.
+  - >
+    Resourcing alone does not address attendance; a well-resourced
+    school that 40% of students are not attending cannot deliver
+    the expected outcomes.
+addresses:
+  - problem.auckland.education.achievement
+interventions:
+  - description: >
+      Increase operational funding for Auckland decile 1-3 schools by
+      50% per pupil with ring-fenced allocation to literacy/numeracy
+      support staff and class size reduction.
+    state_variable: "ncea_attainment_maori_pacific"
+    constraint_relaxed: "Per-pupil resourcing deficit in high-deprivation schools"
+    expected_sign: "+"
+  - description: >
+      Fund housing assistance (rental supplement of $200/week) for
+      experienced teachers committing to 3+ years at decile 1-3
+      Auckland schools.
+    state_variable: "teacher_retention_rate_high_need_schools"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.attendance_and_engagement
+applicable_in:
+  - auckland

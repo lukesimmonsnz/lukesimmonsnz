@@ -1,0 +1,43 @@
+id: camp.auckland.environment.urban_greening_for_cooling
+name: "Urban greening for heat reduction"
+theme: environment
+core_claim: >
+  The most effective, co-benefit-rich intervention for urban heat is
+  increasing tree canopy cover and permeable vegetated surfaces in
+  heat-exposed areas. Tree canopy provides shade that reduces surface
+  and ambient temperatures, improves air quality, reduces stormwater
+  runoff, and improves resident wellbeing. Prioritising canopy
+  investment in high-deprivation, low-canopy suburbs addresses both
+  the heat inequity and the biodiversity deficit simultaneously.
+flagship_moves:
+  - "Target urban tree canopy investment in the 20 suburbs with the lowest current canopy cover, all of which map onto high deprivation, with funding at $2,000 per tree including 3-year aftercare"
+  - "Mandate a 15% green coverage ratio (trees, green roofs, planted walls) for all new commercial developments in identified heat island zones"
+  - "Convert road reserve grass verges to tree-lined boulevards on all arterials in high-heat-risk suburbs over 10 years"
+tensions:
+  - >
+    Large tree planting in existing residential streetscapes can conflict
+    with underground services and generate objections from adjacent property
+    owners about leaf litter, root damage, and shade to solar panels.
+  - >
+    Green roofs and planted walls require structural support and
+    ongoing maintenance; they add significant cost to commercial
+    developments and are difficult to retrofit on existing buildings.
+addresses:
+  - problem.auckland.environment.urban_heat
+interventions:
+  - description: >
+      100,000 canopy trees in the 20 lowest-canopy Auckland suburbs
+      over 5 years, with professional planting and guaranteed 3-year
+      aftercare, targeting 20% canopy cover in each area.
+    state_variable: "urban_tree_canopy_cover"
+    constraint_relaxed: "chronic under-investment in canopy in high-deprivation areas"
+    expected_sign: "+"
+  - description: >
+      15% green coverage requirement for all new commercial development
+      floor plates >500m² in identified urban heat island zones.
+    state_variable: "urban_heat_index"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.environment.cool_surfaces_standards
+applicable_in:
+  - auckland

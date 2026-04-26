@@ -1,0 +1,43 @@
+id: camp.auckland.climate.flood_infrastructure_investment
+name: "Stormwater and Flood Infrastructure Investment"
+theme: climate-adaptation
+core_claim: >
+  Auckland's flood risk can be substantially reduced by upgrading
+  stormwater infrastructure to future-climate design standards;
+  the January 2023 event demonstrated that the current infrastructure
+  cannot handle projected precipitation intensification. Investment
+  now — while properties still have value and infrastructure is
+  functional — is cheaper than emergency response and remediation
+  after repeated flood events.
+flagship_moves:
+  - "Accelerate the Auckland stormwater upgrade programme to future-climate 1-in-100-year design standard."
+  - "Prioritise flood protection infrastructure in South Auckland flood-prone areas first."
+  - "Fund a repetitive flood loss buyout programme for the 500 highest-frequency flood-affected Auckland properties."
+tensions:
+  - >
+    Stormwater infrastructure upgrade at the required scale ($3-5B)
+    competes with housing, transport, and other capital needs within
+    Auckland's constrained fiscal envelope.
+  - >
+    Infrastructure investment in areas facing long-run uninhabitability
+    may strand capital; the right answer in some locations is managed
+    retreat, not protection.
+addresses:
+  - problem.auckland.climate.flood_resilience
+interventions:
+  - description: >
+      Commit $500M over 5 years to Auckland stormwater upgrades in
+      the highest-exposure catchments, prioritising South Auckland
+      and Tamaki Estuary areas.
+    state_variable: "flood_event_frequency"
+    constraint_relaxed: "Infrastructure design standard deficit relative to future climate"
+    expected_sign: "-"
+  - description: >
+      Fund voluntary buyouts for the 500 Auckland properties with
+      three or more flood events since 2017 at 100% replacement value.
+    state_variable: "repetitive_flood_loss_property_count"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.climate.risk_disclosure_and_market
+applicable_in:
+  - auckland

@@ -1,7 +1,7 @@
 # Architecture
 
 <!-- auto:meta:begin -->
-**Updated:** 2026-04-25
+**Updated:** 2026-04-26
 **Blog posts:** 4 · **Auckland entities:** 69 · **Auckland generated pages:** 5 · **URL rules:** 42
 <!-- auto:meta:end -->
 

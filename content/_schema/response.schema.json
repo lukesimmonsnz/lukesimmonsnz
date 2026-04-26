@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/response.schema.json",
+  "title": "Response",
+  "description": "An existing or proposed policy or programme response to ≥1 Problems. Migrated from content/auckland/schema/response.schema.json. Structural changes: (1) actor (sector enum, 7-value) retained; actor_id added as optional typed Actor reference — both coexist per ratified decision §5.7 (sector is an analytical typology for rollups; actor_id is a referent); (2) applies_in added (E_applies_in, Response → Region) — uniform with Camp's applicable_in/efficacy_in; (3) evidence_ids → claim_ids (E_evidenced_by); (4) source_ids removed (Claim-mediated per P3 ratification); (5) theme added. Response.actor sector enum is response_sector_typology_v1.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "actor", "status", "addresses"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^response\\.[a-z0-9_.]+$"
+    },
+    "name": {"type": "string"},
+    "theme": {"$ref": "aotearoa://schema/theme.schema.json"},
+    "description": {"type": "string"},
+    "actor": {
+      "description": "Sector typology of the responding actor (response_sector_typology_v1). Used for cross-region 'who responds' rollups. Separate from actor_id.",
+      "enum": [
+        "crown",
+        "council",
+        "ccos",
+        "iwi",
+        "market",
+        "community",
+        "third-sector"
+      ]
+    },
+    "actor_id": {
+      "description": "Optional typed reference to a specific Actor entity. Supplements the sector enum (ratified §5.7). Null when no typed Actor entity exists for the responding organisation.",
+      "type": ["string", "null"],
+      "pattern": "^actor\\."
+    },
+    "status": {
+      "enum": ["active", "proposed", "retired", "modified"]
+    },
+    "year_started": {"type": ["integer", "null"]},
+    "year_ended": {"type": ["integer", "null"]},
+    "addresses": {
+      "description": "Problems this Response targets. ≥1 required. Materialises to E_addresses.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^problem\\."
+      },
+      "minItems": 1
+    },
+    "applies_in": {
+      "description": "Regions where this Response applies. Materialises to E_applies_in. Absent implies national unless actor.governs constrains scope.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "uniqueItems": true
+    },
+    "claim_ids": {
+      "description": "Claims evidencing this Response. Materialises to E_evidenced_by.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^claim\\."
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+id: camp.auckland.education.living_cost_support
+name: "Auckland Living Cost Support for Tertiary Students"
+theme: education
+core_claim: >
+  The primary barrier to Maori and Pacific tertiary completion in
+  Auckland is financial; housing and living costs consume study time
+  through forced paid work. Auckland-specific student allowance
+  supplements calibrated to Auckland rental costs would reduce dropout
+  rates at lower fiscal cost than the long-run social cost of
+  non-completion. Universal free tertiary tuition is insufficient
+  without addressing the living cost gap.
+flagship_moves:
+  - "Introduce an Auckland Cost of Living Supplement to student allowances of $150/week for Auckland-enrolled students from low-income families."
+  - "Expand student accommodation guarantees at Auckland University and AUT for first-year students from high-deprivation Auckland areas."
+  - "Fund targeted bursaries for Maori and Pacific students in high-demand fields (health, engineering, construction) to incentivise completion."
+tensions:
+  - >
+    Auckland-specific allowance supplements create a geographic
+    funding disparity; students in other cities face different cost
+    pressures and the equity logic of Auckland-specific supplements
+    is contestable.
+  - >
+    Living cost support addresses the symptom (financial stress)
+    rather than the cause (Auckland housing unaffordability); without
+    housing cost reduction, the supplement merely tracks rental
+    inflation.
+addresses:
+  - problem.auckland.education.tertiary_access
+interventions:
+  - description: >
+      Introduce a $150/week Auckland cost of living supplement to
+      student allowances for students enrolled at Auckland tertiary
+      institutions from NZDep decile 8-10 backgrounds.
+    state_variable: "tertiary_completion_rate_maori_pacific"
+    constraint_relaxed: "Gap between student allowance and Auckland rental cost"
+    expected_sign: "+"
+  - description: >
+      Fund 500 targeted completion bursaries of $5,000 per year for
+      Maori and Pacific students in health, engineering, and
+      construction programmes at Auckland institutions.
+    state_variable: "skills_shortage_fields_enrolment"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.labour_market_aligned_tertiary
+applicable_in:
+  - auckland

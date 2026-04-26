@@ -1,0 +1,15 @@
+id: source.stats_nz_building_consents_2023
+title: "Building Consents Issued: December 2023"
+author: null
+publisher: "Stats NZ | Tatauranga Aotearoa"
+year: 2023
+url: "https://www.stats.govt.nz/information-releases/building-consents-issued-december-2023"
+type: primary-data
+credibility: official
+geo_granularity:
+  - auckland
+  - nz
+notes: >
+  Monthly release; the December 2023 edition covers annual consent totals for
+  FY2023. Auckland consent volumes post-NPS-UD (2021) are the primary data
+  point supporting the upzoning-response claim.

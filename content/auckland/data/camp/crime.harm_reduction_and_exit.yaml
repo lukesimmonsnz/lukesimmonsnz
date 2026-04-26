@@ -1,0 +1,45 @@
+id: camp.auckland.crime.harm_reduction_and_exit
+name: "Harm Reduction, Drug Reform, and Gang Exit Pathways"
+theme: crime
+core_claim: >
+  Organised crime in Auckland is sustained by drug prohibition and
+  deprivation; enforcement cannot disrupt an industry with this level
+  of demand and margin. Reducing harm requires treating drug use as a
+  health issue, investing in gang exit programmes, and addressing the
+  economic conditions that make gang membership rational. Drug law reform
+  would shift revenue from organised crime to regulated businesses while
+  reducing criminal justice costs.
+flagship_moves:
+  - "Expand residential and community drug treatment capacity in South and West Auckland by 50%."
+  - "Fund gang exit programmes with employment and housing support as off-ramps from organised crime."
+  - "Commission independent review of drug scheduling and consider decriminalisation of personal possession."
+tensions:
+  - >
+    Drug law reform is politically constrained; incremental harm
+    reduction measures (treatment, naloxone, needle exchanges) are
+    more achievable but do not address the supply-side organised crime
+    revenue base.
+  - >
+    Gang exit programmes require sustained multi-year investment; the
+    same gang member may access an exit programme and return to gang
+    activity multiple times before leaving permanently.
+addresses:
+  - problem.auckland.crime.organised_crime
+interventions:
+  - description: >
+      Fund 400 additional residential drug treatment places in Auckland
+      with priority access for methamphetamine-dependent parents with
+      children in care.
+    state_variable: "meth_harm_index"
+    constraint_relaxed: "Treatment capacity gap in South and West Auckland"
+    expected_sign: "-"
+  - description: >
+      Establish a dedicated Auckland gang exit programme with employment
+      partners, housing guarantee, and 2-year case management for
+      50 participants per year.
+    state_variable: "gang_membership_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.crime.organised_crime_suppression
+applicable_in:
+  - auckland

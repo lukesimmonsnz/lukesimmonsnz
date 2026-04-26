@@ -1,0 +1,45 @@
+id: camp.auckland.environment.cool_surfaces_standards
+name: "Cool surfaces and building standards"
+theme: environment
+core_claim: >
+  Building codes and road construction standards can mandate light-coloured
+  or high-albedo surfaces that reflect rather than absorb solar radiation,
+  reducing surface and ambient temperatures in urban areas without
+  requiring ongoing maintenance or water. Cool roofs, light-coloured
+  pavements, and green roofs embedded in building standards deliver
+  cumulative heat reduction as the urban building stock turns over.
+flagship_moves:
+  - "Amend the Building Code to require minimum solar reflectance index of 65 for all new flat or low-slope commercial and residential roofs in Auckland"
+  - "Specify light-coloured aggregate or permeable paving for all new Council-funded car parks and road surfaces in heat-exposed areas"
+  - "Require a heat island impact assessment for all major urban redevelopment consents above 5,000m² gross floor area"
+tensions:
+  - >
+    Cool roofs reduce heating energy requirements in summer but can
+    increase them in winter in Auckland's mild climate; the net
+    energy benefit depends on the balance of heating and cooling
+    demand, which varies by building type and occupancy.
+  - >
+    Building code changes apply only to new construction; with a
+    building stock turnover rate of ~1% per year, the full benefit
+    materialises over 50–100 years rather than within a political cycle.
+addresses:
+  - problem.auckland.environment.urban_heat
+interventions:
+  - description: >
+      Building Code amendment requiring SRI ≥65 on new flat roofs
+      in Auckland urban areas, applying to ~3,000 new commercial
+      buildings per year and reducing rooftop surface temperatures
+      by an estimated 20–30°C.
+    state_variable: "urban_heat_index"
+    constraint_relaxed: "dark roof standard contributing to urban heat absorption"
+    expected_sign: "-"
+  - description: >
+      Heat island impact assessment required for all development
+      consents >5,000m² GFA, identifying and requiring mitigation
+      of significant heat generation.
+    state_variable: "urban_heat_index"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.environment.urban_greening_for_cooling
+applicable_in:
+  - auckland

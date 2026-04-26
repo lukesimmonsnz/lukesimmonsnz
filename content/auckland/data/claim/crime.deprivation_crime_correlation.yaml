@@ -1,0 +1,21 @@
+id: claim.auckland.crime.deprivation_crime_correlation
+statement: >
+  Crime victimisation and offending in Auckland are strongly correlated
+  with the NZDep deprivation index; areas in the highest deprivation
+  decile have violent crime rates three to four times those in the lowest
+  deprivation decile, implicating poverty and housing instability as
+  structural antecedents.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nz_police_recorded_crime_2023
+  - source.ministry_of_justice_victimisation_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

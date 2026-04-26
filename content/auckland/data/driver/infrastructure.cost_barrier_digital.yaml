@@ -1,0 +1,20 @@
+id: driver.auckland.infrastructure.cost_barrier_digital
+name: "Broadband cost as a barrier to digital access"
+description: >
+  Even where fibre infrastructure exists, a significant share of
+  low-income Auckland households cannot afford broadband plans. Retail
+  pricing in New Zealand reflects the cost of building fibre to lower-
+  density areas and the limited competition among retail service providers
+  on the fibre wholesale platform. The absence of a social tariff —
+  a subsidised plan for households in receipt of income support — means
+  the digital infrastructure investment does not translate to universal
+  access.
+theme: infrastructure
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.infrastructure.digital_connectivity
+claim_ids:
+  - claim.auckland.infrastructure.digital_divide_income

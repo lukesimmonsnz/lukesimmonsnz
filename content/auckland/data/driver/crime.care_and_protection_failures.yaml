@@ -1,0 +1,18 @@
+id: driver.auckland.crime.care_and_protection_failures
+name: "Care and Protection System Failures"
+description: >
+  Children with care and protection histories are massively overrepresented
+  in youth justice; residential care placements, particularly in group
+  homes, have high peer-contagion effects. Oranga Tamariki's capacity to
+  manage complex adolescent cases in community settings is constrained,
+  defaulting to residential options that increase reoffending risk.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.crime.youth_offending
+claim_ids:
+  - claim.auckland.crime.maori_youth_overrepresentation
+  - claim.auckland.crime.youth_reoffending_rate

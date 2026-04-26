@@ -1,0 +1,19 @@
+id: driver.auckland.infrastructure.transmission_dependency
+name: "Transmission-dependent electricity supply"
+description: >
+  Auckland generates little of its own electricity, relying on long
+  transmission lines from Waikato geothermal and hydro, and Northland
+  gas peakers. This transmission dependency creates N-1 and N-2 failure
+  risks that are difficult to eliminate without either significant new
+  local generation or major grid investment. Battery storage, grid-scale
+  solar, and distributed generation can reduce but not eliminate the
+  dependency within a 10-year horizon.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.infrastructure.energy_resilience
+claim_ids:
+  - claim.auckland.infrastructure.auckland_grid_vulnerability

@@ -1,0 +1,46 @@
+id: camp.auckland.infrastructure.distributed_energy_and_storage
+name: "Distributed generation and battery storage"
+theme: infrastructure
+core_claim: >
+  Transmission risk and electrification demand can both be addressed
+  by building generation and storage close to Auckland's load centres:
+  rooftop solar, grid-scale battery storage at grid injection points,
+  and demand-side management that shifts EV charging to off-peak periods.
+  Distributed resilience is inherently more robust than centralised
+  supply — a battery at the substation level cannot be knocked out by
+  a single transmission fault.
+flagship_moves:
+  - "Mandate solar-ready construction standards for all new residential and commercial buildings, with pre-wiring for battery storage"
+  - "Fund grid-scale battery storage (500 MW by 2030) at the major Auckland grid exit points to provide 4-hour resilience against transmission outages"
+  - "Deploy smart EV charging management across the Auckland network, shifting 80% of overnight charging to off-peak windows to flatten the demand curve"
+tensions:
+  - >
+    Rooftop solar primarily benefits owner-occupiers with suitable
+    roof orientation and sufficient income to invest; renters and
+    apartment dwellers — who have the highest need for energy cost
+    reduction — are largely excluded from direct solar benefits.
+  - >
+    Battery storage at current costs is expensive per unit of resilience;
+    the economics improve rapidly as battery prices fall but the
+    investment case for 2025 deployment is marginal without subsidy.
+addresses:
+  - problem.auckland.infrastructure.energy_resilience
+interventions:
+  - description: >
+      Grid-scale battery storage programme: 500 MW / 2 GWh installed
+      at the five largest Auckland grid exit points by 2030, providing
+      4-hour resilience against N-1 transmission outage.
+    state_variable: "grid_resilience_hours"
+    constraint_relaxed: "transmission dependency for Auckland electricity supply"
+    expected_sign: "+"
+  - description: >
+      Smart EV charging standard: all new EV chargers installed from
+      2026 must be smart-capable and enrolled in the AT demand-
+      management programme, shifting off-peak charging to reduce
+      coincident peak demand.
+    state_variable: "peak_electricity_demand"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.infrastructure.grid_investment_programme
+applicable_in:
+  - auckland

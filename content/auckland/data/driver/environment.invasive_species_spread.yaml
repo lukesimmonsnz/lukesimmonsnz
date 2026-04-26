@@ -1,0 +1,21 @@
+id: driver.auckland.environment.invasive_species_spread
+name: "Invasive plant and animal species spread"
+description: >
+  Beyond mammalian predators, Auckland's native ecosystems face pressure
+  from invasive plant species (tradescantia, climbing asparagus, moth
+  plant, woolly nightshade) that suppress native regeneration in bush
+  remnants and along stream margins, and from invasive animals (feral
+  cats, hedgehogs, rainbow lorikeets). Kauri dieback, spread primarily
+  by soil movement on boots and equipment, is an existential threat to
+  kauri-dominated ecosystems. Managing invasive species requires
+  sustained effort across both public and private land.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.environment.biodiversity
+claim_ids:
+  - claim.auckland.environment.native_species_decline
+  - claim.auckland.environment.habitat_fragmentation

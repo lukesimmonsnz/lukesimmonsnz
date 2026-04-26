@@ -1,0 +1,12 @@
+id: source.tomtom_traffic_index_2023
+title: "TomTom Traffic Index 2023"
+type: primary-data
+url: "https://www.tomtom.com/traffic-index/"
+year: 2023
+publisher: "TomTom"
+notes: >
+  Annual ranking of urban congestion in cities globally, measuring average
+  time lost to congestion per year and congestion level as a percentage
+  increase over free-flow travel times. Based on GPS probe data from
+  vehicles. Widely cited for international city comparisons; methodology
+  is proprietary but consistent across years.

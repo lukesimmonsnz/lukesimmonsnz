@@ -1,0 +1,17 @@
+id: driver.auckland.crime.concentrated_deprivation
+name: "Concentrated Deprivation as Crime Driver"
+description: >
+  Spatial concentration of poverty, overcrowded housing, unemployment,
+  and limited community infrastructure in South and West Auckland creates
+  conditions where social controls are weakened and legitimate economic
+  pathways are constrained. Both victimisation and offending rates track
+  deprivation closely across Auckland's suburbs.
+theme: crime
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.crime.victimisation
+claim_ids:
+  - claim.auckland.crime.deprivation_crime_correlation

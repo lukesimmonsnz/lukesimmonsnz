@@ -1,0 +1,17 @@
+id: driver.auckland.education.ece_workforce_quality
+name: "ECE Workforce Quality and Pay Gap"
+description: >
+  ECE teacher pay is substantially below primary school teacher pay for
+  equivalent qualifications; the resulting workforce quality and
+  retention gradient means that high-deprivation Auckland ECE centres
+  have higher staff turnover and lower proportions of qualified teachers
+  than centres in affluent suburbs.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.education.early_childhood
+claim_ids:
+  - claim.auckland.education.ece_quality_gradient

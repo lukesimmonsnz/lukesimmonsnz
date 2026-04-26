@@ -1,0 +1,19 @@
+id: claim.auckland.crime.maori_youth_overrepresentation
+statement: >
+  Maori youth make up approximately 65-70% of youth justice proceedings
+  nationally despite being approximately 26% of the youth population;
+  in Auckland's South and West districts, Maori and Pacific youth
+  account for over 80% of family group conference referrals.
+value: null
+unit: null
+time_period: "2022-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.oranga_tamariki_youth_justice_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.maori_youth_offending_index_v1

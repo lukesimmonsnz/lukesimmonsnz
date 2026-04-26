@@ -1,0 +1,45 @@
+id: camp.auckland.education.vocational_pathway_investment
+name: "Vocational Pathway Investment and Industry Partnership"
+theme: education
+core_claim: >
+  Auckland's economy needs both university graduates and skilled
+  tradespeople; the current system produces far more of the former
+  pathway than the latter in terms of support and prestige. Investing
+  in vocational and trades pathways in secondary schools — dual
+  enrolment with ITPs, school-based apprenticeships, and industry
+  partnerships — gives non-university-bound students a structured
+  transition to viable employment and reduces NEET rates.
+flagship_moves:
+  - "Fund dual enrolment between Auckland secondary schools and ITPs for years 12-13 vocational learners."
+  - "Establish employer-school partnership programmes in South and West Auckland trades and services industries."
+  - "Establish a Gateway programme expansion to all Auckland decile 1-5 secondary schools."
+tensions:
+  - >
+    Vocational tracking risks concentrating Maori and Pacific students
+    in lower-status pathways rather than addressing the academic
+    achievement deficit that limits university access; it must be
+    genuinely a parallel pathway, not a consolation route.
+  - >
+    ITP capacity in Auckland is constrained; dual enrolment programmes
+    require ITP places that are currently at capacity in high-demand
+    trades like construction and electrical.
+addresses:
+  - problem.auckland.education.secondary_transition
+interventions:
+  - description: >
+      Fund dual enrolment for 2,000 Auckland secondary school students
+      per year in ITP trades programmes, with transport support and
+      a $1,000 completion incentive.
+    state_variable: "neet_rate_maori_pacific"
+    constraint_relaxed: "Absence of structured vocational pathway for non-university-bound students"
+    expected_sign: "-"
+  - description: >
+      Expand Gateway employer placement programme to all Auckland
+      decile 1-5 secondary schools with 10 placements per school
+      per year and employer incentive payments.
+    state_variable: "school_to_employment_transition_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.academic_excellence_focus
+applicable_in:
+  - auckland

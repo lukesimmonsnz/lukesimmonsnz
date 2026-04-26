@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/pattern.schema.json",
+  "title": "Pattern",
+  "description": "A structural entity that captures a recurring phenomenon observed across ≥2 regions (P8 — type-defining minimum). National rollup projections on /research/nz/ are rendered from Pattern nodes; the rendering-layer threshold (≥10 regions) is NOT encoded here per ratified decision §5.6. A node manifesting in only one region is an Instance (a Claim), not a Pattern.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "theme",
+    "summary",
+    "manifests_in",
+    "claim_ids",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pattern\\.[a-z0-9_.]+$"
+    },
+    "title": {"type": "string"},
+    "theme": {"$ref": "aotearoa://schema/theme.schema.json"},
+    "summary": {"type": "string"},
+    "manifests_in": {
+      "description": "Regions where this Pattern is observed. ≥2 required (P8 intra-entity check, JSON-Schema-expressible). Materialises to E_manifests_in.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "minItems": 2,
+      "uniqueItems": true
+    },
+    "claim_ids": {
+      "description": "Claims evidencing this Pattern. ≥1 required (P8). Materialises to E_evidenced_by.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^claim\\."
+      },
+      "minItems": 1
+    },
+    "narrative": {
+      "description": "Structured narrative sections rendered on the Pattern page.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["heading", "body"],
+        "properties": {
+          "heading": {"type": "string"},
+          "body": {"type": "string"},
+          "figure": {
+            "description": "Figure identifier cross-referenced in body (P15 applies if figures list is present).",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "caption"],
+        "properties": {
+          "id": {"type": "string"},
+          "caption": {"type": "string"},
+          "image": {"type": "string"},
+          "alt": {"type": "string"},
+          "status": {"enum": ["placeholder", "draft", "final"]}
+        }
+      }
+    },
+    "status": {
+      "enum": ["draft-v0", "draft", "review", "published"]
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

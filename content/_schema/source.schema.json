@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/source.schema.json",
+  "title": "Source",
+  "description": "A bibliographic entry. Cited by Claim via the cites edge (YAML field source_ids on Claim, materialised to E_cites at graph build). Migrated from content/auckland/schema/source.schema.json; extended with geo_granularity for multi-region coverage annotation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "type"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^source\\.[a-z0-9_.]+$"
+    },
+    "title": {"type": "string"},
+    "author": {"type": ["string", "null"]},
+    "publisher": {"type": ["string", "null"]},
+    "year": {"type": ["integer", "null"]},
+    "url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "type": {
+      "description": "Source typology (source_typology_v1). Controls credibility floor in lint.",
+      "enum": [
+        "primary-data",
+        "primary-legislation",
+        "academic",
+        "government-report",
+        "news-media",
+        "commentary",
+        "iwi-publication",
+        "tribunal",
+        "technical-standard"
+      ]
+    },
+    "credibility": {
+      "description": "Provenance tier (source_credibility_tier_v1).",
+      "enum": [
+        "peer-reviewed",
+        "official",
+        "reputable",
+        "partisan",
+        "unverified"
+      ]
+    },
+    "geo_granularity": {
+      "description": "Set of Region values this source covers spatially. Absent means coverage is unspecified or global. Used at graph-build time to flag scope mismatches between a Claim's scoped_to and its cited Sources.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "uniqueItems": true
+    },
+    "notes": {"type": ["string", "null"]}
+  }
+}

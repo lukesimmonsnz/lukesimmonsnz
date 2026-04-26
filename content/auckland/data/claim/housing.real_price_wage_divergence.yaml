@@ -1,0 +1,26 @@
+id: claim.auckland.housing.real_price_wage_divergence
+statement: >
+  Between 1985 and 2022, Auckland dwelling prices rose roughly fivefold
+  in real terms while real median wages roughly doubled. The affordability
+  deterioration over this period is primarily a price phenomenon rather than
+  a wage phenomenon: income growth has not stagnated but has been
+  systematically outpaced by dwelling price inflation driven by land
+  scarcity, tax advantage, and credit expansion.
+value: null
+unit: null
+time_period: "1985-2022"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.demographia_2024
+  - source.mhud_housing_aotearoa_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The 5× real price figure is a commonly-cited approximation; exact multiple
+  varies by data series and deflator choice. Worth confirming against current
+  QV and RBNZ series before publication.

@@ -1,0 +1,18 @@
+id: driver.auckland.health.health_workforce_shortage
+name: "Health Workforce Shortage and Maldistribution"
+description: >
+  Auckland faces acute shortages of GPs, nurses, and allied health
+  professionals despite being New Zealand's largest city; the shortage
+  is compounded by maldistribution — private practices concentrate in
+  high-income suburbs while high-deprivation areas are underserved.
+  International recruitment fills gaps but does not address the
+  systemic training pipeline deficit.
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.health.system_access
+claim_ids:
+  - claim.auckland.health.maori_pacific_amenable_mortality

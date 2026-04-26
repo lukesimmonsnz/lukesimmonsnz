@@ -1,0 +1,7 @@
+id: methodology.homeownership_rate_v1
+name: "Homeownership Rate"
+version: 1
+kind: measurement
+applies_to: [Claim]
+discharged_by: "json_schema"
+description: "Share of occupied dwellings that are owner-occupied; breakdowns by ethnicity, age cohort, or income quintile from census microdata."

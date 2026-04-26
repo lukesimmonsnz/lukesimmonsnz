@@ -1,0 +1,20 @@
+id: driver.auckland.climate.car_dependent_emissions
+name: "Car Dependency as Primary Emissions Driver"
+description: >
+  Auckland's car-dependent urban form produces transport emissions
+  that are structurally difficult to reduce without either changing
+  the urban form (longer-term) or accelerating EV transition (near-
+  term). The dominance of private vehicle trips (80% mode share)
+  means that transport decarbonisation in Auckland requires either
+  rapid EV fleet turnover or a modal shift that the current transit
+  network cannot yet support.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.climate.transition_economy
+claim_ids:
+  - claim.auckland.climate.auckland_emissions_profile
+  - claim.auckland.climate.ev_transition_equity

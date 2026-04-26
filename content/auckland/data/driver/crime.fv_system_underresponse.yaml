@@ -1,0 +1,18 @@
+id: driver.auckland.crime.fv_system_underresponse
+name: "System Underresponse and Victim Entrapment"
+description: >
+  Family violence is chronically under-reported and under-prosecuted;
+  victims face housing, financial, and child custody barriers to leaving.
+  Perpetrator accountability systems (protection orders, bail conditions)
+  are inconsistently enforced. The result is a cycle of repeat incidents
+  at the same address with escalating severity.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.crime.family_violence
+claim_ids:
+  - claim.auckland.crime.fv_police_call_rate
+  - claim.auckland.crime.fv_intergenerational_cycle

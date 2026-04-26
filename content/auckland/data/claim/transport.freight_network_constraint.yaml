@@ -1,0 +1,27 @@
+id: claim.auckland.transport.freight_network_constraint
+statement: >
+  Auckland's freight network faces compounding constraints: the Ports of
+  Auckland occupy prime CBD-adjacent waterfront, creating truck-heavy
+  freight movements through inner-city streets; there is no dedicated
+  freight rail connection from the Port to the inland distribution network;
+  and the Southern and Western motorway corridors carry a mix of commuter
+  and freight traffic, with no grade-separated freight alternative.
+  These constraints impose recurring delay costs on freight operators
+  and contribute to peak-hour congestion on shared corridors.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_dev_strategy_2022
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The Ports of Auckland relocation debate is ongoing. Claims reflect the
+  current operational context; a port relocation decision would materially
+  change the freight network dynamics.

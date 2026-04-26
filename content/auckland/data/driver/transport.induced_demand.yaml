@@ -1,0 +1,22 @@
+id: driver.auckland.transport.induced_demand
+name: "Induced demand from road capacity expansion"
+description: >
+  Adding road capacity in a congested network generates new vehicle trips
+  through a combination of route switching, time-of-day shifting, mode
+  switching from PT, and land use changes that increase trip generation.
+  The fundamental law of road congestion (Duranton & Turner, 2011) holds
+  that vehicle kilometres travelled grow proportionally with lane kilometres
+  in the long run, meaning road expansion does not reduce congestion but
+  redistributes it temporally and spatially until a new equilibrium is
+  reached. Auckland's congestion history is consistent with this dynamic:
+  successive motorway expansions have not durably reduced peak travel times.
+theme: transport
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.transport.congestion
+claim_ids:
+  - claim.auckland.transport.induced_demand_evidence
+  - claim.auckland.transport.congestion_rank_international

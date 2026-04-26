@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/ibis_node.schema.json",
+  "title": "IbisNode",
+  "description": "A node in the IBIS (Issue-Based Information System) argumentation graph. Structural entity — first-class, ratified §5.3 (CLAUDE.md §5). Kind enum is the intra-entity gate; parent-typing rules (P12) are cross-entity Python invariants (Layer 1c). P13 (position pluralism ≥2 per issue) is a soft Python warning. Weasel-verb neutrality lint on 'position' text is PI-tunable intra-entity: PI to finalise banned-verb regex before Layer 1c.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "kind", "text"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ibis\\.[a-z0-9_.]+$"
+    },
+    "kind": {
+      "description": "IBIS node type. Parent-typing invariant P12 requires: position → parent is issue; argument_pro/argument_con → parent is position; issue → parent is issue or absent (root). Enforced by Python (Layer 1c).",
+      "enum": ["issue", "position", "argument_pro", "argument_con"]
+    },
+    "text": {
+      "description": "Content of this IBIS node. For 'position' kind, must not contain banned weasel verbs (intra-entity lint — PI to finalise regex pattern before Layer 1c).",
+      "type": "string"
+    },
+    "parent_id": {
+      "description": "ID of the parent IbisNode. Absent for root issues. Materialises to E_parent. Parent-typing (P12) enforced in Python.",
+      "type": ["string", "null"],
+      "pattern": "^ibis\\."
+    },
+    "supports_id": {
+      "description": "For kind=argument_pro: ID of the Position this argument supports. Materialises to E_supports.",
+      "type": ["string", "null"],
+      "pattern": "^ibis\\."
+    },
+    "contradicts_id": {
+      "description": "For kind=argument_con: ID of the Position this argument contradicts. Materialises to E_contradicts.",
+      "type": ["string", "null"],
+      "pattern": "^ibis\\."
+    },
+    "problem_context": {
+      "description": "Optional Problem ID this IBIS subgraph is anchored to. Enables per-Problem IBIS subgraph queries.",
+      "type": ["string", "null"],
+      "pattern": "^problem\\."
+    },
+    "claim_ids": {
+      "description": "Claims that substantiate this IBIS node (optional). Materialises to E_evidenced_by.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^claim\\."
+      }
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

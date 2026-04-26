@@ -1,0 +1,17 @@
+id: driver.auckland.crime.policing_resource_deficit
+name: "Policing Resource Deficit"
+description: >
+  Auckland's sworn officer-to-population ratio is low by international
+  standards; response time targets are routinely missed in high-crime
+  suburbs. Understaffing reduces deterrence, depresses reporting rates,
+  and shifts the burden of safety onto communities least equipped to bear
+  it.
+theme: crime
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.crime.victimisation
+claim_ids:
+  - claim.auckland.crime.police_workforce_gap

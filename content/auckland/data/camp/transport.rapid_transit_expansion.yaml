@@ -1,0 +1,45 @@
+id: camp.auckland.transport.rapid_transit_expansion
+name: "Rapid transit network expansion"
+theme: transport
+core_claim: >
+  Auckland's PT mode share cannot reach European or East Asian levels
+  without a rapid transit network that covers the whole urban area.
+  The City Rail Link doubles rail capacity, but the Northwest, North Shore
+  beyond Albany, and outer South remain unserved. Building out the rapid
+  transit network — Northwest Rapid Transit, the Harbour Crossing mass
+  transit option, and the Eastern Busway — creates the spine around
+  which frequency improvements and TOD can deliver lasting mode shift.
+flagship_moves:
+  - "Fund and accelerate the Northwest Rapid Transit corridor (City–Westgate–Kumeu) as the highest-priority unbuilt rapid transit extension"
+  - "Progress the Auckland Harbour Crossing with a mass transit option (light rail or additional rail tunnel) to replace the Northern Busway which will reach capacity"
+  - "Complete the Eastern Busway to Botany and extend to Manukau, closing the gap in the southeastern rapid transit network"
+tensions:
+  - >
+    Rapid transit capital costs are very high — each major corridor costs
+    $2–5 billion or more — and Crown/Council fiscal constraints mean
+    sequencing decisions necessarily leave parts of the network unserved
+    for decades. Building the network takes longer than political cycles.
+  - >
+    Without land use intensification along new corridors, rapid transit
+    investment may not generate the patronage required to justify capital
+    cost, producing underutilised infrastructure in low-density corridors.
+addresses:
+  - problem.auckland.transport.public_transport
+interventions:
+  - description: >
+      Fund Northwest Rapid Transit (light rail or dedicated busway,
+      Auckland–Westgate–Kumeu) in the 2024–2034 National Land Transport
+      Programme, targeting opening by 2034.
+    state_variable: "pt_mode_share"
+    constraint_relaxed: "absence of rapid transit west of the CBD"
+    expected_sign: "+"
+  - description: >
+      Implement frequency improvements on all existing rapid transit
+      services to ≤10 minute headways during all waking hours (6am–10pm)
+      as a precondition for the CRL opening, maximising the network effect.
+    state_variable: "mode_share_car"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.transport.fare_reform
+applicable_in:
+  - auckland

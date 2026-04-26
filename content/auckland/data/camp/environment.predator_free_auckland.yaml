@@ -1,0 +1,43 @@
+id: camp.auckland.environment.predator_free_auckland
+name: "Predator Free Auckland"
+theme: environment
+core_claim: >
+  Native biodiversity recovery requires eliminating introduced mammalian
+  predators across connected landscape-scale areas. Predator Free 2050
+  provides the national goal; Auckland can lead by funding a dense urban
+  trapping network, expanding fenced sanctuaries, and investing in
+  self-resetting trap technology that reduces the volunteer burden of
+  sustained predator control.
+flagship_moves:
+  - "Fund the Auckland predator-free trapping network to achieve full urban coverage — one trap per 50m in all areas — as a public works programme"
+  - "Expand fenced predator-free sanctuaries at Tāwharanui, Shakespear, and the Waitākere Ranges foothills to increase connected area under sustained management"
+  - "Invest in genetic biocontrol research (species-specific fertility suppressants) as the long-run technology pathway to mainland predator elimination"
+tensions:
+  - >
+    Community trapping networks depend on volunteer effort that is
+    geographically and demographically uneven; coverage degrades in
+    high-deprivation areas without funded professional maintenance.
+  - >
+    Genetic biocontrol is decades from deployment and raises ecological
+    risk questions that require careful regulatory and community
+    engagement before any mainland release.
+addresses:
+  - problem.auckland.environment.ecological_health
+interventions:
+  - description: >
+      Profesionally managed urban predator trapping network at 1 trap
+      per 50m urban coverage, targeting 90% reduction in rat captures
+      across inner Auckland within 3 years.
+    state_variable: "predator_density"
+    constraint_relaxed: "volunteer-dependent patchy trapping coverage"
+    expected_sign: "-"
+  - description: >
+      Expand Tāwharanui and Shakespear fenced sanctuary areas to
+      500 ha each, with associated translocations of kiwi, kōkako,
+      and tuatara.
+    state_variable: "native_species_population_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.environment.green_infrastructure_and_restoration
+applicable_in:
+  - auckland

@@ -1,0 +1,47 @@
+id: camp.auckland.inequality.universal_service_investment
+name: "Universal Service Investment as Equaliser"
+theme: inequality
+core_claim: >
+  Ethnic wealth gaps persist partly because public services (schools,
+  healthcare, early childhood education) are of lower quality in
+  high-deprivation areas where Maori and Pacific families are
+  concentrated. Universal high-quality service investment in these areas,
+  targeted by deprivation index rather than ethnicity, builds human
+  capital and credential access that narrows the occupational and pay gap
+  over a generation without the political contestation of ethnicity-based
+  policy.
+flagship_moves:
+  - "Fund universal early childhood education, healthcare, and tertiary access with quality uplift in high-deprivation areas."
+  - "Target deprivation-index funding (not ethnicity) for public investment to widen political coalition."
+  - "Credential recognition reforms and trade pathway expansion to reduce occupational segregation."
+tensions:
+  - >
+    Universal programmes dilute investment across all deprivation
+    regardless of root cause; Maori and Pacific families are more likely
+    to benefit but the ethnic dimension is not directly addressed,
+    meaning slower convergence.
+  - >
+    Deprivation-indexed funding is redistributive within the universal
+    system but requires sustained political will to maintain above-average
+    per-capita spending in South and West Auckland against suburban
+    equity arguments.
+addresses:
+  - problem.auckland.inequality.ethnic_wealth_gap
+interventions:
+  - description: >
+      Increase per-pupil funding in decile 1-3 Auckland schools by 40%
+      with accountability for teacher retention and specialist staffing
+      ratios, targeting the educational achievement gap.
+    state_variable: "ethnic_pay_gap"
+    constraint_relaxed: "Educational under-resourcing in high-deprivation schools"
+    expected_sign: "-"
+  - description: >
+      Expand free trades and vocational pathways in South and West
+      Auckland with employer partnerships, targeting Maori and Pacific
+      youth not in employment, education, or training.
+    state_variable: "occupational_segregation_index"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.inequality.treaty_based_redress
+applicable_in:
+  - auckland

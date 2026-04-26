@@ -1,0 +1,19 @@
+id: claim.auckland.economy.low_rd_investment
+statement: >
+  New Zealand business R&D investment as a share of GDP (approximately
+  0.7%) is less than half the OECD average (approximately 1.7%);
+  Auckland-based firms account for the majority of New Zealand's
+  R&D but are under-resourced relative to comparable city-regions
+  in Australia, Canada, and Northern Europe.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nzier_productivity_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []

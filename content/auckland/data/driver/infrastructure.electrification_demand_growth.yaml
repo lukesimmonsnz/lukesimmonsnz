@@ -1,0 +1,20 @@
+id: driver.auckland.infrastructure.electrification_demand_growth
+name: "Electrification-driven electricity demand growth"
+description: >
+  Decarbonisation of transport and heating — both policy priorities and
+  accelerating market trends — will substantially increase Auckland's
+  electricity demand. EV charging, heat pumps replacing gas boilers,
+  and electrification of industrial processes will add load to a grid
+  already operating with limited capacity headroom in Auckland. Without
+  proactive investment in local generation, grid reinforcement, and
+  demand management, electrification will stress network resilience and
+  create supply security risks.
+theme: infrastructure
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.infrastructure.energy_resilience
+claim_ids:
+  - claim.auckland.infrastructure.ev_and_electrification_demand

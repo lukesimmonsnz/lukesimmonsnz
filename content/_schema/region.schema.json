@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/region.schema.json",
+  "title": "Region",
+  "description": "Closed enum of spatial scopes. Tier taxonomy: RegionalCouncil ∪ TerritorialAuthority ∪ National. TerritorialAuthority values are deferred until ≥3 RegionalCouncil-tier regions are populated (CLAUDE.md §5, decision 2). PI to verify canonical slugs against the LINZ geographical-names registry before the Wellington proof run.",
+  "type": "string",
+  "enum": [
+    "northland",
+    "auckland",
+    "waikato",
+    "bay-of-plenty",
+    "gisborne",
+    "hawkes-bay",
+    "taranaki",
+    "manawatu-whanganui",
+    "wellington",
+    "tasman",
+    "nelson",
+    "marlborough",
+    "west-coast",
+    "canterbury",
+    "otago",
+    "southland",
+    "nz"
+  ],
+  "$defs": {
+    "RegionalCouncil": {
+      "description": "16 NZ regional councils (including four unitary authorities: Gisborne, Tasman, Nelson, Marlborough). Slug spellings are PI-tunable.",
+      "type": "string",
+      "enum": [
+        "northland",
+        "auckland",
+        "waikato",
+        "bay-of-plenty",
+        "gisborne",
+        "hawkes-bay",
+        "taranaki",
+        "manawatu-whanganui",
+        "wellington",
+        "tasman",
+        "nelson",
+        "marlborough",
+        "west-coast",
+        "canterbury",
+        "otago",
+        "southland"
+      ]
+    },
+    "TerritorialAuthority": {
+      "description": "67 NZ territorial authorities. Deferred until ≥3 RegionalCouncil-tier regions are populated. PI extends this list when activating TA-granularity data.",
+      "type": "string",
+      "enum": []
+    },
+    "National": {
+      "description": "National (all-NZ) scope.",
+      "type": "string",
+      "const": "nz"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+id: claim.auckland.economy.nz_productivity_gap
+statement: >
+  New Zealand's labour productivity is approximately 30-35% below
+  the OECD frontier (measured by GDP per hour worked); Auckland, as
+  the primary economic engine, has not closed this gap over two decades
+  despite periods of strong GDP growth. The gap is largest in traded
+  goods sectors and reflects low business R&D investment and slow
+  technology adoption.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nzier_productivity_2023
+  - source.treasury_lsf_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.labour_productivity_index_v1

@@ -1,0 +1,21 @@
+id: claim.auckland.housing.public_stock_deficit
+statement: >
+  New Zealand's public housing stock as a proportion of total dwellings
+  declined sharply following the 1990s sell-off and has not been restored
+  to the level required to house the lowest-income households unable to
+  access the private rental market; Kainga Ora's build programme has added
+  stock but has not closed the structural deficit against the scale of need.
+value: null
+unit: null
+time_period: "1990-2023"
+confidence: high
+verification_status: verified
+last_verified: "2026-04-01"
+source_ids:
+  - source.kinga_ora_annual_report_2023
+  - source.mhud_housing_aotearoa_2023
+scoped_to:
+  - nz
+national_assertion: false
+region_mentions: []
+notes: null

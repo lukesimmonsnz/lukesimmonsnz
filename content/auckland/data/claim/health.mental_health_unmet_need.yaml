@@ -1,0 +1,22 @@
+id: claim.auckland.health.mental_health_unmet_need
+statement: >
+  Specialist mental health services in Auckland are rationed to those
+  with severe and enduring illness; an estimated 80% of people with
+  moderate mental health conditions who seek referral are declined or
+  waitlisted. Community mental health team caseloads in Auckland's
+  district are among the highest in the country.
+value: 80
+unit: "percent declined or waitlisted"
+time_period: "2022-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.te_pou_mental_health_2023
+  - source.health_nz_annual_report_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.mental_health_service_rate_v1

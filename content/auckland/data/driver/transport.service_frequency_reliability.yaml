@@ -1,0 +1,22 @@
+id: driver.auckland.transport.service_frequency_reliability
+name: "PT service frequency and reliability gaps"
+description: >
+  Beyond the rapid transit spine, most Auckland bus services run at
+  headways of 15–30 minutes or more, particularly in the evenings and
+  on weekends. Services at these frequencies require passengers to
+  plan trips around timetables rather than turn up and go — a fundamental
+  barrier to PT adoption for discretionary trips. Service reliability
+  is further undermined by shared running in traffic on arterials without
+  bus priority, causing bus journey times to be both slow and unpredictable.
+  The combined effect of infrequent and unreliable services makes PT a
+  viable choice only for those with no alternative.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.transport.public_transport
+claim_ids:
+  - claim.auckland.transport.pt_patronage_recovery
+  - claim.auckland.transport.pt_fare_affordability

@@ -1,0 +1,42 @@
+id: camp.auckland.health.hospital_system_investment
+name: "Hospital System Investment and Specialist Capacity"
+theme: health
+core_claim: >
+  Auckland's hospital infrastructure is the binding constraint on health
+  outcomes; Middlemore and Auckland City Hospital are operating beyond
+  safe capacity. Capital investment in hospital infrastructure, specialist
+  training pipelines, and after-hours acute capacity is the primary lever
+  for improving health system performance. Primary care expansion without
+  hospital investment will not solve the capacity crisis.
+flagship_moves:
+  - "Accelerate Middlemore Hospital redevelopment to increase acute and ICU bed capacity."
+  - "Fund specialist training pipeline expansion (cardiology, oncology, psychiatry) with Auckland-specific retention incentives."
+  - "Establish a 24/7 urgent care network to absorb sub-acute ED presentations."
+tensions:
+  - >
+    Hospital capital investment takes years to deliver capacity; it
+    does not address the immediate primary care access deficit that
+    drives current ED demand.
+  - >
+    Specialist pipeline expansion is a national supply issue; Auckland
+    can fund training but cannot prevent trained specialists from
+    leaving for Australia or private practice.
+addresses:
+  - problem.auckland.health.system_access
+interventions:
+  - description: >
+      Commit capital funding for Middlemore Hospital Stage 2
+      redevelopment (350 additional beds, expanded ICU and ED) with
+      completion by 2030.
+    state_variable: "hospital_occupancy_rate"
+    constraint_relaxed: "Hospital bed capacity deficit at peak demand"
+    expected_sign: "-"
+  - description: >
+      Fund 10 Auckland-based urgent care centres (open 8am-10pm daily)
+      as a filter between GP-level and ED-level demand.
+    state_variable: "avoidable_ed_presentation_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.health.free_primary_care
+applicable_in:
+  - auckland

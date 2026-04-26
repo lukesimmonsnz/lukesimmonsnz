@@ -1,0 +1,22 @@
+id: claim.auckland.economy.local_govt_fiscal_gap
+statement: >
+  Auckland Council faces a structural fiscal gap between its
+  infrastructure obligations and its rating revenue base; the
+  combination of growth-driven capital expenditure requirements,
+  interest cost increases, and constraints on rates increases
+  (legislated and political) is projected to require either
+  significant service reductions or new revenue instruments.
+value: null
+unit: null
+time_period: "2023-2030"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.treasury_lsf_2023
+  - source.infrastructure_nz_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

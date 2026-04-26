@@ -1,0 +1,26 @@
+id: claim.auckland.infrastructure.fibre_coverage_gap
+statement: >
+  While fibre broadband reaches the majority of urban Auckland households,
+  significant coverage gaps remain in rural and peri-urban areas (Rodney,
+  Franklin, Waitākere Ranges townships), and uptake among low-income
+  urban households is substantially below the population average due to
+  cost barriers. Approximately 15–20% of Auckland households lack access
+  to or cannot afford reliable high-speed broadband, creating a digital
+  divide that disadvantages educational participation, remote work, and
+  access to digital government services.
+value: null
+unit: null
+time_period: "2022-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mbie_digital_connectivity_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The 15–20% estimate combines rural coverage gaps with urban non-uptake
+  due to cost. These are distinct problems requiring different interventions.

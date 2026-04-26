@@ -1,0 +1,42 @@
+id: camp.auckland.housing.industrial_transformation
+name: "Industrial transformation of construction"
+theme: housing
+core_claim: >
+  The real long-run supply constraint is weak construction-sector productivity.
+  Shifting from site-based craft construction to factory-based prefabrication,
+  standardised components, and a stable workforce pipeline is the only
+  structural pathway to materially reduce the cost of producing a dwelling
+  in Auckland.
+flagship_moves:
+  - "Establish a publicly-anchored off-site manufacturing hub to demonstrate and de-risk prefabricated volumetric construction at scale"
+  - "Mandate standardised component specifications across Crown and Kāinga Ora procurement to create a stable demand base for prefab manufacturers"
+  - "Reform Building Code and consent pathways to create a fast-track for certified prefabricated structural systems"
+tensions:
+  - >
+    The upfront capital cost of transitioning to factory-based production
+    is substantial; without a guaranteed demand pipeline from public or
+    institutional buyers, private investment in prefab capacity is
+    difficult to justify given the cyclicality of the construction market.
+  - >
+    Workforce and skills reform is a decade-long project; near-term supply
+    shortfalls require conventional construction to continue at scale
+    in parallel, limiting the immediate impact of transformation investment.
+addresses:
+  - problem.auckland.housing.supply_economics
+interventions:
+  - description: >
+      Crown co-investment in volumetric prefab facilities producing
+      standardised medium-density typologies (2–4 storey), targeting
+      a 20% reduction in per-m² construction cost within a decade.
+    state_variable: "construction_cost_index"
+    constraint_relaxed: "craft-based production cost floor"
+    expected_sign: "-"
+  - description: >
+      Guaranteed volume procurement contract (Crown and Kāinga Ora)
+      of ≥1,000 prefab units/year to underwrite factory utilisation.
+    state_variable: "annual_completions"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.housing.trunk_infrastructure_capacity
+applicable_in:
+  - auckland

@@ -1,0 +1,19 @@
+id: driver.auckland.education.financial_barriers_tertiary
+name: "Financial and Housing Barriers to Tertiary Completion"
+description: >
+  Auckland's rental market makes full-time study financially unviable
+  for students from low-income families without substantial paid work;
+  the paid work burden competes with study hours and is the proximate
+  cause of the Maori and Pacific tertiary completion gap. Student
+  allowance and loan living costs are calibrated to national averages
+  that do not reflect Auckland housing reality.
+theme: education
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.education.tertiary_access
+claim_ids:
+  - claim.auckland.education.student_loan_housing_barrier
+  - claim.auckland.education.tertiary_completion_gap

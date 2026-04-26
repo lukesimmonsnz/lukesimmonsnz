@@ -1,0 +1,63 @@
+id: problem.auckland.education.tertiary_access
+title: "Tertiary Education Access and Completion"
+theme: education
+section: education
+subpage: tertiary-access
+parent: problem.auckland.education.achievement
+order: 3
+updated: "2026-04-26"
+summary: >
+  Maori and Pacific tertiary students in Auckland face completion
+  rates 15-20 percentage points below NZ European, driven primarily
+  by financial and housing stress rather than academic underperformance.
+  Auckland rental costs are not adequately reflected in student
+  allowances, forcing paid work that competes with study. Simultaneously,
+  Auckland faces skills shortages in construction, health, and
+  engineering while some tertiary fields are oversupplied.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "tertiary_completion_rate_maori_pacific"
+    - "skills_shortage_fields_enrolment"
+    - "student_paid_work_hours"
+    - "dropout_rate_first_year"
+  inputs:
+    - "auckland_living_cost_supplement"
+    - "targeted_completion_bursaries"
+    - "performance_based_funding_weight"
+    - "micro_credential_programme_count"
+  constraints:
+    - "Housing cost: Auckland rents not reflected in national allowance calibration"
+    - "Funding lag: field-of-study labour market signals lag actual graduation by 3-4 years"
+    - "Equity tension: outcome-weighted funding may reduce resources for high-Maori-Pacific-enrolment institutions"
+  feedback_loops:
+    - "Financial stress → paid work → study time reduction → lower completion → no qualification premium"
+    - "Skills shortage → wage premium → enrolment growth → 3-year lag before supply reaches market"
+narrative:
+  - heading: "Completion as the real measure"
+    body: >
+      Auckland tertiary institutions enrol large numbers of Maori and
+      Pacific students; the problem is not enrolment but completion.
+      A student who enrols, studies for two years, and withdraws for
+      financial reasons has no qualification, carries student debt, and
+      is in a worse labour market position than if they had taken a
+      shorter vocational qualification. The completion gap is the
+      measure that matters, and it points squarely at Auckland's housing
+      cost as the mechanism.
+  - heading: "Mismatch and the Auckland economy"
+    body: >
+      Auckland's construction sector is running below capacity partly
+      because of skilled worker shortages; its hospitals and aged care
+      facilities are staffing from the Philippines and India because
+      domestic training pipelines are insufficient. Fixing this mismatch
+      is partly an information problem (students do not see wage
+      premiums in shortage fields), partly an affordability problem
+      (shortage-field programmes in health and engineering are expensive),
+      and partly an ITP capacity problem. All three have addressable
+      policy interventions.
+claim_ids:
+  - claim.auckland.education.tertiary_completion_gap
+  - claim.auckland.education.student_loan_housing_barrier
+  - claim.auckland.education.skills_mismatch
+status: draft

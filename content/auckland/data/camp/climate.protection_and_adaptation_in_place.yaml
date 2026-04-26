@@ -1,0 +1,43 @@
+id: camp.auckland.climate.protection_and_adaptation_in_place
+name: "Coastal Protection and Adaptation In Place"
+theme: climate-adaptation
+core_claim: >
+  Managed retreat is socially disruptive and economically costly;
+  for most Auckland coastal areas, protection in place (seawalls,
+  dune restoration, tidal barriers, raised infrastructure) is cheaper
+  and more socially acceptable than wholesale community relocation.
+  Nature-based solutions (mangrove restoration, living shorelines)
+  provide cost-effective protection while delivering ecological and
+  cultural co-benefits.
+flagship_moves:
+  - "Fund a $1B Auckland Coastal Protection Programme for seawall upgrades and living shoreline restoration."
+  - "Restore mangrove and salt marsh habitats in Tamaki Estuary and Manukau Harbour as natural flood buffers."
+  - "Raise critical coastal infrastructure (roads, wastewater) in the highest-exposure Auckland areas within 10 years."
+tensions:
+  - >
+    Protection in place defers but does not eliminate the managed
+    retreat decision; it buys time at cost and may increase the
+    ultimate loss by allowing continued development in protected areas.
+  - >
+    Coastal protection structures can accelerate erosion at adjacent
+    unprotected sites, shifting risk rather than eliminating it;
+    piecemeal protection creates new inequities.
+addresses:
+  - problem.auckland.climate.sea_level_rise
+interventions:
+  - description: >
+      Fund coastal protection works at the 20 highest-exposure
+      Auckland coastal communities, prioritising nature-based solutions
+      (mangrove restoration, reef creation) over hard engineering.
+    state_variable: "coastal_flood_damage_events"
+    expected_sign: "-"
+  - description: >
+      Raise the 15km of critical coastal road and wastewater
+      infrastructure in Auckland's lowest-lying areas above the
+      0.5m sea level rise threshold within 10 years.
+    state_variable: "critical_infrastructure_coastal_exposure"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.climate.managed_retreat_programme
+applicable_in:
+  - auckland

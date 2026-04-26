@@ -1,0 +1,15 @@
+id: source.mbie_rental_affordability_2023
+title: "Rental Affordability Indicators: New Zealand 2023"
+author: null
+publisher: "Ministry of Business, Innovation and Employment | Hīkina Whakatutuki"
+year: 2023
+url: "https://www.mbie.govt.nz/building-and-energy/building-and-construction/sector-information-and-data/rental-affordability/"
+type: government-report
+credibility: official
+geo_granularity:
+  - auckland
+  - nz
+notes: >
+  Annual report on rental affordability indicators including rent-to-income
+  ratios by region and income quartile. Auckland figures are disaggregated.
+  Covers renter households specifically rather than general household income.

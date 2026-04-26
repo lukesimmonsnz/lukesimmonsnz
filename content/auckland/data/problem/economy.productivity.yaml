@@ -1,0 +1,62 @@
+id: problem.auckland.economy.productivity
+title: "Productivity Gap and Economic Underperformance"
+theme: economy
+section: economy
+subpage: productivity
+parent: null
+order: 0
+updated: "2026-04-26"
+summary: >
+  New Zealand labour productivity is 30-35% below the OECD frontier;
+  Auckland has not closed this gap over two decades. Business R&D
+  investment (0.7% of GDP) is less than half the OECD average.
+  Transport congestion costs Auckland approximately $1.3 billion per
+  year in productivity losses. The debate centres on whether innovation
+  investment incentives or urban density and agglomeration improvements
+  are the higher-return lever.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "labour_productivity_index"
+    - "business_rd_as_gdp_share"
+    - "agglomeration_productivity_index"
+    - "congestion_cost_annual"
+  inputs:
+    - "rd_tax_credit_rate"
+    - "innovation_fund_size"
+    - "rapid_transit_network_km"
+    - "mixed_use_zoning_coverage"
+  constraints:
+    - "Distance: NZ's geographic isolation raises per-unit technology adoption cost"
+    - "Market size: small domestic market makes R&D fixed costs harder to amortise"
+    - "Urban lock-in: car-dependent urban form is expensive to reverse; density benefits take decades"
+  feedback_loops:
+    - "Low productivity → low wages → lower consumer spending → smaller domestic market → lower R&D returns"
+    - "Congestion → reduced agglomeration benefit → lower productivity premium of city scale"
+narrative:
+  - heading: "The persistent gap"
+    body: >
+      New Zealand has been approximately 30% less productive per hour
+      worked than the OECD frontier since at least the 1990s. The gap
+      has not closed with GDP growth because growth in New Zealand
+      has been driven more by labour and capital quantity than by
+      efficiency improvement. Auckland, as New Zealand's most
+      productive city, sets the ceiling; the gap between Auckland's
+      actual productivity and what a well-connected city of its size
+      should achieve is primarily an urban form and investment problem.
+  - heading: "Agglomeration as the underused lever"
+    body: >
+      The research evidence on agglomeration economies is that doubling
+      a city's effective density (connected, walkable, transit-accessible)
+      increases productivity by 5-10% through face-to-face knowledge
+      exchange and labour market pooling. Auckland has the population
+      for a major city productivity premium but has built a suburban
+      sprawl pattern that captures only part of it. The congestion
+      cost is the most visible symptom; the opportunity cost of the
+      foregone agglomeration premium is larger and less visible.
+claim_ids:
+  - claim.auckland.economy.nz_productivity_gap
+  - claim.auckland.economy.low_rd_investment
+  - claim.auckland.economy.congestion_productivity_cost
+status: draft

@@ -1,0 +1,23 @@
+id: claim.auckland.housing.annual_consents_recent_decade
+statement: >
+  Auckland has consented roughly 10,000–20,000 new dwellings per year over
+  the past decade, with a peak around 2022 driven by the NPS-UD pipeline and
+  material contraction since. Completions lag consents by 12–24 months and
+  are typically 10–20% lower due to cancellations and project delays.
+value: null
+unit: null
+time_period: "2015-2024"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_building_consents_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Range spans the decade; precise annual figures confirmed against Stats NZ
+  Building Consents Issued series. No single point value assigned because the
+  policy-relevant signal is the range and cycle, not a mean.

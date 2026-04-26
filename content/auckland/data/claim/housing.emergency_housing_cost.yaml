@@ -1,0 +1,27 @@
+id: claim.auckland.housing.emergency_housing_cost
+statement: >
+  Emergency housing special needs grants in New Zealand — predominantly
+  funding motel accommodation for households in acute housing need —
+  cost the Crown over NZD 300 million annually at peak usage, representing
+  a high-cost, low-outcome substitute for permanent public housing supply.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.msd_housing_register_2023
+  - source.mhud_housing_aotearoa_2023
+scoped_to:
+  - auckland
+  - nz
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Exact annual figure varies by year and counting methodology; the
+  NZD 300M+ threshold was widely cited in parliamentary and media
+  reporting 2021-2023. A quantitative claim with precise value and
+  methodology_tag should be authored once a primary-data source for
+  the annual grant expenditure total is confirmed.
