@@ -1,0 +1,20 @@
+id: claim.auckland.education.ece_participation_gap
+statement: >
+  ECE participation rates for Maori and Pacific children in Auckland
+  are approximately 10-15 percentage points below NZ European; children
+  who do not attend quality ECE enter primary school with measurably
+  lower language, numeracy, and social-emotional readiness, compounding
+  the achievement gap that persists through secondary school.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.moe_ece_participation_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

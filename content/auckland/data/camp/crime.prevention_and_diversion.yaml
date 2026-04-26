@@ -1,0 +1,43 @@
+id: camp.auckland.crime.prevention_and_diversion
+name: "Prevention, Diversion, and Social Investment"
+theme: crime
+core_claim: >
+  The most cost-effective way to reduce crime is upstream: address the
+  concentrated deprivation, family instability, and school disengagement
+  that predict offending trajectories. Diversion programmes for first
+  and second offenders, combined with intensive social services in
+  high-crime areas, produce larger long-run reductions than enforcement
+  alone at a lower fiscal cost.
+flagship_moves:
+  - "Expand Youth Aid and community-based diversion for first-time offenders under 25 in Auckland."
+  - "Fund place-based social investment in the ten highest-crime Auckland suburbs, coordinating housing, employment, and health services."
+  - "Increase community patrol and neighbourhood watch resourcing in South and West Auckland as police supplement."
+tensions:
+  - >
+    Prevention programmes take years to reduce crime statistics; political
+    pressure following high-profile incidents demands visible enforcement
+    responses that may crowd out prevention investment.
+  - >
+    Place-based social investment requires cross-agency coordination
+    (Police, MSD, MoH, MoE) that routinely underperforms expectations
+    due to budget siloing and accountability fragmentation.
+addresses:
+  - problem.auckland.crime.victimisation
+interventions:
+  - description: >
+      Fund community-based diversion for all first-time offenders under
+      25 in Auckland (police-to-programme handoff); target 2,000 referrals
+      per year with 12-month follow-up.
+    state_variable: "youth_reoffending_rate"
+    constraint_relaxed: "Gap between police contact and social service engagement"
+    expected_sign: "-"
+  - description: >
+      Establish integrated community safety hubs in five highest-deprivation
+      Auckland Local Board areas with co-located police, social workers,
+      and mental health navigators.
+    state_variable: "victimisation_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.crime.enforcement_and_deterrence
+applicable_in:
+  - auckland

@@ -1,0 +1,17 @@
+id: driver.auckland.education.tertiary_labour_mismatch
+name: "Tertiary-Labour Market Mismatch"
+description: >
+  Tertiary enrolment decisions in Auckland are weakly connected to
+  labour market signals; field-of-study choices do not track wage
+  premiums and employment rates, partly because outcome data is not
+  well-surfaced to prospective students. The result is oversupply
+  in low-premium fields and undersupply in high-demand technical areas.
+theme: education
+consensus: contested
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.education.tertiary_access
+claim_ids:
+  - claim.auckland.education.skills_mismatch

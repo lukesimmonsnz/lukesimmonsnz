@@ -1,0 +1,44 @@
+id: camp.auckland.inequality.early_intervention
+name: "Early childhood intervention and family support"
+theme: inequality
+core_claim: >
+  The highest-return investment in reducing child poverty and
+  intergenerational disadvantage is intensive early childhood support:
+  universal high-quality ECE, home visiting for at-risk families,
+  and parenting support programmes. Evidence from longitudinal studies
+  shows that early intervention generates returns of $7–12 per dollar
+  invested through improved educational outcomes, reduced health costs,
+  and higher adult earnings.
+flagship_moves:
+  - "Universal high-quality ECE from 18 months in decile 1–4 areas, fully funded and with transport support"
+  - "Expand the Family Start home visiting programme to all first-time parents in high-deprivation Auckland areas"
+  - "Establish warm, dry, healthy housing as a prerequisite for family support services — housing warrant of fitness linked to WFF payments"
+tensions:
+  - >
+    Early intervention programmes take 15–20 years to show measurable
+    poverty reduction in adult outcomes; political cycles are 3 years
+    and results are visible to different voters than those who funded
+    the investment.
+  - >
+    Universal ECE in high-deprivation areas requires a workforce of
+    trained ECE teachers who are currently in short supply and
+    underpaid relative to other graduate professions.
+addresses:
+  - problem.auckland.inequality.child_poverty
+interventions:
+  - description: >
+      Free, high-quality ECE (≥4 hours/day, qualified teacher ratio
+      ≥1:5) for all children aged 18 months–3 years in decile 1–3
+      catchments, with Crown-funded transport.
+    state_variable: "child_poverty_rate"
+    constraint_relaxed: "ECE cost and access barriers for low-income families"
+    expected_sign: "-"
+  - description: >
+      Expand Family Start home visiting to cover 100% of first-time
+      parents in NZDep decile 9–10 areas, funded at $5,000/family/year.
+    state_variable: "material_hardship_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.inequality.cash_transfer_adequacy
+applicable_in:
+  - auckland

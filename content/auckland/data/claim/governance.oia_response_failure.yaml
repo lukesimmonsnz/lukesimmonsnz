@@ -1,0 +1,20 @@
+id: claim.auckland.governance.oia_response_failure
+statement: >
+  Auckland Council and its CCOs have among the highest OIA and LGOIMA
+  non-compliance rates in New Zealand; the Ombudsman has issued
+  multiple adverse opinions against AT and Auckland Council for
+  delayed, withheld, or inadequate responses to information requests
+  on major infrastructure and development decisions.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.ombudsman_nz_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

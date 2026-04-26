@@ -1,0 +1,27 @@
+id: claim.auckland.environment.native_species_decline
+statement: >
+  Auckland's native biodiversity has experienced severe decline since
+  European settlement. More than 40 native bird species that were present
+  in the Auckland region in 1840 are now locally extinct or functionally
+  absent from the mainland. The main driver is predation by introduced
+  mammals — rats, stoats, and possums — combined with habitat loss from
+  urban development. Predator-free programmes on offshore islands and in
+  fenced sanctuaries (Tāwharanui, Shakespear) demonstrate that native
+  species recovery is achievable with sustained predator control.
+value: null
+unit: null
+time_period: "1840-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_state_of_environment_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The 40+ species figure is based on Auckland Council biodiversity
+  monitoring and historical records. Exact species count depends on
+  taxonomic scope and definition of "functionally absent."

@@ -1,0 +1,42 @@
+id: camp.auckland.infrastructure.demand_management_and_water_efficiency
+name: "Demand management and water efficiency"
+theme: infrastructure
+core_claim: >
+  Expanding supply capacity is only half the equation: reducing per-capita
+  water demand through pricing signals, appliance standards, and leak
+  reduction reduces the investment required in treatment and distribution
+  infrastructure. A 20% reduction in per-capita demand is equivalent to
+  a 20% increase in system capacity at zero capital cost.
+flagship_moves:
+  - "Introduce progressive volumetric water pricing to provide a price signal for conservation above a lifeline amount"
+  - "Mandate water-efficient appliance standards for all new residential and commercial developments"
+  - "Fund a large-scale network leak detection and repair programme targeting a 15% reduction in water losses"
+tensions:
+  - >
+    Demand management reduces the revenue base for a volume-tariff
+    water utility at the same time as it reduces capital expenditure
+    requirements — the net financial effect depends on tariff design
+    and requires careful modelling.
+  - >
+    Appliance standards and retrofits address new stock quickly but
+    the existing housing stock turns over slowly; the demand reduction
+    from efficiency standards takes 20–30 years to fully materialise.
+addresses:
+  - problem.auckland.infrastructure.water_and_wastewater
+interventions:
+  - description: >
+      Progressive water tariff (free lifeline block, rising tiers above)
+      targeting 10% reduction in per-capita water demand over 5 years.
+    state_variable: "water_demand_per_capita"
+    constraint_relaxed: "flat-rate pricing without conservation signal"
+    expected_sign: "-"
+  - description: >
+      Network leakage detection programme targeting 15% reduction in
+      non-revenue water within 5 years, freeing equivalent treatment
+      and distribution capacity.
+    state_variable: "infrastructure_investment_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.infrastructure.central_interceptor_and_network_renewal
+applicable_in:
+  - auckland

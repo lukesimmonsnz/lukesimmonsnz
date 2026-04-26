@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/indicator.schema.json",
+  "title": "Indicator",
+  "description": "A measurable indicator. Renamed from 'metric' per §1.1 of SCHEMA-DESIGN-aotearoa.md. Migrated from content/auckland/schema/metric.schema.json. Structural changes: (1) id pattern metric → indicator; (2) measures → problem_ids (E_indicator_of, Indicator → Problem); (3) geography retained for freetext coverage; granularities_supported added for structured spatial granularity; (4) series items extended with optional region. Indicator is excluded from E_evidenced_by (§2, ratified §5 row 9g): its evidentiary basis is methodological, traced via E_follows from Claim. Unit coherence with citing Claims enforced by P9 (Python, Layer 1c).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "unit", "problem_ids"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^indicator\\.[a-z0-9_.]+$"
+    },
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "unit": {
+      "description": "Canonical unit string. Must match Claim.unit for Claims that reference this Indicator via measured_by_ids (P9 — Python).",
+      "type": "string"
+    },
+    "geography": {
+      "description": "Freetext primary geographic coverage description (legacy; superseded by granularities_supported for structured lookups).",
+      "type": "string"
+    },
+    "granularities_supported": {
+      "description": "Spatial granularities at which this indicator is available from its source.",
+      "type": "array",
+      "items": {
+        "enum": [
+          "national",
+          "regional-council",
+          "territorial-authority",
+          "meshblock",
+          "custom"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "problem_ids": {
+      "description": "Problems this Indicator measures. ≥1 required. Materialises to E_indicator_of.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^problem\\."
+      },
+      "minItems": 1
+    },
+    "source_ids": {
+      "description": "Sources for this indicator's definition and methodology (e.g. Stats NZ definition page). Direct citation permitted on Indicator for methodological provenance; evidentiary Claims cite via Claim.source_ids.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^source\\."
+      }
+    },
+    "series": {
+      "description": "Optional time-series data points.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["period", "value"],
+        "properties": {
+          "period": {
+            "description": "ISO 8601 date, year, or period string.",
+            "type": "string"
+          },
+          "value": {"type": "number"},
+          "region": {
+            "description": "Region this data point is scoped to. Absent implies national or as specified by geography.",
+            "$ref": "aotearoa://schema/region.schema.json"
+          },
+          "note": {"type": "string"}
+        }
+      }
+    }
+  }
+}

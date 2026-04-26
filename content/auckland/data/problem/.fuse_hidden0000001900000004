@@ -1,0 +1,62 @@
+id: problem.auckland.climate.urban_heat
+title: "Urban Heat Island and Extreme Heat"
+theme: climate-adaptation
+section: climate
+subpage: urban-heat
+parent: problem.auckland.climate.sea_level_rise
+order: 1
+updated: "2026-04-26"
+summary: >
+  Auckland's urban core is 2-4 degrees Celsius warmer than surrounding
+  areas due to the urban heat island effect; tree canopy cover is 18%,
+  below recommended levels, with a strong deprivation gradient.
+  Heat-related mortality is projected to increase 30-50% by 2050.
+  The January 2023 flooding demonstrated stormwater vulnerability to
+  intensified precipitation. The debate centres on green infrastructure
+  investment versus building stock heat resilience as the primary
+  near-term response.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "urban_canopy_cover_percent"
+    - "impervious_surface_coverage"
+    - "heat_vulnerable_household_count"
+    - "new_build_summer_comfort_standard"
+  inputs:
+    - "tree_planting_programme_scale"
+    - "permeable_surface_mandate"
+    - "warmer_kiwi_homes_summer_extension"
+    - "thermal_performance_standards"
+  constraints:
+    - "Lag time: tree planting takes 20+ years to deliver full canopy benefit"
+    - "Construction cost: green roof and thermal standards add cost in an affordability-constrained market"
+    - "Retrofit: most heat-vulnerable households are in existing stock, not new builds"
+  feedback_loops:
+    - "Low canopy → higher heat → more impervious surface demand → lower canopy → more heat"
+    - "Heat exposure in poor housing → health burden → health system cost → less resource for prevention"
+narrative:
+  - heading: "The canopy inequality"
+    body: >
+      Tree cover and shade are not evenly distributed across Auckland.
+      The wealthy suburbs of Remuera and Devonport are substantially
+      cooler in summer than Otara and Mangere, partly because their
+      streets are lined with mature trees that poorer suburbs lack.
+      This is not accidental; tree planting tracks investment, and
+      investment tracks political voice. The canopy deficit in South
+      and West Auckland is an environmental justice issue as well as
+      a climate adaptation issue.
+  - heading: "The January 2023 lesson"
+    body: >
+      Auckland's worst flooding in recorded history was a warning;
+      it demonstrated that stormwater infrastructure designed for
+      historical rainfall patterns cannot handle the intensified
+      precipitation that climate projections have been signalling for
+      decades. The $200M in damage was concentrated in South Auckland.
+      The next event will be more expensive unless stormwater
+      infrastructure is upgraded to the future design standard, not
+      the historical one.
+claim_ids:
+  - claim.auckland.climate.urban_heat_island
+  - claim.auckland.climate.tree_canopy_deficit
+  - claim.auckland.climate.flood_intensificati

@@ -1,0 +1,20 @@
+id: driver.auckland.environment.introduced_predators
+name: "Introduced mammalian predators"
+description: >
+  Rats (kiore and Norway rat), stoats, and possums are the dominant
+  cause of native bird, lizard, and invertebrate decline across Auckland's
+  mainland. These predators are ubiquitous in both urban and bush
+  environments and cannot be eradicated from open mainland areas with
+  current technology. Sustained trapping and baiting can reduce predator
+  pressure locally and seasonally, but without physical fencing or
+  offshore island isolation, predator-free conditions cannot be maintained
+  at scale on the Auckland mainland.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.environment.ecological_health
+claim_ids:
+  - claim.auckland.environment.native_species_decline

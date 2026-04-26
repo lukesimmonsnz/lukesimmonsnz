@@ -1,0 +1,44 @@
+id: camp.auckland.housing.public_housing_expansion
+name: "Direct Crown public housing expansion"
+theme: housing
+core_claim: >
+  The public housing deficit requires a large-scale, Crown-funded build
+  programme delivered primarily through Kāinga Ora; only the Crown's
+  balance sheet and direct commissioning capacity can deliver at the speed
+  and volume that the waitlist requires.
+flagship_moves:
+  - "Restore and expand the Kāinga Ora capital programme to deliver a minimum 3,000 new public dwellings per year nationally"
+  - "Mandate mixed-tenure development on all public land disposals, requiring a minimum public housing component"
+  - "Reform Kāinga Ora's balance sheet constraints to allow increased borrowing for housing delivery"
+tensions:
+  - >
+    Large-scale Crown delivery concentrates financial risk on the public
+    balance sheet and creates procurement bottlenecks when the construction
+    sector is operating near capacity, potentially crowding out private
+    market supply.
+  - >
+    Centralised delivery through a single Crown entity is slower to respond
+    to community-specific housing needs, including those of Māori and Pacific
+    communities where Kāinga Ora's model is a poor cultural fit.
+addresses:
+  - problem.auckland.housing.social_housing
+interventions:
+  - description: >
+      Increase the Kāinga Ora annual delivery target to 3,000+ new dwellings
+      nationally, with Auckland receiving a proportional share reflecting its
+      share of waitlist demand.
+    state_variable: "public_housing_stock"
+    constraint_relaxed: "crown_capital_programme_cap"
+    expected_sign: "+"
+  - description: >
+      Acquire strategically located urban land for mixed-tenure development
+      combining market, affordable, and public housing on the same site.
+    state_variable: "feasible_development_sites"
+    expected_sign: "+"
+claim_ids:
+  - claim.auckland.housing.waitlist_size_2023
+  - claim.auckland.housing.public_stock_deficit
+tensions_with:
+  - camp.auckland.housing.community_housing_providers
+applicable_in:
+  - auckland

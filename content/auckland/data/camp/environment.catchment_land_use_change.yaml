@@ -1,0 +1,45 @@
+id: camp.auckland.environment.catchment_land_use_change
+name: "Catchment land use change and rural best practice"
+theme: environment
+core_claim: >
+  Freshwater quality ultimately reflects what happens in catchments:
+  the land use, vegetation cover, and farming practices that determine
+  what reaches waterways. Stormwater treatment devices are a last line
+  of defence; the primary intervention is changing land management in
+  rural catchments through riparian planting, stock exclusion from
+  waterways, and reduced nutrient application.
+flagship_moves:
+  - "Require stock exclusion from all waterways in Auckland rural catchments by 2026, enforced through Auckland Council's Unitary Plan rules"
+  - "Fund a targeted riparian planting programme in Rodney and Franklin achieving 10m native buffers on all Category 1 waterways within 10 years"
+  - "Introduce catchment-level nutrient budgets for high-intensity farming in sensitive catchments, enforced through resource consent conditions"
+tensions:
+  - >
+    Land use restrictions on farming reduce agricultural production
+    and farm income; compensation or transition support is needed to
+    avoid placing the full cost of environmental improvement on
+    individual landowners.
+  - >
+    Catchment-scale change takes years to register in receiving water
+    quality; the political cycle is shorter than the improvement
+    timeline, making it hard to maintain investment without visible
+    short-term results.
+addresses:
+  - problem.auckland.environment.water_quality
+interventions:
+  - description: >
+      Enforce stock exclusion from all Category 1 and 2 waterways in
+      Auckland rural areas by 2026, targeting 50% reduction in
+      faecal coliform loading from pastoral sources.
+    state_variable: "rural_stream_nutrient_index"
+    constraint_relaxed: "stock access to waterways causing direct faecal contamination"
+    expected_sign: "+"
+  - description: >
+      Riparian planting fund: $5M/year targeted grants for landowners
+      establishing native riparian buffers of ≥10m on waterways in
+      priority catchments.
+    state_variable: "urban_stream_quality_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.environment.stormwater_treatment_at_source
+applicable_in:
+  - auckland

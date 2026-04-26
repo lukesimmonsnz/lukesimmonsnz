@@ -1,0 +1,44 @@
+id: camp.auckland.health.chronic_disease_prevention
+name: "Population-Level Prevention and Upstream Action"
+theme: health
+core_claim: >
+  Chronic disease is driven by the social and physical environment;
+  treatment downstream is necessary but not sufficient. Restricting
+  fast food advertising near schools, improving housing quality in
+  high-deprivation areas, and creating walkable built environments
+  would reduce chronic disease incidence at the population level,
+  with the largest gains in communities where deprivation-linked
+  disease burden is highest.
+flagship_moves:
+  - "Restrict fast food outlet density and advertising within 500m of all Auckland schools."
+  - "Fund healthy food subsidy programmes in South and West Auckland supermarkets."
+  - "Link housing warrant of fitness enforcement to rental subsidies, addressing damp and cold as chronic disease drivers."
+tensions:
+  - >
+    Population-level prevention interventions have long lags before
+    they register in health statistics; political and funding cycles
+    prefer interventions with shorter feedback loops.
+  - >
+    Commercial food environment restrictions face industry opposition
+    and local government territorial jurisdiction complications that
+    slow implementation.
+addresses:
+  - problem.auckland.health.chronic_disease
+interventions:
+  - description: >
+      Restrict new fast food consents within 500m of schools and
+      community centres in NZDep decile 8-10 Auckland areas through
+      plan change.
+    state_variable: "obesogenic_environment_index"
+    constraint_relaxed: "Zoning and commercial consent regime for food retail"
+    expected_sign: "-"
+  - description: >
+      Fund free healthy food boxes (weekly vegetable and protein
+      package) for 10,000 families in highest-deprivation Auckland
+      areas via community food networks.
+    state_variable: "diet_quality_index_low_income"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.health.chronic_disease_management
+applicable_in:
+  - auckland

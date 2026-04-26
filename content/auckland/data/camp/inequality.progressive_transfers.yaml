@@ -1,0 +1,46 @@
+id: camp.auckland.inequality.progressive_transfers
+name: "Progressive transfers and benefit adequacy"
+theme: inequality
+core_claim: >
+  The most direct intervention for child poverty and low-income
+  hardship is adequate income support: benefits set at levels that
+  cover actual housing and living costs, Working for Families
+  parameters that reach the lowest-income households, and a minimum
+  wage indexed to inflation and productivity. Structural redistribution
+  through the tax-transfer system is faster and more certain in its
+  poverty-reduction effect than supply-side reforms that take years
+  to deliver.
+flagship_moves:
+  - "Index core benefit rates to a cost-of-living basket that includes current Auckland rents, closing the gap between benefit levels and actual housing costs"
+  - "Extend the Best Start payment to all children regardless of parental income for the first three years of life"
+  - "Raise the minimum wage to 70% of the median wage and index it to median wage growth, narrowing the income floor gap"
+tensions:
+  - >
+    Transfer increases without housing supply reform can capitalise
+    into rents in a low-vacancy market, with landlords capturing
+    part of the income gain through rent increases.
+  - >
+    Universal or near-universal benefit increases are expensive;
+    targeting transfers to the poorest households maximises poverty
+    reduction per dollar but creates marginal tax rate traps at
+    income thresholds.
+addresses:
+  - problem.auckland.inequality.economic_disadvantage
+  - problem.auckland.inequality.income_polarisation
+interventions:
+  - description: >
+      Rebase the core benefit to 80% of the minimum wage, replacing
+      the 2021 indexation freeze, and index it to wage growth thereafter.
+    state_variable: "child_poverty_rate"
+    constraint_relaxed: "benefit level below actual housing and living costs"
+    expected_sign: "-"
+  - description: >
+      Extend Working for Families abatement threshold to ensure all
+      households with children below 130% of median household income
+      receive some payment.
+    state_variable: "income_decile_bottom_real"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.inequality.structural_economic_reform
+applicable_in:
+  - auckland

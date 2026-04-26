@@ -1,0 +1,45 @@
+id: camp.auckland.governance.integrity_enforcement
+name: "Integrity Enforcement and Procurement Reform"
+theme: governance
+core_claim: >
+  Transparency is necessary but insufficient; without enforcement
+  consequences for integrity breaches, publication requirements
+  produce compliance theatre. Strengthening the Auditor-General's
+  mandate over CCOs, imposing cooling-off periods on Council-to-
+  private sector movement, and competitive procurement requirements
+  for all contracts over $2M would restore procurement integrity.
+flagship_moves:
+  - "Extend Auditor-General jurisdiction to all Auckland CCO contracts and procurement processes."
+  - "Legislate 2-year cooling-off period for senior Council and CCO staff moving to contractors."
+  - "Require competitive tender for all Auckland Council and CCO contracts over $2M with public evaluation criteria."
+tensions:
+  - >
+    Extended Auditor-General jurisdiction over CCOs requires
+    legislative change and Auditor-General capacity expansion;
+    current OAG resources are already stretched across central
+    government.
+  - >
+    Cooling-off periods reduce the attractiveness of public sector
+    roles for people with private sector expertise; the talent
+    pipeline for Council may narrow if the post-service constraints
+    are too severe.
+addresses:
+  - problem.auckland.governance.accountability
+interventions:
+  - description: >
+      Legislate a 24-month cooling-off period for all Auckland Council
+      and CCO staff at CE, GM, and board level before joining
+      contractors doing business with their former employer.
+    state_variable: "procurement_integrity_index"
+    constraint_relaxed: "Revolving door conflict of interest structure"
+    expected_sign: "+"
+  - description: >
+      Extend Office of the Auditor-General jurisdiction to include
+      all Auckland CCO procurement decisions over $5M, with mandatory
+      post-completion review within 18 months.
+    state_variable: "cco_procurement_audit_coverage"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.open_government
+applicable_in:
+  - auckland

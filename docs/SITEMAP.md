@@ -4,7 +4,7 @@
 -->
 
 <!-- auto:meta:begin -->
-**Updated:** 2026-04-25
+**Updated:** 2026-04-26
 <!-- auto:meta:end -->
 
 ## Pages
@@ -73,7 +73,7 @@
 
 The Auckland research pages are the part of this site most likely to be cited. A recommended citation form:
 
-> Simmons, L. (2026). *‹Page title›*. Luke Simmons — Research. Retrieved 2026-04-25 from https://lukesimmonsnz.kiwi/research/auckland/‹section›/‹subpage›/
+> Simmons, L. (2026). *‹Page title›*. Luke Simmons — Research. Retrieved 2026-04-26 from https://lukesimmonsnz.kiwi/research/auckland/‹section›/‹subpage›/
 
 For a specific Auckland subpage, prefer the version with the most recent **Updated** date on the page itself. The entity data behind each Auckland page lives under `content/auckland/data/` in the site's source repository; every factual claim on a page carries its Source through that data layer.
 

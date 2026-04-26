@@ -1,0 +1,20 @@
+id: claim.auckland.crime.drug_market_concentration
+statement: >
+  Auckland is the primary entry point and distribution hub for
+  methamphetamine and other illicit drugs in New Zealand; organised crime
+  groups operating in South Auckland control the majority of retail
+  drug distribution, using gang structures to manage territory and
+  enforce contracts in the absence of legal enforcement mechanisms.
+value: null
+unit: null
+time_period: "2022-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nz_police_organised_crime_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

@@ -1,0 +1,20 @@
+id: claim.auckland.education.ece_cost_barrier
+statement: >
+  ECE cost is the primary barrier to participation for low-income
+  Auckland families; the 20 hours free ECE subsidy does not cover
+  full-time attendance, and top-up fees in Auckland average $5-8 per
+  hour above the subsidy rate. Transport and availability constraints
+  in South and West Auckland compound the cost barrier.
+value: null
+unit: null
+time_period: "2022-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.moe_ece_participation_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

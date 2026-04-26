@@ -1,0 +1,22 @@
+id: driver.auckland.inequality.residential_segregation
+name: "Residential segregation by income and ethnicity"
+description: >
+  High-deprivation households in Auckland are geographically concentrated
+  in South and West Auckland, producing residential segregation that
+  reinforces disadvantage through school quality, social networks, and
+  access to employment. Segregation means that children in poor
+  households attend schools with higher concentrations of other
+  disadvantaged children, reducing peer effects and access to the
+  social capital that supports mobility. Housing market dynamics
+  — higher rents in accessible, well-serviced areas — continuously
+  sort lower-income families toward peripheral, poorly-served locations.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.inequality.child_poverty
+  - problem.auckland.inequality.income_polarisation
+claim_ids:
+  - claim.auckland.inequality.child_poverty_rate_auckland

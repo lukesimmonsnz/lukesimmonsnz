@@ -1,0 +1,32 @@
+# Layer 0.5b — ML daemon dependencies (ratified-decision-7)
+# Install into .venv-ml/ ONLY. Never install into .venv/ (Flask env).
+# Flask process must never import torch — hard constraint.
+#
+# First-run setup:
+#   python -m venv .venv-ml
+#   .venv-ml\Scripts\activate
+#
+#   # CUDA wheel (RTX 3070 / CUDA 12.x) — install BEFORE the line below:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#
+#   pip install -r requirements-ml.txt
+#
+# PI TODO: after smoke_ml.py passes, pin exact versions:
+#   pip freeze > requirements-ml.lock.txt
+
+# --- Core ML stack ---
+torch>=2.2.0
+transformers>=4.40.0
+sentence-transformers>=3.0.0
+
+# --- Serving ---
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+
+# --- HTTP client (used by smoke_ml.py and future pipeline fetchers) ---
+requests>=2.32.0
+
+# --- Inference utilities (transitive from transformers; pinned for clarity) ---
+accelerate>=0.30.0
+safetensors>=0.4.3

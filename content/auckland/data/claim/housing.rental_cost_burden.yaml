@@ -1,0 +1,26 @@
+id: claim.auckland.housing.rental_cost_burden
+statement: >
+  A significant proportion of Auckland renter households in the lower two
+  income quintiles spend more than 40 percent of gross income on rent,
+  indicating severe rental cost burden concentrated among those least able
+  to absorb it — households who earn too much for income-related rent
+  subsidy but too little to sustain market rents without financial stress.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mbie_rental_affordability_2023
+  - source.mhud_housing_aotearoa_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  "Significant proportion" is deliberately non-quantified pending confirmed
+  quintile breakdown from MBIE affordability indicators. A quantitative
+  claim with value and methodology_tag should be authored once the
+  exact share is verified from the source.

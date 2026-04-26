@@ -1,0 +1,43 @@
+id: camp.auckland.environment.stormwater_treatment_at_source
+name: "Stormwater treatment at source"
+theme: environment
+core_claim: >
+  Urban water quality can only be improved by treating stormwater before
+  it enters receiving environments. Rain gardens, constructed wetlands,
+  bioretention devices, and permeable paving treat runoff at or near
+  the source, removing contaminants through biological and physical
+  processes. Retrofitting existing urban areas is expensive; requiring
+  on-site treatment in all new development is a low-marginal-cost
+  intervention that prevents the problem from deepening.
+flagship_moves:
+  - "Require on-site stormwater treatment (bioretention or equivalent) for all new commercial and multi-unit developments generating more than 500m² of impervious surface"
+  - "Fund a regional constructed wetland programme in key stormwater catchments draining to impaired harbour areas"
+  - "Mandate road sweeping on a 2-week cycle for all Auckland arterials to reduce particulate and heavy metal loading in first-flush stormwater"
+tensions:
+  - >
+    On-site stormwater treatment adds cost and land area requirements
+    to development consents, potentially reducing feasible density
+    on constrained urban sites.
+  - >
+    Constructed wetlands require large footprints in already land-
+    constrained urban catchments; suitable sites are scarce and
+    compete with other uses.
+addresses:
+  - problem.auckland.environment.water_quality
+interventions:
+  - description: >
+      On-site bioretention requirement for all new developments
+      generating >500m² impervious surface, targeting 80% removal
+      of total suspended solids and 50% removal of zinc.
+    state_variable: "harbour_water_quality_index"
+    constraint_relaxed: "unmanaged stormwater discharge from new development"
+    expected_sign: "+"
+  - description: >
+      10 regional constructed wetlands in the Waitematā, Manukau,
+      and Kaipara catchments, each treating ≥50 ha of catchment runoff.
+    state_variable: "urban_stream_quality_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.environment.catchment_land_use_change
+applicable_in:
+  - auckland

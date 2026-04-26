@@ -1,0 +1,15 @@
+id: source.msd_housing_register_2023
+title: "Public Housing Register: June 2023 Quarter"
+author: null
+publisher: "Ministry of Social Development | Te Manatū Whakahiato Ora"
+year: 2023
+url: "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/housing/index.html"
+type: primary-data
+credibility: official
+geo_granularity:
+  - auckland
+  - nz
+notes: >
+  Quarterly administrative count of households on the public housing
+  register by priority band, region, and household type. Auckland figures
+  are disaggregated from national totals.

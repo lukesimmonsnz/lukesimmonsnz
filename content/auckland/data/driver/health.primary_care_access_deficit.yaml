@@ -1,0 +1,18 @@
+id: driver.auckland.health.primary_care_access_deficit
+name: "Primary Care Access Deficit"
+description: >
+  GP enrolment gaps, high co-payment fees, and maldistribution of general
+  practice capacity in South and West Auckland create a two-tier access
+  system. Unmet primary care need converts to avoidable ED presentations
+  and late-stage diagnosis of chronic conditions that are cheaper to
+  manage earlier.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.health.system_access
+claim_ids:
+  - claim.auckland.health.primary_care_cost_barrier
+  - claim.auckland.health.auckland_ed_wait_times

@@ -1,0 +1,23 @@
+id: claim.auckland.housing.affordability_ratio_2023
+statement: >
+  Auckland's median multiple (median dwelling price divided by median annual
+  household income) was 10.7 in 2023, placing it among the five least affordable
+  major urban markets globally by this measure.
+value: 10.7
+unit: "ratio (dimensionless)"
+time_period: "2023"
+confidence: high
+verification_status: verified
+last_verified: "2026-04-01"
+source_ids:
+  - source.demographia_2024
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.median_multiple_v1
+notes: >
+  Demographia 17th edition figure. Median multiple computed from REINZ median
+  sale price and Stats NZ median household income. See source for methodology
+  detail.

@@ -1,0 +1,82 @@
+id: problem.auckland.housing.supply_economics
+title: "Supply economics — construction costs and delivery capacity"
+theme: housing
+section: housing
+subpage: supply-economics
+parent: problem.auckland.housing.affordability
+order: 5
+updated: "2026-04-26"
+summary: >
+  Even where land is available and zoning permits, dwellings are expensive
+  to build and slow to deliver in Auckland. Construction-sector labour
+  productivity has been flat for decades, post-COVID cost inflation eroded
+  developer margins, and the pre-sales finance model means supply contracts
+  precisely when affordability pressure is highest. A fragmented builder
+  ecosystem of mostly small firms amplifies cyclical workforce losses and
+  prevents the scale economies that could change the cost structure.
+  Infrastructure capacity acts as an additional gate: trunk water,
+  wastewater, and transport networks constrain where and how fast consented
+  land can be built out.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "construction_cost_index"
+    - "annual_consents"
+    - "annual_completions"
+    - "construction_sector_capacity"
+  inputs:
+    - "materials_price_index"
+    - "skilled_workforce_availability"
+    - "credit_conditions_for_developers"
+    - "infrastructure_capacity_headroom"
+    - "prefab_adoption_rate"
+  constraints:
+    - "Craft-based production model with flat productivity limits cost reduction without structural transformation"
+    - "Pre-sales finance model ties construction starts to buyer confidence, amplifying cyclical contraction"
+    - "Infrastructure gating: trunk capacity must precede private development at scale"
+    - "Fragmented builder ecosystem prevents scale economies and amplifies workforce hysteresis"
+  feedback_loops:
+    - "Construction downturn → firm exits → workforce exits → slower capacity recovery in next upturn (hysteresis)"
+    - "Higher construction_cost_index → reduced developer margin → fewer viable projects → lower annual_completions → sustained price pressure"
+    - "Infrastructure under-investment → consented land not built out → supply pipeline stalls despite zoning reform"
+narrative:
+  - heading: "The productivity floor"
+    body: >
+      Dwelling construction in New Zealand has not meaningfully improved in
+      labour productivity since the 1990s — an outcome the NZ Productivity
+      Commission identified in 2012 and that remains largely unremedied.
+      Post-COVID, construction costs rose approximately 30–40% on the Capital
+      Goods Price Index, compressing developer margins and rendering marginal
+      projects unviable even at elevated market prices. Rising nominal costs
+      are a real resource problem, not a speculative artefact: they reflect
+      the cost of labour, materials, and consenting delay that site-based
+      craft construction cannot reduce without structural change to the
+      production model.
+  - heading: "Cyclicality and hysteresis"
+    body: >
+      Auckland's consent volumes swung from roughly 10,000 to 20,000 per year
+      across the 2015–2024 decade, tracking credit conditions and buyer
+      confidence more closely than underlying demand. Each contractionary
+      phase destroys firms and workforce skills that are slow to rebuild —
+      hysteresis means that supply capacity in each recovery starts below
+      the previous peak. The pre-sales finance model amplifies this: because
+      50–70% of units must be pre-sold before banks will fund construction,
+      supply is structurally unable to maintain output through a confidence
+      trough, regardless of whether underlying affordability metrics indicate
+      that new supply is needed.
+  - heading: "Infrastructure as a binding gate"
+    body: >
+      Even consented, zoned, and financially viable projects cannot proceed
+      where trunk infrastructure — water, wastewater, stormwater, transport
+      — lacks headroom. Auckland Council's infrastructure funding gap, driven
+      by the mismatch between growth-related capital requirements and the
+      revenue tools available to a local authority, means that infrastructure
+      investment has lagged the pace required to unlock the supply potential
+      of the NPS-UD upzoning. Trunk capacity is a necessary condition for
+      the consent-and-build pipeline to function.
+claim_ids:
+  - claim.auckland.housing.annual_consents_recent_decade
+  - claim.auckland.housing.construction_cost_rise
+  - claim.auckland.housing.productivity_stagnation
+status: draft

@@ -1,0 +1,20 @@
+id: driver.auckland.governance.funding_mandate_mismatch
+name: "Funding-Mandate Mismatch in Local Government"
+description: >
+  Auckland Council bears responsibility for housing, transport,
+  water, and urban development outcomes but does not have commensurate
+  revenue-raising powers; GST and income tax (primarily Crown revenue)
+  grow with the economy while rates (Auckland's primary revenue source)
+  grow more slowly and create regressive distributional effects.
+  The mismatch creates chronic under-resourcing of Council functions
+  relative to mandate.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.governance.local_govt_reform
+claim_ids:
+  - claim.auckland.governance.three_waters_centralisation
+  - claim.auckland.economy.local_govt_fiscal_gap

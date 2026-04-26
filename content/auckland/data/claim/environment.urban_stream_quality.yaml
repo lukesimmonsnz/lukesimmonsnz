@@ -1,0 +1,27 @@
+id: claim.auckland.environment.urban_stream_quality
+statement: >
+  The majority of Auckland's urban streams are in poor or very poor
+  ecological health, with high E. coli counts, elevated nutrients from
+  stormwater runoff, and degraded riparian margins. Fewer than 20% of
+  urban stream monitoring sites regularly achieve a "good" Water Quality
+  Index rating. The primary stressors are urban stormwater carrying
+  sediment, hydrocarbons, metals, and faecal contamination from roads
+  and lawns into waterways with insufficient natural filtration.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_state_of_environment_2023
+  - source.mfe_freshwater_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Auckland Council's State of Environment report provides annual stream
+  quality monitoring at ~150 sites. The <20% good-rating figure is
+  consistent with national urban freshwater assessments.

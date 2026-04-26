@@ -1,0 +1,11 @@
+id: source.stats_nz_child_poverty_2023
+title: "Statistics New Zealand — Child Poverty Statistics 2023"
+type: primary-data
+url: "https://www.stats.govt.nz/topics/child-poverty"
+year: 2023
+publisher: "Statistics New Zealand (Stats NZ)"
+notes: >
+  Official child poverty measures required by the Child Poverty Reduction
+  Act 2018, covering material hardship, low income (before and after
+  housing costs), and severe material hardship. Includes regional
+  breakdowns for Auckland.

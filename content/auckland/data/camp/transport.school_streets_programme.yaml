@@ -1,0 +1,48 @@
+id: camp.auckland.transport.school_streets_programme
+name: "School streets and local traffic management"
+theme: transport
+core_claim: >
+  The most effective intervention for mass cycling adoption is not
+  arterial infrastructure but local area management: closing streets
+  adjacent to schools during drop-off and pick-up, creating low-traffic
+  neighbourhoods with filtered permeability, and redesigning residential
+  street environments so children can cycle and walk to school safely.
+  Schools are the entry point for lifelong cycling habit; local area
+  schemes deliver safety improvements at lower cost per kilometre than
+  arterial protected lanes.
+flagship_moves:
+  - "Implement school streets closures (no private vehicle access during drop-off and pick-up) at all Auckland primary schools within 10 years"
+  - "Create low-traffic neighbourhood schemes using modal filters in residential areas adjacent to schools and local parks, reducing through-traffic without impeding access"
+  - "Establish a safe routes to school programme funding high-quality walking and cycling connections for every school within a 2km radius of a PT or cycling connector"
+tensions:
+  - >
+    School streets and local area schemes displace vehicle traffic to
+    surrounding arterials, increasing congestion on those routes unless
+    arterial-level alternatives exist simultaneously — the two
+    approaches are complementary but the local scheme alone exports
+    its problem to the arterial network.
+  - >
+    Local area schemes are slow to implement due to community consultation
+    requirements and generate strong opposition from a minority of
+    affected residents, making citywide rollout politically difficult
+    despite aggregate public support for cycling safety.
+addresses:
+  - problem.auckland.transport.active_modes
+interventions:
+  - description: >
+      School streets trial at 50 Auckland primary schools in Year 1,
+      closing the street immediately outside the school gate to private
+      vehicles during the 30-minute drop-off and pick-up window.
+    state_variable: "cycling_mode_share"
+    constraint_relaxed: "road danger at school gates preventing child cycling"
+    expected_sign: "+"
+  - description: >
+      Modal filter installation on residential streets within 400m of
+      schools that are used as rat-runs, reducing through-traffic speeds
+      and volumes to levels consistent with safe cycling.
+    state_variable: "active_mode_safety_perception"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.transport.protected_cycling_network
+applicable_in:
+  - auckland

@@ -1,0 +1,19 @@
+id: driver.auckland.education.school_work_transition_gap
+name: "School-to-Work Transition Gap"
+description: >
+  Auckland secondary schools are structured around university entry
+  rather than vocational and trades pathways; students who do not
+  achieve NCEA Level 2 or who are not university-bound have few
+  structured transition options. Network and career guidance deficits
+  in high-deprivation schools mean Maori and Pacific school leavers
+  have less access to employer connections than their peers.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.education.secondary_transition
+claim_ids:
+  - claim.auckland.education.neet_rate_auckland
+  - claim.auckland.education.vocational_pathway_deficit

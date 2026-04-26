@@ -1,0 +1,43 @@
+id: camp.auckland.crime.perpetrator_focus
+name: "Perpetrator Accountability as Primary Lever"
+theme: crime
+core_claim: >
+  The most efficient way to reduce family violence is to change perpetrator
+  behaviour, not to manage victim safety in perpetuity. Intensive
+  perpetrator programmes (group cognitive-behavioural, culturally specific
+  for Maori men) combined with electronic monitoring and swift breach
+  consequences reduce recidivism more than victim-support investment alone.
+  Victim safety resources should follow, not substitute for, perpetrator
+  accountability.
+flagship_moves:
+  - "Mandate and fund perpetrator behaviour change programmes for all first-conviction family violence offenders."
+  - "Deploy electronic monitoring (ankle bracelets) for all protection order holders with prior breaches."
+  - "Develop kaupapa Maori perpetrator programmes with proven cultural safety and efficacy."
+tensions:
+  - >
+    Perpetrator programme availability in Auckland is insufficient for
+    mandated participation; courts sentence to programmes that have
+    12-month waitlists, defeating deterrence.
+  - >
+    Electronic monitoring of perpetrators does not prevent physical
+    proximity violations and may create false security for victims
+    who assume monitored perpetrators will not breach.
+addresses:
+  - problem.auckland.crime.family_violence
+interventions:
+  - description: >
+      Fund 10 additional perpetrator behaviour change programme cohorts
+      in South and West Auckland annually, with Maori-specific delivery
+      for Maori men.
+    state_variable: "fv_repeat_call_rate"
+    constraint_relaxed: "Perpetrator programme waitlist and capacity deficit"
+    expected_sign: "-"
+  - description: >
+      Legislate electronic monitoring as a mandatory bail condition for
+      repeat protection order respondents with history of breach.
+    state_variable: "protection_order_breach_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.crime.integrated_fv_response
+applicable_in:
+  - auckland

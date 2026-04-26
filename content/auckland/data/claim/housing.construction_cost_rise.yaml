@@ -1,0 +1,24 @@
+id: claim.auckland.housing.construction_cost_rise
+statement: >
+  Construction costs in New Zealand rose approximately 30–40% between 2020
+  and 2023 on the Capital Goods Price Index for construction, driven by
+  materials and labour cost inflation following COVID-19 supply disruptions.
+  The rise has only partially unwound since, compressing developer margins
+  and reducing the viability of new housing projects.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_building_consents_2023
+  - source.nz_productivity_commission_2012
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []
+notes: >
+  The CGPI figure is national; Auckland-specific construction cost data is not
+  separately published at the same frequency. The national figure is the best
+  available proxy for Auckland project economics.

@@ -1,0 +1,45 @@
+id: camp.auckland.transport.transit_oriented_development
+name: "Transit-oriented development"
+theme: transport
+core_claim: >
+  Car dependency is fundamentally a land use problem. Restructuring urban
+  development around rapid transit nodes — concentrating density, mixed
+  uses, and employment within walking distance of frequent services —
+  is the only durable solution. Service investment without density produces
+  empty buses; density without service investment produces car-dependent
+  intensification. The two must be co-delivered.
+flagship_moves:
+  - "Mandate minimum density and mixed-use zoning within 800m of all rapid transit stations as a condition of transport capital funding"
+  - "Accelerate the City Rail Link and Northwest Rapid Transit corridor to create the spine around which TOD can anchor"
+  - "Establish a transit-oriented development Crown agency with land acquisition and master-planning powers at key station precincts"
+tensions:
+  - >
+    TOD timescales are measured in decades: the density required to
+    support frequent PT will take 20–30 years to build out even under
+    favourable conditions, offering no relief to current congestion
+    or mode share within a typical political cycle.
+  - >
+    Concentrating density around transit nodes creates land value uplift
+    that can displace the lower-income households who most depend on
+    public transport, reproducing inequity unless affordable housing
+    is co-delivered.
+addresses:
+  - problem.auckland.transport.accessibility
+interventions:
+  - description: >
+      Rezone all land within 800m of rapid transit stations to allow
+      a minimum of 6-storey mixed-use development as permitted activity,
+      removing density constraints that currently frustrate TOD.
+    state_variable: "mode_share_car"
+    constraint_relaxed: "low-density zoning blocking viable PT catchments"
+    expected_sign: "-"
+  - description: >
+      Require AT and NZTA to co-locate land use planning with network
+      investment decisions, with TOD feasibility assessment as a gateway
+      for all rapid transit capital funding approvals.
+    state_variable: "pt_mode_share"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.transport.road_pricing
+applicable_in:
+  - auckland

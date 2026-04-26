@@ -1,0 +1,7 @@
+id: methodology.maori_youth_offending_index_v1
+name: "Maori Youth Offending Index"
+version: 1
+kind: measurement
+applies_to: [Claim]
+discharged_by: "json_schema"
+description: "Ratio of Maori youth offending rate to non-Maori youth offending rate; captures disproportionality in justice system contact, from Oranga Tamariki administrative data."

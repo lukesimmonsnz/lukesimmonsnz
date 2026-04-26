@@ -1,0 +1,17 @@
+id: driver.auckland.inequality.occupational_segregation
+name: "Occupational and Credential Segregation"
+description: >
+  Maori and Pacific workers are over-represented in lower-wage service
+  sectors; credential recognition gaps, network barriers, and educational
+  underinvestment in South and West Auckland limit upward occupational
+  mobility. The effect is a persistent pay gap that does not close with
+  economic growth alone.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.inequality.ethnic_wealth_gap
+claim_ids:
+  - claim.auckland.inequality.ethnic_pay_gap

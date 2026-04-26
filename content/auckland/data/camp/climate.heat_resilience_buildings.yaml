@@ -1,0 +1,45 @@
+id: camp.auckland.climate.heat_resilience_buildings
+name: "Building Stock Heat Resilience"
+theme: climate-adaptation
+core_claim: >
+  The fastest route to reducing heat-related harm in Auckland is
+  improving the thermal performance and cooling capacity of existing
+  buildings; the current housing stock is poorly insulated for summer
+  heat as well as winter cold. Mandatory minimum ventilation and
+  shading standards for new buildings, and a subsidised retrofit
+  programme for occupied housing in high-heat-exposure areas, protect
+  residents in the near term rather than waiting for tree canopy
+  to mature.
+flagship_moves:
+  - "Extend the Warmer Kiwi Homes programme to include summer heat resilience retrofits (ventilation, shading, insulation)."
+  - "Mandate minimum summer thermal comfort standards in all new Auckland residential builds."
+  - "Fund emergency cooling centres in South and West Auckland community facilities for extreme heat events."
+tensions:
+  - >
+    Building retrofit standards impose cost on owners and developers;
+    in the rental market, costs are passed to tenants through higher
+    rents unless there are rent control provisions.
+  - >
+    Cooling centres are a temporary safety net, not a structural
+    response; they do not reduce the heat exposure that creates the
+    need for them.
+addresses:
+  - problem.auckland.climate.urban_heat
+interventions:
+  - description: >
+      Extend Warmer Kiwi Homes eligibility to include summer heat
+      measures (ventilation fans, external shading, ceiling insulation)
+      for homes in NZDep decile 8-10 Auckland areas.
+    state_variable: "heat_vulnerable_household_count"
+    constraint_relaxed: "Current programme limited to winter warmth measures"
+    expected_sign: "-"
+  - description: >
+      Mandate minimum summer thermal performance standards for all
+      new Auckland residential builds, including minimum opening
+      window area and eave depth.
+    state_variable: "new_build_summer_comfort_standard"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.climate.green_infrastructure
+applicable_in:
+  - auckland

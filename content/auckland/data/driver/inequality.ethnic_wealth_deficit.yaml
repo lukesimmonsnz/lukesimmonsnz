@@ -1,0 +1,18 @@
+id: driver.auckland.inequality.ethnic_wealth_deficit
+name: "Ethnic Wealth Deficit from Colonial Land Loss"
+description: >
+  Crown alienation of Maori land from the 1840s onward stripped the
+  primary asset base; compounding differential in property wealth
+  accumulation persists into the present through the housing equity
+  mechanism. Maori entry into homeownership requires overcoming a
+  deposit gap with no inherited equity to draw on.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.inequality.ethnic_wealth_gap
+claim_ids:
+  - claim.auckland.inequality.colonial_land_loss
+  - claim.auckland.inequality.maori_homeownership_gap

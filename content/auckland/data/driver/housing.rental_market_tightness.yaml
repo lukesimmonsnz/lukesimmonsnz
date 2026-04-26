@@ -1,0 +1,21 @@
+id: driver.auckland.housing.rental_market_tightness
+name: "Rental market tightness"
+description: >
+  Persistently low rental vacancy rates in Auckland — driven by the same
+  supply shortage that constrains purchase affordability — give landlords
+  significant pricing power. When fewer than 2-3 percent of rental
+  properties are available at any time, renters face strong competition
+  for available properties, which sustains upward rent pressure independent
+  of broader income growth. Vacancy tightness also reduces tenants' ability
+  to exit poor-quality or unaffordable tenancies, weakening their
+  bargaining position at renewal.
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.housing.rental_affordability
+claim_ids:
+  - claim.auckland.housing.rent_to_income_ratio_2023
+  - claim.auckland.housing.supply_deficit_2010s

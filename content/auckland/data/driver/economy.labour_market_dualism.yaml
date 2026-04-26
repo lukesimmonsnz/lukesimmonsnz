@@ -1,0 +1,19 @@
+id: driver.auckland.economy.labour_market_dualism
+name: "Labour Market Dualism and Precarious Work"
+description: >
+  Auckland's labour market is bifurcating: a high-wage knowledge
+  sector with strong employment protections and a growing precarious
+  service sector (gig, casual, variable-hours) without social insurance
+  coverage. Dualism concentrates risk on workers least able to bear
+  it and suppresses aggregate consumption by compressing incomes at
+  the bottom of the distribution.
+theme: economy
+consensus: contested
+category: regulatory
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.economy.labour_market
+claim_ids:
+  - claim.auckland.economy.gig_precarity
+  - claim.auckland.economy.auckland_underemployment

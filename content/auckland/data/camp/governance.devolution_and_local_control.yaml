@@ -1,0 +1,44 @@
+id: camp.auckland.governance.devolution_and_local_control
+name: "Devolution and Community Control"
+theme: governance
+core_claim: >
+  Auckland's governance problem is not primarily a revenue problem
+  but a control problem; too many decisions are made at the
+  super-city level when they should be made at the local board or
+  community level. Genuine devolution of decision-making — with
+  commensurate funding — to local boards and Maori/Pacific community
+  organisations produces better-calibrated outcomes because those
+  closest to problems have the most relevant knowledge.
+flagship_moves:
+  - "Transfer decision-making authority over local parks, community facilities, and local roads to local boards with dedicated budgets."
+  - "Fund community-controlled development organisations in South and West Auckland with capital and decision-making authority."
+  - "Require Council to delegate to local boards rather than consult them on all decisions with primarily local impact."
+tensions:
+  - >
+    Genuine devolution with commensurate funding reduces the
+    Council's ability to cross-subsidise high-need areas from
+    high-revenue areas; fragmented funding may produce more
+    inequality, not less.
+  - >
+    Local boards lack professional governance and technical capacity
+    for complex capital decisions; devolution without capacity-building
+    produces poor procurement and accountability outcomes.
+addresses:
+  - problem.auckland.governance.local_govt_reform
+interventions:
+  - description: >
+      Transfer $200M of Auckland Council's annual discretionary budget
+      to local boards with binding authority over local parks,
+      community facilities, and local road maintenance.
+    state_variable: "local_board_decision_authority_index"
+    expected_sign: "+"
+  - description: >
+      Fund 5 community-controlled development organisations in South
+      and West Auckland wards, with capital grants and authority to
+      develop community-owned assets.
+    state_variable: "community_self_determination_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.governance.local_govt_revenue_reform
+applicable_in:
+  - auckland

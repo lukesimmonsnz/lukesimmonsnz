@@ -1,0 +1,41 @@
+id: camp.auckland.crime.organised_crime_suppression
+name: "Organised Crime Suppression and Gang Legislation"
+theme: crime
+core_claim: >
+  Organised crime requires direct law enforcement suppression: targeting
+  the financial flows of gang enterprises, prosecuting leadership, and
+  using gang-specific legislation to disrupt organisational capacity.
+  Harm reduction without supply disruption allows organised crime to
+  continue extracting revenue from communities; enforcement creates
+  the conditions in which exit programmes can work.
+flagship_moves:
+  - "Expand financial crime enforcement targeting gang asset accumulation and money laundering in Auckland."
+  - "Use gang association legislation to constrain public gang activity and recruitment."
+  - "Increase Border Force and Customs intelligence capacity to intercept drug precursors."
+tensions:
+  - >
+    Gang association legislation raises civil liberties concerns; broad
+    provisions risk criminalising association rather than proven criminal
+    activity, with disproportionate impact on Maori communities.
+  - >
+    Supply-side drug enforcement has not reduced drug availability or
+    price in New Zealand despite decades of effort; seizures are replaced
+    by new supply chains rapidly.
+addresses:
+  - problem.auckland.crime.organised_crime
+interventions:
+  - description: >
+      Fund an Auckland-based organised crime financial intelligence unit
+      with Police, Inland Revenue, and FENZ coordination to target
+      gang-linked property and business assets.
+    state_variable: "gang_asset_value"
+    expected_sign: "-"
+  - description: >
+      Increase Border Force staffing at Auckland Airport and Port of
+      Auckland for drug and precursor interception.
+    state_variable: "drug_market_supply_index"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.crime.harm_reduction_and_exit
+applicable_in:
+  - auckland

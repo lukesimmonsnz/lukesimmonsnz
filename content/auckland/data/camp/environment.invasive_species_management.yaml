@@ -1,0 +1,44 @@
+id: camp.auckland.environment.invasive_species_management
+name: "Invasive species management at scale"
+theme: environment
+core_claim: >
+  The bottleneck in native species recovery is not habitat area but
+  predator pressure and invasive plant competition within existing
+  habitat. Intensifying invasive species management — sustained trapping
+  and baiting, targeted herbicide programmes for weed species, biosecurity
+  at entry points to key sites — delivers more native species benefit
+  per dollar than habitat acquisition in a city where land is expensive.
+flagship_moves:
+  - "Fund a professional predator control programme across all regional parks, targeting 90% rat and stoat reduction throughout the year"
+  - "Establish a community weed management programme removing the top 10 invasive plant species from 1,000 ha of urban bush remnants annually"
+  - "Introduce biosecurity checkpoints at all trailheads in kauri dieback risk areas, with mandatory boot cleaning enforced by ranger presence"
+tensions:
+  - >
+    Intensive predator and weed management in fragmented habitat without
+    ecological corridor connectivity produces local recovery that cannot
+    spread and is lost when management lapses — it is maintenance
+    without resilience.
+  - >
+    Community weed programmes depend on sustained volunteer recruitment
+    in areas that already have low community capacity; professional
+    management is effective but expensive at landscape scale.
+addresses:
+  - problem.auckland.environment.biodiversity
+interventions:
+  - description: >
+      Professional predator management programme across all 26 Auckland
+      regional parks, targeting T+2 (trap catches below 2 per 100 trap
+      nights) as the year-round benchmark.
+    state_variable: "predator_density"
+    constraint_relaxed: "volunteer-dependent variable intensity predator control"
+    expected_sign: "-"
+  - description: >
+      Weed management programme clearing tradescantia, climbing asparagus,
+      and moth plant from 1,000 ha/year in priority bush remnants,
+      with 3-year follow-up maintenance to prevent re-establishment.
+    state_variable: "native_regeneration_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.environment.ecological_corridors
+applicable_in:
+  - auckland

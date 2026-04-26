@@ -1,0 +1,43 @@
+id: camp.auckland.infrastructure.digital_inclusion_programme
+name: "Digital inclusion subsidy and social tariff"
+theme: infrastructure
+core_claim: >
+  Where fibre infrastructure exists, the remaining access barrier is
+  cost. A targeted social tariff — a subsidised broadband plan for
+  households in receipt of income support, funded by either Crown
+  transfer or a cross-subsidy levy on commercial plans — would close
+  the income-based digital divide at relatively low cost per household.
+flagship_moves:
+  - "Legislate a social broadband tariff of $25/month for all Community Services Card holders, funded by a $1/month levy on all commercial broadband plans"
+  - "Require all schools with decile 1–3 rolls to provide free after-hours internet access to students via existing school fibre connections"
+  - "Fund a community digital hub programme providing free supervised internet access in libraries and community centres in high-deprivation neighbourhoods"
+tensions:
+  - >
+    A cross-subsidy levy on commercial plans increases costs for
+    all customers to benefit a minority; the distributional logic
+    is sound but politically contested.
+  - >
+    Subsidised access does not address digital skills barriers;
+    many households without internet access cite inability to use
+    it as a barrier alongside cost.
+addresses:
+  - problem.auckland.infrastructure.digital_connectivity
+interventions:
+  - description: >
+      Social broadband tariff of $25/month for Community Services Card
+      holders, funded by a $1/month levy on approximately 1.4M commercial
+      NZ broadband plans, targeting uptake among 80,000 Auckland
+      low-income households.
+    state_variable: "digital_access_rate"
+    constraint_relaxed: "cost barrier to broadband for low-income households"
+    expected_sign: "+"
+  - description: >
+      Community digital hub expansion: 50 additional funded community
+      internet access points in South Auckland, Māngere, and Rodney,
+      each with supervised access and basic digital skills support.
+    state_variable: "digital_access_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.infrastructure.rural_fibre_extension
+applicable_in:
+  - auckland

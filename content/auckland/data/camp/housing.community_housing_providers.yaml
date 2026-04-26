@@ -1,0 +1,45 @@
+id: camp.auckland.housing.community_housing_providers
+name: "Community and iwi housing provider model"
+theme: housing
+core_claim: >
+  Social housing delivery should be diversified away from Kāinga Ora toward
+  community housing providers and iwi housing entities, which can better
+  match housing design and tenancy support to community needs and access
+  philanthropic and private capital alongside Crown funding.
+flagship_moves:
+  - "Increase long-term government housing places contracted to registered community housing providers (CHPs)"
+  - "Fund iwi housing entities as co-investors in papakāinga and urban Māori housing developments"
+  - "Establish a social housing bond mechanism to allow CHPs to access institutional capital for large-scale delivery"
+tensions:
+  - >
+    Community housing providers have limited balance sheets and cannot
+    scale to the volumes required without a substantial increase in Crown
+    income-related rent subsidy commitments; diversification may substitute
+    for rather than augment direct Crown delivery.
+  - >
+    Contracting complexity and provider quality variation make it difficult
+    to maintain consistent tenancy outcomes across a fragmented provider
+    network; the monitoring and accountability infrastructure is immature.
+addresses:
+  - problem.auckland.housing.social_housing
+interventions:
+  - description: >
+      Contract an additional 2,000 government housing places per year to
+      CHPs through long-term (25-year) lease arrangements backed by
+      income-related rent subsidies.
+    state_variable: "public_housing_stock"
+    constraint_relaxed: "crown_capital_programme_cap"
+    expected_sign: "+"
+  - description: >
+      Co-invest with iwi housing entities in urban papakāinga developments
+      on Māori-owned land in Auckland, unlocking underutilised land for
+      housing aligned with cultural preferences.
+    state_variable: "feasible_development_sites"
+    expected_sign: "+"
+claim_ids:
+  - claim.auckland.housing.public_stock_deficit
+  - claim.auckland.housing.emergency_housing_cost
+tensions_with:
+  - camp.auckland.housing.public_housing_expansion
+applicable_in:
+  - auckland

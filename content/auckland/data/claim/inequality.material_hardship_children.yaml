@@ -1,0 +1,25 @@
+id: claim.auckland.inequality.material_hardship_children
+statement: >
+  Approximately 12–14% of Auckland children experience material hardship —
+  lacking at least six of seventeen basic necessities including adequate
+  food, clothing, and ability to see a doctor when needed. Material
+  hardship is more concentrated than income poverty and maps closely onto
+  large family size, single-parent households, and recent arrival in
+  New Zealand. It is most prevalent in Māngere, Ōtara, and Papakura.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_child_poverty_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Material hardship (DEP-17 index) is one of four official child
+  poverty measures. Auckland-specific figures from Stats NZ regional
+  breakdowns.

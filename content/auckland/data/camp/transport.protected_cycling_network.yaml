@@ -1,0 +1,49 @@
+id: camp.auckland.transport.protected_cycling_network
+name: "Connected protected cycling network"
+theme: transport
+core_claim: >
+  Cycling mode share cannot reach meaningful levels without a connected
+  network of physically separated cycleways on every arterial route that
+  carries significant trip demand. Painted lanes are insufficient —
+  physical separation from motor traffic is the infrastructure design
+  that changes both actual safety and the perception of safety among
+  the 60–70% of potential cyclists who identify as interested but
+  concerned. Connection is as important as quality: one missing link
+  breaks the utility of every connected segment.
+flagship_moves:
+  - "Build a connected citywide cycling network by closing all gaps between existing high-quality segments within 800m of schools, town centres, and rapid transit stations"
+  - "Convert the highest-volume arterial corridors (Great North Road, Dominion Road, New North Road, Great South Road) to protected cycleway standard within 10 years"
+  - "Establish a cycling network completeness standard requiring no on-road gap greater than 200m between protected segments"
+tensions:
+  - >
+    Protected cycleways on arterials typically require removal of a
+    general traffic lane or parking, creating organised opposition from
+    motorists and local businesses that consistently slows or stops
+    implementation — even where the safety and patronage evidence
+    is compelling.
+  - >
+    Arterial network investment concentrates benefit on the commuter
+    cycling market (confident riders, longer trips) rather than the
+    local access market (children cycling to school, short trips);
+    the two user groups require somewhat different infrastructure
+    priorities.
+addresses:
+  - problem.auckland.transport.active_modes
+interventions:
+  - description: >
+      Close all gaps of >200m in the existing protected cycling network
+      within 5 years, prioritising connections to schools, rapid transit
+      stations, and employment centres.
+    state_variable: "cycling_mode_share"
+    constraint_relaxed: "network connectivity gaps forcing on-road cycling"
+    expected_sign: "+"
+  - description: >
+      Mandate protected cycling infrastructure on all arterial roads
+      scheduled for reseal or reconstruction, embedding cycling provision
+      in the road renewal programme at near-zero marginal cost.
+    state_variable: "cycling_network_km"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.transport.school_streets_programme
+applicable_in:
+  - auckland

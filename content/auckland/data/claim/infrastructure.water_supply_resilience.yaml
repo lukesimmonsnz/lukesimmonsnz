@@ -1,0 +1,25 @@
+id: claim.auckland.infrastructure.water_supply_resilience
+statement: >
+  Auckland's water supply relies primarily on the Waitākere and Hunua
+  reservoir systems, which are vulnerable to drought, contamination events,
+  and climate-driven changes in catchment hydrology. The 2020–21 drought
+  required restrictions when storage fell to 40% of capacity, exposing
+  the absence of sufficient secondary or emergency supply. The planned
+  Central Interceptor project and additional storage will improve
+  resilience but will not be complete until the late 2020s.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.watercare_annual_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The 2020–21 drought was a significant stress test of Auckland's water
+  system. Watercare's infrastructure programme is publicly documented.

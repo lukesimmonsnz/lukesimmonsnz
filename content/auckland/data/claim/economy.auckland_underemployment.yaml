@@ -1,0 +1,20 @@
+id: claim.auckland.economy.auckland_underemployment
+statement: >
+  Auckland underemployment (workers employed part-time who want full-
+  time work) runs at approximately 8-10% of the labour force,
+  substantially above the headline unemployment rate; underemployment
+  is concentrated in South and West Auckland, among youth, and in
+  service sectors where casual and variable-hours contracts are common.
+value: null
+unit: null
+time_period: "2022-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_labour_market_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

@@ -1,0 +1,18 @@
+id: driver.auckland.climate.adaptation_financing_gap
+name: "Adaptation Financing Gap"
+description: >
+  The cost of Auckland's physical climate adaptation (seawalls,
+  drainage upgrades, property buyouts, managed retreat) substantially
+  exceeds current Council and Crown budgeting; there is no dedicated
+  national adaptation fund, and local government cannot borrow at the
+  scale required without breaching prudent debt limits.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.climate.sea_level_rise
+claim_ids:
+  - claim.auckland.climate.climate_inequality
+  - claim.auckland.economy.local_govt_fiscal_gap

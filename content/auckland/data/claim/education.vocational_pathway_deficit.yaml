@@ -1,0 +1,20 @@
+id: claim.auckland.education.vocational_pathway_deficit
+statement: >
+  Auckland's secondary curriculum is dominated by academic NCEA pathways;
+  vocational and trades pathways are underresourced and carry lower
+  social status despite offering viable labour market entry for students
+  not pursuing university. The result is that students who are not
+  university-bound receive less support and fewer structured options
+  at the school-to-work transition.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.tertiary_education_commission_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []

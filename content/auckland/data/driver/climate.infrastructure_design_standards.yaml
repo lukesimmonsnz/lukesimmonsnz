@@ -1,0 +1,18 @@
+id: driver.auckland.climate.infrastructure_design_standards
+name: "Historical Design Standards in Flood Infrastructure"
+description: >
+  Auckland's stormwater and flood protection infrastructure was built
+  to historical rainfall return period standards that are being exceeded
+  with increasing frequency as climate change intensifies precipitation.
+  Upgrading to future-climate standards is technically feasible but
+  requires capital investment that is not currently programmed.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.climate.flood_resilience
+claim_ids:
+  - claim.auckland.climate.stormwater_upgrade_cost
+  - claim.auckland.climate.flood_intensification

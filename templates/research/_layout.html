@@ -11,6 +11,8 @@
        class="{% if request.endpoint and request.endpoint.startswith('research.climate_') %}active{% endif %}">Climate Science &amp; AI</a>
     <a href="{{ url_for('research.medsci_index') }}"
        class="{% if request.endpoint and request.endpoint.startswith('research.medsci_') %}active{% endif %}">Medical Science</a>
+    <a href="{{ url_for('nz.index') }}"
+       class="{% if request.blueprint == 'nz' %}active{% endif %}">Aotearoa NZ</a>
     <a href="{{ url_for('auckland.index') }}"
        class="{% if request.blueprint == 'auckland' %}active{% endif %}">Auckland</a>
   </div>
@@ -82,6 +84,16 @@
 </div>
 {% endif %}
 
+{% if request.blueprint == 'nz' %}
+<div class="subnav subnav-secondary" aria-label="Aotearoa NZ pages">
+  <div class="subnav-inner">
+    <span class="subnav-label">In this branch:</span>
+    <a href="{{ url_for('nz.index') }}"
+       class="{% if request.endpoint == 'nz.index' %}active{% endif %}">Overview</a>
+  </div>
+</div>
+{% endif %}
+
 {% if request.blueprint == 'auckland' %}
 <div class="subnav subnav-secondary" aria-label="Auckland pages">
   <div class="subnav-inner">
@@ -101,7 +113,7 @@
 {# three research branches are AI-drafted notes that Luke has not edited.   #}
 {# The overview page (/research/) carries a fuller explanation; this banner #}
 {# is the per-page reminder for any page inside a branch.                   #}
-{% if request.blueprint == 'auckland' %}
+{% if request.blueprint == 'nz' or request.blueprint == 'auckland' %}
 <aside class="branch-authorship branch-authorship-edited" role="note" aria-label="Authorship">
   <div class="branch-authorship-inner">
     <span class="author-chip author-agent-edited">agent + luke</span>

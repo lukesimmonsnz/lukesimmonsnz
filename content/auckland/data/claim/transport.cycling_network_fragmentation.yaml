@@ -1,0 +1,26 @@
+id: claim.auckland.transport.cycling_network_fragmentation
+statement: >
+  Auckland's cycling network consists of a series of disconnected
+  high-quality segments — the Northwestern cycleway, the Lightpath,
+  Beach Road, the Waitemata Harbour shared path — separated by gaps
+  on high-speed arterials where cyclists must ride in traffic with
+  vehicles travelling at 50–80km/h. The absence of a connected network
+  means most cycling trips require on-road segments that the majority
+  of potential cyclists identify as too dangerous to attempt, confining
+  cycling to a small self-selecting group of confident riders.
+value: null
+unit: null
+time_period: "2022-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_transport_annual_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Network connectivity analysis is a GIS calculation; this claim is
+  qualitative and well-supported by AT's own network gap assessments.

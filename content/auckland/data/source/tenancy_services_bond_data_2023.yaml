@@ -1,0 +1,16 @@
+id: source.tenancy_services_bond_data_2023
+title: "Tenancy Bond Data: Rental Price Statistics 2023"
+author: null
+publisher: "Ministry of Business, Innovation and Employment | Hīkina Whakatutuki"
+year: 2023
+url: "https://www.tenancy.govt.nz/about-tenancy-services/data-and-statistics/rental-bond-data/"
+type: primary-data
+credibility: official
+geo_granularity:
+  - auckland
+  - nz
+notes: >
+  Administrative dataset of all bonds lodged with Tenancy Services, covering
+  new tenancies. Provides median weekly rent by territorial authority and
+  region. Represents new-let prices, not the full in-place rent distribution;
+  median of existing tenancies is typically lower.

@@ -1,0 +1,45 @@
+id: camp.auckland.climate.just_transition_investment
+name: "Just Transition Investment and Worker Support"
+theme: climate-adaptation
+core_claim: >
+  Decarbonisation should not proceed faster than the just transition
+  support system can absorb displaced workers; the social licence for
+  climate policy depends on low-income workers and communities seeing
+  that transition costs are shared equitably. Just transition investment
+  — retraining, income support, community economic development —
+  should be funded at the same scale as emissions reduction incentives.
+flagship_moves:
+  - "Establish a $200M Just Transition Fund for Auckland workers in fossil-fuel dependent sectors."
+  - "Fund free retraining programmes in green economy sectors (solar installation, EV maintenance, building retrofit) for transition-affected workers."
+  - "Develop a South Auckland Green Economy Precinct combining training, employment, and clean energy business incubation."
+tensions:
+  - >
+    Just transition investment slows the pace of decarbonisation
+    by requiring that support systems keep pace with displacement;
+    the urgency of climate targets may not allow the transition
+    timescales that worker support programmes require.
+  - >
+    Transition support programmes require identifying affected workers
+    before job loss; defining the at-risk population in advance is
+    technically difficult and politically sensitive.
+addresses:
+  - problem.auckland.climate.transition_economy
+interventions:
+  - description: >
+      Establish a $200M Auckland Just Transition Fund, jointly
+      administered by TEC and MBIE, providing retraining grants and
+      12-month income support for workers in fossil-fuel dependent
+      roles who voluntarily transition to green economy employment.
+    state_variable: "transition_worker_reskilling_rate"
+    constraint_relaxed: "Absence of structured transition support for fossil-fuel sector workers"
+    expected_sign: "+"
+  - description: >
+      Fund a South Auckland Green Economy Hub with collocated
+      training (EV maintenance, solar, building retrofit) and
+      employer partnerships, targeting 1,000 placements per year.
+    state_variable: "green_economy_employment_south_auckland"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.climate.rapid_decarbonisation
+applicable_in:
+  - auckland

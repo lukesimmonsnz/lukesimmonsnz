@@ -1,0 +1,20 @@
+id: driver.auckland.economy.agglomeration_friction
+name: "Agglomeration Friction from Urban Form"
+description: >
+  Agglomeration productivity — the output gain from workers and firms
+  clustering in proximity — is Auckland's primary economic advantage
+  as New Zealand's dominant city. Car-dependent urban form and
+  transport congestion reduce the effective agglomeration benefit
+  by increasing the friction cost of worker-to-worker and firm-to-firm
+  interaction; denser, better-connected urban form would increase
+  Auckland's productivity without requiring any change in technology
+  or capital.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.economy.productivity
+claim_ids:
+  - claim.auckland.economy.congestion_productivity_cost

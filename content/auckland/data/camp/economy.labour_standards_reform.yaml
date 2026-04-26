@@ -1,0 +1,46 @@
+id: camp.auckland.economy.labour_standards_reform
+name: "Labour Standards Reform and Worker Protection"
+theme: economy
+core_claim: >
+  The growth of precarious work without social insurance represents
+  an externality: gig workers' income risk is partly borne by the
+  public health and welfare systems when volatility produces hardship.
+  Extending minimum employment protections (sick leave, guaranteed
+  hours, ACC coverage) to all workers regardless of employment
+  classification corrects this externality and narrows the labour
+  market inequality that suppresses consumption in high-deprivation
+  Auckland areas.
+flagship_moves:
+  - "Legislate minimum guaranteed hours (10 hours/week) for all workers employed more than 6 months with the same employer."
+  - "Extend ACC work injury cover to all platform and gig workers classified as contractors."
+  - "Raise minimum wage annually to a fixed percentage (e.g. 60%) of median wage, removing political discretion."
+tensions:
+  - >
+    Mandatory hours guarantees and higher minimum wages may reduce
+    employer flexibility and increase casualisation as employers
+    avoid the 6-month tenure trigger; the employment effect is
+    empirically contested.
+  - >
+    ACC extension to gig workers raises levy costs for platform
+    companies that may pass costs through to consumers or reduce
+    worker pay rates.
+addresses:
+  - problem.auckland.economy.labour_market
+interventions:
+  - description: >
+      Amend Employment Relations Act to extend minimum employment
+      protections to all workers earning more than $10,000 per year
+      from any single employer, regardless of contractor classification.
+    state_variable: "precarious_worker_coverage_rate"
+    constraint_relaxed: "Contractor classification exclusion from employment protections"
+    expected_sign: "+"
+  - description: >
+      Set minimum wage at 60% of median wage in legislation, with
+      automatic annual adjustment, removing discretionary annual
+      reviews.
+    state_variable: "real_minimum_wage_median_ratio"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.economy.labour_market_flexibility
+applicable_in:
+  - auckland

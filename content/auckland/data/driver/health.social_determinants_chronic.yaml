@@ -1,0 +1,19 @@
+id: driver.auckland.health.social_determinants_chronic
+name: "Social Determinants of Chronic Disease"
+description: >
+  Housing quality (damp, cold), food environment, physical inactivity
+  driven by car-dependent urban form, and occupational exposure all
+  drive higher chronic disease rates in high-deprivation Auckland areas.
+  These are upstream determinants that primary and secondary healthcare
+  can document but cannot address; chronic disease is partly a housing
+  and transport problem.
+theme: health
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.health.chronic_disease
+claim_ids:
+  - claim.auckland.health.chronic_disease_deprivation_link
+  - claim.auckland.health.food_environment_inequality

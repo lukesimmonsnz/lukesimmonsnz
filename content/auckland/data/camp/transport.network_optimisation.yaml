@@ -1,0 +1,43 @@
+id: camp.auckland.transport.network_optimisation
+name: "Network optimisation and active demand management"
+theme: transport
+core_claim: >
+  The existing road network can be made significantly more productive
+  through intelligent management: dynamic signal timing, bus lanes on
+  congested arterials, incident response improvements, and managed
+  motorway systems (variable speed limits, ramp metering) can move more
+  people through the same physical infrastructure without large-scale
+  capital investment.
+flagship_moves:
+  - "Deploy adaptive traffic signal control on the 20 highest-volume arterial corridors, prioritising bus and freight movements"
+  - "Expand bus lane coverage on all arterials carrying >20 bus services per hour, enforced by camera"
+  - "Introduce ramp metering on all on-ramps to the Southern and Northwestern motorways to stabilise mainline flow"
+tensions:
+  - >
+    Network optimisation improves throughput at existing demand levels
+    but does not reduce the underlying demand for road space; without
+    pricing or mode shift, efficiency gains are consumed by induced
+    demand within 3–5 years.
+  - >
+    Bus lane expansion on arterials reduces lane capacity for private
+    vehicles, creating localised delay for car users — a politically
+    difficult trade-off that slows implementation in practice.
+addresses:
+  - problem.auckland.transport.congestion
+interventions:
+  - description: >
+      Adaptive signal control rollout on the 20 busiest AT-managed
+      arterials, targeting a 10–15% reduction in intersection delay
+      for buses and a 5% improvement in general traffic throughput.
+    state_variable: "average_travel_time"
+    constraint_relaxed: "fixed-timing signal plans on high-volume corridors"
+    expected_sign: "-"
+  - description: >
+      Camera-enforced bus lanes on all arterials with ≥20 bus services/hour,
+      reducing bus journey times by an estimated 15–25% on affected corridors.
+    state_variable: "pt_mode_share"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.transport.freight_rail_diversion
+applicable_in:
+  - auckland

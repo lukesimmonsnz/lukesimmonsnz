@@ -1,0 +1,23 @@
+id: driver.auckland.housing.weak_tenure_norms
+name: "Weak rental tenure norms and renter precarity"
+description: >
+  New Zealand's tenancy law and rental market norms have historically
+  provided renters with shorter tenure security and fewer rights than
+  comparable OECD countries. Short fixed-term tenancies, the former
+  right of landlords to terminate periodic tenancies without cause, and
+  the absence of rent stabilisation have combined to make renting a
+  precarious rather than stable housing tenure. This structural precarity
+  amplifies the financial stress of high rents: renters cannot plan
+  around stable housing costs or invest in a property as a home. The
+  2020 tenancy law reforms partially addressed this but left rent
+  increases uncapped.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.housing.rental_affordability
+claim_ids:
+  - claim.auckland.housing.rental_tenure_insecurity
+  - claim.auckland.housing.rental_cost_burden

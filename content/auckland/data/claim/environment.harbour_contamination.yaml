@@ -1,0 +1,27 @@
+id: claim.auckland.environment.harbour_contamination
+statement: >
+  Both the Waitematā and Manukau Harbours experience chronic contamination
+  from stormwater and wastewater overflows, causing regular beach closures
+  particularly after heavy rainfall. Shellfish gathering is prohibited in
+  most Auckland harbour areas due to persistent E. coli levels above
+  safe harvest thresholds. The contamination is primarily anthropogenic —
+  driven by combined sewer overflows, stormwater, and failing septic systems
+  at the urban fringe.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_state_of_environment_2023
+  - source.watercare_annual_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Auckland Council monitors harbour water quality and publishes beach
+  suitability ratings. Shellfish harvest closures are administered by
+  the Ministry for Primary Industries.

@@ -1,0 +1,45 @@
+id: camp.auckland.economy.labour_market_flexibility
+name: "Labour Market Flexibility and Employer Investment"
+theme: economy
+core_claim: >
+  Auckland's employment growth is driven by flexible, adaptive
+  businesses; regulation that raises the cost of employment at the
+  margin — hours guarantees, mandatory sick leave, higher minimum wages —
+  reduces total employment by making some low-productivity jobs
+  unviable. Flexibility in employment arrangements enables firms to
+  manage demand volatility without layoffs; the welfare function is
+  better served by a strong social safety net than by employment
+  regulation.
+flagship_moves:
+  - "Maintain flexible employment law that allows variable-hours contracts for genuine casuals."
+  - "Index minimum wage to inflation (CPI) only, not median wage, to protect employment viability of low-productivity roles."
+  - "Reduce employer PAYE and ACC levy burden to incentivise full employment over contractor use."
+tensions:
+  - >
+    Employer flexibility arguments are strongest for genuinely
+    marginal businesses; the majority of gig workers work for
+    large, profitable platforms where the flexibility argument
+    masks rent extraction from workers without exit options.
+  - >
+    CPI-only minimum wage indexation allows the real wage floor to
+    fall relative to median wages over time; this is in tension with
+    living wage norms and productivity sharing arguments.
+addresses:
+  - problem.auckland.economy.labour_market
+interventions:
+  - description: >
+      Simplify casual employment contracting rules to reduce
+      compliance cost for small employers while maintaining
+      anti-exploitation provisions.
+    state_variable: "small_business_employment_cost_index"
+    expected_sign: "-"
+  - description: >
+      Introduce a refundable employment tax credit for employers who
+      convert casual workers to permanent part-time or full-time
+      roles, incentivising the conversion without mandating it.
+    state_variable: "precarious_worker_coverage_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.economy.labour_standards_reform
+applicable_in:
+  - auckland

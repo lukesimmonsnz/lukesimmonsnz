@@ -1,0 +1,45 @@
+id: camp.auckland.health.first_1000_days_investment
+name: "First 1000 Days Investment and Wraparound Support"
+theme: health
+core_claim: >
+  The first 1,000 days are the highest-return investment window in
+  public health; intensive support for pregnant women and infants in
+  high-deprivation Auckland — free midwifery, nutrition support, healthy
+  home interventions, and family violence screening — produces returns
+  in reduced hospitalisation, better educational outcomes, and lower
+  long-run social service costs that exceed programme costs within a
+  decade.
+flagship_moves:
+  - "Fund universal free midwifery in NZDep decile 8-10 Auckland areas with enhanced LMC payment rates."
+  - "Extend healthy homes retrofit funding to all private rental properties housing infants under two."
+  - "Establish integrated pregnancy and early parenting hubs in South and West Auckland combining midwifery, Plunket, and social work."
+tensions:
+  - >
+    High-intensity wraparound programmes require sustained multi-agency
+    coordination; accountability fragmentation between health, housing,
+    and social services routinely undermines integration ambitions.
+  - >
+    Universal programmes in high-deprivation areas are expensive per
+    beneficiary; political sustainability requires demonstrating outcomes
+    within electoral cycles, which is difficult for first-1,000-days
+    interventions whose benefits manifest over 20 years.
+addresses:
+  - problem.auckland.health.maternal_child_health
+interventions:
+  - description: >
+      Increase LMC payment rates in NZDep decile 8-10 Auckland areas
+      by 30% with a practice-support payment for caseloads in under-
+      served suburbs.
+    state_variable: "antenatal_visit_rate"
+    constraint_relaxed: "LMC vacancy rate in high-deprivation areas"
+    expected_sign: "+"
+  - description: >
+      Establish five integrated pregnancy and early parenting hubs
+      in South Auckland and West Auckland with collocated midwifery,
+      Plunket, social work, and housing navigation.
+    state_variable: "preterm_birth_rate_maori_pacific"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.health.neonatal_hospital_capacity
+applicable_in:
+  - auckland

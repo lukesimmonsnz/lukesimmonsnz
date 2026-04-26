@@ -1,0 +1,43 @@
+id: camp.auckland.economy.fiscal_consolidation
+name: "Fiscal Consolidation and Debt Management"
+theme: economy
+core_claim: >
+  Auckland Council and the Crown must prioritise fiscal consolidation;
+  new revenue instruments and debt financing of infrastructure are
+  politically achievable in the short run but create long-run
+  vulnerability. Disciplined prioritisation of capital expenditure,
+  deferred discretionary spending, and efficiency gains within
+  existing services are the fiscally responsible path before new
+  instruments are introduced.
+flagship_moves:
+  - "Apply zero-based budgeting to Auckland Council discretionary programmes and non-infrastructure capital."
+  - "Defer non-essential capital projects until interest rate normalisation reduces debt servicing cost."
+  - "Mandate efficiency reviews of Council-controlled organisations to reduce the rates-funded operating subsidy."
+tensions:
+  - >
+    Fiscal consolidation in a growth city defers infrastructure
+    that generates compounding costs; the fiscally conservative path
+    of deferral is often more expensive in total cost than
+    front-loaded investment funded at current interest rates.
+  - >
+    CCO efficiency reviews have historically produced limited savings;
+    the structural cost of Auckland's infrastructure programme is not
+    in administrative overhead but in capital and debt service.
+addresses:
+  - problem.auckland.economy.fiscal_sustainability
+interventions:
+  - description: >
+      Conduct a zero-based review of all Auckland Council discretionary
+      grants and operating subsidies, targeting $200M per year in
+      savings for redeployment to infrastructure.
+    state_variable: "council_infrastructure_fiscal_gap"
+    expected_sign: "-"
+  - description: >
+      Implement a debt ceiling for Auckland Council at 280% of revenue,
+      triggering mandatory capital deferral protocols when approached.
+    state_variable: "council_debt_to_revenue_ratio"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.economy.value_capture_reform
+applicable_in:
+  - auckland

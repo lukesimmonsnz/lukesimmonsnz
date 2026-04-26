@@ -1,0 +1,18 @@
+id: driver.auckland.governance.procurement_integrity_risk
+name: "Procurement Integrity and Conflict of Interest"
+description: >
+  Auckland's infrastructure procurement is dominated by a small
+  number of large contractors with long-run relationships with
+  CCO management; the revolving door between public and private
+  sector creates conflict of interest structures that may produce
+  procurement outcomes that do not maximise value for ratepayers.
+  Audit oversight is limited by CCOs' arm's-length status.
+theme: governance
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.governance.accountability
+claim_ids:
+  - claim.auckland.governance.conflict_of_interest_risk

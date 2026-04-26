@@ -1,0 +1,46 @@
+id: camp.auckland.inequality.structural_economic_reform
+name: "Structural economic reform and wealth redistribution"
+theme: inequality
+core_claim: >
+  Transfer payments address the symptoms of inequality without changing
+  the structural drivers — concentrated wealth in housing assets, low
+  productivity growth concentrated in the top of the income distribution,
+  and an education-to-employment pipeline that reproduces disadvantage.
+  Durable equality requires tax reform (land value tax, capital gains
+  tax), investment in early childhood and education, and labour market
+  reform that raises wages through productivity rather than transfers.
+flagship_moves:
+  - "Introduce a capital gains tax on investment property to reduce the wealth premium flowing from housing appreciation to the top of the distribution"
+  - "Invest in universal, high-quality early childhood education in high-deprivation areas as the highest-return intervention for intergenerational mobility"
+  - "Reform the school funding system to provide substantially more resources per pupil in high-deprivation schools"
+tensions:
+  - >
+    Structural reform operates on long timescales: the effects of
+    early childhood investment take 20+ years to manifest in
+    employment outcomes; transfer payments address current hardship
+    that cannot wait for structural solutions.
+  - >
+    Capital gains and land value taxes are politically difficult and
+    create transition risks for existing property owners; even well-
+    designed reforms face legal and administrative complexity.
+addresses:
+  - problem.auckland.inequality.economic_disadvantage
+interventions:
+  - description: >
+      Capital gains tax on investment property at the marginal income
+      rate, applying to gains accrued from date of enactment, to
+      reduce the return premium on housing relative to productive
+      investment.
+    state_variable: "wealth_gini"
+    constraint_relaxed: "tax-free housing gains concentrating wealth in upper deciles"
+    expected_sign: "-"
+  - description: >
+      Universal high-quality ECE subsidy in decile 1–3 areas, covering
+      full fees for all children from 18 months and providing funded
+      transport, targeting 95% participation.
+    state_variable: "intergenerational_mobility_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.inequality.progressive_transfers
+applicable_in:
+  - auckland

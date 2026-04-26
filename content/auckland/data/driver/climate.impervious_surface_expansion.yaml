@@ -1,0 +1,20 @@
+id: driver.auckland.climate.impervious_surface_expansion
+name: "Impervious Surface Expansion"
+description: >
+  Auckland's urban growth has increased impervious surface coverage
+  (roads, roofs, car parks) that prevents stormwater infiltration,
+  accelerates runoff, and amplifies the urban heat island effect.
+  Intensification without green infrastructure requirements compounds
+  both flood and heat risk; the car-dependent urban form requires
+  large areas of impervious carparking that have no productive use
+  in a warming climate.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.climate.urban_heat
+claim_ids:
+  - claim.auckland.climate.urban_heat_island
+  - claim.auckland.climate.tree_canopy_deficit

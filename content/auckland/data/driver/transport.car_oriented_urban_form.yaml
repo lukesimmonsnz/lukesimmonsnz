@@ -1,0 +1,23 @@
+id: driver.auckland.transport.car_oriented_urban_form
+name: "Car-oriented urban form"
+description: >
+  Auckland's post-war development pattern — low-density residential
+  sprawl, separated land uses, motorway-oriented arterials, and minimal
+  mixed-use or transit-adjacent development — produces a spatial structure
+  where most origins and destinations cannot be connected efficiently by
+  public transport or active modes. Density below ~35 dwellings per
+  hectare makes frequent bus services economically unviable; dispersed
+  employment across business parks and retail strips rather than walkable
+  centres means that even well-funded PT cannot capture significant mode
+  share. The urban form is the upstream constraint that limits the
+  effectiveness of all downstream transport interventions.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.transport.accessibility
+claim_ids:
+  - claim.auckland.transport.car_mode_share_2023
+  - claim.auckland.transport.low_density_car_dependency

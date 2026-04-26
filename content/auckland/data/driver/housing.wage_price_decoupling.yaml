@@ -1,0 +1,20 @@
+id: driver.auckland.housing.wage_price_decoupling
+name: "Wage–price decoupling"
+description: >
+  Over the past four decades Auckland dwelling prices and rents have grown
+  substantially faster than median household incomes. Affordability is a
+  ratio, and the ratio has deteriorated primarily because the price
+  numerator has grown faster than the income denominator — not because
+  incomes have stagnated in absolute terms, but because land scarcity,
+  tax advantage, and credit expansion have driven price growth that
+  systematically outpaces any plausible income trajectory.
+theme: housing
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.housing.ownership_and_finance
+claim_ids:
+  - claim.auckland.housing.real_price_wage_divergence
+  - claim.auckland.housing.affordability_ratio_2023

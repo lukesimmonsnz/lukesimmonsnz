@@ -1,0 +1,46 @@
+id: camp.auckland.housing.finance_architecture
+name: "Finance architecture and cycle management"
+theme: housing
+core_claim: >
+  The bank-debt-and-pre-sales financing model is itself a major source of
+  boom-bust cyclicality, and policy tools that smooth the credit cycle —
+  macroprudential regulation, debt-to-income limits, stable immigration
+  settings — are systematically under-used. New financing architectures —
+  build-to-rent equity, pension capital, infrastructure bonds, a state
+  development bank — would stabilise supply delivery across cycles and
+  reduce the credit-driven price volatility that makes ownership timing
+  a matter of luck.
+flagship_moves:
+  - "Expand RBNZ macroprudential toolkit with counter-cyclical capital buffers tied to housing credit growth, dampening boom-bust amplitudes"
+  - "Establish a state development bank or Housing Finance Agency providing long-term fixed-rate construction finance independent of bank credit cycles"
+  - "Create a bond market instrument (covered bonds or RMBS standard) that allows non-bank investors to fund residential mortgages, reducing concentration of housing credit in the four main banks"
+tensions:
+  - >
+    Macroprudential tightening in a boom reduces affordability for
+    first-home buyers competing with investors who have more equity;
+    the tools designed to cool the market often hurt the most
+    credit-constrained buyers first.
+  - >
+    A state development bank requires Crown balance sheet commitment;
+    the fiscal cost is real even if the long-run return is positive,
+    and the institutional design risk is substantial.
+addresses:
+  - problem.auckland.housing.ownership_and_finance
+interventions:
+  - description: >
+      Introduce debt-to-income (DTI) lending limits of 6× gross household
+      income for owner-occupiers and 7× for investors, smoothing the
+      credit-driven demand cycle.
+    state_variable: "housing_price_to_income_ratio"
+    constraint_relaxed: "pro-cyclical bank lending amplifying price swings"
+    expected_sign: "-"
+  - description: >
+      Crown-guaranteed construction finance facility providing 80% LVR
+      construction loans at fixed rates for projects delivering ≥30%
+      affordable units, bypassing the pre-sales requirement.
+    state_variable: "annual_completions"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.housing.ownership_tax_reform
+applicable_in:
+  - auckland

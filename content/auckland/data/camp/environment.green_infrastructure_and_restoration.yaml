@@ -1,0 +1,44 @@
+id: camp.auckland.environment.green_infrastructure_and_restoration
+name: "Green infrastructure and ecological restoration"
+theme: environment
+core_claim: >
+  Auckland's environmental health requires reconnecting urban development
+  to ecological function: restoring riparian margins, planting street trees
+  and urban forest, installing rain gardens and bioretention devices that
+  treat stormwater before it enters waterways, and weaving ecological
+  corridors through the urban fabric. Green infrastructure delivers
+  co-benefits across water quality, biodiversity, urban heat, and amenity.
+flagship_moves:
+  - "Require all new developments to achieve a minimum 25% permeable surface and include on-site stormwater treatment (rain gardens, bioretention) as a consent condition"
+  - "Fund large-scale urban reforestation in canopy-poor, high-deprivation suburbs (Māngere, Ōtara, Papakura) targeting 25% canopy cover across these areas by 2035"
+  - "Restore riparian margins along all urban streams to a minimum 10m native planting buffer, funded through targeted rates on adjacent properties"
+tensions:
+  - >
+    Green infrastructure requirements add cost to development consents
+    and may reduce housing affordability or density if not offset by
+    planning incentives; the housing and environment objectives can
+    conflict in the same development site.
+  - >
+    Urban reforestation in high-deprivation areas requires sustained
+    maintenance funding post-planting; tree mortality without follow-up
+    care wastes the capital investment and community trust.
+addresses:
+  - problem.auckland.environment.ecological_health
+interventions:
+  - description: >
+      25% permeable surface and on-site stormwater treatment requirement
+      for all new commercial and multi-unit residential consents, reducing
+      stormwater discharge to waterways by an estimated 30%.
+    state_variable: "urban_stream_quality_index"
+    constraint_relaxed: "unmanaged impervious surface runoff entering waterways"
+    expected_sign: "+"
+  - description: >
+      Tree planting programme targeting 100,000 additional canopy trees
+      in the 10 most canopy-poor Auckland suburbs over 5 years, with
+      professional planting and 3-year aftercare funded through rates.
+    state_variable: "urban_tree_canopy_cover"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.environment.predator_free_auckland
+applicable_in:
+  - auckland

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/actor.schema.json",
+  "title": "Actor",
+  "description": "An institution or individual that appears in the analysis. Migrated from content/auckland/schema/actor.schema.json. Structural changes: (1) governs_ids added (E_governs, Actor → Region); (2) Actor is excluded from E_evidenced_by (§2 — existence-claims about actors are Source-referenced; contested claims live as Claim nodes *about* the Actor, not as edges from Actor into Claim). Type enum is actor_institutional_typology_v1 (11-value, ratified 2026-04-25).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "type"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^actor\\.[a-z0-9_.]+$"
+    },
+    "name": {"type": "string"},
+    "type": {
+      "description": "Institutional typology (actor_institutional_typology_v1).",
+      "enum": [
+        "iwi",
+        "hapu",
+        "crown-agency",
+        "council",
+        "ccos",
+        "political-party",
+        "ngo",
+        "academic-institution",
+        "business",
+        "individual",
+        "tribunal"
+      ]
+    },
+    "description": {"type": "string"},
+    "roles": {
+      "description": "Freetext role labels for this Actor (e.g. 'regulator', 'funder', 'service-provider').",
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "governs_ids": {
+      "description": "Regions this Actor has jurisdictional responsibility over. Materialises to E_governs.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "uniqueItems": true
+    },
+    "source_ids": {
+      "description": "Sources for this Actor's definition (e.g. official mandate documents, legislation). Direct citation permitted on Actor for definitional provenance.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^source\\."
+      }
+    }
+  }
+}

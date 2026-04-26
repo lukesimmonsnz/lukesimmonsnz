@@ -1,0 +1,45 @@
+id: camp.auckland.education.ece_parent_choice
+name: "ECE Diversity, Parent Choice, and Home-Based Care"
+theme: education
+core_claim: >
+  Not all quality early childhood provision happens in licensed ECE
+  centres; home-based care by whānau, grandparents, and registered
+  home educators can deliver excellent developmental outcomes in
+  culturally appropriate settings. Policy that mandates centre-based
+  attendance as the only subsidised pathway disadvantages Pacific and
+  Maori families whose care preferences include extended family
+  arrangements. Expanding the range of subsidised care models, including
+  home-based education, respects cultural diversity while maintaining
+  quality standards.
+flagship_moves:
+  - "Extend full subsidy to home-based care with registered educators for children under three."
+  - "Fund whanau-based care networks in Auckland with quality support and peer mentoring."
+  - "Develop culturally specific ECE quality standards for Pacific and Maori providers."
+tensions:
+  - >
+    Home-based care quality is harder to monitor and regulate than
+    centre-based ECE; evidence for developmental outcomes from informal
+    arrangements is weaker and more variable.
+  - >
+    Subsidising family-based care may reduce pressure to fix the
+    quality and access problems in centre-based ECE rather than
+    solving them.
+addresses:
+  - problem.auckland.education.early_childhood
+interventions:
+  - description: >
+      Extend ECE subsidy to registered home-based educators caring
+      for 1-4 children under three, with minimum training requirements
+      and quality visit programme.
+    state_variable: "ece_participation_rate_maori_pacific"
+    expected_sign: "+"
+  - description: >
+      Fund Pacific and Maori ECE networks in Auckland to develop and
+      accredit culturally specific quality frameworks for community-
+      based early childhood provision.
+    state_variable: "ece_quality_index_high_deprivation"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.ece_universal_quality
+applicable_in:
+  - auckland

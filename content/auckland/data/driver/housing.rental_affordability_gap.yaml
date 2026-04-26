@@ -1,0 +1,20 @@
+id: driver.auckland.housing.rental_affordability_gap
+name: "Rental affordability gap"
+description: >
+  Low-income households — those dependent on main benefits, minimum wage
+  employment, or other income-constrained positions — cannot afford market
+  rents in Auckland without spending more than 30% of gross income on
+  housing costs. As market rents have risen faster than benefit and wage
+  floors, the gap between what low-income households can pay and the
+  market clearing rent has widened, generating structural demand for
+  subsidised public and community housing that the market cannot satisfy.
+theme: housing
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.housing.social_housing
+claim_ids:
+  - claim.auckland.housing.waitlist_size_2023
+  - claim.auckland.housing.affordability_ratio_2023

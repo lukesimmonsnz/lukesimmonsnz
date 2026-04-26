@@ -1,0 +1,64 @@
+id: problem.auckland.education.secondary_transition
+title: "School-to-Work and School-to-Tertiary Transition"
+theme: education
+section: education
+subpage: secondary-transition
+parent: problem.auckland.education.achievement
+order: 2
+updated: "2026-04-26"
+summary: >
+  Approximately 12-15% of Auckland 15-24 year olds are NEET; the rate
+  is substantially higher for Maori and Pacific youth in South and West
+  Auckland. Secondary curriculum is structured around university entry
+  rather than vocational pathways; employers report foundational skill
+  gaps in school leavers. Network exclusion disadvantages Maori and
+  Pacific school leavers at the transition point where informal
+  connections matter most.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "neet_rate_maori_pacific"
+    - "school_to_employment_transition_rate"
+    - "ncea_attainment_maori_pacific"
+    - "university_enrolment_rate_maori_pacific"
+  inputs:
+    - "vocational_dual_enrolment_places"
+    - "gateway_programme_schools"
+    - "academic_tutoring_reach"
+    - "university_access_programme_places"
+  constraints:
+    - "ITP capacity: dual enrolment requires ITP places that are at capacity in high-demand trades"
+    - "Tracking risk: vocational pathway investment must be genuinely parallel, not a lower-status default"
+    - "Attendance: 40% absenteeism means transition support reaches a fraction of the target population"
+  feedback_loops:
+    - "NEET at 18-20 → income disadvantage → housing disadvantage → intergenerational poverty"
+    - "School-to-work network exclusion → lower first job quality → lower career trajectory"
+narrative:
+  - heading: "The NEET cliff"
+    body: >
+      The school-to-work transition is where educational disadvantage
+      converts to labour market disadvantage. A young Maori man from
+      South Auckland who leaves school at 17 without NCEA Level 2 and
+      without a vocational pathway is in a structurally dangerous
+      position: too under-credentialled for most employment, without
+      the networks to access jobs filled informally, and without the
+      skills or capital to be self-employed. The NEET rate at 18-20
+      is the educational outcome that most directly predicts the
+      long-run inequality outcomes documented elsewhere in this graph.
+  - heading: "Pathway versus achievement"
+    body: >
+      The tension between vocational pathway investment and academic
+      excellence focus is partly false: both are needed. But they
+      address different parts of the distribution. University access
+      programmes help the 50-60% of Maori and Pacific students who
+      attain NCEA Level 2 but do not proceed to university; vocational
+      pathways help the 30-40% who do not reach that threshold. A
+      system that invests only in the upper part of the distribution
+      while the lower part falls into NEET status is not addressing
+      the problem.
+claim_ids:
+  - claim.auckland.education.neet_rate_auckland
+  - claim.auckland.education.vocational_pathway_deficit
+  - claim.auckland.education.employer_readiness_gap
+status: draft

@@ -1,0 +1,21 @@
+id: driver.auckland.inequality.intergenerational_disadvantage
+name: "Intergenerational transmission of disadvantage"
+description: >
+  Poverty in Auckland is not randomly distributed: children born into
+  low-income, high-deprivation households face structurally worse
+  outcomes across education, health, employment, and housing than those
+  born into higher-income households. The mechanisms include material
+  deprivation affecting early childhood development, residential
+  segregation concentrating disadvantage in specific schools and
+  neighbourhoods, and the absence of family wealth to provide
+  deposit assistance, career capital, or safety nets.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.inequality.economic_disadvantage
+claim_ids:
+  - claim.auckland.inequality.child_poverty_rate_auckland
+  - claim.auckland.inequality.wealth_concentration

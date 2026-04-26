@@ -1,0 +1,20 @@
+id: claim.auckland.governance.public_trust_decline
+statement: >
+  Public trust in Auckland Council has declined across the amalgamation
+  period; survey data consistently shows that majorities of Aucklanders
+  do not believe the Council listens to them, spends their money well,
+  or makes decisions in their interests. Trust is lowest in high-
+  deprivation areas and among Maori and Pacific residents.
+value: null
+unit: null
+time_period: "2013-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_ltp_2024
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

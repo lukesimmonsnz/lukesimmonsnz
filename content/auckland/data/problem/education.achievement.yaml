@@ -1,0 +1,63 @@
+id: problem.auckland.education.achievement
+title: "Educational Achievement Gap"
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 0
+updated: "2026-04-26"
+summary: >
+  NCEA Level 2 attainment rates for Maori and Pacific Auckland students
+  are 15-20 percentage points below NZ European; persistent absenteeism
+  affects approximately 40% of Auckland students and has not recovered
+  to pre-COVID levels. High-deprivation schools face compound
+  disadvantage: higher needs with relatively lower effective resourcing
+  and higher teacher turnover. The debate is whether equity resourcing
+  or attendance recovery is the primary lever.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "ncea_attainment_maori_pacific"
+    - "persistent_absence_rate"
+    - "teacher_retention_rate_high_need_schools"
+    - "ncea_attainment_gap"
+  inputs:
+    - "per_pupil_funding_decile_1_3"
+    - "specialist_support_staff_count"
+    - "attendance_officer_count"
+    - "teacher_housing_supplement"
+  constraints:
+    - "Attendance: 40% persistent absenteeism means classroom investment reaches only 60% of target students"
+    - "Teacher supply: experienced teacher shortage in high-deprivation areas is structural"
+    - "Multiple disadvantages: students with housing instability, health issues, and family stress require wraparound not just teaching"
+  feedback_loops:
+    - "Low achievement → school disengagement → absence → lower achievement"
+    - "High teacher turnover → institutional knowledge loss → lower school effectiveness → harder recruitment"
+narrative:
+  - heading: "The post-COVID attendance crisis"
+    body: >
+      Before COVID, approximately 20% of Auckland students were
+      persistently absent; post-COVID that figure is 40%. The pandemic
+      disrupted the attendance norm — the social expectation that school
+      is where you go every day — and it has not recovered. A school
+      cannot improve achievement outcomes for students who are not there.
+      The attendance crisis is now the primary educational emergency in
+      Auckland, and it requires a direct response rather than the
+      assumption that resourcing improvements will automatically improve
+      attendance.
+  - heading: "Resource inequity as structural disadvantage"
+    body: >
+      The funding formula provides more per-pupil to high-need schools
+      than to low-need schools, but not enough more. The additional cost
+      of educating a child with multiple disadvantages — learning
+      difficulties, English as a second language, housing instability,
+      health issues — is substantially above the decile-based adjustment
+      provided. The result is that high-deprivation schools are
+      perpetually under-resourced relative to what their students
+      need, regardless of the teachers' effort and skill.
+claim_ids:
+  - claim.auckland.education.ncea_ethnicity_gap
+  - claim.auckland.education.school_funding_inequity
+  - claim.auckland.education.attendance_crisis
+status: draft

@@ -1,0 +1,18 @@
+id: driver.auckland.education.ece_access_gap
+name: "ECE Access Gap in High-Deprivation Areas"
+description: >
+  Cost, availability, and quality gaps in ECE access for Maori and
+  Pacific Auckland families mean that children who most benefit from
+  early childhood education are least likely to receive it at adequate
+  quality. This creates a school-entry disadvantage that cannot be
+  overcome by primary school interventions alone.
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.education.early_childhood
+claim_ids:
+  - claim.auckland.education.ece_participation_gap
+  - claim.auckland.education.ece_cost_barrier

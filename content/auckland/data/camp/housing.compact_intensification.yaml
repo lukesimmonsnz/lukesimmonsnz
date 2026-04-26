@@ -1,0 +1,44 @@
+id: camp.auckland.housing.compact_intensification
+name: "Compact intensification"
+theme: housing
+core_claim: >
+  Auckland's housing growth should be concentrated within the existing urban
+  footprint through transit-oriented, medium and high-density intensification;
+  expanding the urban boundary is environmentally costly and infrastructure-
+  inefficient compared with making better use of already-serviced inner-city land.
+flagship_moves:
+  - "Enable as-of-right 4–6 storey development within walkable distance of all rapid- and frequent-transit stops"
+  - "Invest in urban renewal infrastructure to unlock high-value infill sites in inner suburbs"
+  - "Accelerate consenting for medium-density residential developments below a threshold floorplate"
+tensions:
+  - >
+    Concentrated intensification in desirable inner suburbs raises land values
+    and can displace existing lower-income residents and communities unless
+    accompanied by social housing provision or inclusionary requirements.
+  - >
+    Infrastructure upgrade costs for intensification within ageing reticulated
+    networks can be as high as greenfield extension; the cost argument for
+    compactness depends heavily on infrastructure condition and network capacity.
+addresses:
+  - problem.auckland.housing.land_supply
+interventions:
+  - description: >
+      Zone all land within 1.5 km of a rapid-transit stop for buildings of
+      six storeys or more as-of-right, removing height and density limits.
+    state_variable: "feasible_development_sites"
+    constraint_relaxed: "restrictive_residential_zoning"
+    expected_sign: "+"
+  - description: >
+      Establish a targeted infrastructure acceleration fund for intensification
+      catchments, separating the financing of network upgrades from
+      individual development contribution levies.
+    state_variable: "consent_pipeline"
+    constraint_relaxed: "development_contribution_costs"
+    expected_sign: "+"
+claim_ids:
+  - claim.auckland.housing.nps_ud_capacity_yield
+  - claim.auckland.housing.infill_greenfield_split
+tensions_with:
+  - camp.auckland.housing.urban_expansion
+applicable_in:
+  - auckland

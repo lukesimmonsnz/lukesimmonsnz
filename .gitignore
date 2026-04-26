@@ -11,3 +11,11 @@ agent/daily_drafts/*.md
 _site/
 .wrangler/
 .secrets-*.md
+
+# Layer 0.5b — ML venv and daemon artefacts
+.venv-ml/
+.ml-daemon.pid
+ml-daemon.log
+ml-daemon.err
+# HuggingFace model cache if ever redirected into project dir
+.hf_cache/

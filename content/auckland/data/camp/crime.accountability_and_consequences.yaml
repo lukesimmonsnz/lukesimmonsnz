@@ -1,0 +1,44 @@
+id: camp.auckland.crime.accountability_and_consequences
+name: "Accountability, Consequences, and Victim Rights"
+theme: crime
+core_claim: >
+  Restorative youth justice, while valuable for minor offending, is
+  insufficient for serious and repeat violent offenders. Clear
+  consequences for serious offending protect victims, deter others, and
+  are not incompatible with rehabilitation. Lowering the age of criminal
+  responsibility for serious violent offences and increasing sentence
+  options for the Youth Court provides proportionate accountability
+  without abandoning rehabilitation goals.
+flagship_moves:
+  - "Extend Youth Court jurisdiction to include serious violent offences by 10-13 year olds with mandatory accountability orders."
+  - "Increase victim support and notification rights throughout youth justice proceedings."
+  - "Create a youth offending register for serious violent repeat offenders accessible to schools and social services."
+tensions:
+  - >
+    Lowering the age of criminal responsibility and expanding Youth
+    Court jurisdiction increases the formal justice footprint on children;
+    evidence on deterrence for under-14s is weak and incarceration
+    effects are harmful.
+  - >
+    A youth offending register risks labelling and further marginalising
+    young people; stigma can increase rather than reduce reoffending
+    by closing off legitimate pathways.
+addresses:
+  - problem.auckland.crime.youth_offending
+interventions:
+  - description: >
+      Legislate expanded victim notification rights in youth justice
+      proceedings and mandate victim impact statements at all family
+      group conferences.
+    state_variable: "victim_satisfaction_index"
+    expected_sign: "+"
+  - description: >
+      Create serious-offending accountability orders (electronic
+      monitoring plus mandatory programme attendance) as an alternative
+      to residential placement for 14-17 year olds.
+    state_variable: "youth_reoffending_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.crime.restorative_youth_justice
+applicable_in:
+  - auckland

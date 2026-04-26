@@ -1,0 +1,22 @@
+id: claim.auckland.health.diabetes_prevalence_auckland
+statement: >
+  Type 2 diabetes prevalence in Auckland's Pacific communities is
+  approximately three times the national average; Pacific and Maori
+  Aucklanders have substantially higher rates of diabetes-related
+  hospitalisation and amputation than NZ Europeans, reflecting both
+  higher prevalence and later-stage diagnosis due to primary care
+  access barriers.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.diabetes_nz_2023
+  - source.moh_health_loss_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

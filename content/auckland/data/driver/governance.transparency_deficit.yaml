@@ -1,0 +1,19 @@
+id: driver.auckland.governance.transparency_deficit
+name: "Transparency Deficit and Information Withholding"
+description: >
+  Auckland Council and CCOs routinely use commercial sensitivity and
+  legal privilege to restrict public access to information about major
+  decisions; this opacity makes it impossible for citizens, media,
+  and iwi to scrutinise decisions effectively. The LGOIMA non-compliance
+  pattern suggests institutional resistance to transparency rather than
+  isolated failures.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.governance.accountability
+claim_ids:
+  - claim.auckland.governance.oia_response_failure
+  - claim.auckland.governance.public_trust_decline

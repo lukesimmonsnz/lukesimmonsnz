@@ -1,0 +1,20 @@
+id: driver.auckland.housing.finance_procyclicality
+name: "Pro-cyclical construction finance"
+description: >
+  The dominant financing model for Auckland housing delivery — bank debt,
+  developer equity, and pre-sales — is strongly pro-cyclical. Banks tighten
+  lending criteria at exactly the moment developers most need finance, and
+  pre-sale thresholds (typically 50–70% of units) cannot be met when buyer
+  confidence is low, causing project deferrals to cluster in downturns.
+  This finance architecture means the quantity of supply produced in any
+  period is driven more by credit conditions than by the underlying
+  cost-benefit calculus of development.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.housing.supply_economics
+claim_ids:
+  - claim.auckland.housing.annual_consents_recent_decade

@@ -1,0 +1,21 @@
+id: claim.auckland.crime.meth_harm_concentration
+statement: >
+  Methamphetamine use is disproportionately concentrated in
+  high-deprivation Auckland communities; meth-related harm (family
+  violence, child neglect, acquisitive crime) imposes costs borne
+  primarily by those communities, not by users alone. Treatment capacity
+  in South and West Auckland is substantially below assessed need.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.nz_police_organised_crime_2023
+  - source.msd_family_violence_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

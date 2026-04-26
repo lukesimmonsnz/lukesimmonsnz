@@ -1,0 +1,20 @@
+id: driver.auckland.inequality.inadequate_benefit_levels
+name: "Inadequate benefit levels relative to Auckland costs"
+description: >
+  Core benefit rates in New Zealand were set at levels designed for a
+  lower-cost housing market and have not kept pace with Auckland rental
+  increases. A sole parent on the main benefit with two children receives
+  income that, after paying median Auckland rent, leaves less than $100/
+  week for all other expenses. The gap between benefit income and Auckland
+  housing costs is the proximate cause of material hardship for benefit-
+  dependent households.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.inequality.child_poverty
+claim_ids:
+  - claim.auckland.inequality.child_poverty_rate_auckland
+  - claim.auckland.inequality.material_hardship_children

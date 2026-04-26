@@ -1,0 +1,18 @@
+id: driver.auckland.health.midwifery_access_gap
+name: "Midwifery Workforce Gap in High-Deprivation Areas"
+description: >
+  LMC vacancies and unsustainable caseloads in South and West Auckland
+  mean that pregnant women in high-deprivation areas have lower antenatal
+  visit frequency and higher rates of unbooked presentations. Midwifery
+  underpayment relative to clinical complexity drives experienced
+  practitioners to low-caseload or private obstetric settings.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.health.maternal_child_health
+claim_ids:
+  - claim.auckland.health.midwife_workforce_shortage
+  - claim.auckland.health.preterm_birth_disparity

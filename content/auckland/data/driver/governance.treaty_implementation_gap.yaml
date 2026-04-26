@@ -1,0 +1,19 @@
+id: driver.auckland.governance.treaty_implementation_gap
+name: "Treaty Implementation Gap in Urban Governance"
+description: >
+  Auckland's governance frameworks have not adequately incorporated
+  Treaty obligations for the urban Maori majority; statutory roles
+  for mana whenua do not address the governance needs of pan-tribal
+  urban Maori. The resulting gap leaves most Maori Aucklanders without
+  meaningful participation in decisions affecting them through either
+  Treaty-based or general democratic channels.
+theme: governance
+consensus: contested
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.governance.treaty_co_governance
+claim_ids:
+  - claim.auckland.governance.iwi_auckland_governance_role
+  - claim.auckland.governance.maori_population_urban_shift

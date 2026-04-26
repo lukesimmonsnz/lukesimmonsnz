@@ -1,0 +1,22 @@
+id: claim.auckland.governance.democratic_deficit_south_auckland
+statement: >
+  The communities most affected by Auckland Council decisions on
+  housing, transport, and infrastructure — South and West Auckland's
+  Maori and Pacific populations — have the lowest rates of local
+  electoral participation; the decisions that shape their neighbourhoods
+  are made disproportionately by voters from high-income, high-turnout
+  areas of North Shore and Epsom.
+value: null
+unit: null
+time_period: "2019-2022"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.electoral_commission_2023
+  - source.auckland_council_ltp_2024
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

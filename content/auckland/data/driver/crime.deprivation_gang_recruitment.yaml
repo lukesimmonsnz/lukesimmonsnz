@@ -1,0 +1,17 @@
+id: driver.auckland.crime.deprivation_gang_recruitment
+name: "Deprivation and Gang Recruitment Pipeline"
+description: >
+  Gangs recruit effectively in South and West Auckland because they offer
+  belonging, income, and protection in areas where legitimate alternatives
+  are scarce. School disengagement and youth unemployment are primary
+  recruitment predictors. Suppression-only approaches reinforce in-group
+  loyalty and accelerate the pipeline from youth contact to full membership.
+theme: crime
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.crime.organised_crime
+claim_ids:
+  - claim.auckland.crime.gang_membership_deprivation

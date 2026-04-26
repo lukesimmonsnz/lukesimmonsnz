@@ -1,0 +1,18 @@
+id: driver.auckland.economy.crown_fiscal_constraint
+name: "Crown Fiscal Constraint and Debt Trajectory"
+description: >
+  Post-COVID debt growth has tightened the Crown's fiscal headroom;
+  competing demands from health, education, housing, and defence
+  mean that Auckland-specific infrastructure investment competes for
+  a constrained fiscal envelope. Without new revenue instruments,
+  Auckland cannot fund the capital programme required for its
+  population growth trajectory.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.economy.fiscal_sustainability
+claim_ids:
+  - claim.auckland.economy.nz_public_debt_trajectory

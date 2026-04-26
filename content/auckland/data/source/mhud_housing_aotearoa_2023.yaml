@@ -1,0 +1,14 @@
+id: source.mhud_housing_aotearoa_2023
+title: "Housing in Aotearoa: 2023"
+author: null
+publisher: "Ministry of Housing and Urban Development | Manatū Wāhanga Okioki"
+year: 2023
+url: "https://www.hud.govt.nz/our-work/research-and-evaluation/housing-in-aotearoa-2023/"
+type: government-report
+credibility: official
+geo_granularity:
+  - auckland
+  - nz
+notes: >
+  Annual housing system report covering supply, demand, and affordability by
+  region. Covers the 2010s consent deficit and the post-NPS-UD supply response.

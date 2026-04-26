@@ -1,0 +1,85 @@
+id: problem.auckland.transport.public_transport
+title: "Public transport mode share and network gaps"
+theme: transport
+section: transport
+subpage: public-transport
+parent: problem.auckland.transport.accessibility
+order: 2
+updated: "2026-04-26"
+summary: >
+  Auckland's public transport carries roughly 5–8% of person-trips —
+  a fraction of what comparable cities achieve. Patronage recovered to
+  roughly 80–85% of its 2019 peak by 2023 but remains constrained by
+  a rapid transit network that leaves more than half the urban area
+  beyond 800m of any rapid transit stop, bus services with 15–30 minute
+  headways that require timetable planning rather than turn-up-and-go,
+  and fares structured to penalise longer trips made by outer-suburban
+  households. The City Rail Link opening will transform rail capacity
+  but cannot by itself close the coverage gap in the Northwest, North
+  Shore, and outer South.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "pt_mode_share"
+    - "annual_pt_boardings"
+    - "rapid_transit_catchment_coverage"
+    - "pt_fare_affordability"
+  inputs:
+    - "rapid_transit_network_extent"
+    - "service_frequency_headways"
+    - "fare_level_and_structure"
+    - "bus_priority_infrastructure"
+    - "crl_opening_and_capacity"
+  constraints:
+    - "Network coverage: more than half of Auckland beyond 800m of rapid transit"
+    - "Frequency gap: most bus services at 15–30 minute headways, requiring timetable planning"
+    - "Fare regressivity: longer outer-suburban trips cost more in absolute terms"
+    - "Operating funding gap: AT subsidy requirement exceeds available Crown and Council funding"
+  feedback_loops:
+    - "Low pt_mode_share → low farebox revenue → funding pressure → service cuts → lower pt_mode_share (PT death spiral)"
+    - "High frequency + network coverage → trip chaining possible → mode shift → higher farebox → investment case for further expansion"
+narrative:
+  - heading: "The network coverage problem"
+    body: >
+      Auckland's rapid transit spine — the rail lines, Northern Busway,
+      and Eastern Busway — serves major corridors well but leaves the
+      Northwest, most of the North Shore, and the outer South without
+      fast, frequent connections. More than half of Auckland's residential
+      land area lies beyond 800m of any rapid transit stop: these residents
+      face bus services too slow and infrequent to attract discretionary
+      car trips. The City Rail Link will transform rail capacity from 2025
+      onwards, enabling 24 trains per hour through the CBD tunnel, but it
+      does not extend the geographic reach of the network — it makes the
+      existing spine faster and more reliable.
+  - heading: "Frequency and reliability as the patronage constraint"
+    body: >
+      Bus service frequency — how long passengers must wait if they miss
+      a bus — is the single strongest predictor of PT mode share for
+      discretionary trips. Services at 15-minute headways are usable;
+      services at 30 minutes require timetable planning and penalise any
+      uncertainty in departure. Most Auckland bus services outside the
+      rapid transit spine operate at 15–30 minute headways during peaks,
+      with much longer waits off-peak and on weekends. Combined with
+      shared running in congested traffic — which makes journey times
+      slow and unpredictable — this produces a service that is a last
+      resort rather than a genuine alternative for households with a
+      working car.
+  - heading: "The funding gap"
+    body: >
+      AT's operating budget faces a structural gap between what the fare
+      box and local rates can fund and what frequent, reliable services
+      across the network cost. Farebox recovery is approximately 30–40%
+      of operating costs — meaning the majority of PT is already subsidised
+      — but the subsidy level is insufficient to fund the frequency
+      improvements that would generate the patronage growth to close the
+      gap. The funding architecture, split between AT, Auckland Council,
+      and central government's National Land Transport Fund, creates
+      accountability diffusion that has historically prevented the
+      sustained investment required to break the low-frequency/low-patronage
+      equilibrium.
+claim_ids:
+  - claim.auckland.transport.pt_patronage_recovery
+  - claim.auckland.transport.rapid_transit_coverage_gap
+  - claim.auckland.transport.pt_fare_affordability
+status: draft

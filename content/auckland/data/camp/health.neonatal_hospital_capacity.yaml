@@ -1,0 +1,42 @@
+id: camp.auckland.health.neonatal_hospital_capacity
+name: "Neonatal and Obstetric Hospital Capacity"
+theme: health
+core_claim: >
+  Auckland's neonatal intensive care and obstetric capacity is
+  insufficient for its birth rate and preterm birth burden; Middlemore
+  NICU operates at or above capacity during winter peaks, requiring
+  transport of neonates to other centres. Capital investment in neonatal
+  capacity and obstetric theatre throughput is the immediate clinical
+  priority; community prevention works over decades, not crises.
+flagship_moves:
+  - "Fund a 20-cot NICU expansion at Middlemore Hospital to meet current and projected demand."
+  - "Increase obstetric theatre sessions at Middlemore and Auckland City to reduce elective backlog."
+  - "Fund specialist neonatal outreach nurses to support early discharge and reduce NICU length of stay."
+tensions:
+  - >
+    NICU expansion addresses the consequence of preterm birth but not
+    its prevention; community-investment advocates argue the same
+    capital should fund upstream programmes that reduce preterm rates.
+  - >
+    Neonatal transport (when Auckland capacity is exceeded) is itself
+    a risk; very premature infants transported between centres have
+    worse outcomes than those receiving care at their birth hospital.
+addresses:
+  - problem.auckland.health.maternal_child_health
+interventions:
+  - description: >
+      Fund 20-cot Middlemore NICU expansion with staffing to operate
+      at safe capacity; complete by 2027.
+    state_variable: "nicu_capacity_deficit"
+    constraint_relaxed: "NICU bed shortage at Middlemore peak periods"
+    expected_sign: "-"
+  - description: >
+      Fund a specialist neonatal outreach nursing team supporting
+      early NICU discharge and home-based monitoring for stable
+      premature infants.
+    state_variable: "nicu_average_length_of_stay"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.health.first_1000_days_investment
+applicable_in:
+  - auckland

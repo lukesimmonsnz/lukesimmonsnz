@@ -1,0 +1,27 @@
+id: claim.auckland.environment.habitat_fragmentation
+statement: >
+  Auckland's remaining native bush is highly fragmented: the Waitākere
+  Ranges, Hunua Ranges, and scattered urban remnants are ecologically
+  isolated by roads, development, and pastoral land. Kauri dieback
+  disease (Phytophthora agathidicida) has spread to the Waitākere Ranges,
+  threatening the region's largest remaining kauri forests and requiring
+  extensive track closures. Connectivity between habitat fragments
+  is critical for genetic diversity and population viability of mobile
+  native species.
+value: null
+unit: null
+time_period: "2018-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_state_of_environment_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Kauri dieback is a declared pest under the Biosecurity Act. Auckland
+  Council's track closure programme and kauri dieback management plan
+  are publicly documented.

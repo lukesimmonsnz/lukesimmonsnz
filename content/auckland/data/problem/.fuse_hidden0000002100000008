@@ -1,0 +1,59 @@
+id: problem.auckland.crime.youth_offending
+title: "Youth Offending and Justice System Overrepresentation"
+theme: crime
+section: crime
+subpage: youth-offending
+parent: problem.auckland.crime.victimisation
+order: 1
+updated: "2026-04-26"
+summary: >
+  Maori and Pacific youth are heavily overrepresented in Auckland's
+  youth justice system; Maori youth account for 65-70% of youth justice
+  proceedings nationally despite being 26% of the youth population.
+  Reoffending rates of approximately 40% within 12 months point to
+  system failure at the intervention stage. School disengagement is the
+  strongest early predictor of youth justice involvement, while
+  residential care placements increase rather than reduce reoffending risk.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "youth_reoffending_rate"
+    - "maori_youth_justice_disproportionality"
+    - "school_disengagement_rate"
+    - "victim_satisfaction_index"
+  inputs:
+    - "community_youth_worker_capacity"
+    - "kaupapa_maori_provider_investment"
+    - "school_reengagement_programme_reach"
+    - "residential_care_use_rate"
+  constraints:
+    - "Residential care: group homes are criminogenic; community alternatives require intensive caseworker ratios"
+    - "Ethnic overrepresentation: Maori youth disproportionality requires kaupapa Maori responses"
+    - "Age boundary: Youth Court jurisdiction limits apply; serious violent offending creates pressure for lower age thresholds"
+  feedback_loops:
+    - "Residential placement → peer contagion → higher reoffending → further placements"
+    - "School disengagement → street time → justice contact → further disengagement"
+narrative:
+  - heading: "The disproportionality problem"
+    body: >
+      When two-thirds of youth justice proceedings involve Maori children
+      while Maori are a quarter of the youth population, the system is not
+      merely reflecting community patterns — it is amplifying them. The
+      over-representation begins at the discretionary decision points:
+      stand-downs from school, police-to-youth-aid referrals, and
+      Oranga Tamariki care decisions. Each filter has a racial disparity
+      that compounds the one before it.
+  - heading: "What the evidence says about intervention"
+    body: >
+      The strongest predictor of reduced youth reoffending is sustained
+      community management with low caseworker ratios; the strongest
+      predictor of increased reoffending is residential group placement.
+      This is one of the more robust findings in criminology, and it
+      points directly at the resource constraint: community management
+      is labour-intensive and its cost savings over residential care are
+      not realised in the first year of implementation.
+claim_ids:
+  - claim.auckland.crime.maori_youth_overrepresentation
+  - claim.auckland.crime.youth_reoffending_rate
+  - claim.auckland.crime.school_disengagement_pipeli

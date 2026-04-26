@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/theme.schema.json",
+  "title": "Theme",
+  "description": "Closed enum of analytical themes. Per ratified decision §5.1 (CLAUDE.md §5), Theme is an enum at the data layer. Per-theme metadata (orchestrator agent file, methodology defaults, freshness window) lives in data/themes/<theme>.yaml, read at graph-build time.",
+  "type": "string",
+  "enum": [
+    "housing",
+    "transport",
+    "infrastructure",
+    "environment",
+    "inequality",
+    "crime",
+    "health",
+    "education",
+    "economy",
+    "governance",
+    "climate-adaptation"
+  ]
+}

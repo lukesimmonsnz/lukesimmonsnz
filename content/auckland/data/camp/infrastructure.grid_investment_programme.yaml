@@ -1,0 +1,45 @@
+id: camp.auckland.infrastructure.grid_investment_programme
+name: "Grid reinforcement and local generation"
+theme: infrastructure
+core_claim: >
+  Distributed storage and demand management reduce but cannot eliminate
+  Auckland's transmission dependency. Reinforcing the transmission and
+  sub-transmission network, building new local generation (offshore wind,
+  large-scale battery), and hardening the CBD underground cable
+  network are the structural solutions to supply security — distributed
+  generation supplements but does not substitute for a robust grid.
+flagship_moves:
+  - "Advance Transpower's Auckland capacity investment programme, including new HVDC interconnection and substation upgrades, ahead of electrification demand growth"
+  - "Progress feasibility of Northland offshore wind generation as a new local supply source reducing Auckland's transmission dependency"
+  - "Replace aging CBD underground cable infrastructure with modern high-capacity cables and N-1 redundancy on all critical feeders"
+tensions:
+  - >
+    Grid reinforcement capital costs are very large and are ultimately
+    borne by all electricity consumers through transmission charges;
+    the cost-benefit depends on future demand scenarios that are
+    inherently uncertain.
+  - >
+    New generation investment competes with distributed solar and
+    storage for the same decarbonisation investment pool; a grid-
+    centric approach may delay the distributed resilience benefits
+    of a decentralised energy system.
+addresses:
+  - problem.auckland.infrastructure.energy_resilience
+interventions:
+  - description: >
+      Accelerate Transpower's Auckland 400 kV reinforcement programme,
+      bringing forward substation upgrades by 5 years to provide
+      N-1 security ahead of electrification demand growth.
+    state_variable: "grid_resilience_hours"
+    constraint_relaxed: "aging transmission infrastructure with insufficient N-1 redundancy"
+    expected_sign: "+"
+  - description: >
+      Fund offshore wind feasibility study and consenting programme
+      for a 500 MW Northland offshore wind farm to provide local
+      generation reducing transmission dependency by 2035.
+    state_variable: "local_generation_share"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.infrastructure.distributed_energy_and_storage
+applicable_in:
+  - auckland

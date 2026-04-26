@@ -1,0 +1,46 @@
+id: camp.auckland.climate.risk_disclosure_and_market
+name: "Risk Disclosure and Market-Led Adaptation"
+theme: climate-adaptation
+core_claim: >
+  The most efficient flood risk allocation is through price signals;
+  mandatory climate risk disclosure in property sales and insurance
+  pricing at actuarial risk levels communicates which properties are
+  unviable in the long run and allows capital to flow away from
+  high-risk areas without requiring large public investment in
+  infrastructure that may strand. Public investment should follow
+  rather than lead the market signal.
+flagship_moves:
+  - "Mandate climate risk disclosure (flood, sea level rise, insurance availability) in all Auckland property sales."
+  - "Require Auckland Council property information to include LIM-equivalent climate risk assessment."
+  - "End Council stormwater upgrade subsidies for properties assessed as unviable in the long-run managed retreat category."
+tensions:
+  - >
+    Risk disclosure without managed retreat support creates market
+    value collapse in high-risk areas that falls disproportionately
+    on homeowners without the financial resources to sell and move;
+    disclosure without a just transition mechanism is regressive.
+  - >
+    Ending infrastructure subsidies for long-run retreat properties
+    is rational but politically difficult when current residents are
+    not at fault for the historical development decisions that placed
+    their homes in risk areas.
+addresses:
+  - problem.auckland.climate.flood_resilience
+interventions:
+  - description: >
+      Mandate a standardised Climate Risk Assessment as a required
+      LIM attachment for all Auckland property sales, including
+      flood probability, sea level rise scenario, and insurance
+      availability flags.
+    state_variable: "climate_risk_disclosure_coverage"
+    expected_sign: "+"
+  - description: >
+      Remove stormwater upgrade priority from properties assessed
+      as Category 3 managed retreat candidates, redirecting the
+      capital to Category 1 and 2 protection zones.
+    state_variable: "stormwater_investment_efficiency"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.climate.flood_infrastructure_investment
+applicable_in:
+  - auckland

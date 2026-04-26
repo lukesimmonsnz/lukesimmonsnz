@@ -1,0 +1,61 @@
+id: problem.auckland.crime.victimisation
+title: "Crime Victimisation and Public Safety"
+theme: crime
+section: crime
+subpage: victimisation
+parent: null
+order: 0
+updated: "2026-04-26"
+summary: >
+  Approximately 30% of Auckland adults experience criminal victimisation
+  annually. Victimisation is heavily concentrated in high-deprivation
+  suburbs of South and West Auckland, where violent crime rates are three
+  to four times the rate in low-deprivation areas. Auckland is
+  under-policed relative to comparable cities; response time failures
+  depress reporting rates and compound insecurity. The policy debate
+  centres on whether prevention and upstream investment or enforcement and
+  deterrence is the primary lever.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "victimisation_rate"
+    - "youth_reoffending_rate"
+    - "police_response_time"
+    - "reporting_rate"
+  inputs:
+    - "sworn_officer_count"
+    - "diversion_programme_capacity"
+    - "deprivation_index_high_crime_areas"
+    - "community_safety_investment"
+  constraints:
+    - "Deprivation concentration: crime correlates strongly with NZDep; spatial targeting required"
+    - "Under-policing: officer-to-population ratio below international benchmarks in high-crime areas"
+    - "Long-cycle prevention: upstream investment takes years to register in crime statistics"
+  feedback_loops:
+    - "Low reporting → low recorded crime → reduced resource allocation → further under-policing"
+    - "High victimisation in deprived areas → reduced property values → reduced investment → further deprivation"
+narrative:
+  - heading: "Who bears the risk"
+    body: >
+      Crime in Auckland is not evenly distributed. The thirty percent
+      average victimisation rate conceals rates roughly double that in
+      Manurewa, Otara, and Mangere. Residents of these areas are not
+      simply statistics; they are disproportionately Maori and Pacific
+      families already carrying the costs of housing unaffordability
+      and income inequality. Crime compounds disadvantage; it is not
+      merely a consequence of it.
+  - heading: "The prevention-enforcement debate"
+    body: >
+      The dominant political tension is between enforcement-first
+      (police numbers, deterrence, sentencing) and prevention-first
+      (diversion, social investment, addressing deprivation). The
+      evidence base supports elements of both: hot-spot policing has
+      demonstrated short-run efficacy; intensive early intervention
+      programmes produce long-run reductions. The resource constraint
+      forces prioritisation.
+claim_ids:
+  - claim.auckland.crime.auckland_victimisation_rate
+  - claim.auckland.crime.deprivation_crime_correlation
+  - claim.auckland.crime.police_workforce_gap
+status: draft

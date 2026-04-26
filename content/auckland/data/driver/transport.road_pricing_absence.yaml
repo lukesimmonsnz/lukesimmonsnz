@@ -1,0 +1,20 @@
+id: driver.auckland.transport.road_pricing_absence
+name: "Absence of road pricing signals"
+description: >
+  Auckland road users pay fuel excise and vehicle registration but face no
+  direct charge for the congestion externality they impose on others at the
+  point of use. This means peak-hour road demand is managed by queuing
+  rather than price: the road is rationed by time cost (sitting in
+  congestion) rather than money cost (paying to use a scarce resource at
+  peak time). The absence of pricing also means there is no revenue signal
+  to fund alternative mode capacity, and no incentive for individual
+  travellers to shift trips to off-peak periods or alternative modes.
+theme: transport
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.transport.congestion
+claim_ids:
+  - claim.auckland.transport.congestion_economic_cost

@@ -1,0 +1,22 @@
+id: claim.auckland.climate.ev_transition_equity
+statement: >
+  Electric vehicle uptake in Auckland is concentrated in high-income
+  households; the upfront cost premium over internal combustion vehicles
+  means that low-income households continue to bear higher fuel cost
+  exposure and older, more polluting vehicles. Carbon pricing revenues
+  have not been recycled into EV access programmes for low-income
+  Aucklanders at the scale needed to equalise transition costs.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mfe_emissions_2023
+  - source.auckland_council_climate_plan_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

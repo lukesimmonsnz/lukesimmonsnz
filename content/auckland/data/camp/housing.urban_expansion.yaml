@@ -1,0 +1,45 @@
+id: camp.auckland.housing.urban_expansion
+name: "Urban boundary expansion"
+theme: housing
+core_claim: >
+  Auckland's land supply is structurally constrained by a tightly drawn
+  urban growth boundary; releasing greenfield land at the periphery provides
+  the most cost-effective and scalable pathway to building affordable new
+  housing at the volumes the city needs.
+flagship_moves:
+  - "Extend the urban growth boundary to release additional greenfield land in the north, northwest, and south"
+  - "Reform infrastructure funding to allow greenfield developers to front-fund reticulated services, with cost recovery over time"
+  - "Establish special development zones in strategic greenfield corridors to accelerate consenting"
+tensions:
+  - >
+    Greenfield development at the periphery generates long car-dependent
+    commutes and high per-dwelling infrastructure servicing costs that are
+    eventually socialised across the rating base or passed to buyers.
+  - >
+    Rural and productive land converted to urban use represents an
+    irreversible land-use change; the option value of that land is foregone
+    permanently, and environmental impacts (stormwater, ecology) are difficult
+    to mitigate.
+addresses:
+  - problem.auckland.housing.land_supply
+interventions:
+  - description: >
+      Extend the Auckland urban growth boundary by 20–30% to release
+      strategic greenfield corridors identified in the Future Development
+      Strategy.
+    state_variable: "zoned_residential_land_area"
+    constraint_relaxed: "infrastructure_staging"
+    expected_sign: "+"
+  - description: >
+      Allow developer-led infrastructure front-funding with a lien-backed
+      cost-recovery mechanism, reducing reliance on council capital programmes.
+    state_variable: "consent_pipeline"
+    constraint_relaxed: "development_contribution_costs"
+    expected_sign: "+"
+claim_ids:
+  - claim.auckland.housing.infill_greenfield_split
+  - claim.auckland.housing.infrastructure_barrier
+tensions_with:
+  - camp.auckland.housing.compact_intensification
+applicable_in:
+  - auckland

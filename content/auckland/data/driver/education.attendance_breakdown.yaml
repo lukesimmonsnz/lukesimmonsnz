@@ -1,0 +1,18 @@
+id: driver.auckland.education.attendance_breakdown
+name: "Post-COVID Attendance Breakdown"
+description: >
+  School attendance norms in Auckland were disrupted by COVID lockdowns
+  and have not recovered; 40% persistent absenteeism reflects a
+  combination of health anxiety, housing instability, and a weakened
+  social norm around daily attendance. Persistent absence removes
+  students from the primary learning environment and is the proximate
+  cause of NCEA non-attainment independent of school quality.
+theme: education
+consensus: consensus
+category: cultural
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.education.achievement
+claim_ids:
+  - claim.auckland.education.attendance_crisis

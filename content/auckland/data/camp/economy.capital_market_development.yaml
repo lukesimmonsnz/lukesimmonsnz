@@ -1,0 +1,42 @@
+id: camp.auckland.economy.capital_market_development
+name: "Capital Market Development and SME Finance"
+theme: economy
+core_claim: >
+  Auckland's growth is constrained by the absence of a functioning
+  SME equity capital market; regulatory simplification without
+  addressing the capital access gap leaves high-growth businesses
+  under-resourced. A co-investment fund, enhanced angel investor tax
+  treatment, and NZX reform to make small-company listing viable
+  would develop the capital markets Auckland needs to sustain
+  innovation-led productivity growth.
+flagship_moves:
+  - "Establish a $100M government-backed co-investment fund alongside accredited angel investors for Auckland startups."
+  - "Increase angel investor tax credit from 28 cents to 40 cents per dollar invested in startups."
+  - "Reform NZX listing requirements to create a growth-company board with reduced compliance costs."
+tensions:
+  - >
+    Co-investment funds can crowd out private venture capital by
+    lowering the return threshold; the fund must be structured to
+    complement rather than substitute for private capital.
+  - >
+    Angel tax credits primarily benefit high-income investors;
+    the distributional effect is regressive even if the productivity
+    effect is positive.
+addresses:
+  - problem.auckland.economy.business_environment
+interventions:
+  - description: >
+      Launch a $100M Auckland Growth Capital Fund with 1:1 private
+      co-investment requirement, managed by NZVIF, targeting
+      high-growth SMEs with addressable export markets.
+    state_variable: "sme_equity_capital_availability"
+    expected_sign: "+"
+  - description: >
+      Increase angel investor tax credit to 40% and extend eligibility
+      to investments in the North Island technology sector.
+    state_variable: "early_stage_startup_investment_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.economy.business_enablement
+applicable_in:
+  - auckland

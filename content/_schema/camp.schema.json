@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/camp.schema.json",
+  "title": "Camp",
+  "description": "A cluster of proposed solutions sharing a core claim. Camps are presented neutrally. Migrated from content/auckland/schema/camp.schema.json. Structural changes: (1) evidence_ids → claim_ids (E_evidenced_by); (2) applicable_in and efficacy_in added as Region-list fields, lifted to edges at graph-build time (ratified 2026-04-25, CLAUDE.md §5 row 9e); (3) theme added. Intra-entity: flagship_moves ≥1, tensions ≥1, interventions ≥1 (camp_completeness_v1, P4 partial — cross-entity Driver/Camp/Claim existence is Python). Symmetry of tensions_with enforced by Python (P18).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "core_claim",
+    "flagship_moves",
+    "tensions",
+    "addresses",
+    "interventions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^camp\\.[a-z0-9_.]+$"
+    },
+    "name": {"type": "string"},
+    "theme": {"$ref": "aotearoa://schema/theme.schema.json"},
+    "core_claim": {
+      "description": "The defining proposition of this Camp. Must not contain banned weasel verbs (lint TBD by PI).",
+      "type": "string"
+    },
+    "flagship_moves": {
+      "description": "Headline interventions that characterise this Camp. ≥1 required (P4).",
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "tensions": {
+      "description": "Internal trade-offs or known downsides of this Camp's approach. ≥1 required (P4).",
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "addresses": {
+      "description": "Problems this Camp targets. ≥1 required (P4, cross-entity Python). Materialises to E_addresses.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^problem\\."
+      },
+      "minItems": 1
+    },
+    "interventions": {
+      "description": "Structured interventions proposed by this Camp. ≥1 required (P4, camp_completeness_v1). expected_sign operationalises camp_intervention_sign_v1.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["description"],
+        "properties": {
+          "description": {"type": "string"},
+          "state_variable": {
+            "description": "State variable from the Problem's systems_model that this intervention acts on.",
+            "type": "string"
+          },
+          "constraint_relaxed": {
+            "description": "Constraint from the Problem's systems_model that this intervention relaxes.",
+            "type": "string"
+          },
+          "expected_sign": {
+            "description": "Directional effect on state_variable (camp_intervention_sign_v1). '+' = increase, '-' = decrease, '0' = neutral, '?' = unknown.",
+            "enum": ["+", "-", "0", "?"]
+          },
+          "side_effects": {
+            "type": "array",
+            "items": {"type": "string"}
+          }
+        }
+      }
+    },
+    "advocates": {
+      "description": "Named advocates or organisations associated with this Camp (freetext; typed Actor references use actor_ids).",
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "actor_ids": {
+      "description": "Typed Actor references for named advocates. Parallel to advocates freetext.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^actor\\."
+      }
+    },
+    "claim_ids": {
+      "description": "Claims supporting this Camp. Materialises to E_evidenced_by.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^claim\\."
+      }
+    },
+    "tensions_with": {
+      "description": "Other Camp IDs in tension with this one. Symmetric relation; P18 (Python) enforces closure at graph-build time. Authors need only declare one direction.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^camp\\."
+      },
+      "uniqueItems": true
+    },
+    "applicable_in": {
+      "description": "Regions where this Camp's approach is applicable. Lifted from inline YAML field to graph edge at build time (E_applicable_in), ratified 2026-04-25.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "uniqueItems": true
+    },
+    "efficacy_in": {
+      "description": "Regions where this Camp has demonstrated efficacy. Lifted to edge (E_efficacy_in) at graph-build time, ratified 2026-04-25.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "uniqueItems": true
+    }
+  }
+}

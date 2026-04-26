@@ -1,0 +1,22 @@
+id: driver.auckland.housing.credit_cycle_dominance
+name: "Credit-cycle dominance of short-run prices"
+description: >
+  Short-run movements in Auckland dwelling prices are driven more by
+  credit availability — interest rates, macroprudential rules, bank
+  lending criteria — than by short-run changes in supply. The 2021
+  price surge and subsequent 2022–23 correction tracked the RBNZ OCR
+  cycle closely, demonstrating that demand-side credit conditions are the
+  primary short-run price determinant. This means supply-side reforms
+  operate on a 5–10 year lag while credit-driven cycles operate on a
+  12–24 month timeframe, creating persistent affordability volatility
+  independent of underlying supply trends.
+theme: housing
+consensus: consensus
+category: economic
+timescale: short
+scope: national
+problem_ids:
+  - problem.auckland.housing.ownership_and_finance
+claim_ids:
+  - claim.auckland.housing.affordability_ratio_2023
+  - claim.auckland.housing.real_price_wage_divergence

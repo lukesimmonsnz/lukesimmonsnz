@@ -1,0 +1,43 @@
+id: camp.auckland.climate.rapid_decarbonisation
+name: "Rapid Decarbonisation and Modal Shift"
+theme: climate-adaptation
+core_claim: >
+  Auckland must decarbonise its transport sector rapidly to meet
+  New Zealand's climate commitments; this requires both accelerating
+  EV adoption (subsidies, charging infrastructure, fleet conversion)
+  and reducing vehicle kilometres travelled through modal shift to
+  transit and active modes. Both levers are necessary; EV transition
+  alone does not reduce congestion or land use pressures.
+flagship_moves:
+  - "Introduce targeted EV purchase subsidies for households below the median income using ETS revenue."
+  - "Accelerate Auckland bus and rail fleet electrification with 100% electric fleet by 2030."
+  - "Fund rapid transit expansion as both a transport and an emissions reduction investment."
+tensions:
+  - >
+    EV subsidies require sustained fiscal commitment; using ETS
+    revenue for transport subsidies reduces the fund available for
+    broader emissions reduction and adaptation investment.
+  - >
+    Modal shift requires a rapid transit network that Auckland does
+    not yet have at the required scale; decarbonisation runs ahead
+    of the infrastructure that enables it.
+addresses:
+  - problem.auckland.climate.transition_economy
+interventions:
+  - description: >
+      Introduce income-tested EV purchase rebates of $5,000-$10,000
+      for households below median income, funded from ETS auction
+      revenue, targeting 50,000 vehicles by 2030.
+    state_variable: "low_income_ev_uptake_rate"
+    constraint_relaxed: "EV upfront cost barrier for low-income households"
+    expected_sign: "+"
+  - description: >
+      Accelerate Auckland Transport's bus fleet electrification
+      programme to complete 100% electric bus fleet by 2030,
+      10 years ahead of current targets.
+    state_variable: "public_transport_emissions"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.climate.just_transition_investment
+applicable_in:
+  - auckland

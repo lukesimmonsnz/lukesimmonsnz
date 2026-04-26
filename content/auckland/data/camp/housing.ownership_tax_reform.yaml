@@ -1,0 +1,47 @@
+id: camp.auckland.housing.ownership_tax_reform
+name: "Ownership reform and tax"
+theme: housing
+core_claim: >
+  The structural barrier to ownership and the compounding of housing wealth
+  require structural responses: first-home access pathways (shared equity,
+  rent-to-own, KiwiSaver deposit access), inclusionary zoning that delivers
+  below-market product through planning rules, and comprehensive tax reform
+  — land value tax, capital gains tax, inheritance framework — that changes
+  the compounding dynamic over decades. Without changing the asset taxation
+  settings, supply alone will not restore ownership access for median-income
+  households.
+flagship_moves:
+  - "Introduce a progressive land value tax to shift the burden from productive investment to land holding, reducing the speculative premium capitalised into residential land"
+  - "Establish a shared equity Crown loan programme that reduces the deposit required for first-home purchase without inflating prices"
+  - "Require inclusionary zoning (10–20% below-market units) in large upzoning areas as a condition of the rezoning benefit"
+tensions:
+  - >
+    A comprehensive capital gains or land value tax creates significant
+    political resistance from existing owner-occupiers, who comprise the
+    majority of voters; the distributional benefits accrue primarily to
+    future buyers who cannot yet vote on the policy.
+  - >
+    Shared equity programmes and deposit assistance can capitalise into
+    prices if not carefully designed, benefiting sellers rather than
+    buyers — the same dynamic observed with the First Home Grant.
+addresses:
+  - problem.auckland.housing.ownership_and_finance
+interventions:
+  - description: >
+      Phase in a land value tax at 0.5–1.0% of unimproved land value per
+      year, replacing a portion of income tax, to discourage speculative
+      land holding and redirect investment toward productive assets.
+    state_variable: "housing_price_to_income_ratio"
+    constraint_relaxed: "tax advantage of housing as an asset class"
+    expected_sign: "-"
+  - description: >
+      Crown shared equity programme providing up to 25% equity co-investment
+      on new builds for first-home buyers earning below 120% of median
+      household income, repayable at resale.
+    state_variable: "first_home_access_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.housing.income_and_wage_floor
+  - camp.auckland.housing.finance_architecture
+applicable_in:
+  - auckland

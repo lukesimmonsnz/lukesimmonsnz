@@ -1,0 +1,25 @@
+id: claim.auckland.housing.nps_ud_capacity_yield
+statement: >
+  Following the NPS-UD upzoning and Medium Density Residential Standards
+  (MDRS), Auckland's theoretical zoned residential capacity was estimated at
+  approximately 900,000 additional dwellings, well in excess of the city's
+  projected 30-year demand of around 320,000 new dwellings.
+value: 900000
+unit: "dwellings (potential capacity)"
+time_period: "2022"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mfe_nps_ud_capacity_2022
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.zoned_capacity_v1
+notes: >
+  confidence: medium because zoned capacity is a theoretical ceiling subject
+  to feasibility discounts (infrastructure availability, developer economics,
+  heritage restrictions). The 900,000 figure represents the full planning
+  envelope, not a delivery forecast.

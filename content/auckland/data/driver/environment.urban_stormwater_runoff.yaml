@@ -1,0 +1,19 @@
+id: driver.auckland.environment.urban_stormwater_runoff
+name: "Urban stormwater runoff and contaminant loading"
+description: >
+  Auckland's impervious urban surfaces — roads, carparks, roofs — generate
+  stormwater flows that carry sediment, hydrocarbons, zinc, copper, and
+  faecal bacteria directly into streams and harbours with minimal treatment.
+  Stormwater is the primary source of urban water quality degradation and
+  a key driver of coastal contamination. As urbanisation increases
+  impervious surface area, runoff volumes and contaminant loads increase
+  proportionally unless offset by on-site stormwater management.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.environment.ecological_health
+claim_ids:
+  - claim.auckland.environment.urban_stream_quality

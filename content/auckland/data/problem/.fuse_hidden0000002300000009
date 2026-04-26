@@ -1,0 +1,61 @@
+id: problem.auckland.economy.business_environment
+title: "Business Environment and SME Constraints"
+theme: economy
+section: economy
+subpage: business-environment
+parent: problem.auckland.economy.productivity
+order: 2
+updated: "2026-04-26"
+summary: >
+  Auckland SMEs face disproportionate regulatory compliance costs
+  (5-8% of management time), limited access to growth capital, and
+  higher operating costs than secondary New Zealand cities. The thin
+  venture capital market leaves high-growth firms in a funding gap
+  between angel and institutional capital. Regulatory simplification
+  and capital market development address different parts of the
+  constraint.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "compliance_time_cost_sme"
+    - "sme_equity_capital_availability"
+    - "commercial_development_consent_time"
+    - "early_stage_startup_investment_rate"
+  inputs:
+    - "rma_fast_track_scope"
+    - "business_portal_integration"
+    - "co_investment_fund_size"
+    - "angel_tax_credit_rate"
+  constraints:
+    - "Compliance-protection tradeoff: simplification for SMEs risks enforcement gaps"
+    - "Capital market size: NZ domestic venture capital market is small; co-investment funds must complement not substitute"
+    - "Distribution: angel tax credits are regressive; productivity benefits may not justify the fiscal cost"
+  feedback_loops:
+    - "Low capital availability → growth constraint → lower R&D → lower productivity"
+    - "High compliance cost → management time diversion → lower operational efficiency"
+narrative:
+  - heading: "The compliance tax"
+    body: >
+      Five to eight percent of a small business owner's management
+      time spent on compliance is not spent on customers, products,
+      or employees. For a ten-person business, this is half a full-time
+      equivalent consumed by compliance administration. The aggregate
+      cost to Auckland's SME sector is substantial and largely invisible
+      in economic statistics. The right response is not to eliminate
+      regulation but to reduce the compliance transaction cost through
+      digital-first, integrated government services.
+  - heading: "Property collateral and the capital gap"
+    body: >
+      New Zealand's banking system lends against collateral, primarily
+      property. A tech startup in Parnell without a commercial property
+      asset cannot borrow to hire engineers; it must raise equity from
+      angel investors or wait. The angel market in Auckland is thin,
+      informal, and network-dependent. Building an institutional equity
+      market for SMEs is a structural prerequisite for the
+      innovation-led productivity growth that closes New Zealand's
+      long-run productivity gap.
+claim_ids:
+  - claim.auckland.economy.regulatory_compliance_cost
+  - claim.auckland.economy.sme_capital_access
+  - claim.auckland.economy.auckland_business_co

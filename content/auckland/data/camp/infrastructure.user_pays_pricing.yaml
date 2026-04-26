@@ -1,0 +1,46 @@
+id: camp.auckland.infrastructure.user_pays_pricing
+name: "User-pays pricing and cost-reflective tariffs"
+theme: infrastructure
+core_claim: >
+  Infrastructure is underpriced in Auckland: water, wastewater, and
+  roads are supplied at below-cost or zero marginal price, generating
+  demand that exceeds efficient levels and reducing the revenue available
+  for renewal and expansion. Cost-reflective pricing — volumetric water
+  tariffs, road user charges, stormwater levies — would both manage
+  demand efficiently and generate the revenue to fund the network without
+  general tax or rate increases.
+flagship_moves:
+  - "Introduce progressive volumetric water pricing with a free-up-to-lifeline-amount block and cost-reflective charges above it"
+  - "Extend road user charging to all vehicles (not just diesel) as the EV transition erodes fuel excise, maintaining infrastructure revenue neutrality"
+  - "Introduce stormwater charges based on impervious surface area to fund stormwater network upgrades and incentivise on-site stormwater management"
+tensions:
+  - >
+    Cost-reflective pricing for essential services (water, basic
+    mobility) is regressive unless designed with explicit low-income
+    protections; volumetric water charges without a lifeline block
+    penalise large low-income households most.
+  - >
+    The transition to full cost recovery requires significant price
+    increases from current levels, which may be politically
+    unacceptable and create hardship for fixed-income households
+    before protections are designed and funded.
+addresses:
+  - problem.auckland.infrastructure.access
+interventions:
+  - description: >
+      Three-tier volumetric water tariff: 0–80L/person/day free,
+      80–200L at cost, above 200L at 1.5× cost, funded by removal
+      of the fixed-charge component.
+    state_variable: "water_demand_per_capita"
+    constraint_relaxed: "flat-rate pricing without volumetric signal"
+    expected_sign: "-"
+  - description: >
+      Universal road user charge of $0.04/km replacing fuel excise
+      for all vehicles by 2030, maintaining transport infrastructure
+      revenue as the fleet electrifies.
+    state_variable: "infrastructure_funding_gap"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.infrastructure.infrastructure_bonds_and_financing
+applicable_in:
+  - auckland

@@ -1,0 +1,42 @@
+id: camp.auckland.economy.urban_productivity
+name: "Urban Density and Agglomeration Investment"
+theme: economy
+core_claim: >
+  Auckland's most efficient productivity investment is urban form:
+  denser, better-connected housing and commercial clusters reduce
+  the friction cost of agglomeration and allow Auckland to capture
+  the city-scale productivity premium that comparable cities already
+  enjoy. Light rail, rezoning for density, and mixed-use city centre
+  investment are productivity infrastructure, not just liveability
+  projects.
+flagship_moves:
+  - "Prioritise light rail and rapid transit investment as productivity infrastructure, not just transport."
+  - "Allow high-density mixed-use development within 1km of all Auckland rapid transit stations."
+  - "Fund Auckland CBD commercial and innovation precinct development to concentrate knowledge workers."
+tensions:
+  - >
+    Urban density investment has very long payback periods measured
+    in productivity; the mechanism runs through agglomeration effects
+    that require decades of urban restructuring to manifest.
+  - >
+    Concentrating knowledge sector investment in the CBD may intensify
+    the spatial mismatch between where high-productivity jobs are and
+    where Auckland's most disadvantaged communities live.
+addresses:
+  - problem.auckland.economy.productivity
+interventions:
+  - description: >
+      Rezone all land within 800m of current and proposed rapid transit
+      stations to allow mixed-use development up to 8 storeys by right.
+    state_variable: "agglomeration_productivity_index"
+    expected_sign: "+"
+  - description: >
+      Fund an Auckland innovation precinct in the CBD with subsidised
+      co-working and lab space for tech and life science startups,
+      adjacent to the City Rail Link.
+    state_variable: "labour_productivity_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.economy.innovation_and_rd
+applicable_in:
+  - auckland

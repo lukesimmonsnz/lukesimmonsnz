@@ -1,0 +1,62 @@
+id: problem.auckland.health.maternal_child_health
+title: "Maternal and Child Health Disparities"
+theme: health
+section: health
+subpage: maternal-child-health
+parent: problem.auckland.health.system_access
+order: 3
+updated: "2026-04-26"
+summary: >
+  Preterm birth rates for Maori and Pacific Auckland mothers are 1.5-2
+  times those of NZ European mothers. Midwifery vacancy rates in South
+  Auckland exceed 30%, reducing antenatal care access for the most
+  vulnerable pregnancies. The first 1,000 days represent the highest-
+  return public health investment window; current resourcing is
+  insufficient to close the gap between high- and low-deprivation
+  maternal and child health outcomes.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "preterm_birth_rate_maori_pacific"
+    - "antenatal_visit_rate"
+    - "nicu_capacity_deficit"
+    - "nicu_average_length_of_stay"
+  inputs:
+    - "lmc_payment_rate"
+    - "integrated_hub_count"
+    - "nicu_bed_count"
+    - "home_visiting_reach"
+  constraints:
+    - "Midwifery workforce: LMC undersupply in high-deprivation areas is structural; immediate pay uplift required"
+    - "NICU capacity: Middlemore exceeds safe capacity in winter peaks; neonatal transport adds risk"
+    - "Social determinants: poverty, housing, and family violence during pregnancy are upstream of clinical access"
+  feedback_loops:
+    - "Preterm birth → NICU → early discharge without support → re-admission cycle"
+    - "Housing instability in pregnancy → maternal stress → adverse birth outcomes → developmental disadvantage"
+narrative:
+  - heading: "The first 1,000 days"
+    body: >
+      No other period of human development is as consequential or as
+      cost-effective to invest in. The neurological architecture laid
+      down between conception and age two determines much of the
+      cognitive, emotional, and physical health trajectory that follows.
+      In Auckland's most deprived suburbs, this window is characterised
+      by maternal stress from housing insecurity, nutritional deficiency,
+      and family violence — determinants that midwifery and clinical
+      care can document but cannot resolve without housing and income
+      policy responding in parallel.
+  - heading: "Midwifery as the access gap"
+    body: >
+      A pregnant woman in Mangere who cannot find an LMC because local
+      midwives are at capacity or have left for more sustainable
+      caseloads elsewhere is not accessing a health system failure —
+      she is accessing the predictable consequence of midwifery
+      underpayment in a high-complexity environment. The workforce gap
+      is addressable with pay structure changes that are known and
+      priced; the political delay is a choice.
+claim_ids:
+  - claim.auckland.health.preterm_birth_disparity
+  - claim.auckland.health.midwife_workforce_shortage
+  - claim.auckland.health.first_1000_days
+status: draft

@@ -1,0 +1,42 @@
+id: camp.auckland.crime.enforcement_and_deterrence
+name: "Enforcement, Deterrence, and Victim Focus"
+theme: crime
+core_claim: >
+  Visible police presence and credible deterrence are necessary
+  preconditions for any crime reduction strategy; under-policing in
+  Auckland's high-crime areas signals low consequences for offending and
+  depresses reporting rates. Hiring to international officer-to-population
+  benchmarks, combined with targeted patrol of high-crime locations at
+  high-crime times (hot-spot policing), reduces victimisation more quickly
+  than long-cycle prevention programmes.
+flagship_moves:
+  - "Increase sworn officer numbers in Auckland to reach 1 officer per 500 residents in high-crime local boards."
+  - "Implement evidence-based hot-spot policing in the twenty highest-crime Auckland locations."
+  - "Increase victim support funding and establish fast-track courts for repeat violent offenders."
+tensions:
+  - >
+    Increased enforcement without addressing deprivation drivers displaces
+    rather than reduces crime; hot-spot policing can push offending to
+    adjacent areas not covered by the programme.
+  - >
+    Higher policing rates in Maori and Pacific communities risk
+    disproportionate contact and entrench over-representation in the
+    criminal justice system without addressing root causes.
+addresses:
+  - problem.auckland.crime.victimisation
+interventions:
+  - description: >
+      Recruit and deploy 400 additional sworn officers specifically to
+      Auckland Central, Manukau, and Waitemataa districts within three years.
+    state_variable: "police_response_time"
+    constraint_relaxed: "Officer-to-population ratio deficit"
+    expected_sign: "-"
+  - description: >
+      Implement hot-spot patrol programme at the top 20 crime locations
+      in Auckland, with 30-minute minimum patrol presence during peak hours.
+    state_variable: "victimisation_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.crime.prevention_and_diversion
+applicable_in:
+  - auckland

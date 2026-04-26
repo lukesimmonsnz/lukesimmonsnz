@@ -1,0 +1,25 @@
+id: claim.auckland.infrastructure.local_govt_funding_constraint
+statement: >
+  New Zealand local authorities are constitutionally limited to rating,
+  development contributions, debt, and user charges as primary revenue
+  tools. Auckland Council cannot levy income tax, GST, or other growth-
+  linked taxes, meaning infrastructure investment capacity grows more
+  slowly than the population and economic activity it serves. The
+  mismatch between funding tools and investment need is structural, not
+  a product of mismanagement.
+value: null
+unit: null
+time_period: "2015-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.infrastructure_nz_2023
+  - source.auckland_council_dev_strategy_2022
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []
+notes: >
+  The Local Government Act 2002 and Local Government (Auckland Council)
+  Act 2009 define the revenue tools available to Auckland Council.

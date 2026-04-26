@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/driver.schema.json",
+  "title": "Driver",
+  "description": "A causal factor that shapes ≥1 Problems. Migrated from content/auckland/schema/driver.schema.json. Structural changes: (1) affects → problem_ids (E_causes edge, Driver → Problem); (2) evidence_ids → claim_ids (E_evidenced_by); (3) scope enum added (spatial scale of driver operation); (4) intensity_by_region added (optional per-region intensity scores); (5) theme added. Cross-entity invariant P3 (at least one Driver per Problem) is Layer 1c Python.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "consensus", "problem_ids"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^driver\\.[a-z0-9_.]+$"
+    },
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "theme": {"$ref": "aotearoa://schema/theme.schema.json"},
+    "consensus": {
+      "description": "Expert-consensus status for this Driver (driver_consensus_v1).",
+      "enum": ["consensus", "mostly-agreed", "contested", "disputed"]
+    },
+    "category": {
+      "description": "Causal-category taxonomy (driver_category_taxonomy_v1).",
+      "enum": [
+        "physical",
+        "climate",
+        "economic",
+        "demographic",
+        "institutional",
+        "cultural",
+        "regulatory"
+      ]
+    },
+    "timescale": {
+      "description": "Characteristic timescale over which this Driver operates (driver_timescale_v1).",
+      "enum": ["short", "medium", "long", "permanent"]
+    },
+    "scope": {
+      "description": "Spatial scale at which this Driver primarily operates.",
+      "enum": ["local", "regional", "national", "global"]
+    },
+    "intensity_by_region": {
+      "description": "Optional per-region intensity scores (dimensionless ℝ). Object keys must be valid Region enum values; cross-entity key validation is a Python invariant (JSON Schema cannot enforce enum-valued object keys).",
+      "type": "object",
+      "additionalProperties": {"type": "number"}
+    },
+    "problem_ids": {
+      "description": "Problems this Driver causes. ≥1 required. Materialises to E_causes.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^problem\\."
+      },
+      "minItems": 1
+    },
+    "claim_ids": {
+      "description": "Claims supporting this Driver. Materialises to E_evidenced_by.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^claim\\."
+      }
+    }
+  }
+}

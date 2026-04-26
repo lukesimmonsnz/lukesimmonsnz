@@ -1,0 +1,20 @@
+id: claim.auckland.health.primary_care_cost_barrier
+statement: >
+  Cost is the primary barrier to primary care access in Auckland;
+  GP fees in Auckland average $40-60 per visit for non-enrolled adults,
+  and approximately 20% of Aucklanders report forgoing a GP visit in
+  the past year due to cost. The barrier is highest for Maori, Pacific,
+  and low-income households.
+value: null
+unit: null
+time_period: "2022-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.health_nz_annual_report_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

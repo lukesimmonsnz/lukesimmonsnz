@@ -1,0 +1,26 @@
+id: claim.auckland.housing.nps_ud_upzoning
+statement: >
+  Following the National Policy Statement on Urban Development 2021 (NPS-UD),
+  Auckland upzoned substantial residential land to permit medium and high-density
+  development as-of-right, and annual building consents reached record volumes
+  by 2022, indicating a latent supply response that previous planning rules had
+  suppressed.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_building_consents_2023
+  - source.mhud_housing_aotearoa_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  confidence: medium because the causal attribution (upzoning caused the
+  consent increase) is contested; alternative explanations include interest-rate
+  environment and developer pipeline timing. verification_status: cited_only
+  because the causal mechanism has not been peer-reviewed in this form.

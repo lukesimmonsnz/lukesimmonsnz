@@ -1,0 +1,29 @@
+id: claim.auckland.inequality.child_poverty_rate_auckland
+statement: >
+  Auckland has approximately 20–24% of children living in households
+  below the 60% median income threshold after housing costs — among the
+  highest child poverty rates of any major OECD city in an otherwise
+  high-income country. Child poverty in Auckland is concentrated in
+  South and West Auckland, with Māngere, Ōtara, Papakura, and Henderson
+  showing material hardship rates substantially above the Auckland
+  average. Pacific and Māori children are overrepresented at rates
+  roughly double those of Pākehā children.
+value: null
+unit: null
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_child_poverty_2023
+  - source.msd_household_incomes_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Exact Auckland-specific rate varies by poverty measure. The 20–24%
+  range spans the low-income-after-housing-costs and material hardship
+  measures. National rate is similar; Auckland is not an outlier but
+  the absolute number of affected children is large given population.

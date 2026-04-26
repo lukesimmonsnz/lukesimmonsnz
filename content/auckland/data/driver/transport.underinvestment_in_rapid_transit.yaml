@@ -1,0 +1,23 @@
+id: driver.auckland.transport.underinvestment_in_rapid_transit
+name: "Historical underinvestment in rapid transit"
+description: >
+  Auckland invested heavily in motorway infrastructure from the 1950s
+  through the 1980s and comparatively little in rapid transit. The result
+  is a city with ~170km of urban motorways but a rail network that only
+  in the 2010s began to receive serious operational investment, and a
+  rapid transit network that does not yet reach the Northwest, most of
+  the North Shore (beyond the Northern Busway), or the rapidly growing
+  south. The City Rail Link, opening circa 2025, is the first major
+  rapid transit capacity addition since the Northern Busway in 2008.
+  This historical deficit means PT is structurally unable to serve most
+  of the city at the headways required to attract discretionary car trips.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.transport.accessibility
+claim_ids:
+  - claim.auckland.transport.car_mode_share_2023
+  - claim.auckland.transport.congestion_economic_cost

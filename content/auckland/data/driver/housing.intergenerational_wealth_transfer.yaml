@@ -1,0 +1,22 @@
+id: driver.auckland.housing.intergenerational_wealth_transfer
+name: "Intergenerational wealth transfer as a precondition for ownership"
+description: >
+  As dwelling-price-to-income ratios have risen, the capital required to
+  enter ownership has outrun what typical earnings can assemble within a
+  working life. Parental assistance and inheritance are now structural
+  inputs to first-home purchase for a growing share of Auckland buyers:
+  the deposit gap has widened to 8–12 years of saving, making the bank of
+  mum and dad a de facto co-lender for households without equity transfer.
+  This compounds intergenerational inequality: households from non-owning
+  families are systematically disadvantaged in the competition for
+  ownership, regardless of their own income trajectory.
+theme: housing
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.housing.ownership_and_finance
+claim_ids:
+  - claim.auckland.housing.deposit_gap_expansion
+  - claim.auckland.housing.under40_ownership_decline

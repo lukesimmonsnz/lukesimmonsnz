@@ -1,0 +1,21 @@
+id: driver.auckland.housing.tax_advantaged_asset
+name: "Tax-advantaged treatment of housing as an asset"
+description: >
+  The absence of a comprehensive capital gains tax on owner-occupied
+  dwellings, the effective tax-free status of imputed rent, and the
+  historical deductibility treatment of rental-property expenses together
+  make residential property uniquely attractive as a wealth-accumulation
+  vehicle relative to other asset classes. This tax advantage capitalises
+  into prices, bidding up the price of existing stock relative to its
+  rental income yield and its value as shelter, and directs household
+  and investor savings toward housing rather than productive investment.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.housing.ownership_and_finance
+claim_ids:
+  - claim.auckland.housing.real_price_wage_divergence
+  - claim.auckland.housing.affordability_ratio_2023

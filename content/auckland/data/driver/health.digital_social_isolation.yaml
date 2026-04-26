@@ -1,0 +1,17 @@
+id: driver.auckland.health.digital_social_isolation
+name: "Digital Environment and Social Isolation"
+description: >
+  Increasing social isolation — amplified by social media displacement
+  of in-person connection and post-COVID residual disruption of community
+  structures — is a documented driver of depression and anxiety in
+  Auckland's youth population. The effect is largest among 15-24 year
+  olds and correlates with heavy social media use.
+theme: health
+consensus: contested
+category: cultural
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.health.mental_health
+claim_ids:
+  - claim.auckland.health.youth_mental_health_crisis

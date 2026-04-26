@@ -1,0 +1,22 @@
+id: claim.auckland.climate.stormwater_upgrade_cost
+statement: >
+  Upgrading Auckland's stormwater infrastructure to handle a 1-in-100-
+  year rainfall event under projected 2080 climate conditions is
+  estimated to cost $3-5 billion; the current Watercare and Council
+  capital programme does not include this upgrade at the required
+  scale, meaning flood risk will increase as climate change intensifies
+  precipitation.
+value: null
+unit: null
+time_period: "2023-2080"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_council_climate_plan_2023
+  - source.watercare_annual_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

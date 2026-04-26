@@ -1,0 +1,20 @@
+id: driver.auckland.education.resource_inequity_driver
+name: "School Resource Inequity and Staff Retention"
+description: >
+  High-deprivation Auckland schools face a compound disadvantage: their
+  students have greater needs while their resourcing relative to effective
+  need is lower than affluent schools. Teacher turnover is higher in
+  decile 1-3 schools; specialist literacy, numeracy, and learning support
+  staff are harder to recruit and retain. The funding formula does not
+  fully compensate for the additional cost of educating students with
+  multiple disadvantages.
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+  - problem.auckland.education.achievement
+claim_ids:
+  - claim.auckland.education.school_funding_inequity
+  - claim.auckland.education.ncea_ethnicity_gap

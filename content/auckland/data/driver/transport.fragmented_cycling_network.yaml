@@ -1,0 +1,22 @@
+id: driver.auckland.transport.fragmented_cycling_network
+name: "Fragmented and incomplete cycling network"
+description: >
+  Auckland's existing cycling infrastructure consists of high-quality
+  isolated segments connected by gaps on arterial roads where no
+  protection exists. A network where 80% of the route is excellent but
+  20% requires riding in 50–80km/h traffic is effectively unusable for
+  the 60–70% of potential cyclists who identify as "interested but
+  concerned" about road danger. Network connectivity is a multiplicative
+  rather than additive property: each missing link degrades the utility
+  of every connected segment by making it impossible to complete a
+  trip without an unsafe on-road section.
+theme: transport
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.auckland.transport.active_modes
+claim_ids:
+  - claim.auckland.transport.cycling_network_fragmentation
+  - claim.auckland.transport.cycling_mode_share_low

@@ -1,0 +1,64 @@
+id: problem.auckland.climate.transition_economy
+title: "Economic Transition and Decarbonisation"
+theme: climate-adaptation
+section: climate
+subpage: transition-economy
+parent: problem.auckland.climate.sea_level_rise
+order: 3
+updated: "2026-04-26"
+summary: >
+  Auckland accounts for 30% of New Zealand's transport emissions;
+  current policy settings are insufficient to meet the 2050 net-zero
+  target from transport. EV uptake is concentrated in high-income
+  households; low-income households bear higher fuel costs and own
+  older, more polluting vehicles. Approximately 80,000 Auckland workers
+  face transition risk from decarbonisation. The debate centres on
+  rapid decarbonisation investment versus just transition support as
+  the primary focus.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "low_income_ev_uptake_rate"
+    - "public_transport_emissions"
+    - "transition_worker_reskilling_rate"
+    - "green_economy_employment_south_auckland"
+  inputs:
+    - "ev_purchase_subsidy_value"
+    - "bus_fleet_electrification_schedule"
+    - "just_transition_fund_size"
+    - "green_economy_hub_capacity"
+  constraints:
+    - "ETS revenue allocation: EV subsidies compete with adaptation and other emissions reduction uses"
+    - "Pace tension: just transition timescales may not match climate urgency"
+    - "Infrastructure gap: modal shift requires transit network that does not yet exist at scale"
+  feedback_loops:
+    - "Car dependency → high transport emissions → climate change → hotter cities → more AC use → more emissions"
+    - "EV cost barrier → continued ICE fleet → higher fuel cost exposure for low-income households → lower adaptive capacity"
+narrative:
+  - heading: "The equity of decarbonisation"
+    body: >
+      Climate policy has a distributional structure that is rarely
+      acknowledged in emissions accounting. Carbon pricing raises
+      the cost of petrol; low-income households spend a higher share
+      of income on transport, so they pay a higher share of the
+      carbon cost. EV subsidies that require upfront capital favour
+      those who can borrow or have savings. The transition to a
+      decarbonised economy produces real gains for society and real
+      losses for specific workers and communities; whether those
+      losses are compensated is a choice, not a consequence.
+  - heading: "Transport as the primary Auckland lever"
+    body: >
+      Auckland's emissions profile is dominated by transport.
+      This means that New Zealand's transport decarbonisation
+      challenge is largely an Auckland transport problem. It also
+      means that Auckland's transit investment decisions are not
+      just quality-of-life choices — they are climate policy.
+      The argument for light rail and rapid transit investment is
+      as strong from a climate perspective as from a congestion
+      or productivity perspective; the three rationales reinforce
+      each other.
+claim_ids:
+  - claim.auckland.climate.auckland_emissions_profile
+  - claim.auckland.climate.transition_jobs_risk
+  - claim.auckland.climate.ev_transition_equi

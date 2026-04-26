@@ -1,0 +1,20 @@
+id: claim.auckland.health.food_environment_inequality
+statement: >
+  South and West Auckland neighbourhoods have a higher density of fast
+  food outlets and a lower density of fresh food retailers per capita
+  than affluent suburbs; the obesogenic food environment is a structural
+  driver of chronic disease that operates independently of individual
+  dietary choices.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.moh_health_loss_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland

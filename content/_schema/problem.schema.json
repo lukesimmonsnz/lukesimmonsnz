@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aotearoa://schema/problem.schema.json",
+  "title": "Problem",
+  "description": "A named issue observed in ≥1 regions, decomposed in Forrester systems-model style (problem_systems_model_v1). Migrated from content/auckland/schema/problem.schema.json. Structural changes from Auckland: (1) driver_ids and camp_ids removed — those edges originate from Driver and Camp respectively, not from Problem; (2) evidence_ids → claim_ids (E_evidenced_by); (3) source_ids removed — source reachability is Claim-mediated (P3 ratification 2026-04-25); (4) manifests_in added (E_manifests_in); (5) theme added. Cross-entity invariants P3 (subgraph completeness) and P15 (figure-in-narrative) are Layer 1c Python predicates.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "theme",
+    "summary",
+    "systems_model",
+    "narrative",
+    "manifests_in",
+    "claim_ids",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^problem\\.[a-z0-9_.]+$"
+    },
+    "title": {"type": "string"},
+    "theme": {"$ref": "aotearoa://schema/theme.schema.json"},
+    "section": {
+      "description": "Top-level section label for URL routing (e.g. 'housing').",
+      "type": "string"
+    },
+    "subpage": {
+      "description": "Subpage slug for URL routing.",
+      "type": "string"
+    },
+    "parent": {
+      "description": "ID of a parent Problem, if this is a sub-problem.",
+      "type": ["string", "null"]
+    },
+    "order": {
+      "description": "Display ordering within a section.",
+      "type": "integer"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "summary": {"type": "string"},
+    "manifests_in": {
+      "description": "Regions where this Problem is observed. ≥1 required. Materialises to E_manifests_in.",
+      "type": "array",
+      "items": {"$ref": "aotearoa://schema/region.schema.json"},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "systems_model": {
+      "description": "Forrester-style systems decomposition (problem_systems_model_v1).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state_variables", "inputs", "constraints", "feedback_loops"],
+      "properties": {
+        "state_variables": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "inputs": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "constraints": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "feedback_loops": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "narrative": {
+      "description": "Structured narrative sections rendered on the Problem page. ≥1 required. Figure identifiers in narrative.figure must appear in the figures list (P15 — Python).",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["heading", "body"],
+        "properties": {
+          "heading": {"type": "string"},
+          "body": {"type": "string"},
+          "figure": {
+            "description": "Figure identifier cross-referenced in body text (P15).",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "caption"],
+        "properties": {
+          "id": {"type": "string"},
+          "caption": {"type": "string"},
+          "image": {"type": "string"},
+          "alt": {"type": "string"},
+          "status": {"enum": ["placeholder", "draft", "final"]}
+        }
+      }
+    },
+    "claim_ids": {
+      "description": "Claims evidencing this Problem. ≥1 required (P3 — cross-entity Python). Materialises to E_evidenced_by.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^claim\\."
+      },
+      "minItems": 1
+    },
+    "status": {
+      "enum": ["draft-v0", "draft", "review", "published"]
+    }
+  }
+}

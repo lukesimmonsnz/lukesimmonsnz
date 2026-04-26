@@ -1,0 +1,18 @@
+id: driver.auckland.economy.wage_setting_weakness
+name: "Weak Wage-Setting Institutions"
+description: >
+  Low union density, fragmented enterprise bargaining, and a minimum
+  wage floor that does not track productivity growth have produced
+  a structural bias toward wage growth below productivity growth in
+  New Zealand. In Auckland's service sector, monopsonistic employer
+  power in retail, hospitality, and care sectors suppresses wages below
+  competitive levels.
+theme: economy
+consensus: contested
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.economy.labour_market
+claim_ids:
+  - claim.auckland.economy.wage_growth_lag

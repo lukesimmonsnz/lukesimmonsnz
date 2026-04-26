@@ -1,0 +1,21 @@
+id: claim.auckland.inequality.maori_homeownership_gap
+statement: >
+  Maori homeownership in Auckland (approximately 28%) is roughly half
+  the Pakeha rate (approximately 55%), a gap that has widened since the
+  1980s as house price appreciation compounded the effects of the
+  colonial land base deficit.
+value: null
+unit: null
+time_period: "2018-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.mhud_maori_housing_2023
+  - source.stats_nz_census_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.homeownership_rate_v1

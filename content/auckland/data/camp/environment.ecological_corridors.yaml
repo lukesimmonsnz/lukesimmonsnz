@@ -1,0 +1,44 @@
+id: camp.auckland.environment.ecological_corridors
+name: "Ecological corridors and connectivity"
+theme: environment
+core_claim: >
+  Isolated habitat fragments cannot sustain viable native species
+  populations over the long run. Reconnecting the Waitākere Ranges,
+  Hunua Ranges, and scattered urban remnants through restored ecological
+  corridors — riparian margins, urban bush links, predator-free zones —
+  enables species movement, genetic exchange, and recolonisation after
+  local extinction events.
+flagship_moves:
+  - "Establish a Waitākere–Manukau ecological corridor through the southern isthmus using retired farmland, road reserve restoration, and private land covenants"
+  - "Designate and fund a network of urban ecological stepping stones (10 ha+ bush remnants) with active predator management as intermediate nodes in the corridor network"
+  - "Extend kauri dieback hygiene requirements and track closures to all Waitākere Ranges tracks until effective treatment is available"
+tensions:
+  - >
+    Ecological corridors crossing private land require voluntary or
+    purchased covenants; land values in the Auckland region make
+    voluntary conservation covenanting difficult except on low-
+    productivity land.
+  - >
+    Connecting habitat fragments increases the risk of disease spread
+    (including kauri dieback) between previously isolated populations
+    if hygiene protocols are not maintained along corridors.
+addresses:
+  - problem.auckland.environment.biodiversity
+interventions:
+  - description: >
+      Purchase and covenant 500 ha of retiring farmland between the
+      Waitākere and Hunua Ranges for ecological corridor establishment,
+      with active predator control and native planting over 10 years.
+    state_variable: "native_species_population_index"
+    constraint_relaxed: "habitat fragmentation preventing species movement between remnants"
+    expected_sign: "+"
+  - description: >
+      Extend kauri dieback track closures and hygiene station network
+      to all public access points in the Waitākere Ranges, targeting
+      zero new kauri infections in managed zones.
+    state_variable: "waitakere_kauri_forest_area"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.environment.invasive_species_management
+applicable_in:
+  - auckland

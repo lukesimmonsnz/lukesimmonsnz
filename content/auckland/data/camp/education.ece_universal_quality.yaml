@@ -1,0 +1,43 @@
+id: camp.auckland.education.ece_universal_quality
+name: "Universal High-Quality ECE in High-Deprivation Areas"
+theme: education
+core_claim: >
+  Universal high-quality ECE from age 18 months in high-deprivation
+  Auckland areas is the highest-return educational investment available;
+  every dollar spent produces $7-12 in long-run returns through improved
+  educational attainment, reduced youth justice contact, and higher
+  adult earnings. The current subsidy model fails to deliver quality
+  where it is most needed.
+flagship_moves:
+  - "Extend 20 Hours Free ECE to 40 hours in NZDep decile 8-10 Auckland areas."
+  - "Fund quality uplift grants for decile 1-3 Auckland ECE centres to reach 100% qualified teacher ratios."
+  - "Fund transport assistance for ECE attendance in South and West Auckland."
+tensions:
+  - >
+    Extending free ECE hours requires either capping fees across the
+    board (opposed by providers who rely on top-up fees) or funding
+    the gap through Crown subsidy, which is fiscally significant.
+  - >
+    Quality improvement in high-deprivation centres requires teacher
+    pay parity with primary school, which requires national pay
+    legislation rather than local resourcing.
+addresses:
+  - problem.auckland.education.early_childhood
+interventions:
+  - description: >
+      Fund 40 hours free ECE per week for all children in NZDep decile
+      8-10 Auckland areas from 18 months, capped at licensed ECE
+      providers with minimum qualified teacher ratios.
+    state_variable: "ece_participation_rate_maori_pacific"
+    constraint_relaxed: "Cost barrier to full-time ECE for low-income families"
+    expected_sign: "+"
+  - description: >
+      Fund quality uplift grants of $50,000 per year for five years to
+      the 50 lowest-quality ECE centres in Auckland, ring-fenced to
+      qualified teacher recruitment and retention.
+    state_variable: "ece_quality_index_high_deprivation"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.education.ece_parent_choice
+applicable_in:
+  - auckland

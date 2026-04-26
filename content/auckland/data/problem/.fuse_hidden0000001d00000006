@@ -1,0 +1,60 @@
+id: problem.auckland.crime.organised_crime
+title: "Organised Crime and Gang Activity"
+theme: crime
+section: crime
+subpage: organised-crime
+parent: problem.auckland.crime.victimisation
+order: 3
+updated: "2026-04-26"
+summary: >
+  Auckland is the primary hub of New Zealand organised crime, with gang
+  structures in South Auckland controlling retail drug distribution.
+  Methamphetamine is the primary revenue source; its harms (family
+  violence, child neglect, acquisitive crime) are concentrated in
+  high-deprivation communities. Suppression-only enforcement has not
+  reduced gang membership or drug availability; the debate centres on
+  whether harm reduction and exit pathways or supply disruption and
+  gang legislation is the more effective primary lever.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "gang_membership_rate"
+    - "meth_harm_index"
+    - "drug_market_supply_index"
+    - "gang_asset_value"
+  inputs:
+    - "drug_treatment_capacity"
+    - "gang_exit_programme_places"
+    - "financial_crime_enforcement"
+    - "border_interception_rate"
+  constraints:
+    - "Prohibition rents: drug illegality creates high margins that sustain organised crime"
+    - "Recruitment pipeline: deprivation and school disengagement sustain gang membership supply"
+    - "Political constraint: drug law reform faces public opposition despite evidence base"
+  feedback_loops:
+    - "Gang revenue → community investment → local legitimacy → easier recruitment"
+    - "Meth harm → child neglect → intergenerational disadvantage → next generation recruitment"
+narrative:
+  - heading: "The economic structure of organised crime"
+    body: >
+      Auckland gangs are not primarily ideological organisations; they
+      are enterprises operating in a prohibited market. Drug prohibition
+      creates the price premium that makes the business viable; the
+      territorial enforcement that produces violence is a substitute for
+      contract law in an illegal industry. Understanding organised crime
+      as a market structure rather than a moral failure suggests that
+      enforcement targeting supply is less effective than demand reduction
+      and revenue base disruption.
+  - heading: "Community harm concentration"
+    body: >
+      The communities most harmed by organised crime are also the
+      communities most harmed by the poverty that fuels gang recruitment.
+      Methamphetamine harms are not distributed across Auckland; they
+      fall on children in overcrowded South and West Auckland households.
+      Any effective response has to address both the supply side and the
+      conditions that make drug use prevalent.
+claim_ids:
+  - claim.auckland.crime.drug_market_concentration
+  - claim.auckland.crime.gang_membership_deprivation
+  - claim.auckland.crime.meth_harm_concentrati

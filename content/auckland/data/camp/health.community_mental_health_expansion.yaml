@@ -1,0 +1,43 @@
+id: camp.auckland.health.community_mental_health_expansion
+name: "Community Mental Health Expansion and Step-Down Care"
+theme: health
+core_claim: >
+  The mental health crisis in Auckland is a capacity crisis; the system
+  is rationed to severe acute need and cannot absorb moderate-need
+  presentations. Expanding the stepped-care model — low-intensity digital
+  and peer support, community counselling, and primary care psychology —
+  would intercept people before they reach acute thresholds, reducing
+  pressure on specialist services and inpatient capacity.
+flagship_moves:
+  - "Fund 50 additional community mental health teams across Auckland, with a 15-case-per-clinician cap."
+  - "Establish free primary care psychology sessions (up to 6 per year) for all enrolled Auckland patients."
+  - "Fund kaupapa Maori and Pacific Island mental health providers to serve their communities in Auckland."
+tensions:
+  - >
+    Stepped-care capacity expansion requires training pipeline growth
+    that takes 5-7 years; short-run demand cannot be met by training
+    alone and requires immediate international recruitment.
+  - >
+    Community models work best for mild-to-moderate presentations;
+    severe and enduring illness still requires specialist and inpatient
+    capacity that community expansion does not replace.
+addresses:
+  - problem.auckland.health.mental_health
+interventions:
+  - description: >
+      Fund six free counselling sessions per year through enrolled GP
+      practices in Auckland, delivered by trained counsellors on GP
+      referral.
+    state_variable: "mh_unmet_moderate_need_rate"
+    constraint_relaxed: "Cost barrier to community mental health access"
+    expected_sign: "-"
+  - description: >
+      Establish 10 kaupapa Maori and Pacific mental health clinics in
+      South and West Auckland, with culturally responsive assessment
+      and treatment.
+    state_variable: "maori_pacific_mh_access_rate"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.health.acute_mh_infrastructure
+applicable_in:
+  - auckland

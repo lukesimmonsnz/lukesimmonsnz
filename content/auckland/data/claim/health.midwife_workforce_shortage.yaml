@@ -1,0 +1,22 @@
+id: claim.auckland.health.midwife_workforce_shortage
+statement: >
+  Auckland faces an acute midwifery workforce shortage; approximately
+  30% of Lead Maternity Carer positions in South Auckland are vacant
+  or filled by caseloads above sustainable limits. Women in high-
+  deprivation areas have lower antenatal visit rates and are more likely
+  to present unbooked or late to maternity services.
+value: 30
+unit: "percent vacancy"
+time_period: "2022-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.moh_maternal_child_health_2023
+  - source.health_nz_annual_report_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.amenable_mortality_rate_v1

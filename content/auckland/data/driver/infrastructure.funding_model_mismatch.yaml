@@ -1,0 +1,20 @@
+id: driver.auckland.infrastructure.funding_model_mismatch
+name: "Local government infrastructure funding model mismatch"
+description: >
+  Auckland Council's infrastructure investment capacity is structurally
+  constrained by a funding toolkit — rates, development contributions,
+  debt — that grows slowly relative to population and does not scale
+  with the economic activity the infrastructure enables. Crown transfers
+  for local infrastructure are project-specific and unpredictable. The
+  result is a chronic investment gap in which necessary infrastructure
+  is deferred until crisis rather than funded on a forward-looking basis.
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+  - problem.auckland.infrastructure.access
+claim_ids:
+  - claim.auckland.infrastructure.local_govt_funding_constraint
+  - claim.auckland.infrastructure.auckland_investment_gap

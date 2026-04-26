@@ -1,0 +1,45 @@
+id: camp.auckland.infrastructure.central_interceptor_and_network_renewal
+name: "Trunk infrastructure investment and network renewal"
+theme: infrastructure
+core_claim: >
+  Auckland's water and wastewater problems are engineering problems that
+  require engineering solutions: completing the Central Interceptor,
+  accelerating pipe renewal across the network, and expanding treatment
+  capacity ahead of growth. The investment case is straightforward —
+  the economic and environmental cost of deferred renewal and overflow
+  events exceeds the cost of timely investment.
+flagship_moves:
+  - "Complete the Central Interceptor wastewater tunnel by 2026 and fund the downstream network upgrades required to realise its full overflow-reduction benefit"
+  - "Accelerate the three-waters pipe renewal programme to at least 1.5% of network per year, reducing the renewal backlog to zero over 30 years"
+  - "Invest in additional water storage to provide 120-day supply at current demand under drought conditions"
+tensions:
+  - >
+    Trunk investment addresses capacity at specific points in the network
+    but does not resolve the distributed renewal backlog across thousands
+    of kilometres of smaller pipes; the visible large projects crowd out
+    the unglamorous but critical local renewal programme.
+  - >
+    Watercare's capital programme already exceeds what can be funded
+    without significant rate increases or additional Crown support;
+    accelerating investment requires a funding solution, not just
+    a capital programme.
+addresses:
+  - problem.auckland.infrastructure.water_and_wastewater
+interventions:
+  - description: >
+      Fund Central Interceptor downstream network upgrades (estimated
+      $400M) to capture the full overflow reduction available from the
+      trunk tunnel investment already committed.
+    state_variable: "wastewater_overflow_events"
+    constraint_relaxed: "downstream network bottleneck limiting trunk investment benefit"
+    expected_sign: "-"
+  - description: >
+      Increase the annual pipe renewal budget to achieve 1.5% network
+      renewal per year, funded by a 5% annual Watercare tariff increase
+      over 10 years.
+    state_variable: "asset_condition_index"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.infrastructure.demand_management_and_water_efficiency
+applicable_in:
+  - auckland

@@ -1,0 +1,19 @@
+id: claim.auckland.economy.gig_precarity
+statement: >
+  Gig and platform economy employment in Auckland has grown substantially;
+  workers classified as independent contractors lack employment
+  protections (sick leave, holiday pay, minimum hours guarantees),
+  creating a two-tier labour market where a growing share of Auckland
+  workers bear income volatility risk without social insurance coverage.
+value: null
+unit: null
+time_period: "2020-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.stats_nz_labour_market_2023
+scoped_to:
+  - nz
+national_assertion: true
+region_mentions: []

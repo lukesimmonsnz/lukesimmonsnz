@@ -1,0 +1,26 @@
+id: claim.auckland.transport.car_mode_share_2023
+statement: >
+  In Auckland, private vehicles account for approximately 78–82% of all
+  person-trips, one of the highest car mode shares among comparable OECD
+  cities. Public transport accounts for roughly 5–8% of trips, with active
+  modes (walking and cycling combined) at approximately 10–15%, most of which
+  is short walking trips. The car-dominant mode split reflects four decades
+  of motorway-first investment and low-density car-oriented urban development.
+value: 80
+unit: "percent of person-trips by private vehicle"
+methodology_tag: methodology.mode_share_v1
+time_period: "2021-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.ministry_of_transport_hts_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The 80% midpoint is used as the point value; the precise share varies
+  by trip purpose and survey year. PT and active mode shares are
+  complementary and described qualitatively in the statement.

@@ -1,0 +1,86 @@
+id: problem.auckland.transport.accessibility
+title: "Transport accessibility and car dependency"
+theme: transport
+section: transport
+subpage: accessibility
+parent: null
+order: 0
+updated: "2026-04-26"
+summary: >
+  Auckland's transport system is built primarily around private vehicle use,
+  with approximately 80% of trips made by car — one of the highest shares
+  among comparable OECD cities. Low-density, car-oriented urban form makes
+  frequent public transport economically unviable across most of the city,
+  while decades of motorway-first investment have produced a network that
+  reinforces car dependency with every new lane. The result is persistent
+  congestion costing an estimated $1.3–2.0 billion per year, a rapid
+  transit network that reaches only a fraction of the urban area, and
+  active mode infrastructure too fragmented to support mass cycling or
+  walking. Transport accessibility — the ability to reach jobs, services,
+  and social connections without a car — is highly unequal across the city.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "mode_share_car"
+    - "pt_mode_share"
+    - "vehicle_kilometres_travelled"
+    - "average_travel_time"
+    - "transport_co2_emissions"
+  inputs:
+    - "urban_density_distribution"
+    - "rapid_transit_network_coverage"
+    - "road_network_capacity"
+    - "fuel_and_road_pricing"
+    - "active_mode_infrastructure_quality"
+  constraints:
+    - "Car-oriented urban form: most origins and destinations too dispersed for viable PT"
+    - "Incomplete rapid transit network: Northwest, much of North Shore, and outer South without rapid transit"
+    - "Zero marginal pricing of road use: no signal to manage peak demand"
+    - "Active mode network fragmented: gaps and safety issues prevent mass cycling adoption"
+  feedback_loops:
+    - "Low pt_mode_share → low farebox revenue → reduced service frequency → lower attractiveness → lower pt_mode_share (PT death spiral)"
+    - "High mode_share_car → high vehicle_kilometres_travelled → congestion → travel time unreliability → increased car dependency (no reliable alternative)"
+    - "Motorway capacity expansion → induced demand → vehicle_kilometres_travelled returns to congested baseline within 5–10 years (fundamental law of road congestion)"
+narrative:
+  - heading: "A car-built city"
+    body: >
+      Auckland's post-war growth was shaped by the car. From the 1950s onward,
+      urban development followed motorway investment outward from the isthmus,
+      producing a dispersed low-density city where most trips are too long
+      for walking, too dispersed for efficient buses, and where four decades
+      of habit and infrastructure have locked private vehicle use into the
+      default behaviour of most households. Approximately 80% of Auckland
+      person-trips are made by private vehicle — a proportion that has barely
+      moved in a decade despite significant public transport investment. The
+      mode share is not primarily a function of service quality; it is a
+      function of land use.
+  - heading: "The congestion cost"
+    body: >
+      The economic cost of Auckland's car dependency is not abstract.
+      Congestion costs an estimated $1.3–2.0 billion per year in lost
+      productivity, delayed freight, and excess vehicle operating costs.
+      Auckland consistently ranks among the most congested cities in the
+      OECD relative to its population, with peak-hour travel times on key
+      corridors 50–80% above free-flow speeds. Every lane added to a
+      motorway generates new demand — the fundamental law of road congestion
+      — returning the network to capacity within a political cycle. The
+      physical expansion of the roading network cannot solve the congestion
+      problem; it is a supply response to demand that grows to fill any
+      new capacity.
+  - heading: "Inequality of access"
+    body: >
+      Transport accessibility is not uniformly distributed across Auckland.
+      Households without a car — disproportionately lower-income, elderly,
+      and disabled — face severe restrictions on employment and service access
+      in a city designed around vehicle ownership. The rapid transit network
+      serves the CBD, the Southern and Eastern rail lines, and the Northern
+      Busway, but leaves the Northwest, much of the North Shore, and the
+      outer South without fast, frequent connections. Where PT is slow and
+      infrequent, car ownership is not a choice but a structural requirement
+      for participation in the labour market.
+claim_ids:
+  - claim.auckland.transport.car_mode_share_2023
+  - claim.auckland.transport.congestion_economic_cost
+  - claim.auckland.transport.low_density_car_dependency
+status: draft

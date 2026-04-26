@@ -85,6 +85,9 @@ These are **frozen**. Do not reopen without explicit PI instruction.
 | 5 | **Claim vs Evidence**: rename `evidence` → `claim`. Evidence is a **role** carried by edges (`evidenced_by`, `supports`), not a node type. |
 | 6 | **Response vs Policy**: keep Auckland's `response` as-is; drop the migration doc's narrower `Policy` from the new inventory. |
 | 7 | **Local model stack**: `qwen2.5:7b` and `qwen2.5-coder:7b` confirmed installed. Parallel `.venv-ml/` for torch / transformers / sentence-transformers; FastAPI daemon on `localhost:5001` for NLI and embeddings. Flask process never imports torch. |
+| 8 | **Schema design open questions**: all nine §5 items in `docs/SCHEMA-DESIGN-aotearoa.md` ratified as PI-recommended (2026-04-25). Notable: IbisNode is a first-class entity; Region is a tiered enum (RegionalCouncil ∪ TerritorialAuthority ∪ National) with TA-level data deferred until ≥3 regions populated; iwi/rohe is a parallel spatial axis; Pattern's national-rollup threshold lives in the rendering layer, not the schema; `Response.actor` keeps the sector enum AND adds an optional typed Actor reference. |
+| 9 | **Schema design gate findings ratified (2026-04-25)** — `docs/SCHEMA-DESIGN-aotearoa-gate-2026Q2.md`. (a) **Auckland delete-and-rebuild**: existing 69-entity corpus discarded; reauthored from clean slate against new `content/_schema/`. §5.9 rename-PR machinery obsolete. (b) P3 source-citation conjunct **Claim-mediated** (no Problem→Source `cites` edge). (c) **P5'**: comparison claim must be backed by Instance-level pinning (singleton `scoped_to`) per region; lint warns until 3rd region populated, then errors. (d) **P6' / P7'**: typed YAML fields `national_assertion: bool` and `region_mentions: list[Region]` replace NLP-style `nat`/`ment` predicates. (e) Camp's `applicable_in` / `efficacy_in` **lifted to edges** (uniform with Response's `applies_in`); \|R\| = 18. (f) Methodology registry **extended** with `driver_timescale_v1`, `response_sector_typology_v1`, `actor_institutional_typology_v1` (\|§4\| = 15). (g) `evidenced_by` exclusion of Indicator and Actor **semantically justified**. (h) **Notation cleanup pass scheduled** before Layer 1b begins. |
+| 9 | **Schema design gate findings ratified (2026-04-25)** — `docs/SCHEMA-DESIGN-aotearoa-gate-2026Q2.md`. (a) **Auckland delete-and-rebuild**: existing 69-entity corpus discarded; reauthored from clean slate against new `content/_schema/`. §5.9 rename-PR machinery obsolete. (b) P3 source-citation conjunct **Claim-mediated** (no Problem→Source `cites` edge). (c) **P5'**: comparison claim must be backed by Instance-level pinning (singleton `scoped_to`) per region; lint warns until 3rd region populated, then errors. (d) **P6' / P7'**: typed YAML fields `national_assertion: bool` and `region_mentions: list[Region]` replace NLP-style `nat`/`ment` predicates. (e) Camp's `applicable_in` / `efficacy_in` **lifted to edges** (uniform with Response's `applies_in`); \|R\| = 18. (f) Methodology registry **extended** with `driver_timescale_v1`, `response_sector_typology_v1`, `actor_institutional_typology_v1` (\|§4\| = 15). (g) `evidenced_by` exclusion of Indicator and Actor **semantically justified**. (h) **Notation cleanup pass scheduled** before Layer 1b begins. |
 
 ---
 
@@ -97,14 +100,16 @@ correctness is a precondition for the next.
 |---|---|---|
 | 0 | Ratify §1 architecture | **Done** (2026-04-25) |
 | 0.5 | Verify local model stack | **Done** (2026-04-25) |
-| 0.5b | Bootstrap parallel `.venv-ml/` + FastAPI daemon | **Not started** |
-| 1a | Schema design — typed-graph diagram + edge inventory + methodology seed | **Not started** — next session |
-| 1b | JSON Schema authoring from approved design | Blocked on 1a |
-| 1c | Cross-entity invariants in Python | Blocked on 1a |
-| 2 | Refactor `blueprints/auckland.py` → `RegionBlueprintFactory` | Blocked on 1 |
-| 3 | National (`nz`) Pattern-rollup query function + template | Blocked on 1 |
-| 4 | Wellington as proof region (full §A.4 sequence) | Blocked on 2 + 3 |
-| 5 | Quarterly archive CI job (SEP pattern) | Blocked on 4 |
+| 0.5b | Bootstrap parallel `.venv-ml/` + FastAPI daemon | **Done** (2026-04-25) |
+| 1a | Schema design — typed-graph diagram + edge inventory + methodology seed | **Gate-closed** (2026-04-25) — `docs/SCHEMA-DESIGN-aotearoa-gate-2026Q2.md`; all findings ratified (§5 row 9). |
+| 1a-cleanup | Notation pass over `SCHEMA-DESIGN-aotearoa.md` discharging gate's FORMAL items (P1, P10, P11, P12, P14, P15, P17) plus inlining ratified amendments (P3 Claim-mediation, P5', P6'/P7', edge lifts, three new methodology entries, `evidenced_by` justification) | **Done** (2026-04-25) |
+| 1b | JSON Schema authoring from approved design | **Done** (2026-04-25) — 13 files in `content/_schema/`; all pass Draft202012Validator meta-schema check and `$ref` closure. `claim.schema.json` tail corruption (engagement_record_id.type truncated) repaired 2026-04-26; re-audited clean. |
+| 1c | Cross-entity invariants in Python | **Done** (2026-04-26) — `content/_schema/invariants.py`; 18 predicates + 3 helpers + `run_all` orchestrator; 48-check audit clean. `methodology_tag` and `methodology.id` both use the full prefixed form `"methodology.<slug>_vN"` (Option C ratified 2026-04-26; `claim.schema.json`, `methodology.schema.json`, and P14 updated). `run_all` tail corruption (`else` body and two warning-predicate calls truncated) repaired 2026-04-26; full 19-symbol audit clean. |
+| 2 | Refactor `blueprints/auckland.py` → `RegionBlueprintFactory` | **Gate-closed** (2026-04-26) — `blueprints/region.py` factory; `blueprints/auckland.py` reduced to one-liner; Opus gate passed all 14 checks. |
+| 3 | National (`nz`) Pattern-rollup query function + template | **Done** (2026-04-26) — `content/nz/tools/query.py`; `blueprints/nz.py`; `templates/nz/{index,theme}.html`; Pattern corpus at `content/nz/data/pattern/`; 6-check smoke suite green. |
+| 4a | Auckland corpus rebuild — reauthor all Auckland themes against `content/_schema/` (delete-and-rebuild posture, §5 row 9a) | **Gate-closed (2026-04-26)** — **426 entities** (51 Source, 22 Methodology, 123 Claim, 93 Driver, 91 Camp, 46 Problem); **426/426 JSON Schema OK; `run_all` 0 errors 0 warnings**. All 11 themes: 1 root + ≥3 children each. Opus corpus gate (§9 item 3) **PASSED 2026-04-26** — 14-check suite clean; PI sign-off required before merge. Notes: (a) inequality `income_polarisation` child added to reach 3 children; (b) entity IDs use `climate` slug (regex `[a-z0-9_.]` forbids hyphens) while `theme:` field carries `climate-adaptation` enum — schema-enforced, not an inconsistency. |
+| 4b | Wellington as proof region (full §A.4 sequence) | Blocked on PI sign-off + merge of 4a |
+| 5 | Quarterly archive CI job (SEP pattern) | Blocked on 4b |
 
 **Update this table by hand as work progresses.** It is the truth-source
 for "where are we right now".
@@ -131,16 +136,11 @@ for "where are we right now".
 
 ## 8. Open questions awaiting PI input
 
-- **`IbisNode` shape** (Layer 1a, design session): first-class node type, or
-  a role any `Claim` plays within an `Issue` subgraph? Are `Issue`s
-  separate entities, or `Problem` nodes flagged `is_contested: true`?
-  Mathematical bar: a separate type doubles type count for marginal gain
-  if Issues map cleanly to Problems.
-- **Region taxonomy granularity**: 16 regions only, or 16 regions + 67
-  Territorial Authorities as sub-regions in the same enum?
-- **National threshold**: at how many regions does a Pattern qualify as
-  "national" for `/research/nz/` rollup pages? (Doc suggests ≥ 10 as a
-  rule of thumb; not ratified.)
+None currently open. Layer 1a design questions resolved in the 2026-04-25
+ratification of `docs/SCHEMA-DESIGN-aotearoa.md` §5 (see §5 row 8). Gate
+findings resolved 2026-04-25 (see §5 row 9). Next questions will surface
+either during the Layer 1a-cleanup notation pass or once Layer 1b JSON
+Schema authoring begins.
 
 ---
 
@@ -149,15 +149,16 @@ for "where are we right now".
 Per §A.5 of the migration doc, Opus verification gates are non-negotiable
 at these points. Do not bypass.
 
-1. **Schema design gate** (end of Layer 1a): Opus verifies the typed-graph
-   design is internally consistent, every cross-entity invariant is
-   stated as a first-order predicate, and the design closes the §2 §A.5
-   epistemic gap.
+1. **Schema design gate** (end of Layer 1a): **COMPLETE** (2026-04-25) — see
+   `docs/SCHEMA-DESIGN-aotearoa-gate-2026Q2.md`. All findings ratified per
+   §5 row 9. Cleanup pass (Layer 1a-cleanup) scheduled before Layer 1b
+   authoring begins.
 2. **Blueprint refactor gate** (end of Layer 2): Opus verifies all current
    Auckland routes are byte-identical post-refactor.
-3. **Schema migration gate** (end of Layer 1c, when Auckland migrates into
-   shared schema): Opus verifies all 69 existing Auckland entities still
-   validate.
+3. **Schema migration gate** (end of Layer 1c / Layer 4a): **PASSED 2026-04-26** —
+   426 entities, 0 schema errors, 0 invariant errors. All 11 themes structurally
+   correct (1 root + ≥3 children each). Opus ran 14-check suite; PASS verdict issued.
+   **PI sign-off required before merge to `main`.** Model pin: Opus.
 4. **Per-region-theme content gates** (recurring, one per PR in steady-state).
 
 PI signs off on each gate output before merge.

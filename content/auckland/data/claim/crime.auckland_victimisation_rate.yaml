@@ -1,0 +1,20 @@
+id: claim.auckland.crime.auckland_victimisation_rate
+statement: >
+  Approximately 30% of Auckland adults experience at least one criminal
+  victimisation per year according to the NZ Crime and Victims Survey;
+  property crime dominates, but violent victimisation rates in South and
+  West Auckland are substantially above the Auckland average.
+value: 30
+unit: "percent"
+time_period: "2022-2023"
+confidence: medium
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.ministry_of_justice_victimisation_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.victimisation_rate_v1

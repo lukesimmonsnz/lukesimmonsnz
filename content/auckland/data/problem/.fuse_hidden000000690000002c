@@ -1,0 +1,78 @@
+id: problem.auckland.transport.congestion
+title: "Road network congestion"
+theme: transport
+section: transport
+subpage: congestion
+parent: problem.auckland.transport.accessibility
+order: 1
+updated: "2026-04-26"
+summary: >
+  Auckland's road network operates at or above capacity for extended
+  periods each weekday, producing among the worst congestion in the OECD
+  for a city of its size. Successive motorway expansions have not reduced
+  congestion — each capacity addition generates new vehicle trips through
+  induced demand, returning the network to a congested equilibrium within
+  a political cycle. The absence of road pricing means congestion is
+  rationed by time cost rather than price, destroying an estimated
+  $1.3–2.0 billion per year in productivity. Freight movements compound
+  the problem: no dedicated freight rail means port-bound trucks share
+  inner-city arterials with commuter traffic.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "vehicle_kilometres_travelled"
+    - "average_travel_time"
+    - "road_network_throughput"
+  inputs:
+    - "peak_hour_vehicle_demand"
+    - "road_lane_capacity"
+    - "freight_truck_volumes"
+    - "road_pricing_signal"
+  constraints:
+    - "Zero marginal price of road use at peak: no demand signal to shift trips in time or mode"
+    - "Induced demand: capacity additions generate equivalent new trips over 5–10 years"
+    - "Freight network conflict: no dedicated freight route from port to inland network"
+  feedback_loops:
+    - "Road capacity expansion → new vehicle trips (induced demand) → vehicle_kilometres_travelled restores to congested level"
+    - "Congestion → travel time unreliability → businesses and households prefer car (reliable departure buffer) → higher mode_share_car"
+narrative:
+  - heading: "Induced demand: why building more roads doesn't work"
+    body: >
+      Every motorway expansion in Auckland's history has been followed by
+      return to congestion within a decade. The mechanism is well-established
+      in transport economics: adding road capacity reduces travel times
+      temporarily, which induces additional trips from travellers who
+      previously avoided peak times, used PT, or relocated closer to work.
+      The induced demand restores the network to a congested equilibrium at
+      a higher absolute volume. This is not a planning failure — it is the
+      predictable response of a road network where use is unpriced.
+      Managing congestion through capacity alone is a treadmill: the city
+      must keep building to stay in place.
+  - heading: "The pricing gap"
+    body: >
+      Auckland road users pay fuel excise and registration charges but face
+      no charge for the congestion externality they impose at peak times.
+      This means peak demand is managed by queuing — drivers sit in traffic
+      as the implicit price of using the road. A $1.3–2.0 billion annual
+      productivity loss is the aggregate cost of that queuing. Road pricing
+      replaces the time cost with a money cost, which can be calibrated to
+      manage demand efficiently and recycled into PT or active mode
+      investment. It is the only tool that both manages demand and generates
+      revenue to fund alternatives.
+  - heading: "Freight in the wrong place"
+    body: >
+      The Ports of Auckland sit on CBD-adjacent waterfront, routing
+      significant volumes of container trucks through inner-city streets
+      to reach the Southern motorway corridor. There is no dedicated
+      freight rail connection from the Port to the inland distribution
+      network at Wiri, meaning freight and commuter traffic compete for
+      the same lanes on the same corridors during the same peak hours.
+      The economic case for port relocation is well-established but the
+      implementation timeline spans decades.
+claim_ids:
+  - claim.auckland.transport.congestion_rank_international
+  - claim.auckland.transport.congestion_economic_cost
+  - claim.auckland.transport.induced_demand_evidence
+  - claim.auckland.transport.freight_network_constraint
+status: draft

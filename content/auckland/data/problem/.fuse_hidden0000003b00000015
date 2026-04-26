@@ -1,0 +1,61 @@
+id: problem.auckland.governance.accountability
+title: "Governance Accountability and Integrity"
+theme: governance
+section: governance
+subpage: accountability
+parent: problem.auckland.governance.democratic_participation
+order: 3
+updated: "2026-04-26"
+summary: >
+  Auckland Council and CCOs have among New Zealand's highest LGOIMA
+  non-compliance rates. Public trust in Council is declining across
+  all demographics and lowest in Maori and Pacific communities. Audit
+  reports have repeatedly flagged procurement integrity concerns.
+  The debate centres on whether open government (radical transparency)
+  or integrity enforcement (Auditor-General extension, cooling-off
+  periods) is the primary accountability lever.
+manifests_in:
+  - auckland
+systems_model:
+  state_variables:
+    - "council_transparency_index"
+    - "public_trust_council"
+    - "procurement_integrity_index"
+    - "cco_procurement_audit_coverage"
+  inputs:
+    - "proactive_contract_publication"
+    - "ltp_performance_dashboard"
+    - "cooling_off_period_legislation"
+    - "oag_jurisdiction_extension"
+  constraints:
+    - "Commercial sensitivity: legitimate IP protection provisions create cover for inappropriate withholding"
+    - "OAG capacity: extending CCO jurisdiction requires Auditor-General resource expansion"
+    - "Talent pipeline: strict post-employment constraints may deter private sector expertise from public sector"
+  feedback_loops:
+    - "Low trust → lower engagement → less scrutiny → worse decisions → lower trust"
+    - "Procurement integrity failure → higher contract costs → fiscal gap → lower service quality → lower trust"
+narrative:
+  - heading: "The transparency gap"
+    body: >
+      Auckland spends approximately $4 billion per year. The public
+      cannot easily find out who the Council's major contractors are,
+      what they are paid, or whether they deliver value. The LGOIMA
+      non-compliance pattern is not isolated incompetence; it is an
+      institutional culture that treats information as a liability
+      rather than a public good. Changing this requires structural
+      intervention — automatic publication requirements that do not
+      depend on individual officials' good faith.
+  - heading: "Procurement as the integrity focal point"
+    body: >
+      Procurement is where governance integrity is most consequential
+      and least visible. A 10% overcharge on a $500M infrastructure
+      contract costs ratepayers $50M. The mechanisms that enable
+      overcharging — inadequate competition, conflict of interest in
+      evaluation, post-employment revolving doors — are known and
+      addressable. The absence of systematic Auditor-General oversight
+      of CCO procurement is an accountability gap that persists by
+      institutional inertia rather than design.
+claim_ids:
+  - claim.auckland.governance.oia_response_failure
+  - claim.auckland.governance.public_trust_decline
+  - claim.auckland.governance.conflict_of_interest_ri

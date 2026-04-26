@@ -1,0 +1,43 @@
+id: camp.auckland.housing.supply_reform
+name: "Supply-side reform"
+theme: housing
+core_claim: >
+  Auckland's housing unaffordability is primarily a supply-side failure;
+  expanding housing supply through planning liberalisation and infrastructure
+  investment is the primary lever for restoring affordability.
+flagship_moves:
+  - "Upzone residential land to allow medium and high-density development as-of-right"
+  - "Remove density restrictions and height limits within walkable distance of frequent-transit stops"
+  - "Fast-track infrastructure funding to unlock greenfield and brownfield capacity"
+tensions:
+  - >
+    Rapid intensification generates neighbour opposition and can strain
+    existing infrastructure networks if not sequenced with capital investment;
+    the planning and infrastructure funding reforms are coupled problems.
+  - >
+    Supply-side liberalisation alone may not deliver affordable housing if
+    land-banking and construction-cost barriers absorb the price signal;
+    landowners capturing windfall gains from upzoning reduces the fiscal
+    headroom for accompanying public investment.
+addresses:
+  - problem.auckland.housing.affordability
+interventions:
+  - description: >
+      Enable as-of-right 3–6 storey residential development within 1.5 km of
+      frequent-transit stops.
+    state_variable: "housing_stock_per_capita"
+    constraint_relaxed: "restrictive_residential_zoning"
+    expected_sign: "+"
+  - description: >
+      Reform developer-contribution regimes to lower the marginal infrastructure
+      cost of infill and medium-density development.
+    state_variable: "annual_building_consents"
+    constraint_relaxed: "infrastructure_provision_capacity"
+    expected_sign: "+"
+claim_ids:
+  - claim.auckland.housing.supply_deficit_2010s
+  - claim.auckland.housing.nps_ud_upzoning
+tensions_with:
+  - camp.auckland.housing.demand_management
+applicable_in:
+  - auckland

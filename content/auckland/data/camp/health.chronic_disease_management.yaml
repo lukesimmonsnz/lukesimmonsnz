@@ -1,0 +1,44 @@
+id: camp.auckland.health.chronic_disease_management
+name: "Chronic Disease Management and Early Detection"
+theme: health
+core_claim: >
+  Given existing chronic disease burden, the highest-return investment
+  is improving detection and management — getting people into the health
+  system earlier and managing conditions before they require hospitalisation.
+  Nurse-led chronic care programmes, community pharmacist prescribing,
+  and targeted diabetes screening in high-risk Pacific and Maori
+  communities reduce hospitalisation and amputation rates within years,
+  not decades.
+flagship_moves:
+  - "Fund nurse-led diabetes and cardiovascular care programmes in all Auckland VLCA practices."
+  - "Enable community pharmacist prescribing for stable chronic conditions to increase access points."
+  - "Fund targeted diabetes screening (HbA1c) for all Pacific Aucklanders over 30 regardless of symptoms."
+tensions:
+  - >
+    Management-focused investment accepts the existing disease burden
+    and optimises within it; prevention advocates argue this locks in
+    the upstream problem and requires indefinite ongoing treatment cost.
+  - >
+    Nurse-led and pharmacist prescribing models require updated scope
+    of practice legislation and professional body agreement; both have
+    historically moved slowly in New Zealand.
+addresses:
+  - problem.auckland.health.chronic_disease
+interventions:
+  - description: >
+      Fund nurse-led chronic care coordinators in all 180 Auckland
+      VLCA practices with case management for patients with two or
+      more chronic conditions.
+    state_variable: "chronic_disease_hospitalisation_rate"
+    constraint_relaxed: "GP time constraint for chronic disease monitoring"
+    expected_sign: "-"
+  - description: >
+      Fund free annual HbA1c screening for all Pacific Aucklanders
+      over 30, delivered through community health workers and
+      Pacific churches.
+    state_variable: "diabetes_late_diagnosis_rate"
+    expected_sign: "-"
+tensions_with:
+  - camp.auckland.health.chronic_disease_prevention
+applicable_in:
+  - auckland

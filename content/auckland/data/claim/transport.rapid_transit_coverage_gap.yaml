@@ -1,0 +1,27 @@
+id: claim.auckland.transport.rapid_transit_coverage_gap
+statement: >
+  Auckland's rapid transit network — rail, the Northern Busway, and the
+  Eastern Busway under construction — serves the CBD, Eastern, Southern,
+  and Western rail corridors, and the North Shore via the Northern Busway.
+  It does not yet reach the Northwest (Westgate/Kumeu corridor), the
+  majority of the North Shore beyond Albany, or the rapidly-growing outer
+  South. More than half of Auckland's residential land area lies more than
+  800m from any rapid transit stop.
+value: null
+unit: null
+time_period: "2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.auckland_transport_annual_2023
+  - source.auckland_council_dev_strategy_2022
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  The 800m catchment figure is a standard planning threshold. The coverage
+  gap claim is directional and well-established; precise calculation of
+  the land area proportion would require GIS analysis.

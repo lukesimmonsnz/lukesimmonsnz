@@ -1,0 +1,26 @@
+id: claim.auckland.transport.pt_patronage_recovery
+statement: >
+  Auckland public transport patronage reached approximately 100 million
+  annual boardings in 2019 before collapsing during COVID-19 lockdowns.
+  By 2023 patronage had recovered to roughly 80–85% of pre-COVID levels,
+  representing approximately 85–90 million annual boardings. Rail and
+  Northern Busway services have recovered fastest; inner-city bus services
+  more slowly. The City Rail Link, when open, is expected to at least
+  double rail capacity and materially increase rail's share of total PT trips.
+value: null
+unit: null
+time_period: "2019-2023"
+confidence: high
+verification_status: cited_only
+last_verified: null
+source_ids:
+  - source.at_patronage_data_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+notes: >
+  Exact 2023 annual figure to be confirmed against AT's final annual
+  patronage report. The directional recovery narrative is robust; the
+  specific percentage is approximate pending the final release.

@@ -1,0 +1,48 @@
+id: camp.auckland.housing.build_to_rent
+name: "Build-to-rent institutional investment"
+theme: housing
+core_claim: >
+  Institutional development of purpose-built rental housing at scale —
+  with professional management, longer tenancy terms, and stable rents
+  structured around yield rather than capital gain — addresses rental
+  affordability by expanding supply and raising tenure quality without
+  requiring legislative rent caps.
+flagship_moves:
+  - "Establish a dedicated build-to-rent planning pathway with streamlined consent processes and density allowances for institutional-scale rental developments"
+  - "Introduce tax treatment parity between build-to-rent and build-to-sell to reduce the structural bias toward owner-occupier supply"
+  - "Enable long-term fixed-rent lease structures (3–5 years) as a standard institutional product to reduce renter cost uncertainty"
+tensions:
+  - >
+    Institutional build-to-rent is viable only above a minimum yield
+    threshold; rent stabilisation legislation (as proposed by the
+    tenancy law reform camp) compresses yield, reducing institutional
+    investor appetite and potentially shrinking the pipeline it depends on.
+  - >
+    Without an affordable component requirement, build-to-rent delivers
+    primarily mid-to-upper-market product, leaving the households most
+    exposed to cost burden unserved by the new supply.
+addresses:
+  - problem.auckland.housing.rental_affordability
+interventions:
+  - description: >
+      Create a build-to-rent consent fast-track for developments of ≥50
+      units with at least 10% below-market units, targeting a 12-month
+      consent-to-build pipeline.
+    state_variable: "median_rent_level"
+    constraint_relaxed: "planning consent bottleneck for large-scale rental development"
+    expected_sign: "-"
+  - description: >
+      Align GST and depreciation rules for build-to-rent with commercial
+      asset classes to correct the tax asymmetry that favours build-to-sell.
+    state_variable: "institutional_rental_supply"
+    expected_sign: "+"
+  - description: >
+      Mandate a minimum habitability specification (heating, insulation,
+      ventilation) as a condition of the build-to-rent consent pathway,
+      raising baseline rental_housing_quality in new institutional stock.
+    state_variable: "rental_housing_quality"
+    expected_sign: "+"
+tensions_with:
+  - camp.auckland.housing.tenancy_law_reform
+applicable_in:
+  - auckland

@@ -1,0 +1,17 @@
+id: driver.auckland.economy.sme_financing_gap
+name: "SME Financing Gap"
+description: >
+  Property-secured bank lending and a thin venture capital market
+  leave Auckland SMEs without growth capital. The bank's preference
+  for collateral-backed lending means that knowledge-intensive firms
+  without property assets cannot access capital at the rates needed
+  to invest in productivity-enhancing technology or market expansion.
+theme: economy
+consensus: consensus
+category: economic
+timescale: medium
+scope: national
+problem_ids:
+  - problem.auckland.economy.business_environment
+claim_ids:
+  - claim.auckland.economy.sme_capital_access
