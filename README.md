@@ -1,8 +1,8 @@
 # Luke Simmons — personal site
 
 <!-- auto:meta:begin -->
-**Updated:** 2026-04-26
-**Blog posts:** 4 · **Auckland entities:** 69 · **Auckland generated pages:** 5
+**Updated:** 2026-05-30
+**Blog posts:** 17 · **Auckland entities:** 69 · **Auckland generated pages:** 61
 <!-- auto:meta:end -->
 
 An engineering README for the Flask app that serves [lukesimmonsnz.kiwi](http://127.0.0.1:5000/) from the owner's own machine.

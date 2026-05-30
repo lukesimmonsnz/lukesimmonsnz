@@ -1,8 +1,8 @@
 # Architecture
 
 <!-- auto:meta:begin -->
-**Updated:** 2026-04-26
-**Blog posts:** 4 · **Auckland entities:** 69 · **Auckland generated pages:** 5 · **URL rules:** 42
+**Updated:** 2026-05-30
+**Blog posts:** 17 · **Auckland entities:** 69 · **Auckland generated pages:** 61 · **URL rules:** 129
 <!-- auto:meta:end -->
 
 How this site is put together and why. Read [`../README.md`](../README.md) first if you want to run the code; this document is for a reviewer who wants to understand the design without running it.
