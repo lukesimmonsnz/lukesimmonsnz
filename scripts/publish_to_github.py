@@ -250,10 +250,18 @@ def _print_findings(label: str, findings: list, limit: int = 25) -> None:
 def sync_to_mirror(files: list[Path]) -> dict:
     """Copy publishable files to mirror; remove files no longer in source set.
 
-    Returns a dict {copied: N, removed: N}.
+    Skips unchanged files (same mtime + size) for speed and to avoid
+    permission errors on locked binaries. On PermissionError, makes the
+    target writable and retries once; logs and skips if still failing.
+
+    Returns a dict {copied, skipped_unchanged, skipped_locked, removed}.
     """
+    import os, stat
+
     publish_rels = {f.relative_to(ROOT) for f in files}
     copied = 0
+    skipped_unchanged = 0
+    skipped_locked: list[str] = []
     removed = 0
 
     # Copy / update
@@ -261,8 +269,30 @@ def sync_to_mirror(files: list[Path]) -> dict:
         rel = src.relative_to(ROOT)
         dst = MIRROR_DIR / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(src, dst)
-        copied += 1
+
+        # Skip unchanged files (fast path + avoids touching locked binaries).
+        if dst.exists():
+            try:
+                ssrc = src.stat()
+                sdst = dst.stat()
+                if int(ssrc.st_mtime) == int(sdst.st_mtime) and ssrc.st_size == sdst.st_size:
+                    skipped_unchanged += 1
+                    continue
+            except OSError:
+                pass
+
+        try:
+            shutil.copy2(src, dst)
+            copied += 1
+        except PermissionError:
+            # Try to clear read-only and retry.
+            try:
+                if dst.exists():
+                    os.chmod(dst, stat.S_IWRITE)
+                shutil.copy2(src, dst)
+                copied += 1
+            except (PermissionError, OSError) as exc:
+                skipped_locked.append(f"{rel.as_posix()}  ({exc})")
 
     # Delete files in mirror that aren't in publish set
     for path in MIRROR_DIR.rglob("*"):
@@ -283,7 +313,12 @@ def sync_to_mirror(files: list[Path]) -> dict:
             except OSError:
                 pass
 
-    return {"copied": copied, "removed": removed}
+    return {
+        "copied": copied,
+        "skipped_unchanged": skipped_unchanged,
+        "skipped_locked": skipped_locked,
+        "removed": removed,
+    }
 
 
 # ----------------------------------------------------------------------
@@ -294,6 +329,9 @@ def _git(args: list[str], check: bool = True, capture: bool = True) -> subproces
     return subprocess.run(
         ["git", "-C", str(MIRROR_DIR), *args],
         check=check, capture_output=capture, text=True,
+        # Force UTF-8 + replace-on-error so unicode in file paths or
+        # commit messages doesn't crash on a Windows cp1252 console.
+        encoding="utf-8", errors="replace",
     )
 
 
@@ -348,7 +386,18 @@ def main() -> int:
 
     print(f"\n[publish] Syncing to mirror...")
     stats = sync_to_mirror(files)
-    print(f"[publish] copied={stats['copied']} removed={stats['removed']}")
+    print(
+        f"[publish] copied={stats['copied']} "
+        f"unchanged={stats['skipped_unchanged']} "
+        f"removed={stats['removed']} "
+        f"locked={len(stats['skipped_locked'])}"
+    )
+    if stats["skipped_locked"]:
+        print("[publish] WARN — files locked or unwritable; not copied:")
+        for entry in stats["skipped_locked"][:10]:
+            print(f"  {entry}")
+        if len(stats["skipped_locked"]) > 10:
+            print(f"  ... +{len(stats['skipped_locked']) - 10} more")
 
     _git(["add", "-A"])
     status = _git(["status", "--short"]).stdout
