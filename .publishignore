@@ -1,0 +1,31 @@
+# .publishignore — paths NOT to sync to the GitHub-bound mirror.
+#
+# Used by `scripts/publish_to_github.py`. Pattern syntax is gitignore-ish:
+# `path/` matches anything under that dir; `*.ext` is a glob; bare names
+# match files anywhere. Comments start with `#`.
+#
+# `.gitignore` patterns are honoured automatically as well — the publish
+# script reads both. Anything in .gitignore (.env, .venv/, _site/, etc.)
+# is already excluded from publish without needing to repeat it here.
+# This file is for the *extra* "tracked locally but never publish"
+# bucket — files we DO want under local git but DO NOT want on GitHub.
+
+# Internal docs not for public consumption. (Also gitignored, listed
+# here for redundancy + as a visible reminder of the privacy posture.)
+docs/BRIEFING-*.md
+docs/MONETIZATION.md
+docs/SESSION-HANDOFF-*.md
+docs/SESSION-PROMPT-*.md
+content/auckland/briefings/
+
+# Private notes / scratch space — if you create these, they stay local.
+notes/
+scratch/
+*.private.md
+*.private.txt
+
+# Local-only secrets templates
+.secrets-*.md
+
+# The mirror's own .git/ — never sync this from source.
+.git/

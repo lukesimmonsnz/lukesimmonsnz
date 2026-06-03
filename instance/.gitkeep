@@ -1,2 +1,0 @@
-# Flask convention: instance/ holds runtime artefacts that are NOT in version control.
-# Used for: .server.pid, .ml-daemon.pid, cms.db (future), site_settings.json (future).
