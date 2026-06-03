@@ -1,0 +1,21 @@
+id: claim.tasman.environment.marine_ecosystem_claim
+statement: Tasman Bay Salmon Farming Environmental Report (2023) documents 11 King
+  Salmon farms in Marlborough Sounds/Tasman Bay producing 8,400 tonnes annually. Sea
+  lice load management and feed waste present ongoing environmental pressures; Department
+  of Conservation monitoring flags elevated localized benthic impact zones.
+value: 8400
+unit: tonnes annual salmon production
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_bay_salmon_farming_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

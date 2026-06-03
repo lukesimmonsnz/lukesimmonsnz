@@ -1,0 +1,11 @@
+id: driver.canterbury.economy.farm_consolidation_and_debt
+name: Farm Consolidation Trend & Rising Debt Loads
+description: Farm Consolidation Trend & Rising Debt Loads
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.economy.agri_food_primary
+claim_ids: []

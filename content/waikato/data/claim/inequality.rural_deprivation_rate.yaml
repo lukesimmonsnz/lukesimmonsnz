@@ -1,0 +1,22 @@
+id: claim.waikato.inequality.rural_deprivation_rate
+statement: Rural deprivation in South Waikato (Tokoroa and Putāruru) and Huntly remains
+  persistently high post-mining decline. Farm worker families in intensive dairying
+  regions live in substandard rural housing with limited service access. Coromandel
+  Peninsula coastal poverty pockets are masked by wealthy lifestyle enclave data;
+  permanent service workers struggle with holiday-home inflated property costs and
+  seasonal employment precarity.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato rural_poverty claim

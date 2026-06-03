@@ -1,0 +1,21 @@
+id: claim.otago.climate.alpine_hazards_prevalence
+statement: Alpine and high-altitude infrastructure in Otago—Coronet Peak and The Remarkables
+  ski fields, SH8 Lindis Pass, and mountain tourism facilities—face accelerating climate
+  risk. NIWA modelling (RCP8.5 scenario) projects reliable ski season shortening by
+  2050; Lindis Pass altitude and winter ice closures (currently 10-15 days/year) expected
+  to increase 20-30% by 2050.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Alpine hazard prevalence — ski field viability and SH8 pass closures.

@@ -1,0 +1,22 @@
+id: claim.northland.transport.northland_transport_isolation_claim1
+statement: Geographic isolation from Auckland (185 km, 2.5–3 hr drive) constrains
+  economic integration. Bay of Islands area (Kerikeri, Russell) relies on Kerikeri
+  Airport (Air NZ tourist service) and vehicle ferry across Hokianga Harbour (South
+  Head-North Head, ~10 min, replaces 90 km detour). Hokianga ferry critical for Rawene,
+  Opononi, Ōmāpere communities; limited operating hours 7 am–9 pm reflect funding
+  constraints.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

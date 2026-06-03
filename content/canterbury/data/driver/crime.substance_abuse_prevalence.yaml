@@ -1,0 +1,13 @@
+id: driver.canterbury.crime.substance_abuse_prevalence
+name: Substance Abuse (Methamphetamine, Alcohol) Prevalence
+description: Substance Abuse (Methamphetamine, Alcohol) Prevalence
+theme: crime
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.canterbury.crime.family_violence
+- problem.canterbury.crime.youth_offending
+- problem.canterbury.crime.organised_crime
+claim_ids: []

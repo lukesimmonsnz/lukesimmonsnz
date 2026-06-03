@@ -1,0 +1,21 @@
+id: claim.tasman.infrastructure.infrastructure_4_claim
+statement: Takaka Hill (SH60 to Golden Bay) is prone to slips, washouts, and fog;
+  12 major closures occurred 2018-2023, isolating Golden Bay for 2-5 days per event.
+  Waka Kotahi is upgrading drainage and installing real-time hazard monitoring; resilience
+  work is scheduled 2024-2026 at NZD 18 million investment.
+value: 12
+unit: major road closures (2018-2023)
+time_period: 2018-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_tasman_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

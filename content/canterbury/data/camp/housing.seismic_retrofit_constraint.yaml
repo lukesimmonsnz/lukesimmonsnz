@@ -1,0 +1,20 @@
+id: camp.canterbury.housing.seismic_retrofit_constraint
+name: Seismic Retrofit Mandate & Support
+theme: housing
+core_claim: Expediting earthquake-prone building remediation through government co-funding
+  and streamlined consent timelines releases CBD supply for intensification.
+flagship_moves:
+- Key intervention for Seismic Retrofit Mandate & Support
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.housing.affordability_christchurch
+interventions:
+- description: Expediting earthquake-prone building remediation through government
+    co-funding and streamlined consent timelines releases CBD supply for intensification.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

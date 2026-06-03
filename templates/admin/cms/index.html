@@ -1,0 +1,76 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Pages{% endblock %}
+{% set active = 'landing' %}
+
+{% block extra_css %}
+.tree-wrap { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 8px; overflow: hidden; }
+.tree-row { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-bottom: 0.5px solid #ece5d4; font-size: 13px; }
+.tree-row:last-child { border-bottom: none; }
+.tree-row.lvl-1 { padding-left: 32px; background: #fcfaf3; font-size: 13px; }
+.tree-row.lvl-2 { padding-left: 56px; background: #fcfaf3; font-size: 12.5px; color: #4b3f30; }
+.tree-row.section-h { background: #f5f1e8; font-weight: 500; color: #1a1613; cursor: default; padding-left: 16px; }
+.tree-row .url { font-family: ui-monospace, monospace; color: #8a7a66; font-size: 11px; margin-left: auto; }
+.tree-row .actions { display: flex; gap: 4px; opacity: 0; transition: opacity 0.12s; }
+.tree-row:hover .actions { opacity: 1; }
+.tree-row a.title { color: #1a1613; flex-shrink: 0; }
+.tree-row a.title:hover { color: #8a5a2a; }
+.dirty-section { margin-bottom: 24px; }
+.dirty-section h2 { font-size: 14px; font-weight: 500; color: #4b3f30; margin: 0 0 8px; }
+.dirty-card { background: #fdf4e8; border: 0.5px solid #c4956a; border-radius: 6px; padding: 10px 14px; margin-bottom: 6px; display: flex; gap: 12px; align-items: center; font-size: 13px; }
+.dirty-card .dirty-page { font-weight: 500; color: #1a1613; flex: 1; }
+.dirty-card .dirty-meta { color: #8a5a2a; font-size: 11px; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+.stat { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 8px; padding: 14px 16px; }
+.stat .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #8a7a66; margin-bottom: 4px; }
+.stat .val { font-family: 'Fraunces', serif; font-size: 26px; font-weight: 500; color: #1a1613; }
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">Welcome back</h1>
+<p class="page-sub">All editable surfaces of lukesimmonsnz.kiwi. Click any row to edit.</p>
+
+<div class="stat-grid">
+  <div class="stat"><div class="lbl">Regions</div><div class="val">16</div></div>
+  <div class="stat"><div class="lbl">Blog posts</div><div class="val">5</div></div>
+  <div class="stat"><div class="lbl">Pattern themes</div><div class="val">11</div></div>
+  <div class="stat"><div class="lbl">Dirty drafts</div><div class="val">{{ (dirty|length) if dirty else 0 }}</div></div>
+</div>
+
+{% if dirty %}
+<div class="dirty-section">
+  <h2>Drafts in progress</h2>
+  {% for d in dirty %}
+  <div class="dirty-card">
+    <div class="dirty-page">{{ d.page_id }}</div>
+    <div class="dirty-meta">last save {{ d.updated|default('') }}</div>
+    <a href="{{ url_for('cms.edit', id=d.page_id) }}" class="btn btn-secondary" style="text-decoration: none;">Resume</a>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="tree-wrap">
+{% macro render_node(node, lvl) -%}
+  {% if node.children %}
+    <div class="tree-row section-h {% if lvl > 0 %}lvl-{{ lvl }}{% endif %}">{{ node.title }}</div>
+    {% for child in node.children %}{{ render_node(child, lvl + 1) }}{% endfor %}
+  {% else %}
+    <div class="tree-row lvl-{{ lvl }}">
+      {% if node.url %}<a class="title" href="{{ url_for('cms.edit', id=node.url) }}">{{ node.title }}</a>
+      <span class="url">{{ node.url }}</span>
+      <div class="actions">
+        <a href="{{ url_for('cms.edit', id=node.url) }}" class="btn btn-ghost">Edit</a>
+        <a href="{{ node.url }}" target="_blank" rel="noopener" class="btn btn-ghost">↗</a>
+      </div>
+      {% else %}<span class="title">{{ node.title }}</span>{% endif %}
+    </div>
+  {% endif %}
+{%- endmacro %}
+{% if tree %}
+  {% if tree.children %}{% for child in tree.children %}{{ render_node(child, 0) }}{% endfor %}
+  {% else %}{{ render_node(tree, 0) }}{% endif %}
+{% else %}
+  <div style="padding: 24px; text-align: center; color: #8a7a66;">No pages.</div>
+{% endif %}
+</div>
+{% endblock %}

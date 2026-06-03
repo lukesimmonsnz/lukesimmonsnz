@@ -1,0 +1,13 @@
+id: driver.gisborne.climate.cyclone_risk_escalation
+name: Driver escalating cyclone_risk
+description: "This driver exacerbates the cyclone_risk challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: climate-adaptation
+consensus: contested
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.climate.cyclone_risk
+claim_ids:
+- claim.gisborne.climate.cyclone_risk_83

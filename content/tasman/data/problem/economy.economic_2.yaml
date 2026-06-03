@@ -1,0 +1,41 @@
+id: problem.tasman.economy.economic_2
+title: Pip-fruit and kiwifruit export concentration
+theme: economy
+section: economy
+subpage: economic_2
+parent: economic_structure
+order: 2
+updated: '2026-04-26'
+summary: Pip-fruit and kiwifruit orchards cover roughly 8,400 hectares in Tasman, generating around NZD 187 million
+  of exports in 2023. Roughly 85 percent of the crop ships to overseas markets, particularly China, Japan and the
+  European Union.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - horticulture_export_value
+  - hectares_under_pipfruit_kiwifruit
+  inputs:
+  - biosecurity_response_capacity
+  - shipping_capacity_to_export_markets
+  constraints:
+  - weather_volatility
+  - export_market_access_settings
+  feedback_loops:
+  - Export-revenue shocks cause investment cycles in orchard development that lag the original shock, causing further
+    volatility in production a decade later.
+narrative:
+- heading: An export-shaped industry
+  body: Tasman's apple and kiwifruit growers do not produce primarily for the New Zealand market — most of the crop
+    is destined for overseas wholesale and retail. That makes regional incomes sensitive to exchange rates, foreign-market
+    access, and global shipping costs (claim.tasman.economy.economic_2_claim).
+- heading: Biosecurity and climate as concentrated risks
+  body: A single biosecurity incursion (e.g. fire blight, brown marmorated stink bug) or a single bad-weather season
+    can cost a meaningful share of regional GDP because the industry footprint is so concentrated geographically
+    and in supplier base. The same concentration that produces scale economies also concentrates downside risk.
+claim_ids:
+- claim.tasman.economy.economic_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

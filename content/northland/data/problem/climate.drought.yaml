@@ -1,0 +1,24 @@
+id: 'problem.northland.climate.drought'
+title: 'Te Tai Tokerau Northland: drought and water scarcity'
+theme: 'climate-adaptation'
+section: 'climate'
+subpage: 'drought'
+parent: 'problem.northland.climate.risk'
+order: 4
+updated: '2026-04-26'
+summary: 'Drought stress is increasing.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Drought stress is increasing.'
+claim_ids:
+- 'claim.northland.climate.drought_claim1'
+- 'claim.northland.climate.drought_claim2'
+status: 'draft'

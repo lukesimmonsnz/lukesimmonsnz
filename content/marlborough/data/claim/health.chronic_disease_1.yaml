@@ -1,0 +1,21 @@
+id: claim.marlborough.health.chronic_disease_1
+statement: 'Marlborough chronic disease burden: type 2 diabetes prevalence 8–9% (slightly
+  above national 7.5%); hypertension 22–25%; cardiovascular disease mortality rates
+  comparable to national; age-standardized rates affected by aging population (median
+  age 40.5 years vs NZ 38 years).'
+value: 8.5
+unit: percent type 2 diabetes prevalence (estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mbl_2023
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.amenable_mortality_rate_v1
+notes: null

@@ -1,0 +1,20 @@
+id: claim.wellington.governance.voter_turnout_rate_2022
+statement: Wellington City Council voter turnout fell to 34% in the 2022 local elections,
+  below the national territorial authority average of 42%. Low engagement reflects
+  declining participation in local governance processes despite significant ongoing
+  infrastructure and earthquake-resilience debates affecting the city.
+value: 34
+unit: percent voter turnout
+time_period: '2022'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.voter_turnout_rate_v1
+notes: null

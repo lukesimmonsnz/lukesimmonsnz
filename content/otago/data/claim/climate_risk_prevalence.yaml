@@ -1,0 +1,21 @@
+id: claim.otago.climate.climate_risk_prevalence
+statement: 'Climate hazards in Otago span multiple domains: drought in Central Otago
+  and Mackenzie Basin (irrigation-dependent wine and stone fruit); Alpine Fault rupture
+  risk along western boundary (Mw8+, ~27% probability in 50 years per GNS 2022); coastal
+  inundation and freshwater stress in Dunedin/Otago Peninsula; flood risk in Frankton
+  Arm (Queenstown) lake-level management zones.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

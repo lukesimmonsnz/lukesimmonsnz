@@ -1,0 +1,12 @@
+id: driver.nelson.crime.driver_1
+name: Concentrated socioeconomic deprivation
+description: Long-run accumulation of low household income, insecure housing, and thin labour-market opportunity in particular Nelson suburbs and rural pockets, generating elevated rates of family violence, property offending, and acquisitive crime. Operates upstream of the criminal justice system.
+theme: crime
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.crime.safety
+- problem.nelson.crime.family_violence
+claim_ids: []

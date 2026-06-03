@@ -1,0 +1,20 @@
+id: claim.taranaki.crime.safety_01
+statement: Taranaki's violent crime rate has fluctuated between 8-12 per 10,000 population
+  over 2015-2023, above rural regional averages. The region experiences seasonal spikes
+  in assaults and property crime linked to dairy season labor influxes and holiday
+  periods when services are reduced.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki safety

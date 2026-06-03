@@ -1,0 +1,20 @@
+id: claim.northland.infrastructure.flood_resilience_claim1
+statement: Northland flood resilience faces challenges from aging stormwater systems
+  and increasing rainfall intensity under climate change. Whangarei, Dargaville, and
+  rural catchments lack adequate pump capacity; flood mitigation infrastructure requires
+  $80-120M investment across the region.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

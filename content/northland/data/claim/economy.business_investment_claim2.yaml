@@ -1,0 +1,21 @@
+id: claim.northland.economy.business_investment_claim2
+statement: Small-to-medium enterprises (50-70% of regional employment) face financing
+  barriers; bank lending risk premium higher for Northland than Auckland. Business
+  failure rate 15-20% above national average (RBA/MBIE data). Seasonal tourism volatility
+  (peak December-February) forces small operators to hold larger cash buffers; agricultural
+  commodity exposure (dairy payout, cattle prices) constrains reinvestment.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

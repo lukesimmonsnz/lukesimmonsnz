@@ -1,0 +1,10 @@
+applies_to:
+- Claim
+description: Share of occupied dwellings that are owner-occupied; breakdowns by ethnicity,
+  age cohort, or income quintile from census microdata.
+discharged_by: json_schema
+id: methodology.homeownership_rate_v1
+kind: measurement
+name: Homeownership Rate
+source_ids: []
+version: 1

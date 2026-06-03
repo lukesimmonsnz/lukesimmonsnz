@@ -1,0 +1,20 @@
+id: camp.canterbury.transport.bus_network_redesign
+name: Bus Rapid Transit (BRT) Corridors & Service Frequency Improvement
+theme: transport
+core_claim: Redesigning Christchurch buses to frequent (15-min headway) rapid transit
+  corridors with dedicated lanes will improve competitiveness with private vehicles.
+flagship_moves:
+- Key intervention for Bus Rapid Transit (BRT) Corridors & Service Frequency Improvement
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.transport.network
+interventions:
+- description: Redesigning Christchurch buses to frequent (15-min headway) rapid transit
+    corridors with dedicated lanes will improve competitiveness with private vehicles.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

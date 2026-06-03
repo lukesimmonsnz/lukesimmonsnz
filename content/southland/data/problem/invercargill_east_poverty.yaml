@@ -1,0 +1,34 @@
+id: problem.southland.inequality.invercargill_east_poverty
+title: Invercargill East Deprivation
+theme: inequality
+section: inequality
+subpage: invercargill_east_poverty
+parent: problem.southland.inequality.deprivation
+order: 2
+updated: '2026-04-26'
+summary: Invercargill East among NZ's most deprived urban areas; family poverty, youth
+  unemployment; limited economic opportunity and social services access.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Invercargill East among NZ's most deprived urban areas; family poverty, youth
+    unemployment; limited economic opportunity and social services access.
+claim_ids:
+- claim.southland.inequality.child_poverty_trend
+- claim.southland.inequality.rural_isolation_prevalence
+- claim.southland.inequality.child_poverty_prevalence
+- claim.southland.inequality.deprivation_prevalence
+- claim.southland.inequality.invercargill_east_poverty_trend
+- claim.southland.inequality.rural_isolation_trend
+- claim.southland.inequality.invercargill_east_poverty_prevalence
+- claim.southland.inequality.deprivation_trend
+status: draft
+time_horizons: [decade, generation, century]

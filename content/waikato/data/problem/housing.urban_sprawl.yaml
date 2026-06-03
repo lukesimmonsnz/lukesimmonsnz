@@ -1,0 +1,30 @@
+id: problem.waikato.housing.urban_sprawl
+title: Urban sprawl and infrastructure costs
+theme: housing
+section: housing
+subpage: urban_sprawl
+parent: problem.waikato.housing.hamilton_housing_crisis
+order: 4
+updated: '2026-04-26'
+summary: Greenfield expansion at the urban fringe increases infrastructure costs and
+  commute times.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - housing_affordability_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing urban sprawl creates feedback on regional outcomes.
+narrative:
+- heading: Urban sprawl and infrastructure costs
+  body: Greenfield expansion at the urban fringe increases infrastructure costs and
+    commute times.
+claim_ids:
+- claim.waikato.housing.greenfield_expansion
+status: draft
+time_horizons: [decade, generation, century]

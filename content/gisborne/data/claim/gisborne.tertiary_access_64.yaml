@@ -1,0 +1,19 @@
+id: claim.gisborne.education.tertiary_access_64
+statement: Costs and distance deter tertiary study in East Cape communities. University
+  of Auckland (8 hours) and Massey (Palmerston North, 6 hours) are the nearest comprehensive
+  tertiary options.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.travel_time_index_v1
+notes: null

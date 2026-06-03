@@ -1,0 +1,25 @@
+id: claim.west_coast.transport.connectivity_4_claim
+statement: Active transport infrastructure (walking and cycling pathways, separated
+  cycleways) is minimal across West Coast towns. Greymouth and Westport have partial
+  sidewalk networks in central business districts but lack safe cycling routes. Weather
+  (wind, rain) and hilly terrain limit active transport appeal. Schools and services
+  are dispersed; walking distances exceed safe limits for young children. Car dependence
+  perpetuates air pollution, inactivity, and transport costs for low-income households.
+  Regional transport strategy lacks active transport funding.
+value: null
+unit: null
+time_period: 2015-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.stats_nz_census_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Infrastructure inventory from council asset management; car dependence from
+  Census commute and occupation data.

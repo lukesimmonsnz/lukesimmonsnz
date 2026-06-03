@@ -1,0 +1,19 @@
+id: claim.marlborough.inequality.deprivation_placeholder
+statement: 'Marlborough deprivation index (NZDep2018): meshblock-level score range
+  1–10; decile 8–10 (most deprived) concentrated in parts of Blenheim (Harewood, Springlands)
+  and Sounds communities; decile 1–3 in suburban and rural property-owner areas.'
+value: null
+unit: null
+time_period: '2018'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2018_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

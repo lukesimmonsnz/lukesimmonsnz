@@ -1,0 +1,24 @@
+id: claim.west_coast.environment.coastal_environment_claim
+statement: West Coast coast experiences accelerating erosion from sea level rise and
+  increased storm surge frequency. Westport, Greymouth, and Hokitika seafronts face
+  inundation and infrastructure damage risk. Coastal wetlands and estuaries have been
+  degraded by historical mining and logging. Recovery of native coastal vegetation
+  and tidal flat ecosystems is ongoing but threatened by continued development pressure
+  and climate change.
+value: null
+unit: null
+time_period: 2000-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.doc_westland_glacier_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Coastal erosion and sea level rise projections from regional council hazard
+  assessments; historical land-use impacts from regional environment monitoring.

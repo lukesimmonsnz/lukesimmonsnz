@@ -1,0 +1,21 @@
+id: claim.waikato.crime.family_violence_rate_20pct
+statement: Family violence in Waikato is concentrated in high-deprivation areas; Hamilton
+  south (Frankton and Nawton) records significantly elevated FV call-out rates relative
+  to population. Waikato DHB established specialist FV court liaison services; police
+  report barriers to disclosure among Māori and rural communities. Housing instability
+  and overcrowding amplify risk.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato family_violence claim

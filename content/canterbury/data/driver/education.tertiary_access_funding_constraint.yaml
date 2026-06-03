@@ -1,0 +1,11 @@
+id: driver.canterbury.education.tertiary_access_funding_constraint
+name: Tertiary Education Funding & Student Loan Debt
+description: Tertiary Education Funding & Student Loan Debt
+theme: education
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.education.tertiary_lincoln_uc
+claim_ids: []

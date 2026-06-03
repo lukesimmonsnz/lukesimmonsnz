@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.housing.land_supply_intervention
+name: Intervention for land_supply
+theme: housing
+core_claim: Targeted intervention on land_supply will improve outcomes.
+flagship_moves:
+- Policy measure 1 for land_supply
+- Policy measure 2 for land_supply
+- Implementation mechanism for land_supply
+tensions:
+- Trade-off A for land_supply
+- Trade-off B for land_supply
+addresses:
+- problem.bay_of_plenty.housing.land_supply
+interventions:
+- description: Core intervention targeting land_supply
+  state_variable: land_supply_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

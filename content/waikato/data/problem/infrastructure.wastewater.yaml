@@ -1,0 +1,24 @@
+id: 'problem.waikato.infrastructure.wastewater'
+title: 'Waikato: wastewater treatment'
+theme: 'infrastructure'
+section: 'infrastructure'
+subpage: 'wastewater'
+parent: 'problem.waikato.infrastructure.deficit'
+order: 4
+updated: '2026-04-26'
+summary: 'Wastewater systems are stressed.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Wastewater systems are stressed.'
+claim_ids:
+- 'claim.waikato.infrastructure.wastewater_claim1'
+- 'claim.waikato.infrastructure.wastewater_claim2'
+status: 'draft'

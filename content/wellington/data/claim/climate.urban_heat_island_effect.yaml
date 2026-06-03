@@ -1,0 +1,20 @@
+id: claim.wellington.climate.urban_heat_island_effect
+statement: Wellington's CBD and lower-density inner suburbs record surface temperatures
+  2–4°C above surrounding rural areas on calm, clear summer days, an urban heat island
+  effect that is growing with increased impervious surface and reduced tree canopy
+  from infill residential development.
+value: null
+unit: null
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_climate_action_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

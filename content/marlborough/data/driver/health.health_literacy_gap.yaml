@@ -1,0 +1,12 @@
+id: driver.marlborough.health.health_literacy_gap
+name: Health Literacy And Preventive Behaviour Gaps
+description: Health literacy and preventive behaviour gaps.
+theme: health
+consensus: mostly-agreed
+category: cultural
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.housing.affordability
+claim_ids: []

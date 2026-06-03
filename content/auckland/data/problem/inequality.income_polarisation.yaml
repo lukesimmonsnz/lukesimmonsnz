@@ -62,4 +62,6 @@ narrative:
 claim_ids:
   - claim.auckland.inequality.income_decile_gap
   - claim.auckland.inequality.wealth_concentration
+  - claim.auckland.economy.ai_capture_distributional_risk_2024
 status: draft
+time_horizons: [decade, generation, century]

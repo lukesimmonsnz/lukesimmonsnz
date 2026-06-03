@@ -1,0 +1,11 @@
+id: driver.canterbury.economy.dairy_commodity_price_volatility
+name: Dairy Commodity Price Volatility (Global Market)
+description: Dairy Commodity Price Volatility (Global Market)
+theme: economy
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.canterbury.economy.agri_food_primary
+claim_ids: []

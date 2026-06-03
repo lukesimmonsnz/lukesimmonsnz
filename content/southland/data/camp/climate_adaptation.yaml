@@ -1,0 +1,20 @@
+id: camp.southland.climate.climate_adaptation
+name: Southland Climate Adaptation Strategy
+theme: climate-adaptation
+core_claim: Region-wide climate adaptation planning reduces climate impacts.
+flagship_moves:
+- Climate risk assessment and adaptation planning
+- Agricultural adaptation support
+- Coastal adaptation planning
+tensions:
+- Upfront investment
+- Behavioral change
+addresses:
+- problem.southland.climate.climate_risk
+interventions:
+- description: Develop region-wide climate adaptation strategy
+  state_variable: climate_readiness
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

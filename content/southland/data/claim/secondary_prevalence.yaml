@@ -1,0 +1,21 @@
+id: claim.southland.education.secondary_prevalence
+statement: Secondary education in Southland is concentrated in Invercargill. Southland
+  Boys' College, Southland Girls' College, and James Hargest College (combined ~1,200
+  students) dominate; smaller provincial secondary schools (Gore High School, Winton
+  Secondary) serve <200 students each. Limited specialist programme breadth outside
+  Invercargill.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

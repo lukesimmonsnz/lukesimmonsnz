@@ -1,0 +1,22 @@
+id: camp.wellington.economy.agglomeration_investment
+name: Agglomeration and CBD Vitality Investment
+theme: economy
+core_claim: Wellington's compact urban core is its productivity asset; investment in CBD amenity, housing, and walkability
+  will attract and retain high-productivity workers.
+flagship_moves:
+- CBD housing intensification to increase resident population in central suburbs
+- Improved international connectivity through Wellington Airport capacity
+- Cultural and event infrastructure investment to sustain Wellington's liveability premium
+tensions:
+- Airport expansion raises carbon emissions and community noise objections
+- Cultural amenity investment may not translate to productivity gains
+addresses:
+- problem.wellington.economy.productivity
+- problem.wellington.economy.business_environment
+interventions:
+- description: Approve and fund Wellington CBD intensification overlay to double CBD resident population by 2040
+  state_variable: cbd_employment_density
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

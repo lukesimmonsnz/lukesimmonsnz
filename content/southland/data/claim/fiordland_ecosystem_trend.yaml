@@ -1,0 +1,21 @@
+id: claim.southland.environment.fiordland_ecosystem_trend
+statement: Fiordland ecosystem faces climate change and tourism pressure. Visitor
+  recovery post-COVID to ~65% of pre-pandemic levels; infrastructure capacity (Milford
+  Road, Te Anau accommodation) limiting growth. DOC funding constraints affecting
+  track/hut maintenance. Pest control (stoats, rats) ongoing; marine invasive species
+  risk from shipping. Rainfall intensification threatens infrastructure resilience.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

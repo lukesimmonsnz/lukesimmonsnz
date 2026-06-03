@@ -1,0 +1,23 @@
+id: camp.canterbury.housing.affordable_housing_quota
+name: Affordable Housing Quota & Developer Contribution Framework
+theme: housing
+core_claim: Requiring developers to include affordable units (via discounted ownership
+  or rental covenants) as a condition of resource consent embeds affordability into
+  new supply.
+flagship_moves:
+- Key intervention for Affordable Housing Quota & Developer Contribution Framework
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.housing.market
+- problem.canterbury.housing.affordability_christchurch
+interventions:
+- description: Requiring developers to include affordable units (via discounted ownership
+    or rental covenants) as a condition of resource consent embeds affordability into
+    new supply.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

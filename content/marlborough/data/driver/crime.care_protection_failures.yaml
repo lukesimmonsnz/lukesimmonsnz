@@ -1,0 +1,12 @@
+id: driver.marlborough.crime.care_protection_failures
+name: Care And Protection System Failures
+description: Care and protection system failures.
+theme: crime
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.crime.rural_crime
+claim_ids: []

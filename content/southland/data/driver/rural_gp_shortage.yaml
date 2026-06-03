@@ -1,0 +1,12 @@
+id: driver.southland.health.rural_gp_shortage
+name: Rural Health Workforce Shortages
+description: Southland GPs aging; recruitment difficult; locum reliance high; specialist
+  access limited.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.health.rural_workforce
+claim_ids: []

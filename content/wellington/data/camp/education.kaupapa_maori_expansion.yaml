@@ -1,0 +1,21 @@
+id: camp.wellington.education.kaupapa_maori_expansion
+name: Kaupapa Māori and Bilingual Education Expansion
+theme: education
+core_claim: Expanding te reo Māori immersion and kaupapa Māori schooling options improves Māori educational achievement and
+  cultural identity outcomes.
+flagship_moves:
+- Establish 2 new kura kaupapa in Porirua and Hutt Valley
+- Bilingual class stream in all Porirua primary schools
+- Te reo teacher training scholarships at Victoria University of Wellington
+tensions:
+- Qualified kaiako supply is severely constrained; expansion outpaces teacher availability
+- Kura expansion requires capital investment competing with mainstream school rolls
+addresses:
+- problem.wellington.education.achievement
+interventions:
+- description: Fund 2 new kura kaupapa in Porirua and Lower Hutt with Ministry of Education capital grant
+  state_variable: maori_educational_attainment
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

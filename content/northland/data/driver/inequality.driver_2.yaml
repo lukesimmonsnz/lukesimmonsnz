@@ -1,0 +1,10 @@
+id: 'driver.northland.inequality.driver_2'
+name: 'Resource and funding constraints in inequality'
+description: 'Resource and funding constraints in inequality in regional context.'
+theme: 'inequality'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

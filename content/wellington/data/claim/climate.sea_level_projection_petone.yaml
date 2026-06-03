@@ -1,0 +1,21 @@
+id: claim.wellington.climate.sea_level_projection_petone
+statement: Wellington's Petone Foreshore — a low-lying reclaimed coastal area in Lower
+  Hutt — is projected to experience increasing flood and storm surge frequency under
+  medium sea-level rise scenarios (0.4–0.7 m by 2100), threatening road, rail, and
+  residential assets on the foreshore.
+value: null
+unit: null
+time_period: 2100 (projection)
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfe_nz_sea_level_guidance_2023
+- source.gwrc_state_environment_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.sea_level_projection_v1
+notes: null

@@ -1,0 +1,24 @@
+id: claim.hawkes_bay.education.maori_ncea_65_percent
+statement: NCEA Level 3 attainment in Hawke's Bay is below national averages and shows
+  steep school-deprivation gradients. Hastings and Wairoa schools in high-deprivation
+  areas report elevated absenteeism and teacher recruitment shortages in rural areas,
+  compounding curriculum delivery gaps in mathematics and science. Socioeconomic deprivation,
+  family stress, and housing instability correlate with lower qualification rates
+  and limited career pathways. Māori students are disproportionately concentrated
+  in schools facing these barriers, producing gaps in credential attainment and long-term
+  employment outcomes.
+value: 65
+unit: percent NCEA Level 3 attainment (Maori)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

@@ -1,0 +1,21 @@
+id: claim.tasman.crime.safety_claim
+statement: NZ Police Crime Statistics (2023) record 1,247 reported crimes in Tasman
+  region (population 58,000), yielding a crime rate of 2.15 per 100 residents annually.
+  Property crime (including vehicle theft) comprises 58% of reports; violent crime
+  14%.
+value: 2.15
+unit: crimes per 100 residents/year
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.stats_nz_census_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

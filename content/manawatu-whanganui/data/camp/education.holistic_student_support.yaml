@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.education.holistic_student_support
+name: Holistic Student Support Services
+theme: education
+core_claim: Mental health, nutrition, transport, counselling.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.governance.local_govt_reform
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

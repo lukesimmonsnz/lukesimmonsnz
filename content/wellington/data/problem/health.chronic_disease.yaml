@@ -1,0 +1,40 @@
+id: problem.wellington.health.chronic_disease
+title: Chronic disease burden in Wellington
+theme: health
+section: health
+subpage: chronic-disease
+parent: problem.wellington.health.system_access
+order: 3
+updated: '2026-04-26'
+summary: Wellington carries a significant and growing burden of preventable chronic disease — diabetes, cardiovascular disease,
+  and respiratory conditions — concentrated in high-deprivation communities in Porirua and Hutt Valley. The social determinants
+  of health (housing, income, diet quality) drive the distribution of chronic disease more powerfully than healthcare access
+  alone.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - diabetes_prevalence_rate
+  - preventable_hospitalisation_rate
+  inputs:
+  - diet_quality
+  - physical_activity_level
+  constraints:
+  - healthy_food_affordability
+  - safe_active_travel_infrastructure
+  feedback_loops:
+  - 'Deprivation-disease amplification: poverty limits diet quality and safe physical activity; poorer health reduces workforce
+    participation; reduced income deepens poverty.'
+narrative:
+- heading: Diabetes concentration in Porirua
+  body: Diabetes prevalence in Porirua is substantially above the Wellington regional average, reflecting the interaction
+    of ethnicity, diet, housing conditions, and access to preventive healthcare in this community (claim.wellington.health.diabetes_prevalence_porirua).
+- heading: Preventable hospitalisations
+  body: Wellington records elevated rates of preventable hospitalisations — for ambulatory-care-sensitive conditions including
+    poorly controlled diabetes, asthma, and cellulitis — in high-deprivation sub-areas, indicating failures of primary and
+    preventive care (claim.wellington.health.preventable_hospitalisations).
+claim_ids:
+- claim.wellington.health.diabetes_prevalence_porirua
+- claim.wellington.health.preventable_hospitalisations
+status: draft
+time_horizons: [decade, generation]

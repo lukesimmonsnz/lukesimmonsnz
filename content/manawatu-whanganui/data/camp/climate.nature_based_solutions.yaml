@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.climate.nature_based_solutions
+name: Nature-Based Climate Solutions
+theme: climate-adaptation
+core_claim: Regeneration, rewilding, and carbon sequestration.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.crime.family_violence
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

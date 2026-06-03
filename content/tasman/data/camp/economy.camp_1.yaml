@@ -1,0 +1,24 @@
+id: camp.tasman.economy.camp_1
+name: 'Response: Camp 1'
+theme: economy
+core_claim: A response strategy addressing economy challenges.
+flagship_moves:
+- Implement evidence-based economy policy in Tasman
+- Increase investment in economy services and infrastructure
+- Build cross-sector partnerships to address economy challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.economy.economic_structure
+- problem.tasman.economy.economic_2
+interventions:
+- description: Primary intervention for economy
+  state_variable: economy_outcome_index
+  expected_sign: +
+- description: Secondary intervention for economy
+  state_variable: economy_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

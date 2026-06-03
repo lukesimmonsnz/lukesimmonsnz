@@ -1,0 +1,13 @@
+id: driver.gisborne.climate.erosion_flooding_escalation
+name: Driver escalating erosion_flooding
+description: "This driver exacerbates the erosion_flooding challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.climate.erosion_flooding
+claim_ids:
+- claim.gisborne.climate.erosion_flooding_85

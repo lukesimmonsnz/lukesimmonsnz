@@ -1,0 +1,40 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}History · {{ ref.title }}{% endblock %}
+{% set active = 'editor' %}
+{% set crumbs = [{'label': ref.title, 'url': url_for('cms.edit', id=page_id)}, {'label': 'History'}] %}
+
+{% block extra_css %}
+.commit-list { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 8px; overflow: hidden; max-width: 800px; }
+.commit-row { display: grid; grid-template-columns: 80px 1fr auto; gap: 16px; align-items: center; padding: 13px 18px; border-bottom: 0.5px solid #ece5d4; font-size: 13px; }
+.commit-row:last-child { border-bottom: none; }
+.commit-row:hover { background: #fcfaf3; }
+.commit-sha { font-family: ui-monospace, monospace; font-size: 11px; color: #8a5a2a; background: #f5f1e8; padding: 3px 8px; border-radius: 3px; text-align: center; }
+.commit-msg { color: #1a1613; font-weight: 500; margin-bottom: 2px; }
+.commit-meta { color: #8a7a66; font-size: 11px; }
+{% endblock %}
+
+{% block head_actions %}
+<a href="{{ url_for('cms.edit', id=page_id) }}" class="btn btn-secondary">Back to editor</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">Commit history</h1>
+<p class="page-sub">Per-page history over <code>{{ ref.source_paths|map('string')|list|first|default('') }}</code>. Read-only — no checkout / reset / revert.</p>
+
+{% if commits %}
+<div class="commit-list">
+  {% for c in commits %}
+  <div class="commit-row">
+    <span class="commit-sha">{{ c.short_sha }}</span>
+    <div>
+      <div class="commit-msg">{{ c.subject }}</div>
+      <div class="commit-meta">{{ c.author }} · {{ c.date[:19].replace('T', ' ') }}</div>
+    </div>
+    <a href="{{ url_for('cms.history_diff', id=page_id, **{'from': c.sha}) }}" class="btn btn-ghost">Diff</a>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div style="text-align:center;padding:60px;color:#8a7a66;">No commits yet for this page.</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,22 @@
+id: claim.manawatu_whanganui.crime.rural_crime_1
+statement: Rural crime (stock theft, farm theft, arson) across Rangitikei, Tararua,
+  and Manawatū rural zones account for approximately 15-18% of property crime in the
+  region. Farming families cite isolation, slow police response times, and minimal
+  local security infrastructure as aggravating factors. Organized gang activity in
+  rural areas has increased since 2020.
+value: 16.5
+unit: percent
+time_period: 2020-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mw_2023
+- source.rangitikei_district_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

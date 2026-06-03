@@ -1,0 +1,31 @@
+id: problem.taranaki.housing.state_housing
+title: State housing adequacy and access
+theme: housing
+section: housing
+subpage: state-housing
+parent: problem.taranaki.housing.housing_market
+order: 2
+updated: '2026-04-26'
+summary: 'Taranaki state housing waiting lists are growing as private rental costs rise. Meth contamination in some Housing NZ properties has required remediation. Tenant support and property management standards vary.'
+manifests_in:
+  - taranaki
+systems_model:
+  state_variables:
+    - state_housing_waiting_list_months
+    - state_housing_condition_index
+  inputs:
+    - rental_market_stress
+    - remediation_backlog
+  constraints:
+    - housing_nz_budget_availability
+  feedback_loops:
+    - 'Waiting lists lengthen; tenant vulnerability increases; support costs rise.'
+narrative:
+  - heading: Waiting Lists
+    body: 'State housing waiting lists in Taranaki have grown to 600+ households (2024), up 35% from 2020.'
+  - heading: Property Condition
+    body: 'Meth contamination remediation has delayed approximately 80 state properties from being reoccupied.'
+claim_ids:
+  - claim.taranaki.housing.state_waiting_list_600
+status: draft
+time_horizons: [decade, generation, century]

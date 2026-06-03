@@ -1,0 +1,21 @@
+id: camp.marlborough.housing.mixed_income_development
+name: Mixed-Income Community Development
+theme: housing
+core_claim: Integrated affordable and market-rate housing.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.inequality.deprivation
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

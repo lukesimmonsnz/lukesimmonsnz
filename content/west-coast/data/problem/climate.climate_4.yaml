@@ -1,0 +1,42 @@
+id: problem.west_coast.climate.climate_4
+title: Alpine Fault rupture risk and lifeline-route exposure
+theme: climate-adaptation
+section: climate
+subpage: climate_4
+parent: climate_risk
+order: 4
+updated: '2026-04-26'
+summary: The Alpine Fault transects the West Coast and carries roughly a 30 percent probability of a magnitude-8-plus earthquake
+  within the next 50 years. Such an event would cause widespread structural damage, sever SH6 in multiple places, and isolate
+  communities that already depend on a single road lifeline.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - mw8_probability_50yr
+  - lifeline_route_kilometres_at_risk
+  - isolation_days_post_event
+  inputs:
+  - civil_defence_capex
+  - lifelines_resilience_programme
+  constraints:
+  - alpine_fault_geomorphology
+  - single_corridor_road_network
+  feedback_loops:
+  - Long recurrence intervals depress political urgency between events, so resilience capex is chronically underprovided relative
+    to the modelled hazard, while a single rupture would impose decades of recovery cost on a small region.
+narrative:
+- heading: Probabilistic but structural
+  body: GNS Science assessments place the conditional probability of an Mw 8+ Alpine Fault rupture in the next 50 years at
+    roughly 30 percent (claim.west_coast.climate.climate_4_claim). The fault runs for several hundred kilometres along the
+    spine of the West Coast and recurrence-interval evidence places the region squarely inside the expected window.
+- heading: AF8 lifelines and the SH6 exposure
+  body: The AF8 (Alpine Fault Magnitude 8) regional response programme assumes simultaneous failure of SH6 and SH73 in multiple
+    places, with restoration measured in months rather than days. Planning for post-event isolation — pre-positioned supplies,
+    sea-based resupply, and air-bridge protocols — is now an explicit lifelines-sector function.
+claim_ids:
+- claim.west_coast.climate.climate_4_claim
+status: draft
+time_horizons:
+- generation
+- century

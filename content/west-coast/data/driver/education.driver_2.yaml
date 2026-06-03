@@ -1,0 +1,15 @@
+id: driver.west_coast.education.driver_2
+name: Out-of-region tertiary pathway
+description: There is no university campus on the West Coast. Students aiming at degree-level study must out-migrate to Christchurch,
+  Dunedin or further afield, and most do not return. This pathway structure is the single biggest driver of the region's tertiary-participation
+  gap.
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.education.achievement
+- problem.west_coast.education.secondary
+- problem.west_coast.education.tertiary_access
+claim_ids: []

@@ -1,0 +1,36 @@
+id: problem.nelson.education.tertiary_access
+title: Limited in-region tertiary pathways
+theme: education
+section: education
+subpage: tertiary_access
+parent: achievement
+order: 4
+updated: '2026-04-26'
+summary: Nelson Marlborough Institute of Technology (NMIT, founded 1904, now part of Te Pukenga) offers Level 3-7 qualifications in trades, hospitality, nursing, and applied technology to roughly 4,200 enrolments. Only about 32 percent of Nelson secondary leavers progress directly to tertiary against around 48 percent nationally, with a substantial share leaving the region for university.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - tertiary_progression_rate_pct
+  - nmit_enrolments
+  - graduate_in_region_retention_pct
+  inputs:
+  - te_pukenga_funding
+  - scholarship_availability
+  - rental_market_state
+  constraints:
+  - absence_of_research_university
+  - distance_to_metro_campuses
+  feedback_loops:
+  - 'Out-migration-return feedback: leavers who train elsewhere build careers in those metros; lack of senior in-region roles deters return; this perpetuates the senior-skill gap that limits diversification.'
+narrative:
+- heading: The NMIT role and its limits
+  body: NMIT is the dominant tertiary provider in the region and serves trades, applied health, and hospitality pathways well (claim.nelson.education.tertiary_access_claim). It is not a research university and does not offer many of the degree pathways that pull Nelson school leavers to Wellington, Otago, or Massey.
+- heading: Out-migration and return
+  body: Nelson loses high-achieving leavers to university and gets them back, if at all, in their late twenties or early thirties when housing affordability is already a binding constraint. This pattern weakens the in-region skilled labour pool that diversification options require.
+claim_ids:
+- claim.nelson.education.tertiary_access_claim
+status: draft
+time_horizons:
+- decade
+- generation

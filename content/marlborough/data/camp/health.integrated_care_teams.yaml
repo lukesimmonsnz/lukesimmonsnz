@@ -1,0 +1,21 @@
+id: camp.marlborough.health.integrated_care_teams
+name: Integrated Community Care Teams
+theme: health
+core_claim: Multidisciplinary primary and community health.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.housing.affordability
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

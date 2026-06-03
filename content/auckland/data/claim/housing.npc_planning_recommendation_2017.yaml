@@ -1,0 +1,25 @@
+id: claim.auckland.housing.npc_planning_recommendation_2017
+statement: >
+  The New Zealand Productivity Commission's 2017 Better Urban Planning
+  inquiry recommended replacing the Resource Management Act's land-use
+  provisions with a more permissive, goal-based urban-planning framework,
+  separating environmental protection from urban development decisions,
+  and broadening infrastructure funding tools (including targeted rates
+  and value capture) to enable Auckland and other high-growth cities
+  to fund growth-supporting infrastructure. The 2017 report has been
+  widely cited as the analytical foundation for subsequent NPS-UD and
+  RMA reform debates affecting Auckland.
+value: null
+unit: null
+time_period: '2017'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.nzpc_better_urban_planning_2017
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: null

@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.inequality.rural_isolation
+title: Rural Population Isolation and Access to Services
+theme: inequality
+section: inequality
+subpage: rural_isolation
+parent: problem.manawatu_whanganui.inequality.deprivation
+order: 1
+updated: '2026-04-26'
+summary: Rural population decline; limited access to healthcare, education, and services;
+  geographic isolation.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Rural population decline; limited access to healthcare, education, and services;
+    geographic isolation.
+claim_ids:
+- claim.manawatu_whanganui.inequality.rural_isolation_1
+- claim.manawatu_whanganui.inequality.rural_isolation_2
+status: draft
+time_horizons: [decade, generation, century]

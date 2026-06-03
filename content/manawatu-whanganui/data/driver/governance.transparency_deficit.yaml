@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.governance.transparency_deficit
+name: Government Transparency And Accountability Deficit
+description: Government transparency and accountability deficit. This driver operates
+  at national scale with mostly-agreed consensus.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.inequality.whanganui_poverty
+claim_ids: []

@@ -1,0 +1,14 @@
+id: driver.waikato.economy.agglomeration_deficit
+name: Proximity to Auckland suppresses agglomeration
+description: Hamilton's closeness to Auckland limits the emergence of independent
+  agglomeration effects.
+theme: economy
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.economy.agri_productivity
+- problem.waikato.economy.tech_sector_gap
+- problem.waikato.economy.regional_wage_gap
+claim_ids: []

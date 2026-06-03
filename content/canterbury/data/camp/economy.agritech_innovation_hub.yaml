@@ -1,0 +1,23 @@
+id: camp.canterbury.economy.agritech_innovation_hub
+name: Agritech Innovation Hub & Primary Sector R&D
+theme: economy
+core_claim: Establishing an agritech innovation cluster (Lincoln University, private
+  firms, CCC) can develop precision agriculture, biotech, and climate-adapted crop
+  technologies.
+flagship_moves:
+- Key intervention for Agritech Innovation Hub & Primary Sector R&D
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.economy.agri_food_primary
+- problem.canterbury.economy.tech_innovation
+interventions:
+- description: Establishing an agritech innovation cluster (Lincoln University, private
+    firms, CCC) can develop precision agriculture, biotech, and climate-adapted crop
+    technologies.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

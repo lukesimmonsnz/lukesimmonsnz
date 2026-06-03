@@ -1,0 +1,20 @@
+id: camp.canterbury.crime.family_violence_housing_first
+name: Housing-First Approach to Family Violence Prevention
+theme: crime
+core_claim: Secure, affordable housing with wraparound support (counseling, whānau
+  services) reduces family violence victimization and perpetration risk.
+flagship_moves:
+- Key intervention for Housing-First Approach to Family Violence Prevention
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.crime.family_violence
+interventions:
+- description: Secure, affordable housing with wraparound support (counseling, whānau
+    services) reduces family violence victimization and perpetration risk.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -1,0 +1,32 @@
+id: problem.manawatu_whanganui.inequality.deprivation
+title: Deprivation and Inequality in Manawatū-Whanganui
+theme: inequality
+section: inequality
+subpage: deprivation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Persistent geographic and demographic inequality; Whanganui faces severe
+  deprivation; child poverty rates elevated.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Persistent geographic and demographic inequality; Whanganui faces severe deprivation;
+    child poverty rates elevated.
+claim_ids:
+- claim.manawatu_whanganui.inequality.deprivation_placeholder
+status: draft
+time_horizons: [decade, generation, century]

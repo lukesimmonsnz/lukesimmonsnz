@@ -1,0 +1,31 @@
+id: pattern.housing.supply_side_constraint
+title: Infrastructure funding gap as primary supply constraint
+theme: housing
+summary: Across regions, the binding constraint on new housing supply is not zoning
+  alone but the cost and availability of three-waters and roading infrastructure,
+  which smaller councils cannot fund at the scale required.
+manifests_in:
+- northland
+- waikato
+- nelson
+- tasman
+- gisborne
+- west-coast
+- southland
+claim_ids:
+- claim.northland.housing.affordability_claim1
+- claim.waikato.housing.median_multiple_8x
+- claim.nelson.housing.affordability_claim
+- claim.tasman.housing.affordability_claim
+- claim.west_coast.housing.affordability_claim
+narrative:
+- heading: The infrastructure bottleneck
+  body: Councils with small ratepayer bases cannot front-fund the infrastructure necessary
+    to open new residential land. Even where zoning permits growth, the absence of
+    reticulated water, wastewater, and roads prevents development.
+- heading: Policy implications
+  body: Central government co-investment in infrastructure — rather than solely planning
+    reform — is therefore necessary to unlock supply in most non-Auckland regions.
+    The RMA reform agenda addresses only one of two binding constraints.
+status: draft
+updated: '2026-04-26'

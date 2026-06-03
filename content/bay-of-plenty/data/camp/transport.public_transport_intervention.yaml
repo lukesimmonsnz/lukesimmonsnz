@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.transport.public_transport_intervention
+name: Intervention for public_transport
+theme: transport
+core_claim: Targeted intervention on public_transport will improve outcomes.
+flagship_moves:
+- Policy measure 1 for public_transport
+- Policy measure 2 for public_transport
+- Implementation mechanism for public_transport
+tensions:
+- Trade-off A for public_transport
+- Trade-off B for public_transport
+addresses:
+- problem.bay_of_plenty.transport.public_transport
+interventions:
+- description: Core intervention targeting public_transport
+  state_variable: public_transport_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

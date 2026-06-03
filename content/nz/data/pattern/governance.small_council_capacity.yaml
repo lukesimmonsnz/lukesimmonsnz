@@ -1,0 +1,34 @@
+id: pattern.governance.small_council_capacity
+title: Small council strategic and technical capacity gap
+theme: governance
+summary: New Zealand's smallest territorial authorities lack the technical expertise,
+  financial capacity, and institutional memory to effectively manage complex regulatory
+  environments, infrastructure investment, and long-horizon strategic planning.
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- tasman
+- nelson
+- marlborough
+- southland
+- taranaki
+claim_ids:
+- claim.northland.governance.coordination_deficit_claim1
+- claim.waikato.governance.small_ta_capacity
+- claim.canterbury.governance.council_coordination_ratings_2023
+- claim.west_coast.governance.capacity_claim
+- claim.southland.governance.governance_prevalence
+narrative:
+- heading: Structural gap
+  body: Councils with small rates bases struggle to attract and retain specialists
+    in planning, engineering, finance, and environmental management. The gap between
+    what the Resource Management Act and Local Government Act require and what small
+    councils can deliver is systemic.
+- heading: Amalgamation tension
+  body: Amalgamation and shared services are the conventional responses. Both generate
+    political resistance from communities valuing local representation. The tension
+    between efficiency (fewer, larger councils) and legitimacy (many, smaller ones)
+    is unresolved in New Zealand local government policy.
+status: draft
+updated: '2026-04-26'

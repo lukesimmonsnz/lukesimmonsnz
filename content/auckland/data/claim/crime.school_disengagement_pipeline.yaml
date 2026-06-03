@@ -1,21 +1,21 @@
 id: claim.auckland.crime.school_disengagement_pipeline
-statement: >
-  School disengagement is the strongest early predictor of youth justice
-  involvement in Auckland; young people who are persistently absent or
-  stand-down recipients by age 13 have offending rates substantially
-  higher than the general youth population, pointing to education as a
-  primary intervention site.
+statement: 'School disengagement is the strongest early predictor of youth justice
+  involvement in Auckland; young people who are persistently absent or stand-down
+  recipients by age 13 have offending rates substantially higher than the general
+  youth population, pointing to education as a primary intervention site.
+
+  '
 value: null
 unit: null
-time_period: "2019-2023"
+time_period: 2019-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.oranga_tamariki_youth_justice_2023
-  - source.ministry_of_justice_victimisation_2023
+- source.oranga_tamariki_youth_justice_2023
+- source.ministry_of_justice_victimisation_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

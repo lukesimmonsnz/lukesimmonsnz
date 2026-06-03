@@ -1,0 +1,22 @@
+id: camp.taranaki.inequality.inequality.community_investment
+name: Community investment programme
+theme: inequality
+core_claim: Community investment programme addresses deprivation.
+flagship_moves:
+- Implement Community investment programme
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.inequality.deprivation
+- problem.taranaki.inequality.child_poverty
+- problem.taranaki.inequality.ethnic_gap
+- problem.taranaki.inequality.rural_isolation
+interventions:
+- description: Community investment programme action
+  state_variable: inequality.community_investment_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

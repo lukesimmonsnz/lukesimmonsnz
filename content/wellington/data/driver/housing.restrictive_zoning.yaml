@@ -1,0 +1,15 @@
+id: driver.wellington.housing.restrictive_zoning
+name: Restrictive residential zoning
+description: Wellington's pre-NPS-UD planning rules restricted residential density in large areas of the city, limiting the
+  supply response to demand. Even after NPS-UD upzoning, practical development remains constrained by infrastructure and geotechnical
+  complexity.
+theme: housing
+consensus: consensus
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.housing.affordability
+- problem.wellington.housing.land_supply
+claim_ids:
+- claim.wellington.housing.supply_consent_shortfall

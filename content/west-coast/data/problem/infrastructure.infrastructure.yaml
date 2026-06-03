@@ -1,0 +1,42 @@
+id: problem.west_coast.infrastructure.infrastructure
+title: 'Convergent infrastructure hazard: flood, fault and sea'
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'West Coast infrastructure faces three large hazards in the same envelope: routine high-rainfall flooding, Alpine
+  Fault seismic risk, and sea level rise. Insurance retreat has already started, infrastructure resilience capex is underprovisioned,
+  and the political appetite for managed retreat is being tested by Westport.'
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - resilience_capex_share
+  - insured_asset_value_share
+  - exposed_critical_facility_count
+  inputs:
+  - central_govt_resilience_grants
+  - council_long_term_plan_capex
+  constraints:
+  - compounded_hazard_profile
+  - small_ratepayer_base
+  feedback_loops:
+  - Insurance retreat shifts more of the long-tail risk onto the Crown and councils, but those entities have not yet adjusted
+    their capex programmes to absorb the residual; the gap will be revealed by the next major event.
+narrative:
+- heading: Hazard stacking
+  body: Few regions face the conjunction of high rainfall (5-10 m/year in the headwaters), Alpine Fault seismic risk (Mw8+
+    probability around 30 percent in 50 years), and sea-level rise acting on settlements built at river mouths (claim.west_coast.infrastructure.infrastructure_claim).
+    The joint distribution drives the actuarial logic insurers are responding to.
+- heading: Capex underprovisioned at every horizon
+  body: Resilience capex across the four councils is small relative to the modelled hazard. The political horizon is short
+    relative to the seismic recurrence interval, and the willingness-to-pay for infrastructure that may not be tested for
+    decades is low — until the event happens, after which it is briefly very high.
+claim_ids:
+- claim.west_coast.infrastructure.infrastructure_claim
+status: draft
+time_horizons:
+- decade
+- generation

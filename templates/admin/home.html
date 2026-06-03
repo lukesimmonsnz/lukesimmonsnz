@@ -1,0 +1,29 @@
+{% extends "admin/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Aotearoa corpus dashboard</h1>
+<p class="hint">
+  Local-only edit surface for <code>content/&lt;region&gt;/data/**/*.yaml</code>.
+  Saves are atomic, lint-checked (soft-block), re-rendered, and committed
+  per the contract in <a href="/docs/DASHBOARD-SPEC.md"><code>docs/DASHBOARD-SPEC.md</code></a>.
+</p>
+
+<h2>Regions</h2>
+<div class="grid">
+  {% for slug, label in regions %}
+  <div class="card">
+    <a href="{{ url_for('admin.region_view', region=slug) }}">{{ label }}</a>
+    <div class="hint"><code>{{ slug }}</code></div>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>National (NZ)</h2>
+<p>Pattern entities live under <code>content/nz/data/pattern/</code>. The
+NZ-wide editor surface is deferred (§7 of spec).</p>
+
+<h2>Entity types</h2>
+<p class="hint">
+  {% for t in entity_types %}<code>{{ t }}</code>{% if not loop.last %} · {% endif %}{% endfor %}
+</p>
+{% endblock %}

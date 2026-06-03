@@ -1,0 +1,21 @@
+id: claim.waikato.crime.drug_crime_methamphetamine
+statement: Methamphetamine supply and distribution networks are active across Waikato
+  urban and rural areas. Hamilton has seen elevated crystal meth seizures and demand-related
+  property crime. Gang networks including Mongrel Mob, King Cobras, and Black Power
+  control supply chains; law enforcement reports increasing use among younger cohorts
+  in Huntly and south Hamilton deprivation zones.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato drug_crime claim

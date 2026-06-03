@@ -1,0 +1,21 @@
+id: camp.southland.governance.smelter_policy
+name: Smelter Energy Policy and National Grid Resilience
+theme: governance
+core_claim: Transparent smelter-grid policy negotiation balances local economy and
+  national energy priorities.
+flagship_moves:
+- Cross-party smelter policy agreement
+- Transparent energy contract negotiations
+- Transition support if closure occurs
+tensions:
+- Politically contentious; local vs national tension
+- Economic uncertainty
+addresses:
+- problem.southland.governance.smelter_energy_policy
+interventions:
+- description: Achieve cross-party smelter policy agreement
+  state_variable: governance_stability
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

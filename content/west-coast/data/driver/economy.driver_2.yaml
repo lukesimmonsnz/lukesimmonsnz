@@ -1,0 +1,15 @@
+id: driver.west_coast.economy.driver_2
+name: Mining-to-tourism-to-services transition path
+description: The region is in a structural transition from coal-mining wages to a tourism-and-services replacement set. Glacier
+  retreat makes the tourism leg of that transition itself climate-vulnerable, and the services leg requires digital infrastructure
+  and skills the region is still building.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.economy.economic_structure
+- problem.west_coast.economy.economic_3
+- problem.west_coast.economy.economic_4
+claim_ids: []

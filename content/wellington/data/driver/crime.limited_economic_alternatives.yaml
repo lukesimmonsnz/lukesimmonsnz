@@ -1,0 +1,13 @@
+id: driver.wellington.crime.limited_economic_alternatives
+name: Limited legitimate economic alternatives in Porirua
+description: High unemployment and low-wage employment in Porirua reduce the opportunity cost of gang involvement, making
+  gang-organised drug markets an economically rational choice for young men with limited legitimate alternatives.
+theme: crime
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.crime.organised_crime
+claim_ids:
+- claim.wellington.crime.gang_presence_porirua

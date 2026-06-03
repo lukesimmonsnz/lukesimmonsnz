@@ -1,0 +1,31 @@
+id: problem.marlborough.transport.active_modes
+title: Active Travel Infrastructure and Safety
+theme: transport
+section: transport
+subpage: active_modes
+parent: problem.marlborough.transport.connectivity
+order: 1
+updated: '2026-04-26'
+summary: Limited cycling and pedestrian infrastructure; high perceived road danger;
+  farm vehicle conflicts.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Limited cycling and pedestrian infrastructure; high perceived road danger;
+    farm vehicle conflicts.
+claim_ids:
+- claim.marlborough.transport.active_modes_1
+- claim.marlborough.transport.active_modes_2
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,40 @@
+id: problem.wellington.crime.victimisation
+title: Crime and victimisation in Wellington
+theme: crime
+section: crime
+subpage: victimisation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wellington's overall crime rate is moderate by New Zealand standards, but victimisation is heavily concentrated in
+  high-deprivation communities in Porirua and Hutt Valley. Repeat victimisation — where a small share of the population accounts
+  for a disproportionate share of incidents — is a structural feature of Wellington's crime landscape.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - personal_victimisation_rate
+  - repeat_victimisation_proportion
+  inputs:
+  - deprivation_level
+  - policing_resource_allocation
+  constraints:
+  - economic_disadvantage
+  - housing_instability
+  feedback_loops:
+  - 'Deprivation-crime feedback: concentrated deprivation creates conditions for higher crime; high crime rates further depress
+    area desirability and property values, deepening deprivation.'
+narrative:
+- heading: Victimisation rates
+  body: Wellington Police District records a personal victimisation rate of approximately 6% annually, but this average masks
+    acute concentration in Porirua and parts of Lower Hutt, where rates are two to three times the Wellington City average
+    (claim.wellington.crime.victimisation_rate_2023).
+- heading: Repeat victimisation
+  body: Repeat victimisation — where the same households or individuals are victimised multiple times in a year — accounts
+    for a disproportionate share of total incidents in Wellington, concentrated in high-deprivation areas and family violence
+    contexts (claim.wellington.crime.repeat_victimisation_concentration).
+claim_ids:
+- claim.wellington.crime.victimisation_rate_2023
+- claim.wellington.crime.repeat_victimisation_concentration
+status: draft
+time_horizons: [decade]

@@ -1,0 +1,13 @@
+id: source.northland_regional_council_2023
+title: Northland Regional Council State of the Environment Report
+author: Northland Regional Council
+publisher: Northland Regional Council
+year: 2023
+url: https://www.nrc.govt.nz/environment/state-of-the-environment/
+type: government-report
+credibility: official
+geo_granularity:
+- northland
+notes: 'Triennial-style state-of-environment release covering Northland air, freshwater, coastal, and land monitoring. As
+  a single regional source it directly evidences environmental indicators; transport, housing, or health claims should be
+  triangulated against sector-specific sources where possible.'

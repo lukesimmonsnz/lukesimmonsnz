@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.environment.impervious_surfaces
+name: Urban Impervious Surface Expansion
+description: Urban impervious surface expansion. This driver operates at local scale
+  with mostly-agreed consensus.
+theme: environment
+consensus: mostly-agreed
+category: physical
+timescale: medium
+scope: local
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.health.rural_workforce
+claim_ids: []

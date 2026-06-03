@@ -1,0 +1,19 @@
+id: claim.marlborough.education.early_childhood_2
+statement: Te Reo Māori immersion programme (kōhanga reo) in Marlborough limited to
+  1 service (Blenheim); wait lists for Māori-medium education indicate demand exceeding
+  supply.
+value: 1
+unit: kōhanga reo service in Marlborough
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_achievement_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

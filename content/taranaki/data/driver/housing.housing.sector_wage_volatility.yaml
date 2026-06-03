@@ -1,0 +1,14 @@
+id: driver.taranaki.housing.housing.sector_wage_volatility
+name: Oil and gas sector wage volatility
+description: Oil and gas sector wage volatility
+theme: housing
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.housing.housing_market
+- problem.taranaki.housing.affordability
+- problem.taranaki.housing.rural_housing
+- problem.taranaki.housing.state_housing
+claim_ids: []

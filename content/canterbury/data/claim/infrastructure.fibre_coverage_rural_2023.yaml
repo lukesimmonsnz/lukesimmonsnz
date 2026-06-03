@@ -1,0 +1,23 @@
+id: claim.canterbury.infrastructure.fibre_coverage_rural_2023
+statement: Rural fibre coverage in Canterbury reaches 55% of premises outside Christchurch
+  metro, with significant gaps in Mackenzie Basin, inland Selwyn, and high-country
+  Aoraki zones. UFB (Ultra-Fast Broadband) rollout prioritized urban areas; rural
+  Canterbury remains dependent on aging copper lines and limited wireless coverage.
+  This gap constrains agribusiness digitalization, remote work, and service delivery
+  to farming communities, particularly in the fastest-growing districts (Selwyn, Waimakariri)
+  where commuter demand exceeds infrastructure.
+value: 55
+unit: percent coverage
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_annual_plan_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.median_multiple_v1
+notes: null

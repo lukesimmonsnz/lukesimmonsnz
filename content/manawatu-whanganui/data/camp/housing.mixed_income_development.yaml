@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.housing.mixed_income_development
+name: Mixed-Income Community Development
+theme: housing
+core_claim: Integrated affordable and market-rate housing.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.housing.whanganui_deprivation
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

@@ -1,0 +1,22 @@
+id: camp.wellington.governance.civic_engagement
+name: Community Civic Engagement and Deliberative Democracy
+theme: governance
+core_claim: Citizens' assemblies and community engagement programmes rebuild democratic trust and produce better policy than
+  representative vote alone.
+flagship_moves:
+- Citizens' assembly on Wellington long-term planning (infrastructure, climate)
+- Participatory budgeting in Porirua and Hutt Valley
+- Youth council with formal advisory role to Wellington City Council
+tensions:
+- Citizens' assemblies are expensive and time-consuming for routine decisions
+- Deliberative processes can be captured by engaged minorities rather than representing the median citizen
+addresses:
+- problem.wellington.governance.democratic_participation
+interventions:
+- description: Establish Wellington Citizens' Assembly process for 10-year infrastructure priorities with randomly selected
+    participants
+  state_variable: civic_trust_index
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

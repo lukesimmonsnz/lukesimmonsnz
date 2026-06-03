@@ -1,0 +1,10 @@
+id: 'driver.waikato.governance.driver_1'
+name: 'Policy and institutional barriers in governance'
+description: 'Policy and institutional barriers in governance in regional context.'
+theme: 'governance'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

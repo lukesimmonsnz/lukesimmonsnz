@@ -1,0 +1,12 @@
+id: driver.otago.education.housing_tertiary_students
+name: Tertiary Student Housing Stress
+description: University of Otago and Polytechnic students face rental market pressure;
+  housing insecurity high.
+theme: education
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.education.tertiary_dunedin
+claim_ids: []

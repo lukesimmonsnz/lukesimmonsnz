@@ -1,0 +1,21 @@
+id: claim.wellington.environment.pest_free_progress
+statement: Zealandia/Karori Wildlife Sanctuary has established a predator-free urban
+  zone supporting breeding populations of kākā, kiwi, tuatara, and kākāriki, with
+  kākā now ranging freely across much of suburban Wellington — demonstrating the viability
+  of urban predator eradication at small-to-medium scale.
+value: null
+unit: null
+time_period: 2015-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_state_environment_2022
+- source.wcc_climate_action_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

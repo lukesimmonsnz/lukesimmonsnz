@@ -1,0 +1,20 @@
+id: camp.gisborne.education.early_childhood_approach
+name: Strategic approach for early_childhood
+theme: education
+core_claim: Strategic intervention on early_childhood will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting early_childhood
+- Priority action 2 targeting early_childhood
+- Institutional coordination mechanism for early_childhood
+tensions:
+- 'Tension 1: early_childhood'
+- 'Tension 2: early_childhood'
+addresses:
+- problem.gisborne.education.early_childhood
+interventions:
+- description: Primary intervention for early_childhood
+  state_variable: early_childhood_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

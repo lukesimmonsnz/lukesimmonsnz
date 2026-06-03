@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.inequality.child_poverty
+title: Child Poverty and Early Childhood Vulnerability
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: problem.manawatu_whanganui.inequality.deprivation
+order: 1
+updated: '2026-04-26'
+summary: Elevated child poverty rates; underfunded early childhood education; intergenerational
+  disadvantage.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Elevated child poverty rates; underfunded early childhood education; intergenerational
+    disadvantage.
+claim_ids:
+- claim.manawatu_whanganui.inequality.child_poverty_1
+- claim.manawatu_whanganui.inequality.child_poverty_2
+status: draft
+time_horizons: [decade, generation, century]

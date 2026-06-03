@@ -1,0 +1,36 @@
+id: problem.nelson.governance.treaty
+title: Treaty partnership, under-resourced co-governance
+theme: governance
+section: governance
+subpage: treaty
+parent: governance_root
+order: 3
+updated: '2026-04-26'
+summary: The Nelson Tasman Iwi Partnership Framework (2023) recognises mana whenua rights of the Te Tau Ihu iwi (including Ngati Koata, Ngati Rarua, Ngati Tama ki Te Tau Ihu, and Te Atiawa o Te Waka-a-Maui) and establishes joint decision-making on resource management, cultural heritage, and urban development. Dedicated iwi-liaison staffing is around 3 FTE across both councils, and iwi-led research and monitoring capacity remains limited.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - iwi_liaison_fte
+  - joint_decision_processes_per_year
+  - iwi_technical_staff_capacity
+  inputs:
+  - council_partnership_funding
+  - settlement_redress_resourcing
+  constraints:
+  - iwi_workforce_supply
+  - process_simultaneity
+  feedback_loops:
+  - 'Capacity-engagement feedback: thin iwi capacity limits engagement breadth; limited engagement constrains evidence into council processes, which reinforces the perception that partnership is procedural rather than substantive.'
+narrative:
+- heading: Framework in place, capacity short
+  body: The 2023 framework is structurally sound and represents a step forward from earlier consultation-only arrangements (claim.nelson.governance.treaty_claim). Practical implementation lives or dies on iwi capacity to engage across many simultaneous council workstreams, which is presently thin.
+- heading: The eight-iwi reality of Te Tau Ihu
+  body: Te Tau Ihu involves eight iwi with overlapping rohe, each with separate post-settlement governance entities and limited shared technical staff. Partnership processes designed for a single mana-whenua entity create real engagement load that is rarely budgeted alongside the council process it accompanies.
+claim_ids:
+- claim.nelson.governance.treaty_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

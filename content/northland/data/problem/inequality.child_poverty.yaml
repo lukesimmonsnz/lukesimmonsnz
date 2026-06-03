@@ -1,0 +1,34 @@
+id: problem.northland.inequality.child_poverty
+title: Child poverty and material hardship
+theme: inequality
+section: inequality
+subpage: child-poverty
+parent: problem.northland.inequality.northland_inequality
+order: 3
+updated: '2026-04-26'
+summary: Child poverty rates in Northland are among the highest in New Zealand, with
+  cascading effects on health and education.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - inequality_pressure_index
+  inputs:
+  - policy_intervention
+  - external_shock
+  constraints:
+  - fiscal_capacity
+  feedback_loops:
+  - 'Feedback: deteriorating child poverty conditions reinforce systemic disadvantage.'
+narrative:
+- heading: Scale and distribution
+  body: Child poverty rates in Northland are among the highest in New Zealand, with
+    cascading effects on health and education.
+- heading: Key drivers
+  body: The primary drivers of child poverty and material hardship are structural
+    and systemic, requiring both investment and institutional reform.
+claim_ids:
+- claim.northland.inequality.child_poverty_claim1
+- claim.northland.inequality.child_poverty_claim2
+status: draft
+time_horizons: [decade, generation, century]

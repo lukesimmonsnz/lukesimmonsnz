@@ -1,0 +1,14 @@
+id: driver.west_coast.transport.driver_1
+name: Single-corridor geographic constraint
+description: The West Coast is connected to the rest of New Zealand by a single state-highway corridor (SH6) and two alpine
+  passes (Haast and Arthur's), with no rail and no inland alternative. This geography is the master constraint that shapes
+  every other transport problem in the region.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.transport.connectivity
+- problem.west_coast.transport.connectivity_2
+claim_ids: []

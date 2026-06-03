@@ -1,0 +1,11 @@
+id: source.government_housing_data_2023
+title: Government Housing Market Data 2023
+author: Ministry of Housing and Urban Development
+publisher: MHUD
+year: 2023
+url: https://www.hud.govt.nz/urban-development/housing-assessments/
+type: government-report
+credibility: official
+geo_granularity:
+- northland
+notes: null

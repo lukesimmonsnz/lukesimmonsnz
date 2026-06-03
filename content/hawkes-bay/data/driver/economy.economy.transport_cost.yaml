@@ -1,0 +1,11 @@
+id: driver.hawkes_bay.economy.economy.transport_cost
+name: High transport costs reducing export competitiveness
+description: High transport costs reducing export competitiveness
+theme: economy
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.economy.economic_structure
+claim_ids: []

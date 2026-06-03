@@ -1,0 +1,26 @@
+id: claim.tasman.transport.connectivity_2_claim
+statement: 'Golden Bay transport isolation is acute: SH60 over Takaka Hill is the
+  sole vehicular access route, approximately 105 km and 90 minutes from Takaka to
+  Nelson. Motueka (45 minutes from Takaka) provides community health services only;
+  the nearest hospital with emergency and maternity capacity is Nelson Hospital. Golden
+  Bay Shuttle (local bus) runs three days per week; school bus services are reduced
+  during holidays. Medical emergencies typically require helicopter evacuation (estimated
+  cost NZD 4,500-6,000).'
+value: 90
+unit: minutes from Takaka (Golden Bay) to Nelson Hospital
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.health_nz_tasman_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: 'Original unit "minutes to nearest hospital" with value 45 was incorrect: 45
+  min is Takaka to Motueka (community health only); Nelson Hospital is ~105 km / ~90
+  min. Corrected value to 90 min and unit clarified.'

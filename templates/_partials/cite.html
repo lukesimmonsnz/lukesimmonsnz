@@ -1,0 +1,54 @@
+{#
+  Citation partial — SEP quarterly archive pattern.
+
+  Usage (pass site_url and current_quarter explicitly — macros don't inherit
+  context processor variables):
+    {% from "_partials/cite.html" import cite_block %}
+    {{ cite_block(title="Housing Affordability", path=request.path,
+                  site_url=site_url, current_quarter=current_quarter) }}
+
+  The archive URL is only shown as "pending" until archive_published=true,
+  which the quarterly CI job enables once the snapshot exists.
+#}
+
+{% macro cite_block(title, path, site_url, current_quarter, archive_published=false) %}
+{%- set live_url    = site_url ~ path %}
+{%- set archive_url = site_url ~ "/archives/" ~ current_quarter ~ path %}
+{%- set year        = current_quarter[:4] %}
+<aside class="cite-block" aria-label="How to cite this page">
+  <details>
+    <summary class="cite-summary">How to cite</summary>
+    <div class="cite-body">
+      <p class="cite-label">Live version (updated continuously)</p>
+      <blockquote class="cite-entry">
+        Simmons, L. ({{ year }}).
+        <em>{{ title }}</em>.
+        <em>lukesimmonsnz.kiwi</em>.
+        <a href="{{ live_url }}">{{ live_url }}</a>.
+        Accessed <span class="cite-access-date">[date accessed]</span>.
+      </blockquote>
+
+      {% if archive_published %}
+      <p class="cite-label">Stable archived version — {{ current_quarter }}</p>
+      <blockquote class="cite-entry">
+        Simmons, L. ({{ year }}).
+        <em>{{ title }}</em>.
+        <em>lukesimmonsnz.kiwi</em>.
+        Quarterly snapshot {{ current_quarter }}.
+        <a href="{{ archive_url }}">{{ archive_url }}</a>.
+      </blockquote>
+      <p class="cite-note">
+        The archived version is an immutable quarterly snapshot.
+        Cite it when you need a stable reference that will not change.
+      </p>
+      {% else %}
+      <p class="cite-note">
+        A citable archived snapshot for <strong>{{ current_quarter }}</strong>
+        will be published at the end of this quarter at:
+        <a href="{{ archive_url }}">{{ archive_url }}</a>.
+      </p>
+      {% endif %}
+    </div>
+  </details>
+</aside>
+{% endmacro %}

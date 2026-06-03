@@ -1,17 +1,12 @@
 id: driver.intergenerational_wealth_transfer
 name: Intergenerational wealth transfer as a precondition for ownership
-description: >
-  As dwelling-price-to-income ratios have risen, the capital required to
-  enter ownership has outrun what typical earnings can assemble within a
-  working life. Parental assistance and inheritance are now structural
-  features of first-home buying in Auckland, not atypical cases.
-  Intergenerational wealth is a normal feature of property-owning
-  societies, but New Zealand's intergenerational wealth base is
-  comparatively young — a couple of centuries for European settler
-  families, longer but more fragmented for Māori — which shapes how the
-  pattern plays out.
+description: As dwelling-price-to-income ratios have risen, the capital required to enter ownership has
+  outrun what typical earnings can assemble within a working life. Parental assistance and inheritance
+  are now structural features of first-home buying in Auckland, not atypical cases. Households without
+  inherited equity — those whose parents and grandparents did not accumulate property wealth — face compounding
+  disadvantage with each decade of rising prices.
 consensus: mostly-agreed
 category: cultural
 timescale: long
 affects:
-  - problem.housing.affordability
+- problem.housing.affordability

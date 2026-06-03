@@ -1,0 +1,46 @@
+id: problem.wellington.housing.affordability
+title: Housing unaffordability in Te Whanganui-a-Tara Wellington
+theme: housing
+section: housing
+subpage: affordability
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wellington's housing market has become structurally unaffordable by global measures. Constrained topography, restrictive
+  zoning, and strong demand from government-sector employment combine to limit supply while sustaining price pressure. The
+  policy debate centres on supply liberalisation, demand management, and the seismic dimension unique to Wellington.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - median_house_price
+  - housing_affordability_ratio
+  - housing_stock_per_capita
+  inputs:
+  - annual_building_consents
+  - net_migration
+  - public_sector_employment
+  constraints:
+  - topographic_developable_land_limit
+  - restrictive_residential_zoning
+  - earthquake_prone_building_compliance_cost
+  feedback_loops:
+  - 'Price-signal-to-supply attenuation: high prices should incentivise development, but topographic constraints and planning
+    rules limit the supply response, sustaining elevated prices.'
+  - 'Affordability-retention loop: sustained unaffordability drives out-migration of workers priced out of homeownership,
+    thinning the labour market.'
+narrative:
+- heading: Scale of unaffordability
+  body: 'Wellington''s median multiple reached approximately 8.7 in 2023 (claim.wellington.housing.median_multiple_2023),
+    placing it among the least affordable mid-size cities globally by this measure. The severity is compounded by Wellington''s
+    role as the national capital: government-sector employment sustains demand while the physical geography severely limits
+    where new housing can be built.'
+- heading: Structural supply constraints
+  body: Unlike Auckland, where supply has surged following the NPS-UD, Wellington's consent pipeline remains constrained by
+    the combination of steep terrain, fault-zone setbacks, and a large stock of earthquake-prone buildings that require costly
+    remediation before residential redevelopment is viable (claim.wellington.housing.supply_consent_shortfall).
+claim_ids:
+- claim.wellington.housing.median_multiple_2023
+- claim.wellington.housing.supply_consent_shortfall
+status: draft
+time_horizons: [decade, generation, century]

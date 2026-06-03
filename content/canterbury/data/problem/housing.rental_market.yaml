@@ -1,0 +1,45 @@
+id: problem.canterbury.housing.rental_market
+title: Canterbury Rental Market Stress
+theme: housing
+section: housing
+subpage: rental_market
+parent: problem.canterbury.housing.market
+order: 3
+updated: '2026-04-26'
+summary: 'Canterbury''s rental vacancy rate fell below 2% in 2023 (claim.canterbury.housing.rental_vacancy_2023),
+  driving rent increases and displacement pressure on low-income households. Earthquake-displaced
+  renters, coupled with migration inflows, sustain tight rental markets across Christchurch
+  metro.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - rental_vacancy_rate
+  - median_weekly_rent
+  - rent_to_income_ratio
+  - rental_housing_stock
+  inputs:
+  - migration_inflow
+  - residential_demolitions
+  - private_rental_development
+  constraints:
+  - earthquake_damage_displacement
+  - investor_divestment_post_quake
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury rental market stress.
+narrative:
+- heading: Post-earthquake rental squeeze
+  body: 'The earthquakes destroyed rental stock while displacing thousands of renters.
+    Though insurers rebuilt many damaged rentals, investor confidence remained shaken,
+    slowing new supply. Today, Christchurch''s rental vacancy sits near 1.5%, pushing
+    median rent above $420/week and displacing vulnerable households into outer suburbs
+    or out of the region entirely.
+
+    '
+claim_ids:
+- claim.canterbury.housing.rental_vacancy_2023
+- claim.canterbury.housing.median_rent_pressure_2023
+status: draft
+time_horizons: [decade, generation, century]

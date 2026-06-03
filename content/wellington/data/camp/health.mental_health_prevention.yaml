@@ -1,0 +1,21 @@
+id: camp.wellington.health.mental_health_prevention
+name: Mental Health Prevention and Early Intervention
+theme: health
+core_claim: Population-level mental health promotion and school-based early intervention can reduce incident rates before
+  crisis services are needed.
+flagship_moves:
+- School-based wellbeing curriculum in all Wellington secondary schools
+- Workforce wellbeing programme for high-stress sectors (health, emergency services)
+- Social prescribing programme connecting GPs to community activities
+tensions:
+- Prevention benefits accrue over long timeframes; political cycles favour acute response
+- Wellbeing curriculum risks superficiality without adequate teacher training
+addresses:
+- problem.wellington.health.mental_health
+interventions:
+- description: Implement evidenced wellbeing curriculum (MindMatters) across 40 Wellington secondary schools
+  state_variable: youth_mental_health_prevalence
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

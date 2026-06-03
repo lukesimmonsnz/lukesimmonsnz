@@ -1,0 +1,30 @@
+id: problem.marlborough.inequality.deprivation
+title: Inequality and Social Disadvantage in Marlborough
+theme: inequality
+section: inequality
+subpage: deprivation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Seasonal worker precarity; rural isolation; pockets of deprivation; child
+  poverty in rural areas.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Seasonal worker precarity; rural isolation; pockets of deprivation; child
+    poverty in rural areas.
+claim_ids:
+- claim.marlborough.inequality.deprivation_placeholder
+status: draft
+time_horizons: [decade, generation, century]

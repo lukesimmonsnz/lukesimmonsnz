@@ -1,0 +1,18 @@
+id: 'claim.northland.health.chronic_disease_claim1'
+statement: 'Obesity prevalence contributes to chronic disease burden.'
+value: null
+unit: null
+time_period: '2024'
+confidence: 'medium'
+verification_status: 'cited_only'
+last_verified: null
+source_ids:
+- 'source.far_north_district_council_2023'
+- 'source.northland_regional_council_planning_2023'
+scoped_to:
+- 'northland'
+national_assertion: false
+region_mentions:
+- 'northland'
+methodology_tag: null
+notes: null

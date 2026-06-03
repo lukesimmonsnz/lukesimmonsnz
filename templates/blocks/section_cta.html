@@ -1,0 +1,13 @@
+{#- Section CTA — accent-colored full-bleed band with headline + button.
+    Spec: docs/CMS-SPEC-v2.md §9
+    Attrs:
+      bg_color — CSS color string or CSS custom property (default: var(--accent))
+    Body (container):
+      Inner BlockTree; typically a heading, paragraph, and button.
+-#}
+{%- set bg = attrs.bg_color | default('var(--accent, #c4956a)') -%}
+<div class="block-section-cta" style="background:{{ bg | e }}">
+  <div class="section-cta-inner">
+    {{ body | safe }}
+  </div>
+</div>

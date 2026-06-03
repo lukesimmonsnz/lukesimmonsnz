@@ -1,0 +1,23 @@
+id: claim.otago.transport.dunedin_southern_link_trend
+statement: 'Dunedin Southern Link remains deferred: local growth (southern suburbs)
+  and congestion on SH1 (Main St, Edinburgh St, Princes St) not yet triggering project
+  commitment; three waters upgrades in southern suburbs prioritized over transport;
+  ORC bus patronage stagnant in outer suburbs (underservice of frequency/coverage);
+  private vehicle dependence entrenched; project advocacy ongoing but funding sources
+  unclear; central government national land transport funding allocation to Dunedin
+  declining.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

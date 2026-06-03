@@ -1,0 +1,12 @@
+id: driver.canterbury.climate.rainfall_intensification_trend
+name: Rainfall Intensification (10-40% by 2070s)
+description: Rainfall Intensification (10-40% by 2070s)
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.climate.flooding_plains
+- problem.canterbury.climate.climate_risk
+claim_ids: []

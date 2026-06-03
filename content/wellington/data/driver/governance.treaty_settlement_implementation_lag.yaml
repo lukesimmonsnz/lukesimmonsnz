@@ -1,0 +1,13 @@
+id: driver.wellington.governance.treaty_settlement_implementation_lag
+name: Treaty settlement implementation lag and capacity constraints
+description: Even where Treaty settlements have been agreed, implementation of co-governance provisions is slow due to iwi
+  capacity constraints, government agency responsiveness, and legal and administrative complexity.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+- problem.wellington.governance.treaty_co_governance
+claim_ids:
+- claim.wellington.governance.ngati_toa_settlement_scope

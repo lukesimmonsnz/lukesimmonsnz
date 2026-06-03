@@ -1,0 +1,40 @@
+id: problem.wellington.housing.earthquake_risk_buildings
+title: Earthquake-prone residential building stock in Wellington
+theme: housing
+section: housing
+subpage: earthquake-risk-buildings
+parent: problem.wellington.housing.affordability
+order: 2
+updated: '2026-04-26'
+summary: Wellington City has one of the highest concentrations of earthquake-prone buildings in New Zealand. Pre-1976 unreinforced
+  masonry and concrete structures dominate the inner-city residential and commercial stock. Seismic retrofit obligations impose
+  large costs on owners, slowing redevelopment and contributing to housing supply constraints.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - earthquake_prone_building_count
+  - remediation_compliance_rate
+  inputs:
+  - building_consent_activity
+  - retrofit_funding_availability
+  constraints:
+  - retrofit_cost_per_building
+  - statutory_compliance_timeline
+  feedback_loops:
+  - 'Cost-barrier loop: high retrofit costs relative to building value deter compliance; owners defer or demolish rather than
+    upgrade, reducing net housing stock.'
+narrative:
+- heading: Scale of the problem
+  body: Wellington City Council has identified over 3,500 buildings with earthquake-prone ratings under the Building (Earthquake-prone
+    Buildings) Amendment Act 2016 (claim.wellington.housing.earthquake_prone_building_count). The inner city — including large
+    sections of the CBD and surrounding suburbs — contains a high density of pre-1976 unreinforced masonry structures.
+- heading: Retrofit cost as supply barrier
+  body: 'Seismic retrofit costs often exceed the redevelopment value of ageing residential buildings, creating a catch-22:
+    compliance is expensive, but non-compliance defers habitability. The result is an elevated vacancy and dereliction rate
+    in earthquake-risk zones and a chilling effect on intensification investment (claim.wellington.housing.seismic_retrofit_cost_barrier).'
+claim_ids:
+- claim.wellington.housing.earthquake_prone_building_count
+- claim.wellington.housing.seismic_retrofit_cost_barrier
+status: draft
+time_horizons: [decade, generation, century]

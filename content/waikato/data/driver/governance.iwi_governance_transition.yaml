@@ -1,0 +1,14 @@
+id: driver.waikato.governance.iwi_governance_transition
+name: Post-settlement iwi governance growth
+description: Waikato-Tainui's growing asset base and governance role require new institutional
+  interfaces with local government.
+theme: governance
+consensus: consensus
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.governance.regional_planning
+- problem.waikato.governance.maori_co_governance
+- problem.waikato.governance.local_govt_capacity
+claim_ids: []

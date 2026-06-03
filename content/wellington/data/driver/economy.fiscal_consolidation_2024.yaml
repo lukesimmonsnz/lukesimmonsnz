@@ -1,0 +1,14 @@
+id: driver.wellington.economy.fiscal_consolidation_2024
+name: 2024 fiscal consolidation and public sector headcount reduction
+description: The 2024 government fiscal consolidation programme required significant headcount reductions across central government
+  agencies, concentrated in Wellington because that is where the agencies are located.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: short
+scope: national
+problem_ids:
+- problem.wellington.economy.public_sector_dependence
+- problem.wellington.economy.labour_market
+claim_ids:
+- claim.wellington.economy.public_sector_restructuring_2024

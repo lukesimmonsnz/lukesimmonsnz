@@ -1,0 +1,13 @@
+id: driver.gisborne.housing.affordability_escalation
+name: Driver escalating affordability
+description: "This driver exacerbates the affordability challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: housing
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.housing.affordability
+claim_ids:
+- claim.gisborne.housing.affordability_03

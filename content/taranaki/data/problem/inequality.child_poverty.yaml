@@ -1,0 +1,27 @@
+id: problem.taranaki.inequality.child_poverty
+title: Child poverty
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: problem.taranaki.inequality.deprivation
+order: 2
+updated: '2026-04-26'
+summary: Approximately 24% of Taranaki children live in relative income poverty.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - child_poverty_index
+  inputs:
+  - child_poverty_input_1
+  constraints:
+  - child_poverty_constraint
+  feedback_loops:
+  - 'Feedback: child_poverty'
+narrative:
+- heading: Child poverty in Taranaki
+  body: Approximately 24% of Taranaki children live in relative income poverty.
+claim_ids:
+- claim.taranaki.inequality.child_poverty_01
+status: draft
+time_horizons: [decade, generation, century]

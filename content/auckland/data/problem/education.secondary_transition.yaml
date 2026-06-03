@@ -62,3 +62,4 @@ claim_ids:
   - claim.auckland.education.vocational_pathway_deficit
   - claim.auckland.education.employer_readiness_gap
 status: draft
+time_horizons: [decade, generation]

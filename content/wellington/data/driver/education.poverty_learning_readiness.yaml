@@ -1,0 +1,15 @@
+id: driver.wellington.education.poverty_learning_readiness
+name: Poverty and reduced learning readiness
+description: Children in households with material hardship — inadequate food, housing instability, high parental stress —
+  arrive at school with lower learning readiness, establishing achievement gaps that are difficult to close in subsequent
+  years.
+theme: education
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.education.achievement
+- problem.wellington.education.early_childhood
+claim_ids:
+- claim.wellington.education.ncea_l2_maori_gap

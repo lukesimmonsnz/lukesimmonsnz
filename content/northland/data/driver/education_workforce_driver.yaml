@@ -1,0 +1,16 @@
+id: driver.northland.education.workforce_driver
+name: Teacher shortage and turnover
+description: Northland schools face persistent teacher vacancies and high turnover,
+  reducing educational continuity and quality.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.northland.education.northland_education_inequity
+- problem.northland.education.school_attendance
+- problem.northland.education.tertiary_access
+- problem.northland.education.maori_education
+claim_ids:
+- claim.northland.education.maori_education_claim1

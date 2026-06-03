@@ -1,0 +1,14 @@
+id: driver.waikato.housing.population_growth
+name: Rapid population growth outpacing supply
+description: Hamilton and the Golden Triangle corridor are among the fastest-growing
+  areas in NZ, driving housing demand.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.housing.affordability
+- problem.waikato.housing.rental_market
+- problem.waikato.housing.urban_sprawl
+claim_ids: []

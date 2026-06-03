@@ -1,0 +1,43 @@
+id: problem.canterbury.environment.lowland_stream_quality
+title: Lowland Stream Degradation & Flow Reduction
+theme: environment
+section: environment
+subpage: lowland_stream_quality
+parent: problem.canterbury.environment.freshwater_stress
+order: 2
+updated: '2026-04-26'
+summary: 'Lowland streams (Selwyn, Cust, Ōtukaikino) in mid-Canterbury show chronic
+  low flows in summer (<50% of ecological demand), elevated nutrient concentrations,
+  and macroinvertebrate community degradation. Irrigation allocation and urban stormwater
+  runoff degrade water quality.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - stream_summer_flow_rate
+  - nutrient_concentration_n_p
+  - macroinvertebrate_health_index
+  - stream_habitat_quality_visual
+  inputs:
+  - irrigation_allocation_utilization
+  - urban_runoff_volume
+  - riparian_vegetation_coverage
+  constraints:
+  - ecological_flow_requirements
+  - allocation_reliability_for_farmers
+  feedback_loops:
+  - Dynamic feedback mechanisms drive lowland stream degradation & flow reduction.
+narrative:
+- heading: Summer stress and quality collapse
+  body: 'By January-February, streams like Selwyn are reduced to 10-20% of full flow,
+    isolating remaining habitat and concentrating contaminants. Fish populations (native
+    galaxiids, brown trout) are declining. Community restoration efforts are piecemeal.
+
+    '
+claim_ids:
+- claim.canterbury.environment.stream_flow_reduction_2023
+- claim.canterbury.environment.macroinvertebrate_decline_2023
+status: draft
+time_horizons: [generation, century]

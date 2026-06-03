@@ -1,0 +1,21 @@
+id: claim.tasman.housing.affordability_claim
+statement: Tasman Housing Demand and Lifestyle Migration (2024) documents median house
+  price rise 68% (2016-2022), from NZD 385,000 to NZD 647,000. Median household income
+  is NZD 87,400; price-to-income ratio stands at 7.4, above the 5.0 affordability
+  threshold. First-home buyers squeezed out of Richmond and Motueka markets.
+value: 7.4
+unit: price-to-income ratio
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_housing_demand_2024
+- source.census_income_tasman_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

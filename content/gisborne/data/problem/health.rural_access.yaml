@@ -1,0 +1,33 @@
+id: problem.gisborne.health.rural_access
+title: Rural health service access and workforce in Gisborne — Te Tairāwhiti
+theme: health
+section: health
+subpage: rural_access
+parent: problem.gisborne.health.health_outcomes
+order: 28
+updated: '2026-04-26'
+summary: Rural health service access and workforce is a specific manifestation of
+  the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - rural_access_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Rural health service access and workforce is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.health.rural_access_55
+- claim.gisborne.health.rural_access_56
+status: draft
+time_horizons: [decade, generation]

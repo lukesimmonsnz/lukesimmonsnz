@@ -1,0 +1,24 @@
+id: 'problem.waikato.transport.public_transport'
+title: 'Waikato: public transport coverage'
+theme: 'transport'
+section: 'transport'
+subpage: 'public-transport'
+parent: 'problem.waikato.transport.connectivity'
+order: 4
+updated: '2026-04-26'
+summary: 'Public transport is limited and fragmented.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Public transport is limited and fragmented.'
+claim_ids:
+- 'claim.waikato.transport.public_transport_claim1'
+- 'claim.waikato.transport.public_transport_claim2'
+status: 'draft'

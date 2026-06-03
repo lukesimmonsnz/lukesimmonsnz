@@ -1,0 +1,19 @@
+id: claim.wellington.education.vocational_pathway_gap
+statement: Wellington's secondary education system offers limited vocational pathway
+  provision relative to the academic track, leaving students whose strengths lie in
+  trade and technical areas without a clear post-school education or employment route.
+value: null
+unit: null
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_wellington_achievement_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

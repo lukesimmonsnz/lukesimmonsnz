@@ -1,0 +1,14 @@
+id: driver.west_coast.health.driver_2
+name: Specialist workforce shortage and out-of-region referral
+description: Te Nikau Hospital and West Coast primary care face structural workforce shortages, and most specialist and procedural
+  services require referral to Christchurch over Arthur's Pass. This drives both poor outcomes and a high system cost-per-presentation.
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.health.health_outcomes
+- problem.west_coast.health.chronic_disease
+- problem.west_coast.health.workforce
+claim_ids: []

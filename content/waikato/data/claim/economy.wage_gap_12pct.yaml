@@ -1,0 +1,21 @@
+id: claim.waikato.wage_gap_12pct
+statement: Waikato median household income lags Auckland and Wellington by approximately
+  12%. Farm worker wages and retail and hospitality roles in Hamilton and Cambridge
+  drive the average down. Geographic wage disparity is steepest in South Waikato including
+  Tokoroa and Putāruru, where post-mining-decline service economy offers limited career
+  progression.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_economic_profile_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato regional_wage_gap claim

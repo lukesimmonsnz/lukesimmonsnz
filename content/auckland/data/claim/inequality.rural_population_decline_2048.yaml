@@ -1,0 +1,26 @@
+id: claim.auckland.inequality.rural_population_decline_2048
+statement: >
+  Stats NZ subnational projections show population decline (under the
+  medium variant) over 2023-2048 for several rural and small-population
+  regions including West Coast, Gisborne, and parts of Manawatu-Whanganui
+  and Southland, while metropolitan regions (Auckland, Wellington,
+  Canterbury) continue to grow. The divergence widens the population
+  gap between metropolitan and provincial New Zealand and concentrates
+  fiscal capacity, labour markets, and amenities in the larger centres.
+value: null
+unit: null
+time_period: 2023-2048
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.stats_nz_population_projections_2024
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.admin_count_v1
+notes: >
+  Different sub-national projection variants (low/medium/high) yield
+  different decline magnitudes; the existence of decline in the
+  medium variant is robust.

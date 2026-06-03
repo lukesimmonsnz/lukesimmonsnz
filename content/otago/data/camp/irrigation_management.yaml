@@ -1,0 +1,21 @@
+id: camp.otago.environment.irrigation_management
+name: Irrigation Water Allocation and Efficiency
+theme: environment
+core_claim: Tightening water allocation and mandating efficiency improvements reduces
+  environmental flow depletion.
+flagship_moves:
+- Reduce irrigation allocation in Central Otago by 15% over 10 years
+- Mandate smart irrigation technology (soil moisture sensors)
+- Shift high-value crops to lower water requirements
+tensions:
+- Farmer income pressure and viability concerns
+- Horticulture competitiveness challenged by water costs
+addresses:
+- problem.otago.environment.irrigation_water_quality
+interventions:
+- description: Enforce environmental flow requirements in Clutha/Mata-au system
+  state_variable: environmental_flow_ratio
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

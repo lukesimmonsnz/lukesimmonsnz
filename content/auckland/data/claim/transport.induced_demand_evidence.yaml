@@ -1,29 +1,29 @@
 id: claim.auckland.transport.induced_demand_evidence
-statement: >
-  Successive expansions of Auckland's motorway network have not reduced
-  congestion to below pre-expansion levels over the medium term. The
-  fundamental law of road congestion — that adding capacity generates
-  new vehicle trips until the network returns to a congested equilibrium
-  — is well established in international transport economics and is
-  consistent with the Auckland experience, where congestion has
-  progressively worsened despite significant motorway investment since
-  the 1950s.
+statement: 'Successive expansions of Auckland''s motorway network have not reduced
+  congestion to below pre-expansion levels over the medium term. The fundamental law
+  of road congestion — that adding capacity generates new vehicle trips until the
+  network returns to a congested equilibrium — is well established in international
+  transport economics and is consistent with the Auckland experience, where congestion
+  has progressively worsened despite significant motorway investment since the 1950s.
+
+  '
 value: null
 unit: null
-time_period: "1990-2023"
+time_period: 1990-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_transport_annual_2023
-  - source.auckland_council_dev_strategy_2022
+- source.auckland_transport_annual_2023
+- source.auckland_council_dev_strategy_2022
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  The induced demand effect (Duranton and Turner, 2011 is the canonical
-  empirical reference) is well established in international literature.
-  Auckland-specific empirical documentation is less complete but directionally
-  consistent with the international evidence.
+- auckland
+notes: 'The induced demand effect (Duranton and Turner, 2011 is the canonical empirical
+  reference) is well established in international literature. Auckland-specific empirical
+  documentation is less complete but directionally consistent with the international
+  evidence.
+
+  '

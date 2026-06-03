@@ -1,0 +1,18 @@
+id: claim.northland.governance.council_capacity_claim1
+statement: Northland council capacity is severely constrained; three territorial authorities
+  struggle with chronic workforce shortages and skill gaps in technical areas (transport,
+  infrastructure, environmental management). Far North District Council operates with
+  largest area and lowest rates base; significant infrastructure liability relative
+  to revenue. Staff turnover in planning and engineering exceeds 30% annually.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

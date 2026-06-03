@@ -1,22 +1,20 @@
 id: claim.auckland.climate.climate_inequality
-statement: >
-  Climate risk in Auckland is inequitably distributed; low-income
-  communities in South Auckland, including Maori and Pacific households
-  in flood-prone areas, have lower adaptive capacity (insurance rates,
-  ability to move, home modification resources) than high-income areas
-  facing comparable physical exposure. Climate adaptation that proceeds
-  without equity consideration will deepen existing disadvantage.
+statement: Climate risk in Auckland is inequitably distributed; low-income communities
+  in South Auckland, in flood-prone areas, have lower adaptive capacity — lower insurance
+  rates, less ability to move, fewer resources for home modification — than higher-income
+  areas facing comparable physical exposure. Climate adaptation that proceeds without
+  equity consideration will deepen existing geographic and socioeconomic disadvantage.
 value: null
 unit: null
-time_period: "2020-2023"
+time_period: 2020-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_climate_plan_2023
-  - source.niwa_climate_auckland_2023
+- source.auckland_council_climate_plan_2023
+- source.niwa_climate_auckland_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

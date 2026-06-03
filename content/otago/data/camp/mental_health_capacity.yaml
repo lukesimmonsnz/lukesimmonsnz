@@ -1,0 +1,21 @@
+id: camp.otago.health.mental_health_capacity
+name: Mental Health Service Expansion
+theme: health
+core_claim: Increasing mental health counselors, therapists, and peer support reduces
+  waitlists and access barriers.
+flagship_moves:
+- Hire 100 additional mental health clinicians
+- Expand 24/7 crisis response services
+- Peer support worker program for Dunedin students
+tensions:
+- Healthcare worker recruitment and retention
+- Ongoing funding commitments
+addresses:
+- problem.otago.health.mental_health
+interventions:
+- description: Reduce mental health service waitlist to <6 weeks
+  state_variable: mh_service_access
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

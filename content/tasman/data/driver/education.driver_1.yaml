@@ -1,0 +1,13 @@
+id: driver.tasman.education.driver_1
+name: Thin ECE and primary supply outside Richmond
+description: Early-childhood and primary-school choice is structurally limited outside the Richmond-Motueka belt;
+  single-centre and single-school catchments produce coverage gaps that compound across cohorts.
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.education.achievement
+- problem.tasman.education.early_childhood
+claim_ids: []

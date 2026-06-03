@@ -1,0 +1,30 @@
+id: problem.waikato.education.achievement
+title: NCEA achievement gap
+theme: education
+section: education
+subpage: achievement
+parent: problem.waikato.education.waikato_education_inequity
+order: 2
+updated: '2026-04-26'
+summary: Māori and Pasifika students in Waikato achieve NCEA Level 2 at rates 15 percentage
+  points below their peers.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - ncea_attainment_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing achievement creates feedback on regional outcomes.
+narrative:
+- heading: NCEA achievement gap
+  body: Māori and Pasifika students in Waikato achieve NCEA Level 2 at rates 15 percentage
+    points below their peers.
+claim_ids:
+- claim.waikato.education.ncea_maori_gap_15pt
+status: draft
+time_horizons: [decade, generation]

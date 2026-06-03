@@ -1,0 +1,13 @@
+id: driver.gisborne.education.early_childhood_escalation
+name: Driver escalating early_childhood
+description: "This driver exacerbates the early_childhood challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: education
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.education.early_childhood
+claim_ids:
+- claim.gisborne.education.early_childhood_59

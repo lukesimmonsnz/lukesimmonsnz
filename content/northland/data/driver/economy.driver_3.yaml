@@ -1,0 +1,10 @@
+id: 'driver.northland.economy.driver_3'
+name: 'Technical and infrastructure challenges in economy'
+description: 'Technical and infrastructure challenges in economy in regional context.'
+theme: 'economy'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

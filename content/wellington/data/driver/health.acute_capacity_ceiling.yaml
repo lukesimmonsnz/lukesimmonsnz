@@ -1,0 +1,13 @@
+id: driver.wellington.health.acute_capacity_ceiling
+name: Acute mental health inpatient capacity ceiling
+description: Wellington Regional Hospital's acute mental health unit was built for a smaller population and has not been expanded
+  proportionally; demand routinely exceeds designed capacity during periods of elevated community distress.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.health.mental_health
+claim_ids:
+- claim.wellington.health.acute_bed_shortage

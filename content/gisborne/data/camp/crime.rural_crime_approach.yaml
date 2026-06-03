@@ -1,0 +1,20 @@
+id: camp.gisborne.crime.rural_crime_approach
+name: Strategic approach for rural_crime
+theme: crime
+core_claim: Strategic intervention on rural_crime will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting rural_crime
+- Priority action 2 targeting rural_crime
+- Institutional coordination mechanism for rural_crime
+tensions:
+- 'Tension 1: rural_crime'
+- 'Tension 2: rural_crime'
+addresses:
+- problem.gisborne.crime.rural_crime
+interventions:
+- description: Primary intervention for rural_crime
+  state_variable: rural_crime_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

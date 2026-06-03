@@ -1,0 +1,30 @@
+id: problem.waikato.education.early_childhood
+title: Early childhood education access
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.waikato.education.waikato_education_inequity
+order: 3
+updated: '2026-04-26'
+summary: ECE participation rates in rural Waikato are below national averages, with
+  provider shortages in small towns.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - ncea_attainment_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing early childhood creates feedback on regional outcomes.
+narrative:
+- heading: Early childhood education access
+  body: ECE participation rates in rural Waikato are below national averages, with
+    provider shortages in small towns.
+claim_ids:
+- claim.waikato.education.ece_rural_gap
+status: draft
+time_horizons: [decade, generation]

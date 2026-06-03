@@ -1,0 +1,22 @@
+id: claim.northland.environment.kauri_dieback_claim1
+statement: 'Native bush covers ~10% of Northland (NRC estimate); brown kiwi (Northland
+  kiwi, Apteryx mantelli) depends on pest-control programmes (Backyard Kiwi, Kiwi
+  Coast initiatives). Population estimates: 15,000–20,000 individuals remaining. Predation
+  by stoats, rats, possums remains primary threat despite intensive control. NZ fairy
+  tern (tara iti, Sternula nereis davisae) critically endangered; only ~50 breeding
+  pairs nationwide, nesting Northland beaches (Baylys Beach, Mangawhai).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

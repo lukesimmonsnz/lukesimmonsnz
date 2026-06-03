@@ -1,0 +1,12 @@
+id: driver.marlborough.economy.sme_financing_gap
+name: Small Business Financing Gaps
+description: Small business financing gaps.
+theme: economy
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.education.achievement
+claim_ids: []

@@ -1,0 +1,12 @@
+id: driver.canterbury.transport.population_growth_outpacing_capacity
+name: Population Growth Outpacing Arterial Capacity
+description: Population Growth Outpacing Arterial Capacity
+theme: transport
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.transport.christchurch_congestion
+claim_ids:
+- claim.canterbury.transport.commute_time_growth_2023

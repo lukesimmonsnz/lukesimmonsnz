@@ -1,0 +1,12 @@
+id: driver.otago.environment.land_use_intensity
+name: Land Use Intensity Expansion
+description: Agricultural and residential land use intensification increases environmental
+  pressure.
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.environment.freshwater_stress
+claim_ids: []

@@ -1,0 +1,14 @@
+id: driver.wellington.infrastructure.renewal_funding_gap
+name: Infrastructure renewal funding gap
+description: Wellington Water's annual capital renewal budget is insufficient to replace assets at the rate required to prevent
+  increasing average pipe age and rising break frequency. Funding constraints are shared across Wellington's councils.
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.infrastructure.water_resilience
+- problem.wellington.infrastructure.wastewater
+claim_ids:
+- claim.wellington.infrastructure.water_main_break_frequency

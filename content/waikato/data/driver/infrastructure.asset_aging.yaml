@@ -1,0 +1,10 @@
+id: driver.waikato.infrastructure.asset_aging
+name: Asset age profile and maintenance backlog
+description: Asset age profile and maintenance backlog in the regional context.
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

@@ -1,0 +1,15 @@
+id: methodology.gini_coefficient_v1
+name: Gini Coefficient (income inequality)
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: 'Standard measure of income distribution inequality ranging from 0 (perfect
+  equality) to 1 (perfect inequality). Computed from household equivalised disposable
+  income ranked from lowest to highest. New Zealand Gini is typically measured before
+  and after taxes and transfers. P5'' triggers on cross-region Gini comparison claims.
+
+  '
+source_ids: []

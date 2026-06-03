@@ -1,0 +1,19 @@
+id: claim.gisborne.inequality.geographic_isolation_39
+statement: Geographic isolation of Gisborne constrains market access, service provision,
+  and emergency response. SH2 is the sole vehicle route; limited air/maritime alternatives;
+  service delays from Auckland (4+ hours) affect health, education, and business competitiveness.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.water_quality_index_v1
+notes: null

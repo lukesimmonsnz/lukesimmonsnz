@@ -1,0 +1,21 @@
+id: camp.wellington.governance.treaty_partnership
+name: Practical Treaty Partnership in Service Delivery
+theme: governance
+core_claim: Contracting Māori providers to deliver services to Māori communities and embedding tikanga in council processes
+  is more achievable than structural co-governance.
+flagship_moves:
+- Preferential procurement for iwi social service providers in Wellington
+- Tikanga Māori protocols embedded in planning processes
+- Iwi cultural impact assessments as standard component of resource consents
+tensions:
+- Service delivery partnership without governance power is insufficient for Treaty obligations
+- Iwi capacity to take on service delivery contracts varies significantly
+addresses:
+- problem.wellington.governance.treaty_co_governance
+interventions:
+- description: Require cultural impact assessment from mana whenua for all Wellington City Council infrastructure consents
+  state_variable: iwi_participation_in_decisions
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

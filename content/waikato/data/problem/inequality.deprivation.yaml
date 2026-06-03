@@ -1,0 +1,24 @@
+id: 'problem.waikato.inequality.deprivation'
+title: 'Waikato: deprivation and inequality'
+theme: 'inequality'
+section: 'inequality'
+subpage: 'deprivation'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Deprivation is concentrated geographically.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Deprivation is concentrated geographically.'
+claim_ids:
+- 'claim.waikato.inequality.deprivation_claim1'
+- 'claim.waikato.inequality.deprivation_claim2'
+status: 'draft'

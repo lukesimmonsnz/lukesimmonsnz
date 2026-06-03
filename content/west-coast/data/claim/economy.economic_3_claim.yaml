@@ -1,0 +1,24 @@
+id: claim.west_coast.economy.economic_3_claim
+statement: Glacier and Department of Conservation tourism generates approximately
+  500,000 annual visitor arrivals to Franz Josef and Fox Glacier regions, supporting
+  accommodation, retail, and guide services. This sector represents a critical but
+  climate-vulnerable component of West Coast regional economy, as glacier retreat
+  threatens the primary attraction sustaining tourism employment and local business
+  viability.
+value: 500000
+unit: annual glacier visitors
+time_period: 2015-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.doc_westland_glacier_2023
+- source.west_coast_tourism_impact_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Visitor counts from DOC and tourism sector; economic dependency from Tourism
+  Association transition reports.

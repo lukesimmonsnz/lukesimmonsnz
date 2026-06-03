@@ -1,0 +1,34 @@
+id: problem.nelson.crime.family_violence
+title: Family violence as the dominant pattern of harm
+theme: crime
+section: crime
+subpage: family_violence
+parent: safety
+order: 2
+updated: '2026-04-26'
+summary: Family violence is the largest single category of recorded harm in Nelson-Tasman, with around 1,240 notifications in 2023 representing about a third of all serious offences reported. Intimate-partner violence and child-abuse notifications each account for roughly 40 percent of the total, and case volumes are growing about 7 percent year-on-year.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - fv_notifications_per_year
+  - fv_repeat_victimisation_rate
+  - refuge_bed_nights_used
+  inputs:
+  - specialist_service_funding
+  - police_fv_resourcing
+  constraints:
+  - geographic_isolation
+  - refuge_capacity
+  feedback_loops:
+  - 'Reporting-resourcing feedback: improved reporting drives caseload growth, which strains specialist service capacity and lengthens response times, which can suppress subsequent reporting.'
+narrative:
+- heading: Scale and reporting limits
+  body: Police family-violence notifications have grown for several consecutive years (claim.nelson.crime.family_violence_claim). Some of that is genuine increase in incidence; some is a rise in reporting confidence. International evidence suggests police data captures only 20-30 percent of true incidence, so the headline number is a floor rather than a ceiling.
+- heading: Rural and isolated-household exposure
+  body: Nelson's geography (Golden Bay, the upper Maitai, smaller rural settlements) creates pockets of household isolation where economic dependency, limited transport, and distance from refuge services raise the cost of leaving. Specialist domestic-violence services are based in Nelson city, with satellite reach into outlying communities funded intermittently.
+claim_ids:
+- claim.nelson.crime.family_violence_claim
+status: draft
+time_horizons:
+- decade

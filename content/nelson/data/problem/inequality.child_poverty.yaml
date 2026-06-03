@@ -1,0 +1,37 @@
+id: problem.nelson.inequality.child_poverty
+title: Child poverty above national average
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: inequality_root
+order: 2
+updated: '2026-04-26'
+summary: Around 18.2 percent of Nelson children live in after-housing-cost poverty (against 14.8 percent nationally); in Tasman the rate is around 16.4 percent. Concentrations are highest in the Tahunanui Cob, Stoke, and Tatanui suburbs. Food insecurity affects 12-14 percent of low-income households with children, and school-based nutrition programmes operate in 7 of 12 primary schools, with demand exceeding capacity.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - ahc_child_poverty_pct
+  - food_insecurity_pct_low_income
+  - school_lunch_programme_coverage
+  inputs:
+  - wff_settings
+  - accommodation_supplement
+  - school_nutrition_funding
+  constraints:
+  - housing_cost_floor
+  - ngo_capacity
+  feedback_loops:
+  - 'Housing-cost-deprivation feedback: rising housing cost pushes more children below the after-housing-cost threshold, increasing demand for school nutrition and family support, which compete for the same constrained NGO capacity.'
+narrative:
+- heading: Housing-cost-driven child poverty
+  body: Most of the gap between Nelson and national child-poverty rates sits in the after-housing-cost measure, indicating that local housing cost is the dominant proximate driver (claim.nelson.inequality.child_poverty_claim). Pre-housing-cost incomes for affected households are not far from national equivalents.
+- heading: Health and education spillover
+  body: Dental caries, rheumatic fever, and school-readiness indicators all correlate with deprivation quintile. The cost of intervening late (specialist treatment, alternative education, family support) is far higher than addressing the housing-cost driver upstream, but the institutional owners of those costs differ.
+claim_ids:
+- claim.nelson.inequality.child_poverty_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

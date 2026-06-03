@@ -1,0 +1,36 @@
+id: problem.nelson.inequality.inequality_root
+title: Widening income and wealth inequality in Nelson-Tasman
+theme: inequality
+section: inequality
+subpage: inequality_root
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Nelson-Tasman's income Gini coefficient is around 0.38 (against 0.35 nationally). The top 10 percent earn around 8.2x median household income; the bottom 10 percent earn about 2.1x (a 3.9x ratio). Median household income is around $62,400 against a mean of $78,300, indicating right-skew driven by professional and tourism-sector high earners. Lifestyle in-migration has amplified the property-wealth dimension of inequality.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - household_income_gini
+  - p90_p10_household_income_ratio
+  - mortgage_free_owner_share
+  inputs:
+  - national_tax_transfer_settings
+  - house_price_growth
+  constraints:
+  - wage_structure
+  - labour_market_thinness
+  feedback_loops:
+  - 'Wealth-rent feedback: rising property wealth pulls rents up, raising cost-of-living for non-owners, which reduces saving capacity and entrenches the ownership gap.'
+narrative:
+- heading: Income, wealth, and lifestyle migration
+  body: Nelson's measured income inequality is moderately above national; the larger story is the wealth gap between established homeowners (now often mortgage-free) and first-home and renter households (claim.nelson.inequality.inequality_root_claim). Lifestyle in-migration imported substantial existing wealth into the Nelson property market between 2018 and 2022.
+- heading: Geographic concentration
+  body: 'Inequality has a clear geographic shape: deprivation is concentrated in particular suburbs (Tahunanui''s eastern edge, parts of Stoke and Tatanui) and in rural pockets, while wealth concentrates in the central-city heritage fringe and the coastal lifestyle belt.'
+claim_ids:
+- claim.nelson.inequality.inequality_root_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,40 @@
+id: problem.tasman.economy.economic_3
+title: Motueka hops cluster
+theme: economy
+section: economy
+subpage: economic_3
+parent: economic_structure
+order: 3
+updated: '2026-04-26'
+summary: Motueka hosts the southern hemisphere's largest hops cluster — about 1,800 hectares under cultivation,
+  5,200 tonnes of dried hops a year, NZD 84 million of value, and 340 FTE-equivalent roles at peak harvest. The
+  variety profile is heavily skewed to high-value, aroma-led cultivars for the craft-brewing market.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - hops_production_tonnes
+  - hops_export_value
+  inputs:
+  - hops_breeding_programme
+  - irrigation_water_allocation
+  constraints:
+  - narrow_climatic_envelope
+  - specialist_labour_supply
+  feedback_loops:
+  - Premium prices attract more growers into the same narrow climatic strip, which raises land prices and concentrates
+    risk.
+narrative:
+- heading: A globally-relevant niche
+  body: The Motueka hops industry is not large by hectarage compared to Tasman's apple and kiwifruit blocks, but
+    it is globally significant for craft-brewing aroma cultivars. Branded varietals (Motueka, Riwaka, Nelson Sauvin)
+    command premium prices (claim.tasman.economy.economic_3_claim).
+- heading: Cluster economics with cluster vulnerabilities
+  body: The cluster sits in a narrow climatic and water-allocation envelope. Its concentration in Motueka and the
+    lower Motueka valley means a single biosecurity, fire, or water-allocation event has outsized regional consequences.
+claim_ids:
+- claim.tasman.economy.economic_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

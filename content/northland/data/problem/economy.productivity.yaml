@@ -1,0 +1,24 @@
+id: 'problem.northland.economy.productivity'
+title: 'Te Tai Tokerau Northland: productivity'
+theme: 'economy'
+section: 'economy'
+subpage: 'productivity'
+parent: 'problem.northland.economy.development'
+order: 4
+updated: '2026-04-26'
+summary: 'Productivity growth is weak.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Productivity growth is weak.'
+claim_ids:
+- 'claim.northland.economy.productivity_claim1'
+- 'claim.northland.economy.productivity_claim2'
+status: 'draft'

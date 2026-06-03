@@ -1,0 +1,41 @@
+id: problem.tasman.inequality.child_poverty
+title: Geographically concentrated child poverty
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: inequality
+order: 2
+updated: '2026-04-26'
+summary: Census income data put roughly 21 percent of Tasman children in low-income households (below 60 percent
+  of median income). The rate is about 26 percent in Motueka and rural farm areas, and roughly 18 percent in Richmond.
+  Limited accessible early-intervention services mean health and developmental disparities begin in early childhood.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - child_low_income_rate
+  - geographic_concentration_index
+  inputs:
+  - early_intervention_funding
+  - school_decile_resourcing
+  constraints:
+  - household_income_distribution
+  - rural_service_economics
+  feedback_loops:
+  - Concentrated child poverty produces concentrated cohort underachievement, which entrenches the local labour-market
+    wage floor.
+narrative:
+- heading: Where the children are matters
+  body: The eight-percentage-point gap between Motueka and Richmond is a service-design problem as well as an income
+    one. Programmes targeted at the regional median miss the rural Motueka cohort that needs them most (claim.tasman.inequality.child_poverty_claim).
+- heading: Early disadvantage compounds
+  body: Children growing up in low-income households in areas with thin ECE supply, longer school commutes, and
+    more restricted health-service access enter school behind their Richmond peers. Catching up later requires resourcing
+    the school system can rarely muster.
+claim_ids:
+- claim.tasman.inequality.child_poverty_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

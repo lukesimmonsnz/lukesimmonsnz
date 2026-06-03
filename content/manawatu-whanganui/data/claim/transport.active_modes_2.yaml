@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.transport.active_modes_2
+statement: Safe routes to schools initiative in Manawatū-Whanganui has improved walking
+  and cycling infrastructure around 8-10 primary and secondary schools in Palmerston
+  North and Whanganui. Traffic calming, crossing improvements, and footpath repairs
+  have enabled modest increases in child active transport (4% to 6% of school trips).
+  However, rural school students remain car-dependent; school bus services are limited
+  and require long travel times. Winter weather and darkness (June-August) further
+  suppress active mode use. Sustained investment in infrastructure maintenance and
+  behaviour change campaigns is needed to increase active transport contribution to
+  regional carbon reduction and health goals.
+value: null
+unit: null
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_transport_mw_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

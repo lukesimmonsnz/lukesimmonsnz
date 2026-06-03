@@ -1,0 +1,21 @@
+id: camp.otago.housing.build_to_rent
+name: Build-to-Rent and Rental Housing Investment
+theme: housing
+core_claim: Encouraging institutional build-to-rent (BTR) and rental housing investment
+  improves worker housing supply.
+flagship_moves:
+- Tax incentives for BTR operators
+- Fast-track resource consents for BTR projects
+- Develop BTR on council-owned land
+tensions:
+- BTR investors prioritize market-rate rents; affordable element requires subsidy
+- Tenant protection regulations reduce BTR investment attractiveness
+addresses:
+- problem.otago.housing.worker_housing
+interventions:
+- description: Offer 10-year tax holiday for qualifying BTR projects
+  state_variable: rental_stock
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

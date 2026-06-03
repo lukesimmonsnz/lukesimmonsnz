@@ -1,0 +1,31 @@
+id: pattern.education.chronic_absenteeism
+title: Chronic school absenteeism as a systemic challenge
+theme: education
+summary: School attendance rates have declined significantly across New Zealand regions
+  post-COVID, with chronic absenteeism highest in high-deprivation areas and schools
+  serving Māori and Pasifika students.
+manifests_in:
+- auckland
+- wellington
+- northland
+- waikato
+- gisborne
+- bay-of-plenty
+- manawatu-whanganui
+claim_ids:
+- claim.auckland.education.attendance_crisis
+- claim.wellington.education.ece_participation_porirua
+- claim.northland.education.maori_education_claim1
+- claim.waikato.education.ncea_maori_gap_15pt
+- claim.manawatu_whanganui.education.achievement_placeholder
+narrative:
+- heading: Post-COVID escalation
+  body: Attendance rates that were already lower in high-deprivation schools declined
+    sharply during COVID-19 and have not recovered. Nationally, regular attendance
+    (90%+ of days) has fallen from ~70% to ~55% in many regions.
+- heading: Compounding effects
+  body: Chronic absenteeism predicts NCEA non-completion, reduced lifetime earnings,
+    and increased welfare dependence. Its concentration in already-disadvantaged communities
+    deepens inequality and reduces the return on educational investment.
+status: draft
+updated: '2026-04-26'

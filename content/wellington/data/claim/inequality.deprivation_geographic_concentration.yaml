@@ -1,0 +1,22 @@
+id: claim.wellington.inequality.deprivation_geographic_concentration
+statement: 'Deprivation in Wellington is not randomly distributed: high-deprivation
+  meshblocks are concentrated in Porirua City and specific Hutt Valley sub-areas,
+  with these communities sharing limited access to high-wage employment, lower school
+  performance, and reduced public service quality relative to affluent Wellington
+  suburbs.'
+value: null
+unit: null
+time_period: 2018-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2018
+- source.stats_nz_census_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

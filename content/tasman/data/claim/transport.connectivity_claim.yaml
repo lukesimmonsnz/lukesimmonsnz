@@ -1,0 +1,22 @@
+id: claim.tasman.transport.connectivity_claim
+statement: Tasman has no rail service; SH6 (Nelson-Richmond) and SH60 (Richmond-Motueka-Takaka)
+  are primary state highways serving 38,000 daily vehicle movements. Bus services
+  (InterCity, local shuttles) operate limited routes; frequency is 1-2 services/day
+  on main corridors. No commercial air service; Motueka airfield is private charter
+  only.
+value: 38000
+unit: daily vehicle movements (SH6/SH60)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_tasman_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

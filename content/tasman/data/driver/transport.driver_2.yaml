@@ -1,0 +1,14 @@
+id: driver.tasman.transport.driver_2
+name: Low population density and dispersed demand
+description: Around 55,000 residents spread over a long unitary district give very low passenger density per route-kilometre,
+  which makes rail and high-frequency public transport economically marginal and entrenches private-vehicle dependence.
+theme: transport
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.transport.connectivity
+- problem.tasman.transport.connectivity_3
+- problem.tasman.transport.connectivity_4
+claim_ids: []

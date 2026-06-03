@@ -1,0 +1,22 @@
+id: claim.tasman.environment.coastal_environment_claim
+statement: Waimea Inlet is a nationally significant estuarine habitat supporting 34
+  wading bird species and threatened native fish (redfin bully, giant kokopu). Aquaculture
+  runoff, horticultural nutrient leachate, and stormwater from Richmond and Motueka
+  have raised sediment and nutrient loads; ecological health rated "poor" in 2023
+  TDC monitoring.
+value: 34
+unit: wading bird species
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.waimea_aquifer_study_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

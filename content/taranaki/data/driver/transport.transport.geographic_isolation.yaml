@@ -1,0 +1,14 @@
+id: driver.taranaki.transport.transport.geographic_isolation
+name: Geographic isolation
+description: Geographic isolation
+theme: transport
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.transport.connectivity
+- problem.taranaki.transport.active_modes
+- problem.taranaki.transport.new_plymouth_congestion
+- problem.taranaki.transport.regional_roading
+claim_ids: []

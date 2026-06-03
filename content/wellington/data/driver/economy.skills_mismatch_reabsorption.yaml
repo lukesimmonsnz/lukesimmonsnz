@@ -1,0 +1,14 @@
+id: driver.wellington.economy.skills_mismatch_reabsorption
+name: Skills mismatch impeding reabsorption of displaced workers
+description: Public sector skills (policy analysis, programme management, regulatory roles) do not map directly to private
+  sector demand in Wellington, making displaced government workers difficult to reabsorb into the local economy at comparable
+  wages.
+theme: economy
+consensus: mostly-agreed
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.wellington.economy.labour_market
+claim_ids:
+- claim.wellington.economy.skills_displacement_public_sector

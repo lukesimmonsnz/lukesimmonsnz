@@ -1,0 +1,15 @@
+id: driver.west_coast.infrastructure.driver_2
+name: Single lifeline corridor and small ratepayer funding base
+description: SH6 is the only lifeline corridor for the region, and three-waters and digital infrastructure depend on a dispersed
+  network with a small ratepayer base. The funding model for resilience and renewal capex on these networks remains structurally
+  unresolved.
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.infrastructure.infrastructure
+- problem.west_coast.infrastructure.infrastructure_3
+- problem.west_coast.infrastructure.infrastructure_4
+claim_ids: []

@@ -1,0 +1,57 @@
+id: pattern.economy.ageing_workforce_shortage
+title: Ageing population, contracting workforce, rising demand
+theme: economy
+summary: >
+  New Zealand's median age is projected to rise from 38 (2023) to
+  around 43 by 2048, with the 65+ share rising from ~16% to 23-25%.
+  The same demographic shift increases demand on the health, aged-care,
+  and superannuation systems while reducing the working-age share that
+  funds and staffs them. The mismatch is a structural macroeconomic
+  pressure, not a cyclical labour market issue.
+manifests_in:
+- nz
+- west-coast
+- tasman
+- marlborough
+- northland
+- hawkes-bay
+- gisborne
+- southland
+- waikato
+- auckland
+claim_ids:
+- claim.auckland.economy.median_age_trajectory_2048
+- claim.auckland.economy.dependency_ratio_2048
+- claim.auckland.economy.health_workforce_retirement_2024
+- claim.auckland.economy.regional_aged_share_divergence_2048
+narrative:
+- heading: The double bind
+  body: >
+    Ageing is both a demand shock (more health, aged-care, and
+    superannuation services per capita) and a supply shock (fewer
+    working-age people relative to dependants, and a workforce
+    losing senior staff faster than it can replace them). The two
+    sides reinforce each other, particularly in the health system,
+    where the workforce that delivers ageing-driven care is itself
+    ageing out. The scale is set by demographic projections that
+    have low forecast variance over a 25-year horizon.
+- heading: Regional unevenness
+  body: >
+    The aged share of population is projected to be highest in the
+    same regions that are losing working-age population — West Coast,
+    Tasman, Marlborough, parts of Northland and Hawke's Bay — so the
+    workforce-to-demand ratio deteriorates fastest where it is
+    already worst. Auckland's relative youth (sustained by net
+    migration) shifts the national mean but does not compensate for
+    regional concentration.
+- heading: Migration as a partial offset
+  body: >
+    Net migration to New Zealand is the lever that most directly
+    moves the working-age share. Sustained net inflows of working-age
+    migrants slow but do not reverse the ageing trend; the projected
+    ageing happens under all reasonable migration variants. Migration
+    policy is therefore a margin-shifter, not a structural solution,
+    and creates parallel pressure on housing supply (see the housing
+    affordability pattern) and infrastructure capacity.
+status: draft
+updated: '2026-05-06'

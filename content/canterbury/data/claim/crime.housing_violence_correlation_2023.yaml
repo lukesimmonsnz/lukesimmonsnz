@@ -1,0 +1,20 @@
+id: claim.canterbury.crime.housing_violence_correlation_2023
+statement: Housing instability and homelessness correlate with family violence prevalence
+  in Canterbury. Inadequate emergency housing and social support services leave victims
+  with limited safe options; housing insecurity compounds cycles of abuse and police
+  intervention.
+value: 3.5
+unit: ratio
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_canterbury_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

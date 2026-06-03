@@ -1,0 +1,29 @@
+id: problem.taranaki.health.workforce
+title: Health workforce and service access
+theme: health
+section: health
+subpage: workforce
+parent: problem.taranaki.health.health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: GP shortage and specialist service distance are barriers. Rural GP practices
+  are closing.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - workforce_index
+  inputs:
+  - workforce_input_1
+  constraints:
+  - workforce_constraint
+  feedback_loops:
+  - 'Feedback: workforce'
+narrative:
+- heading: Health workforce and service access in Taranaki
+  body: GP shortage and specialist service distance are barriers. Rural GP practices
+    are closing.
+claim_ids:
+- claim.taranaki.health.workforce_01
+status: draft
+time_horizons: [decade, generation]

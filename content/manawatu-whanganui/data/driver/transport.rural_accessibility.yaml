@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.transport.rural_accessibility
+name: Rural Accessibility And Multi-Modal Gaps
+description: Rural accessibility and multi-modal gaps with regional implications.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+claim_ids: []

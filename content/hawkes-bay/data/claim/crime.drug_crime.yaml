@@ -1,0 +1,19 @@
+id: claim.hawkes_bay.crime.drug_seizures_150_percent_increase
+statement: Drug seizures in Hawke's Bay increased 150% over the past five years, indicating
+  elevated illicit substance trafficking and use. Rural and remote areas including
+  Wairoa face heightened exposure to drug-related harm with constrained police capacity
+  to monitor and prevent supply chain activities affecting youth and vulnerable populations.
+value: 150
+unit: percent increase
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1

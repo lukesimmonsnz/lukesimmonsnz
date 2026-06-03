@@ -1,0 +1,20 @@
+id: claim.marlborough.governance.water_allocation_governance_placeholder
+statement: 'Wairau Catchment Water Allocation Plan (2021): sets fresh-water extraction
+  limits; dominated by agricultural stakeholders (irrigation boards, pastoral farming);
+  Māori representation through iwi advisory committee (non-binding); plan review cycle
+  10 years (next 2031).'
+value: null
+unit: null
+time_period: '2021'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wairau_catchment_study_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

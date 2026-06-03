@@ -1,0 +1,13 @@
+id: driver.tasman.health.driver_1
+name: Distance to Nelson Hospital
+description: Almost all secondary and tertiary health capacity for Tasman residents is in Nelson, imposing structural
+  travel time on Mohua and Murchison communities and converting distance into a clinical determinant of outcomes.
+theme: health
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.tasman.health.health_outcomes
+- problem.tasman.health.mental_health
+claim_ids: []

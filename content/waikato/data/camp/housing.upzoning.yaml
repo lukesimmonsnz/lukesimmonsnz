@@ -1,0 +1,25 @@
+id: camp.waikato.housing.upzoning
+name: Upzoning and intensification
+theme: housing
+core_claim: Enabling high-density residential development near Hamilton CBD and key
+  transport corridors is the primary supply lever.
+flagship_moves:
+- Rezone all land within 1km of Hamilton CBD for 6+ storeys
+- Remove minimum car parking requirements city-wide
+- Fast-track medium-density consenting under MDRS
+tensions:
+- Intensification may face community resistance over character and infrastructure
+  capacity
+- Upzoning benefits may be captured by landowners rather than renters
+interventions:
+- description: Rezone all land within 1km of Hamilton CBD for 6+ storeys
+  state_variable: housing_affordability_index
+  expected_sign: +
+addresses:
+- problem.waikato.housing.hamilton_housing_crisis
+- problem.waikato.housing.affordability
+- problem.waikato.housing.rental_market
+- problem.waikato.housing.urban_sprawl
+applicable_in:
+- waikato
+tensions_with: []

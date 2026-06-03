@@ -1,0 +1,20 @@
+id: camp.southland.education.regional_schools
+name: Regional School Support and Development
+theme: education
+core_claim: Supporting rural and small schools improves educational achievement.
+flagship_moves:
+- School support network and shared services
+- Teacher recruitment and professional development
+- Curriculum breadth and technology access
+tensions:
+- School autonomy vs support
+- Funding and resourcing constraints
+addresses:
+- problem.southland.education.achievement
+interventions:
+- description: Improve rural school achievement outcomes
+  state_variable: ncea_achievement_rate
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

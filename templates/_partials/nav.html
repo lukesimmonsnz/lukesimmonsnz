@@ -10,16 +10,25 @@
     <div class="nav-links">
       <a href="{{ url_for('main.home') }}"
          class="nav-link {% if request.endpoint == 'main.home' %}active{% endif %}">Home</a>
-      <a href="{{ url_for('main.projects') }}"
-         class="nav-link {% if request.endpoint == 'main.projects' %}active{% endif %}">Projects</a>
       <a href="{{ url_for('blog.index') }}"
          class="nav-link {% if request.blueprint == 'blog' %}active{% endif %}">Blog</a>
-      <a href="{{ url_for('research.index') }}"
-         class="nav-link {% if request.blueprint in ('research', 'auckland') %}active{% endif %}">Research</a>
+      <a href="{{ url_for('main.projects') }}"
+         class="nav-link {% if request.endpoint == 'main.projects' %}active{% endif %}">Projects</a>
       <a href="{{ url_for('davidsimmons.index') }}"
          class="nav-link {% if request.blueprint == 'davidsimmons' %}active{% endif %}">David Simmons</a>
+      <a href="{{ url_for('research.index') }}"
+         class="nav-link {% if request.blueprint in ('research', 'auckland') %}active{% endif %}">Research</a>
       <a href="{{ url_for('main.contact') }}"
          class="nav-link {% if request.endpoint == 'main.contact' %}active{% endif %}">Contact</a>
+      <a href="{{ url_for('search.search') }}"
+         class="nav-link nav-search-icon {% if request.blueprint == 'search' %}active{% endif %}"
+         aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </a>
     </div>
   </div>
 </nav>

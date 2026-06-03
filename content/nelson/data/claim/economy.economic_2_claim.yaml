@@ -1,0 +1,22 @@
+id: claim.nelson.economy.economic_2_claim
+statement: Port Nelson is New Zealand's largest commercial fishing port by volume,
+  handling approximately 25% of the nation's total fish catch and landing 130,000–160,000
+  tonnes annually. The port directly employs 1,200+ workers in fishing operations,
+  processing, and logistics; export revenue is $620–750 million annually. However,
+  marine stock sustainability pressures and quota reductions have constrained catch
+  projections, reducing growth prospects.
+value: 25
+unit: percent of NZ fish catch
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.port_nelson_annual_report_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.sea_level_projection_v1
+notes: null

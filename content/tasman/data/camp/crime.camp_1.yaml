@@ -1,0 +1,24 @@
+id: camp.tasman.crime.camp_1
+name: 'Response: Camp 1'
+theme: crime
+core_claim: A response strategy addressing crime challenges.
+flagship_moves:
+- Implement evidence-based crime policy in Tasman
+- Increase investment in crime services and infrastructure
+- Build cross-sector partnerships to address crime challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.crime.safety
+- problem.tasman.crime.family_violence
+interventions:
+- description: Primary intervention for crime
+  state_variable: crime_outcome_index
+  expected_sign: +
+- description: Secondary intervention for crime
+  state_variable: crime_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

@@ -1,0 +1,21 @@
+id: claim.tasman.crime.youth_offending_claim
+statement: Police youth offending statistics (2023) indicate 156 youth offenders (aged
+  10-16) in Tasman, with 68% engaging in repeat offending within 12 months. Limited
+  youth diversion and mentoring programs in Golden Bay and rural areas contribute
+  to higher reoffending rates compared to Richmond/Motueka.
+value: 68
+unit: percent reoffending rate
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

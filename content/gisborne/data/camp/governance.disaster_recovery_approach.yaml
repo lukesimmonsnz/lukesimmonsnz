@@ -1,0 +1,20 @@
+id: camp.gisborne.governance.disaster_recovery_approach
+name: Strategic approach for disaster_recovery
+theme: governance
+core_claim: Strategic intervention on disaster_recovery will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting disaster_recovery
+- Priority action 2 targeting disaster_recovery
+- Institutional coordination mechanism for disaster_recovery
+tensions:
+- 'Tension 1: disaster_recovery'
+- 'Tension 2: disaster_recovery'
+addresses:
+- problem.gisborne.governance.disaster_recovery
+interventions:
+- description: Primary intervention for disaster_recovery
+  state_variable: disaster_recovery_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

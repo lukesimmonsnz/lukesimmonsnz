@@ -1,0 +1,20 @@
+id: claim.wellington.governance.civic_engagement_deficit
+statement: Survey data indicates that a substantial share of Wellington residents
+  cannot name their local councillors, do not follow council proceedings, and do not
+  believe their participation meaningfully affects council decisions — a civic engagement
+  deficit that undermines the accountability function of local democracy.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

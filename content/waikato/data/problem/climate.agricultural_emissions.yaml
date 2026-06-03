@@ -1,0 +1,30 @@
+id: problem.waikato.climate.agricultural_emissions
+title: Agricultural emissions and climate obligations
+theme: climate-adaptation
+section: climate
+subpage: agricultural_emissions
+parent: problem.waikato.climate.waikato_climate
+order: 3
+updated: '2026-04-26'
+summary: Waikato's dominant dairy sector faces He Waka Eke Noa obligations and consumer
+  market pressure on emissions.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - climate_risk_exposure
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing agricultural emissions creates feedback on regional outcomes.
+narrative:
+- heading: Agricultural emissions and climate obligations
+  body: Waikato's dominant dairy sector faces He Waka Eke Noa obligations and consumer
+    market pressure on emissions.
+claim_ids:
+- claim.waikato.climate.agri_emissions_45pct_regional
+status: draft
+time_horizons: [generation, century]

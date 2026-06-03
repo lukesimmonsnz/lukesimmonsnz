@@ -1,0 +1,25 @@
+id: camp.west_coast.transport.active_travel
+name: Active Travel and Demand Management
+theme: transport
+core_claim: Shifting short trips to walking and cycling reduces vehicle demand, improves
+  liveability, and is the most cost-effective congestion response.
+flagship_moves:
+- Build separated cycling infrastructure on key commuter corridors
+- Subsidise e-bike purchase for low-income residents
+- Introduce school travel plans to reduce car drop-offs
+tensions:
+- Active travel requires safety infrastructure investment before behaviour change
+  follows
+- Limited budget competes with roading maintenance priorities
+addresses:
+- problem.west_coast.transport.connectivity_2
+- problem.west_coast.transport.connectivity_3
+- problem.west_coast.transport.connectivity_4
+interventions:
+- description: Develop connected cycling and walking network linking residential areas
+    to employment and retail centres
+  state_variable: active_mode_share
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

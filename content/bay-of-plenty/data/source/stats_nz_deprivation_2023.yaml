@@ -1,0 +1,15 @@
+id: source.stats_nz_deprivation_2023
+title: NZDep2018 Index of Deprivation
+author: Atkinson J, Salmond C, Crampton P
+publisher: University of Otago Department of Public Health, Wellington
+year: 2019
+url: https://www.otago.ac.nz/wellington/departments/publichealth/research/hirp/otago020194.html
+type: academic
+credibility: peer-reviewed
+geo_granularity:
+- bay-of-plenty
+- gisborne
+- nz
+notes: 'NZDep2018 is the current deprivation index (NZDep2023 not yet released as of 2024). Eight census-derived variables
+  combined into a deprivation score for every meshblock and area unit. Used by health, social, and education researchers as
+  the standard NZ small-area deprivation measure.'

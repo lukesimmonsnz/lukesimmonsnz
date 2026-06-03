@@ -1,0 +1,20 @@
+id: camp.gisborne.infrastructure.digital_approach
+name: Strategic approach for digital
+theme: infrastructure
+core_claim: Strategic intervention on digital will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting digital
+- Priority action 2 targeting digital
+- Institutional coordination mechanism for digital
+tensions:
+- 'Tension 1: digital'
+- 'Tension 2: digital'
+addresses:
+- problem.gisborne.infrastructure.digital
+interventions:
+- description: Primary intervention for digital
+  state_variable: digital_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

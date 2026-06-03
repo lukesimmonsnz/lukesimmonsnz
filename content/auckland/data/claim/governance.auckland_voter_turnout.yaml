@@ -1,22 +1,22 @@
 id: claim.auckland.governance.auckland_voter_turnout
-statement: >
-  Auckland local body election turnout has fallen from approximately
-  52% in 2010 to approximately 35% in 2022; turnout in South and West
-  Auckland wards is substantially below the Auckland average, with
-  some wards recording sub-20% turnout. Maori and Pacific electoral
-  participation in local elections is disproportionately low relative
-  to these communities' share of the population.
+statement: 'Auckland local body election turnout has fallen from approximately 52%
+  in 2010 to approximately 35% in 2022; turnout in South and West Auckland wards is
+  substantially below the Auckland average, with some wards recording sub-20% turnout.
+  Maori and Pacific electoral participation in local elections is disproportionately
+  low relative to these communities'' share of the population.
+
+  '
 value: 35
-unit: "percent turnout"
-time_period: "2022"
+unit: percent turnout
+time_period: '2022'
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.electoral_commission_2023
+- source.electoral_commission_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.voter_turnout_rate_v1

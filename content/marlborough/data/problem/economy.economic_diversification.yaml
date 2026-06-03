@@ -1,0 +1,30 @@
+id: problem.marlborough.economy.economic_diversification
+title: Economic Diversification Beyond Wine
+theme: economy
+section: economy
+subpage: economic_diversification
+parent: problem.marlborough.economy.wine_economy
+order: 1
+updated: '2026-04-26'
+summary: Limited sector diversity; brain drain; tourism seasonality; value-add opportunities
+  constrained.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Limited sector diversity; brain drain; tourism seasonality; value-add opportunities
+    constrained.
+claim_ids:
+- claim.marlborough.economy.economic_diversification_placeholder
+status: draft
+time_horizons: [decade, generation]

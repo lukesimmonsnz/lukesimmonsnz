@@ -1,0 +1,13 @@
+id: driver.hawkes_bay.infrastructure.infrastructure.pipe_age
+name: Aging pipe and infrastructure asset profiles
+description: Aging pipe and infrastructure asset profiles
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+- problem.hawkes_bay.infrastructure.flood_protection
+- problem.hawkes_bay.infrastructure.wastewater
+claim_ids: []

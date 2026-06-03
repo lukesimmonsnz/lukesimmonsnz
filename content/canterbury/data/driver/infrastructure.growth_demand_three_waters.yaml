@@ -1,0 +1,12 @@
+id: driver.canterbury.infrastructure.growth_demand_three_waters
+name: Growth-Driven Three Waters Demand
+description: Growth-Driven Three Waters Demand
+theme: infrastructure
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.infrastructure.horizontal_infrastructure
+claim_ids:
+- claim.canterbury.infrastructure.three_waters_capex_2024

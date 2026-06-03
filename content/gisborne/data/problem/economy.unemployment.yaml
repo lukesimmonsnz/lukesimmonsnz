@@ -1,0 +1,33 @@
+id: problem.gisborne.economy.unemployment
+title: Unemployment and limited job opportunities in Gisborne — Te Tairāwhiti
+theme: economy
+section: economy
+subpage: unemployment
+parent: problem.gisborne.economy.economic_fragility
+order: 35
+updated: '2026-04-26'
+summary: Unemployment and limited job opportunities is a specific manifestation of
+  the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - unemployment_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Unemployment and limited job opportunities is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.economy.unemployment_69
+- claim.gisborne.economy.unemployment_70
+status: draft
+time_horizons: [decade, generation]

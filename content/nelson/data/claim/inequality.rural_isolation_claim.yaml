@@ -1,0 +1,25 @@
+id: claim.nelson.inequality.rural_isolation_claim
+statement: Rural isolation in Nelson-Tasman is a significant driver of service access
+  inequality, particularly in Golden Bay. Golden Bay (population ~2,500, centred on
+  Takaka) is approximately 105 km by road from Nelson city, requiring a crossing of
+  Takaka Hill (a narrow, winding mountain pass) with seasonal closure risk and no
+  public transport connection. Healthcare access requires travel to Nelson (approximately
+  90 minutes); secondary education requires boarding or distance learning; broadband
+  coverage in rural Nelson-Tasman is 78% versus 96% in urban areas; rural income levels
+  run 12-18% below urban average, and youth out-migration is chronic.
+value: 105
+unit: km by road from Nelson city to Takaka (Golden Bay)
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: Original value of 52 km was straight-line distance; corrected to ~105 km road
+  distance (Nelson city to Takaka via SH6/SH60 over Takaka Hill).

@@ -1,0 +1,21 @@
+id: claim.wellington.housing.zoned_capacity_deficit
+statement: Wellington City's modelled zoned residential capacity under the NPS-UD
+  upzoning overstates practically deliverable housing supply because a significant
+  share of zoned capacity sits on sites constrained by earthquake-prone building obligations,
+  geotechnical complexity, or inadequate infrastructure reticulation.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_housing_capacity_2022
+- source.motu_housing_wellington_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

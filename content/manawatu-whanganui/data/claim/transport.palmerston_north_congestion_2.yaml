@@ -1,0 +1,27 @@
+id: claim.manawatu_whanganui.transport.palmerston_north_congestion_2
+statement: Palmerston North's public transport system operates 12-15 urban bus routes
+  with average ridership of approx. 1,200-1,500 passengers/day (approx. 3-4% mode
+  share). Frequency is limited (30-60 minute headways on most routes); reliability
+  is moderate (80-85% on-time performance). Bus network coverage is reasonable in
+  central and western suburbs but east and north suburbs have limited service. Student
+  transport (Massey commuting) uses informal carpooling and parking; university shuttle
+  services cover campus but not wider city integration. Bus patronage growth has been
+  flat (2019-2024) despite population growth, suggesting insufficient service quality/frequency
+  to attract users from cars. NZTA/Council studies (2024) propose frequency increases
+  and network redesign to improve mode share to 8-10% by 2035.
+value: 3.5
+unit: percent_bus_mode_share
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_transport_mw_2023
+- source.palmerston_north_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.mode_share_v1
+notes: null

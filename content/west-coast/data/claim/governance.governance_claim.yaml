@@ -1,0 +1,23 @@
+id: claim.west_coast.governance.governance_claim
+statement: West Coast governance is fragmented across West Coast Regional Council
+  and three separate territorial authorities (Buller, Grey, Westland DC), each with
+  independent planning and service delivery functions. This fragmentation complicates
+  coordinated responses to regional challenges (flooding, economic transition, population
+  decline). Service delivery duplication and coordination costs are high relative
+  to small regional population (32,000).
+value: 4
+unit: governance entities
+time_period: 2010-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.stats_nz_census_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Governance structure is statutory; population from Census 2023.

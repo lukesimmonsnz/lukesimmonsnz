@@ -1,0 +1,23 @@
+id: camp.southland.economy.industrial_transition_response
+name: Just Transition Economic Diversification
+theme: economy
+core_claim: Active industrial policy is needed to diversify Southland's economy away
+  from smelter dependency through renewable energy, tourism, and food processing.
+flagship_moves:
+- Establish Southland Just Transition Fund from smelter closure proceeds
+- Develop green hydrogen facility using Manapōuri power
+- Invest in food processing value-add for primary sector
+tensions:
+- Industrial diversification takes a decade; short-term job losses are unavoidable
+  if smelter closes
+- Renewable energy projects require national policy alignment
+addresses:
+- problem.southland.economy.industrial_transition
+interventions:
+- description: Create Southland Economic Resilience Fund targeting 500 new jobs in
+    non-primary sectors by 2030
+  state_variable: employment_outside_primary_sector
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

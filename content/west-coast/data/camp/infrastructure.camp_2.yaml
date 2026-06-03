@@ -1,0 +1,24 @@
+id: camp.west_coast.infrastructure.three_waters_and_community_inf
+name: Three Waters and Community Infrastructure Renewal
+theme: infrastructure
+core_claim: West Coast's small towns have ageing water and wastewater infrastructure
+  that councils cannot afford to renew from local rates; Crown co-investment is essential.
+flagship_moves:
+- Fund three waters renewal in Westport, Hokitika, Reefton, and smaller towns
+- Establish West Coast infrastructure revolving fund with Crown backstop
+- Develop multi-council joint infrastructure delivery model
+tensions:
+- Small community infrastructure is expensive per capita and has limited revenue base
+- National three waters reform frameworks may not fit West Coast's unique low-density
+  context
+addresses:
+- problem.west_coast.infrastructure.infrastructure
+- problem.west_coast.infrastructure.infrastructure_3
+- problem.west_coast.infrastructure.infrastructure_4
+interventions:
+- description: Fund West Coast three waters infrastructure renewal programme
+  state_variable: infrastructure_condition_index
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

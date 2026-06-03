@@ -1,0 +1,42 @@
+id: problem.west_coast.crime.youth_offending
+title: Youth offending and the pathway deficit
+theme: crime
+section: crime
+subpage: youth_offending
+parent: safety
+order: 3
+updated: '2026-04-26'
+summary: 'Youth offending in Greymouth, Hokitika and Westport runs disproportionate to the small youth population, tracking
+  the contraction of education and employment pathways: school roll declines, narrow secondary subject offerings, no university
+  campus on the Coast, and very limited structured youth services.'
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - youth_offence_rate
+  - neet_rate_15_24
+  - structured_youth_programme_seats
+  inputs:
+  - oranga_tamariki_funding
+  - moe_alternative_education_pool
+  constraints:
+  - narrow_post_school_pathway_set
+  - out_migration_of_role_models
+  feedback_loops:
+  - Offending records reduce employability and tertiary access, narrowing pathways further; the contracted pathway set then
+    increases the rate of youth disengagement that produces more offending.
+narrative:
+- heading: Pathways narrow, offending rises
+  body: Where the post-school pathway is narrow — limited tertiary places, distant universities, thin trades cadetships and
+    a contracting service economy — risk of youth disengagement and offending rises (claim.west_coast.crime.youth_offending_claim).
+    The West Coast lacks the youth-services ecosystem (mentoring, alternative education, sport and arts capacity) that larger
+    urban centres fall back on.
+- heading: Schools as anchor institutions
+  body: With Westport High and other secondary schools facing significant roll decline, the schools themselves are the largest
+    available platform for youth-development investment, but they are stretched thin and cannot substitute for the wider pathway
+    infrastructure that has eroded.
+claim_ids:
+- claim.west_coast.crime.youth_offending_claim
+status: draft
+time_horizons:
+- decade

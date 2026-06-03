@@ -1,0 +1,12 @@
+id: driver.otago.governance.hospital_rebuild_coordination
+name: Hospital Rebuild Project Coordination Complexity
+description: Multi-stakeholder coordination (DHB, council, government) creates governance
+  challenges.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.governance.otago_hospital_governance
+claim_ids: []

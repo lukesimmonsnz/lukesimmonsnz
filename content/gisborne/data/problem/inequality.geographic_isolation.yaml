@@ -1,0 +1,33 @@
+id: problem.gisborne.inequality.geographic_isolation
+title: Geographic isolation effects on opportunity access in Gisborne — Te Tairāwhiti
+theme: inequality
+section: inequality
+subpage: geographic_isolation
+parent: problem.gisborne.inequality.deprivation
+order: 20
+updated: '2026-04-26'
+summary: Geographic isolation effects on opportunity access is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - geographic_isolation_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Geographic isolation effects on opportunity access is a key facet of the broader
+    pressure facing the region.
+claim_ids:
+- claim.gisborne.inequality.geographic_isolation_39
+- claim.gisborne.inequality.geographic_isolation_40
+status: draft
+time_horizons: [decade, generation, century]

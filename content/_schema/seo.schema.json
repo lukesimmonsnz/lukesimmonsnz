@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lukesimmonsnz.kiwi/schema/seo",
+  "title": "Per-page SEO frontmatter sub-tree (CMS v2 wave v2-8)",
+  "description": "Typed seo: sub-tree under page frontmatter. Consumed by templates/_partials/head.html and the editor's SEO tab.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "meta_description": {
+      "type": "string",
+      "maxLength": 320,
+      "description": "Meta description for search engines. Best practice: <=155 chars; the editor warns above that threshold but the schema permits up to 320."
+    },
+    "og": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "maxLength": 70,
+          "description": "Open Graph title; falls back to page title if empty."
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Open Graph description; falls back to meta_description if empty."
+        },
+        "image": {
+          "type": "string",
+          "format": "uri-reference",
+          "description": "Open Graph card image; falls back to /static/img/cover.jpg."
+        },
+        "type": {
+          "enum": ["article", "website", "book", "profile"],
+          "description": "Open Graph type. Default 'website'."
+        }
+      }
+    },
+    "twitter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "card": {
+          "enum": ["summary", "summary_large_image"],
+          "description": "Twitter card style. Default 'summary_large_image'."
+        }
+      }
+    },
+    "schema_type": {
+      "enum": [
+        "BlogPosting",
+        "Article",
+        "WebPage",
+        "Person",
+        "ResearchProject",
+        "TechArticle"
+      ],
+      "description": "schema.org @type for the page; emitted as JSON-LD in the head."
+    },
+    "canonical": {
+      "type": "string",
+      "format": "uri-reference",
+      "description": "Canonical URL for cross-posted content."
+    },
+    "robots": {
+      "type": "string",
+      "pattern": "^(index|noindex)(,\\s*(follow|nofollow))?$",
+      "description": "Robots directive. Default omitted (treated as index,follow)."
+    }
+  }
+}

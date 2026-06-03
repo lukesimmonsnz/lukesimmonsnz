@@ -1,0 +1,20 @@
+id: camp.northland.education.school_engagement
+name: School engagement and support
+theme: education
+core_claim: School engagement and support is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement school engagement and support
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- northland
+tensions_with: []

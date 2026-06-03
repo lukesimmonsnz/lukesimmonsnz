@@ -1,0 +1,22 @@
+id: claim.tasman.transport.connectivity_4_claim
+statement: Active transport (walking, cycling) infrastructure in Tasman is fragmented.
+  Richmond and Motueka have some dedicated cycleways (18 km total); suburban schools
+  have <30% active commute rates. TDC is implementing "Last Kilometre Plan" (2024-2027)
+  to build 45 km of urban cycleways and footpaths, targeting 35% active commute rate
+  by 2030.
+value: 18
+unit: km existing cycleways
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.nz_transport_agency_tasman_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.mode_share_v1
+notes: null

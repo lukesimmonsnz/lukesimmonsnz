@@ -1,0 +1,18 @@
+id: claim.northland.governance.council_capacity_claim2
+statement: Whangārei District Council faces financial constraints despite being the
+  most populous TA;
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

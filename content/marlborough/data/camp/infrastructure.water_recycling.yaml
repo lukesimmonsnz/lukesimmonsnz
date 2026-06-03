@@ -1,0 +1,21 @@
+id: camp.marlborough.infrastructure.water_recycling
+name: Water Recycling and Reuse
+theme: infrastructure
+core_claim: Greywater and stormwater recycling.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.infrastructure.water_irrigation
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

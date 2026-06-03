@@ -1,0 +1,36 @@
+id: problem.nelson.economy.economic_structure
+title: Narrow sector base and limited diversification
+theme: economy
+section: economy
+subpage: economic_structure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Nelson''s economy concentrates in four sectors: primary production (fishing, horticulture, aquaculture, around 24 percent of employment), tourism and hospitality (about 22 percent), light manufacturing and processing (around 18 percent), and professional services (about 16 percent). The region lacks large corporate headquarters, deep technology firms, and major R&D-intensive research institutions, leaving it exposed to commodity cycles and seasonal demand.'
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - share_employment_top4_sectors
+  - tradable_sector_export_revenue
+  - regional_gdp_per_capita_growth
+  inputs:
+  - national_productivity_settings
+  - rd_investment
+  - migration_flows
+  constraints:
+  - population_scale
+  - distance_to_larger_labour_market
+  feedback_loops:
+  - 'Concentration-vulnerability feedback: sector concentration generates synchronised employment shocks, which deter outside investment in diversification, which reinforces the existing sector concentration.'
+narrative:
+- heading: Sector concentration and shock exposure
+  body: Nelson's GDP is heavily exposed to a small number of tradable sectors with synchronised exposure to weather, fisheries quota settings, and international tourism cycles (claim.nelson.economy.economic_structure_claim). A bad season in any one of fishing, horticulture, or tourism shows up quickly in regional employment data.
+- heading: Diversification options and constraints
+  body: The seafood and marine-science cluster (Cawthron Institute, Plant & Food Research, NIWA) is the most plausible high-skill diversification path, but scale is limited by the small population, distance from larger labour markets, and absence of a research university campus. Remote-work in-migration is partly offsetting this, but it amplifies housing pressure rather than building local productive capacity.
+claim_ids:
+- claim.nelson.economy.economic_structure_claim
+status: draft
+time_horizons:
+- decade
+- generation

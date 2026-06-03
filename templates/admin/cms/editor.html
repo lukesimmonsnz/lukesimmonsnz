@@ -1,0 +1,791 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Edit · {{ ref.title }}{% endblock %}
+{% set active = 'editor' %}
+{% set crumbs = [{'label': ref.title}] %}
+
+{% block extra_css %}
+.editor-shell { display: grid; grid-template-rows: auto 1fr; height: calc(100vh - 110px); }
+.tabs-bar { display: flex; gap: 4px; padding: 8px 28px 0; background: #fbf8f0; border-bottom: 0.5px solid #d9d0bf; align-items: end; }
+.tab-btn { padding: 9px 16px; font-size: 13px; background: transparent; border: 0.5px solid transparent; border-bottom: none; color: #4b3f30; cursor: pointer; border-radius: 6px 6px 0 0; margin-bottom: -1px; }
+.tab-btn.active { background: #fff; border-color: #d9d0bf; color: #1a1613; font-weight: 500; }
+.tab-btn:hover:not(.active) { background: #f5f1e8; }
+.tab-btn .tab-badge { background: #c4956a; color: #fbf8f0; font-size: 10px; padding: 1px 6px; border-radius: 8px; margin-left: 4px; }
+.tabs-meta { margin-left: auto; align-self: center; font-size: 11px; color: #8a7a66; padding-bottom: 6px; }
+.tabs-meta .saved { color: #3a7050; }
+.tabs-meta .saving { color: #8a5a2a; }
+
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 0; flex: 1; min-height: 0; background: #fff; }
+.pane { display: flex; flex-direction: column; min-height: 0; }
+.pane-h { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a7a66; padding: 12px 24px 8px; background: #fff; }
+.pane-r { border-left: 0.5px solid #d9d0bf; background: #f5f1e8; }
+.pane-r .pane-h { background: #f5f1e8; display: flex; align-items: center; gap: 10px; }
+
+textarea.body-input, textarea.fm-input { flex: 1; padding: 18px 24px; border: none; outline: none; resize: none; background: #fff; color: #1a1613; font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 13px; line-height: 1.6; }
+textarea.body-input:focus { background: #fffef7; }
+.fm-input { background: #fcfaf3; }
+
+.preview-frame { flex: 1; border: none; background: #fff; }
+.preview-bar { display: flex; gap: 6px; padding: 8px 16px; background: #fff; border-bottom: 0.5px solid #d9d0bf; align-items: center; font-size: 11px; color: #8a7a66; }
+.viewport-toggle { display: flex; gap: 2px; background: #f5f1e8; border-radius: 5px; padding: 2px; }
+.viewport-toggle button { background: transparent; border: none; padding: 4px 8px; border-radius: 3px; cursor: pointer; }
+.viewport-toggle button.active { background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+.viewport-toggle button svg { width: 13px; height: 13px; vertical-align: middle; }
+.preview-meta { font-family: ui-monospace, monospace; font-size: 11px; }
+
+.seo-pane, .history-pane { padding: 24px 32px; overflow-y: auto; }
+.seo-row { margin-bottom: 18px; }
+.seo-row label { display: block; font-size: 12px; color: #4b3f30; margin-bottom: 5px; font-weight: 500; }
+.seo-row input[type=text], .seo-row input[type=url], .seo-row textarea, .seo-row select { width: 100%; max-width: 580px; }
+.seo-row textarea { min-height: 70px; }
+.char-counter { font-size: 11px; color: #8a7a66; margin-top: 4px; }
+.char-counter.over { color: #a04030; }
+.fieldset { margin-top: 22px; padding: 18px 22px; background: #fff; border: 0.5px solid #d9d0bf; border-radius: 8px; }
+.fieldset h3 { margin: 0 0 14px; font-size: 13px; font-weight: 500; color: #1a1613; }
+
+.history-list { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 8px; overflow: hidden; max-width: 720px; }
+.commit-row { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; padding: 12px 18px; border-bottom: 0.5px solid #ece5d4; font-size: 13px; }
+.commit-row:last-child { border-bottom: none; }
+.commit-sha { font-family: ui-monospace, monospace; font-size: 11px; color: #8a5a2a; background: #f5f1e8; padding: 2px 7px; border-radius: 3px; }
+.commit-meta { color: #8a7a66; font-size: 11px; }
+
+.tab-pane { display: none; flex: 1; min-height: 0; flex-direction: column; }
+.tab-pane.active { display: flex; }
+
+.visual-editor { flex: 1; overflow-y: auto; padding: 12px 18px; background: #faf8f2; }
+.vcell { border-radius: 5px; margin-bottom: 6px; font-size: 12px; }
+.vcell-raw { background: #f0ece0; padding: 8px 12px; color: #6b5f53; border-left: 3px solid #d9d0bf; cursor: default; }
+.vcell-raw-text { font-family: ui-monospace,monospace; white-space: pre; display: block; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.vcell-block { background: #fff; border-left: 4px solid #c4956a; padding: 8px 12px; border-radius: 0 5px 5px 0; }
+.vcell-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.vcell-kind { font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 10px; color: #fff; letter-spacing: .03em; text-transform: uppercase; flex-shrink: 0; }
+.vcell-attrs { display: flex; flex-wrap: wrap; gap: 4px; }
+.vcell-attr { background: #f0ece0; padding: 1px 6px; border-radius: 3px; font-family: ui-monospace,monospace; color: #4b3f30; font-size: 11px; }
+.vcell-attr-k { color: #8a5a2a; }
+.vcell-edit-btn { margin-left: auto; background: none; border: 1px solid #d9d0bf; border-radius: 3px; padding: 1px 6px; cursor: pointer; font-size: 11px; color: #6b5f53; }
+.vcell-edit-btn:hover { background: #f0ece0; }
+.vcell-body-leaf { margin-top: 5px; padding: 4px 8px; background: #f7f4ec; border-radius: 3px; font-family: ui-monospace,monospace; color: #4b3f30; white-space: pre; overflow: hidden; text-overflow: ellipsis; }
+.vcell-body-children { margin-top: 6px; padding-left: 12px; border-left: 2px solid #e8e0d0; }
+.vcell-attr-form { margin-top: 8px; padding: 8px; background: #fdf4e8; border-radius: 4px; }
+.vcell-attr-form label { display: block; font-size: 11px; color: #4b3f30; margin-bottom: 2px; font-weight: 500; }
+.vcell-attr-form input { width: 100%; box-sizing: border-box; padding: 4px 7px; border: 1px solid #d9d0bf; border-radius: 3px; font-size: 12px; margin-bottom: 5px; background: #fff; }
+.vcell-attr-form .attr-form-actions { display: flex; gap: 6px; }
+.vcell-attr-form button { font-size: 11px; padding: 3px 10px; border-radius: 3px; border: 1px solid #d9d0bf; cursor: pointer; background: #fff; }
+.vcell-attr-form .btn-apply { background: #3a7050; color: #fff; border-color: #3a7050; }
+/* Visual/Source toggle */
+.view-toggle { display: inline-flex; gap: 1px; background: #e8e0d0; border-radius: 5px;
+               padding: 2px; margin-right: 8px; }
+.view-btn { font-size: 11px; padding: 3px 10px; border: none; border-radius: 3px;
+            background: transparent; color: #6b5f53; cursor: pointer; }
+.view-btn:not([disabled]):hover { background: #f5f1e8; }
+.view-btn.view-btn-active { background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.06);
+                             color: #1a1613; font-weight: 500; }
+.view-btn[disabled] { cursor: not-allowed; opacity: 0.45; }
+/* Cell toolbar */
+.vcell-toolbar { display:flex; align-items:center; gap:4px; padding:0 0 5px; flex-wrap:wrap; }
+.vtb-btn { font-size:11px; padding:2px 6px; border:1px solid #d9d0bf; border-radius:3px; background:#fff; cursor:pointer; color:#4b3f30; line-height:1.4; }
+.vtb-btn:hover { background:#f0ece0; border-color:#c4956a; }
+.vtb-del { color:#a04030; border-color:#d9b0a8; }
+.vtb-del:hover { background:#fdecea; border-color:#c04030; }
+/* Insert gutter */
+.vcell-gutter { text-align:center; padding:1px 0; opacity:0; transition:opacity .12s; position:relative; }
+.vcell-gutter:hover,.vcell-gutter:focus-within { opacity:1; }
+.vcell-gutter-btn { font-size:12px; padding:0 14px; line-height:1.6; border:1px dashed #c4956a;
+                     border-radius:3px; background:transparent; color:#c4956a; cursor:pointer; }
+.vcell-gutter-btn:hover { background:#fdf4e8; }
+/* Block picker */
+.block-picker { position:absolute; z-index:200; left:0; top:100%; background:#fff;
+                border:1px solid #d9d0bf; border-radius:6px;
+                box-shadow:0 4px 16px rgba(0,0,0,.1); padding:8px;
+                display:flex; flex-wrap:wrap; gap:4px; max-width:380px; min-width:220px; }
+.bp-kind { font-size:10px; padding:2px 8px; border:1px solid #d9d0bf; border-left-width:3px;
+           border-radius:3px; background:#fff; cursor:pointer; color:#4b3f30;
+           text-transform:uppercase; letter-spacing:.03em; }
+.bp-kind:hover { background:#f0ece0; border-color:#c4956a; }
+/* Drag */
+.vcell[draggable] { cursor:grab; }
+.vcell[draggable]:active { cursor:grabbing; }
+.vcell.dragging { opacity:.35; }
+.vcell.drag-over { outline:2px dashed #c4956a; outline-offset:1px; }
+{% endblock %}
+
+{% block head_actions %}
+<div class="viewport-toggle" style="margin-right: 8px;">
+  <button data-vp="375" title="Mobile (375)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/></svg></button>
+  <button data-vp="768" title="Tablet (768)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></button>
+  <button data-vp="full" class="active" title="Desktop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/></svg></button>
+</div>
+<button class="btn btn-ghost" id="btn-discard">Discard</button>
+<button class="btn btn-secondary" id="btn-save">Save draft</button>
+<button class="btn btn-primary" id="btn-publish">Publish &raquo;</button>
+{% endblock %}
+
+{% block content_class %}flush{% endblock %}
+
+{% block content %}
+<div class="editor-shell">
+
+<div class="tabs-bar">
+  <button class="tab-btn active" data-tab="body">Body</button>
+  <button class="tab-btn" data-tab="frontmatter">Frontmatter</button>
+  <button class="tab-btn" data-tab="seo">SEO <span class="tab-badge" id="seo-badge" style="display:none;">2</span></button>
+  <button class="tab-btn" data-tab="history">History</button>
+  <div class="tabs-meta">
+    <span id="status">{% if from_draft %}draft loaded · base_sha {{ base_sha[:8] }}{% else %}fresh load · base_sha {{ base_sha[:8] }}{% endif %}</span>
+  </div>
+</div>
+
+{# ── BODY TAB ── #}
+<div class="tab-pane active" data-pane="body">
+  <div class="split" id="split-body">
+    <div class="pane">
+      <div class="pane-h">
+        <span class="view-toggle">
+          <button class="view-btn" id="btn-view-visual">Visual</button>
+          <button class="view-btn view-btn-active" id="btn-view-source">Source</button>
+        </span>
+        Markdown
+      </div>
+      <textarea class="body-input" id="body-input">{{ body }}</textarea>
+      <div id="visual-editor" class="visual-editor" style="display:none;"></div>
+    </div>
+    <div class="pane pane-r">
+      <div class="pane-h">Live preview <span style="margin-left:auto;font-family:ui-monospace,monospace;font-size:10px;font-weight:400;text-transform:none;">{{ ref.url }}</span></div>
+      <iframe class="preview-frame" id="preview-iframe" src="{{ url_for('cms.preview', id=page_id) }}"></iframe>
+    </div>
+  </div>
+</div>
+
+{# ── FRONTMATTER TAB ── #}
+<div class="tab-pane" data-pane="frontmatter">
+  <div class="split">
+    <div class="pane">
+      <div class="pane-h">Frontmatter · raw YAML</div>
+      <textarea class="fm-input" id="fm-input">{{ frontmatter }}</textarea>
+    </div>
+    <div class="pane pane-r">
+      <div class="pane-h">Parsed view</div>
+      <div style="padding:18px 24px;font-size:12px;color:#4b3f30;font-family:ui-monospace,monospace;white-space:pre-wrap;" id="fm-parsed"></div>
+    </div>
+  </div>
+</div>
+
+{# ── SEO TAB ── #}
+<div class="tab-pane" data-pane="seo">
+  <div class="seo-pane">
+    <h1 class="page-h" style="font-size:20px;">Search-engine metadata</h1>
+    <p class="page-sub">Typed sub-tree spliced into <code>seo:</code> in frontmatter. Round-trip preserves keys outside <code>seo:</code> byte-for-byte (CMS-SPEC-v2 §8 / wave v2-8).</p>
+
+    <div class="fieldset">
+      <h3>Basic</h3>
+      <div class="seo-row">
+        <label>Meta description <span style="color:#8a7a66;font-weight:400">— shown in search results</span></label>
+        <textarea id="seo-meta-desc" placeholder="A clear 1–2 sentence summary of the page."></textarea>
+        <div class="char-counter" id="cnt-meta">0 / 155 chars</div>
+      </div>
+      <div class="seo-row">
+        <label>Canonical URL <span style="color:#8a7a66;font-weight:400">— for cross-posted content</span></label>
+        <input type="url" id="seo-canonical" placeholder="https://example.com/original-post">
+      </div>
+      <div class="seo-row">
+        <label>Robots</label>
+        <select id="seo-robots"><option value="">(default: index, follow)</option><option value="index,follow">index, follow</option><option value="noindex,nofollow">noindex, nofollow</option><option value="noindex,follow">noindex, follow</option></select>
+      </div>
+    </div>
+
+    <div class="fieldset">
+      <h3>Open Graph (Facebook, LinkedIn)</h3>
+      <div class="seo-row">
+        <label>OG title <span style="color:#8a7a66;font-weight:400">— falls back to page title</span></label>
+        <input type="text" id="seo-og-title">
+        <div class="char-counter" id="cnt-og-title">0 / 70 chars</div>
+      </div>
+      <div class="seo-row">
+        <label>OG description</label>
+        <textarea id="seo-og-desc"></textarea>
+        <div class="char-counter" id="cnt-og-desc">0 / 200 chars</div>
+      </div>
+      <div class="seo-row">
+        <label>OG image URL</label>
+        <input type="url" id="seo-og-image" placeholder="/static/media/.../cover.jpg">
+      </div>
+      <div class="seo-row">
+        <label>OG type</label>
+        <select id="seo-og-type"><option value="">(unset → 'website')</option><option value="article">article</option><option value="website">website</option><option value="book">book</option><option value="profile">profile</option></select>
+      </div>
+    </div>
+
+    <div class="fieldset">
+      <h3>Twitter / X</h3>
+      <div class="seo-row">
+        <label>Card style</label>
+        <select id="seo-twitter-card"><option value="">(unset → 'summary_large_image')</option><option value="summary">summary</option><option value="summary_large_image">summary_large_image</option></select>
+      </div>
+    </div>
+
+    <div class="fieldset">
+      <h3>Schema.org JSON-LD</h3>
+      <div class="seo-row">
+        <label>Type</label>
+        <select id="seo-schema-type"><option value="">(unset)</option><option value="BlogPosting">BlogPosting</option><option value="Article">Article</option><option value="WebPage">WebPage</option><option value="Person">Person</option><option value="ResearchProject">ResearchProject</option><option value="TechArticle">TechArticle</option></select>
+      </div>
+    </div>
+
+    <div style="margin-top:18px; display:flex; gap:8px;">
+      <button class="btn btn-primary" id="btn-seo-save">Save SEO to draft</button>
+      <span style="align-self:center;font-size:11px;color:#8a7a66;" id="seo-status"></span>
+    </div>
+  </div>
+</div>
+
+{# ── HISTORY TAB ── #}
+<div class="tab-pane" data-pane="history">
+  <div class="history-pane">
+    <h1 class="page-h" style="font-size:20px;">Commit history</h1>
+    <p class="page-sub">Per-page commits over <code>{{ ref.source_paths|map('string')|list|first|default('') }}</code>. <a href="{{ url_for('cms.history_landing', id=page_id) }}">Full history page &raquo;</a></p>
+    <div class="history-list" id="history-list">
+      <div style="padding:18px 22px;color:#8a7a66;text-align:center;font-size:12px;">Loading…</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+  var PAGE_ID = {{ page_id|tojson }};
+  var BASE_SHA = {{ base_sha|tojson }};
+  var DRAFT_API = {{ url_for('cms.api_draft_put', id=page_id)|tojson }};
+  var PUBLISH_API = {{ url_for('cms.api_publish', id=page_id)|tojson }};
+  var SEO_GET_API = {{ url_for('cms.api_seo_get', id=page_id)|tojson }};
+  var SEO_PUT_API = {{ url_for('cms.api_seo_put', id=page_id)|tojson }};
+  var PREVIEW_URL = {{ url_for('cms.preview', id=page_id)|tojson }};
+
+  // Tab switcher
+  document.querySelectorAll('.tab-btn').forEach(function(b) {
+    b.addEventListener('click', function() {
+      document.querySelectorAll('.tab-btn').forEach(function(x){ x.classList.remove('active'); });
+      b.classList.add('active');
+      var name = b.dataset.tab;
+      document.querySelectorAll('.tab-pane').forEach(function(p) {
+        p.classList.toggle('active', p.dataset.pane === name);
+      });
+      if (name === 'history') loadHistory();
+      if (name === 'seo') loadSeo();
+    });
+  });
+
+  // Autosave
+  var saveTimer = null;
+  function status(msg, cls) {
+    var s = document.getElementById('status');
+    s.textContent = msg;
+    s.className = cls || '';
+  }
+  function scheduleSave() {
+    clearTimeout(saveTimer);
+    status('typing…', 'saving');
+    saveTimer = setTimeout(saveNow, 2000);
+  }
+  function saveNow() {
+    var body = document.getElementById('body-input').value;
+    var fm = document.getElementById('fm-input').value;
+    status('saving…', 'saving');
+    fetch(DRAFT_API, {
+      method: 'PUT', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({body: body, frontmatter: fm, base_sha: BASE_SHA})
+    }).then(function(r){ return r.json(); }).then(function(j){
+      if (j.ok) {
+        BASE_SHA = j.base_sha;
+        var ts = new Date().toLocaleTimeString();
+        status('saved · ' + ts + ' · base_sha ' + BASE_SHA.slice(0,8), 'saved');
+        document.getElementById('preview-iframe').src = PREVIEW_URL + '&_=' + Date.now();
+      } else status('save failed', '');
+    }).catch(function(){ status('save error', ''); });
+  }
+  document.getElementById('body-input').addEventListener('input', scheduleSave);
+  document.getElementById('fm-input').addEventListener('input', function(){ scheduleSave(); updateFmParsed(); });
+
+  function updateFmParsed() {
+    var fm = document.getElementById('fm-input').value.trim();
+    if (!fm) { document.getElementById('fm-parsed').textContent = '(empty frontmatter)'; return; }
+    document.getElementById('fm-parsed').textContent = fm;
+  }
+  updateFmParsed();
+
+  document.getElementById('btn-save').addEventListener('click', saveNow);
+  document.getElementById('btn-discard').addEventListener('click', function() {
+    if (!confirm('Discard the current draft? On-disk source remains.')) return;
+    fetch({{ url_for('cms.api_draft_delete', id=page_id)|tojson }}, {method: 'DELETE'})
+      .then(function(){ window.toast('Draft discarded'); location.reload(); });
+  });
+  document.getElementById('btn-publish').addEventListener('click', function() {
+    saveNow();
+    setTimeout(function() {
+      if (!confirm('Publish this page? Commits to git and writes to disk.')) return;
+      fetch(PUBLISH_API, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}'})
+        .then(function(r){ return r.json().then(function(j){ return [r.status, j]; }); })
+        .then(function(arr) {
+          var st = arr[0], j = arr[1];
+          if (j.ok) {
+            window.toast('Published · ' + (j.commit_sha||'').slice(0,8));
+            status('published · ' + j.message, 'saved');
+          } else if (st === 409) {
+            window.toast('Conflict — on-disk source has changed');
+          } else {
+            window.toast('Publish failed: ' + (j.message || 'unknown'));
+          }
+        });
+    }, 300);
+  });
+
+  // Viewport toggle
+  document.querySelectorAll('.viewport-toggle button').forEach(function(b) {
+    b.addEventListener('click', function() {
+      document.querySelectorAll('.viewport-toggle button').forEach(function(x){ x.classList.remove('active'); });
+      b.classList.add('active');
+      var iframe = document.getElementById('preview-iframe');
+      var vp = b.dataset.vp;
+      if (vp === 'full') iframe.style.width = '100%';
+      else iframe.style.width = vp + 'px';
+      iframe.style.margin = vp === 'full' ? '0' : '0 auto';
+      iframe.style.display = 'block';
+    });
+  });
+
+  // SEO load + save
+  function loadSeo() {
+    fetch(SEO_GET_API).then(function(r){ return r.json(); }).then(function(j){
+      var s = j.seo || {};
+      document.getElementById('seo-meta-desc').value = s.meta_description || '';
+      document.getElementById('seo-canonical').value = s.canonical || '';
+      document.getElementById('seo-robots').value = s.robots || '';
+      var og = s.og || {};
+      document.getElementById('seo-og-title').value = og.title || '';
+      document.getElementById('seo-og-desc').value = og.description || '';
+      document.getElementById('seo-og-image').value = og.image || '';
+      document.getElementById('seo-og-type').value = og.type || '';
+      var tw = s.twitter || {};
+      document.getElementById('seo-twitter-card').value = tw.card || '';
+      document.getElementById('seo-schema-type').value = s.schema_type || '';
+      updateSeoBadge();
+      updateCounters();
+    });
+  }
+  function updateCounters() {
+    var pairs = [['seo-meta-desc','cnt-meta',155],['seo-og-title','cnt-og-title',70],['seo-og-desc','cnt-og-desc',200]];
+    pairs.forEach(function(p){
+      var el = document.getElementById(p[0]); var c = document.getElementById(p[1]);
+      if (!el || !c) return;
+      var n = el.value.length;
+      c.textContent = n + ' / ' + p[2] + ' chars';
+      c.classList.toggle('over', n > p[2]);
+    });
+  }
+  function updateSeoBadge() {
+    var fields = ['seo-meta-desc','seo-canonical','seo-robots','seo-og-title','seo-og-desc','seo-og-image','seo-og-type','seo-twitter-card','seo-schema-type'];
+    var n = fields.filter(function(id){ return (document.getElementById(id)||{}).value; }).length;
+    var b = document.getElementById('seo-badge');
+    if (n > 0) { b.textContent = n; b.style.display = 'inline-block'; } else b.style.display = 'none';
+  }
+  ['seo-meta-desc','seo-og-title','seo-og-desc'].forEach(function(id){
+    var el = document.getElementById(id); if (el) el.addEventListener('input', updateCounters);
+  });
+  document.getElementById('btn-seo-save').addEventListener('click', function() {
+    var seo = {};
+    var md = document.getElementById('seo-meta-desc').value; if (md) seo.meta_description = md;
+    var cn = document.getElementById('seo-canonical').value; if (cn) seo.canonical = cn;
+    var rb = document.getElementById('seo-robots').value; if (rb) seo.robots = rb;
+    var og = {};
+    ['title','description','image','type'].forEach(function(k){
+      var v = document.getElementById('seo-og-'+(k==='description'?'desc':k)).value;
+      if (v) og[k] = v;
+    });
+    if (Object.keys(og).length) seo.og = og;
+    var twc = document.getElementById('seo-twitter-card').value;
+    if (twc) seo.twitter = {card: twc};
+    var st = document.getElementById('seo-schema-type').value;
+    if (st) seo.schema_type = st;
+    document.getElementById('seo-status').textContent = 'saving…';
+    fetch(SEO_PUT_API, {method: 'PUT', headers: {'Content-Type':'application/json'}, body: JSON.stringify({seo: seo})})
+      .then(function(r){ return r.json(); }).then(function(j){
+        if (j.ok) {
+          document.getElementById('seo-status').textContent = 'saved to draft';
+          document.getElementById('fm-input').value = j.frontmatter; updateFmParsed();
+          window.toast('SEO saved');
+          updateSeoBadge();
+        } else document.getElementById('seo-status').textContent = 'save failed';
+      });
+  });
+
+  // History
+  var historyLoaded = false;
+  function loadHistory() {
+    if (historyLoaded) return;
+    historyLoaded = true;
+    fetch({{ url_for('cms.api_history', id=page_id)|tojson }})
+      .then(function(r){ return r.json(); })
+      .then(function(j) {
+        var html = '';
+        if (!j.commits || j.commits.length === 0) {
+          html = '<div style="padding:18px 22px;color:#8a7a66;text-align:center;font-size:12px;">No commits yet.</div>';
+        } else {
+          j.commits.forEach(function(c){
+            html += '<div class="commit-row">' +
+              '<span class="commit-sha">' + c.short_sha + '</span>' +
+              '<div><div>' + (c.subject || '') + '</div>' +
+              '<div class="commit-meta">' + (c.author || '') + ' · ' + (c.date || '').slice(0,10) + '</div></div>' +
+              '<a href="' + {{ url_for('cms.history_diff', id=page_id, **{'from':'__SHA__'})|tojson }}.replace('__SHA__', c.sha) + '" class="btn btn-ghost">Diff</a>' +
+              '</div>';
+          });
+        }
+        document.getElementById('history-list').innerHTML = html;
+      });
+  }
+  // ── Visual / Source toggle (v2-2) ─────────────────────────────────
+
+  var PARSE_URL     = {{ url_for('cms.api_blocks_parse')|tojson }};
+  var SERIALIZE_URL = {{ url_for('cms.api_blocks_serialize')|tojson }};
+  var BLOCK_COLORS  = {
+    callout:'#c4956a', columns:'#3a7050', column:'#3a7050', image:'#5a6e9a',
+    code:'#4a3a5a', embed:'#5a8a5a', divider:'#8a8a8a', button:'#3a7090',
+    gallery:'#7a5a4a', heading:'#4a3a8a', paragraph:'#4a6a4a', hero:'#8a3a3a',
+    'section-hero':'#8a3a3a','section-feature-grid':'#5a6e3a','section-cta':'#3a5a8a'
+  };
+  var _visualMode   = false;
+  var _visualSource = '';
+  var _dragSrc      = null;
+
+  function escHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
+                    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── markDirty: serialize current visual tree → sync body-input → autosave
+  function markDirty() {
+    var ve = document.getElementById('visual-editor');
+    var nodes = collectNodes(ve).map(function(n){
+      return Object.assign({}, n, {dirty: true});
+    });
+    fetch(SERIALIZE_URL, {method:'POST', headers:{'Content-Type':'application/json'},
+                          body: JSON.stringify({nodes: nodes, source: _visualSource})})
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) return;
+        document.getElementById('body-input').value = j.body;
+        _visualSource = j.body;
+        scheduleSave();
+      });
+  }
+
+  // ── Cell rendering ────────────────────────────────────────────────
+
+  function renderNode(node) {
+    return node.type === 'raw' ? renderRaw(node) : renderBlock(node);
+  }
+
+  function renderRaw(node) {
+    var div = document.createElement('div');
+    div.className = 'vcell vcell-raw';
+    div.draggable = true;
+    div.dataset.nodeJson = JSON.stringify(node);
+    var preview = node.text.replace(/\n/g, '↵ ').trim().slice(0, 140);
+    if (node.text.trim().length > 140) preview += '…';
+    var tb = '<div class="vcell-toolbar">'
+      + '<span class="vcell-kind" style="background:#8a7a66;font-size:9px">text</span>'
+      + '<span style="flex:1"></span>'
+      + '<button class="vtb-btn" data-action="up" title="Move up">↑</button>'
+      + '<button class="vtb-btn" data-action="down" title="Move down">↓</button>'
+      + '<button class="vtb-btn" data-action="dup" title="Duplicate">⎘</button>'
+      + '<button class="vtb-btn vtb-del" data-action="del" title="Delete">×</button></div>';
+    div.innerHTML = tb + '<span class="vcell-raw-text">'
+      + escHtml(preview || '(empty)') + '</span>';
+    bindCellEvents(div, node);
+    return div;
+  }
+
+  function renderBlock(node) {
+    var color = BLOCK_COLORS[node.kind] || '#8a7a66';
+    var div = document.createElement('div');
+    div.className = 'vcell vcell-block';
+    div.draggable = true;
+    div.style.borderLeftColor = color;
+    div.dataset.nodeJson = JSON.stringify(node);
+    var attrsHtml = '';
+    if (node.attrs && node.attrs.length) {
+      attrsHtml = '<span class="vcell-attrs">' + node.attrs.map(function(a){
+        return '<span class="vcell-attr"><span class="vcell-attr-k">'
+          + escHtml(a[0]) + '</span>=' + escHtml(a[1]) + '</span>';
+      }).join('') + '</span>';
+    }
+    var tb = '<div class="vcell-toolbar">'
+      + '<span class="vcell-kind" style="background:' + color + '">' + escHtml(node.kind) + '</span>'
+      + attrsHtml
+      + '<span style="flex:1"></span>'
+      + '<button class="vtb-btn vtb-edit" title="Edit attrs">✎</button>'
+      + '<button class="vtb-btn" data-action="up" title="Move up">↑</button>'
+      + '<button class="vtb-btn" data-action="down" title="Move down">↓</button>'
+      + '<button class="vtb-btn" data-action="dup" title="Duplicate">⎘</button>'
+      + '<button class="vtb-btn vtb-del" data-action="del" title="Delete">×</button></div>';
+    var bodyHtml = '';
+    if (typeof node.body === 'string') {
+      var p = node.body.trim().slice(0, 90);
+      if (node.body.trim().length > 90) p += '…';
+      bodyHtml = '<div class="vcell-body-leaf">' + escHtml(p || '(empty)') + '</div>';
+    } else if (Array.isArray(node.body) && node.body.length) {
+      bodyHtml = '<div class="vcell-body-children">'
+        + node.body.map(function(c){ return renderNode(c).outerHTML; }).join('')
+        + '</div>';
+    }
+    div.innerHTML = tb + bodyHtml;
+    bindCellEvents(div, node);
+    return div;
+  }
+
+  // ── Event binding (separated so clone+rebind works) ───────────────
+
+  function bindCellEvents(cellEl, _ignored) {
+    // Toolbar up/down/dup/del
+    cellEl.querySelectorAll('[data-action]').forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var action = btn.dataset.action;
+        var ve = document.getElementById('visual-editor');
+        var cells = Array.from(ve.querySelectorAll(':scope > .vcell'));
+        var idx = cells.indexOf(cellEl);
+        if (action === 'up' && idx > 0) {
+          ve.insertBefore(cellEl, cells[idx - 1]);
+          rebuildGutters(); markDirty();
+        } else if (action === 'down' && idx < cells.length - 1) {
+          ve.insertBefore(cells[idx + 1], cellEl);
+          rebuildGutters(); markDirty();
+        } else if (action === 'dup') {
+          var nd = JSON.parse(cellEl.dataset.nodeJson);
+          nd.dirty = true;
+          var clone = renderNode(nd);
+          ve.insertBefore(clone, cellEl.nextSibling);
+          rebuildGutters(); markDirty();
+        } else if (action === 'del') {
+          if (!confirm('Delete this block?')) return;
+          cellEl.remove();
+          rebuildGutters(); markDirty();
+        }
+      });
+    });
+    // Edit-attrs button (blocks only)
+    var editBtn = cellEl.querySelector('.vtb-edit');
+    if (editBtn) {
+      editBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        openAttrEditor(cellEl);
+      });
+    }
+    // HTML5 drag-reorder
+    cellEl.addEventListener('dragstart', function(e){
+      _dragSrc = cellEl;
+      cellEl.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', '');
+    });
+    cellEl.addEventListener('dragend', function(){
+      cellEl.classList.remove('dragging');
+      document.querySelectorAll('.vcell.drag-over').forEach(function(el){
+        el.classList.remove('drag-over');
+      });
+    });
+    cellEl.addEventListener('dragover', function(e){
+      if (_dragSrc && _dragSrc !== cellEl) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        document.querySelectorAll('.vcell.drag-over').forEach(function(el){
+          el.classList.remove('drag-over');
+        });
+        cellEl.classList.add('drag-over');
+      }
+    });
+    cellEl.addEventListener('drop', function(e){
+      e.preventDefault();
+      if (!_dragSrc || _dragSrc === cellEl) return;
+      cellEl.classList.remove('drag-over');
+      var ve = document.getElementById('visual-editor');
+      var cells = Array.from(ve.querySelectorAll(':scope > .vcell'));
+      var srcIdx = cells.indexOf(_dragSrc);
+      var dstIdx = cells.indexOf(cellEl);
+      if (srcIdx < dstIdx) ve.insertBefore(_dragSrc, cellEl.nextSibling);
+      else ve.insertBefore(_dragSrc, cellEl);
+      _dragSrc = null;
+      rebuildGutters(); markDirty();
+    });
+  }
+
+  function openAttrEditor(cellEl) {
+    var existing = cellEl.querySelector('.vcell-attr-form');
+    if (existing) { existing.remove(); return; }
+    var node = JSON.parse(cellEl.dataset.nodeJson);
+    var form = document.createElement('div');
+    form.className = 'vcell-attr-form';
+    var fields = (node.attrs || []).map(function(a){
+      return '<label>' + escHtml(a[0])
+        + '</label><input data-key="' + escHtml(a[0])
+        + '" value="' + escHtml(a[1]) + '">';
+    }).join('');
+    if (!fields) fields = '<p style="font-size:11px;color:#8a7a66;margin:0 0 6px">No attributes.</p>';
+    form.innerHTML = fields
+      + '<div class="attr-form-actions">'
+      + '<button class="btn-apply">Apply</button>'
+      + '<button class="btn-cancel">Cancel</button></div>';
+    form.querySelector('.btn-apply').addEventListener('click', function(){
+      var newAttrs = (node.attrs || []).map(function(a){
+        var inp = form.querySelector('input[data-key="' + a[0] + '"]');
+        return [a[0], inp ? inp.value : a[1]];
+      });
+      var updated = Object.assign({}, node, {attrs: newAttrs, dirty: true});
+      cellEl.dataset.nodeJson = JSON.stringify(updated);
+      var attrsEl = cellEl.querySelector('.vcell-attrs');
+      if (attrsEl) {
+        attrsEl.innerHTML = newAttrs.map(function(a){
+          return '<span class="vcell-attr"><span class="vcell-attr-k">'
+            + escHtml(a[0]) + '</span>=' + escHtml(a[1]) + '</span>';
+        }).join('');
+      }
+      form.remove();
+      markDirty();
+    });
+    form.querySelector('.btn-cancel').addEventListener('click', function(){ form.remove(); });
+    cellEl.appendChild(form);
+  }
+
+  function collectNodes(container) {
+    var nodes = [];
+    container.querySelectorAll(':scope > .vcell').forEach(function(el){
+      nodes.push(JSON.parse(el.dataset.nodeJson));
+    });
+    return nodes;
+  }
+
+  // ── Insert gutter ─────────────────────────────────────────────────
+
+  var INSERTABLE_KINDS = Object.keys(BLOCK_COLORS);
+
+  function makeGutter() {
+    var g = document.createElement('div');
+    g.className = 'vcell-gutter';
+    var btn = document.createElement('button');
+    btn.className = 'vcell-gutter-btn';
+    btn.title = 'Insert block here';
+    btn.textContent = '＋';
+    g.appendChild(btn);
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      openBlockPicker(g);
+    });
+    return g;
+  }
+
+  function openBlockPicker(gutterEl) {
+    var existing = document.querySelector('.block-picker');
+    if (existing) {
+      var wasHere = existing._anchor === gutterEl;
+      existing.remove();
+      if (wasHere) return;
+    }
+    var picker = document.createElement('div');
+    picker.className = 'block-picker';
+    picker._anchor = gutterEl;
+    INSERTABLE_KINDS.forEach(function(k){
+      var btn = document.createElement('button');
+      btn.className = 'bp-kind';
+      btn.style.borderLeftColor = BLOCK_COLORS[k] || '#8a7a66';
+      btn.textContent = k;
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        picker.remove();
+        var newNode = {type:'block', kind:k, attrs:[], body:'', level:0, dirty:true, span:[0,0]};
+        var cell = renderNode(newNode);
+        var ve = document.getElementById('visual-editor');
+        // Insert after the next .vcell sibling of this gutter (i.e. before the cell after gutter)
+        var nextCell = gutterEl.nextElementSibling;
+        while (nextCell && !nextCell.classList.contains('vcell')) nextCell = nextCell.nextElementSibling;
+        if (nextCell) ve.insertBefore(cell, nextCell);
+        else ve.appendChild(cell);
+        rebuildGutters();
+        markDirty();
+      });
+      picker.appendChild(btn);
+    });
+    gutterEl.appendChild(picker);
+    setTimeout(function(){
+      function outsideClose(e) {
+        var btn = gutterEl.querySelector('.vcell-gutter-btn');
+        if (!picker.contains(e.target) && e.target !== btn) {
+          picker.remove();
+          document.removeEventListener('click', outsideClose);
+        }
+      }
+      document.addEventListener('click', outsideClose);
+    }, 10);
+  }
+
+  function rebuildGutters() {
+    var ve = document.getElementById('visual-editor');
+    ve.querySelectorAll('.vcell-gutter').forEach(function(g){ g.remove(); });
+    var cells = Array.from(ve.querySelectorAll(':scope > .vcell'));
+    if (cells.length === 0) { ve.appendChild(makeGutter()); return; }
+    ve.insertBefore(makeGutter(), cells[0]);
+    cells.forEach(function(cell){ ve.insertBefore(makeGutter(), cell.nextSibling); });
+  }
+
+  // ── Mode toggle ───────────────────────────────────────────────────
+
+  function switchToVisual() {
+    var body = document.getElementById('body-input').value;
+    _visualSource = body;
+    fetch(PARSE_URL, {method:'POST', headers:{'Content-Type':'application/json'},
+                      body: JSON.stringify({body: body})})
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) { alert('Parse error: ' + j.error); return; }
+        var ve = document.getElementById('visual-editor');
+        ve.innerHTML = '';
+        j.nodes.forEach(function(n){ ve.appendChild(renderNode(n)); });
+s();
+        document.getElementById('body-input').style.display = 'none';
+        ve.style.display = 'flex';
+        ve.style.flexDirection = 'column';
+        document.getElementById('btn-view-visual').classList.add('view-btn-active');
+        document.getElementById('btn-view-source').classList.remove('view-btn-active');
+        _visualMode = true;
+      });
+  }
+
+  function switchToSource() {
+    if (!_visualMode) return;
+    var ve = document.getElementById('visual-editor');
+    var nodes = collectNodes(ve);
+    var hasDirty = nodes.some(function(n){ return n.dirty; });
+    function restore(body) {
+      document.getElementById('body-input').value = body;
+      document.getElementById('body-input').style.display = '';
+      ve.style.display = 'none';
+      document.getElementById('btn-view-source').classList.add('view-btn-active');
+      document.getElementById('btn-view-visual').classList.remove('view-btn-active');
+      _visualMode = false;
+      scheduleSave();
+    }
+    if (!hasDirty) { restore(_visualSource); return; }
+    fetch(SERIALIZE_URL, {method:'POST', headers:{'Content-Type':'application/json'},
+                          body: JSON.stringify({nodes: nodes, source: _visualSource})})
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (!j.ok) { alert('Serialize error: ' + j.error); return; }
+        restore(j.body);
+      });
+  }
+
+  document.getElementById('btn-view-visual').addEventListener('click', function(){
+    if (!_visualMode) switchToVisual();
+  });
+  document.getElementById('btn-view-source').addEventListener('click', function(){
+    if (_visualMode) switchToSource();
+  });
+
+</script>
+{% endblock %}

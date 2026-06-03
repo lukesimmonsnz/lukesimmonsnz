@@ -1,0 +1,21 @@
+id: claim.southland.economy.economic_diversification_trend
+statement: Economic diversification in Southland faces structural constraints. Smelter
+  power contract extended to 2026 (subject to review); dairy commodity prices volatile;
+  tourism recovery post-COVID at ~65% of pre-pandemic visitor numbers. Fiordland Department
+  of Conservation infrastructure constraints limit visitation growth. Regional unemployment
+  remains near national average despite rural employment concentration.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

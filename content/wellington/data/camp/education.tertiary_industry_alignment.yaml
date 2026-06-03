@@ -1,0 +1,21 @@
+id: camp.wellington.education.tertiary_industry_alignment
+name: Tertiary-Industry Alignment and Workforce Signalling
+theme: education
+core_claim: Better alignment between Wellington's tertiary programmes and regional skill gaps — particularly in construction
+  and health — will improve employment outcomes.
+flagship_moves:
+- Wellington skills accord between WelTec, Whitireia, and major employers
+- Employer advisory panels for curriculum design in health, construction, and tech
+- Micro-credential recognition for industry upskilling pathways
+tensions:
+- Industry-aligned curricula risk over-specialisation and limit graduate adaptability
+- Employer participation in curriculum advisory is inconsistent and hard to mandate
+addresses:
+- problem.wellington.education.tertiary_access
+interventions:
+- description: Establish Wellington Skills Accord between Te Pūkenga, WelTec, and 20 major Wellington employers
+  state_variable: graduate_employment_alignment
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

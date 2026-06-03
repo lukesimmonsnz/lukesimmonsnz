@@ -1,0 +1,20 @@
+id: claim.marlborough.inequality.seasonal_worker_conditions_1
+statement: 'Marlborough RSE (Recognized Seasonal Employer) worker population (primarily
+  Pacific Islanders): approximately 12,000–15,000 annually; visa tied to single employer;
+  accommodation, transport, and financial services deduction practices variable; MSD
+  monitoring indicates compliance gaps.'
+value: 13500
+unit: RSE workers in Marlborough harvest season
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

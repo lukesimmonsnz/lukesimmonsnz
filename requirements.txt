@@ -1,10 +1,10 @@
-Flask>=3.0
-python-dotenv>=1.0
-Pillow>=10.0
-Markdown>=3.5
-python-frontmatter>=1.1
-Pygments>=2.17
-requests>=2.31
-PyYAML>=6.0
-jsonschema>=4.21
-tzdata>=2024.1 ; platform_system == "Windows"
+Flask==3.1.3
+python-dotenv==1.2.2
+Pillow==12.2.0
+Markdown==3.10.2
+python-frontmatter==1.1.0
+Pygments==2.20.0
+requests==2.33.1
+PyYAML==6.0.3
+jsonschema==4.26.0
+tzdata==2026.1

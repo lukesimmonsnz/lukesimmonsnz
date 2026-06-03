@@ -1,0 +1,41 @@
+id: problem.wellington.climate.compound_hazard_risk
+title: Compound earthquake-climate risk in Wellington
+theme: climate-adaptation
+section: climate
+subpage: compound-hazard-risk
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Wellington faces an unusual and severe compound hazard profile: high-probability major earthquake risk intersects
+  with climate change impacts including sea-level rise, increased rainfall intensity, and coastal storm surge. These hazards
+  interact: a major earthquake that subsides coastal land permanently increases sea-level-rise exposure; climate-driven flooding
+  may be followed by earthquake-damaged drainage infrastructure.'
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - compound_hazard_exposure_index
+  - fault_rupture_probability_100yr
+  inputs:
+  - fault_rupture_magnitude
+  - sea_level_rise_trajectory
+  constraints:
+  - urban_development_on_reclaimed_land
+  - fault_zone_land_use_planning
+  feedback_loops:
+  - 'Compound amplification: earthquake land subsidence permanently increases coastal flood exposure; infrastructure damaged
+    by earthquake reduces climate resilience of the built environment.'
+narrative:
+- heading: Wellington Fault rupture probability
+  body: GNS Science estimates that the Wellington Fault has approximately an 8–11% probability of rupturing in the next 100
+    years, producing a Mw 7.4–7.9 earthquake directly beneath the city — one of the highest-probability major earthquake risks
+    of any capital city in the world (claim.wellington.climate.wellington_fault_rupture_probability).
+- heading: Compound hazard amplification
+  body: Wellington's compound hazard profile — earthquake plus sea-level rise plus intensified storms — means that standard
+    single-hazard risk assessments underestimate actual exposure. Infrastructure must be designed to function under combinations
+    of hazards that were previously treated as independent (claim.wellington.climate.compound_hazard_infrastructure_risk).
+claim_ids:
+- claim.wellington.climate.wellington_fault_rupture_probability
+- claim.wellington.climate.compound_hazard_infrastructure_risk
+status: draft
+time_horizons: [generation, century]

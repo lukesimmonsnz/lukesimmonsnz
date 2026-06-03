@@ -1,0 +1,48 @@
+id: problem.canterbury.inequality.inequality
+title: Canterbury Socioeconomic Inequality & Spatial Disparity
+theme: inequality
+section: inequality
+subpage: inequality
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury exhibits stark spatial inequality, with East Christchurch (Aranui,
+  Ranui, Shirley) and South Canterbury (Timaru) showing decile 9-10 deprivation concentration,
+  while inner-suburban and western zones (Merivale, Harewood) are decile 1-3. Child
+  poverty rates in East Christchurch exceed 30%; income inequality (Gini) is rising.
+  Earthquake recovery has reinforced pre-existing spatial divides.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - nzdep_decile_distribution_spatial
+  - child_poverty_rate_by_area
+  - income_gini_ratio
+  - median_household_income_by_suburb
+  inputs:
+  - employment_opportunity_spatial_distribution
+  - housing_affordability_by_area
+  - education_attainment_intergenerational
+  constraints:
+  - historical_red_lining_heritage
+  - ethnic_concentration_patterns
+  - employment_centre_proximity
+  feedback_loops:
+  - 'Spatial poverty trap: low-income concentrations reduce local service quality
+    (schools, healthcare), deterring investment and driving further exodus of higher-income
+    residents.'
+narrative:
+- heading: Post-earthquake divergence
+  body: 'Earthquake rebuild investment was spatially unequal. Red-zone areas (east
+    Christchurch) received less intensive rebuild infrastructure, reinforcing pre-quake
+    inequality. Waimakariri/Selwyn greenfield development attracts higher-income in-migrants,
+    widening regional spread.
+
+    '
+claim_ids:
+- claim.canterbury.inequality.ethnic_income_gap_2023
+- claim.canterbury.inequality.ncea_pass_rate_disparity_2023
+status: draft
+time_horizons: [decade, generation, century]

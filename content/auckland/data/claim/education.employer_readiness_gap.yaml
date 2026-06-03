@@ -1,20 +1,20 @@
 id: claim.auckland.education.employer_readiness_gap
-statement: >
-  Auckland employers consistently report that school leavers lack
-  foundational literacy, numeracy, and workplace readiness skills;
-  the gap is largest for Maori and Pacific school leavers from South
-  and West Auckland, reflecting both lower NCEA attainment and
-  thinner networks connecting school to employer opportunity.
+statement: 'Auckland employers consistently report that school leavers lack foundational
+  literacy, numeracy, and workplace readiness skills; the gap is largest for Maori
+  and Pacific school leavers from South and West Auckland, reflecting both lower NCEA
+  attainment and thinner networks connecting school to employer opportunity.
+
+  '
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.tertiary_education_commission_2023
+- source.tertiary_education_commission_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

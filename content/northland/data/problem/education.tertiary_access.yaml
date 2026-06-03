@@ -1,0 +1,34 @@
+id: problem.northland.education.tertiary_access
+title: Tertiary education access and participation
+theme: education
+section: education
+subpage: tertiary-access
+parent: problem.northland.education.northland_education_inequity
+order: 3
+updated: '2026-04-26'
+summary: Geographic and financial barriers limit Northland residents' access to tertiary
+  education, reinforcing intergenerational low-income patterns.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - education_pressure_index
+  inputs:
+  - policy_intervention
+  - external_shock
+  constraints:
+  - fiscal_capacity
+  feedback_loops:
+  - 'Feedback: deteriorating tertiary access conditions reinforce systemic disadvantage.'
+narrative:
+- heading: Scale and distribution
+  body: Geographic and financial barriers limit Northland residents' access to tertiary
+    education, reinforcing intergenerational low-income patterns.
+- heading: Key drivers
+  body: The primary drivers of tertiary education access and participation are structural
+    and systemic, requiring both investment and institutional reform.
+claim_ids:
+- claim.northland.education.tertiary_access_claim1
+- claim.northland.education.tertiary_access_claim2
+status: draft
+time_horizons: [decade, generation]

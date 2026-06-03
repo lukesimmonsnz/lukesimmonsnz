@@ -58,3 +58,4 @@ claim_ids:
   - claim.auckland.crime.youth_reoffending_rate
   - claim.auckland.crime.school_disengagement_pipeline
 status: draft
+time_horizons: [decade]

@@ -1,20 +1,20 @@
 id: claim.auckland.health.auckland_ed_wait_times
-statement: >
-  Auckland City Hospital and Middlemore Hospital consistently fail the
-  six-hour ED departure target; Middlemore in particular operates at
-  120-130% occupancy during winter peaks, with ambulance ramping
-  regularly exceeding two hours. Primary care access deficits drive
-  a significant share of avoidable ED presentations.
+statement: 'Auckland City Hospital and Middlemore Hospital consistently fail the six-hour
+  ED departure target; Middlemore in particular operates at 120-130% occupancy during
+  winter peaks, with ambulance ramping regularly exceeding two hours. Primary care
+  access deficits drive a significant share of avoidable ED presentations.
+
+  '
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.health_nz_annual_report_2023
+- source.health_nz_annual_report_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

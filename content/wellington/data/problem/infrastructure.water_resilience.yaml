@@ -1,0 +1,39 @@
+id: problem.wellington.infrastructure.water_resilience
+title: Aging and earthquake-vulnerable water network in Wellington
+theme: infrastructure
+section: infrastructure
+subpage: water-resilience
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wellington's reticulated water supply network is among the oldest in New Zealand and sits across multiple active
+  fault lines. The combination of pipe age, seismic vulnerability, and deferred capital investment creates chronic service
+  reliability issues and acute post-earthquake risk. Wellington Water has estimated multi-billion-dollar replacement requirements.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - pipe_age_profile_years
+  - water_main_break_frequency
+  - post_earthquake_supply_days
+  inputs:
+  - capital_renewal_rate
+  - earthquake_ground_motion
+  constraints:
+  - funding_envelope_constraint
+  - fault_line_pipe_alignment
+  feedback_loops:
+  - 'Deferred-renewal spiral: insufficient renewal funding allows older pipes to remain in service; break frequency rises,
+    increasing reactive maintenance costs and further reducing renewal budget.'
+narrative:
+- heading: Chronic pipe failure
+  body: Wellington Water reports approximately 500 water main breaks per year across the greater Wellington network, a rate
+    that reflects the age and material composition of the pipe stock — much of it cast iron laid before 1950 (claim.wellington.infrastructure.water_main_break_frequency).
+- heading: Age profile and renewal gap
+  body: A large share of Wellington's water mains are more than 70 years old and well past their design service life. The
+    annual renewal rate is insufficient to prevent the average age from increasing, deepening the long-term risk profile (claim.wellington.infrastructure.water_pipe_age_profile).
+claim_ids:
+- claim.wellington.infrastructure.water_main_break_frequency
+- claim.wellington.infrastructure.water_pipe_age_profile
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,36 @@
+id: problem.nelson.economy.economic_3
+title: Horticulture under input-cost and water pressure
+theme: economy
+section: economy
+subpage: economic_3
+parent: economic_structure
+order: 3
+updated: '2026-04-26'
+summary: Nelson-Tasman horticulture (apples, kiwifruit, pipfruit, hops) generates around $280-320 million in annual revenue across roughly 8,900 hectares and supports more than 2,100 FTE in primary production. Rising input costs (labour, water, pest management), water-availability constraints, and seasonal-labour shortages have left grower incomes flat or declining in real terms since 2019.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - horticulture_revenue_nzd_m
+  - hectares_in_production
+  - rse_seasonal_workers
+  inputs:
+  - water_allocation
+  - labour_visa_settings
+  - international_fruit_price
+  constraints:
+  - seasonal_accommodation_capacity
+  - frost_and_heat_events
+  feedback_loops:
+  - 'Input-cost-accommodation feedback: rising input costs push growers to accept tighter margins; thin margins discourage capital investment in worker accommodation, deepening the labour bottleneck.'
+narrative:
+- heading: Anchor crops and structural margin compression
+  body: 'The Tasman district and Nelson rural fringe host one of New Zealand''s densest fruit-growing regions, anchored by apples (particularly the Heretaunga / Motueka growing belt) and supported by hops, kiwifruit, and emerging crops (claim.nelson.economy.economic_3_claim). Margin compression is real: input costs have outpaced farmgate prices for several seasons.'
+- heading: Labour and water as the binding constraints
+  body: Seasonal labour comes mainly through Recognised Seasonal Employer (RSE) workers and working-holiday visa holders, with grower-supplied accommodation an increasingly binding bottleneck. Water reliability through the Waimea Community Dam improves the irrigation outlook but does not remove the longer-run climate risk to yields and pest pressure.
+claim_ids:
+- claim.nelson.economy.economic_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

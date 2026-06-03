@@ -1,0 +1,13 @@
+id: driver.west_coast.economy.driver_1
+name: Concentrated extractive-and-primary economic portfolio
+description: The regional economy is concentrated in coal mining, dairy, forestry and tourism, with limited knowledge-economy
+  or services depth. Concentration is the underlying source of the volatility revealed by the Solid Energy collapse.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.economy.economic_structure
+- problem.west_coast.economy.economic_2
+claim_ids: []

@@ -1,0 +1,20 @@
+id: claim.wellington.crime.victimisation_rate_2023
+statement: Wellington Police District records a personal victimisation rate of approximately
+  6% annually, with rates in Porirua and parts of Lower Hutt two to three times the
+  Wellington City average, indicating highly concentrated rather than uniformly elevated
+  victimisation.
+value: 6
+unit: percent personal victimisation rate
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

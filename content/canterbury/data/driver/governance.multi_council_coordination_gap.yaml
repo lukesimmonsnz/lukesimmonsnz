@@ -1,0 +1,12 @@
+id: driver.canterbury.governance.multi_council_coordination_gap
+name: Multi-Council Coordination Gaps (CCC, Waimakariri, Selwyn, ECan)
+description: Multi-Council Coordination Gaps (CCC, Waimakariri, Selwyn, ECan)
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.governance.governance
+- problem.canterbury.governance.water_management
+claim_ids: []

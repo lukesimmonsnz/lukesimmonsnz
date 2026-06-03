@@ -1,0 +1,21 @@
+id: claim.wellington.housing.supply_consent_shortfall
+statement: Wellington's annual residential building consent volumes have consistently
+  fallen short of the dwelling additions needed to keep pace with household formation,
+  with the consent pipeline constrained by topographic complexity, earthquake-prone
+  building compliance costs, and limited development-ready flat land.
+value: null
+unit: null
+time_period: 2018-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mhud_housing_aotearoa_2023
+- source.wcc_housing_capacity_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

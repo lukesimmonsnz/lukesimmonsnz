@@ -1,0 +1,12 @@
+id: driver.otago.infrastructure.rural_digital_cost
+name: Rural Broadband Deployment Cost Barriers
+description: Low population density, topography, and private sector economics limit
+  fibre rollout.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.infrastructure.digital_rural
+claim_ids: []

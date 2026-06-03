@@ -1,0 +1,40 @@
+id: problem.wellington.governance.treaty_co_governance
+title: Treaty co-governance implementation in Wellington
+theme: governance
+section: governance
+subpage: treaty-co-governance
+parent: problem.wellington.governance.local_govt_reform
+order: 3
+updated: '2026-04-26'
+summary: Wellington is the rohe of several iwi — principally Ngāti Toa Rangatira, Te Ātiawa, and Taranaki Whānui — whose Treaty
+  rights and interests are relevant to environmental management, resource consenting, and cultural heritage. Co-governance
+  arrangements are at varying stages of maturity across the Wellington region and are contested in parts of the public discourse.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - co_governance_agreement_count
+  - iwi_capacity_for_participation
+  inputs:
+  - treaty_settlement_progress
+  - government_co_governance_policy
+  constraints:
+  - iwi_governance_resource_capacity
+  - public_understanding_of_treaty_partnership
+  feedback_loops:
+  - 'Capacity-participation loop: iwi with greater governance capacity participate more effectively in co-governance; effective
+    participation generates the resources and recognition that further build capacity.'
+narrative:
+- heading: Ngāti Toa settlement and scope
+  body: The Ngāti Toa Rangatira Treaty settlement (2014) established significant rights and interests across the greater Wellington
+    region, including co-governance of parts of the Kāpiti and Marlborough coasts and cultural redress provisions. Implementation
+    is ongoing (claim.wellington.governance.ngati_toa_settlement_scope).
+- heading: Te Ātiawa and partnership arrangements
+  body: Te Ātiawa ki Whanganui-a-Tara has Treaty interests in Wellington Harbour and surrounding areas, and partnership arrangements
+    with Wellington City Council and Greater Wellington are evolving in the context of the Whaitua freshwater process and
+    resource management reform (claim.wellington.governance.te_atiawa_partnership_arrangements).
+claim_ids:
+- claim.wellington.governance.ngati_toa_settlement_scope
+- claim.wellington.governance.te_atiawa_partnership_arrangements
+status: draft
+time_horizons: [decade, generation, century]

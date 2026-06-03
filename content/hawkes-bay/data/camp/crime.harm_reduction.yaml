@@ -1,0 +1,21 @@
+id: camp.hawkes_bay.crime.harm_reduction
+name: Substance abuse harm reduction and treatment
+theme: crime
+core_claim: Substance abuse harm reduction and treatment is the primary strategy.
+flagship_moves:
+- Implement Substance abuse harm reduction and treatment across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.crime.safety
+- problem.hawkes_bay.crime.drug_crime
+- problem.hawkes_bay.crime.family_violence
+- problem.hawkes_bay.crime.youth_offending
+interventions:
+- description: Substance abuse harm reduction and treatment intervention
+  state_variable: harm_reduction_index
+  constraint_relaxed: harm_reduction_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

@@ -1,0 +1,22 @@
+id: claim.northland.transport.rural_road_quality_claim2
+statement: SH12 (west coast Dargaville-Kaikohe) and SH10 (east coast Whangārei-Kaitāia)
+  secondary spines serve remote communities; frequent closure during heavy rainfall
+  (70–100 mm events). Maintenance funding per km-of-roading among lowest in NZ (population
+  dispersal, limited user charges, high terrain costs). Pothole repair delays 6–12
+  months common in Far North. Strategic alternative routing absent; transport network
+  lacks redundancy.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

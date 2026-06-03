@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.transport.service_frequency
+name: Public Transport Service Frequency And Reliability
+description: Public transport service frequency and reliability with regional implications.
+theme: transport
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.regional_roading
+claim_ids: []

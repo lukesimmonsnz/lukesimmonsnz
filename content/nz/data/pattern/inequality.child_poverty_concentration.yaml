@@ -1,0 +1,35 @@
+id: pattern.inequality.child_poverty_concentration
+title: Child poverty concentration in high-deprivation areas
+theme: inequality
+summary: Child poverty rates are highly concentrated in high-deprivation communities
+  across all regions, with persistent geographic clustering that reproduces across
+  generations.
+manifests_in:
+- auckland
+- wellington
+- northland
+- waikato
+- canterbury
+- gisborne
+- manawatu-whanganui
+- bay-of-plenty
+claim_ids:
+- claim.auckland.inequality.child_poverty_rate_auckland
+- claim.wellington.inequality.child_poverty_rate_porirua
+- claim.northland.inequality.child_poverty_claim1
+- claim.waikato.inequality.child_poverty_25pct
+- claim.canterbury.inequality.child_poverty_rate_high_dep_2023
+- claim.manawatu_whanganui.inequality.child_poverty_1
+narrative:
+- heading: Pattern
+  body: 'Child poverty is not randomly distributed: it clusters in specific suburbs
+    and towns with high Māori and Pasifika populations, limited employment, poor housing,
+    and weak social infrastructure. The geographic pattern is consistent across all
+    urban regions.'
+- heading: Intergenerational lock-in
+  body: Child poverty predicts educational underachievement, health disparities, and
+    constrained employment, which perpetuate poverty into the next generation. The
+    persistence of geographic poverty clusters across decades confirms that market
+    mechanisms alone do not dissolve them.
+status: draft
+updated: '2026-04-26'

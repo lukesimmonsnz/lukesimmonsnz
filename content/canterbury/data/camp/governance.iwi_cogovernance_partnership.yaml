@@ -1,0 +1,20 @@
+id: camp.canterbury.governance.iwi_cogovernance_partnership
+name: Iwi Co-Governance & Partnership in Regional Decision-Making
+theme: governance
+core_claim: Formal co-governance arrangements (shared decision-making, iwi veto rights
+  on cultural/water issues) honor Treaty obligations and improve outcomes.
+flagship_moves:
+- Key intervention for Iwi Co-Governance & Partnership in Regional Decision-Making
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.governance.treaty_ngai_tahu
+interventions:
+- description: Formal co-governance arrangements (shared decision-making, iwi veto
+    rights on cultural/water issues) honor Treaty obligations and improve outcomes.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

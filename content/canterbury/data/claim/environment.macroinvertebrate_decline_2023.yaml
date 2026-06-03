@@ -1,0 +1,22 @@
+id: claim.canterbury.environment.macroinvertebrate_decline_2023
+statement: Macroinvertebrate populations in Canterbury's lowland streams and rivers
+  have declined by 35% over the past decade, primarily in dairy-intensive zones (Waimakariri,
+  Selwyn, Hinds plains). Decline drivers include elevated nitrate (reducing plant
+  growth and shading), reduced flow during irrigation season (particularly Rangitata
+  and Rakaia), and fine sediment from pastoral erosion. This decline cascades to fish
+  populations and aquatic food webs supporting native birds (shags, herons, kakī).
+value: 35
+unit: percent decline
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_state_environment_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

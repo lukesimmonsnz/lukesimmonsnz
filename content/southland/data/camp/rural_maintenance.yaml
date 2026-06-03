@@ -1,0 +1,20 @@
+id: camp.southland.housing.rural_maintenance
+name: Rural Housing Maintenance and Upgrade Support
+theme: housing
+core_claim: Grants and low-interest loans enable rural housing maintenance and upgrade.
+flagship_moves:
+- Rural housing maintenance grant program
+- Low-interest renovation loans
+- Energy efficiency retrofit subsidies
+tensions:
+- Ongoing subsidy requirement
+- Targeting and fairness questions
+addresses:
+- problem.southland.housing.rural_housing
+interventions:
+- description: Support 300 rural housing upgrades over 5 years
+  state_variable: rural_housing_quality
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

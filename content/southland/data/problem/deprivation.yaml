@@ -1,0 +1,38 @@
+id: problem.southland.inequality.deprivation
+title: Deprivation and Regional Inequality
+theme: inequality
+section: inequality
+subpage: deprivation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Invercargill East and rural Southland have high deprivation scores and elevated child poverty
+  rates. A significant gender pay gap persists across the region. Income and employment outcomes in the
+  most affected communities reflect occupational concentration in primary industry, limited access to
+  higher-wage employment, and geographic remoteness from tertiary education and training infrastructure.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Invercargill East and rural Southland record high deprivation scores with elevated child poverty.
+    The gender pay gap in primary-industry-dominated employment is above national average. Workers in freezing works,
+    dairy, and service industries face concentrated housing and income stress. Māori, Pacific, and migrant worker
+    populations are disproportionately represented in these low-wage sectors.
+claim_ids:
+- claim.southland.inequality.child_poverty_trend
+- claim.southland.inequality.rural_isolation_prevalence
+- claim.southland.inequality.child_poverty_prevalence
+- claim.southland.inequality.deprivation_prevalence
+- claim.southland.inequality.invercargill_east_poverty_trend
+- claim.southland.inequality.rural_isolation_trend
+- claim.southland.inequality.invercargill_east_poverty_prevalence
+- claim.southland.inequality.deprivation_trend
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.inequality.deprivation_35_percent_households
+statement: NZDep2018 analysis shows 35% of Hawke's Bay households (circa 28,000) in
+  the most deprived quintile (Q5), concentrated in Hastings suburbs (Flaxmere, Maraenui,
+  Central), Wairoa urban areas, and peripheral Napier. Deprivation deciles 9-10 cluster
+  in Flaxmere (one of NZ's most deprived suburbs) and Wairoa; constrained primary
+  care access, lower life expectancy, and chronic disease prevalence correlate with
+  deprivation geography.
+value: 35
+unit: percent
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

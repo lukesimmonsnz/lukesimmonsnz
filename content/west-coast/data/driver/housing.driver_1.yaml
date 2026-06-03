@@ -1,0 +1,13 @@
+id: driver.west_coast.housing.driver_1
+name: Low local incomes and post-flood insurance retreat
+description: Median local household incomes are low enough that even cheap house prices produce binding affordability ratios.
+  The 2021-22 floods then triggered insurance retreat that collapsed Westport values, generating widespread negative equity.
+theme: housing
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.housing.affordability
+- problem.west_coast.housing.land_supply
+claim_ids: []

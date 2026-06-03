@@ -1,0 +1,16 @@
+id: driver.northland.climate.physical_exposure_driver
+name: Geographic and physical climate exposure
+description: Northland's coastal geography, extensive primary land use, and position
+  in the cyclone belt create inherent physical climate exposure.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.climate.northland_climate
+- problem.northland.climate.coastal_flooding
+- problem.northland.climate.drought_risk
+- problem.northland.climate.cyclone_exposure
+claim_ids:
+- claim.northland.climate.northland_climate_claim1

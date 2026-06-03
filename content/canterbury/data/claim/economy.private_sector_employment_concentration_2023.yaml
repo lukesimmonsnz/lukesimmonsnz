@@ -1,0 +1,20 @@
+id: claim.canterbury.economy.private_sector_employment_concentration_2023
+statement: Economic vulnerabilities in Canterbury include sector concentration, commodity
+  price exposure, and limited business diversification. Labor market challenges, business
+  investment constraints, and workforce skill mismatches limit employment growth and
+  income stability for residents.
+value: 18
+unit: percent agriculture
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

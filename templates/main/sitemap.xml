@@ -14,4 +14,10 @@
     {%- endif %}
   </url>
 {%- endfor %}
+{%- for path in region_urls %}
+  <url>
+    <loc>{{ site_url }}{{ path }}</loc>
+    <lastmod>{{ today }}</lastmod>
+  </url>
+{%- endfor %}
 </urlset>

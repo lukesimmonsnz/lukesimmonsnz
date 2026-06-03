@@ -1,0 +1,11 @@
+id: source.moe_wellington_achievement_2023
+title: 'Education Counts: Wellington Region Achievement Data 2023'
+author: null
+publisher: Ministry of Education
+year: 2023
+url: https://www.educationcounts.govt.nz/statistics/ncea/ncea-attainment
+type: primary-data
+credibility: official
+geo_granularity:
+- wellington
+notes: School-level NCEA attainment, ECE participation, and standown/suspension data for Wellington region schools.

@@ -1,0 +1,21 @@
+id: camp.canterbury.housing.greenfield_release_acceleration
+name: Accelerated Greenfield Release & Growth Boundary Expansion
+theme: housing
+core_claim: Expanding greenfield release in Waimakariri and Selwyn, if coordinated
+  with infrastructure, offers affordable supply to meet demand.
+flagship_moves:
+- Key intervention for Accelerated Greenfield Release & Growth Boundary Expansion
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.housing.selwyn_waimakariri_growth
+- problem.canterbury.housing.market
+interventions:
+- description: Expanding greenfield release in Waimakariri and Selwyn, if coordinated
+    with infrastructure, offers affordable supply to meet demand.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

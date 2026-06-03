@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.inequality.child_poverty_intervention
+name: Intervention for child_poverty
+theme: inequality
+core_claim: Targeted intervention on child_poverty will improve outcomes.
+flagship_moves:
+- Policy measure 1 for child_poverty
+- Policy measure 2 for child_poverty
+- Implementation mechanism for child_poverty
+tensions:
+- Trade-off A for child_poverty
+- Trade-off B for child_poverty
+addresses:
+- problem.bay_of_plenty.inequality.child_poverty
+interventions:
+- description: Core intervention targeting child_poverty
+  state_variable: child_poverty_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

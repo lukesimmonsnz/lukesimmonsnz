@@ -1,0 +1,21 @@
+id: claim.northland.climate.coastal_flooding_claim1
+statement: Northland's extensive coastline (Bay of Islands, Baylys Beach, 1,600+ km)
+  faces increased coastal flooding frequency from sea-level rise (0.3-0.5m by 2100,
+  RCP 6.0) and storm surge intensification. Bay of Islands and Whangarei havens are
+  particularly vulnerable to inundation during 1-in-100-year storm events combined
+  with elevated tide stages.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

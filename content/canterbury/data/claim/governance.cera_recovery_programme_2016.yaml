@@ -1,0 +1,26 @@
+id: claim.canterbury.governance.cera_recovery_programme_2016
+statement: >
+  The Canterbury Earthquake Recovery Authority (CERA) operated as a
+  statutory recovery body from April 2011 until April 2016 under the
+  Canterbury Earthquake Recovery Act 2011, which sunset on its
+  five-year statutory horizon. On disestablishment, residual functions
+  transferred to the Department of the Prime Minister and Cabinet, the
+  Crown company Otakaro Limited (anchor projects), and Regenerate
+  Christchurch (placemaking and red-zone reuse). The Crown's recovery
+  programme was the largest legislated regional rebuild in New Zealand's
+  history.
+value: 5
+unit: years (statutory recovery period)
+time_period: 2011-2016
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.cera_final_report_2016
+scoped_to:
+  - canterbury
+national_assertion: false
+region_mentions:
+  - canterbury
+methodology_tag: methodology.admin_count_v1
+notes: null

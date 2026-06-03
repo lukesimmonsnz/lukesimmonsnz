@@ -61,3 +61,4 @@ claim_ids:
   - claim.auckland.climate.tree_canopy_deficit
   - claim.auckland.climate.flood_intensification
 status: draft
+time_horizons: [generation, century]

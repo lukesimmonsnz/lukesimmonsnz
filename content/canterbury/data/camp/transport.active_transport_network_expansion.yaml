@@ -1,0 +1,20 @@
+id: camp.canterbury.transport.active_transport_network_expansion
+name: Major Cycle Routes & Active Transport Network Completion
+theme: transport
+core_claim: Rapid completion of Major Cycle Routes and pedestrian-friendly streetscapes
+  (protected infrastructure) will shift 5-10% of short trips to active modes.
+flagship_moves:
+- Key intervention for Major Cycle Routes & Active Transport Network Completion
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.transport.active_modes
+interventions:
+- description: Rapid completion of Major Cycle Routes and pedestrian-friendly streetscapes
+    (protected infrastructure) will shift 5-10% of short trips to active modes.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

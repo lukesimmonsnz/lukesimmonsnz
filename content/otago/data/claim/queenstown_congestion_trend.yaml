@@ -1,0 +1,23 @@
+id: claim.otago.transport.queenstown_congestion_trend
+statement: 'Queenstown congestion is worsening: visitor recovery post-COVID (80-90%
+  2023) restoring pre-pandemic peak-season gridlock; Frankton corridor capacity increasingly
+  saturated (some closures during holiday peaks); parking enforcement and pricing
+  failing to reduce demand; public transport (Connexion bus service) underutilized
+  (frequency/coverage insufficient); commuter parking expanding into residential zones;
+  cycling uptake hampered by hilly terrain and visitor vehicle aggression; airport
+  runway constraints limit flight scheduling (visitor volume management only lever).'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

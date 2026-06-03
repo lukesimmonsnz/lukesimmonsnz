@@ -1,0 +1,16 @@
+id: driver.northland.infrastructure.funding_gap_driver
+name: Local authority fiscal capacity constraints
+description: Northland's small ratepayer base limits councils' ability to fund and
+  maintain infrastructure relative to the geographic area served.
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.infrastructure.northland_infrastructure_deficit
+- problem.northland.infrastructure.water_wastewater
+- problem.northland.infrastructure.digital_divide
+- problem.northland.infrastructure.flood_resilience
+claim_ids:
+- claim.northland.infrastructure.northland_infrastructure_deficit_claim1

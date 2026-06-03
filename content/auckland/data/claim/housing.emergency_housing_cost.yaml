@@ -1,27 +1,31 @@
 id: claim.auckland.housing.emergency_housing_cost
-statement: >
-  Emergency housing special needs grants in New Zealand — predominantly
-  funding motel accommodation for households in acute housing need —
-  cost the Crown over NZD 300 million annually at peak usage, representing
-  a high-cost, low-outcome substitute for permanent public housing supply.
-value: null
-unit: null
-time_period: "2021-2023"
+statement: 'The New Zealand government''s emergency housing expenditure peaked at
+  approximately NZD 300 million per year in 2021-2023, funding motel and transitional
+  accommodation for households unable to access public housing or sustain private
+  rentals. Auckland accounts for the largest share of emergency housing placements
+  nationally, reflecting the city''s compressed public housing waitlist and the absence
+  of affordable private-market alternatives for the lowest-income households. Emergency
+  housing is a fiscally costly substitute for the social housing stock not built.
+
+  '
+value: 300
+unit: NZD million (annual government expenditure, approximate peak)
+time_period: 2021-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.msd_housing_register_2023
-  - source.mhud_housing_aotearoa_2023
+- source.msd_housing_register_2023
+- source.mhud_housing_aotearoa_2023
+methodology_tag: methodology.admin_expenditure_v1
 scoped_to:
-  - auckland
-  - nz
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  Exact annual figure varies by year and counting methodology; the
-  NZD 300M+ threshold was widely cited in parliamentary and media
-  reporting 2021-2023. A quantitative claim with precise value and
-  methodology_tag should be authored once a primary-data source for
-  the annual grant expenditure total is confirmed.
+- auckland
+notes: 'NZD 300M+ figure cited in parliamentary and media reporting 2021-2023; precise
+  annual figure varies by counting methodology (grants vs total accommodation supplement).
+  Auckland''s share of national placements is consistently the largest single regional
+  share.
+
+  '

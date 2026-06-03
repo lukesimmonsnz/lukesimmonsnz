@@ -1,0 +1,12 @@
+id: source.nz_tourism_2023
+title: 'New Zealand Tourism Board: Queenstown Regional Profile 2023'
+author: Tourism New Zealand
+publisher: TNZ
+year: 2023
+url: https://www.tourismnewzealand.com
+type: government-report
+credibility: official
+geo_granularity:
+- otago
+- nz
+notes: Tourism numbers, visitor demographics.

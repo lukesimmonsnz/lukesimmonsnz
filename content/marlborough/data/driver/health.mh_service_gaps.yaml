@@ -1,0 +1,12 @@
+id: driver.marlborough.health.mh_service_gaps
+name: Mental Health Service Gaps And Underfunding
+description: Mental health service gaps and underfunding with regional implications.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.housing.rental_market
+claim_ids: []

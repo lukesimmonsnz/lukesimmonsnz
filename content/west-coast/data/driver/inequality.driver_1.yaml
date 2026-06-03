@@ -1,0 +1,13 @@
+id: driver.west_coast.inequality.driver_1
+name: Mining-collapse income shock and bimodal distribution
+description: The 2015-2018 Solid Energy collapse produced a step-change in the regional income distribution, removing a high-wage
+  cohort and leaving a more bimodal mix of older retirees on fixed incomes and younger workers in lower-wage service roles.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.inequality.inequality
+- problem.west_coast.inequality.child_poverty
+claim_ids: []

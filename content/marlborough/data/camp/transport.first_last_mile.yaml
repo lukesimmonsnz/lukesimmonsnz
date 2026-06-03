@@ -1,0 +1,21 @@
+id: camp.marlborough.transport.first_last_mile
+name: First/Last-Mile Micro-Mobility
+theme: transport
+core_claim: E-bike and scooter integration with public transport.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.transport.active_modes
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.crime.fv_response
+name: Integrated family violence response
+theme: crime
+core_claim: Coordinated prevention, response, and support system.
+flagship_moves:
+- Flagship move 1 for Integrated family violence response
+- Flagship move 2 for Integrated family violence response
+tensions:
+- Internal tension 1 of Integrated family violence response
+addresses:
+- problem.manawatu_whanganui.economy.economic_diversification
+interventions:
+- description: 'Intervention 1: Integrated family violence response detail 1'
+- description: 'Intervention 2: Integrated family violence response detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

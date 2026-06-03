@@ -58,3 +58,4 @@ narrative:
 claim_ids:
   - claim.auckland.environment.tree_canopy_inequity
 status: draft
+time_horizons: [generation, century]

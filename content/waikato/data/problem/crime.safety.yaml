@@ -1,0 +1,24 @@
+id: 'problem.waikato.crime.safety'
+title: 'Waikato: crime and safety'
+theme: 'crime'
+section: 'crime'
+subpage: 'safety'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Crime undermines community safety.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Crime undermines community safety.'
+claim_ids:
+- 'claim.waikato.crime.safety_claim1'
+- 'claim.waikato.crime.safety_claim2'
+status: 'draft'

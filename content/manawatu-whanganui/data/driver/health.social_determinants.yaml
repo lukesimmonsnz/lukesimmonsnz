@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.health.social_determinants
+name: Social Determinants Of Poor Health
+description: Social determinants of poor health with regional implications.
+theme: health
+consensus: consensus
+category: physical
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+claim_ids: []

@@ -1,0 +1,22 @@
+id: claim.nelson.environment.coastal_environment_claim
+statement: 'Tasman Bay and Nelson''s coastal environments are under stress from cumulative
+  pressures: eutrophication from land runoff, sedimentation from deforestation and
+  pastoral use, and harvesting pressure on rock lobster and other shellfish. Macroalgal
+  blooms have increased in frequency and duration; seagrass beds have receded by 15–20%
+  over the last 15 years. Port Nelson operations generate noise and light pollution
+  affecting marine mammals (seals, dolphins) in the inner harbour.'
+value: 18
+unit: percent decline in seagrass beds over 15 years
+time_period: 2008-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.port_nelson_annual_report_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

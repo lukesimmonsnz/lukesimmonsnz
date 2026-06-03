@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.inequality.regional_disparity_intervention
+name: Intervention for regional_disparity
+theme: inequality
+core_claim: Targeted intervention on regional_disparity will improve outcomes.
+flagship_moves:
+- Policy measure 1 for regional_disparity
+- Policy measure 2 for regional_disparity
+- Implementation mechanism for regional_disparity
+tensions:
+- Trade-off A for regional_disparity
+- Trade-off B for regional_disparity
+addresses:
+- problem.bay_of_plenty.inequality.regional_disparity
+interventions:
+- description: Core intervention targeting regional_disparity
+  state_variable: regional_disparity_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

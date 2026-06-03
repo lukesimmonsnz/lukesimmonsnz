@@ -1,0 +1,12 @@
+id: driver.southland.economy.smelter_closure_risk
+name: NZAS Smelter Closure Risk
+description: Smelter energy contract renegotiation; closure would devastate Southland
+  economy.
+theme: economy
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.southland.economy.smelter_dependency
+claim_ids: []

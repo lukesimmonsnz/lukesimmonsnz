@@ -1,0 +1,12 @@
+id: driver.marlborough.transport.active_travel_barriers
+name: Barriers To Active Travel Adoption
+description: Barriers to active travel adoption.
+theme: transport
+consensus: mostly-agreed
+category: cultural
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.active_modes
+claim_ids: []

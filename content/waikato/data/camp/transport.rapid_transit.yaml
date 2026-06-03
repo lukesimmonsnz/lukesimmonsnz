@@ -1,0 +1,24 @@
+id: camp.waikato.transport.rapid_transit
+name: Rapid transit and PT investment
+theme: transport
+core_claim: Investment in Bus Rapid Transit on key Hamilton corridors and increased
+  Auckland-Hamilton rail frequency reduces car dependence.
+flagship_moves:
+- Build BRT on key Hamilton corridors by 2030
+- Increase Auckland-Hamilton rail to 6 daily services each way
+- Integrate ticketing across all Waikato PT services
+tensions:
+- BRT capital costs are high relative to patronage in low-density areas
+- Rail frequency improvements require KiwiRail investment beyond council control
+interventions:
+- description: Build BRT on key Hamilton corridors by 2030
+  state_variable: transport_accessibility
+  expected_sign: +
+addresses:
+- problem.waikato.transport.waikato_transport_dependence
+- problem.waikato.transport.hamilton_congestion
+- problem.waikato.transport.regional_connectivity
+- problem.waikato.transport.active_transport
+applicable_in:
+- waikato
+tensions_with: []

@@ -1,0 +1,24 @@
+id: claim.nelson.health.workforce_claim
+statement: Health workforce shortages in Nelson are a critical constraint. Nelson
+  only has 1 per 1,900 patients vs. national target of 1 per 1,400; nursing vacancies
+  are 8% of funded FTE positions, and specialist shortages (psychiatrists, cardiologists,
+  geriatricians) mean patients are referred to Christchurch or Wellington, creating
+  delays and access equity issues. Rural and outer-suburb clinics struggle with recruitment;
+  14% of GPs are >60 years old with planned retirement in the next 5 years. Health
+  workforce development capacity at NMIT is adequate but graduate retention is 42%
+  (vs. 58% nationally).
+value: 8
+unit: percent nursing FTE vacancy rate
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

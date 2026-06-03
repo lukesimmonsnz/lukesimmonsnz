@@ -1,0 +1,21 @@
+id: camp.otago.inequality.dunedin_regeneration
+name: East Dunedin Economic and Social Regeneration
+theme: inequality
+core_claim: Targeted investment in job creation, skills, and community infrastructure
+  revitalizes high-deprivation areas.
+flagship_moves:
+- Business development support in East Dunedin
+- Youth employment pathways program
+- Community center and sports facility investments
+tensions:
+- Sustained funding requirements; uneven outcomes
+- Gentrification risk with housing market improvements
+addresses:
+- problem.otago.inequality.dunedin_deprivation
+interventions:
+- description: Create 500 job placements for East Dunedin youth by 2030
+  state_variable: youth_employment_rate
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

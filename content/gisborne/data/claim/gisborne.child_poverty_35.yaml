@@ -1,0 +1,20 @@
+id: claim.gisborne.inequality.child_poverty_35
+statement: Gisborne has the highest child poverty rates nationally, with approximately
+  35% of children living in households below 60% of median income. This exceeds the
+  national average of 25% and is concentrated in Poverty Bay districts.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.admin_count_v1
+notes: null

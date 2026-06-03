@@ -1,0 +1,11 @@
+id: driver.canterbury.housing.interest_rate_volatility
+name: Interest Rate Volatility & Mortgage Stress
+description: Interest Rate Volatility & Mortgage Stress
+theme: housing
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.canterbury.housing.market
+claim_ids: []

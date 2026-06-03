@@ -1,0 +1,20 @@
+id: camp.gisborne.education.secondary_completion_approach
+name: Strategic approach for secondary_completion
+theme: education
+core_claim: Strategic intervention on secondary_completion will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting secondary_completion
+- Priority action 2 targeting secondary_completion
+- Institutional coordination mechanism for secondary_completion
+tensions:
+- 'Tension 1: secondary_completion'
+- 'Tension 2: secondary_completion'
+addresses:
+- problem.gisborne.education.secondary_completion
+interventions:
+- description: Primary intervention for secondary_completion
+  state_variable: secondary_completion_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

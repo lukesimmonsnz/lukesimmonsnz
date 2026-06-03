@@ -1,0 +1,21 @@
+id: claim.wellington.transport.rail_tunnel_age
+statement: Wellington's Mt Victoria Tunnel (opened 1931) and Terrace Tunnel (opened
+  1974) carry the majority of vehicle traffic between the CBD and the eastern suburbs
+  and Hutt Valley corridor; the Mt Victoria Tunnel is over 90 years old and both have
+  no alternative alignment in the event of closure.
+value: 93
+unit: years (age of Mt Victoria Tunnel as of 2024)
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_regional_land_transport_2021
+- source.nzta_wellington_transport_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: Mt Victoria Tunnel opened 1931 (93 years as

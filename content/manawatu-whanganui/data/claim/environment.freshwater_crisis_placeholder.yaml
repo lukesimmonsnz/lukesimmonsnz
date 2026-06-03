@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.environment.freshwater_crisis_placeholder
+statement: The Manawatū River is one of New Zealand's most polluted riverways, with
+  consistently high nitrate (15-20 mg/L, exceeding safe drinking water standards)
+  and sediment loads. Agricultural runoff from intensive dairy farming is the primary
+  contaminant source. Freshwater quality degradation threatens downstream wetland
+  ecosystems, native fish populations, and aquatic biodiversity. Horizons' One Plan
+  addresses river restoration but implementation lags behind targets.
+value: 17.5
+unit: mg_L_nitrate
+time_period: 2021-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.manawatu_river_quality_2023
+- source.horizons_one_plan_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: Manawatū River water quality crisis

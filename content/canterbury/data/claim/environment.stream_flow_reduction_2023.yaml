@@ -1,0 +1,22 @@
+id: claim.canterbury.environment.stream_flow_reduction_2023
+statement: Canterbury's lowland rivers (Waimakariri, Selwyn, Rangitata, Waitaki) experience
+  flow reductions during irrigation season (November–March) that leave only 35% of
+  ecological demand unmet. Irrigation takes (Central Plains Water, Rangitata Diversion
+  Race, Rakaia scheme) divert water during peak growing season when ecological flows
+  are most critical for native fish migration and braided river ecosystem function.
+  Cumulative take across all schemes now totals ~1,400 GL/year in dry years.
+value: 35
+unit: percent of ecological demand
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_state_environment_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

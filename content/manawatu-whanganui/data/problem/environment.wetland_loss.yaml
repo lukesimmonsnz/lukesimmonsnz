@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.environment.wetland_loss
+title: Wetland Habitat Loss and Drainage
+theme: environment
+section: environment
+subpage: wetland_loss
+parent: problem.manawatu_whanganui.environment.freshwater_crisis
+order: 1
+updated: '2026-04-26'
+summary: Historic and ongoing wetland drainage for agriculture; loss of biodiversity
+  and ecosystem services.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Historic and ongoing wetland drainage for agriculture; loss of biodiversity
+    and ecosystem services.
+claim_ids:
+- claim.manawatu_whanganui.environment.wetland_loss_1
+- claim.manawatu_whanganui.environment.wetland_loss_2
+status: draft
+time_horizons: [generation, century]

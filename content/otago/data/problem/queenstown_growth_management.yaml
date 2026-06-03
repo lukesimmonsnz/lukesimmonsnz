@@ -1,0 +1,34 @@
+id: problem.otago.governance.queenstown_growth_management
+title: Queenstown Growth Management and Planning
+theme: governance
+section: governance
+subpage: queenstown_growth_management
+parent: problem.otago.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: QLDC growth planning lags population growth; infrastructure, housing, services
+  struggle to keep pace; tensions between tourism and livability.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: QLDC growth planning lags population growth; infrastructure, housing, services
+    struggle to keep pace; tensions between tourism and livability.
+claim_ids:
+- claim.otago.governance.queenstown_growth_management_trend
+- claim.otago.governance.queenstown_growth_management_prevalence
+- claim.otago.governance.governance_prevalence
+- claim.otago.governance.treaty_ngai_tahu_prevalence
+- claim.otago.governance.otago_hospital_governance_prevalence
+- claim.otago.governance.otago_hospital_governance_trend
+- claim.otago.governance.governance_trend
+- claim.otago.governance.treaty_ngai_tahu_trend
+status: draft
+time_horizons: [decade, generation, century]

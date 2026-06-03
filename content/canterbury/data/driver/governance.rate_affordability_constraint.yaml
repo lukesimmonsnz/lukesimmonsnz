@@ -1,0 +1,11 @@
+id: driver.canterbury.governance.rate_affordability_constraint
+name: Rate Affordability Constraint on Council Capex
+description: Rate Affordability Constraint on Council Capex
+theme: governance
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.governance.earthquake_debt_recovery
+claim_ids: []

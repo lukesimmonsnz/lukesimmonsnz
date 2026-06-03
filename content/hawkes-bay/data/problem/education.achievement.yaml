@@ -1,0 +1,39 @@
+id: problem.hawkes_bay.education.achievement
+title: Education achievement and attainment gaps
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Hawke's Bay students achieve NCEA levels and tertiary entry at rates below the national average.
+  Significant gaps exist between high-deprivation and more affluent schools, reflecting resource differentials,
+  teacher turnover, and the compounding effect of household poverty on study conditions. Cyclone Gabrielle
+  disrupted schooling in 2023, with high-deprivation communities sustaining the most prolonged disruption.
+manifests_in:
+- hawkes-bay
+systems_model:
+  state_variables:
+  - ncea_l2_attainment_rate_percent
+  - achievement_gap_maori_pakeha_percentage_points
+  inputs:
+  - poverty_and_learning_readiness
+  - teacher_quality_distribution
+  constraints:
+  - school_resource_equity
+  - teacher_supply_to_high_need_schools
+  feedback_loops:
+  - Achievement gaps limit tertiary access; career opportunity gaps follow; intergenerational poverty
+    repeats.
+narrative:
+- heading: NCEA Attainment
+  body: NCEA Level 2 attainment in Hawke's Bay is approximately 78%, compared to 85% nationally. Māori
+    attainment is 65%.
+- heading: Tertiary Entry
+  body: University entrance qualification rates in Hawke's Bay are approximately 32%, compared to 42%
+    nationally. Pacific student entry rates are particularly low at 15%.
+claim_ids:
+- claim.hawkes_bay.education.ncea_l2_78_percent
+- claim.hawkes_bay.education.maori_ncea_65_percent
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,42 @@
+id: problem.west_coast.climate.climate_3
+title: Glacier retreat and the climate-vulnerable tourism economy
+theme: climate-adaptation
+section: climate
+subpage: climate_3
+parent: climate_risk
+order: 3
+updated: '2026-04-26'
+summary: Franz Josef and Fox Glaciers have retreated dramatically since 1980, losing more than 30 percent of their volume.
+  Both remain major tourism attractions, but continued retreat threatens the economic viability of the glacier-dependent tourism
+  towns of Franz Josef and Fox, where guiding, accommodation and retail depend almost entirely on visitor flows.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - glacier_volume_index
+  - visitor_arrivals_per_year
+  - guided_access_unit_cost
+  inputs:
+  - doc_concession_settings
+  - tourism_diversification_funding
+  constraints:
+  - alpine_climate_warming
+  - single_asset_town_economy
+  feedback_loops:
+  - Retreat raises access costs and reduces the visual marketability of the glaciers, which suppresses visitor numbers and
+    operator margins, which in turn reduces the capacity to invest in the diversified attractions needed to outlive the ice.
+narrative:
+- heading: Visible, measurable, accelerating retreat
+  body: Department of Conservation long-term monitoring shows both Franz Josef and Fox Glaciers have lost more than 30 percent
+    of their volume since 1980 (claim.west_coast.climate.climate_3_claim). Terminus retreat has already forced changes to
+    guided-access tourism, with helicopter access replacing valley walks and on-ice guiding.
+- heading: Tourism towns built on a single asset
+  body: The settlements of Franz Josef and Fox Glacier exist primarily to service glacier tourism. As the glaciers retreat
+    further into the alps, the marginal cost of access rises and the marketable image — a glacier visible from the road —
+    fades. Diversifying these towns toward wider Westland tourism (rainforest, coast, heritage trails) is the structural challenge.
+claim_ids:
+- claim.west_coast.climate.climate_3_claim
+status: draft
+time_horizons:
+- generation
+- century

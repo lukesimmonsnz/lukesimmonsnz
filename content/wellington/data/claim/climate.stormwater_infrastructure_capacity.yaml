@@ -1,0 +1,21 @@
+id: claim.wellington.climate.stormwater_infrastructure_capacity
+statement: Wellington's urban stormwater infrastructure was designed to rainfall intensity
+  standards that are increasingly underestimated by current and projected storm event
+  intensities, creating a growing design standard gap across the urban network and
+  increasing flood frequency in low-lying areas.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wellington_water_asset_plan_2023
+- source.wcc_climate_action_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

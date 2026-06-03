@@ -1,0 +1,35 @@
+id: problem.nelson.health.chronic_disease
+title: Chronic-disease burden above national average
+theme: health
+section: health
+subpage: chronic_disease
+parent: health_outcomes
+order: 3
+updated: '2026-04-26'
+summary: Around 26 percent of Nelson adults have at least one diagnosed chronic condition (against 22 percent nationally). Diabetes affects 8.1 percent (versus 7.2 percent), cardiovascular disease 11.3 percent (versus 10.1), and chronic respiratory disease 6.8 percent (versus 5.9). Maori and Pacific populations show 1.4-1.8x higher prevalence; obesity at around 42 percent of adults is a significant driver.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - diabetes_prevalence_pct
+  - cvd_prevalence_pct
+  - avoidable_admission_rate
+  inputs:
+  - primary_care_capacity
+  - screening_programme_coverage
+  constraints:
+  - gp_workforce
+  - social_determinants
+  feedback_loops:
+  - 'Access-complication feedback: limited primary-care access reduces early management, raising downstream complications and hospital workload, which crowds out clinic capacity for population-level management.'
+narrative:
+- heading: An older population layered on lifestyle drivers
+  body: Nelson's age structure skews older than national average, and demographic ageing alone explains part of the elevated chronic-disease prevalence (claim.nelson.health.chronic_disease_claim). Lifestyle factors (diet, activity, smoking and alcohol exposures over decades) account for a further share, with deprivation as the upstream driver of those exposures.
+- heading: Primary-care management capacity
+  body: Effective chronic-disease management depends on regular primary-care contact, which is undermined by GP shortage and cost barriers in lower-income households. The result is more avoidable hospital admissions and earlier complications than in regions with stronger primary care.
+claim_ids:
+- claim.nelson.health.chronic_disease_claim
+status: draft
+time_horizons:
+- decade
+- generation

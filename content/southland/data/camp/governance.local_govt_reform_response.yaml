@@ -1,0 +1,22 @@
+id: camp.southland.governance.local_govt_reform_response
+name: Amalgamation and Shared Services for Southland Councils
+theme: governance
+core_claim: Amalgamating Southland's four territorial authorities would reduce overhead
+  and pool capacity for strategic planning and infrastructure delivery.
+flagship_moves:
+- Commission independent review of Southland council amalgamation options
+- Establish mandatory shared services for three waters and transport
+- Develop Southland regional economic strategy across all councils
+tensions:
+- Local communities strongly resist amalgamation due to loss of representation
+- Amalgamation savings may be offset by transition costs and diseconomies of scale
+addresses:
+- problem.southland.governance.local_govt_reform
+interventions:
+- description: Establish joint Southland-Invercargill shared services entity for infrastructure
+    planning
+  state_variable: per_capita_council_overhead
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

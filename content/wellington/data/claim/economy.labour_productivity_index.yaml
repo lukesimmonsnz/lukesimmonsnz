@@ -1,0 +1,20 @@
+id: claim.wellington.economy.labour_productivity_index
+statement: Wellington's labour productivity index is below comparable capital-city
+  regions in Australia and Western Europe, reflecting the structure of the local economy,
+  distance from large export markets, and the measurement drag of the large public
+  sector.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

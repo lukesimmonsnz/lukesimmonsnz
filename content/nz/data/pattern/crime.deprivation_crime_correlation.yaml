@@ -1,0 +1,32 @@
+id: pattern.crime.deprivation_crime_correlation
+title: Deprivation-crime concentration correlation
+theme: crime
+summary: Crime rates are consistently highest in the most deprived geographic areas
+  across all New Zealand regions, confirming the social determinants of crime as the
+  primary structural predictor.
+manifests_in:
+- auckland
+- wellington
+- northland
+- waikato
+- gisborne
+- manawatu-whanganui
+- canterbury
+claim_ids:
+- claim.auckland.crime.auckland_victimisation_rate
+- claim.wellington.crime.drug_market_deprivation_link
+- claim.northland.crime.family_violence_claim1
+- claim.waikato.crime.drug_crime_methamphetamine
+- claim.manawatu_whanganui.crime.family_violence_1
+narrative:
+- heading: Pattern strength
+  body: The correlation between NZDep decile and crime victimisation rate is robust
+    across all crime categories and all regions. Decile 10 areas have crime rates
+    3–5× those of decile 1 areas in comparable urban settings.
+- heading: Policy implication
+  body: The strength of the deprivation-crime correlation implies that crime reduction
+    is, to a significant degree, downstream of inequality reduction. Enforcement-heavy
+    approaches without addressing social determinants are likely to achieve redistribution
+    of crime rather than aggregate reduction.
+status: draft
+updated: '2026-04-26'

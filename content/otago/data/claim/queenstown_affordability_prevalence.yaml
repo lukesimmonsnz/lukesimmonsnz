@@ -1,0 +1,23 @@
+id: claim.otago.housing.queenstown_affordability_prevalence
+statement: 'Queenstown housing affordability is among NZ''s worst: median multiple
+  >15× in 2021-2022 peak (Demographia severely-unaffordable band); median price $850K+
+  (2023); worker housing crisis endemic (visitor industry employs 25,000+; short-term
+  rental (Airbnb, Bookabach) ~3,500 listings displacing long-term stock. RSE and seasonal
+  workers commuting Cromwell (45 min), Wanaka (60 min), Alexandra (90 min); some employers
+  subsidise accommodation (limited). Māori and Pasifika workers disproportionately
+  affected.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

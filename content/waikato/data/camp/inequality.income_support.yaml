@@ -1,0 +1,25 @@
+id: camp.waikato.inequality.income_support
+name: Income support and wage uplift
+theme: inequality
+core_claim: Increasing minimum wages and income-related rent subsidies provides direct
+  relief to low-income households.
+flagship_moves:
+- Advocate for living wage as floor for all Waikato council and contracted workers
+- Expand WFF and Accommodation Supplement uptake among eligible Waikato families
+- Develop regional food resilience networks to reduce food insecurity
+tensions:
+- Wage increases may reduce employment in low-margin sectors
+- Income support alone does not address structural causes of poverty
+interventions:
+- description: Advocate for living wage as floor for all Waikato council and contracted
+    workers
+  state_variable: gini_coefficient
+  expected_sign: +
+addresses:
+- problem.waikato.inequality.waikato_inequality
+- problem.waikato.inequality.child_poverty
+- problem.waikato.inequality.ethnic_gap
+- problem.waikato.inequality.rural_poverty
+applicable_in:
+- waikato
+tensions_with: []

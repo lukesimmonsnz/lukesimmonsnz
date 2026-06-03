@@ -1,0 +1,20 @@
+id: claim.wellington.environment.urban_tree_canopy_cover
+statement: Wellington's urban tree canopy coverage varies significantly across neighbourhoods,
+  with lower-income and higher-density inner suburbs having lower canopy cover than
+  affluent hillside suburbs, and infill development removing canopy at a faster rate
+  than replacement planting in some zones.
+value: null
+unit: null
+time_period: 2021-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_climate_action_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

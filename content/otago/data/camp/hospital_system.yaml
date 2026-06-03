@@ -1,0 +1,20 @@
+id: camp.otago.governance.hospital_system
+name: Southern DHB Governance and Planning
+theme: governance
+core_claim: Strengthened DHB governance and planning ensures healthcare resilience.
+flagship_moves:
+- Hospital rebuild completion and planning
+- Health system integration and efficiency
+- Workforce and service planning
+tensions:
+- Governance complexity across sectors
+- Service delivery pressures
+addresses:
+- problem.otago.governance.otago_hospital_governance
+interventions:
+- description: Establish integrated DHB governance framework
+  state_variable: health_system_resilience
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,23 +1,30 @@
 id: claim.auckland.housing.rental_tenure_insecurity
-statement: >
-  New Zealand renters have historically had weaker tenure security than
-  renters in comparable OECD countries: short fixed-term tenancies of
-  6-12 months were the norm, landlords could terminate periodic tenancies
-  without cause, and tenants faced structural barriers to personalising or
-  stabilising their home. The Residential Tenancies Amendment Act 2020
-  removed no-cause termination for periodic tenancies but did not introduce
+statement: 'New Zealand renters have historically had weaker tenure security than
+  renters in comparable OECD countries: short fixed-term tenancies of 6-12 months
+  were the norm, landlords could terminate periodic tenancies without cause, and tenants
+  faced structural barriers to personalising or stabilising their home. The Residential
+  Tenancies Amendment Act 2020 removed no-cause termination for periodic tenancies
+  but did not introduce rent stabilisation, meaningful minimum tenancy lengths, or
+  a right to renew fixed-term tenancies. Auckland renters — who make up a larger and
+  growing share of the city''s households — retain materially weaker security of tenure
+  than counterparts in Germany, the Netherlands, France, or Vienna''s regulated rental
+  sector, sustaining a structural asymmetry between landlord and tenant that compounds
+  affordability stress. stabilising their home. The Residential Tenancies Amendment
+  Act 2020 removed no-cause termination for periodic tenancies but did not introduce
   rent stabilisation.
+
+  '
 value: null
 unit: null
-time_period: "2000-2023"
+time_period: 2000-2023
 confidence: high
 verification_status: verified
-last_verified: "2026-04-01"
+last_verified: '2026-04-27'
 source_ids:
-  - source.mbie_rental_affordability_2023
-  - source.mhud_housing_aotearoa_2023
+- source.mbie_rental_affordability_2023
+- source.mhud_housing_aotearoa_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: false
 region_mentions: []
 notes: null

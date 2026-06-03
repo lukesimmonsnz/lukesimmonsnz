@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.crime.youth_offending_2
+statement: Youth gang recruitment and involvement have escalated in Manawatū-Whanganui
+  since 2019, with gang presence in Whanganui, Palmerston North, and Waiouru. Youth
+  programmes addressing offending (Massey University community outreach, youth employment
+  initiatives, mentoring) remain under-funded relative to demand, with waiting lists
+  for preventative intervention exceeding 6 months.
+value: null
+unit: null
+time_period: 2019-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mw_2023
+- source.massey_university_research
+- source.whanganui_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

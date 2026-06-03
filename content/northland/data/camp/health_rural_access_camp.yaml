@@ -1,0 +1,25 @@
+id: camp.northland.health.rural_access_camp
+name: Rural health access and workforce incentives
+theme: health
+core_claim: Targeted workforce incentives and telehealth investment can address geographic
+  access barriers.
+flagship_moves:
+- Fund rural health bonding and return-of-service scholarships
+- Expand telehealth infrastructure and rural nurse practitioner roles
+- Develop regional health hubs in Kaitāia, Kaikohe, and Dargaville
+tensions:
+- Financial incentives alone insufficient to overcome lifestyle barriers
+- Telehealth limits physical examination and relationship-based care
+- Hub model concentrates services but reduces community access
+interventions:
+- description: Fund rural health bonding and return-of-service scholarships
+  state_variable: health_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.health.northland_health_inequity
+- problem.northland.health.health_workforce
+- problem.northland.health.maori_health_gap
+- problem.northland.health.mental_health
+applicable_in:
+- northland
+tensions_with: []

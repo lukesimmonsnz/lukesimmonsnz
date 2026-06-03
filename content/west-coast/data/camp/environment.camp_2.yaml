@@ -1,0 +1,23 @@
+id: camp.west_coast.environment.mine_site_rehabilitation_and_l
+name: Mine Site Rehabilitation and Legacy Contamination
+theme: environment
+core_claim: Historical coal and gold mining has left contaminated land and water across
+  the West Coast; systematic remediation reduces ongoing ecological harm.
+flagship_moves:
+- Fund systematic audit and rehabilitation of orphaned mine sites
+- Require bonded rehabilitation for all new mining consents
+- Partner with Poutini Ngāi Tahu to restore taonga species habitat in affected areas
+tensions:
+- Orphaned mine remediation costs fall on the Crown when operators are dissolved
+- Full remediation of all legacy sites would cost hundreds of millions
+addresses:
+- problem.west_coast.environment.coastal_environment
+- problem.west_coast.environment.water_quality
+- problem.west_coast.environment.marine_ecosystem
+interventions:
+- description: Fund legacy mine site rehabilitation programme
+  state_variable: contaminated_site_area_ha
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

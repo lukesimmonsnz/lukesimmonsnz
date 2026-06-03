@@ -1,0 +1,12 @@
+id: driver.canterbury.infrastructure.aging_asset_stock
+name: Aging Water & Wastewater Asset Stock
+description: Aging Water & Wastewater Asset Stock
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.canterbury.infrastructure.horizontal_infrastructure
+claim_ids:
+- claim.canterbury.infrastructure.water_loss_rate_2023

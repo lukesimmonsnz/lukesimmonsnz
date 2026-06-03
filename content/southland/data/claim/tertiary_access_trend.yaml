@@ -1,0 +1,21 @@
+id: claim.southland.education.tertiary_access_trend
+statement: Tertiary participation in Southland shows declining local pathways. SIT's
+  historic Zero Fees Scheme (pre-Te Pūkenga merger) attracted national students; post-merger
+  model less distinctive. Otago Polytechnic/Te Pūkenga integration completed; Invercargill
+  campus now primarily Level 4+ qualifications. Young people pursuing degree study
+  largely depart region; retention post-graduation low.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

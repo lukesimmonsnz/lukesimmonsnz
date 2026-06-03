@@ -1,0 +1,11 @@
+applies_to:
+- Claim
+description: Deaths per 100,000 population from conditions considered preventable
+  with timely, effective healthcare; used to benchmark health system effectiveness
+  across regions and populations.
+discharged_by: json_schema
+id: methodology.amenable_mortality_rate_v1
+kind: measurement
+name: Amenable Mortality Rate
+source_ids: []
+version: 1

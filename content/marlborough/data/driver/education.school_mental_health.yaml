@@ -1,0 +1,12 @@
+id: driver.marlborough.education.school_mental_health
+name: School Mental Health And Wellbeing Support
+description: School mental health and wellbeing support.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.environment.sounds_water_quality
+claim_ids: []

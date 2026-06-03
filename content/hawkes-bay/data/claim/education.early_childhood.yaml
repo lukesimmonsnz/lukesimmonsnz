@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.education.ece_participation_76_percent
+statement: Early childhood education (ECE) participation in Hawke's Bay is 76%, slightly
+  below the national average (80%). Rural areas including Wairoa and northern Hawke's
+  Bay have limited ECE services; families in deprived communities face cost barriers
+  and transport constraints. Inadequate ECE access widens achievement gaps before
+  school entry.
+value: 76
+unit: percent participation
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1

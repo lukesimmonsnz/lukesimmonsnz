@@ -1,0 +1,24 @@
+id: 'problem.waikato.education.tertiary'
+title: 'Waikato: tertiary access'
+theme: 'education'
+section: 'education'
+subpage: 'tertiary'
+parent: 'problem.waikato.education.achievement'
+order: 5
+updated: '2026-04-26'
+summary: 'Tertiary participation is limited.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Tertiary participation is limited.'
+claim_ids:
+- 'claim.waikato.education.tertiary_claim1'
+- 'claim.waikato.education.tertiary_claim2'
+status: 'draft'

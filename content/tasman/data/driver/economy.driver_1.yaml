@@ -1,0 +1,13 @@
+id: driver.tasman.economy.driver_1
+name: Primary-sector concentration in horticulture and viticulture
+description: Apples, kiwifruit, hops, and wine occupy a large share of Tasman's economic base; the narrow industrial
+  structure produces high export earnings but concentrates exposure to biosecurity, climate, and export-market shocks.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.economy.economic_structure
+- problem.tasman.economy.economic_2
+claim_ids: []

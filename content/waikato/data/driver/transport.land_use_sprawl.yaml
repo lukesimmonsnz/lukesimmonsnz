@@ -1,0 +1,15 @@
+id: driver.waikato.transport.land_use_sprawl
+name: Dispersed land use generating car trips
+description: Low-density suburban development separates homes from employment and
+  services, making alternatives to cars impractical.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.transport.waikato_transport_dependence
+- problem.waikato.transport.hamilton_congestion
+- problem.waikato.transport.regional_connectivity
+- problem.waikato.transport.active_transport
+claim_ids: []

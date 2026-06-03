@@ -1,0 +1,21 @@
+id: camp.otago.transport.active_modes
+name: Active Transport (Walking, Cycling) Infrastructure
+theme: transport
+core_claim: Protected cycleways and pedestrian infrastructure increase walking and
+  cycling mode share.
+flagship_moves:
+- Protected cycleways on all main roads in Queenstown and Dunedin
+- Central Otago Rail Trail expansion to urban areas
+- Car-free zones in Queenstown and Dunedin CBDs
+tensions:
+- On-street parking loss opposed by merchants
+- Winter weather limits utility in alpine areas
+addresses:
+- problem.otago.transport.active_modes
+interventions:
+- description: Build 50 km of protected cycleways in Queenstown-Arrowtown
+  state_variable: mode_share_cycling
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

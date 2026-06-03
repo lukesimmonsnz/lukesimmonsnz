@@ -1,0 +1,22 @@
+id: claim.waikato.housing.greenfield_expansion
+statement: Hamilton urban area is expanding greenfield boundaries rapidly to accommodate
+  growth of 170K population at approximately 3% annually. Peacocke development in
+  south Hamilton plans 9000+ homes and new subdivisions around Cambridge and Matamata
+  are intensifying infrastructure demand. Developer-led sprawl strains three waters
+  networks; transit-oriented development remains limited. Waikato District greenfield
+  expansion is driven by commuter demand for cheaper land.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato urban_sprawl claim

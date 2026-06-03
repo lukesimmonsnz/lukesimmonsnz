@@ -1,0 +1,15 @@
+id: driver.west_coast.climate.driver_2
+name: Climate-vulnerable natural-asset economy
+description: The region's two largest non-mining economic assets — the Franz Josef and Fox Glaciers, and the high-rainfall
+  conservation estate that surrounds them — are themselves directly exposed to climate change. Economic adaptation and ecological
+  adaptation are the same problem at the regional scale.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.climate.climate_risk
+- problem.west_coast.climate.climate_3
+- problem.west_coast.climate.climate_4
+claim_ids: []

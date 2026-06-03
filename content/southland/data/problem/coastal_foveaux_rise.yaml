@@ -1,0 +1,34 @@
+id: problem.southland.climate.coastal_foveaux_rise
+title: Foveaux Strait Coastal Flooding and Sea Level Rise
+theme: climate-adaptation
+section: climate
+subpage: coastal_foveaux_rise
+parent: problem.southland.climate.climate_risk
+order: 4
+updated: '2026-04-26'
+summary: Coastal Southland communities (Riverton, Aparima) face long-term sea level
+  rise; storm surge risk increasing; adaptation planning nascent.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Coastal Southland communities (Riverton, Aparima) face long-term sea level
+    rise; storm surge risk increasing; adaptation planning nascent.
+claim_ids:
+- claim.southland.climate.flooding_rivers_trend
+- claim.southland.climate.climate_risk_prevalence
+- claim.southland.climate.climate_risk_trend
+- claim.southland.climate.coastal_foveaux_rise_trend
+- claim.southland.climate.drought_agricultural_trend
+- claim.southland.climate.flooding_rivers_prevalence
+- claim.southland.climate.coastal_foveaux_rise_prevalence
+- claim.southland.climate.drought_agricultural_prevalence
+status: draft
+time_horizons: [generation, century]

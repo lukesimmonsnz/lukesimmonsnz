@@ -1,0 +1,21 @@
+id: claim.southland.transport.connectivity_trend
+statement: 'Transport connectivity in Southland faces infrastructure aging. SH1 Invercargill-Gore:
+  state highway maintenance adequate; rural route deterioration emerging. Milford
+  Road: DOC maintenance funded to preserve access but not expand capacity; Homer Tunnel
+  replacement discussions ongoing (cost ~$1B). Fiordland visitor growth constrained
+  by bottleneck. Public transport (bus) coverage limited outside Invercargill.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

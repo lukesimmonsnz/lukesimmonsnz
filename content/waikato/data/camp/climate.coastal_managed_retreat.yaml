@@ -1,0 +1,20 @@
+id: camp.waikato.climate.coastal_managed_retreat
+name: Coastal hazard adaptation and managed retreat
+theme: climate-adaptation
+core_claim: Coastal hazard adaptation and managed retreat is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement coastal hazard adaptation and managed retreat
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

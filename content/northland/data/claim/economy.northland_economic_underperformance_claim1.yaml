@@ -1,0 +1,21 @@
+id: claim.northland.economy.northland_economic_underperformance_claim1
+statement: 'Northland GDP per capita is 15-20% below national average; regional GDP
+  growth rate 1.5-2.5% annually (vs. NZ 2-3%). Structural constraints: geographic
+  distance from Auckland (185 km), limited value-added processing (log export, dairy
+  commodity), low tertiary-education population (23% with degree, vs. national 28%),
+  brain drain (25-30-year-olds migrate to Auckland/Wellington for jobs).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mbie_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

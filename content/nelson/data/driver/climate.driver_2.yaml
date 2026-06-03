@@ -1,0 +1,13 @@
+id: driver.nelson.climate.driver_2
+name: Land-use intensification and wildland-urban interface expansion
+description: Lifestyle subdivision into hill country, intensified pastoral and horticultural use of marginal land, and forestry rotation patterns that increase fuel load and water-yield variability. Local-policy addressable but slow-moving and politically contested.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.nelson.climate.climate_risk
+- problem.nelson.climate.climate_3
+- problem.nelson.climate.climate_4
+claim_ids: []

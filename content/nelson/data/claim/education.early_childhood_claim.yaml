@@ -1,0 +1,22 @@
+id: claim.nelson.education.early_childhood_claim
+statement: Early childhood education (ECE) access in Nelson-Tasman is constrained
+  by cost and availability. Licensed ECE centres serve approximately 3,100 children
+  (ages 0-5), but 28% of eligible children are not in any formal ECE. Full-time fees
+  at community centres average $185–210/week, representing 16–19% of median household
+  income for low-income families vs. 6–7% for above-median earners. Waitlists are
+  common in peak seasons, limiting parental workforce participation.
+value: 28
+unit: percent of eligible children not in formal ECE
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_nelson_achievement_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

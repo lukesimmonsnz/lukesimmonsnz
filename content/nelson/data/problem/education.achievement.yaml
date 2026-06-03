@@ -1,0 +1,36 @@
+id: problem.nelson.education.achievement
+title: NCEA achievement gap by decile and ethnicity
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'About 72 percent of Nelson secondary students achieve NCEA Level 2 or above, against approximately 78 percent nationally. Within that headline are large gaps: Maori students achieve at 58 percent against 80 percent for Pakeha, and decile 1-3 schools achieve at 64 percent against 82 percent at decile 9-10. Transitions to tertiary or trades remain below optimal.'
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - ncea_l2_pass_rate_pct
+  - decile_pass_rate_gap_pp
+  - post_school_tertiary_progression_pct
+  inputs:
+  - per_pupil_funding
+  - school_workforce_supply
+  - household_income
+  constraints:
+  - specialist_teacher_supply
+  - deprivation_concentration
+  feedback_loops:
+  - 'Out-migration-signal feedback: high-achieving leavers exit the region for university, weakening the local skilled-labour pool and dampening aspirational signals back into schools.'
+narrative:
+- heading: Headline gap and its composition
+  body: Nelson's overall NCEA achievement sits modestly below the national average, but the more important pattern is the internal gap between high- and low-decile schools (claim.nelson.education.achievement_claim). The gap maps closely onto household income and accumulated material deprivation rather than onto school quality alone.
+- heading: Pathway after Year 13
+  body: Even where Level 2 is achieved, post-school pathways are thin. Only about 32 percent of Nelson secondary leavers progress directly to tertiary education, against around 48 percent nationally; many leave for university in Wellington or further south. The result is structural out-migration of the most-qualified school leavers and weak in-region labour-market signal back to schools about pathway value.
+claim_ids:
+- claim.nelson.education.achievement_claim
+status: draft
+time_horizons:
+- decade
+- generation

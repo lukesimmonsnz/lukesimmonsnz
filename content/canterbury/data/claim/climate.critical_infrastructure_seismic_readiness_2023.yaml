@@ -1,0 +1,21 @@
+id: claim.canterbury.climate.critical_infrastructure_seismic_readiness_2023
+statement: Critical infrastructure in Canterbury (Lyttelton Port Authority, Christchurch
+  International Airport, regional hospitals) faces compounded seismic, flood, and
+  drought hazards. 2010-2011 earthquakes (185 dead, $40B damage) demonstrated infrastructure
+  fragility; post-earthquake rebuilding still ongoing for some health and transport
+  assets.
+value: 65
+unit: percent adequacy
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gns_alpine_fault_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

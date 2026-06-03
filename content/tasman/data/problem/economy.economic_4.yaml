@@ -1,0 +1,41 @@
+id: problem.tasman.economy.economic_4
+title: Abel Tasman / Mohua tourism dependence
+theme: economy
+section: economy
+subpage: economic_4
+parent: economic_structure
+order: 4
+updated: '2026-04-26'
+summary: Abel Tasman National Park draws roughly 230,000 visitors per year, generating around NZD 62 million in
+  regional tourism revenue and supporting more than 180 FTE across DOC and private operators. Activity is heavily
+  seasonal, concentrated in February-April and the December summer peak.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - abel_tasman_annual_visitors
+  - tourism_revenue_njd
+  inputs:
+  - doc_visitor_management
+  - marketing_off_season_demand
+  constraints:
+  - seasonality
+  - single_road_corridor_to_mohua
+  feedback_loops:
+  - Operators size capacity to peak season, which leaves them exposed in shoulder months and amplifies the cash-flow
+    effect of any peak-season disruption.
+narrative:
+- heading: A small number of seasons carry the year
+  body: Water-taxi operators, lodges, and guided-walk operators earn much of their annual revenue between mid-December
+    and late April. Outside that window, fixed costs (staff, vessels, lodges) carry through low cash-flow months
+    (claim.tasman.economy.economic_4_claim).
+- heading: Concentration risk in weather, biosecurity and access
+  body: A bad summer storm, a marine biosecurity incursion, or a Cook Strait ferry disruption translates almost
+    directly into the regional tourism balance. With Mohua tourism reliant on SH60 over the Takaka Hill, transport
+    disruption sits adjacent to weather and biosecurity in the regional risk register.
+claim_ids:
+- claim.tasman.economy.economic_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,0 +1,33 @@
+id: problem.gisborne.transport.active_modes
+title: Lack of active transport and public mobility options in Gisborne — Te Tairāwhiti
+theme: transport
+section: transport
+subpage: active_modes
+parent: problem.gisborne.transport.isolation
+order: 8
+updated: '2026-04-26'
+summary: Lack of active transport and public mobility options is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - active_modes_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Lack of active transport and public mobility options is a key facet of the
+    broader pressure facing the region.
+claim_ids:
+- claim.gisborne.transport.active_modes_15
+- claim.gisborne.transport.active_modes_16
+status: draft
+time_horizons: [decade, generation]

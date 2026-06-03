@@ -1,0 +1,57 @@
+id: pattern.economy.ai_automation_labour_exposure
+title: AI and automation exposure in the New Zealand labour market
+theme: economy
+summary: >
+  Around 10% of New Zealand jobs are at high risk of automation under
+  the OECD's task-based assessment, with a further ~25% likely to
+  undergo significant change. Generative AI extends the exposure
+  upward into cognitive and clerical work that earlier waves of
+  automation left untouched. The exposure is uneven across regions
+  and demographics — concentrated in routine clerical, transport,
+  manufacturing, and parts of the public sector — and the country
+  has no settled adjustment policy for it.
+manifests_in:
+- auckland
+- wellington
+- waikato
+- canterbury
+- bay-of-plenty
+- manawatu-whanganui
+- hawkes-bay
+- otago
+- southland
+- northland
+claim_ids:
+- claim.auckland.economy.automation_exposure_share_2018
+- claim.auckland.economy.ai_diffusion_lag_2021
+narrative:
+- heading: Exposure profile
+  body: >
+    Routine clerical, transport, and manufacturing occupations carry
+    the heaviest automation exposure under the standard OECD model.
+    Generative AI shifts the front of the exposure curve toward
+    higher-skill knowledge work — first-draft writing, summarisation,
+    coding, basic legal and accounting tasks — which means white-collar
+    cohorts in Auckland and Wellington are now exposed alongside
+    blue-collar cohorts in provincial regions. The geography of risk
+    is broader than 2018-era estimates suggest.
+- heading: The adjustment problem
+  body: >
+    Exposure is not displacement. Whether exposed jobs are augmented,
+    redesigned, or eliminated depends on capital cost, regulatory
+    environment, and the adjustment institutions that re-employ
+    displaced workers. New Zealand has limited active labour market
+    policy spend by OECD standards, no national reskilling
+    entitlement, and a fragmented vocational training system
+    mid-reform. The institutional gap is the binding constraint, not
+    the technology.
+- heading: Regional incidence
+  body: >
+    Regions with concentrated routine-task employment (manufacturing,
+    transport, agriculture) carry higher exposure on the OECD task
+    model. Regions with concentrated public-sector and professional-
+    service employment (Wellington, Auckland CBD) carry higher
+    exposure on the generative-AI model. Both flows hit New Zealand;
+    neither is offset by an existing policy framework.
+status: draft
+updated: '2026-05-06'

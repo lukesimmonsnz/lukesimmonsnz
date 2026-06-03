@@ -1,0 +1,11 @@
+id: driver.canterbury.transport.post_quake_road_geometry
+name: Post-Earthquake Road Network Geometry Fixity
+description: Post-Earthquake Road Network Geometry Fixity
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.canterbury.transport.network
+claim_ids: []

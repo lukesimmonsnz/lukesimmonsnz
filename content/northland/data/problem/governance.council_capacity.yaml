@@ -1,0 +1,34 @@
+id: problem.northland.governance.council_capacity
+title: Local authority capacity and fiscal constraints
+theme: governance
+section: governance
+subpage: council-capacity
+parent: problem.northland.governance.northland_governance_capacity
+order: 2
+updated: '2026-04-26'
+summary: Northland's district councils face fiscal and capability constraints that
+  limit their ability to deliver services and plan strategically.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - governance_pressure_index
+  inputs:
+  - policy_intervention
+  - external_shock
+  constraints:
+  - fiscal_capacity
+  feedback_loops:
+  - 'Feedback: deteriorating council capacity conditions reinforce systemic disadvantage.'
+narrative:
+- heading: Scale and distribution
+  body: Northland's district councils face fiscal and capability constraints that
+    limit their ability to deliver services and plan strategically.
+- heading: Key drivers
+  body: The primary drivers of local authority capacity and fiscal constraints are
+    structural and systemic, requiring both investment and institutional reform.
+claim_ids:
+- claim.northland.governance.council_capacity_claim1
+- claim.northland.governance.council_capacity_claim2
+status: draft
+time_horizons: [decade, generation, century]

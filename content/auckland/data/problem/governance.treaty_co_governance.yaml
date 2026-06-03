@@ -60,3 +60,4 @@ claim_ids:
   - claim.auckland.governance.iwi_auckland_governance_role
   - claim.auckland.governance.maori_population_urban_shift
 status: draft
+time_horizons: [decade, generation, century]

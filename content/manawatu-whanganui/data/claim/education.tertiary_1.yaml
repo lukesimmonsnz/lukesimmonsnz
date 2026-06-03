@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.education.tertiary_1
+statement: Massey University Palmerston North campus enrolls approximately 6,000 students
+  (regional and national), with strong programmes in agriculture, engineering, applied
+  sciences, and business. AgResearch and the NZ Food Innovation Network operate research
+  partnerships with Massey. University generates approximately NZ$1.2-1.3 billion
+  in direct and indirect economic activity (salaries, student spending, local procurement)
+  and attracts international students and researchers.
+value: 6000
+unit: students_massey_pn
+time_period: 2023-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.massey_university_research
+- source.palmerston_north_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

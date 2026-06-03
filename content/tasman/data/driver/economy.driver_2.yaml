@@ -1,0 +1,15 @@
+id: driver.tasman.economy.driver_2
+name: Seasonal labour dependence
+description: Horticulture, hospitality, and tourism cannot meet peak labour demand from the local population; the
+  resulting reliance on RSE and working-holiday workers ties regional production to immigration and accommodation
+  policy settings.
+theme: economy
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.tasman.economy.economic_structure
+- problem.tasman.economy.economic_3
+- problem.tasman.economy.economic_4
+claim_ids: []

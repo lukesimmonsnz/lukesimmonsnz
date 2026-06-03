@@ -1,0 +1,12 @@
+id: source.nz_police_crime_stats_canterbury_2023
+title: NZ Police Crime Statistics—Canterbury District 2023
+author: null
+publisher: NZ Police
+year: 2023
+url: https://www.police.govt.nz/about-us/publications-and-documents/crime-statistics
+type: primary-data
+credibility: official
+geo_granularity:
+- canterbury
+notes: Recorded offending by type, family violence notifications, youth offending,
+  organized crime disruption activity.

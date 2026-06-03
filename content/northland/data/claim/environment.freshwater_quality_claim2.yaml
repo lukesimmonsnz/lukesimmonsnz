@@ -1,0 +1,22 @@
+id: claim.northland.environment.freshwater_quality_claim2
+statement: 'Many Northland waterways fail MfE freshwater bottom lines (nitrogen, E.
+  coli, suspended sediment). Kaipara catchment: nitrate-N (agricultural leaching)
+  and E. coli (pastoral runoff) exceed safe-swimming thresholds in 60–80% of monitored
+  sites (annual cycle). Suspended sediment from hill-country farming and pine plantation
+  earthworks degrades aquatic habitat. Rotokāuri (native fish species) and eels depend
+  on water-quality recovery.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

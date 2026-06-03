@@ -1,0 +1,22 @@
+id: claim.nelson.economy.economic_3_claim
+statement: Nelson-Tasman horticulture sector generates $280–320 million in annual
+  revenue from apples, kiwifruit, and pipfruit production on approximately 8,900 hectares.
+  Employment in primary production (horticulture, viticulture, aquaculture) is 2,100+
+  FTE. Rising input costs (labour, water, pest management due to climate stress),
+  water availability constraints, and labour shortages limit expansion; grower incomes
+  have been flat or declining 2019-2024 in real terms.
+value: 300
+unit: million NZD annual revenue (horticulture)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_tasman_water_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

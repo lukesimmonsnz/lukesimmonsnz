@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.housing.whanganui_deprivation
+title: Whanganui Housing Deprivation and Vacancy
+theme: housing
+section: housing
+subpage: whanganui_deprivation
+parent: problem.manawatu_whanganui.housing.housing_market
+order: 1
+updated: '2026-04-26'
+summary: Whanganui city faces significant housing deprivation, high vacancy rates,
+  and deteriorating building stock.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Whanganui city faces significant housing deprivation, high vacancy rates,
+    and deteriorating building stock.
+claim_ids:
+- claim.manawatu_whanganui.housing.whanganui_deprivation_1
+- claim.manawatu_whanganui.housing.whanganui_deprivation_2
+status: draft
+time_horizons: [decade, generation, century]

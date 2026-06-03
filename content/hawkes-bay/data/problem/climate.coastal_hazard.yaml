@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.climate.coastal_hazard
+title: Coastal erosion and sea-level rise
+theme: climate-adaptation
+section: climate
+subpage: coastal-hazard
+parent: problem.hawkes_bay.climate.climate_vulnerability
+order: 2
+updated: '2026-04-26'
+summary: 'Napier and Hastings coastlines are eroding. Sea-level rise accelerates inundation risk for coastal properties, infrastructure, and Port of Napier. Coastal protection decisions (hard defenses vs. retreat) lack strategic consensus.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - coastal_erosion_rate_metres_per_year
+    - sea_level_rise_mm_per_year
+  inputs:
+    - eustatic_sea_level_rise
+    - local_land_subsidence
+  constraints:
+    - coastal_protection_cost_per_km
+    - land_use_planning_and_zoning
+  feedback_loops:
+    - 'Erosion threatens property values; owners relocate; property values drop more; adaptation investment seems pointless.'
+narrative:
+  - heading: Erosion Rate
+    body: 'Napier coastline is eroding at 0.3-0.5 metres per year in some locations. Some beaches have retreated 40+ metres over 20 years.'
+  - heading: Sea-Level Rise Risk
+    body: 'Port of Napier and low-lying residential areas face inundation risk from 0.5-1.5 metre sea-level rise by 2100. Adaptation options include seawalls or managed retreat.'
+claim_ids:
+  - claim.hawkes_bay.climate.coastal_erosion_0_3_0_5_metres_per_year
+status: draft
+time_horizons: [generation, century]

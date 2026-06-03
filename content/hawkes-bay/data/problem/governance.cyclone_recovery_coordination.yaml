@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.governance.cyclone_recovery_coordination
+title: Cyclone recovery coordination and governance
+theme: governance
+section: governance
+subpage: cyclone-recovery-coordination
+parent: problem.hawkes_bay.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: 'Cyclone Gabrielle exposed governance capacity gaps. Recovery coordination across councils, central government, and community is weak. Decision-making is slow. Community frustration is high. Long-term recovery planning lacks strategic integration.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - recovery_coordination_effectiveness_index
+    - decision_making_timeline_days
+  inputs:
+    - crisis_response_capacity_shortage
+    - multi_agency_coordination_complexity
+  constraints:
+    - funding_clarity_and_eligibility
+    - bureaucratic_approval_processes
+  feedback_loops:
+    - 'Slow recovery demoralizes communities; out-migration accelerates; population base shrinks; tax revenues fall; council capacity further constrained.'
+narrative:
+  - heading: Coordination Gaps
+    body: 'Recovery responsibility is unclear between councils, Health NZ, and central govt. Some households have received conflicting advice on support eligibility.'
+  - heading: Decision Speed
+    body: 'Average recovery support application processing takes 60-90 days. Meanwhile, households remain displaced or in damaged homes.'
+claim_ids:
+  - claim.hawkes_bay.governance.recovery_processing_60_90_days
+status: draft
+time_horizons: [decade, generation, century]

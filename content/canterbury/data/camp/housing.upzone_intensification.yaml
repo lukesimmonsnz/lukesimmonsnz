@@ -1,0 +1,21 @@
+id: camp.canterbury.housing.upzone_intensification
+name: Upzoning & Urban Intensification
+theme: housing
+core_claim: Relaxing zoning restrictions and enabling medium-density development in
+  Christchurch is the primary lever to improve affordability.
+flagship_moves:
+- Key intervention for Upzoning & Urban Intensification
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.housing.affordability_christchurch
+- problem.canterbury.housing.market
+interventions:
+- description: Relaxing zoning restrictions and enabling medium-density development
+    in Christchurch is the primary lever to improve affordability.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

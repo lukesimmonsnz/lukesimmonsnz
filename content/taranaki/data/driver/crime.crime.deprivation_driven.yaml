@@ -1,0 +1,14 @@
+id: driver.taranaki.crime.crime.deprivation_driven
+name: Deprivation-driven crime factors
+description: Deprivation-driven crime factors
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.crime.safety
+- problem.taranaki.crime.drug_crime
+- problem.taranaki.crime.family_violence
+- problem.taranaki.crime.youth_offending
+claim_ids: []

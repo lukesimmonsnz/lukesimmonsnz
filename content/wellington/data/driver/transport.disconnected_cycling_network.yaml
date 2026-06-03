@@ -1,0 +1,13 @@
+id: driver.wellington.transport.disconnected_cycling_network
+name: Disconnected and unsafe cycling network
+description: Wellington's cycling infrastructure consists of largely disconnected segments with high-stress on-road conditions
+  on key corridors, deterring all but the most experienced cyclists and suppressing uptake.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.transport.active_modes
+claim_ids:
+- claim.wellington.transport.active_travel_infrastructure_gap

@@ -1,0 +1,22 @@
+id: claim.otago.infrastructure.digital_rural_trend
+statement: 'Rural digital infrastructure improving gradually: Crown Fibre Initiative
+  expanding (Wanaka, Central Otago, parts of Waitaki); 5G network expansion into secondary
+  centres (Arrowtown, Cromwell); rural broadband speed and reliability improving but
+  pockets of poor service remain (Catlins, far South Otago). Uptake lagging in older
+  demographic; cost barriers (equipment, plans) for some rural households; agricultural
+  precision farming demand driving enterprise-level fiber demand.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

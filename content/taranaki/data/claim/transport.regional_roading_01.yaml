@@ -1,0 +1,19 @@
+id: claim.taranaki.transport.regional_roading_01
+statement: Transport connectivity in Taranaki is constrained by limited public transit
+  outside major urban centers, forcing private vehicle dependence. Road freight and
+  rural accessibility challenges increase logistics costs and limit business competitiveness.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki regional_roading

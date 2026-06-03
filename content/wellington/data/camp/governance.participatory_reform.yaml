@@ -1,0 +1,21 @@
+id: camp.wellington.governance.participatory_reform
+name: Democratic Participation Reform
+theme: governance
+core_claim: Voter turnout decline reflects a broken electoral system; rolling enrolment, online voting, and proportional representation
+  will lift participation.
+flagship_moves:
+- Online voting pilot for Wellington local elections
+- Automatic enrolment at 18 for local body elections
+- STV (ranked choice) voting as default for Wellington councils
+tensions:
+- Online voting raises cybersecurity and integrity concerns
+- STV increases ballot complexity and may disadvantage less-informed voters
+addresses:
+- problem.wellington.governance.democratic_participation
+interventions:
+- description: Run opt-in online voting pilot in Wellington City 2025 local elections with independent security audit
+  state_variable: voter_turnout_rate
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

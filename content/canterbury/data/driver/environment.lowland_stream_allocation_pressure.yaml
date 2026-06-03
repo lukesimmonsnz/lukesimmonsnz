@@ -1,0 +1,12 @@
+id: driver.canterbury.environment.lowland_stream_allocation_pressure
+name: Lowland Stream Allocation Pressure from Irrigation
+description: Lowland Stream Allocation Pressure from Irrigation
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.environment.lowland_stream_quality
+claim_ids:
+- claim.canterbury.environment.stream_flow_reduction_2023

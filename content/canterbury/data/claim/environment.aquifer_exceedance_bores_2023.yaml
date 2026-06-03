@@ -1,0 +1,22 @@
+id: claim.canterbury.environment.aquifer_exceedance_bores_2023
+statement: Canterbury's shallow unconfined aquifer system shows elevated nitrate in
+  45 community water supply bores, exceeding WHO drinking water guideline of 11.3
+  mg/L. These bores serve towns across the Canterbury Plains (Timaru, Ashburton, Geraldine
+  water districts) and fringe suburbs of Christchurch. Long groundwater residence
+  times (5–20 years) mean contamination from historical and current dairy farming
+  practices will persist for decades despite improved land management.
+value: 45
+unit: bores
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_state_environment_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

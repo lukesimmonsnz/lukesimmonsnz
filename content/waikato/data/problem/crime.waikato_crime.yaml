@@ -1,0 +1,30 @@
+id: problem.waikato.crime.waikato_crime
+title: Crime and community safety
+theme: crime
+section: crime
+subpage: waikato_crime
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waikato has elevated crime rates relative to national averages, concentrated
+  in Hamilton's high-deprivation suburbs.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - recorded_crime_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional crime dynamics create self-reinforcing feedback.
+narrative:
+- heading: Crime and community safety
+  body: Waikato has elevated crime rates relative to national averages, concentrated
+    in Hamilton's high-deprivation suburbs.
+claim_ids:
+- claim.waikato.crime.waikato_crime_root
+status: draft
+time_horizons: [decade]

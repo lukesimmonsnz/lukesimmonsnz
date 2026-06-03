@@ -1,0 +1,24 @@
+id: claim.west_coast.inequality.rural_isolation_claim
+statement: 'Remote settlements on West Coast (Haast, Ross, Reefton, Karamea) experience
+  severe service deprivation: no medical clinic, limited school choice, 1-4 hours
+  to nearest GP or hospital, minimal broadband. Population in these settlements is
+  <500 each; services are uneconomic to operate locally. Geographic isolation perpetuates
+  poverty and limits economic opportunity. Young people out-migrate; aging in place
+  creates care dependencies difficult to meet.'
+value: null
+unit: null
+time_period: 2010-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.stats_nz_census_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Settlement service mapping from council; population and out-migration from
+  Census; health access from Health NZ service location data.

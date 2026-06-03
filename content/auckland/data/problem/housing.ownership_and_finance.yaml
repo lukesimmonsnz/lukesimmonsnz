@@ -83,3 +83,4 @@ claim_ids:
   - claim.auckland.housing.real_price_wage_divergence
   - claim.auckland.housing.affordability_ratio_2023
 status: draft
+time_horizons: [decade, generation, century]

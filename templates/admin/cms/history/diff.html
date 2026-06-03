@@ -1,0 +1,57 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Diff · {{ ref.title }}{% endblock %}
+{% set active = 'editor' %}
+{% set crumbs = [{'label': ref.title, 'url': url_for('cms.edit', id=page_id)}, {'label': 'History', 'url': url_for('cms.history_landing', id=page_id)}, {'label': 'Diff'}] %}
+
+{% block extra_css %}
+.diff-meta { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 6px; padding: 12px 16px; margin-bottom: 14px; font-size: 12px; color: #4b3f30; display: flex; gap: 16px; flex-wrap: wrap; }
+.diff-meta .sha { font-family: ui-monospace, monospace; color: #8a5a2a; background: #f5f1e8; padding: 2px 7px; border-radius: 3px; }
+pre.diff-out { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 6px; padding: 16px 18px; font-family: ui-monospace, monospace; font-size: 12px; line-height: 1.55; overflow-x: auto; white-space: pre-wrap; word-break: break-all; }
+pre.diff-out .add { background: #e7f1e8; color: #2a5638; display: block; }
+pre.diff-out .rem { background: #fbe9e6; color: #803a2c; display: block; }
+pre.diff-out .hunk { background: #ece5d4; color: #4b3f30; display: block; padding: 2px 0; }
+pre.diff-out .meta { color: #8a7a66; }
+{% endblock %}
+
+{% block head_actions %}
+<a href="{{ url_for('cms.history_landing', id=page_id) }}" class="btn btn-secondary">Back to history</a>
+<button class="btn btn-primary" id="btn-restore">Restore to draft</button>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">Diff viewer</h1>
+
+<div class="diff-meta">
+  <span><strong>From:</strong> <span class="sha">{{ from_sha[:8] }}</span></span>
+  {% if to_sha %}<span><strong>To:</strong> <span class="sha">{{ to_sha[:8] }}</span></span>
+  {% else %}<span>(single-commit diff: <span class="sha">{{ from_sha[:8] }}~..{{ from_sha[:8] }}</span>)</span>{% endif %}
+  <span style="margin-left:auto;color:#8a7a66;">{{ diff_text|length }} bytes</span>
+</div>
+
+<pre class="diff-out" id="diff"></pre>
+
+<script>
+var DIFF_TEXT = {{ diff_text|tojson }};
+function colourise(text) {
+  return text.split('\n').map(function(line) {
+    if (line.startsWith('+++') || line.startsWith('---')) return '<span class="meta">' + escape(line) + '</span>';
+    if (line.startsWith('+')) return '<span class="add">' + escape(line) + '</span>';
+    if (line.startsWith('-')) return '<span class="rem">' + escape(line) + '</span>';
+    if (line.startsWith('@@')) return '<span class="hunk">' + escape(line) + '</span>';
+    if (line.startsWith('diff --git') || line.startsWith('index ')) return '<span class="meta">' + escape(line) + '</span>';
+    return escape(line);
+  }).join('\n');
+}
+function escape(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+document.getElementById('diff').innerHTML = colourise(DIFF_TEXT) || '<span class="meta">(empty diff — file unchanged at this commit)</span>';
+
+document.getElementById('btn-restore').addEventListener('click', function() {
+  if (!confirm('Restore this version to a draft? Working tree is not modified — only cms.db.drafts.')) return;
+  fetch({{ url_for('cms.api_restore', id=page_id, sha=from_sha)|tojson }}, {method: 'POST'})
+    .then(function(r){ return r.json(); }).then(function(j){
+      if (j.ok) { window.toast('Restored to draft'); setTimeout(function(){ location.href = j.edit_url; }, 600); }
+      else window.toast('Restore failed: ' + (j.error || 'unknown'));
+    });
+});
+</script>
+{% endblock %}

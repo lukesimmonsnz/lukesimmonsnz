@@ -1,0 +1,20 @@
+id: camp.waikato.housing.rental_regulation
+name: Rental market regulation and stabilization
+theme: housing
+core_claim: Rental market regulation and stabilization is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement rental market regulation and stabilization
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

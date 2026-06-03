@@ -1,0 +1,35 @@
+id: problem.northland.housing.homelessness
+title: "Te Tai Tokerau Northland: homelessness and housing stress"
+theme: housing
+section: housing
+subpage: homelessness
+parent: problem.northland.housing.affordability
+order: 5
+updated: '2026-04-26'
+summary: Extreme housing stress manifests in rough sleeping, family homelessness, and emergency shelter demand.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - rough_sleeping_count
+  - family_homelessness_rate
+  - emergency_shelter_occupancy
+  inputs:
+  - housing_affordability_crisis
+  - domestic_violence_prevalence
+  - substance_use_prevalence
+  constraints:
+  - social_support_capacity
+  - mental_health_services_availability
+  feedback_loops:
+  - 'Housing-health nexus: homelessness creates health crises which further prevent housing access.'
+narrative:
+- heading: Extent of homelessness
+  body: Homelessness in Northland has increased markedly, with visible rough sleeping in urban areas and widespread family homelessness.
+- heading: Emergency response capacity
+  body: Emergency shelter and support services are overextended, unable to meet demand and provide pathways to stable housing.
+claim_ids:
+- claim.northland.housing.homelessness_claim1
+- claim.northland.housing.homelessness_claim2
+status: draft
+time_horizons: [decade, generation, century]

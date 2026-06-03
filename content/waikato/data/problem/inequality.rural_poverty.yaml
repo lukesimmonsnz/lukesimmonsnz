@@ -1,0 +1,29 @@
+id: problem.waikato.inequality.rural_poverty
+title: Rural poverty and service isolation
+theme: inequality
+section: inequality
+subpage: rural_poverty
+parent: problem.waikato.inequality.waikato_inequality
+order: 4
+updated: '2026-04-26'
+summary: Remote communities have higher poverty rates compounded by distance from
+  services.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gini_coefficient
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing rural poverty creates feedback on regional outcomes.
+narrative:
+- heading: Rural poverty and service isolation
+  body: Remote communities have higher poverty rates compounded by distance from services.
+claim_ids:
+- claim.waikato.inequality.rural_deprivation_rate
+status: draft
+time_horizons: [decade, generation, century]

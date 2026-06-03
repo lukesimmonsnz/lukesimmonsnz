@@ -1,0 +1,20 @@
+id: camp.gisborne.transport.cyclone_damage_approach
+name: Strategic approach for cyclone_damage
+theme: transport
+core_claim: Strategic intervention on cyclone_damage will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting cyclone_damage
+- Priority action 2 targeting cyclone_damage
+- Institutional coordination mechanism for cyclone_damage
+tensions:
+- 'Tension 1: cyclone_damage'
+- 'Tension 2: cyclone_damage'
+addresses:
+- problem.gisborne.transport.cyclone_damage
+interventions:
+- description: Primary intervention for cyclone_damage
+  state_variable: cyclone_damage_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

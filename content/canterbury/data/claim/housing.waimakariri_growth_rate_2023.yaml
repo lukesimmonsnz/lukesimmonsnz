@@ -1,0 +1,20 @@
+id: claim.canterbury.housing.waimakariri_growth_rate_2023
+statement: Canterbury housing affordability ratio (median price / median income) stands
+  at 7.5-8.0x, above long-term sustainable levels of 5-6x. Christchurch rebuild has
+  stalled in some areas; social housing needs are unmet.
+value: 4.2
+unit: percent annual growth
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+- source.waimakariri_dc_growth_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

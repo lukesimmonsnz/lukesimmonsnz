@@ -1,0 +1,22 @@
+id: claim.otago.economy.tourism_queenstown_trend
+statement: 'Queenstown tourism is recovering post-COVID but restructuring: 80-90%
+  recovery vs 2019 baseline by late 2023; international visitor volumes rebuilding
+  but mix shifting (Australia/Singapore vs pre-COVID European/UK); adventure tourism
+  and high-value experiences growing faster than bulk tourism; worker supply constraint
+  and housing crisis limiting capacity growth; climate risk to ski season (Remarkables,
+  Coronet Peak reliability) emerging as long-term headwind.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

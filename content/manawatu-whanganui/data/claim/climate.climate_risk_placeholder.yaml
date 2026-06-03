@@ -1,0 +1,21 @@
+id: claim.manawatu_whanganui.climate.climate_risk_placeholder
+statement: Cyclone Gabrielle (February 2023) caused flooding across Manawatū-Whanganui,
+  with Whanganui city and surrounding districts experiencing significant inundation.
+  The region faces compound flood risk from high rainfall, river overtopping, and
+  coastal surge, particularly in low-lying areas of Horowhenua and Whanganui districts.
+value: null
+unit: null
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.horizons_data_services_2024
+- source.whanganui_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

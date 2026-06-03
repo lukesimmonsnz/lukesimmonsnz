@@ -1,0 +1,21 @@
+id: claim.waikato.health.mental_health_waitlist
+statement: Waikato DHB mental health services face wait times of 8-12 weeks for non-urgent
+  referrals. Rural practitioners in Coromandel and South Waikato report difficulty
+  accessing specialist support for complex cases; telepsychiatry via Waikato Hospital
+  partially addresses rural access. Community mental health services in Huntly and
+  south Hamilton are under-resourced relative to deprivation levels.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato mental_health claim

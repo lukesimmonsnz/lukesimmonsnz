@@ -1,0 +1,26 @@
+id: claim.manawatu_whanganui.transport.regional_roading_1
+statement: Regional roading in Manawatū-Whanganui is aging; approximately 35-40% of
+  local roads are in fair or poor condition (NZTA classification). Rural roads (Rangitikei,
+  Tararua, Ruapehu) experience higher maintenance costs due to topography, weather
+  exposure, and isolated communities. Road user charges and fuel excise tax generate
+  insufficient revenue to meet renewal demand; councils face maintenance backlogs
+  (estimated 5-7 years) and deferred upgrades. Heavy freight volumes (dairy, sheep,
+  grain) accelerate pavement wear. Intersection safety on SH1 and rural state highways
+  remains a concern; fatal and serious injury crashes average 12-15 per year regionally,
+  above per-capita national rates.
+value: 37.5
+unit: percent_road_fair_or_poor
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_transport_mw_2023
+- source.rangitikei_district_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.inequality.child_poverty
+title: Child poverty and opportunity gaps
+theme: inequality
+section: inequality
+subpage: child-poverty
+parent: problem.hawkes_bay.inequality.deprivation
+order: 2
+updated: '2026-04-26'
+summary: "Child poverty (relative income poverty) affects approximately 28% of Hawke's Bay children, above the national rate of 22%. Limited parental incomes restrict access to education, health, and recreational opportunities."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - child_poverty_rate_percent
+    - school_food_insecurity_index
+  inputs:
+    - parental_unemployment
+    - housing_cost_burden
+  constraints:
+    - early_childhood_education_affordability
+    - healthcare_access_costs
+  feedback_loops:
+    - 'Childhood poverty constrains educational achievement; skill gaps reduce adult earning potential; intergenerational poverty repeats.'
+narrative:
+  - heading: Poverty Prevalence
+    body: "Approximately 28% of Hawke's Bay children live in relative income poverty (living in households below 60% of median income), impacting approximately 17,000 children."
+  - heading: Material Hardship
+    body: "Many children in Hawke's Bay go without adequate nutrition, warm housing, and basic school supplies. Food insecurity is common in deprived neighborhoods."
+claim_ids:
+  - claim.hawkes_bay.inequality.child_poverty_28_percent
+status: draft
+time_horizons: [decade, generation, century]

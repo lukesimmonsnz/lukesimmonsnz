@@ -1,0 +1,20 @@
+id: claim.southland.housing.invercargill_affordability_prevalence
+statement: Invercargill housing affordability is relatively favorable compared to
+  national trends. Median house price $330-360K (2023-24); median multiple ~6.5× (compare
+  Auckland 9-10×, Dunedin 7-8×). First-time buyer access feasible with moderate income.
+  Rural areas even more affordable but employment limited.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

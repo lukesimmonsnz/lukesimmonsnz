@@ -1,0 +1,34 @@
+id: pattern.governance.central_local_coordination_gap
+title: Central-local government coordination gap
+theme: governance
+summary: 'The gap between central government direction and local government delivery
+  capacity produces inconsistent outcomes across regions: well-resourced councils
+  achieve compliance and innovation; under-resourced ones fall further behind.'
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- taranaki
+- southland
+- tasman
+- nelson
+- marlborough
+claim_ids:
+- claim.northland.governance.coordination_deficit_claim1
+- claim.wellington.governance.amalgamation_debate_history
+- claim.gisborne.governance.disaster_recovery_79
+- claim.southland.governance.governance_prevalence
+- claim.otago.governance.governance_prevalence
+narrative:
+- heading: Devolution without capacity
+  body: 'New Zealand has devolved significant regulatory and service responsibilities
+    to local government while constraining rate rises and without matching fiscal
+    transfer. The result is a two-tier system: large urban councils with capacity,
+    and small provincial councils without it.'
+- heading: Crisis as forcing function
+  body: 'Coordination gaps are most visible during crises: the COVID response, Cyclone
+    Gabrielle recovery, and three-waters reform all exposed the limits of councils''
+    independent capacity and the absence of a systematic Crown-council co-governance
+    framework.'
+status: draft
+updated: '2026-04-26'

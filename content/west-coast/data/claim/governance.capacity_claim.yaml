@@ -1,0 +1,23 @@
+id: claim.west_coast.governance.capacity_claim
+statement: West Coast Regional Council and three territorial authorities (Buller,
+  Grey, Westland DC) collectively lack technical capacity for complex long-term infrastructure
+  planning, climate adaptation, and managed retreat implementation. Staff turnover
+  is high; expertise in resilience planning is sparse. Reliance on external consultants
+  and central government support is significant but inconsistent.
+value: null
+unit: null
+time_period: 2015-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.nz_transport_agency_west_coast_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Governance capacity assessment inferred from council staffing and budget data;
+  infrastructure planning complexity from Waka Kotahi and WCRC planning documents.

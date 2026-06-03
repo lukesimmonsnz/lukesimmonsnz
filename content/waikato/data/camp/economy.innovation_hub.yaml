@@ -1,0 +1,25 @@
+id: camp.waikato.economy.innovation_hub
+name: Waikato innovation and technology hub
+theme: economy
+core_claim: Building on Waikato University and AgResearch, develop a technology and
+  agri-innovation cluster that captures higher-value economic activity.
+flagship_moves:
+- Establish a Waikato Agri-Tech Innovation Precinct near the University of Waikato
+- Attract MBIE-funded R&D programmes to Hamilton
+- Develop a regional skills pipeline via WIT and Waikato University
+tensions:
+- Innovation hubs require sustained public subsidy before becoming self-sustaining
+- Hamilton brain drain to Auckland may undermine talent retention
+interventions:
+- description: Establish a Waikato Agri-Tech Innovation Precinct near the University
+    of Waikato
+  state_variable: gdp_per_capita_growth
+  expected_sign: +
+addresses:
+- problem.waikato.economy.waikato_economic_concentration
+- problem.waikato.economy.agri_productivity
+- problem.waikato.economy.tech_sector_gap
+- problem.waikato.economy.regional_wage_gap
+applicable_in:
+- waikato
+tensions_with: []

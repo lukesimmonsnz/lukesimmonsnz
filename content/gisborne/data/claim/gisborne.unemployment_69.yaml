@@ -1,0 +1,19 @@
+id: claim.gisborne.economy.unemployment_69
+statement: Gisborne unemployment is consistently among the highest nationally. Youth
+  unemployment is especially elevated; seasonal work in viticulture and horticulture
+  creates year-round underemployment.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

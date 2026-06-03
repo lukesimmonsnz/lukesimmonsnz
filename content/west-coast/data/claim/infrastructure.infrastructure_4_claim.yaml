@@ -1,0 +1,24 @@
+id: claim.west_coast.infrastructure.infrastructure_4_claim
+statement: Westport water and wastewater systems were severely damaged in 2021-2022
+  floods. Post-flood repairs (estimated $50+ million) include treatment plant upgrades,
+  pipe network relocation to higher ground, and stormwater system redesign. Grey District
+  and Westland District also face aging water infrastructure and constrained renewal
+  budgets. Climate adaptation upgrades (redundancy, flood resistance) will require
+  $200+ million across three territorial authorities over 20 years.
+value: 50
+unit: million NZD Westport post-flood repairs
+time_period: 2021-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.west_coast_housing_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Repair cost estimates and long-term renewal projections from council capital
+  program and post-flood recovery assessments.

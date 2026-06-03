@@ -1,0 +1,20 @@
+id: camp.gisborne.environment.water_quality_approach
+name: Strategic approach for water_quality
+theme: environment
+core_claim: Strategic intervention on water_quality will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting water_quality
+- Priority action 2 targeting water_quality
+- Institutional coordination mechanism for water_quality
+tensions:
+- 'Tension 1: water_quality'
+- 'Tension 2: water_quality'
+addresses:
+- problem.gisborne.environment.water_quality
+interventions:
+- description: Primary intervention for water_quality
+  state_variable: water_quality_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

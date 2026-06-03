@@ -1,0 +1,21 @@
+id: claim.marlborough.transport.regional_roading_2
+statement: 'State Highway 1 (Kaikoura section, Marlborough''s eastern gateway): closed
+  approximately 12 months after 2016 Mw7.8 earthquake; repair cost NZD 1.4B; ongoing
+  landslide risk monitoring; projected closure probability 15–25% per decade under
+  seismic scenarios.'
+value: null
+unit: null
+time_period: 2016-2017
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_top_south_transport_2023
+- source.nz_climate_projections_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

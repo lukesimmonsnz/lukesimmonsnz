@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.inequality.universal_basic_support
+name: Universal Service and Income Floor
+theme: inequality
+core_claim: Guaranteed minimum income and universal services.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.inequality.rural_isolation
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

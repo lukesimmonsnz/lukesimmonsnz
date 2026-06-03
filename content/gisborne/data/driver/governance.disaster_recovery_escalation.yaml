@@ -1,0 +1,13 @@
+id: driver.gisborne.governance.disaster_recovery_escalation
+name: Driver escalating disaster_recovery
+description: "This driver exacerbates the disaster_recovery challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: governance
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.governance.disaster_recovery
+claim_ids:
+- claim.gisborne.governance.disaster_recovery_79

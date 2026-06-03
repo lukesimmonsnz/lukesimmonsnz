@@ -1,0 +1,25 @@
+id: camp.hawkes_bay.economy.economic_diversification
+name: Economic diversification into services and technology
+theme: economy
+core_claim: Strategic investment in technology, services, and advanced manufacturing sectors reduces commodity dependence and creates sustainable growth.
+flagship_moves:
+  - Establish Hawke's Bay Innovation Hub to incubate tech startups and support R&D
+  - Incentivise remote workers and digital nomads to relocate to Napier and Hastings
+  - Develop food and wine tourism products as high-margin services
+tensions:
+  - Tech sector development requires workforce upskilling and may attract talent out of traditional industries
+  - Innovation hubs require sustained public investment with uncertain returns
+addresses:
+  - problem.hawkes_bay.economy.economic_structure
+  - problem.hawkes_bay.economy.economic_diversification
+  - problem.hawkes_bay.economy.cyclone_recovery
+interventions:
+  - description: Invest $50 million in innovation hub infrastructure and business support for emerging sectors
+    state_variable: services_sector_gdp_share
+    expected_sign: '+'
+  - description: Offer immigration incentives and fast-track visas for digital workers
+    state_variable: technology_sector_employment_growth
+    expected_sign: '+'
+applicable_in:
+  - hawkes-bay
+tensions_with: []

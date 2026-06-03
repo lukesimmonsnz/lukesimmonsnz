@@ -1,0 +1,21 @@
+id: camp.otago.health.rural_gp_recruitment
+name: Rural GP Recruitment and Retention Incentives
+theme: health
+core_claim: Student loan forgiveness, housing subsidies, and clinical autonomy attract
+  GPs to rural practices.
+flagship_moves:
+- Rural GP loan forgiveness scheme
+- Housing subsidies for rural practices
+- Extended professional development funding
+tensions:
+- Ongoing subsidy costs and equity concerns
+- Success dependent on rural lifestyle appeal
+addresses:
+- problem.otago.health.rural_workforce
+interventions:
+- description: Place 15 additional GPs in Central Otago rural practices
+  state_variable: gp_density_rural
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

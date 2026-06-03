@@ -1,0 +1,24 @@
+id: camp.waikato.crime.prevention_investment
+name: Crime prevention and early intervention
+theme: crime
+core_claim: Evidence-based early intervention and community prevention programmes
+  address the root causes of crime more effectively than enforcement alone.
+flagship_moves:
+- Fund Whānau Ora wraparound support in high-crime Hamilton suburbs
+- Expand early childhood and youth at-risk programmes in deprived areas
+- Implement whole-of-government social investment approach targeting known risk factors
+tensions:
+- Prevention investment has delayed returns and is harder to measure than arrest statistics
+- Community-led programmes require sustained resourcing that can be politically difficult
+interventions:
+- description: Fund Whānau Ora wraparound support in high-crime Hamilton suburbs
+  state_variable: recorded_crime_rate
+  expected_sign: +
+addresses:
+- problem.waikato.crime.waikato_crime
+- problem.waikato.crime.family_violence
+- problem.waikato.crime.youth_offending
+- problem.waikato.crime.drug_crime
+applicable_in:
+- waikato
+tensions_with: []

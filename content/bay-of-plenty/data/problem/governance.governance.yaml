@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.governance.governance
+title: Local governance and decision-making in Bay of Plenty — Te Moana-a-Toi
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 37
+updated: '2026-04-26'
+summary: Local governance and decision-making represents a key systemic pressure for
+  Bay of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - governance_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The local governance and decision-making is a pressing concern for the region.
+claim_ids:
+- claim.bay_of_plenty.governance.governance_73
+- claim.bay_of_plenty.governance.governance_74
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,10 @@
+id: driver.northland.climate.compound_hazards
+name: Compound hazard interactions
+description: Compound hazard interactions in the regional context.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

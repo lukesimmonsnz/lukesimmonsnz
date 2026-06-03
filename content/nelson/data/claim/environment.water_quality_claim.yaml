@@ -1,0 +1,22 @@
+id: claim.nelson.environment.water_quality_claim
+statement: Maitai River water quality has declined over the last decade due to increased
+  sedimentation from forestry operations, pastoral runoff, and urban stormwater. Nitrate
+  concentrations have increased 28% 2010-2023; pathogenic bacteria (E. coli) exceed
+  safe swimming thresholds on 12–15 days per summer season. The Maitai is a key recreation
+  asset and primary water source; water treatment costs have increased 14% to manage
+  contamination. Waimea River shows similar pressures.
+value: 28
+unit: percent increase in nitrate concentration 2010-2023
+time_period: 2010-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_tasman_water_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

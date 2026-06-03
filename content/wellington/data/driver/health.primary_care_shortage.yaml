@@ -1,0 +1,14 @@
+id: driver.wellington.health.primary_care_shortage
+name: Primary care GP shortage
+description: Wellington faces a growing shortage of general practitioners, particularly in Hutt Valley and Porirua, caused
+  by workforce ageing, international competition for clinicians, and unfilled training pipelines.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.health.system_access
+- problem.wellington.health.workforce_shortage
+claim_ids:
+- claim.wellington.health.gp_access_hutt_valley

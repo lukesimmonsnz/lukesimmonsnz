@@ -1,0 +1,22 @@
+id: camp.canterbury.education.tertiary_pathways_diversification
+name: Tertiary Education Pathways & Lincoln University Diversification
+theme: education
+core_claim: Expanding Lincoln University program diversity (beyond agriculture) and
+  improving tertiary access for South Canterbury and East Christchurch students increases
+  participation.
+flagship_moves:
+- Key intervention for Tertiary Education Pathways & Lincoln University Diversification
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.education.tertiary_lincoln_uc
+interventions:
+- description: Expanding Lincoln University program diversity (beyond agriculture)
+    and improving tertiary access for South Canterbury and East Christchurch students
+    increases participation.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

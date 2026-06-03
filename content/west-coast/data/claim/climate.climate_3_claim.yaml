@@ -1,0 +1,22 @@
+id: claim.west_coast.climate.climate_3_claim
+statement: Franz Josef and Fox Glaciers have retreated dramatically since 1980, losing
+  more than 30 percent of their volume. Both glaciers remain major tourism attractions
+  drawing 500,000+ annual visitors. Continued glacier retreat threatens the economic
+  viability of glacier-dependent tourism operations and scenic value.
+value: 30
+unit: percent volume loss since 1980
+time_period: 1980-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.doc_westland_glacier_2023
+- source.west_coast_tourism_impact_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Glacier retreat measured by DOC long-term monitoring; visitor numbers from
+  DOC site data and tourism sector reports.

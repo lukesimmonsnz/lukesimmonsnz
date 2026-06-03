@@ -1,0 +1,13 @@
+id: driver.canterbury.transport.car_dependency_culture
+name: Car Dependency Cultural Lock-in
+description: Car Dependency Cultural Lock-in
+theme: transport
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.transport.network
+- problem.canterbury.transport.christchurch_congestion
+claim_ids:
+- claim.canterbury.transport.private_vehicle_share_2023

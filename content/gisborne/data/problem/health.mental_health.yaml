@@ -1,0 +1,33 @@
+id: problem.gisborne.health.mental_health
+title: Mental health and wellbeing crisis in Gisborne — Te Tairāwhiti
+theme: health
+section: health
+subpage: mental_health
+parent: problem.gisborne.health.health_outcomes
+order: 26
+updated: '2026-04-26'
+summary: Mental health and wellbeing crisis is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - mental_health_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Mental health and wellbeing crisis is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.health.mental_health_51
+- claim.gisborne.health.mental_health_52
+status: draft
+time_horizons: [decade, generation]

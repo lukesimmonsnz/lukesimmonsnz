@@ -1,0 +1,41 @@
+id: problem.west_coast.economy.economic_2
+title: Stockton mine wind-down and the Cypress decision
+theme: economy
+section: economy
+subpage: economic_2
+parent: economic_structure
+order: 2
+updated: '2026-04-26'
+summary: Stockton coal mine in Buller employs around 350 workers and remains the largest single private employer in the district,
+  but its long-term operation is under pressure from coal-transition policy and falling thermal demand. The contested Cypress
+  mine extension and the Te Kuha proposal frame the central political question of how fast the transition can proceed.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - mine_direct_employment
+  - indirect_employment_multiplier
+  - transition_jobs_pipeline
+  inputs:
+  - resource_consent_process
+  - just_transition_unit_funding
+  constraints:
+  - thermal_coal_demand_trajectory
+  - permit_legal_settings
+  feedback_loops:
+  - Each year of operational continuity defers political pressure on transition planning; when closure is announced, the time
+    available to stand up alternative employment is too short, repeating the Solid Energy pattern.
+narrative:
+- heading: A single employer in a small district
+  body: Stockton sustains roughly 300-400 direct jobs and a larger number of indirect roles in Westport and Buller (claim.west_coast.economy.economic_2_claim).
+    Mine closure without a substitute employer risks reproducing the Solid Energy shock at a smaller but still material scale.
+- heading: Cypress, Te Kuha and the transition contest
+  body: Mine extensions and new permits (Cypress Mine extension, Te Kuha) are politically contested on climate-policy grounds.
+    Whatever the outcome, the region needs a multi-decade transition strategy with credible alternative employment anchors
+    — not a single binary closure decision.
+claim_ids:
+- claim.west_coast.economy.economic_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

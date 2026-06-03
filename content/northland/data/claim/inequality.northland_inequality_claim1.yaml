@@ -1,0 +1,18 @@
+id: claim.northland.inequality.northland_inequality_claim1
+statement: Northland has highest concentration of deprived communities in NZ outside
+  major metros. Far North District consistently ranks in NZDep decile 9-10 (most deprived);
+  Kaikohe, Rawene, Kawakawa, Kaitāia record very high deprivation. Structural inequality
+  rooted in historical land dispossession, limited economic opportunity, and persistent
+  Crown underinvestment in social services. Whānau income falls 20-30% below national.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

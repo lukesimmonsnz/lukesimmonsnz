@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.environment.soil_erosion
+title: Soil Erosion and Land Degradation
+theme: environment
+section: environment
+subpage: soil_erosion
+parent: problem.manawatu_whanganui.environment.freshwater_crisis
+order: 1
+updated: '2026-04-26'
+summary: Hill country erosion from pastoral farming; stream sedimentation; conservation
+  headland requirements.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Hill country erosion from pastoral farming; stream sedimentation; conservation
+    headland requirements.
+claim_ids:
+- claim.manawatu_whanganui.environment.soil_erosion_1
+- claim.manawatu_whanganui.environment.soil_erosion_2
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,21 @@
+id: camp.canterbury.education.equity_based_school_funding
+name: Weighted Equity-Based School Funding
+theme: education
+core_claim: Increasing funding to high-decile schools (weighted by student need) reduces
+  achievement gaps and improves outcomes for disadvantaged students.
+flagship_moves:
+- Key intervention for Weighted Equity-Based School Funding
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.education.achievement
+- problem.canterbury.education.secondary
+interventions:
+- description: Increasing funding to high-decile schools (weighted by student need)
+    reduces achievement gaps and improves outcomes for disadvantaged students.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

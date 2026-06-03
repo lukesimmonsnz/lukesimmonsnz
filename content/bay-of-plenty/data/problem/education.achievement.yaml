@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.education.achievement
+title: Educational achievement and access in Bay of Plenty — Te Moana-a-Toi
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 29
+updated: '2026-04-26'
+summary: Educational achievement and access represents a key systemic pressure for
+  Bay of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - achievement_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The educational achievement and access is a pressing concern for the region.
+claim_ids:
+- claim.bay_of_plenty.education.achievement_57
+- claim.bay_of_plenty.education.achievement_58
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.crime.youth_offending
+title: Youth offending and disengagement
+theme: crime
+section: crime
+subpage: youth-offending
+parent: problem.hawkes_bay.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: "Youth offending rates in Hawke's Bay are above national average, particularly among Māori youth. School disengagement, limited employment pathways, and inadequate youth services drive the trend. Reoffending rates are high."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - youth_offending_rate_per_capita
+    - school_suspension_rate
+  inputs:
+    - school_disengagement
+    - limited_employment_opportunity
+  constraints:
+    - youth_service_funding
+    - employment_training_availability
+  feedback_loops:
+    - 'Suspended students disengage; crime becomes income source; incarceration creates criminal networks; reoffending perpetuates cycle.'
+narrative:
+  - heading: Offence Rate
+    body: "Youth (10-16 years) in Hawke's Bay have offence rates approximately 35% above national average. Māori youth offending is 5x the European rate."
+  - heading: School Disengagement
+    body: "Suspension and stand-down rates in Hawke's Bay schools are approximately 8 per 1,000 students, above the national rate of 6 per 1,000."
+claim_ids:
+  - claim.hawkes_bay.crime.youth_offending_35_percent_above_national
+status: draft
+time_horizons: [decade]

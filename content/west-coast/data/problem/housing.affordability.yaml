@@ -1,0 +1,43 @@
+id: problem.west_coast.housing.affordability
+title: Cheap houses, cheaper incomes, and post-flood negative equity
+theme: housing
+section: housing
+subpage: affordability
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: West Coast house prices are among the lowest in New Zealand, but local median household income is also low, leaving
+  price-to-income ratios above the affordability threshold. After the 2021 and 2022 Westport floods, insurance withdrawal
+  collapsed values further, leaving many owners in negative equity.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - median_multiple
+  - insured_dwellings_share
+  - negative_equity_share
+  inputs:
+  - khc_first_home_grant
+  - tnzr_buyout_funding
+  constraints:
+  - low_local_income_floor
+  - insurance_market_retreat
+  feedback_loops:
+  - Insurance retreat drives values down, which reduces owner equity and the council rate base, which constrains the public
+    investment in flood defence that would, in principle, restore insurer confidence.
+narrative:
+- heading: Affordability is a ratio, not just a price
+  body: Median house prices in Westport and Greymouth are among the lowest in New Zealand at around $280-320,000, but median
+    household income is around $52,000, producing price-to-income ratios above the conventional affordability threshold (claim.west_coast.housing.affordability_claim).
+    Cheap is not the same as affordable when incomes track lower than prices.
+- heading: Post-flood negative equity
+  body: Insurance retreat following the 2021 and 2022 Westport floods has collapsed market values for flood-zone properties
+    below mortgage balances for many owners. The resulting negative-equity trap reduces household mobility and concentrates
+    climate risk on those least able to absorb it.
+claim_ids:
+- claim.west_coast.housing.affordability_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,19 @@
+id: camp.hawkes_bay.transport.public_investment
+name: Public transport investment and subsidies
+theme: transport
+core_claim: Public transport investment and subsidies is the primary strategy.
+flagship_moves:
+- Implement Public transport investment and subsidies across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.transport.connectivity
+- problem.hawkes_bay.transport.active_modes
+interventions:
+- description: Public transport investment and subsidies intervention
+  state_variable: public_investment_index
+  constraint_relaxed: public_investment_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

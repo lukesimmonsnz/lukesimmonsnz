@@ -1,0 +1,21 @@
+id: claim.gisborne.crime.rural_crime_47
+statement: Crime rates in Gisborne vary by offense type, with property crime 5-15%
+  above national average in some areas. Limited specialist policing resources for
+  rural districts mean delayed response times and reduced prevention effectiveness
+  in smaller communities.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.water_quality_index_v1
+notes: null

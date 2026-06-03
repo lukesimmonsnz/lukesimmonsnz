@@ -1,0 +1,25 @@
+id: camp.northland.infrastructure.digital_investment_camp
+name: Universal broadband and digital inclusion
+theme: infrastructure
+core_claim: Government-funded rural broadband extension and digital literacy programmes
+  address the digital divide.
+flagship_moves:
+- Extend Rural Broadband Initiative to remaining unserved premises
+- Fund community digital hubs in marae and rural schools
+- Subsidise low-income household broadband access
+tensions:
+- Ongoing operational costs after capital investment
+- Private network operators resist subsidised public competition
+- Device access and digital literacy gaps persist beyond connectivity
+interventions:
+- description: Extend Rural Broadband Initiative to remaining unserved premises
+  state_variable: infrastructure_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.infrastructure.northland_infrastructure_deficit
+- problem.northland.infrastructure.water_wastewater
+- problem.northland.infrastructure.digital_divide
+- problem.northland.infrastructure.flood_resilience
+applicable_in:
+- northland
+tensions_with: []

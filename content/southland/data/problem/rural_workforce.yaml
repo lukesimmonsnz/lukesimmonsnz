@@ -1,0 +1,34 @@
+id: problem.southland.health.rural_workforce
+title: Rural Health Workforce Shortages
+theme: health
+section: health
+subpage: rural_workforce
+parent: problem.southland.health.health_outcomes
+order: 4
+updated: '2026-04-26'
+summary: GPs, nurses, allied health scarce in rural Southland; Invercargill hospital
+  competes with other regions; locum costs high; recruitment barriers high.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: GPs, nurses, allied health scarce in rural Southland; Invercargill hospital
+    competes with other regions; locum costs high; recruitment barriers high.
+claim_ids:
+- claim.southland.health.health_outcomes_prevalence
+- claim.southland.health.chronic_disease_trend
+- claim.southland.health.rural_workforce_trend
+- claim.southland.health.mental_health_trend
+- claim.southland.health.health_outcomes_trend
+- claim.southland.health.mental_health_prevalence
+- claim.southland.health.rural_workforce_prevalence
+- claim.southland.health.chronic_disease_prevalence
+status: draft
+time_horizons: [decade, generation]

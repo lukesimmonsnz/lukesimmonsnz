@@ -1,0 +1,21 @@
+id: claim.bay_of_plenty.climate.climate_risk_82
+statement: Climate change impacts in Bay Of Plenty include increased temperatures,
+  altered precipitation patterns, sea-level rise, and intensified extreme weather
+  events. These changes threaten agriculture, water supply, infrastructure, and human
+  health, requiring proactive adaptation and mitigation strategies across all sectors.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+- source.moe_education_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

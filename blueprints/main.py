@@ -5,16 +5,11 @@ from pathlib import Path
 import markdown
 from flask import Blueprint, abort, current_app, make_response, render_template, request, url_for
 
-from data.projects import PROJECTS
-
 DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
 
 main_bp = Blueprint("main", __name__)
 
 MESSAGES_FILE = Path(__file__).resolve().parent.parent / "data" / "messages.jsonl"
-
-# Hand-updated when the /now/ page's content meaningfully changes.
-NOW_LAST_UPDATED = "21 April 2026"
 
 
 @main_bp.route("/")
@@ -22,14 +17,9 @@ def home():
     return render_template("main/home.html")
 
 
-@main_bp.route("/now/")
-def now():
-    return render_template("main/now.html", last_updated=NOW_LAST_UPDATED)
-
-
 @main_bp.route("/projects/")
 def projects():
-    return render_template("main/projects.html", projects=PROJECTS)
+    return render_template("main/projects.html")
 
 
 VALID_TOPICS = {
@@ -124,7 +114,10 @@ _SITEMAP_EXCLUDED_ENDPOINTS = {"static", "main.robots_txt", "main.sitemap_xml"}
 
 
 def _public_static_urls():
-    """All zero-argument, GET-reachable URLs, excluding SEO + static endpoints."""
+    """All zero-argument, GET-reachable URLs, excluding SEO + static endpoints
+    and any admin/CMS surfaces (which are private editorial tools, not public
+    pages — listing them in the public sitemap would invite crawlers and
+    confuse search engines)."""
     urls = []
     for rule in current_app.url_map.iter_rules():
         if rule.arguments:
@@ -133,13 +126,53 @@ def _public_static_urls():
             continue
         if "GET" not in rule.methods:
             continue
+        # Filter private editorial surfaces by URL prefix and by blueprint name.
+        if rule.rule.startswith("/admin"):
+            continue
+        if rule.endpoint.startswith(("admin.", "cms.", "main.error", "_debug")):
+            continue
         urls.append(url_for(rule.endpoint))
+    return sorted(set(urls))
+
+
+def _region_urls() -> list[str]:
+    """Enumerate all region index, section, and leaf page URLs by scanning
+    content/<region>/pages/. Returns sorted list of URL paths."""
+    content_root = Path(__file__).resolve().parent.parent / "content"
+    regions = [
+        "northland", "auckland", "waikato", "bay-of-plenty", "gisborne",
+        "hawkes-bay", "taranaki", "manawatu-whanganui", "wellington",
+        "tasman", "nelson", "marlborough", "west-coast", "canterbury",
+        "otago", "southland",
+    ]
+    urls: list[str] = []
+    for region in regions:
+        pages_dir = content_root / region / "pages"
+        if not pages_dir.is_dir():
+            continue
+        urls.append(f"/research/{region}/")
+        for section_dir in sorted(pages_dir.iterdir()):
+            if not section_dir.is_dir():
+                continue
+            section = section_dir.name
+            urls.append(f"/research/{region}/{section}/")
+            for page_file in sorted(section_dir.glob("*.md")):
+                urls.append(f"/research/{region}/{section}/{page_file.stem}/")
+    # NZ national rollup
+    nz_themes = [
+        "housing", "transport", "infrastructure", "environment", "inequality",
+        "crime", "health", "education", "economy", "governance", "climate-adaptation",
+    ]
+    urls.append("/research/nz/")
+    for theme in nz_themes:
+        urls.append(f"/research/nz/{theme}/")
     return sorted(set(urls))
 
 
 @main_bp.route("/sitemap.xml")
 def sitemap_xml():
-    """XML sitemap covering every public page, including blog posts."""
+    """XML sitemap covering every public page, including blog posts and all
+    region research pages."""
     # Imported lazily to avoid circular imports at module load time.
     from blueprints.blog import _all_posts  # type: ignore[attr-defined]
 
@@ -152,11 +185,13 @@ def sitemap_xml():
         }
         for p in posts
     ]
+    region_urls = _region_urls()
     today = _date.today().isoformat()
     xml = render_template(
         "main/sitemap.xml",
         static_urls=static_urls,
         blog_entries=blog_entries,
+        region_urls=region_urls,
         today=today,
     )
     resp = make_response(xml)

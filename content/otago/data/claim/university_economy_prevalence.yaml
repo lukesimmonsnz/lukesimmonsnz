@@ -1,0 +1,22 @@
+id: claim.otago.economy.university_economy_prevalence
+statement: 'University of Otago is Dunedin''s anchor institution and South Island''s
+  largest university: ~20,000 EFTS (2023); founded 1869; major employer; ~$1.5B estimated
+  GDP contribution. Otago Polytechnic (now Te Pūkenga campus) provides vocational
+  pathways. Tertiary sector attracts students from across NZ, supporting urban rental
+  markets, hospitality, and service sectors. Graduate retention in region challenging;
+  60%+ leave within 5 years.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

@@ -1,0 +1,21 @@
+id: claim.tasman.crime.drug_crime_claim
+statement: NZ Police Crime Statistics (2023) show drug-related offences in Tasman
+  region increased 12% year-on-year. Methamphetamine supply through regional highways
+  (SH6, SH60) and Golden Bay isolation are identified police priorities in Tasman
+  District Council community safety plan.
+value: 12
+unit: percent increase YoY
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

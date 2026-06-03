@@ -1,0 +1,12 @@
+id: driver.marlborough.transport.rural_accessibility
+name: Rural Accessibility And Multi-Modal Gaps
+description: Rural accessibility and multi-modal gaps.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.active_modes
+claim_ids: []

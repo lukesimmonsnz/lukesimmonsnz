@@ -1,0 +1,12 @@
+id: driver.nelson.infrastructure.driver_1
+name: Asset-age and climate-mismatch in core networks
+description: Nelson's three-waters network, stormwater system, and key bridges were largely sized to pre-2000 design standards. Climate-altered rainfall intensity and population growth together push the network past its design envelope, with a cumulative renewal backlog that exceeds rates-funded capacity.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.nelson.infrastructure.infrastructure
+- problem.nelson.infrastructure.infrastructure_2
+claim_ids: []

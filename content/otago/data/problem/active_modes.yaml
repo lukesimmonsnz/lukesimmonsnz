@@ -1,0 +1,34 @@
+id: problem.otago.transport.active_modes
+title: Low Active Transport Mode Share
+theme: transport
+section: transport
+subpage: active_modes
+parent: problem.otago.transport.connectivity
+order: 4
+updated: '2026-04-26'
+summary: Otago relies heavily on private vehicles; Central Otago Rail Trail success
+  not replicated into urban cycling networks; winter weather discourages walking/cycling.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Otago relies heavily on private vehicles; Central Otago Rail Trail success
+    not replicated into urban cycling networks; winter weather discourages walking/cycling.
+claim_ids:
+- claim.otago.transport.dunedin_southern_link_trend
+- claim.otago.transport.connectivity_prevalence
+- claim.otago.transport.connectivity_trend
+- claim.otago.transport.queenstown_congestion_prevalence
+- claim.otago.transport.active_modes_prevalence
+- claim.otago.transport.dunedin_southern_link_prevalence
+- claim.otago.transport.active_modes_trend
+- claim.otago.transport.queenstown_congestion_trend
+status: draft
+time_horizons: [decade, generation]

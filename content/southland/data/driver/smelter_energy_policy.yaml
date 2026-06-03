@@ -1,0 +1,12 @@
+id: driver.southland.governance.smelter_energy_policy
+name: Smelter Energy Policy and Grid Resilience Debates
+description: NZAS contract negotiations involve energy policy, grid resilience, emissions
+  considerations.
+theme: governance
+consensus: contested
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.southland.governance.smelter_energy_policy
+claim_ids: []

@@ -1,0 +1,21 @@
+id: camp.otago.crime.youth_diversion
+name: Youth Diversion and Engagement
+theme: crime
+core_claim: Early intervention, mentoring, and alternative activities reduce youth
+  offending and gang recruitment.
+flagship_moves:
+- Youth mentoring and positive role models
+- Sports and arts programs for at-risk youth
+- Police youth liaison and restorative justice
+tensions:
+- Effectiveness variability across contexts
+- Sustained program funding and cultural change required
+addresses:
+- problem.otago.crime.youth_offending
+interventions:
+- description: Establish youth mentoring program reaching 200 at-risk youth
+  state_variable: youth_engagement_rate
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

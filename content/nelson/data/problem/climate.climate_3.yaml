@@ -1,0 +1,35 @@
+id: problem.nelson.climate.climate_3
+title: Rising wildfire risk in the Nelson hill country
+theme: climate-adaptation
+section: climate
+subpage: climate_3
+parent: climate_risk
+order: 3
+updated: '2026-04-26'
+summary: The January-February 2019 Pigeon Valley / Moutere Hills fire burned approximately 2,200 hectares across Nelson and Tasman, the largest modern New Zealand wildfire and a benchmark for what longer dry seasons can produce in this landscape. Drier vegetation, more ignition sources around the urban-rural fringe, and slower fuel decay are pushing high-fire-danger days upward.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - high_fire_danger_days_per_year
+  - fuel_moisture_index
+  - wildland_urban_interface_dwellings
+  inputs:
+  - fire_service_capability
+  - forestry_management_practice
+  constraints:
+  - rural_water_supply_for_firefighting
+  - evacuation_route_capacity
+  feedback_loops:
+  - 'Settlement-fuel feedback: lifestyle subdivision into hill country expands the wildland-urban interface at the same time fire-danger days rise, multiplying exposed dwellings.'
+narrative:
+- heading: The 2019 baseline event
+  body: The Pigeon Valley fire displaced more than 2,000 residents and tested the entire regional emergency response system (claim.nelson.climate.climate_3_claim). It was preceded by an extended dry period and was contained only after several weeks. It is now the local reference scenario for fire planning and rural insurance pricing.
+- heading: Trend, not anomaly
+  body: Fire-weather modelling for the upper South Island projects a roughly 40 percent increase in high-fire-danger days by mid-century. Forestry blocks above the city, lifestyle subdivisions on the hill perimeter, and tinder-dry exotic grasslands all sit in the path of that trend, with limited rural water supply for fire response.
+claim_ids:
+- claim.nelson.climate.climate_3_claim
+status: draft
+time_horizons:
+- generation
+- century

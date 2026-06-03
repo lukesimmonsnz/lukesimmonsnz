@@ -1,0 +1,23 @@
+id: claim.west_coast.economy.economic_2_claim
+statement: Stockton coal mine in Buller district remains operational but faces long-term
+  closure pressure from global coal transition policy and thermal coal demand decline.
+  The mine employs approximately 300-400 workers. Closure would eliminate a core employer
+  in Westport and Buller, requiring managed economic transition and worker reskilling
+  support.
+value: 350
+unit: workers employed (approximate)
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mining_industry_association_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Employment figures from mining industry association; transition policy context
+  from WCRC long-term planning documents.

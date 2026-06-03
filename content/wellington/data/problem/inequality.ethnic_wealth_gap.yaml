@@ -1,0 +1,42 @@
+id: problem.wellington.inequality.ethnic_wealth_gap
+title: Ethnic wealth and income gap in Wellington
+theme: inequality
+section: inequality
+subpage: ethnic-wealth-gap
+parent: problem.wellington.inequality.geographic_deprivation
+order: 3
+updated: '2026-04-26'
+summary: Wellington has a significant structural wealth and income gap between high-deprivation communities
+  and the regional average. Homeownership rates in Porirua and southern Hutt Valley are substantially
+  below Wellington City; median incomes are lower; material hardship rates are higher. These disparities
+  reflect occupational concentration in lower-wage sectors, limited intergenerational asset transfer,
+  and housing affordability barriers that income alone cannot overcome.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - maori_homeownership_rate
+  - pacific_median_income_ratio
+  inputs:
+  - wage_equity_policy
+  - housing_programme_targeting
+  constraints:
+  - intergenerational_asset_gap
+  - employment_discrimination
+  feedback_loops:
+  - 'Asset accumulation gap: lower homeownership among Māori and Pacific households means less intergenerational
+    wealth transfer, perpetuating income inequality across generations.'
+narrative:
+- heading: Homeownership gap
+  body: Māori homeownership in Wellington is approximately 40% compared to 65% for European households
+    — a gap that reflects both current affordability barriers and the historical exclusion of Māori from
+    land and asset accumulation following colonisation (claim.wellington.inequality.maori_homeownership_gap).
+- heading: Pacific income gap
+  body: Pacific households in Wellington earn substantially less than the regional median income, concentrated
+    in lower-wage service-sector employment with limited access to the high-wage government and professional
+    roles that dominate Wellington's labour market (claim.wellington.inequality.pacific_income_gap).
+claim_ids:
+- claim.wellington.inequality.maori_homeownership_gap
+- claim.wellington.inequality.pacific_income_gap
+status: draft
+time_horizons: [decade, generation, century]

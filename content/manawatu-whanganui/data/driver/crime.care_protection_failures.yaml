@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.crime.care_protection_failures
+name: Care And Protection System Failures
+description: Care and protection system failures with regional implications.
+theme: crime
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.crime.youth_offending
+claim_ids: []

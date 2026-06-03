@@ -1,0 +1,21 @@
+id: camp.southland.health.mental_health
+name: Mental Health Service Expansion
+theme: health
+core_claim: Expanded counselors, therapists, and crisis services reduce mental health
+  burden.
+flagship_moves:
+- Hire 50 additional mental health clinicians
+- 24/7 mental health crisis service
+- Peer support worker program
+tensions:
+- Healthcare worker recruitment difficulty
+- Ongoing funding commitment
+addresses:
+- problem.southland.health.mental_health
+interventions:
+- description: Reduce mental health service waitlist to <6 weeks
+  state_variable: mh_service_access
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

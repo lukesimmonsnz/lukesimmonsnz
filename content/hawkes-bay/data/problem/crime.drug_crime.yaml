@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.crime.drug_crime
+title: Drug-related crime and substance abuse
+theme: crime
+section: crime
+subpage: drug-crime
+parent: problem.hawkes_bay.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: "Methamphetamine and synthetic drug markets have expanded in Hawke's Bay. Related property crime, violence, and health harms are rising. Treatment and prevention services are under-resourced."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - drug_market_activity_index
+    - drug_treatment_service_coverage_percent
+  inputs:
+    - organised_crime_gang_activity
+    - treatment_service_shortage
+  constraints:
+    - rehabilitation_facility_capacity
+    - community_education_resourcing
+  feedback_loops:
+    - 'Addiction untreated drives property crime; incarceration without treatment causes reoffending; community impacts increase demand for services exceeding supply.'
+narrative:
+  - heading: Market Expansion
+    body: "Police report expanded methamphetamine and fentanyl supply networks in Hawke's Bay since 2018. Seizures have increased 150% over five years."
+  - heading: Health Impact
+    body: "Drug-related hospital admissions and overdose deaths in Hawke's Bay have increased 35% over 2018-2023. Limited treatment bed capacity creates long waiting lists."
+claim_ids:
+  - claim.hawkes_bay.crime.drug_seizures_150_percent_increase
+status: draft
+time_horizons: [decade]

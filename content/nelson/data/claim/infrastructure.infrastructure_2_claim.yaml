@@ -1,0 +1,25 @@
+id: claim.nelson.infrastructure.infrastructure_2_claim
+statement: Water supply infrastructure in Nelson-Tasman is at a critical juncture.
+  Maitai Dam, built 1957, has a design yield of 38 million m³/year; actual yield has
+  declined to 33–35 million m³/year due to climate-altered snowmelt and rainfall.
+  Population growth forecasts demand increasing 2% annually; without demand reduction,
+  deficit will reach 8–12 million m³/year by 2035. The Waimea Plains aquifer (supplying
+  70% of water) is being drawn down 0.5–0.8 m/year faster than recharge rates; sustainability
+  thresholds will be crossed 2028–2032 if extraction continues unabated. Planning
+  for a new bulk water scheme (Bossons Aquifer, 80 km north) began 2023 but faces
+  environmental and Iwi concerns; capacity delivery is uncertain.
+value: 35
+unit: million m³/year Maitai Dam yield (vs. 38 design)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_tasman_water_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

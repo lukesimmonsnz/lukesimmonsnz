@@ -1,0 +1,11 @@
+id: driver.otago.inequality.structural_disadvantage
+name: Structural Economic Disadvantage
+description: Historical economic structures create persistent inequality.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.inequality.inequality
+claim_ids: []

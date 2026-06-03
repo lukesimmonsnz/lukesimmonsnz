@@ -60,3 +60,4 @@ claim_ids:
   - claim.auckland.governance.public_trust_decline
   - claim.auckland.governance.conflict_of_interest_risk
 status: draft
+time_horizons: [decade, generation, century]

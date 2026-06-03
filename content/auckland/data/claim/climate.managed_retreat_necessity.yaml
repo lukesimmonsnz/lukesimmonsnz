@@ -1,21 +1,21 @@
 id: claim.auckland.climate.managed_retreat_necessity
-statement: >
-  Some Auckland coastal properties will become uninhabitable under
-  even moderate sea level rise scenarios; managed retreat — the planned
-  relocation of residents and structures from high-risk areas — is
-  technically necessary at scale but has not been implemented due to
-  legal, financial, and political barriers around property rights and
-  Crown liability.
+statement: 'Some Auckland coastal properties will become uninhabitable under even
+  moderate sea level rise scenarios; managed retreat — the planned relocation of residents
+  and structures from high-risk areas — is technically necessary at scale but has
+  not been implemented due to legal, financial, and political barriers around property
+  rights and Crown liability.
+
+  '
 value: null
 unit: null
-time_period: "2023-2100"
+time_period: 2023-2100
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.niwa_climate_auckland_2023
-  - source.auckland_council_climate_plan_2023
+- source.niwa_climate_auckland_2023
+- source.auckland_council_climate_plan_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

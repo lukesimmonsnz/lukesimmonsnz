@@ -1,0 +1,20 @@
+id: camp.wellington.crime.organised_crime_disruption
+name: Organised Crime Financial Disruption
+theme: crime
+core_claim: Targeting the financial infrastructure of organised crime groups is more effective than arrest-focused enforcement.
+flagship_moves:
+- Anti-money laundering audits of Wellington-based cash-intensive businesses
+- Proceeds of crime recovery programme targeting property assets
+- Cross-agency financial intelligence unit co-located with police
+tensions:
+- Financial disruption requires significant intelligence and legal resource
+- Displacement of organised crime to less-scrutinised jurisdictions is a real risk
+addresses:
+- problem.wellington.crime.organised_crime
+interventions:
+- description: Expand Police Financial Intelligence Unit capacity in Wellington with dedicated AML liaison
+  state_variable: organised_crime_revenue
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

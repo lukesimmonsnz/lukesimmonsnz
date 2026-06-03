@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.crime.concentrated_deprivation
+name: Concentrated Deprivation And Inequality
+description: Concentrated deprivation and inequality. This driver operates at regional
+  scale with consensus consensus.
+theme: crime
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.economy.agri_food
+claim_ids: []

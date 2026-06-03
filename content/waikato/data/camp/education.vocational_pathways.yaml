@@ -1,0 +1,20 @@
+id: camp.waikato.education.vocational_pathways
+name: Vocational and skills pathway expansion
+theme: education
+core_claim: Vocational and skills pathway expansion is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement vocational and skills pathway expansion
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.economy.sme_financing_gap
+name: Small Business Financing Gaps
+description: Small business financing gaps with regional implications.
+theme: economy
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.environment.manawatu_river_quality
+claim_ids: []

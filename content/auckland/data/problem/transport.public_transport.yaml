@@ -14,7 +14,7 @@ summary: >
   beyond 800m of any rapid transit stop, bus services with 15–30 minute
   headways that require timetable planning rather than turn-up-and-go,
   and fares structured to penalise longer trips made by outer-suburban
-  households. The City Rail Link opening will transform rail capacity
+  households. The City Rail Link — delayed and not yet open — will when complete transform rail capacity
   but cannot by itself close the coverage gap in the Northwest, North
   Shore, and outer South.
 manifests_in:
@@ -48,8 +48,8 @@ narrative:
       fast, frequent connections. More than half of Auckland's residential
       land area lies beyond 800m of any rapid transit stop: these residents
       face bus services too slow and infrequent to attract discretionary
-      car trips. The City Rail Link will transform rail capacity from 2025
-      onwards, enabling 24 trains per hour through the CBD tunnel, but it
+      car trips. The City Rail Link — delayed past its initial 2025 target and not yet open — will transform rail capacity
+      when complete, enabling 24 trains per hour through the CBD tunnel, but it
       does not extend the geographic reach of the network — it makes the
       existing spine faster and more reliable.
   - heading: "Frequency and reliability as the patronage constraint"
@@ -82,4 +82,8 @@ claim_ids:
   - claim.auckland.transport.pt_patronage_recovery
   - claim.auckland.transport.rapid_transit_coverage_gap
   - claim.auckland.transport.pt_fare_affordability
+  - claim.auckland.transport.light_rail_cancellation
+  - claim.auckland.transport.crl_capacity_target_2026
+  - claim.auckland.transport.atap_2024_programme
 status: draft
+time_horizons: [decade, generation, century]

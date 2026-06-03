@@ -1,0 +1,21 @@
+id: camp.otago.crime.visitor_venue_safety
+name: Queenstown Visitor Venue Safety and Late-Night Governance
+theme: crime
+core_claim: Venue licensing, staff training, and policing reduce visitor-related assaults
+  and crime.
+flagship_moves:
+- Implement late-night venues license requirements
+- Mandatory staff assault de-escalation training
+- Enhanced police patrol during peak hours
+tensions:
+- Venue operator compliance resistance
+- Cost of staff training and security
+addresses:
+- problem.otago.crime.queenstown_visitor_crime
+interventions:
+- description: Deploy police visibility in CBD during peak hours
+  state_variable: visitor_assault_rate
+  expected_sign: '-'
+applicable_in:
+- otago
+tensions_with: []

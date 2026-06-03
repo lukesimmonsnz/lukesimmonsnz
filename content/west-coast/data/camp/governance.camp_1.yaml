@@ -1,0 +1,25 @@
+id: camp.west_coast.governance.strengthened_west_coast_region
+name: Strengthened West Coast Regional Governance and Capacity
+theme: governance
+core_claim: West Coast's four small councils lack capacity for strategic planning;
+  formal shared services and co-governance with Poutini Ngāi Tahu would improve outcomes.
+flagship_moves:
+- Establish mandatory shared services for three waters and planning across West Coast
+  councils
+- Develop formal co-governance arrangement with Poutini Ngāi Tahu for regional resource
+  management
+- Fund dedicated West Coast economic development agency
+tensions:
+- Small councils resist loss of local control even when capacity is clearly insufficient
+- Co-governance arrangements require sustained Crown investment to be effective
+addresses:
+- problem.west_coast.governance.governance
+- problem.west_coast.governance.growth_management
+interventions:
+- description: Establish West Coast shared services and Poutini Ngāi Tahu co-governance
+    framework
+  state_variable: per_capita_council_overhead
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

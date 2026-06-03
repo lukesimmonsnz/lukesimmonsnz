@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.crime.drug_crime
+title: Drug-related crime and substance abuse in Bay of Plenty — Te Moana-a-Toi
+theme: crime
+section: crime
+subpage: drug_crime
+parent: problem.bay_of_plenty.crime.safety
+order: 24
+updated: '2026-04-26'
+summary: Drug-related crime and substance abuse is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - drug_crime_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Drug-related crime and substance abuse is a specific manifestation of the
+    broader pressure.
+claim_ids:
+- claim.bay_of_plenty.crime.drug_crime_47
+- claim.bay_of_plenty.crime.drug_crime_48
+status: draft
+time_horizons: [decade]

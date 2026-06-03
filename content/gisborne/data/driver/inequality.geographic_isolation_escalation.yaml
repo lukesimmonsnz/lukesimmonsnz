@@ -1,0 +1,13 @@
+id: driver.gisborne.inequality.geographic_isolation_escalation
+name: Driver escalating geographic_isolation
+description: "This driver exacerbates the geographic_isolation challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: inequality
+consensus: contested
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.inequality.geographic_isolation
+claim_ids:
+- claim.gisborne.inequality.geographic_isolation_39

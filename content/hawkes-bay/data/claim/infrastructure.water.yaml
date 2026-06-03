@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.infrastructure.aquifer_stress_indices
+statement: Aquifer stress indices in Hawke's Bay (Heretaunga Plains, central basin)
+  indicate elevated groundwater extraction relative to recharge, exacerbated by drought
+  (1-in-7 historical → 1-in-4 projected by 2070). Wine grapes and apple orchards in
+  Gimblett Gravels draw heavily on confined aquifers; irrigation intensification risks
+  long-term aquifer depletion and saline intrusion in coastal zones near Napier/Ahuriri.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: null
+notes: null

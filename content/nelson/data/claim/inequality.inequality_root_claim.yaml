@@ -1,0 +1,24 @@
+id: claim.nelson.inequality.inequality_root_claim
+statement: 'Income inequality in Nelson-Tasman is widening. The Gini coefficient is
+  0.38 (vs. 0.35 nationally); income ratios show the top 10% earn 8.2× median household
+  income while the bottom 10% earn 2.1× (ratio 3.9×). Median household income is $62,400,
+  but mean is $78,300, indicating right-skew driven by high earners in professional
+  and tourism sectors. Median personal income shows larger gaps: top decile $78,000
+  vs. bottom decile $18,500 (4.2× ratio). Lifestyle migrants with high incomes have
+  amplified inequality in property, professional services, and business ownership
+  sectors.'
+value: 0.38
+unit: Gini coefficient
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.census_income_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.gini_coefficient_v1
+notes: null

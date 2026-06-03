@@ -1,0 +1,44 @@
+id: problem.west_coast.economy.economic_structure
+title: Mining-tourism transition and the diversification gap
+theme: economy
+section: economy
+subpage: economic_structure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: The West Coast economy is structurally concentrated in extractive and primary sectors — coal, dairy, forestry and
+  tourism — with limited services, knowledge or manufacturing depth. The Solid Energy collapse (2015-2018) demonstrated the
+  vulnerability of this portfolio, and the slow transition out of thermal coal remains the central economic challenge for
+  the region.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - sector_employment_share
+  - median_household_income
+  - high_wage_jobs_per_capita
+  inputs:
+  - regional_development_funding
+  - transition_fund_allocations
+  constraints:
+  - distance_from_urban_markets
+  - narrow_skill_base
+  feedback_loops:
+  - Out-migration of working-age cohorts shrinks the labour pool, which discourages employer entry, which extends the period
+    in which the existing concentrated portfolio dominates and out-migration continues.
+narrative:
+- heading: Concentration risk
+  body: Solid Energy's collapse removed roughly a thousand jobs over 2015-2018 — a structural shock in a regional economy
+    of around 32,000 people (claim.west_coast.economy.economic_structure_claim). The Stockton mine wind-down extends that
+    adjustment, and global thermal-coal demand decline means the trajectory is one-way.
+- heading: Diversification, but to what?
+  body: Replacement sectors under active discussion include conservation-economy work (DOC contracts, ecological restoration),
+    niche manufacturing (notably pounamu and dairy processing), tourism diversification beyond the glaciers, and remote-services
+    employment built on improved digital infrastructure. None of these on its own can absorb the labour-force capacity vacated
+    by coal.
+claim_ids:
+- claim.west_coast.economy.economic_structure_claim
+status: draft
+time_horizons:
+- decade
+- generation

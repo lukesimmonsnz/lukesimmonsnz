@@ -1,0 +1,16 @@
+id: driver.wellington.inequality.intergenerational_asset_gap
+name: Intergenerational Māori and Pacific asset gap
+description: Historical exclusion of working-class and non-European communities from the mid-twentieth-century
+  land ownership boom — through Crown land policies, zoning, and banking practices — created an asset
+  gap that compounds through limited intergenerational wealth transfer. Households in Porirua and Hutt
+  Valley that did not accumulate property wealth in this period face structural barriers to homeownership
+  that income alone cannot overcome in a high-cost housing market.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+- problem.wellington.inequality.ethnic_wealth_gap
+claim_ids:
+- claim.wellington.inequality.maori_homeownership_gap

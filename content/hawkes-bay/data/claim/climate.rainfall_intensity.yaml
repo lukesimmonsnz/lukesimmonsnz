@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.climate.rainfall_intensity_15_20_percent_increase
+statement: Climate projections indicate a 15-20% increase in extreme rainfall intensity
+  (1-in-50-year storm magnitude) in Hawke's Bay by 2070. Cyclone Gabrielle (2023)
+  demonstrated region's vulnerability; stormwater infrastructure across Napier, Hastings
+  requires upgrade to manage 5-10cm rainfall events.
+value: 17
+unit: percent increase
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional statistical claim for Hawke's Bay

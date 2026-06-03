@@ -1,0 +1,20 @@
+id: claim.marlborough.governance.treaty_placeholder
+statement: 'Ngāti Toa Rangatira Treaty settlement 2014 (Te Ture Whenua Act provisions):
+  19,300 hectares returned to iwi ownership; governance arrangements for Queen Charlotte
+  Sound / Te Moana-o-Raukawa include co-management provisions for marine resource
+  planning; 10-year review cycle (next 2024).'
+value: 19300
+unit: hectares returned to Ngāti Toa (2014 settlement)
+time_period: '2014'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ngai_tahu_iwi_plan_2022
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

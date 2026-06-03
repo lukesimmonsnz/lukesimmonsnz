@@ -1,0 +1,25 @@
+id: camp.northland.economy.iwi_economy_camp
+name: Māori and iwi economic development
+theme: economy
+core_claim: Leveraging iwi assets and Treaty settlements to build a Māori economic
+  base is both a Treaty obligation and a regional growth pathway.
+flagship_moves:
+- Direct Crown investment to Māori-owned primary sector businesses
+- Support iwi joint ventures in tourism, aquaculture, and forestry
+- Fund Māori entrepreneurship and business development services
+tensions:
+- Pace of iwi asset accumulation is constrained by settlement timelines
+- Internal iwi governance requirements slow investment decisions
+- Risk of elite capture without broad whānau benefit-sharing
+interventions:
+- description: Direct Crown investment to Māori-owned primary sector businesses
+  state_variable: economy_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.economy.northland_economic_underperformance
+- problem.northland.economy.low_wages
+- problem.northland.economy.tourism_dependence
+- problem.northland.economy.business_investment
+applicable_in:
+- northland
+tensions_with: []

@@ -1,0 +1,24 @@
+id: 'problem.northland.governance.challenges'
+title: 'Te Tai Tokerau Northland: governance challenges'
+theme: 'governance'
+section: 'governance'
+subpage: 'challenges'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Governance does not adequately serve needs.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Governance does not adequately serve needs.'
+claim_ids:
+- 'claim.northland.governance.challenges_claim1'
+- 'claim.northland.governance.challenges_claim2'
+status: 'draft'

@@ -1,0 +1,21 @@
+id: claim.southland.crime.family_violence_trend
+statement: Family violence incidents in Southland are sustained above trend. Methamphetamine
+  supply correlation with family violence documented; rural isolation exacerbates
+  victim vulnerability. Police response time in remote areas (Catlins, Manapouri,
+  Stewart Island) exceeds 2 hours in some cases; support service gaps in Te Anau and
+  Riverton.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

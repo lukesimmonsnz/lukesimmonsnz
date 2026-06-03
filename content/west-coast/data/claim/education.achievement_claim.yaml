@@ -1,0 +1,23 @@
+id: claim.west_coast.education.achievement_claim
+statement: West Coast student achievement (NCEA levels) falls below national averages
+  in mathematics and English, with particular gaps in small rural schools. School
+  closures and staff recruitment difficulty in remote towns limit curriculum breadth
+  and academic support. Student participation in tertiary education is approximately
+  20 percentage points below national average.
+value: 20
+unit: percentage point gap (tertiary participation)
+time_period: 2018-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_west_coast_achievement_2023
+- source.stats_nz_census_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Achievement data from MOE regional reports; tertiary participation gap calculated
+  from Census qualification data.

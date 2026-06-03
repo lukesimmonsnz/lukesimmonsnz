@@ -1,0 +1,22 @@
+id: camp.taranaki.housing.housing.affordability_support
+name: Housing affordability support
+theme: housing
+core_claim: Housing affordability support addresses housing_market.
+flagship_moves:
+- Implement Housing affordability support
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.housing.housing_market
+- problem.taranaki.housing.affordability
+- problem.taranaki.housing.rural_housing
+- problem.taranaki.housing.state_housing
+interventions:
+- description: Housing affordability support action
+  state_variable: housing.affordability_support_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

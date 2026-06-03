@@ -1,0 +1,21 @@
+id: camp.wellington.health.workforce_training
+name: Health Workforce Training and Retention Pipeline
+theme: health
+core_claim: Addressing Wellington's health workforce shortage requires sustained investment in training, rural/Māori recruitment,
+  and retention incentives.
+flagship_moves:
+- Expand clinical training places at Wellington medical and nursing schools
+- Rural health bonding scheme for GPs and nurses committing to underserved areas
+- Māori health workforce scholarships and community health worker pathways
+tensions:
+- Training pipeline benefits accrue over 5–10 years; short-term workforce gap remains
+- Bonding schemes have high administrative overhead and variable compliance
+addresses:
+- problem.wellington.health.workforce_shortage
+interventions:
+- description: Increase Wellington clinical training places by 30% with targeted Māori and Pasifika entry pathways
+  state_variable: health_workforce_vacancy_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

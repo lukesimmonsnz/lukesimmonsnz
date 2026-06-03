@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.health.chronic_disease_1
+statement: Chronic diseases (type 2 diabetes, hypertension, cardiovascular disease)
+  account for approximately 65-70% of mortality and 60-65% of disability in Manawatū-Whanganui.
+  Diabetes prevalence is approximately 8-10% of the population, above national average
+  (7-8%). Whanganui city and rural areas have higher prevalence and mortality rates
+  than Palmerston North. Risk factors include high rates of obesity (approx. 35-38%
+  of adults), smoking (18-22%), and sedentary lifestyles, correlating with socioeconomic
+  deprivation.
+value: 67.5
+unit: percent_mortality_chronic_disease
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mw_2023
+- source.stats_nz_deprivation_2018_mw
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

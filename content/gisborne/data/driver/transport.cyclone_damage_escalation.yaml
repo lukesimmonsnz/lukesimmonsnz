@@ -1,0 +1,13 @@
+id: driver.gisborne.transport.cyclone_damage_escalation
+name: Driver escalating cyclone_damage
+description: "This driver exacerbates the cyclone_damage challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: transport
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.transport.cyclone_damage
+claim_ids:
+- claim.gisborne.transport.cyclone_damage_13

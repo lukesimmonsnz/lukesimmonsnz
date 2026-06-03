@@ -1,0 +1,20 @@
+id: claim.waikato.climate.drought_return_period_halved
+statement: Waikato's irrigation-dependent agriculture (covering ~95,000 hectares,
+  particularly in the southern plains) faces increased drought frequency under IPCC
+  RCP 6.0 projections, with dry years expected to shift from 1-in-10 to 1-in-5 year
+  recurrence intervals by 2070.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_waikato_climate_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato drought_risk claim

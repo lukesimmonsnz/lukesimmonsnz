@@ -1,0 +1,29 @@
+id: problem.taranaki.health.chronic_disease
+title: Chronic disease and lifestyle factors
+theme: health
+section: health
+subpage: chronic_disease
+parent: problem.taranaki.health.health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: Type 2 diabetes and cardiovascular disease prevalence are near national average.
+  Obesity rates are elevated.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - chronic_disease_index
+  inputs:
+  - chronic_disease_input_1
+  constraints:
+  - chronic_disease_constraint
+  feedback_loops:
+  - 'Feedback: chronic_disease'
+narrative:
+- heading: Chronic disease and lifestyle factors in Taranaki
+  body: Type 2 diabetes and cardiovascular disease prevalence are near national average.
+    Obesity rates are elevated.
+claim_ids:
+- claim.taranaki.health.chronic_disease_01
+status: draft
+time_horizons: [decade, generation]

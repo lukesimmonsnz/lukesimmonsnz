@@ -1,0 +1,19 @@
+id: claim.wellington.health.preventable_hospitalisations
+statement: Wellington records elevated rates of preventable hospitalisations for ambulatory-care-sensitive
+  conditions — including poorly controlled diabetes, asthma, and cellulitis — in high-deprivation
+  sub-areas, indicating failures of primary and preventive care in these communities.
+value: null
+unit: null
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_wellington_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.economy.cyclone_damage_6_8_billion
+statement: Cyclone Gabrielle (February 2023) caused estimated economic damage of approximately
+  $7 billion to Hawke's Bay, devastating agriculture, horticulture, and infrastructure.
+  Recovery will strain regional budgets and business cash flow for 3-5 years; agricultural
+  replanting costs, orchard restructuring, and soil remediation delay farm income
+  recovery.
+value: 7000
+unit: NZD millions (economic damage estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

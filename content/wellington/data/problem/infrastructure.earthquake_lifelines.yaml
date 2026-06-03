@@ -1,0 +1,39 @@
+id: problem.wellington.infrastructure.earthquake_lifelines
+title: Earthquake vulnerability of Wellington's critical lifelines
+theme: infrastructure
+section: infrastructure
+subpage: earthquake-lifelines
+parent: problem.wellington.infrastructure.water_resilience
+order: 3
+updated: '2026-04-26'
+summary: Wellington's critical lifeline infrastructure — water, wastewater, electricity, transport, and telecommunications
+  — sits across the Wellington and Wairarapa fault systems. A major fault rupture is modelled to produce extended outages
+  across multiple systems simultaneously, with the water network particularly vulnerable to pipe breaks and pump station failure.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - lifeline_restoration_time_days
+  - critical_facility_seismic_rating
+  inputs:
+  - fault_rupture_magnitude
+  - infrastructure_seismic_upgrade_rate
+  constraints:
+  - fault_alignment_with_infrastructure_corridors
+  - upgrade_funding_gap
+  feedback_loops:
+  - 'Vulnerability persistence loop: high upgrade costs and competing priorities defer lifeline seismic strengthening; each
+    deferred year increases expected restoration time post-rupture.'
+narrative:
+- heading: Modelled rupture impacts
+  body: GNS Science models a Wellington Fault Mw 7.5 rupture causing widespread liquefaction, bridge failures, and water network
+    breaks across lower Hutt and Petone, with projected restoration times of weeks to months for full water supply (claim.wellington.infrastructure.lifeline_vulnerability_assessment).
+- heading: CentrePort as precedent
+  body: The 2016 Kaikōura earthquake caused significant liquefaction damage to CentrePort Wellington — demonstrating that
+    infrastructure on reclaimed land in the harbour is acutely vulnerable to earthquake shaking at magnitude levels that are
+    credible within Wellington's probabilistic hazard profile (claim.wellington.infrastructure.centreport_kaikoura_damage).
+claim_ids:
+- claim.wellington.infrastructure.lifeline_vulnerability_assessment
+- claim.wellington.infrastructure.centreport_kaikoura_damage
+status: draft
+time_horizons: [decade, generation]

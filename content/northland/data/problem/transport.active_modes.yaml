@@ -1,0 +1,24 @@
+id: 'problem.northland.transport.active_modes'
+title: 'Te Tai Tokerau Northland: active travel infrastructure'
+theme: 'transport'
+section: 'transport'
+subpage: 'active-modes'
+parent: 'problem.northland.transport.connectivity'
+order: 5
+updated: '2026-04-26'
+summary: 'Walking and cycling infrastructure gaps exist.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Walking and cycling infrastructure gaps exist.'
+claim_ids:
+- 'claim.northland.transport.active_modes_claim1'
+- 'claim.northland.transport.active_modes_claim2'
+status: 'draft'

@@ -1,0 +1,19 @@
+id: claim.northland.governance.coordination_deficit_claim1
+statement: Northland governance is fragmented across four councils (NRC, FNDC, WDC,
+  Kaipara DC) with limited coordination on regional strategy. Kaipara DC is partly
+  in Auckland region; cross-boundary collaboration weak on transport, water, environmental
+  management. Three territorial authorities plus regional council creates duplication
+  and accountability gaps; shared service arrangements (emergency management, economic
+  development) underfunded.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

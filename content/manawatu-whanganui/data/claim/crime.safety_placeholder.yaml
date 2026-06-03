@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.crime.safety_placeholder
+statement: Whanganui city ranks among NZ's highest-deprivation urban areas, with crime
+  rates (per 10,000 residents) approximately 45-50% higher than Palmerston North.
+  Street crime, burglary, and antisocial behavior concentrate in central city and
+  East End areas with highest socioeconomic deprivation. Public perception of safety
+  has declined 8-12% since 2020.
+value: 47.5
+unit: percent_higher_than_palmerston_north
+time_period: 2020-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mw_2023
+- source.stats_nz_deprivation_2018_mw
+- source.whanganui_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

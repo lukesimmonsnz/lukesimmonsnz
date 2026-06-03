@@ -1,0 +1,36 @@
+id: problem.nelson.environment.sea_level_risk
+title: Sea-level rise exposure of Port Nelson and the CBD fringe
+theme: environment
+section: environment
+subpage: sea_level_risk
+parent: coastal_environment
+order: 2
+updated: '2026-04-26'
+summary: Port Nelson and the central city sit between 0 and 1.5 metres above mean high-water spring tide. Climate projections estimate around 0.75 metres of mean sea-level rise by 2100 under RCP 4.5; combined with storm surge and Waimea-fault subsidence risk, routine high-tide flooding of port infrastructure and CBD fringe zones is likely by 2055-2070.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - mean_sea_level_anomaly_cm
+  - high_tide_flood_days_per_year
+  - exposed_assets_replacement_value_nzd_m
+  inputs:
+  - global_emissions_pathway
+  - coastal_protection_capex
+  constraints:
+  - land_elevation
+  - subsidence_rate
+  - insurance_appetite
+  feedback_loops:
+  - 'Insurance-investment feedback: as coastal flood frequency rises, insurance pricing or withdrawal strands assets; once stranded, replacement investment moves elsewhere, accelerating economic shrinkage in the exposed zone.'
+narrative:
+- heading: The exposure footprint
+  body: The most economically significant assets in the city -- Port Nelson, Trafalgar Park-area infrastructure, the wastewater outfall network, and key CBD properties -- sit in the lowest elevation band (claim.nelson.environment.sea_level_risk_claim). Groundwater salinisation is already measurable in wells within around 2 km of the coast.
+- heading: Adaptation pathway, not retreat decision
+  body: 'Council and port adaptation planning is in early stages: shoreline-management plans, coastal hazard mapping, and infrastructure-renewal sequencing exist, but the political decision points (when to defend, accommodate, or retreat specific assets) are not yet sequenced. Insurance tightening is starting to force the conversation.'
+claim_ids:
+- claim.nelson.environment.sea_level_risk_claim
+status: draft
+time_horizons:
+- generation
+- century

@@ -1,0 +1,27 @@
+id: problem.taranaki.infrastructure.infrastructure
+title: Infrastructure planning and investment
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Water, wastewater, and broadband infrastructure in Taranaki require investment.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - infrastructure_index
+  inputs:
+  - infrastructure_input_1
+  constraints:
+  - infrastructure_constraint
+  feedback_loops:
+  - 'Feedback: infrastructure'
+narrative:
+- heading: Infrastructure planning and investment in Taranaki
+  body: Water, wastewater, and broadband infrastructure in Taranaki require investment.
+claim_ids:
+- claim.taranaki.infrastructure.infrastructure_01
+status: draft
+time_horizons: [decade, generation]

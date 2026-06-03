@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.crime.school_disengagement
+name: School Disengagement And Pathway Gaps
+description: School disengagement and pathway gaps. This driver operates at regional
+  scale with mostly-agreed consensus.
+theme: crime
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.economy.economic_structure
+claim_ids: []

@@ -1,0 +1,38 @@
+id: problem.wellington.health.workforce_shortage
+title: Health workforce shortage in Wellington
+theme: health
+section: health
+subpage: workforce-shortage
+parent: problem.wellington.health.system_access
+order: 4
+updated: '2026-04-26'
+summary: Wellington faces acute health workforce shortages across nursing, general practice, and specialist roles. The shortage
+  is driven by global competition for health workers, domestic pipeline constraints, and wage gaps relative to Australia.
+  Workforce gaps directly limit the capacity of Wellington's health system to meet demand.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - nurse_vacancy_rate
+  - gp_per_capita_ratio
+  inputs:
+  - international_migration_of_clinicians
+  - domestic_training_output
+  constraints:
+  - australia_wage_differential
+  - training_pipeline_capacity
+  feedback_loops:
+  - 'Burnout-attrition loop: workforce shortages increase workload for remaining staff; burnout and attrition increase; vacancy
+    rate rises further.'
+narrative:
+- heading: Nurse vacancy rates
+  body: Wellington Regional Hospital and affiliated services have carried nursing vacancy rates above 15% in some wards, requiring
+    ongoing agency and overseas nurse recruitment to maintain minimum safe staffing ratios (claim.wellington.health.nurse_vacancy_rate).
+- heading: GP pipeline risk
+  body: Wellington's general practice workforce is ageing, with a significant share of GPs expected to retire within the next
+    decade and insufficient domestic training and recruitment to replace them at the current population growth rate (claim.wellington.health.gp_retirement_pipeline).
+claim_ids:
+- claim.wellington.health.nurse_vacancy_rate
+- claim.wellington.health.gp_retirement_pipeline
+status: draft
+time_horizons: [decade, generation]

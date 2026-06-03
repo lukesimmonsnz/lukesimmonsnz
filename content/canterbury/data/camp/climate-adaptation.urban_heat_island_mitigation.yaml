@@ -1,0 +1,22 @@
+id: camp.canterbury.climate.urban_heat_island_mitigation
+name: Urban Heat Island Mitigation & Cool Urban Design
+theme: climate-adaptation
+core_claim: Cool roofing, expanded urban canopy (tree planting 1M+ trees by 2035),
+  and permeable pavements reduce urban heat island effect (currently 3-5°C above rural
+  areas).
+flagship_moves:
+- Key intervention for Urban Heat Island Mitigation & Cool Urban Design
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.climate.climate_risk
+interventions:
+- description: Cool roofing, expanded urban canopy (tree planting 1M+ trees by 2035),
+    and permeable pavements reduce urban heat island effect (currently 3-5°C above
+    rural areas).
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

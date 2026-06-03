@@ -1,0 +1,21 @@
+id: methodology.rent_to_income_v1
+name: Rent-to-income ratio
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: 'The rent-to-income ratio expresses median annual rent as a percentage
+  of median annual gross household income for renter households specifically (not
+  the general household population, whose median income is higher due to homeowner
+  over-representation). Computed as: (median weekly rent x 52) / median renter household
+  gross annual income x 100. The standard affordability threshold is 30%; above this,
+  housing costs are considered a financial burden. Distinct from the median multiple
+  (purchase affordability) in that it measures the ongoing cash-flow constraint on
+  renters rather than the capital barrier to ownership. Claims using this methodology
+  supply value (the ratio as a percentage), unit ("percent of median renter household
+  income"), and time_period.
+
+  '
+source_ids: []

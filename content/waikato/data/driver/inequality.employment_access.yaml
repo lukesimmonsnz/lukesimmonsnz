@@ -1,0 +1,10 @@
+id: driver.waikato.inequality.employment_access
+name: Limited employment and opportunity access
+description: Limited employment and opportunity access in the regional context.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

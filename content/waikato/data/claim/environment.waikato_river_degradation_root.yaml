@@ -1,0 +1,20 @@
+id: claim.waikato.environment.waikato_river_degradation_root
+statement: Environmental degradation in Waikato includes habitat loss, water quality
+  decline, invasive species pressure, and ecosystem fragmentation. Climate change
+  amplifies these pressures; resource management and restoration efforts are constrained
+  by funding and coordination gaps.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_tainui_environment_report_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato environment

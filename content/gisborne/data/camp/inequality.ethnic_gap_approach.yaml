@@ -1,0 +1,20 @@
+id: camp.gisborne.inequality.ethnic_gap_approach
+name: Strategic approach for ethnic_gap
+theme: inequality
+core_claim: Strategic intervention on ethnic_gap will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting ethnic_gap
+- Priority action 2 targeting ethnic_gap
+- Institutional coordination mechanism for ethnic_gap
+tensions:
+- 'Tension 1: ethnic_gap'
+- 'Tension 2: ethnic_gap'
+addresses:
+- problem.gisborne.inequality.ethnic_gap
+interventions:
+- description: Primary intervention for ethnic_gap
+  state_variable: ethnic_gap_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

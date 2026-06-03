@@ -1,0 +1,19 @@
+id: camp.hawkes_bay.economy.sector_support
+name: Horticulture sector support and value-add
+theme: economy
+core_claim: Horticulture sector support and value-add is the primary strategy.
+flagship_moves:
+- Implement Horticulture sector support and value-add across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.economy.economic_structure
+- problem.hawkes_bay.economy.horticulture_rse
+interventions:
+- description: Horticulture sector support and value-add intervention
+  state_variable: sector_support_index
+  constraint_relaxed: sector_support_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

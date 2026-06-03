@@ -1,0 +1,36 @@
+id: problem.otago.economy.economic_structure
+title: Economic Structure and Diversification
+theme: economy
+section: economy
+subpage: economic_structure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Otago economy is bifurcated: Queenstown driven by tourism and property;
+  Dunedin by university and government; Central Otago by wine/horticulture. Narrow
+  sectoral dependencies create vulnerability.'
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: 'Otago economy is bifurcated: Queenstown driven by tourism and property; Dunedin
+    by university and government; Central Otago by wine/horticulture. Narrow sectoral
+    dependencies create vulnerability.'
+claim_ids:
+- claim.otago.economy.university_economy_trend
+- claim.otago.economy.agri_primary_trend
+- claim.otago.economy.agri_primary_prevalence
+- claim.otago.economy.tourism_queenstown_trend
+- claim.otago.economy.university_economy_prevalence
+- claim.otago.economy.economic_structure_trend
+- claim.otago.economy.tourism_queenstown_prevalence
+- claim.otago.economy.economic_structure_prevalence
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,18 @@
+id: claim.northland.health.maori_health_gap_claim1
+statement: Northland's high deprivation, stress, smoking prevalence, and limited access to preventive health
+  drive excess mortality from diabetes, cardiovascular disease, respiratory illness, and cancer. A 7-9 year life expectancy
+  gap reflects these structural health determinants. Māori communities in Northland experience these disadvantages at higher rates.
+  Kaupapa Māori health providers (Hatea-a-Rangi, Hauora Hokianga) provide culturally affirming care but are chronically
+  underfunded relative to regional population health need.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland
+last_verified: '2026-04-27'

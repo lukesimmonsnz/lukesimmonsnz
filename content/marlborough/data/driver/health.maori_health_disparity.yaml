@@ -1,0 +1,12 @@
+id: driver.marlborough.health.maori_health_disparity
+name: Māori Health Disparities And Systemic Racism
+description: Māori health disparities and systemic racism.
+theme: health
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.housing.housing_market
+claim_ids: []

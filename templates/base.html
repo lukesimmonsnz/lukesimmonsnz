@@ -28,9 +28,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='blocks.css') }}">
+  {% include "_partials/analytics.html" %}
 </head>
 <body>
   {% include "_partials/nav.html" %}
+
+  {# Global cover banner — shown on every public page. The empty body
+     means the hero renders as an image-only banner. The .sh-empty class
+     drops the overlay alpha to a light haze (see static/blocks.css) so
+     the photo isn't darkened. #}
+  {% block cover_banner %}
+  <div class="block-section-hero sh-small sh-empty"
+       style="background-image:url('{{ url_for('static', filename='img/cover.jpg') }}')"
+       role="banner">
+    <div class="section-overlay" aria-hidden="true"></div>
+    <div class="section-hero-content"></div>
+  </div>
+  {% endblock %}
+
   {% block subnav %}{% endblock %}
 
   <main>

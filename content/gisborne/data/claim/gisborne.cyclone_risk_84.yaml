@@ -1,0 +1,21 @@
+id: claim.gisborne.climate.cyclone_risk_84
+statement: Gisborne's cyclone vulnerability is acute due to infrastructure concentration
+  in exposed coastal and river valleys. Post-Gabrielle risk assessments identified
+  $200-300M in critical infrastructure gaps; climate adaptation requires distributed
+  resilience rather than centralized systems.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.travel_time_index_v1
+notes: null

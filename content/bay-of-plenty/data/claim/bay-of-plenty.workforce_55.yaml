@@ -1,0 +1,20 @@
+id: claim.bay_of_plenty.health.workforce_55
+statement: Health service access in Bay Of Plenty is constrained by workforce shortage
+  and geographic isolation. Nursing vacancies and GP shortages are acute in rural
+  areas; specialist services require travel, delaying diagnoses and treatment for
+  chronic and acute conditions.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

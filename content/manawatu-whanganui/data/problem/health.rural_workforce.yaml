@@ -1,0 +1,32 @@
+id: problem.manawatu_whanganui.health.rural_workforce
+title: Rural Health Workforce Shortage and Retention
+theme: health
+section: health
+subpage: rural_workforce
+parent: problem.manawatu_whanganui.health.health_outcomes
+order: 1
+updated: '2026-04-26'
+summary: GP and specialist shortages in rural areas; workforce burnout; retention
+  challenges.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: GP and specialist shortages in rural areas; workforce burnout; retention challenges.
+claim_ids:
+- claim.manawatu_whanganui.health.rural_workforce_1
+- claim.manawatu_whanganui.health.rural_workforce_2
+status: draft
+time_horizons: [decade, generation]

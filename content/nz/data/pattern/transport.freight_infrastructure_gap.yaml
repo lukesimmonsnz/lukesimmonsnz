@@ -1,0 +1,31 @@
+id: pattern.transport.freight_infrastructure_gap
+title: Freight infrastructure gap constraining regional export sectors
+theme: transport
+summary: Regional export industries face logistics constraints from inadequate port,
+  rail, and road freight infrastructure that raises unit costs and limits competitive
+  access to Auckland and international ports.
+manifests_in:
+- northland
+- gisborne
+- taranaki
+- marlborough
+- nelson
+- west-coast
+- southland
+claim_ids:
+- claim.northland.transport.freight_connectivity_claim1
+- claim.nelson.transport.connectivity_2_claim
+- claim.tasman.transport.connectivity_2_claim
+- claim.southland.economy.agri_commodity_prevalence
+narrative:
+- heading: Pattern
+  body: Regions dependent on primary exports — forestry, horticulture, aquaculture,
+    pastoral farming — face higher unit logistics costs than equivalent producers
+    in larger centres. This reflects both distance and underinvestment in regional
+    port and rail infrastructure.
+- heading: Policy gap
+  body: Freight infrastructure investment in New Zealand has concentrated on the main
+    trunk corridor and urban networks. Regional freight hubs and the coastal shipping
+    alternative are underinvested relative to their economic case.
+status: draft
+updated: '2026-04-26'

@@ -1,0 +1,22 @@
+id: claim.northland.environment.northland_environment_pressures_claim2
+statement: 'Peatland and wetland loss: Northland''s historical wetlands (Kai Iwi Lakes
+  area, North Head dunes, Hokianga lowlands) have contracted 70–90% since 1900 (drainage
+  for agriculture). Remaining wetlands face ongoing hydrological stress (summer drying,
+  vegetation conversion). Ecological value of remaining wetlands recognized in biodiversity
+  action plans; restoration initiatives (land acquisition, hydrological restoration)
+  underfunded relative to degradation rate.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

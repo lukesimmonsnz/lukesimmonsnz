@@ -1,0 +1,21 @@
+id: camp.wellington.climate.flood_infrastructure
+name: Flood Resilience Infrastructure Investment
+theme: climate-adaptation
+core_claim: Capital investment in flood infrastructure (stopbanks, retention basins, channel improvements) is the primary
+  mechanism for reducing Wellington flood risk.
+flagship_moves:
+- Upgrade Hutt River stopbanks to 1-in-500-year flood standard
+- Stormwater detention basin construction in urban Wellington catchments
+- Floodplain management plans for all significant Wellington watercourses
+tensions:
+- Hard infrastructure can increase downstream flood risk if not carefully designed
+- Channel improvements may degrade ecological values in urban streams
+addresses:
+- problem.wellington.climate.flood_resilience
+interventions:
+- description: Fund Hutt River flood protection upgrade to 1-in-500-year standard with Crown co-investment
+  state_variable: flood_return_period_protection
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

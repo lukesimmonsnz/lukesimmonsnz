@@ -1,0 +1,23 @@
+id: claim.west_coast.education.secondary_claim
+statement: Secondary schools in West Coast (Greymouth High, Westport High, Hokitika
+  High and Arahura) face declining rolls from out-migration, with Westport High School
+  enrolment down 40 percent since 2010. Staff retention is difficult; subject offering
+  is constrained. Several smaller communities lack secondary facilities and send students
+  to larger towns, creating transport and boarding challenges.
+value: 40
+unit: percent roll decline Westport High School since 2010
+time_period: 2010-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_west_coast_achievement_2023
+- source.stats_nz_census_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Enrolment trends from MOE school database; staff retention challenges from
+  regional economic context and isolation.

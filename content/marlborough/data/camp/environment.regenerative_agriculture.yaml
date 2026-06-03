@@ -1,0 +1,21 @@
+id: camp.marlborough.environment.regenerative_agriculture
+name: Regenerative Agriculture Transition
+theme: environment
+core_claim: Soil-building and carbon-sequestering farming practices.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.governance.treaty
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

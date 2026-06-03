@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.environment.forest_cover_24_percent
+statement: Environmental degradation in Hawkes Bay includes habitat loss, water quality
+  decline, invasive species pressure, and ecosystem fragmentation. Climate change
+  amplifies these pressures; resource management and restoration efforts are constrained
+  by funding and coordination gaps.
+value: 24
+unit: percent
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional statistical claim for Hawke's Bay

@@ -1,0 +1,13 @@
+id: driver.otago.housing.topographic_constraint
+name: Topographic Developable Land Constraint
+description: Dunedin and Queenstown surrounded by steep terrain and valleys; limited
+  flat land suitable for residential development.
+theme: housing
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.otago.housing.housing_market
+- problem.otago.housing.queenstown_affordability
+claim_ids: []

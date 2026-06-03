@@ -1,0 +1,21 @@
+id: camp.wellington.transport.ebike_access
+name: E-Bike and Micromobility Access
+theme: transport
+core_claim: E-bikes and e-scooters overcome Wellington's topographic barrier; subsidy programmes and secure parking can triple
+  cycling mode share.
+flagship_moves:
+- Low-income e-bike purchase subsidy programme ($500 rebate)
+- Secure end-of-trip facilities at employment centres and rail stations
+- Integrate shared e-bike scheme with Metlink monthly pass
+tensions:
+- Without protected infrastructure, e-bikes face same safety risks as conventional cycling
+- Micromobility schemes require ongoing subsidisation and have uneven equity outcomes
+addresses:
+- problem.wellington.transport.active_modes
+interventions:
+- description: Partner with e-bike retailers for rebate scheme targeting low-income households and long-distance commuters
+  state_variable: cycling_mode_share
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

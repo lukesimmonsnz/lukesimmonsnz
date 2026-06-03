@@ -1,0 +1,22 @@
+id: claim.tasman.housing.land_supply_claim
+statement: Residential zoned land inventory in Richmond/Motueka stands at 1,850 hectares;
+  current absorption rate is 18 hectares/year, yielding 103-year supply. However,
+  land prices (NZD 1.2–1.8 million/hectare in Richmond CBD zones) and development
+  costs deter greenfield construction; infill development is constrained by heritage
+  overlays and stormwater capacity.
+value: 1850
+unit: hectares residential zoned land
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_housing_demand_2024
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

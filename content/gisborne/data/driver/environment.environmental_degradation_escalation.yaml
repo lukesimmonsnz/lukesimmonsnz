@@ -1,0 +1,13 @@
+id: driver.gisborne.environment.environmental_degradation_escalation
+name: Driver escalating environmental_degradation
+description: "This driver exacerbates the environmental_degradation challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: environment
+consensus: consensus
+category: physical
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.environment.environmental_degradation
+claim_ids:
+- claim.gisborne.environment.environmental_degradation_25

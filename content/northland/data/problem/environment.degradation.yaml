@@ -1,0 +1,24 @@
+id: 'problem.northland.environment.degradation'
+title: 'Te Tai Tokerau Northland: environmental degradation'
+theme: 'environment'
+section: 'environment'
+subpage: 'degradation'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Environmental systems face pressure.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Environmental systems face pressure.'
+claim_ids:
+- 'claim.northland.environment.degradation_claim1'
+- 'claim.northland.environment.degradation_claim2'
+status: 'draft'

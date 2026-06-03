@@ -1,0 +1,25 @@
+id: camp.waikato.climate.emissions_reduction
+name: Agricultural emissions reduction programme
+theme: climate-adaptation
+core_claim: Structured emissions reduction through improved genetics, feed, and fertiliser
+  management reduces climate exposure while maintaining productivity.
+flagship_moves:
+- Implement He Waka Eke Noa pricing with co-investment in mitigation technology
+- Expand low-emission genetics breeding programme for dairy herds
+- Fund precision agriculture technology adoption in Waikato farms
+tensions:
+- Emissions pricing may reduce farm equity and trigger land use change
+- Mitigation technologies have uneven uptake across farm types
+interventions:
+- description: Implement He Waka Eke Noa pricing with co-investment in mitigation
+    technology
+  state_variable: climate_risk_exposure
+  expected_sign: +
+addresses:
+- problem.waikato.climate.waikato_climate
+- problem.waikato.climate.flood_risk
+- problem.waikato.climate.agricultural_emissions
+- problem.waikato.climate.drought_risk
+applicable_in:
+- waikato
+tensions_with: []

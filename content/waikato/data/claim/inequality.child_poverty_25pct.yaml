@@ -1,0 +1,21 @@
+id: claim.waikato.inequality.child_poverty_25pct
+statement: Child poverty in Waikato is estimated at approximately 25% in high-deprivation
+  areas (Huntly, south Hamilton, South Waikato towns). After-housing costs push Māori
+  and Pasifika families into poverty despite employment. Limited after-school care,
+  sports access, and digital device access widen disadvantage. Huntly post-coal-transition
+  poverty is structural; limited economic alternatives for families.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato child_poverty claim

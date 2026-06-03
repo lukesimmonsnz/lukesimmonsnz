@@ -1,0 +1,12 @@
+id: driver.canterbury.housing.migration_net_inflow
+name: Net Internal Migration (Auckland/Wellington to Christchurch)
+description: Net Internal Migration (Auckland/Wellington to Christchurch)
+theme: housing
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.housing.market
+- problem.canterbury.housing.rental_market
+claim_ids: []

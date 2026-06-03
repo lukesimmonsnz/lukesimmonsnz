@@ -1,0 +1,21 @@
+id: camp.canterbury.governance.cwms_adaptive_management
+name: CWMS Adaptive Management & Enforcement Strengthening
+theme: governance
+core_claim: Strengthening CWMS compliance monitoring, farmer support (transition funding),
+  and adaptive allocation reviews (e.g., 5-yearly) improves water management effectiveness.
+flagship_moves:
+- Key intervention for CWMS Adaptive Management & Enforcement Strengthening
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.governance.water_management
+interventions:
+- description: Strengthening CWMS compliance monitoring, farmer support (transition
+    funding), and adaptive allocation reviews (e.g., 5-yearly) improves water management
+    effectiveness.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

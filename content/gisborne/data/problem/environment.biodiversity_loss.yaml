@@ -1,0 +1,33 @@
+id: problem.gisborne.environment.biodiversity_loss
+title: Biodiversity loss from habitat conversion in Gisborne — Te Tairāwhiti
+theme: environment
+section: environment
+subpage: biodiversity_loss
+parent: problem.gisborne.environment.environmental_degradation
+order: 16
+updated: '2026-04-26'
+summary: Biodiversity loss from habitat conversion is a specific manifestation of
+  the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - biodiversity_loss_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Biodiversity loss from habitat conversion is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.environment.biodiversity_loss_31
+- claim.gisborne.environment.biodiversity_loss_32
+status: draft
+time_horizons: [generation, century]

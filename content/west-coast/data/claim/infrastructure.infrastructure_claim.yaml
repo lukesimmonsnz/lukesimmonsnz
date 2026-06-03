@@ -1,0 +1,24 @@
+id: claim.west_coast.infrastructure.infrastructure_claim
+statement: 'West Coast infrastructure faces convergent hazards: flooding (5,000-10,000
+  mm rainfall annually), Alpine Fault seismic risk (M8+ 30% in 50 years), and sea
+  level rise (1.6 mm/year, accelerating). Combined flood and earthquake insurance
+  withdrawal has left many property owners self-insuring. Infrastructure resilience
+  investment is underfunded relative to hazard exposure. Managed retreat and relocation
+  of critical services are necessary but politically contested.'
+value: 30
+unit: percent Alpine Fault M8+ probability (50-year window)
+time_period: 2020-2070
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.nz_transport_agency_west_coast_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Hazard assessment from regional council and Waka Kotahi planning documents;
+  seismic risk from GNS Science.

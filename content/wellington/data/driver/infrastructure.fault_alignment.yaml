@@ -1,0 +1,14 @@
+id: driver.wellington.infrastructure.fault_alignment
+name: Fault zone alignment of critical infrastructure
+description: Key Wellington water mains, wastewater pipes, and transport corridors cross active fault traces — particularly
+  the Wellington Fault — making catastrophic failure in a major earthquake functionally inevitable at current alignment.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.infrastructure.earthquake_lifelines
+- problem.wellington.infrastructure.water_resilience
+claim_ids:
+- claim.wellington.infrastructure.lifeline_vulnerability_assessment

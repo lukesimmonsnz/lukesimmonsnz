@@ -1,0 +1,30 @@
+id: problem.waikato.education.tertiary_pathway
+title: Tertiary education participation
+theme: education
+section: education
+subpage: tertiary_pathway
+parent: problem.waikato.education.waikato_education_inequity
+order: 4
+updated: '2026-04-26'
+summary: University of Waikato and WIT provide regional tertiary access, but rural-to-urban
+  pipeline is costly.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - ncea_attainment_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing tertiary pathway creates feedback on regional outcomes.
+narrative:
+- heading: Tertiary education participation
+  body: University of Waikato and WIT provide regional tertiary access, but rural-to-urban
+    pipeline is costly.
+claim_ids:
+- claim.waikato.education.tertiary_rural_participation
+status: draft
+time_horizons: [decade, generation]

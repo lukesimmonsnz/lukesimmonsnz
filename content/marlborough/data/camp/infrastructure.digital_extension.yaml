@@ -1,0 +1,21 @@
+id: camp.marlborough.infrastructure.digital_extension
+name: Rural Broadband Extension
+theme: infrastructure
+core_claim: Extend fiber and wireless to underserved areas.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.transport.picton_ferry
+interventions:
+- description: 'Action 1: Rural Broadband Extension'
+- description: 'Action 2: Rural Broadband Extension'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

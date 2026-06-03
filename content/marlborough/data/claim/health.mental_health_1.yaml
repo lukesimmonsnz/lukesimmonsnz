@@ -1,0 +1,19 @@
+id: claim.marlborough.health.mental_health_1
+statement: 'Mental health service uptake in Marlborough: 8–10% of population annually
+  (national 12–14%); rural/remote underrepresentation due to access barriers; telehealth
+  uptake post-2020 improved but digital divide remains (Sounds communities, elderly).'
+value: 9
+unit: percent annual mental health service uptake (estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: null

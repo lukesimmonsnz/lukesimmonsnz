@@ -1,0 +1,30 @@
+id: problem.waikato.health.maori_health_gap
+title: Māori health outcomes gap
+theme: health
+section: health
+subpage: maori_health_gap
+parent: problem.waikato.health.waikato_health_inequity
+order: 2
+updated: '2026-04-26'
+summary: Māori life expectancy in Waikato is 7 years below non-Māori; hospitalisation
+  rates for preventable conditions are three times higher.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - health_outcome_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing maori health gap creates feedback on regional outcomes.
+narrative:
+- heading: Māori health outcomes gap
+  body: Māori life expectancy in Waikato is 7 years below non-Māori; hospitalisation
+    rates for preventable conditions are three times higher.
+claim_ids:
+- claim.waikato.health.maori_life_expectancy_gap_7yr
+status: draft
+time_horizons: [decade, generation]

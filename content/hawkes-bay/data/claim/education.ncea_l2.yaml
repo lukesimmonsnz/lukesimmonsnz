@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.education.ncea_l2_78_percent
+statement: NCEA Level 2 attainment in Hawke's Bay stands at 78%, below the national
+  average (84%), with widest gaps in Hastings and Wairoa. Curriculum delivery constraints
+  (teacher shortages, limited STEM provision) and socioeconomic stress (food insecurity,
+  housing instability, family violence) directly correlate with lower Level 2 completion
+  rates, particularly among Māori and Pasifika students.
+value: 78
+unit: percent
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1

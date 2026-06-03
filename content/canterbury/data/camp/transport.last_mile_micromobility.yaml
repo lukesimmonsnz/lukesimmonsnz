@@ -1,0 +1,22 @@
+id: camp.canterbury.transport.last_mile_micromobility
+name: Last-Mile Micromobility Solutions (E-Scooters, E-Bikes, Bikeshare)
+theme: transport
+core_claim: Expanded micromobility networks (shared e-scooters/bikes, charge stations)
+  fill gaps between transit stops and destinations, improving mode shift to public
+  transport.
+flagship_moves:
+- Key intervention for Last-Mile Micromobility Solutions (E-Scooters, E-Bikes, Bikeshare)
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.transport.active_modes
+interventions:
+- description: Expanded micromobility networks (shared e-scooters/bikes, charge stations)
+    fill gaps between transit stops and destinations, improving mode shift to public
+    transport.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

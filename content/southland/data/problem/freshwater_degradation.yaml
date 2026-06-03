@@ -1,0 +1,36 @@
+id: problem.southland.environment.freshwater_degradation
+title: Freshwater Degradation and Ecosystem Pressures
+theme: environment
+section: environment
+subpage: freshwater_degradation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Southland rivers (Mataura, Oreti) severely degraded by dairy pollution; Fiordland
+  wilderness ecosystem threatened by invasive species and tourism pressure; coastal
+  pollution.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland rivers (Mataura, Oreti) severely degraded by dairy pollution; Fiordland
+    wilderness ecosystem threatened by invasive species and tourism pressure; coastal
+    pollution.
+claim_ids:
+- claim.southland.environment.southland_river_quality_trend
+- claim.southland.environment.coastal_foveaux_prevalence
+- claim.southland.environment.southland_river_quality_prevalence
+- claim.southland.environment.freshwater_degradation_trend
+- claim.southland.environment.coastal_foveaux_trend
+- claim.southland.environment.freshwater_degradation_prevalence
+- claim.southland.environment.fiordland_ecosystem_prevalence
+- claim.southland.environment.fiordland_ecosystem_trend
+status: draft
+time_horizons: [generation, century]

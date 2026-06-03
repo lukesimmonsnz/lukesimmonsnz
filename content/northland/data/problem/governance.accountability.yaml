@@ -1,0 +1,24 @@
+id: 'problem.northland.governance.accountability'
+title: 'Te Tai Tokerau Northland: accountability'
+theme: 'governance'
+section: 'governance'
+subpage: 'accountability'
+parent: 'problem.northland.governance.challenges'
+order: 5
+updated: '2026-04-26'
+summary: 'Government accountability is weak.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Government accountability is weak.'
+claim_ids:
+- 'claim.northland.governance.accountability_claim1'
+- 'claim.northland.governance.accountability_claim2'
+status: 'draft'

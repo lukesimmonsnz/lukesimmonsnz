@@ -1,0 +1,30 @@
+id: pattern.environment.freshwater_quality_decline
+title: Freshwater quality decline in pastoral catchments
+theme: environment
+summary: Water quality in New Zealand's rivers and lakes has degraded significantly
+  in catchments dominated by dairy and pastoral farming, driven by nutrient runoff,
+  sediment, and microbial contamination.
+manifests_in:
+- waikato
+- northland
+- canterbury
+- hawkes-bay
+- manawatu-whanganui
+- tasman
+- marlborough
+claim_ids:
+- claim.waikato.environment.wetland_loss_90pct
+- claim.northland.environment.coastal_erosion_claim1
+- claim.canterbury.environment.alpine_range_contraction_2023
+- claim.manawatu_whanganui.health.chronic_disease_1
+narrative:
+- heading: Pattern
+  body: National water quality monitoring shows consistent degradation in lowland
+    rivers of pastoral-dominated catchments. Nitrogen, E. coli, and sediment loads
+    exceed safe swimming and ecological thresholds in the majority of monitored sites.
+- heading: Policy response gap
+  body: National Policy Statement for Freshwater Management sets ambitious objectives,
+    but implementation through regional plans takes years and enforcement against
+    established farming practice faces practical and political constraints.
+status: draft
+updated: '2026-04-26'

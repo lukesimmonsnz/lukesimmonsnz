@@ -1,0 +1,33 @@
+id: problem.gisborne.health.chronic_disease
+title: Chronic disease burden and disparity in Gisborne — Te Tairāwhiti
+theme: health
+section: health
+subpage: chronic_disease
+parent: problem.gisborne.health.health_outcomes
+order: 27
+updated: '2026-04-26'
+summary: Chronic disease burden and disparity is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - chronic_disease_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Chronic disease burden and disparity is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.health.chronic_disease_53
+- claim.gisborne.health.chronic_disease_54
+status: draft
+time_horizons: [decade, generation]

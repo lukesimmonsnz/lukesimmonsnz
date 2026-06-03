@@ -1,0 +1,42 @@
+id: problem.west_coast.environment.water_quality
+title: Acid mine drainage and West Coast freshwater
+theme: environment
+section: environment
+subpage: water_quality
+parent: coastal_environment
+order: 3
+updated: '2026-04-26'
+summary: West Coast river and stream water quality is degraded by acid mine drainage from historical and ongoing coal mining,
+  with Buller waterway pH levels dropping below 6.0 in several catchments. Native fish populations are reduced and macroinvertebrate
+  diversity is impaired, with remediation efforts limited by funding.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - river_ph_distribution
+  - fish_index_of_biotic_integrity
+  - remediated_kilometres
+  inputs:
+  - wcrc_environmental_capex
+  - crown_legacy_remediation_fund
+  constraints:
+  - closed_mine_drainage_persistence
+  - limited_long_tail_funding
+  feedback_loops:
+  - Each closing mine adds to the legacy remediation backlog faster than it is worked through, which shifts the long-run cost
+    progressively onto general ratepayers and the Crown rather than the original operators.
+narrative:
+- heading: Acid mine drainage as a structural legacy
+  body: Coal mining on the Buller plateau and elsewhere produces acid mine drainage as a long-tail effect that persists for
+    decades after operations close (claim.west_coast.environment.water_quality_claim). pH below 6.0 in some Buller waterways
+    excludes most native fish species and reduces macroinvertebrate diversity sharply.
+- heading: Remediation versus the running cost
+  body: Active remediation — passive treatment systems, alkaline-dosing, wetland filtration — is technically feasible but
+    funded only sporadically. As coal operations wind down, the question of who funds long-tail remediation in the absence
+    of the operator becomes a central transition-policy issue.
+claim_ids:
+- claim.west_coast.environment.water_quality_claim
+status: draft
+time_horizons:
+- generation
+- century

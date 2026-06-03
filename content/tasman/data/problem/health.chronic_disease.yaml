@@ -1,0 +1,40 @@
+id: problem.tasman.health.chronic_disease
+title: Higher-than-national chronic-disease burden
+theme: health
+section: health
+subpage: chronic_disease
+parent: health_outcomes
+order: 3
+updated: '2026-04-26'
+summary: Type 2 diabetes prevalence in Tasman runs at 6.8 percent of adults, against a national 5.9 percent. Cardiovascular
+  mortality is around 18 percent above the national age-standardised rate, and adult obesity prevalence is roughly
+  32 percent, concentrated in Motueka and rural farming communities.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - type2_diabetes_prevalence
+  - cv_mortality_rate
+  inputs:
+  - primary_prevention_programmes
+  - screening_coverage
+  constraints:
+  - deprivation_distribution
+  - rural_food_environment
+  feedback_loops:
+  - High chronic-disease load consumes primary-care capacity that would otherwise prevent the next cohort of cases.
+narrative:
+- heading: Prevalence above national average
+  body: Tasman's chronic-disease numbers are not catastrophically out of line with New Zealand as a whole, but they
+    are consistently on the wrong side of the national average for diabetes, cardiovascular disease, and obesity
+    (claim.tasman.health.chronic_disease_claim).
+- heading: Primary-care load follows the prevalence
+  body: 'A higher chronic-disease prevalence translates into a heavier primary-care workload per capita: more long-term-conditions
+    reviews, more medication, more allied-health input. With the GP-to-population ratio sitting around 1:2,200 against
+    a national 1:1,800, the per-clinician burden is meaningfully higher than the headline ratio alone suggests.'
+claim_ids:
+- claim.tasman.health.chronic_disease_claim
+status: draft
+time_horizons:
+- decade
+- generation

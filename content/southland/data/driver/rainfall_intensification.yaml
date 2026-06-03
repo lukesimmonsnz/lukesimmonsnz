@@ -1,0 +1,11 @@
+id: driver.southland.climate.rainfall_intensification
+name: Rainfall Intensification
+description: Climate change drives more intense rainfall events; flood risk rises.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.climate.climate_risk
+claim_ids: []

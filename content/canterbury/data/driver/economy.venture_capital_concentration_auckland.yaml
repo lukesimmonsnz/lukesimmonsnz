@@ -1,0 +1,11 @@
+id: driver.canterbury.economy.venture_capital_concentration_auckland
+name: Venture Capital Concentration in Auckland
+description: Venture Capital Concentration in Auckland
+theme: economy
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.economy.tech_innovation
+claim_ids: []

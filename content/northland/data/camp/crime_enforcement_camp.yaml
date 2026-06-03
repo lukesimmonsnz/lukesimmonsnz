@@ -1,0 +1,25 @@
+id: camp.northland.crime.enforcement_camp
+name: Enforcement capacity and policing investment
+theme: crime
+core_claim: Additional police resourcing and targeted operations are necessary to
+  disrupt organised crime networks and protect communities.
+flagship_moves:
+- Increase police FTEs in Northland district proportional to need
+- Establish dedicated organised crime taskforce for drug supply networks
+- Invest in CCTV and patrol infrastructure in Kaitāia and Kaikohe
+tensions:
+- Enforcement without prevention creates revolving-door criminal justice
+- Māori overrepresentation in enforcement must be actively managed
+- Fiscal cost of staffing remote stations is high per-capita
+interventions:
+- description: Increase police FTEs in Northland district proportional to need
+  state_variable: crime_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.crime.northland_crime
+- problem.northland.crime.family_violence
+- problem.northland.crime.methamphetamine
+- problem.northland.crime.rural_policing
+applicable_in:
+- northland
+tensions_with: []

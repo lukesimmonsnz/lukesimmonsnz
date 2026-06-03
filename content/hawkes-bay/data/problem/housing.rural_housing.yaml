@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.housing.rural_housing
+title: Rural housing isolation and servicing
+theme: housing
+section: housing
+subpage: rural-housing
+parent: problem.hawkes_bay.housing.affordability
+order: 2
+updated: '2026-04-26'
+summary: "Rural settlements in Hawke's Bay (e.g. Waipawa, Otane, Dannevirke fringe) face housing stock that is aging, difficult to service with infrastructure, and unattractive to new residents. Limited school and healthcare access compounds the challenge."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - rural_housing_stock_age
+    - rural_dwelling_vacancy_rate
+  inputs:
+    - aging_demographic_outflow
+    - rural_service_centralisation
+  constraints:
+    - infrastructure_cost_per_capita
+    - school_viability_thresholds
+  feedback_loops:
+    - 'Population decline reduces service density; service loss accelerates out-migration; remaining population ages; property values stagnate.'
+narrative:
+  - heading: Aging Stock
+    body: "Rural housing in Hawke's Bay periphery is disproportionately old, with poor thermal performance and high maintenance costs."
+  - heading: Service Withdrawal
+    body: 'Rural schools and health clinics close or consolidate into regional centres, reducing appeal of rural residence despite lower property costs.'
+claim_ids:
+  - claim.hawkes_bay.housing.rural_vacancy_5_percent
+status: draft
+time_horizons: [decade, generation, century]

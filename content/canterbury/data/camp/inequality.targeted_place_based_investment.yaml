@@ -1,0 +1,21 @@
+id: camp.canterbury.inequality.targeted_place_based_investment
+name: Place-Based Targeted Investment in High-Deprivation Areas
+theme: inequality
+core_claim: Concentrated multi-agency investment (schools, health, infrastructure,
+  employment) in East Christchurch can break deprivation concentration spiral.
+flagship_moves:
+- Key intervention for Place-Based Targeted Investment in High-Deprivation Areas
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.inequality.east_christchurch_deprivation
+- problem.canterbury.inequality.inequality
+interventions:
+- description: Concentrated multi-agency investment (schools, health, infrastructure,
+    employment) in East Christchurch can break deprivation concentration spiral.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

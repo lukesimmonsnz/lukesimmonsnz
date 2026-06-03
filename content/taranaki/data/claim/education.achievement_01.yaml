@@ -1,0 +1,20 @@
+id: claim.taranaki.education.achievement_01
+statement: Educational attainment levels in Taranaki remain below national averages,
+  with NCEA Level 2 certification rates 5-15 percentage points lower than national
+  median. Particular disparities exist in rural and high-deprivation areas, limiting
+  tertiary access and youth employment prospects in skilled sectors.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki achievement

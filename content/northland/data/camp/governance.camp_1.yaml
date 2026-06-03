@@ -1,0 +1,20 @@
+id: 'camp.northland.governance.camp_1'
+name: 'Regulatory and policy reform in governance'
+theme: 'governance'
+core_claim: 'Regulatory and policy reform in governance is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement regulatory and policy reform in governance'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'northland'
+tensions_with: []

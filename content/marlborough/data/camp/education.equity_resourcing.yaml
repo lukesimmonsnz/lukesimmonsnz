@@ -1,0 +1,21 @@
+id: camp.marlborough.education.equity_resourcing
+name: Equity Education Funding
+theme: education
+core_claim: Needs-based school and ECE funding.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.education.secondary
+interventions:
+- description: 'Action 1: Equity Education Funding'
+- description: 'Action 2: Equity Education Funding'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

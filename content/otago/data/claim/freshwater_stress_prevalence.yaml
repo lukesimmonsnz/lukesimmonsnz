@@ -1,0 +1,22 @@
+id: claim.otago.environment.freshwater_stress_prevalence
+statement: 'Freshwater systems in Otago are stressed by irrigation demand, dairy and
+  wine production, and population growth: Clutha/Mata-au River (NZ''s highest-flow
+  river) heavily allocated (Clyde, Roxburgh hydro dams generate ~30% of NZ electricity);
+  Lake Dunstan (Cromwell Gorge) stores irrigation water; Wakatipu (Queenstown), Wanaka,
+  Hawea, and high-country lakes face competing demands (irrigation, power generation,
+  recreation). ORC Water Plan under review; allocation sustainability questioned.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

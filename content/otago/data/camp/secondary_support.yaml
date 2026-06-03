@@ -1,0 +1,21 @@
+id: camp.otago.education.secondary_support
+name: Secondary School Pastoral Support and Achievement
+theme: education
+core_claim: School counselors, learning support, and attendance programs improve NCEA
+  achievement.
+flagship_moves:
+- Hire school counselors for all rural secondary schools
+- Learning support aide programs
+- Attendance improvement programs
+tensions:
+- Rural school funding constraints
+- Student engagement variability
+addresses:
+- problem.otago.education.secondary
+interventions:
+- description: Increase rural NCEA Level 2+ pass rate to 80%
+  state_variable: ncea_pass_rate
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.economy.economic_structure
+title: Economic structure and sector concentration
+theme: economy
+section: economy
+subpage: economic-structure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: "Hawke's Bay economy is heavily concentrated in agriculture, horticulture, and primary industries. Manufacturing and services are underdeveloped. Dependency on primary commodity export prices creates volatility. Economic diversification is slow."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - agricultural_gdp_share_percent
+    - economic_diversity_herfindahl_index
+  inputs:
+    - primary_industry_capital_intensity
+    - export_price_volatility
+  constraints:
+    - transport_cost_to_markets
+    - labour_skill_mismatch
+  feedback_loops:
+    - 'Commodity downturn reduces tax base; business investment falls; diversification deferred; dependency deepens.'
+narrative:
+  - heading: Sector Dominance
+    body: "Agriculture, horticulture, and food processing account for approximately 22% of Hawke's Bay GDP and 28% of employment — double the national average."
+  - heading: Volatility
+    body: "Apple prices, wine prices, and dairy commodity prices drive Hawke's Bay GDP volatility 1.5x higher than national average. Recent wine industry downturn (2023-2025) cost 400+ jobs."
+claim_ids:
+  - claim.hawkes_bay.economy.agriculture_22_percent_gdp
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,24 @@
+id: 'problem.northland.crime.youth_offending'
+title: 'Te Tai Tokerau Northland: youth crime'
+theme: 'crime'
+section: 'crime'
+subpage: 'youth-offending'
+parent: 'problem.northland.crime.safety'
+order: 4
+updated: '2026-04-26'
+summary: 'Youth offending is prevalent.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Youth offending is prevalent.'
+claim_ids:
+- 'claim.northland.crime.youth_offending_claim1'
+- 'claim.northland.crime.youth_offending_claim2'
+status: 'draft'

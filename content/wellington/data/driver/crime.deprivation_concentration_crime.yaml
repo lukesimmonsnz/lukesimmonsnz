@@ -1,0 +1,15 @@
+id: driver.wellington.crime.deprivation_concentration_crime
+name: Concentrated deprivation and crime environment
+description: Concentrated multi-generational poverty in Porirua and Hutt Valley creates the social conditions — reduced stake
+  in conventional norms, limited economic alternatives, weakened informal social control — that sustain elevated victimisation
+  rates.
+theme: crime
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.crime.victimisation
+- problem.wellington.crime.organised_crime
+claim_ids:
+- claim.wellington.crime.victimisation_rate_2023

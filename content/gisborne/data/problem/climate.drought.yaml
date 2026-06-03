@@ -1,0 +1,33 @@
+id: problem.gisborne.climate.drought
+title: Drought risk and water security under climate change in Gisborne — Te Tairāwhiti
+theme: climate-adaptation
+section: climate
+subpage: drought
+parent: problem.gisborne.climate.climate_vulnerability
+order: 44
+updated: '2026-04-26'
+summary: Drought risk and water security under climate change is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - drought_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Drought risk and water security under climate change is a key facet of the
+    broader pressure facing the region.
+claim_ids:
+- claim.gisborne.climate.drought_87
+- claim.gisborne.climate.drought_88
+status: draft
+time_horizons: [generation, century]

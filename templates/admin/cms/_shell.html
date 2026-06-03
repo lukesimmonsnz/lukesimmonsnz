@@ -1,0 +1,162 @@
+{# CMS v2 admin shell — dark sidebar, paper canvas, copper accent.
+   Inherited by every /admin/cms/* template. #}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}CMS{% endblock %} · lukesimmonsnz.kiwi</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: #f5f1e8; color: #1a1613; font-size: 14px; line-height: 1.5; }
+  a { color: #8a5a2a; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  button, input, textarea, select { font-family: inherit; font-size: inherit; }
+  textarea { resize: vertical; }
+  .shell { display: grid; grid-template-columns: 230px 1fr; min-height: 100vh; }
+  /* Sidebar */
+  aside.cms-side { background: #1a1613; color: #e6dfcd; display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  .cms-side .brand { padding: 18px 20px 14px; border-bottom: 1px solid #2a241e; display: flex; align-items: center; gap: 10px; }
+  .cms-side .brand-logo { width: 22px; height: 22px; flex-shrink: 0; }
+  .cms-side .brand-name { font-family: 'Fraunces', Georgia, serif; font-size: 16px; font-weight: 500; color: #fbf8f0; line-height: 1.1; }
+  .cms-side nav { padding: 12px 8px; flex: 1; }
+  .cms-side .nav-h { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a7a66; padding: 8px 12px 4px; }
+  .cms-side a.nav-link { display: flex; align-items: center; gap: 10px; padding: 7px 12px; color: #e6dfcd; border-radius: 5px; font-size: 13px; }
+  .cms-side a.nav-link:hover { background: #2a241e; text-decoration: none; }
+  .cms-side a.nav-link.active { background: #2a241e; color: #fbf8f0; font-weight: 500; }
+  .cms-side a.nav-link svg { width: 14px; height: 14px; flex-shrink: 0; opacity: 0.7; }
+  .cms-side .nav-badge { margin-left: auto; background: #2a241e; color: #c4956a; font-size: 10px; padding: 1px 6px; border-radius: 8px; }
+  .cms-side a.nav-link.active .nav-badge { background: #1a1613; }
+  .cms-side .footer { padding: 12px 20px; border-top: 1px solid #2a241e; font-size: 11px; color: #8a7a66; }
+  .cms-side .footer .dirty-count { color: #c4956a; font-weight: 500; }
+  /* Main */
+  main.cms-main { background: #fbf8f0; min-height: 100vh; display: flex; flex-direction: column; }
+  header.cms-head { background: #fff; border-bottom: 0.5px solid #d9d0bf; padding: 12px 28px; display: flex; align-items: center; gap: 16px; }
+  .crumb { font-size: 13px; color: #8a7a66; }
+  .crumb .sep { margin: 0 6px; opacity: 0.5; }
+  .crumb .last { color: #1a1613; font-weight: 500; }
+  .head-spacer { margin-left: auto; }
+  .head-actions { display: flex; gap: 6px; align-items: center; }
+  /* Buttons */
+  .btn { padding: 6px 14px; font-size: 12px; border-radius: 5px; cursor: pointer; transition: all 0.12s; font-family: inherit; }
+  .btn-primary { background: #8a5a2a; color: #fbf8f0; border: 1px solid #8a5a2a; font-weight: 500; }
+  .btn-primary:hover { background: #6e4521; }
+  .btn-secondary { background: #fff; color: #4b3f30; border: 0.5px solid #d9d0bf; }
+  .btn-secondary:hover { background: #f5f1e8; }
+  .btn-ghost { background: transparent; color: #4b3f30; border: 0.5px solid transparent; }
+  .btn-ghost:hover { background: #f5f1e8; }
+  .btn-danger { background: #fff; color: #a04030; border: 0.5px solid #d9d0bf; }
+  .btn-danger:hover { background: #fbe9e6; }
+  /* Content */
+  .cms-content { padding: 24px 32px; flex: 1; }
+  .cms-content.flush { padding: 0; }
+  h1.page-h { font-family: 'Fraunces', Georgia, serif; font-size: 26px; font-weight: 500; margin: 0 0 6px; color: #1a1613; }
+  .page-sub { color: #4b3f30; margin: 0 0 24px; font-size: 14px; }
+  /* Cards */
+  .card { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 8px; padding: 18px 22px; }
+  .card-h { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a7a66; font-weight: 500; margin: 0 0 12px; }
+  /* Forms */
+  input[type=text], input[type=url], input[type=email], textarea, select { padding: 7px 10px; border: 0.5px solid #d9d0bf; border-radius: 4px; background: #fff; color: #1a1613; }
+  input[type=text]:focus, textarea:focus, select:focus { outline: 2px solid #c4956a; outline-offset: -1px; border-color: #c4956a; }
+  input[type=color] { padding: 2px; height: 32px; cursor: pointer; border: 0.5px solid #d9d0bf; border-radius: 4px; background: #fff; }
+  /* Toast */
+  #cms-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #1a1613; color: #fbf8f0; padding: 10px 20px; border-radius: 6px; font-size: 13px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); opacity: 0; transition: opacity 0.2s; z-index: 9999; pointer-events: none; }
+  #cms-toast.show { opacity: 1; }
+  /* Status pills */
+  .pill { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; }
+  .pill.draft { background: #fdf4e8; color: #8a5a2a; }
+  .pill.locked { background: #ece5d4; color: #4b3f30; }
+  .pill.editable { background: #e7f1e8; color: #3a7050; }
+  {% block extra_css %}{% endblock %}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<aside class="cms-side">
+  <div class="brand">
+    <svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="#c4956a" stroke-width="2"><path d="M3 12h6l3-9 6 18 3-9h0"/></svg>
+    <div class="brand-name">lukesimmonsnz.kiwi</div>
+  </div>
+  <nav>
+    <div class="nav-h">Content</div>
+    <a href="{{ url_for('cms.landing') }}" class="nav-link {% if active=='landing' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+      All pages
+    </a>
+    <a href="{{ url_for('cms.edit', id='/blog/') }}" class="nav-link {% if active=='blog' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 4H5a2 2 0 00-2 2v14l4-4h12a2 2 0 002-2V6a2 2 0 00-2-2z"/></svg>
+      Blog
+    </a>
+    <a href="{{ url_for('cms.edit', id='/research/methodology/') }}" class="nav-link {% if active=='research' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
+      Research
+    </a>
+
+    <div class="nav-h" style="margin-top: 16px;">Theme</div>
+    <a href="{{ url_for('cms.theme_customizer') }}" class="nav-link {% if active=='theme' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+      Customizer
+    </a>
+    <a href="{{ url_for('cms.edit', id='/_theme/header/') }}" class="nav-link {% if active=='slot' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      Header / footer
+    </a>
+
+    <div class="nav-h" style="margin-top: 16px;">System</div>
+    <a href="{{ url_for('cms.media_landing') }}" class="nav-link {% if active=='media' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="2"/><path d="M21 21l-4-4M3 3h18v18H3z"/></svg>
+      Media
+    </a>
+    <a href="{{ url_for('cms.settings_landing') }}" class="nav-link {% if active=='settings' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82M4.6 9a1.65 1.65 0 00-.33-1.82"/></svg>
+      Settings
+    </a>
+    <a href="{{ url_for('cms.search_landing') }}" class="nav-link {% if active=='search' %}active{% endif %}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      Search
+    </a>
+  </nav>
+  <div class="footer">
+    {% set dirty_count = (dirty|length) if dirty is defined else 0 %}
+    <span class="dirty-count">{{ dirty_count }}</span> dirty draft{{ '' if dirty_count == 1 else 's' }}<br>
+    <a href="https://lukesimmonsnz.kiwi" target="_blank" rel="noopener" style="color: #8a7a66; font-size: 11px;">visit live site &raquo;</a>
+  </div>
+</aside>
+
+<main class="cms-main">
+
+<header class="cms-head">
+  {% block crumb %}
+  <div class="crumb">
+    <a href="{{ url_for('cms.landing') }}">/admin/</a>
+    {% if crumbs %}{% for c in crumbs %}<span class="sep">&raquo;</span>{% if c.url %}<a href="{{ c.url }}">{{ c.label }}</a>{% else %}<span class="last">{{ c.label }}</span>{% endif %}{% endfor %}{% endif %}
+  </div>
+  {% endblock %}
+  <div class="head-spacer"></div>
+  <div class="head-actions">
+    {% block head_actions %}{% endblock %}
+  </div>
+</header>
+
+<div class="cms-content {% block content_class %}{% endblock %}">
+{% block content %}{% endblock %}
+</div>
+
+</main>
+</div>
+
+<div id="cms-toast"></div>
+<script>
+  window.toast = function(msg, ms) {
+    var t = document.getElementById('cms-toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(function(){ t.classList.remove('show'); }, ms || 2000);
+  };
+</script>
+{% block extra_js %}{% endblock %}
+</body>
+</html>

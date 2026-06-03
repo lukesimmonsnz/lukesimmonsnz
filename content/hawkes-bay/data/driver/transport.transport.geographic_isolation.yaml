@@ -1,0 +1,12 @@
+id: driver.hawkes_bay.transport.transport.geographic_isolation
+name: Geographic isolation and dispersed population
+description: Geographic isolation and dispersed population
+theme: transport
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.transport.connectivity
+- problem.hawkes_bay.transport.active_modes
+claim_ids: []

@@ -1,0 +1,22 @@
+id: claim.waikato.infrastructure.road_condition_index
+statement: Waikato roading network maintenance backlog is significant. Rural sealed
+  roads in South Waikato and Waitomo show accelerated wear from agricultural use (heavy
+  machinery, stock trucks); Waikato Regional Council estimates approximately 150 million
+  dollars deferred maintenance. SH3/SH1 intersection delay funding creates bottleneck;
+  regional corridors serving tourism and export logistics are congested during peak
+  hours.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato roading claim

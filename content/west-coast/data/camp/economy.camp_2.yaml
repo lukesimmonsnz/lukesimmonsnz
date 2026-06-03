@@ -1,0 +1,26 @@
+id: camp.west_coast.economy.tourism_resilience_and_high_va
+name: Tourism Resilience and High-Value Visitor Economy
+theme: economy
+core_claim: West Coast tourism is volatile and dependent on international visitors;
+  building a year-round, high-value domestic and international tourism economy improves
+  economic resilience.
+flagship_moves:
+- Invest in all-weather tourism infrastructure (Punakaiki visitor centre, Hokitika
+  waterfront)
+- Develop Great Walk extensions and new multi-day tracks
+- Partner with Poutini Ngāi Tahu to develop culturally-anchored tourism experiences
+tensions:
+- Tourism infrastructure investment requires central government co-funding in a low-revenue
+  region
+- Over-reliance on tourism recreates a new form of single-sector dependency
+addresses:
+- problem.west_coast.economy.economic_structure
+- problem.west_coast.economy.economic_3
+- problem.west_coast.economy.economic_4
+interventions:
+- description: Develop West Coast high-value tourism strategy with Poutini Ngāi Tahu
+  state_variable: tourism_yield_per_visitor
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

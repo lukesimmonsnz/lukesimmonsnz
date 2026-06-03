@@ -1,0 +1,21 @@
+id: claim.marlborough.economy.economic_diversification_placeholder
+statement: 'Marlborough economy heavily concentrated in three sectors: viticulture
+  (45% of regional employment), aquaculture (12%), tourism/hospitality (15%); economic
+  diversification initiatives focus on value-added wine products, specialty crops
+  (olives, apricots), and digital remote work.'
+value: 45
+unit: percent employment in viticulture (2023 estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_mbl_2024
+- source.mbd_wine_industry_research
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

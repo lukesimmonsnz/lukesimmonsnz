@@ -1,0 +1,12 @@
+id: driver.nelson.environment.driver_1
+name: Climate-driven coastal and marine system change
+description: Sea-level rise, marine heatwaves, ocean acidification, and shifting species ranges interact with existing extraction and land-use pressure on Tasman Bay, accelerating ecological change that is irreversible at policy timescales.
+theme: environment
+consensus: consensus
+category: climate
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.environment.coastal_environment
+- problem.nelson.environment.sea_level_risk
+claim_ids: []

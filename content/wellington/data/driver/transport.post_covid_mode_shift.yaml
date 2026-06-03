@@ -1,0 +1,14 @@
+id: driver.wellington.transport.post_covid_mode_shift
+name: Post-COVID mode shift and demand uncertainty
+description: Remote and hybrid work patterns post-COVID have fundamentally altered peak-hour travel demand patterns on Wellington's
+  rail network, creating uncertainty that complicates long-term investment planning.
+theme: transport
+consensus: mostly-agreed
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.transport.rail_network
+- problem.wellington.transport.network_resilience
+claim_ids:
+- claim.wellington.transport.rail_patronage_recovery

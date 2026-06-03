@@ -1,0 +1,12 @@
+id: driver.southland.education.tertiary_access_barrier
+name: Tertiary Education Access Barriers
+description: No university campus in Southland; students relocate; student debt burden
+  high.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.education.tertiary_access
+claim_ids: []

@@ -1,0 +1,10 @@
+id: driver.northland.economy.sectoral_concentration
+name: Sectoral concentration and dependency
+description: Sectoral concentration and dependency in the regional context.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

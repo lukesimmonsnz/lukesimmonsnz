@@ -1,0 +1,43 @@
+id: problem.canterbury.education.secondary
+title: Secondary Education Attainment & Transition
+theme: education
+section: education
+subpage: secondary
+parent: problem.canterbury.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: 'Canterbury secondary schools show wide variance in NCEA pass rates (55-95%
+  by school/decile). School engagement is declining in rural and high-deprivation
+  areas; truancy rates in East Christchurch exceed 15%. Transitions to tertiary/employment
+  are unequal; many students from decile 9-10 schools enter low-wage or jobless pathways.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - ncea_level_2_attainment_rate_by_school
+  - school_truancy_rate_by_school_decile
+  - student_engagement_index
+  - secondary_to_tertiary_transition_rate
+  inputs:
+  - school_teaching_capacity
+  - school_engagement_culture
+  - family_education_aspirations
+  constraints:
+  - teacher_recruitment_and_retention
+  - school_funding_equity
+  feedback_loops:
+  - Dynamic feedback mechanisms drive secondary education attainment & transition.
+narrative:
+- heading: Disengagement in high-deprivation schools
+  body: 'Secondary students in decile 9-10 schools often lack consistent teacher relationships
+    due to high turnover. Truancy increases year 11-13. NCEA pass rates reflect both
+    student capacity and school support differential.
+
+    '
+claim_ids:
+- claim.canterbury.education.secondary_ncea_disparity_2023
+- claim.canterbury.education.school_truancy_rate_2023
+status: draft
+time_horizons: [decade, generation]

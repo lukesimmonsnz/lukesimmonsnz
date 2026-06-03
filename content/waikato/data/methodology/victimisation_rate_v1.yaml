@@ -1,0 +1,11 @@
+applies_to:
+- Claim
+description: Percentage of surveyed population experiencing at least one criminal
+  victimisation in the reference year; from crime and victims survey (captures unreported
+  crime, unlike police stats).
+discharged_by: json_schema
+id: methodology.victimisation_rate_v1
+kind: measurement
+name: Victimisation Rate
+source_ids: []
+version: 1

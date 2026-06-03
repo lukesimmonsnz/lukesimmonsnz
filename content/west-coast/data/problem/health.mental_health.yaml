@@ -1,0 +1,42 @@
+id: problem.west_coast.health.mental_health
+title: Mental health, substance use and the post-mining shock
+theme: health
+section: health
+subpage: mental_health
+parent: health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: Mental health presentations and suicide rates on the West Coast run above national average, with the income shock
+  of mining-sector decline, alcohol and substance use, and small-town social isolation as documented contributors. Specialist
+  mental-health capacity is thin and waitlists for assessment can exceed twelve months.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - mental_health_presentation_rate
+  - suicide_rate
+  - specialist_wait_weeks
+  inputs:
+  - health_nz_mental_health_funding
+  - rural_addictions_service_grants
+  constraints:
+  - specialist_workforce_shortage
+  - geographic_dispersion
+  feedback_loops:
+  - Long waitlists push acute presentations into emergency departments and police callouts, which absorb capacity at the most
+    expensive end of the system and crowd out the upstream investment that would shorten the queue.
+narrative:
+- heading: An economically stressed mental-health profile
+  body: Hospital presentation and suicide rates on the West Coast exceed national averages (claim.west_coast.health.mental_health_claim),
+    and the post-Solid Energy income-shock literature is one well-evidenced driver among several. Geographic isolation, alcohol-outlet
+    density and the gendered economics of mining-town male unemployment all act in the same direction.
+- heading: Specialist capacity is thin
+  body: Counsellors, psychiatrists and crisis-team capacity on the Coast are sparse, and waitlists for specialist assessment
+    can run beyond twelve months. Primary care absorbs the load, but with the GP workforce already stretched, that absorption
+    is capped well below need.
+claim_ids:
+- claim.west_coast.health.mental_health_claim
+status: draft
+time_horizons:
+- decade
+- generation

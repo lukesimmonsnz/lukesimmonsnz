@@ -1,0 +1,33 @@
+id: problem.gisborne.infrastructure.roading_resilience
+title: Roading network resilience to extreme weather in Gisborne — Te Tairāwhiti
+theme: infrastructure
+section: infrastructure
+subpage: roading_resilience
+parent: problem.gisborne.infrastructure.infrastructure_vulnerability
+order: 10
+updated: '2026-04-26'
+summary: Roading network resilience to extreme weather is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - roading_resilience_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Roading network resilience to extreme weather is a key facet of the broader
+    pressure facing the region.
+claim_ids:
+- claim.gisborne.infrastructure.roading_resilience_19
+- claim.gisborne.infrastructure.roading_resilience_20
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,36 @@
+id: problem.nelson.transport.connectivity_2
+title: Nelson Airport capacity and runway constraints
+theme: transport
+section: transport
+subpage: connectivity_2
+parent: connectivity
+order: 2
+updated: '2026-04-26'
+summary: Nelson Airport handles around 280,000 passengers per year and is operating at 68-72 percent of terminal capacity. Terminal infrastructure is adequate to 450,000-500,000 passengers under medium-growth scenarios, but runway and taxiway systems may need augmentation by 2035. The 2,100 m runway constrains aircraft types for direct long-haul; international service is limited to seasonal charters. Cargo handling is around 8 percent of revenue.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - annual_passengers
+  - terminal_capacity_utilisation_pct
+  - runway_length_m
+  inputs:
+  - airline_route_decisions
+  - airport_capex
+  constraints:
+  - runway_length
+  - airspace_limits
+  - boundary_land_availability
+  feedback_loops:
+  - 'Route-runway feedback: without longer runway, larger aircraft are not feasible; without larger aircraft, the route economics that justify runway extension do not materialise.'
+narrative:
+- heading: Capacity headroom plus a runway floor
+  body: 'Terminal capacity is the easier of Nelson Airport''s constraints to relieve (claim.nelson.transport.connectivity_2_claim). The structural ceiling is the runway: at 2,100 m, the airport cannot host larger narrow-body aircraft on direct trans-Tasman or trans-Pacific service without an extension that is geographically and politically difficult.'
+- heading: Commercial uncertainty for expansion
+  body: Without an international long-haul route or deeper domestic-market share, expansion economics are uncertain. Airline-route subsidies have been politically contested in comparable regions and are not currently in Nelson's operating model.
+claim_ids:
+- claim.nelson.transport.connectivity_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

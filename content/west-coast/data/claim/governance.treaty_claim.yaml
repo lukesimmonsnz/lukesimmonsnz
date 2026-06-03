@@ -1,0 +1,23 @@
+id: claim.west_coast.governance.treaty_claim
+statement: Ngāi Tahu Poutini holds mana whenua over West Coast and Fiordland regions.
+  Treaty settlement included significant South Island land holdings and fisheries
+  rights. West Coast Regional Council co-governance framework (2023) formalizes Ngāi
+  Tahu Poutini voice in resource management and long-term planning. However, capacity
+  for full co-governance implementation remains contested and resourced inadequately.
+value: null
+unit: null
+time_period: 2015-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ngai_tahu_poutini_partnership_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Co-governance framework from WCRC official policy; Treaty settlement context
+  from Ngāi Tahu Poutini partnership documents.

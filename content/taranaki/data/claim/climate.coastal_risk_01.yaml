@@ -1,0 +1,20 @@
+id: claim.taranaki.climate.coastal_risk_01
+statement: Taranaki's 115km coastline faces sea-level rise projections of 0.5-1.2m
+  by 2100 (RCP 6.0), combined with increased storminess and wave heights. Coastal
+  settlements (New Plymouth, Opunake) and agricultural land in coastal plains face
+  progressive inundation and saltwater intrusion risks affecting dairy and horticulture.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki coastal_risk

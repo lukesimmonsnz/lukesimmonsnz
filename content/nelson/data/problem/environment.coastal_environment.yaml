@@ -1,0 +1,36 @@
+id: problem.nelson.environment.coastal_environment
+title: Cumulative pressure on Tasman Bay coastal ecosystems
+theme: environment
+section: environment
+subpage: coastal_environment
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Tasman Bay and inner Nelson harbour face cumulative stress from land-derived nutrients and sediment, harvesting pressure on rock lobster and other shellfish, and the noise and light footprint of Port Nelson. Macroalgal blooms have grown in frequency and duration; seagrass beds have receded by an estimated 15-20 percent over the last 15 years.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - seagrass_extent_hectares
+  - macroalgal_bloom_days_per_year
+  - rock_lobster_cpue
+  inputs:
+  - forestry_runoff
+  - agricultural_nutrient_load
+  - port_operations_intensity
+  constraints:
+  - consent_regime_fragmentation
+  - monitoring_capacity
+  feedback_loops:
+  - 'Bloom-fishery feedback: nutrient-driven blooms reduce light penetration and shellfish recruitment, lowering catch and stock confidence, which feeds back into harvest pressure on remaining beds.'
+narrative:
+- heading: Multi-stressor system
+  body: No single sector is the dominant cause of decline. Forestry runoff, pastoral nutrient loss in the Waimea catchment, urban stormwater, and direct port-related footprint together create a cumulative pressure that individual consents do not capture (claim.nelson.environment.coastal_environment_claim).
+- heading: Monitoring gap and consent fragmentation
+  body: Long-run, well-resourced monitoring of Tasman Bay sits across Nelson City Council, Tasman District Council, and central agencies; data integration is partial. Cumulative-effects assessment under existing planning instruments is weak relative to the scale of pressure, leaving policy leaning on individual-discharge consents.
+claim_ids:
+- claim.nelson.environment.coastal_environment_claim
+status: draft
+time_horizons:
+- generation
+- century

@@ -1,0 +1,12 @@
+id: driver.marlborough.housing.lifestyle_migration
+name: Lifestyle Migration And Population Influx
+description: Lifestyle migration and population influx with regional implications.
+theme: housing
+consensus: mostly-agreed
+category: demographic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.inequality.seasonal_worker_conditions
+claim_ids: []

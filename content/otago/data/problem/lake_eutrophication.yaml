@@ -1,0 +1,34 @@
+id: problem.otago.environment.lake_eutrophication
+title: 'Lake Eutrophication: Wanaka and Wakatipu'
+theme: environment
+section: environment
+subpage: lake_eutrophication
+parent: problem.otago.environment.freshwater_stress
+order: 3
+updated: '2026-04-26'
+summary: Tourism, pastoral inputs, and stormwater runoff drive nutrient loading; toxic
+  algal blooms emerging; threatens recreational and drinking water quality.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Tourism, pastoral inputs, and stormwater runoff drive nutrient loading; toxic
+    algal blooms emerging; threatens recreational and drinking water quality.
+claim_ids:
+- claim.otago.environment.lake_eutrophication_trend
+- claim.otago.environment.freshwater_stress_prevalence
+- claim.otago.environment.irrigation_water_quality_prevalence
+- claim.otago.environment.freshwater_stress_trend
+- claim.otago.environment.coastal_otago_trend
+- claim.otago.environment.irrigation_water_quality_trend
+- claim.otago.environment.coastal_otago_prevalence
+- claim.otago.environment.lake_eutrophication_prevalence
+status: draft
+time_horizons: [generation, century]

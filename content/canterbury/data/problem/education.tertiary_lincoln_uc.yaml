@@ -1,0 +1,45 @@
+id: problem.canterbury.education.tertiary_lincoln_uc
+title: Tertiary Education & Lincoln University Pathway
+theme: education
+section: education
+subpage: tertiary_lincoln_uc
+parent: problem.canterbury.education.achievement
+order: 3
+updated: '2026-04-26'
+summary: 'Lincoln University (Ōtautahi) is the region''s primary tertiary institution,
+  specialized in agricultural, land-based, and environmental sciences. Enrollment
+  is stable (~3,500 students) but concentrated from high-decile schools. UC Christchurch
+  has limited capacity. Tertiary participation from Canterbury grows <2% annually;
+  degree completion rates are above NZ average but equity gaps remain.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - lincoln_enrollment_total
+  - tertiary_enrollment_rate_by_decile
+  - degree_completion_rate_by_background
+  - agricultural_workforce_pipeline_strength
+  inputs:
+  - secondary_school_leaver_numbers
+  - tertiary_funding_and_loans
+  - regional_employment_demand
+  constraints:
+  - tertiary_institution_location_concentration
+  - primary_sector_employment_demand
+  feedback_loops:
+  - Dynamic feedback mechanisms drive tertiary education & lincoln university pathway.
+narrative:
+- heading: Lincoln as agricultural hub
+  body: 'Lincoln''s reputation in agricultural sciences and agribusiness creates strong
+    recruitment from farming families and farming-interested students. However, program
+    diversity is limited; non-agricultural studies are less well resourced. Enrollment
+    from East Christchurch and South Canterbury remains low.
+
+    '
+claim_ids:
+- claim.canterbury.education.tertiary_enrollment_disparity_2023
+- claim.canterbury.education.lincoln_agricultural_workforce_2023
+status: draft
+time_horizons: [decade, generation]

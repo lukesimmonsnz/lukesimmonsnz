@@ -1,0 +1,15 @@
+id: driver.waikato.infrastructure.deferred_maintenance
+name: Decades of deferred infrastructure maintenance
+description: Underfunding of infrastructure renewal has accumulated a large backlog
+  across multiple asset classes.
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.infrastructure.waikato_infrastructure
+- problem.waikato.infrastructure.three_waters
+- problem.waikato.infrastructure.digital_rural
+- problem.waikato.infrastructure.roading
+claim_ids: []

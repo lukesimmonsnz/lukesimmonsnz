@@ -56,3 +56,4 @@ claim_ids:
   - claim.auckland.crime.fv_intergenerational_cycle
   - claim.auckland.crime.fv_housing_stress_link
 status: draft
+time_horizons: [decade]

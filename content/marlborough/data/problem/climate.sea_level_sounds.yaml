@@ -1,0 +1,30 @@
+id: problem.marlborough.climate.sea_level_sounds
+title: Sea Level Rise and Sounds Coastal Vulnerability
+theme: climate-adaptation
+section: climate
+subpage: sea_level_sounds
+parent: problem.marlborough.climate.climate_risk
+order: 1
+updated: '2026-04-26'
+summary: Picton and aquaculture facilities exposed; maritime infrastructure vulnerability;
+  retreat planning.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Picton and aquaculture facilities exposed; maritime infrastructure vulnerability;
+    retreat planning.
+claim_ids:
+- claim.marlborough.climate.sea_level_sounds_placeholder
+status: draft
+time_horizons: [generation, century]

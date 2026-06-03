@@ -1,0 +1,20 @@
+id: claim.canterbury.transport.bus_patronage_decline_2023
+statement: Christchurch bus patronage declined 8% since 2017 despite network expansion,
+  reflecting shift toward private vehicles and e-scooters. Declining revenue creates
+  operational pressures on contractor; network restructuring is planned; investment
+  in rapid transit (Light Rail project) is delayed pending funding.
+value: 29
+unit: million annual boardings
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_transport_strategy_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

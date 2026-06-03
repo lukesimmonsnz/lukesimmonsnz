@@ -1,0 +1,40 @@
+id: problem.tasman.infrastructure.infrastructure_3
+title: Rural broadband gap, especially in Mohua
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_3
+parent: infrastructure
+order: 3
+updated: '2026-04-26'
+summary: Around 76 percent of Golden Bay properties have access to fixed broadband at 30 Mbps or above, against
+  a regional average of about 88 percent. Rural blocks beyond five kilometres of Motueka or Richmond rely on satellite
+  or cellular. The Crown's Rural Broadband Initiative Phase 2 is expected to extend fibre to Takaka by 2026.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - share_premises_30mbps_capable
+  - median_rural_download_speed
+  inputs:
+  - rbi2_capex_to_takaka
+  - wireless_isp_capacity
+  constraints:
+  - low_population_density_economics
+  - topographic_line_of_sight_limits
+  feedback_loops:
+  - Lower rural connectivity reduces remote-work in-migration, which keeps population density low, which keeps last-mile
+    economics marginal.
+narrative:
+- heading: The connectivity gap is also a service gap
+  body: Telehealth, online tertiary study, remote work, and digital banking all assume a stable fixed connection.
+    Where the only option is satellite or marginal cellular, those services are de facto unavailable (claim.tasman.infrastructure.infrastructure_3_claim).
+- heading: Coverage is not the same as capacity
+  body: Even where fibre will reach Takaka by 2026, the last-mile economics for properties outside the township
+    and on outlying farms remain marginal. Rural Broadband Phase 2 improves the median, not the worst case, and
+    the worst-case properties are precisely the ones already most isolated by road and health geography.
+claim_ids:
+- claim.tasman.infrastructure.infrastructure_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

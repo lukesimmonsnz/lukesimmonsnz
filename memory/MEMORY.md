@@ -1,0 +1,1 @@
+- [Consolidated-mode template guard pattern](feedback_consolidated_template_guard.md) — region.py flips consolidated_mode on directory existence; templates need the guard before adding section MDs.

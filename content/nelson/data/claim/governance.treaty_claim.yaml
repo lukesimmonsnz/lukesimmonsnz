@@ -1,0 +1,24 @@
+id: claim.nelson.governance.treaty_claim
+statement: 'Treaty partnership governance in Nelson-Tasman is being formalized through
+  the Nelson Tasman Iwi Partnership Framework (2023), recognizing mana whenua rights
+  of Ngāti Koata, Ngāti Rārua, Ngāti Tama ki Te Tau Ihu, and Te Ātiawa o Te Waka-a-Māui.
+  The framework establishes joint decision-making on resource management, cultural
+  heritage, and urban development but is under-resourced: dedicated iwi liaison staff
+  number only 3 FTE across the councils, and iwi-led research and monitoring capacity
+  remains limited. Co-governance outcomes remain aspirational pending budget and staffing
+  allocation.'
+value: 3
+unit: FTE iwi liaison staff
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_tasman_iwi_partnership_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

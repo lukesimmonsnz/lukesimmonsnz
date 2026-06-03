@@ -1,0 +1,22 @@
+id: claim.northland.economy.northland_economic_underperformance_claim2
+statement: 'Sectoral concentration risk: tourism (12% GDP), primary industry (14-16%
+  GDP: dairy 8-10%, sheep/beef 3-4%, forestry 3-5%), retail/hospitality (18-20%).
+  Manufacturing absent (logging, primary processing only). Digital economy footprint
+  <3% regional employment. Dependency on state sectors: education (Whangarei primary,
+  Northland teachers), health (DHB, aged care), public administration. Limited venture
+  capital ecosystem; startup funding rare (Auckland VC firms prefer CBD location).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

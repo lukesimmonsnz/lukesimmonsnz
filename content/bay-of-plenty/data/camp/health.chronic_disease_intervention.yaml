@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.health.chronic_disease_intervention
+name: Intervention for chronic_disease
+theme: health
+core_claim: Targeted intervention on chronic_disease will improve outcomes.
+flagship_moves:
+- Policy measure 1 for chronic_disease
+- Policy measure 2 for chronic_disease
+- Implementation mechanism for chronic_disease
+tensions:
+- Trade-off A for chronic_disease
+- Trade-off B for chronic_disease
+addresses:
+- problem.bay_of_plenty.health.chronic_disease
+interventions:
+- description: Core intervention targeting chronic_disease
+  state_variable: chronic_disease_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

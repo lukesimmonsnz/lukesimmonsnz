@@ -1,0 +1,20 @@
+id: claim.wellington.governance.wcc_dysfunction_indicators
+statement: Wellington City Council has experienced multiple CEO departures, contested
+  capital project cost escalations (including the Town Hall earthquake strengthening),
+  and sustained media scrutiny of governance processes over the past decade, indicating
+  systemic leadership and accountability challenges.
+value: null
+unit: null
+time_period: 2015-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

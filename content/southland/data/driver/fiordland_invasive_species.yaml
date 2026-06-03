@@ -1,0 +1,12 @@
+id: driver.southland.environment.fiordland_invasive_species
+name: Fiordland Invasive Species (Stoats, Rats)
+description: DOC-managed areas losing endemic birds to invasive predators; resource
+  constraints limiting control.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.environment.fiordland_ecosystem
+claim_ids: []

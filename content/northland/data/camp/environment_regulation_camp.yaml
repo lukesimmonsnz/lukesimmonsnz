@@ -1,0 +1,25 @@
+id: camp.northland.environment.regulation_camp
+name: Regulatory limits on land use and access
+theme: environment
+core_claim: Strengthened environmental regulations and access restrictions are necessary
+  to halt degradation.
+flagship_moves:
+- Close high-risk kauri tracks and enforce track hygiene protocols
+- Implement freshwater limits under National Policy Statement
+- Zone sensitive coastal areas as no-development buffers
+tensions:
+- Economic cost to farming and tourism sectors
+- Enforcement difficult across large rural and coastal areas
+- Māori customary access rights require careful navigation
+interventions:
+- description: Close high-risk kauri tracks and enforce track hygiene protocols
+  state_variable: environment_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.environment.northland_environment_pressures
+- problem.northland.environment.kauri_dieback
+- problem.northland.environment.freshwater_quality
+- problem.northland.environment.coastal_erosion
+applicable_in:
+- northland
+tensions_with: []

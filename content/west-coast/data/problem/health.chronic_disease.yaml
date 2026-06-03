@@ -1,0 +1,42 @@
+id: problem.west_coast.health.chronic_disease
+title: Chronic disease prevalence and the prevention gap
+theme: health
+section: health
+subpage: chronic_disease
+parent: health_outcomes
+order: 3
+updated: '2026-04-26'
+summary: Diabetes, cardiovascular disease and chronic respiratory disease prevalence on the West Coast run above national
+  averages, driven by smoking and obesity prevalence, an aging population, and socioeconomic stress. Primary-care capacity
+  is too thin to deliver the systematic preventive screening these conditions require.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - diabetes_prevalence
+  - cvd_event_rate
+  - spirometry_completion_rate
+  inputs:
+  - pharmac_funded_medications
+  - primary_care_capitation
+  constraints:
+  - aging_demographic_profile
+  - thin_primary_care_capacity
+  feedback_loops:
+  - Untreated chronic conditions present at later stages with higher acute cost, which absorbs the same workforce capacity
+    that would otherwise be running screening clinics — locking in the prevention gap.
+narrative:
+- heading: Risk-factor concentration
+  body: Smoking prevalence, obesity, hazardous drinking and physical-inactivity prevalence on the West Coast all run above
+    national averages, in a population that is also older than the national average (claim.west_coast.health.chronic_disease_claim).
+    The result is high prevalence of multi-morbidity in the working-age and older cohorts.
+- heading: Prevention loses to acute load
+  body: With primary care under workforce strain, systematic preventive screening (HbA1c, cardiovascular risk, retinopathy,
+    COPD spirometry) is delivered unevenly. The patients most at risk are often the least likely to be enrolled in proactive
+    programmes, widening the outcome gap.
+claim_ids:
+- claim.west_coast.health.chronic_disease_claim
+status: draft
+time_horizons:
+- decade
+- generation

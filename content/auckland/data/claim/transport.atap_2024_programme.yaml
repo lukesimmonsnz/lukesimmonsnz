@@ -1,0 +1,23 @@
+id: claim.auckland.transport.atap_2024_programme
+statement: >
+  The Auckland Transport Alignment Project (ATAP) is the Crown-Auckland
+  Council joint planning vehicle that publishes a 10-year indicative
+  strategic transport programme for Auckland; the programme sequences
+  Crown and Council co-funded investment across road, rail, public
+  transport, walking, and cycling. ATAP is the alignment instrument that
+  reconciles Auckland Council's Long Term Plan with the National Land
+  Transport Programme.
+value: null
+unit: null
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.atap_2024
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: null

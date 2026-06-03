@@ -1,0 +1,13 @@
+id: driver.gisborne.crime.rural_crime_escalation
+name: Driver escalating rural_crime
+description: "This driver exacerbates the rural_crime challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: crime
+consensus: contested
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.crime.rural_crime
+claim_ids:
+- claim.gisborne.crime.rural_crime_47

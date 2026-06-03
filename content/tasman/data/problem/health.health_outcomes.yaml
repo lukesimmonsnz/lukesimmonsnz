@@ -1,0 +1,41 @@
+id: problem.tasman.health.health_outcomes
+title: Outcome gaps driven by distance to specialist care
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Life expectancy in Tasman is around 80.2 years, just below the national 81.1, with a 3.9-year gap between
+  Māori and non-Māori. Avoidable mortality runs roughly 15 percent above the national benchmark, driven heavily
+  by delays in accessing specialist services from Golden Bay and Murchison.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - life_expectancy_at_birth
+  - avoidable_mortality_rate
+  inputs:
+  - primary_care_access_density
+  - specialist_referral_throughput
+  constraints:
+  - geographic_distance_to_nelson_hospital
+  - workforce_supply
+  feedback_loops:
+  - Worse outcomes increase the cost of secondary and tertiary care relative to primary, which diverts funding away
+    from the primary-care services that would prevent the secondary load.
+narrative:
+- heading: Distance is a clinical variable
+  body: When the nearest emergency, surgical, and maternity capacity is at Nelson Hospital, the time-from-onset
+    to treatment for stroke, cardiac, obstetric and trauma events is longer for residents of Mohua and Murchison
+    than for residents of Richmond. That time difference shows up as worse population-level outcomes (claim.tasman.health.health_outcomes_claim).
+- heading: Equity layered on top of geography
+  body: The 3.9-year Māori life-expectancy gap is not explained by rurality alone — it tracks national patterns
+    of deprivation, chronic-disease burden, and primary-care access. Within Tasman, those drivers are concentrated
+    in Motueka, Murchison, and parts of Mohua.
+claim_ids:
+- claim.tasman.health.health_outcomes_claim
+status: draft
+time_horizons:
+- decade
+- generation

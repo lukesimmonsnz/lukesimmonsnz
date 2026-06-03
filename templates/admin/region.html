@@ -1,0 +1,35 @@
+{% extends "admin/base.html" %}
+{% block title %}{{ region_label }}{% endblock %}
+{% block content %}
+<div class="crumbs">
+  <a href="{{ url_for('admin.home') }}">⌂</a> ›
+  <strong>{{ region_label }}</strong>
+</div>
+<h1>{{ region_label }} <span class="badge">{{ region }}</span></h1>
+
+<h2>Entity types</h2>
+<table>
+  <tr><th>Type</th><th>Count</th><th></th></tr>
+  {% for et in entity_types %}
+  <tr>
+    <td><code>{{ et }}</code></td>
+    <td>{{ counts[et] }}</td>
+    <td>
+      {% if counts[et] > 0 %}
+      <a href="{{ url_for('admin.list_view', region=region, entity_type=et) }}">browse →</a>
+      {% else %}<span class="hint">empty</span>{% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h2>Themes</h2>
+<p class="hint">Filter the entity browser by theme.</p>
+<div class="grid">
+  {% for t in themes %}
+  <div class="card">
+    <a href="{{ url_for('admin.list_view', region=region, entity_type='claim', theme=t) }}">{{ t }}</a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

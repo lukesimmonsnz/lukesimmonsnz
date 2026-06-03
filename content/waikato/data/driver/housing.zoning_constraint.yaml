@@ -1,0 +1,15 @@
+id: driver.waikato.housing.zoning_constraint
+name: Restrictive zoning and land supply constraint
+description: Restrictive residential zoning limits intensification and greenfield
+  development, constraining supply relative to demand.
+theme: housing
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.housing.hamilton_housing_crisis
+- problem.waikato.housing.affordability
+- problem.waikato.housing.rental_market
+- problem.waikato.housing.urban_sprawl
+claim_ids: []

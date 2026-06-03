@@ -1,0 +1,24 @@
+id: claim.otago.transport.connectivity_prevalence
+statement: 'Regional connectivity in Otago is constrained by geography and distance:
+  SH1 spine (Dunedin-Balclutha-Invercargill, 3.5 hours Dunedin-Invercargill) critical
+  for freight/passenger; SH8 (Dunedin-Cromwell-Wanaka, 2.5 hours one-way) critical
+  for Central Otago access; SH6 Frankton congestion (Queenstown-Wanaka link) a bottleneck.
+  InterCity regional bus service connects major centres; Dunedin ORC bus network is
+  urban-focused; rural areas (South Otago, Waitaki) transit-dependent. Air access
+  via Dunedin Airport (domestic, limited international) and Queenstown Airport (domestic,
+  Australia, Singapore).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

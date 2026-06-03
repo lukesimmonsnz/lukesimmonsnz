@@ -1,0 +1,20 @@
+id: camp.gisborne.economy.forestry_dependency_approach
+name: Strategic approach for forestry_dependency
+theme: economy
+core_claim: Strategic intervention on forestry_dependency will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting forestry_dependency
+- Priority action 2 targeting forestry_dependency
+- Institutional coordination mechanism for forestry_dependency
+tensions:
+- 'Tension 1: forestry_dependency'
+- 'Tension 2: forestry_dependency'
+addresses:
+- problem.gisborne.economy.forestry_dependency
+interventions:
+- description: Primary intervention for forestry_dependency
+  state_variable: forestry_dependency_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

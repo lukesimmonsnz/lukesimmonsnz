@@ -1,0 +1,21 @@
+id: claim.tasman.economy.economic_3_claim
+statement: Motueka Hops Industry Report (2023) identifies Motueka as the southern
+  hemisphere's largest hops producer, with 1,800 hectares under cultivation. Annual
+  production reaches 5,200 tonnes (dried), valued at NZD 84 million, employing 340
+  full-time equivalent roles during peak harvest.
+value: 5200
+unit: tonnes dried hops annually
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.motueka_hops_industry_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

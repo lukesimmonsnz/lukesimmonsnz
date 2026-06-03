@@ -1,0 +1,19 @@
+id: claim.gisborne.education.secondary_completion_62
+statement: Rural secondary schools in East Cape have consolidated significantly. Limited
+  local subject choice and teacher availability lead students to distance education
+  (Te Kura) or boarding school in larger centres.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.consent_rate_v1
+notes: null

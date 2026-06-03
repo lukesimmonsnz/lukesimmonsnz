@@ -1,0 +1,26 @@
+id: claim.auckland.economy.regional_aged_share_divergence_2048
+statement: >
+  Stats NZ's subnational projections show the share of the population
+  aged 65+ rising fastest in regions that already have older
+  age-structures: West Coast, Tasman, Marlborough, Northland, and
+  parts of Hawke's Bay are projected to have 30-35% of their
+  population aged 65+ by 2048, compared to roughly 20% in Auckland.
+  The ageing burden is regionally uneven and inversely correlated
+  with workforce capacity to support it.
+value: null
+unit: null
+time_period: 2023-2048
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.stats_nz_population_projections_2024
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.admin_count_v1
+notes: >
+  Drives both the ageing-workforce-shortage and the rural-population-
+  decline patterns: the same regions losing working-age population
+  are gaining aged population.

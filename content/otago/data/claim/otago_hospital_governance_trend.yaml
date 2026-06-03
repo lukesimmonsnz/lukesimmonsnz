@@ -1,0 +1,22 @@
+id: claim.otago.governance.otago_hospital_governance_trend
+statement: 'Hospital governance is complex and evolving: Health NZ Southern managing
+  rebuild amid operational demands (existing Dunedin Hospital aging, seismic risk);
+  funding escalation ($1.5B → $2.3B+) creating crown budget pressure; regional planning
+  for surgical, ED, and mental health capacity contested between population growth
+  (Queenstown/Otago) and aging infrastructure (Oamaru, Waitaki); Māori health outcomes
+  governance increasingly focal.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

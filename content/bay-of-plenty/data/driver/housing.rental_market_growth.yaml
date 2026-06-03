@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.housing.rental_market_growth
+name: Driver for rental_market
+description: "This driver exacerbates the rental_market pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: housing
+consensus: disputed
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.housing.rental_market
+claim_ids:
+- claim.bay_of_plenty.housing.rental_market_05

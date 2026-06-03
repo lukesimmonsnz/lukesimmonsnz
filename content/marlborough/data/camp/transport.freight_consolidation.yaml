@@ -1,0 +1,21 @@
+id: camp.marlborough.transport.freight_consolidation
+name: Urban Freight Consolidation
+theme: transport
+core_claim: Consolidated deliveries to reduce vehicle trips.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.transport.active_modes
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

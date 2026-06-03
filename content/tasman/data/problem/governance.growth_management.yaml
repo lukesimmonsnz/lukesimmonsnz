@@ -1,0 +1,42 @@
+id: problem.tasman.governance.growth_management
+title: Lifestyle-migration growth with infrastructure lag
+theme: governance
+section: governance
+subpage: growth_management
+parent: governance
+order: 2
+updated: '2026-04-26'
+summary: Tasman District received around 1,200 net migration inflow between 2016 and 2022, mostly lifestyle migration
+  from Auckland and Wellington. The 2024 growth-management plan targets around 18,500 new dwellings by 2050; Richmond
+  and Motueka are planned at 3-4 percent annual population growth, requiring around NZD 156 million of infrastructure
+  investment.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - annual_net_migration
+  - infrastructure_investment_to_dwelling_ratio
+  inputs:
+  - long_term_plan_capex_pipeline
+  - central_government_growth_co_funding
+  constraints:
+  - lgfa_borrowing_capacity
+  - construction_workforce_supply
+  feedback_loops:
+  - Lagging infrastructure investment raises the per-unit cost of catch-up, which crowds out the next round of growth-area
+    investment.
+narrative:
+- heading: Growth that arrived without an infrastructure plan
+  body: The 2016-2022 migration inflow preceded the matching infrastructure programme. Three-waters, transport,
+    and reserves are now being planned to catch up to a population already in place (claim.tasman.governance.growth_management_claim).
+- heading: Sequencing is the policy lever
+  body: The 18,500-dwelling target through 2050 only delivers the intended outcome if infrastructure precedes —
+    or at least keeps pace with — subdivision consenting. Sequencing failures show up later as service degradation,
+    contamination events, and stormwater-capacity exceedance.
+claim_ids:
+- claim.tasman.governance.growth_management_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

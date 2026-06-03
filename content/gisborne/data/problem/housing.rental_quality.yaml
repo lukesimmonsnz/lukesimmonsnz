@@ -1,0 +1,33 @@
+id: problem.gisborne.housing.rental_quality
+title: Poor quality rental housing stock in Gisborne — Te Tairāwhiti
+theme: housing
+section: housing
+subpage: rental_quality
+parent: problem.gisborne.housing.housing_shortage
+order: 3
+updated: '2026-04-26'
+summary: Poor quality rental housing stock is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - rental_quality_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Poor quality rental housing stock is a key facet of the broader pressure facing
+    the region.
+claim_ids:
+- claim.gisborne.housing.rental_quality_05
+- claim.gisborne.housing.rental_quality_06
+status: draft
+time_horizons: [decade, generation, century]

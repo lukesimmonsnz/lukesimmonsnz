@@ -1,0 +1,24 @@
+id: 'problem.northland.economy.development'
+title: 'Te Tai Tokerau Northland: economic development'
+theme: 'economy'
+section: 'economy'
+subpage: 'development'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Growth is constrained by concentration.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Growth is constrained by concentration.'
+claim_ids:
+- 'claim.northland.economy.development_claim1'
+- 'claim.northland.economy.development_claim2'
+status: 'draft'

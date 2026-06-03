@@ -1,0 +1,43 @@
+id: problem.west_coast.inequality.rural_isolation
+title: Service deprivation in Haast, Karamea, Reefton and Ross
+theme: inequality
+section: inequality
+subpage: rural_isolation
+parent: inequality
+order: 4
+updated: '2026-04-26'
+summary: 'Settlements at the margins of the West Coast — Haast, Karamea, Reefton, Ross — face severe service deprivation:
+  no resident GP, limited school choice, hours of travel to a hospital, and patchy broadband. Populations are small enough
+  that local services are uneconomic on conventional metrics.'
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - distance_to_gp_minutes
+  - broadband_below_50mbps_share
+  - settlement_population
+  inputs:
+  - telehealth_capacity
+  - rural_broadband_initiative_capex
+  constraints:
+  - small_settlement_economics
+  - long_road_distances
+  feedback_loops:
+  - Service withdrawal drives further out-migration of younger working-age residents, leaving an older population whose service
+    needs rise faster than the rateable base — a classic depopulation spiral.
+narrative:
+- heading: Geography sets the floor
+  body: Haast and Karamea each have populations well under five hundred, and Ross and Reefton not much larger (claim.west_coast.inequality.rural_isolation_claim).
+    Conventional service-delivery models treat these populations as below the threshold for resident clinical staff, full
+    secondary schooling, or banking infrastructure — leaving residents to travel for the basics.
+- heading: Aging in place and care dependency
+  body: Younger residents out-migrate; older residents who age in place build care needs the local service footprint cannot
+    meet. The resulting dependency on family caregivers and on long-distance health transfers is itself a hidden cost of the
+    isolation.
+claim_ids:
+- claim.west_coast.inequality.rural_isolation_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

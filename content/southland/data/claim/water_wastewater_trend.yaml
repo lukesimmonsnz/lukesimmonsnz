@@ -1,0 +1,22 @@
+id: claim.southland.infrastructure.water_wastewater_trend
+statement: 'Water and wastewater infrastructure in Southland requires significant
+  capital investment. Invercargill: water treatment upgrade project prioritized; wastewater
+  treatment capacity constraints during high-flow events. Rural systems: multiple
+  small schemes limit efficiency; consolidation discussions ongoing. Climate change
+  (flooding risk, drought impacts) driving infrastructure resilience review. Funding
+  model under review post-Three Waters reform uncertainty.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

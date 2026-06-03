@@ -1,0 +1,39 @@
+id: problem.wellington.transport.highway_bottleneck
+title: State highway congestion and single-point failures in Wellington
+theme: transport
+section: transport
+subpage: highway-bottleneck
+parent: problem.wellington.transport.network_resilience
+order: 3
+updated: '2026-04-26'
+summary: Wellington's state highway network carries volumes far exceeding its design capacity on key urban sections. Transmission
+  Gully (opened 2022) has provided partial relief on the northern corridor but has not resolved congestion in the inner city
+  and Hutt Valley, where tunnels and narrow corridors remain binding constraints.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - congestion_delay_index
+  - incident_recovery_time
+  inputs:
+  - vehicle_km_travelled
+  - road_capacity_km
+  constraints:
+  - inner_city_tunnel_capacity
+  - coastal_corridor_width
+  feedback_loops:
+  - 'Induced demand loop: road capacity additions attract additional vehicle trips, partially or fully absorbing congestion
+    relief within 5–10 years.'
+narrative:
+- heading: Transmission Gully and residual congestion
+  body: Transmission Gully opened in 2022 as the major highway investment of the past decade, providing an inland alternative
+    to the coastal SH1 north of Wellington. Initial congestion relief on the northern corridor has been measurable but the
+    inner-city network — particularly the Terrace and Mt Victoria tunnels — remains severely congested (claim.wellington.transport.transmission_gully_opened_2022).
+- heading: Congestion costs
+  body: Wellington's travel time index on key morning-peak corridors is among the highest in New Zealand relative to city
+    size, reflecting the geometric constraint imposed by the harbour and hills (claim.wellington.transport.state_highway_congestion_index).
+claim_ids:
+- claim.wellington.transport.transmission_gully_opened_2022
+- claim.wellington.transport.state_highway_congestion_index
+status: draft
+time_horizons: [decade, generation]

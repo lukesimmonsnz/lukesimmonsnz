@@ -1,0 +1,23 @@
+id: camp.waikato.climate.climate_adaptation
+name: Managed climate adaptation
+theme: climate-adaptation
+core_claim: Proactive managed retreat, flood protection upgrades, and drought-resilient
+  land management reduces future climate costs.
+flagship_moves:
+- Develop Waikato floodplain managed retreat and buyout framework
+- Upgrade Waikato River flood protection infrastructure for 1-in-200 year events
+- Fund drought resilience infrastructure including water storage
+tensions:
+- Managed retreat faces significant community and property rights resistance
+- Flood protection investment is costly and may give false security to development
+interventions:
+- description: Develop Waikato floodplain managed retreat and buyout framework
+  state_variable: climate_risk_exposure
+  expected_sign: +
+addresses:
+- problem.waikato.climate.flood_risk
+- problem.waikato.climate.agricultural_emissions
+- problem.waikato.climate.drought_risk
+applicable_in:
+- waikato
+tensions_with: []

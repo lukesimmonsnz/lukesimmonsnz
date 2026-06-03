@@ -1,0 +1,20 @@
+id: claim.canterbury.climate.rainfall_intensification_2070s_2023
+statement: Climate projections for Canterbury show 10-30% increase in extreme rainfall
+  intensity by 2070 (RCP 6.0). Canterbury Plain stormwater systems were designed for
+  1950s-era rainfall; updated design standards are being implemented but require $800M+
+  investment to manage intensified 1-in-50-year storm events.
+value: 20
+unit: percent increase
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfe_nz_sea_level_guidance_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

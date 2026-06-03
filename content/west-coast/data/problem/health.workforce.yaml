@@ -1,0 +1,42 @@
+id: problem.west_coast.health.workforce
+title: GP and specialist workforce shortage at Te Nikau and across the Coast
+theme: health
+section: health
+subpage: workforce
+parent: health_outcomes
+order: 4
+updated: '2026-04-26'
+summary: Te Nikau Hospital (Greymouth) and West Coast primary care face acute workforce shortages, with around 40 percent
+  of GP and nursing positions unfilled or covered by locums. Cardiology, oncology and most surgical specialties require referral
+  to Christchurch, more than 200 km away over Arthur's Pass.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - gp_vacancy_rate
+  - nurse_vacancy_rate
+  - telehealth_consultations_per_capita
+  inputs:
+  - health_nz_workforce_incentives
+  - rural_general_practice_grants
+  constraints:
+  - partner_employment_thinness
+  - professional_isolation
+  feedback_loops:
+  - High vacancy rates raise the load on remaining staff, accelerating burnout and departure, which deepens vacancy — a self-reinforcing
+    loop that incentive-only policies have only partially arrested.
+narrative:
+- heading: A single secondary hospital, thinly staffed
+  body: Te Nikau Hospital opened in 2021 to consolidate Grey Base Hospital and primary services, but its workforce-sustainability
+    question is unresolved (claim.west_coast.health.workforce_claim). Roughly 40 percent of GP and nursing positions on the
+    Coast are unfilled or locum-covered, a level that is operationally fragile.
+- heading: Specialist services are out-of-region
+  body: Cardiology, oncology, neurology and most surgical specialties require referral to Christchurch, with travel at minimum
+    a four-hour each-way commitment for patients. Telehealth helps but cannot substitute for procedural specialties or for
+    diagnostic imaging that has to happen in person.
+claim_ids:
+- claim.west_coast.health.workforce_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,5 +1,15 @@
 id: source.auckland_council_ltp_2024
 title: "Auckland Council Long-Term Plan 2024-2034"
+author: "Auckland Council"
+publisher: "Auckland Council"
 type: government-report
+credibility: official
 year: 2024
-url: "https://www.aucklandcouncil.govt.nz/ltp"
+url: "https://www.aucklandcouncil.govt.nz/plans-projects-policies-reports-bylaws/our-plans-strategies/long-term-plan/Pages/default.aspx"
+geo_granularity:
+  - auckland
+notes: >
+  Adopted ten-year financial and strategic plan; sets capital programme,
+  rates path, and council-controlled organisation budgets. Direct primary
+  source for Auckland Council expenditure and infrastructure investment
+  figures (replaces homepage shortlink).

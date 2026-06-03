@@ -1,0 +1,21 @@
+id: claim.southland.climate.climate_risk_prevalence
+statement: 'Climate change poses multifaceted risks to Southland: inland drought threatens
+  dairy farmers; coastal flooding affects Invercargill and Orepuki; Fiordland rainfall
+  intensification increases infrastructure vulnerability. 1-in-100-year flood depths
+  projected to increase 0.3-0.6m by 2100; infrastructure valued at $500M+ in coastal
+  zones faces inundation risk.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

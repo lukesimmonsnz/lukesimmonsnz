@@ -1,0 +1,34 @@
+id: problem.southland.infrastructure.water_wastewater
+title: Water and Wastewater System Aging
+theme: infrastructure
+section: infrastructure
+subpage: water_wastewater
+parent: problem.southland.infrastructure.infrastructure
+order: 2
+updated: '2026-04-26'
+summary: Invercargill and district water systems aging; wastewater treatment capacity
+  constraints; rural septic systems inadequate; infrastructure funding gap widening.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Invercargill and district water systems aging; wastewater treatment capacity
+    constraints; rural septic systems inadequate; infrastructure funding gap widening.
+claim_ids:
+- claim.southland.infrastructure.digital_rural_prevalence
+- claim.southland.infrastructure.manapouri_power_prevalence
+- claim.southland.infrastructure.manapouri_power_trend
+- claim.southland.infrastructure.digital_rural_trend
+- claim.southland.infrastructure.water_wastewater_trend
+- claim.southland.infrastructure.water_wastewater_prevalence
+- claim.southland.infrastructure.infrastructure_trend
+- claim.southland.infrastructure.infrastructure_prevalence
+status: draft
+time_horizons: [decade, generation]

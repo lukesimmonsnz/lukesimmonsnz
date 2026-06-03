@@ -1,0 +1,10 @@
+id: 'driver.waikato.health.driver_1'
+name: 'Policy and institutional barriers in health'
+description: 'Policy and institutional barriers in health in regional context.'
+theme: 'health'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

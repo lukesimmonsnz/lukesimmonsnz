@@ -1,0 +1,29 @@
+id: problem.taranaki.transport.regional_roading
+title: Regional roading quality and maintenance
+theme: transport
+section: transport
+subpage: regional_roading
+parent: problem.taranaki.transport.connectivity
+order: 2
+updated: '2026-04-26'
+summary: State Highway 3 and regional roads require maintenance. Rural road networks
+  are aging with deferred maintenance.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - regional_roading_index
+  inputs:
+  - regional_roading_input_1
+  constraints:
+  - regional_roading_constraint
+  feedback_loops:
+  - 'Feedback: regional_roading'
+narrative:
+- heading: Regional roading quality and maintenance in Taranaki
+  body: State Highway 3 and regional roads require maintenance. Rural road networks
+    are aging with deferred maintenance.
+claim_ids:
+- claim.taranaki.transport.regional_roading_01
+status: draft
+time_horizons: [decade, generation]

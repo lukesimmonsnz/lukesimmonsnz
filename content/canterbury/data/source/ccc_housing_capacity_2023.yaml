@@ -1,0 +1,12 @@
+id: source.ccc_housing_capacity_2023
+title: Christchurch City Council Housing Capacity Assessment 2023
+author: null
+publisher: Christchurch City Council
+year: 2023
+url: https://www.ccc.govt.nz/the-council/planning-strategy-and-policy/plans-strategies-policies-and-bylaws/housing-and-urban-development/
+type: primary-data
+credibility: official
+geo_granularity:
+- canterbury
+notes: Greenfield release staging, intensification zoning, development capacity by
+  district (Christchurch, Waimakariri, Selwyn).

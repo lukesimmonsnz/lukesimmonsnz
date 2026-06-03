@@ -1,0 +1,20 @@
+id: camp.southland.inequality.rural_service_access
+name: Rural Service Access and Isolation Reduction
+theme: inequality
+core_claim: Mobile services, transport subsidies, and broadband reduce rural isolation.
+flagship_moves:
+- Mobile health and education services
+- Public transport subsidy for rural residents
+- Broadband access for rural areas
+tensions:
+- Cost per capita high in low-density areas
+- Sustainability of mobile services
+addresses:
+- problem.southland.inequality.rural_isolation
+interventions:
+- description: Establish mobile clinics serving rural areas weekly
+  state_variable: healthcare_access_rural
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

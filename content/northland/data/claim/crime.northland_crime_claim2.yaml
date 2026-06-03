@@ -1,0 +1,18 @@
+id: claim.northland.crime.northland_crime_claim2
+statement: Drug-related offenses are a growing proportion of Northland crime. Synthetic
+  drug supply
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

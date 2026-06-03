@@ -1,0 +1,30 @@
+id: problem.marlborough.infrastructure.infrastructure
+title: Regional Infrastructure and Development Capacity
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Water irrigation allocation constraints; port infrastructure needs; rural
+  digital gaps.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Water irrigation allocation constraints; port infrastructure needs; rural
+    digital gaps.
+claim_ids:
+- claim.marlborough.infrastructure.infrastructure_placeholder
+status: draft
+time_horizons: [decade, generation]

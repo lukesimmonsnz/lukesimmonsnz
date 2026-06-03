@@ -1,0 +1,34 @@
+id: problem.southland.economy.smelter_dependency
+title: Smelter Closure Risk and Economic Dependency
+theme: economy
+section: economy
+subpage: smelter_dependency
+parent: problem.southland.economy.industrial_transition
+order: 2
+updated: '2026-04-26'
+summary: NZAS provides ~3,000 direct and indirect jobs; closure would devastate Southland
+  economy. Ongoing energy contract negotiations; grid resilience debates.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: NZAS provides ~3,000 direct and indirect jobs; closure would devastate Southland
+    economy. Ongoing energy contract negotiations; grid resilience debates.
+claim_ids:
+- claim.southland.economy.agri_commodity_trend
+- claim.southland.economy.agri_commodity_prevalence
+- claim.southland.economy.industrial_transition_prevalence
+- claim.southland.economy.economic_diversification_prevalence
+- claim.southland.economy.industrial_transition_trend
+- claim.southland.economy.smelter_dependency_prevalence
+- claim.southland.economy.smelter_dependency_trend
+- claim.southland.economy.economic_diversification_trend
+status: draft
+time_horizons: [decade, generation]

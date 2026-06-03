@@ -1,0 +1,43 @@
+id: problem.west_coast.environment.sea_level_risk
+title: Sea level rise and compounded coastal-seismic exposure
+theme: environment
+section: environment
+subpage: sea_level_risk
+parent: coastal_environment
+order: 2
+updated: '2026-04-26'
+summary: Tide-gauge records show roughly 1.6 mm/year sea level rise on the West Coast over the past century, with projections
+  of 0.5-1.0 m by 2100. Combined with Alpine Fault risk and high-rainfall flooding, coastal settlements face a stacked hazard
+  profile that is rare in New Zealand.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - mean_sea_level_mm
+  - design_storm_surge_height
+  - exposed_residential_units
+  inputs:
+  - niwa_hazard_modelling_funding
+  - council_coastal_adaptation_capex
+  constraints:
+  - low_lying_settlement_geography
+  - compounded_hazard_profile
+  feedback_loops:
+  - Each sea-level increment expands the population and asset base requiring adaptation, while the political horizon for adaptation
+    funding shortens as insurance retreats and asset values fall — a divergence the planning system has not yet closed.
+narrative:
+- heading: Sea level rise as a base-rate increase
+  body: Long-term tide-gauge records and IPCC-aligned projections place West Coast sea-level rise on the national-average
+    track, with absolute amounts of 0.5 to 1.0 m by 2100 plausible (claim.west_coast.environment.sea_level_risk_claim). The
+    effect is to lift the base height from which storm-surge events build, which is what drives most of the practical inundation
+    risk.
+- heading: Hazard stacking
+  body: Few regions face the combination of high seismic hazard (Alpine Fault), exceptional rainfall and flood frequency,
+    and rising sea level acting on settlements built at river mouths. Adaptation planning has to address the joint distribution
+    of these hazards rather than each in isolation.
+claim_ids:
+- claim.west_coast.environment.sea_level_risk_claim
+status: draft
+time_horizons:
+- generation
+- century

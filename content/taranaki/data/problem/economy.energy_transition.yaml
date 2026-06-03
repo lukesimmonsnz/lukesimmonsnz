@@ -1,0 +1,29 @@
+id: problem.taranaki.economy.energy_transition
+title: Energy transition from oil and gas
+theme: economy
+section: economy
+subpage: energy_transition
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Taranaki economy is heavily dependent on declining oil and gas sector. Economic
+  transition is urgent and underfunded.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - energy_transition_index
+  inputs:
+  - energy_transition_input_1
+  constraints:
+  - energy_transition_constraint
+  feedback_loops:
+  - 'Feedback: energy_transition'
+narrative:
+- heading: Energy transition from oil and gas in Taranaki
+  body: Taranaki economy is heavily dependent on declining oil and gas sector. Economic
+    transition is urgent and underfunded.
+claim_ids:
+- claim.taranaki.economy.energy_transition_01
+status: draft
+time_horizons: [decade, generation]

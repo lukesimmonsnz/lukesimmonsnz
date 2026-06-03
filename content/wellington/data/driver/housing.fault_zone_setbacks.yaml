@@ -1,0 +1,14 @@
+id: driver.wellington.housing.fault_zone_setbacks
+name: Fault zone land-use setback rules
+description: Active fault trace setback requirements under the National Environmental Standard for Assessing and Managing
+  Contaminants in Soil sterilise significant areas of Wellington City from residential development.
+theme: housing
+consensus: consensus
+category: regulatory
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.wellington.housing.land_supply
+- problem.wellington.housing.affordability
+claim_ids:
+- claim.wellington.housing.greenfield_constraint_topography

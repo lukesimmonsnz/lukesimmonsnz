@@ -63,3 +63,4 @@ claim_ids:
   - claim.auckland.climate.transition_jobs_risk
   - claim.auckland.climate.ev_transition_equity
 status: draft
+time_horizons: [generation, century]

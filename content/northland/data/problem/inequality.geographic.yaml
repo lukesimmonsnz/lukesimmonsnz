@@ -1,0 +1,24 @@
+id: 'problem.northland.inequality.geographic'
+title: 'Te Tai Tokerau Northland: geographic deprivation'
+theme: 'inequality'
+section: 'inequality'
+subpage: 'geographic'
+parent: 'problem.northland.inequality.deprivation'
+order: 5
+updated: '2026-04-26'
+summary: 'Remote areas experience decline.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Remote areas experience decline.'
+claim_ids:
+- 'claim.northland.inequality.geographic_claim1'
+- 'claim.northland.inequality.geographic_claim2'
+status: 'draft'

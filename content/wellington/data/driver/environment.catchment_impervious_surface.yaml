@@ -1,0 +1,14 @@
+id: driver.wellington.environment.catchment_impervious_surface
+name: Urban catchment impervious surface expansion
+description: Wellington's growing impervious surface area from infill development and road infrastructure intensifies stormwater
+  runoff and contaminant loads to streams and harbour, amplifying water quality degradation with each development increment.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.environment.waterway_quality
+- problem.wellington.environment.harbour_health
+claim_ids:
+- claim.wellington.environment.stream_water_quality_index

@@ -1,0 +1,36 @@
+id: problem.otago.transport.connectivity
+title: Transport Connectivity Constraints
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Otago's geography fragments the region; Southern Link motorway construction
+  relieves Dunedin congestion; Queenstown-Lakes faces extreme traffic pressure; limited
+  active transport and public transit.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Otago's geography fragments the region; Southern Link motorway construction
+    relieves Dunedin congestion; Queenstown-Lakes faces extreme traffic pressure;
+    limited active transport and public transit.
+claim_ids:
+- claim.otago.transport.dunedin_southern_link_trend
+- claim.otago.transport.connectivity_prevalence
+- claim.otago.transport.connectivity_trend
+- claim.otago.transport.queenstown_congestion_prevalence
+- claim.otago.transport.active_modes_prevalence
+- claim.otago.transport.dunedin_southern_link_prevalence
+- claim.otago.transport.active_modes_trend
+- claim.otago.transport.queenstown_congestion_trend
+status: draft
+time_horizons: [decade, generation]

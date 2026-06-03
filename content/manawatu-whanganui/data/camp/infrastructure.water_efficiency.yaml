@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.infrastructure.water_efficiency
+name: Water efficiency and demand management
+theme: infrastructure
+core_claim: Industrial and agricultural water efficiency improvements.
+flagship_moves:
+- Flagship move 1 for Water efficiency and demand management
+- Flagship move 2 for Water efficiency and demand management
+tensions:
+- Internal tension 1 of Water efficiency and demand management
+addresses:
+- problem.manawatu_whanganui.infrastructure.wastewater
+interventions:
+- description: 'Intervention 1: Water efficiency and demand management detail 1'
+- description: 'Intervention 2: Water efficiency and demand management detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

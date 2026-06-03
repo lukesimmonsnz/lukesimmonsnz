@@ -1,0 +1,19 @@
+id: claim.wellington.education.ece_quality_distribution
+statement: ECE quality ratings under the Education Review Office framework show systematic
+  variation across Wellington, with lower-income communities more likely to be served
+  by ECE services rated as needing development or placed under additional monitoring.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_wellington_achievement_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

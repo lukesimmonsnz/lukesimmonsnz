@@ -1,0 +1,39 @@
+id: problem.otago.inequality.inequality
+title: Structural Inequality and Regional Disparities
+theme: inequality
+section: inequality
+subpage: inequality
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Queenstown's extreme wealth concentration contrasts starkly with Dunedin deprivation and rural
+  Central Otago isolation. Worker conditions in tourism and seasonal agriculture are poor; income inequality
+  within the region is among the highest in New Zealand, driven by the dual structure of high-wage property
+  and corporate tourism and low-wage seasonal service work. A significant gender pay gap persists across
+  the region.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Queenstown's extreme wealth concentration (median multiple >15×) contrasts sharply with Dunedin deprivation
+    and rural Clutha/Waitaki isolation. Worker conditions in tourism and agriculture are poor with low wages and limited
+    worker housing. A significant gender pay gap persists across the region. Ngāi Tahu iwi commercial assets create some
+    counterweight through iwi employment, but income and homeownership gaps persist for Māori workers outside iwi sectors.
+claim_ids:
+- claim.otago.inequality.queenstown_worker_conditions_trend
+- claim.otago.inequality.inequality_trend
+- claim.otago.inequality.queenstown_worker_conditions_prevalence
+- claim.otago.inequality.inequality_prevalence
+- claim.otago.inequality.dunedin_deprivation_prevalence
+- claim.otago.inequality.dunedin_deprivation_trend
+- claim.otago.inequality.rural_isolation_prevalence
+- claim.otago.inequality.rural_isolation_trend
+status: draft
+time_horizons: [decade, generation, century]

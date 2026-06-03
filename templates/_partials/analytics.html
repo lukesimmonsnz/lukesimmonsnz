@@ -1,0 +1,33 @@
+{#- Analytics partial — v2-10.
+    Spec: docs/CMS-SPEC-v2.md §13
+    Reads g.site_settings.analytics (set by before_request hook in app.py).
+    Emits the appropriate <script> tag; noop when provider is "none" or unset.
+    Respects Do-Not-Track when honour_dnt is true.
+-#}
+{%- set a = (site_settings or {}).get('analytics') or {} -%}
+{%- set provider = a.get('provider', 'none') -%}
+{%- if provider and provider != 'none' -%}
+  {%- set site_id = a.get('site_id', '') -%}
+  {%- set honour_dnt = a.get('honour_dnt', true) -%}
+  {%- if provider == 'plausible' and site_id -%}
+    {%- set script_url = a.get('script_url') or 'https://plausible.io/js/script.js' -%}
+<script defer
+  data-domain="{{ site_id | e }}"
+  {% if honour_dnt %}data-exclude-dnt="false"{% endif %}
+  src="{{ script_url | e }}"></script>
+  {%- elif provider == 'umami' and site_id -%}
+    {%- set script_url = a.get('script_url') or 'https://cloud.umami.is/script.js' -%}
+<script defer
+  data-website-id="{{ site_id | e }}"
+  src="{{ script_url | e }}"></script>
+  {%- elif provider == 'ga4' and site_id -%}
+    {%- set script_url = a.get('script_url') or ('https://www.googletagmanager.com/gtag/js?id=' ~ site_id) -%}
+<script async src="{{ script_url | e }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site_id | e }}'{% if honour_dnt %}, {'anonymize_ip': true}{% endif %});
+</script>
+  {%- endif -%}
+{%- endif -%}

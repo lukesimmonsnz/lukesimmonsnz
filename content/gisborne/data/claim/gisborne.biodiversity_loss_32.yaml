@@ -1,0 +1,21 @@
+id: claim.gisborne.environment.biodiversity_loss_32
+statement: Biodiversity loss in Gisborne (NZ's most geologically active region) is
+  driven by forestry conversion, pastoral farming, and erosion from steep terrain.
+  Cyclone Gabrielle (February 2023) caused catastrophic erosion and forestry slash
+  debris flows, destroying habitat and requiring accelerated catchment management.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.infrastructure_condition_index_v1
+notes: null

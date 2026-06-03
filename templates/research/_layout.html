@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 
 {% block subnav %}
+{% set _aotearoa_blueprints = ('nz', 'auckland', 'wellington', 'northland', 'waikato', 'bay-of-plenty', 'gisborne', 'hawkes-bay', 'taranaki', 'manawatu-whanganui', 'nelson', 'tasman', 'marlborough', 'west-coast', 'canterbury', 'otago', 'southland') %}
+{% set _is_science_page = request.endpoint and (
+    request.endpoint == 'research.science_index'
+    or request.endpoint.startswith('research.cs_')
+    or request.endpoint.startswith('research.climate_')
+    or request.endpoint.startswith('research.medsci_')
+) %}
 <div class="subnav">
   <div class="subnav-inner">
     <a href="{{ url_for('research.index') }}"
        class="{% if request.endpoint == 'research.index' %}active{% endif %}">Overview</a>
-    <a href="{{ url_for('research.cs_index') }}"
-       class="{% if request.endpoint and request.endpoint.startswith('research.cs_') %}active{% endif %}">Computer Science</a>
-    <a href="{{ url_for('research.climate_index') }}"
-       class="{% if request.endpoint and request.endpoint.startswith('research.climate_') %}active{% endif %}">Climate Science &amp; AI</a>
-    <a href="{{ url_for('research.medsci_index') }}"
-       class="{% if request.endpoint and request.endpoint.startswith('research.medsci_') %}active{% endif %}">Medical Science</a>
-    <a href="{{ url_for('nz.index') }}"
-       class="{% if request.blueprint == 'nz' %}active{% endif %}">Aotearoa NZ</a>
-    <a href="{{ url_for('auckland.index') }}"
-       class="{% if request.blueprint == 'auckland' %}active{% endif %}">Auckland</a>
+    <a href="{{ url_for('research.aotearoa_index') }}"
+       class="{% if request.endpoint == 'research.aotearoa_index' or request.blueprint in _aotearoa_blueprints %}active{% endif %}">Aotearoa Research</a>
+    <a href="{{ url_for('research.science_index') }}"
+       class="{% if _is_science_page %}active{% endif %}">Science</a>
   </div>
 </div>
 
@@ -84,47 +85,25 @@
 </div>
 {% endif %}
 
-{% if request.blueprint == 'nz' %}
-<div class="subnav subnav-secondary" aria-label="Aotearoa NZ pages">
-  <div class="subnav-inner">
-    <span class="subnav-label">In this branch:</span>
-    <a href="{{ url_for('nz.index') }}"
-       class="{% if request.endpoint == 'nz.index' %}active{% endif %}">Overview</a>
-  </div>
-</div>
-{% endif %}
-
-{% if request.blueprint == 'auckland' %}
-<div class="subnav subnav-secondary" aria-label="Auckland pages">
-  <div class="subnav-inner">
-    <span class="subnav-label">In this branch:</span>
-    <a href="{{ url_for('auckland.index') }}"
-       class="{% if request.endpoint == 'auckland.index' %}active{% endif %}">Overview</a>
-    <a href="{{ url_for('auckland.section', section='framing') }}"
-       class="{% if request.view_args and request.view_args.get('section') == 'framing' %}active{% endif %}">Framing</a>
-    <a href="{{ url_for('auckland.section', section='housing') }}"
-       class="{% if request.view_args and request.view_args.get('section') == 'housing' %}active{% endif %}">Housing</a>
-  </div>
-</div>
-{% endif %}
-
 {# --- Branch authorship banner ------------------------------------------- #}
-{# Auckland is AI-drafted with Luke editing/reviewing throughout; the other #}
-{# three research branches are AI-drafted notes that Luke has not edited.   #}
-{# The overview page (/research/) carries a fuller explanation; this banner #}
-{# is the per-page reminder for any page inside a branch.                   #}
-{% if request.blueprint == 'nz' or request.blueprint == 'auckland' %}
-<aside class="branch-authorship branch-authorship-edited" role="note" aria-label="Authorship">
-  <div class="branch-authorship-inner">
-    <span class="author-chip author-agent-edited">agent + luke</span>
-    <span>AI-drafted in iterative dialogue with Luke, who reads it and works through it with the agent by question and answer. Every claim must cite a primary source by lint, which is a structural check &mdash; independent per-claim verification by Luke is not yet part of the flow.</span>
-  </div>
-</aside>
-{% elif request.endpoint and request.endpoint.startswith('research.') and request.endpoint != 'research.index' %}
+{# Aotearoa research (16 regions + national rollup) and the three Science  #}
+{# branches are all AI-drafted. Luke reads these pages and writes his own   #}
+{# blog posts based on what he reads here; he doesn't hand-author or        #}
+{# independently fact-check the research itself. Every claim is required    #}
+{# by the lint gate to cite a primary source — structural check only.      #}
+{% set _aotearoa_blueprints = ('nz', 'auckland', 'wellington', 'northland', 'waikato', 'bay-of-plenty', 'gisborne', 'hawkes-bay', 'taranaki', 'manawatu-whanganui', 'nelson', 'tasman', 'marlborough', 'west-coast', 'canterbury', 'otago', 'southland') %}
+{% if request.blueprint in _aotearoa_blueprints %}
 <aside class="branch-authorship" role="note" aria-label="Authorship">
   <div class="branch-authorship-inner">
     <span class="author-chip author-agent">agent</span>
-    <span>These pages are AI-drafted reference notes that Luke has not edited. Treat them as machine-written study notes &mdash; useful for orientation, not authoritative; verify any claim against primary sources before citing.</span>
+    <span>AI-drafted research material on Aotearoa New Zealand. Luke reads these pages and writes his own blog posts based on them; the research itself is not hand-authored or independently fact-checked. Every claim cites a primary source via the lint-gated typed entity graph &mdash; that&rsquo;s a structural check, not verification.</span>
+  </div>
+</aside>
+{% elif request.endpoint and request.endpoint.startswith('research.') and request.endpoint not in ('research.index', 'research.aotearoa_index', 'research.science_index', 'research.methodology') %}
+<aside class="branch-authorship" role="note" aria-label="Authorship">
+  <div class="branch-authorship-inner">
+    <span class="author-chip author-agent">agent</span>
+    <span>AI-drafted reference notes that Luke has not edited. Useful for orientation; verify any claim against primary sources before citing.</span>
   </div>
 </aside>
 {% endif %}

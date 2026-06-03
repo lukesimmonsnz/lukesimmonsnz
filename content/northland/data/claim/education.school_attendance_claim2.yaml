@@ -1,0 +1,18 @@
+id: claim.northland.education.school_attendance_claim2
+statement: Mobile rangatahi population (seasonal workers' families in horticulture,
+  forestry) experience mid-year school changes and instability. Kura operate on different
+  term calendars; integration gaps for students moving between schools. School leavers
+  at 15-16 (legally and illegally) contribute to youth NEET. Early intervention pathways
+  limited for at-risk students.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

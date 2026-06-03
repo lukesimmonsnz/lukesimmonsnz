@@ -1,0 +1,21 @@
+id: camp.marlborough.crime.community_policing
+name: Community Policing and Relationship Building
+theme: crime
+core_claim: Neighbourhood police engagement and prevention.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.crime.rural_crime
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

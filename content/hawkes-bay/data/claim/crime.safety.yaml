@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.crime.family_violence_22_percent_increase
+statement: Family violence call rates in Hawke's Bay increased 22% over 2019-2024,
+  outpacing the national 15% increase. Economic stress from Cyclone Gabrielle recovery,
+  housing insecurity, and deprivation-linked risk factors (alcohol/drug use, unemployment)
+  compound vulnerability in Hastings, Napier, and Wairoa communities.
+value: 22
+unit: percent increase
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: Region

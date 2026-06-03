@@ -1,0 +1,20 @@
+id: claim.marlborough.crime.seasonal_crime_1
+statement: Harvest season (January–April) transient worker population adds 12,000–15,000
+  individuals to Marlborough labour force; associated temporary housing camps experience
+  elevated disorder and theft; Police conduct seasonal sector engagement patrols.
+value: 13500
+unit: seasonal workers (mid-range, 2021–2023)
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mbl_2023
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

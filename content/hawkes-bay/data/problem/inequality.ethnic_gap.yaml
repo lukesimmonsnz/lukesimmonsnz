@@ -1,0 +1,40 @@
+id: problem.hawkes_bay.inequality.ethnic_gap
+title: Ethnic income and wellbeing gaps
+theme: inequality
+section: inequality
+subpage: ethnic-gap
+parent: problem.hawkes_bay.inequality.deprivation
+order: 2
+updated: '2026-04-26'
+summary: Hawke's Bay has entrenched income, employment, and health disparities concentrated in high-deprivation
+  communities. Median household income in the most affected communities is approximately 25% below the
+  regional average; unemployment is three times higher than in lower-deprivation areas. These gaps reflect
+  structural barriers including seasonal labour market dependence, limited tertiary access, and occupational
+  concentration in lower-wage roles.
+manifests_in:
+- hawkes-bay
+systems_model:
+  state_variables:
+  - median_maori_household_income_dollars
+  - maori_unemployment_rate_percent
+  inputs:
+  - education_achievement_gap
+  - occupational_segregation
+  constraints:
+  - historical_land_dispossession
+  - ongoing_discrimination
+  feedback_loops:
+  - Lower education limits job access; occupational segregation suppresses wages; limited household assets
+    constrain next generation; gaps persist.
+narrative:
+- heading: Income Disparity
+  body: Median Māori household income in Hawke's Bay is approximately $64k, compared to $92k for European
+    households — a gap of 30%.
+- heading: Employment Gap
+  body: Māori unemployment in Hawke's Bay is approximately 12%, compared to 4% for European residents.
+    Overrepresentation in low-wage occupations.
+claim_ids:
+- claim.hawkes_bay.inequality.maori_income_64k
+- claim.hawkes_bay.inequality.maori_unemployment_12_percent
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,40 @@
+id: problem.wellington.transport.network_resilience
+title: Fragile single-corridor transport network in Wellington
+theme: transport
+section: transport
+subpage: network-resilience
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Wellington''s transport network is structurally fragile: a single coastal corridor carries the dominant share of
+  freight, passenger rail, and road traffic. A major seismic event, infrastructure failure, or weather event on this corridor
+  leaves the region with no viable alternative route. The Cook Strait ferry dependency amplifies this single-point-of-failure
+  characteristic at the national scale.'
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - network_redundancy_score
+  - corridor_daily_vehicle_km
+  inputs:
+  - infrastructure_investment
+  - seismic_event_probability
+  constraints:
+  - geographic_corridor_constraint
+  - tunnel_age_and_condition
+  feedback_loops:
+  - 'Disruption-cost feedback: periodic closures (weather, incidents) demonstrate the fragility, increasing public pressure
+    for redundancy investment but not generating consistent long-term funding.'
+narrative:
+- heading: The single-corridor problem
+  body: Wellington's main transport corridor runs through the Terrace Tunnel and along the Hutt Road — a narrow coastal strip
+    vulnerable to landslip, flooding, and fault rupture. The Terrace Tunnel and Mt Victoria Tunnel, both over 100 years old,
+    form irreplaceable bottlenecks with no alternative alignment (claim.wellington.transport.rail_tunnel_age).
+- heading: Network fragility and resilience
+  body: A major Wellington Fault rupture would likely close SH1, the Terrace Tunnel, and the rail network simultaneously,
+    severing overland connection to the Hutt Valley and Kāpiti Coast for an extended period (claim.wellington.transport.network_single_corridor_risk).
+claim_ids:
+- claim.wellington.transport.rail_tunnel_age
+- claim.wellington.transport.network_single_corridor_risk
+status: draft
+time_horizons: [decade, generation]

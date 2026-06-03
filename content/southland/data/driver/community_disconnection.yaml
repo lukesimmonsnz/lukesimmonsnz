@@ -1,0 +1,11 @@
+id: driver.southland.crime.community_disconnection
+name: Community Fragmentation and Disengagement
+description: Declining population and economic change weaken community bonds.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.crime.safety
+claim_ids: []

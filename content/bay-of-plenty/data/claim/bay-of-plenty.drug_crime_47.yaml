@@ -1,0 +1,20 @@
+id: claim.bay_of_plenty.crime.drug_crime_47
+statement: Crime patterns in Bay Of Plenty reflect geographic, economic, and social
+  vulnerabilities. Property crime, family violence, and drug-related offenses impact
+  community safety; police response capacity is constrained in rural areas, limiting
+  prevention effectiveness and victim support services.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.consent_rate_v1
+notes: null

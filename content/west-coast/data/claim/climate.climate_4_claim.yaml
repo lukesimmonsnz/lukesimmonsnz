@@ -1,0 +1,23 @@
+id: claim.west_coast.climate.climate_4_claim
+statement: The Alpine Fault, which transects the West Coast region, carries approximately
+  30 percent probability of a magnitude-8+ earthquake within the next 50 years. Such
+  an event would cause catastrophic damage to infrastructure, housing, and lifeline
+  routes including State Highway 6, which is the only road connecting the region to
+  the rest of New Zealand.
+value: 30
+unit: percent probability M8+ in 50 years
+time_period: 2020-2070
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_west_coast_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Fault probability from GNS Science seismic hazard assessment; SH6 lifeline
+  status documented by Waka Kotahi.

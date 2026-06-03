@@ -1,0 +1,30 @@
+id: problem.waikato.crime.drug_crime
+title: Drug-related crime
+theme: crime
+section: crime
+subpage: drug_crime
+parent: problem.waikato.crime.waikato_crime
+order: 4
+updated: '2026-04-26'
+summary: Methamphetamine supply and use is linked to property crime and family violence
+  in Waikato.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - recorded_crime_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing drug crime creates feedback on regional outcomes.
+narrative:
+- heading: Drug-related crime
+  body: Methamphetamine supply and use is linked to property crime and family violence
+    in Waikato.
+claim_ids:
+- claim.waikato.crime.drug_crime_methamphetamine
+status: draft
+time_horizons: [decade]

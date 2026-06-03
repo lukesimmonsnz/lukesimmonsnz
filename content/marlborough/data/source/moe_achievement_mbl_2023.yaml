@@ -1,0 +1,11 @@
+id: source.moe_achievement_mbl_2023
+title: 'Ministry of Education: Marlborough Education Performance 2023'
+author: null
+publisher: MOE
+year: 2023
+url: https://www.education.govt.nz
+type: primary-data
+credibility: official
+geo_granularity:
+- marlborough
+notes: School achievement and participation data.

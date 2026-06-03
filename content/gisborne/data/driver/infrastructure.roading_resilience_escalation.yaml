@@ -1,0 +1,13 @@
+id: driver.gisborne.infrastructure.roading_resilience_escalation
+name: Driver escalating roading_resilience
+description: "This driver exacerbates the roading_resilience challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: infrastructure
+consensus: consensus
+category: climate
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.infrastructure.roading_resilience
+claim_ids:
+- claim.gisborne.infrastructure.roading_resilience_19

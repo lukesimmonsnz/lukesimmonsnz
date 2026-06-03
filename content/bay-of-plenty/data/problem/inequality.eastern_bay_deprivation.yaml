@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.inequality.eastern_bay_deprivation
+title: Eastern Bay of Plenty deprivation cluster in Bay of Plenty — Te Moana-a-Toi
+theme: inequality
+section: inequality
+subpage: eastern_bay_deprivation
+parent: problem.bay_of_plenty.inequality.regional_disparity
+order: 18
+updated: '2026-04-26'
+summary: Eastern Bay of Plenty deprivation cluster is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - eastern_bay_deprivation_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Eastern Bay of Plenty deprivation cluster is a specific manifestation of the
+    broader pressure.
+claim_ids:
+- claim.bay_of_plenty.inequality.eastern_bay_deprivation_35
+- claim.bay_of_plenty.inequality.eastern_bay_deprivation_36
+status: draft
+time_horizons: [decade, generation, century]

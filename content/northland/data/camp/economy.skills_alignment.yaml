@@ -1,0 +1,20 @@
+id: camp.northland.economy.skills_alignment
+name: Skills alignment with labour market
+theme: economy
+core_claim: Skills alignment with labour market is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement skills alignment with labour market
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- northland
+tensions_with: []

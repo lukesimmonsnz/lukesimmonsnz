@@ -1,21 +1,21 @@
 id: claim.auckland.governance.cco_accountability_gap
-statement: >
-  Auckland's seven CCOs (AT, Watercare, Eke Panuku, ATEED, etc.)
-  operate with significant autonomy; board appointments, executive
-  remuneration, and strategic decisions are made at arm's length from
-  elected members. Public scrutiny of CCO performance is limited by
-  commercial sensitivity provisions; loss-making CCO operations have
-  persisted without triggering democratic accountability mechanisms.
+statement: 'Auckland''s seven CCOs (AT, Watercare, Eke Panuku, ATEED, etc.) operate
+  with significant autonomy; board appointments, executive remuneration, and strategic
+  decisions are made at arm''s length from elected members. Public scrutiny of CCO
+  performance is limited by commercial sensitivity provisions; loss-making CCO operations
+  have persisted without triggering democratic accountability mechanisms.
+
+  '
 value: null
 unit: null
-time_period: "2018-2023"
+time_period: 2018-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_ltp_2024
+- source.auckland_council_ltp_2024
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

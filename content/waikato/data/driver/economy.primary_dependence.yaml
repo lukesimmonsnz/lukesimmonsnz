@@ -1,0 +1,15 @@
+id: driver.waikato.economy.primary_dependence
+name: High dependence on primary sector exports
+description: Over-reliance on dairy and meat exports exposes the regional economy
+  to commodity price cycles and climate transition risk.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.economy.waikato_economic_concentration
+- problem.waikato.economy.agri_productivity
+- problem.waikato.economy.tech_sector_gap
+- problem.waikato.economy.regional_wage_gap
+claim_ids: []

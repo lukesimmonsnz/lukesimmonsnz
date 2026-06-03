@@ -66,6 +66,7 @@ def make_region_blueprint(
     section_titles: dict[str, str],
     *,
     template_prefix: str | None = None,
+    section_blurbs: dict[str, str] | None = None,
 ) -> Blueprint:
     """Return a Flask Blueprint serving the research pages for *region*.
 
@@ -89,6 +90,12 @@ def make_region_blueprint(
 
     tmpl = template_prefix if template_prefix is not None else region
     pages_dir = _ROOT / "content" / region / "pages"
+    sections_dir = pages_dir / "_sections"
+
+    # Auto-detect "consolidated" mode: if pages/_sections/ exists, the region
+    # serves one consolidated essay per theme and individual leaf URLs 404.
+    # Otherwise the legacy per-leaf routing applies.
+    consolidated_mode = sections_dir.is_dir()
 
     bp = Blueprint(region, __name__, url_prefix=f"/research/{region}")
 
@@ -121,7 +128,15 @@ def make_region_blueprint(
     def _all_pages() -> list[dict]:
         if not pages_dir.exists():
             return []
-        pages = [_load_page(p) for p in pages_dir.rglob("*.md")]
+        # Skip any path containing an underscore-prefixed directory or filename
+        # (convention: _sections/, _all.md, etc. are internal aggregations,
+        # not user-facing leaves).
+        pages = [
+            _load_page(p) for p in pages_dir.rglob("*.md")
+            if not any(
+                part.startswith("_") for part in p.relative_to(pages_dir).parts
+            )
+        ]
         pages.sort(key=lambda p: (p["section"], p["order"], p["subpage"]))
         return pages
 
@@ -142,18 +157,67 @@ def make_region_blueprint(
             f"{tmpl}/index.html",
             by_section=by_section,
             section_titles=section_titles,
+            section_blurbs=section_blurbs or {},
         )
+
+
+    def _section_neighbours(current: str) -> tuple[dict | None, dict | None]:
+        """Compute prev/next navigable sections, in alphabetical slug order.
+
+        Matches the alphabetical order that the region index renders (which
+        comes from _pages_by_section()). The 'framing' section is excluded.
+        Returns dicts with keys 'slug' and 'title', or None at the ends.
+        """
+        ordered = sorted(
+            (
+                (slug, title)
+                for slug, title in section_titles.items()
+                if slug != "framing"
+            ),
+            key=lambda pair: pair[0],
+        )
+        try:
+            idx = next(i for i, (slug, _) in enumerate(ordered) if slug == current)
+        except StopIteration:
+            return (None, None)
+        prev_pair = ordered[idx - 1] if idx > 0 else None
+        next_pair = ordered[idx + 1] if idx + 1 < len(ordered) else None
+        prev_section = (
+            {"slug": prev_pair[0], "title": prev_pair[1]} if prev_pair else None
+        )
+        next_section = (
+            {"slug": next_pair[0], "title": next_pair[1]} if next_pair else None
+        )
+        return (prev_section, next_section)
 
     @bp.route("/<section>/")
     def section(section: str):
+        prev_section, next_section = _section_neighbours(section)
         by_section = _pages_by_section()
-        if section not in by_section:
+        section_pages = by_section.get(section, [])
+
+        # Optional consolidated intro essay (pages/_sections/<section>.md).
+        # Now used as a *header* over the leaf list, not a replacement for it,
+        # so that leaves are always reachable. If neither the consolidated
+        # essay nor any leaves exist for this section, 404.
+        consolidated = None
+        if consolidated_mode:
+            consolidated_path = sections_dir / f"{section}.md"
+            if consolidated_path.is_file():
+                consolidated = _load_page(consolidated_path)
+        if not consolidated and not section_pages:
             abort(404)
+
         return render_template(
             f"{tmpl}/section.html",
             section=section,
-            section_title=section_titles.get(section, section.replace("_", " ").title()),
-            pages=by_section[section],
+            section_title=section_titles.get(
+                section, section.replace("_", " ").title()
+            ),
+            consolidated=consolidated,
+            pages=section_pages,
+            prev_section=prev_section,
+            next_section=next_section,
         )
 
     @bp.route("/<section>/<subpage>/")

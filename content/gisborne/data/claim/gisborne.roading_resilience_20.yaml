@@ -1,0 +1,21 @@
+id: claim.gisborne.infrastructure.roading_resilience_20
+statement: Gisborne roading system lacks redundancy and climate resilience, creating
+  supply-chain and emergency-response vulnerabilities. Coastal roading is exposed
+  to sea-level rise; inland routes face landslide/washout risk; alternative routes
+  require major capital investment, estimated at $300-500M.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.travel_time_index_v1
+notes: null

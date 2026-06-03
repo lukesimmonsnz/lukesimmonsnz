@@ -1,0 +1,20 @@
+id: claim.canterbury.transport.congestion_cost_impact_2023
+statement: Christchurch traffic congestion imposes estimated $150-200M annual cost
+  in lost productivity, fuel waste, and emissions. Peak-hour speeds on key routes
+  average 20-25 km/h; congestion is expected to worsen without major transport interventions
+  scheduled for 2026+.
+value: 50
+unit: NZD millions per year
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_transport_strategy_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

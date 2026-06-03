@@ -1,0 +1,21 @@
+id: camp.southland.climate.coastal_adaptation
+name: Coastal Adaptation and Managed Retreat
+theme: climate-adaptation
+core_claim: Managed retreat, nature-based protection, and building standards address
+  sea-level rise.
+flagship_moves:
+- Coastal managed retreat policy
+- Salt marsh and mangrove restoration
+- Building code updates for coastal resilience
+tensions:
+- Property value and insurance concerns
+- Difficult political messaging
+addresses:
+- problem.southland.climate.coastal_foveaux_rise
+interventions:
+- description: Complete Southland coastal adaptation strategy
+  state_variable: coastal_resilience
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

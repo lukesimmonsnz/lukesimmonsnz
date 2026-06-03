@@ -1,0 +1,19 @@
+id: claim.gisborne.inequality.child_poverty_36
+statement: East Cape communities experience the most severe child hardship, with limited
+  access to nutrition programmes, educational resources, and healthcare. Distance
+  to Gisborne city (2-4 hours) compounds service delivery challenges.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.gini_coefficient_v1
+notes: null

@@ -1,0 +1,12 @@
+id: driver.marlborough.infrastructure.electrification_demand
+name: Growth In Electricity Demand From Electrification
+description: Growth in electricity demand from electrification.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.infrastructure.water_irrigation
+claim_ids: []

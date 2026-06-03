@@ -1,0 +1,25 @@
+id: camp.hawkes_bay.governance.treaty_partnership
+name: Treaty partnership and co-governance implementation
+theme: governance
+core_claim: Genuine partnership with Ngāti Kahungunu through decision-making power-sharing, resource transfers, and mana whenua recognition improves governance outcomes and addresses historical injustice.
+flagship_moves:
+  - Establish Ngāti Kahungunu co-governance seats on all councils with genuine veto authority
+  - Transfer natural resource management decision-making to iwi-council partnerships
+  - Fund Ngāti Kahungunu to lead long-term planning and strategy
+tensions:
+  - Co-governance is contested politically and may face resistance from some ratepayers
+  - Power-sharing requires councils to accept decisions they might otherwise oppose
+addresses:
+  - problem.hawkes_bay.governance.governance
+  - problem.hawkes_bay.governance.treaty
+  - problem.hawkes_bay.governance.regional_planning
+interventions:
+  - description: Establish joint decision-making committees for resource management and long-term planning with Ngāti Kahungunu veto authority
+    state_variable: iwi_decision_making_authority_index
+    expected_sign: '+'
+  - description: Transfer resource management budgets to joint iwi-council control
+    state_variable: iwi_resource_allocation_dollars
+    expected_sign: '+'
+applicable_in:
+  - hawkes-bay
+tensions_with: []

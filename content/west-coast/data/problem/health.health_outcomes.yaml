@@ -1,0 +1,42 @@
+id: problem.west_coast.health.health_outcomes
+title: Worst South Island health outcomes and the rural disadvantage
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: West Coast health outcomes — life expectancy, avoidable hospitalisation, infant mortality, self-reported health —
+  rank among the worst in the South Island and below national averages on most indicators. Underlying drivers are poverty,
+  an aging population, geographic isolation and severe workforce shortages.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - life_expectancy_at_birth
+  - avoidable_hospitalisation_rate
+  - self_reported_health_index
+  inputs:
+  - health_nz_population_funding
+  - iwi_maori_health_provider_funding
+  constraints:
+  - aging_population_profile
+  - geographic_isolation
+  feedback_loops:
+  - Workforce shortages keep specialist services thin, which pushes more conditions into late presentation and emergency care,
+    which raises cost-per-capita and consumes the funding that would otherwise expand primary care.
+narrative:
+- heading: Outcomes below national average across indicators
+  body: Health New Zealand and Ministry of Health data place the West Coast below the national average on most measurable
+    health outcomes (claim.west_coast.health.health_outcomes_claim). Māori health outcomes are particularly poor, mirroring
+    the national picture but compounded by rural service-access constraints.
+- heading: Drivers stack
+  body: Income deprivation, an older population profile, smoking and alcohol prevalence, and very limited specialist services
+    in-region all act in the same direction. No single intervention closes the outcome gap; the problem is the cumulative
+    drag of multiple structural drivers.
+claim_ids:
+- claim.west_coast.health.health_outcomes_claim
+status: draft
+time_horizons:
+- decade
+- generation

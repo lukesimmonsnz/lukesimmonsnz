@@ -1,0 +1,20 @@
+id: claim.wellington.economy.public_sector_restructuring_2024
+statement: The 2024 public sector restructuring resulted in the largest single-year
+  contraction in Wellington's public sector employment in recent decades, with thousands
+  of redundancies across central government agencies, triggering measurable local
+  economic effects.
+value: null
+unit: null
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

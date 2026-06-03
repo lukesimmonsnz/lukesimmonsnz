@@ -1,0 +1,21 @@
+id: camp.southland.inequality.child_poverty
+name: Child Poverty and Food Security Support
+theme: inequality
+core_claim: Free school meals, benefit increases, and social support reduce child
+  poverty.
+flagship_moves:
+- Free school meals for all children
+- Benefit adequacy increase
+- Community food programs and gardens
+tensions:
+- Fiscal cost; political opposition
+- Benefit dependency concerns
+addresses:
+- problem.southland.inequality.child_poverty
+interventions:
+- description: Reduce child food insecurity by 60%
+  state_variable: child_food_security
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

@@ -1,0 +1,24 @@
+id: 'problem.waikato.climate.coastal'
+title: 'Waikato: coastal hazards'
+theme: 'climate-adaptation'
+section: 'climate'
+subpage: 'coastal'
+parent: 'problem.waikato.climate.risk'
+order: 5
+updated: '2026-04-26'
+summary: 'Sea level rise threatens settlements.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Sea level rise threatens settlements.'
+claim_ids:
+- 'claim.waikato.climate.coastal_claim1'
+- 'claim.waikato.climate.coastal_claim2'
+status: 'draft'

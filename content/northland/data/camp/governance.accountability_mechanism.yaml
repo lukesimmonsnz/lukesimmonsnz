@@ -1,0 +1,20 @@
+id: camp.northland.governance.accountability_mechanism
+name: Government accountability mechanism
+theme: governance
+core_claim: Government accountability mechanism is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement government accountability mechanism
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- northland
+tensions_with: []

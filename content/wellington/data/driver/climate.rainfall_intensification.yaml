@@ -1,0 +1,14 @@
+id: driver.wellington.climate.rainfall_intensification
+name: Rainfall intensification under climate change
+description: Climate change projections for Wellington show increasing intensity of heavy rainfall events, increasing peak
+  flood flows in the Hutt River catchment and exceeding the design capacity of stormwater infrastructure designed to historical
+  standards.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: global
+problem_ids:
+- problem.wellington.climate.flood_resilience
+claim_ids:
+- claim.wellington.climate.flash_flood_frequency_hutt

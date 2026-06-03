@@ -1,20 +1,21 @@
 id: claim.auckland.crime.fv_housing_stress_link
-statement: >
-  Family violence rates in Auckland are positively correlated with
-  housing stress; overcrowded households, insecure tenancies, and
-  recent tenancy loss are associated with elevated family harm call
-  rates, implicating housing instability as an amplifier of violence risk.
+statement: 'Family violence rates in Auckland are positively correlated with housing
+  stress; overcrowded households, insecure tenancies, and recent tenancy loss are
+  associated with elevated family harm call rates, implicating housing instability
+  as an amplifier of violence risk.
+
+  '
 value: null
 unit: null
-time_period: "2020-2023"
+time_period: 2020-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.msd_family_violence_2023
-  - source.ministry_of_justice_victimisation_2023
+- source.msd_family_violence_2023
+- source.ministry_of_justice_victimisation_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

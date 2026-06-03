@@ -1,0 +1,10 @@
+id: driver.northland.climate.drought_stress
+name: Drought stress and water scarcity
+description: Drought stress and water scarcity in the regional context.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

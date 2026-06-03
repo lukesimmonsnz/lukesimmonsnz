@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.governance.council_capacity
+name: Local Council Capacity And Capability Constraints
+description: Local council capacity and capability constraints with regional implications.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.whanganui_deprivation
+claim_ids: []

@@ -1,0 +1,29 @@
+id: problem.taranaki.health.mental_health
+title: Mental health and wellbeing
+theme: health
+section: health
+subpage: mental_health
+parent: problem.taranaki.health.health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: Mental health service demand is rising. Anxiety and depression diagnoses
+  increased 22% over 2020-2024.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - mental_health_index
+  inputs:
+  - mental_health_input_1
+  constraints:
+  - mental_health_constraint
+  feedback_loops:
+  - 'Feedback: mental_health'
+narrative:
+- heading: Mental health and wellbeing in Taranaki
+  body: Mental health service demand is rising. Anxiety and depression diagnoses increased
+    22% over 2020-2024.
+claim_ids:
+- claim.taranaki.health.mental_health_01
+status: draft
+time_horizons: [decade, generation]

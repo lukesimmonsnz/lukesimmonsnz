@@ -1,0 +1,39 @@
+id: problem.wellington.health.system_access
+title: Healthcare access barriers in Wellington
+theme: health
+section: health
+subpage: system-access
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Access to primary and secondary healthcare is uneven across Wellington, with geographic and socioeconomic barriers
+  concentrated in Porirua and Hutt Valley. Wellington Regional Hospital operates under sustained capacity pressure, and primary
+  care access in high-deprivation communities is constrained by GP shortages and cost barriers.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - amenable_mortality_rate
+  - emergency_dept_wait_time_hrs
+  inputs:
+  - primary_care_gp_ratio
+  - hospital_bed_capacity
+  constraints:
+  - health_workforce_shortage
+  - transport_access_to_hospitals
+  feedback_loops:
+  - 'Primary-to-secondary substitution: inadequate primary care access drives avoidable emergency department presentations,
+    consuming hospital capacity needed for acute care.'
+narrative:
+- heading: Amenable mortality
+  body: Wellington's amenable mortality rate — deaths preventable through timely access to healthcare — is elevated in high-deprivation
+    communities in Porirua and Hutt Valley, indicating that access barriers translate into avoidable deaths (claim.wellington.health.amenable_mortality_rate).
+- heading: GP access gaps in Hutt Valley
+  body: General practice access in parts of Hutt Valley is constrained by a shortage of enrolled places, high out-of-pocket
+    costs, and GP practices not accepting new patients, forcing unregistered residents to use emergency departments for non-urgent
+    care (claim.wellington.health.gp_access_hutt_valley).
+claim_ids:
+- claim.wellington.health.amenable_mortality_rate
+- claim.wellington.health.gp_access_hutt_valley
+status: draft
+time_horizons: [decade, generation]

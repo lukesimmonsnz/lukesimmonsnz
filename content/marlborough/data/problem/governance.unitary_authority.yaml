@@ -1,0 +1,28 @@
+id: problem.marlborough.governance.unitary_authority
+title: Unitary Authority Service Delivery and Governance
+theme: governance
+section: governance
+subpage: unitary_authority
+parent: problem.marlborough.governance.governance
+order: 1
+updated: '2026-04-26'
+summary: Three-waters transition; service equity; rate burden; regional-district coordination.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Three-waters transition; service equity; rate burden; regional-district coordination.
+claim_ids:
+- claim.marlborough.governance.unitary_authority_placeholder
+status: draft
+time_horizons: [decade, generation, century]

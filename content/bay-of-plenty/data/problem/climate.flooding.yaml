@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.climate.flooding
+title: Flooding and extreme weather vulnerability in Bay of Plenty — Te Moana-a-Toi
+theme: climate-adaptation
+section: climate
+subpage: flooding
+parent: problem.bay_of_plenty.climate.climate_risk
+order: 43
+updated: '2026-04-26'
+summary: Flooding and extreme weather vulnerability is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - flooding_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Flooding and extreme weather vulnerability is a specific manifestation of
+    the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.climate.flooding_85
+- claim.bay_of_plenty.climate.flooding_86
+status: draft
+time_horizons: [generation, century]

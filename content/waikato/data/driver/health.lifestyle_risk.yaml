@@ -1,0 +1,10 @@
+id: driver.waikato.health.lifestyle_risk
+name: Lifestyle risk factor prevalence
+description: Lifestyle risk factor prevalence in the regional context.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

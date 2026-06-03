@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}#{{ tag }} · Blog · Luke Simmons{% endblock %}
+{% block meta_description %}Posts tagged {{ tag }}.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Blog', url_for('blog.index')),
+    ('Tags', url_for('blog.tag_index')),
+    ('#' ~ tag, None)
+  ]) }}
+  <header class="page-header">
+    <span class="eyebrow">Tag</span>
+    <h1>#{{ tag }}</h1>
+    <hr class="rule">
+    <p class="lede">{{ posts | length }} post{{ 's' if posts | length != 1 }}</p>
+  </header>
+  <div class="prose">
+    <ol class="post-list">
+      {% for p in posts %}
+      <li class="post-entry">
+        <div class="post-meta">
+          {% if p.date %}<time datetime="{{ p.date.isoformat() }}">{{ p.date_display }}</time>{% endif %}
+          <span class="author-chip author-{{ p.author }}">{{ p.author }}</span>
+        </div>
+        <h2 class="post-entry-title">
+          <a href="{{ url_for('blog.post', slug=p.slug) }}">{{ p.title }}</a>
+        </h2>
+        {% if p.excerpt %}<p class="post-entry-summary">{{ p.excerpt }}</p>{% endif %}
+        {% if p.tags %}
+        <div class="chips">
+          {% for t in p.tags %}
+          <a href="{{ url_for('blog.tag_archive', slug=t) }}" class="chip{% if t == tag %} chip-active{% endif %}">{{ t }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>
+{% endblock %}

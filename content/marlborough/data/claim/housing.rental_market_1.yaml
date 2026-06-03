@@ -1,0 +1,19 @@
+id: claim.marlborough.housing.rental_market_1
+statement: 'Marlborough rental market stress: 5,000–5,500 renter households; turnover
+  high (seasonal workers, tourist sector); Blenheim inner city rental NZD 420–480
+  per week; Sounds communities NZD 350–400 per week but sparse supply.'
+value: 450
+unit: NZD typical Blenheim rental per week
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.rent_to_income_v1
+notes: null

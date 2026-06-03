@@ -1,0 +1,21 @@
+id: claim.tasman.inequality.rental_affordability_gap_claim
+statement: Rental affordability gap in Tasman widened significantly 2016–2023. Median
+  rent increased 54% while median income rose 22%. Sole-income households earning
+  under NZD 50,000/year spend 45-50% of gross income on rent; two-income families
+  spend 25-30%. Temporary and part-time workers bear highest burden.
+value: 54
+unit: percent rent increase (2016-2023)
+time_period: 2016-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_housing_demand_2024
+- source.census_income_tasman_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.rent_to_income_v1
+notes: null

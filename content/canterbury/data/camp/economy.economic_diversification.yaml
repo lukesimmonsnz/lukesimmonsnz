@@ -1,0 +1,19 @@
+addresses:
+- problem.canterbury.economy.economic_structure
+applicable_in:
+- canterbury
+core_claim: Diversifying Canterbury economy beyond primary sector and construction
+  toward tech, services, and value-added sectors improves resilience.
+flagship_moves:
+- Support tech sector growth through EPIC Precinct and capital attraction
+id: camp.canterbury.economy.economic_diversification_root
+interventions:
+- constraint_relaxed: primary_sector_concentration
+  description: Sector diversification
+  expected_sign: +
+  state_variable: gvp_composition
+name: Economic Diversification Strategy
+tensions:
+- Transition managing impacts on current primary sector workforce
+tensions_with: []
+theme: economy

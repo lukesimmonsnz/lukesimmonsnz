@@ -1,0 +1,21 @@
+id: claim.otago.climate.drought_central_otago_prevalence
+statement: Central Otago (Cromwell, Bannockburn, Gibbston, Alexandra) faces increasing
+  drought frequency and irrigation water stress. Wine region (~2,200 ha under vine,
+  $180M+ export value) and stone fruit (cherries, apricots, nectarines—major China
+  export market) depend on Clutha/Mata-au River allocation and groundwater. Soil moisture
+  deficit months increasing; ORC Water Plan under review for allocation sustainability.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

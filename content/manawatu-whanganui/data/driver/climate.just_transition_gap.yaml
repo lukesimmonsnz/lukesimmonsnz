@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.climate.just_transition_gap
+name: Just Transition Funding And Support Gaps
+description: Just transition funding and support gaps with regional implications.
+theme: climate-adaptation
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.crime.rural_crime
+claim_ids: []

@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.governance.infrastructure_funding_growth
+name: Driver for infrastructure_funding
+description: "This driver exacerbates the infrastructure_funding pressure in Bay of\
+  \ Plenty \u2014 Te Moana-a-Toi."
+theme: governance
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.governance.infrastructure_funding
+claim_ids:
+- claim.bay_of_plenty.governance.infrastructure_funding_79

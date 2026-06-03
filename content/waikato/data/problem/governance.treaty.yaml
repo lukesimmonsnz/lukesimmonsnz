@@ -1,0 +1,24 @@
+id: 'problem.waikato.governance.treaty'
+title: 'Waikato: Treaty partnership'
+theme: 'governance'
+section: 'governance'
+subpage: 'treaty'
+parent: 'problem.waikato.governance.challenges'
+order: 4
+updated: '2026-04-26'
+summary: 'Māori partnership is incomplete.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Māori partnership is incomplete.'
+claim_ids:
+- 'claim.waikato.governance.treaty_claim1'
+- 'claim.waikato.governance.treaty_claim2'
+status: 'draft'

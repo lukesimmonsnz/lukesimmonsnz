@@ -1,0 +1,34 @@
+id: pattern.inequality.maori_socioeconomic_gap
+title: Māori socioeconomic gap across all regions
+theme: inequality
+summary: Māori experience persistently lower median incomes, higher unemployment,
+  lower homeownership, and worse health outcomes than non-Māori in every New Zealand
+  region, reflecting structural colonial dispossession.
+manifests_in:
+- northland
+- auckland
+- waikato
+- bay-of-plenty
+- gisborne
+- hawkes-bay
+- manawatu-whanganui
+- wellington
+claim_ids:
+- claim.northland.inequality.child_poverty_claim1
+- claim.waikato.health.maori_life_expectancy_gap_7yr
+- claim.waikato.education.ncea_maori_gap_15pt
+- claim.manawatu_whanganui.inequality.child_poverty_1
+- claim.gisborne.economy.economic_fragility_65
+narrative:
+- heading: Cross-regional consistency
+  body: The Māori–non-Māori socioeconomic gap appears in every dataset and every region.
+    In northland and Gisborne, where Māori are 30–50% of the population, the gap shapes
+    regional aggregate statistics. In Auckland and Wellington, it is visible in intra-urban
+    geographic patterns.
+- heading: Structural explanation
+  body: The gap predates contemporary policy choices. Treaty-era confiscation and
+    alienation of Māori land removed the capital base for intergenerational wealth
+    accumulation. The gap cannot be explained by individual-level factors alone and
+    does not close through market mechanisms without structural intervention.
+status: draft
+updated: '2026-04-26'

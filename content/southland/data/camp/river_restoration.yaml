@@ -1,0 +1,21 @@
+id: camp.southland.environment.river_restoration
+name: Southland Rivers Restoration Program
+theme: environment
+core_claim: Multi-stakeholder river restoration addresses degradation and restores
+  ecosystem.
+flagship_moves:
+- Nutrient and pollution reduction strategy
+- Riparian restoration and fencing
+- Alternative agricultural practices
+tensions:
+- Farmer cooperation and cost
+- Long restoration timeline
+addresses:
+- problem.southland.environment.freshwater_degradation
+interventions:
+- description: Reduce river nutrient levels by 50%
+  state_variable: river_water_quality
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

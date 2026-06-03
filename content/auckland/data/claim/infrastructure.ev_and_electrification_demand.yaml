@@ -1,27 +1,27 @@
 id: claim.auckland.infrastructure.ev_and_electrification_demand
-statement: >
-  Electrification of Auckland's transport fleet and household heating
-  will materially increase electricity demand over the next 20 years.
-  If Auckland's ~700,000 vehicles are predominantly electric by 2040,
-  charging demand alone could require 1–2 GW of additional generation
-  and transmission capacity serving the region — roughly 20–40% above
-  current peak demand. Managing the coincident-charging risk and funding
-  the grid upgrades required is a material infrastructure planning
-  challenge beginning now.
+statement: 'Electrification of Auckland''s transport fleet and household heating will
+  materially increase electricity demand over the next 20 years. If Auckland''s ~700,000
+  vehicles are predominantly electric by 2040, charging demand alone could require
+  1–2 GW of additional generation and transmission capacity serving the region — roughly
+  20–40% above current peak demand. Managing the coincident-charging risk and funding
+  the grid upgrades required is a material infrastructure planning challenge beginning
+  now.
+
+  '
 value: null
 unit: null
-time_period: "2023-2040"
+time_period: 2023-2040
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.electricity_authority_2023
+- source.electricity_authority_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  Demand projections are modelled estimates; actual trajectory depends
-  on EV uptake rates, managed charging deployment, and grid investment
-  timing.
+- auckland
+notes: 'Demand projections are modelled estimates; actual trajectory depends on EV
+  uptake rates, managed charging deployment, and grid investment timing.
+
+  '

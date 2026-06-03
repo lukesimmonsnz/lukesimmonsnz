@@ -1,0 +1,23 @@
+id: claim.west_coast.climate.climate_risk_claim
+statement: Westport experienced major flood events in July 2021 and February 2022,
+  together inundating over 600 homes and displacing residents. Post-flood recovery
+  has been slow; rental stock depletion and insurance withdrawals continue to drive
+  depopulation. Council is now planning managed retreat and relocation of some residential
+  and commercial zones to higher ground.
+value: 600
+unit: homes flooded
+time_period: 2021-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.west_coast_housing_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Flood impact data from Buller DC and regional council post-event assessments;
+  managed retreat plans from WCRC spatial planning documents.

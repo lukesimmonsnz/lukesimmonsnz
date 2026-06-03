@@ -1,0 +1,21 @@
+id: camp.wellington.education.tertiary_access
+name: Tertiary Participation and Cost Barrier Reduction
+theme: education
+core_claim: Financial barriers to tertiary study in Wellington can be reduced through targeted grants, transport subsidies,
+  and campus-proximate housing.
+flagship_moves:
+- Student hardship grant top-up for Wellington tertiary students in high-deprivation areas
+- Tertiary transport subsidy for students commuting from Porirua and Hutt Valley
+- Māori and Pacific student mentoring at Victoria University of Wellington and Weltec
+tensions:
+- Demand-side subsidies do not address the supply of relevant courses or employer demand signals
+- Transport subsidies may be less effective than proximity housing in increasing enrolment
+addresses:
+- problem.wellington.education.tertiary_access
+interventions:
+- description: Fund Wellington tertiary transport subsidy and hardship top-up for 2,000 students from high-deprivation areas
+  state_variable: tertiary_participation_low_income
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.governance.treaty
+title: Treaty of Waitangi engagement and co-governance in Bay of Plenty — Te Moana-a-Toi
+theme: governance
+section: governance
+subpage: treaty
+parent: problem.bay_of_plenty.governance.governance
+order: 39
+updated: '2026-04-26'
+summary: Treaty of Waitangi engagement and co-governance is a sub-dimension of the
+  regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - treaty_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Treaty of Waitangi engagement and co-governance is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.governance.treaty_77
+- claim.bay_of_plenty.governance.treaty_78
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,20 @@
+id: claim.marlborough.economy.wine_industry_risk_1
+statement: 'Wine industry supply-chain risk: Picton ferry capacity constraints delay
+  export container movements; ferry down-time (maintenance, new vessel transition
+  2024–2026) can idle 5–7 days per month; cost impact NZD 50k–150k per disruption.'
+value: 100000
+unit: NZD mid-range impact per ferry disruption
+time_period: 2024-2026
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.picton_ferry_services_2023
+- source.mbd_wine_industry_research
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

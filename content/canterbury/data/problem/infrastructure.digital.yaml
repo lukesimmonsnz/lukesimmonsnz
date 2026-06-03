@@ -1,0 +1,41 @@
+id: problem.canterbury.infrastructure.digital
+title: Digital Infrastructure Coverage & Uptake
+theme: infrastructure
+section: infrastructure
+subpage: digital
+parent: problem.canterbury.infrastructure.rebuild
+order: 3
+updated: '2026-04-26'
+summary: 'Rural and provincial Canterbury (Ashburton, Timaru, Kaikōura districts)
+  lag broadband deployment; fibre coverage in provincial towns remains patchy. Digital
+  divide correlates with deprivation in East Christchurch and outer suburbs, impacting
+  remote work access and digital service uptake.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - fibre_coverage_percentage_rural
+  - broadband_speed_median_rural
+  - digital_divide_index
+  inputs:
+  - nbnz_capex_allocation
+  - private_isp_investment
+  constraints:
+  - rural_deployment_cost_per_line
+  - service_provider_profit_margin
+  feedback_loops:
+  - Dynamic feedback mechanisms drive digital infrastructure coverage & uptake.
+narrative:
+- heading: Rural connectivity remains incomplete
+  body: 'Rural Canterbury south of Ashburton has <60% fibre coverage; service providers
+    deprioritize low-density areas. Digital literacy and affordability barriers in
+    East Christchurch and South Canterbury limit remote work adoption and e-learning
+    access.
+
+    '
+claim_ids:
+- claim.canterbury.infrastructure.fibre_coverage_rural_2023
+status: draft
+time_horizons: [decade, generation]

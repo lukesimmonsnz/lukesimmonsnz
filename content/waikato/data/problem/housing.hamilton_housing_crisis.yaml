@@ -1,0 +1,30 @@
+id: problem.waikato.housing.hamilton_housing_crisis
+title: Hamilton housing affordability crisis
+theme: housing
+section: housing
+subpage: hamilton_housing_crisis
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Hamilton faces severe housing unaffordability with median multiples above
+  8x, driven by rapid population growth and constrained land supply.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - housing_affordability_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional housing dynamics create self-reinforcing feedback.
+narrative:
+- heading: Hamilton housing affordability crisis
+  body: Hamilton faces severe housing unaffordability with median multiples above
+    8x, driven by rapid population growth and constrained land supply.
+claim_ids:
+- claim.waikato.housing.hamilton_housing_crisis_root
+status: draft
+time_horizons: [decade, generation, century]

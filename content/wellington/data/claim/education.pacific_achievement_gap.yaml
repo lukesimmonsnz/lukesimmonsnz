@@ -1,0 +1,21 @@
+id: claim.wellington.education.pacific_achievement_gap
+statement: Students in Porirua schools — where socioeconomic disadvantage, linguistic
+  diversity, and school-community fit challenges are concentrated — face NCEA Level
+  2 achievement gaps compounded by financial barriers, school resourcing differentials,
+  and insufficient pastoral support for students managing employment and family responsibilities
+  alongside study.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_wellington_achievement_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

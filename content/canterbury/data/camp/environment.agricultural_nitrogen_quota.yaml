@@ -1,0 +1,22 @@
+id: camp.canterbury.environment.agricultural_nitrogen_quota
+name: On-Farm Nitrogen Quota & Trading System
+theme: environment
+core_claim: Establishing tradeable nitrogen discharge quotas per farm (e.g., kg N/hectare/year)
+  creates economic incentive for N reduction while allowing flexibility in compliance.
+flagship_moves:
+- Key intervention for On-Farm Nitrogen Quota & Trading System
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.environment.aquifer_nitrate_contamination
+- problem.canterbury.environment.freshwater_stress
+interventions:
+- description: Establishing tradeable nitrogen discharge quotas per farm (e.g., kg
+    N/hectare/year) creates economic incentive for N reduction while allowing flexibility
+    in compliance.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

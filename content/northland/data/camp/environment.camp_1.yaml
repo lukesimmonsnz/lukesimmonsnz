@@ -1,0 +1,20 @@
+id: 'camp.northland.environment.camp_1'
+name: 'Regulatory and policy reform in environment'
+theme: 'environment'
+core_claim: 'Regulatory and policy reform in environment is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement regulatory and policy reform in environment'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'northland'
+tensions_with: []

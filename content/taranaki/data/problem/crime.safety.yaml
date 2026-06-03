@@ -1,0 +1,29 @@
+id: problem.taranaki.crime.safety
+title: Community safety and crime
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Taranaki crime rate is approximately 5,900 per 100k population, near national
+  average.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - safety_index
+  inputs:
+  - safety_input_1
+  constraints:
+  - safety_constraint
+  feedback_loops:
+  - 'Feedback: safety'
+narrative:
+- heading: Community safety and crime in Taranaki
+  body: Taranaki crime rate is approximately 5,900 per 100k population, near national
+    average.
+claim_ids:
+- claim.taranaki.crime.safety_01
+status: draft
+time_horizons: [decade]

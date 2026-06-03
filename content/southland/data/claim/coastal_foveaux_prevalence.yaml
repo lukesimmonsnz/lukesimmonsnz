@@ -1,0 +1,21 @@
+id: claim.southland.environment.coastal_foveaux_prevalence
+statement: Foveaux Strait coastal environment faces multiple stressors. Oyster fishery
+  (dredge-managed, quota-limited) is economically significant; Bonamia parasite periodically
+  affects stock. Shipping activity (log exports from Bluff, Fonterra product export)
+  creates marine pollution risk. Inshore fish stocks under pressure; seal populations
+  increasing, affecting fishery access.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

@@ -1,0 +1,43 @@
+id: problem.canterbury.transport.christchurch_congestion
+title: Christchurch Corridor Congestion
+theme: transport
+section: transport
+subpage: christchurch_congestion
+parent: problem.canterbury.transport.network
+order: 1
+updated: '2026-04-26'
+summary: 'Key Christchurch corridors (Johns Avenue, Riccarton Road, Papanui Road)
+  experience peak-hour congestion as population growth, in-migration, and limited
+  alternative routes concentrate vehicle flows. Commute times are increasing 2-3%
+  annually.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - peak_hour_congestion_index
+  - mean_commute_time_by_corridor
+  - vehicle_volume_growth_rate
+  inputs:
+  - population_growth_christchurch_metro
+  - employment_centre_location
+  - fuel_price
+  constraints:
+  - arterial_road_capacity
+  - parallel_route_availability
+  feedback_loops:
+  - Dynamic feedback mechanisms drive christchurch corridor congestion.
+narrative:
+- heading: Growth outpacing road investment
+  body: 'Christchurch metro has grown 15% since 2013, but arterial road capacity has
+    not kept pace. Three-lane corridors (Johns Ave, Riccarton Rd) hit saturation during
+    morning and evening peaks, creating 15-20 min delays and inducing traffic onto
+    residential streets.
+
+    '
+claim_ids:
+- claim.canterbury.transport.congestion_index_2023
+- claim.canterbury.transport.commute_time_growth_2023
+status: draft
+time_horizons: [decade, generation]

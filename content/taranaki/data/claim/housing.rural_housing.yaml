@@ -1,0 +1,20 @@
+id: claim.taranaki.housing.rural_stock_45_years_old
+statement: Housing pressures in Taranaki include affordability constraints and quality
+  issues. Rental market tightness, investor concentration, and inadequate supply force
+  households into unaffordable situations; essential workers face displacement or
+  commuting burden.
+value: 45
+unit: years
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_taranaki
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Taranaki regional claim

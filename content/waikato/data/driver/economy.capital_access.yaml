@@ -1,0 +1,10 @@
+id: driver.waikato.economy.capital_access
+name: Limited access to capital
+description: Limited access to capital in the regional context.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

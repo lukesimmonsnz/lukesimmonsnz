@@ -1,0 +1,23 @@
+id: claim.canterbury.inequality.ethnic_income_gap_2023
+statement: Median household income in Canterbury's high-deprivation communities is
+  approximately 27-32% below the regional average (2023), reflecting occupational
+  concentration in lower-wage manufacturing, food processing, and service roles. The
+  income gap is most pronounced in Christchurch's eastern suburbs, which absorbed
+  a disproportionate share of lower-income households following earthquake displacement
+  in 2010-2011.
+value: 29.5
+unit: percent gap
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_income_housing_2023
+- source.stats_nz_census_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.median_multiple_v1
+notes: null

@@ -1,0 +1,13 @@
+id: driver.tasman.climate.driver_1
+name: Warming-driven extension of dry season
+description: Trend warming and longer dry seasons increase irrigation demand, raise wildfire risk, and shift the
+  climatic envelope for Tasman's dominant horticultural crops.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.climate.climate_risk
+- problem.tasman.climate.climate_2
+claim_ids: []

@@ -1,0 +1,30 @@
+id: problem.marlborough.housing.housing_market
+title: Marlborough Housing Market and Affordability
+theme: housing
+section: housing
+subpage: housing_market
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Elevated housing prices from lifestyle migration; rental market pressure
+  from seasonal workers.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Elevated housing prices from lifestyle migration; rental market pressure from
+    seasonal workers.
+claim_ids:
+- claim.marlborough.housing.housing_market_placeholder
+status: draft
+time_horizons: [decade, generation, century]

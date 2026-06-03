@@ -1,0 +1,11 @@
+id: source.waimea_aquifer_study_2023
+title: "Waimea Aquifer Stress Study 2023"
+author: "Tasman District Council / Greater Wellington Regional Council"
+publisher: "Tasman District Council"
+year: 2023
+url: "https://www.tasman.govt.nz"
+type: government-report
+credibility: official
+geo_granularity:
+  - tasman
+notes: Irrigation demand, groundwater extraction, aquifer sustainability analysis.

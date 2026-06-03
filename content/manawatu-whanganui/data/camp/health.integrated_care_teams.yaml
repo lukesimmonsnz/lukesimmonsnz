@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.health.integrated_care_teams
+name: Integrated Community Care Teams
+theme: health
+core_claim: Multidisciplinary primary and community health.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.transport.active_modes
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

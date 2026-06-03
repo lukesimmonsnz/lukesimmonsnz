@@ -1,0 +1,20 @@
+id: camp.waikato.crime.family_violence_prevention
+name: Family violence prevention and response
+theme: crime
+core_claim: Family violence prevention and response is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement family violence prevention and response
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

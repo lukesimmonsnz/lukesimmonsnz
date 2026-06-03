@@ -1,0 +1,12 @@
+id: source.otago_hospital_2024
+title: Southern DHB 2024 Health Needs Assessment
+author: Southern District Health Board
+publisher: SDHB
+year: 2024
+url: https://www.southernhealth.nz
+type: government-report
+credibility: official
+geo_granularity:
+- otago
+- nz
+notes: Hospital planning, infrastructure, health workforce.

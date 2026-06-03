@@ -1,0 +1,13 @@
+id: driver.nelson.infrastructure.driver_2
+name: Small population scale against high per-unit infrastructure cost
+description: Nelson's terrain, dispersed catchments, and small ratepayer base produce per-capita infrastructure costs above national average. Standard funding mechanisms (rates, development contributions, co-funding) struggle to cover the resulting per-lot and per-asset cost without either deferring renewal or pricing out affordable housing.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.infrastructure.infrastructure
+- problem.nelson.infrastructure.infrastructure_3
+- problem.nelson.infrastructure.infrastructure_4
+claim_ids: []

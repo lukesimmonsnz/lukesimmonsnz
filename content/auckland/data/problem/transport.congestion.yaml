@@ -71,8 +71,9 @@ narrative:
       The economic case for port relocation is well-established but the
       implementation timeline spans decades.
 claim_ids:
-  - claim.auckland.transport.congestion_rank_international
   - claim.auckland.transport.congestion_economic_cost
   - claim.auckland.transport.induced_demand_evidence
   - claim.auckland.transport.freight_network_constraint
+  - claim.auckland.transport.road_pricing
 status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,21 @@
+id: camp.marlborough.governance.participatory_budgeting
+name: Participatory Budgeting and Community Decision-Making
+theme: governance
+core_claim: Direct community control over funding allocation.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.governance.water_allocation_governance
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

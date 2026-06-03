@@ -1,0 +1,36 @@
+id: problem.nelson.governance.governance_root
+title: Fragmented unitary jurisdiction and growth-funding gap
+theme: governance
+section: governance
+subpage: governance_root
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Nelson governance carries three structural strains at once. Nelson City Council and Tasman District Council are separate authorities with overlapping service areas (water, transport, regional development), creating coordination friction. Combined operational spending is around $320 million, with capital needs over the coming decade approaching $420 million against a constrained ratepayer base. Treaty partnership engagement with mana whenua is improving but resourced asymmetrically.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - council_debt_to_revenue_ratio
+  - ten_year_capex_pipeline_nzd_m
+  - joint_committee_decision_count
+  inputs:
+  - central_government_co_funding
+  - rates_increase_settings
+  constraints:
+  - dual_unitary_structure
+  - debt_covenants
+  feedback_loops:
+  - 'Coordination-cost feedback: dual-council coordination raises transaction cost on every cross-boundary project, slowing delivery and increasing the share of capex absorbed by process rather than asset.'
+narrative:
+- heading: Two councils, one functional region
+  body: Nelson is a unitary authority and Tasman is a unitary authority; together they cover a single labour market, single hospital catchment, and one shared water-and-horticulture economy (claim.nelson.governance.governance_root_claim). Coordination on water, transport, and growth happens through joint committees rather than a single statutory decision-maker.
+- heading: Capital pipeline against rates capacity
+  body: Three-waters renewal, climate adaptation, and growth-driven infrastructure all compete in the same long-term plan. Ratepayer capacity to fund all three at once is limited; borrowing headroom is constrained by debt-to-revenue covenants. The political economy of which projects get deferred is increasingly difficult.
+claim_ids:
+- claim.nelson.governance.governance_root_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

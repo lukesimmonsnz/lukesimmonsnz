@@ -1,0 +1,39 @@
+id: problem.wellington.transport.active_modes
+title: Active travel infrastructure gaps in Wellington
+theme: transport
+section: transport
+subpage: active-modes
+parent: problem.wellington.transport.network_resilience
+order: 4
+updated: '2026-04-26'
+summary: Despite Wellington's compact geography and moderate climate, cycling mode share remains very low relative to peer
+  cities, held back by disconnected cycling infrastructure, safety concerns on shared roads, and topographic barriers. Walking
+  infrastructure is uneven across the region.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - cycling_mode_share
+  - protected_cycling_network_km
+  inputs:
+  - active_travel_investment
+  - land_use_density
+  constraints:
+  - network_connectivity_gaps
+  - arterial_road_safety_barrier
+  feedback_loops:
+  - 'Connectivity loop: isolated cycling lanes without network connectivity fail to attract commuter cyclists; low usage reduces
+    political priority for further investment.'
+narrative:
+- heading: Low cycling mode share
+  body: Wellington's cycling mode share stands at approximately 2% of all trips, substantially below comparable compact cities
+    such as Christchurch or international benchmarks for cities with similar topography and climate (claim.wellington.transport.cycling_mode_share_low).
+- heading: Infrastructure gaps
+  body: Wellington's cycling network is characterised by disconnected segments and high-stress shared-road conditions on key
+    commuter corridors. The absence of protected lanes on major arterials between suburbs and the CBD is the primary deterrent
+    to uptake (claim.wellington.transport.active_travel_infrastructure_gap).
+claim_ids:
+- claim.wellington.transport.cycling_mode_share_low
+- claim.wellington.transport.active_travel_infrastructure_gap
+status: draft
+time_horizons: [decade, generation]

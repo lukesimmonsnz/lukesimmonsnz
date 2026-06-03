@@ -1,0 +1,35 @@
+{# Schema-driven preview of the φ̂-generated form.
+   v1 is read-only (YAML pane is authoritative). The structure is
+   already in place for the PI to wire up two-way binding when the
+   discriminator/repeater stubs in schema_walker are filled in. #}
+<table>
+  <tr><th>Field</th><th>Widget</th><th>Required</th><th>Current value</th></tr>
+  {% for f in fields %}
+  <tr>
+    <td>
+      <code>{{ f.name }}</code>
+      {% if f.description %}
+        <div class="hint">{{ f.description }}</div>
+      {% endif %}
+    </td>
+    <td>
+      <span class="badge">{{ f.widget }}</span>
+      {% if f.target %} <span class="hint">→ {{ f.target }}</span>{% endif %}
+      {% if f.choices %}
+        <div class="hint">{{ f.choices|join(' · ') }}</div>
+      {% endif %}
+      {% if f.children %}
+        <div class="hint">{{ f.children|length }} child fields</div>
+      {% endif %}
+    </td>
+    <td>{% if f.required %}<span class="req">*</span>{% endif %}</td>
+    <td>
+      {% if f.value is mapping or f.value is sequence and f.value is not string %}
+        <pre>{{ f.value | tojson(indent=2) }}</pre>
+      {% else %}
+        <code>{{ f.value if f.value is not none else '—' }}</code>
+      {% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>

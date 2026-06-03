@@ -1,0 +1,21 @@
+id: claim.gisborne.transport.sh35_roading_12
+statement: 'SH35 roading corridor faces cascading hazards: coastal erosion, inland
+  landslides, and river flooding. Maintenance funding remains inadequate; seismic
+  risk (alpine fault proximity) is significant; system upgrade to four-lane standard
+  is not feasible; managed retreat planning is necessary.'
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.infrastructure_condition_index_v1
+notes: null

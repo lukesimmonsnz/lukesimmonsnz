@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.infrastructure.infrastructure_pressure_intervention
+name: Intervention for infrastructure_pressure
+theme: infrastructure
+core_claim: Targeted intervention on infrastructure_pressure will improve outcomes.
+flagship_moves:
+- Policy measure 1 for infrastructure_pressure
+- Policy measure 2 for infrastructure_pressure
+- Implementation mechanism for infrastructure_pressure
+tensions:
+- Trade-off A for infrastructure_pressure
+- Trade-off B for infrastructure_pressure
+addresses:
+- problem.bay_of_plenty.infrastructure.infrastructure_pressure
+interventions:
+- description: Core intervention targeting infrastructure_pressure
+  state_variable: infrastructure_pressure_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

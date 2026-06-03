@@ -1,0 +1,19 @@
+id: claim.canterbury.education.secondary_ncea_disparity_2023
+statement: Average ECE fees in Canterbury are NZD 165/week (2023); for single-income
+  households below $80K, fees consume 15-20% of household income. Early childhood
+  participation rates are 5-8 percentage points below national average.
+value: 35
+unit: percentage point gap
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_canterbury_achievement_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

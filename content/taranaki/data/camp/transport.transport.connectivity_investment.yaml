@@ -1,0 +1,22 @@
+id: camp.taranaki.transport.transport.connectivity_investment
+name: Regional connectivity investment
+theme: transport
+core_claim: Regional connectivity investment addresses connectivity.
+flagship_moves:
+- Implement Regional connectivity investment
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.transport.connectivity
+- problem.taranaki.transport.active_modes
+- problem.taranaki.transport.new_plymouth_congestion
+- problem.taranaki.transport.regional_roading
+interventions:
+- description: Regional connectivity investment action
+  state_variable: transport.connectivity_investment_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

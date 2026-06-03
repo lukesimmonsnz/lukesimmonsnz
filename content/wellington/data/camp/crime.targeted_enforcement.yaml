@@ -1,0 +1,21 @@
+id: camp.wellington.crime.targeted_enforcement
+name: Targeted Enforcement and Deterrence
+theme: crime
+core_claim: Hot-spot policing and targeted enforcement against repeat offenders reduces victimisation for communities most
+  at risk.
+flagship_moves:
+- Increase police presence in identified crime hot-spots in Porirua and Lower Hutt
+- Recidivist management programme with intensive supervision for high-harm offenders
+- CCTV and environmental design improvements in high-crime locations
+tensions:
+- Hot-spot policing risks displacing crime to adjacent areas
+- Intensive supervision of recidivists requires significant corrections resourcing
+addresses:
+- problem.wellington.crime.victimisation
+interventions:
+- description: Deploy dedicated hot-spot policing teams to 5 identified Wellington high-crime areas with 12-month evaluation
+  state_variable: crime_hot_spot_frequency
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

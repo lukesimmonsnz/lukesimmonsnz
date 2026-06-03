@@ -1,0 +1,12 @@
+id: driver.canterbury.inequality.post_quake_rebuild_inequality
+name: Unequal Post-Earthquake Rebuild Investment
+description: Unequal Post-Earthquake Rebuild Investment
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.inequality.inequality
+- problem.canterbury.inequality.east_christchurch_deprivation
+claim_ids: []

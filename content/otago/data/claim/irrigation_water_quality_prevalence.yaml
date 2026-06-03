@@ -1,0 +1,22 @@
+id: claim.otago.environment.irrigation_water_quality_prevalence
+statement: Irrigation water quality in Central Otago (Cromwell-Bannockburn-Gibbston
+  zones) is affected by dairy runoff from Clutha catchment and horticultural chemical
+  use. Pesticide and nutrient load in Clutha and tributary systems monitored by ORC;
+  wine region (Pinot Noir vineyards) uses tillage and cover crops (lower chemical
+  load than arable); some irrigation return flows degrade water quality in receiving
+  streams. Edendale Fonterra milk supply depends on Clutha water quality.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

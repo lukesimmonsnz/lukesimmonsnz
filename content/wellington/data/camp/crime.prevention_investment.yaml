@@ -1,0 +1,23 @@
+id: camp.wellington.crime.prevention_investment
+name: Social Crime Prevention Investment
+theme: crime
+core_claim: Investing in youth opportunity, mental health, and housing stability in high-deprivation areas will reduce crime
+  rates more sustainably than enforcement.
+flagship_moves:
+- Expand youth mentoring and alternative education pathways in Porirua and Hutt
+- Co-locate mental health crisis services at police stations
+- Alcohol management zones in areas with high assault concentrations
+tensions:
+- Prevention benefits accrue over 10–20 year horizons, while enforcement shows faster short-term results
+- Measuring effectiveness of prevention programmes is methodologically complex
+addresses:
+- problem.wellington.crime.victimisation
+- problem.wellington.crime.youth_offending
+interventions:
+- description: Fund 5-year social crime prevention programme in Porirua and Hutt Valley integrated with housing and mental
+    health services
+  state_variable: victimisation_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

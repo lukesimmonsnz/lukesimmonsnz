@@ -1,0 +1,44 @@
+id: problem.west_coast.inequality.inequality
+title: Income inequality after the mining shock
+theme: inequality
+section: inequality
+subpage: inequality
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Income inequality on the West Coast is elevated in mining-affected districts, where the Solid Energy collapse split
+  the income distribution between former high-wage miners and a residual lower-wage service and primary-sector workforce.
+  Median household income masks high variance.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - gini_coefficient_regional
+  - p90_p10_income_ratio
+  - high_wage_sector_share
+  inputs:
+  - msd_income_support_settings
+  - regional_wage_subsidy_programmes
+  constraints:
+  - narrow_labour_market
+  - post_mining_wage_compression
+  feedback_loops:
+  - High earners who exit the region take household spending with them; the resulting service-sector contraction further compresses
+    local wages, which raises measured inequality even though absolute incomes are falling.
+narrative:
+- heading: A bimodal income shock
+  body: The Solid Energy collapse and Stockton wind-down removed the upper tail of the male wage distribution in Buller in
+    particular, leaving a more bimodal distribution of older settled households on retirement income and younger households
+    on lower service-sector wages (claim.west_coast.inequality.inequality_claim). Median household income at around $52,000
+    hides this bimodality.
+- heading: Inequality interacts with isolation
+  body: 'Income inequality at a regional level is amplified by geographic isolation: opportunities to trade up the income
+    ladder by moving between sectors require labour-market depth the West Coast doesn''t offer. The same households that lose
+    out from the income shock are also the most constrained in their adaptive options.'
+claim_ids:
+- claim.west_coast.inequality.inequality_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

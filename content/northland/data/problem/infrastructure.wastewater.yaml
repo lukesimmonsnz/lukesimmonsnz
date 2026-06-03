@@ -1,0 +1,24 @@
+id: 'problem.northland.infrastructure.wastewater'
+title: 'Te Tai Tokerau Northland: wastewater treatment'
+theme: 'infrastructure'
+section: 'infrastructure'
+subpage: 'wastewater'
+parent: 'problem.northland.infrastructure.deficit'
+order: 4
+updated: '2026-04-26'
+summary: 'Wastewater systems are stressed.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Wastewater systems are stressed.'
+claim_ids:
+- 'claim.northland.infrastructure.wastewater_claim1'
+- 'claim.northland.infrastructure.wastewater_claim2'
+status: 'draft'

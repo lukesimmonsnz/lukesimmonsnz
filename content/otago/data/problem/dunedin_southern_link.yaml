@@ -1,0 +1,34 @@
+id: problem.otago.transport.dunedin_southern_link
+title: Dunedin Southern Link Motorway Capacity
+theme: transport
+section: transport
+subpage: dunedin_southern_link
+parent: problem.otago.transport.connectivity
+order: 3
+updated: '2026-04-26'
+summary: Major infrastructure project underway to improve Dunedin connectivity; completion
+  timing and funding constraints may delay congestion relief.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Major infrastructure project underway to improve Dunedin connectivity; completion
+    timing and funding constraints may delay congestion relief.
+claim_ids:
+- claim.otago.transport.dunedin_southern_link_trend
+- claim.otago.transport.connectivity_prevalence
+- claim.otago.transport.connectivity_trend
+- claim.otago.transport.queenstown_congestion_prevalence
+- claim.otago.transport.active_modes_prevalence
+- claim.otago.transport.dunedin_southern_link_prevalence
+- claim.otago.transport.active_modes_trend
+- claim.otago.transport.queenstown_congestion_trend
+status: draft
+time_horizons: [decade, generation]

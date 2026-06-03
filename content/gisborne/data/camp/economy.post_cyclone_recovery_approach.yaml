@@ -1,0 +1,21 @@
+id: camp.gisborne.economy.post_cyclone_recovery_approach
+name: Strategic approach for post_cyclone_recovery
+theme: economy
+core_claim: Strategic intervention on post_cyclone_recovery will drive measurable
+  improvement.
+flagship_moves:
+- Priority action 1 targeting post_cyclone_recovery
+- Priority action 2 targeting post_cyclone_recovery
+- Institutional coordination mechanism for post_cyclone_recovery
+tensions:
+- 'Tension 1: post_cyclone_recovery'
+- 'Tension 2: post_cyclone_recovery'
+addresses:
+- problem.gisborne.economy.post_cyclone_recovery
+interventions:
+- description: Primary intervention for post_cyclone_recovery
+  state_variable: post_cyclone_recovery_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

@@ -1,0 +1,13 @@
+id: driver.gisborne.climate.drought_escalation
+name: Driver escalating drought
+description: "This driver exacerbates the drought challenge in Gisborne \u2014 Te\
+  \ Tair\u0101whiti."
+theme: climate-adaptation
+consensus: contested
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.climate.drought
+claim_ids:
+- claim.gisborne.climate.drought_87

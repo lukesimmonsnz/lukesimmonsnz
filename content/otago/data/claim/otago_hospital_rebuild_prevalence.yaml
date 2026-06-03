@@ -1,0 +1,22 @@
+id: claim.otago.infrastructure.otago_hospital_rebuild_prevalence
+statement: 'Dunedin Hospital rebuild is Otago''s largest infrastructure project: $2.3B+
+  (escalated from $1.5B in 2023-2024); new Acute Services Building and Outpatient
+  Services Building; demolition of aging east wing; completion expected 2029-2030.
+  Project employs 200-300 workers (peak construction); disrupts existing hospital
+  operations; regional implications for surgery, ED, mental health bed capacity during
+  transition; economic stimulus (local employment, supplies) significant.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

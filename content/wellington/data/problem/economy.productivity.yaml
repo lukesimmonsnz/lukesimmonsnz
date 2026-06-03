@@ -1,0 +1,39 @@
+id: problem.wellington.economy.productivity
+title: Productivity challenges in Wellington's economy
+theme: economy
+section: economy
+subpage: productivity
+parent: problem.wellington.economy.public_sector_dependence
+order: 3
+updated: '2026-04-26'
+summary: Wellington's labour productivity is moderate by OECD standards and is held back by the high share of public sector
+  activity — which is measured by inputs rather than outputs — and by limited private sector innovation investment. Compared
+  to Auckland, Wellington's private sector has a narrower economic base for productivity-enhancing investment.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - labour_productivity_index
+  - private_sector_rd_intensity
+  inputs:
+  - innovation_investment
+  - digital_transformation_rate
+  constraints:
+  - small_domestic_market
+  - public_sector_gdp_measurement_drag
+  feedback_loops:
+  - 'Productivity-investment loop: low productivity limits retained earnings and investment capacity; low investment sustains
+    low productivity.'
+narrative:
+- heading: Productivity relative to OECD peers
+  body: Wellington's labour productivity index is below comparable capital-city regions in Australia and Western Europe, reflecting
+    both the structure of the local economy and Wellington's distance from large markets (claim.wellington.economy.labour_productivity_index).
+- heading: Public sector measurement drag
+  body: The high share of public sector employment in Wellington's GDP contributes to measured productivity stagnation, since
+    government services are measured at input cost rather than market value — understating real economic output but inflating
+    the apparent productivity gap (claim.wellington.economy.productivity_public_sector_drag).
+claim_ids:
+- claim.wellington.economy.labour_productivity_index
+- claim.wellington.economy.productivity_public_sector_drag
+status: draft
+time_horizons: [decade, generation]

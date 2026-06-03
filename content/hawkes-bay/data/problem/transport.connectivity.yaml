@@ -1,0 +1,33 @@
+id: problem.hawkes_bay.transport.connectivity
+title: Regional transport connectivity and mode diversity
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: "Hawke's Bay faces limited transport mode diversity, heavy car dependence, and exposure of State Highway 2 to flooding and slips. Public transport coverage is sparse outside Napier-Hastings. Active transport networks are fragmented."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - car_mode_share_percent
+    - public_transport_patronage_per_capita
+  inputs:
+    - land_use_dispersal
+    - sparse_population_density
+  constraints:
+    - topographic_narrowness_sh2
+    - post_cyclone_resilience_deficits
+  feedback_loops:
+    - 'Low patronage defers transit investment; sparse service drives car adoption; congestion and emissions rise; mode shift to transit harder.'
+narrative:
+  - heading: Car Dependence
+    body: "Approximately 87% of commute trips in Hawke's Bay are by private car. Public transport carries fewer than 2 million passenger journeys per year across a population of 170k."
+  - heading: SH2 Resilience
+    body: 'State Highway 2 is the only practical north-south corridor. Cyclone Gabrielle demonstrated severe flood and slip vulnerability, with closures lasting weeks.'
+claim_ids:
+  - claim.hawkes_bay.transport.car_mode_share_87
+  - claim.hawkes_bay.transport.sh2_closure_duration
+status: draft
+time_horizons: [decade, generation]

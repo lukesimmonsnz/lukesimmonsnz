@@ -1,0 +1,31 @@
+id: problem.marlborough.infrastructure.water_irrigation
+title: Water Allocation and Irrigation Demand
+theme: infrastructure
+section: infrastructure
+subpage: water_irrigation
+parent: problem.marlborough.infrastructure.infrastructure
+order: 1
+updated: '2026-04-26'
+summary: Wairau and Awatere aquifer stress from wine irrigation; allocation conflicts;
+  climate-driven scarcity.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Wairau and Awatere aquifer stress from wine irrigation; allocation conflicts;
+    climate-driven scarcity.
+claim_ids:
+- claim.marlborough.infrastructure.water_irrigation_1
+- claim.marlborough.infrastructure.water_irrigation_2
+status: draft
+time_horizons: [decade, generation]

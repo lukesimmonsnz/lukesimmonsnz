@@ -1,0 +1,14 @@
+id: driver.west_coast.climate.driver_1
+name: Alpine-rainforest climate and high-rainfall hydrology
+description: West Coast annual rainfall ranges from around 2,500 mm at the coast to over 10,000 mm in the alpine headwaters,
+  on steep, short catchments. This climate-and-terrain combination drives chronic flood exposure and the costs of riverine
+  and coastal infrastructure.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.climate.climate_risk
+- problem.west_coast.climate.climate_2
+claim_ids: []

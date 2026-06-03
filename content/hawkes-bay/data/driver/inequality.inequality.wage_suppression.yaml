@@ -1,0 +1,11 @@
+id: driver.hawkes_bay.inequality.inequality.wage_suppression
+name: Primary industry wage suppression and labour market segmentation
+description: Primary industry wage suppression and labour market segmentation
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.inequality.deprivation
+claim_ids: []

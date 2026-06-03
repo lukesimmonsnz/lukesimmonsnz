@@ -1,0 +1,38 @@
+id: problem.wellington.inequality.geographic_deprivation
+title: Geographic concentration of deprivation in Wellington
+theme: inequality
+section: inequality
+subpage: geographic-deprivation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Wellington region has extreme geographic concentration of deprivation: Porirua, parts of Hutt Valley (Naenae, Wainuiomata),
+  and some Kāpiti communities have high NZDep scores, while the eastern Wellington suburbs and Te Aro are affluent. This spatial
+  concentration entrenches disadvantage across generations and creates significant disparities in public service quality.'
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - nzdep_decile_concentration
+  - median_income_by_suburb
+  inputs:
+  - social_housing_allocation
+  - labour_market_access
+  constraints:
+  - transport_access_to_employment
+  - school_quality_sorting
+  feedback_loops:
+  - 'Neighbourhood sorting: high-deprivation areas attract lower-income households through affordable rents; concentrated
+    poverty reduces local service quality and reduces upward mobility.'
+narrative:
+- heading: Porirua and Hutt Valley deprivation concentrations
+  body: Porirua and parts of Lower Hutt contain the highest concentrations of NZDep decile 9–10 meshblocks in the Wellington
+    region, reflecting persistent multi-generational disadvantage in communities with high Māori and Pacific populations (claim.wellington.inequality.porirua_nzdep_score).
+- heading: Geographic persistence
+  body: Deprivation in Wellington is not randomly distributed — it is heavily concentrated in specific geographic corridors
+    that share limited access to high-wage employment, lower-quality schooling, and reduced public services (claim.wellington.inequality.deprivation_geographic_concentration).
+claim_ids:
+- claim.wellington.inequality.porirua_nzdep_score
+- claim.wellington.inequality.deprivation_geographic_concentration
+status: draft
+time_horizons: [decade, generation, century]

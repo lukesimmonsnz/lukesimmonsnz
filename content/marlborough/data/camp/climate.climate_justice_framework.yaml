@@ -1,0 +1,21 @@
+id: camp.marlborough.climate.climate_justice_framework
+name: Climate Justice and Equitable Transition
+theme: climate-adaptation
+core_claim: Equitable burden and benefit sharing in adaptation.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.climate.climate_risk
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

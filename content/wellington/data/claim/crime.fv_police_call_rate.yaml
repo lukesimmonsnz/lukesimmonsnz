@@ -1,0 +1,21 @@
+id: claim.wellington.crime.fv_police_call_rate
+statement: Wellington Police District records family harm callout rates in Porirua
+  sub-areas substantially above the Wellington district average, reflecting elevated
+  incidence driven by housing stress, substance use, and economic hardship in high-deprivation
+  communities.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.msd_family_violence_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: null

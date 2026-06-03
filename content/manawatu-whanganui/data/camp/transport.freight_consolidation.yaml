@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.transport.freight_consolidation
+name: Urban Freight Consolidation
+theme: transport
+core_claim: Consolidated deliveries to reduce vehicle trips.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

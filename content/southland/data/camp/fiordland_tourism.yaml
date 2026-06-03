@@ -1,0 +1,21 @@
+id: camp.southland.economy.fiordland_tourism
+name: Fiordland Tourism Sustainability and Quality
+theme: economy
+core_claim: Sustainable tourism certification and high-value visitor management improve
+  economic resilience.
+flagship_moves:
+- Visitor capacity limits in sensitive areas
+- Sustainable tourism certification
+- Support for high-value, low-impact tourism
+tensions:
+- Visitor number reductions; local resistance
+- Competition from other attractions
+addresses:
+- problem.southland.economy.economic_diversification
+interventions:
+- description: Transition to high-value visitor model
+  state_variable: tourism_revenue_per_visitor
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

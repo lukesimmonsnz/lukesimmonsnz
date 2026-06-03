@@ -1,0 +1,20 @@
+id: camp.canterbury.governance.regional_coordination_mechanism
+name: Regional Governance Coordination Mechanism
+theme: governance
+core_claim: Establishing a formal regional coordination council (with CCC, Waimakariri,
+  Selwyn, ECan, iwi) can align growth, infrastructure, and water strategies.
+flagship_moves:
+- Key intervention for Regional Governance Coordination Mechanism
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.governance.governance
+interventions:
+- description: Establishing a formal regional coordination council (with CCC, Waimakariri,
+    Selwyn, ECan, iwi) can align growth, infrastructure, and water strategies.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

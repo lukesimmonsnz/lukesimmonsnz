@@ -1,0 +1,10 @@
+id: driver.waikato.education.school_disengagement
+name: School disengagement and truancy
+description: School disengagement and truancy in the regional context.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

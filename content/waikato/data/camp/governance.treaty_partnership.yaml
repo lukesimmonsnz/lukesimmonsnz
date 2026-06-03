@@ -1,0 +1,24 @@
+id: camp.waikato.governance.treaty_partnership
+name: Treaty-based co-governance strengthening
+theme: governance
+core_claim: Strengthening Waikato-Tainui and Tainui co-governance roles improves legitimacy
+  and environmental outcomes.
+flagship_moves:
+- Implement full Te Awa Tupua governance framework across all river management decisions
+- Require iwi participation in all major regional consenting processes
+- Resource Waikato-Tainui governance capacity to meet co-governance obligations
+tensions:
+- Co-governance can slow decision-making if processes are not well-designed
+- Resource requirements for co-governance may strain smaller council budgets
+interventions:
+- description: Implement full Te Awa Tupua governance framework across all river management
+    decisions
+  state_variable: governance_effectiveness
+  expected_sign: +
+addresses:
+- problem.waikato.governance.regional_planning
+- problem.waikato.governance.maori_co_governance
+- problem.waikato.governance.local_govt_capacity
+applicable_in:
+- waikato
+tensions_with: []

@@ -1,0 +1,14 @@
+id: driver.hawkes_bay.crime.crime.substance_abuse
+name: Substance abuse and addiction drivers of property crime
+description: Substance abuse and addiction drivers of property crime
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.crime.safety
+- problem.hawkes_bay.crime.drug_crime
+- problem.hawkes_bay.crime.family_violence
+- problem.hawkes_bay.crime.youth_offending
+claim_ids: []

@@ -1,0 +1,23 @@
+id: claim.nelson.health.chronic_disease_claim
+statement: Chronic disease prevalence in Nelson is above national average. Health
+  NZ data for 2023 reports that 26% of adults have been diagnosed with at least one
+  chronic condition (vs. 22% nationally); diabetes affects 8.1% (vs. 7.2% nationally),
+  cardiovascular disease 11.3% (vs. 10.1%), and chronic respiratory disease 6.8% (vs.
+  5.9%). Maori and Pacific populations have 1.4–1.8× higher prevalence rates. Rising
+  obesity rates (42% of adults overweight or obese) are a significant driver; lifestyle
+  factors interact with aging demographics.
+value: 26
+unit: percent of adults with chronic disease
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

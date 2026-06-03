@@ -1,0 +1,22 @@
+id: claim.nelson.economy.economic_structure_claim
+statement: 'Nelson''s economy is heavily dependent on four sectors: primary production
+  (fishing, horticulture, aquaculture, 24% of regional employment), tourism and hospitality
+  (22%), light manufacturing and processing (18%), and professional services (16%).
+  Diversification is limited; the region lacks large corporate headquarters, technology
+  sector depth, or research institutions with significant R&D budgets. This concentration
+  creates vulnerability to commodity price shocks and seasonal demand fluctuations.'
+value: null
+unit: null
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: null
+notes: null

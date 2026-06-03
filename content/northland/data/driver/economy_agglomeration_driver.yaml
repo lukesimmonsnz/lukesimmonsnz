@@ -1,0 +1,16 @@
+id: driver.northland.economy.agglomeration_driver
+name: Agglomeration deficit and distance from major markets
+description: Distance from Auckland and other major markets limits access to supply
+  chains, customers, and the skilled labour pools necessary for higher-value industries.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.economy.northland_economic_underperformance
+- problem.northland.economy.low_wages
+- problem.northland.economy.tourism_dependence
+- problem.northland.economy.business_investment
+claim_ids:
+- claim.northland.economy.business_investment_claim1

@@ -1,0 +1,10 @@
+id: driver.waikato.climate.sea_level_rise
+name: Sea level rise and coastal hazards
+description: Sea level rise and coastal hazards in the regional context.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

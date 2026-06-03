@@ -1,0 +1,12 @@
+id: driver.otago.environment.stormwater_urban_runoff
+name: Urban Stormwater Pollution
+description: Dunedin and Queenstown stormwater carries nutrients, sediment, hydrocarbons
+  to lakes and coast.
+theme: environment
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.environment.coastal_otago
+claim_ids: []

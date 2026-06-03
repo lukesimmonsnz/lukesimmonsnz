@@ -1,0 +1,21 @@
+id: claim.southland.crime.youth_offending_trend
+statement: Youth offending in Southland shows persistent structural drivers. Rural
+  youth unemployment above regional average; limited post-school pathways in Gore
+  and Winton contribute. Digital exclusion (limited broadband in remote areas) restricts
+  opportunity access. Intervention services (counselling, skill-building) concentrated
+  in Invercargill; rural youth access barriers.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

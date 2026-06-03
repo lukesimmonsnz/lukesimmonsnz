@@ -1,0 +1,14 @@
+id: driver.wellington.economy.small_private_sector_depth
+name: Limited private sector depth relative to public sector
+description: Wellington's private sector remains smaller and less diversified than in Auckland, constrained by Wellington's
+  distance from large markets and path dependence on government-centred business models.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.economy.labour_market
+- problem.wellington.economy.business_environment
+claim_ids:
+- claim.wellington.economy.unemployment_rate_post_restructure

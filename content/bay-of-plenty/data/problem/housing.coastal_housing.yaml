@@ -1,0 +1,32 @@
+id: problem.bay_of_plenty.housing.coastal_housing
+title: Coastal zone development pressure and hazard exposure in Bay of Plenty — Te
+  Moana-a-Toi
+theme: housing
+section: housing
+subpage: coastal_housing
+parent: problem.bay_of_plenty.housing.affordability
+order: 4
+updated: '2026-04-26'
+summary: Coastal zone development pressure and hazard exposure is a sub-dimension
+  of the regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - coastal_housing_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Coastal zone development pressure and hazard exposure is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.housing.coastal_housing_07
+- claim.bay_of_plenty.housing.coastal_housing_08
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,16 @@
+id: driver.wellington.crime.systemic_maori_disadvantage
+name: Systemic disadvantage and Māori youth justice overrepresentation
+description: Youth overrepresentation in Wellington's justice system is concentrated in high-deprivation
+  communities, particularly Porirua and Hutt Valley. Economic deprivation, housing instability, school
+  disengagement, and the absence of alternative pathway infrastructure are the primary structural drivers.
+  Justice system calibration to mainstream social norms compounds these structural disadvantages for communities
+  with limited access to legal representation and social capital.
+theme: crime
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+- problem.wellington.crime.youth_offending
+claim_ids:
+- claim.wellington.crime.maori_youth_justice_overrepresentation

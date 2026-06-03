@@ -1,0 +1,34 @@
+id: problem.otago.inequality.rural_isolation
+title: Rural Isolation and Service Access
+theme: inequality
+section: inequality
+subpage: rural_isolation
+parent: problem.otago.inequality.inequality
+order: 4
+updated: '2026-04-26'
+summary: Outlying farming communities face distance to healthcare, education, jobs;
+  limited public transport; broadband gaps worsen isolation.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Outlying farming communities face distance to healthcare, education, jobs;
+    limited public transport; broadband gaps worsen isolation.
+claim_ids:
+- claim.otago.inequality.queenstown_worker_conditions_trend
+- claim.otago.inequality.inequality_trend
+- claim.otago.inequality.queenstown_worker_conditions_prevalence
+- claim.otago.inequality.inequality_prevalence
+- claim.otago.inequality.dunedin_deprivation_prevalence
+- claim.otago.inequality.dunedin_deprivation_trend
+- claim.otago.inequality.rural_isolation_prevalence
+- claim.otago.inequality.rural_isolation_trend
+status: draft
+time_horizons: [decade, generation, century]

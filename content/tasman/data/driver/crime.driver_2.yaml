@@ -1,0 +1,15 @@
+id: driver.tasman.crime.driver_2
+name: Service-thinness in rural support and diversion
+description: Specialist family-violence support, youth diversion, and addiction services are concentrated in Nelson;
+  rural and Mohua residents face wait times and travel distances that produce de facto exclusion from services that
+  exist on paper.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.crime.safety
+- problem.tasman.crime.youth_offending
+- problem.tasman.crime.drug_crime
+claim_ids: []

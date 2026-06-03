@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.inequality.flaxmere_unemployment_15_18_percent
+statement: Structural inequality in Hawkes Bay is reflected in persistent income,
+  housing, and health disparities between high- and low-deprivation areas. Intergenerational
+  poverty and limited social mobility create feedback loops constraining opportunity
+  for disadvantaged communities.
+value: 16.5
+unit: percent unemployment
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Hawke's Bay

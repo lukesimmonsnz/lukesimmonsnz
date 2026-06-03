@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.economy.capital_shallowness
+name: Capital Market Depth And Venture Financing Gaps
+description: Capital market depth and venture financing gaps. This driver operates
+  at national scale with consensus consensus.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.education.secondary
+claim_ids: []

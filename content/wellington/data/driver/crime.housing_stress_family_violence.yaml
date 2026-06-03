@@ -1,0 +1,13 @@
+id: driver.wellington.crime.housing_stress_family_violence
+name: Housing stress as family violence driver
+description: Overcrowding, housing insecurity, and high housing cost burden are established risk factors for family violence.
+  Wellington's housing unaffordability crisis directly drives elevated family violence rates in high-deprivation communities.
+theme: crime
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.crime.family_violence
+claim_ids:
+- claim.wellington.crime.fv_housing_stress_link

@@ -1,0 +1,22 @@
+id: claim.west_coast.crime.safety_claim
+statement: Violent and property crimes in West Coast towns are reported at levels
+  above New Zealand urban averages in Greymouth and Westport, correlating with depopulation,
+  economic decline, and reduced police resourcing. Perceived lack of safety contributes
+  to further youth out-migration and business closure.
+value: null
+unit: null
+time_period: 2018-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.stats_nz_census_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Crime statistics from NZ Police region-level data; out-migration and business
+  closure from census and regional council economic data.

@@ -1,0 +1,22 @@
+id: camp.taranaki.education.education.access_support
+name: Education access support
+theme: education
+core_claim: Education access support addresses achievement.
+flagship_moves:
+- Implement Education access support
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.education.achievement
+- problem.taranaki.education.early_childhood
+- problem.taranaki.education.secondary
+- problem.taranaki.education.tertiary_access
+interventions:
+- description: Education access support action
+  state_variable: education.access_support_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

@@ -1,0 +1,13 @@
+id: source.mfe_nz_sea_level_guidance_2023
+title: 'New Zealand Sea Level Rise Guidance: Updated Projections 2023'
+author: null
+publisher: Ministry for the Environment
+year: 2023
+url: https://environment.govt.nz/publications/coastal-hazards-and-climate-change-guidance/
+type: government-report
+credibility: official
+geo_granularity:
+- nz
+- wellington
+notes: National sea-level rise planning guidance; Wellington-specific projections used for Petone Foreshore and low-lying
+  area risk assessments.

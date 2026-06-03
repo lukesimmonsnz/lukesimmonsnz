@@ -1,0 +1,21 @@
+id: camp.wellington.education.ece_access
+name: Early Childhood Education Access and Quality
+theme: education
+core_claim: Subsidised high-quality ECE for under-3s in high-deprivation areas is the highest-return educational investment
+  available.
+flagship_moves:
+- 20 Hours Free ECE extension to under-3s in high-deprivation areas
+- Capital funding for community-based ECE centres in Porirua
+- Home-based ECE subsidy increase to match centre-based funding rates
+tensions:
+- ECE workforce shortage limits supply expansion regardless of subsidy
+- Home-based ECE quality is harder to regulate than centre-based provision
+addresses:
+- problem.wellington.education.early_childhood
+interventions:
+- description: Extend 20 Hours Free ECE to under-3s in all Porirua and Hutt Valley communities
+  state_variable: ece_participation_rate_under3
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

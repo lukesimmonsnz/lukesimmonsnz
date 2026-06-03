@@ -1,0 +1,44 @@
+id: problem.canterbury.health.workforce_shortage
+title: Health Workforce Recruitment & Retention
+theme: health
+section: health
+subpage: workforce_shortage
+parent: problem.canterbury.health.health_outcomes
+order: 3
+updated: '2026-04-26'
+summary: 'Health NZ Canterbury faces acute GP shortages (15-20% vacancies in rural
+  areas), nursing vacancy rates 12-15%, and specialist recruitment challenges (psychiatry,
+  rural paediatrics). Retention is poor; burnout is high post-quake. South Canterbury
+  (Timaru, Ashburton) are critically underserved. Workforce pipeline (medical school,
+  nursing) is not expanding.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - gp_vacancy_rate_by_district
+  - nursing_vacancy_rate
+  - specialist_availability_by_field
+  - health_workforce_burnout_index
+  inputs:
+  - health_workforce_training_capacity
+  - health_service_funding
+  - rural_living_attractiveness
+  constraints:
+  - medical_school_seat_allocation
+  - workforce_training_pipeline_lag
+  feedback_loops:
+  - Dynamic feedback mechanisms drive health workforce recruitment & retention.
+narrative:
+- heading: Rural health service fragility
+  body: 'Rural general practices (Ashburton, Kaikōura, South Canterbury) operate with
+    1-2 GPs covering large catchments. Vacancies can force service closures or out-of-hours
+    constraints. Nursing shortages impact hospital capacity in secondary care.
+
+    '
+claim_ids:
+- claim.canterbury.health.gp_vacancy_rate_rural_2023
+- claim.canterbury.health.nursing_vacancy_rate_2023
+status: draft
+time_horizons: [decade, generation]

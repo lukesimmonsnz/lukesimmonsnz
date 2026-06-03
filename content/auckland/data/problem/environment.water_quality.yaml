@@ -53,3 +53,4 @@ claim_ids:
   - claim.auckland.environment.urban_stream_quality
   - claim.auckland.environment.rural_stream_nutrient_loading
 status: draft
+time_horizons: [generation, century]

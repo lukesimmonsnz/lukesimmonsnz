@@ -1,0 +1,48 @@
+id: problem.canterbury.transport.network
+title: Canterbury Transport Network Dysfunction
+theme: transport
+section: transport
+subpage: network
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury''s transport system is dominated by private vehicle dependency,
+  with Christchurch metro lacking rapid transit, bus network efficiency declining,
+  and active transport infrastructure fragmented. Light rail remains in pre-business-case
+  phase; congestion in key corridors (Johns Ave, Riccarton Rd) is worsening as growth
+  outpaces network investment.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - private_vehicle_dependency_rate
+  - bus_patronage
+  - cycling_commute_share
+  - mean_commute_time
+  - transport_emissions
+  inputs:
+  - population_growth
+  - land_use_density
+  - fuel_prices
+  - public_transport_investment
+  constraints:
+  - earthquake_rebuild_road_network_geometry
+  - limited_rapid_transit_corridor_options
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury transport network dysfunction.
+narrative:
+- heading: Post-earthquake transport default
+  body: 'The 2011 earthquake damaged significant stretches of Christchurch''s road
+    network. Rebuild prioritized vehicle capacity restoration over modal shift, embedding
+    car dependency into the new spatial layout. Meanwhile, bus network redesigns (2017-2023)
+    have not reversed declining patronage, and light rail planning stalled through
+    multiple business case iterations.
+
+    '
+claim_ids:
+- claim.canterbury.transport.private_vehicle_share_2023
+- claim.canterbury.transport.bus_patronage_decline_2023
+status: draft
+time_horizons: [decade, generation]

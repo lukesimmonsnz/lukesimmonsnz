@@ -1,0 +1,42 @@
+id: problem.canterbury.environment.alpine_biodiversity
+title: Alpine Ecosystem Biodiversity Stress
+theme: environment
+section: environment
+subpage: alpine_biodiversity
+parent: problem.canterbury.environment.freshwater_stress
+order: 3
+updated: '2026-04-26'
+summary: 'Canterbury''s alpine and subalpine ecosystems (Mt. Cook, Craigieburn, Arthur''s
+  Pass regions) face climate-driven pressure from invasive species (possums, pigs,
+  stoats), changing precipitation patterns, and conservation funding constraints.
+  Endemic alpine species (kea, takin, endemic plants) show range contractions.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - endemic_species_distribution_area
+  - invasive_predator_density
+  - alpine_vegetation_composition_change
+  inputs:
+  - temperature_increase_rate
+  - precipitation_pattern_shift
+  - conservation_funding_per_hectare
+  constraints:
+  - conservation_area_size_limitation
+  - DOC_budget_constraints
+  feedback_loops:
+  - Dynamic feedback mechanisms drive alpine ecosystem biodiversity stress.
+narrative:
+- heading: High-altitude climate transition under way
+  body: 'Alpine grassland is shifting toward low scrub and tussock as temperatures
+    warm and moisture regimes change. Invasive predators (stoats, possums) expand
+    range, outcompeting native species. Kea and takin populations are declining.
+
+    '
+claim_ids:
+- claim.canterbury.environment.alpine_range_contraction_2023
+- claim.canterbury.environment.invasive_predator_expansion_2023
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.housing.modular_construction
+name: Modular and Prefab Construction
+theme: housing
+core_claim: Speed up housing construction through off-site manufacturing.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.housing.rural_housing
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

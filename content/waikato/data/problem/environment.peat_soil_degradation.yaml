@@ -1,0 +1,28 @@
+id: problem.waikato.environment.peat_soil_degradation
+title: Peat soil subsidence and drainage
+theme: environment
+section: environment
+subpage: peat_soil_degradation
+parent: problem.waikato.environment.waikato_river_degradation
+order: 4
+updated: '2026-04-26'
+summary: Drainage of peatlands for agriculture releases stored carbon and causes subsidence.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - environmental_quality_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing peat soil degradation creates feedback on regional outcomes.
+narrative:
+- heading: Peat soil subsidence and drainage
+  body: Drainage of peatlands for agriculture releases stored carbon and causes subsidence.
+claim_ids:
+- claim.waikato.environment.peat_subsidence_rate
+status: draft
+time_horizons: [generation, century]

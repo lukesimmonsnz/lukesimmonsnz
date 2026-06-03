@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.climate.climate_justice_framework
+name: Climate Justice and Equitable Transition
+theme: climate-adaptation
+core_claim: Equitable burden and benefit sharing in adaptation.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.climate.climate_risk
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

@@ -1,0 +1,13 @@
+id: driver.wellington.housing.low_rental_vacancy
+name: Structural rental vacancy tightness
+description: Wellington's rental market consistently operates with vacancy rates below 2%, driven by strong government-sector
+  employment demand and supply constraints. Low vacancy removes competitive pressure on rents.
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.housing.rental_market
+claim_ids:
+- claim.wellington.housing.vacancy_rate_low

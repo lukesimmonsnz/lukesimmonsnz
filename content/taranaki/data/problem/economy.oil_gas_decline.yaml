@@ -1,0 +1,29 @@
+id: problem.taranaki.economy.oil_gas_decline
+title: Oil and gas sector contraction
+theme: economy
+section: economy
+subpage: oil_gas_decline
+parent: problem.taranaki.economy.energy_transition
+order: 2
+updated: '2026-04-26'
+summary: Oil and gas employment has declined 40% since 2010. Remaining fields have
+  limited reserves. Sector faces structural decline.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - oil_gas_decline_index
+  inputs:
+  - oil_gas_decline_input_1
+  constraints:
+  - oil_gas_decline_constraint
+  feedback_loops:
+  - 'Feedback: oil_gas_decline'
+narrative:
+- heading: Oil and gas sector contraction in Taranaki
+  body: Oil and gas employment has declined 40% since 2010. Remaining fields have
+    limited reserves. Sector faces structural decline.
+claim_ids:
+- claim.taranaki.economy.oil_gas_decline_01
+status: draft
+time_horizons: [decade, generation]

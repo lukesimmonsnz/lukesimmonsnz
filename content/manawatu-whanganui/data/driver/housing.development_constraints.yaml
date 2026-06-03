@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.housing.development_constraints
+name: Development Approval Process Constraints
+description: Development approval process constraints with regional implications.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.palmerston_north_growth
+claim_ids: []

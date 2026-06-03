@@ -1,0 +1,12 @@
+id: driver.southland.infrastructure.rural_digital_gap
+name: Rural Broadband Gap and Cost Barriers
+description: Low density, topography limit fibre economics; rural Southland lacks
+  reliable broadband.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.infrastructure.digital_rural
+claim_ids: []

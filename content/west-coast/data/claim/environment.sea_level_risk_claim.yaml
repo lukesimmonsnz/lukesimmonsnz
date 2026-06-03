@@ -1,0 +1,23 @@
+id: claim.west_coast.environment.sea_level_risk_claim
+statement: Sea level on New Zealand's West Coast has risen approximately 1.6 mm per
+  year over the past century, with projections of 0.5-1.0 m by 2100. West Coast settlements
+  at sea level (Westport, Greymouth, Hokitika) face inundation and saltwater intrusion
+  into freshwater aquifers. Combined with Alpine Fault risk and high rainfall flooding,
+  coastal communities face compounded climate and seismic hazards.
+value: 1.6
+unit: mm/year historical rise
+time_period: 1920-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.doc_westland_glacier_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.sea_level_projection_v1
+notes: Historical sea level rise from long-term tide gauge records; future projections
+  from IPCC-aligned climate models and NIWA assessments.

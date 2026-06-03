@@ -1,0 +1,42 @@
+id: problem.tasman.environment.sea_level_risk
+title: Sea-level rise exposure of Richmond and Motueka
+theme: environment
+section: environment
+subpage: sea_level_risk
+parent: coastal_environment
+order: 2
+updated: '2026-04-26'
+summary: Sea-level rise projections for Tasman through to 2100 span 0.5-1.2 metres across IPCC RCP4.5-RCP8.5 scenarios.
+  The Richmond and Motueka central business districts both sit within one kilometre of the coast; Tasman District
+  Council has begun coastal hazard mapping and early discussion of managed-retreat zones for the Waimea Inlet wetland
+  margin.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - metres_sea_level_rise_projected
+  - exposed_property_value_njd
+  inputs:
+  - coastal_hazard_mapping_coverage
+  - managed_retreat_planning_engagement
+  constraints:
+  - ipcc_projection_uncertainty
+  - property_rights_legal_settings
+  feedback_loops:
+  - Continued investment in exposed locations raises the sunk cost that managed retreat must displace, which raises
+    the political cost of retreat decisions.
+narrative:
+- heading: Two CBDs in the exposure zone
+  body: Richmond and Motueka are not just rural settlements — they are the regional service centres. Their CBDs
+    and the road, water, and wastewater networks underneath them are within the projected sea-level-rise envelope
+    on a generation-to-century horizon (claim.tasman.environment.sea_level_risk_claim).
+- heading: Managed retreat as an early-conversation problem
+  body: Managed-retreat planning at Waimea Inlet is at the early-conversation stage. The decisions being framed
+    now — what to defend, what to relocate, what to allow to transition to wetland — are difficult precisely because
+    the timing is uncertain, the costs are large, and the property-rights questions are unsettled.
+claim_ids:
+- claim.tasman.environment.sea_level_risk_claim
+status: draft
+time_horizons:
+- generation
+- century

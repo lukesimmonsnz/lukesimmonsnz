@@ -1,0 +1,13 @@
+id: driver.wellington.governance.rm_reform_co_governance_uncertainty
+name: Resource management reform and co-governance uncertainty
+description: Ongoing resource management reform and changing government policy on Treaty co-governance provisions create uncertainty
+  for iwi-council partnership arrangements, slowing the implementation of agreed frameworks.
+theme: governance
+consensus: contested
+category: institutional
+timescale: short
+scope: national
+problem_ids:
+- problem.wellington.governance.treaty_co_governance
+claim_ids:
+- claim.wellington.governance.te_atiawa_partnership_arrangements

@@ -1,0 +1,21 @@
+id: camp.otago.infrastructure.water_resilience
+name: Water Supply and Resilience for Queenstown
+theme: infrastructure
+core_claim: Diversifying water sources and managing demand reduces Wakatipu basin
+  scarcity.
+flagship_moves:
+- Develop alternative water sources (groundwater, recycled)
+- Enforce water efficiency standards in new buildings
+- Relocate irrigation away from peak summer demand
+tensions:
+- Recycled and alternative water sources costly
+- Water user resistance to conservation measures
+addresses:
+- problem.otago.infrastructure.wakatipu_water
+interventions:
+- description: Invest in water recycling and reclamation plants
+  state_variable: water_supply_reliability
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,39 @@
+id: problem.wellington.infrastructure.digital_connectivity
+title: Digital inclusion gaps in Wellington region
+theme: infrastructure
+section: infrastructure
+subpage: digital-connectivity
+parent: problem.wellington.infrastructure.water_resilience
+order: 4
+updated: '2026-04-26'
+summary: While Wellington City has strong broadband infrastructure, digital inclusion gaps persist across the wider region
+  — particularly in rural Wairarapa, Kāpiti hinterland, and lower-income urban households. Device access and digital literacy
+  barriers compound connectivity shortfalls for high-deprivation communities.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - broadband_coverage_pct
+  - digital_inclusion_rate
+  inputs:
+  - fibre_rollout_investment
+  - device_access_programme_funding
+  constraints:
+  - rural_deployment_cost
+  - affordability_of_plans
+  feedback_loops:
+  - 'Affordability trap: high plan costs relative to income exclude low-income households from connectivity benefits even
+    where infrastructure exists.'
+narrative:
+- heading: Urban-rural connectivity gap
+  body: While Wellington City's fibre coverage exceeds 90%, rural Wairarapa and Kāpiti hinterland areas remain on slower fixed-wireless
+    or copper connections that do not meet the broadband performance benchmarks required for reliable remote work and digital
+    services (claim.wellington.infrastructure.rural_broadband_coverage).
+- heading: Deprivation and digital inclusion
+  body: In high-deprivation areas of Porirua and Hutt Valley, affordability of broadband plans and device access are primary
+    barriers to digital inclusion, compounding the economic disadvantage of already vulnerable households (claim.wellington.infrastructure.digital_inclusion_gap).
+claim_ids:
+- claim.wellington.infrastructure.rural_broadband_coverage
+- claim.wellington.infrastructure.digital_inclusion_gap
+status: draft
+time_horizons: [decade, generation]

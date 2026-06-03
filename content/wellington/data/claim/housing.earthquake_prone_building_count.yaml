@@ -1,0 +1,19 @@
+id: claim.wellington.housing.earthquake_prone_building_count
+statement: Wellington City Council has identified over 3,500 buildings with earthquake-prone
+  ratings under the Building (Earthquake-prone Buildings) Amendment Act 2016, representing
+  one of the highest concentrations of earthquake-prone stock in any New Zealand city.
+value: 3500
+unit: buildings
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_seismic_policy_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: null

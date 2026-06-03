@@ -1,0 +1,13 @@
+id: source.stats_nz_census_2023
+title: Stats NZ Census 2023
+author: Stats NZ / Tatauranga Aotearoa
+publisher: Statistics New Zealand
+year: 2023
+url: https://www.stats.nz/tools/census
+type: government-report
+credibility: official
+geo_granularity:
+- tasman
+- nz
+notes: Primary source for demographics, income, housing, employment at territorial
+  authority level.

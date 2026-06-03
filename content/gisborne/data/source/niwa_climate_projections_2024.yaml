@@ -1,0 +1,15 @@
+id: source.niwa_climate_projections_2024
+title: Climate Change Projections for New Zealand — Atmospheric Projections Based on Simulations Undertaken for the IPCC 6th
+  Assessment
+author: NIWA Taihoro Nukurangi
+publisher: NIWA / Ministry for the Environment
+year: 2024
+url: https://environment.govt.nz/publications/climate-change-projections-for-new-zealand-atmospheric-projections-based-on-simulations-from-the-ipcc-sixth-assessment-2nd-edition/
+type: academic
+credibility: peer-reviewed
+geo_granularity:
+- bay-of-plenty
+- gisborne
+- nz
+notes: 'Second edition NIWA-MfE downscaled climate projections (CMIP6, IPCC AR6 SSP scenarios): regional temperature, rainfall,
+  extreme rainfall, and drought changes. Replaces homepage URL.'

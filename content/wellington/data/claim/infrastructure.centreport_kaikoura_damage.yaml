@@ -1,0 +1,21 @@
+id: claim.wellington.infrastructure.centreport_kaikoura_damage
+statement: The November 2016 Kaikōura earthquake (Mw 7.8) caused significant liquefaction
+  damage to CentrePort Wellington on reclaimed harbour land, resulting in estimated
+  losses exceeding NZD 280 million and demonstrating the acute seismic vulnerability
+  of Wellington's port infrastructure.
+value: 280
+unit: NZD million (estimated losses)
+time_period: 2016-2018
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gns_wellington_fault_2022
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: Loss estimate from CentrePort annual reports and insurance assessments post-Kaikōura.

@@ -1,0 +1,34 @@
+id: pattern.health.maori_health_outcome_gap
+title: Māori health outcome gap across all regions
+theme: health
+summary: Māori experience significantly worse health outcomes than non-Māori across
+  all regions and all major disease categories, driven by social determinants, access
+  barriers, and institutional racism in health services.
+manifests_in:
+- northland
+- auckland
+- waikato
+- bay-of-plenty
+- gisborne
+- hawkes-bay
+- wellington
+- manawatu-whanganui
+claim_ids:
+- claim.waikato.health.maori_life_expectancy_gap_7yr
+- claim.northland.health.health_workforce_claim1
+- claim.hawkes_bay.health.type2_diabetes_8_percent
+- claim.manawatu_whanganui.health.chronic_disease_1
+- claim.auckland.health.auckland_ed_wait_times
+narrative:
+- heading: Life expectancy gap
+  body: Māori life expectancy is 7+ years below non-Māori nationally, with the gap
+    present in every region. Cardiovascular disease, diabetes, and mental health account
+    for the majority of excess mortality and morbidity. The gap has persisted despite
+    decades of targeted health programmes.
+- heading: Access and institutional barriers
+  body: Access barriers — geographic, financial, cultural — interact with institutional
+    racism in mainstream health services to reduce Māori health-seeking behaviour
+    and service quality. Kaupapa Māori providers consistently outperform mainstream
+    services on Māori health outcomes in evaluation studies.
+status: draft
+updated: '2026-04-26'

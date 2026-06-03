@@ -1,0 +1,21 @@
+id: camp.wellington.education.attendance_support
+name: Chronic Absenteeism Intervention
+theme: education
+core_claim: Targeted attendance support for chronically absent students through social workers and family liaison reduces
+  disengagement cascades.
+flagship_moves:
+- School attendance officers for all decile 1–3 schools in Wellington
+- Family-school liaison workers funded in highest-absence schools
+- Trauma-informed restorative practice to replace punitive suspension responses
+tensions:
+- Attendance pressure without addressing underlying causes (housing instability, family harm) is ineffective
+- Punitive suspension removal requires adequate alternative provision for disrupted classrooms
+addresses:
+- problem.wellington.education.secondary_transition
+interventions:
+- description: Deploy attendance support officers in 20 highest-absence Wellington schools with family liaison mandate
+  state_variable: chronic_absenteeism_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

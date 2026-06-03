@@ -1,0 +1,29 @@
+id: problem.taranaki.governance.energy_transition_planning
+title: Just transition planning and governance
+theme: governance
+section: governance
+subpage: energy_transition_planning
+parent: problem.taranaki.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: No integrated regional just transition strategy exists. Central govt coordination
+  is lacking.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - energy_transition_planning_index
+  inputs:
+  - energy_transition_planning_input_1
+  constraints:
+  - energy_transition_planning_constraint
+  feedback_loops:
+  - 'Feedback: energy_transition_planning'
+narrative:
+- heading: Just transition planning and governance in Taranaki
+  body: No integrated regional just transition strategy exists. Central govt coordination
+    is lacking.
+claim_ids:
+- claim.taranaki.governance.energy_transition_planning_01
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,14 @@
+id: driver.wellington.inequality.transport_employment_access
+name: Limited transport access to high-wage employment
+description: Residents of high-deprivation areas in Porirua and outer Hutt Valley have limited access to Wellington's CBD
+  high-wage employment due to long commute times and transport costs, sustaining the geography of disadvantage.
+theme: inequality
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.inequality.geographic_deprivation
+- problem.wellington.inequality.economic_disadvantage
+claim_ids:
+- claim.wellington.inequality.deprivation_geographic_concentration

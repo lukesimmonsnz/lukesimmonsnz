@@ -1,0 +1,29 @@
+id: problem.taranaki.environment.dairy_runoff
+title: Dairy farm nutrient and bacterial runoff
+theme: environment
+section: environment
+subpage: dairy_runoff
+parent: problem.taranaki.environment.freshwater_degradation
+order: 2
+updated: '2026-04-26'
+summary: Intensive dairy farming generates significant nutrient loading and bacterial
+  contamination.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - dairy_runoff_index
+  inputs:
+  - dairy_runoff_input_1
+  constraints:
+  - dairy_runoff_constraint
+  feedback_loops:
+  - 'Feedback: dairy_runoff'
+narrative:
+- heading: Dairy farm nutrient and bacterial runoff in Taranaki
+  body: Intensive dairy farming generates significant nutrient loading and bacterial
+    contamination.
+claim_ids:
+- claim.taranaki.environment.dairy_runoff_01
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,21 @@
+id: camp.southland.health.chronic_disease
+name: Chronic Disease Prevention and Management
+theme: health
+core_claim: Health promotion, obesity reduction, and diabetes management improve population
+  health.
+flagship_moves:
+- Community health promotion program
+- Free diabetes screening and management
+- Active lifestyle and food programs
+tensions:
+- Behavioral change limitations
+- Industry opposition (food/beverage)
+addresses:
+- problem.southland.health.chronic_disease
+interventions:
+- description: Reduce obesity rate by 5% over 5 years
+  state_variable: obesity_rate
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

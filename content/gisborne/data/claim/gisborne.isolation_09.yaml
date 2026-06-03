@@ -1,0 +1,19 @@
+id: claim.gisborne.transport.isolation_09
+statement: SH35 East Cape loop is ~330 km from Gisborne to Opotiki with largely unsealed
+  sections. Remotest communities (Te Araroa, Tikitiki, Ruatoria) are 2–4 hours from
+  Gisborne city with no alternative road network.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.travel_time_index_v1
+notes: null

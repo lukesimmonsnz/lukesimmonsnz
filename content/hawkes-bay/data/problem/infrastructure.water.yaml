@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.infrastructure.water
+title: Water supply and demand management
+theme: infrastructure
+section: infrastructure
+subpage: water
+parent: problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+order: 2
+updated: '2026-04-26'
+summary: "Hawke's Bay aquifers are being over-extracted, particularly for irrigation. Groundwater levels are declining; droughts stress supply. Treatment and distribution infrastructure is aging. Rural and urban supply security is at risk."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - aquifer_water_level_metres
+    - water_demand_l_per_capita_per_day
+  inputs:
+    - irrigation_expansion_trend
+    - drought_frequency_increase
+  constraints:
+    - aquifer_recharge_rate
+    - treatment_capacity_ceiling
+  feedback_loops:
+    - 'Over-extraction lowers water table; marginal bores fail; users deepen wells; recharge lags extraction; aquifer eventually fails.'
+narrative:
+  - heading: Aquifer Stress
+    body: 'Napier and Hastings aquifers serve approximately 150k people and 40k hectares of irrigation. Extraction has outpaced recharge since 2010.'
+  - heading: Drought Exposure
+    body: "Hawke's Bay experienced severe drought in 2022 and 2023. Restrictions were imposed on non-essential urban water use."
+claim_ids:
+  - claim.hawkes_bay.infrastructure.aquifer_stress_indices
+status: draft
+time_horizons: [decade, generation]

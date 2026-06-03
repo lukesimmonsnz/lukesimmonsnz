@@ -1,7 +1,7 @@
 # Luke Simmons — personal site
 
 <!-- auto:meta:begin -->
-**Updated:** 2026-05-30
+**Updated:** 2026-06-03
 **Blog posts:** 17 · **Auckland entities:** 69 · **Auckland generated pages:** 61
 <!-- auto:meta:end -->
 

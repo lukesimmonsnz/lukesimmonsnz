@@ -1,0 +1,19 @@
+id: claim.wellington.inequality.working_poverty_prevalence
+statement: A growing share of Wellington workers in full-time employment cannot afford
+  market-rate housing without spending more than 40% of income on rent, qualifying
+  as severely housing-cost-burdened even while in paid work.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_income_housing_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

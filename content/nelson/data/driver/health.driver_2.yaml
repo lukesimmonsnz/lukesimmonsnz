@@ -1,0 +1,13 @@
+id: driver.nelson.health.driver_2
+name: Demographic ageing and concentrated deprivation
+description: Nelson's age structure skews older than the national average, raising chronic-disease prevalence and demand on primary and secondary care. Concentrated deprivation in particular suburbs compounds the age effect through accumulated lifestyle exposures.
+theme: health
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.health.health_outcomes
+- problem.nelson.health.chronic_disease
+- problem.nelson.health.workforce
+claim_ids: []

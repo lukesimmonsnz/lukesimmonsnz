@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.crime.youth_offending_growth
+name: Driver for youth_offending
+description: "This driver exacerbates the youth_offending pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: crime
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.crime.youth_offending
+claim_ids:
+- claim.bay_of_plenty.crime.youth_offending_45

@@ -1,0 +1,40 @@
+id: problem.wellington.climate.sea_level_rise
+title: Sea-level rise risk in low-lying Wellington areas
+theme: climate-adaptation
+section: climate
+subpage: sea-level-rise
+parent: problem.wellington.climate.compound_hazard_risk
+order: 2
+updated: '2026-04-26'
+summary: Sea-level rise threatens significant areas of low-lying Wellington, including Petone Foreshore, Rongotai, parts of
+  Porirua Harbour, and the Hutt River mouth. These areas include key transport infrastructure, residential neighbourhoods,
+  and industrial land on reclaimed harbour margins.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - sea_level_cm_above_1990
+  - at_risk_property_count
+  inputs:
+  - global_temperature_pathway
+  - managed_retreat_investment
+  constraints:
+  - existing_development_on_reclaimed_land
+  - managed_retreat_feasibility
+  feedback_loops:
+  - 'Adaptation investment deferral: long time horizons for sea-level rise allow near-term political cycles to defer investment;
+    each cycle of deferral increases eventual adaptation cost.'
+narrative:
+- heading: Petone and Rongotai exposure
+  body: Wellington's Petone Foreshore is among the most exposed low-lying coastal areas in the region, with modelled flood
+    risk increasing substantially by 2100 even under moderate sea-level rise scenarios. Rongotai, where Wellington Airport
+    is located, faces similar low-lying exposure (claim.wellington.climate.sea_level_projection_petone).
+- heading: Exposure of low-lying areas
+  body: Thousands of properties and key transport routes — including the Hutt Road and the rail line along the harbour shore
+    — sit in areas projected to experience increased flood and storm surge frequency within the current planning horizon for
+    infrastructure (claim.wellington.climate.low_lying_area_exposure).
+claim_ids:
+- claim.wellington.climate.sea_level_projection_petone
+- claim.wellington.climate.low_lying_area_exposure
+status: draft
+time_horizons: [generation, century]

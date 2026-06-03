@@ -1,0 +1,22 @@
+id: claim.northland.environment.freshwater_quality_claim1
+statement: 'Kaipara Harbour (largest by area, Southern Hemisphere) severely degraded
+  by catchment erosion: hill-country runoff, pastoral nutrient loading, legacy wetland
+  drainage. Northern Wairoa River drains into Kaipara; sedimentation elevated above
+  pre-1970 baseline. Kaipara Harbour management framework shared between NRC, Ngāti
+  Whatua o Ōrakei, Ngāti Manuhiri; restoration initiatives (riparian planting, riparian
+  shade) ongoing but underfunded relative to catchment-scale challenge.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

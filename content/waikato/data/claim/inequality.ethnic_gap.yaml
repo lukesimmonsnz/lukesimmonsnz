@@ -1,0 +1,20 @@
+id: claim.waikato.inequality.maori_income_gap_30pct
+statement: Median household income in Waikato's high-deprivation communities is approximately
+  30% below the regional average, reflecting occupational concentration in lower-wage
+  manufacturing, agricultural, and service roles, compounded by limited intergenerational
+  wealth transfer.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato ethnic_gap claim

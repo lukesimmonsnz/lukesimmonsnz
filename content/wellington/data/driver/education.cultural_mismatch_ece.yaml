@@ -1,0 +1,15 @@
+id: driver.wellington.education.cultural_mismatch_ece
+name: Cultural mismatch in ECE provision for Māori and Pacific families
+description: ECE services in Porirua and Hutt Valley frequently lack the community responsiveness — in
+  language, cultural practice, operating hours, and geographic accessibility — required to serve high-deprivation
+  families effectively. The resulting participation gap is largest among families who would most benefit
+  from quality early childhood education, compounding existing socioeconomic disadvantage.
+theme: education
+consensus: mostly-agreed
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.education.early_childhood
+claim_ids:
+- claim.wellington.education.ece_quality_distribution

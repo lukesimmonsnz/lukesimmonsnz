@@ -1,0 +1,22 @@
+id: claim.northland.climate.coastal_flooding_claim2
+statement: 'Sea-level rise projections (NIWA RCP4.5 +0.5m, RCP8.5 +1.0m+ by 2100)
+  most impact low-lying coastal areas: Hokianga Harbour margins (Rawene, Opononi),
+  Kaipara lowlands, Bream Bay. Storm surge height will increase; high-tide flooding
+  (king tide inundation) currently 0.2 m above current high-water mark will become
+  permanent baseline by 2070–2100. Infrastructure at risk: SH1 at Kaipara Bridge (sea-level
+  rise + storm surge vulnerability); rural evacuation routes vulnerable.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

@@ -1,0 +1,42 @@
+id: problem.west_coast.infrastructure.infrastructure_3
+title: Digital infrastructure gaps in rural West Coast
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_3
+parent: infrastructure
+order: 3
+updated: '2026-04-26'
+summary: Rural and remote West Coast areas have download speeds well below 50 Mbps, and several inland river valleys lack
+  broadband entirely. Mobile-coverage blackspots are common in Haast, Karamea and the inland approaches, constraining distance
+  learning, telework and telehealth substitution.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - broadband_below_50mbps_share
+  - mobile_coverage_blackspot_count
+  - telehealth_eligibility_rate
+  inputs:
+  - rural_broadband_initiative_capex
+  - rural_connectivity_group_funding
+  constraints:
+  - dispersed_settlement_geometry
+  - alpine_line_of_sight_difficulty
+  feedback_loops:
+  - Areas without broadband cannot participate in the digital-substitution strategies that would compensate for thin in-person
+    services; the resulting digital divide reinforces the geographic divide that originally motivated the substitution.
+narrative:
+- heading: Rural broadband is uneven
+  body: Rural Broadband Initiative extensions have improved urban and peri-urban speeds, but inland valleys and the southern
+    Westland coast still report speeds below the threshold needed for reliable video telehealth or distance-learning class
+    participation (claim.west_coast.infrastructure.infrastructure_3_claim).
+- heading: Digital substitution depends on the network
+  body: Many of the strategies offered as compensation for thin in-person services — telehealth for specialist consultations,
+    distance learning to substitute for absent secondary subjects, remote-services employment as economic diversification
+    — all rely on a digital network that is still patchy where the need is greatest.
+claim_ids:
+- claim.west_coast.infrastructure.infrastructure_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

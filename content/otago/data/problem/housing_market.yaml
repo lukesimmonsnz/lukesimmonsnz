@@ -1,0 +1,38 @@
+id: problem.otago.housing.housing_market
+title: Housing Affordability Crisis in Otago
+theme: housing
+section: housing
+subpage: housing_market
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Otago faces a bifurcated housing crisis: Queenstown has among NZ''s highest
+  property prices and worker housing stress; Dunedin has university-driven student
+  rental pressure and stagnant owner-occupation rates. Both create workforce retention
+  challenges.'
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: 'Otago faces a bifurcated housing crisis: Queenstown has among NZ''s highest
+    property prices and worker housing stress; Dunedin has university-driven student
+    rental pressure and stagnant owner-occupation rates. Both create workforce retention
+    challenges.'
+claim_ids:
+- claim.otago.housing.dunedin_student_rental_prevalence
+- claim.otago.housing.housing_market_prevalence
+- claim.otago.housing.worker_housing_trend
+- claim.otago.housing.queenstown_affordability_prevalence
+- claim.otago.housing.queenstown_affordability_trend
+- claim.otago.housing.worker_housing_prevalence
+- claim.otago.housing.housing_market_trend
+- claim.otago.housing.dunedin_student_rental_trend
+status: draft
+time_horizons: [decade, generation, century]

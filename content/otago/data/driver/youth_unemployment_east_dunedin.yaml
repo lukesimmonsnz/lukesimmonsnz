@@ -1,0 +1,11 @@
+id: driver.otago.inequality.youth_unemployment_east_dunedin
+name: Youth Unemployment and Inactivity
+description: East Dunedin deprivation drives youth disengagement from labour market.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.inequality.dunedin_deprivation
+claim_ids: []

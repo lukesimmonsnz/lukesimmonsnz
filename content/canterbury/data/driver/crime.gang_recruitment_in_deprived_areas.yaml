@@ -1,0 +1,12 @@
+id: driver.canterbury.crime.gang_recruitment_in_deprived_areas
+name: Gang Recruitment in High-Deprivation Areas
+description: Gang Recruitment in High-Deprivation Areas
+theme: crime
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.canterbury.crime.youth_offending
+- problem.canterbury.crime.organised_crime
+claim_ids: []

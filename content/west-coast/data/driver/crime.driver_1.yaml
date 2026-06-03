@@ -1,0 +1,14 @@
+id: driver.west_coast.crime.driver_1
+name: Post-mining income shock and household stress
+description: The Solid Energy collapse and Stockton wind-down removed a layer of well-paid male employment from Buller in
+  particular, and the resulting income shock has tracked into elevated alcohol use, family violence reporting and methamphetamine
+  offending. Crime patterns on the West Coast cannot be read without this transition context.
+theme: crime
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.crime.safety
+- problem.west_coast.crime.family_violence
+claim_ids: []

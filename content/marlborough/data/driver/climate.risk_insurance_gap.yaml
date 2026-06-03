@@ -1,0 +1,12 @@
+id: driver.marlborough.climate.risk_insurance_gap
+name: Climate Risk Insurance Market Failure
+description: Climate risk insurance market failure.
+theme: climate-adaptation
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.climate.sea_level_sounds
+claim_ids: []

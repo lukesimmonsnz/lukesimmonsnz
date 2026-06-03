@@ -1,0 +1,21 @@
+id: claim.gisborne.housing.rural_housing_08
+statement: Housing pressures in Gisborne include affordability constraints and quality
+  issues. Rental market tightness, investor concentration, and inadequate supply force
+  households into unaffordable situations; essential workers face displacement or
+  commuting burden.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.amenable_mortality_rate_v1
+notes: null

@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.health.mental_health
+title: Mental Health Crisis and Access to Services
+theme: health
+section: health
+subpage: mental_health
+parent: problem.manawatu_whanganui.health.health_outcomes
+order: 1
+updated: '2026-04-26'
+summary: Elevated suicide rates; depression and anxiety prevalence; primary care mental
+  health gaps.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Elevated suicide rates; depression and anxiety prevalence; primary care mental
+    health gaps.
+claim_ids:
+- claim.manawatu_whanganui.health.mental_health_1
+- claim.manawatu_whanganui.health.mental_health_2
+status: draft
+time_horizons: [decade, generation]

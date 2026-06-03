@@ -1,0 +1,12 @@
+id: driver.marlborough.climate.intensifying_drought
+name: Intensifying Drought Frequency And Severity
+description: Intensifying drought frequency and severity with regional implications.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: global
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.climate.drought_wine_industry
+claim_ids: []

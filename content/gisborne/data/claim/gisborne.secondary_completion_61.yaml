@@ -1,0 +1,19 @@
+id: claim.gisborne.education.secondary_completion_61
+statement: Gisborne consistently records NCEA Level 2 attainment below national average.
+  Gap between Māori and non-Māori student achievement is larger in Gisborne than most
+  regions.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

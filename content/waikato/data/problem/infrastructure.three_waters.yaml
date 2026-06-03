@@ -1,0 +1,30 @@
+id: problem.waikato.infrastructure.three_waters
+title: Three waters renewal and investment
+theme: infrastructure
+section: infrastructure
+subpage: three_waters
+parent: problem.waikato.infrastructure.waikato_infrastructure
+order: 2
+updated: '2026-04-26'
+summary: Ageing water, wastewater, and stormwater infrastructure requires significant
+  investment across Hamilton and smaller TAs.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - infrastructure_condition_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing three waters creates feedback on regional outcomes.
+narrative:
+- heading: Three waters renewal and investment
+  body: Ageing water, wastewater, and stormwater infrastructure requires significant
+    investment across Hamilton and smaller TAs.
+claim_ids:
+- claim.waikato.infrastructure.three_waters_backlog
+status: draft
+time_horizons: [decade, generation]

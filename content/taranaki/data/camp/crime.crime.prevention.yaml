@@ -1,0 +1,22 @@
+id: camp.taranaki.crime.crime.prevention
+name: Crime prevention and intervention
+theme: crime
+core_claim: Crime prevention and intervention addresses safety.
+flagship_moves:
+- Implement Crime prevention and intervention
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.crime.safety
+- problem.taranaki.crime.drug_crime
+- problem.taranaki.crime.family_violence
+- problem.taranaki.crime.youth_offending
+interventions:
+- description: Crime prevention and intervention action
+  state_variable: crime.prevention_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

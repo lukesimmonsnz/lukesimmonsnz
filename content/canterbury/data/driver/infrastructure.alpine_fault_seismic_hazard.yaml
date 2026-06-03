@@ -1,0 +1,12 @@
+id: driver.canterbury.infrastructure.alpine_fault_seismic_hazard
+name: Alpine Fault Seismic Hazard
+description: Alpine Fault Seismic Hazard
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.infrastructure.lyttelton_port
+claim_ids:
+- claim.canterbury.infrastructure.alpine_fault_port_risk_2024

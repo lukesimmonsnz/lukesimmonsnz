@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.housing.cyclone_damaged_stock
+title: Cyclone-damaged housing stock
+theme: housing
+section: housing
+subpage: cyclone-damaged-stock
+parent: problem.hawkes_bay.housing.affordability
+order: 2
+updated: '2026-04-26'
+summary: 'Cyclone Gabrielle (Feb 2023) caused widespread structural damage and loss of homes. Repair and rebuild processes are slow and costly, with many households displaced. Insurance gaps and cost barriers delay recovery.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - damaged_dwellings_count
+    - repair_completion_rate
+  inputs:
+    - insurance_coverage_gaps
+    - builder_capacity_constraint
+  constraints:
+    - material_supply_delays
+    - skilled_labour_shortage
+  feedback_loops:
+    - 'Prolonged displacement reduces spending in local economy; business closures lower wages; capacity to fund repairs diminishes.'
+narrative:
+  - heading: Scale of Damage
+    body: "Approximately 3,600 homes in Hawke's Bay sustained major damage or destruction from Cyclone Gabrielle. Many remain uninhabitable as of April 2026, more than 3 years later."
+  - heading: Repair Backlog
+    body: 'Shortage of builders and construction materials has created a multi-year repair backlog. Many owners cannot afford out-of-pocket repair costs despite insurance settlements.'
+claim_ids:
+  - claim.hawkes_bay.housing.damaged_dwellings_3600
+status: draft
+time_horizons: [decade, generation, century]

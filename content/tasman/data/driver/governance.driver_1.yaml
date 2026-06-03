@@ -1,0 +1,14 @@
+id: driver.tasman.governance.driver_1
+name: Unitary-council scope on a small ratepayer base
+description: Tasman District Council carries both regional-council and territorial-authority functions across a
+  55,000-resident district, producing a structural mismatch between regulatory and service-delivery scope and the
+  rates base available to fund it.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.governance.governance
+- problem.tasman.governance.growth_management
+claim_ids: []

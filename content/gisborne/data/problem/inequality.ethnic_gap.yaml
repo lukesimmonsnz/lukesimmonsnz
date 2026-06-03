@@ -1,0 +1,36 @@
+id: problem.gisborne.inequality.ethnic_gap
+title: Ethnic and iwi health and socioeconomic gaps in Gisborne — Te Tairāwhiti
+theme: inequality
+section: inequality
+subpage: ethnic_gap
+parent: problem.gisborne.inequality.deprivation
+order: 19
+updated: '2026-04-26'
+summary: Gisborne — Te Tairāwhiti has persistent and deep socioeconomic disadvantage. The region has among
+  the highest deprivation index scores in New Zealand; median household income in high-deprivation communities
+  is 30-35% below the national median. The primary structural drivers are geographic isolation from major
+  labour markets, a primary-sector economy with limited diversification, and chronically underfunded health
+  and education infrastructure relative to need.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - ethnic_gap_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Ethnic and iwi health and socioeconomic gaps is a key facet of the broader pressure facing the
+    region.
+claim_ids:
+- claim.gisborne.inequality.ethnic_gap_37
+- claim.gisborne.inequality.ethnic_gap_38
+status: draft
+time_horizons: [decade, generation, century]

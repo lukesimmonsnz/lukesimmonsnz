@@ -1,0 +1,40 @@
+id: problem.northland.inequality.northland_inequality
+title: Socioeconomic inequality in Te Tai Tokerau
+theme: inequality
+section: inequality
+subpage: inequality
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Northland exhibits New Zealand's deepest regional socioeconomic disparities, driven by geographic
+  isolation from major economic centres, an economy concentrated in primary industries with limited diversification,
+  and decades of underinvestment in infrastructure, health services, and education relative to need.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - inequality_pressure_index
+  - inequality_system_capacity
+  inputs:
+  - central_government_investment
+  - population_change
+  constraints:
+  - fiscal_capacity
+  - geographic_isolation
+  feedback_loops:
+  - 'Pressure accumulation: deteriorating inequality conditions compound inequality and constrain economic
+    recovery.'
+narrative:
+- heading: Regional context
+  body: Socioeconomic inequality in Te Tai Tokerau is a defining challenge for Te Tai Tokerau, reflecting
+    both structural disadvantage and underinvestment relative to national averages.
+- heading: System dynamics
+  body: Northland exhibits New Zealand's deepest regional socioeconomic disparities, driven by geographic
+    isolation, limited economic diversification, and chronic underinvestment in infrastructure and services.
+    These structural conditions fall disproportionately on communities in the Far North where Māori whānau
+    are heavily concentrated.
+claim_ids:
+- claim.northland.inequality.northland_inequality_claim1
+- claim.northland.inequality.northland_inequality_claim2
+status: draft
+time_horizons: [decade, generation, century]

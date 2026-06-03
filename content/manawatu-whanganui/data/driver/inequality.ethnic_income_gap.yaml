@@ -1,0 +1,16 @@
+id: driver.manawatu_whanganui.inequality.ethnic_income_gap
+name: Ethnic Income And Wealth Gaps
+description: 'Income and wealth gaps in Manawatu-Whanganui reflect occupational concentration in lower-wage
+  manufacturing, agricultural, and service roles, compounded by limited intergenerational asset transfer
+  in communities that did not accumulate property wealth during the post-war growth period. Geographic
+  variation within the region is significant: Palmerston North has a more diversified economy than rural
+  Rangitīkei and Whanganui.'
+theme: inequality
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.inequality.child_poverty
+claim_ids: []

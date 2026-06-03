@@ -1,0 +1,40 @@
+id: problem.wellington.housing.land_supply
+title: Constrained residential land supply in Wellington
+theme: housing
+section: housing
+subpage: land-supply
+parent: problem.wellington.housing.affordability
+order: 4
+updated: '2026-04-26'
+summary: Wellington's usable residential land supply is severely restricted by topography, fault-zone setbacks, and planning
+  rules. The combination produces a developable land premium that persists even after NPS-UD upzoning, and which fundamentally
+  limits the supply response to demand.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - zoned_developable_capacity
+  - land_price_per_sqm
+  inputs:
+  - upzoning_policy_change
+  - infrastructure_investment
+  constraints:
+  - fault_zone_setback_rules
+  - steep_slope_buildability_limit
+  - infrastructure_servicing_capacity
+  feedback_loops:
+  - 'Land scarcity premium: constrained supply raises land prices, increasing development viability thresholds and excluding
+    mid-market projects.'
+narrative:
+- heading: Topographic constraint
+  body: Unlike flat cities, Wellington's developable land is bounded by harbour, hills, and active fault zones. Roughly 60%
+    of Wellington City's land area has slopes exceeding 15 degrees, limiting cost-effective residential construction (claim.wellington.housing.greenfield_constraint_topography).
+- heading: Zoned capacity shortfall
+  body: The NPS-UD upzoning partially addressed planning constraints in Wellington City, but the practical development pipeline
+    remains limited by infrastructure servicing costs and geotechnical complexity. Modelled zoned capacity overstates deliverable
+    supply when infrastructure investment lags (claim.wellington.housing.zoned_capacity_deficit).
+claim_ids:
+- claim.wellington.housing.greenfield_constraint_topography
+- claim.wellington.housing.zoned_capacity_deficit
+status: draft
+time_horizons: [decade, generation, century]

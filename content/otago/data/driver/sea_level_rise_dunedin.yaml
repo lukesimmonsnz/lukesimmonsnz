@@ -1,0 +1,12 @@
+id: driver.otago.climate.sea_level_rise_dunedin
+name: Sea Level Rise and Storm Surge Risk
+description: Dunedin and Port Chalmers face 0.5–1.0m sea level rise by 2100; storm
+  surge and tsunami risk.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.climate.coastal_dunedin
+claim_ids: []

@@ -1,0 +1,23 @@
+id: claim.nelson.governance.capacity_claim
+statement: Nelson City Council faces significant governance capacity constraints.
+  The organisation manages a budget of $220+ million for a population of 55,000 residents
+  but operates with staffing levels 8–12% below functional requirements for planning,
+  resource management, and infrastructure delivery. Senior leadership turnover is
+  high (40% change 2019-2024); vacancy rates in specialist roles (hydrogeologist,
+  infrastructure engineer, transport planner) are chronic. Institutional knowledge
+  loss and project delays are documented impacts.
+value: 10
+unit: percent staffing gap
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

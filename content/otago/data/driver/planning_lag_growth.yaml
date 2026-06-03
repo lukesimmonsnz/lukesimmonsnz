@@ -1,0 +1,11 @@
+id: driver.otago.governance.planning_lag_growth
+name: Planning Response Lag to Rapid Growth
+description: QLDC planning processes slower than Queenstown population growth.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.governance.queenstown_growth_management
+claim_ids: []

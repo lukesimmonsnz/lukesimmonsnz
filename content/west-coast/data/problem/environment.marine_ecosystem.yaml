@@ -1,0 +1,42 @@
+id: problem.west_coast.environment.marine_ecosystem
+title: Tasman Sea fisheries and customary harvest
+theme: environment
+section: environment
+subpage: marine_ecosystem
+parent: coastal_environment
+order: 4
+updated: '2026-04-26'
+summary: West Coast inshore fisheries (Tasman Sea hoki, hāpuku, blue cod, paua and crayfish) are pressured by warming waters
+  and by historical fishing intensity. Marine protected area coverage is limited, and Ngāi Tahu customary harvest sits alongside
+  commercial and recreational use with variable equity outcomes.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - catch_per_unit_effort
+  - marine_protected_area_share
+  - customary_take_records
+  inputs:
+  - mpi_quota_settings
+  - iwi_fisheries_management_capacity
+  constraints:
+  - historical_overfishing_legacy
+  - ocean_warming_trajectory
+  feedback_loops:
+  - Stock declines tighten quota and harvest rules, which load disproportionate cost onto small operators and recreational
+    and customary fishers — building political resistance to the science-driven settings the stocks need to recover.
+narrative:
+- heading: Inshore stocks and warming water
+  body: Inshore demersal stocks, paua and crayfish along the Tasman Sea coast face the combined pressure of historical fishing
+    intensity and ocean warming (claim.west_coast.environment.marine_ecosystem_claim). Catch-per-unit-effort has declined
+    in several traditional grounds, and quota allocations have not always tracked stock condition.
+- heading: Customary, commercial and recreational
+  body: Ngāi Tahu mana moana includes formal customary harvest rights and a commercial role through fisheries settlement.
+    Reconciling customary harvest, commercial quota and recreational fishing in specific bays — Jackson Bay, Karamea, the
+    Hokitika and Grey river-mouths — is an ongoing co-governance question.
+claim_ids:
+- claim.west_coast.environment.marine_ecosystem_claim
+status: draft
+time_horizons:
+- generation
+- century

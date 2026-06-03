@@ -1,0 +1,41 @@
+id: problem.tasman.governance.treaty
+title: Te Tau Ihu iwi co-governance and partnership
+theme: governance
+section: governance
+subpage: treaty
+parent: governance
+order: 3
+updated: '2026-04-26'
+summary: Te Ātiawa o Te Waka-a-Māui, Ngāti Koata, Ngāti Rārua, and Ngāti Tama ki Te Tau Ihu hold mana whenua across
+  Tasman. The 2022 Deed of Partnership for Kahurangi National Park establishes joint decision-making on conservation;
+  Waimea Inlet restoration involves iwi in freshwater and estuarine ecology planning.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - iwi_partnership_instruments_active
+  - joint_decision_pathways_used
+  inputs:
+  - council_iwi_secretariat_capacity
+  - iwi_internal_resourcing
+  constraints:
+  - rma_lga_statutory_settings
+  - scope_of_settlement_agreements
+  feedback_loops:
+  - Successful joint decisions build relationship capital that reduces the friction cost of the next decision; failures
+    do the inverse, often disproportionately.
+narrative:
+- heading: Four iwi, multiple partnership instruments
+  body: Co-governance in Tasman is not a single relationship but a layered set of instruments — Treaty settlements,
+    deeds of partnership, resource-consent advisory structures, and project-specific co-design (claim.tasman.governance.treaty_claim).
+- heading: Operationalisation as the live problem
+  body: The high-level instruments exist; the question is how they translate into day-to-day decisions on water
+    allocation, coastal management, and reserve-land disposal. Operational practice is uneven across portfolios
+    and depends heavily on individual officer relationships.
+claim_ids:
+- claim.tasman.governance.treaty_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

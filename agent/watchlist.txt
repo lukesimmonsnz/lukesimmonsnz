@@ -1,0 +1,30 @@
+# weekly_research watchlist
+# ---------------------------------------------------------------------
+# Each non-blank, non-comment line is one URL to ingest each Sunday.
+#
+# Format (TAB-separated; not spaces):
+#     <region>\t<theme>\t<url>
+#
+# Allowed region slugs:
+#   auckland wellington northland waikato bay-of-plenty gisborne
+#   hawkes-bay taranaki manawatu-whanganui nelson tasman marlborough
+#   west-coast canterbury otago southland
+#
+# Common themes:
+#   transport housing infrastructure environment inequality crime
+#   health education economy governance climate
+#
+# Behaviour:
+#   - The weekly job runs scripts/ingest_external_research.py against
+#     each URL. Output lands in content/<region>/data/_drafts/<timestamp>/
+#     so the live corpus is never touched by the cron.
+#   - You review the drafts, edit if needed, and move them into the
+#     live source/claim directories when you accept them.
+#   - Lines that fail (HTTP error, parser error) are logged and skipped;
+#     the rest of the watchlist still runs.
+#
+# Examples (uncomment and edit):
+#
+# wellington\ttransport\thttps://www.stats.govt.nz/information-releases/labour-market-statistics-december-2024-quarter/
+# auckland\thousing\thttps://www.demographia.com/dhi.pdf
+# canterbury\tenvironment\thttps://www.ecan.govt.nz/data/groundwater-quality-survey/

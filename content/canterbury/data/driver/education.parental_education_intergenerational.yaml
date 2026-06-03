@@ -1,0 +1,12 @@
+id: driver.canterbury.education.parental_education_intergenerational
+name: Parental Education Attainment Intergenerational Correlation
+description: Parental Education Attainment Intergenerational Correlation
+theme: education
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.education.achievement
+- problem.canterbury.education.tertiary_lincoln_uc
+claim_ids: []

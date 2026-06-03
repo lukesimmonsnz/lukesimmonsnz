@@ -1,0 +1,34 @@
+id: problem.otago.crime.queenstown_visitor_crime
+title: Queenstown Visitor-Related Crime
+theme: crime
+section: crime
+subpage: queenstown_visitor_crime
+parent: problem.otago.crime.safety
+order: 4
+updated: '2026-04-26'
+summary: Assaults on hospitality workers, tourist theft, late-night violence concentrated
+  in CBD; enforcement and venue management challenges.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Assaults on hospitality workers, tourist theft, late-night violence concentrated
+    in CBD; enforcement and venue management challenges.
+claim_ids:
+- claim.otago.crime.family_violence_prevalence
+- claim.otago.crime.youth_offending_prevalence
+- claim.otago.crime.family_violence_trend
+- claim.otago.crime.safety_prevalence
+- claim.otago.crime.safety_trend
+- claim.otago.crime.queenstown_visitor_crime_prevalence
+- claim.otago.crime.queenstown_visitor_crime_trend
+- claim.otago.crime.youth_offending_trend
+status: draft
+time_horizons: [decade]

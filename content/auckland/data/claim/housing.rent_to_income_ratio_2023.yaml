@@ -1,27 +1,28 @@
 id: claim.auckland.housing.rent_to_income_ratio_2023
-statement: >
-  Auckland renter households paid approximately 33 percent of median gross
-  household income in rent in 2023, placing the median renter household
-  above the 30 percent affordability threshold and indicating widespread
-  rental cost burden across the income distribution of renters.
+statement: 'Auckland renter households paid approximately 33 percent of median gross
+  household income in rent in 2023, placing the median renter household above the
+  30 percent affordability threshold and indicating widespread rental cost burden
+  across the income distribution of renters.
+
+  '
 value: 33
-unit: "percent of median renter household income"
-time_period: "2023"
+unit: percent of median renter household income
+time_period: '2023'
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.mbie_rental_affordability_2023
-  - source.tenancy_services_bond_data_2023
+- source.mbie_rental_affordability_2023
+- source.tenancy_services_bond_data_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.rent_to_income_v1
-notes: >
-  Figure is an estimate from available MBIE indicators; the exact ratio
-  depends on the income denominator (renter-household income is lower than
-  general median). confidence: medium because renter-specific income data
-  requires combining two datasets. PI should verify against the MBIE
-  affordability indicator publication directly.
+notes: 'Figure is an estimate from available MBIE indicators; the exact ratio depends
+  on the income denominator (renter-household income is lower than general median).
+  confidence: medium because renter-specific income data requires combining two datasets.
+  PI should verify against the MBIE affordability indicator publication directly.
+
+  '

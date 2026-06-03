@@ -1,0 +1,36 @@
+id: problem.southland.housing.housing_market
+title: Housing Market Stagnation and Affordability
+theme: housing
+section: housing
+subpage: housing_market
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Southland's housing market is subdued; Invercargill affordability moderate
+  but population stagnation reduces demand. Rural housing aging. Worker housing shortages
+  emerge.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland's housing market is subdued; Invercargill affordability moderate
+    but population stagnation reduces demand. Rural housing aging. Worker housing
+    shortages emerge.
+claim_ids:
+- claim.southland.housing.housing_market_prevalence
+- claim.southland.housing.invercargill_affordability_trend
+- claim.southland.housing.housing_market_trend
+- claim.southland.housing.rural_housing_trend
+- claim.southland.housing.worker_housing_prevalence
+- claim.southland.housing.rural_housing_prevalence
+- claim.southland.housing.worker_housing_trend
+- claim.southland.housing.invercargill_affordability_prevalence
+status: draft
+time_horizons: [decade, generation, century]

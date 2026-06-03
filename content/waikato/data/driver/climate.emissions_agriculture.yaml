@@ -1,0 +1,15 @@
+id: driver.waikato.climate.emissions_agriculture
+name: Agricultural methane and nitrous oxide
+description: Dairy and sheep farming account for approximately 45% of Waikato's total
+  greenhouse gas emissions.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.climate.waikato_climate
+- problem.waikato.climate.flood_risk
+- problem.waikato.climate.agricultural_emissions
+- problem.waikato.climate.drought_risk
+claim_ids: []

@@ -1,0 +1,24 @@
+id: claim.northland.economy.tourism_dependence_claim2
+statement: 'Bay of Islands-Kerikeri region contributes ~40% of Northland tourism revenue
+  (DOC visitor statistics); seasonal volatility (90% of visitors December-February)
+  creates employment instability for tour operators, hospitality workers, accommodation
+  staff. Cyclone exposure and international travel disruption (COVID-19 precedent)
+  cause rapid revenue collapse. Tourism infrastructure aging: carpark facilities,
+  visitor centers, walking track maintenance underfunded relative to peak-season demand
+  (~500k annual visits Bay of Islands). Maori tourism enterprises (hangi operations,
+  cultural tours) underrepresented; capital constraints limit expansion.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

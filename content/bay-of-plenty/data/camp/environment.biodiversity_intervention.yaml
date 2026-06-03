@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.environment.biodiversity_intervention
+name: Intervention for biodiversity
+theme: environment
+core_claim: Targeted intervention on biodiversity will improve outcomes.
+flagship_moves:
+- Policy measure 1 for biodiversity
+- Policy measure 2 for biodiversity
+- Implementation mechanism for biodiversity
+tensions:
+- Trade-off A for biodiversity
+- Trade-off B for biodiversity
+addresses:
+- problem.bay_of_plenty.environment.biodiversity
+interventions:
+- description: Core intervention targeting biodiversity
+  state_variable: biodiversity_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

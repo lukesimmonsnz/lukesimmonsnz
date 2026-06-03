@@ -79,3 +79,4 @@ claim_ids:
   - claim.auckland.infrastructure.renewal_backlog
   - claim.auckland.infrastructure.local_govt_funding_constraint
 status: draft
+time_horizons: [decade, generation]

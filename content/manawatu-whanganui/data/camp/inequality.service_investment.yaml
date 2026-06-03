@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.inequality.service_investment
+name: Universal service investment
+theme: inequality
+core_claim: Healthcare, education, and digital access in underserved areas.
+flagship_moves:
+- Flagship move 1 for Universal service investment
+- Flagship move 2 for Universal service investment
+tensions:
+- Internal tension 1 of Universal service investment
+addresses:
+- problem.manawatu_whanganui.inequality.whanganui_poverty
+interventions:
+- description: 'Intervention 1: Universal service investment detail 1'
+- description: 'Intervention 2: Universal service investment detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

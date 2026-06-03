@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.health.chronic_disease
+title: Chronic Disease Burden and Prevention
+theme: health
+section: health
+subpage: chronic_disease
+parent: problem.manawatu_whanganui.health.health_outcomes
+order: 1
+updated: '2026-04-26'
+summary: High diabetes, cardiovascular, and respiratory disease prevalence; preventable
+  disease burden.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: High diabetes, cardiovascular, and respiratory disease prevalence; preventable
+    disease burden.
+claim_ids:
+- claim.manawatu_whanganui.health.chronic_disease_1
+- claim.manawatu_whanganui.health.chronic_disease_2
+status: draft
+time_horizons: [decade, generation]

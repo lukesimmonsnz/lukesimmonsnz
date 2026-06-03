@@ -1,0 +1,11 @@
+id: source.health_nz_mbl_2023
+title: 'Health NZ: Marlborough Population Health Profile 2023'
+author: null
+publisher: Health NZ
+year: 2023
+url: https://www.health.govt.nz
+type: primary-data
+credibility: official
+geo_granularity:
+- marlborough
+notes: Health service utilisation and outcomes.

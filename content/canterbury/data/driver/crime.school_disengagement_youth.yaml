@@ -1,0 +1,11 @@
+id: driver.canterbury.crime.school_disengagement_youth
+name: School Disengagement & Youth Employment Barriers
+description: School Disengagement & Youth Employment Barriers
+theme: crime
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.crime.youth_offending
+claim_ids: []

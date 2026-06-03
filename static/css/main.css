@@ -169,11 +169,188 @@ small, .small { font-size: var(--fs-sm); color: var(--muted); }
   max-width: var(--maxw-prose);
 }
 
+.page-cta {
+  margin: var(--s-3) 0;
+  padding: var(--s-3) var(--s-4);
+  border-left: 3px solid var(--accent);
+  background: rgba(196, 149, 106, 0.06);
+  border-radius: 0 4px 4px 0;
+  max-width: var(--maxw-prose);
+  line-height: 1.55;
+}
+.page-cta strong { display: block; margin-bottom: 0.25rem; }
+.page-cta a { font-weight: 600; }
+
+.cross-regional-synthesis {
+  margin-top: var(--s-5);
+  padding-top: var(--s-4);
+  border-top: 1px solid var(--rule);
+}
+.cross-regional-synthesis > h3 {
+  margin: 0.25rem 0 var(--s-2) 0;
+}
+
+.horizon-band {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 0.2em 0.6em;
+  margin: var(--s-2) 0 var(--s-4);
+}
+
 /* Layout ------------------------------------------------------------------ */
 .page {
   max-width: var(--maxw-page);
   margin: 0 auto;
   padding: 0 var(--s-3);
+}
+
+/* Page-intro slot wrapper. Centered to match .page so slot Markdown
+   doesn't flush against the viewport edge. Full-bleed section blocks
+   inside still escape via their own width:100vw / margin-left
+   calc(50% - 50vw) trick (see static/blocks.css). */
+.page-intro {
+  max-width: var(--maxw-page);
+  margin: 0 auto;
+  padding: 0 var(--s-3);
+}
+
+/* Responsive video embed (used for the YouTube iframe on the David
+   Simmons archive overview, and any future video embeds). 16:9 aspect
+   ratio is preserved across viewport widths via CSS aspect-ratio. The
+   iframe is loaded lazily by the browser so it won't fetch from YouTube
+   until the user scrolls it into view. */
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin: var(--s-3) 0;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #000;
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Portrait image used on the home page intro. Small circular crop. */
+img.portrait-circle {
+  display: block;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Home page intro layout: vertically center portrait against bio so the
+   small round portrait doesn't anchor to the top of a tall text column.
+   Scoped to .page-intro to avoid affecting other ::columns uses. */
+.page-intro .block-columns.cols-2 {
+  align-items: center;
+}
+
+/* Tame the H1 size when it lives inside a column rather than spanning the
+   full page-intro width. Otherwise the page-header --fs-4xl looks oversized
+   in a 50% column. Margin-bottom adds breathing room before the bio prose. */
+.page-intro .block-column h1 {
+  font-size: var(--fs-3xl);
+  margin-top: 0;
+  margin-bottom: var(--s-3);
+}
+
+/* NZ national summary — essay-style. Each theme is an <h2>-anchored
+   section; within each, patterns are mini-essays (h3 + lede + narrative
+   paragraphs). The "Observed across <regions>" closer is a small italic
+   line so the reader's eye stays in the prose. */
+.nz-essay > p,
+.nz-essay h2,
+.nz-essay h3 {
+  max-width: 70ch;
+}
+.nz-theme-essay {
+  margin: var(--s-5) 0;
+}
+.nz-theme-essay > h2 {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--s-2);
+  margin-bottom: var(--s-3);
+}
+.nz-theme-essay > h2 a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.nz-theme-essay > h2 a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent-ink);
+}
+.nz-theme-essay h3 {
+  margin-top: var(--s-4);
+  font-size: var(--fs-lg);
+  font-weight: 500;
+}
+.nz-theme-essay p.lede {
+  font-size: 1.05em;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-top: var(--s-1);
+}
+.nz-manifests {
+  font-size: var(--fs-sm);
+  color: var(--c-muted, var(--tertiary));
+  margin-top: var(--s-2);
+}
+.nz-manifests a {
+  text-decoration-color: var(--rule-soft);
+}
+.nz-manifests a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* Leaf list (used on each region/<section>/ page to list problem leaves
+   with title + summary). Shares visual language with the .theme-list on
+   region indexes. */
+.leaf-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s-4) 0;
+  display: grid;
+  gap: var(--s-3);
+}
+.leaf-list-item {
+  padding: var(--s-3) 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.leaf-list-item:last-child { border-bottom: 0; }
+.leaf-title {
+  display: inline-block;
+  font-family: var(--font-display, inherit);
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  margin-bottom: var(--s-1);
+}
+.leaf-title:hover {
+  color: var(--accent-ink);
+  border-bottom-color: var(--accent);
+}
+.leaf-summary {
+  margin: var(--s-1) 0 0;
+  color: var(--c-muted, var(--tertiary));
+  font-size: var(--fs-md);
+  line-height: 1.55;
 }
 .wide {
   max-width: var(--maxw-wide);
@@ -1097,4 +1274,158 @@ button:hover, .btn:hover {
   .bio-panel { grid-template-columns: 1fr; }
   .timeline-entry { grid-template-columns: 3.5rem 1fr; gap: var(--s-2); }
   .subnav-inner { gap: var(--s-2); padding: var(--s-2); font-size: var(--fs-xs); }
+}
+
+/* ── Citation block (SEP quarterly archive pattern) ─────────────────────── */
+.cite-block {
+  margin: var(--s-6) 0 var(--s-4);
+  border-top: 1px solid var(--c-border);
+  padding-top: var(--s-3);
+}
+.cite-summary {
+  font-size: var(--fs-sm);
+  color: var(--c-muted);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+.cite-summary::-webkit-details-marker { display: none; }
+.cite-summary::before { content: "▸ "; font-size: 0.7em; }
+details[open] .cite-summary::before { content: "▾ "; }
+.cite-body {
+  margin-top: var(--s-3);
+  font-size: var(--fs-sm);
+}
+.cite-label {
+  font-weight: 600;
+  color: var(--c-muted);
+  margin-bottom: var(--s-1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: var(--fs-xs);
+}
+.cite-entry {
+  margin: 0 0 var(--s-3) var(--s-3);
+  padding-left: var(--s-3);
+  border-left: 3px solid var(--c-border);
+  color: var(--c-text);
+  font-style: normal;
+}
+.cite-entry a {
+  word-break: break-all;
+  font-size: var(--fs-xs);
+}
+.cite-note {
+  color: var(--c-muted);
+  font-size: var(--fs-xs);
+  margin-top: var(--s-1);
+}
+
+/* In-text citation cluster — appears at the end of each problem block in
+   a consolidated section essay. Each [N] is a clickable link that scrolls
+   to the corresponding entry in the References ordered list at the bottom. */
+.problem-citations {
+  font-size: var(--fs-sm);
+  margin: var(--s-2) 0 var(--s-4);
+  color: var(--c-muted, var(--tertiary));
+}
+.problem-citations .cite-label {
+  font-style: italic;
+  margin-right: 4px;
+}
+.problem-citations .cite-ref {
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+  padding: 1px 4px;
+  border-radius: 3px;
+  border-bottom: 1px dotted var(--accent);
+}
+.problem-citations .cite-ref:hover {
+  background: rgba(196, 149, 106, 0.10); /* accent at low alpha */
+  border-bottom-style: solid;
+}
+
+/* Numbered references list at the bottom of each section essay. Each li
+   has id="ref-N" so in-text [N] anchors land on the matching entry. */
+ol.references-list {
+  padding-left: var(--s-4);
+  font-size: var(--fs-sm);
+}
+ol.references-list li {
+  margin: var(--s-2) 0;
+  padding-left: var(--s-1);
+  line-height: 1.5;
+}
+ol.references-list li:target {
+  background: rgba(196, 149, 106, 0.12);
+  border-radius: 4px;
+  padding: var(--s-1) var(--s-2);
+  margin-left: calc(-1 * var(--s-2));
+  transition: background 600ms;
+}
+ol.references-list a {
+  word-break: break-all;
+  font-size: var(--fs-xs);
+}
+
+/* Research index tabs ----------------------------------------------------
+   CSS-only radio-button tabs. The two <input type="radio"> are visually
+   hidden but drive the active state via :checked + sibling selectors.
+   No JavaScript. */
+.research-tabs { margin: var(--s-4) 0; }
+
+.research-tabs .tab-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.research-tabs .tab-bar {
+  display: flex;
+  gap: var(--s-3);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--s-4);
+  flex-wrap: wrap;
+}
+
+.research-tabs .tab-label {
+  cursor: pointer;
+  padding: var(--s-2) 0;
+  margin-bottom: -1px;
+  font-family: var(--font-display, inherit);
+  font-size: var(--fs-md);
+  letter-spacing: 0.01em;
+  color: var(--tertiary, #777);
+  border-bottom: 2px solid transparent;
+  transition: color 120ms, border-color 120ms;
+}
+.research-tabs .tab-label:hover {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+/* Show focus ring on the visible label when the hidden radio gets focus. */
+.research-tabs .tab-radio:focus-visible + .tab-bar .tab-label,
+.research-tabs .tab-radio:focus-visible ~ .tab-bar .tab-label {
+  outline: none;
+}
+#tab-aotearoa:focus-visible ~ .tab-bar label[for="tab-aotearoa"],
+#tab-science:focus-visible ~ .tab-bar label[for="tab-science"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Active-tab styling driven by :checked on the matching radio. */
+#tab-aotearoa:checked ~ .tab-bar label[for="tab-aotearoa"],
+#tab-science:checked ~ .tab-bar label[for="tab-science"] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+  font-weight: 500;
+}
+
+/* Hide all panels by default, then reveal the one matching the checked radio. */
+.research-tabs .tab-panel { display: none; }
+#tab-aotearoa:checked ~ .tab-panel-aotearoa,
+#tab-science:checked ~ .tab-panel-science {
+  display: block;
 }

@@ -1,0 +1,22 @@
+id: claim.otago.housing.queenstown_affordability_trend
+statement: 'Queenstown housing unaffordability is widening: median multiples rising
+  (8.7× in 2023, peak 15×); short-term rental displacement accelerating (Airbnb/Bookabach
+  growth 2021-2024); worker commute distance lengthening; Cromwell/Arrowtown expansion
+  planned but 3-5 year lag to occupancy; QLDC Community Housing Trust activity insufficient
+  to address shortage scale; climate risk to ski season (long-term tourism viability)
+  uncertain; median price inflation 12-15% annually 2021-2023.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

@@ -1,0 +1,13 @@
+id: source.stats_nz_census_2023
+title: Aotearoa New Zealand 2023 Census Population Counts and West Coast Region Place Summary
+author: Statistics New Zealand Tatauranga Aotearoa
+publisher: Stats NZ
+year: 2024
+url: https://www.stats.govt.nz/tools/2023-census-place-summaries/west-coast-region
+type: primary-data
+credibility: official
+geo_granularity:
+- west-coast
+- nz
+notes: Stats NZ 2023 Census place summary for the West Coast region — usually-resident population, age, ethnicity, household
+  composition, tenure, employment, and median income; published 2024.

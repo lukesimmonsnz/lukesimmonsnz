@@ -1,0 +1,7 @@
+<div class="block-button-wrap">
+  <a href="{{ attrs.href }}"
+     class="block-button btn-{{ attrs.style | default('primary') }}"
+     {% if attrs.target %}target="{{ attrs.target }}" rel="noopener noreferrer"{% endif %}>
+    {{ body | safe }}
+  </a>
+</div>

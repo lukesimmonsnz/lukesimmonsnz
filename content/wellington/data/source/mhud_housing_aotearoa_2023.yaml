@@ -1,0 +1,12 @@
+id: source.mhud_housing_aotearoa_2023
+title: Aotearoa New Zealand Housing Report 2023
+author: null
+publisher: Ministry of Housing and Urban Development
+year: 2023
+url: https://www.hud.govt.nz/housing-and-property/housing-research-and-data/housing-data-and-research/aotearoa-new-zealand-housing-report/
+type: government-report
+credibility: official
+geo_granularity:
+- wellington
+- nz
+notes: National housing report with regional breakdowns including Wellington. Covers affordability, supply, and demand.

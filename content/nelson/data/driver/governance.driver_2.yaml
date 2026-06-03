@@ -1,0 +1,13 @@
+id: driver.nelson.governance.driver_2
+name: Small ratepayer base against large capital pipeline
+description: Combined Nelson-Tasman ratepayer capacity is small relative to the simultaneous demands of three-waters renewal, climate adaptation, growth-driven infrastructure, and Treaty partnership implementation. Borrowing headroom is constrained by debt-to-revenue covenants.
+theme: governance
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.nelson.governance.governance_root
+- problem.nelson.governance.treaty
+- problem.nelson.governance.capacity
+claim_ids: []

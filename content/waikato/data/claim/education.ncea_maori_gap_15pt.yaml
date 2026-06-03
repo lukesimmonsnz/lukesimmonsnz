@@ -1,0 +1,21 @@
+id: claim.waikato.education.ncea_maori_gap_15pt
+statement: Waikato schools in Hamilton South and South Waikato experience lower NCEA Level 2 pass rates
+  (64% in affected schools versus 81% regional average). These schools face higher suspension and stand-down rates;
+  structural barriers include limited resources, teacher shortages, and higher student deprivation. Māori students
+  are disproportionately enrolled in these lower-performing schools. Waikato-Tainui and other iwi-partnered kura
+  offer te reo medium education providing alternative pathways.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_waikato_achievement_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato achievement claim

@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.economy.economic_diversification
+title: Economic diversification and sector development
+theme: economy
+section: economy
+subpage: economic-diversification
+parent: problem.hawkes_bay.economy.economic_structure
+order: 2
+updated: '2026-04-26'
+summary: "Hawke's Bay has limited success diversifying away from agriculture. Services sector growth is slower than national average. Advanced manufacturing and technology sectors are underdeveloped. Investment in new growth sectors is insufficient."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - services_sector_gdp_share_percent
+    - technology_sector_employment_count
+  inputs:
+    - business_capability_gaps
+    - access_to_capital_constraints
+  constraints:
+    - infrastructure_and_skills_readiness
+    - market_proximity_distance
+  feedback_loops:
+    - 'Skills gaps and capital constraints limit new sector development; entrepreneurs relocate; brain drain follows; diversity prospects dim.'
+narrative:
+  - heading: Diversification Lag
+    body: "Services sector in Hawke's Bay is 48% of employment, compared to 56% nationally. Technology and advanced manufacturing account for <3% of employment."
+  - heading: Investment Gap
+    body: "Private sector R&D investment in Hawke's Bay is approximately $45 million annually, compared to $200+ million per capita equivalent in Wellington or Auckland."
+claim_ids:
+  - claim.hawkes_bay.economy.services_48_percent_employment
+status: draft
+time_horizons: [decade, generation]

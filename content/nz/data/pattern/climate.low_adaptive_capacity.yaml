@@ -1,0 +1,34 @@
+id: pattern.climate.low_adaptive_capacity
+title: Low adaptive capacity in economically disadvantaged regions
+theme: climate-adaptation
+summary: 'Regions with high climate exposure and low economic capacity face a double
+  burden: the most physically exposed communities are least able to fund adaptation,
+  whether through private investment or local government infrastructure.'
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- taranaki
+- southland
+- hawkes-bay
+- manawatu-whanganui
+claim_ids:
+- claim.northland.climate.coastal_flooding_claim1
+- claim.gisborne.climate.climate_vulnerability_81
+- claim.west_coast.economy.economic_2_claim
+- claim.southland.climate.climate_risk_prevalence
+- claim.manawatu_whanganui.health.chronic_disease_1
+narrative:
+- heading: Double burden
+  body: 'Climate risk and economic capacity are inversely correlated in New Zealand''s
+    regions: Northland, Gisborne, and the West Coast face high physical exposure (coastal
+    flooding, cyclone, erosion) while having limited fiscal capacity for adaptation
+    infrastructure. This is the opposite of the distribution required for effective
+    adaptation.'
+- heading: Crown transfer required
+  body: Market and local government mechanisms cannot close the gap between climate
+    exposure and adaptive capacity in disadvantaged regions. Climate adaptation financing
+    — analogous to the Cyclone Gabrielle Recovery Fund — needs to be structural and
+    anticipatory rather than reactive.
+status: draft
+updated: '2026-04-26'

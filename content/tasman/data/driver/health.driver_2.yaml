@@ -1,0 +1,14 @@
+id: driver.tasman.health.driver_2
+name: Rural clinician recruitment and retention deficit
+description: Lower pay than the metros, professional isolation, and limited spousal-employment options drive ongoing
+  GP, nurse and allied-health workforce shortages, which raise per-clinician load and worsen continuity of care.
+theme: health
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.health.health_outcomes
+- problem.tasman.health.chronic_disease
+- problem.tasman.health.workforce
+claim_ids: []

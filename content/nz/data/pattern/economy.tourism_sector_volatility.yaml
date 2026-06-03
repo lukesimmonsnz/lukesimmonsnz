@@ -1,0 +1,33 @@
+id: pattern.economy.tourism_sector_volatility
+title: Tourism sector concentration and COVID vulnerability
+theme: economy
+summary: Regions highly dependent on international tourism experienced severe economic
+  shock during COVID-19 and face structural vulnerability to future demand shocks
+  from health events, currency movements, or climate-related disruption.
+manifests_in:
+- otago
+- west-coast
+- nelson
+- tasman
+- gisborne
+- northland
+- marlborough
+claim_ids:
+- claim.otago.economy.agri_primary_prevalence
+- claim.west_coast.economy.economic_2_claim
+- claim.nelson.economy.economic_2_claim
+- claim.northland.economy.business_investment_claim1
+- claim.gisborne.economy.economic_fragility_65
+narrative:
+- heading: COVID shock
+  body: The COVID-19 border closure reduced international visitor arrivals by 99%
+    and devastated internationally-dependent tourism economies in Queenstown, Rotorua,
+    the West Coast, and smaller regions. The shock exposed the risks of a single-sector
+    concentration strategy.
+- heading: Structural vulnerability
+  body: Beyond COVID, international tourism demand is sensitive to exchange rates,
+    air connectivity, and increasingly to the climate credentials of long-haul travel.
+    Regions that have not diversified from tourism dependence remain exposed to these
+    structural trends.
+status: draft
+updated: '2026-04-26'

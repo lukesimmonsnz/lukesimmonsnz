@@ -1,0 +1,21 @@
+id: camp.canterbury.infrastructure.three_waters_reform
+name: Three Waters Infrastructure Co-Investment & Reform
+theme: infrastructure
+core_claim: Combining central government co-funding with council capex and development
+  contributions creates sustainable three-waters replacement cycle.
+flagship_moves:
+- Key intervention for Three Waters Infrastructure Co-Investment & Reform
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.infrastructure.rebuild
+- problem.canterbury.infrastructure.horizontal_infrastructure
+interventions:
+- description: Combining central government co-funding with council capex and development
+    contributions creates sustainable three-waters replacement cycle.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

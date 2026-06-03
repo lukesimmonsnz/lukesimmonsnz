@@ -1,0 +1,17 @@
+id: driver.northland.climate.adaptive_capacity_driver
+name: Low adaptive capacity and investment deficit
+description: 'Northland''s economic and institutional disadvantage limits adaptive
+  capacity: low incomes constrain private adaptation, and councils lack funds for
+  climate infrastructure.'
+theme: climate-adaptation
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.climate.northland_climate
+- problem.northland.climate.coastal_flooding
+- problem.northland.climate.drought_risk
+- problem.northland.climate.cyclone_exposure
+claim_ids:
+- claim.northland.climate.cyclone_exposure_claim1

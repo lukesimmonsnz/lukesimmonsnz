@@ -1,0 +1,22 @@
+id: claim.otago.environment.lake_eutrophication_prevalence
+statement: High-country lakes in Otago—Wanaka, Hawea, Dunstan, Wakatipu—show moderate
+  eutrophication pressure from catchment runoff and recreational use. Lake Dunstan
+  (Cromwell Gorge, irrigation storage) and Lake Wakatipu (Queenstown) face summer
+  algal blooms in some years; nutrient-sensitive zones identified by regional council.
+  Recreational boat traffic and holiday home development intensifying stress; Wanaka
+  catchment (wine/stone fruit) showing elevated nutrient signals.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

@@ -1,0 +1,40 @@
+id: problem.tasman.infrastructure.infrastructure_4
+title: Takaka Hill resilience and closure exposure
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_4
+parent: infrastructure
+order: 4
+updated: '2026-04-26'
+summary: SH60 over the Takaka Hill — Mohua's only road link — is vulnerable to slips, washouts, and fog. Twelve
+  major closures occurred between 2018 and 2023, isolating Golden Bay for two to five days each. Waka Kotahi has
+  scheduled NZD 18 million of resilience and real-time hazard monitoring works for 2024-2026.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - sh60_major_closure_count
+  - resilience_capex_completed
+  inputs:
+  - waka_kotahi_resilience_funding
+  - real_time_hazard_monitoring_coverage
+  constraints:
+  - no_alternative_road_alignment
+  - geological_terrain_instability
+  feedback_loops:
+  - Closure events accelerate population thinning and service withdrawal in Mohua, which weakens the demand case
+    for the resilience investment that would reduce future closures.
+narrative:
+- heading: Closure is not a tail event
+  body: Twelve major closures in five years means SH60 over the Takaka Hill was unusable for at least 24 days in
+    that window — likely materially more once short closures and single-lane operations are included (claim.tasman.infrastructure.infrastructure_4_claim).
+- heading: Resilience investment versus alternative-route investment
+  body: The current Waka Kotahi programme strengthens the existing alignment rather than providing redundancy. A
+    second road into Mohua is geographically and fiscally implausible, so resilience-on-the-only-route is the realistic
+    policy lever — but leaves residual closure risk that resilience cannot fully eliminate.
+claim_ids:
+- claim.tasman.infrastructure.infrastructure_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,0 +1,23 @@
+id: camp.otago.transport.queenstown_transit_demand
+name: Queenstown Traffic Demand Management
+theme: transport
+core_claim: Congestion pricing and visitor management reduce traffic on SH6.
+flagship_moves:
+- Implement congestion pricing on SH6 approach
+- Visitor reservation system for peak periods
+- Shuttle and transit services for tourists
+tensions:
+- Tourism industry resistance
+- Equity concerns for workers
+addresses:
+- problem.otago.transport.queenstown_congestion
+interventions:
+- description: Implement congestion pricing on peak hours
+  state_variable: vehicle_volume_sh6
+  expected_sign: '-'
+- description: Develop visitor reservation system for peak periods
+  state_variable: visitor_crowding
+  expected_sign: '-'
+applicable_in:
+- otago
+tensions_with: []

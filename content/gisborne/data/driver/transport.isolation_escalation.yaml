@@ -1,0 +1,13 @@
+id: driver.gisborne.transport.isolation_escalation
+name: Driver escalating isolation
+description: "This driver exacerbates the isolation challenge in Gisborne \u2014 Te\
+  \ Tair\u0101whiti."
+theme: transport
+consensus: contested
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.transport.isolation
+claim_ids:
+- claim.gisborne.transport.isolation_09

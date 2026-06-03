@@ -1,0 +1,31 @@
+id: problem.marlborough.education.early_childhood
+title: Early Childhood Education and Care
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.marlborough.education.achievement
+order: 1
+updated: '2026-04-26'
+summary: ECE access for seasonal worker children; funding constraints; qualified teacher
+  shortage.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: ECE access for seasonal worker children; funding constraints; qualified teacher
+    shortage.
+claim_ids:
+- claim.marlborough.education.early_childhood_1
+- claim.marlborough.education.early_childhood_2
+status: draft
+time_horizons: [decade, generation]

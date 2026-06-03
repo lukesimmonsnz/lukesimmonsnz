@@ -1,0 +1,20 @@
+id: camp.waikato.environment.native_ecosystem_recovery
+name: Native ecosystem recovery programme
+theme: environment
+core_claim: Native ecosystem recovery programme is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement native ecosystem recovery programme
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

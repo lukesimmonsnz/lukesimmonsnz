@@ -1,0 +1,22 @@
+id: claim.otago.health.chronic_disease_trend
+statement: 'Chronic disease burden is rising: aging population (Dunedin/Clutha/Waitaki);
+  Type 2 diabetes incidence up 2-3% annually; CVD mortality in rural Otago (Waitaki,
+  Clutha) declining slower than urban; mental health/ED presentations elevated (Otago
+  rates above national average); rural specialist access worsening (practitioners
+  retiring, recruitment hard in low-cost areas like Oamaru, Balclutha); Māori/Pasifika
+  health equity gaps widening.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

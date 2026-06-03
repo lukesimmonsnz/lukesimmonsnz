@@ -1,0 +1,21 @@
+id: camp.marlborough.economy.wine_sustainability
+name: Wine Industry Sustainability Initiative
+theme: economy
+core_claim: Sustainable viticulture and climate adaptation.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.education.achievement
+interventions:
+- description: 'Action 1: Wine Industry Sustainability Initiative'
+- description: 'Action 2: Wine Industry Sustainability Initiative'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

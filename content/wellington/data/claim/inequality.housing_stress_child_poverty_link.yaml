@@ -1,0 +1,20 @@
+id: claim.wellington.inequality.housing_stress_child_poverty_link
+statement: Housing cost burden — the proportion of household income consumed by rent
+  — is the primary driver of material hardship among low-income families in Wellington,
+  directly linking the housing affordability crisis to child welfare outcomes.
+value: null
+unit: null
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_income_housing_2023
+- source.mhud_housing_aotearoa_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

@@ -1,0 +1,21 @@
+id: camp.marlborough.economy.local_procurement_policy
+name: Local Procurement Policy
+theme: economy
+core_claim: Government and council procurement supporting local business.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.economy.wine_industry_risk
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

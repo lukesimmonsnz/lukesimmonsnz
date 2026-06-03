@@ -1,0 +1,21 @@
+id: claim.tasman.governance.growth_management_claim
+statement: Tasman District received 1,200+ net migration inflow 2016–2022, driven
+  by lifestyle migration from Auckland and Wellington. TDC's 2024 growth management
+  plan targets 18,500 new dwellings by 2050; Richmond and Motueka expansion is planned
+  at 3-4% annual population growth, requiring NZD 156 million in infrastructure investment.
+value: 1200
+unit: net migration inflow
+time_period: 2016-2022
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_housing_demand_2024
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,43 @@
+id: problem.west_coast.housing.rental_market
+title: Post-flood rental stock collapse in Westport
+theme: housing
+section: housing
+subpage: rental_market
+parent: affordability
+order: 3
+updated: '2026-04-26'
+summary: After the 2021 and 2022 floods, Westport rental stock contracted as landlords sold or abandoned properties. Remaining
+  rents rose 20-30 percent while quality fell, and emergency accommodation support has been extended multiple times with no
+  clear permanent housing solution in sight.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - bond_count_active
+  - median_weekly_rent
+  - emergency_accommodation_caseload
+  inputs:
+  - msd_emergency_housing_funding
+  - khc_public_housing_capex
+  constraints:
+  - insurance_retreat
+  - managed_retreat_uncertainty
+  feedback_loops:
+  - Each extension of emergency accommodation absorbs the social-housing pipeline capacity that would otherwise be building
+    permanent units — a substitution effect that perpetuates the temporary state.
+narrative:
+- heading: Rent rose because supply fell
+  body: Rental stock in Westport contracted sharply after 2021-22 as landlords exited the market or could not secure insurance
+    to relet flood-affected properties (claim.west_coast.housing.rental_market_claim). Rent levels for remaining stock rose
+    well above general inflation, and quality on average declined.
+- heading: Emergency accommodation is not permanent housing
+  body: Council and central-government emergency accommodation support has been repeatedly extended beyond the original timeframes,
+    but no clear pathway to permanent rental supply has emerged. The combination of insurance retreat, negative equity and
+    managed-retreat planning means the rental market is in unresolved transition rather than in recovery.
+claim_ids:
+- claim.west_coast.housing.rental_market_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

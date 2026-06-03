@@ -1,0 +1,20 @@
+id: camp.gisborne.transport.isolation_approach
+name: Strategic approach for isolation
+theme: transport
+core_claim: Strategic intervention on isolation will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting isolation
+- Priority action 2 targeting isolation
+- Institutional coordination mechanism for isolation
+tensions:
+- 'Tension 1: isolation'
+- 'Tension 2: isolation'
+addresses:
+- problem.gisborne.transport.isolation
+interventions:
+- description: Primary intervention for isolation
+  state_variable: isolation_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

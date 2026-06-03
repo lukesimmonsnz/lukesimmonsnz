@@ -1,0 +1,21 @@
+id: claim.bay_of_plenty.housing.rental_market_05
+statement: Housing pressures in Bay Of Plenty include affordability constraints and
+  quality issues. Rental market tightness, investor concentration, and inadequate
+  supply force households into unaffordable situations; essential workers face displacement
+  or commuting burden.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+- source.stats_nz_deprivation_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.water_quality_index_v1
+notes: null

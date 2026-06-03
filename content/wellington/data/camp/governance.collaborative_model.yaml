@@ -1,0 +1,21 @@
+id: camp.wellington.governance.collaborative_model
+name: Collaborative Multi-Council Model
+theme: governance
+core_claim: Structural amalgamation is unnecessary; improved joint committees, shared services, and statutory regional plans
+  can achieve coordination without the disruption of merger.
+flagship_moves:
+- Wellington Regional Leadership Committee with decision-making power on shared infrastructure
+- Single shared services entity for water, waste, and transport across Wellington councils
+- Binding regional spatial plan under RMA with all Wellington TAs as parties
+tensions:
+- Voluntary coordination has been tried and is consistently undermined by parochial politics
+- Shared services without structural change retain accountability diffusion
+addresses:
+- problem.wellington.governance.local_govt_reform
+interventions:
+- description: Legislate Wellington Regional Infrastructure Authority with mandatory participation of all Wellington TAs
+  state_variable: regional_coordination_effectiveness
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

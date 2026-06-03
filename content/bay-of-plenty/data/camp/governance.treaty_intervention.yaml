@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.governance.treaty_intervention
+name: Intervention for treaty
+theme: governance
+core_claim: Targeted intervention on treaty will improve outcomes.
+flagship_moves:
+- Policy measure 1 for treaty
+- Policy measure 2 for treaty
+- Implementation mechanism for treaty
+tensions:
+- Trade-off A for treaty
+- Trade-off B for treaty
+addresses:
+- problem.bay_of_plenty.governance.treaty
+interventions:
+- description: Core intervention targeting treaty
+  state_variable: treaty_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

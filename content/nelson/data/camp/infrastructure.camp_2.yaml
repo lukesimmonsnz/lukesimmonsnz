@@ -1,0 +1,26 @@
+id: camp.nelson.infrastructure.camp_2
+name: 'Response: Camp 2'
+theme: infrastructure
+core_claim: A response strategy addressing infrastructure challenges.
+flagship_moves:
+- Prioritise three-waters infrastructure renewal in Nelson urban centres
+- Establish a multi-year capital works programme for wastewater and stormwater upgrades
+- Apply for central government infrastructure co-funding to supplement council rates
+tensions:
+- Infrastructure renewal requires significant capital expenditure that strains small
+  council budgets.
+- Prioritising upgrades may delay other community investment needs.
+addresses:
+- problem.nelson.infrastructure.infrastructure
+- problem.nelson.infrastructure.infrastructure_3
+- problem.nelson.infrastructure.infrastructure_4
+interventions:
+- description: Accelerate infrastructure renewal investment in Nelson
+  state_variable: infrastructure_condition_index
+  expected_sign: +
+- description: Prioritise water and wastewater upgrades
+  state_variable: service_coverage
+  expected_sign: +
+applicable_in:
+- nelson
+tensions_with: []

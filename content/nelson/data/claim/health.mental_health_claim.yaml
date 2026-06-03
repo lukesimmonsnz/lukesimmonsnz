@@ -1,0 +1,23 @@
+id: claim.nelson.health.mental_health_claim
+statement: Mental health service demand in Nelson has increased sharply post-COVID.
+  Health NZ reports 28% of Nelson residents reporting symptoms of depression or anxiety
+  (vs. 20% nationally), with presentation rates to primary care increasing 34% 2019-2023.
+  Waiting times for specialist mental health assessment average 12–14 weeks; crisis
+  line call volumes increased 42% year-on-year 2022-2023. Youth mental health presentation
+  rates are particularly acute; 18–24 age group shows 38% prevalence of anxiety symptoms.
+  Suicide rate (age-standardized) is 16.2 per 100,000 population (national 12.8).
+value: 28
+unit: percent reporting depression or anxiety
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

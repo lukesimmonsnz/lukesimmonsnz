@@ -1,0 +1,37 @@
+id: problem.nelson.infrastructure.infrastructure
+title: Cumulative deferred maintenance across core infrastructure
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Nelson's core infrastructure carries a cumulative deferred-maintenance and capacity-renewal load. Three Waters assets require around $180-220 million in maintenance and renewal over 10 years against a current allocation of about $120 million. Stormwater is undersized for climate-altered rainfall (three events 2021-2023 caused $8-12 million in damage). The Bells Island wastewater plant requires a $35-45 million upgrade by 2028, and the roading backlog is around $45 million.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - three_waters_renewal_backlog_nzd_m
+  - roading_backlog_nzd_m
+  - stormwater_event_damage_5yr_nzd_m
+  inputs:
+  - central_co_funding
+  - rates_increase
+  - borrowing_headroom
+  constraints:
+  - debt_covenants
+  - construction_workforce
+  - consenting_lead_time
+  feedback_loops:
+  - 'Backlog-event feedback: deferred renewal raises failure probability, and each failure event consumes both response budget and political will, leaving less capacity for forward renewal.'
+narrative:
+- heading: Backlog versus capacity
+  body: Each individual asset class is under pressure; cumulatively the renewal backlog is substantially larger than the council can fund out of rates alone (claim.nelson.infrastructure.infrastructure_claim). Asset-management systems are incomplete, so the headline numbers are themselves uncertain.
+- heading: Climate amplification
+  body: Stormwater capacity designed for pre-2000 rainfall intensity is repeatedly exceeded by current events. Renewal is therefore not a one-for-one replacement of ageing pipe but an upsizing programme, which carries a different cost curve.
+claim_ids:
+- claim.nelson.infrastructure.infrastructure_claim
+status: draft
+time_horizons:
+- decade
+- generation

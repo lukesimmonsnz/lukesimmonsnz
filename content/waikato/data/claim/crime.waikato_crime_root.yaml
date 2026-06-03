@@ -1,0 +1,20 @@
+id: claim.waikato.crime.waikato_crime_root
+statement: Crime patterns in Waikato reflect geographic, economic, and social vulnerabilities.
+  Property crime, family violence, and drug-related offenses impact community safety;
+  police response capacity is constrained in rural areas, limiting prevention effectiveness
+  and victim support services.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato crime

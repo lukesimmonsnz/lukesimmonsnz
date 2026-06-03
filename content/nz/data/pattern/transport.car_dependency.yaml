@@ -1,0 +1,31 @@
+id: pattern.transport.car_dependency
+title: Structural car dependency across New Zealand regions
+theme: transport
+summary: 'New Zealand''s regions are structurally car-dependent: mode shares for public
+  transport and active travel are low, infrastructure investment has historically
+  favoured roads, and land-use patterns preclude viable alternatives in most urban
+  areas outside Wellington and central Auckland.'
+manifests_in:
+- auckland
+- waikato
+- canterbury
+- northland
+- manawatu-whanganui
+- nelson
+claim_ids:
+- claim.auckland.transport.car_mode_share_2023
+- claim.waikato.transport.active_mode_share_4
+- claim.canterbury.transport.bus_patronage_decline_2023
+- claim.manawatu_whanganui.transport.active_modes_1
+narrative:
+- heading: Pattern
+  body: In every region outside Wellington's CBD corridor, private car trips account
+    for 80–90%+ of journey-to-work mode share. Public transport patronage outside
+    Auckland and Wellington is low and declining in some centres.
+- heading: Lock-in mechanisms
+  body: 'Car dependency self-reinforces: low-density land use makes public transport
+    unviable, which increases car dependency, which enables further low-density development.
+    Breaking this cycle requires simultaneous intervention on land use, investment,
+    and pricing.'
+status: draft
+updated: '2026-04-26'

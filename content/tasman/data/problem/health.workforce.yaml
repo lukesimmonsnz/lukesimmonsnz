@@ -1,0 +1,40 @@
+id: problem.tasman.health.workforce
+title: Health-workforce shortage in a rural unitary catchment
+theme: health
+section: health
+subpage: workforce
+parent: health_outcomes
+order: 4
+updated: '2026-04-26'
+summary: Tasman's GP-to-population ratio sits at roughly 1:2,200 against a national 1:1,800; nurse and allied-health
+  vacancies are persistent. Rural location, lower pay than the metros, and limited professional-development pathways
+  drive outmigration of clinicians, with locum cover increasingly the norm.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - gp_to_population_ratio
+  - vacancy_rate_nursing
+  inputs:
+  - rural_clinician_recruitment_incentives
+  - training_placement_capacity
+  constraints:
+  - metro_wage_differential
+  - professional_isolation
+  feedback_loops:
+  - Workforce gaps raise per-clinician load, which accelerates burnout and exit, which widens the workforce gap.
+narrative:
+- heading: Recruitment is the binding constraint
+  body: Tasman cannot match Auckland or Wellington on salary, training pipeline density, or spousal employment options.
+    Practices in Motueka and Takaka rotate through long vacancies and depend on locum cover, which raises costs
+    and weakens continuity (claim.tasman.health.workforce_claim).
+- heading: Workforce gaps cascade into outcome gaps
+  body: A thinner clinician workforce means longer waits, shorter consultations, and less capacity for proactive
+    long-term-conditions management. Those service-level effects feed directly into the chronic-disease and mental-health
+    prevalence figures.
+claim_ids:
+- claim.tasman.health.workforce_claim
+status: draft
+time_horizons:
+- decade
+- generation

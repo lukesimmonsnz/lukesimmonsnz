@@ -1,0 +1,25 @@
+id: camp.west_coast.health.rural_health_workforce_retenti
+name: Rural Health Workforce Retention
+theme: health
+core_claim: West Coast faces extreme rural health workforce shortage; targeted incentive
+  packages and career pathways for remote-area health professionals are essential.
+flagship_moves:
+- Fund rural health bonding scheme for GPs and nurses committing to West Coast for
+  3+ years
+- Establish telehealth hub in Greymouth with specialist consultation capacity
+- Partner with Te Whatu Ora to create West Coast workforce pipeline from training
+  institutions
+tensions:
+- Financial incentives alone do not overcome quality-of-life preferences for urban
+  centres
+- Telehealth cannot replace in-person care for complex conditions
+addresses:
+- problem.west_coast.health.health_outcomes
+- problem.west_coast.health.mental_health
+interventions:
+- description: Fund West Coast rural health workforce bonding programme
+  state_variable: gp_per_capita
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

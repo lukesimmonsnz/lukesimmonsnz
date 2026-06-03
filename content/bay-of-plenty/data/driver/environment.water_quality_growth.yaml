@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.environment.water_quality_growth
+name: Driver for water_quality
+description: "This driver exacerbates the water_quality pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: environment
+consensus: contested
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.environment.water_quality
+claim_ids:
+- claim.bay_of_plenty.environment.water_quality_27

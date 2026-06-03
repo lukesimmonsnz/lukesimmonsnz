@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.health.chronic_disease
+title: Chronic disease prevalence and management
+theme: health
+section: health
+subpage: chronic-disease
+parent: problem.hawkes_bay.health.health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: "Type 2 diabetes, cardiovascular disease, and respiratory disease are prevalent in Hawke's Bay at rates above national average. Obesity and smoking are risk factors. Primary care capacity for disease management is constrained."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - type_2_diabetes_prevalence_percent
+    - cardiovascular_disease_mortality_rate
+  inputs:
+    - obesity_prevalence
+    - smoking_prevalence
+  constraints:
+    - primary_care_gp_capacity
+    - chronic_disease_management_programme_funding
+  feedback_loops:
+    - 'Unmanaged disease increases complications; hospital admissions rise; primary care overwhelmed; disease management deferred; worse outcomes result.'
+narrative:
+  - heading: Diabetes
+    body: "Type 2 diabetes prevalence in Hawke's Bay is approximately 8%, compared to 6% nationally. Māori prevalence is 15%."
+  - heading: Cardiovascular Disease
+    body: "Cardiovascular disease mortality in Hawke's Bay is approximately 150 per 100,000, compared to 120 nationally. Risk factor management in primary care is suboptimal."
+claim_ids:
+  - claim.hawkes_bay.health.type2_diabetes_8_percent
+status: draft
+time_horizons: [decade, generation]

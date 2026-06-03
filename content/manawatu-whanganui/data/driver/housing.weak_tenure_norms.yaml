@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.housing.weak_tenure_norms
+name: Weak Rental Tenure And Security Norms
+description: Weak rental tenure and security norms with regional implications.
+theme: housing
+consensus: mostly-agreed
+category: cultural
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.palmerston_north_growth
+claim_ids: []

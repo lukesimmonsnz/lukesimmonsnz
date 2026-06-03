@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.inequality.maori_income_64k
+statement: Median household income in Hawke's Bay's high-deprivation communities is
+  approximately $64,000, compared to $80,000 for the broader regional average — a
+  20% gap reflecting occupational concentration in seasonal agricultural work, retail,
+  and lower-wage service employment.
+value: 64
+unit: NZD thousands
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional statistical claim for Hawke's Bay

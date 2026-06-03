@@ -1,0 +1,24 @@
+id: claim.nelson.climate.climate_3_claim
+statement: Nelson region was severely affected by the January 2022 Nelson-Tasman wildfires,
+  with approximately 2,200 hectares burned in the Pigeon Valley and Moutere Hills
+  area — New Zealand's most significant wildfire event in the modern record, displacing
+  over 2,000 residents. Wildfire risk is accelerating due to longer fire seasons,
+  drier vegetation, and increased ignition sources; fire modelling indicates a 40%
+  increase in high-fire-danger days by 2050.
+value: 2200
+unit: hectares burned (Nelson portion, 2022)
+time_period: 2022; projections to 2050
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: Original claim referenced "Port Hills" (Christchurch, 2017) in error; corrected
+  to Pigeon Valley/Moutere Hills (Nelson, 2022). Confidence downgraded to medium pending
+  verified hectare split between Nelson and Tasman portions of the fire.

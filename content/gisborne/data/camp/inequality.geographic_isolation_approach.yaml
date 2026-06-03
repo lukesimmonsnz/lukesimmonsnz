@@ -1,0 +1,20 @@
+id: camp.gisborne.inequality.geographic_isolation_approach
+name: Strategic approach for geographic_isolation
+theme: inequality
+core_claim: Strategic intervention on geographic_isolation will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting geographic_isolation
+- Priority action 2 targeting geographic_isolation
+- Institutional coordination mechanism for geographic_isolation
+tensions:
+- 'Tension 1: geographic_isolation'
+- 'Tension 2: geographic_isolation'
+addresses:
+- problem.gisborne.inequality.geographic_isolation
+interventions:
+- description: Primary intervention for geographic_isolation
+  state_variable: geographic_isolation_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

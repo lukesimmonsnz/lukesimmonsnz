@@ -1,0 +1,14 @@
+id: driver.waikato.education.teacher_shortage
+name: Rural and specialist teacher shortages
+description: Difficulty attracting and retaining qualified teachers in rural Waikato
+  limits educational quality outside Hamilton.
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.education.achievement
+- problem.waikato.education.early_childhood
+- problem.waikato.education.tertiary_pathway
+claim_ids: []

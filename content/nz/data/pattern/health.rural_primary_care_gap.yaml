@@ -1,0 +1,34 @@
+id: pattern.health.rural_primary_care_gap
+title: Rural primary care access gap
+theme: health
+summary: Rural New Zealanders across all regions face significant barriers to primary
+  care access — distance, cost, workforce vacancies — that result in delayed presentation,
+  higher acute care use, and worse outcomes for preventable conditions.
+manifests_in:
+- northland
+- gisborne
+- taranaki
+- west-coast
+- southland
+- otago
+- marlborough
+- nelson
+claim_ids:
+- claim.northland.health.health_workforce_claim1
+- claim.canterbury.health.gp_vacancy_rate_rural_2023
+- claim.southland.governance.governance_prevalence
+- claim.west_coast.health.chronic_disease_claim
+- claim.otago.governance.governance_prevalence
+narrative:
+- heading: Access pattern
+  body: Distance-to-GP and cost-to-GP are the two strongest predictors of delayed
+    presentation for rural New Zealanders. In remote areas, both barriers operate
+    simultaneously, and after-hours care may require a 1–2 hour drive to the nearest
+    emergency department.
+- heading: Telehealth partial solution
+  body: Telehealth expanded during COVID-19 and addresses some access barriers, particularly
+    for mental health and chronic disease monitoring. It does not substitute for physical
+    examination, procedural care, or the trust relationships that underpin primary
+    care quality.
+status: draft
+updated: '2026-04-26'

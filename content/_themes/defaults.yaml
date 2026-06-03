@@ -1,0 +1,59 @@
+# Theme defaults — the canonical fall-through for any token a preset
+# or override does not set. Loader: blueprints/admin/cms/theme.py.
+#
+# Token taxonomy: docs/CMS-SPEC-v2.md §5.2.
+# Spacing scale-N values may be omitted; theme.derive_spacing_scale
+# computes them from spacing.unit (Fibonacci-flavoured sequence in
+# docs/CMS-IMPL-WAVE-v2-4.md §3) when missing.
+
+typography:
+  scale:                 1.25
+  font-family-body:      "system-ui, -apple-system, 'Segoe UI', sans-serif"
+  font-family-heading:   "system-ui, -apple-system, 'Segoe UI', sans-serif"
+  font-family-mono:      "ui-monospace, 'SF Mono', Menlo, Consolas, monospace"
+  line-height-body:      1.6
+  line-height-heading:   1.2
+  weight-body:           400
+  weight-bold:           600
+  weight-heading:        600
+
+spacing:
+  unit:                  "8px"
+  # scale-0..scale-9 derived from unit via Fibonacci-flavoured sequence
+
+color:
+  primary:               "#1a73e8"
+  primary-fg:            "#ffffff"
+  bg:                    "#ffffff"
+  fg:                    "#222222"
+  muted:                 "#777777"
+  accent:                "#1a73e8"
+  danger:                "#c0392b"
+  success:               "#27ae60"
+  surface-1:             "#fafafa"
+  surface-2:             "#f0f0f0"
+  border:                "#e0e0e0"
+
+radius:
+  sm:                    "2px"
+  md:                    "4px"
+  lg:                    "8px"
+  full:                  "9999px"
+
+shadow:
+  sm:                    "0 1px 2px rgba(0,0,0,0.04)"
+  md:                    "0 2px 6px rgba(0,0,0,0.08)"
+  lg:                    "0 8px 24px rgba(0,0,0,0.12)"
+
+motion:
+  duration-fast:         "120ms"
+  duration-base:         "240ms"
+  easing-standard:       "cubic-bezier(0.2, 0, 0, 1)"
+  easing-emphasised:     "cubic-bezier(0.3, 0, 0, 1)"
+
+layout:
+  max-width:             "72rem"
+  gutter:                "1.5rem"
+  breakpoint-sm:         "40rem"
+  breakpoint-md:         "48rem"
+  breakpoint-lg:         "64rem"

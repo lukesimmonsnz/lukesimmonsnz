@@ -1,0 +1,29 @@
+id: problem.taranaki.health.health_outcomes
+title: Population health outcomes and equity
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Taranaki health outcomes are near national average. Māori health gaps are
+  significant.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - health_outcomes_index
+  inputs:
+  - health_outcomes_input_1
+  constraints:
+  - health_outcomes_constraint
+  feedback_loops:
+  - 'Feedback: health_outcomes'
+narrative:
+- heading: Population health outcomes and equity in Taranaki
+  body: Taranaki health outcomes are near national average. Māori health gaps are
+    significant.
+claim_ids:
+- claim.taranaki.health.health_outcomes_01
+status: draft
+time_horizons: [decade, generation]

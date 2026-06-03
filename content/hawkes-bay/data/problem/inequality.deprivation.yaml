@@ -1,0 +1,41 @@
+id: problem.hawkes_bay.inequality.deprivation
+title: Regional deprivation and inequality
+theme: inequality
+section: inequality
+subpage: deprivation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Hawke's Bay has high and persistent deprivation, concentrated in Napier (Flaxmere) and Hastings
+  suburbs. Income inequality is above the national average; seasonal employment in horticulture and agriculture
+  creates significant household income volatility. Intergenerational poverty patterns are evident in areas
+  where low educational attainment, limited asset accumulation, and inadequate housing have persisted
+  for multiple decades.
+manifests_in:
+- hawkes-bay
+systems_model:
+  state_variables:
+  - nzidx_decile_9_10_percent_households
+  - income_gini_coefficient
+  inputs:
+  - primary_industry_wage_suppression
+  - rse_scheme_dependence
+  constraints:
+  - skill_demand_mismatch
+  - housing_cost_burden
+  feedback_loops:
+  - Poverty limits education investment; skill gaps reduce employment quality; wage suppression persists;
+    intergenerational poverty repeats.
+narrative:
+- heading: Deprivation Concentration
+  body: Approximately 35% of Hawke's Bay households are in NZDep deciles 9-10 (most deprived), compared
+    to 20% nationally. Flaxmere suburb in Hastings is consistently ranked as one of NZ's most deprived
+    areas.
+- heading: Income Gap
+  body: Hawke's Bay median household income is approximately $85k, below national average of $95k. Top
+    20% earn 12x the bottom 20% (vs 10x nationally).
+claim_ids:
+- claim.hawkes_bay.inequality.deprivation_35_percent_households
+- claim.hawkes_bay.inequality.median_income_85k
+status: draft
+time_horizons: [decade, generation, century]

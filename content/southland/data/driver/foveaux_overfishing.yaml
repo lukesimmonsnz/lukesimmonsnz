@@ -1,0 +1,12 @@
+id: driver.southland.environment.foveaux_overfishing
+name: Foveaux Strait Overfishing and Urchin Barrens
+description: Kina overfishing reduced urchin predators; sea urchin barrens expanded;
+  kelp forest loss.
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.environment.coastal_foveaux
+claim_ids: []

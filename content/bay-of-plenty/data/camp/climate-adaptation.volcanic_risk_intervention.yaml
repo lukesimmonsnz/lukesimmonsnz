@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.climate.volcanic_risk_intervention
+name: Intervention for volcanic_risk
+theme: climate-adaptation
+core_claim: Targeted intervention on volcanic_risk will improve outcomes.
+flagship_moves:
+- Policy measure 1 for volcanic_risk
+- Policy measure 2 for volcanic_risk
+- Implementation mechanism for volcanic_risk
+tensions:
+- Trade-off A for volcanic_risk
+- Trade-off B for volcanic_risk
+addresses:
+- problem.bay_of_plenty.climate.volcanic_risk
+interventions:
+- description: Core intervention targeting volcanic_risk
+  state_variable: volcanic_risk_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

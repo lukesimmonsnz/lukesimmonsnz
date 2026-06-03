@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.environment.wetland_loss_1
+statement: Manawatū-Whanganui has lost approximately 85-90% of its pre-European wetland
+  area (from approx. 18,000 hectares to approx. 2,000 hectares). Drainage for agriculture,
+  urban development, and transport infrastructure (SH1, rail) destroyed critical wetland
+  habitat. Remaining wetlands are fragmented and degraded. The region retains only
+  2-3 major intact wetland systems (Himatangi Beach, Upper Manawatū, Whanganui estuary),
+  all threatened by nutrient pollution and climate impacts.
+value: 87.5
+unit: percent_wetland_loss_pre_european
+time_period: 1800-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.horizons_data_services_2024
+- source.horizons_one_plan_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

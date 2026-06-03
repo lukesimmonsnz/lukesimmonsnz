@@ -1,0 +1,21 @@
+id: claim.tasman.education.secondary_claim
+statement: 'Tasman has two secondary schools: Motueka High School (560 students) and
+  Takaka Area School (320 students). NCEA Level 3 pass rates average 72% (2023), below
+  national average of 76%. Golden Bay students face 45+ minute daily commute if attending
+  Motueka.'
+value: 72
+unit: percent NCEA L3 pass rate
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_tasman_achievement_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

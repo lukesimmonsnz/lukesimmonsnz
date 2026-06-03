@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.environment.manawatu_river_quality_2
+statement: E. coli contamination in the Manawatū River varies seasonally but frequently
+  exceeds safe recreation thresholds (260 CFU/100mL guideline). Urban treatment plants
+  in Palmerston North and Feilding contribute to point-source pollution; non-point
+  agricultural runoff dominates. Maori health advisories and recreational swimming
+  bans are common in summer. River restoration projects (riparian planting, constructed
+  wetlands) involve Horizons, Rangitāne iwi, and local farmers but cover <10% of the
+  catchment.
+value: null
+unit: null
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.manawatu_river_quality_2023
+- source.iwi_rangitane_plan_2022
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

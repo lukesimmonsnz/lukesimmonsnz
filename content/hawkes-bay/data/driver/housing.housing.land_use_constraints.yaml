@@ -1,0 +1,12 @@
+id: driver.hawkes_bay.housing.housing.land_use_constraints
+name: Flood hazard and terrain limitations on developable land
+description: Flood hazard and terrain limitations on developable land
+theme: housing
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.housing.affordability
+- problem.hawkes_bay.housing.rural_housing
+claim_ids: []

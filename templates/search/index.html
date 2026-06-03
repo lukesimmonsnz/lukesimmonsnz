@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Search{% if q %} — {{ q }}{% endif %} · Luke Simmons{% endblock %}
+{% block meta_description %}Search across all Aotearoa regional research pages.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Search', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Site search</span>
+    <h1>Search</h1>
+    <hr class="rule">
+  </header>
+
+  <form class="search-form" method="get" action="{{ url_for('search.search') }}">
+    <div class="search-input-row">
+      <input
+        type="search"
+        name="q"
+        value="{{ q | e }}"
+        placeholder="e.g. housing affordability, flood resilience…"
+        autofocus
+        aria-label="Search query"
+        class="search-input"
+      >
+      <button type="submit" class="search-btn">Search</button>
+    </div>
+  </form>
+
+  {% if q %}
+    <div class="search-meta">
+      {% if results %}
+        <p class="prose">{{ results | length }} result{{ 's' if results | length != 1 }} for <strong>{{ q | e }}</strong></p>
+      {% else %}
+        <p class="prose">No results for <strong>{{ q | e }}</strong>. Try broader terms or check spelling.</p>
+      {% endif %}
+    </div>
+
+    {% if results %}
+    <ol class="search-results">
+      {% for r in results %}
+      <li class="search-result">
+        <a class="search-result-title" href="{{ r.url }}">{{ r.title }}</a>
+        <div class="search-result-meta">
+          <span class="search-breadcrumb">{{ r.region }}</span>
+          <span class="search-sep">›</span>
+          <span class="search-breadcrumb">{{ r.section }}</span>
+        </div>
+        {% if r.snippet %}
+        <p class="search-snippet">{{ r.snippet }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  {% else %}
+    <p class="prose">Searches across all 709 research pages covering 16 regions and 11 policy themes.</p>
+  {% endif %}
+</div>
+
+<style>
+.search-form { margin: 1.5rem 0 2rem; }
+.search-input-row { display: flex; gap: .5rem; max-width: 36rem; }
+.search-input {
+  flex: 1;
+  padding: .55rem .75rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 4px;
+  background: var(--color-surface, #fff);
+  color: var(--color-text, #111);
+}
+.search-btn {
+  padding: .55rem 1.1rem;
+  font-size: .95rem;
+  cursor: pointer;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 4px;
+  background: var(--color-accent, #1a6ea8);
+  color: #fff;
+}
+.search-btn:hover { opacity: .88; }
+.search-meta { margin-bottom: 1rem; }
+.search-results { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem; }
+.search-result { border-bottom: 1px solid var(--color-border, #e5e5e5); padding-bottom: 1.25rem; }
+.search-result-title { font-size: 1.05rem; font-weight: 600; text-decoration: none; color: var(--color-accent, #1a6ea8); }
+.search-result-title:hover { text-decoration: underline; }
+.search-result-meta { font-size: .8rem; color: var(--color-muted, #666); margin: .2rem 0 .4rem; display: flex; align-items: center; gap: .3rem; }
+.search-sep { opacity: .5; }
+.search-snippet { font-size: .9rem; color: var(--color-text-secondary, #444); margin: 0; line-height: 1.5; }
+</style>
+{% endblock %}

@@ -1,0 +1,15 @@
+id: driver.marlborough.inequality.ethnic_income_gap
+name: Ethnic Income And Wealth Gaps
+description: Income and wealth gaps in Marlborough reflect occupational concentration in seasonal viticulture
+  and lower-wage rural labour, with limited pathways to higher-wage employment for workers without tertiary
+  credentials. Communities dependent on seasonal horticultural income face structural vulnerability to
+  labour market fluctuations, with limited unemployment support infrastructure in rural areas.
+theme: inequality
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.active_modes
+claim_ids: []

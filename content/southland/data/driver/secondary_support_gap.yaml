@@ -1,0 +1,12 @@
+id: driver.southland.education.secondary_support_gap
+name: Secondary School Pastoral Support System Gap
+description: Smaller rural schools lack counsellors, learning support staff; pastoral
+  response limited.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.education.secondary
+claim_ids: []

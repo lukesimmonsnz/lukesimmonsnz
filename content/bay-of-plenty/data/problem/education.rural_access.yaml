@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.education.rural_access
+title: Rural school access and teacher retention in Bay of Plenty — Te Moana-a-Toi
+theme: education
+section: education
+subpage: rural_access
+parent: problem.bay_of_plenty.education.achievement
+order: 31
+updated: '2026-04-26'
+summary: Rural school access and teacher retention is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - rural_access_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Rural school access and teacher retention is a specific manifestation of the
+    broader pressure.
+claim_ids:
+- claim.bay_of_plenty.education.rural_access_61
+- claim.bay_of_plenty.education.rural_access_62
+status: draft
+time_horizons: [decade, generation]

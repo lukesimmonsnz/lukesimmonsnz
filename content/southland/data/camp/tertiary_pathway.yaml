@@ -1,0 +1,20 @@
+id: camp.southland.education.tertiary_pathway
+name: Tertiary Education Access and Pathways
+theme: education
+core_claim: Regional polytechnic expansion and student support improve tertiary access.
+flagship_moves:
+- Southern Institute of Technology program expansion
+- Distance and online tertiary options
+- Student hardship grants and living costs support
+tensions:
+- ITI funding constraints
+- Brain drain to larger cities
+addresses:
+- problem.southland.education.tertiary_access
+interventions:
+- description: Enroll 500 more students in regional tertiary per year
+  state_variable: tertiary_participation_rate
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

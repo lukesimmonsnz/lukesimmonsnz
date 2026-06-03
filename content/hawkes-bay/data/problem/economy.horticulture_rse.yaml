@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.economy.horticulture_rse
+title: Horticulture labour and RSE scheme dependence
+theme: economy
+section: economy
+subpage: horticulture-rse
+parent: problem.hawkes_bay.economy.economic_structure
+order: 2
+updated: '2026-04-26'
+summary: "Hawke's Bay horticulture (apples, kiwifruit, berries) relies on Recognised Seasonal Employer (RSE) scheme workers for 40-50% of harvest labour. Wage suppression, worker exploitation, and policy uncertainty create instability."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - rse_worker_count
+    - horticulture_wage_level_dollars_per_hour
+  inputs:
+    - domestic_labour_supply_shortage
+    - rse_scheme_policy_uncertainty
+  constraints:
+    - accommodation_and_support_capacity
+    - worker_rights_enforcement
+  feedback_loops:
+    - 'RSE scheme suppresses domestic wages; domestic workers cannot compete; exit to services; labour shortage deepens; RSE dependence increases.'
+narrative:
+  - heading: Labour Proportion
+    body: "Approximately 2,500-3,500 RSE workers are employed in Hawke's Bay horticulture during peak season (Jan-March), representing 45-50% of total harvest labour."
+  - heading: Wage Suppression
+    body: "Horticulture harvest wages in Hawke's Bay average $22-24/hour, compared to $28/hour in manufacturing. Piece-rate pay systems create income volatility."
+claim_ids:
+  - claim.hawkes_bay.economy.rse_workers_2500_3500
+status: draft
+time_horizons: [decade, generation]

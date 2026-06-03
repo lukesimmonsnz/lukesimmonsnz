@@ -1,0 +1,34 @@
+id: problem.southland.inequality.child_poverty
+title: Child Poverty and Family Hardship
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: problem.southland.inequality.deprivation
+order: 3
+updated: '2026-04-26'
+summary: Southland child poverty rates elevated; food insecurity, housing instability,
+  inadequate clothing/heating; impacts educational and health outcomes.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland child poverty rates elevated; food insecurity, housing instability,
+    inadequate clothing/heating; impacts educational and health outcomes.
+claim_ids:
+- claim.southland.inequality.child_poverty_trend
+- claim.southland.inequality.rural_isolation_prevalence
+- claim.southland.inequality.child_poverty_prevalence
+- claim.southland.inequality.deprivation_prevalence
+- claim.southland.inequality.invercargill_east_poverty_trend
+- claim.southland.inequality.rural_isolation_trend
+- claim.southland.inequality.invercargill_east_poverty_prevalence
+- claim.southland.inequality.deprivation_trend
+status: draft
+time_horizons: [decade, generation, century]

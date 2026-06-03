@@ -1,0 +1,10 @@
+id: 'driver.waikato.environment.driver_1'
+name: 'Policy and institutional barriers in environment'
+description: 'Policy and institutional barriers in environment in regional context.'
+theme: 'environment'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

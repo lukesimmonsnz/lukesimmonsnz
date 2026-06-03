@@ -1,0 +1,12 @@
+id: driver.marlborough.environment.aquaculture_expansion
+name: Aquaculture Industry Expansion Pressure
+description: Aquaculture industry expansion pressure with regional implications.
+theme: environment
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.governance.governance
+claim_ids: []

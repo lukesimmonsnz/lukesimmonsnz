@@ -1,0 +1,19 @@
+id: claim.gisborne.governance.unitary_authority_capacity_76
+statement: Ngāti Porou Holding Company and iwi governance bodies play a significant
+  role in East Cape development and recovery planning. Treaty settlement assets and
+  rohe governance frameworks inform regional strategic decisions.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.voter_turnout_rate_v1
+notes: null

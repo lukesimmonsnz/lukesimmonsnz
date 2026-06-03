@@ -1,0 +1,23 @@
+id: camp.canterbury.transport.mode_shift_incentives
+name: Mode Shift Incentives & Congestion Pricing Revenue Recycling
+theme: transport
+core_claim: Revenue from congestion pricing on key corridors is recycled into public
+  transport subsidies, active transport infrastructure, and park-and-ride facilities,
+  enabling mode shift.
+flagship_moves:
+- Key intervention for Mode Shift Incentives & Congestion Pricing Revenue Recycling
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.transport.christchurch_congestion
+- problem.canterbury.transport.network
+interventions:
+- description: Revenue from congestion pricing on key corridors is recycled into public
+    transport subsidies, active transport infrastructure, and park-and-ride facilities,
+    enabling mode shift.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

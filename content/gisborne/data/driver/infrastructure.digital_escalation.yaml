@@ -1,0 +1,13 @@
+id: driver.gisborne.infrastructure.digital_escalation
+name: Driver escalating digital
+description: "This driver exacerbates the digital challenge in Gisborne \u2014 Te\
+  \ Tair\u0101whiti."
+theme: infrastructure
+consensus: disputed
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.infrastructure.digital
+claim_ids:
+- claim.gisborne.infrastructure.digital_23

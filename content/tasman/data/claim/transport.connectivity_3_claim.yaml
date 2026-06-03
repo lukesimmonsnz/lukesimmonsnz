@@ -1,0 +1,22 @@
+id: claim.tasman.transport.connectivity_3_claim
+statement: Motueka and Richmond town centres have developed around car-dependent sprawl;
+  public transport modal share is 2%, bicycle/pedestrian 4%, private vehicle 92%.
+  SH6 bisects Richmond town centre, creating air quality and safety issues. TDC is
+  planning bus-rapid-transit corridor (Richmond-Motueka, 20-minute service frequency)
+  with NZD 85 million central funding commitment (2025-2028).
+value: 92
+unit: percent private vehicle mode share
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_tasman_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

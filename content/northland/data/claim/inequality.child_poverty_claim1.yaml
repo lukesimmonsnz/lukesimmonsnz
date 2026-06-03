@@ -1,0 +1,18 @@
+id: claim.northland.inequality.child_poverty_claim1
+statement: Child poverty rates in Northland exceed national average by 15-25%; Kāinga
+  Ora emergency housing waitlist per capita among highest in NZ. Motel usage for emergency
+  housing (families, single parents) in Whangārei and Kaitāia is chronic; inadequate
+  housing stock forces whānau into unsuitable temporary accommodation. Children in
+  emergency housing face health risks (mould, overcrowding, inadequate heating).
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

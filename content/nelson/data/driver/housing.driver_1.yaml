@@ -1,0 +1,12 @@
+id: driver.nelson.housing.driver_1
+name: Geographic constraint on buildable land in the Nelson basin
+description: Fault lines, coastal hazard zones, hill-bounded valleys, and elite-soil protection mean Nelson cannot easily extend its urban boundary. Combined with heritage-character overlays in the central city, this puts feasible supply structurally below demand.
+theme: housing
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.nelson.housing.affordability
+- problem.nelson.housing.land_supply
+claim_ids: []

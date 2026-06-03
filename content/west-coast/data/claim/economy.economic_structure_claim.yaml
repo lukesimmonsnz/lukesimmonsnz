@@ -1,0 +1,23 @@
+id: claim.west_coast.economy.economic_structure_claim
+statement: West Coast economy is heavily dependent on extractive and primary sectors
+  (coal, dairy, forestry, tourism). The 1,000+ job losses from Solid Energy collapse
+  (2015-2018) demonstrated regional economic vulnerability. Current portfolio lacks
+  diversification into high-wage services or knowledge sectors. Transition from coal
+  and climate-vulnerable tourism requires investment in alternative employment anchors.
+value: 1000
+unit: jobs lost (Solid Energy 2015-2018)
+time_period: 2015-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mining_industry_association_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Solid Energy collapse data from mining association records; economic structure
+  assessment from WCRC regional development strategy.

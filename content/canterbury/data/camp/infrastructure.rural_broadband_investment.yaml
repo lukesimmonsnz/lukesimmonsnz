@@ -1,0 +1,20 @@
+id: camp.canterbury.infrastructure.rural_broadband_investment
+name: Rural Broadband Network Completion
+theme: infrastructure
+core_claim: Central government funding and private sector partnership can expand fibre
+  coverage to underserved rural and provincial areas.
+flagship_moves:
+- Key intervention for Rural Broadband Network Completion
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.infrastructure.digital
+interventions:
+- description: Central government funding and private sector partnership can expand
+    fibre coverage to underserved rural and provincial areas.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

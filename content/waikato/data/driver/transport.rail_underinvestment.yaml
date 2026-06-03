@@ -1,0 +1,14 @@
+id: driver.waikato.transport.rail_underinvestment
+name: Chronic rail and PT underinvestment
+description: Decade-long underfunding of Hamilton public transport and Waikato regional
+  rail has embedded car dependence.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.transport.hamilton_congestion
+- problem.waikato.transport.regional_connectivity
+- problem.waikato.transport.active_transport
+claim_ids: []

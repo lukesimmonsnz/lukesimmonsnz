@@ -1,0 +1,19 @@
+id: claim.waikato.transport.car_mode_share_89
+statement: Hamilton traffic congestion has worsened with rapid city growth (pop ~170K,
+  growing 3%+ annually). Peak-hour delays on key routes exceed 15 minutes; the planned
+  SH3/SH1 intersection upgrade is delayed pending funding, constraining economic productivity.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato hamilton_congestion claim

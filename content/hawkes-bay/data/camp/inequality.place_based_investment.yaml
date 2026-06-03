@@ -1,0 +1,30 @@
+id: camp.hawkes_bay.inequality.place_based_investment
+name: Place-based investment in deprived neighbourhoods
+theme: inequality
+core_claim: Targeted investment in deprived suburbs (Flaxmere, West Napier) in education,
+  jobs, and community services breaks cycles of concentrated disadvantage.
+flagship_moves:
+- Establish Flaxmere Revitalisation Zone with 10-year dedicated funding
+- Co-design neighbourhood improvement plans with iwi and community
+- Attract employers to locate training hubs in deprived suburbs, not CBD
+tensions:
+- Targeted place-based investment may be seen as unfairly advantaging one community
+- Without complementary social support, infrastructure investment may attract gentrification
+  and displacement
+addresses:
+- problem.hawkes_bay.inequality.deprivation
+- problem.hawkes_bay.inequality.flaxmere_poverty
+- problem.hawkes_bay.inequality.child_poverty
+- problem.hawkes_bay.inequality.ethnic_gap
+interventions:
+- description: Co-fund schools in Flaxmere and West Napier to attract quality teachers
+    and expand support services
+  state_variable: school_resource_equity_index
+  expected_sign: +
+- description: Establish job training and placement hubs in deprived neighbourhoods
+    to improve labour market attachment
+  state_variable: employment_access_index
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

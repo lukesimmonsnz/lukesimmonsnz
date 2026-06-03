@@ -1,0 +1,31 @@
+id: problem.marlborough.inequality.child_poverty
+title: Child Poverty and Early Disadvantage
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: problem.marlborough.inequality.deprivation
+order: 1
+updated: '2026-04-26'
+summary: Elevated child poverty in rural areas; underfunded early childhood education;
+  intergenerational disadvantage.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Elevated child poverty in rural areas; underfunded early childhood education;
+    intergenerational disadvantage.
+claim_ids:
+- claim.marlborough.inequality.child_poverty_1
+- claim.marlborough.inequality.child_poverty_2
+status: draft
+time_horizons: [decade, generation, century]

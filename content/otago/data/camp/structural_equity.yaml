@@ -1,0 +1,21 @@
+id: camp.otago.inequality.structural_equity
+name: Structural Inequality Reduction Strategy
+theme: inequality
+core_claim: Addressing root causes of inequality (jobs, education, housing) reduces
+  disparities.
+flagship_moves:
+- Economic opportunity and job creation
+- Affordable housing development
+- Educational and skills pathways
+tensions:
+- High cost and long-term commitment
+- Sectoral coordination challenges
+addresses:
+- problem.otago.inequality.inequality
+interventions:
+- description: Implement region-wide inequality reduction strategy
+  state_variable: inequality_index
+  expected_sign: '-'
+applicable_in:
+- otago
+tensions_with: []

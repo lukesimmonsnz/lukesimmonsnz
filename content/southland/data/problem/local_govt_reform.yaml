@@ -1,0 +1,34 @@
+id: problem.southland.governance.local_govt_reform
+title: Local Government Structure and Funding Reform
+theme: governance
+section: governance
+subpage: local_govt_reform
+parent: problem.southland.governance.governance
+order: 4
+updated: '2026-04-26'
+summary: Southland councils face rating pressures and funding gaps; three-waters reforms;
+  regional amalgamation debates; capacity constraints on strategic planning.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland councils face rating pressures and funding gaps; three-waters reforms;
+    regional amalgamation debates; capacity constraints on strategic planning.
+claim_ids:
+- claim.southland.governance.governance_prevalence
+- claim.southland.governance.treaty_ngai_tahu_prevalence
+- claim.southland.governance.smelter_energy_policy_trend
+- claim.southland.governance.local_govt_reform_prevalence
+- claim.southland.governance.local_govt_reform_trend
+- claim.southland.governance.treaty_ngai_tahu_trend
+- claim.southland.governance.smelter_energy_policy_prevalence
+- claim.southland.governance.governance_trend
+status: draft
+time_horizons: [decade, generation, century]

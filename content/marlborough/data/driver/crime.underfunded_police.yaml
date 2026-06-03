@@ -1,0 +1,12 @@
+id: driver.marlborough.crime.underfunded_police
+name: Underfunded Police And Justice System
+description: Underfunded police and justice system.
+theme: crime
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.economy.aquaculture
+claim_ids: []

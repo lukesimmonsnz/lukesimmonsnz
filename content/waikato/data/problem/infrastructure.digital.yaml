@@ -1,0 +1,24 @@
+id: 'problem.waikato.infrastructure.digital'
+title: 'Waikato: digital connectivity'
+theme: 'infrastructure'
+section: 'infrastructure'
+subpage: 'digital'
+parent: 'problem.waikato.infrastructure.deficit'
+order: 5
+updated: '2026-04-26'
+summary: 'Digital infrastructure gaps create barriers.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Digital infrastructure gaps create barriers.'
+claim_ids:
+- 'claim.waikato.infrastructure.digital_claim1'
+- 'claim.waikato.infrastructure.digital_claim2'
+status: 'draft'

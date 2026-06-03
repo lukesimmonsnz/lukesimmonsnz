@@ -1,0 +1,33 @@
+id: problem.gisborne.education.tertiary_access
+title: Tertiary education access and affordability in Gisborne — Te Tairāwhiti
+theme: education
+section: education
+subpage: tertiary_access
+parent: problem.gisborne.education.achievement
+order: 32
+updated: '2026-04-26'
+summary: Tertiary education access and affordability is a specific manifestation of
+  the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - tertiary_access_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Tertiary education access and affordability is a key facet of the broader
+    pressure facing the region.
+claim_ids:
+- claim.gisborne.education.tertiary_access_63
+- claim.gisborne.education.tertiary_access_64
+status: draft
+time_horizons: [decade, generation]

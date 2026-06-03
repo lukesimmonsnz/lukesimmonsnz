@@ -1,0 +1,42 @@
+id: problem.tasman.transport.connectivity
+title: Sparse multi-modal transport options across rural Tasman
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Tasman has no rail service and only limited public transport; the region depends almost entirely on two
+  state highways (SH6 between Nelson and Richmond, and SH60 from Richmond to Motueka and Takaka) carrying around
+  38,000 daily vehicle movements. Bus frequencies are 1-2 services per day on main corridors, and there is no scheduled
+  commercial air service inside the region.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - private_vehicle_mode_share
+  - daily_corridor_vehicle_movements
+  inputs:
+  - state_highway_investment
+  - regional_public_transport_subsidy
+  constraints:
+  - low_population_density
+  - topographic_corridor_constraint
+  feedback_loops:
+  - Low patronage justifies low service frequency, which reinforces car dependence and further suppresses patronage.
+narrative:
+- heading: A car-dependent region with thin alternatives
+  body: Outside Richmond and Motueka, Tasman residents have effectively no public-transport alternative to private
+    vehicles. InterCity coach and a handful of community shuttles run at frequencies that cannot serve commuting,
+    school, or medical-appointment patterns; the result is high private-vehicle mode share and household exposure
+    to fuel-price volatility (claim.tasman.transport.connectivity_claim).
+- heading: No regional spine to fall back on
+  body: 'Without a rail option and with only one feasible road corridor connecting most settlements, any disruption
+    on SH6 or SH60 propagates across the whole network. Tasman''s geography compounds this: ranges, river valleys,
+    and the Takaka Hill leave few realistic alignments for redundant routes.'
+claim_ids:
+- claim.tasman.transport.connectivity_claim
+status: draft
+time_horizons:
+- decade
+- generation

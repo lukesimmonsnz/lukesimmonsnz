@@ -1,0 +1,21 @@
+id: claim.gisborne.crime.youth_offending_45
+statement: Youth outcomes in Gisborne show employment, education, and housing pressures
+  as young people face skill-job mismatches and affordability constraints. Migration
+  to larger centers creates demographic imbalances and limits local innovation and
+  entrepreneurship.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.water_quality_index_v1
+notes: null

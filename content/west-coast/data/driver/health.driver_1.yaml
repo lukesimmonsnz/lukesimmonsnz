@@ -1,0 +1,14 @@
+id: driver.west_coast.health.driver_1
+name: Aging population and rural deprivation profile
+description: The West Coast has an older population profile than the national average and a deprivation profile shaped by
+  mining-decline income shocks, rural isolation and historical disadvantage. The combination produces high prevalence of multi-morbidity
+  and elevated mental-health load.
+theme: health
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.health.health_outcomes
+- problem.west_coast.health.mental_health
+claim_ids: []

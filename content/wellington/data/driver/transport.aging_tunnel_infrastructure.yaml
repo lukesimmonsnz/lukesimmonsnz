@@ -1,0 +1,14 @@
+id: driver.wellington.transport.aging_tunnel_infrastructure
+name: Aging tunnel and corridor infrastructure
+description: Wellington's Terrace and Mt Victoria tunnels, opened in 1931, carry irreplaceable transport volume with no alternative
+  alignment. Their age creates reliability risk and constrains capacity expansion.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.transport.network_resilience
+- problem.wellington.transport.rail_network
+claim_ids:
+- claim.wellington.transport.rail_tunnel_age

@@ -1,0 +1,12 @@
+id: driver.hawkes_bay.environment.environment.stormwater_runoff
+name: Urban stormwater and agricultural runoff into waterways
+description: Urban stormwater and agricultural runoff into waterways
+theme: environment
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.environment.environmental_pressure
+- problem.hawkes_bay.environment.ahuriri_estuary
+claim_ids: []

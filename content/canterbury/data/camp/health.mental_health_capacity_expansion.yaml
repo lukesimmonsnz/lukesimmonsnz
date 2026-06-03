@@ -1,0 +1,20 @@
+id: camp.canterbury.health.mental_health_capacity_expansion
+name: Mental Health Service Capacity & Access Expansion
+theme: health
+core_claim: Expanding primary care-based mental health (counseling, psychotherapy)
+  and reducing specialist waitlists improves early intervention and outcomes.
+flagship_moves:
+- Key intervention for Mental Health Service Capacity & Access Expansion
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.health.mental_health
+interventions:
+- description: Expanding primary care-based mental health (counseling, psychotherapy)
+    and reducing specialist waitlists improves early intervention and outcomes.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

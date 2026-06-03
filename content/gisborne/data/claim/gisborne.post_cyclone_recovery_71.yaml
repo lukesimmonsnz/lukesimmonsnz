@@ -1,0 +1,21 @@
+id: claim.gisborne.economy.post_cyclone_recovery_71
+statement: Post-Cyclone Gabrielle recovery in Gisborne requires $1.2-1.5B investment
+  across housing, infrastructure, and livelihoods. Slow progress on permanent housing;
+  rural livelihoods (farming, forestry) face productivity losses; government recovery
+  funding remains insufficient relative to local capacity.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mode_share_v1
+notes: null

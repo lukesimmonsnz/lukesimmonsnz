@@ -1,0 +1,22 @@
+id: camp.wellington.economy.economic_diversification
+name: Economic Diversification Beyond Public Sector
+theme: economy
+core_claim: Wellington must actively cultivate a private sector technology and creative economy to reduce dependence on government
+  employment.
+flagship_moves:
+- Wellington tech sector accelerator with Crown co-investment
+- Film and creative industries support through WREDA and Screen Wellington
+- Export-oriented business attraction incentives for Wellington CBD
+tensions:
+- Private sector clusters are geographically self-reinforcing; Auckland-Auckland dominance is hard to reverse
+- Government subsidy for specific sectors risks picking winners with poor ROI
+addresses:
+- problem.wellington.economy.public_sector_dependence
+interventions:
+- description: Establish Wellington Innovation District around Courtenay Place and Te Whanganui-a-Tara waterfront with anchor
+    tenants
+  state_variable: private_sector_employment_share
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

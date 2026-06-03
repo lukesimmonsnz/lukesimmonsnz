@@ -1,0 +1,11 @@
+id: driver.southland.health.chronic_disease_lifestyle
+name: Lifestyle Risk Factors and Obesity
+description: Southland has higher obesity, sedentary behavior, smoking rates.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.health.chronic_disease
+claim_ids: []

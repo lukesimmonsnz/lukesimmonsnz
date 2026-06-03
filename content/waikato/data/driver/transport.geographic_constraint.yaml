@@ -1,0 +1,10 @@
+id: driver.waikato.transport.geographic_constraint
+name: Network topology and geographic constraint
+description: Network topology and geographic constraint in the regional context.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

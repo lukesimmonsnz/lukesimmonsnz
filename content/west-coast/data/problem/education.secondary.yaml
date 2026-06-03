@@ -1,0 +1,42 @@
+id: problem.west_coast.education.secondary
+title: Secondary school roll decline and curriculum narrowing
+theme: education
+section: education
+subpage: secondary
+parent: achievement
+order: 3
+updated: '2026-04-26'
+summary: Westport's secondary roll has dropped roughly forty percent since 2010, and other secondary schools across the Coast
+  face similar contraction. Falling rolls force curriculum narrowing, staff retention difficulty and longer travel for students
+  from settlements without their own secondary school.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - secondary_roll
+  - subject_offering_count
+  - boarding_subsidy_uptake
+  inputs:
+  - moe_isolation_index_funding
+  - school_transport_subsidy
+  constraints:
+  - small_population_base
+  - geographic_dispersion
+  feedback_loops:
+  - Roll decline narrows the curriculum, which makes the schools less attractive to in-migrating families, which deepens roll
+    decline — a structural pattern small rural high schools across NZ share.
+narrative:
+- heading: Rolls are shrinking and pathways are narrowing
+  body: Westport High enrolment is down approximately 40 percent since 2010 (claim.west_coast.education.secondary_claim),
+    and the broader pattern across Greymouth, Hokitika and Buller High is one of slow decline. With fewer students, schools
+    struggle to staff senior physics, chemistry, languages and accelerated mathematics, narrowing the credible curriculum.
+- heading: Distance-to-secondary problem
+  body: Smaller communities without a secondary school of their own require either long daily bus trips or boarding away from
+    home for older teenagers. Both options carry costs that are not evenly borne, and influence whether students continue
+    to NCEA Level 3 at all.
+claim_ids:
+- claim.west_coast.education.secondary_claim
+status: draft
+time_horizons:
+- decade
+- generation

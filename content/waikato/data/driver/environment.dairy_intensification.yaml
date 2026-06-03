@@ -1,0 +1,15 @@
+id: driver.waikato.environment.dairy_intensification
+name: Dairy farming intensification
+description: High livestock stocking rates and synthetic fertiliser use generate nitrate
+  leaching that exceeds freshwater standards.
+theme: environment
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.environment.waikato_river_degradation
+- problem.waikato.environment.freshwater_quality
+- problem.waikato.environment.biodiversity_loss
+- problem.waikato.environment.peat_soil_degradation
+claim_ids: []

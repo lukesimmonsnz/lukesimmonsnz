@@ -1,0 +1,31 @@
+id: problem.marlborough.infrastructure.port_infrastructure
+title: Picton Port and Maritime Infrastructure
+theme: infrastructure
+section: infrastructure
+subpage: port_infrastructure
+parent: problem.marlborough.infrastructure.infrastructure
+order: 1
+updated: '2026-04-26'
+summary: Port capacity for inter-island freight; cruise ship facility pressures; maritime
+  safety constraints.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Port capacity for inter-island freight; cruise ship facility pressures; maritime
+    safety constraints.
+claim_ids:
+- claim.marlborough.infrastructure.port_infrastructure_1
+- claim.marlborough.infrastructure.port_infrastructure_2
+status: draft
+time_horizons: [decade, generation]

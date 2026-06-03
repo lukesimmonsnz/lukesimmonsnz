@@ -1,0 +1,24 @@
+id: 'problem.waikato.environment.water_quality'
+title: 'Waikato: freshwater quality'
+theme: 'environment'
+section: 'environment'
+subpage: 'water-quality'
+parent: 'problem.waikato.environment.degradation'
+order: 3
+updated: '2026-04-26'
+summary: 'Water quality is degraded.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Water quality is degraded.'
+claim_ids:
+- 'claim.waikato.environment.water_quality_claim1'
+- 'claim.waikato.environment.water_quality_claim2'
+status: 'draft'

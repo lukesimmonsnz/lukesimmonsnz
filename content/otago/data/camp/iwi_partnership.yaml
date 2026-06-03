@@ -1,0 +1,21 @@
+id: camp.otago.governance.iwi_partnership
+name: Iwi-Crown-Council Partnership Framework
+theme: governance
+core_claim: Formalizing decision-making partnerships with Ngāi Tahu improves legitimacy
+  and outcomes.
+flagship_moves:
+- Joint governance boards for key resources (water, forests, heritage)
+- Co-management agreements with defined authority
+- Mātauranga Māori integration in planning
+tensions:
+- Colonial power imbalances; contentious process
+- Resource allocation from co-management
+addresses:
+- problem.otago.governance.treaty_ngai_tahu
+interventions:
+- description: Establish joint decision-making framework for Clutha/Mata-au system
+  state_variable: governance_legitimacy
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

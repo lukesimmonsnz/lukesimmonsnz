@@ -1,0 +1,13 @@
+id: source.nz_education_2024
+title: 'Education Counts: NCEA Attainment and Schooling Statistics 2024'
+author: Ministry of Education
+publisher: Education Counts (Ministry of Education)
+year: 2024
+url: https://www.educationcounts.govt.nz/statistics/ncea/ncea-attainment
+type: primary-data
+credibility: official
+geo_granularity:
+- otago
+- nz
+notes: Education Counts is the Ministry of Education's official statistics portal — NCEA Level 1/2/3 attainment by school
+  decile, ethnicity, region, and territorial authority. Replaces homepage URL.

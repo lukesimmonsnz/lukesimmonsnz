@@ -1,0 +1,23 @@
+id: claim.west_coast.inequality.rental_affordability_gap_claim
+statement: 'Rental affordability gap in West Coast is severe: median gross household
+  income is $52,000; median rent for a 2-bedroom in Westport or Greymouth is approximately
+  $280/week ($14,560 annually), consuming 28 percent of gross income. For households
+  below median (40th percentile), rent-to-income ratio exceeds 40 percent, leaving
+  insufficient funds for food, heating, transport, and health expenses.'
+value: 28
+unit: percent rent-to-income (median household)
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_housing_2024
+- source.census_income_west_coast_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.rent_to_income_v1
+notes: Income and rent data from Census and rental market surveys; affordability thresholds
+  from housing policy literature.

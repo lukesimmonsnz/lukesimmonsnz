@@ -1,0 +1,21 @@
+id: claim.southland.infrastructure.digital_rural_prevalence
+statement: Digital infrastructure in rural Southland lags urban provision. Broadband
+  coverage <95% in Catlins, Mataura Valley, western Te Anau; 4G mobile spotty in remote
+  areas. Business and education hampered; telehealth/remote work capacity constrained.
+  UFB (Ultra-Fast Broadband) rollout prioritized city areas; rural deployment extends
+  through 2025-2026.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

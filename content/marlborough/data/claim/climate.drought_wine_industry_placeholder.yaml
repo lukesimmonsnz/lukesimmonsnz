@@ -1,0 +1,22 @@
+id: claim.marlborough.climate.drought_wine_industry_placeholder
+statement: Wine industry faces intensifying summer drought; Wairau Aquifer irrigation
+  demand peaks November–April; irrigation consent applications increasingly challenged;
+  drought cycle length shortening from 7–10 years (1990–2020) to projected 5–7 years
+  (2025–2050).
+value: null
+unit: null
+time_period: 2025-2050
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wine_industry_climate_2023
+- source.nz_climate_projections_2023
+- source.wairau_catchment_study_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

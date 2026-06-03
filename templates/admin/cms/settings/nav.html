@@ -1,0 +1,276 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Settings · Navigation{% endblock %}
+{% set active = 'settings' %}
+{% set crumbs = [{'label': 'Settings', 'url': url_for('cms.settings_landing')}, {'label': 'Navigation'}] %}
+
+{% block extra_css %}
+/* Nav builder */
+.nav-list { list-style: none; margin: 0; padding: 0; }
+.nav-item { background: #fcfaf3; border: 0.5px solid #d9d0bf; border-radius: 6px;
+            margin-bottom: 6px; }
+.nav-row  { display: flex; align-items: center; gap: 10px; padding: 10px 12px; }
+.drag-handle { cursor: grab; color: #b5a898; font-size: 18px; line-height: 1;
+               user-select: none; flex-shrink: 0; }
+.drag-handle:active { cursor: grabbing; }
+.nav-label { font-weight: 600; font-size: 14px; color: #1a1613; min-width: 120px; }
+.nav-url   { font-size: 12px; color: #6b5f53; font-family: ui-monospace, monospace;
+             flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nav-actions { display: flex; gap: 6px; margin-left: auto; flex-shrink: 0; }
+.btn-xs { font-size: 11px; padding: 3px 9px; border-radius: 4px; border: 0.5px solid #c4956a;
+          background: transparent; color: #c4956a; cursor: pointer; }
+.btn-xs:hover { background: #c4956a; color: #fff; }
+.btn-xs.del { border-color: #a04030; color: #a04030; }
+.btn-xs.del:hover { background: #a04030; color: #fff; }
+.nav-children-wrap { padding: 0 12px 10px 36px; }
+.nav-children { border-left: 2px solid #e8e0d0; padding-left: 10px; }
+.nav-children .nav-item { background: #f7f4ec; }
+.nav-children .nav-children .nav-item { background: #f3f0e6; }
+.inline-form { display: none; padding: 8px 12px 10px; border-top: 0.5px solid #e8e0d0;
+               gap: 8px; flex-wrap: wrap; align-items: center; }
+.inline-form.open { display: flex; }
+.inline-form input { font-size: 13px; padding: 5px 9px; border: 0.5px solid #c9bfad;
+                     border-radius: 4px; background: #fff; }
+.inline-form input.lbl { width: 160px; }
+.inline-form input.url { flex: 1; min-width: 200px; font-family: ui-monospace, monospace; }
+.add-row { padding: 6px 0 2px; }
+.add-row button { font-size: 12px; color: #6b5f53; background: none; border: none;
+                  cursor: pointer; padding: 4px 0; }
+.add-row button:hover { color: #c4956a; }
+.sortable-ghost { opacity: 0.4; background: #e8ddd0 !important; }
+{% endblock %}
+
+{% block head_actions %}
+<button class="btn btn-secondary" id="btn-revert">Revert</button>
+<button class="btn btn-primary" id="btn-save">Save</button>
+<button class="btn btn-primary" id="btn-publish" style="background:#3a7050;border-color:#3a7050;">Publish all</button>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">Navigation</h1>
+<p style="font-size:13px;color:#6b5f53;margin-bottom:16px;">
+  Drag ⠿ to reorder. Click <strong>Edit</strong> to change label or URL.
+  Children nest up to depth 3. <strong>Save</strong> persists; <strong>Publish all</strong> exports to <code>site_settings.json</code>.
+</p>
+
+<ul class="nav-list" id="root-list"></ul>
+<div class="add-row"><button type="button" id="btn-add-root">＋ Add item</button></div>
+<div style="margin-top:8px;font-size:11px;color:#8a7a66;" id="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+<script>
+var INITIAL = {{ value_json | safe }};
+var dirty = false;
+
+// ---------- DOM helpers ----------
+
+function el(tag, cls, text) {
+  var e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+
+// ---------- Tree rendering ----------
+
+function makeItem(item, depth) {
+  // depth: 1 = top-level, 2 = child, 3 = grandchild (max)
+  var li = el('li', 'nav-item');
+  li.dataset.label = item.label || '';
+  li.dataset.url   = item.url   || '';
+
+  // Row
+  var row = el('div', 'nav-row');
+  var handle = el('span', 'drag-handle', '⠿');
+  var labelEl = el('span', 'nav-label', item.label || '(no label)');
+  var urlEl   = el('span', 'nav-url',   item.url   || '');
+  var actions = el('div', 'nav-actions');
+
+  var btnEdit = el('button', 'btn-xs', 'Edit');
+  var btnDel  = el('button', 'btn-xs del', 'Delete');
+  actions.appendChild(btnEdit);
+  actions.appendChild(btnDel);
+  row.appendChild(handle);
+  row.appendChild(labelEl);
+  row.appendChild(urlEl);
+  row.appendChild(actions);
+
+  // Inline edit form
+  var form = el('div', 'inline-form');
+  var inpLabel = el('input'); inpLabel.className = 'lbl'; inpLabel.placeholder = 'Label';
+  inpLabel.value = item.label || '';
+  var inpUrl = el('input'); inpUrl.className = 'url'; inpUrl.placeholder = '/url/';
+  inpUrl.value = item.url || '';
+  var btnOk = el('button', 'btn-xs', 'OK');
+  form.appendChild(inpLabel); form.appendChild(inpUrl); form.appendChild(btnOk);
+
+  btnEdit.addEventListener('click', function() {
+    form.classList.toggle('open');
+    if (form.classList.contains('open')) inpLabel.focus();
+  });
+
+  function applyEdit() {
+    li.dataset.label = inpLabel.value;
+    li.dataset.url   = inpUrl.value;
+    labelEl.textContent = inpLabel.value || '(no label)';
+    urlEl.textContent   = inpUrl.value   || '';
+    form.classList.remove('open');
+    markDirty();
+  }
+  btnOk.addEventListener('click', applyEdit);
+  inpUrl.addEventListener('keydown', function(e) { if (e.key === 'Enter') applyEdit(); });
+
+  btnDel.addEventListener('click', function() {
+    li.parentElement.removeChild(li);
+    markDirty();
+  });
+
+  li.appendChild(row);
+  li.appendChild(form);
+
+  // Children container (only for depth < 3)
+  var childWrap = null;
+  var childList = null;
+  if (depth < 3) {
+    childWrap = el('div', 'nav-children-wrap');
+    childList = el('ul', 'nav-children nav-list');
+    childWrap.appendChild(childList);
+
+    var addChildRow = el('div', 'add-row');
+    var btnAddChild = el('button', null, '＋ Add child');
+    addChildRow.appendChild(btnAddChild);
+    childWrap.appendChild(addChildRow);
+    li.appendChild(childWrap);
+
+    var children = item.children || [];
+    children.forEach(function(child) {
+      childList.appendChild(makeItem(child, depth + 1));
+    });
+
+    Sortable.create(childList, sortableOpts(depth + 1));
+
+    btnAddChild.addEventListener('click', function() {
+      var newLi = makeItem({label: '', url: '', children: []}, depth + 1);
+      childList.appendChild(newLi);
+      // auto-open edit form
+      newLi.querySelector('.inline-form').classList.add('open');
+      newLi.querySelector('input.lbl').focus();
+      markDirty();
+    });
+  }
+
+  return li;
+}
+
+function sortableOpts(depth) {
+  return {
+    handle: '.drag-handle',
+    animation: 150,
+    ghostClass: 'sortable-ghost',
+    group: {
+      name: 'nav-level-' + depth,
+      pull: function(to, from) {
+        // Allow pulling to same level only
+        return to.options.group.name === from.options.group.name;
+      },
+      put: function(to, from) {
+        return to.options.group.name === from.options.group.name;
+      }
+    },
+    onEnd: markDirty
+  };
+}
+
+function markDirty() {
+  dirty = true;
+  document.getElementById('status').textContent = 'Unsaved changes';
+  document.getElementById('status').style.color = '#c4956a';
+}
+
+// ---------- Serialise DOM → JSON ----------
+
+function serialiseList(ul) {
+  var items = [];
+  var lis = ul.children;
+  for (var i = 0; i < lis.length; i++) {
+    var li = lis[i];
+    var item = { label: li.dataset.label || '', url: li.dataset.url || '' };
+    var childList = li.querySelector('.nav-children');
+    if (childList && childList.children.length > 0) {
+      item.children = serialiseList(childList);
+    }
+    items.push(item);
+  }
+  return items;
+}
+
+// ---------- Render initial data ----------
+
+function renderAll(data) {
+  var rootList = document.getElementById('root-list');
+  rootList.innerHTML = '';
+  (data || []).forEach(function(item) {
+    rootList.appendChild(makeItem(item, 1));
+  });
+  Sortable.create(rootList, sortableOpts(1));
+}
+
+renderAll(INITIAL);
+
+// ---------- Add root item ----------
+
+document.getElementById('btn-add-root').addEventListener('click', function() {
+  var rootList = document.getElementById('root-list');
+  var newLi = makeItem({label: '', url: '', children: []}, 1);
+  rootList.appendChild(newLi);
+  newLi.querySelector('.inline-form').classList.add('open');
+  newLi.querySelector('input.lbl').focus();
+  markDirty();
+});
+
+// ---------- Save ----------
+
+document.getElementById('btn-save').addEventListener('click', function() {
+  var data = serialiseList(document.getElementById('root-list'));
+  var status = document.getElementById('status');
+  fetch('/admin/api/settings/nav/', {
+    method: 'PUT',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({value: data})
+  }).then(function(r){ return r.json(); }).then(function(j) {
+    if (j.ok) {
+      dirty = false;
+      INITIAL = data;
+      status.textContent = 'Saved at ' + new Date().toLocaleTimeString();
+      status.style.color = '#3a7050';
+      if (window.toast) window.toast('Saved');
+    } else {
+      status.textContent = 'Save failed';
+      status.style.color = '#a04030';
+    }
+  });
+});
+
+// ---------- Revert ----------
+
+document.getElementById('btn-revert').addEventListener('click', function() {
+  renderAll(INITIAL);
+  dirty = false;
+  var status = document.getElementById('status');
+  status.textContent = 'Reverted'; status.style.color = '#8a7a66';
+});
+
+// ---------- Publish ----------
+
+document.getElementById('btn-publish').addEventListener('click', function() {
+  fetch('/admin/api/settings/publish/', {method: 'POST'})
+    .then(function(r){ return r.json(); })
+    .then(function(j){ if (window.toast) window.toast(j.ok ? 'Published' : 'Publish failed'); });
+});
+
+// ---------- Unsaved-change guard ----------
+
+window.addEventListener('beforeunload', function(e) {
+  if (dirty) { e.preventDefault(); e.returnValue = ''; }
+});
+</script>
+{% endblock %}

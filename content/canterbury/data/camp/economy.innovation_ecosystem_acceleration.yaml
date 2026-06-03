@@ -1,0 +1,21 @@
+id: camp.canterbury.economy.innovation_ecosystem_acceleration
+name: Innovation Ecosystem & EPIC Precinct Growth
+theme: economy
+core_claim: Venture capital attraction, startup support, and university-industry collaboration
+  at EPIC Precinct can grow Canterbury tech and agritech sectors to 5-10% of employment.
+flagship_moves:
+- Key intervention for Innovation Ecosystem & EPIC Precinct Growth
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.economy.tech_innovation
+interventions:
+- description: Venture capital attraction, startup support, and university-industry
+    collaboration at EPIC Precinct can grow Canterbury tech and agritech sectors to
+    5-10% of employment.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.economy.trade_exposure
+name: Trade Exposure And Commodity Price Volatility
+description: Trade exposure and commodity price volatility with regional implications.
+theme: economy
+consensus: consensus
+category: economic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.environment.soil_erosion
+claim_ids: []

@@ -1,0 +1,21 @@
+id: camp.wellington.environment.coastal_protection_works
+name: Coastal Protection Infrastructure Investment
+theme: environment
+core_claim: Sea walls, tide gates, and foreshore protection can defend existing coastal assets for at least 30–50 years while
+  longer-term adaptation plans are developed.
+flagship_moves:
+- Upgrade Petone Foreshore protection works to 1m SLR standard
+- Install tide gates on key storm drain outfalls in Miramar and Seaview
+- Dynamic revetment programme using locally sourced rock armour
+tensions:
+- Hard protection creates lock-in and may worsen adjacent erosion
+- 30-50 year protection horizon may not match residual property lifetimes in highest-risk areas
+addresses:
+- problem.wellington.environment.coastal_hazard
+interventions:
+- description: Fund coastal protection upgrade for Petone Foreshore to $80M standard with GWRC/WCC/Crown co-funding
+  state_variable: coastal_protection_standard
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

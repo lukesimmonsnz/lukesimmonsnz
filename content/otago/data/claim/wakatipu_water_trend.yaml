@@ -1,0 +1,23 @@
+id: claim.otago.infrastructure.wakatipu_water_trend
+statement: 'Wakatipu water infrastructure under strain: irrigation season drawdown
+  deepening (drought frequency increasing); municipal supply augmentation projects
+  needed (Wilding Tree Landscape investment, new bore field); treatment plant upgrade
+  deferred (cost/funding uncertainty); summer peak demand periods now seeing supply
+  tightness (hosepipe bans 2-3 summers in past decade); flood defences for Frankton
+  Arm being re-evaluated (climate scenarios); water quality (algae in low-flow periods,
+  sediment from hydro operations) declining.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

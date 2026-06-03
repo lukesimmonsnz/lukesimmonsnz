@@ -1,0 +1,20 @@
+id: claim.marlborough.health.chronic_disease_2
+statement: 'Marlborough obesity prevalence (adult): approximately 30–32% (BMI ≥30),
+  aligned with national average; higher in rural areas (Awatere, Pelorus) where physical
+  activity levels lower and processed food reliance higher; prevention programmes
+  limited to Blenheim.'
+value: 31
+unit: percent obesity prevalence (estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.amenable_mortality_rate_v1
+notes: null

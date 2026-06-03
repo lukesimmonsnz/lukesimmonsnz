@@ -1,0 +1,21 @@
+id: camp.wellington.inequality.maori_wealth_building
+name: Māori Wealth-Building and Homeownership Pathways
+theme: inequality
+core_claim: Targeted homeownership programmes and papakāinga housing on Māori land will close the ethnic wealth gap over a
+  generation.
+flagship_moves:
+- Expand Kāinga Whenua loans for papakāinga on Māori freehold land
+- Māori housing authority with direct development mandate in Wellington region
+- First-home grant boosted for Māori and Pasifika purchasers in Wellington
+tensions:
+- Homeownership pathway requires deposits that remain inaccessible to very low-income households
+- Papakāinga development is constrained by multiple-ownership complexities on Māori freehold land
+addresses:
+- problem.wellington.inequality.ethnic_wealth_gap
+interventions:
+- description: Establish Wellington Māori Housing Authority with $50M Crown equity to develop papakāinga across the region
+  state_variable: maori_homeownership_rate
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

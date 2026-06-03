@@ -1,0 +1,16 @@
+id: driver.northland.environment.land_use_driver
+name: Pastoral and agricultural land use intensification
+description: Dairy and beef farming expansion has increased nutrient runoff and sediment
+  loading in catchments.
+theme: environment
+consensus: contested
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.environment.northland_environment_pressures
+- problem.northland.environment.kauri_dieback
+- problem.northland.environment.freshwater_quality
+- problem.northland.environment.coastal_erosion
+claim_ids:
+- claim.northland.environment.northland_environment_pressures_claim1

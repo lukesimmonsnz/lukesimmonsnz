@@ -1,0 +1,21 @@
+id: camp.otago.crime.safety_ecosystem
+name: Community Safety Ecosystem Strengthening
+theme: crime
+core_claim: Integrated approach to community safety (prevention, policing, support)
+  reduces crime.
+flagship_moves:
+- Community-based crime prevention
+- Police-community partnership
+- Offender support and rehabilitation
+tensions:
+- Community engagement complexity
+- Police resource constraints
+addresses:
+- problem.otago.crime.safety
+interventions:
+- description: Build community safety partnerships
+  state_variable: community_safety_perception
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

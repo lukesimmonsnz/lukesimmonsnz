@@ -1,0 +1,39 @@
+id: problem.wellington.environment.coastal_hazard
+title: Coastal erosion and sea-level rise risk in Wellington
+theme: environment
+section: environment
+subpage: coastal-hazard
+parent: problem.wellington.environment.harbour_health
+order: 4
+updated: '2026-04-26'
+summary: Wellington's coastal margins — particularly Petone Foreshore, Lyall Bay, and the Kāpiti Coast — face growing coastal
+  erosion and flooding risk from sea-level rise and increased storm intensity. The combination of subsidence risk from earthquake
+  activity and sea-level rise creates compound exposure in low-lying areas.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - sea_level_cm_above_1990_baseline
+  - coastal_erosion_rate_m_per_year
+  inputs:
+  - global_temperature_pathway
+  - storm_surge_frequency
+  constraints:
+  - coastal_development_legacy
+  - managed_retreat_political_feasibility
+  feedback_loops:
+  - 'Storm-erosion amplification: sea-level rise reduces the protective buffer of beaches and dunes, increasing the erosion
+    damage from each storm event of the same intensity.'
+narrative:
+- heading: Sea level projections for Wellington
+  body: Wellington is projected to experience 0.4–1.0 m of sea-level rise by 2100 under medium-to-high emissions scenarios,
+    with the upper end representing a credible planning horizon for long-lived coastal infrastructure (claim.wellington.environment.sea_level_projection_2100).
+- heading: Coastal erosion
+  body: Several Wellington coastal sections including Lyall Bay and parts of the Kāpiti Coast are experiencing measurable
+    erosion rates. Rising sea levels will accelerate these dynamics and increase the frequency of storm-surge overtopping
+    events at Petone Foreshore (claim.wellington.environment.coastal_erosion_rate).
+claim_ids:
+- claim.wellington.environment.sea_level_projection_2100
+- claim.wellington.environment.coastal_erosion_rate
+status: draft
+time_horizons: [generation, century]

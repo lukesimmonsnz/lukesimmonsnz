@@ -1,0 +1,20 @@
+id: claim.canterbury.housing.median_multiple_2023
+statement: Canterbury's median multiple (median dwelling price divided by median annual
+  household income) was 7.1 in 2023, an increase from 6.8 in 2020, reflecting sustained
+  demand pressure from government employment and limited supply growth.
+value: 7.1
+unit: ratio (dimensionless)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_income_housing_2023
+- source.demographia_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.median_multiple_v1
+notes: null

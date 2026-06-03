@@ -1,0 +1,23 @@
+id: camp.west_coast.climate.ecological_climate_resilience
+name: Ecological Climate Resilience
+theme: climate-adaptation
+core_claim: West Coast's biodiversity and ecosystem services provide natural flood
+  mitigation; protecting native forest and wetlands reduces climate impact on communities.
+flagship_moves:
+- Expand wetland restoration in river floodplains to reduce flood peaks
+- Protect and restore kahikatea and broadleaf forest buffers on steep slopes
+- Integrate ecosystem-based adaptation into regional planning
+tensions:
+- Ecological interventions take decades to deliver flood mitigation outcomes
+- Mining and farming interests conflict with restoration land use
+addresses:
+- problem.west_coast.climate.climate_risk
+- problem.west_coast.climate.climate_3
+- problem.west_coast.climate.climate_4
+interventions:
+- description: Expand riparian planting along key West Coast rivers
+  state_variable: wetland_area_restored
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

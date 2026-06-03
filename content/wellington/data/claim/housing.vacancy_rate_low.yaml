@@ -1,0 +1,19 @@
+id: claim.wellington.housing.vacancy_rate_low
+statement: Wellington's private rental market has consistently recorded vacancy rates
+  below 2%, well under the 3–4% level typically associated with a balanced rental
+  market, giving landlords sustained pricing power and limiting tenant mobility.
+value: null
+unit: null
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mhud_housing_aotearoa_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

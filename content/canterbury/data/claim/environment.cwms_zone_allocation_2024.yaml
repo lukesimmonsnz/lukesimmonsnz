@@ -1,0 +1,23 @@
+id: claim.canterbury.environment.cwms_zone_allocation_2024
+statement: 'Water allocation in Canterbury''s Canterbury Water Management Strategy
+  (CWMS) zones operates at 95% utilization across irrigation-dependent plains. This
+  high allocation reflects the region''s status as NZ''s most productive agricultural
+  zone: dairy farming (peak 650,000 head), arable crops (wheat, barley, canola), and
+  irrigated pasture dominate land use. Future drought vulnerability is acute; ECan''s
+  water demand model projects continued pressure on allocation headroom as population
+  and irrigation demand grow in Selwyn and Waimakariri districts.'
+value: 95
+unit: percent utilization
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_cwms_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

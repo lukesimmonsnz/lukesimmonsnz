@@ -1,0 +1,24 @@
+id: camp.nelson.inequality.camp_1
+name: 'Response: Camp 1'
+theme: inequality
+core_claim: A response strategy addressing inequality challenges.
+flagship_moves:
+- Implement evidence-based inequality policy in Nelson
+- Increase investment in inequality services and infrastructure
+- Build cross-sector partnerships to address inequality challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.nelson.inequality.inequality_root
+- problem.nelson.inequality.child_poverty
+interventions:
+- description: Primary intervention for inequality
+  state_variable: inequality_outcome_index
+  expected_sign: +
+- description: Secondary intervention for inequality
+  state_variable: inequality_service_access
+  expected_sign: +
+applicable_in:
+- nelson
+tensions_with: []

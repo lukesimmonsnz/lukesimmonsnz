@@ -1,0 +1,22 @@
+id: camp.wellington.governance.amalgamation
+name: Wellington Local Government Amalgamation
+theme: governance
+core_claim: A single Wellington super-city council will eliminate duplication, reduce costs, and enable coherent regional
+  planning.
+flagship_moves:
+- Amalgamate Wellington City, Hutt City, Porirua City, Upper Hutt City, and GWRC into one council
+- Retain local boards for community representation
+- Unified infrastructure and transport planning under single authority
+tensions:
+- Amalgamation risks reducing local voice for smaller communities within the merged entity
+- Transition costs and disruption to services during amalgamation may be high
+- Auckland amalgamation experience shows super-city does not automatically solve infrastructure underinvestment
+addresses:
+- problem.wellington.governance.local_govt_reform
+interventions:
+- description: Commission independent Reorganisation Application to Local Government Commission for Wellington amalgamation
+  state_variable: council_fragmentation_index
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

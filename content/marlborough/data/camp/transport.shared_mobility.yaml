@@ -1,0 +1,21 @@
+id: camp.marlborough.transport.shared_mobility
+name: Shared Mobility Services
+theme: transport
+core_claim: Car-sharing and ride-sharing networks.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.transport.active_modes
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

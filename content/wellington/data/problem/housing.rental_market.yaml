@@ -1,0 +1,43 @@
+id: problem.wellington.housing.rental_market
+title: Rental affordability stress in Wellington
+theme: housing
+section: housing
+subpage: rental-market
+parent: problem.wellington.housing.affordability
+order: 3
+updated: '2026-04-26'
+summary: Wellington's rental market is characterised by low vacancy, high rent-to-income ratios for lower-income households,
+  and limited security of tenure. Government-sector workers occupy a disproportionate share of the premium rental stock, squeezing
+  lower-wage households into peripheral suburbs or into severe housing cost burden.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - median_weekly_rent
+  - rent_to_income_ratio
+  - rental_vacancy_rate
+  inputs:
+  - rental_stock_growth
+  - public_sector_employment_level
+  - social_housing_waitlist
+  constraints:
+  - low_developable_land
+  - investor_return_expectations
+  feedback_loops:
+  - 'Vacancy-rent loop: low vacancy rates remove competitive pressure on rents, enabling sustained above-inflation rent increases.'
+  - 'Displacement loop: high rents displace lower-income households to outer suburbs, increasing transport costs and eroding
+    net income gains.'
+narrative:
+- heading: Rent burden on low-income households
+  body: Wellington rental costs consume approximately 38% of median household income for households in the bottom two income
+    quintiles (claim.wellington.housing.rental_affordability_ratio_2023). This exceeds the 30% affordability threshold widely
+    used in housing policy analysis.
+- heading: Structural vacancy tightness
+  body: Wellington consistently records rental vacancy rates below 2%, well under the 3–4% level generally considered indicative
+    of a balanced market (claim.wellington.housing.vacancy_rate_low). This structural tightness gives landlords sustained
+    pricing power and limits tenants' ability to negotiate or move.
+claim_ids:
+- claim.wellington.housing.rental_affordability_ratio_2023
+- claim.wellington.housing.vacancy_rate_low
+status: draft
+time_horizons: [decade, generation, century]

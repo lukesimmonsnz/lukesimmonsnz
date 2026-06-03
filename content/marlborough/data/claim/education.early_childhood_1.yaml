@@ -1,0 +1,19 @@
+id: claim.marlborough.education.early_childhood_1
+statement: 'Early childhood services (pre-school, playgroups) enrolment in Marlborough
+  850–950 children (0–4); 12 ECE services in Blenheim, 3–4 in Sounds communities;
+  affordability pressure on low-income families: average fees NZD 180–220 per week.'
+value: 200
+unit: NZD mid-range weekly fees
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_achievement_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

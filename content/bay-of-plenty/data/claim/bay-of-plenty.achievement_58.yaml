@@ -1,0 +1,21 @@
+id: claim.bay_of_plenty.education.achievement_58
+statement: Educational achievement in Bay of Plenty shows regional disparities, with
+  NCEA Level 2 attainment at 82% in Tauranga and 72% in rural areas. Tauranga, as
+  NZ's fastest-growing city (pop 165K+, growing 3-4% annually), has younger population
+  skew; rural areas struggle with teacher recruitment and school resourcing.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+- source.niwa_climate_projections_2024
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.amenable_mortality_rate_v1
+notes: null

@@ -1,0 +1,24 @@
+id: camp.waikato.economy.economic_diversification
+name: Economic diversification into services
+theme: economy
+core_claim: Growing Hamilton's services, logistics, and health sectors reduces primary
+  industry concentration.
+flagship_moves:
+- Develop Hamilton as a logistics hub leveraging its central North Island location
+- Invest in Hamilton's health sector as a regional medical centre
+- Attract back-office functions from Auckland through competitive commercial rents
+tensions:
+- Diversification may conflict with rural community interests in primary sector
+- Service sector wages are typically lower than primary sector wages in Waikato
+interventions:
+- description: Develop Hamilton as a logistics hub leveraging its central North Island
+    location
+  state_variable: gdp_per_capita_growth
+  expected_sign: +
+addresses:
+- problem.waikato.economy.agri_productivity
+- problem.waikato.economy.tech_sector_gap
+- problem.waikato.economy.regional_wage_gap
+applicable_in:
+- waikato
+tensions_with: []

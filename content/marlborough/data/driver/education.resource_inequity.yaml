@@ -1,0 +1,12 @@
+id: driver.marlborough.education.resource_inequity
+name: School Resource Inequity And Funding Constraints
+description: School resource inequity and funding constraints with regional implications.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.environment.environmental_pressure
+claim_ids: []

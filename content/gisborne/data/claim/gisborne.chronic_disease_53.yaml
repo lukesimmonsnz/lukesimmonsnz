@@ -1,0 +1,19 @@
+id: claim.gisborne.health.chronic_disease_53
+statement: Type 2 diabetes prevalence in Gisborne's Māori population significantly
+  exceeds national rates, driven by limited preventive health access, high deprivation,
+  and geographic isolation of rural communities.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.amenable_mortality_rate_v1
+notes: null

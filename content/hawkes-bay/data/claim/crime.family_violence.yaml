@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.crime.family_violence_2100_2400_incidents
+statement: Family violence incidents in Hawke's Bay total approximately 2,250 per
+  annum, with calls to NZ Police exceeding 3,000 annually due to repeat victimisation.
+  Socioeconomic deprivation (particularly in Hastings and Wairoa) correlates with
+  elevated family violence rates; prevention services and survivor support remain
+  under-resourced relative to demand.
+value: 2250
+unit: incidents per annum
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1

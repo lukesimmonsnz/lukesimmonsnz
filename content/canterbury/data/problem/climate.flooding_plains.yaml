@@ -1,0 +1,47 @@
+id: problem.canterbury.climate.flooding_plains
+title: Flooding Risk & Stormwater Infrastructure Adequacy
+theme: climate-adaptation
+section: climate
+subpage: flooding_plains
+parent: problem.canterbury.climate.climate_risk
+order: 3
+updated: '2026-04-26'
+summary: 'Christchurch plains are low-lying and subject to flooding from riverine
+  (Waimakariri, Ōtukaikino) and urban stormwater sources. Design standards assume
+  100-year rainfall events of ~50mm/24hr; climate projections indicate 60-70mm by
+  2070s (20-40% increase). Stormwater systems in Christchurch and growth suburbs are
+  running near saturation. Recent urban flooding (2022-2023) has exceeded design standards,
+  causing property damage and service disruption.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - hundred_year_rainfall_intensity_design_standard
+  - stormwater_system_capacity_utilization
+  - urban_flooding_event_frequency
+  - flood_affected_property_count
+  inputs:
+  - rainfall_intensity_increase
+  - urbanization_impervious_surface_increase
+  - stormwater_investment_rate
+  constraints:
+  - stormwater_upgrade_capex_requirement
+  - design_standard_lag_climate_change
+  feedback_loops:
+  - Dynamic feedback mechanisms drive flooding risk & stormwater infrastructure adequacy.
+narrative:
+- heading: Infrastructure design lag
+  body: 'Stormwater systems were designed to 100-year storm standards (~50mm/24hr);
+    climate change is pushing these storms toward 50-year frequency. Christchurch
+    and growth suburbs face increasing urban flooding (basement inundation, street
+    ponding, park/reserve overflow). Stormwater upgrades require $billions; funding
+    is constrained by earthquake debt service.
+
+    '
+claim_ids:
+- claim.canterbury.climate.rainfall_intensification_2070s_2023
+- claim.canterbury.climate.stormwater_capacity_utilization_2023
+status: draft
+time_horizons: [generation, century]

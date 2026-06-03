@@ -1,0 +1,22 @@
+id: claim.tasman.infrastructure.infrastructure_3_claim
+statement: Digital connectivity in Golden Bay lags regional average; only 76% of properties
+  have access to fixed broadband (>30 Mbps), vs regional average of 88%. Rural blocks
+  and properties beyond 5km from Motueka/Richmond rely on satellite or cellular. Crown
+  investment in Rural Broadband Initiative Phase 2 will extend fibre to Takaka by
+  2026.
+value: 76
+unit: percent broadband access (>30 Mbps)
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.tasman_housing_demand_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

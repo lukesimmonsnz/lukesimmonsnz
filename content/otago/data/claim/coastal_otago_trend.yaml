@@ -1,0 +1,22 @@
+id: claim.otago.environment.coastal_otago_trend
+statement: 'Coastal Otago biodiversity and infrastructure under pressure: hoiho population
+  declining (habitat loss, disease, fishing nets); Hector''s dolphin bycatch ongoing;
+  Otago Harbour container/log operations expanding and generating wake/noise impact;
+  residential development creeping into Otago Peninsula and Catlins; marine pest (Asian
+  kelp) management underway; sea-level rise and storm surge frequency increasing;
+  Defence spending on coastal hazard adaptation limited.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

@@ -1,0 +1,33 @@
+id: problem.gisborne.housing.affordability
+title: Housing affordability crisis in Gisborne — Te Tairāwhiti
+theme: housing
+section: housing
+subpage: affordability
+parent: problem.gisborne.housing.housing_shortage
+order: 2
+updated: '2026-04-26'
+summary: Housing affordability crisis is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - affordability_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Housing affordability crisis is a key facet of the broader pressure facing
+    the region.
+claim_ids:
+- claim.gisborne.housing.affordability_03
+- claim.gisborne.housing.affordability_04
+status: draft
+time_horizons: [decade, generation, century]

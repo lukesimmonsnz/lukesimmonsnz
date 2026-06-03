@@ -59,4 +59,7 @@ claim_ids:
   - claim.auckland.economy.wage_growth_lag
   - claim.auckland.economy.auckland_underemployment
   - claim.auckland.economy.gig_precarity
+  - claim.auckland.economy.automation_exposure_share_2018
+  - claim.auckland.economy.health_workforce_retirement_2024
 status: draft
+time_horizons: [decade, generation]

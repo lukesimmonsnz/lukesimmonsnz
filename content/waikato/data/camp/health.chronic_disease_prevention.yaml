@@ -1,0 +1,20 @@
+id: camp.waikato.health.chronic_disease_prevention
+name: Chronic disease prevention programme
+theme: health
+core_claim: Chronic disease prevention programme is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement chronic disease prevention programme
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

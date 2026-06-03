@@ -1,0 +1,20 @@
+id: camp.gisborne.governance.governance_approach
+name: Strategic approach for governance
+theme: governance
+core_claim: Strategic intervention on governance will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting governance
+- Priority action 2 targeting governance
+- Institutional coordination mechanism for governance
+tensions:
+- 'Tension 1: governance'
+- 'Tension 2: governance'
+addresses:
+- problem.gisborne.governance.governance
+interventions:
+- description: Primary intervention for governance
+  state_variable: governance_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

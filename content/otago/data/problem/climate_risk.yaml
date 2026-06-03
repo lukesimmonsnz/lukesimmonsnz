@@ -1,0 +1,36 @@
+id: problem.otago.climate.climate_risk
+title: Climate Change Risk and Adaptation
+theme: climate-adaptation
+section: climate
+subpage: climate_risk
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Central Otago faces drought and alpine hazard risk; Dunedin coastal flooding
+  and storm surge risk; Wakatipu basin extreme weather; region-wide agricultural adaptation
+  pressure.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Central Otago faces drought and alpine hazard risk; Dunedin coastal flooding
+    and storm surge risk; Wakatipu basin extreme weather; region-wide agricultural
+    adaptation pressure.
+claim_ids:
+- claim.otago.climate.coastal_dunedin_prevalence
+- claim.otago.climate.alpine_hazards_prevalence
+- claim.otago.climate.climate_risk_trend
+- claim.otago.climate.drought_central_otago_trend
+- claim.otago.climate.climate_risk_prevalence
+- claim.otago.climate.drought_central_otago_prevalence
+- claim.otago.climate.coastal_dunedin_trend
+- claim.otago.climate.alpine_hazards_trend
+status: draft
+time_horizons: [generation, century]

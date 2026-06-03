@@ -79,3 +79,4 @@ claim_ids:
   - claim.auckland.transport.cycling_mode_share_low
   - claim.auckland.transport.cycling_network_fragmentation
 status: draft
+time_horizons: [decade, generation]

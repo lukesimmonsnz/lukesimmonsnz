@@ -1,0 +1,20 @@
+id: claim.marlborough.housing.affordability_1
+statement: 'Marlborough median house price: NZD 570–620k (2023), up from NZD 280k
+  (2015); median multiple 8.5–9.2× household income (annual NZD 65–75k); severely
+  unaffordable by Demographia standards (≥5.1×); Blenheim median NZD 600k, outer suburbs/rural
+  NZD 450–500k.'
+value: 595000
+unit: NZD median house price 2023
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.median_multiple_v1
+notes: null

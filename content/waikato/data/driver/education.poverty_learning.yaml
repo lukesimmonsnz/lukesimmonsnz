@@ -1,0 +1,15 @@
+id: driver.waikato.education.poverty_learning
+name: Poverty as a barrier to learning
+description: Children in poverty experience developmental disadvantages that compound
+  over time, widening achievement gaps.
+theme: education
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.education.waikato_education_inequity
+- problem.waikato.education.achievement
+- problem.waikato.education.early_childhood
+- problem.waikato.education.tertiary_pathway
+claim_ids: []

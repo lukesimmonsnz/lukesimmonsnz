@@ -1,5 +1,16 @@
 id: source.niwa_climate_auckland_2023
-title: "NIWA Auckland Climate Projections and Risk Assessment 2023"
+title: "Climate Change Projections for the Auckland Region (2nd ed.)"
+author: "NIWA Taihoro Nukurangi"
+publisher: "Auckland Council Research and Evaluation Unit (RIMU)"
 type: government-report
+credibility: official
 year: 2023
-url: "https://www.niwa.co.nz/climate/research-projects/regional-climate-projections"
+url: "https://knowledgeauckland.org.nz/publications/climate-change-projections-for-the-auckland-region-2nd-edition/"
+geo_granularity:
+  - auckland
+notes: >
+  NIWA-prepared dynamically downscaled climate projections for the Auckland
+  region, published by Auckland Council's Research and Evaluation Unit.
+  Provides regional temperature, rainfall, extreme rainfall, and sea-level
+  outputs for use in adaptation planning. Direct primary source for Auckland
+  climate-projection figures.

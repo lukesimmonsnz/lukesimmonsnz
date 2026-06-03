@@ -1,0 +1,14 @@
+id: source.moe_education_2023
+title: NCEA Attainment Statistics 2023
+author: Ministry of Education
+publisher: Education Counts (Ministry of Education)
+year: 2023
+url: https://www.educationcounts.govt.nz/statistics/ncea/ncea-attainment
+type: primary-data
+credibility: official
+geo_granularity:
+- bay-of-plenty
+- gisborne
+- nz
+notes: 'Education Counts is the Ministry of Education''s official statistics portal: NCEA Level 1/2/3 and University Entrance
+  attainment by school decile, ethnicity, and region. Replaces homepage URL.'

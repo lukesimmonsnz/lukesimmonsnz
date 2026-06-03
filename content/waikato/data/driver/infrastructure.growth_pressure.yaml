@@ -1,0 +1,14 @@
+id: driver.waikato.infrastructure.growth_pressure
+name: Growth-driven infrastructure demand
+description: Rapid Hamilton population growth accelerates infrastructure wear and
+  demands new capacity investment.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.infrastructure.three_waters
+- problem.waikato.infrastructure.digital_rural
+- problem.waikato.infrastructure.roading
+claim_ids: []

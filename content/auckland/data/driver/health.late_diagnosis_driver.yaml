@@ -1,19 +1,17 @@
 id: driver.auckland.health.late_diagnosis_driver
-name: "Late Diagnosis from Access Barriers"
-description: >
-  Primary care cost barriers and cultural distance from health services
-  mean that chronic conditions are diagnosed later in Maori and Pacific
-  Aucklanders; diabetes, cardiovascular disease, and cancer diagnosed
-  at advanced stages require higher-acuity treatment and generate worse
-  outcomes. Screening programmes do not reach high-risk populations
-  at the rates needed to close the gap.
+name: Late Diagnosis from Access Barriers
+description: Primary care cost barriers in high-deprivation communities mean that chronic conditions are
+  diagnosed later than in areas where out-of-pocket GP costs are not a deterrent. Diabetes, cardiovascular
+  disease, and cancer diagnosed at advanced stages require higher-acuity treatment and generate worse
+  long-run outcomes. Screening programmes do not reach high-risk populations at rates sufficient to close
+  the gap.
 theme: health
 consensus: consensus
 category: institutional
 timescale: medium
 scope: regional
 problem_ids:
-  - problem.auckland.health.chronic_disease
+- problem.auckland.health.chronic_disease
 claim_ids:
-  - claim.auckland.health.diabetes_prevalence_auckland
-  - claim.auckland.health.maori_pacific_amenable_mortality
+- claim.auckland.health.diabetes_prevalence_auckland
+- claim.auckland.health.maori_pacific_amenable_mortality

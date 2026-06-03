@@ -1,0 +1,20 @@
+id: camp.gisborne.crime.family_violence_approach
+name: Strategic approach for family_violence
+theme: crime
+core_claim: Strategic intervention on family_violence will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting family_violence
+- Priority action 2 targeting family_violence
+- Institutional coordination mechanism for family_violence
+tensions:
+- 'Tension 1: family_violence'
+- 'Tension 2: family_violence'
+addresses:
+- problem.gisborne.crime.family_violence
+interventions:
+- description: Primary intervention for family_violence
+  state_variable: family_violence_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

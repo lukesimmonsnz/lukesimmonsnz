@@ -1,0 +1,33 @@
+id: problem.hawkes_bay.housing.rental_market
+title: Rental market stress
+theme: housing
+section: housing
+subpage: rental-market
+parent: problem.hawkes_bay.housing.affordability
+order: 2
+updated: '2026-04-26'
+summary: "Vacancy rates in Hawke's Bay rental market have fallen below 2%, with rents rising 8-12% annually. Low-income households face displacement; essential workers (healthcare, aged care, education) struggle to secure housing."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - rental_vacancy_rate
+    - median_rent_level
+  inputs:
+    - post_cyclone_stock_loss
+    - investor_acquisition
+  constraints:
+    - rental_property_cost_burden
+    - landlord_investment_returns
+  feedback_loops:
+    - 'High rents drive low-income residents out; loss of workers reduces service capacity; wages rise but lag rent growth.'
+narrative:
+  - heading: Vacancy Collapse
+    body: 'Rental vacancy in Napier and Hastings has fallen to 1.5-2%, making it difficult for new residents and displaced tenants to secure housing.'
+  - heading: Rent Growth
+    body: "Median weekly rent in Hawke's Bay has risen from approximately $400 in 2022 to $550 in 2026 — a 37.5% increase in 4 years."
+claim_ids:
+  - claim.hawkes_bay.housing.rental_vacancy_1_5_percent
+  - claim.hawkes_bay.housing.median_rent_550_2026
+status: draft
+time_horizons: [decade, generation, century]

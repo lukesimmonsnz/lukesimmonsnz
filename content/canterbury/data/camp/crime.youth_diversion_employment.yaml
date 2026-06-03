@@ -1,0 +1,20 @@
+id: camp.canterbury.crime.youth_diversion_employment
+name: Youth Diversion & Employment Pathways
+theme: crime
+core_claim: Youth diversion programs (restorative justice, leadership training) coupled
+  with guaranteed employment pathways reduce reoffending.
+flagship_moves:
+- Key intervention for Youth Diversion & Employment Pathways
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.crime.youth_offending
+interventions:
+- description: Youth diversion programs (restorative justice, leadership training)
+    coupled with guaranteed employment pathways reduce reoffending.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

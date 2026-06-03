@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.economy.worker_cooperative_development
+name: Worker Cooperative Development
+theme: economy
+core_claim: Support for cooperative and mutual ownership models.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.environment.soil_erosion
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

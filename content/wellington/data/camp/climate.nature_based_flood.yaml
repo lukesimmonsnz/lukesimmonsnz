@@ -1,0 +1,21 @@
+id: camp.wellington.climate.nature_based_flood
+name: Nature-Based Flood Risk Solutions
+theme: climate-adaptation
+core_claim: Floodplain restoration, wetland retention, and upstream catchment management can reduce flood peaks at lower cost
+  and with ecological co-benefits.
+flagship_moves:
+- Restore Hutt Valley wetlands as natural flood detention areas
+- Upstream reforestation programme in Wellington catchments to reduce runoff
+- Floodplain setback policy preventing new development in 50-year floodplain
+tensions:
+- Nature-based solutions have longer lead times than engineered options
+- Private land access for wetland restoration requires voluntary or compulsory acquisition
+addresses:
+- problem.wellington.climate.flood_resilience
+interventions:
+- description: Fund Hutt Valley wetland restoration on 200ha of suitable floodplain with GWRC as lead agency
+  state_variable: floodplain_retention_capacity
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

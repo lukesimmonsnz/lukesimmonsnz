@@ -1,0 +1,20 @@
+id: claim.marlborough.education.secondary_1
+statement: 'Marlborough secondary schools: Marlborough Boys'' College and Marlborough
+  Girls'' College (state co-ed now merged to single campus); rural schools (Motueka,
+  Havelock, Rai Valley) increasingly small (50–150 students); limited subject specialization
+  in rural schools.'
+value: 100
+unit: approximate average rural secondary school roll
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_achievement_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,13 @@
+id: driver.gisborne.transport.active_modes_escalation
+name: Driver escalating active_modes
+description: "This driver exacerbates the active_modes challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: transport
+consensus: contested
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.transport.active_modes
+claim_ids:
+- claim.gisborne.transport.active_modes_15

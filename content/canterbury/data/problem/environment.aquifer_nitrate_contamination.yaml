@@ -1,0 +1,44 @@
+id: problem.canterbury.environment.aquifer_nitrate_contamination
+title: Canterbury Aquifer Nitrate Contamination
+theme: environment
+section: environment
+subpage: aquifer_nitrate_contamination
+parent: problem.canterbury.environment.freshwater_stress
+order: 1
+updated: '2026-04-26'
+summary: 'Groundwater nitrate concentrations in mid-Canterbury (Ashburton, Rangitata
+  zones) exceed safe drinking water thresholds in 40+ bores (2023). Treatment costs
+  and potential restrictions on new intensive farming threaten farm profitability
+  and district economic vitality.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - bore_exceedance_count
+  - average_nitrate_concentration_by_zone
+  - treatment_cost_per_household
+  inputs:
+  - dairy_herd_size
+  - n_fertilizer_application_rate
+  - effluent_management_compliance
+  constraints:
+  - drinking_water_standard_11_3mg_l
+  - aquifer_recovery_timescale_decades
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury aquifer nitrate contamination.
+narrative:
+- heading: Legacy N loading emerging in drinking water
+  body: 'Nitrogen applied to Canterbury soils in the 1990s-2010s is now leaching to
+    aquifers as legacy loading. Treatment adds $200-400/household/year to water costs.
+    Restrictions on new dairy conversions are being considered, threatening farming
+    expansion plans.
+
+    '
+claim_ids:
+- claim.canterbury.environment.aquifer_exceedance_bores_2023
+- claim.canterbury.environment.n_loading_source_apportionment_2023
+- claim.canterbury.environment.groundwater_mav_threshold_2023
+status: draft
+time_horizons: [generation, century]

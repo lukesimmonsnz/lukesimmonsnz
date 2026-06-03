@@ -1,0 +1,21 @@
+id: claim.wellington.inequality.pacific_income_gap
+statement: Households in Wellington's high-deprivation communities — primarily Porirua
+  and southern Hutt Valley — earn substantially below the regional median income,
+  concentrated in lower-wage service, retail, and hospitality employment with limited
+  access to the high-wage government and professional roles that dominate Wellington's
+  employment base.
+value: null
+unit: null
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.economy.services_48_percent_employment
+statement: Services sector employment in Hawke's Bay accounts for 48% of total employment,
+  indicating modest diversification beyond agriculture and horticulture. Wholesale
+  and retail, hospitality, and healthcare are growing; however, commodity price exposure
+  (wine, fruit, dairy) remains dominant in gross regional income, limiting economic
+  resilience to market shocks.
+value: 48
+unit: percent employment share
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

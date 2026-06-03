@@ -1,0 +1,34 @@
+id: problem.southland.governance.smelter_energy_policy
+title: Smelter Energy Policy and Infrastructure Negotiations
+theme: governance
+section: governance
+subpage: smelter_energy_policy
+parent: problem.southland.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: Meridian-NZAS power contract negotiations; smelter future affects Manapōuri
+  dam operations, national grid, Southland employment; political complexity high.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Meridian-NZAS power contract negotiations; smelter future affects Manapōuri
+    dam operations, national grid, Southland employment; political complexity high.
+claim_ids:
+- claim.southland.governance.governance_prevalence
+- claim.southland.governance.treaty_ngai_tahu_prevalence
+- claim.southland.governance.smelter_energy_policy_trend
+- claim.southland.governance.local_govt_reform_prevalence
+- claim.southland.governance.local_govt_reform_trend
+- claim.southland.governance.treaty_ngai_tahu_trend
+- claim.southland.governance.smelter_energy_policy_prevalence
+- claim.southland.governance.governance_trend
+status: draft
+time_horizons: [decade, generation, century]

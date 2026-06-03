@@ -1,0 +1,45 @@
+id: problem.canterbury.housing.affordability_christchurch
+title: Christchurch Housing Affordability Crisis
+theme: housing
+section: housing
+subpage: affordability_christchurch
+parent: problem.canterbury.housing.market
+order: 1
+updated: '2026-04-26'
+summary: 'Christchurch''s median multiple of 7.1 (2023) reflects sustained demand
+  pressure from government employment (health, education, public service), construction-driven
+  wage increases, and constrained supply in the CBD rebuild zone. Earthquake-prone
+  building compliance costs limit intensification.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - median_house_price_cbd
+  - affordability_ratio
+  - apartment_supply_cbd
+  - earthquake_prone_building_stock
+  inputs:
+  - govt_employment_growth
+  - construction_wage_inflation
+  - damage_assessment_remediation_rate
+  constraints:
+  - fault_zone_setbacks
+  - earthquake_prone_building_compliance_cost
+  - heritage_area_redevelopment_restrictions
+  feedback_loops:
+  - Dynamic feedback mechanisms drive christchurch housing affordability crisis.
+narrative:
+- heading: CBD supply bottleneck
+  body: 'Christchurch''s CBD rebuild has slowed as earthquake-prone building owners
+    face remediation costs exceeding development value, creating a supply drought
+    in high-demand central locations. Residential apartments in the CBD now command
+    30-40% premiums over equivalent suburban properties.
+
+    '
+claim_ids:
+- claim.canterbury.housing.cbd_apartment_premium_2023
+- claim.canterbury.housing.earthquake_prone_stock_2023
+status: draft
+time_horizons: [decade, generation, century]

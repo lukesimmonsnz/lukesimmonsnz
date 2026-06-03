@@ -1,0 +1,23 @@
+id: claim.nelson.inequality.child_poverty_claim
+statement: Child poverty rates in Nelson are above national average. Using the after-housing-costs
+  measure, 18.2% of Nelson children live in poverty (vs. 14.8% nationally); in Tasman
+  district, the rate is 16.4%. Absolute deprivation is highest in the Tasman Cob,
+  Stoke, and Tatanui suburbs; food insecurity affects 12–14% of low-income households
+  with children. School-based nutrition programmes (breakfast clubs, lunch provision)
+  operate in 7 of 12 primary schools; demand exceeds capacity. Child health indicators
+  (dental caries, rheumatic fever) correlate closely with deprivation quintile.
+value: 18.2
+unit: percent of children in after-housing-costs poverty
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.census_income_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

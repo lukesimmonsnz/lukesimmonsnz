@@ -1,0 +1,22 @@
+id: claim.otago.infrastructure.wakatipu_water_prevalence
+statement: 'Wakatipu water infrastructure in Queenstown faces compound stress: Lake
+  Wakatipu (Frankton Arm) summer drawdown for irrigation (managed by Meridian/water
+  users); competing demands (irrigation, municipal water supply, recreation, ecological
+  flow); aging treatment plant (capacity 20 ML/day, peak demand approaching); pipeline
+  and storage tank aging; flood risk in Frankton precinct (lake-level management contested);
+  climate risk to inflows (snowmelt variability increasing).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

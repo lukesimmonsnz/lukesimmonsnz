@@ -1,0 +1,36 @@
+id: problem.nelson.inequality.rural_isolation
+title: Rural isolation and Golden Bay service access
+theme: inequality
+section: inequality
+subpage: rural_isolation
+parent: inequality_root
+order: 4
+updated: '2026-04-26'
+summary: Rural isolation, particularly in Golden Bay (population around 2,500, centred on Takaka), is a major driver of service-access inequality. Golden Bay is around 105 km by road from Nelson city, via the narrow and seasonally closed Takaka Hill, with no public transport. Healthcare access requires roughly 90 minutes' travel to Nelson Hospital, secondary education requires boarding or distance learning, rural broadband coverage is around 78 percent against 96 percent urban, and rural incomes run 12-18 percent below urban.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - road_km_to_nelson_hospital
+  - rural_broadband_coverage_pct
+  - secondary_school_boarding_dependency
+  inputs:
+  - sh60_resilience_investment
+  - telehealth_programme_funding
+  constraints:
+  - takaka_hill_topography
+  - low_population_density
+  feedback_loops:
+  - 'Distance-population feedback: distance erodes service viability; thinned services raise out-migration of younger working-age residents; the remaining population is older and more service-dependent, raising per-capita cost.'
+narrative:
+- heading: Distance, not deprivation, as the structural variable
+  body: 'Golden Bay residents are not on average more deprived than Nelson city; they are structurally more distant from specialist services (claim.nelson.inequality.rural_isolation_claim). The Takaka Hill route is the binding piece of infrastructure: every closure compounds the access gap.'
+- heading: Compounding household effects
+  body: 'Distance to specialist services interacts with household income: a $400 round-trip cost (vehicle, time off work, accommodation) is recoverable for a higher-income family and a tipping point for a low-income family. Telehealth and broadband partially substitute, but rural broadband coverage is itself uneven.'
+claim_ids:
+- claim.nelson.inequality.rural_isolation_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

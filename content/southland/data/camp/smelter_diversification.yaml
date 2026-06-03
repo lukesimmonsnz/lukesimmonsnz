@@ -1,0 +1,20 @@
+id: camp.southland.economy.smelter_diversification
+name: Smelter Transition and Economic Diversification
+theme: economy
+core_claim: Proactive economic diversification and job creation reduce smelter dependency.
+flagship_moves:
+- Diversification strategy and business incubation
+- Worker retraining and transition support
+- Attract technology and service businesses
+tensions:
+- Difficult messaging; community resistance
+- Business attraction challenging in Southland
+addresses:
+- problem.southland.economy.smelter_dependency
+interventions:
+- description: Create 500 alternative jobs over 10 years
+  state_variable: economic_diversification
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

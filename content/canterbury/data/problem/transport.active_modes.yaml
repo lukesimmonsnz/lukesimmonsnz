@@ -1,0 +1,43 @@
+id: problem.canterbury.transport.active_modes
+title: Active Transport Network Fragmentation
+theme: transport
+section: transport
+subpage: active_modes
+parent: problem.canterbury.transport.network
+order: 3
+updated: '2026-04-26'
+summary: 'Canterbury''s cycling and walking networks are fragmented, with Major Cycle
+  Routes incomplete in Christchurch metro. Cycling commute share remains ~5%, far
+  below target of 20%. Safety concerns and connectivity gaps deter mode shift.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - cycling_commute_share
+  - network_connectivity_index
+  - cycling_crash_rate
+  - walking_commute_share
+  inputs:
+  - cycling_infrastructure_investment
+  - land_use_density
+  - weather_seasonality
+  constraints:
+  - topography_flat_vs_hilly_suburbs
+  - motor_vehicle_dominance_cultural
+  feedback_loops:
+  - Dynamic feedback mechanisms drive active transport network fragmentation.
+narrative:
+- heading: Incomplete Major Cycle Routes
+  body: 'Christchurch''s Major Cycle Routes programme targets 280 km by 2030, but
+    only ~40% complete (2024). Gaps in key corridor connections (e.g., SH73 bridge
+    crossing, arterial parallels) force cyclists onto high-traffic roads, deterring
+    uptake. Cycling commute share stuck at 5%.
+
+    '
+claim_ids:
+- claim.canterbury.transport.cycling_commute_share_2023
+- claim.canterbury.transport.mcr_completion_rate_2023
+status: draft
+time_horizons: [decade, generation]

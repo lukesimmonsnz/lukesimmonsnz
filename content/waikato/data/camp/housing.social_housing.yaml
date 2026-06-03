@@ -1,0 +1,23 @@
+id: camp.waikato.housing.social_housing
+name: Social and affordable housing investment
+theme: housing
+core_claim: Targeted government investment in social housing addresses the needs of
+  those priced out of the market entirely.
+flagship_moves:
+- Commission 2,000 new social housing units in Hamilton over 5 years
+- Establish community land trusts to provide affordable homeownership pathways
+- Reform income-related rent subsidies to reduce waitlist pressure
+tensions:
+- Social housing investment may crowd out private development
+- Land costs limit the number of units achievable per dollar invested
+interventions:
+- description: Commission 2,000 new social housing units in Hamilton over 5 years
+  state_variable: housing_affordability_index
+  expected_sign: +
+addresses:
+- problem.waikato.housing.affordability
+- problem.waikato.housing.rental_market
+- problem.waikato.housing.urban_sprawl
+applicable_in:
+- waikato
+tensions_with: []

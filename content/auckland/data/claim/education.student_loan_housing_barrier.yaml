@@ -1,20 +1,20 @@
 id: claim.auckland.education.student_loan_housing_barrier
-statement: >
-  Auckland housing costs consume a disproportionate share of student
-  allowances and loan living costs; students from low-income families
-  studying in Auckland face a structural deficit between Crown-funded
-  living support and actual Auckland rental costs, forcing paid work
-  that competes with study time and increases dropout risk.
+statement: 'Auckland housing costs consume a disproportionate share of student allowances
+  and loan living costs; students from low-income families studying in Auckland face
+  a structural deficit between Crown-funded living support and actual Auckland rental
+  costs, forcing paid work that competes with study time and increases dropout risk.
+
+  '
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.tertiary_education_commission_2023
+- source.tertiary_education_commission_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

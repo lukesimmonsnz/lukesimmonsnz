@@ -1,0 +1,19 @@
+id: claim.gisborne.inequality.deprivation_33
+statement: Gisborne consistently ranks worst nationally on the NZDeprivation Index,
+  with median score of 9-10 (most deprived decile). All territorial authority areas
+  in the region score ≥8, indicating pervasive disadvantage.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.gini_coefficient_v1
+notes: null

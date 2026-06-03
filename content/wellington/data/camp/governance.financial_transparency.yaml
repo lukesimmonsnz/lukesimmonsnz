@@ -1,0 +1,21 @@
+id: camp.wellington.governance.financial_transparency
+name: Financial Transparency and Performance Accountability
+theme: governance
+core_claim: Wellington councils need stronger financial oversight mechanisms, public performance dashboards, and independent
+  audit of infrastructure spending.
+flagship_moves:
+- Public infrastructure spending dashboard updated quarterly across all Wellington TAs
+- Independent Infrastructure Review Commissioner with investigative powers
+- Mandatory cost-benefit publication for all capital projects above $10M
+tensions:
+- Transparency requirements add compliance burden to smaller councils
+- Public dashboards may be gamed through metric selection rather than genuine improvement
+addresses:
+- problem.wellington.governance.accountability
+interventions:
+- description: Mandate quarterly public infrastructure spending dashboard for all Wellington TAs with standardised metrics
+  state_variable: public_accountability_index
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

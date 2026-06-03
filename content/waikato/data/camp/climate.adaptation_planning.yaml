@@ -1,0 +1,20 @@
+id: camp.waikato.climate.adaptation_planning
+name: Climate adaptation planning and coordination
+theme: climate-adaptation
+core_claim: Climate adaptation planning and coordination is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement climate adaptation planning and coordination
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

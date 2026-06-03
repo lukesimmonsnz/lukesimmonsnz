@@ -1,0 +1,12 @@
+id: driver.southland.economy.brain_drain
+name: Brain Drain to Larger Cities
+description: Southland youth relocate to Auckland/Dunedin for opportunity; limited
+  entrepreneurship.
+theme: economy
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.economy.economic_diversification
+claim_ids: []

@@ -1,0 +1,19 @@
+id: claim.taranaki.infrastructure.digital_rural_01
+statement: Infrastructure in Taranaki faces aging asset bases and deferred maintenance
+  backlogs, particularly in water, wastewater, and transport systems. Funding constraints
+  limit system upgrades needed to manage climate risk and population growth pressures.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki digital_rural

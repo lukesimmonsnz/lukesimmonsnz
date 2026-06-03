@@ -1,0 +1,10 @@
+id: driver.northland.education.teacher_distribution
+name: Inequitable teacher distribution
+description: Inequitable teacher distribution in the regional context.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

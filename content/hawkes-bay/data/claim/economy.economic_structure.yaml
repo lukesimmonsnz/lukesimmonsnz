@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.economy.agriculture_22_percent_gdp
+statement: Agriculture and horticulture generate approximately 22% of Hawke's Bay's
+  gross regional product, compared to the national average of 6%. This concentration
+  spanning wine (Gimblett Gravels, Dartmoor), apples, and kiwifruit creates vulnerability
+  to commodity price fluctuations, climatic shocks (drought, flooding), and trade
+  policy disruptions. The wine sector contributes NZD 220M+ to regional income annually.
+value: 22
+unit: percent of gross regional product
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

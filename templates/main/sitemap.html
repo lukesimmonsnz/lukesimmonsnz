@@ -6,25 +6,10 @@
 
 {% block content %}
 <div class="page">
-  {{ breadcrumbs([
-    ('Home', url_for('main.home')),
-    ('Sitemap', None),
-  ]) }}
-
-  <header class="page-header">
-    <span class="eyebrow">Documentation</span>
-    <h1>Sitemap</h1>
-    <hr class="rule">
-    <p class="lede">
-      Every public page on this site, together with citation, copyright,
-      privacy, and accessibility notes. A machine-readable sitemap for
-      search engines lives at
-      <a href="{{ url_for('main.sitemap_xml') }}">/sitemap.xml</a>.
-    </p>
-  </header>
-
-  <article class="prose">
-    {{ body_html|safe }}
+  {% set _slot = page_slot_render('sitemap') %}
+  {% if _slot %}<div class="page-intro">{{ _slot | safe }}</div>{% endif %}
+  <article class="prose sitemap-body">
+    {{ body_html | safe }}
   </article>
 </div>
 {% endblock %}

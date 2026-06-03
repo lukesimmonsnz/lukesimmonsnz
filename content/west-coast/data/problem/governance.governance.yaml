@@ -1,0 +1,43 @@
+id: problem.west_coast.governance.governance
+title: Four councils for thirty-two thousand people
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: West Coast governance is split across one regional council and three territorial authorities — Buller, Grey and Westland
+  — each with separate planning, infrastructure and regulatory functions. For a regional population of around 32,000, this
+  fragmentation imposes heavy coordination costs and complicates a unified response to regional challenges.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - governance_entity_count
+  - elected_member_per_capita
+  - joint_committee_count
+  inputs:
+  - dia_local_government_funding
+  - shared_services_agreements
+  constraints:
+  - statutory_council_boundaries
+  - small_population_base
+  feedback_loops:
+  - Fragmentation raises coordination cost on every regional issue, which strengthens the case for shared services or amalgamation,
+    but each consolidation step also raises identity and accountability concerns that have so far blocked structural change.
+narrative:
+- heading: A four-council region
+  body: West Coast Regional Council coexists with Buller, Grey and Westland district councils, each running its own planning,
+    three-waters, roading (where not state-highway) and consenting function (claim.west_coast.governance.governance_claim).
+    Total elected members and senior staff across the four bodies are large relative to population.
+- heading: Coordination versus consolidation
+  body: Regional challenges — flood response, climate adaptation, transition planning, three-waters — all require cross-boundary
+    coordination that the existing structure makes slow. Local government reform debates have raised consolidation as one
+    option; community attachment to district identity is the principal counter-argument.
+claim_ids:
+- claim.west_coast.governance.governance_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

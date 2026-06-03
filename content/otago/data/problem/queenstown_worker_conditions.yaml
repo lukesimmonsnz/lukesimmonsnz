@@ -1,0 +1,34 @@
+id: problem.otago.inequality.queenstown_worker_conditions
+title: Queenstown Tourism Worker Precarity
+theme: inequality
+section: inequality
+subpage: queenstown_worker_conditions
+parent: problem.otago.inequality.inequality
+order: 2
+updated: '2026-04-26'
+summary: Tourism jobs are seasonal, low-wage, minimal benefits; workers live in vehicle
+  or shared housing; high turnover, stress, mental health impacts.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Tourism jobs are seasonal, low-wage, minimal benefits; workers live in vehicle
+    or shared housing; high turnover, stress, mental health impacts.
+claim_ids:
+- claim.otago.inequality.queenstown_worker_conditions_trend
+- claim.otago.inequality.inequality_trend
+- claim.otago.inequality.queenstown_worker_conditions_prevalence
+- claim.otago.inequality.inequality_prevalence
+- claim.otago.inequality.dunedin_deprivation_prevalence
+- claim.otago.inequality.dunedin_deprivation_trend
+- claim.otago.inequality.rural_isolation_prevalence
+- claim.otago.inequality.rural_isolation_trend
+status: draft
+time_horizons: [decade, generation, century]

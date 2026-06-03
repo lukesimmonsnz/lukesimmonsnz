@@ -1,0 +1,31 @@
+id: problem.manawatu_whanganui.transport.active_modes
+title: Active Travel Infrastructure and Safety
+theme: transport
+section: transport
+subpage: active_modes
+parent: problem.manawatu_whanganui.transport.connectivity
+order: 1
+updated: '2026-04-26'
+summary: Fragmented cycling and pedestrian infrastructure; high perceived road danger.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Fragmented cycling and pedestrian infrastructure; high perceived road danger.
+claim_ids:
+- claim.manawatu_whanganui.transport.active_modes_1
+- claim.manawatu_whanganui.transport.active_modes_2
+status: draft
+time_horizons: [decade, generation]

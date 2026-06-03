@@ -1,0 +1,12 @@
+id: source.stats_nz_deprivation_2018
+title: Stats NZ Deprivation Index 2018
+author: null
+publisher: Stats NZ
+year: 2018
+url: https://www.stats.govt.nz/
+type: primary-data
+credibility: official
+geo_granularity:
+- nz
+notes: Decile-based deprivation measure, income, housing quality, health access, family
+  cohesion.

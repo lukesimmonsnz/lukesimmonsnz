@@ -1,0 +1,30 @@
+id: pattern.housing.maori_housing_deficit
+title: Māori housing deficit and overcrowding
+theme: housing
+summary: Māori households experience significantly higher rates of overcrowding, housing
+  unaffordability, and homelessness across all regions, reflecting structural dispossession
+  and constrained papakāinga development.
+manifests_in:
+- northland
+- bay-of-plenty
+- gisborne
+- hawkes-bay
+- waikato
+- manawatu-whanganui
+claim_ids:
+- claim.northland.housing.affordability_claim1
+- claim.waikato.housing.median_multiple_8x
+- claim.manawatu_whanganui.housing.housing_market_placeholder
+- claim.hawkes_bay.housing.cyclone_damage_extent
+narrative:
+- heading: Pattern
+  body: Māori over-representation in severe housing deprivation is consistent across
+    regions. Overcrowding rates 3–5× the national average, compounded by barriers
+    to building on Māori land and limited social housing supply in rural areas.
+- heading: Structural basis
+  body: Colonial land alienation reduced the economic base of iwi and hapū, making
+    intergenerational wealth accumulation through housing unavailable to most Māori.
+    Contemporary papakāinga policy attempts partial redress but is constrained by
+    finance, infrastructure, and planning rules.
+status: draft
+updated: '2026-04-26'

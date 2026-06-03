@@ -1,0 +1,20 @@
+id: camp.canterbury.infrastructure.three_waters_partnership
+name: Three Waters Public-Private Partnership (PPP) Models
+theme: infrastructure
+core_claim: PPP structures for water treatment, asset delivery, and operation can
+  attract private capital and improve efficiency while retaining public ownership.
+flagship_moves:
+- Key intervention for Three Waters Public-Private Partnership (PPP) Models
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.infrastructure.horizontal_infrastructure
+interventions:
+- description: PPP structures for water treatment, asset delivery, and operation can
+    attract private capital and improve efficiency while retaining public ownership.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

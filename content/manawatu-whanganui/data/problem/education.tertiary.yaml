@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.education.tertiary
+title: Tertiary Access and Affordability
+theme: education
+section: education
+subpage: tertiary
+parent: problem.manawatu_whanganui.education.achievement
+order: 1
+updated: '2026-04-26'
+summary: Massey University presence but limited tertiary diversity; student loan burden;
+  rural access.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Massey University presence but limited tertiary diversity; student loan burden;
+    rural access.
+claim_ids:
+- claim.manawatu_whanganui.education.tertiary_1
+- claim.manawatu_whanganui.education.tertiary_2
+status: draft
+time_horizons: [decade, generation]

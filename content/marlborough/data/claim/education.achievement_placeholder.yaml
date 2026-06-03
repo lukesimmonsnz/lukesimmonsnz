@@ -1,0 +1,20 @@
+id: claim.marlborough.education.achievement_placeholder
+statement: 'Marlborough NCEA attainment: Level 3 attainment 70–75% (students achieving
+  NCEA L3 or equivalent); Blenheim College outperform regional average; Sounds schools
+  (Motueka, Havelock) suppressed by cohort size (<30 per annum) and socioeconomic
+  variation.'
+value: 72.5
+unit: percent NCEA L3 attainment (2021–2023)
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_achievement_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

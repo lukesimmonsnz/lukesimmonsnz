@@ -1,0 +1,21 @@
+id: camp.otago.environment.pastoral_regulation
+name: Pastoral Farming Regulation and Riparian Protection
+theme: environment
+core_claim: Mandatory riparian fencing, feed storage regulations, and stock exclusion
+  reduce pastoral nutrient loads.
+flagship_moves:
+- Mandate riparian buffers (minimum 3m) on all waterways
+- Regulate intensive grazing near streams
+- Subsidize riparian planting
+tensions:
+- Farmer compliance cost and land-use restrictions
+- Enforcement challenges in remote areas
+addresses:
+- problem.otago.environment.lake_eutrophication
+interventions:
+- description: Require riparian fencing and buffer zones by 2030
+  state_variable: riparian_coverage
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

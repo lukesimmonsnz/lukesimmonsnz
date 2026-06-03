@@ -1,0 +1,28 @@
+id: problem.marlborough.governance.governance
+title: Local Governance and Community Participation
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Water allocation governance; treaty co-governance; unitary authority effectiveness.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Water allocation governance; treaty co-governance; unitary authority effectiveness.
+claim_ids:
+- claim.marlborough.governance.governance_placeholder
+status: draft
+time_horizons: [decade, generation, century]

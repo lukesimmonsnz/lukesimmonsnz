@@ -1,25 +1,27 @@
 id: claim.auckland.housing.infrastructure_barrier
-statement: >
-  Development contribution levies and the cost of upgrading reticulated
-  infrastructure (water, wastewater, stormwater) represent a material barrier
-  to infill and medium-density development in Auckland, with per-dwelling
-  infrastructure charges in some catchments exceeding the margin available to
-  developers at current sale prices.
+statement: 'Development contribution levies and the cost of upgrading reticulated
+  infrastructure (water, wastewater, stormwater) represent a material barrier to infill
+  and medium-density development in Auckland, with per-dwelling infrastructure charges
+  in some catchments exceeding the margin available to developers at current sale
+  prices.
+
+  '
 value: null
 unit: null
-time_period: "2020-2023"
+time_period: 2020-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_dev_strategy_2022
-  - source.mhud_housing_aotearoa_2023
+- source.auckland_council_dev_strategy_2022
+- source.mhud_housing_aotearoa_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  Specific per-dwelling figures vary significantly by catchment and development
-  type. The claim is directional; quantified evidence requires Auckland Council
-  development contribution schedule data.
+- auckland
+notes: 'Specific per-dwelling figures vary significantly by catchment and development
+  type. The claim is directional; quantified evidence requires Auckland Council development
+  contribution schedule data.
+
+  '

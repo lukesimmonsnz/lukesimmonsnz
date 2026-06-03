@@ -1,0 +1,24 @@
+id: camp.waikato.environment.freshwater_regulation
+name: Freshwater limit setting and enforcement
+theme: environment
+core_claim: Strong regulatory freshwater limits and enforcement of the NPSFM are necessary
+  to halt degradation.
+flagship_moves:
+- Set binding nitrate caps for all major Waikato River sub-catchments
+- Increase WRC monitoring stations and enforcement capability
+- Require riparian fencing on all intensively farmed land by 2027
+tensions:
+- Regulatory approach may reduce farm profitability and trigger rural political opposition
+- Enforcement capacity is limited relative to the scale of non-compliance
+interventions:
+- description: Set binding nitrate caps for all major Waikato River sub-catchments
+  state_variable: environmental_quality_index
+  expected_sign: +
+addresses:
+- problem.waikato.environment.waikato_river_degradation
+- problem.waikato.environment.freshwater_quality
+- problem.waikato.environment.biodiversity_loss
+- problem.waikato.environment.peat_soil_degradation
+applicable_in:
+- waikato
+tensions_with: []

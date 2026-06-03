@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.transport.sh2_bottleneck_growth
+name: Driver for sh2_bottleneck
+description: "This driver exacerbates the sh2_bottleneck pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: transport
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.transport.sh2_bottleneck
+claim_ids:
+- claim.bay_of_plenty.transport.sh2_bottleneck_13

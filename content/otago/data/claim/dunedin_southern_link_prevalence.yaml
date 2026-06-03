@@ -1,0 +1,22 @@
+id: claim.otago.transport.dunedin_southern_link_prevalence
+statement: 'Dunedin Southern Link project—roading/rapid transit corridor from city
+  centre to residential south—is planned but unfunded / deferred: would serve growing
+  southern suburbs (Musselburgh, Andersons Bay) and reduce CBD congestion (currently
+  SH1 spine passes through city). Project cost $400M+ (2023 estimate); local/central
+  funding uncertainty; no construction start date. Existing bus network (ORC) manages
+  some demand; private vehicle dependence high in southern suburbs.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

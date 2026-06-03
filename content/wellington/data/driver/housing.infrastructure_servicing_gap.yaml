@@ -1,0 +1,13 @@
+id: driver.wellington.housing.infrastructure_servicing_gap
+name: Infrastructure servicing capacity gap
+description: Development-ready sites in Wellington require costly infrastructure upgrades (water, wastewater, transport) before
+  construction can proceed, adding to development cost and reducing the effective deliverable supply from upzoned land.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.housing.land_supply
+claim_ids:
+- claim.wellington.housing.zoned_capacity_deficit

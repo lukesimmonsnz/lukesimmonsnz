@@ -1,0 +1,43 @@
+id: problem.west_coast.inequality.child_poverty
+title: Child poverty and the household-stress signal
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: inequality
+order: 2
+updated: '2026-04-26'
+summary: An estimated 25-30 percent of West Coast children live in low-income households, with Buller and Grey districts most
+  affected. School breakfast programmes and food-insecurity referrals have grown, and childcare affordability constraints
+  limit parental employment participation.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - child_poverty_rate
+  - breakfast_programme_uptake
+  - msd_hardship_grant_volume
+  inputs:
+  - wff_settings
+  - moe_school_lunches_programme
+  constraints:
+  - low_local_wage_floor
+  - limited_childcare_supply
+  feedback_loops:
+  - Income-poor households face binding childcare costs that prevent the second-earner participation that would lift them
+    out of poverty; the resulting persistence transmits disadvantage into the next school cohort.
+narrative:
+- heading: Child poverty rates run above national
+  body: Census-derived estimates place around a quarter to nearly a third of West Coast children below the conventional 50
+    percent-of-median threshold (claim.west_coast.inequality.child_poverty_claim). Buller and Grey, the districts most affected
+    by mining decline, run the highest rates.
+- heading: Schools as the front line
+  body: Expansion of breakfast and lunch programmes, social-worker placements, and food-insecurity referrals from schools
+    is the most-visible evidence of household stress. School staff are increasingly performing welfare-system functions, with
+    the same workforce-capacity constraints as health and policing.
+claim_ids:
+- claim.west_coast.inequality.child_poverty_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

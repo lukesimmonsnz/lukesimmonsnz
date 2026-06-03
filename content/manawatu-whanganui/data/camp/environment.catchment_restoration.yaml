@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.environment.catchment_restoration
+name: Catchment land use change
+theme: environment
+core_claim: Agricultural land use intensification controls and restoration.
+flagship_moves:
+- Flagship move 1 for Catchment land use change
+- Flagship move 2 for Catchment land use change
+tensions:
+- Internal tension 1 of Catchment land use change
+addresses:
+- problem.manawatu_whanganui.health.health_outcomes
+interventions:
+- description: 'Intervention 1: Catchment land use change detail 1'
+- description: 'Intervention 2: Catchment land use change detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

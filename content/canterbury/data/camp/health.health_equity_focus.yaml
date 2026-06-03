@@ -1,0 +1,19 @@
+addresses:
+- problem.canterbury.health.health_outcomes
+applicable_in:
+- canterbury
+core_claim: Prioritizing health investment in high-deprivation areas and Māori/Pacific
+  populations addresses root causes of health inequities.
+flagship_moves:
+- Fund targeted health promotion and chronic disease prevention in deprived areas
+id: camp.canterbury.health.health_equity_investment
+interventions:
+- constraint_relaxed: health_funding_distribution
+  description: Targeted health investment
+  expected_sign: +
+  state_variable: health_outcome_equity
+name: Health Equity & Targeted Investment
+tensions:
+- Resource allocation equity vs. population size
+tensions_with: []
+theme: health

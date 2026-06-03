@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.economy.economic_development
+title: Economic development and resilience in Bay of Plenty — Te Moana-a-Toi
+theme: economy
+section: economy
+subpage: economic_development
+parent: null
+order: 33
+updated: '2026-04-26'
+summary: Economic development and resilience represents a key systemic pressure for
+  Bay of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - economic_development_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The economic development and resilience is a pressing concern for the region.
+claim_ids:
+- claim.bay_of_plenty.economy.economic_development_65
+- claim.bay_of_plenty.economy.economic_development_66
+status: draft
+time_horizons: [decade, generation]

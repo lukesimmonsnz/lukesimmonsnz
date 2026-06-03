@@ -1,0 +1,14 @@
+id: driver.taranaki.infrastructure.infrastructure.aging_assets
+name: Aging infrastructure assets
+description: Aging infrastructure assets
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.infrastructure.infrastructure
+- problem.taranaki.infrastructure.digital_rural
+- problem.taranaki.infrastructure.wastewater
+- problem.taranaki.infrastructure.water
+claim_ids: []

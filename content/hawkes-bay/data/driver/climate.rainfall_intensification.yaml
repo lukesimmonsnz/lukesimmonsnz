@@ -1,0 +1,15 @@
+id: driver.hawkes_bay.climate.rainfall_intensification
+name: Rainfall intensification and extreme weather acceleration
+description: "Climate change is increasing rainfall intensity in Hawke's Bay. Cyclone Gabrielle demonstrated the exposure. Projected changes include more frequent extreme rainfall and tropical cyclone exposure over coming decades."
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.climate.climate_vulnerability
+- problem.hawkes_bay.climate.cyclone_flood_risk
+- problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+claim_ids:
+- claim.hawkes_bay.climate.rainfall_intensity_15_20_percent_increase
+- claim.hawkes_bay.climate.flood_damage_2_3_billion

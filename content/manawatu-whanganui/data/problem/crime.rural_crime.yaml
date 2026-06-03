@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.crime.rural_crime
+title: Rural Crime and Stock Theft
+theme: crime
+section: crime
+subpage: rural_crime
+parent: problem.manawatu_whanganui.crime.safety
+order: 1
+updated: '2026-04-26'
+summary: Rural property crime; farm stock theft; limited policing presence in remote
+  areas.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Rural property crime; farm stock theft; limited policing presence in remote
+    areas.
+claim_ids:
+- claim.manawatu_whanganui.crime.rural_crime_1
+- claim.manawatu_whanganui.crime.rural_crime_2
+status: draft
+time_horizons: [decade]

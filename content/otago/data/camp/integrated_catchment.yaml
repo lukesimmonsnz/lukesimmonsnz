@@ -1,0 +1,21 @@
+id: camp.otago.environment.integrated_catchment
+name: Integrated Catchment Management
+theme: environment
+core_claim: Coordinated management across land use and water addresses freshwater
+  stress.
+flagship_moves:
+- Catchment-scale planning and limits
+- Land-use zoning to protect riparian and aquatic ecosystems
+- Sustainable water allocation framework
+tensions:
+- Agricultural user resistance
+- Coordination complexity
+addresses:
+- problem.otago.environment.freshwater_stress
+interventions:
+- description: Implement catchment-scale water limits
+  state_variable: water_sustainability
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.infrastructure.water_investment
+name: Water infrastructure investment
+theme: infrastructure
+core_claim: Expand water capacity and treatment.
+flagship_moves:
+- Flagship move 1 for Water infrastructure investment
+- Flagship move 2 for Water infrastructure investment
+tensions:
+- Internal tension 1 of Water infrastructure investment
+addresses:
+- problem.manawatu_whanganui.infrastructure.wastewater
+interventions:
+- description: 'Intervention 1: Water infrastructure investment detail 1'
+- description: 'Intervention 2: Water infrastructure investment detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

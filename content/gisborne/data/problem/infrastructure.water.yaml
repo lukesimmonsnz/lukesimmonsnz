@@ -1,0 +1,33 @@
+id: problem.gisborne.infrastructure.water
+title: Water supply reliability and quality in Gisborne — Te Tairāwhiti
+theme: infrastructure
+section: infrastructure
+subpage: water
+parent: problem.gisborne.infrastructure.infrastructure_vulnerability
+order: 11
+updated: '2026-04-26'
+summary: Water supply reliability and quality is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - water_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Water supply reliability and quality is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.infrastructure.water_21
+- claim.gisborne.infrastructure.water_22
+status: draft
+time_horizons: [decade, generation]

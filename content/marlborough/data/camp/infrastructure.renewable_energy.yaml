@@ -1,0 +1,21 @@
+id: camp.marlborough.infrastructure.renewable_energy
+name: Renewable Energy and Storage
+theme: infrastructure
+core_claim: Distributed solar and battery storage.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.transport.regional_roading
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

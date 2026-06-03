@@ -1,0 +1,22 @@
+id: claim.nelson.economy.economic_4_claim
+statement: Tourism is a major economic driver, contributing $180–210 million to regional
+  GDP and supporting approximately 3,200 FTE jobs (hospitality, accommodation, attractions,
+  transport). Nelson's brand (sunshine capital, arts and crafts, outdoor recreation,
+  wine) draws 1.2–1.5 million visitor nights annually. However, labour shortages in
+  hospitality, seasonal volatility, and post-COVID revenue recovery have constrained
+  sector expansion; capacity utilization averages 68% outside summer months.
+value: 200
+unit: million NZD annual tourism revenue
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

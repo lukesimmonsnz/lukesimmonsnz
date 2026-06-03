@@ -1,0 +1,32 @@
+id: pattern.infrastructure.small_council_fiscal_gap
+title: Small-council infrastructure fiscal gap
+theme: infrastructure
+summary: New Zealand's small territorial authorities face a structural mismatch between
+  their infrastructure obligations and their ratepayer bases, producing a compounding
+  maintenance and capital investment deficit.
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- southland
+- tasman
+- nelson
+- taranaki
+- marlborough
+claim_ids:
+- claim.northland.infrastructure.digital_divide_claim1
+- claim.west_coast.infrastructure.infrastructure_claim
+- claim.west_coast.governance.capacity_claim
+- claim.gisborne.governance.disaster_recovery_79
+narrative:
+- heading: Structural mismatch
+  body: Councils responsible for large geographic areas but small populations cannot
+    generate sufficient rates revenue to maintain existing infrastructure, let alone
+    invest in new capacity. The gap widens as assets age and compliance standards
+    rise.
+- heading: Compounding failure
+  body: Deferred maintenance creates compounding liability. Water, wastewater, and
+    roading deficits documented by Infracom and Audit NZ confirm the pattern is systemic,
+    not idiosyncratic, and requires structural fiscal intervention.
+status: draft
+updated: '2026-04-26'

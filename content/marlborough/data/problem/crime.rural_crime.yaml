@@ -1,0 +1,31 @@
+id: problem.marlborough.crime.rural_crime
+title: Rural Crime and Property Theft
+theme: crime
+section: crime
+subpage: rural_crime
+parent: problem.marlborough.crime.safety
+order: 1
+updated: '2026-04-26'
+summary: Farm property theft; stock theft; poaching; limited rural policing; offender
+  displacement.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Farm property theft; stock theft; poaching; limited rural policing; offender
+    displacement.
+claim_ids:
+- claim.marlborough.crime.rural_crime_1
+- claim.marlborough.crime.rural_crime_2
+status: draft
+time_horizons: [decade]

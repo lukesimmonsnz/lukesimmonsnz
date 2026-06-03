@@ -60,3 +60,4 @@ claim_ids:
   - claim.auckland.infrastructure.fibre_coverage_gap
   - claim.auckland.infrastructure.digital_divide_income
 status: draft
+time_horizons: [decade, generation]

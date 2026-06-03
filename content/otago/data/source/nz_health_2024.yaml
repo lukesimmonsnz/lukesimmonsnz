@@ -1,0 +1,14 @@
+id: source.nz_health_2024
+title: New Zealand Health Survey — Annual Update 2023/24 Key Results
+author: Ministry of Health Manatū Hauora
+publisher: Ministry of Health Manatū Hauora
+year: 2024
+url: https://www.health.govt.nz/statistics-research/surveys/new-zealand-health-survey
+type: primary-data
+credibility: official
+geo_granularity:
+- otago
+- nz
+notes: 'Annual nationally representative survey of adults and children: chronic conditions, mental health indicators, smoking,
+  alcohol use, GP and ED access. Region-level estimates available via the Stats NZ Aotearoa Data Explorer linked from the
+  release.'

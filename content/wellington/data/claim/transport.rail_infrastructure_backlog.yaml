@@ -1,0 +1,21 @@
+id: claim.wellington.transport.rail_infrastructure_backlog
+statement: Wellington's suburban rail network carries a significant deferred maintenance
+  backlog estimated at $150-200M, with aging stations and rolling stock. Rail reliability
+  declined 5-10% over 2018-2023; capital renewal and electrification projects face
+  funding constraints and delivery delays affecting commuter accessibility.
+value: null
+unit: null
+time_period: 2021-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_regional_land_transport_2021
+- source.metlink_annual_report_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

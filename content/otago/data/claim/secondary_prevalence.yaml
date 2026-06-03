@@ -1,0 +1,22 @@
+id: claim.otago.education.secondary_prevalence
+statement: 'Secondary education in Otago serves ~12,000 students across diverse geographies:
+  Dunedin''s two main schools (Otago Boys, Rangi Ruru Girls) large urban campuses;
+  Queenstown area schools (Queenstown High, Arrowtown) growing rapidly (roll increases
+  5-8% annually 2020-2023); rural districts (Oamaru Waitaki, Balclutha) operate smaller
+  schools with declining rolls. NCEA attainment varies: Dunedin ~85%, provincial/rural
+  70-75%; teacher recruitment challenges in high-cost areas (Queenstown).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

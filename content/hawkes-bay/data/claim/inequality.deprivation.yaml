@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.inequality.median_income_85k
+statement: 'Median personal income in Hawke''s Bay is approximately NZD 85,000 annually,
+  around 13% below the national median (NZD 98,000). Income distribution is highly
+  skewed: wine industry professionals and Napier business owners earn above median,
+  while horticultural and seasonal workers (particularly RSE participants) earn NZD
+  30,000-45,000, constraining household economic security. A gender income gap persists,
+  with women earning approximately 15% less than men in the region.'
+value: 85000
+unit: NZD per annum (median personal income)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

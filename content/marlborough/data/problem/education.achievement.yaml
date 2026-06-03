@@ -1,0 +1,30 @@
+id: problem.marlborough.education.achievement
+title: Educational Outcomes and Attainment
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Educational disparities; rural school capacity; limited tertiary access;
+  vocational gaps.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Educational disparities; rural school capacity; limited tertiary access; vocational
+    gaps.
+claim_ids:
+- claim.marlborough.education.achievement_placeholder
+status: draft
+time_horizons: [decade, generation]

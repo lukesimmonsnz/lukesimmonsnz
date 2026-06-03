@@ -1,0 +1,21 @@
+id: camp.marlborough.economy.green_economy_transition
+name: Green Economy Transition Fund
+theme: economy
+core_claim: Support for transition to clean industries.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.economy.wine_economy
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

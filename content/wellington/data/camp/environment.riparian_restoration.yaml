@@ -1,0 +1,20 @@
+id: camp.wellington.environment.riparian_restoration
+name: Urban Stream Riparian Restoration
+theme: environment
+core_claim: Daylighting and restoring channelised urban streams will improve freshwater ecology and reduce flood risk.
+flagship_moves:
+- Daylight and restore Korokoro Stream through Lower Hutt industrial zone
+- Establish riparian planting corridors (10m minimum) on all urban streams
+- Remove concrete channelisation from Kaiwharawhara Stream
+tensions:
+- Riparian setbacks reduce developable land in flood-prone areas
+- Stream daylighting conflicts with existing drainage infrastructure
+addresses:
+- problem.wellington.environment.waterway_quality
+interventions:
+- description: Fund riparian restoration on the top 10 degraded urban stream reaches identified in GWRC's freshwater plan
+  state_variable: urban_stream_ecological_health
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

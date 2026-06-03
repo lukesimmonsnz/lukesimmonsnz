@@ -1,0 +1,33 @@
+id: problem.hawkes_bay.crime.safety
+title: Community safety and crime prevalence
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: "Hawke's Bay experiences higher crime rates than national average, particularly property crime and family violence. Community safety perception is declining. Limited policing resources hamper prevention and investigation."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - crime_rate_per_capita
+    - family_violence_incident_rate
+  inputs:
+    - deprivation_concentration
+    - substance_abuse_prevalence
+  constraints:
+    - police_workforce_allocation
+    - court_capacity
+  feedback_loops:
+    - 'High crime erodes community trust; divestment from neighbourhoods follows; informal social control weakens; crime increases further.'
+narrative:
+  - heading: Crime Rates
+    body: "Hawke's Bay crime rate is approximately 7,200 offences per 100,000 population, compared to national average of 6,200. Property crime and violence are elevated."
+  - heading: Family Violence
+    body: "Family violence incidents in Hawke's Bay increased 22% over 2020-2024, driven by housing stress, substance abuse, and economic hardship exacerbated by Cyclone Gabrielle."
+claim_ids:
+  - claim.hawkes_bay.crime.crime_rate_7200_per_100k
+  - claim.hawkes_bay.crime.family_violence_22_percent_increase
+status: draft
+time_horizons: [decade]

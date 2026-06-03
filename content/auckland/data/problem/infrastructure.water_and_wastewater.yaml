@@ -65,3 +65,4 @@ claim_ids:
   - claim.auckland.infrastructure.water_supply_resilience
   - claim.auckland.infrastructure.renewal_backlog
 status: draft
+time_horizons: [decade, generation]

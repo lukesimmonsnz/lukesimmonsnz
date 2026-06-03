@@ -1,0 +1,20 @@
+id: claim.marlborough.inequality.rural_isolation_2
+statement: 'Water taxi access in Sounds: Motueka, Kenepuru Head, and outer bays accessible
+  only by water (45–120 min boat from Picton); cost NZD 60–100 one-way; barrier to
+  health services, shopping, legal representation; aging in place unsustainable for
+  some residents.'
+value: 75
+unit: NZD mid-range water taxi cost per journey
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.marlborough_sounds_plan_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,12 @@
+id: source.nz_police_crime_stats_mbl_2023
+title: 'New Zealand Police Crime Statistics 2022/23: Tasman District (incl. Marlborough)'
+author: New Zealand Police Ngā Pirihimana o Aotearoa
+publisher: New Zealand Police
+year: 2023
+url: https://www.police.govt.nz/about-us/statistics-and-publications/data-and-statistics/policedatanz/victimisation-time-and-place
+type: primary-data
+credibility: official
+geo_granularity:
+- marlborough
+notes: 'Police victimisation time-series at police district / area unit level. Marlborough sits within the Tasman Police District:
+  granular Marlborough-area data is available via the policedata.nz dashboard linked from the page.'

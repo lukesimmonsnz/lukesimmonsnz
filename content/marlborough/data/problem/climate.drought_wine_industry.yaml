@@ -1,0 +1,30 @@
+id: problem.marlborough.climate.drought_wine_industry
+title: Drought Risk and Wine Industry Adaptation
+theme: climate-adaptation
+section: climate
+subpage: drought_wine_industry
+parent: problem.marlborough.climate.climate_risk
+order: 1
+updated: '2026-04-26'
+summary: Intensifying droughts; irrigation demand spike; crop failure risk; varietal
+  adaptation pressures.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Intensifying droughts; irrigation demand spike; crop failure risk; varietal
+    adaptation pressures.
+claim_ids:
+- claim.marlborough.climate.drought_wine_industry_placeholder
+status: draft
+time_horizons: [generation, century]

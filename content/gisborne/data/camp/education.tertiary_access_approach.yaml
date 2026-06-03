@@ -1,0 +1,20 @@
+id: camp.gisborne.education.tertiary_access_approach
+name: Strategic approach for tertiary_access
+theme: education
+core_claim: Strategic intervention on tertiary_access will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting tertiary_access
+- Priority action 2 targeting tertiary_access
+- Institutional coordination mechanism for tertiary_access
+tensions:
+- 'Tension 1: tertiary_access'
+- 'Tension 2: tertiary_access'
+addresses:
+- problem.gisborne.education.tertiary_access
+interventions:
+- description: Primary intervention for tertiary_access
+  state_variable: tertiary_access_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

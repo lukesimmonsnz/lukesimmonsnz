@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.governance.iwi_partnership_implementation
+name: Iwi Partnership Implementation Challenges
+description: Iwi partnership implementation challenges with regional implications.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.inequality.deprivation
+claim_ids: []

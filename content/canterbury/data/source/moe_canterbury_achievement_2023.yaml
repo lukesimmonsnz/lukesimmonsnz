@@ -1,0 +1,12 @@
+id: source.moe_canterbury_achievement_2023
+title: 'Education Counts NCEA Attainment Statistics 2023: Canterbury Schools'
+author: Ministry of Education
+publisher: Education Counts (Ministry of Education)
+year: 2023
+url: https://www.educationcounts.govt.nz/statistics/ncea/ncea-attainment
+type: primary-data
+credibility: official
+geo_granularity:
+- canterbury
+notes: NCEA Level 1/2/3 and University Entrance attainment by school decile, ethnicity, and region — Canterbury slice via
+  the Education Counts statistics portal. Replaces homepage URL.

@@ -1,0 +1,13 @@
+id: driver.wellington.environment.urban_predator_pressure
+name: Urban predator pressure on native species
+description: Rats, possums, and stoats in Wellington's urban matrix suppress native bird and invertebrate populations across
+  most of the city beyond Zealandia's fenced perimeter. Rebound speed after cessation of control is rapid.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.environment.urban_biodiversity
+claim_ids:
+- claim.wellington.environment.pest_free_progress

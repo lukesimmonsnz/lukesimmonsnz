@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.health.rural_workforce_2
+statement: Aged care workforce in Manawatū-Whanganui faces critical shortages as the
+  population ages. Approximately 18-22% of the region's population is aged 65+; rural
+  districts (Ruapehu, Rangitikei, Tararua) have even higher proportions (25-28%).
+  Residential aged care facilities operate at capacity; home and community care provider
+  networks are fragmented and underfunded. Rural areas struggle to attract care workers
+  due to low wages, poor conditions, and limited housing. Recruitment costs and staff
+  turnover (25-30% annually) strain aged care budgets.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mw_2023
+- source.stats_nz_census_2023_mw
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

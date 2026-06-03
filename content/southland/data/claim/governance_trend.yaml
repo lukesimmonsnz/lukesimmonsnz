@@ -1,0 +1,21 @@
+id: claim.southland.governance.governance_trend
+statement: Southland governance faces structural reform discussions. Invercargill-Southland
+  District amalgamation debated periodically; local government funding pressures mounting.
+  Three Waters reform implications uncertain. Ngai Tahu partnership co-design advancing
+  (Environment Southland joint governance committee established). Treaty settlement
+  implementation ongoing; Murihiku Regeneration programme scaling.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

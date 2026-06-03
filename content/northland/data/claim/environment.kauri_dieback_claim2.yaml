@@ -1,0 +1,22 @@
+id: claim.northland.environment.kauri_dieback_claim2
+statement: Blue penguin (Spheniscus minor) colonies at Mangawhai Heads and Whangārei
+  Heads remain vulnerable to pet cats, possums, and light pollution. Tapu Te Ranga
+  Trust and Tawharanui Regional Park manage refuge areas; nesting habitat restoration
+  (rat control, fencing) ongoing. Estuarine habitats (Hokianga, Kaipara, Bay of Islands
+  mangrove zones) provide nursery grounds for snapper, flounder; sediment and nutrient
+  loading threatens recruitment.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

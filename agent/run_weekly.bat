@@ -16,9 +16,18 @@ call ".venv\Scripts\activate.bat" || exit /b 11
 python -m agent.weekly_post %*
 set WEEKLY_RC=%ERRORLEVEL%
 
+:: Refresh the research corpus: lint sweep, regen consolidated section
+:: essays for all 16 regions, run the watchlist (drafts only — live
+:: corpus is never touched). See agent/weekly_research.py for details.
+:: Non-fatal: if it fails, we still want the blog post and docs regen
+:: above/below to land. RC is logged separately.
+python -m agent.weekly_research
+set RESEARCH_RC=%ERRORLEVEL%
+
 :: Refresh docs so counts and the live sitemap reflect the new post.
 python -m agent.regen_docs
 set REGEN_RC=%ERRORLEVEL%
 
 if not "%WEEKLY_RC%"=="0" exit /b %WEEKLY_RC%
+if not "%RESEARCH_RC%"=="0" exit /b %RESEARCH_RC%
 exit /b %REGEN_RC%

@@ -1,0 +1,34 @@
+id: problem.southland.crime.safety
+title: Crime and Community Safety
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Family violence rates exceed national average; youth offending in Invercargill;
+  rural crime underreported; limited police presence in remote areas.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Family violence rates exceed national average; youth offending in Invercargill;
+    rural crime underreported; limited police presence in remote areas.
+claim_ids:
+- claim.southland.crime.youth_offending_trend
+- claim.southland.crime.youth_offending_prevalence
+- claim.southland.crime.rural_crime_prevalence
+- claim.southland.crime.family_violence_prevalence
+- claim.southland.crime.safety_trend
+- claim.southland.crime.safety_prevalence
+- claim.southland.crime.family_violence_trend
+- claim.southland.crime.rural_crime_trend
+status: draft
+time_horizons: [decade]

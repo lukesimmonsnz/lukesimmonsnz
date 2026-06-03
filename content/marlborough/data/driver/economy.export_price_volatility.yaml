@@ -1,0 +1,12 @@
+id: driver.marlborough.economy.export_price_volatility
+name: Export Price Volatility And Market Exposure
+description: Export price volatility and market exposure with regional implications.
+theme: economy
+consensus: consensus
+category: economic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.economy.wine_industry_risk
+claim_ids: []

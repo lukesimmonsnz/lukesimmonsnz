@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.health.chronic_disease_2
+statement: Cardiovascular disease mortality in Manawatū-Whanganui is 18-22% above
+  the national average, driven by high prevalence of risk factors (hypertension, high
+  cholesterol, obesity, smoking). Whanganui city district records the highest district-level
+  cardiovascular mortality rate in the region. Access to cardiac rehabilitation and
+  preventive services is limited in rural areas (Tararua, Rangitikei, Ruapehu); patients
+  often travel to Palmerston North or Wellington for specialist cardiology and interventional
+  procedures.
+value: 20
+unit: percent_above_national_average
+time_period: 2020-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mw_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

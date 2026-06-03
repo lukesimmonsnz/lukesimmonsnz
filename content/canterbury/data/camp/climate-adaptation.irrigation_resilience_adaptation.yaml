@@ -1,0 +1,22 @@
+id: camp.canterbury.climate.irrigation_resilience_adaptation
+name: Irrigation Resilience & Water Availability Adaptation
+theme: climate-adaptation
+core_claim: Diversifying water sources (stored rainfall, treated wastewater), improving
+  efficiency, and adjusting cropping systems ensures food production resilience under
+  drought.
+flagship_moves:
+- Key intervention for Irrigation Resilience & Water Availability Adaptation
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.climate.drought_irrigation
+interventions:
+- description: Diversifying water sources (stored rainfall, treated wastewater), improving
+    efficiency, and adjusting cropping systems ensures food production resilience
+    under drought.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

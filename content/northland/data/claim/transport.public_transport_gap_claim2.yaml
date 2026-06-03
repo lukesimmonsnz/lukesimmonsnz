@@ -1,0 +1,22 @@
+id: claim.northland.transport.public_transport_gap_claim2
+statement: 'Equity implications: Northland households with vehicle access pay petrol,
+  maintenance, insurance costs; carless households (elderly, low-income) effectively
+  isolated. Whangarei hospital accessibility constrained for rural patients (1–2 hr
+  drive from Far North). Auckland integration requires 3–4 hr round trip; tourism
+  and business travel disproportionately expensive. Lack of inter-regional coach services
+  (Bay of Islands-Northland Hospital shuttle) reflects low-volume demand.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

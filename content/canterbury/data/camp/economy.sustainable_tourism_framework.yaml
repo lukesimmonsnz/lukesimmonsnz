@@ -1,0 +1,20 @@
+id: camp.canterbury.economy.sustainable_tourism_framework
+name: Sustainable Tourism Framework & Capacity Management
+theme: economy
+core_claim: Implementing visitor management, conservation funding, and community benefit
+  frameworks prevents overtourism damage while sustaining sector growth.
+flagship_moves:
+- Key intervention for Sustainable Tourism Framework & Capacity Management
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.economy.tourism_recovery
+interventions:
+- description: Implementing visitor management, conservation funding, and community
+    benefit frameworks prevents overtourism damage while sustaining sector growth.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

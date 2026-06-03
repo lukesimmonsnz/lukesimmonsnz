@@ -1,0 +1,29 @@
+id: problem.taranaki.housing.affordability
+title: Housing affordability and debt stress
+theme: housing
+section: housing
+subpage: affordability
+parent: problem.taranaki.housing.housing_market
+order: 2
+updated: '2026-04-26'
+summary: 'High household debt relative to income in Taranaki due to oil and gas sector wage expectations. Economic volatility creates mortgage stress during downturns.'
+manifests_in:
+  - taranaki
+systems_model:
+  state_variables:
+    - mortgage_stress_ratio
+    - household_debt_to_income_ratio
+  inputs:
+    - sector_employment_volatility
+    - interest_rate_changes
+  constraints:
+    - household_income_variability
+  feedback_loops:
+    - 'Downturn increases defaults; property values decline; equity erodes.'
+narrative:
+  - heading: Debt Levels
+    body: 'Average household debt in Taranaki is approximately $280k (2024), reflecting high borrowing during oil boom years.'
+claim_ids:
+  - claim.taranaki.housing.household_debt_280k
+status: draft
+time_horizons: [decade, generation, century]

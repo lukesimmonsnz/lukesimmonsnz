@@ -1,0 +1,22 @@
+id: claim.northland.climate.cyclone_exposure_claim2
+statement: Tropical cyclone remnants affect northern North Island 0.5–1.5 times per
+  decade (2–3 events in active decades). NIWA modelling suggests future events more
+  intense but less frequent. Rainfall intensity increase 10–30% under RCP8.5 even
+  without cyclone event, creating concurrent flood/erosion risks. Northland's unengineered
+  road network (45% unsealed, clay soils prone to landslides) especially vulnerable;
+  cyclone-triggered landslides block SH1 historically (~1995, ~2003, ~2018).
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

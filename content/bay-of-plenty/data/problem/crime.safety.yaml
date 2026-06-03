@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.crime.safety
+title: Public safety and community harm in Bay of Plenty — Te Moana-a-Toi
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 21
+updated: '2026-04-26'
+summary: Public safety and community harm represents a key systemic pressure for Bay
+  of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - safety_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The public safety and community harm is a pressing concern for the region.
+claim_ids:
+- claim.bay_of_plenty.crime.safety_41
+- claim.bay_of_plenty.crime.safety_42
+status: draft
+time_horizons: [decade]

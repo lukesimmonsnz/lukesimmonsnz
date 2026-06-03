@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.transport.active_mode_share_5_percent
+statement: Transport connectivity in Hawkes Bay is limited outside major urban centers,
+  forcing private vehicle dependence. Public transit is sparse; road freight reliance
+  increases logistics costs; geographic isolation constrains workforce mobility and
+  business access to markets.
+value: 5
+unit: percent mode share
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.mode_share_v1
+notes: Regional claim for Hawke's Bay

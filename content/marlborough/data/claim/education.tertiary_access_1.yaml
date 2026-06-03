@@ -1,0 +1,20 @@
+id: claim.marlborough.education.tertiary_access_1
+statement: 'University access for Marlborough school leavers requires relocation:
+  Otago (Dunedin, 6 hours), Canterbury (Christchurch, 5 hours), Victoria (Wellington,
+  9 hours) are primary destinations; financial barrier (accommodation) deters low-income
+  students.'
+value: null
+unit: null
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_achievement_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

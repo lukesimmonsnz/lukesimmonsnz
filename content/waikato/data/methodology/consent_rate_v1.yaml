@@ -1,0 +1,16 @@
+applies_to:
+- Claim
+description: 'Annual count of new dwelling building consents issued in a defined region,
+  drawn from the Stats NZ Building Consents Issued series. The consent rate measures
+  the flow of planned supply; completions (typically 10–20% lower due to cancellations
+  and delays) are a lagged proxy for actual additions to dwelling stock. Unit: dwellings
+  consented per year. P5'' triggers on cross-region consent-rate comparison claims.
+
+  '
+discharged_by: python_invariant
+id: methodology.consent_rate_v1
+kind: measurement
+name: Annual Dwelling Consent Rate
+predicate: null
+source_ids: []
+version: 1

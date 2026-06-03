@@ -1,0 +1,14 @@
+id: driver.west_coast.environment.driver_1
+name: Coastal-and-river-mouth settlement geography
+description: Westport, Greymouth and Hokitika all sit at river-mouth and coastal interfaces where erosion, saltwater intrusion
+  and sea-level rise stack on top of riverine flood risk. The settlement geography itself is the driver of the region's compounded
+  coastal-environment exposure.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.environment.coastal_environment
+- problem.west_coast.environment.sea_level_risk
+claim_ids: []

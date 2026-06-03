@@ -1,0 +1,21 @@
+id: claim.southland.environment.freshwater_degradation_prevalence
+statement: Southland freshwater quality faces dairy farming pressures. Southland rivers
+  (Mataura, Oreti, Waiau, Aparima) show elevated nitrate and phosphate levels from
+  pastoral runoff. MfE Freshwater bottom lines (nitrogen, E. coli) breached in multiple
+  catchments. Dairy intensification (Fonterra Edendale milk collection from 8,000+
+  farms) drives nutrient loading.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

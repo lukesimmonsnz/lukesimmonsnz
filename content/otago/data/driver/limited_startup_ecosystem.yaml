@@ -1,0 +1,11 @@
+id: driver.otago.economy.limited_startup_ecosystem
+name: Limited Startup and Innovation Ecosystem
+description: Dunedin and Otago lack venture capital, tech talent pool, business infrastructure.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.economy.economic_structure
+claim_ids: []

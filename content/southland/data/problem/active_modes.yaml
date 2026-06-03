@@ -1,0 +1,34 @@
+id: problem.southland.transport.active_modes
+title: Low Active Transport and Public Transit Uptake
+theme: transport
+section: transport
+subpage: active_modes
+parent: problem.southland.transport.connectivity
+order: 4
+updated: '2026-04-26'
+summary: Southland relies on private vehicles; limited bus services; cold climate
+  and short distances favor driving; walkability low in Invercargill CBD.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland relies on private vehicles; limited bus services; cold climate and
+    short distances favor driving; walkability low in Invercargill CBD.
+claim_ids:
+- claim.southland.transport.active_modes_trend
+- claim.southland.transport.connectivity_prevalence
+- claim.southland.transport.active_modes_prevalence
+- claim.southland.transport.fiordland_access_trend
+- claim.southland.transport.invercargill_roading_trend
+- claim.southland.transport.fiordland_access_prevalence
+- claim.southland.transport.connectivity_trend
+- claim.southland.transport.invercargill_roading_prevalence
+status: draft
+time_horizons: [decade, generation]

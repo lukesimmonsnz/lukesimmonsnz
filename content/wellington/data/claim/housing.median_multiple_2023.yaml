@@ -1,0 +1,22 @@
+id: claim.wellington.housing.median_multiple_2023
+statement: Wellington's median house price to median household income ratio (median
+  multiple) was approximately 8.7 in 2023, placing it in the severely unaffordable
+  band by Demographia's international measure and substantially above the 3.0 threshold
+  considered affordable. A median-income household would require nearly nine years
+  of gross income to purchase a median-priced dwelling.
+value: 8.7
+unit: ratio (dimensionless)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.demographia_2024
+- source.stats_nz_income_housing_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.median_multiple_v1
+notes: null

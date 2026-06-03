@@ -1,0 +1,20 @@
+id: claim.otago.transport.active_modes_prevalence
+statement: Active transport mode share in Otago is 12-18% of commute journeys, well
+  below national urban averages of 25-35%. Queenstown (2M+ annual visitors) and Dunedin
+  show strongest cycling infrastructure, while rural and provincial areas lack safe
+  walking/cycling networks, necessitating private vehicle dependence.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

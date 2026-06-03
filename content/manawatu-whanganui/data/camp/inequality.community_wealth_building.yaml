@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.inequality.community_wealth_building
+name: Community Wealth Building
+theme: inequality
+core_claim: Local economic self-reliance and cooperative models.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.inequality.child_poverty
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

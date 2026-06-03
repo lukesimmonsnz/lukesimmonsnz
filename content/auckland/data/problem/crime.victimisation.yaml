@@ -59,3 +59,4 @@ claim_ids:
   - claim.auckland.crime.deprivation_crime_correlation
   - claim.auckland.crime.police_workforce_gap
 status: draft
+time_horizons: [decade]

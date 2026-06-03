@@ -1,0 +1,23 @@
+id: claim.west_coast.crime.drug_crime_claim
+statement: Drug-related offences in the West Coast region occur at elevated rates
+  relative to national averages, with synthesis crimes (methamphetamine) concentrated
+  in declining towns experiencing economic transition from coal mining closure. Limited
+  police presence and geographic isolation complicate enforcement and harm-reduction
+  outreach.
+value: null
+unit: null
+time_period: 2018-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.mining_industry_association_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Police crime statistics are regional aggregates; economic transition driver
+  from mining industry reports.

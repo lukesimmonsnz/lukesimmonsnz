@@ -1,0 +1,20 @@
+id: claim.wellington.climate.wellington_fault_rupture_probability
+statement: GNS Science estimates the Wellington Fault has approximately an 8–11% probability
+  of producing a Mw 7.4–7.9 earthquake in the next 100 years, representing one of
+  the highest-probability major earthquake risks of any capital city globally.
+value: 9
+unit: percent probability of Mw7.4+ rupture in 100 years (midpoint estimate)
+time_period: '2022'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gns_wellington_fault_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: GNS Science 2022 estimate range 8-11%; midpoint 9% used as value. admin_count_v1
+  is a provisional tag (reading a published probabilistic reg

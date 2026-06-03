@@ -1,0 +1,20 @@
+id: 'camp.waikato.climate.camp_2'
+name: 'Investment and capacity building in climate'
+theme: 'climate-adaptation'
+core_claim: 'Investment and capacity building in climate is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement investment and capacity building in climate'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'waikato'
+tensions_with: []

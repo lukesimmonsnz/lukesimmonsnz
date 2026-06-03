@@ -1,0 +1,12 @@
+id: driver.marlborough.crime.concentrated_deprivation
+name: Concentrated Deprivation In Rural Pockets
+description: Concentrated deprivation in rural pockets with regional implications.
+theme: crime
+consensus: mostly-agreed
+category: demographic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.crime.safety
+claim_ids: []

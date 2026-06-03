@@ -1,0 +1,13 @@
+id: driver.wellington.infrastructure.pipe_age_profile
+name: Aging water pipe stock
+description: A large share of Wellington's water mains are cast iron pipes laid before 1950, well beyond design service life.
+  The annual renewal rate is insufficient to prevent average pipe age from increasing.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.infrastructure.water_resilience
+claim_ids:
+- claim.wellington.infrastructure.water_pipe_age_profile

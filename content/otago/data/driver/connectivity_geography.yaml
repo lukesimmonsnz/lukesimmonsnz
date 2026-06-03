@@ -1,0 +1,11 @@
+id: driver.otago.transport.connectivity_geography
+name: Geographic Fragmentation
+description: Otago geography fragments the region across mountain ranges and basins.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.otago.transport.connectivity
+claim_ids: []

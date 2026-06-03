@@ -1,0 +1,21 @@
+id: camp.marlborough.environment.native_forest_restoration
+name: Native Forest Restoration and Afforestation
+theme: environment
+core_claim: Large-scale replanting and ecosystem recovery.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.governance.governance
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

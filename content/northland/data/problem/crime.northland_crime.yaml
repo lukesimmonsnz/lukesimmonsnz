@@ -1,0 +1,38 @@
+id: problem.northland.crime.northland_crime
+title: Crime and safety in Te Tai Tokerau
+theme: crime
+section: crime
+subpage: crime
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Northland has elevated rates of family violence, methamphetamine harm, and
+  property crime, set against thin policing coverage.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - crime_pressure_index
+  - crime_system_capacity
+  inputs:
+  - central_government_investment
+  - population_change
+  constraints:
+  - fiscal_capacity
+  - geographic_isolation
+  feedback_loops:
+  - 'Pressure accumulation: deteriorating crime conditions compound inequality and
+    constrain economic recovery.'
+narrative:
+- heading: Regional context
+  body: Crime and safety in Te Tai Tokerau is a defining challenge for Te Tai Tokerau,
+    reflecting both structural disadvantage and underinvestment relative to national
+    averages.
+- heading: System dynamics
+  body: Northland has elevated rates of family violence, methamphetamine harm, and
+    property crime, set against thin policing coverage.
+claim_ids:
+- claim.northland.crime.northland_crime_claim1
+- claim.northland.crime.northland_crime_claim2
+status: draft
+time_horizons: [decade]

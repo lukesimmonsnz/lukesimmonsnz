@@ -1,0 +1,27 @@
+id: claim.auckland.economy.ai_diffusion_lag_2021
+statement: >
+  New Zealand's productivity gap with the OECD frontier reflects a
+  long-tail problem: a small group of frontier firms operate at or
+  near the international frontier, but the gap to the median NZ firm
+  is unusually large by OECD standards. Diffusion of advanced
+  technologies — including AI tooling — through the long tail is the
+  binding constraint on aggregate productivity, not frontier
+  performance.
+value: null
+unit: null
+time_period: '2021'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.nz_productivity_commission_frontier_firms_2021
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.labour_productivity_index_v1
+notes: >
+  The Productivity Commission's frontier-firms inquiry (2021) is the
+  authoritative NZ source for the diffusion-not-frontier framing of
+  the productivity gap. The Commission was disestablished in 2024 but
+  the report remains cited.

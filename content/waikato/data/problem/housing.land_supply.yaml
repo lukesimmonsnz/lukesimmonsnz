@@ -1,0 +1,24 @@
+id: 'problem.waikato.housing.land_supply'
+title: 'Waikato: constrained residential land supply'
+theme: 'housing'
+section: 'housing'
+subpage: 'land-supply'
+parent: 'problem.waikato.housing.affordability'
+order: 3
+updated: '2026-04-26'
+summary: 'Usable land is restricted by constraints.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Usable land is restricted by constraints.'
+claim_ids:
+- 'claim.waikato.housing.land_supply_claim1'
+- 'claim.waikato.housing.land_supply_claim2'
+status: 'draft'

@@ -1,0 +1,22 @@
+id: camp.canterbury.economy.primary_sector_resilience
+name: Primary Sector Climate Adaptation & Diversification
+theme: economy
+core_claim: Supporting farmers in shifting to lower-input, climate-resilient systems
+  (regenerative agriculture, diversification) reduces vulnerability to climate and
+  commodity shocks.
+flagship_moves:
+- Key intervention for Primary Sector Climate Adaptation & Diversification
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.economy.agri_food_primary
+interventions:
+- description: Supporting farmers in shifting to lower-input, climate-resilient systems
+    (regenerative agriculture, diversification) reduces vulnerability to climate and
+    commodity shocks.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -1,0 +1,21 @@
+id: claim.tasman.housing.infrastructure_cost_claim
+statement: TDC infrastructure capacity analysis (2024) projects development contributions
+  for new housing at NZD 28,500 per dwelling (including three-waters, roading, reserves).
+  Growth management strategy targets 450 dwellings/year through 2050; total infrastructure
+  investment required is NZD 156 million (rate or subsidy-funded).
+value: 28500
+unit: NZD per dwelling development contribution
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.tasman_housing_demand_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

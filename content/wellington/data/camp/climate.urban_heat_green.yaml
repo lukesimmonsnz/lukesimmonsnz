@@ -1,0 +1,21 @@
+id: camp.wellington.climate.urban_heat_green
+name: Green Infrastructure for Urban Heat Mitigation
+theme: climate-adaptation
+core_claim: Urban greening — street trees, green roofs, permeable surfaces — is the primary tool for reducing urban heat island
+  effect in Wellington's dense suburbs.
+flagship_moves:
+- Urban Forest Strategy with 30% canopy cover target in Wellington City
+- Green roof requirement for new commercial buildings above 1,000m²
+- Cool corridor routes connecting parks through high-density areas
+tensions:
+- Street tree and canopy targets conflict with intensification goals in constrained sections
+- Wellington's wind environment limits some green roof species options
+addresses:
+- problem.wellington.climate.urban_heat
+interventions:
+- description: Implement Wellington Urban Forest Strategy with binding 30% canopy target and 10-year planting programme
+  state_variable: urban_heat_island_intensity
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

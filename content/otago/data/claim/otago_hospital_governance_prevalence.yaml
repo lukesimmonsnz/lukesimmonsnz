@@ -1,0 +1,22 @@
+id: claim.otago.governance.otago_hospital_governance_prevalence
+statement: Dunedin Hospital governance is under Te Whatu Ora Southern (formerly Southern
+  DHB → Health NZ restructure). Rebuild project ($2.3B+ mid-2024) spans new Acute
+  Services Building and Outpatient Services Building (completion 2029-2030); project
+  governance involves joint steering committees (Health NZ, QLDC, Dunedin City Council).
+  Regional hospital serves South Island population ~500,000 (Otago, Southland, parts
+  of Canterbury).
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

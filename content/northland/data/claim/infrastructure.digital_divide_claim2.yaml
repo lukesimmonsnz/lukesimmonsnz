@@ -1,0 +1,22 @@
+id: claim.northland.infrastructure.digital_divide_claim2
+statement: 'Rural Broadband Initiative (RBI) deployment reached Far North communities
+  2015–2020; satellite (Starlink) uptake accelerating in remote areas (cost NZD 100–150/month).
+  4G coverage gaps persist: Hokianga (west coast), western Far North (Mangonui-Kaitāia),
+  eastern Cape. Digital inclusion programme (MSD/DIA funding) targets digital literacy
+  in rural seniors (60+); broadband speed in remote areas averages 5–10 Mbps vs. urban
+  standard 50+ Mbps, constraining remote work adoption and telehealth uptake.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

@@ -1,0 +1,34 @@
+id: problem.otago.inequality.dunedin_deprivation
+title: Dunedin East Deprivation
+theme: inequality
+section: inequality
+subpage: dunedin_deprivation
+parent: problem.otago.inequality.inequality
+order: 3
+updated: '2026-04-26'
+summary: NZ Deprivation Index scores place East Dunedin among most deprived urban
+  areas; youth unemployment, family poverty, limited opportunity.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: NZ Deprivation Index scores place East Dunedin among most deprived urban areas;
+    youth unemployment, family poverty, limited opportunity.
+claim_ids:
+- claim.otago.inequality.queenstown_worker_conditions_trend
+- claim.otago.inequality.inequality_trend
+- claim.otago.inequality.queenstown_worker_conditions_prevalence
+- claim.otago.inequality.inequality_prevalence
+- claim.otago.inequality.dunedin_deprivation_prevalence
+- claim.otago.inequality.dunedin_deprivation_trend
+- claim.otago.inequality.rural_isolation_prevalence
+- claim.otago.inequality.rural_isolation_trend
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,20 @@
+id: claim.taranaki.transport.active_modes_01
+statement: Active transport (walking and cycling) accounts for 8-15% of commute journeys
+  in Taranaki, significantly below urban best practice of 30-35%. Limited cycling
+  infrastructure and geographic sprawl require private vehicle dependence for most
+  residents, constraining environmental and health benefits.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki active_modes

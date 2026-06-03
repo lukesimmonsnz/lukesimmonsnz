@@ -1,0 +1,23 @@
+id: claim.otago.housing.dunedin_student_rental_prevalence
+statement: 'Dunedin student rental market is tight and problematic: University of
+  Otago (~20,000 students) generates demand; North Dunedin (Dundas, Union St, George
+  St, Leith St precincts) characterized by overcrowding, mould, poor standards, and
+  high rents relative to student income. Rental stock poorly maintained (aging villas,
+  limited landlord regulation enforcement pre-2021); student hardship data shows 30-40%
+  food/transport insecurity. Private rental dominance (limited university housing);
+  MSD student allowance inadequate to cover rent+living costs.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

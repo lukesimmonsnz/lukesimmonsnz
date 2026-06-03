@@ -1,0 +1,23 @@
+id: claim.west_coast.economy.economic_4_claim
+statement: Dairy farming and dairy processing remain significant in northern West
+  Coast (Buller and parts of Grey), while forestry operations (both native and plantation)
+  are distributed across the region. Together these primary sectors employ 800+ workers
+  and generate $150-200 million in regional revenue. Both sectors face resilience
+  challenges from flooding and access constraints.
+value: 175
+unit: million NZD annual regional revenue (estimated)
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Employment and revenue estimates derived from regional council economic data
+  and Census occupation and industry tables.

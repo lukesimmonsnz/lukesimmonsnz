@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.economy.agri_food
+title: Agriculture and Food Production Transformation
+theme: economy
+section: economy
+subpage: agri_food
+parent: problem.manawatu_whanganui.economy.economic_structure
+order: 1
+updated: '2026-04-26'
+summary: Dairy dependence; nitrogen pollution regulation; export market volatility;
+  value-add opportunities.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Dairy dependence; nitrogen pollution regulation; export market volatility;
+    value-add opportunities.
+claim_ids:
+- claim.manawatu_whanganui.economy.agri_food_1
+- claim.manawatu_whanganui.economy.agri_food_2
+status: draft
+time_horizons: [decade, generation]

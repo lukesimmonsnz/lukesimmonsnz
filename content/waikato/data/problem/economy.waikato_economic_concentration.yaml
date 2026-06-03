@@ -1,0 +1,30 @@
+id: problem.waikato.economy.waikato_economic_concentration
+title: Economic concentration and productivity challenge
+theme: economy
+section: economy
+subpage: waikato_economic_concentration
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waikato's economy is heavily concentrated in primary industries with lower
+  productivity growth than Auckland.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gdp_per_capita_growth
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional economy dynamics create self-reinforcing feedback.
+narrative:
+- heading: Economic concentration and productivity challenge
+  body: Waikato's economy is heavily concentrated in primary industries with lower
+    productivity growth than Auckland.
+claim_ids:
+- claim.waikato.economy.waikato_economic_concentration_root
+status: draft
+time_horizons: [decade, generation]

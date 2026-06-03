@@ -1,0 +1,33 @@
+id: problem.gisborne.environment.erosion
+title: Erosion and landslide hazards from land use in Gisborne — Te Tairāwhiti
+theme: environment
+section: environment
+subpage: erosion
+parent: problem.gisborne.environment.environmental_degradation
+order: 14
+updated: '2026-04-26'
+summary: Erosion and landslide hazards from land use is a specific manifestation of
+  the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - erosion_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Erosion and landslide hazards from land use is a key facet of the broader
+    pressure facing the region.
+claim_ids:
+- claim.gisborne.environment.erosion_27
+- claim.gisborne.environment.erosion_28
+status: draft
+time_horizons: [generation, century]

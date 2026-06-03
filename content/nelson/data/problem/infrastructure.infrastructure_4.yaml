@@ -1,0 +1,35 @@
+id: problem.nelson.infrastructure.infrastructure_4
+title: Digital infrastructure gap, urban-rural and household-income
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_4
+parent: infrastructure
+order: 4
+updated: '2026-04-26'
+summary: Fibre-to-the-home coverage is around 72 percent in Nelson city and 38 percent in Tasman district (against 79 percent nationally). Rural coverage (Golden Bay, upper valleys) is below 20 percent. Mobile 4G coverage is around 78 percent in urban Nelson with rural gaps significant. Broadband uptake among low-income households is around 62 percent against 84 percent nationally; cost ($89-124 per month) and data limits are barriers.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - fibre_coverage_pct
+  - low_income_broadband_uptake_pct
+  - mobile_4g_coverage_pct
+  inputs:
+  - rbi_extension_funding
+  - retail_price_competition
+  constraints:
+  - rural_population_density
+  - household_disposable_income
+  feedback_loops:
+  - 'Coverage-uptake feedback: low rural coverage suppresses local digital-business formation, reducing local demand-pull for further coverage extension.'
+narrative:
+- heading: Two digital divides
+  body: Nelson has both an urban-rural digital divide and a household-income digital divide (claim.nelson.infrastructure.infrastructure_4_claim). Rural coverage gaps are addressable through Rural Broadband Initiative extensions; the income-based gap is more about price and service rather than coverage.
+- heading: Distance-learning and remote-work amplification
+  body: The pandemic permanently raised the floor on what counts as adequate household connectivity. Schools rely on online platforms; remote work requires reliable upload speeds. The 12 percent of teachers reporting inadequate technology and the 38 percent of low-income households without home broadband are the same cohort that bears the largest cost from the gap.
+claim_ids:
+- claim.nelson.infrastructure.infrastructure_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

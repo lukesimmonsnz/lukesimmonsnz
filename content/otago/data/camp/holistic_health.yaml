@@ -1,0 +1,21 @@
+id: camp.otago.health.holistic_health
+name: Holistic Population Health Strategy
+theme: health
+core_claim: Integrated public health, primary care, and health equity approach improves
+  health outcomes.
+flagship_moves:
+- Health promotion and disease prevention programs
+- Equitable primary care access and quality
+- Health equity focus in policy
+tensions:
+- Funding constraints
+- Behavioral change difficulty
+addresses:
+- problem.otago.health.health_outcomes
+interventions:
+- description: Implement regional health equity strategy
+  state_variable: health_equity
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

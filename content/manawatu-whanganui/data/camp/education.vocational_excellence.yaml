@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.education.vocational_excellence
+name: Vocational Excellence Pathways
+theme: education
+core_claim: High-quality apprenticeships and trade training.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.health.chronic_disease
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

@@ -1,0 +1,32 @@
+id: problem.manawatu_whanganui.climate.drought_agricultural
+title: Drought Vulnerability and Agricultural Adaptation
+theme: climate-adaptation
+section: climate
+subpage: drought_agricultural
+parent: problem.manawatu_whanganui.climate.climate_risk
+order: 1
+updated: '2026-04-26'
+summary: Increasing drought frequency; irrigation competition; crop yield volatility;
+  pasture feed gaps.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Increasing drought frequency; irrigation competition; crop yield volatility;
+    pasture feed gaps.
+claim_ids:
+- claim.manawatu_whanganui.climate.drought_agricultural_placeholder
+status: draft
+time_horizons: [generation, century]

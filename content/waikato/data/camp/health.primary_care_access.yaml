@@ -1,0 +1,23 @@
+id: camp.waikato.health.primary_care_access
+name: Primary care access improvement
+theme: health
+core_claim: Expanding primary care access, particularly in rural areas, reduces avoidable
+  hospitalisations.
+flagship_moves:
+- Establish three new community health centres in rural Waikato
+- Expand telehealth for routine specialist consultations
+- Recruit and retain rural health workers through incentive scheme
+tensions:
+- Telehealth cannot fully substitute for in-person care for complex needs
+- Rural recruitment incentives create equity concerns with urban areas
+interventions:
+- description: Establish three new community health centres in rural Waikato
+  state_variable: health_outcome_index
+  expected_sign: +
+addresses:
+- problem.waikato.health.maori_health_gap
+- problem.waikato.health.rural_access
+- problem.waikato.health.mental_health
+applicable_in:
+- waikato
+tensions_with: []

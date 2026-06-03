@@ -1,0 +1,12 @@
+id: driver.hawkes_bay.climate.urban_development_exposure
+name: Urban development in hazard-exposed zones
+description: Urban development in flood-prone zones
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.climate.climate_vulnerability
+- problem.hawkes_bay.climate.coastal_hazard
+claim_ids: []

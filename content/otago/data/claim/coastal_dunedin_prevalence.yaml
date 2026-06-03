@@ -1,0 +1,22 @@
+id: claim.otago.climate.coastal_dunedin_prevalence
+statement: Coastal Dunedin faces compound sea-level rise and storm surge risk. Otago
+  Harbour infrastructure (Port Chalmers, Port Otago container terminal, breakwater,
+  log-handling facilities) sits in high-tide zones vulnerable to inundation. Otago
+  Peninsula—yellow-eyed penguin (hoiho) critical habitat and residential areas—faces
+  saltwater intrusion and increased coastal erosion; Catlins coastal settlements (Kaka
+  Point, Owaka) similarly at-risk.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

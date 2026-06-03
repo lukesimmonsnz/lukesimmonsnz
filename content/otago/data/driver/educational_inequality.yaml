@@ -1,0 +1,11 @@
+id: driver.otago.education.educational_inequality
+name: Educational Inequality by Deprivation
+description: Deprivation and rural location correlate with lower educational outcomes.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.education.achievement
+claim_ids: []

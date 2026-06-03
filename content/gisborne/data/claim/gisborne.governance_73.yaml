@@ -1,0 +1,21 @@
+id: claim.gisborne.governance.governance_73
+statement: Governance coordination in Gisborne is fragmented across multiple councils
+  and central government agencies, creating inefficiencies in infrastructure planning
+  and service delivery. Capacity constraints in smaller councils limit strategic foresight
+  and project delivery speed.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.admin_count_v1
+notes: null

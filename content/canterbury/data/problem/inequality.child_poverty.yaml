@@ -1,0 +1,45 @@
+id: problem.canterbury.inequality.child_poverty
+title: Child Poverty & Educational Disadvantage
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: problem.canterbury.inequality.inequality
+order: 2
+updated: '2026-04-26'
+summary: 'Canterbury child poverty (measured by material hardship) affects 25-30%
+  of children in high-deprivation suburbs. Educational attainment gaps emerge by age
+  5 (language development); NCEA pass rates in East Christchurch schools are 30% below
+  city average. Food insecurity, substandard housing, and crowding compound educational
+  disadvantage.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - child_poverty_rate_deprivation_quintile
+  - ncea_level_2_attainment_rate_by_school
+  - literacy_numeracy_gap_year_5
+  - food_insecurity_rate_children
+  inputs:
+  - household_income
+  - parental_employment
+  - school_funding_equity
+  constraints:
+  - intergenerational_deprivation
+  - early_childhood_service_access
+  feedback_loops:
+  - Dynamic feedback mechanisms drive child poverty & educational disadvantage.
+narrative:
+- heading: From age 5, the gap opens
+  body: 'Language and numeracy assessments at age 5 show 2-3 year development lags
+    in high-deprivation areas. By NCEA, cumulative disadvantage is entrenched. Schools
+    in East Christchurch face student-teacher ratios and social-emotional needs that
+    exceed their funding capacity.
+
+    '
+claim_ids:
+- claim.canterbury.inequality.child_poverty_rate_high_dep_2023
+- claim.canterbury.inequality.ncea_pass_rate_disparity_2023
+status: draft
+time_horizons: [decade, generation, century]

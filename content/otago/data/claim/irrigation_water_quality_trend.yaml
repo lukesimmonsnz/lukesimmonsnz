@@ -1,0 +1,22 @@
+id: claim.otago.environment.irrigation_water_quality_trend
+statement: 'Water quality in irrigation zones is degrading: Central Otago viticulture
+  and stone fruit production generating runoff (limited but present); upstream Clutha
+  dairy farming (Fonterra Edendale supplier catchment) driving nutrient loading; ORC
+  monitoring shows elevated nitrate/phosphate in some zones; climate stress increasing
+  algal growth in lakes (Dunstan, Wanaka); dairy intensification in Clutha pressuring
+  allocation review; nutrient management plans rolled out unevenly.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

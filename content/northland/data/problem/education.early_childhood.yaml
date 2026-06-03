@@ -1,0 +1,24 @@
+id: 'problem.northland.education.early_childhood'
+title: 'Te Tai Tokerau Northland: early childhood access'
+theme: 'education'
+section: 'education'
+subpage: 'early-childhood'
+parent: 'problem.northland.education.achievement'
+order: 3
+updated: '2026-04-26'
+summary: 'ECE participation is limited.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'ECE participation is limited.'
+claim_ids:
+- 'claim.northland.education.early_childhood_claim1'
+- 'claim.northland.education.early_childhood_claim2'
+status: 'draft'

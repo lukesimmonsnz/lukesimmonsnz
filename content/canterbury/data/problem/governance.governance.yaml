@@ -1,0 +1,47 @@
+id: problem.canterbury.governance.governance
+title: Canterbury Regional Governance & Policy Coordination
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury regional governance is fragmented across CCC (Christchurch),
+  three territorial authorities (Waimakariri, Selwyn, Ashburton) plus South Canterbury
+  (Timaru, Oamaru). Environment Canterbury (ECan) coordinates water and resource management.
+  No formal regional strategic coordination mechanism exists; water strategy (CWMS),
+  transport strategy, and climate responses are sectoral. Ngāi Tahu as iwi has statutory
+  consultation roles but co-governance is contested. Inter-council coordination on
+  growth infrastructure is weak.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - inter_council_coordination_index
+  - water_allocation_compliance_rate
+  - regional_strategic_plan_uptake_rate
+  inputs:
+  - central_govt_policy_direction
+  - iwi_engagement_quality
+  - growth_demand_by_district
+  constraints:
+  - local_govt_funding_constraints
+  - political_contestation_iwi_cogovernance
+  - central_state_autonomy_doctrine
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury regional governance & policy coordination.
+narrative:
+- heading: Fragmentation without coordination
+  body: 'Each council pursues growth, but planning is siloed. Water strategy (CWMS)
+    is decided by ECan with contested farmer/environmental interests. Transport is
+    city-centric. No unified regional economic strategy exists. Ngāi Tahu consultation
+    occurs but power asymmetries limit influence on major decisions.
+
+    '
+claim_ids:
+- claim.canterbury.governance.regional_coordination_capacity_2024
+- claim.canterbury.governance.council_coordination_ratings_2023
+status: draft
+time_horizons: [decade, generation, century]

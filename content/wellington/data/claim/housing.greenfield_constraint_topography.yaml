@@ -1,0 +1,23 @@
+id: claim.wellington.housing.greenfield_constraint_topography
+statement: Wellington City Council identified that 60% of city land area has slopes
+  exceeding 15 degrees, severely constraining greenfield housing expansion. Steep
+  topography forces densification on flat central and eastern suburbs, increasing
+  reliance on infill housing and intensification around transport corridors to meet
+  affordability pressures.
+value: 60
+unit: percent of land area with slope >15 degrees
+time_period: '2022'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.motu_housing_wellington_2022
+- source.wcc_housing_capacity_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: Slope figure is an approximate estimate based on GIS topographic analysis cited
+  in housing capacity literature.

@@ -1,0 +1,20 @@
+id: claim.waikato.health.waikato_health_inequity_root
+statement: Health service access in Waikato is constrained by workforce shortage and
+  geographic isolation. Nursing vacancies and GP shortages are acute in rural areas;
+  specialist services require travel, delaying diagnoses and treatment for chronic
+  and acute conditions.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato health

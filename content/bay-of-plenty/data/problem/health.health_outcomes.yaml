@@ -1,0 +1,32 @@
+id: problem.bay_of_plenty.health.health_outcomes
+title: Population health outcomes and wellbeing in Bay of Plenty — Te Moana-a-Toi
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 25
+updated: '2026-04-26'
+summary: Population health outcomes and wellbeing represents a key systemic pressure
+  for Bay of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - health_outcomes_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The population health outcomes and wellbeing is a pressing concern for the
+    region.
+claim_ids:
+- claim.bay_of_plenty.health.health_outcomes_49
+- claim.bay_of_plenty.health.health_outcomes_50
+status: draft
+time_horizons: [decade, generation]

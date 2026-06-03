@@ -1,0 +1,42 @@
+id: problem.west_coast.crime.safety
+title: Elevated property and violent crime in declining towns
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Greymouth and Westport report violent and property crime above New Zealand urban averages, correlated with depopulation,
+  the loss of mining-era wages and reduced police resourcing. Perceived safety problems compound out-migration and accelerate
+  retail and accommodation closures.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - recorded_offence_rate
+  - police_fte_per_capita
+  - median_response_time_minutes
+  inputs:
+  - nz_police_resourcing
+  - council_cctv_and_community_safety_funds
+  constraints:
+  - geographic_dispersion
+  - thin_after_hours_capacity
+  feedback_loops:
+  - Visible disorder and reported crime reduce inward migration and retail viability, deepening economic decline and shrinking
+    the tax and rate base that funds prevention and response — a downward spiral the region has not arrested.
+narrative:
+- heading: Crime in a shrinking-economy context
+  body: Recorded violent and property offences in Greymouth and Westport have run above urban-NZ averages for several years
+    (claim.west_coast.crime.safety_claim), in a period overlapping with the Solid Energy collapse, Stockton Mine wind-down
+    and broader population decline. Causation is not direct, but the income shock of mining job losses, alcohol and substance
+    use, and reduced informal social supervision in emptying neighbourhoods are documented contributors.
+- heading: Police presence and response distance
+  body: Police staffing on the West Coast is small, distances between stations are long, and after-hours response in remote
+    settlements (Reefton, Karamea, Haast) can take hours. This thin operational footprint makes safety as much a question
+    of infrastructure as of policing strategy.
+claim_ids:
+- claim.west_coast.crime.safety_claim
+status: draft
+time_horizons:
+- decade

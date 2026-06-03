@@ -1,0 +1,19 @@
+id: claim.northland.economy.tourism_dependence_claim1
+statement: Northland economy depends heavily on tourism, agriculture, and fishing.
+  Business investment lags national average; regional GDP growth of 1-2% annually
+  trails national 2.5-3%, constraining employment and wage growth in provincial centers.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mbie_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

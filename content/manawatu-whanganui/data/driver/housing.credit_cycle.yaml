@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.housing.credit_cycle
+name: Credit Cycle And Finance Procyclicality
+description: Credit cycle and finance procyclicality. This driver operates at national
+  scale with consensus consensus.
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.rural_housing
+claim_ids: []

@@ -1,0 +1,21 @@
+id: claim.otago.education.achievement_prevalence
+statement: Educational achievement disparities in Otago are significant, with NCEA
+  Level 2 attainment in provincial areas (Oamaru, Alexandra, Cromwell) averaging 70-75%
+  compared to Dunedin (85%+). Regional universities (University of Otago, Otago Polytechnic)
+  struggle to retain graduates, with 60%+ of tertiary graduates leaving the region
+  within 5 years.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

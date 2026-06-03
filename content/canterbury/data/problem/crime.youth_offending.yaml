@@ -1,0 +1,44 @@
+id: problem.canterbury.crime.youth_offending
+title: Youth Offending & Justice System Diversion
+theme: crime
+section: crime
+subpage: youth_offending
+parent: problem.canterbury.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: 'Youth (10-16) offending rates in Canterbury are above NZ average, particularly
+  for burglary, vehicle theft, and assault. Overrepresentation of Māori and Pacific
+  youth in the justice system reflects both offending concentration and disparate
+  policing/prosecution. Diversion and therapeutic intervention capacity is limited.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - youth_offending_rate_per_1000
+  - maori_pacific_overrepresentation_ratio
+  - diversion_programme_places
+  - youth_employment_rate_neet
+  inputs:
+  - school_engagement_and_attendance
+  - family_violence_exposure
+  - substance_abuse_prevalence_youth
+  constraints:
+  - mental_health_service_capacity_youth
+  - youth_employment_opportunity
+  feedback_loops:
+  - Dynamic feedback mechanisms drive youth offending & justice system diversion.
+narrative:
+- heading: Justice system concentration in deprived areas
+  body: 'Youth offending hotspots align with high-deprivation suburbs (East Christchurch,
+    Selwyn outer). Offenders often have prior family violence exposure, school truancy,
+    and substance abuse histories. Diversion programmes (YJCs, Oranga Tamariki therapeutic
+    responses) have waitlists; police apprehensions continue at high rates.
+
+    '
+claim_ids:
+- claim.canterbury.crime.youth_offending_rate_2023
+- claim.canterbury.crime.youth_justice_diversion_gap_2023
+status: draft
+time_horizons: [decade]

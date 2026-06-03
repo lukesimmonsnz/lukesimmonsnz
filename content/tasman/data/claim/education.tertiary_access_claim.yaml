@@ -1,0 +1,21 @@
+id: claim.tasman.education.tertiary_access_claim
+statement: Only 28% of Tasman school leavers progress directly to tertiary study (2023),
+  below national rate of 46%. Nearest university campuses (Massey Albany, University
+  of Canterbury) are 3+ hours away; cost of relocation excludes lower-income families
+  from study pathways.
+value: 28
+unit: percent direct tertiary progression
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_tasman_achievement_2023
+- source.stats_nz_census_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

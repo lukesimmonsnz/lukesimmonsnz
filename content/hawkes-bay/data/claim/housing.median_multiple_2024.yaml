@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.housing.median_multiple_2024
+statement: Housing affordability in Hawke's Bay has deteriorated; median house price-to-income
+  ratio reached 6.8× in 2024 (up from 5.2× in 2019), entering severely-unaffordable
+  territory (Demographia threshold > 6.0). Napier and Hastings see investor-driven
+  demand; construction lags population growth; rental yields attract offshore capital,
+  reducing owner-occupier access for young families and essential workers.
+value: 6.8
+unit: ratio (dimensionless)
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

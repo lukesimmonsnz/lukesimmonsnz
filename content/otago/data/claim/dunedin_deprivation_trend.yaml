@@ -1,0 +1,23 @@
+id: claim.otago.inequality.dunedin_deprivation_trend
+statement: 'Dunedin inequality widening: student rental precinct (North Dunedin) hardship
+  deepening (food/transport insecurity rising); aged renters in South/West Dunedin
+  squeezed by rent growth and fixed pensions; Māori health and education outcomes
+  lagging (disparity widening); child poverty in West Dunedin suburbs persistent;
+  intergenerational employment/skill gaps evident in South Dunedin (limited apprenticeship
+  pipeline); university-anchored economy benefiting knowledge workers, disadvantaging
+  service sector.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

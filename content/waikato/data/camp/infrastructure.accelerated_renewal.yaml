@@ -1,0 +1,25 @@
+id: camp.waikato.infrastructure.accelerated_renewal
+name: Accelerated infrastructure renewal funding
+theme: infrastructure
+core_claim: Increased central and local government funding for infrastructure renewal
+  prevents costly emergency replacement.
+flagship_moves:
+- Establish a Waikato Infrastructure Renewal Fund co-funded by central government
+- Implement asset management standards across all Waikato TAs
+- Prioritise three-waters renewal in Hamilton and smaller TAs with highest risk
+tensions:
+- Renewal funding competes with new capital investment for growth
+- Rate increases required to fund renewal face community resistance
+interventions:
+- description: Establish a Waikato Infrastructure Renewal Fund co-funded by central
+    government
+  state_variable: infrastructure_condition_index
+  expected_sign: +
+addresses:
+- problem.waikato.infrastructure.waikato_infrastructure
+- problem.waikato.infrastructure.three_waters
+- problem.waikato.infrastructure.digital_rural
+- problem.waikato.infrastructure.roading
+applicable_in:
+- waikato
+tensions_with: []

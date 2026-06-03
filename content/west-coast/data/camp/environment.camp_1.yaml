@@ -1,0 +1,23 @@
+id: camp.west_coast.environment.marine_protected_areas_and_eco
+name: Marine Protected Areas and Ecosystem-Based Management
+theme: environment
+core_claim: West Coast's unique coastal and marine ecosystem requires formal protection
+  and integrated management to sustain fisheries, biodiversity, and tourism.
+flagship_moves:
+- Establish West Coast Marine Protected Area network covering key reef and estuarine
+  habitats
+- Develop integrated Westland coastal management plan with Poutini Ngāi Tahu
+- Enforce commercial fishing limits in sensitive inshore habitats
+tensions:
+- Fishing industry opposes MPAs that restrict commercial access
+- Enforcement capacity on a remote coastline is very limited
+addresses:
+- problem.west_coast.environment.coastal_environment
+- problem.west_coast.environment.sea_level_risk
+interventions:
+- description: Establish West Coast Marine Protected Area network
+  state_variable: marine_biodiversity_index
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

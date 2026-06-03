@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.health.workforce
+title: Health workforce recruitment and retention in Bay of Plenty — Te Moana-a-Toi
+theme: health
+section: health
+subpage: workforce
+parent: problem.bay_of_plenty.health.health_outcomes
+order: 28
+updated: '2026-04-26'
+summary: Health workforce recruitment and retention is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - workforce_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Health workforce recruitment and retention is a specific manifestation of
+    the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.health.workforce_55
+- claim.bay_of_plenty.health.workforce_56
+status: draft
+time_horizons: [decade, generation]

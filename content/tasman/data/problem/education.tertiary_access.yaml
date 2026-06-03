@@ -1,0 +1,42 @@
+id: problem.tasman.education.tertiary_access
+title: Direct tertiary progression below national rate
+theme: education
+section: education
+subpage: tertiary_access
+parent: achievement
+order: 4
+updated: '2026-04-26'
+summary: Around 28 percent of Tasman school leavers progress directly to tertiary study, compared with a national
+  46 percent. The nearest university campuses (Massey Albany, University of Canterbury) are three-plus hours away;
+  the cost of relocation is a meaningful filter on lower-income families.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - direct_tertiary_progression_rate
+  - school_leaver_destination_distribution
+  inputs:
+  - regional_scholarship_capacity
+  - online_degree_pathway_enrolment
+  constraints:
+  - no_local_university_campus
+  - relocation_cost_filter
+  feedback_loops:
+  - Out-migration of tertiary cohorts thins the local graduate workforce, which reduces graduate-level local employers,
+    which reinforces the case for relocation.
+narrative:
+- heading: Tertiary participation requires relocation
+  body: There is no university campus inside Tasman. Nelson Marlborough Institute of Technology offers vocational
+    pathways from a Nelson base; degree study requires moving to Christchurch, Wellington, or further. Relocation
+    cost — bond, rent, separation from work and whānau — sits between secondary completion and tertiary enrolment
+    (claim.tasman.education.tertiary_access_claim).
+- heading: Filter by household income
+  body: Households able to fund a relocated student are disproportionately higher-income. The same regional gap
+    therefore acts as a class filter on tertiary access, reproducing income inequality across generations rather
+    than narrowing it.
+claim_ids:
+- claim.tasman.education.tertiary_access_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,0 +1,13 @@
+id: driver.wellington.environment.stream_channelisation_legacy
+name: Channelisation and piping of urban streams
+description: Mid-twentieth century urban development piped and channelised most of Wellington's urban streams, eliminating
+  the natural filtering, habitat, and buffering functions that maintain freshwater ecological health.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.environment.waterway_quality
+claim_ids:
+- claim.wellington.environment.urban_stream_degradation

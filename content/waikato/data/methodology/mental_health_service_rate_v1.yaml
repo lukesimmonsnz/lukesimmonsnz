@@ -1,0 +1,11 @@
+applies_to:
+- Claim
+description: Number of people accessing specialist mental health or addiction services
+  per 100,000 population per year; from Health NZ administrative data. Under-counts
+  need because access is rationed.
+discharged_by: json_schema
+id: methodology.mental_health_service_rate_v1
+kind: measurement
+name: Mental Health Service Contact Rate
+source_ids: []
+version: 1

@@ -1,24 +1,23 @@
 id: claim.auckland.housing.waitlist_size_2023
-statement: >
-  As of June 2023, approximately 24,000 households were on the New Zealand
-  public housing register nationally, with Auckland accounting for the largest
-  regional share — reflecting the concentration of severe housing need in the
-  city relative to available public housing stock.
+statement: 'As of June 2023, approximately 24,000 households were on the New Zealand
+  public housing register nationally, with Auckland accounting for the largest regional
+  share — reflecting the concentration of severe housing need in the city relative
+  to available public housing stock.
+
+  '
 value: 24000
-unit: "households"
-time_period: "2023-06"
+unit: households
+time_period: 2023-06
 confidence: high
 verification_status: verified
-last_verified: "2026-04-01"
+last_verified: '2026-04-27'
 source_ids:
-  - source.msd_housing_register_2023
+- source.msd_housing_register_2023
 scoped_to:
-  - nz
-national_assertion: false
+- nz
+national_assertion: true
 region_mentions: []
 methodology_tag: methodology.admin_count_v1
-notes: >
-  The value (24,000) is the national register total; Auckland's share is
-  described in the statement but the primary datum is national. Scoped to
-  nz only. An Auckland-specific count claim should be added once a reliable
-  regional disaggre
+notes: The value (24,000) is the national register total; Auckland's share is described
+  in the statement but the primary datum is national. Scoped to nz only. An Auckland-specific
+  count claim should be added once a reliable regional disaggre

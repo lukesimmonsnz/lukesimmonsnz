@@ -1,0 +1,22 @@
+id: camp.taranaki.infrastructure.infrastructure.renewal
+name: Infrastructure renewal programme
+theme: infrastructure
+core_claim: Infrastructure renewal programme addresses infrastructure.
+flagship_moves:
+- Implement Infrastructure renewal programme
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.infrastructure.infrastructure
+- problem.taranaki.infrastructure.digital_rural
+- problem.taranaki.infrastructure.wastewater
+- problem.taranaki.infrastructure.water
+interventions:
+- description: Infrastructure renewal programme action
+  state_variable: infrastructure.renewal_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

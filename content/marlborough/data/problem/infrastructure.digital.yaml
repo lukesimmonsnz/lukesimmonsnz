@@ -1,0 +1,30 @@
+id: problem.marlborough.infrastructure.digital
+title: Digital Connectivity and Broadband Access
+theme: infrastructure
+section: infrastructure
+subpage: digital
+parent: problem.marlborough.infrastructure.infrastructure
+order: 1
+updated: '2026-04-26'
+summary: Rural broadband coverage gaps; cost barriers to rural extension; digital
+  divide.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Rural broadband coverage gaps; cost barriers to rural extension; digital divide.
+claim_ids:
+- claim.marlborough.infrastructure.digital_1
+- claim.marlborough.infrastructure.digital_2
+status: draft
+time_horizons: [decade, generation]

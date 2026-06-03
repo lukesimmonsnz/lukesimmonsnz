@@ -1,0 +1,22 @@
+id: claim.tasman.infrastructure.infrastructure_claim
+statement: Tasman's three-waters infrastructure (water supply, wastewater, stormwater)
+  is aging; asset life expectancy maps show 38% of pipes exceed design life. Three-waters
+  reform mandates regional aggregation by 2026; TDC is merging with Nelson City Council
+  and Marlborough District Council to form Te Hoiere Three Waters Entity, serving
+  350,000 residents.
+value: 38
+unit: percent pipes beyond design life
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.waimea_aquifer_study_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

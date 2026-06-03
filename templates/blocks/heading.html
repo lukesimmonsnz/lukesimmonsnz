@@ -1,0 +1,2 @@
+{% set lvl = attrs.level | default('2') | string %}
+<h{{ lvl }}{% if attrs.id %} id="{{ attrs.id }}"{% endif %}>{{ body | safe }}</h{{ lvl }}>

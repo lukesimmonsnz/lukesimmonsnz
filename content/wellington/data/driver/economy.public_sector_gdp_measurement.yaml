@@ -1,0 +1,14 @@
+id: driver.wellington.economy.public_sector_gdp_measurement
+name: Input-cost GDP measurement of government output
+description: National accounts measure government services at input cost rather than market value, meaning a large public
+  sector systematically understates measured productivity relative to private-sector-dominated city-regions of comparable
+  size.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: permanent
+scope: national
+problem_ids:
+- problem.wellington.economy.productivity
+claim_ids:
+- claim.wellington.economy.productivity_public_sector_drag

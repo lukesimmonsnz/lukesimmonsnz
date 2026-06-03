@@ -1,0 +1,55 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Settings · {{ label }}{% endblock %}
+{% set active = 'settings' %}
+{% set crumbs = [{'label': 'Settings', 'url': url_for('cms.settings_landing')}, {'label': label}] %}
+
+{% block extra_css %}
+.json-editor { width: 100%; min-height: 380px; font-family: ui-monospace, monospace; font-size: 13px; padding: 14px 18px; border: 0.5px solid #d9d0bf; border-radius: 6px; background: #fcfaf3; }
+.help { background: #fdf4e8; border-left: 3px solid #c4956a; padding: 10px 14px; border-radius: 0 4px 4px 0; font-size: 12px; color: #4b3f30; margin-bottom: 14px; }
+{% endblock %}
+
+{% block head_actions %}
+<button class="btn btn-secondary" id="btn-revert">Revert</button>
+<button class="btn btn-primary" id="btn-save">Save</button>
+<button class="btn btn-primary" id="btn-publish" style="background:#3a7050;border-color:#3a7050;">Publish all</button>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">{{ label }}</h1>
+<div class="help">
+Edit the JSON blob below. Save persists to <code>cms.db.settings</code>; Publish exports all groups to <code>instance/site_settings.json</code> and regenerates <code>static/theme.css</code>.
+</div>
+<textarea id="value" class="json-editor">{{ value_json }}</textarea>
+<div style="margin-top:8px;font-size:11px;color:#8a7a66;" id="status"></div>
+
+<script>
+var GROUP = {{ group|tojson }};
+var ORIGINAL = {{ value_json|tojson }};
+var status = document.getElementById('status');
+
+document.getElementById('btn-save').addEventListener('click', function() {
+  var raw = document.getElementById('value').value;
+  try { var parsed = JSON.parse(raw); }
+  catch (e) { status.textContent = 'Invalid JSON: ' + e.message; status.style.color = '#a04030'; return; }
+  fetch('/admin/api/settings/' + GROUP + '/', {
+    method: 'PUT', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({value: parsed})
+  }).then(function(r){ return r.json(); }).then(function(j){
+    if (j.ok) { status.textContent = 'Saved at ' + new Date().toLocaleTimeString(); status.style.color = '#3a7050'; window.toast('Saved'); }
+    else { status.textContent = 'Save failed'; status.style.color = '#a04030'; }
+  });
+});
+
+document.getElementById('btn-publish').addEventListener('click', function() {
+  fetch({{ url_for('cms.api_settings_publish')|tojson }}, {method: 'POST'})
+    .then(function(r){ return r.json(); }).then(function(j){
+      window.toast(j.ok ? 'Published' : 'Publish failed');
+    });
+});
+
+document.getElementById('btn-revert').addEventListener('click', function() {
+  document.getElementById('value').value = ORIGINAL;
+  status.textContent = 'Reverted'; status.style.color = '#8a7a66';
+});
+</script>
+{% endblock %}

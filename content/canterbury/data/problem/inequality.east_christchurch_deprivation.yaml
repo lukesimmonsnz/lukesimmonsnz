@@ -1,0 +1,45 @@
+id: problem.canterbury.inequality.east_christchurch_deprivation
+title: East Christchurch Deprivation Concentration
+theme: inequality
+section: inequality
+subpage: east_christchurch_deprivation
+parent: problem.canterbury.inequality.inequality
+order: 1
+updated: '2026-04-26'
+summary: 'East Christchurch suburbs (Aranui, Ranui, Shirley, Avondale, Linwood) are
+  concentrated in NZDep decile 9-10 (most deprived), with 35%+ child poverty, unemployment
+  2x city average, and life expectancy 5-7 years below western suburbs. Housing quality
+  remains poor despite earthquake rebuild promises.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - nzdep_decile_concentration
+  - unemployment_rate
+  - child_poverty_rate
+  - life_expectancy
+  - housing_quality_score
+  inputs:
+  - employment_centre_accessibility
+  - education_service_quality
+  - health_service_density
+  constraints:
+  - historical_low_property_values
+  - landlord_underinvestment_in_rentals
+  feedback_loops:
+  - Dynamic feedback mechanisms drive east christchurch deprivation concentration.
+narrative:
+- heading: Earthquake recovery bypass
+  body: 'East Christchurch residents (predominantly Pacific Islander, Māori) were
+    more likely to be renters in red zones. When rebuild housing was offered, many
+    were priced out or relocated out of their communities. Today, East Christchurch
+    remains the most deprived urban area in Canterbury.
+
+    '
+claim_ids:
+- claim.canterbury.inequality.east_christchurch_nzdep_2023
+- claim.canterbury.inequality.east_christchurch_child_poverty_2023
+status: draft
+time_horizons: [decade, generation, century]

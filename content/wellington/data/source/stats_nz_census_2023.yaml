@@ -1,0 +1,14 @@
+id: source.stats_nz_census_2023
+title: 'Aotearoa New Zealand 2023 Census Population Counts and Regional Summaries'
+author: Statistics New Zealand Tatauranga Aotearoa
+publisher: Stats NZ
+year: 2024
+url: https://www.stats.govt.nz/information-releases/aotearoa-new-zealand-2023-census-population-counts/
+type: primary-data
+credibility: official
+geo_granularity:
+- wellington
+- nz
+notes: 'Primary 2023 Census release (published May 2024): usually-resident population counts, age, ethnicity, household composition,
+  and tenure. Wellington region and territorial-authority breakdowns available via place summaries linked from the information
+  release.'

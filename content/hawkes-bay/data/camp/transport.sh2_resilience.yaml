@@ -1,0 +1,25 @@
+id: camp.hawkes_bay.transport.sh2_resilience
+name: State Highway 2 resilience and redundancy
+theme: transport
+core_claim: Systematic investment in SH2 maintenance, slope stabilisation, and development of alternate north-south routes improves regional connectivity and economic resilience.
+flagship_moves:
+  - Implement a 10-year SH2 resilience programme with $2 billion investment in slip prevention and drainage
+  - Develop business cases for coastal transport route alternatives (rail revival, coastal highway)
+  - Establish emergency response protocols for rapid SH2 restoration post-closures
+tensions:
+  - Alternative routes (rail, coastal) require massive upfront investment with uncertain returns
+  - Coastal alternatives raise environmental and Māori land tenure issues
+addresses:
+  - problem.hawkes_bay.transport.sh2_resilience
+  - problem.hawkes_bay.transport.connectivity
+  - problem.hawkes_bay.transport.napier_port_access
+interventions:
+  - description: Stabilise Gentle Annie, Kaweka, and Kawekas gorges with engineered slope works
+    state_variable: sh2_closure_frequency_events_per_year
+    expected_sign: '-'
+  - description: Enhance drainage and early warning systems to reduce landslip risk
+    state_variable: soil_saturation_monitoring_coverage
+    expected_sign: '+'
+applicable_in:
+  - hawkes-bay
+tensions_with: []

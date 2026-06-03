@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.inequality.early_intervention
+name: Early intervention and prevention
+theme: inequality
+core_claim: Targeted investment in early childhood and at-risk youth.
+flagship_moves:
+- Flagship move 1 for Early intervention and prevention
+- Flagship move 2 for Early intervention and prevention
+tensions:
+- Internal tension 1 of Early intervention and prevention
+addresses:
+- problem.manawatu_whanganui.inequality.whanganui_poverty
+interventions:
+- description: 'Intervention 1: Early intervention and prevention detail 1'
+- description: 'Intervention 2: Early intervention and prevention detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

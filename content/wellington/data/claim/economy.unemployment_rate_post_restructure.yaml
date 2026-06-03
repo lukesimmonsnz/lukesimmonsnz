@@ -1,0 +1,21 @@
+id: claim.wellington.economy.unemployment_rate_post_restructure
+statement: Wellington's unemployment rate rose measurably following the 2024 public
+  sector restructuring, with the displacement concentrated among policy analysts,
+  project managers, and communications professionals — roles with limited private
+  sector equivalents in Wellington.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_2024
+- source.stats_nz_census_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

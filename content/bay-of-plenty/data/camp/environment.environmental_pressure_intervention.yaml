@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.environment.environmental_pressure_intervention
+name: Intervention for environmental_pressure
+theme: environment
+core_claim: Targeted intervention on environmental_pressure will improve outcomes.
+flagship_moves:
+- Policy measure 1 for environmental_pressure
+- Policy measure 2 for environmental_pressure
+- Implementation mechanism for environmental_pressure
+tensions:
+- Trade-off A for environmental_pressure
+- Trade-off B for environmental_pressure
+addresses:
+- problem.bay_of_plenty.environment.environmental_pressure
+interventions:
+- description: Core intervention targeting environmental_pressure
+  state_variable: environmental_pressure_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

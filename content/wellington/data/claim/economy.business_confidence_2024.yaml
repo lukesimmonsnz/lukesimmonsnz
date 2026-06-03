@@ -1,0 +1,22 @@
+id: claim.wellington.economy.business_confidence_2024
+statement: Wellington business confidence declined significantly in 2024, following
+  public sector restructuring and reduced government investment. As the nation's capital
+  with ~30% public sector employment, Wellington's business confidence indices are
+  sensitive to central government budget cycles and policy changes affecting departmental
+  locations and headcount.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_2024
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

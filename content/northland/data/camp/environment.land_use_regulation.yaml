@@ -1,0 +1,20 @@
+id: camp.northland.environment.land_use_regulation
+name: Land use regulation tightening
+theme: environment
+core_claim: Land use regulation tightening is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement land use regulation tightening
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- northland
+tensions_with: []

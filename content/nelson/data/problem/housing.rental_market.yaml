@@ -1,0 +1,37 @@
+id: problem.nelson.housing.rental_market
+title: Tight, expensive Nelson rental market
+theme: housing
+section: housing
+subpage: rental_market
+parent: affordability
+order: 3
+updated: '2026-04-26'
+summary: Median 3-bedroom rent in Nelson is around $480-520 per week (April 2024), equivalent to 35-42 percent of median gross household income for renters against a 28 percent national benchmark. Vacancy rate is 2.1 percent (versus a 4-5 percent neutral level), and listings rarely sit unfilled more than five days. Landlord exits since 2023 (around 44 rentals sold out of tenancy in a single year) have further tightened supply.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - median_weekly_rent_3br
+  - rental_vacancy_rate_pct
+  - rent_to_income_ratio
+  inputs:
+  - mortgage_rate
+  - investor_supply
+  - short_term_rental_conversion
+  constraints:
+  - rental_stock_size
+  - tenure_law_protections
+  feedback_loops:
+  - 'Vacancy-tenure feedback: low vacancy raises tenant cost of disputing landlord behaviour, which entrenches tenure insecurity, which makes long-term renting a less viable substitute for ownership.'
+narrative:
+- heading: A renter market that prices like a buyer market
+  body: Nelson rents have grown roughly in lock-step with house prices, leaving the median renter spending more than a third of gross income on rent (claim.nelson.housing.rental_market_claim). At those levels, savings for ownership become impossible without external support.
+- heading: Tenure insecurity as a separate problem
+  body: Beyond price, tenure is short and contestable. With vacancy below 2.5 percent, tenants exercise repair rights or push back on rent rises at risk of non-renewal. Long-term tenants (older renters, families with school-aged children) are the cohort most exposed to forced moves.
+claim_ids:
+- claim.nelson.housing.rental_market_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

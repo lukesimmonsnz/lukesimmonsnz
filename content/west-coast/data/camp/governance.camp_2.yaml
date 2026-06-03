@@ -1,0 +1,24 @@
+id: camp.west_coast.governance.treaty_settlement_implementati
+name: Treaty Settlement Implementation and Poutini Ngāi Tahu Partnerships
+theme: governance
+core_claim: Full implementation of Poutini Ngāi Tahu Treaty settlements and meaningful
+  partnership across resource management, economic development, and social services
+  improves outcomes for all West Coast residents.
+flagship_moves:
+- Accelerate implementation of outstanding Poutini Ngāi Tahu Treaty settlement provisions
+- Establish joint West Coast-Poutini Ngāi Tahu natural resource management board
+- Fund Poutini Ngāi Tahu community development and language revitalisation programmes
+tensions:
+- Treaty partnership requires sustained Crown resource commitment
+- Historical Crown-Ngāi Tahu relationship requires ongoing trust-building
+addresses:
+- problem.west_coast.governance.governance
+- problem.west_coast.governance.treaty
+- problem.west_coast.governance.capacity
+interventions:
+- description: Establish Poutini Ngāi Tahu natural resource co-management
+  state_variable: treaty_settlement_implemented_percent
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

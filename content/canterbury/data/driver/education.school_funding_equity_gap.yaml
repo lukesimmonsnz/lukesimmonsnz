@@ -1,0 +1,12 @@
+id: driver.canterbury.education.school_funding_equity_gap
+name: School Funding Equity & Decile-Based Distribution
+description: School Funding Equity & Decile-Based Distribution
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.education.achievement
+- problem.canterbury.education.secondary
+claim_ids: []

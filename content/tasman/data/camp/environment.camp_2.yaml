@@ -1,0 +1,25 @@
+id: camp.tasman.environment.camp_2
+name: 'Response: Camp 2'
+theme: environment
+core_claim: A response strategy addressing environment challenges.
+flagship_moves:
+- Implement evidence-based environment policy in Tasman
+- Increase investment in environment services and infrastructure
+- Build cross-sector partnerships to address environment challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.environment.coastal_environment
+- problem.tasman.environment.water_quality
+- problem.tasman.environment.marine_ecosystem
+interventions:
+- description: Primary intervention for environment
+  state_variable: environment_outcome_index
+  expected_sign: +
+- description: Secondary intervention for environment
+  state_variable: environment_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

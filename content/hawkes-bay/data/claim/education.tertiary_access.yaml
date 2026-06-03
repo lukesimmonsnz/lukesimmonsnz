@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.education.tertiary_participation_35_percent
+statement: Tertiary education participation in Hawke's Bay (age 18-25) is 35%, substantially
+  below the national average (48%). Cost barriers, limited tertiary provision beyond
+  Wairarapa Institute of Technology, and geographic remoteness (especially Wairoa)
+  restrict access. School-leavers often migrate to Wellington/Auckland for tertiary
+  study, creating brain drain and limited return migration to regional jobs.
+value: 35
+unit: percent participation
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

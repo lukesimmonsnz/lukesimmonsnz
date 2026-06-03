@@ -1,0 +1,12 @@
+id: driver.southland.health.rural_access_barriers
+name: Rural Healthcare Access Barriers
+description: Distance, population sparsity, and recruitment difficulty limit health
+  access.
+theme: health
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.health.health_outcomes
+claim_ids: []

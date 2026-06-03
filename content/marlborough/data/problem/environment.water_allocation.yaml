@@ -1,0 +1,31 @@
+id: problem.marlborough.environment.water_allocation
+title: Water Allocation and Aquifer Depletion
+theme: environment
+section: environment
+subpage: water_allocation
+parent: problem.marlborough.environment.environmental_pressure
+order: 1
+updated: '2026-04-26'
+summary: Wairau aquifer over-allocation; drought vulnerability; wine industry water
+  demand; ecological flows.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Wairau aquifer over-allocation; drought vulnerability; wine industry water
+    demand; ecological flows.
+claim_ids:
+- claim.marlborough.environment.water_allocation_1
+- claim.marlborough.environment.water_allocation_2
+status: draft
+time_horizons: [generation, century]

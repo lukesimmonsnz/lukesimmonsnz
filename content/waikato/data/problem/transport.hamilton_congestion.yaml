@@ -1,0 +1,28 @@
+id: problem.waikato.transport.hamilton_congestion
+title: Hamilton urban congestion
+theme: transport
+section: transport
+subpage: hamilton_congestion
+parent: problem.waikato.transport.waikato_transport_dependence
+order: 2
+updated: '2026-04-26'
+summary: Growing Hamilton population increases peak hour congestion on key arterials.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - transport_accessibility
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing hamilton congestion creates feedback on regional outcomes.
+narrative:
+- heading: Hamilton urban congestion
+  body: Growing Hamilton population increases peak hour congestion on key arterials.
+claim_ids:
+- claim.waikato.transport.car_mode_share_89
+status: draft
+time_horizons: [decade, generation]

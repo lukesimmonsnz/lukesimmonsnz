@@ -1,0 +1,41 @@
+id: problem.tasman.housing.rental_market
+title: Rental market with near-zero vacancy
+theme: housing
+section: housing
+subpage: rental_market
+parent: affordability
+order: 3
+updated: '2026-04-26'
+summary: Tasman's rental vacancy rate sits near 1 percent, with median three-bedroom rents around NZD 420 per week
+  in Motueka and Richmond. Sole earners on median wages are spending 35-40 percent of gross income on rent, and
+  Golden Bay has almost no rental stock at all.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - rental_vacancy_rate
+  - median_weekly_rent_3br
+  inputs:
+  - new_rental_supply
+  - rse_employer_accommodation_supply
+  constraints:
+  - landlord_consolidation
+  - tenancy_legal_settings
+  feedback_loops:
+  - Tight rental market drives some workers out of the region, which reduces labour supply for the very employers
+    whose accommodation strategies set part of the rental pressure.
+narrative:
+- heading: A market that does not clear
+  body: A 1 percent vacancy rate means renters cannot move without an existing tenant first leaving, and landlords
+    face no competitive pressure on price or quality. Three-month waitlists are routine in Golden Bay (claim.tasman.housing.rental_market_claim).
+- heading: Seasonal labour competes for the same houses
+  body: Apple, kiwifruit and hops harvests bring seasonal RSE and backpacker labour into the same rental pool used
+    by year-round residents. Where employer-provided accommodation is undersupplied, the seasonal demand spike pushes
+    rents up further during precisely the months when low-income households can least absorb the cost.
+claim_ids:
+- claim.tasman.housing.rental_market_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,10 @@
+id: 'driver.waikato.housing.driver_2'
+name: 'Resource and funding constraints in housing'
+description: 'Resource and funding constraints in housing in regional context.'
+theme: 'housing'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

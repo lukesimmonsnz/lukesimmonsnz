@@ -1,0 +1,16 @@
+id: source.atap_2024
+title: "Auckland Transport Alignment Project Indicative Strategic Transport Programme (ATAP)"
+author: "Auckland Council; New Zealand Government (joint partnership)"
+publisher: "Ministry of Transport (Te Manatu Waka)"
+year: 2024
+url: "https://www.transport.govt.nz/area-of-interest/strategy-and-direction/auckland-transport-alignment-project/"
+type: government-report
+credibility: official
+geo_granularity:
+  - auckland
+notes: >
+  ATAP is the joint Crown-Auckland Council strategic alignment exercise that
+  publishes a 10-year indicative transport investment package for Auckland.
+  Used widely in Auckland transport policy debates; the 2024 update set
+  programme parameters used by NZTA/Waka Kotahi and Auckland Transport for
+  delivery sequencing.

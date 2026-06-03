@@ -1,0 +1,21 @@
+id: claim.otago.crime.queenstown_visitor_crime_prevalence
+statement: Queenstown (2M+ annual visitors pre-COVID, recovering to 80-90% by 2023)
+  experiences alcohol-related offending concentrated in CBD bar precinct (Mall Street,
+  Cow Lane, suburban hospitality clusters). Visitor-related assault, drink-driving,
+  and disorder calls represent ~25-30% of Police dispatch volume in summer months;
+  seasonal worker population (25,000+) creates volatile demand environments.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

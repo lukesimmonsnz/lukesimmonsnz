@@ -1,0 +1,19 @@
+id: claim.marlborough.crime.safety_placeholder
+statement: Marlborough overall crime rate per capita (all categories) approximately
+  60 per 1,000 residents annually; below national average; rural/remote areas (Sounds,
+  Awatere) underrepresented in police statistics due to reporting barriers.
+value: 60
+unit: crimes per 1,000 residents per annum (2021–2023)
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

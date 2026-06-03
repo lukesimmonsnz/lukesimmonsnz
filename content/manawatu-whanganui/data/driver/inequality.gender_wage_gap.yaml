@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.inequality.gender_wage_gap
+name: Gender Wage And Income Inequality
+description: Gender wage and income inequality with regional implications.
+theme: inequality
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.inequality.rural_isolation
+claim_ids: []

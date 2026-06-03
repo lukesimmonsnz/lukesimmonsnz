@@ -1,0 +1,35 @@
+id: problem.nelson.crime.safety
+title: Crime rate and perceived safety in Nelson district
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Nelson district recorded approximately 3,650 notifiable offences in 2023, equivalent to about 66 offences per 1,000 residents against a national rate of around 60. Property crime concentrated in the central city and high-turnover rental suburbs is the dominant driver, and community safety perception has fallen by roughly 14 percent since 2020, particularly at night.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - notifiable_offences_per_1000
+  - perception_of_safety_index
+  - burglary_rate_per_1000_dwellings
+  inputs:
+  - police_staffing_levels
+  - cctv_coverage
+  - alcohol_outlet_density
+  constraints:
+  - police_funding_envelope
+  - court_throughput
+  feedback_loops:
+  - 'Perception-spending feedback: declining safety perception drives demand for more visible policing and lighting, but the underlying property-crime drivers (transience, deprivation, drug supply) sit outside the policing lever.'
+narrative:
+- heading: Headline rate and composition
+  body: Nelson's recorded-crime rate sits modestly above the national average and is dominated by property offences -- burglary, theft, and unlawful taking of motor vehicles -- concentrated around the central city, Stoke, and the transient-population fringe (claim.nelson.crime.safety_claim). Violent offending is a smaller share but is rising in line with the family-violence trend.
+- heading: Perception, transient population, and visibility
+  body: 'Perception of safety is shaped less by the headline rate than by visible disorder: rough sleeping in central streets, alcohol-related incidents around the bar district, and burglary clusters in particular streets. The lack of after-hours activity and CBD foot-traffic outside summer tourism months amplifies both actual opportunity and perceived risk.'
+claim_ids:
+- claim.nelson.crime.safety_claim
+status: draft
+time_horizons:
+- decade

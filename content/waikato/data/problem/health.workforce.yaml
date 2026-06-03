@@ -1,0 +1,24 @@
+id: 'problem.waikato.health.workforce'
+title: 'Waikato: health workforce'
+theme: 'health'
+section: 'health'
+subpage: 'workforce'
+parent: 'problem.waikato.health.outcomes'
+order: 5
+updated: '2026-04-26'
+summary: 'Health workforce shortages limit services.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Health workforce shortages limit services.'
+claim_ids:
+- 'claim.waikato.health.workforce_claim1'
+- 'claim.waikato.health.workforce_claim2'
+status: 'draft'

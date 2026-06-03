@@ -1,0 +1,22 @@
+id: camp.wellington.infrastructure.rural_fibre_extension
+name: Rural Fibre and Fixed-Wireless Infrastructure Extension
+theme: infrastructure
+core_claim: Supply-side investment to extend fibre and fixed-wireless to underserved rural Wellington communities is essential
+  and requires Crown co-investment.
+flagship_moves:
+- Crown co-investment for Wairarapa rural fibre extension
+- Mandatory wholesale access for rural fixed-wireless infrastructure
+- Satellite backup connectivity for rural marae and schools
+tensions:
+- Per-premise costs in rural areas may not be commercially viable even with subsidy
+- Satellite latency limits utility for some applications
+addresses:
+- problem.wellington.infrastructure.digital_connectivity
+interventions:
+- description: Negotiate rural fixed-wireless co-investment with Crown Infrastructure Partners targeting 2,000 under-served
+    Wellington premises
+  state_variable: rural_broadband_coverage_pct
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

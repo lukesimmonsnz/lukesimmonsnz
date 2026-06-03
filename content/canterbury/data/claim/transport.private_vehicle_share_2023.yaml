@@ -1,0 +1,21 @@
+id: claim.canterbury.transport.private_vehicle_share_2023
+statement: Private vehicle share in Christchurch commuting is 75-80%, well above best-practice
+  urban levels of 50-60%. Limited public transit alternatives, sprawling development,
+  and car-dependent culture drive reliance; modal shift requires major transport investment
+  and demand management.
+value: 77.5
+unit: percent
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_transport_strategy_2023
+- source.stats_nz_census_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.mode_share_v1
+notes: null

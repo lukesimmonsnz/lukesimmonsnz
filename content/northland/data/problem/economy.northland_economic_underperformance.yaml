@@ -1,0 +1,38 @@
+id: problem.northland.economy.northland_economic_underperformance
+title: Economic underperformance in Te Tai Tokerau
+theme: economy
+section: economy
+subpage: economic-underperformance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Northland's economy is structurally constrained by low productivity, narrow
+  sector composition, and insufficient investment.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - economy_pressure_index
+  - economy_system_capacity
+  inputs:
+  - central_government_investment
+  - population_change
+  constraints:
+  - fiscal_capacity
+  - geographic_isolation
+  feedback_loops:
+  - 'Pressure accumulation: deteriorating economy conditions compound inequality and
+    constrain economic recovery.'
+narrative:
+- heading: Regional context
+  body: Economic underperformance in Te Tai Tokerau is a defining challenge for Te
+    Tai Tokerau, reflecting both structural disadvantage and underinvestment relative
+    to national averages.
+- heading: System dynamics
+  body: Northland's economy is structurally constrained by low productivity, narrow
+    sector composition, and insufficient investment.
+claim_ids:
+- claim.northland.economy.northland_economic_underperformance_claim1
+- claim.northland.economy.northland_economic_underperformance_claim2
+status: draft
+time_horizons: [decade, generation]

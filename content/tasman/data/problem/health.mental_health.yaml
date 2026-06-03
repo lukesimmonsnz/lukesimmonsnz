@@ -1,0 +1,40 @@
+id: problem.tasman.health.mental_health
+title: Rural mental-health access lag and elevated suicide rate
+theme: health
+section: health
+subpage: mental_health
+parent: health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: Mental-health service utilisation in Tasman runs at 8.2 percent of the population, slightly below the national
+  9.1 percent — but the gap is not a sign of better mental health. Referral wait times in Golden Bay routinely exceed
+  eight weeks, and the Tasman suicide rate of 16.4 per 100,000 sits above the national 15.1.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - mental_health_referral_wait_weeks
+  - suicide_rate_per_100k
+  inputs:
+  - rural_mental_health_workforce
+  - telehealth_capacity
+  constraints:
+  - centralised_service_geography
+  - broadband_reach
+  feedback_loops:
+  - Long waits deter presentation, which keeps demand statistics low and weakens the case for additional rural capacity.
+narrative:
+- heading: Lower utilisation, worse outcomes
+  body: When access is harder, fewer people present for help and the people who do present do so later. The combination
+    of below-average utilisation and above-average suicide rate is consistent with a service-access deficit rather
+    than a population that needs less support (claim.tasman.health.mental_health_claim).
+- heading: Rurality concentrates the access gap
+  body: Specialist mental-health capacity is centralised in Nelson; for Mohua and Murchison residents that means
+    a 90-to-120-minute round trip on top of the wait. Eight-week-plus referral times in Golden Bay cannot be closed
+    by telehealth alone where broadband remains patchy.
+claim_ids:
+- claim.tasman.health.mental_health_claim
+status: draft
+time_horizons:
+- decade
+- generation

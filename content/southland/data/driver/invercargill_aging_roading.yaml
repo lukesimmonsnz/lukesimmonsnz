@@ -1,0 +1,11 @@
+id: driver.southland.transport.invercargill_aging_roading
+name: Invercargill City Roading Network Aging
+description: CBD roading infrastructure built 1970s–80s; limited maintenance funding.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.transport.invercargill_roading
+claim_ids: []

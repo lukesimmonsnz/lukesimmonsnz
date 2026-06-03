@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.education.attendance_engagement
+name: Attendance and engagement programmes
+theme: education
+core_claim: Intensive support for chronically disengaged students.
+flagship_moves:
+- Flagship move 1 for Attendance and engagement programmes
+- Flagship move 2 for Attendance and engagement programmes
+tensions:
+- Internal tension 1 of Attendance and engagement programmes
+addresses:
+- problem.manawatu_whanganui.environment.wetland_loss
+interventions:
+- description: 'Intervention 1: Attendance and engagement programmes detail 1'
+- description: 'Intervention 2: Attendance and engagement programmes detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

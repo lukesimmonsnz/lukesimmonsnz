@@ -1,0 +1,24 @@
+id: 'problem.northland.infrastructure.digital'
+title: 'Te Tai Tokerau Northland: digital connectivity'
+theme: 'infrastructure'
+section: 'infrastructure'
+subpage: 'digital'
+parent: 'problem.northland.infrastructure.deficit'
+order: 5
+updated: '2026-04-26'
+summary: 'Digital infrastructure gaps create barriers.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Digital infrastructure gaps create barriers.'
+claim_ids:
+- 'claim.northland.infrastructure.digital_claim1'
+- 'claim.northland.infrastructure.digital_claim2'
+status: 'draft'

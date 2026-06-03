@@ -1,0 +1,24 @@
+id: claim.west_coast.housing.infrastructure_cost_claim
+statement: West Coast territorial authorities face disproportionately high water,
+  wastewater, and stormwater infrastructure costs per capita due to dispersed population
+  and aging pipe networks. Westport post-flood infrastructure repairs are estimated
+  at $50+ million. Climate resilience upgrades (flood defence, water treatment) add
+  further costs. Per-capita infrastructure burden limits funding for preventive maintenance
+  and new capacity.
+value: 50
+unit: million NZD (Westport post-flood repairs estimated)
+time_period: 2021-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.west_coast_housing_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Infrastructure cost data from council annual plans and post-flood recovery
+  assessments; per-capita burden calculated from population baseline.

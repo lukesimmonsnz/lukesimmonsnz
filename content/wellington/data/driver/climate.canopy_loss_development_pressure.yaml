@@ -1,0 +1,13 @@
+id: driver.wellington.climate.canopy_loss_development_pressure
+name: Urban canopy loss from development pressure
+description: Residential intensification and infill development in Wellington remove established urban trees faster than replacement
+  planting, reducing the canopy cover that provides the most cost-effective urban heat mitigation.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.climate.urban_heat
+claim_ids:
+- claim.wellington.climate.tree_canopy_heat_mitigation

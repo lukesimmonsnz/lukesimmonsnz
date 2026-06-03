@@ -1,0 +1,48 @@
+id: problem.canterbury.climate.drought_irrigation
+title: Drought Frequency & Irrigation System Resilience
+theme: climate-adaptation
+section: climate
+subpage: drought_irrigation
+parent: problem.canterbury.climate.climate_risk
+order: 2
+updated: '2026-04-26'
+summary: 'Canterbury Plains rely on irrigation for dairy and arable farming. Recent
+  droughts (2022-2023, 2020) stressed both water supply and farmer financial viability.
+  Climate projections show 10-20% reduction in summer rainfall by 2070s. Irrigation
+  infrastructure is aging; aquifer-fed schemes face recharge uncertainty. Frequency
+  of irrigation shortages (current 1-in-10-years, projected 1-in-5-years by 2050s)
+  creates farm economic risk and threatens regional productivity.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - summer_rainfall_trend
+  - aquifer_recharge_rate_estimated
+  - irrigation_demand_annual_volume
+  - farm_income_drought_loss_frequency
+  inputs:
+  - global_rainfall_pattern_changes
+  - irrigation_system_efficiency
+  - agricultural_crop_mix
+  constraints:
+  - allocation_limit_ceiling
+  - aquifer_recharge_constraint
+  - climate_uncertainty
+  feedback_loops:
+  - Dynamic feedback mechanisms drive drought frequency & irrigation system resilience.
+narrative:
+- heading: Water stress in the breadbasket
+  body: 'Canterbury''s dairy and arable farming depends on summer irrigation. 2022-2023
+    drought forced water rationing; farm gross margins fell 25-40%. Farmers invested
+    in more efficient systems (pivot to drip, soil moisture monitoring) but adaptation
+    lags demand. Projected climate change increases irrigation shortfall frequency
+    2-3x by 2050s.
+
+    '
+claim_ids:
+- claim.canterbury.climate.summer_rainfall_trend_2070s_2023
+- claim.canterbury.climate.irrigation_shortage_frequency_projection_2023
+status: draft
+time_horizons: [generation, century]

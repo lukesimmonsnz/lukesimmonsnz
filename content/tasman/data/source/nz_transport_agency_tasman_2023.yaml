@@ -1,0 +1,12 @@
+id: source.nz_transport_agency_tasman_2023
+title: Waka Kotahi State Highway Network – Tasman Region 2023
+author: Waka Kotahi NZ Transport Agency
+publisher: Waka Kotahi
+year: 2023
+url: https://www.nzta.govt.nz
+type: government-report
+credibility: official
+geo_granularity:
+- tasman
+- nz
+notes: State highway traffic volumes, freight movements, regional roading conditions.

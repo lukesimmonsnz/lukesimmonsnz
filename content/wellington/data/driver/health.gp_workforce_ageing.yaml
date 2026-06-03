@@ -1,0 +1,13 @@
+id: driver.wellington.health.gp_workforce_ageing
+name: Ageing GP workforce and retirement pipeline
+description: Wellington's general practice workforce has a significantly older age profile than the wider health workforce;
+  upcoming retirements will accelerate the GP shortage unless domestic training and international recruitment are increased.
+theme: health
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.health.workforce_shortage
+claim_ids:
+- claim.wellington.health.gp_retirement_pipeline

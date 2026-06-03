@@ -1,0 +1,20 @@
+id: claim.southland.crime.family_violence_prevalence
+statement: Family violence in Southland shows elevated call-out rates. Southland Police
+  district reports family violence call-outs above national average, particularly
+  in Invercargill and rural isolation hotspots. Rural victim access to support services
+  limited by distance; safe houses in Invercargill, Te Anau, Gore under resource pressure.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

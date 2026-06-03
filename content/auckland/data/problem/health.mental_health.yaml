@@ -58,3 +58,4 @@ claim_ids:
   - claim.auckland.health.youth_mental_health_crisis
   - claim.auckland.health.mh_workforce_vacancy
 status: draft
+time_horizons: [decade, generation]

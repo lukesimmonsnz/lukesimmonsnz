@@ -1,0 +1,13 @@
+id: driver.gisborne.health.rural_access_escalation
+name: Driver escalating rural_access
+description: "This driver exacerbates the rural_access challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: health
+consensus: consensus
+category: cultural
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.health.rural_access
+claim_ids:
+- claim.gisborne.health.rural_access_55

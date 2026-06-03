@@ -1,0 +1,30 @@
+id: problem.marlborough.governance.treaty
+title: Treaty Co-governance and Iwi Partnership
+theme: governance
+section: governance
+subpage: treaty
+parent: problem.marlborough.governance.governance
+order: 1
+updated: '2026-04-26'
+summary: Co-governance implementation; iwi decision-making role; partnership models;
+  historical redress.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Co-governance implementation; iwi decision-making role; partnership models;
+    historical redress.
+claim_ids:
+- claim.marlborough.governance.treaty_placeholder
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,15 @@
+id: source.stats_nz_housing_2024
+title: Household Labour Force Survey — March 2024 Quarter
+author: Statistics New Zealand Tatauranga Aotearoa
+publisher: Stats NZ
+year: 2024
+url: https://www.stats.govt.nz/information-releases/labour-market-statistics-march-2024-quarter
+type: primary-data
+credibility: official
+geo_granularity:
+- otago
+- auckland
+- wellington
+- nz
+notes: 'Quarterly Household Labour Force Survey: unemployment, underutilisation, and labour-force participation, with regional
+  breakdowns. Replaces homepage URL.'

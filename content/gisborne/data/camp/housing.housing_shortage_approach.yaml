@@ -1,0 +1,20 @@
+id: camp.gisborne.housing.housing_shortage_approach
+name: Strategic approach for housing_shortage
+theme: housing
+core_claim: Strategic intervention on housing_shortage will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting housing_shortage
+- Priority action 2 targeting housing_shortage
+- Institutional coordination mechanism for housing_shortage
+tensions:
+- 'Tension 1: housing_shortage'
+- 'Tension 2: housing_shortage'
+addresses:
+- problem.gisborne.housing.housing_shortage
+interventions:
+- description: Primary intervention for housing_shortage
+  state_variable: housing_shortage_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.infrastructure.aging_networks
+name: Aging Water And Wastewater Networks
+description: Aging water and wastewater networks. This driver operates at regional
+  scale with consensus consensus.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.wastewater
+claim_ids: []

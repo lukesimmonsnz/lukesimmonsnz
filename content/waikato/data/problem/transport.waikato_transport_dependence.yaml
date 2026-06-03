@@ -1,0 +1,30 @@
+id: problem.waikato.transport.waikato_transport_dependence
+title: Car dependence and transport connectivity
+theme: transport
+section: transport
+subpage: waikato_transport_dependence
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waikato's dispersed settlement pattern creates high car dependence with inadequate
+  public transport alternatives.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - transport_accessibility
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional transport dynamics create self-reinforcing feedback.
+narrative:
+- heading: Car dependence and transport connectivity
+  body: Waikato's dispersed settlement pattern creates high car dependence with inadequate
+    public transport alternatives.
+claim_ids:
+- claim.waikato.transport.waikato_transport_dependence_root
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,21 @@
+id: claim.waikato.education.tertiary_rural_participation
+statement: Tertiary participation from provincial Waikato (South Waikato, Waitomo,
+  Coromandel hinterland) is 38-42% versus Hamilton 50% plus. Cost of 20 to 25K annually
+  and limited local pathways drive students to Auckland or Wellington, creating brain-drain
+  from smaller towns. University of Waikato and Wintec offer Hamilton-based options
+  but lack South Waikato satellite campuses.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_waikato_achievement_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato tertiary_pathway claim

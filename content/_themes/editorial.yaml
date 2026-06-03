@@ -1,0 +1,55 @@
+# editorial preset — David Roy Simmons biography aesthetic.
+#
+# Serif throughout, narrow column, generous spacing. Pairs well with
+# long-form prose / biographical content / archival research.
+
+typography:
+  scale:                 1.333                         # major third — generous step
+  font-family-body:      "'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+  font-family-heading:   "'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+  font-family-mono:      "'Iosevka', ui-monospace, Menlo, Consolas, monospace"
+  line-height-body:      1.75                          # roomier than classic
+  line-height-heading:   1.1
+  weight-body:           400
+  weight-bold:           600
+  weight-heading:        500                           # display weight is medium, not bold
+
+spacing:
+  unit:                  "8px"
+
+color:
+  primary:               "#3a2820"                     # deep umber
+  primary-fg:            "#faf6ef"
+  bg:                    "#fbf8f3"                     # parchment
+  fg:                    "#1f1814"                     # near-black, warm
+  muted:                 "#5a4838"
+  accent:                "#a87349"                     # burnished copper
+  danger:                "#8b2e2e"
+  success:               "#3d6450"
+  surface-1:             "#fefcf7"
+  surface-2:             "#f3ecdf"
+  border:                "#dfd3c0"
+
+radius:
+  sm:                    "0"                           # editorial is sharp-cornered
+  md:                    "0"
+  lg:                    "0"
+  full:                  "9999px"
+
+shadow:
+  sm:                    "0 1px 0 rgba(31,24,20,0.06)"
+  md:                    "0 2px 0 rgba(31,24,20,0.08)"
+  lg:                    "0 4px 0 rgba(31,24,20,0.10)"   # crisp, page-like shadows
+
+motion:
+  duration-fast:         "150ms"
+  duration-base:         "300ms"
+  easing-standard:       "cubic-bezier(0.4, 0, 0.2, 1)"
+  easing-emphasised:     "cubic-bezier(0.3, 0, 0, 1)"
+
+layout:
+  max-width:             "60rem"                       # narrower than classic
+  gutter:                "2.5rem"
+  breakpoint-sm:         "40rem"
+  breakpoint-md:         "52rem"
+  breakpoint-lg:         "68rem"

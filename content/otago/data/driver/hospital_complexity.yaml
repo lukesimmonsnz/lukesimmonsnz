@@ -1,0 +1,13 @@
+id: driver.otago.infrastructure.hospital_complexity
+name: Hospital Seismic and Infrastructure Complexity
+description: Dunedin hospital seismic upgrades required; rebuild complexity and cost
+  escalation.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.infrastructure.infrastructure
+- problem.otago.infrastructure.otago_hospital_rebuild
+claim_ids: []

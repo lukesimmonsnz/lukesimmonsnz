@@ -1,0 +1,16 @@
+id: driver.northland.crime.deprivation_driver
+name: Deprivation and social disconnection
+description: Deep socioeconomic deprivation and social disconnection are robust predictors
+  of crime concentration in Northland communities.
+theme: crime
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.crime.northland_crime
+- problem.northland.crime.family_violence
+- problem.northland.crime.methamphetamine
+- problem.northland.crime.rural_policing
+claim_ids:
+- claim.northland.crime.northland_crime_claim1

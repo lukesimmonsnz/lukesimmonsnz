@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.infrastructure.renewable_energy
+name: Renewable Energy and Storage
+theme: infrastructure
+core_claim: Distributed solar and battery storage.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.infrastructure.wastewater
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

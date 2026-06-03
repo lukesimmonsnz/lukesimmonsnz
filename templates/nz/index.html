@@ -1,87 +1,83 @@
 {% extends "research/_layout.html" %}
 {% from "_partials/breadcrumbs.html" import breadcrumbs %}
 
-{% block title %}Aotearoa New Zealand · Research · Luke Simmons{% endblock %}
-{% block meta_description %}National patterns in housing, transport, infrastructure, environment and other systems across Aotearoa New Zealand — a cross-regional synthesis from the typed entity graph.{% endblock %}
+{% block title %}Issues across Aotearoa · Research · Luke Simmons{% endblock %}
+{% block meta_description %}A national-level synthesis of structural issues observed across Aotearoa New Zealand's 16 regions — recurring patterns in housing, transport, climate, environment, inequality, crime, health, education, economy, governance, and infrastructure.{% endblock %}
 
 {% block content %}
 <div class="page">
   {{ breadcrumbs([
     ('Home', url_for('main.home')),
     ('Research', url_for('research.index')),
-    ('Aotearoa NZ', None),
+    ('Aotearoa Research', url_for('research.aotearoa_index')),
+    ('National summary', None),
   ]) }}
 
   <header class="page-header">
-    <span class="eyebrow">National rollup</span>
-    <h1>Aotearoa New Zealand</h1>
+    <span class="eyebrow">National summary</span>
+    <h1>Issues across Aotearoa</h1>
     <hr class="rule">
-    <p class="lede">
-      Cross-regional patterns observed across two or more regions of
-      Aotearoa. Each pattern is a generalisation grounded in region-specific
-      evidence; follow the theme links for the backing claims and their
-      sources.
-    </p>
   </header>
 
-  <article class="prose">
-    {% if by_theme %}
-      <p class="muted">
-        {{ total_pattern_count }} pattern{{ 's' if total_pattern_count != 1 }} across
-        {{ by_theme | length }} theme{{ 's' if by_theme | length != 1 }}.
-      </p>
+  <article class="prose nz-essay">
+    <p>
+      The regional research on this site studies sixteen regions of Aotearoa
+      New Zealand separately. This page brings those findings together. The
+      patterns below are <em>structural tendencies</em> that turn up in two
+      or more regions &mdash; not stories about a single place, but recurring
+      shapes in the data. Each pattern is grounded in specific claims from
+      the regional corpus; click a theme heading for the per-theme detail
+      with backing claims and sources, or click a region name to read the
+      underlying regional research.
+    </p>
+    <p class="muted">
+      {{ total_pattern_count }} cross-regional pattern{{ 's' if total_pattern_count != 1 }} across
+      {{ by_theme | length }} theme{{ 's' if by_theme | length != 1 }}.
+    </p>
 
-      {% for theme_slug, patterns in by_theme.items() %}
-      <section>
-        <h2>
-          <a href="{{ url_for('nz.theme', theme=theme_slug) }}">
-            {{ theme_titles.get(theme_slug, theme_slug.replace('_', ' ').title()) }}
-          </a>
-          <span class="muted" style="font-size:0.75em; font-weight:normal;">
-            ({{ patterns | length }})
-          </span>
-        </h2>
-        <ul>
-          {% for p in patterns %}
-          <li>
-            <strong>{{ p.name }}</strong>
-            {% if p.statement %}
-            <br><span class="muted">{{ p.statement }}</span>
-            {% endif %}
-            <br>
-            <span class="muted small">
-              Manifests in:
-              {% for r in (p.manifests_in or []) %}
-                <code>{{ r }}</code>{% if not loop.last %}, {% endif %}
-              {% endfor %}
-              &mdash;
-              {{ (p.evidenced_by or []) | length }} supporting claim{{ 's' if (p.evidenced_by or []) | length != 1 }}
-            </span>
-          </li>
-          {% endfor %}
-        </ul>
-      </section>
+    <p class="page-cta">
+      <strong>Looking for the interventions, not just the patterns?</strong>
+      The companion essay
+      <a href="{{ url_for('nz.solutions') }}">Solution space</a>
+      reasons across the patterns below, sorted by intervention mechanism
+      rather than theme.
+    </p>
+
+    {% for theme_slug, patterns in by_theme.items() %}
+    <section class="nz-theme-essay">
+      <h2>
+        <a href="{{ url_for('nz.theme', theme=theme_slug) }}">
+          {{ theme_titles.get(theme_slug, theme_slug.replace('_', ' ').title()) }}
+        </a>
+      </h2>
+
+      {% for p in patterns %}
+      <h3>{{ p.title }}</h3>
+      {% if p.summary %}<p class="lede">{{ p.summary }}</p>{% endif %}
+      {% for nsec in (p.narrative or []) %}
+        {%- if nsec.body and nsec.body | trim -%}
+        <p>{{ nsec.body | trim }}</p>
+        {%- endif -%}
       {% endfor %}
+      {% if p.manifests_in %}
+      <p class="nz-manifests"><em>Observed across
+        {%- for r in p.manifests_in -%}
+          {%- if loop.last and not loop.first %} and {% elif not loop.first %}, {% else %} {% endif -%}
+          <a href="{{ url_for(r ~ '.index') }}">{{ region_titles.get(r, r.replace('-', ' ').title()) }}</a>
+        {%- endfor -%}.</em></p>
+      {% endif %}
+      {% endfor %}
+    </section>
+    {% endfor %}
 
-    {% else %}
-      <aside class="notice">
-        <strong>No patterns yet.</strong> National patterns are authored in
-        <code>content/nz/data/pattern/</code> once enough regional evidence
-        exists to ground them — typically after 3–4 regions are populated.
-        See <code>docs/MIGRATION-auckland-to-aotearoa.md</code> §4 for the
-        sequencing rationale.
-      </aside>
-
-      <section>
-        <h2>Themes in scope</h2>
-        <p class="muted">These themes will have national rollup pages once patterns are authored:</p>
-        <ul>
-          {% for slug, title in theme_titles.items() %}
-          <li>{{ title }}</li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endif %}
+    <hr class="rule">
+    <p class="small muted">
+      The patterns above are derived from the regional research corpus.
+      Each pattern requires evidence in at least two regions and links back
+      to the specific claims that ground it. The full schema, the 18
+      cross-entity invariants, and the methodology registry are described
+      in the <a href="{{ url_for('research.methodology') }}">methodology document</a>.
+    </p>
   </article>
 </div>
 {% endblock %}

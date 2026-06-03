@@ -1,0 +1,34 @@
+id: problem.southland.education.achievement
+title: Educational Achievement and Tertiary Access
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Southland secondary achievement below national average; early childhood participation
+  low in rural areas; limited tertiary options; brain drain to Auckland/Dunedin.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland secondary achievement below national average; early childhood participation
+    low in rural areas; limited tertiary options; brain drain to Auckland/Dunedin.
+claim_ids:
+- claim.southland.education.early_childhood_prevalence
+- claim.southland.education.tertiary_access_prevalence
+- claim.southland.education.tertiary_access_trend
+- claim.southland.education.achievement_prevalence
+- claim.southland.education.achievement_trend
+- claim.southland.education.early_childhood_trend
+- claim.southland.education.secondary_trend
+- claim.southland.education.secondary_prevalence
+status: draft
+time_horizons: [decade, generation]

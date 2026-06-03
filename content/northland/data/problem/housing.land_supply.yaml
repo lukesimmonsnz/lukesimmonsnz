@@ -1,0 +1,33 @@
+id: problem.northland.housing.land_supply
+title: "Te Tai Tokerau Northland: constrained residential land supply"
+theme: housing
+section: housing
+subpage: land_supply
+parent: problem.northland.housing.affordability
+order: 3
+updated: '2026-04-26'
+summary: Usable residential land supply is restricted by physical constraints, zoning rules, and infrastructure capacity.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - zoned_developable_capacity
+  - land_price_per_sqm
+  inputs:
+  - upzoning_policy_change
+  - infrastructure_investment
+  constraints:
+  - geographical_constraints
+  - infrastructure_servicing_capacity
+  feedback_loops:
+  - 'Land scarcity premium: constrained supply raises land prices, increasing development viability thresholds.'
+narrative:
+- heading: Physical constraint
+  body: Northland's geography limits readily developable land, with terrain and infrastructure constraints restricting cost-effective residential construction.
+- heading: Zoned capacity shortfall
+  body: Planning rules constrain residential development across much of the region, with infrastructure servicing costs and environmental standards limiting practical supply.
+claim_ids:
+- claim.northland.housing.land_supply_claim1
+- claim.northland.housing.land_supply_claim2
+status: draft
+time_horizons: [decade, generation, century]

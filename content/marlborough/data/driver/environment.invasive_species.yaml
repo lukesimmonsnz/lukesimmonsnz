@@ -1,0 +1,12 @@
+id: driver.marlborough.environment.invasive_species
+name: Invasive Species Spread In Marine And Terrestrial
+description: Invasive species spread in marine and terrestrial with regional implications.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.governance.water_allocation_governance
+claim_ids: []

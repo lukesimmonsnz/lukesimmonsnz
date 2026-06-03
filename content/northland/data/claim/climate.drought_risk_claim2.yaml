@@ -1,0 +1,22 @@
+id: claim.northland.climate.drought_risk_claim2
+statement: 'Clay soil properties exacerbate drought impact: rapid hardening, cracking,
+  and reduced water retention when dried. Pasture failure 2–3 times per decade in
+  drought years; stock water supply becomes critical pressure in eastern Northland.
+  Agriculture contribution to regional GDP (dairy 15–20%, beef/sheep 8–12%) makes
+  drought economically significant. Small-to-medium farms lack irrigation infrastructure;
+  dairy intensification increases groundwater demand vulnerability.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

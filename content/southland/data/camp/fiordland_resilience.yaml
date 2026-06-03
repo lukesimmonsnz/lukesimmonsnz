@@ -1,0 +1,21 @@
+id: camp.southland.transport.fiordland_resilience
+name: Fiordland SH94 Resilience and Alternative Routes
+theme: transport
+core_claim: Investing in road maintenance and feasibility of alternative routes (e.g.,
+  Te Anau–Hollyford) improves access resilience.
+flagship_moves:
+- Accelerate SH94 maintenance and resilience improvements
+- Evaluate alternative Fiordland access routes
+- Emergency supply and visitor rerouting protocols
+tensions:
+- High cost of alternative routes; limited ROI
+- Environmental impact of new routes
+addresses:
+- problem.southland.transport.fiordland_access
+interventions:
+- description: Reduce SH94 closure duration to <30 days/year
+  state_variable: fiordland_access_uptime
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

@@ -1,0 +1,21 @@
+id: camp.southland.governance.local_govt_partnership
+name: Enhanced Council Capability and Partnership
+theme: governance
+core_claim: Strengthening council capability and cross-council partnerships improve
+  governance effectiveness.
+flagship_moves:
+- Upskill council planning and project management
+- Establish regional council working groups
+- Improve funding and shared services
+tensions:
+- Council autonomy vs partnership
+- Cost of upskilling and shared services
+addresses:
+- problem.southland.governance.governance
+interventions:
+- description: Increase council capability in strategic planning
+  state_variable: governance_capacity
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

@@ -1,0 +1,20 @@
+id: camp.canterbury.health.rural_health_workforce_support
+name: Rural Health Workforce Recruitment & Retention Support
+theme: health
+core_claim: Rural bonding schemes, housing support, and rural training pipelines attract
+  and retain health professionals in underserved areas.
+flagship_moves:
+- Key intervention for Rural Health Workforce Recruitment & Retention Support
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.health.workforce_shortage
+interventions:
+- description: Rural bonding schemes, housing support, and rural training pipelines
+    attract and retain health professionals in underserved areas.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

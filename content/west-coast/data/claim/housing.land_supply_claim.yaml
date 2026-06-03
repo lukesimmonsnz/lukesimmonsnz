@@ -1,0 +1,24 @@
+id: claim.west_coast.housing.land_supply_claim
+statement: West Coast towns contain numerous abandoned and derelict properties, particularly
+  in Westport, Hokitika, and Greymouth. Estimated 200+ unoccupied or severely dilapidated
+  residential and commercial buildings exist across the region. Many owners are absent
+  or deceased; titles are complex. Despite apparent land supply, productive housing
+  stock is constrained by building condition, environmental hazard (flooding, mine
+  drainage), and very low property values limiting renovation investment.
+value: 200
+unit: abandoned/derelict buildings (estimated)
+time_period: 2015-2024
+confidence: low
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_housing_2024
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Building condition estimates from council rates and development permit data;
+  titles complexity from local anecdotal documentation.

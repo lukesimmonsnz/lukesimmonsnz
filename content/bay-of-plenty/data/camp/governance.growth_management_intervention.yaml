@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.governance.growth_management_intervention
+name: Intervention for growth_management
+theme: governance
+core_claim: Targeted intervention on growth_management will improve outcomes.
+flagship_moves:
+- Policy measure 1 for growth_management
+- Policy measure 2 for growth_management
+- Implementation mechanism for growth_management
+tensions:
+- Trade-off A for growth_management
+- Trade-off B for growth_management
+addresses:
+- problem.bay_of_plenty.governance.growth_management
+interventions:
+- description: Core intervention targeting growth_management
+  state_variable: growth_management_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

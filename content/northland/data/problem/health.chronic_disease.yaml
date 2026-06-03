@@ -1,0 +1,24 @@
+id: 'problem.northland.health.chronic_disease'
+title: 'Te Tai Tokerau Northland: chronic disease'
+theme: 'health'
+section: 'health'
+subpage: 'chronic-disease'
+parent: 'problem.northland.health.outcomes'
+order: 4
+updated: '2026-04-26'
+summary: 'Chronic diseases are prevalent.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Chronic diseases are prevalent.'
+claim_ids:
+- 'claim.northland.health.chronic_disease_claim1'
+- 'claim.northland.health.chronic_disease_claim2'
+status: 'draft'

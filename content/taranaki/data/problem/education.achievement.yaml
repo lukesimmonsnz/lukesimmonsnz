@@ -1,0 +1,29 @@
+id: problem.taranaki.education.achievement
+title: Education achievement and attainment
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: NCEA Level 2 attainment in Taranaki is approximately 80%, near national average.
+  Māori attainment lags at 67%.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - achievement_index
+  inputs:
+  - achievement_input_1
+  constraints:
+  - achievement_constraint
+  feedback_loops:
+  - 'Feedback: achievement'
+narrative:
+- heading: Education achievement and attainment in Taranaki
+  body: NCEA Level 2 attainment in Taranaki is approximately 80%, near national average.
+    Māori attainment lags at 67%.
+claim_ids:
+- claim.taranaki.education.achievement_01
+status: draft
+time_horizons: [decade, generation]

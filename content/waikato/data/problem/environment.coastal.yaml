@@ -1,0 +1,24 @@
+id: 'problem.waikato.environment.coastal'
+title: 'Waikato: coastal environments'
+theme: 'environment'
+section: 'environment'
+subpage: 'coastal'
+parent: 'problem.waikato.environment.degradation'
+order: 5
+updated: '2026-04-26'
+summary: 'Coastal habitats are under pressure.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Coastal habitats are under pressure.'
+claim_ids:
+- 'claim.waikato.environment.coastal_claim1'
+- 'claim.waikato.environment.coastal_claim2'
+status: 'draft'

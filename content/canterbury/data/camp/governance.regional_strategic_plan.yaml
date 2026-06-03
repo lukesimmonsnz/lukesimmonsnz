@@ -1,0 +1,23 @@
+id: camp.canterbury.governance.regional_strategic_plan
+name: Regional Strategic Plan & Shared Vision
+theme: governance
+core_claim: Co-developed regional strategic plan (CCC, councils, ECan, iwi) with shared
+  growth, infrastructure, and environmental targets creates alignment and reduces
+  conflicts.
+flagship_moves:
+- Key intervention for Regional Strategic Plan & Shared Vision
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.governance.governance
+- problem.canterbury.governance.earthquake_debt_recovery
+interventions:
+- description: Co-developed regional strategic plan (CCC, councils, ECan, iwi) with
+    shared growth, infrastructure, and environmental targets creates alignment and
+    reduces conflicts.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

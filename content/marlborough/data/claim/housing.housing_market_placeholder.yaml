@@ -1,0 +1,19 @@
+id: claim.marlborough.housing.housing_market_placeholder
+statement: 'Marlborough housing market: 19,200–19,800 private dwellings (2023 census);
+  68–70% owner-occupied, 25–27% rental, 3–5% other (marae, caravans, institutional);
+  dwelling vacancy rate 4–6% (seasonal holiday homes in Sounds inflate this).'
+value: 19500
+unit: private dwellings Marlborough 2023
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

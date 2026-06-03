@@ -1,0 +1,11 @@
+id: driver.otago.crime.social_disconnection
+name: Social Disconnection and Isolation
+description: High-deprivation areas have weak social cohesion and community connection.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.crime.safety
+claim_ids: []

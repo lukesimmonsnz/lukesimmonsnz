@@ -1,0 +1,13 @@
+id: driver.wellington.climate.compound_hazard_interaction
+name: Earthquake-climate compound hazard interaction
+description: 'Wellington''s seismic and climate hazards interact: fault rupture can permanently subside coastal land, increasing
+  sea-level-rise exposure; earthquake-damaged infrastructure reduces Wellington''s resilience to subsequent climate events.'
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.climate.compound_hazard_risk
+claim_ids:
+- claim.wellington.climate.compound_hazard_infrastructure_risk

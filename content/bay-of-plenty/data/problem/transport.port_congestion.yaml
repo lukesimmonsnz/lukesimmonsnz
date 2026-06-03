@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.transport.port_congestion
+title: Port of Tauranga and regional freight bottlenecks in Bay of Plenty — Te Moana-a-Toi
+theme: transport
+section: transport
+subpage: port_congestion
+parent: problem.bay_of_plenty.transport.connectivity
+order: 6
+updated: '2026-04-26'
+summary: Port of Tauranga and regional freight bottlenecks is a sub-dimension of the
+  regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - port_congestion_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Port of Tauranga and regional freight bottlenecks is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.transport.port_congestion_11
+- claim.bay_of_plenty.transport.port_congestion_12
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,24 @@
+id: 'problem.northland.climate.coastal'
+title: 'Te Tai Tokerau Northland: coastal hazards'
+theme: 'climate-adaptation'
+section: 'climate'
+subpage: 'coastal'
+parent: 'problem.northland.climate.risk'
+order: 5
+updated: '2026-04-26'
+summary: 'Sea level rise threatens settlements.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Sea level rise threatens settlements.'
+claim_ids:
+- 'claim.northland.climate.coastal_claim1'
+- 'claim.northland.climate.coastal_claim2'
+status: 'draft'

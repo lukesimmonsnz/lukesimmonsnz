@@ -1,0 +1,10 @@
+id: driver.waikato.governance.multi_agency_fragmentation
+name: Multi-agency fragmentation
+description: Multi-agency fragmentation in the regional context.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

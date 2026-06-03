@@ -1,0 +1,25 @@
+id: camp.west_coast.infrastructure.state_highway_resilience_and_p
+name: State Highway Resilience and Pass Route Investment
+theme: infrastructure
+core_claim: West Coast's three alpine passes are the only road connections to the
+  rest of NZ; NZTA investment in pass resilience and closure alternatives is critical
+  to economic and emergency access.
+flagship_moves:
+- Upgrade Arthur's Pass and Lewis Pass resilience for extreme weather events
+- Develop Haast Pass alternative routing feasibility study
+- Fund permanent closure response protocols and air access contingency for multi-day
+  closures
+tensions:
+- Full resilience of all three passes against extreme events is prohibitively expensive
+- Low traffic volumes make large capital investment hard to justify purely on transport
+  economics
+addresses:
+- problem.west_coast.infrastructure.infrastructure
+- problem.west_coast.infrastructure.infrastructure_2
+interventions:
+- description: Fund West Coast alpine pass resilience programme
+  state_variable: pass_closure_days_per_year
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

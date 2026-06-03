@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.transport.cycling_network
+name: Protected cycling network
+theme: transport
+core_claim: Comprehensive safe cycling infrastructure.
+flagship_moves:
+- Flagship move 1 for Protected cycling network
+- Flagship move 2 for Protected cycling network
+tensions:
+- Internal tension 1 of Protected cycling network
+addresses:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+interventions:
+- description: 'Intervention 1: Protected cycling network detail 1'
+- description: 'Intervention 2: Protected cycling network detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

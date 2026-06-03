@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Tags · Blog · Luke Simmons{% endblock %}
+{% block meta_description %}All tags used across the blog.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([('Home', url_for('main.home')), ('Blog', url_for('blog.index')), ('Tags', None)]) }}
+  <header class="page-header">
+    <h1>Tags</h1>
+    <hr class="rule">
+  </header>
+  <div class="prose">
+    {% if tags %}
+    <ul class="tag-list">
+      {% for tag, count in tags %}
+      <li>
+        <a href="{{ url_for('blog.tag_archive', slug=tag) }}" class="tag-link">{{ tag }}</a>
+        <span class="tag-count">{{ count }} post{{ 's' if count != 1 }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No tags yet.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

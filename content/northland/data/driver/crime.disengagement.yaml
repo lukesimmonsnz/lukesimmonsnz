@@ -1,0 +1,10 @@
+id: driver.northland.crime.disengagement
+name: Social disengagement and isolation
+description: Social disengagement and isolation in the regional context.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

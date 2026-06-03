@@ -1,0 +1,20 @@
+id: claim.marlborough.infrastructure.port_infrastructure_1
+statement: 'Picton Port Authority: inter-island ferry terminal (Waitohi Wharf) handles
+  3,600+ sailings per annum (approximately 10 per day average); container throughput
+  approximately 15,000 TEU per annum (wine, aquaculture, general cargo); facilities
+  aging, upgrade planning ongoing.'
+value: 15000
+unit: TEU annual container throughput Picton
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.picton_ferry_services_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

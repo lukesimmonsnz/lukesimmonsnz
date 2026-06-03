@@ -1,0 +1,26 @@
+id: claim.canterbury.housing.red_zone_properties_2017
+statement: >
+  Following the 2010-2011 Canterbury earthquake sequence, the Crown
+  offered to purchase approximately 8,000 residential properties on
+  flat land within Christchurch where ground conditions were judged
+  not economically viable to repair (the residential red zone). The
+  red-zone offer programme transferred land ownership to the Crown,
+  with subsequent stewardship moving to Otakaro Limited following
+  CERA's disestablishment in 2016. Decisions on long-term reuse of
+  red-zone land (recreation, conservation, residential redevelopment)
+  remain a contested local-governance question.
+value: 8000
+unit: residential properties offered Crown purchase
+time_period: 2011-2017
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.mbie_residential_red_zone_2017
+scoped_to:
+  - canterbury
+national_assertion: false
+region_mentions:
+  - canterbury
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,35 @@
+id: problem.nelson.transport.connectivity_3
+title: State-highway closure exposure on SH6 and SH60
+theme: transport
+section: transport
+subpage: connectivity_3
+parent: connectivity
+order: 3
+updated: '2026-04-26'
+summary: SH6 is the sole north-south road route, with sections between Nelson and Blenheim (notably the Whangamoa and Rai saddles) prone to closure from slip, snow, and accident. SH60 to Tasman traverses unstable terrain east of Ruby Bay and has had 4-week closures in the last decade. Alternative routes add more than 90 minutes. Climate change is projected to increase closure frequency and duration, with 2-4 major disruptions annually projected by 2050.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - sh6_annual_closure_hours
+  - sh60_annual_closure_hours
+  - alt_route_detour_minutes
+  inputs:
+  - nzta_resilience_capex
+  - climate_event_frequency
+  constraints:
+  - topography
+  - alternative_route_availability
+  feedback_loops:
+  - 'Closure-investment feedback: each closure event raises political pressure for resilience investment, but rebuild-to-original is faster than upgrade, so the same vulnerability is repeatedly restored rather than fixed.'
+narrative:
+- heading: Single-corridor risk
+  body: The road network has the same single-corridor character as Wellington's coastal SH1, but without the rail backup (claim.nelson.transport.connectivity_3_claim). A single closure event can isolate Nelson from the ferry terminus in Picton and from the Christchurch supply chain simultaneously.
+- heading: Resilience investment lag
+  body: Specific resilience projects (slip-prone section stabilisation, alternative-route formalisation) sit on the Waka Kotahi pipeline but compete against higher-volume metro projects. Climate-altered closure frequency is starting to shift that calculus, but slowly.
+claim_ids:
+- claim.nelson.transport.connectivity_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

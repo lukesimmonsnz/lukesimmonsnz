@@ -1,0 +1,39 @@
+id: problem.wellington.crime.organised_crime
+title: Gang activity and drug markets in Wellington
+theme: crime
+section: crime
+subpage: organised-crime
+parent: problem.wellington.crime.victimisation
+order: 4
+updated: '2026-04-26'
+summary: Wellington has an established gang presence centred in Porirua, with spillover into Hutt Valley. Gang-organised drug
+  markets — methamphetamine in particular — are linked to both supply-side violence and demand-side property crime across
+  the wider Wellington region.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - gang_membership_estimate
+  - methamphetamine_market_size
+  inputs:
+  - deprivation_level
+  - policing_enforcement_intensity
+  constraints:
+  - economic_alternatives_to_gang_income
+  - prison_cycle_gang_recruitment
+  feedback_loops:
+  - 'Prison recruitment loop: incarceration increases gang affiliation; reentry into high-deprivation communities without
+    employment support sustains gang membership.'
+narrative:
+- heading: Gang presence in Porirua
+  body: Wellington's gang landscape includes established chapters of major New Zealand gangs concentrated in Porirua. These
+    organisations control significant components of the local drug market and provide income and social identity in communities
+    with limited economic alternatives (claim.wellington.crime.gang_presence_porirua).
+- heading: Drug market and deprivation nexus
+  body: Wellington research links drug market activity most strongly to areas of concentrated deprivation, where limited legitimate
+    economic opportunity and high social need create conditions for drug use and supply (claim.wellington.crime.drug_market_deprivation_link).
+claim_ids:
+- claim.wellington.crime.gang_presence_porirua
+- claim.wellington.crime.drug_market_deprivation_link
+status: draft
+time_horizons: [decade]

@@ -1,0 +1,14 @@
+id: driver.west_coast.governance.driver_1
+name: Four-council fragmentation in a small region
+description: One regional council and three territorial authorities serve a regional population of around 32,000. Coordination
+  costs are large relative to scale, and structural reform debates have not resolved how consolidation, shared services and
+  district identity should be balanced.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.governance.governance
+- problem.west_coast.governance.growth_management
+claim_ids: []

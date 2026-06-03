@@ -1,0 +1,23 @@
+id: claim.nelson.inequality.rental_affordability_gap_claim
+statement: The rental affordability gap in Nelson is substantial between income quintiles.
+  Lowest-income households (Q1, median $22,800) pay 38–52% of income on rent; Q2 households
+  (median $35,200) pay 28–36%; Q3+ households (median >$55,000) pay 18–22%. Median
+  rent of $510/week is unaffordable at market rates for households earning <$30,000/year
+  without housing assistance. Community housing and state housing stock cover ~8%
+  of rental demand; waitlists number 240+ households, with average wait time of 18
+  months. Private landlord rental assistance programs cover <100 households/year.
+value: 45
+unit: percent of Q1 income spent on median rent
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.census_income_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.rent_to_income_v1
+notes: null

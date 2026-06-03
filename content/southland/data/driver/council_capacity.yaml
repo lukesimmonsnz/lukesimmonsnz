@@ -1,0 +1,11 @@
+id: driver.southland.governance.council_capacity
+name: Local Government Capacity Constraints
+description: Southland councils face limited staffing and capability for complex projects.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.governance.governance
+claim_ids: []

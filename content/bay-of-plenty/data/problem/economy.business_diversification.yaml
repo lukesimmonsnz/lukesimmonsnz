@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.economy.business_diversification
+title: Business sector diversification and innovation in Bay of Plenty — Te Moana-a-Toi
+theme: economy
+section: economy
+subpage: business_diversification
+parent: problem.bay_of_plenty.economy.economic_development
+order: 36
+updated: '2026-04-26'
+summary: Business sector diversification and innovation is a sub-dimension of the
+  regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - business_diversification_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Business sector diversification and innovation is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.economy.business_diversification_71
+- claim.bay_of_plenty.economy.business_diversification_72
+status: draft
+time_horizons: [decade, generation]

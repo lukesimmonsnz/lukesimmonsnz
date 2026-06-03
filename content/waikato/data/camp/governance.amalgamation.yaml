@@ -1,0 +1,24 @@
+id: camp.waikato.governance.amalgamation
+name: Territorial authority rationalisation
+theme: governance
+core_claim: Merging smaller Waikato TAs reduces duplication and builds strategic planning
+  capacity.
+flagship_moves:
+- Commission independent review of Waikato TA boundaries and roles
+- Pilot shared services for consenting, infrastructure, and planning
+- Strengthen WRC's regional spatial planning role
+tensions:
+- Amalgamation faces strong community resistance and democratic legitimacy concerns
+- Merged councils may lose local responsiveness
+interventions:
+- description: Commission independent review of Waikato TA boundaries and roles
+  state_variable: governance_effectiveness
+  expected_sign: +
+addresses:
+- problem.waikato.governance.waikato_governance_complexity
+- problem.waikato.governance.regional_planning
+- problem.waikato.governance.maori_co_governance
+- problem.waikato.governance.local_govt_capacity
+applicable_in:
+- waikato
+tensions_with: []

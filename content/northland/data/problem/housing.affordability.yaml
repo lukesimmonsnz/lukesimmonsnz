@@ -1,0 +1,33 @@
+id: problem.northland.housing.affordability
+title: Housing unaffordability in Te Tai Tokerau Northland
+theme: housing
+section: housing
+subpage: affordability
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Housing has become structurally unaffordable, driven by supply constraints, demand pressure, and limited policy coordination.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - median_house_price
+  - housing_affordability_ratio
+  inputs:
+  - net_migration
+  - building_consent_pipeline
+  constraints:
+  - limited_developable_land
+  - infrastructure_capacity
+  feedback_loops:
+  - 'Price-signal-to-supply attenuation: high prices should incentivise development, but supply-side constraints limit the response.'
+narrative:
+- heading: Scale and distribution
+  body: Housing affordability has deteriorated significantly in Northland's main urban centres, particularly Whangārei, where median multiples have reached unsustainable levels relative to regional incomes.
+- heading: Supply-demand imbalance
+  body: Population movement toward Northland has outpaced residential development, constrained by infrastructure servicing, geographic limits, and planning rules.
+claim_ids:
+- claim.northland.housing.affordability_claim1
+- claim.northland.housing.affordability_claim2
+status: draft
+time_horizons: [decade, generation, century]

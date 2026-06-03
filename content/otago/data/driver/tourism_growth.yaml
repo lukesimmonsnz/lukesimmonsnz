@@ -1,0 +1,12 @@
+id: driver.otago.transport.tourism_growth
+name: Tourism-Driven Traffic Growth
+description: Queenstown-Lakes visitor arrivals compound; seasonal peaks, rental vehicle
+  growth.
+theme: transport
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.transport.queenstown_congestion
+claim_ids: []

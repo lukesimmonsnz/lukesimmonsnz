@@ -1,0 +1,21 @@
+id: claim.southland.education.secondary_trend
+statement: Secondary school enrolment in Southland shows slight decline; rural school
+  rolls diminishing. Brain drain to Invercargill/Dunedin/Christchurch for specialized
+  programmes (advanced sciences, languages, arts); talented students depart for tertiary
+  education and do not return. Post-school transition to local employment limited;
+  university pathways require relocation.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

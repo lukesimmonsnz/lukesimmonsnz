@@ -1,0 +1,27 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/cite.html" import cite_block %}
+
+{% block title %}All themes · Auckland · Research · Luke Simmons{% endblock %}
+{% block meta_description %}A single-page consolidated reading of every research theme for Auckland — housing, transport, environment, climate, and more — with one combined references list.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Auckland', url_for('auckland.index')),
+    ('All themes', None),
+  ]) }}
+
+  <article class="prose section-essay all-themes">
+    {{ consolidated.body_html | safe }}
+  </article>
+
+  {{ cite_block(title="Auckland — All themes", path=request.path, site_url=site_url, current_quarter=current_quarter) }}
+
+  <p class="back-to-index">
+    <a href="{{ url_for('auckland.index') }}">&larr; Back to Auckland themes index</a>
+  </p>
+</div>
+{% endblock %}

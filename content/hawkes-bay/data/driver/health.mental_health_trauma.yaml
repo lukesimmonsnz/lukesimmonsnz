@@ -1,0 +1,14 @@
+id: driver.hawkes_bay.health.mental_health_trauma
+name: Cyclone-related mental health trauma and sustained stress
+description: Cyclone Gabrielle caused widespread psychological trauma. Displacement, financial stress, loss, and ongoing recovery uncertainty drive depression, anxiety, and suicidality. Counselling services are overwhelmed and underfunded.
+theme: health
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.hawkes_bay.health.health_outcomes
+  - problem.hawkes_bay.health.mental_health_post_cyclone
+claim_ids:
+  - claim.hawkes_bay.health.mental_health_diagnoses_40_percent_increase
+  - claim.hawkes_bay.health.mental_health_demand_300_percent_increase

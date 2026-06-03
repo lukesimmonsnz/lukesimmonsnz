@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.infrastructure.digital_rural
+title: Rural Digital Connectivity and Access
+theme: infrastructure
+section: infrastructure
+subpage: digital_rural
+parent: problem.manawatu_whanganui.infrastructure.infrastructure
+order: 1
+updated: '2026-04-26'
+summary: Broadband coverage gaps in rural Ruapehu and Rangitikei; digital divide limiting
+  rural economic participation.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Broadband coverage gaps in rural Ruapehu and Rangitikei; digital divide limiting
+    rural economic participation.
+claim_ids:
+- claim.manawatu_whanganui.infrastructure.digital_rural_1
+- claim.manawatu_whanganui.infrastructure.digital_rural_2
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,23 @@
+id: claim.otago.governance.queenstown_growth_management_trend
+statement: 'Queenstown growth is outpacing infrastructure: housing unaffordability
+  escalating (short-term rental displacement); school rolls growing 5-8% annually
+  (expansion projects behind schedule); visitor infrastructure (airport, parking,
+  CBD retail) constrained; worker housing crisis endemic (RSE, hospitality, construction
+  workers commuting Cromwell/Wanaka/Alexandra); three waters network upgrades critical
+  path; climate risk to ski season and tourism viability emerging as long-term planning
+  concern.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

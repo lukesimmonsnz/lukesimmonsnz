@@ -1,0 +1,20 @@
+id: claim.waikato.inequality.waikato_inequality_root
+statement: Educational outcomes in Waikato are below national averages, with significant
+  disparities by area and demographic group. Rural schools face teacher recruitment
+  challenges; tertiary participation and attainment rates lag urban areas, limiting
+  skill development and career opportunities.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato inequality

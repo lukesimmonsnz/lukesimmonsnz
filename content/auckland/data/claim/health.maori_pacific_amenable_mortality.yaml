@@ -1,22 +1,23 @@
 id: claim.auckland.health.maori_pacific_amenable_mortality
-statement: >
-  Amenable mortality rates for Maori and Pacific Aucklanders are
-  approximately 2-3 times those of NZ European; the gap has not
-  narrowed significantly in two decades, indicating that health system
-  access and quality improvements have not reached these populations
-  proportionately.
+statement: Amenable mortality — deaths from conditions treatable by the health system
+  — is concentrated in Auckland's high-deprivation communities and shows a steep deprivation
+  gradient. Mortality from chronic conditions, infectious diseases, and other preventable
+  causes is substantially elevated in South and West Auckland neighborhoods with limited
+  primary care access and high housing cost burden. Māori and Pacific populations
+  carry disproportionate shares of this burden due to their concentration in these
+  high-deprivation areas.
 value: null
 unit: null
-time_period: "2018-2023"
+time_period: 2018-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.moh_health_loss_2023
-  - source.health_nz_annual_report_2023
+- source.moh_health_loss_2023
+- source.health_nz_annual_report_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.amenable_mortality_rate_v1

@@ -1,0 +1,13 @@
+id: driver.wellington.climate.wellington_fault_hazard
+name: Wellington Fault major earthquake hazard
+description: The Wellington Fault is one of the most active and hazardous fault systems in New Zealand, with a credible probability
+  of producing a Mw 7.4–7.9 earthquake beneath Wellington City within a 100-year planning horizon.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.climate.compound_hazard_risk
+claim_ids:
+- claim.wellington.climate.wellington_fault_rupture_probability

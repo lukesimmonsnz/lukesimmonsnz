@@ -1,0 +1,20 @@
+id: camp.hawkes_bay.governance.council_merger
+name: Consider regional council unification
+theme: governance
+core_claim: Consider regional council unification is the primary strategy.
+flagship_moves:
+- Implement Consider regional council unification across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.governance.governance
+- problem.hawkes_bay.governance.cyclone_recovery_coordination
+- problem.hawkes_bay.governance.regional_planning
+interventions:
+- description: Consider regional council unification intervention
+  state_variable: council_merger_index
+  constraint_relaxed: council_merger_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

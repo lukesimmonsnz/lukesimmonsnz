@@ -1,0 +1,23 @@
+id: claim.auckland.transport.crl_capacity_target_2026
+statement: >
+  The City Rail Link, a 3.45 km twin-tunnel underground rail link between
+  Britomart and Mt Eden stations, is designed to enable Auckland's rail
+  system to carry approximately 54,000 passengers per peak hour at full
+  build-out, by adding two new underground stations (Te Wai Horotiu /
+  Aotea, Karanga-a-Hape) and converting Britomart from a terminus to a
+  through-station. Project budget is NZD 5.493 billion, cost-shared
+  50/50 between the Crown and Auckland Council.
+value: 54000
+unit: peak hour passenger capacity (full build-out)
+time_period: '2026'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.nzta_crl_business_case_2024
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.admin_count_v1

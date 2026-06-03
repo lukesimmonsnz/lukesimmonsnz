@@ -1,18 +1,19 @@
 id: claim.auckland.inequality.colonial_land_loss
-statement: >
-  Historical Crown land confiscations and purchasing policies in the
-  Auckland region removed the majority of the Maori land base, establishing
-  a structural wealth deficit that compounds across generations through
-  differential property wealth accumulation.
+statement: Historical Crown land confiscations and purchasing policies in the Auckland
+  region, concentrated between the 1840s and early twentieth century, systematically
+  removed the property asset base from pre-colonial landholders. The resulting structural
+  wealth deficit — through exclusion from the primary vehicle of intergenerational
+  wealth accumulation — compounds across generations through differential property
+  wealth trajectories.
 value: null
 unit: null
-time_period: "1840-2023"
+time_period: 1840-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.mhud_maori_housing_2023
+- source.mhud_maori_housing_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

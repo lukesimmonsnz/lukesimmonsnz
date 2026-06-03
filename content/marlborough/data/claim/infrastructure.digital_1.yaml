@@ -1,0 +1,19 @@
+id: claim.marlborough.infrastructure.digital_1
+statement: 'Broadband coverage in Marlborough: 92% fiber/fixed broadband availability
+  in Blenheim CBD; Sounds communities and rural Awatere 30–50% ADSL/4G only; no 5G
+  coverage outside Blenheim; digital divide impacts education, healthcare access.'
+value: 92
+unit: percent broadband availability Blenheim
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.marlborough_council_ltc_2024
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

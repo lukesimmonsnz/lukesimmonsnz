@@ -1,0 +1,11 @@
+id: driver.canterbury.climate.global_ghg_emissions_trajectory
+name: Global GHG Emission Trajectory & Climate Uncertainty
+description: Global GHG Emission Trajectory & Climate Uncertainty
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.climate.climate_risk
+claim_ids: []

@@ -1,0 +1,20 @@
+id: 'camp.northland.economy.camp_2'
+name: 'Investment and capacity building in economy'
+theme: 'economy'
+core_claim: 'Investment and capacity building in economy is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement investment and capacity building in economy'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'northland'
+tensions_with: []

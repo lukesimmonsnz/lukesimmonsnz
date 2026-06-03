@@ -1,0 +1,25 @@
+id: camp.tasman.housing.camp_2
+name: 'Response: Camp 2'
+theme: housing
+core_claim: A response strategy addressing housing challenges.
+flagship_moves:
+- Implement evidence-based housing policy in Tasman
+- Increase investment in housing services and infrastructure
+- Build cross-sector partnerships to address housing challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.housing.affordability
+- problem.tasman.housing.rental_market
+- problem.tasman.housing.infrastructure_cost
+interventions:
+- description: Primary intervention for housing
+  state_variable: housing_outcome_index
+  expected_sign: +
+- description: Secondary intervention for housing
+  state_variable: housing_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

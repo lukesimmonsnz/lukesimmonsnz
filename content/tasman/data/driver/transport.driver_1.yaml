@@ -1,0 +1,13 @@
+id: driver.tasman.transport.driver_1
+name: Single-corridor topography of Tasman
+description: Tasman's settlements are strung along narrow river valleys and coastal flats with very few alternative
+  road alignments; the same topography that defines the region also limits transport-network choice.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.tasman.transport.connectivity
+- problem.tasman.transport.connectivity_2
+claim_ids: []

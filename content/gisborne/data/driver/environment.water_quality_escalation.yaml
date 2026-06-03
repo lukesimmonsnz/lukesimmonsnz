@@ -1,0 +1,13 @@
+id: driver.gisborne.environment.water_quality_escalation
+name: Driver escalating water_quality
+description: "This driver exacerbates the water_quality challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: environment
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.environment.water_quality
+claim_ids:
+- claim.gisborne.environment.water_quality_29

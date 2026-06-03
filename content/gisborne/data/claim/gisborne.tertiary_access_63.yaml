@@ -1,0 +1,19 @@
+id: claim.gisborne.education.tertiary_access_63
+statement: Gisborne has the lowest tertiary participation rate nationally (MoE regional
+  data 2023). Limited local tertiary provision (Te Pūkenga campus in Gisborne offers
+  mainly trades) drives out-migration.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

@@ -1,0 +1,16 @@
+applies_to:
+- Claim
+description: 'Asset condition rating expressed as a percentage of infrastructure assets
+  rated in satisfactory condition (condition grade 3 or better on a 1–5 scale). Used
+  by councils and network utilities to track the renewal backlog and forecast capital
+  expenditure requirements. P5'' triggers on cross-region infrastructure condition
+  comparison claims.
+
+  '
+discharged_by: python_invariant
+id: methodology.infrastructure_condition_index_v1
+kind: measurement
+name: Infrastructure Condition Index
+predicate: null
+source_ids: []
+version: 1

@@ -1,0 +1,23 @@
+id: claim.west_coast.education.early_childhood_claim
+statement: Early childhood education access in West Coast is fragmented across three
+  territorial authorities with variable service quality. Centres in smaller towns
+  (Westport, Hokitika) face staffing challenges and enrolment pressure from population
+  decline. Māori-medium ECE options are limited, affecting whānau engagement with
+  early intervention.
+value: null
+unit: null
+time_period: 2018-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_west_coast_achievement_2023
+- source.ngai_tahu_poutini_partnership_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Service availability from MOE regional databases; Māori-medium provision from
+  Ngāi Tahu Poutini partnership mapping.

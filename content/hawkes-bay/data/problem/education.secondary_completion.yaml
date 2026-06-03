@@ -1,0 +1,38 @@
+id: problem.hawkes_bay.education.secondary_completion
+title: Secondary school completion and engagement
+theme: education
+section: education
+subpage: secondary-completion
+parent: problem.hawkes_bay.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: Secondary school retention and completion in Hawke's Bay is below the national average. School
+  disengagement is concentrated in high-deprivation communities, where financial pressure to work, unstable
+  housing, and limited vocational pathway visibility contribute to early leaving. Alternative pathways
+  and trades academies are under-resourced relative to need.
+manifests_in:
+- hawkes-bay
+systems_model:
+  state_variables:
+  - school_completion_rate_percent
+  - student_suspension_rate_per_1000
+  inputs:
+  - student_poverty_and_stress
+  - limited_vocational_pathways
+  constraints:
+  - alternative_education_availability
+  - school_belonging_and_culture
+  feedback_loops:
+  - Disengagement leads to early leaving; limited skills reduce job prospects; unemployment drives reoffending;
+    school engagement investment seems pointless.
+narrative:
+- heading: Completion Rate
+  body: Secondary school completion in Hawke's Bay is approximately 81%, compared to 87% nationally. Māori
+    completion is 68%.
+- heading: Disengagement
+  body: Student suspension rates in Hawke's Bay are 8 per 1,000 students, above the national rate of 6
+    per 1,000. Māori students represent 60% of suspensions despite being 35% of the student population.
+claim_ids:
+- claim.hawkes_bay.education.secondary_completion_81_percent
+status: draft
+time_horizons: [decade, generation]

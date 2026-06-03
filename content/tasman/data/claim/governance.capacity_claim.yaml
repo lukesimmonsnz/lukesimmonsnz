@@ -1,0 +1,21 @@
+id: claim.tasman.governance.capacity_claim
+statement: Tasman District Council operates with annual budget NZD 287 million (2024)
+  and 380 FTE staff. Three-waters reform and climate adaptation planning have strained
+  capacity; infrastructure maintenance backlog estimated NZD 42 million (2024). Recruitment
+  and retention of specialist engineers and planners remains a challenge.
+value: 287
+unit: NZD million annual budget
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.tasman_iwi_partnership_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

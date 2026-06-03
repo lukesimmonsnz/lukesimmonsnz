@@ -1,0 +1,35 @@
+id: problem.nelson.transport.connectivity_4
+title: Underdeveloped active and public transport in central Nelson
+theme: transport
+section: transport
+subpage: connectivity_4
+parent: connectivity
+order: 4
+updated: '2026-04-26'
+summary: Cycling mode share is around 6.2 percent of commute trips (against 5 percent nationally), but dedicated cycle-lane coverage is around 18 km of a 280 km inner-city road network (about 6.4 percent). Pedestrian infrastructure in outer suburbs is incomplete. Public transport (NCC city buses plus regional services) covers around 3 percent of commute mode share with 1-2 hourly frequency. Car dependency is around 68 percent of commutes; SH6 northbound and Haven Road peak each weekday.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - cycling_mode_share_pct
+  - dedicated_cycle_lane_km
+  - city_bus_frequency_per_hour_peak
+  inputs:
+  - ncc_active_transport_capex
+  - nzta_co_funding
+  constraints:
+  - roading_corridor_widths
+  - rates_funded_pt_subsidy
+  feedback_loops:
+  - 'Frequency-demand feedback: low service frequency suppresses ridership, which keeps fare-recovery low, which suppresses council willingness to fund higher frequency.'
+narrative:
+- heading: Latent demand without enabling infrastructure
+  body: Nelson's cycling mode share is already above national average despite limited dedicated infrastructure, indicating substantial latent demand that better network coverage would activate (claim.nelson.transport.connectivity_4_claim). Topography is moderately favourable in the central basin and challenging on the hill suburbs.
+- heading: Public transport thinness
+  body: City-bus frequency in Nelson is well below the threshold where non-car households can rely on public transport for everyday trips. Park-and-ride at SH6 is minimal. The result is that even households who would prefer to reduce car use have limited practical alternative.
+claim_ids:
+- claim.nelson.transport.connectivity_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

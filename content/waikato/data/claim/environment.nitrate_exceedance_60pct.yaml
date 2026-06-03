@@ -1,0 +1,21 @@
+id: claim.waikato.environment.nitrate_exceedance_60pct
+statement: Nitrate levels in Waikato and Waipā rivers exceed WHO drinking water guidelines
+  of 11.3 mg/L NO3 in approximately 60% of monitored sites. Agricultural nitrogen
+  leaching from intensive dairy farming is the primary source. Waikato Regional Council
+  regional plan targets 10-year decline; recent compliance remains below target. Groundwater
+  beneath the Waikato Plains shows legacy nitrate from decades of pastoral farming.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_tainui_environment_report_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato freshwater_quality claim

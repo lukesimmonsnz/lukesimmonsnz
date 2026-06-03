@@ -1,0 +1,34 @@
+id: problem.northland.transport.public_transport_gap
+title: Public transport gap in regional centres
+theme: transport
+section: transport
+subpage: public-transport-gap
+parent: problem.northland.transport.northland_transport_isolation
+order: 3
+updated: '2026-04-26'
+summary: Whangārei and sub-regional towns lack viable public transport, creating car-dependency
+  and exclusion.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - transport_pressure_index
+  inputs:
+  - policy_intervention
+  - external_shock
+  constraints:
+  - fiscal_capacity
+  feedback_loops:
+  - 'Feedback: deteriorating public transport gap conditions reinforce systemic disadvantage.'
+narrative:
+- heading: Scale and distribution
+  body: Whangārei and sub-regional towns lack viable public transport, creating car-dependency
+    and exclusion.
+- heading: Key drivers
+  body: The primary drivers of public transport gap in regional centres are structural
+    and systemic, requiring both investment and institutional reform.
+claim_ids:
+- claim.northland.transport.public_transport_gap_claim1
+- claim.northland.transport.public_transport_gap_claim2
+status: draft
+time_horizons: [decade, generation]

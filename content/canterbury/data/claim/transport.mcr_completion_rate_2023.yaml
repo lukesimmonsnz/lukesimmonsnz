@@ -1,0 +1,20 @@
+id: claim.canterbury.transport.mcr_completion_rate_2023
+statement: Christchurch's Major City Rail project rebuild progressed to 35% completion
+  (2023), with ongoing resource and funding constraints. Delays compound congestion
+  pressures; full completion is 2026-2027; rail restoration is essential for post-earthquake
+  economic recovery.
+value: 40
+unit: percent completion
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_transport_strategy_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

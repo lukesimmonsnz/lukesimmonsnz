@@ -1,0 +1,21 @@
+id: claim.southland.transport.fiordland_access_prevalence
+statement: 'Fiordland access is constrained by Milford Road (SH94) bottleneck. Single
+  road spine: 119km Queenstown to Milford Sound; Homer Tunnel single-lane with traffic
+  lights (single direction 10-15min); avalanche risk closes road 10-20 days/year;
+  weather delays frequent. No alternative road access. Pre-COVID ~700,000 annual Milford
+  Sound visitors; post-COVID recovery to ~65%.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

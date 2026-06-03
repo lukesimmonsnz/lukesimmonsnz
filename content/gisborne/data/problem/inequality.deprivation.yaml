@@ -1,0 +1,34 @@
+id: problem.gisborne.inequality.deprivation
+title: Systemic deprivation and exclusion in Gisborne — Te Tairāwhiti
+theme: inequality
+section: inequality
+subpage: deprivation
+parent: null
+order: 17
+updated: '2026-04-26'
+summary: Systemic deprivation and exclusion represents a critical systemic challenge
+  for Gisborne — Te Tairāwhiti.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - deprivation_index
+  inputs:
+  - policy_change
+  - investment_level
+  - community_effort
+  constraints:
+  - fiscal_capacity
+  - institutional_capacity
+  - geographic_isolation
+  feedback_loops:
+  - Deprivation and isolation reinforce economic fragility and limit recovery.
+narrative:
+- heading: Core systemic challenge
+  body: The systemic deprivation and exclusion is a defining constraint for Gisborne's
+    development.
+claim_ids:
+- claim.gisborne.inequality.deprivation_33
+- claim.gisborne.inequality.deprivation_34
+status: draft
+time_horizons: [decade, generation, century]

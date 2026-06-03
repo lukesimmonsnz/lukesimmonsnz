@@ -1,0 +1,19 @@
+id: claim.gisborne.governance.disaster_recovery_80
+statement: Long-term recovery from Cyclone Gabrielle spans 3–5 years. Central government
+  established a dedicated recovery agency; regional infrastructure (SH2, SH35, Tolaga
+  Bay wharf, power network) remains under repair.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

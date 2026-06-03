@@ -1,0 +1,25 @@
+id: claim.canterbury.environment.groundwater_mav_threshold_2023
+statement: >
+  Environment Canterbury's regional groundwater quality monitoring
+  programme reports the proportion of monitored bores in the Canterbury
+  Plains aquifer system that exceed the 11.3 mg/L NO3-N Maximum
+  Acceptable Value (MAV) for nitrate-nitrogen in drinking water,
+  established under the Drinking Water Standards for New Zealand. A
+  significant minority of bores in dairy-intensified subzones exceed
+  the MAV, with concentrations correlated to upstream land-use
+  intensity and aquifer transit time.
+value: 11.3
+unit: mg/L NO3-N (MAV threshold)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.ecan_groundwater_quality_2023
+scoped_to:
+  - canterbury
+national_assertion: false
+region_mentions:
+  - canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

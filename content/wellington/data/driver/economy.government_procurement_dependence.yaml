@@ -1,0 +1,13 @@
+id: driver.wellington.economy.government_procurement_dependence
+name: Private sector dependence on government procurement
+description: Wellington's private sector is disproportionately dependent on government procurement contracts (IT, consulting,
+  legal, property) meaning private sector confidence and growth tracks government spending decisions.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.economy.business_environment
+claim_ids:
+- claim.wellington.economy.business_confidence_2024

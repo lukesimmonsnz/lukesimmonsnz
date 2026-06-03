@@ -1,0 +1,33 @@
+id: problem.gisborne.governance.treaty_co_governance
+title: Treaty of Waitanui engagement and Māori co-governance in Gisborne — Te Tairāwhiti
+theme: governance
+section: governance
+subpage: treaty_co_governance
+parent: problem.gisborne.governance.governance
+order: 39
+updated: '2026-04-26'
+summary: Treaty of Waitanui engagement and Māori co-governance is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - treaty_co_governance_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Treaty of Waitanui engagement and Māori co-governance is a key facet of the
+    broader pressure facing the region.
+claim_ids:
+- claim.gisborne.governance.treaty_co_governance_77
+- claim.gisborne.governance.treaty_co_governance_78
+status: draft
+time_horizons: [decade, generation, century]

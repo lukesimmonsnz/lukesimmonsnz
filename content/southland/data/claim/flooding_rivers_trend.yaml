@@ -1,0 +1,20 @@
+id: claim.southland.climate.flooding_rivers_trend
+statement: Southland river flooding is expected to intensify with climate change,
+  increasing from 1-in-10 year to 1-in-5 year recurrence intervals. Dairy farming
+  in river valleys faces recurring flood risk; infrastructure resilience investments
+  (stopbanks, drainage) are constrained by funding.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

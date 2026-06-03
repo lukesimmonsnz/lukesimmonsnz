@@ -1,0 +1,35 @@
+id: problem.nelson.health.workforce
+title: Critical health workforce shortages
+theme: health
+section: health
+subpage: workforce
+parent: health_outcomes
+order: 4
+updated: '2026-04-26'
+summary: Nelson's GP-to-patient ratio is around 1 per 1,900 against a national target of 1 per 1,400. Nursing vacancies are around 8 percent of funded FTE; specialist shortages mean patients are referred to Christchurch or Wellington. About 14 percent of GPs are over 60 with planned retirement in the next five years, and graduate retention from NMIT health-workforce programmes is around 42 percent against 58 percent nationally.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - gp_to_patient_ratio
+  - nursing_vacancy_rate_pct
+  - nmit_health_grad_retention_pct
+  inputs:
+  - health_nz_workforce_funding
+  - graduate_placement_settings
+  constraints:
+  - housing_affordability
+  - career_pathway_depth
+  feedback_loops:
+  - 'Workforce-load feedback: thin workforce raises load on existing staff, accelerating burnout and exit, which deepens the workforce gap.'
+narrative:
+- heading: A retiring core and thin pipeline
+  body: 'The single most important workforce statistic is that 14 percent of Nelson GPs plan to retire within five years with no clear replacement pipeline (claim.nelson.health.workforce_claim). Nursing vacancies are similar in shape: stable demand and a slow-moving supply funnel.'
+- heading: Retention versus recruitment
+  body: NMIT trains health workers competently but only retains around 42 percent in the region after qualification. The drivers are housing affordability, career-path narrowness outside the hospital, and partner-employment opportunities. Recruitment campaigns alone cannot offset the retention gap.
+claim_ids:
+- claim.nelson.health.workforce_claim
+status: draft
+time_horizons:
+- decade
+- generation

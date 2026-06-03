@@ -1,0 +1,31 @@
+id: camp.hawkes_bay.education.equity_resourcing
+name: Equity-based school resource allocation
+theme: education
+core_claim: Allocating higher per-student funding to high-deprivation schools and
+  expanding support services narrows achievement gaps.
+flagship_moves:
+- Increase Ministry of Education per-student funding to high-deprivation schools in
+  Flaxmere by 30% over 5 years
+- Employ additional teacher aides, reading recovery specialists, and school counsellors
+  in low-decile schools
+- Provide scholarships and laptop support for low-income students
+tensions:
+- Higher funding for disadvantaged schools may be seen as unfair by affluent communities
+- Funding increases may not yield achievement gains without complementary teacher
+  quality improvements
+addresses:
+- problem.hawkes_bay.education.achievement
+- problem.hawkes_bay.education.early_childhood
+- problem.hawkes_bay.inequality.child_poverty
+- problem.hawkes_bay.education.secondary_completion
+interventions:
+- description: Increase per-student funding for high-deprivation schools to match
+    top decile schools
+  state_variable: per_student_resource_equity
+  expected_sign: +
+- description: Employ additional support staff in low-decile schools
+  state_variable: school_support_service_availability
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

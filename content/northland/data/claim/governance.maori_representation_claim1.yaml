@@ -1,0 +1,18 @@
+id: claim.northland.governance.maori_representation_claim1
+statement: Māori representation in Northland governance is under-proportioned relative
+  to population (~35-40%). Te Kāhui o Māui (Northland iwi collective) engagement with
+  NRC and TAs is formal but not substantive; co-governance models limited. Ngāpuhi
+  (largest iwi, 125,000 members, majority live outside Far North) Treaty settlement
+  remains unsettled as of 2025; claim directly impacts regional governance relationships.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

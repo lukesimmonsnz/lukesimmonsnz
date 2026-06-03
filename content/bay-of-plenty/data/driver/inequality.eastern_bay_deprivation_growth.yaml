@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.inequality.eastern_bay_deprivation_growth
+name: Driver for eastern_bay_deprivation
+description: "This driver exacerbates the eastern_bay_deprivation pressure in Bay\
+  \ of Plenty \u2014 Te Moana-a-Toi."
+theme: inequality
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.inequality.eastern_bay_deprivation
+claim_ids:
+- claim.bay_of_plenty.inequality.eastern_bay_deprivation_35

@@ -1,0 +1,21 @@
+id: camp.otago.governance.ota_coordination
+name: Regional Coordination and Governance Integration
+theme: governance
+core_claim: Strengthening Otago Regional Authority coordination improves cross-TA
+  planning.
+flagship_moves:
+- Enhance ORC mandate and resourcing for spatial planning
+- Establish joint council committees for key issues
+- Align three-waters and transport planning
+tensions:
+- TA autonomy preservation vs coordination
+- Cost of coordination mechanisms
+addresses:
+- problem.otago.governance.governance
+interventions:
+- description: Establish unified growth management strategy
+  state_variable: planning_coordination
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

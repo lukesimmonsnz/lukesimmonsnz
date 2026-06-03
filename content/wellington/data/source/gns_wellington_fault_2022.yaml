@@ -1,0 +1,12 @@
+id: source.gns_wellington_fault_2022
+title: Wellington Fault Earthquake Hazard Assessment
+author: Van Dissen R et al.
+publisher: GNS Science
+year: 2022
+url: https://www.gns.cri.nz/research/natural-hazards/earthquakes/wellington-fault/
+type: academic
+credibility: peer-reviewed
+geo_granularity:
+- wellington
+notes: Probabilistic earthquake hazard analysis for the Wellington Fault; estimates rupture probability over 100-year time
+  windows. Peer-reviewed GNS Science report.

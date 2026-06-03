@@ -1,0 +1,12 @@
+id: driver.southland.environment.dairy_intensification
+name: Dairy Sector Intensification
+description: Dairy conversion and herd expansion (1990s–2010s) drove nutrient loading
+  and water pollution.
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.environment.southland_river_quality
+claim_ids: []

@@ -1,0 +1,10 @@
+id: driver.waikato.health.deprivation_health
+name: Health impacts of deprivation
+description: Health impacts of deprivation in the regional context.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

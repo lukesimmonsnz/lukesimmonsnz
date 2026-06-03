@@ -1,0 +1,20 @@
+id: claim.bay_of_plenty.transport.connectivity_10
+statement: Transport connectivity in Bay Of Plenty is limited outside major urban
+  centers, forcing private vehicle dependence. Public transit is sparse; road freight
+  reliance increases logistics costs; geographic isolation constrains workforce mobility
+  and business access to markets.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.zoned_capacity_v1
+notes: null

@@ -1,0 +1,11 @@
+id: driver.southland.economy.limited_startup_capital
+name: Limited Venture Capital and Startup Ecosystem
+description: Southland lacks angel investors, venture capital, tech talent.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.economy.economic_diversification
+claim_ids: []

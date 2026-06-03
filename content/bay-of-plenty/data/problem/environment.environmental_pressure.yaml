@@ -1,0 +1,32 @@
+id: problem.bay_of_plenty.environment.environmental_pressure
+title: Environmental degradation and resource constraints in Bay of Plenty — Te Moana-a-Toi
+theme: environment
+section: environment
+subpage: environmental_pressure
+parent: null
+order: 13
+updated: '2026-04-26'
+summary: Environmental degradation and resource constraints represents a key systemic
+  pressure for Bay of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - environmental_pressure_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The environmental degradation and resource constraints is a pressing concern
+    for the region.
+claim_ids:
+- claim.bay_of_plenty.environment.environmental_pressure_25
+- claim.bay_of_plenty.environment.environmental_pressure_26
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,21 @@
+id: camp.otago.education.tertiary_support
+name: University Student Wellbeing and Support
+theme: education
+core_claim: Mental health services, housing support, and financial aid reduce student
+  stress and improve outcomes.
+flagship_moves:
+- Expand University mental health counselors
+- Student hardship grants expansion
+- On-campus accommodation expansion
+tensions:
+- University budget constraints
+- Student support demand growth
+addresses:
+- problem.otago.education.tertiary_dunedin
+interventions:
+- description: Achieve <6 week mental health service wait time for students
+  state_variable: student_mh_access
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

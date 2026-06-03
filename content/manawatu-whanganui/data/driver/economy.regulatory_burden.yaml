@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.economy.regulatory_burden
+name: Regulatory Burden On Business
+description: Regulatory burden on business. This driver operates at national scale
+  with disputed consensus.
+theme: economy
+consensus: disputed
+category: institutional
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.environment.freshwater_crisis
+claim_ids: []

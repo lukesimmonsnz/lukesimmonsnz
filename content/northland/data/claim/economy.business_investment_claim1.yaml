@@ -1,0 +1,18 @@
+id: claim.northland.economy.business_investment_claim1
+statement: Business investment in Northland (capital expenditure per capita) is 40-50%
+  below national average. Private investment hesitant due to perceived economic slowdown;
+  public infrastructure investment underfunded. Small-to-medium enterprises (50-70%
+  of regional employment) face financing barriers; bank lending risk premium higher
+  for Northland businesses than Auckland.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

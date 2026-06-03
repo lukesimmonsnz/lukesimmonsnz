@@ -1,0 +1,20 @@
+id: claim.northland.climate.drought_risk_claim1
+statement: Northland faces increased drought frequency under climate projections,
+  with dry years shifting from 1-in-6 year to 1-in-4 year recurrence intervals by
+  2070. Pastoral farming (dominant land use) and rural water supplies face greater
+  reliability pressures, particularly affecting Kaipara district and Far North communities.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

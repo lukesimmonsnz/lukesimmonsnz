@@ -1,0 +1,12 @@
+id: source.census_income_tasman_2023
+title: Income and Inequality in Tasman Census 2023
+author: Stats NZ
+publisher: Statistics New Zealand
+year: 2023
+url: https://www.stats.nz
+type: government-report
+credibility: official
+geo_granularity:
+- tasman
+- nz
+notes: Median income, income inequality, deprivation indices, seasonal worker patterns.

@@ -1,0 +1,39 @@
+id: problem.tasman.crime.family_violence
+title: Family violence load with thin specialist support
+theme: crime
+section: crime
+subpage: family_violence
+parent: safety
+order: 2
+updated: '2026-04-26'
+summary: Health NZ Tasman reports family-violence notifications up around 18 percent in 2023 against 2022. Golden
+  Bay and rural Tasman have limited access to specialist support; referral times to regional services in Nelson
+  exceed four weeks.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - fv_notification_rate
+  - specialist_referral_wait_weeks
+  inputs:
+  - specialist_workforce_capacity
+  - telehealth_specialist_provision
+  constraints:
+  - rural_service_economics
+  - client_safety_face_to_face_requirements
+  feedback_loops:
+  - Long waits deter help-seeking, which shifts presentation to crisis points, which raises the cost of intervention
+    per case.
+narrative:
+- heading: Notifications rising faster than capacity
+  body: An 18 percent year-on-year rise in notifications outstrips any plausible workforce expansion at specialist-services
+    level. Existing wait times — already over four weeks in Mohua — lengthen further (claim.tasman.crime.family_violence_claim).
+- heading: Rural geography raises the cost of support
+  body: Specialist support assumes a face-to-face service, often weekly, often on short notice. For Mohua and Murchison
+    residents, that cost is the Takaka Hill or the drive to Nelson. The combination of distance and wait time produces
+    de facto exclusion from services that exist on paper.
+claim_ids:
+- claim.tasman.crime.family_violence_claim
+status: draft
+time_horizons:
+- decade

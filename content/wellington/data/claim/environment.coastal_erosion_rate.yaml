@@ -1,0 +1,21 @@
+id: claim.wellington.environment.coastal_erosion_rate
+statement: Several Wellington coastal sections including parts of Lyall Bay beach
+  and the Kāpiti Coast are experiencing measurable erosion rates that will be accelerated
+  by sea-level rise, with storm-surge overtopping events at Petone Foreshore projected
+  to increase in frequency over the coming decades.
+value: null
+unit: null
+time_period: 2020-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfe_nz_sea_level_guidance_2023
+- source.gwrc_state_environment_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

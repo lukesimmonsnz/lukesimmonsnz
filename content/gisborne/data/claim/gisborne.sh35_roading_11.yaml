@@ -1,0 +1,20 @@
+id: claim.gisborne.transport.sh35_roading_11
+statement: SH35 (Gisborne to Ruatoria) is single-lane rural highway serving 2,000+
+  people; maintenance is deferred; resilience to extreme weather is low. Cyclone Gabrielle
+  caused weeks-long closure; community isolation created food-supply, health, and
+  economic impacts; infrastructure upgrade is urgent.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.homeownership_rate_v1
+notes: null

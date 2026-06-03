@@ -1,0 +1,23 @@
+id: claim.canterbury.environment.invasive_predator_expansion_2023
+statement: 'Invasive predator populations (stoats, rats, possums) in Canterbury''s
+  braided river and alpine ecosystems have expanded, with stoat densities in some
+  braided river zones reaching 2 per hectare. This expansion threatens critically
+  endangered species endemic to Canterbury braided rivers: black stilts (kakī, ~150
+  remaining globally, 80% in Canterbury braided rivers), plovers, and oystercatchers.
+  Predator control efforts by DOC and community groups remain insufficient to reverse
+  population trends.'
+value: 2
+unit: stoats per hectare
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_state_environment_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

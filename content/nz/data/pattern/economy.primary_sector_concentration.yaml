@@ -1,0 +1,36 @@
+id: pattern.economy.primary_sector_concentration
+title: Primary sector concentration and productivity limits
+theme: economy
+summary: Most New Zealand regions outside Auckland and Wellington have economies heavily
+  concentrated in primary industries — pastoral farming, horticulture, forestry, aquaculture
+  — with relatively low labour productivity and limited wage growth.
+manifests_in:
+- waikato
+- northland
+- gisborne
+- hawkes-bay
+- taranaki
+- marlborough
+- nelson
+- tasman
+- southland
+- west-coast
+claim_ids:
+- claim.waikato.economy.agri_gdp_share_28pct
+- claim.northland.economy.business_investment_claim1
+- claim.gisborne.economy.economic_fragility_65
+- claim.southland.economy.agri_commodity_prevalence
+- claim.manawatu_whanganui.economy.agri_food_1
+narrative:
+- heading: Sector structure
+  body: 'Primary sector concentration is not inherently a problem: New Zealand comparative
+    advantage in pastoral and horticultural production is real. But sectors with low
+    labour productivity set a ceiling on wages that constrains regional incomes and
+    makes retention of skilled labour difficult.'
+- heading: Transition pathway
+  body: Value-added processing, technology services, and knowledge-economy expansion
+    are often proposed as diversification pathways. Each requires investment in workforce
+    capability, digital infrastructure, and market access that most primary-dominated
+    regions cannot self-fund.
+status: draft
+updated: '2026-04-26'

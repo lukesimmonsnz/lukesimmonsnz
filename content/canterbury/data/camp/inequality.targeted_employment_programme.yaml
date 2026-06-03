@@ -1,0 +1,23 @@
+id: camp.canterbury.inequality.targeted_employment_programme
+name: Targeted Employment & Skills Training in High-Deprivation Areas
+theme: inequality
+core_claim: Subsidized employment programs (apprenticeships, on-the-job training)
+  in high-deprivation areas connect youth and long-term unemployed to stable work
+  pathways.
+flagship_moves:
+- Key intervention for Targeted Employment & Skills Training in High-Deprivation Areas
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.inequality.child_poverty
+- problem.canterbury.inequality.inequality
+interventions:
+- description: Subsidized employment programs (apprenticeships, on-the-job training)
+    in high-deprivation areas connect youth and long-term unemployed to stable work
+    pathways.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

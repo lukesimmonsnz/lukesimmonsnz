@@ -1,0 +1,20 @@
+id: camp.gisborne.housing.rural_housing_approach
+name: Strategic approach for rural_housing
+theme: housing
+core_claim: Strategic intervention on rural_housing will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting rural_housing
+- Priority action 2 targeting rural_housing
+- Institutional coordination mechanism for rural_housing
+tensions:
+- 'Tension 1: rural_housing'
+- 'Tension 2: rural_housing'
+addresses:
+- problem.gisborne.housing.rural_housing
+interventions:
+- description: Primary intervention for rural_housing
+  state_variable: rural_housing_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

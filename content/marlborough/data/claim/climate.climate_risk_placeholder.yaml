@@ -1,0 +1,20 @@
+id: claim.marlborough.climate.climate_risk_placeholder
+statement: Marlborough experiences increasing climate variability with multi-year
+  drought cycles and intensifying rainfall events; average annual precipitation 680–900
+  mm on the Wairau Plains increasing inter-annual variance.
+value: null
+unit: null
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_climate_projections_2023
+- source.wairau_catchment_study_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

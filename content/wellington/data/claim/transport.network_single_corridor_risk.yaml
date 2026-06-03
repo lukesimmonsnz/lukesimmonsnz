@@ -1,0 +1,21 @@
+id: claim.wellington.transport.network_single_corridor_risk
+statement: Wellington's primary transport corridor — along the coastal SH1 and through
+  the Terrace and Mt Victoria tunnels — forms a single failure point for road and
+  rail travel; a major earthquake on the Wellington Fault is modelled to close this
+  corridor simultaneously for an extended period.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gns_wellington_fault_2022
+- source.gwrc_regional_land_transport_2021
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

@@ -1,0 +1,20 @@
+id: claim.southland.housing.invercargill_affordability_trend
+statement: Invercargill housing affordability shows slight pressure but remains stable
+  relative to national trends. Median prices rising 2-3% annually; rental market tightening
+  (vacancy <2%, rental yield 4-5%). Investor demand moderate; lifestyle migration
+  from larger centers limited. Rural property values stable with weak dairy returns.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

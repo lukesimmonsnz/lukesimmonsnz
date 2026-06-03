@@ -1,0 +1,21 @@
+id: camp.wellington.infrastructure.fibre_subsidy
+name: Digital Connectivity Subsidy for Low-Income Households
+theme: infrastructure
+core_claim: Affordability barriers to internet access must be addressed through targeted subsidies, not infrastructure expansion
+  alone.
+flagship_moves:
+- Expand RBI2 subsidy to cover fixed-wireless for low-income households
+- School-based device and data access programmes in Porirua and Hutt
+- Community Wi-Fi in social housing complexes
+tensions:
+- Demand-side subsidies do not resolve infrastructure gaps in rural fringes
+- Data caps on subsidised connections still limit effective participation
+addresses:
+- problem.wellington.infrastructure.digital_connectivity
+interventions:
+- description: Extend digital inclusion subsidy to 15,000 low-income Wellington households via MSD benefit integration
+  state_variable: broadband_uptake_low_income
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

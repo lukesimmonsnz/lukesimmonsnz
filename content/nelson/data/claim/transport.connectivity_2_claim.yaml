@@ -1,0 +1,25 @@
+id: claim.nelson.transport.connectivity_2_claim
+statement: Nelson Airport faces capacity constraints. Current facility handles 280,000
+  passengers annually and is operating at 68–72% capacity; terminal infrastructure
+  is adequate to 450,000–500,000 passengers (medium growth), but runway and taxiway
+  systems may require augmentation by 2035. Runway length (2,100 m) limits aircraft
+  types for direct long-haul routes; international services are seasonal charters.
+  Aircraft movements are capacity-constrained by airspace limitations and terminal
+  gate availability. The airport has limited cargo handling facilities; freight is
+  currently 8% of revenue. Commercial viability of expansion to 2040 is uncertain
+  without international route subsidies or expanded domestic market share.
+value: 280000
+unit: passengers annually (current)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_airport_capacity_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.rent_to_income_v1
+notes: null

@@ -1,0 +1,13 @@
+id: driver.gisborne.crime.safety_escalation
+name: Driver escalating safety
+description: "This driver exacerbates the safety challenge in Gisborne \u2014 Te Tair\u0101\
+  whiti."
+theme: crime
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.crime.safety
+claim_ids:
+- claim.gisborne.crime.safety_41

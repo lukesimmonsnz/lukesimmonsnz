@@ -1,0 +1,19 @@
+id: claim.gisborne.housing.rental_quality_05
+statement: Gisborne rental median is ~$450–500/week for 3-bedroom properties (2023
+  tenancy bond data). Median house price is $420–490K, among highest relative-to-income
+  in North Island provincial centres.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.rent_to_income_v1
+notes: null

@@ -1,0 +1,23 @@
+id: claim.otago.inequality.inequality_prevalence
+statement: 'Otago inequality is spatially and demographically distributed: Queenstown
+  extreme (visitor-economy winners vs service-worker losers); Dunedin bifurcated (university-educated
+  affluent vs student/elderly renters in hardship); rural Otago (Clutha, Waitaki,
+  South Otago) experiencing low-wage agricultural/primary sector dominance, limited
+  professional employment. Māori and Pasifika outcomes consistently below European;
+  disability employment barriers significant in rural areas; gender pay gaps persistent
+  in tourism/hospitality (female worker concentration, lower-wage roles).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

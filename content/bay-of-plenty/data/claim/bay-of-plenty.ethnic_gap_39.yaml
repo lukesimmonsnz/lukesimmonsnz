@@ -1,0 +1,20 @@
+id: claim.bay_of_plenty.inequality.ethnic_gap_39
+statement: Median household income in the Bay of Plenty's high-deprivation communities
+  — concentrated in Ōpōtiki, Whakatāne, and parts of Rotorua — is approximately 25-30%
+  below the regional average, reflecting occupational concentration in seasonal horticulture,
+  limited tertiary access, and geographic isolation from higher-wage employment.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

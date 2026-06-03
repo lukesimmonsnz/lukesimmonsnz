@@ -1,0 +1,20 @@
+id: claim.marlborough.health.rural_workforce_1
+statement: 'Rural health workforce (Marlborough and Sounds): GP vacancy rate 15–20%
+  (national 8%); Sounds communities (Havelock, Motueka, Pelorus area) reliant on locum
+  GPs or fortnightly visiting nurses; no full-time GP resident; patient transport
+  by water taxi adds cost.'
+value: 17.5
+unit: percent GP vacancy rate (rural estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

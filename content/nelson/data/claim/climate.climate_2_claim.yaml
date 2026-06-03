@@ -1,0 +1,22 @@
+id: claim.nelson.climate.climate_2_claim
+statement: Nelson region faces elevated climate risk due to geographic exposure and
+  infrastructure vulnerability. Mean temperature increased 1.1°C 2000-2022 relative
+  to 1970-1999 baseline; annual rainfall variability increased 12% over the same period,
+  with intensified summer droughts and extreme weather events becoming more frequent,
+  stressing water, agriculture, and infrastructure systems.
+value: 1.1
+unit: °C
+time_period: 2000-2022
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+- source.nelson_tasman_water_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,20 @@
+id: claim.marlborough.transport.picton_ferry_1
+statement: 'Picton inter-island ferry services: Interislander (KiwiRail, Wellington–Picton
+  approximately 3 hours) and Bluebridge (Strait Shipping, Wellington–Picton approximately
+  3.5 hours); combined capacity 3,600+ sailings per annum (approximately 2,000 Interislander,
+  approximately 1,600 Bluebridge); economic dependency high.'
+value: 3600
+unit: inter-island sailings per annum
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.picton_ferry_services_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

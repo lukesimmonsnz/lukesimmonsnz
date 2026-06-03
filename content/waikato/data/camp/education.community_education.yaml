@@ -1,0 +1,23 @@
+id: camp.waikato.education.community_education
+name: Community and whānau-centred education
+theme: education
+core_claim: Involving whānau and communities in education design improves engagement
+  and attendance for Māori and Pasifika students.
+flagship_moves:
+- Fund community education workers in all high-deprivation Waikato schools
+- Establish whānau education hubs linked to kura and mainstream schools
+- Support marae-based learning programmes for disengaged rangatahi
+tensions:
+- Community approaches require long-term investment before measurable gains
+- Mainstream schools may resist community-led models
+interventions:
+- description: Fund community education workers in all high-deprivation Waikato schools
+  state_variable: ncea_attainment_rate
+  expected_sign: +
+addresses:
+- problem.waikato.education.achievement
+- problem.waikato.education.early_childhood
+- problem.waikato.education.tertiary_pathway
+applicable_in:
+- waikato
+tensions_with: []

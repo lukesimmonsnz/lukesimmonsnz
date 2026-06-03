@@ -1,0 +1,24 @@
+id: claim.west_coast.housing.rental_market_claim
+statement: Post-2021 and 2022 floods, Westport rental stock was depleted as landlords
+  sold or abandoned properties. Rents for remaining units have increased 20-30 percent
+  while quality has declined. Rental affordability crisis emerged for low-income residents
+  and workers. Council emergency accommodation support has been extended multiple
+  times; permanent solutions remain elusive. Rental market recovery is slow due to
+  insurance withdrawal and property insurance cost spikes.
+value: 25
+unit: percent rental increase post-flood (estimated)
+time_period: 2021-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_housing_2024
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.rent_to_income_v1
+notes: Rental market impacts documented in housing market reports and council emergency
+  management briefings.

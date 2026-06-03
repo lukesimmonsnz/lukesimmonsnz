@@ -1,0 +1,34 @@
+id: pattern.economy.agglomeration_deficit
+title: Agglomeration deficit outside the main centres
+theme: economy
+summary: 'New Zealand''s economic geography is highly concentrated in Auckland and
+  Wellington: most regions lack the labour market depth, supply chain density, and
+  knowledge spillovers that enable higher-productivity economic activity.'
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- taranaki
+- nelson
+- tasman
+- marlborough
+- southland
+claim_ids:
+- claim.northland.economy.business_investment_claim1
+- claim.west_coast.economy.economic_2_claim
+- claim.gisborne.economy.economic_fragility_65
+- claim.taranaki.economy.diversification_01
+- claim.nelson.economy.economic_2_claim
+narrative:
+- heading: Agglomeration mechanisms
+  body: 'Firms in larger labour markets benefit from: easier recruitment of specialised
+    workers, proximity to customers and suppliers, knowledge spillovers between co-located
+    firms, and shared infrastructure. These benefits are largely absent outside Auckland
+    and Wellington.'
+- heading: Policy implication
+  body: Regional economic development cannot easily replicate agglomeration effects.
+    Policies that strengthen the Auckland-region connection for smaller centres —
+    transport, digital infrastructure, talent pipelines — may be more effective than
+    trying to build alternative agglomeration from scratch.
+status: draft
+updated: '2026-04-26'

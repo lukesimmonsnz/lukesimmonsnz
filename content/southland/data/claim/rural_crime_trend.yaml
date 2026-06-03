@@ -1,0 +1,20 @@
+id: claim.southland.crime.rural_crime_trend
+statement: Rural crime in Southland is sustained and dispersed. Coordinated regional
+  farm watch schemes (Southland Rural Watch) report steady incident volume; methamphetamine-driven
+  property crime increasing. Police rural liaison resources stretched; detection rates
+  lower in remote districts than urban areas.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

@@ -1,0 +1,11 @@
+id: source.stats_nz_deprivation_2018_mbl
+title: 'NZ Deprivation Index 2018: Marlborough Data'
+author: null
+publisher: Stats NZ
+year: 2018
+url: https://www.stats.govt.nz/tools/nzdeuii
+type: primary-data
+credibility: official
+geo_granularity:
+- marlborough
+notes: Socioeconomic deprivation profiling.

@@ -1,0 +1,17 @@
+id: methodology.water_quality_index_v1
+name: Water Quality Index (WQI)
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: 'Composite index of freshwater quality based on physicochemical and biological
+  parameters including E. coli counts, nitrate concentration, dissolved reactive phosphorus,
+  clarity (visual clarity / turbidity), and macroinvertebrate community index (MCI).
+  Rated on a 0–100 scale: >80 excellent, 60–80 good, 40–60 fair, <40 poor. Used by
+  Auckland Council and MfE for state of environment reporting. P5'' triggers on cross-region
+  WQI comparison claims.
+
+  '
+source_ids: []

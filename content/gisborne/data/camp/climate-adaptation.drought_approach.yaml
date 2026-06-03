@@ -1,0 +1,20 @@
+id: camp.gisborne.climate.drought_approach
+name: Strategic approach for drought
+theme: climate-adaptation
+core_claim: Strategic intervention on drought will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting drought
+- Priority action 2 targeting drought
+- Institutional coordination mechanism for drought
+tensions:
+- 'Tension 1: drought'
+- 'Tension 2: drought'
+addresses:
+- problem.gisborne.climate.drought
+interventions:
+- description: Primary intervention for drought
+  state_variable: drought_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

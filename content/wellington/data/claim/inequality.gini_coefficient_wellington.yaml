@@ -1,0 +1,21 @@
+id: claim.wellington.inequality.gini_coefficient_wellington
+statement: Wellington's income Gini coefficient reflects a widening gap between high-wage
+  professional and government employees and low-wage service workers, with housing
+  cost inflation amplifying net income inequality beyond what gross income figures
+  suggest.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_income_housing_2023
+- source.stats_nz_census_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.gini_coefficient_v1
+notes: null

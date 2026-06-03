@@ -1,0 +1,12 @@
+id: driver.marlborough.climate.sea_level_rise
+name: Sea Level Rise And Coastal Exposure
+description: Sea level rise and coastal exposure with regional implications.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: global
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.crime.family_violence
+claim_ids: []

@@ -1,0 +1,23 @@
+id: camp.waikato.infrastructure.shared_services
+name: Infrastructure shared services and consolidation
+theme: infrastructure
+core_claim: Consolidating infrastructure planning and procurement across Waikato TAs
+  reduces costs and builds capability.
+flagship_moves:
+- Establish Waikato waters shared services entity
+- Develop regional procurement framework for infrastructure contracts
+- Share asset management systems and GIS across all TAs
+tensions:
+- Shared services require institutional change and may reduce local accountability
+- Smaller councils risk losing infrastructure expertise in consolidation
+interventions:
+- description: Establish Waikato waters shared services entity
+  state_variable: infrastructure_condition_index
+  expected_sign: +
+addresses:
+- problem.waikato.infrastructure.three_waters
+- problem.waikato.infrastructure.digital_rural
+- problem.waikato.infrastructure.roading
+applicable_in:
+- waikato
+tensions_with: []

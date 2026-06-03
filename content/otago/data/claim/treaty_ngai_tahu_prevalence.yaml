@@ -1,0 +1,22 @@
+id: claim.otago.governance.treaty_ngai_tahu_prevalence
+statement: Ngāi Tahu / Kāi Tahu are mana whenua across Otago and most of South Island;
+  2013 Ngāi Tahu (Te Ture Whenua) Act ratified major Treaty settlement (largest historical
+  acreage in modern settlements). Te Rūnanga o Ngāi Tahu (statutory authority) manages
+  iwi affairs; Ngāi Tahu Holdings (commercial entity) operates tourism (Milford Sound,
+  Dart River), farming, forestry, and real estate (~$3B+ portfolio). Co-governance
+  agreements emerging in resource management, health, education.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

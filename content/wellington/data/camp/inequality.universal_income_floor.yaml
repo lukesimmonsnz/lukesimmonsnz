@@ -1,0 +1,22 @@
+id: camp.wellington.inequality.universal_income_floor
+name: Strengthened Income Floor and Benefit Adequacy
+theme: inequality
+core_claim: Child poverty in Wellington is primarily driven by inadequate benefit levels; raising the income floor directly
+  reduces deprivation faster than service investment.
+flagship_moves:
+- Raise main benefit rates by 15% above CPI indexation
+- Extend Working for Families eligibility to beneficiary families
+- Expand Best Start payments to all children for first 3 years
+tensions:
+- Benefit increases require fiscal headroom conflicting with 2024 consolidation direction
+- Critics argue income transfers without services do not address root causes of poverty
+addresses:
+- problem.wellington.inequality.child_poverty
+- problem.wellington.inequality.economic_disadvantage
+interventions:
+- description: Index Jobseeker and Sole Parent Support benefits to 50% of median household income
+  state_variable: child_poverty_after_housing_costs
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

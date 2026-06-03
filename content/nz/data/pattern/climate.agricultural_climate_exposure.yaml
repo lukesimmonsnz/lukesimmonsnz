@@ -1,0 +1,34 @@
+id: pattern.climate.agricultural_climate_exposure
+title: Agricultural sector climate exposure and adaptation pressure
+theme: climate-adaptation
+summary: New Zealand's primary sector faces intensifying climate exposure through
+  drought, flood, and temperature change that threatens production systems, water
+  availability, and farm viability across all primary-dominated regions.
+manifests_in:
+- waikato
+- northland
+- hawkes-bay
+- gisborne
+- canterbury
+- southland
+- taranaki
+- marlborough
+claim_ids:
+- claim.waikato.climate.agri_emissions_45pct_regional
+- claim.northland.climate.coastal_flooding_claim1
+- claim.hawkes_bay.housing.cyclone_damage_extent
+- claim.southland.climate.climate_risk_prevalence
+- claim.gisborne.climate.climate_vulnerability_81
+narrative:
+- heading: Exposure profile
+  body: Pastoral farming in Canterbury and Southland faces increasing drought frequency.
+    Horticulture in Hawke's Bay and Gisborne faces cyclone and flood risk. Dairy in
+    Waikato faces both drought and water allocation pressure. Each primary sector
+    has a distinct but intensifying climate exposure profile.
+- heading: Adaptation pathway
+  body: Farm-level adaptation — irrigation efficiency, crop diversification, soil
+    carbon, insurance — can manage some risk, but the upper bound of adaptation without
+    transformation is below the projected climate trajectory. Systemic farm system
+    change — including emissions pricing — is necessary for long-run sector viability.
+status: draft
+updated: '2026-04-26'

@@ -1,20 +1,20 @@
 id: claim.auckland.climate.insurance_withdrawal_risk
-statement: >
-  New Zealand insurers are beginning to price climate risk into
-  premiums in Auckland's highest-exposure areas; projections suggest
-  that 10-15% of Auckland properties currently insured may face
-  insurance withdrawal or prohibitive premium increases by 2050,
-  creating a future uninsurable housing stock in flood and coastal
+statement: 'New Zealand insurers are beginning to price climate risk into premiums
+  in Auckland''s highest-exposure areas; projections suggest that 10-15% of Auckland
+  properties currently insured may face insurance withdrawal or prohibitive premium
+  increases by 2050, creating a future uninsurable housing stock in flood and coastal
   risk zones.
+
+  '
 value: null
 unit: null
-time_period: "2023-2050"
+time_period: 2023-2050
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.niwa_climate_auckland_2023
+- source.niwa_climate_auckland_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

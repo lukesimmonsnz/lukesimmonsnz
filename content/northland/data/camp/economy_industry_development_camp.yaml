@@ -1,0 +1,25 @@
+id: camp.northland.economy.industry_development_camp
+name: Targeted industry development and regional deals
+theme: economy
+core_claim: Crown-facilitated regional economic development deals can build clusters
+  in high-potential sectors.
+flagship_moves:
+- Negotiate a Northland Regional Deal covering infrastructure and industry
+- Invest in Marsden Point and Port Whangārei logistics capacity
+- Support aquaculture and horticulture sector expansion programmes
+tensions:
+- Regional deals require sustained Crown commitment across electoral cycles
+- Industry development subsidies may distort factor markets
+- Benefits may accrue to external capital rather than local workers
+interventions:
+- description: Negotiate a Northland Regional Deal covering infrastructure and industry
+  state_variable: economy_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.economy.northland_economic_underperformance
+- problem.northland.economy.low_wages
+- problem.northland.economy.tourism_dependence
+- problem.northland.economy.business_investment
+applicable_in:
+- northland
+tensions_with: []

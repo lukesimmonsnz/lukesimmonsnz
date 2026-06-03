@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.transport.shared_mobility
+name: Shared Mobility Services
+theme: transport
+core_claim: Car-sharing and ride-sharing networks.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

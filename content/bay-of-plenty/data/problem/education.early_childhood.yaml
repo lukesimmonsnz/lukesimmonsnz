@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.education.early_childhood
+title: Early childhood education participation and quality in Bay of Plenty — Te Moana-a-Toi
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.bay_of_plenty.education.achievement
+order: 30
+updated: '2026-04-26'
+summary: Early childhood education participation and quality is a sub-dimension of
+  the regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - early_childhood_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Early childhood education participation and quality is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.education.early_childhood_59
+- claim.bay_of_plenty.education.early_childhood_60
+status: draft
+time_horizons: [decade, generation]

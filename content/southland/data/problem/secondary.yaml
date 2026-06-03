@@ -1,0 +1,34 @@
+id: problem.southland.education.secondary
+title: Secondary School Achievement
+theme: education
+section: education
+subpage: secondary
+parent: problem.southland.education.achievement
+order: 3
+updated: '2026-04-26'
+summary: NCEA pass rates below national average; stand-down/suspension rates elevated;
+  pastoral support systems limited; subject choices narrow in smaller schools.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: NCEA pass rates below national average; stand-down/suspension rates elevated;
+    pastoral support systems limited; subject choices narrow in smaller schools.
+claim_ids:
+- claim.southland.education.early_childhood_prevalence
+- claim.southland.education.tertiary_access_prevalence
+- claim.southland.education.tertiary_access_trend
+- claim.southland.education.achievement_prevalence
+- claim.southland.education.achievement_trend
+- claim.southland.education.early_childhood_trend
+- claim.southland.education.secondary_trend
+- claim.southland.education.secondary_prevalence
+status: draft
+time_horizons: [decade, generation]

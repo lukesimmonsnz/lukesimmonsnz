@@ -1,0 +1,82 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Search{% endblock %}
+{% set active = 'search' %}
+{% set crumbs = [{'label': 'Search'}] %}
+
+{% block extra_css %}
+.search-bar { display: flex; gap: 12px; margin-bottom: 24px; align-items: center; }
+.search-bar input { flex: 1; max-width: 480px; padding: 10px 14px; font-size: 14px; }
+.search-results .page-block { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 6px; padding: 14px 18px; margin-bottom: 12px; }
+.search-results .page-h { display: flex; align-items: baseline; gap: 12px; margin-bottom: 8px; }
+.search-results .page-h a { font-weight: 500; color: #1a1613; font-size: 14px; }
+.search-results .page-h .count { color: #8a7a66; font-size: 12px; }
+.search-results .match { padding: 4px 0; font-family: ui-monospace, monospace; font-size: 12px; color: #4b3f30; border-top: 0.5px dashed #ece5d4; padding-top: 6px; margin-top: 6px; }
+.search-results .match .ln { color: #8a7a66; margin-right: 8px; }
+.search-results .match mark { background: #fdf4e8; color: #8a5a2a; padding: 1px 3px; border-radius: 2px; }
+.replace-bar { background: #fff; border: 0.5px solid #d9d0bf; border-radius: 6px; padding: 14px 18px; margin-bottom: 18px; display: flex; gap: 10px; align-items: center; }
+.replace-bar input { flex: 1; }
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">Search</h1>
+<p class="page-sub">Find and replace across editable surfaces (657 sources). Replacements create drafts — no direct disk write.</p>
+
+<form class="search-bar" method="get">
+  <input type="search" name="q" value="{{ q }}" placeholder="Search content…" autofocus>
+  <label style="font-size:12px;display:flex;align-items:center;gap:6px;">
+    <input type="checkbox" name="whole_word" value="1" {% if whole_word %}checked{% endif %}> Whole word
+  </label>
+  <button class="btn btn-primary" type="submit">Search</button>
+</form>
+
+{% if q %}
+{% if matches %}
+<div class="replace-bar">
+  <input type="text" id="replace-with" placeholder="Replace with…">
+  <button class="btn btn-secondary" id="btn-replace">Replace in {{ total_pages }} page{{ '' if total_pages == 1 else 's' }}</button>
+  <span style="font-size:11px;color:#8a7a66;">→ creates drafts</span>
+</div>
+
+<p class="page-sub" style="margin-top:0;">{{ total_matches }} match{{ '' if total_matches == 1 else 'es' }} across {{ total_pages }} page{{ '' if total_pages == 1 else 's' }}.</p>
+
+<div class="search-results">
+  {% for page_id, page_matches in by_page.items() %}
+  <div class="page-block">
+    <div class="page-h">
+      <a href="{{ url_for('cms.edit', id=page_id) }}">{{ page_id }}</a>
+      <span class="count">{{ page_matches|length }} match{{ '' if page_matches|length == 1 else 'es' }}</span>
+    </div>
+    {% for m in page_matches[:5] %}
+    <div class="match">
+      <span class="ln">L{{ m.line_no }}</span>{{ m.line }}
+    </div>
+    {% endfor %}
+    {% if page_matches|length > 5 %}<div style="color:#8a7a66;font-size:11px;margin-top:6px;">+ {{ page_matches|length - 5 }} more</div>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div style="text-align:center;padding:60px 20px;color:#8a7a66;">No matches for <code>{{ q }}</code></div>
+{% endif %}
+{% else %}
+<div style="text-align:center;padding:60px 20px;color:#8a7a66;">Enter a search term above.</div>
+{% endif %}
+
+<script>
+var Q = {{ q|tojson }};
+var WW = {{ (whole_word|default(true))|tojson }};
+var PAGE_IDS = {{ by_page.keys()|list|tojson if by_page else '[]' }};
+var btn = document.getElementById('btn-replace');
+if (btn) btn.addEventListener('click', function(){
+  var rep = document.getElementById('replace-with').value;
+  if (!confirm('Replace "' + Q + '" with "' + rep + '" across ' + PAGE_IDS.length + ' pages? Creates drafts; nothing publishes.')) return;
+  fetch({{ url_for('cms.api_search_replace')|tojson }}, {
+    method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({find: Q, replace: rep, page_ids: PAGE_IDS, whole_word: WW})
+  }).then(function(r){ return r.json(); }).then(function(j){
+    if (j.ok) window.toast('Created ' + j.drafts_created + ' drafts');
+    else window.toast('Replace failed: ' + (j.error || 'unknown'));
+  });
+});
+</script>
+{% endblock %}

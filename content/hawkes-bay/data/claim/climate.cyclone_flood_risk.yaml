@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.climate.flood_damage_2_3_billion
+statement: Cyclone Gabrielle (February 2023) caused estimated flood damage of $3-5
+  billion to Hawke's Bay — the largest civil defence emergency in New Zealand history
+  — devastating Wairoa, Heretaunga Plains, Napier, and rural orchards. The event exposed
+  critical gaps in surface water management and accelerated watershed-scale stormwater
+  infrastructure planning across the region.
+value: 4000
+unit: NZD millions (Hawke's Bay regional estimate, midpoint)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: National Cyclone Gabrielle damage estimate ~$9B; Hawke's Bay regional share
+  approximately $3-5B. Do not conflate regional and national totals.

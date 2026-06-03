@@ -1,0 +1,15 @@
+id: driver.tasman.housing.driver_2
+name: Infrastructure-constrained land absorption
+description: Three-waters capacity, stormwater limits, heritage overlays, and the cost of greenfield infrastructure
+  provision keep dwelling-completion rates well below what zoning alone would suggest, sustaining tight rental markets
+  and high section prices.
+theme: housing
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.tasman.housing.affordability
+- problem.tasman.housing.rental_market
+- problem.tasman.housing.infrastructure_cost
+claim_ids: []

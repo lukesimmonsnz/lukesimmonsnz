@@ -1,0 +1,22 @@
+id: claim.waikato.governance.co_governance_capacity
+statement: 'Waikato-Tainui co-governance through the Waikato River Authority represents
+  a nationally significant model: 50% Waikato Regional Council and 50% Waikato-Tainui
+  under the 2010 Settlement Act. However, WRA budget constraints and staffing gaps
+  limit implementation of comprehensive river management and cultural restoration.
+  Te Awa Tupua (Whanganui River personhood) precedent was not applied to Waikato despite
+  iwi advocacy.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_tainui_environment_report_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato maori_co_governance claim

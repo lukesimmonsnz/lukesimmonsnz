@@ -1,0 +1,35 @@
+id: problem.waikato.inequality.ethnic_gap
+title: Ethnic income and wealth gap
+theme: inequality
+section: inequality
+subpage: ethnic_gap
+parent: problem.waikato.inequality.waikato_inequality
+order: 3
+updated: '2026-04-26'
+summary: Waikato has a significant income inequality gap; median household income in high-deprivation
+  communities is approximately 30% below the regional average. This reflects structural occupational concentration,
+  limited tertiary access in rural areas, and the downstream effects of exclusion from property wealth
+  accumulation over the post-war growth period.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gini_coefficient
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing ethnic gap creates feedback on regional outcomes.
+narrative:
+- heading: Income and wealth disparities in Waikato
+  body: Waikato's labour market produces significant income stratification; workers in Hamilton's professional
+    and management sectors earn substantially more than those in South Waikato's processing, agricultural, and logistics roles.
+    A 30% median income gap between lower-wage and higher-wage occupational clusters compounds with geographic factors in
+    Huntly and Tokoroa, where post-industrial unemployment persists. Māori workers are disproportionately concentrated
+    in these lower-wage geographies and occupations.
+claim_ids:
+- claim.waikato.inequality.maori_income_gap_30pct
+status: draft
+time_horizons: [decade, generation, century]

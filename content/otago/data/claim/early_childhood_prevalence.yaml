@@ -1,0 +1,22 @@
+id: claim.otago.education.early_childhood_prevalence
+statement: 'Early childhood education (ECE) access in Otago is mixed: Dunedin (high
+  student population) has dense ECE networks; Queenstown / Central Otago growth areas
+  (Cromwell, Wanaka) facing capacity shortages; rural areas (Oamaru, Balclutha) limited
+  provider diversity. Aotearoa Education Outcomes Framework targets (80% 3-4 year
+  participation) not uniformly met; cost barriers in rural/tourist-economy areas where
+  parents juggle multiple part-time roles.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

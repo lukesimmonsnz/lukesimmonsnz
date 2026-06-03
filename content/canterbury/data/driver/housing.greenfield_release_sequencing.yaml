@@ -1,0 +1,12 @@
+id: driver.canterbury.housing.greenfield_release_sequencing
+name: Greenfield Release Planning & Sequencing
+description: Greenfield Release Planning & Sequencing
+theme: housing
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.housing.selwyn_waimakariri_growth
+claim_ids:
+- claim.canterbury.housing.waimakariri_growth_rate_2023

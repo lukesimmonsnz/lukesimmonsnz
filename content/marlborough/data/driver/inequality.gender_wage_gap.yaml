@@ -1,0 +1,12 @@
+id: driver.marlborough.inequality.gender_wage_gap
+name: Gender Wage And Income Inequality
+description: Gender wage and income inequality.
+theme: inequality
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.connectivity
+claim_ids: []

@@ -1,0 +1,14 @@
+id: driver.wellington.climate.legacy_stormwater_design_standard
+name: Legacy stormwater design standard gap
+description: Wellington's urban stormwater infrastructure was designed to rainfall intensity standards based on historical
+  records that no longer reflect the changed climate, creating a growing structural gap between design capacity and actual
+  event intensity.
+theme: climate-adaptation
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.climate.flood_resilience
+claim_ids:
+- claim.wellington.climate.stormwater_infrastructure_capacity

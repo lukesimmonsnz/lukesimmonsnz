@@ -1,0 +1,14 @@
+id: driver.wellington.transport.geographic_corridor_constraint
+name: Geographic single-corridor constraint
+description: Wellington's harbour and steep hills constrain all major transport routes to a narrow coastal strip, creating
+  inherent structural fragility that cannot be fully resolved by investment — only partially mitigated by redundancy investment.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.wellington.transport.network_resilience
+- problem.wellington.transport.highway_bottleneck
+claim_ids:
+- claim.wellington.transport.network_single_corridor_risk

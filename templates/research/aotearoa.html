@@ -1,0 +1,118 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Aotearoa Research · Systems analysis of New Zealand · Luke Simmons{% endblock %}
+{% block meta_description %}A long-horizon systems analysis of New Zealand's regional and national problems — housing, transport, environment, inequality, crime, health, education, economy, governance, climate. Covers all 16 regions plus a national pattern rollup.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Aotearoa Research', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Aotearoa New Zealand</span>
+    <h1>Systems analysis of New Zealand</h1>
+    <hr class="rule">
+    <p class="lede">
+      A long-horizon, systems-engineering analysis of New Zealand&rsquo;s
+      regional and national problems &mdash; housing, transport, environment,
+      inequality, and more. Every claim is traceable to a source via a
+      lint-gated typed entity graph. Covers all 16 regions plus a national
+      cross-regional pattern rollup.
+    </p>
+  </header>
+
+  <section>
+    <div class="card-grid">
+      <a class="card" href="{{ url_for('nz.index') }}">
+        <div class="meta">National &middot; Pattern rollup</div>
+        <h3>Aotearoa &mdash; national patterns</h3>
+        <p>Cross-regional patterns observed across two or more regions. A synthesis of the regional corpora.</p>
+      </a>
+      <a class="card" href="{{ url_for('auckland.index') }}">
+        <div class="meta">Region &middot; Auckland</div>
+        <h3>Auckland &mdash; Tāmaki Makaurau</h3>
+        <p>Housing, transport, infrastructure, and environment in New Zealand&rsquo;s largest city.</p>
+      </a>
+      <a class="card" href="{{ url_for('wellington.index') }}">
+        <div class="meta">Region &middot; Wellington</div>
+        <h3>Wellington &mdash; Te Whanganui-a-Tara</h3>
+        <p>Housing, transport, earthquake resilience, and governance in the capital region.</p>
+      </a>
+      <a class="card" href="{{ url_for('northland.index') }}">
+        <div class="meta">Region &middot; Northland</div>
+        <h3>Northland &mdash; Te Tai Tokerau</h3>
+        <p>Transport isolation, Māori socioeconomic disparity, environment, and rural infrastructure.</p>
+      </a>
+      <a class="card" href="{{ url_for('waikato.index') }}">
+        <div class="meta">Region &middot; Waikato</div>
+        <h3>Waikato</h3>
+        <p>Hamilton growth, Waikato River, Waikato-Tainui economic development, and agricultural land use.</p>
+      </a>
+      <a class="card" href="{{ url_for('bay-of-plenty.index') }}">
+        <div class="meta">Region &middot; Bay of Plenty</div>
+        <h3>Bay of Plenty &mdash; Te Moana-a-Toi</h3>
+        <p>Tauranga growth pressures, Māori land and iwi development, horticulture, and coastal risk.</p>
+      </a>
+      <a class="card" href="{{ url_for('gisborne.index') }}">
+        <div class="meta">Region &middot; Gisborne</div>
+        <h3>Gisborne &mdash; Tairāwhiti</h3>
+        <p>Cyclone and flood vulnerability, rural isolation, Māori land economy, and forestry risks.</p>
+      </a>
+      <a class="card" href="{{ url_for('hawkes-bay.index') }}">
+        <div class="meta">Region &middot; Hawke&rsquo;s Bay</div>
+        <h3>Hawke&rsquo;s Bay &mdash; Te Matau-a-Māui</h3>
+        <p>Cyclone Gabrielle recovery, horticulture, freshwater, and earthquake risk.</p>
+      </a>
+      <a class="card" href="{{ url_for('taranaki.index') }}">
+        <div class="meta">Region &middot; Taranaki</div>
+        <h3>Taranaki</h3>
+        <p>Energy transition from fossil fuels, volcanic risk, Māori land and Treaty, and agricultural intensity.</p>
+      </a>
+      <a class="card" href="{{ url_for('manawatu-whanganui.index') }}">
+        <div class="meta">Region &middot; Manawatū-Whanganui</div>
+        <h3>Manawatū-Whanganui &mdash; Te Manawa o te Ika</h3>
+        <p>Palmerston North as a regional hub, rural economy, river management, and military land use.</p>
+      </a>
+      <a class="card" href="{{ url_for('nelson.index') }}">
+        <div class="meta">Region &middot; Nelson</div>
+        <h3>Nelson &mdash; Whakatū</h3>
+        <p>Housing affordability in a desirable city, aquaculture, and water allocation.</p>
+      </a>
+      <a class="card" href="{{ url_for('tasman.index') }}">
+        <div class="meta">Region &middot; Tasman</div>
+        <h3>Tasman &mdash; Te Tai-o-Aorere</h3>
+        <p>Lifestyle migration pressures, horticulture, forestry, and coastal environment.</p>
+      </a>
+      <a class="card" href="{{ url_for('marlborough.index') }}">
+        <div class="meta">Region &middot; Marlborough</div>
+        <h3>Marlborough &mdash; Te Tauihu-o-te-Waka</h3>
+        <p>Wine industry dominance, water allocation, earthquake risk, and ferry corridor.</p>
+      </a>
+      <a class="card" href="{{ url_for('west-coast.index') }}">
+        <div class="meta">Region &middot; West Coast</div>
+        <h3>West Coast &mdash; Te Tai Poutini</h3>
+        <p>Population decline, mining transition, conservation economy, and road resilience.</p>
+      </a>
+      <a class="card" href="{{ url_for('canterbury.index') }}">
+        <div class="meta">Region &middot; Canterbury</div>
+        <h3>Canterbury &mdash; Waitaha</h3>
+        <p>Christchurch post-earthquake recovery, irrigation and water, and South Island economic weight.</p>
+      </a>
+      <a class="card" href="{{ url_for('otago.index') }}">
+        <div class="meta">Region &middot; Otago</div>
+        <h3>Otago</h3>
+        <p>Dunedin as a university city, Queenstown tourism pressures, water, and rural economy.</p>
+      </a>
+      <a class="card" href="{{ url_for('southland.index') }}">
+        <div class="meta">Region &middot; Southland &mdash; Murihiku</div>
+        <h3>Southland &mdash; Murihiku</h3>
+        <p>Industrial transition at Tiwai Point, population retention, farming, and climate exposure.</p>
+      </a>
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+id: camp.otago.education.equity_support
+name: Educational Equity and Support Systems
+theme: education
+core_claim: Targeted support for disadvantaged students improves educational achievement.
+flagship_moves:
+- School-level support systems (counselors, learning aids)
+- Disadvantaged student targeting and funding
+- Community and family engagement
+tensions:
+- School capacity and funding
+- Targeting and fairness debates
+addresses:
+- problem.otago.education.achievement
+interventions:
+- description: Implement equity-focused school support system
+  state_variable: educational_equity
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

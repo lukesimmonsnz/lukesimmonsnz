@@ -1,0 +1,20 @@
+id: claim.waikato.climate.waikato_climate_root
+statement: 'Waikato faces multiple compounded climate risks: increased flood frequency
+  in the river floodplain (Hamilton urban exposure), intensified drought affecting
+  irrigation-dependent dairying, and intensified agricultural emissions from the sector
+  representing 30% of NZ''s dairy output.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_waikato_climate_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato climate

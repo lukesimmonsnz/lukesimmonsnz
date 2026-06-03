@@ -1,0 +1,26 @@
+id: claim.manawatu_whanganui.transport.regional_roading_2
+statement: Rural road safety in Manawatū-Whanganui reflects risk factors including
+  high speeds, poor visibility (curves, weather), limited passing lanes, and driver
+  fatigue (long commutes). SH3 (Ohakune to Waiouru section), SH1 (Rangitikei section),
+  and Tararua rural roads experience elevated crash rates. Māori and rural community
+  death rates from transport accidents are significantly elevated; approximately 18-22%
+  of regional transport fatalities involve Māori, despite representing approx. 10-12%
+  of regional population. Speed management, road maintenance, and driver education
+  initiatives (Vision Zero programs) are underway but underfunded relative to scale
+  of problem. Terrain and weather (alpine passes, winter snow/ice) make some routes
+  inherently high-risk.
+value: 20
+unit: percent_fatalities_maori
+time_period: 2020-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_transport_mw_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.mode_share_v1
+notes: null

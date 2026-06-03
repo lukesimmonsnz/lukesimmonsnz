@@ -1,0 +1,12 @@
+id: driver.southland.economy.dairy_commodity_exposure
+name: Dairy Sector Commodity Price Exposure
+description: Southland dairy cash margin compressed; milk price volatile; input costs
+  rising.
+theme: economy
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.southland.economy.agri_commodity
+claim_ids: []

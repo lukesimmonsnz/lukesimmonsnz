@@ -1,0 +1,12 @@
+id: driver.marlborough.health.primary_care_access
+name: Primary Care Access And Retention Gaps
+description: Primary care access and retention gaps with regional implications.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.housing.worker_accommodation
+claim_ids: []

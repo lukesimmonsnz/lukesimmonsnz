@@ -1,0 +1,20 @@
+id: claim.canterbury.governance.cwms_compliance_rate_2023
+statement: Governance structures in Canterbury are fragmented across multiple councils
+  and agencies, creating coordination challenges. Limited council capacity constrains
+  strategic planning, infrastructure delivery, and climate adaptation; funding gaps
+  prevent implementation of identified priorities.
+value: 85
+unit: percent compliance
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_cwms_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

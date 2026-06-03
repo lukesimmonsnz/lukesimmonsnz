@@ -1,0 +1,21 @@
+id: camp.marlborough.crime.trauma_informed_justice
+name: Trauma-Informed Justice System
+theme: crime
+core_claim: Therapeutic approach to offending and response.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.economy.aquaculture
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

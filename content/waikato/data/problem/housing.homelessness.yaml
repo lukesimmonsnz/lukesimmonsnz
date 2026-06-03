@@ -1,0 +1,24 @@
+id: 'problem.waikato.housing.homelessness'
+title: 'Waikato: homelessness and housing stress'
+theme: 'housing'
+section: 'housing'
+subpage: 'homelessness'
+parent: 'problem.waikato.housing.affordability'
+order: 5
+updated: '2026-04-26'
+summary: 'Extreme housing stress manifests in emergency need.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Extreme housing stress manifests in emergency need.'
+claim_ids:
+- 'claim.waikato.housing.homelessness_claim1'
+- 'claim.waikato.housing.homelessness_claim2'
+status: 'draft'

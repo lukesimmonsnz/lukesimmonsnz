@@ -1,0 +1,23 @@
+id: claim.west_coast.environment.marine_ecosystem_claim
+statement: West Coast marine ecosystems (Tasman Sea and fiordland approaches) support
+  demersal fish stocks, crayfish, and shellfish harvesting. Overfishing pressure and
+  warming ocean temperatures are reducing catch-per-unit-effort in traditional fishing
+  grounds. Marine protected area coverage remains limited. Māori customary harvest
+  rights and commercial fishing coexist with variable compliance and equity outcomes.
+value: null
+unit: null
+time_period: 2005-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ngai_tahu_poutini_partnership_2023
+- source.doc_westland_glacier_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Stock assessment data from fisheries literature; Māori customary rights from
+  Ngāi Tahu Poutini co-governance framework.

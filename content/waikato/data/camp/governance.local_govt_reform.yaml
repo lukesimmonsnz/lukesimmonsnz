@@ -1,0 +1,20 @@
+id: camp.waikato.governance.local_govt_reform
+name: Local government coordination reform
+theme: governance
+core_claim: Local government coordination reform is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement local government coordination reform
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

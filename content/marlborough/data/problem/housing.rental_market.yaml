@@ -1,0 +1,31 @@
+id: problem.marlborough.housing.rental_market
+title: Seasonal Worker Rental Market and Conditions
+theme: housing
+section: housing
+subpage: rental_market
+parent: problem.marlborough.housing.housing_market
+order: 1
+updated: '2026-04-26'
+summary: RSE workers concentrated in poor-quality rental housing; temporary accommodation
+  constraints.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: RSE workers concentrated in poor-quality rental housing; temporary accommodation
+    constraints.
+claim_ids:
+- claim.marlborough.housing.rental_market_1
+- claim.marlborough.housing.rental_market_2
+status: draft
+time_horizons: [decade, generation, century]

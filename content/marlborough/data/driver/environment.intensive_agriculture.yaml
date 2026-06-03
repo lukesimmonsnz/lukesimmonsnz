@@ -1,0 +1,12 @@
+id: driver.marlborough.environment.intensive_agriculture
+name: Intensive Agricultural Land Use
+description: Intensive agricultural land use with regional implications.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.governance.treaty
+claim_ids: []

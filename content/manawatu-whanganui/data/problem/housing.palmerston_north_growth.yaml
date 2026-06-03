@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.housing.palmerston_north_growth
+title: Palmerston North Urban Growth and Intensification
+theme: housing
+section: housing
+subpage: palmerston_north_growth
+parent: problem.manawatu_whanganui.housing.housing_market
+order: 1
+updated: '2026-04-26'
+summary: Rapid urban growth in Palmerston North as logistics and education hub; intensification
+  pressure on infrastructure.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Rapid urban growth in Palmerston North as logistics and education hub; intensification
+    pressure on infrastructure.
+claim_ids:
+- claim.manawatu_whanganui.housing.palmerston_north_growth_1
+- claim.manawatu_whanganui.housing.palmerston_north_growth_2
+status: draft
+time_horizons: [decade, generation, century]

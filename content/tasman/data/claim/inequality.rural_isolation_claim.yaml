@@ -1,0 +1,22 @@
+id: claim.tasman.inequality.rural_isolation_claim
+statement: Golden Bay is geographically isolated, accessible only via SH60 over Takaka
+  Hill (45-minute drive to nearest supermarket in Motueka). Population 3,200; limited
+  services (one medical practice, one secondary school, no tertiary). Rental/purchase
+  prices lower than Richmond but incomes average 12% below regional median, creating
+  relative poverty despite lower housing costs.
+value: 45
+unit: minutes to nearest supermarket
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_housing_demand_2024
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

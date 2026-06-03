@@ -1,0 +1,21 @@
+id: claim.marlborough.housing.rental_market_2
+statement: 'Long-term rental shortage in Marlborough: investor property ownership
+  concentrated in Blenheim CBD and holiday home hotspots (Queen Charlotte Sound, Pelorus);
+  private landlords increasingly conversion-focused (short-term holiday lets); community
+  opposition to short-term rental bylaws (Picton 2023 survey).'
+value: null
+unit: null
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mbl
+- source.marlborough_council_ltc_2024
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

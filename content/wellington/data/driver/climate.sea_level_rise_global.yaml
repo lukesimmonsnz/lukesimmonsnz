@@ -1,0 +1,14 @@
+id: driver.wellington.climate.sea_level_rise_global
+name: Global sea-level rise from climate change
+description: Global mean sea-level rise driven by thermal expansion and ice melt will raise Wellington harbour baseline, accelerating
+  coastal flood frequency even without storm-surge amplification, and permanently inundating some near-coast land over the
+  century.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: global
+problem_ids:
+- problem.wellington.climate.sea_level_rise
+claim_ids:
+- claim.wellington.climate.sea_level_projection_petone

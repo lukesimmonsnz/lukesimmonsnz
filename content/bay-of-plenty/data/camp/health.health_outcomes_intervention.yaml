@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.health.health_outcomes_intervention
+name: Intervention for health_outcomes
+theme: health
+core_claim: Targeted intervention on health_outcomes will improve outcomes.
+flagship_moves:
+- Policy measure 1 for health_outcomes
+- Policy measure 2 for health_outcomes
+- Implementation mechanism for health_outcomes
+tensions:
+- Trade-off A for health_outcomes
+- Trade-off B for health_outcomes
+addresses:
+- problem.bay_of_plenty.health.health_outcomes
+interventions:
+- description: Core intervention targeting health_outcomes
+  state_variable: health_outcomes_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

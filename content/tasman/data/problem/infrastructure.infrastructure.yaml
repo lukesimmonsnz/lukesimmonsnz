@@ -1,0 +1,41 @@
+id: problem.tasman.infrastructure.infrastructure
+title: Aging three-waters network entering reform
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Roughly 38 percent of Tasman's three-waters pipe assets are beyond their nominal design life. National
+  three-waters reform requires regional aggregation by 2026; Tasman District Council is consolidating with Nelson
+  City and Marlborough District Council to form Te Hoiere Three Waters Entity, serving around 350,000 residents.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - share_pipes_beyond_design_life
+  - annual_renewal_capex
+  inputs:
+  - te_hoiere_entity_borrowing_capacity
+  - asset_management_data_quality
+  constraints:
+  - rates_affordability_ceiling
+  - construction_workforce_capacity
+  feedback_loops:
+  - Deferred renewals raise per-incident cost (mains failures, contamination events), which diverts budget away
+    from planned renewals.
+narrative:
+- heading: An asset base older than the institutions running it
+  body: Much of Tasman's reticulated water and wastewater pipe network was laid in the 1960s-1980s and is now at
+    or beyond its design life. The renewal backlog is the starting condition that any post-reform entity inherits
+    (claim.tasman.infrastructure.infrastructure_claim).
+- heading: Reform changes accountability, not the pipes
+  body: Aggregation across Tasman, Nelson and Marlborough lifts borrowing capacity and specialist-staffing depth,
+    but does not by itself replace any pipe. The substantive renewal programme still has to be priced, funded, and
+    sequenced against growth demands.
+claim_ids:
+- claim.tasman.infrastructure.infrastructure_claim
+status: draft
+time_horizons:
+- decade
+- generation

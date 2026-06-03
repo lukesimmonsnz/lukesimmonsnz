@@ -1,21 +1,22 @@
 id: claim.auckland.education.attendance_crisis
-statement: >
-  Post-COVID school attendance in Auckland has not recovered to pre-2020
-  levels; approximately 40% of Auckland students are persistently
-  absent (missing more than 20% of school days), with highest rates
-  in South and West Auckland. Persistent absence is the strongest
-  in-school predictor of NCEA non-attainment and youth justice contact.
+statement: 'Post-COVID school attendance in Auckland has not recovered to pre-2020
+  levels; approximately 40% of Auckland students are persistently absent (missing
+  more than 20% of school days), with highest rates in South and West Auckland. Persistent
+  absence is the strongest in-school predictor of NCEA non-attainment and youth justice
+  contact.
+
+  '
 value: 40
-unit: "percent persistently absent"
-time_period: "2022-2023"
+unit: percent persistently absent
+time_period: 2022-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.moe_school_performance_2023
+- source.moe_school_performance_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.ncea_attainment_rate_v1

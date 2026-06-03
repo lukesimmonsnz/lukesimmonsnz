@@ -1,0 +1,23 @@
+id: claim.wellington.education.ncea_l2_maori_gap
+statement: NCEA Level 2 attainment in Wellington shows a pronounced school-deprivation
+  gradient. Students in low-decile schools in high-deprivation areas (particularly
+  Porirua, Hutt Valley, and Wainuiomata) achieve Level 2 at lower rates than those
+  in higher-decile catchments. This reflects unequal school funding, higher teacher
+  turnover in disadvantaged schools, and concentration of students from low-income
+  families who face barriers to completion. Māori students are concentrated in low-decile
+  schools and thus experience these completion gaps at disproportionate rates.
+value: 74
+unit: percent NCEA Level 2 attainment (Māori)
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_wellington_achievement_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: European NCEA L2 rate approximately 90% Wellington region. Gap of ~16pp.

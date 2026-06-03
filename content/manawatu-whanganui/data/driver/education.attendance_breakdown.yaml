@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.education.attendance_breakdown
+name: School Attendance Breakdown And Disengagement
+description: School attendance breakdown and disengagement. This driver operates at
+  regional scale with mostly-agreed consensus.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.environment.wetland_loss
+claim_ids: []

@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.environment.soil_erosion_1
+statement: Soil erosion in Manawatū-Whanganui affects approximately 15-18% of productive
+  farmland, particularly in hill-country areas (Tararua, Ruapehu, Rangitikei). Intensive
+  dairy grazing, winter pugging (animal hoof damage), and deforestation of native
+  bush have accelerated erosion and sediment loss. Eroded soil reduces farm productivity
+  and contributes to river siltation. Conservation regimes (contour planting, riparian
+  buffers) are adopted by approx. 25-30% of affected farmers.
+value: 16.5
+unit: percent_farmland_affected
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.horizons_data_services_2024
+- source.horizons_one_plan_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

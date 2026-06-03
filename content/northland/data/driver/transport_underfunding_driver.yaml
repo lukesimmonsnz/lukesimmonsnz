@@ -1,0 +1,16 @@
+id: driver.northland.transport.underfunding_driver
+name: Chronic transport infrastructure underfunding
+description: Northland receives per-capita transport investment below the national
+  average, reflecting low political weight relative to need.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.transport.northland_transport_isolation
+- problem.northland.transport.rural_road_quality
+- problem.northland.transport.public_transport_gap
+- problem.northland.transport.freight_connectivity
+claim_ids:
+- claim.northland.transport.northland_transport_isolation_claim1

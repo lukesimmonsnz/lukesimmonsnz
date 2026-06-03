@@ -1,0 +1,28 @@
+id: camp.taranaki.climate.emissions_regulation_camp
+name: Regulatory emissions reduction
+theme: climate-adaptation
+core_claim: Binding emissions reduction targets and agricultural emissions pricing
+  create the necessary market signals for decarbonisation.
+flagship_moves:
+- Apply He Waka Eke Noa pricing to Taranaki agricultural emissions
+- Fast-track renewable energy consenting and grid connection for regional projects
+- Mandate emissions intensity reporting for all major industrial facilities
+tensions:
+- Emissions pricing may accelerate farm financial stress before adaptation options
+  are available
+- Industrial transition costs could trigger business departure from the region
+interventions:
+- description: Agricultural emissions pricing under He Waka Eke Noa
+  state_variable: agricultural_emissions_intensity
+  expected_sign: '-'
+- description: Renewable energy consenting fast-track
+  state_variable: renewable_energy_capacity
+  expected_sign: +
+addresses:
+- problem.taranaki.climate.agricultural_emissions
+- problem.taranaki.climate.climate_emissions
+- problem.taranaki.climate.industrial_emissions
+- problem.taranaki.climate.coastal_risk
+applicable_in:
+- taranaki
+tensions_with: []

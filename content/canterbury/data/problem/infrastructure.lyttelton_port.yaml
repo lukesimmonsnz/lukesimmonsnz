@@ -1,0 +1,43 @@
+id: problem.canterbury.infrastructure.lyttelton_port
+title: Lyttelton Port Infrastructure & Resilience
+theme: infrastructure
+section: infrastructure
+subpage: lyttelton_port
+parent: problem.canterbury.infrastructure.rebuild
+order: 2
+updated: '2026-04-26'
+summary: 'Lyttelton Port (Eastland) is Canterbury''s primary import-export gateway,
+  handling ~30% of NZ''s container traffic. Post-earthquake damage (2011) and ongoing
+  seismic vulnerability create operational risk; port company faces capital constraints
+  for berth modernization and earthquake-resilience upgrades.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - port_throughput_teu
+  - berth_utilization_rate
+  - asset_seismic_resilience_index
+  inputs:
+  - regional_trade_volume
+  - ship_size_growth
+  - seismic_event_occurrence
+  constraints:
+  - port_company_capex_budget
+  - alpine_fault_rupture_risk
+  feedback_loops:
+  - Dynamic feedback mechanisms drive lyttelton port infrastructure & resilience.
+narrative:
+- heading: Critical infrastructure at seismic risk
+  body: 'Lyttelton Port survived the 2011 quakes with significant damage and downtime.
+    Port Company faces aging berth infrastructure and constrained capital for modernization.
+    An Alpine Fault rupture (M7.0+) could disable the port for 6-12 months, disrupting
+    NZ''s container supply chain.
+
+    '
+claim_ids:
+- claim.canterbury.infrastructure.lyttelton_throughput_2023
+- claim.canterbury.infrastructure.alpine_fault_port_risk_2024
+status: draft
+time_horizons: [decade, generation]

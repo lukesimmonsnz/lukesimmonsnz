@@ -1,0 +1,21 @@
+id: camp.wellington.transport.demand_management
+name: Demand Management and Mode Shift
+theme: transport
+core_claim: Road pricing and park-and-ride investment will shift commuters to existing public transport without costly new
+  road infrastructure.
+flagship_moves:
+- Introduce Wellington CBD congestion charge during peak hours
+- Expand park-and-ride at Johnsonville, Porirua, and Upper Hutt stations
+- Remove free CBD parking in council-owned buildings
+tensions:
+- Congestion charging is regressive without adequate public transport alternatives for outer-suburb residents
+- Political resistance from motorists and suburban retailers is significant
+addresses:
+- problem.wellington.transport.highway_bottleneck
+interventions:
+- description: Pilot cordon pricing scheme on SH1 entry points with revenue hypothecated to PT improvement
+  state_variable: vkt_peak_hour
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

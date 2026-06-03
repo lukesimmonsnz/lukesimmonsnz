@@ -1,20 +1,20 @@
 id: claim.auckland.economy.wage_growth_lag
-statement: >
-  Real wage growth in Auckland has lagged productivity growth over the
-  past two decades; median wage growth after inflation has been below
-  labour productivity growth in most years, with the gap reflected
-  in rising corporate profit share and falling labour share of national
-  income.
+statement: 'Real wage growth in Auckland has lagged productivity growth over the past
+  two decades; median wage growth after inflation has been below labour productivity
+  growth in most years, with the gap reflected in rising corporate profit share and
+  falling labour share of national income.
+
+  '
 value: null
 unit: null
-time_period: "2000-2023"
+time_period: 2000-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.stats_nz_labour_market_2023
-  - source.nzier_productivity_2023
+- source.stats_nz_labour_market_2023
+- source.nzier_productivity_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

@@ -1,0 +1,10 @@
+id: 'driver.northland.health.driver_4'
+name: 'Behavioral and systemic factors in health'
+description: 'Behavioral and systemic factors in health in regional context.'
+theme: 'health'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

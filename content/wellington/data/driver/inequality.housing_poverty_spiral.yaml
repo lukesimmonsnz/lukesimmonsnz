@@ -1,0 +1,14 @@
+id: driver.wellington.inequality.housing_poverty_spiral
+name: Housing cost burden and child poverty spiral
+description: High housing costs consume residual family income that would otherwise support food security, healthcare access,
+  and educational investment for children, directly producing material hardship in lower-income families.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.inequality.child_poverty
+- problem.wellington.inequality.economic_disadvantage
+claim_ids:
+- claim.wellington.inequality.housing_stress_child_poverty_link

@@ -1,0 +1,23 @@
+id: camp.wellington.housing.seismic_retrofit_mandate
+name: Mandatory Seismic Retrofit Programme
+theme: housing
+core_claim: Earthquake-prone buildings must be retrofitted or demolished on statutory timelines; voluntary compliance has
+  failed.
+flagship_moves:
+- Accelerate EPB compliance deadlines to 2032 for all residential buildings
+- Crown-subsidised retrofit loan fund for owner-occupiers
+- Mandatory disclosure of seismic rating at point of sale and lease
+tensions:
+- Retrofit costs may be prohibitive for low-income owners, driving displacement
+- Demolition of older housing stock reduces rental supply during transition
+- Cost socialisation raises moral hazard for future building standard decisions
+addresses:
+- problem.wellington.housing.earthquake_risk_buildings
+interventions:
+- description: Establish Wellington Regional Seismic Retrofit Fund with low-interest loans up to $150k per dwelling
+  state_variable: compliant_building_stock
+  constraint_relaxed: retrofit_cost_barrier
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

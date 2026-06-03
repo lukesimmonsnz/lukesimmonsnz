@@ -1,0 +1,20 @@
+id: camp.hawkes_bay.health.primary_care_expansion
+name: Primary care service expansion
+theme: health
+core_claim: Primary care service expansion is the primary strategy.
+flagship_moves:
+- Implement Primary care service expansion across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.health.health_outcomes
+- problem.hawkes_bay.health.chronic_disease
+- problem.hawkes_bay.health.rural_access
+interventions:
+- description: Primary care service expansion intervention
+  state_variable: primary_care_expansion_index
+  constraint_relaxed: primary_care_expansion_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.marlborough.housing.investor_demand
+name: Housing Investment Demand From Outside Region
+description: Housing investment demand from outside region with regional implications.
+theme: housing
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.inequality.rural_isolation
+claim_ids: []

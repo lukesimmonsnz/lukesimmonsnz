@@ -1,0 +1,14 @@
+id: driver.wellington.education.school_disengagement_drivers
+name: Multiple school disengagement drivers in high-deprivation areas
+description: Truancy and school disengagement in Porirua and Hutt Valley reflect the compounding effect of poverty, family
+  instability, housing overcrowding, and learning difficulties — each individually manageable but together producing high
+  dropout risk.
+theme: education
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.education.secondary_transition
+claim_ids:
+- claim.wellington.education.neet_rate_wellington

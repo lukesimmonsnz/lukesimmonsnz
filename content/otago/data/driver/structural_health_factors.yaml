@@ -1,0 +1,11 @@
+id: driver.otago.health.structural_health_factors
+name: Structural Health Determinants
+description: Income, education, housing, and environmental factors drive health outcomes.
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.health.health_outcomes
+claim_ids: []

@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.health.mental_health_post_cyclone
+title: Mental health crisis post-Cyclone Gabrielle
+theme: health
+section: health
+subpage: mental-health-post-cyclone
+parent: problem.hawkes_bay.health.health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: "Cyclone Gabrielle triggered acute and sustained mental health impacts across Hawke's Bay. PTSD, depression, anxiety, and suicidality increased. Counselling service demand exceeds capacity by 300%. Recovery is multi-year."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - mental_health_service_demand_vs_capacity_ratio
+    - depression_diagnosis_rate_per_capita
+  inputs:
+    - housing_loss_and_displacement
+    - financial_stress_repair_costs
+  constraints:
+    - counsellor_workforce_shortage
+    - mental_health_service_capacity
+  feedback_loops:
+    - 'Untreated mental illness reduces work capacity; income falls; stress worsens; suicidality increases.'
+narrative:
+  - heading: Service Demand Surge
+    body: "Mental health service demand in Hawke's Bay increased by 300% in 2023-2024 post-cyclone. Waiting lists for therapists extended to 12+ months."
+  - heading: Suicide Risk
+    body: "Suicide attempts and ideation increased 45% in Hawke's Bay following Cyclone Gabrielle. Hotline call volumes increased 200%."
+claim_ids:
+  - claim.hawkes_bay.health.mental_health_demand_300_percent_increase
+status: draft
+time_horizons: [decade, generation]

@@ -1,21 +1,21 @@
 id: claim.auckland.education.skills_mismatch
-statement: >
-  Auckland faces simultaneous tertiary graduate oversupply in some
-  fields and acute skilled worker shortages in construction, health,
-  engineering, and trades; the mismatch reflects tertiary enrolment
-  patterns that do not track labour market signals, partly because
-  student choice is not well-informed by wage and employment outcome
-  data.
+statement: 'Auckland faces simultaneous tertiary graduate oversupply in some fields
+  and acute skilled worker shortages in construction, health, engineering, and trades;
+  the mismatch reflects tertiary enrolment patterns that do not track labour market
+  signals, partly because student choice is not well-informed by wage and employment
+  outcome data.
+
+  '
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.tertiary_education_commission_2023
+- source.tertiary_education_commission_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

@@ -1,0 +1,20 @@
+id: camp.gisborne.governance.treaty_co_governance_approach
+name: Strategic approach for treaty_co_governance
+theme: governance
+core_claim: Strategic intervention on treaty_co_governance will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting treaty_co_governance
+- Priority action 2 targeting treaty_co_governance
+- Institutional coordination mechanism for treaty_co_governance
+tensions:
+- 'Tension 1: treaty_co_governance'
+- 'Tension 2: treaty_co_governance'
+addresses:
+- problem.gisborne.governance.treaty_co_governance
+interventions:
+- description: Primary intervention for treaty_co_governance
+  state_variable: treaty_co_governance_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

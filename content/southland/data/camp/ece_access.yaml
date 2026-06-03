@@ -1,0 +1,21 @@
+id: camp.southland.education.ece_access
+name: Early Childhood Education Expansion
+theme: education
+core_claim: ECE subsidies and rural mobile services increase enrollment and school
+  readiness.
+flagship_moves:
+- Subsidize ECE to $20/week parent cost
+- Mobile ECE services to rural areas
+- Teacher qualification and wage support
+tensions:
+- Ongoing subsidy cost; provider resourcing
+- Quality variability
+addresses:
+- problem.southland.education.early_childhood
+interventions:
+- description: Increase rural ECE enrollment to 85%
+  state_variable: ece_participation_rate
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

@@ -1,0 +1,34 @@
+id: problem.otago.infrastructure.wakatipu_water
+title: Wakatipu Basin Water Supply Constraints
+theme: infrastructure
+section: infrastructure
+subpage: wakatipu_water
+parent: problem.otago.infrastructure.infrastructure
+order: 3
+updated: '2026-04-26'
+summary: Rapid Queenstown population growth strains water supply; irrigation demand
+  in summer; wastewater treatment and stormwater capacity gaps.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Rapid Queenstown population growth strains water supply; irrigation demand
+    in summer; wastewater treatment and stormwater capacity gaps.
+claim_ids:
+- claim.otago.infrastructure.otago_hospital_rebuild_trend
+- claim.otago.infrastructure.infrastructure_trend
+- claim.otago.infrastructure.wakatipu_water_prevalence
+- claim.otago.infrastructure.infrastructure_prevalence
+- claim.otago.infrastructure.wakatipu_water_trend
+- claim.otago.infrastructure.digital_rural_trend
+- claim.otago.infrastructure.digital_rural_prevalence
+- claim.otago.infrastructure.otago_hospital_rebuild_prevalence
+status: draft
+time_horizons: [decade, generation]

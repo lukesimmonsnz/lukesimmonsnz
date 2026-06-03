@@ -1,0 +1,23 @@
+id: claim.northland.infrastructure.flood_resilience_claim2
+statement: Whangarei CBD stormwater system (1980s design) overflows in 20 mm+ rainfall
+  events; Hātea River and Waiarohia River receive untreated spills. Dargaville and
+  small coastal towns lack climate-adapted stormwater. Community-scale resilience
+  projects (Whangarei, Bay of Islands) include swale retrofits, detention pond expansion;
+  funding via NRC Natural Hazards Fund, but full network upgrade costs ~NZD 100–150M
+  over 10 years. Managed retreat policies (coastal communities moving inland) politically
+  contentious; insurance availability deteriorating in high-hazard zones.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

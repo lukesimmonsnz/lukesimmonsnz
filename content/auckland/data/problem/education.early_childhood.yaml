@@ -1,61 +1,58 @@
 id: problem.auckland.education.early_childhood
-title: "Early Childhood Education Access and Quality"
+title: Early Childhood Education Access and Quality
 theme: education
 section: education
 subpage: early-childhood
 parent: problem.auckland.education.achievement
 order: 1
-updated: "2026-04-26"
-summary: >
-  ECE participation rates for Maori and Pacific Auckland children are
-  10-15 percentage points below NZ European; cost, availability, and
-  transport are primary barriers. ECE quality shows a deprivation
-  gradient — centres in South and West Auckland have lower qualified
-  teacher ratios and higher turnover. Non-participation and low-quality
-  ECE creates a school-entry disadvantage that drives the achievement
-  gap that persists through secondary school.
+updated: '2026-04-26'
+summary: ECE participation in Auckland is stratified by household income and neighbourhood deprivation;
+  participation rates in high-deprivation suburbs are 10-15 percentage points below lower-deprivation
+  areas. Cost, geographic availability, and transport are primary barriers. ECE quality shows a deprivation
+  gradient — centres in South and West Auckland have lower qualified teacher ratios and higher staff turnover.
+  Non-participation creates a school-entry disadvantage that drives the achievement gap persisting through
+  secondary school.
 manifests_in:
-  - auckland
+- auckland
 systems_model:
   state_variables:
-    - "ece_participation_rate_maori_pacific"
-    - "ece_quality_index_high_deprivation"
-    - "school_entry_readiness_gap"
+  - ece_participation_rate_maori_pacific
+  - ece_quality_index_high_deprivation
+  - school_entry_readiness_gap
   inputs:
-    - "free_ece_hours_coverage"
-    - "qualified_teacher_ratio_high_deprivation"
-    - "home_based_care_subsidy"
-    - "transport_support_coverage"
+  - free_ece_hours_coverage
+  - qualified_teacher_ratio_high_deprivation
+  - home_based_care_subsidy
+  - transport_support_coverage
   constraints:
-    - "Pay parity: ECE teacher pay requires national legislation; local resourcing cannot fix the workforce pipeline"
-    - "Cultural preference: Pacific and Maori families have legitimate care preferences that centre-based models do not serve"
-    - "Quality monitoring: home-based care is harder to regulate for quality than licensed centres"
+  - 'Pay parity: ECE teacher pay requires national legislation; local resourcing cannot fix the workforce
+    pipeline'
+  - 'Cultural preference: Pacific and Maori families have legitimate care preferences that centre-based
+    models do not serve'
+  - 'Quality monitoring: home-based care is harder to regulate for quality than licensed centres'
   feedback_loops:
-    - "Low-quality ECE → lower school readiness → lower NCEA attainment → lower adult income"
-    - "ECE workforce underpay → turnover → lower quality → lower participation → fewer resources for sector"
+  - Low-quality ECE → lower school readiness → lower NCEA attainment → lower adult income
+  - ECE workforce underpay → turnover → lower quality → lower participation → fewer resources for sector
 narrative:
-  - heading: "The compounding early disadvantage"
-    body: >
-      A Pacific child in South Auckland who does not attend quality
-      ECE enters primary school behind their NZ European peers in
-      language, numeracy, and social-emotional skills. That gap — not
-      the gap created by primary school — is the primary driver of
-      the achievement disparity that persists to NCEA. Closing the
-      achievement gap at secondary school without addressing the ECE
-      gap is treating a symptom; the highest-return intervention is
-      also the earliest one.
-  - heading: "Quality, not just attendance"
-    body: >
-      Participation statistics undercount the problem because they
-      treat all ECE as equivalent. A child in a licensed centre with
-      high teacher turnover and 1:8 qualified teacher ratios is not
-      receiving the same educational input as a child in a stable
-      centre with 1:4 ratios. The quality gradient between high- and
-      low-deprivation Auckland ECE is the mechanism by which attending
-      ECE in a low-income area provides less developmental benefit than
-      attending ECE in an affluent suburb.
+- heading: The compounding early disadvantage
+  body: 'A Pacific child in South Auckland who does not attend quality ECE enters primary school behind
+    their NZ European peers in language, numeracy, and social-emotional skills. That gap — not the gap
+    created by primary school — is the primary driver of the achievement disparity that persists to NCEA.
+    Closing the achievement gap at secondary school without addressing the ECE gap is treating a symptom;
+    the highest-return intervention is also the earliest one.
+
+    '
+- heading: Quality, not just attendance
+  body: 'Participation statistics undercount the problem because they treat all ECE as equivalent. A child
+    in a licensed centre with high teacher turnover and 1:8 qualified teacher ratios is not receiving
+    the same educational input as a child in a stable centre with 1:4 ratios. The quality gradient between
+    high- and low-deprivation Auckland ECE is the mechanism by which attending ECE in a low-income area
+    provides less developmental benefit than attending ECE in an affluent suburb.
+
+    '
 claim_ids:
-  - claim.auckland.education.ece_participation_gap
-  - claim.auckland.education.ece_quality_gradient
-  - claim.auckland.education.ece_cost_barrier
+- claim.auckland.education.ece_participation_gap
+- claim.auckland.education.ece_quality_gradient
+- claim.auckland.education.ece_cost_barrier
 status: draft
+time_horizons: [decade, generation]

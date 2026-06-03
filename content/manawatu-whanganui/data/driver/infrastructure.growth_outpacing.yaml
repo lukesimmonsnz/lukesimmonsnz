@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.infrastructure.growth_outpacing
+name: Urban Growth Outpacing Infrastructure Provision
+description: Urban growth outpacing infrastructure provision. This driver operates
+  at regional scale with consensus consensus.
+theme: infrastructure
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.digital_rural
+claim_ids: []

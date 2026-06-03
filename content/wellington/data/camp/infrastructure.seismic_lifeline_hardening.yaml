@@ -1,0 +1,22 @@
+id: camp.wellington.infrastructure.seismic_lifeline_hardening
+name: Lifeline Utility Seismic Hardening
+theme: infrastructure
+core_claim: Critical utility crossings of the Wellington Fault must be hardened or bypassed to ensure post-earthquake recovery
+  within weeks not months.
+flagship_moves:
+- Fault-crossing resilience upgrades for water, gas, and electricity at Wellington Fault crossings
+- Dual water supply routes from Wainuiomata and Hutt Valley to the city
+- Pre-positioned emergency water storage cisterns at key community hubs
+tensions:
+- High capital cost for low-probability but high-consequence event
+- Prioritisation of seismic hardening may displace routine maintenance budgets
+addresses:
+- problem.wellington.infrastructure.earthquake_lifelines
+- problem.wellington.infrastructure.water_resilience
+interventions:
+- description: Establish Wellington Lifelines Group investment programme targeting the 12 critical fault crossings
+  state_variable: post_earthquake_recovery_days
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

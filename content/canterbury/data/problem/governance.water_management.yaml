@@ -1,0 +1,48 @@
+id: problem.canterbury.governance.water_management
+title: Canterbury Water Strategy & Allocation Governance
+theme: governance
+section: governance
+subpage: water_management
+parent: problem.canterbury.governance.governance
+order: 3
+updated: '2026-04-26'
+summary: 'The Canterbury Water Management Strategy (CWMS) is the regional governance
+  instrument for water allocation, environmental flows, and quality targets. Approved
+  2016, under review 2024. CWMS sets regional annual allocation limits but zone-level
+  allocations are contested (farmers, environmental groups, iwi). Compliance with
+  allocation limits is weak; enforcement is reactive. Climate change impacts (drought,
+  extreme rainfall) are testing CWMS adequacy.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - cwms_allocation_utilization_rate
+  - cwms_compliance_rate_by_zone
+  - allocation_conflict_incidents
+  - environmental_flow_adequacy_assessment
+  inputs:
+  - rainfall_seasonality
+  - agricultural_demand
+  - urban_water_demand
+  - environmental_protection_stringency
+  constraints:
+  - allocation_limit_fairness_and_equity
+  - enforcement_resourcing
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury water strategy & allocation governance.
+narrative:
+- heading: Allocation strategy under pressure
+  body: 'CWMS zones allocation but water use often exceeds allocation (farm use, urban
+    leakage). Environmental flow targets are not always met in low-flow summers. Farmers
+    argue allocation limits are too tight; environmental groups argue they are too
+    loose. Governance conflicts are frequent; mediation and arbitration processes
+    are slow.
+
+    '
+claim_ids:
+- claim.canterbury.governance.cwms_compliance_rate_2023
+- claim.canterbury.governance.water_conflict_incidents_2023
+status: draft
+time_horizons: [decade, generation, century]

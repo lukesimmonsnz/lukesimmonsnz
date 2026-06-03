@@ -1,0 +1,20 @@
+id: claim.marlborough.climate.sea_level_sounds_placeholder
+statement: Marlborough Sounds (Pelorus, Kenepuru, Queen Charlotte) face 0.5–1.0 m
+  sea-level rise by 2100 under RCP8.5 scenarios; low-lying settlement areas (Picton,
+  Motueka waterfront, Kenepuru Head) vulnerable to inundation and saltwater intrusion
+  into freshwater aquifers.
+value: 0.75
+unit: metres (mid-range projection by 2100)
+time_period: '2100'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_climate_projections_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.sea_level_projection_v1
+notes: null

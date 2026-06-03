@@ -1,0 +1,21 @@
+id: claim.bay_of_plenty.transport.sh2_bottleneck_13
+statement: Infrastructure in Bay Of Plenty faces aging assets, deferred maintenance,
+  and resilience gaps. Funding constraints limit system upgrades for climate adaptation,
+  population growth, and earthquake/flood preparedness; coordination challenges delay
+  critical projects.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+- source.stats_nz_housing_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: null

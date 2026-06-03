@@ -1,0 +1,105 @@
+# Block registry for CMS v2.
+#
+# Spec:  docs/CMS-SPEC-v2.md §3.4
+# Wave:  docs/CMS-IMPL-WAVE-v2-1.md §6
+# Loader: blueprints/admin/cms/blocks/registry.py::load_registry
+#
+# `container: true` means the body is a recursive BlockTree (children).
+# `container: false` (the default) means the body is a verbatim string
+# (leaf — code, image, embed, divider).
+#
+# `attrs` and `required` are informational for the editor / linter;
+# the parser does not enforce them. Unknown attrs in source are
+# preserved verbatim.
+#
+# `template` is the Jinja partial under `templates/` that the renderer
+# (wave v2-3) dispatches to per block kind.
+
+blocks:
+
+  # ── 12 core blocks ────────────────────────────────────────────────
+
+  - kind: paragraph
+    container: false
+    attrs: [align]
+    template: blocks/paragraph.html
+
+  - kind: heading
+    container: false
+    attrs: [level, id]
+    required: [level]
+    template: blocks/heading.html
+
+  - kind: image
+    container: false
+    attrs: [src, alt, caption, align, focal]
+    required: [src, alt]
+    template: blocks/image.html
+
+  - kind: gallery
+    container: true
+    attrs: [cols, crop]
+    required: [cols]
+    template: blocks/gallery.html
+
+  - kind: code
+    container: false
+    attrs: [language]
+    template: blocks/code.html
+
+  - kind: callout
+    container: true
+    attrs: [type, title]
+    required: [type]
+    template: blocks/callout.html
+
+  - kind: columns
+    container: true
+    attrs: [count, gap]
+    required: [count]
+    template: blocks/columns.html
+
+  - kind: column
+    container: true
+    attrs: []
+    template: blocks/column.html
+
+  - kind: embed
+    container: false
+    attrs: [url, provider]
+    required: [url]
+    template: blocks/embed.html
+
+  - kind: divider
+    container: false
+    attrs: [style]
+    template: blocks/divider.html
+
+  - kind: button
+    container: false
+    attrs: [href, style, target]
+    required: [href]
+    template: blocks/button.html
+
+  - kind: hero
+    container: true
+    attrs: [image, align, height]
+    template: blocks/hero.html
+
+  # ── 3 section blocks (full-bleed page-builder layouts) ────────────
+
+  - kind: section-hero
+    container: true
+    attrs: [bg_image, height]
+    template: blocks/section_hero.html
+
+  - kind: section-feature-grid
+    container: true
+    attrs: [cols]
+    required: [cols]
+    template: blocks/section_feature_grid.html
+
+  - kind: section-cta
+    container: true
+    attrs: [bg_color]
+    template: blocks/section_cta.html

@@ -1,0 +1,10 @@
+id: 'driver.northland.housing.driver_1'
+name: 'Policy and institutional barriers in housing'
+description: 'Policy and institutional barriers in housing in regional context.'
+theme: 'housing'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

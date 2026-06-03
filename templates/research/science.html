@@ -1,0 +1,45 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Science · Research · Luke Simmons{% endblock %}
+{% block meta_description %}AI-drafted reference notes across computer science, climate science, and medical science.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Science', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Branch</span>
+    <h1>Science</h1>
+    <hr class="rule">
+    <p class="lede">
+      AI-drafted reference notes across computer science, climate science, and
+      medical science. Useful for orientation; verify any claim before citing.
+    </p>
+  </header>
+
+  <section>
+    <div class="card-grid">
+      <a class="card" href="{{ url_for('research.cs_index') }}">
+        <div class="meta">Branch &middot; 01</div>
+        <h3>Computer Science</h3>
+        <p>Foundations, Python, Rust, and notes on the broader AI and IT ecosystem.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.climate_index') }}">
+        <div class="meta">Branch &middot; 02</div>
+        <h3>Climate Science &amp; AI</h3>
+        <p>Climate modelling, data assimilation, and the role of machine learning in earth-system science.</p>
+      </a>
+      <a class="card" href="{{ url_for('research.medsci_index') }}">
+        <div class="meta">Branch &middot; 03</div>
+        <h3>Medical Science</h3>
+        <p>Neuroscience, bioinformatics, medical imaging, and clinical AI.</p>
+      </a>
+    </div>
+  </section>
+</div>
+{% endblock %}

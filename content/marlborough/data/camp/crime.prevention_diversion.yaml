@@ -1,0 +1,21 @@
+id: camp.marlborough.crime.prevention_diversion
+name: Crime Prevention and Diversion
+theme: crime
+core_claim: Youth and family support programmes.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.crime.safety
+interventions:
+- description: 'Action 1: Crime Prevention and Diversion'
+- description: 'Action 2: Crime Prevention and Diversion'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

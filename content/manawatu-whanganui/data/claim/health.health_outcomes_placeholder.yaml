@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.health.health_outcomes_placeholder
+statement: Life expectancy at birth in Manawatū-Whanganui is approximately 80.5 years
+  (males 78.2, females 82.8), marginally below national average (81.1). Whanganui
+  city life expectancy is 3-5 years lower than Palmerston North (reflecting deprivation-linked
+  mortality). Infant mortality is approximately 6.5/1,000 live births (slightly above
+  national 6.1), with higher rates in rural and low-income communities. Health disparities
+  by deprivation quintile are pronounced; Quintile 5 (most deprived) populations have
+  40-50% higher mortality rates than Quintile 1 (least deprived).
+value: 80.5
+unit: years_life_expectancy
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mw_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

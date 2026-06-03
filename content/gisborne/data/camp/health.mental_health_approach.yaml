@@ -1,0 +1,20 @@
+id: camp.gisborne.health.mental_health_approach
+name: Strategic approach for mental_health
+theme: health
+core_claim: Strategic intervention on mental_health will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting mental_health
+- Priority action 2 targeting mental_health
+- Institutional coordination mechanism for mental_health
+tensions:
+- 'Tension 1: mental_health'
+- 'Tension 2: mental_health'
+addresses:
+- problem.gisborne.health.mental_health
+interventions:
+- description: Primary intervention for mental_health
+  state_variable: mental_health_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

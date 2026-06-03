@@ -1,0 +1,20 @@
+id: claim.marlborough.inequality.rural_isolation_1
+statement: 'Rural isolation (Marlborough Sounds): Havelock community approximately
+  80 km from Blenheim (via SH6, approximately 90 min road); Pelorus area 100+ km;
+  limited public transport (2–3 buses per week); emergency services response time
+  60–90 min; no ambulance station (Blenheim only).'
+value: 90
+unit: minutes drive from Havelock to Blenheim
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_top_south_transport_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.travel_time_index_v1
+notes: null

@@ -1,0 +1,20 @@
+id: 'camp.waikato.health.camp_3'
+name: 'Community engagement and co-design in health'
+theme: 'health'
+core_claim: 'Community engagement and co-design in health is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement community engagement and co-design in health'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'waikato'
+tensions_with: []

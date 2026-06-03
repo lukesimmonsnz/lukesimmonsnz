@@ -1,0 +1,42 @@
+id: problem.tasman.climate.climate_3
+title: Wildfire risk on the Pigeon Valley / Moutere axis
+theme: climate-adaptation
+section: climate
+subpage: climate_3
+parent: climate_risk
+order: 3
+updated: '2026-04-26'
+summary: The January 2022 Nelson-Tasman wildfires burned across Pigeon Valley and the Moutere Hills straddling the
+  Nelson-Tasman boundary, with the Tasman portion accounting for the majority of the approximately 2,200-hectare
+  combined burn area. Hotter, drier summers are increasing wildfire frequency; Tasman District Council emergency-management
+  plans now flag October-April as the high-risk season.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - annual_high_risk_fire_days
+  - wildland_urban_interface_dwellings
+  inputs:
+  - fenz_resourcing
+  - vegetation_management_settings
+  constraints:
+  - summer_temperature_trajectory
+  - private_land_management_baseline
+  feedback_loops:
+  - Lifestyle-block subdivision in fire-prone interface zones raises future evacuation and asset-protection costs,
+    which compete with prevention budgets.
+narrative:
+- heading: A regional wildfire is now in living memory
+  body: The 2022 Pigeon Valley / Moutere event is no longer a hypothetical risk — it has happened and informs the
+    regional risk picture. Plantation forestry, dryland pasture, and the wildland-urban interface around lifestyle
+    blocks are all in the exposure envelope (claim.tasman.climate.climate_3_claim).
+- heading: A six-month season
+  body: Treating October to April as the high-risk season is a six-month window — half the year. That changes how
+    building, vegetation, access, and water-supply for firefighting are planned, and how rural-residential subdivision
+    is consented.
+claim_ids:
+- claim.tasman.climate.climate_3_claim
+status: draft
+time_horizons:
+- generation
+- century

@@ -1,0 +1,13 @@
+id: driver.wellington.governance.low_local_govt_efficacy
+name: Low perceived local government efficacy
+description: Declining voter turnout in Wellington reflects a widespread perception that local government decisions are predetermined
+  or unresponsive to participation, reducing the incentive to vote and eroding civic engagement over time.
+theme: governance
+consensus: mostly-agreed
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.governance.democratic_participation
+claim_ids:
+- claim.wellington.governance.voter_turnout_rate_2022

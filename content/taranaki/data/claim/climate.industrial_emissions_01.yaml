@@ -1,0 +1,20 @@
+id: claim.taranaki.climate.industrial_emissions_01
+statement: Industrial emissions in Taranaki are dominated by energy processing (Methanex
+  methanol production, natural gas processing by Todd and OMV). These operations account
+  for ~2.5-3% of NZ's industrial emissions and are energy-intensive facilities dependent
+  on fossil fuel feedstock and local electricity from thermal plants.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki industrial_emissions

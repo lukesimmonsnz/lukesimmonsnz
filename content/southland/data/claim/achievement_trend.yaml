@@ -1,0 +1,20 @@
+id: claim.southland.education.achievement_trend
+statement: Educational achievement in Southland lags national averages, with NCEA
+  Level 2 attainment at 72% (Invercargill) and 68% in rural districts. University
+  attendance rates are 45-50% of school leavers, with limited local tertiary options
+  forcing young people to relocate to Dunedin, Christchurch, or Auckland.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.education.secondary_completion_81_percent
+statement: Secondary school completion in Hawke's Bay is 81%, below the national average
+  (86%). Hastings and Wairoa schools struggle with student absenteeism (25-30% chronic
+  absence in some schools); school-to-employment transitions are weak, with limited
+  youth apprenticeship pathways. Cyclone Gabrielle disruptions (2023) delayed school
+  operations and assessment schedules in rural areas.
+value: 81
+unit: percent completion
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1

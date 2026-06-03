@@ -1,0 +1,21 @@
+id: claim.gisborne.housing.housing_shortage_02
+statement: Housing quality and affordability pressures co-exist in Gisborne, with
+  rental vacancies below 1-2% in urban areas. Essential workers (nurses, teachers,
+  farm laborers) face housing stress, forcing commuting from more distant affordable
+  areas or out-migration.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.gini_coefficient_v1
+notes: null

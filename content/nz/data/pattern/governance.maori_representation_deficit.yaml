@@ -1,0 +1,34 @@
+id: pattern.governance.maori_representation_deficit
+title: Māori under-representation in local government
+theme: governance
+summary: Māori are systematically under-represented on councils and in senior local
+  government roles across all regions relative to their population share, with Māori
+  wards providing partial but incomplete redress.
+manifests_in:
+- northland
+- auckland
+- waikato
+- bay-of-plenty
+- gisborne
+- hawkes-bay
+- wellington
+- manawatu-whanganui
+claim_ids:
+- claim.auckland.governance.auckland_voter_turnout
+- claim.northland.governance.coordination_deficit_claim1
+- claim.waikato.governance.small_ta_capacity
+- claim.manawatu_whanganui.governance.freshwater_management_placeholder
+narrative:
+- heading: Representation gap
+  body: In regions where Māori are 20–40% of the population, elected council membership
+    is typically 5–15% Māori. Māori wards — enabled nationally after the 2021 Māori
+    Wards and Māori Constituencies Act — create direct representation pathways but
+    do not address under-representation in staff and management.
+- heading: Treaty obligation
+  body: Article 2 of Te Tiriti o Waitangi establishes Crown obligations to protect
+    rangatiratanga. Local government decision-making on resource management, infrastructure,
+    and development directly affects Māori property and cultural interests. Under-representation
+    in these processes is therefore a Treaty compliance issue, not merely a diversity
+    issue.
+status: draft
+updated: '2026-04-26'

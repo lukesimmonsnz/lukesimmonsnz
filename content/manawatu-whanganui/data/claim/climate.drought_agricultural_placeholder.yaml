@@ -1,0 +1,21 @@
+id: claim.manawatu_whanganui.climate.drought_agricultural_placeholder
+statement: Manawatū-Whanganui's intensive dairy and pastoral farming (one of NZ's
+  most productive agricultural zones) faces increasing drought risk under climate
+  change projections. NIWA climate models project 5-15% reduction in summer precipitation
+  across the region by 2050, threatening irrigation demand and farm productivity.
+value: null
+unit: percent
+time_period: 2020-2050
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_climate_science_2023
+- source.horizons_one_plan_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: Climate projections for precipitation change

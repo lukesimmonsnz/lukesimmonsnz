@@ -1,0 +1,11 @@
+id: driver.southland.inequality.economic_decline
+name: Economic Decline and Population Stagnation
+description: Limited economic opportunity drives out-migration and stagnation.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.inequality.deprivation
+claim_ids: []

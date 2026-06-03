@@ -1,0 +1,20 @@
+id: claim.wellington.environment.sea_level_projection_2100
+statement: Wellington is projected to experience 0.4–1.0 m of sea-level rise by 2100
+  under medium-to-high emissions scenarios, with the upper bound representing a credible
+  planning horizon for long-lived coastal infrastructure such as roads, rail, and
+  port facilities.
+value: null
+unit: null
+time_period: 2100 (projection)
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfe_nz_sea_level_guidance_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.sea_level_projection_v1
+notes: null

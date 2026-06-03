@@ -1,0 +1,22 @@
+id: claim.gisborne.inequality.ethnic_gap_38
+statement: Youth NEET rates in Gisborne are substantially above the national average;
+  structural barriers — geographic isolation, limited vocational training, and seasonal
+  labour market dependence — combine to limit transitions from secondary schooling
+  into stable employment or further education for young people in high-deprivation
+  communities.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.rent_to_income_v1
+notes: null

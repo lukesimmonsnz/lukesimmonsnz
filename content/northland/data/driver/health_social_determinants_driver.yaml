@@ -1,0 +1,16 @@
+id: driver.northland.health.social_determinants_driver
+name: Social determinants of health — deprivation and housing
+description: High rates of poverty, overcrowding, and material hardship are primary
+  determinants of Northland's elevated disease burden.
+theme: health
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.health.northland_health_inequity
+- problem.northland.health.health_workforce
+- problem.northland.health.maori_health_gap
+- problem.northland.health.mental_health
+claim_ids:
+- claim.northland.health.mental_health_claim1

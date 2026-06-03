@@ -1,0 +1,11 @@
+id: driver.southland.inequality.invercargill_deprivation
+name: Invercargill East Deprivation Index
+description: Invercargill East among NZ's highest deprivation; intergenerational poverty.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.inequality.invercargill_east_poverty
+claim_ids: []

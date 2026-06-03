@@ -1,0 +1,29 @@
+id: problem.taranaki.climate.industrial_emissions
+title: Industrial (oil, gas, methanol) emissions
+theme: climate-adaptation
+section: climate
+subpage: industrial_emissions
+parent: problem.taranaki.climate.climate_emissions
+order: 2
+updated: '2026-04-26'
+summary: Oil and gas extraction and methanol production generate approximately 35%
+  of regional emissions.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - industrial_emissions_index
+  inputs:
+  - industrial_emissions_input_1
+  constraints:
+  - industrial_emissions_constraint
+  feedback_loops:
+  - 'Feedback: industrial_emissions'
+narrative:
+- heading: Industrial (oil, gas, methanol) emissions in Taranaki
+  body: Oil and gas extraction and methanol production generate approximately 35%
+    of regional emissions.
+claim_ids:
+- claim.taranaki.climate.industrial_emissions_01
+status: draft
+time_horizons: [generation, century]

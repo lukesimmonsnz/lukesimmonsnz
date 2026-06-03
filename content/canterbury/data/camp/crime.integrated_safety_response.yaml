@@ -1,0 +1,20 @@
+id: camp.canterbury.crime.integrated_safety_response
+name: Integrated Community Safety Response
+theme: crime
+core_claim: Integrated multi-agency response to crime (police, social services, justice, community) addressing root causes (deprivation, substance abuse, trauma) is more effective than enforcement alone.
+flagship_moves:
+- Establish multi-agency safety hubs in high-crime areas (East Christchurch)
+- Fund whānau-centered family violence prevention programs
+tensions:
+- Balancing community trust and police enforcement roles
+- Resource allocation across prevention, intervention, and justice
+addresses:
+- problem.canterbury.crime.safety
+interventions:
+- description: Multi-agency safety coordination and prevention investment
+  state_variable: integrated_response_capacity
+  constraint_relaxed: agency_siloing
+  expected_sign: '+'
+applicable_in:
+- canterbury
+tensions_with: []

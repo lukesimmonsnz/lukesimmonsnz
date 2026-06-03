@@ -1,0 +1,20 @@
+id: claim.marlborough.housing.worker_accommodation_2
+statement: 'Marlborough Sounds residential accommodation: 800–1,000 permanent residents
+  spread across Havelock, Motueka, Kenepuru Head, Rai Valley; limited rental supply;
+  holiday home ownership (40–50%) inflates land values and restricts permanent settlement;
+  community facilities (shops, medical) sparse.'
+value: 900
+unit: permanent residents in Sounds communities (estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

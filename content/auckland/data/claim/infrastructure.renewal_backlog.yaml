@@ -1,25 +1,26 @@
 id: claim.auckland.infrastructure.renewal_backlog
-statement: >
-  A significant share of Auckland's three-waters infrastructure —
-  water mains, wastewater pipes, and stormwater drains — has exceeded
-  or is approaching its design life. Deferred renewal accumulates
-  exponentially: pipe failures increase sharply as assets age past
-  their replacement threshold, and emergency repair costs typically
-  exceed planned renewal costs by a factor of 3–5.
+statement: 'A significant share of Auckland''s three-waters infrastructure — water
+  mains, wastewater pipes, and stormwater drains — has exceeded or is approaching
+  its design life. Deferred renewal accumulates exponentially: pipe failures increase
+  sharply as assets age past their replacement threshold, and emergency repair costs
+  typically exceed planned renewal costs by a factor of 3–5.
+
+  '
 value: null
 unit: null
-time_period: "2020-2023"
+time_period: 2020-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.watercare_annual_2023
-  - source.infrastructure_nz_2023
+- source.watercare_annual_2023
+- source.infrastructure_nz_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  Asset condition ratings and renewal backlog figures are published in
-  Watercare and Auckland Council infrastructure reports.
+- auckland
+notes: 'Asset condition ratings and renewal backlog figures are published in Watercare
+  and Auckland Council infrastructure reports.
+
+  '

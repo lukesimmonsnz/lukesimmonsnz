@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.economy.horticulture_dependency_growth
+name: Driver for horticulture_dependency
+description: "This driver exacerbates the horticulture_dependency pressure in Bay\
+  \ of Plenty \u2014 Te Moana-a-Toi."
+theme: economy
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.economy.horticulture_dependency
+claim_ids:
+- claim.bay_of_plenty.economy.horticulture_dependency_67

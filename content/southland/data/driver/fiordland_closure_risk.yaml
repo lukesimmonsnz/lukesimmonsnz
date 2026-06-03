@@ -1,0 +1,12 @@
+id: driver.southland.transport.fiordland_closure_risk
+name: Fiordland Weather-Driven Closure Risk
+description: SH94 closed regularly by snow, avalanche, slip; tourism and supply chain
+  disrupted.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.southland.transport.fiordland_access
+claim_ids: []

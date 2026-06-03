@@ -1,0 +1,33 @@
+id: problem.hawkes_bay.health.health_outcomes
+title: Population health outcomes and inequities
+theme: health
+section: health
+subpage: health-outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: "Hawke's Bay has poorer population health outcomes than national average and significant health inequities. Māori experience higher mortality and morbidity. Mental health crisis is acute post-Cyclone Gabrielle. Chronic disease prevalence is high."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - life_expectancy_years
+    - amenable_mortality_rate_per_capita
+  inputs:
+    - deprivation_concentration
+    - healthcare_access_barriers
+  constraints:
+    - health_service_funding
+    - workforce_availability
+  feedback_loops:
+    - 'Poor health reduces workforce participation; earnings fall; ability to afford healthcare declines; health worsens.'
+narrative:
+  - heading: Life Expectancy Gap
+    body: "Hawke's Bay life expectancy is approximately 79 years, approximately 2 years below national average. Māori life expectancy in Hawke's Bay is 73 years."
+  - heading: Mental Health Crisis
+    body: 'Cyclone Gabrielle triggered sustained mental health impacts. Anxiety and depression diagnoses increased 40% in 2023. Suicide rates have risen.'
+claim_ids:
+  - claim.hawkes_bay.health.life_expectancy_79_years
+  - claim.hawkes_bay.health.mental_health_diagnoses_40_percent_increase
+status: draft
+time_horizons: [decade, generation]

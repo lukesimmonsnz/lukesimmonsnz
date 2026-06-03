@@ -1,0 +1,20 @@
+id: camp.canterbury.transport.demand_management_congestion_pricing
+name: Congestion Pricing & Demand Management
+theme: transport
+core_claim: Congestion pricing on key arterial corridors (Johns Ave, Riccarton Rd)
+  will reduce peak-hour demand and fund transit alternatives.
+flagship_moves:
+- Key intervention for Congestion Pricing & Demand Management
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.transport.christchurch_congestion
+interventions:
+- description: Congestion pricing on key arterial corridors (Johns Ave, Riccarton
+    Rd) will reduce peak-hour demand and fund transit alternatives.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

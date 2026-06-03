@@ -1,0 +1,13 @@
+id: driver.wellington.transport.induced_demand
+name: Induced demand from road capacity additions
+description: Road capacity additions in Wellington attract additional vehicle trips over 5–10 years, partially or fully absorbing
+  congestion relief. Transmission Gully's northern corridor relief is expected to follow this pattern.
+theme: transport
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.transport.highway_bottleneck
+claim_ids:
+- claim.wellington.transport.transmission_gully_opened_2022

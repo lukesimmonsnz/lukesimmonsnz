@@ -1,0 +1,21 @@
+id: camp.southland.environment.foveaux_fisheries
+name: Foveaux Strait Fisheries Management and Ecosystem Restoration
+theme: environment
+core_claim: Strict catch limits, marine protected areas, and invasive control restore
+  kelp forests and fisheries.
+flagship_moves:
+- Expand marine protected areas in Foveaux
+- Reduce catch limits to sustainable levels
+- Sea urchin culling to restore kelp
+tensions:
+- Fishery income reduction; community resistance
+- International coordination (with Australia)
+addresses:
+- problem.southland.environment.coastal_foveaux
+interventions:
+- description: Restore 50% of lost kelp forest area
+  state_variable: kelp_forest_area
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

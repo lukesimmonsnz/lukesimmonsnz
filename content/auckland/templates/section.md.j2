@@ -1,0 +1,74 @@
+---
+title: "{{ section_title }}"
+section: {{ section }}
+kind: section
+updated: {{ generated_at }}
+generated_from: section.{{ region }}.{{ section }}
+---
+
+# {{ section_title }}
+{% if horizon_union %}
+
+<p class="horizon-band">Analysis horizon: {% for h in horizon_union %}{% if h == 'decade' %}10yr{% elif h == 'generation' %}50yr{% elif h == 'century' %}100yr{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% endif %}
+{% if section_lede %}
+
+{{ section_lede }}
+{% endif %}
+
+{% for issue in issues %}
+
+## {{ issue.problem.title }}
+
+{{ issue.problem.summary | trim }}
+{% for nsec in issue.problem.narrative %}
+
+### {{ nsec.heading }}
+
+{{ nsec.body | trim }}
+{% endfor %}
+
+### Structural drivers
+
+{% for d in issue.drivers %}
+**{{ d.name }}.** {{ d.description | default('') | trim }}
+
+{% endfor %}
+
+### Solution camps
+
+A number of distinct positions recur in the policy debate on this issue. Each is defensible on its own terms; none is obviously correct.
+
+{% for camp in issue.camps %}
+**{{ camp.name }}.** {{ camp.core_claim | trim }}{% if camp.flagship_moves %} Key moves include {{ camp.flagship_moves | join('; ') }}.{% endif %}{% if camp.tensions %} The main tensions are: {{ camp.tensions | join('; ') }}.{% endif %}
+
+{% endfor %}
+{% if issue.apa_citations %}
+
+<p class="problem-citations">({% for c in issue.apa_citations %}<a class="cite-ref" href="#{{ c.anchor }}">{{ c.short }}</a>{% if not loop.last %}; {% endif %}{% endfor %})</p>
+{% endif %}
+
+{% endfor %}
+
+---
+
+## References
+
+<p class="small muted">Citations follow APA 7th edition (author, year) format. Each in-text citation above links to its full reference below.</p>
+
+<ul class="references-list">
+{% for ref in references %}
+<li id="{{ ref.anchor }}">{{ ref.apa | safe }}</li>
+{% endfor %}
+</ul>
+
+<details class="technical-appendix" markdown="1">
+<summary><strong>Technical details</strong> — how this page was made</summary>
+
+This page is generated from a typed entity graph: {{ issues | length }} problem entit{{ 'y' if issues | length == 1 else 'ies' }} in this section, with their structural drivers, solution camps, and source-cited claims. The narrative essay above is human-authored; the drivers, camps, and claims are structured data woven into the prose by the renderer. Each claim cites a primary source listed in the References section. The full schema, the 18 cross-entity invariants, and the methodology registry are described in the [methodology document](/research/methodology/). Last regenerated {{ generated_at }} from the entity files under `content/{{ region }}/data/`.
+
+</details>
+
+---
+
+*Generated from section `{{ section }}` of `{{ region }}` on {{ generated_at }}. Do not hand-edit. Edit the entity files under the region's `data/` directory and re-run the region's render.py.*

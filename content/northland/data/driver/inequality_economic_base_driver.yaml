@@ -1,0 +1,16 @@
+id: driver.northland.inequality.economic_base_driver
+name: Narrow low-wage economic base
+description: Northland's economy is dominated by low-wage sectors including agriculture,
+  construction, and tourism, limiting income mobility.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.inequality.northland_inequality
+- problem.northland.inequality.maori_income_gap
+- problem.northland.inequality.child_poverty
+- problem.northland.inequality.rural_deprivation
+claim_ids:
+- claim.northland.inequality.rural_deprivation_claim1

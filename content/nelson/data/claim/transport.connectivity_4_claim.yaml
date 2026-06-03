@@ -1,0 +1,25 @@
+id: claim.nelson.transport.connectivity_4_claim
+statement: Active travel and urban transport infrastructure in Nelson is underdeveloped.
+  Cycling mode share is 6.2% of commute trips (vs. 5% nationally), but dedicated cycle
+  lane coverage is only 18 km of the 280 km inner-city road network (6.4%). Pedestrian
+  infrastructure (footpaths, crossings) in outer suburbs (Tasman Cob, Stoke, Motueka
+  periphery) is incomplete or substandard. Public transport (regional bus operator
+  Motueka Shuttles, plus NCC city buses) covers 3% of commute mode share; service
+  frequency is 1–2 hourly, insufficient for non-car dependence. Park-and-ride facilities
+  at SH6 are minimal. Car dependency is 68% of commute trips; congestion on SH6 northbound
+  and Haven Road peaks 7.30–8.45 am and 4.15–5.30 pm.
+value: 6.2
+unit: percent cycling mode share
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.mode_share_v1
+notes: null

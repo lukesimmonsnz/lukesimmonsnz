@@ -1,0 +1,21 @@
+id: claim.tasman.health.chronic_disease_claim
+statement: Health NZ Tasman (2023) reports Type 2 diabetes prevalence at 6.8% (age
+  15+), above national average of 5.9%. Cardiovascular disease mortality is 18% above
+  national age-standardised rate. Obesity prevalence stands at 32%, linked to socioeconomic
+  deprivation in Motueka and rural farming communities.
+value: 6.8
+unit: percent diabetes prevalence
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_tasman_2023
+- source.stats_nz_census_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

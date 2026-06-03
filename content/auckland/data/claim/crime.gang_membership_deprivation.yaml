@@ -1,20 +1,20 @@
 id: claim.auckland.crime.gang_membership_deprivation
-statement: >
-  Gang membership in Auckland is heavily concentrated in high-deprivation
-  areas; gangs provide economic opportunity, social belonging, and
-  protection in contexts where legitimate alternatives are scarce.
-  Suppression-only approaches historically increase gang cohesion rather
-  than reduce membership.
+statement: 'Gang membership in Auckland is heavily concentrated in high-deprivation
+  areas; gangs provide economic opportunity, social belonging, and protection in contexts
+  where legitimate alternatives are scarce. Suppression-only approaches historically
+  increase gang cohesion rather than reduce membership.
+
+  '
 value: null
 unit: null
-time_period: "2018-2023"
+time_period: 2018-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.nz_police_organised_crime_2023
-  - source.ministry_of_justice_victimisation_2023
+- source.nz_police_organised_crime_2023
+- source.ministry_of_justice_victimisation_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

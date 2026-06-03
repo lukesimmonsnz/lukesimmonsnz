@@ -1,0 +1,12 @@
+id: driver.southland.inequality.rural_isolation_service_distance
+name: Rural Isolation and Service Distance
+description: Southland farming families far from jobs, schools, healthcare; transport
+  costs high.
+theme: inequality
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.southland.inequality.rural_isolation
+claim_ids: []

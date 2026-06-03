@@ -1,0 +1,20 @@
+id: 'camp.waikato.environment.camp_4'
+name: 'Technology and innovation in environment'
+theme: 'environment'
+core_claim: 'Technology and innovation in environment is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement technology and innovation in environment'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'waikato'
+tensions_with: []

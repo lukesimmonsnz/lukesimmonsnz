@@ -1,0 +1,24 @@
+id: 'problem.northland.transport.roading'
+title: 'Te Tai Tokerau Northland: road network adequacy'
+theme: 'transport'
+section: 'transport'
+subpage: 'roading'
+parent: 'problem.northland.transport.connectivity'
+order: 3
+updated: '2026-04-26'
+summary: 'Roading suffers from maintenance and capacity issues.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Roading suffers from maintenance and capacity issues.'
+claim_ids:
+- 'claim.northland.transport.roading_claim1'
+- 'claim.northland.transport.roading_claim2'
+status: 'draft'

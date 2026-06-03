@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Research Methodology · Luke Simmons{% endblock %}
+{% block meta_description %}The typed entity graph schema, invariant system, methodology registry, and authorship regime underlying the Aotearoa regional research corpus.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Methodology', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Documentation</span>
+    <h1>Research Methodology</h1>
+    <hr class="rule">
+    <p class="lede">
+      The knowledge representation schema, invariant system, and authorship
+      regime for the Aotearoa regional research project. Citable as a
+      meta-source for any claim or pattern entity in this corpus.
+    </p>
+  </header>
+
+  <article class="prose">
+    {{ body_html|safe }}
+  </article>
+</div>
+{% endblock %}

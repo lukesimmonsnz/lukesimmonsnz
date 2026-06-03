@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.inequality.deprivation_placeholder
+statement: Manawatū-Whanganui ranks 6th-7th regionally for overall socioeconomic deprivation
+  (Stats NZ 2018 Index). Whanganui city is Quintile 5 (most deprived nationally);
+  Palmerston North is mixed (Quintiles 2-3); rural areas vary (Rangitikei, Tararua,
+  Ruapehu mostly Quintiles 3-4). Deprivation correlates with unemployment (rural unemployment
+  5-7%, urban 4-6%), household income (Whanganui median NZ$48,000 vs Palmerston North
+  NZ$62,000), and access to services (health, education, transport). Cross-cutting
+  deprivation reduction is a strategic priority across multiple councils.
+value: null
+unit: null
+time_period: 2018-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2018_mw
+- source.stats_nz_census_2023_mw
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

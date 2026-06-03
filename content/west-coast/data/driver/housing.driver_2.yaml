@@ -1,0 +1,15 @@
+id: driver.west_coast.housing.driver_2
+name: Small ratepayer base under three-waters and resilience load
+description: Small West Coast councils face per-capita three-waters infrastructure costs well above urban benchmarks, with
+  post-flood repair and climate-resilience upgrades stacked on top. Funding the resulting capex pipeline within rates alone
+  is not feasible.
+theme: housing
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.housing.affordability
+- problem.west_coast.housing.rental_market
+- problem.west_coast.housing.infrastructure_cost
+claim_ids: []

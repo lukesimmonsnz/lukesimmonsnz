@@ -1,20 +1,20 @@
 id: claim.auckland.climate.repetitive_flood_loss
-statement: >
-  A significant share of Auckland's flood damage is concentrated in
-  a small number of repeatedly flooded properties; properties flooded
-  in the January 2023 event had in many cases been flooded in
-  previous major events, indicating a failure to either protect or
-  relocate properties with known, chronic flood exposure.
+statement: 'A significant share of Auckland''s flood damage is concentrated in a small
+  number of repeatedly flooded properties; properties flooded in the January 2023
+  event had in many cases been flooded in previous major events, indicating a failure
+  to either protect or relocate properties with known, chronic flood exposure.
+
+  '
 value: null
 unit: null
-time_period: "2017-2023"
+time_period: 2017-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_climate_plan_2023
+- source.auckland_council_climate_plan_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

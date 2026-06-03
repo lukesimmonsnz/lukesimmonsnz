@@ -1,0 +1,10 @@
+id: 'driver.waikato.infrastructure.driver_2'
+name: 'Resource and funding constraints in infrastructure'
+description: 'Resource and funding constraints in infrastructure in regional context.'
+theme: 'infrastructure'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

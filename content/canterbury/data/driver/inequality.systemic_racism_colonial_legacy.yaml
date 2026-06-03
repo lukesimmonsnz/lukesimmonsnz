@@ -1,0 +1,11 @@
+id: driver.canterbury.inequality.systemic_racism_colonial_legacy
+name: Systemic Racism & Colonial Land Dispossession Legacy
+description: Systemic Racism & Colonial Land Dispossession Legacy
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.inequality.ethnic_gap
+claim_ids: []

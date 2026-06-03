@@ -1,0 +1,20 @@
+id: camp.gisborne.economy.economic_fragility_approach
+name: Strategic approach for economic_fragility
+theme: economy
+core_claim: Strategic intervention on economic_fragility will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting economic_fragility
+- Priority action 2 targeting economic_fragility
+- Institutional coordination mechanism for economic_fragility
+tensions:
+- 'Tension 1: economic_fragility'
+- 'Tension 2: economic_fragility'
+addresses:
+- problem.gisborne.economy.economic_fragility
+interventions:
+- description: Primary intervention for economic_fragility
+  state_variable: economic_fragility_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

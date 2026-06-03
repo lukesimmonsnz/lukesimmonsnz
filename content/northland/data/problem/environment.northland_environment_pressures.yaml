@@ -1,0 +1,38 @@
+id: problem.northland.environment.northland_environment_pressures
+title: Environmental pressures in Te Tai Tokerau
+theme: environment
+section: environment
+subpage: environment-pressures
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Northland's unique ecological assets face accelerating pressures from kauri
+  dieback, freshwater degradation, and coastal erosion.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - environment_pressure_index
+  - environment_system_capacity
+  inputs:
+  - central_government_investment
+  - population_change
+  constraints:
+  - fiscal_capacity
+  - geographic_isolation
+  feedback_loops:
+  - 'Pressure accumulation: deteriorating environment conditions compound inequality
+    and constrain economic recovery.'
+narrative:
+- heading: Regional context
+  body: Environmental pressures in Te Tai Tokerau is a defining challenge for Te Tai
+    Tokerau, reflecting both structural disadvantage and underinvestment relative
+    to national averages.
+- heading: System dynamics
+  body: Northland's unique ecological assets face accelerating pressures from kauri
+    dieback, freshwater degradation, and coastal erosion.
+claim_ids:
+- claim.northland.environment.northland_environment_pressures_claim1
+- claim.northland.environment.northland_environment_pressures_claim2
+status: draft
+time_horizons: [generation, century]

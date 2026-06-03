@@ -1,0 +1,14 @@
+id: driver.wellington.inequality.employment_sector_stratification
+name: Employment sector stratification by ethnicity
+description: 'Wellington''s labour market is stratified: government and professional roles are disproportionately held by
+  Pākehā workers while Pacific and Māori workers are overrepresented in lower-wage service, retail, and manual roles.'
+theme: inequality
+consensus: consensus
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.inequality.ethnic_wealth_gap
+- problem.wellington.inequality.economic_disadvantage
+claim_ids:
+- claim.wellington.inequality.pacific_income_gap

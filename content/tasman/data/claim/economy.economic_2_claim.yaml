@@ -1,0 +1,20 @@
+id: claim.tasman.economy.economic_2_claim
+statement: Horticulture (apples, kiwifruit, cherries) comprises 22% of Tasman's GDP;
+  apple and kiwifruit orchards occupy 8,400 hectares. Export value reached NZD 187
+  million (2023), with 85% of fruit destined for overseas markets (China, Japan, EU).
+value: 187
+unit: NZD million export value
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.stats_nz_census_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

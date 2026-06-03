@@ -1,0 +1,14 @@
+id: driver.waikato.inequality.cost_of_living
+name: Rising cost of living outpacing wage growth
+description: Housing, food, and energy cost increases erode real incomes for low-income
+  households.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.inequality.child_poverty
+- problem.waikato.inequality.ethnic_gap
+- problem.waikato.inequality.rural_poverty
+claim_ids: []

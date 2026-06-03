@@ -1,0 +1,35 @@
+id: pattern.environment.biodiversity_loss
+title: Biodiversity loss and habitat fragmentation
+theme: environment
+summary: Native biodiversity is declining across all regions from the combined effects
+  of habitat fragmentation, invasive predators, land-use change, and climate-driven
+  range shifts.
+manifests_in:
+- northland
+- auckland
+- waikato
+- bay-of-plenty
+- gisborne
+- hawkes-bay
+- wellington
+- canterbury
+- otago
+- southland
+claim_ids:
+- claim.auckland.environment.habitat_fragmentation
+- claim.waikato.environment.wetland_loss_90pct
+- claim.bay_of_plenty.environment.biodiversity_31
+- claim.gisborne.environment.biodiversity_loss_31
+- claim.otago.environment.coastal_otago_prevalence
+narrative:
+- heading: National pattern
+  body: New Zealand has one of the world's highest proportions of threatened and endangered
+    species. Despite Predator Free 2050 ambitions, habitat fragmentation and predator
+    pressure continue to reduce populations of native birds, lizards, and invertebrates
+    across all regions.
+- heading: Land use interaction
+  body: Urban expansion, pastoral intensification, and plantation forestry each reduce
+    or degrade native habitat. The cumulative effect across land-use boundaries exceeds
+    what any single region's protection effort can offset.
+status: draft
+updated: '2026-04-26'

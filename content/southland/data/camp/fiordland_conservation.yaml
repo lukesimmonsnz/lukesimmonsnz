@@ -1,0 +1,20 @@
+id: camp.southland.environment.fiordland_conservation
+name: Fiordland Ecosystem Protection and Invasive Control
+theme: environment
+core_claim: Scaling DOC predator control and tourism management protects endemic species.
+flagship_moves:
+- Expand predator control in Fiordland
+- Visitor capacity limits in sensitive areas
+- Invasive species biosecurity
+tensions:
+- High DOC operational cost
+- Visitor management politically difficult
+addresses:
+- problem.southland.environment.fiordland_ecosystem
+interventions:
+- description: Restore 3 endangered species populations
+  state_variable: endemic_species_abundance
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

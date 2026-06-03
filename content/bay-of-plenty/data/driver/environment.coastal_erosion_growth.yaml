@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.environment.coastal_erosion_growth
+name: Driver for coastal_erosion
+description: "This driver exacerbates the coastal_erosion pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: environment
+consensus: contested
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.environment.coastal_erosion
+claim_ids:
+- claim.bay_of_plenty.environment.coastal_erosion_29

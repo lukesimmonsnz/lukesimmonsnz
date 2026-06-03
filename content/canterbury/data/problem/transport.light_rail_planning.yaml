@@ -1,0 +1,42 @@
+id: problem.canterbury.transport.light_rail_planning
+title: Light Rail Planning & Implementation Delay
+theme: transport
+section: transport
+subpage: light_rail_planning
+parent: problem.canterbury.transport.network
+order: 2
+updated: '2026-04-26'
+summary: 'Christchurch light rail has been in planning since 2019 but remains stuck
+  in pre-construction phase (business case, procurement), with no confirmed funding
+  or construction start date. Delay perpetuates vehicle dependency and misses window
+  for CBD rebuild synergy.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - light_rail_project_phase
+  - estimated_construction_start_year
+  - projected_annual_patronage
+  inputs:
+  - central_govt_funding_availability
+  - local_council_co_funding_commitment
+  constraints:
+  - cera_rebuild_completion_dependency
+  - CBD_traffic_management_during_construction
+  feedback_loops:
+  - Dynamic feedback mechanisms drive light rail planning & implementation delay.
+narrative:
+- heading: Multi-year stall in project development
+  body: 'Light rail feasibility work began 2019; route announced 2021 (CBD to Rangiora).
+    However, formal business case remains incomplete (2026) due to cost escalation,
+    funding uncertainty, and competing Three Waters infrastructure priorities. Each
+    delay reduces probability of construction during window of CBD rebuild disruption
+    (2026-2030).
+
+    '
+claim_ids:
+- claim.canterbury.transport.light_rail_delay_2026
+status: draft
+time_horizons: [decade, generation]

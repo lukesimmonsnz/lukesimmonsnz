@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.crime.trauma_informed_justice
+name: Trauma-Informed Justice System
+theme: crime
+core_claim: Therapeutic approach to offending and response.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.education.achievement
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

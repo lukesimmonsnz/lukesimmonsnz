@@ -1,0 +1,20 @@
+id: claim.bay_of_plenty.education.tertiary_63
+statement: Educational outcomes in Bay Of Plenty are below national averages, with
+  significant disparities by area and demographic group. Rural schools face teacher
+  recruitment challenges; tertiary participation and attainment rates lag urban areas,
+  limiting skill development and career opportunities.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.homeownership_rate_v1
+notes: null

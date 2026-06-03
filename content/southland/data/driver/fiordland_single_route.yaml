@@ -1,0 +1,11 @@
+id: driver.southland.transport.fiordland_single_route
+name: Fiordland SH94 Single Route Dependency
+description: Milford Sound access via single 120km highway; no alternative routes.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.southland.transport.fiordland_access
+claim_ids: []

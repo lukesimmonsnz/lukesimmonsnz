@@ -1,0 +1,20 @@
+id: claim.wellington.education.ece_participation_porirua
+statement: ECE participation rates in Porirua are approximately 10 percentage points
+  below Wellington City, reflecting cost barriers, limited provider supply in high-deprivation
+  areas, and the absence of community-responsive provision that meets the practical
+  needs of families in these communities.
+value: 10
+unit: percentage point gap below Wellington City ECE participation
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_wellington_achievement_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.consent_rate_v1
+notes: Consent rate methodology used for ECE participation rate.

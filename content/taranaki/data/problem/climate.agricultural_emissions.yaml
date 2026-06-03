@@ -1,0 +1,29 @@
+id: problem.taranaki.climate.agricultural_emissions
+title: Agricultural (dairy and sheep) emissions
+theme: climate-adaptation
+section: climate
+subpage: agricultural_emissions
+parent: problem.taranaki.climate.climate_emissions
+order: 2
+updated: '2026-04-26'
+summary: Dairy and sheep farming generate approximately 60% of Taranaki regional emissions
+  (methane and nitrous oxide).
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - agricultural_emissions_index
+  inputs:
+  - agricultural_emissions_input_1
+  constraints:
+  - agricultural_emissions_constraint
+  feedback_loops:
+  - 'Feedback: agricultural_emissions'
+narrative:
+- heading: Agricultural (dairy and sheep) emissions in Taranaki
+  body: Dairy and sheep farming generate approximately 60% of Taranaki regional emissions
+    (methane and nitrous oxide).
+claim_ids:
+- claim.taranaki.climate.agricultural_emissions_01
+status: draft
+time_horizons: [generation, century]

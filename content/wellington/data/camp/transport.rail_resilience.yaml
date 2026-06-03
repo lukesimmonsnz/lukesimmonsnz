@@ -1,0 +1,23 @@
+id: camp.wellington.transport.rail_resilience
+name: Rail Network Investment and Hardening
+theme: transport
+core_claim: Wellington's rail network is the backbone of regional transport; capital renewal and seismic hardening must be
+  prioritised over road expansion.
+flagship_moves:
+- Full renewal of rolling stock and overhead infrastructure on Hutt and Kapiti lines
+- Seismic assessment and hardening of Thorndon and Ngauranga rail cuttings
+- Dual-fuel or battery multiple units to reduce diesel dependency
+tensions:
+- Capital cost displaces other infrastructure investment over multi-year programme
+- Rail-centric approach leaves Porirua and eastern suburbs underserved
+addresses:
+- problem.wellington.transport.network_resilience
+- problem.wellington.transport.rail_network
+interventions:
+- description: Commit to 10-year rolling stock renewal programme funded jointly by Crown and GWRC
+  state_variable: rail_reliability
+  constraint_relaxed: deferred_rail_investment
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

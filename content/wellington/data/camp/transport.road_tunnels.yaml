@@ -1,0 +1,22 @@
+id: camp.wellington.transport.road_tunnels
+name: Road Corridor Capacity Expansion
+theme: transport
+core_claim: New road tunnels through the Wellington hills are essential to reduce congestion and provide resilient corridors.
+flagship_moves:
+- Progress Mt Victoria second tunnel to construction within this decade
+- Advance Terrace Tunnel replacement to four-lane capacity
+- Improve SH2 Upper Hutt resilience with alternative alignment
+tensions:
+- Induced demand will erode congestion benefits within 10–15 years
+- Large capital projects crowd out frequent-service public transport investment
+- Carbon intensity of construction conflicts with Wellington City's climate commitments
+addresses:
+- problem.wellington.transport.highway_bottleneck
+- problem.wellington.transport.network_resilience
+interventions:
+- description: Begin detailed business case for Mt Victoria second tunnel and Terrace Tunnel replacement
+  state_variable: cross_isthmus_capacity
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

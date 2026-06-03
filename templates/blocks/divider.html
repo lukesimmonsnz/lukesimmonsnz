@@ -1,0 +1,7 @@
+{% if attrs.style == 'star' %}
+<div class="block-divider divider-star" aria-hidden="true">⁂</div>
+{% elif attrs.style == 'space' %}
+<div class="block-divider divider-space" aria-hidden="true"></div>
+{% else %}
+<hr class="block-divider divider-line">
+{% endif %}

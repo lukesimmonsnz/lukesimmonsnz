@@ -1,0 +1,31 @@
+id: problem.marlborough.housing.affordability
+title: Housing Affordability and Ownership Access
+theme: housing
+section: housing
+subpage: affordability
+parent: problem.marlborough.housing.housing_market
+order: 1
+updated: '2026-04-26'
+summary: Housing prices elevated relative to local incomes; ownership barriers; investor
+  competition.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Housing prices elevated relative to local incomes; ownership barriers; investor
+    competition.
+claim_ids:
+- claim.marlborough.housing.affordability_1
+- claim.marlborough.housing.affordability_2
+status: draft
+time_horizons: [decade, generation, century]

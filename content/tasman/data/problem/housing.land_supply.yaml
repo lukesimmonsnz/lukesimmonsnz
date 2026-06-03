@@ -1,0 +1,41 @@
+id: problem.tasman.housing.land_supply
+title: Zoned land that is hard to actually build on
+theme: housing
+section: housing
+subpage: land_supply
+parent: affordability
+order: 2
+updated: '2026-04-26'
+summary: Tasman has roughly 1,850 hectares of residentially zoned land in the Richmond-Motueka belt — a notional
+  100-year supply at current absorption — but high land prices, heritage overlays, and stormwater capacity limits
+  mean most of it does not become consented dwellings in any given year.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - hectares_residential_zoned
+  - annual_dwellings_consented
+  inputs:
+  - three_waters_capacity_upgrade
+  - consenting_throughput
+  constraints:
+  - heritage_overlays
+  - stormwater_capacity_limits
+  feedback_loops:
+  - Slow absorption keeps land prices high, which keeps absorption slow.
+narrative:
+- heading: Zoned does not mean buildable
+  body: Land prices in Richmond's central residential zones run NZD 1.2 to 1.8 million per hectare, which deters
+    greenfield subdivision. Infill is constrained by heritage overlays in older parts of Richmond and by stormwater
+    capacity limits in low-lying Waimea Inlet catchments (claim.tasman.housing.land_supply_claim).
+- heading: Absorption is the rate-limiting step
+  body: Annual absorption sits at roughly 18 hectares — around 1 percent of the zoned inventory. Because the binding
+    constraints are infrastructure-capacity, land-banking, and consenting throughput rather than zoning, simply
+    rezoning more rural land does not move the dwelling completion rate.
+claim_ids:
+- claim.tasman.housing.land_supply_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

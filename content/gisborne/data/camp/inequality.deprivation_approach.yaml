@@ -1,0 +1,20 @@
+id: camp.gisborne.inequality.deprivation_approach
+name: Strategic approach for deprivation
+theme: inequality
+core_claim: Strategic intervention on deprivation will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting deprivation
+- Priority action 2 targeting deprivation
+- Institutional coordination mechanism for deprivation
+tensions:
+- 'Tension 1: deprivation'
+- 'Tension 2: deprivation'
+addresses:
+- problem.gisborne.inequality.deprivation
+interventions:
+- description: Primary intervention for deprivation
+  state_variable: deprivation_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

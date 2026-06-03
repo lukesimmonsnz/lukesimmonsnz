@@ -1,22 +1,22 @@
 id: claim.auckland.economy.infrastructure_funding_model_failure
-statement: >
-  Auckland's infrastructure funding model (general rates plus Crown
-  grants) does not efficiently capture the land value uplift created
-  by public infrastructure investment; property owners adjacent to
-  new rapid transit capture large capital gains funded by general
-  ratepayers and taxpayers, while the infrastructure investor receives
-  no direct return on the value created.
+statement: 'Auckland''s infrastructure funding model (general rates plus Crown grants)
+  does not efficiently capture the land value uplift created by public infrastructure
+  investment; property owners adjacent to new rapid transit capture large capital
+  gains funded by general ratepayers and taxpayers, while the infrastructure investor
+  receives no direct return on the value created.
+
+  '
 value: null
 unit: null
-time_period: "2018-2023"
+time_period: 2018-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.infrastructure_nz_2023
-  - source.treasury_lsf_2023
+- source.infrastructure_nz_2023
+- source.treasury_lsf_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

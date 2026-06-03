@@ -1,0 +1,50 @@
+id: problem.canterbury.environment.freshwater_stress
+title: Canterbury Freshwater Stress & Aquifer Pressure
+theme: environment
+section: environment
+subpage: freshwater_stress
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury''s freshwater systems are under intense pressure from irrigated
+  agriculture (dairy, arable), particularly the Canterbury Plains aquifer complex.
+  Nitrogen contamination, aquifer depletion, and reduced summer stream flows threaten
+  water security and aquatic ecosystem health. The Canterbury Water Management Strategy
+  (CWMS) sets allocation limits, but compliance and enforcement remain contested.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - aquifer_level_by_subzone
+  - nitrate_concentration_groundwater
+  - lowland_stream_flow_summer
+  - irrigation_water_allocation_utilization
+  inputs:
+  - rainfall_seasonality
+  - dairy_stocking_density
+  - irrigation_system_efficiency
+  - urban_nitrogen_input
+  constraints:
+  - cwms_allocation_limits
+  - aquifer_recharge_rate
+  - ecological_water_demand
+  feedback_loops:
+  - 'Irrigation-intensification loop: high milk prices incentivize irrigation expansion,
+    increasing N leaching and aquifer stress, which in turn triggers regulatory tightening
+    (CWMS reviews).'
+narrative:
+- heading: Agricultural nitrogen crisis
+  body: 'Canterbury''s aquifer nitrogen concentrations have risen from <5 mg/L (1990s)
+    to 10-15 mg/L in many zones (2023), approaching the 11.3 mg/L drinking water standard.
+    Dairy farming accounts for ~70% of N loading. Spatial concentration in intensively
+    farmed zones (mid-Canterbury) creates localized exceedances requiring expensive
+    treatment.
+
+    '
+claim_ids:
+- claim.canterbury.environment.aquifer_nitrate_2023
+- claim.canterbury.environment.dairy_intensification_2023
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,41 @@
+id: problem.tasman.education.secondary
+title: Two secondary schools serving a long region
+theme: education
+section: education
+subpage: secondary
+parent: achievement
+order: 3
+updated: '2026-04-26'
+summary: Tasman has two state secondary schools — Motueka High School (around 560 students) and Takaka Area School
+  (around 320 students). NCEA Level 3 pass rates average 72 percent against a national 76 percent, and Golden Bay
+  students attending Motueka face 45-plus minutes of daily commute each way.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - ncea_l3_pass_rate
+  - average_daily_school_commute_minutes
+  inputs:
+  - secondary_school_staffing
+  - subject_breadth_offering
+  constraints:
+  - two_provider_market
+  - rural_dispersion
+  feedback_loops:
+  - Long commutes lower extracurricular and tertiary-prep participation, which reduces the school's capacity to
+    lift attainment, which reduces parental confidence in the local option.
+narrative:
+- heading: Choice set of effectively two
+  body: For a district of around 55,000 people, two secondary providers means most students have no realistic alternative
+    if the local school does not suit them. That has consequences for subject offerings, special-needs provision,
+    and the resilience of results to staff turnover (claim.tasman.education.secondary_claim).
+- heading: Commute as a cost on attainment
+  body: Mohua students attending Motueka High School lose 90 minutes a day to a bus over the Takaka Hill — time
+    not available for homework, extracurricular activity, or part-time work. This is a structural factor behind
+    the regional NCEA-Level-3 gap, not a function of teaching quality.
+claim_ids:
+- claim.tasman.education.secondary_claim
+status: draft
+time_horizons:
+- decade
+- generation

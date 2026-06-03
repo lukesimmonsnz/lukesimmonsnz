@@ -1,0 +1,15 @@
+id: driver.west_coast.crime.driver_2
+name: Thin policing footprint and pathway scarcity
+description: Small police staffing, long after-hours response distances, and a contracting set of post-school education and
+  employment pathways together produce both safety and youth-offending pressure. The operational footprint is too thin to
+  substitute prevention for response.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.crime.safety
+- problem.west_coast.crime.youth_offending
+- problem.west_coast.crime.drug_crime
+claim_ids: []

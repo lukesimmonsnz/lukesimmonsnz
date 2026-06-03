@@ -1,0 +1,30 @@
+id: camp.hawkes_bay.climate.flood_resilience_infrastructure
+name: Flood resilience and protection infrastructure
+theme: climate-adaptation
+core_claim: Investing in upgraded stopbanks, stormwater systems, and natural flood
+  defences reduces inundation risk from climate-intensified rainfall and sea-level
+  rise.
+flagship_moves:
+- Upgrade Napier and Hastings stopbanks to 1-in-100-year standard within 10 years
+- Invest in stormwater storage and retention ponds across urban areas
+- Establish wetland and riparian buffers for flood attenuation
+tensions:
+- Infrastructure upgrades require $2+ billion investment over 10 years
+- Protection infrastructure may increase settlement in flood-prone areas (moral hazard)
+- Natural solutions (wetlands, riparian) require land acquisition at high cost
+addresses:
+- problem.hawkes_bay.climate.cyclone_flood_risk
+- problem.hawkes_bay.infrastructure.flood_protection
+- problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+- problem.hawkes_bay.climate.coastal_hazard
+interventions:
+- description: Upgrade Napier and Hastings stopbanks to 1-in-100-year rainfall standard
+  state_variable: flood_protection_standard_exceedance_days
+  expected_sign: '-'
+- description: Build stormwater retention ponds and wetland buffers in urban flood-prone
+    zones
+  state_variable: flood_attenuation_capacity_litres
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

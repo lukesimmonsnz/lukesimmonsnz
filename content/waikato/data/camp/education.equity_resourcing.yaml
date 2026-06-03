@@ -1,0 +1,24 @@
+id: camp.waikato.education.equity_resourcing
+name: Equity-based school resourcing
+theme: education
+core_claim: Directing higher per-student funding to high-deprivation schools and kaupapa
+  Māori education narrows achievement gaps.
+flagship_moves:
+- Increase equity funding weightings for decile 1-3 schools in Waikato
+- Expand kura kaupapa Māori and bilingual unit provision
+- Provide rural teacher incentives including housing support
+tensions:
+- Higher funding does not automatically translate to achievement gains
+- Rural incentives may increase teacher costs without improving outcomes
+interventions:
+- description: Increase equity funding weightings for decile 1-3 schools in Waikato
+  state_variable: ncea_attainment_rate
+  expected_sign: +
+addresses:
+- problem.waikato.education.waikato_education_inequity
+- problem.waikato.education.achievement
+- problem.waikato.education.early_childhood
+- problem.waikato.education.tertiary_pathway
+applicable_in:
+- waikato
+tensions_with: []

@@ -1,0 +1,37 @@
+id: problem.nelson.housing.affordability
+title: Severely unaffordable housing in Nelson city
+theme: housing
+section: housing
+subpage: affordability
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Nelson is in the Demographia ''severely unaffordable'' band: median house price of around $725,000 (April 2024) against median household income of approximately $62,400 produces a price-to-income ratio of 11.6x, well above the national 8.2x. Real prices rose 58 percent between 2018 and 2022, then fell 14 percent by 2024 but remain about 40 percent above the 2018 baseline. Principal-and-interest repayments now consume 32-38 percent of household income for Nelson buyers.'
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - median_house_price_nzd
+  - price_to_income_ratio
+  - first_home_buyer_share_of_sales
+  inputs:
+  - mortgage_rate
+  - net_migration
+  - consenting_throughput
+  constraints:
+  - buildable_land_hectares
+  - construction_cost_index
+  feedback_loops:
+  - 'Migration-price-supply feedback: in-migration drives prices, prices attract speculative supply but also lock out the entry workforce that supply construction depends on, slowing the supply response.'
+narrative:
+- heading: How Nelson got here
+  body: 'Nelson''s affordability deterioration combines three things: lifestyle in-migration during and after COVID, severely constrained buildable land in the basin, and a small rental supply that converts quickly to ownership stock (claim.nelson.housing.affordability_claim). The combined effect was steeper than the national price cycle.'
+- heading: Distributional impact
+  body: The first-home-buyer cohort is the most directly priced out; the next-most-affected group is the long-term renter who cannot save a deposit while paying market rent. Existing owners with mortgages face debt-service stress; mortgage-free owners benefit from the price level. The affordability problem is therefore also an inter-generational wealth-distribution problem.
+claim_ids:
+- claim.nelson.housing.affordability_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

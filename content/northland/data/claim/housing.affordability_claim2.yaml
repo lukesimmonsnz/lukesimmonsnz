@@ -1,0 +1,23 @@
+id: claim.northland.housing.affordability_claim2
+statement: 'Housing shortage in Whangarei: 2,500-3,000 dwelling deficit (Whangarei
+  District Council estimate); Kerikeri/Far North regional demand exceeds supply by
+  ~30%. Investor speculation limited (lower yields vs. Auckland); new builds concentrated
+  in Whangarei urban area. Heritage restrictions in central Whangarei CBD limit infill
+  potential. Building costs elevated (remote location, material freight, limited contractor
+  competition): NZD 2,000-2,300/m2 vs. Auckland NZD 1,800-2,000/m2. Weathertight defect
+  litigation (2000-2010 era) reduced investor confidence in older housing stock.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.government_housing_data_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

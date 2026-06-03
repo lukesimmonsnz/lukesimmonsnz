@@ -1,0 +1,20 @@
+id: camp.canterbury.environment.nitrate_farming_intensification_limit
+name: Nitrogen Farming Intensity Limits & CWMS Enforcement
+theme: environment
+core_claim: Stricter stocking density limits and nitrogen application caps (via CWMS)
+  are necessary to protect aquifer quality and meet drinking water standards.
+flagship_moves:
+- Key intervention for Nitrogen Farming Intensity Limits & CWMS Enforcement
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.environment.aquifer_nitrate_contamination
+interventions:
+- description: Stricter stocking density limits and nitrogen application caps (via
+    CWMS) are necessary to protect aquifer quality and meet drinking water standards.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -36,6 +36,26 @@ _NZ_DATA_DIR = Path(__file__).resolve().parent.parent / "content" / "nz" / "data
 _MIN_REGIONS = 2
 
 
+REGION_TITLES: dict[str, str] = {
+    "auckland":            "Auckland",
+    "wellington":          "Wellington",
+    "northland":           "Northland",
+    "waikato":             "Waikato",
+    "bay-of-plenty":       "Bay of Plenty",
+    "gisborne":            "Gisborne",
+    "hawkes-bay":          "Hawke's Bay",
+    "taranaki":            "Taranaki",
+    "manawatu-whanganui":  "Manawatū-Whanganui",
+    "nelson":              "Nelson",
+    "tasman":              "Tasman",
+    "marlborough":         "Marlborough",
+    "west-coast":          "West Coast",
+    "canterbury":          "Canterbury",
+    "otago":               "Otago",
+    "southland":           "Southland",
+}
+
+
 @nz_bp.route("/")
 def index():
     patterns = load_patterns(_NZ_DATA_DIR)
@@ -45,7 +65,29 @@ def index():
         "nz/index.html",
         by_theme=grouped,
         theme_titles=THEME_TITLES,
+        region_titles=REGION_TITLES,
         total_pattern_count=len(filtered),
+    )
+
+
+@nz_bp.route("/solutions/")
+def solutions():
+    """Cross-pattern analytical essay on solution space for the
+    structural issues observed in the regional corpus.
+
+    Distinct from the per-theme rollup at /research/nz/<theme>/: this
+    page reasons across patterns rather than within a theme. The body
+    is hand-authored prose in templates/nz/solutions.html; the route
+    only injects the pattern index for cross-linking.
+    """
+    patterns = load_patterns(_NZ_DATA_DIR)
+    filtered = query_patterns(patterns, min_regions=_MIN_REGIONS)
+    pattern_index: dict[str, dict] = {p["id"]: p for p in filtered}
+    return render_template(
+        "nz/solutions.html",
+        pattern_index=pattern_index,
+        theme_titles=THEME_TITLES,
+        region_titles=REGION_TITLES,
     )
 
 

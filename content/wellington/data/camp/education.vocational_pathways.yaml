@@ -1,0 +1,22 @@
+id: camp.wellington.education.vocational_pathways
+name: Vocational and Trades Pathway Expansion
+theme: education
+core_claim: Expanding trades and vocational pathways in Wellington secondary schools reduces disengagement and improves employment
+  outcomes for non-academic students.
+flagship_moves:
+- Trades Academy programme in all Porirua and Hutt secondary schools
+- Employer-led gateway programme with Wellington construction sector
+- NCEA vocational pathway endorsement parity with academic endorsements
+tensions:
+- Vocational streaming risks entrenching class and ethnic divisions in education pathways
+- Employer demand for gateway students is cyclical and unreliable as a planning basis
+addresses:
+- problem.wellington.education.secondary_transition
+interventions:
+- description: Fund Trades Academy expansion to 600 additional Wellington student places across construction, health, and
+    digital sectors
+  state_variable: secondary_engagement_rate
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

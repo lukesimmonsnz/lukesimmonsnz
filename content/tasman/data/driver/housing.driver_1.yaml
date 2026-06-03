@@ -1,0 +1,14 @@
+id: driver.tasman.housing.driver_1
+name: Lifestyle-migration demand from metropolitan equity
+description: Sustained inflow of lifestyle migrants from Auckland and Wellington, arriving with metropolitan housing
+  equity, sets a price floor in the Richmond and Motueka markets that is structurally above what local incomes can
+  support.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.housing.affordability
+- problem.tasman.housing.land_supply
+claim_ids: []

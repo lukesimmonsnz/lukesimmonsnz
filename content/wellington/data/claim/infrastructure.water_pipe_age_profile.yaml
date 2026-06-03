@@ -1,0 +1,19 @@
+id: claim.wellington.infrastructure.water_pipe_age_profile
+statement: A significant proportion of Wellington's water mains are more than 70 years
+  old and well beyond their design service life, and Wellington Water's annual renewal
+  rate is insufficient to prevent the average pipe age from continuing to increase.
+value: null
+unit: null
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wellington_water_asset_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

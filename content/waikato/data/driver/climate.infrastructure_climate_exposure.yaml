@@ -1,0 +1,14 @@
+id: driver.waikato.climate.infrastructure_climate_exposure
+name: Infrastructure exposure to climate extremes
+description: Roads, flood protection, and urban drainage infrastructure were designed
+  for historical climate conditions now being exceeded.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.climate.flood_risk
+- problem.waikato.climate.agricultural_emissions
+- problem.waikato.climate.drought_risk
+claim_ids: []

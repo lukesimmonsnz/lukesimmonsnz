@@ -1,20 +1,20 @@
 id: claim.auckland.health.first_1000_days
-statement: >
-  The first 1,000 days from conception to age two are the period of
-  greatest neurological development and the highest return on investment
-  for public health; nutritional deficiency, maternal stress, and
-  housing instability during this window have documented long-run
-  consequences for cognitive development, mental health, and chronic
-  disease risk.
+statement: 'The first 1,000 days from conception to age two are the period of greatest
+  neurological development and the highest return on investment for public health;
+  nutritional deficiency, maternal stress, and housing instability during this window
+  have documented long-run consequences for cognitive development, mental health,
+  and chronic disease risk.
+
+  '
 value: null
 unit: null
-time_period: "2000-2023"
+time_period: 2000-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.moh_maternal_child_health_2023
+- source.moh_maternal_child_health_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

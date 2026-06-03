@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.housing.population_growth
+name: Population And Household Growth
+description: Population and household growth. This driver operates at regional scale
+  with consensus consensus.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.palmerston_north_growth
+claim_ids: []

@@ -1,0 +1,21 @@
+id: camp.otago.housing.student_accommodation
+name: University-Managed Student Accommodation
+theme: housing
+core_claim: Expand university-managed student housing to reduce private rental market
+  pressure.
+flagship_moves:
+- University capital investment in on-campus residential colleges
+- Co-invest with private providers for mixed-tenure models
+- Set rental caps at cost-recovery for university housing
+tensions:
+- University capital constraints limit expansion rate
+- Private landlords oppose market-share loss
+addresses:
+- problem.otago.housing.dunedin_student_rental
+interventions:
+- description: Expand University of Otago accommodation by 2,000 beds over 5 years
+  state_variable: student_rental_stock
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

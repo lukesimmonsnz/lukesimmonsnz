@@ -1,0 +1,21 @@
+id: claim.southland.governance.smelter_energy_policy_trend
+statement: Smelter energy policy in Southland faces strategic uncertainty. Power contract
+  extended to end 2026 (subject to review); no long-term commitment beyond 2026. Regional
+  renewable energy strategy not prioritized; Invercargill and Southland District climate
+  action plans mention smelter transition but lack implementation detail. Meridian/NZAS
+  negotiations confidential.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

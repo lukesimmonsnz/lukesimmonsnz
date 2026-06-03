@@ -1,0 +1,22 @@
+id: claim.southland.health.chronic_disease_trend
+statement: Chronic disease prevalence in Southland is rising. Obesity rates increasing
+  particularly in young adults; Type 2 diabetes age of onset decreasing; cardiovascular
+  mortality remaining elevated. Lifestyle factors (high alcohol consumption, smoking
+  prevalence 18-22% vs national 13%), limited physical activity infrastructure (rural
+  areas), and high-sodium processed food availability contribute. Health promotion
+  investment limited.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

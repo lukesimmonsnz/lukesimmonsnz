@@ -1,0 +1,12 @@
+category: demographic
+claim_ids: []
+consensus: consensus
+description: Family violence, youth offending, and organized crime reflect deprivation,
+  substance abuse, and systemic factors.
+id: driver.canterbury.crime.crime_drivers_aggregate
+name: Multiple Crime Risk Factors
+problem_ids:
+- problem.canterbury.crime.safety
+scope: regional
+theme: crime
+timescale: long

@@ -1,0 +1,21 @@
+id: claim.gisborne.climate.cyclone_risk_83
+statement: Cyclone risk in Gisborne is elevated by geographic exposure and infrastructure
+  vulnerability. Historical cyclone frequency (1-2 per decade) is expected to increase
+  20-30% by 2070; roading, water, power, and telecommunications systems require hardening
+  to withstand intensified storm impacts.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.sea_level_projection_v1
+notes: null

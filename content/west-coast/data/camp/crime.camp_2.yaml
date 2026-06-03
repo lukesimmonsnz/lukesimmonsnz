@@ -1,0 +1,25 @@
+id: camp.west_coast.crime.rural_safety_network_and_first
+name: Rural Safety Network and First Responder Capacity
+theme: crime
+core_claim: Extreme geographic isolation means emergency response times in West Coast
+  are among the longest in NZ; volunteer networks and rural safety coordination are
+  critical.
+flagship_moves:
+- Strengthen St John and fire service volunteer capacity in isolated West Coast communities
+- Develop rural safety communication network for Haast, Karamea, and Reefton
+- Fund rural police community liaison officers
+tensions:
+- Volunteer retention is difficult in depopulating communities
+- Long response times are a structural consequence of geography that funding cannot
+  fully overcome
+addresses:
+- problem.west_coast.crime.safety
+- problem.west_coast.crime.youth_offending
+- problem.west_coast.crime.drug_crime
+interventions:
+- description: Develop rural emergency response network for isolated communities
+  state_variable: emergency_response_time
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

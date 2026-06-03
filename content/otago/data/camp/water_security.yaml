@@ -1,0 +1,21 @@
+id: camp.otago.climate.water_security
+name: Water Security and Drought Adaptation
+theme: climate-adaptation
+core_claim: Diversified water sources, efficiency, and demand management ensure Central
+  Otago drought resilience.
+flagship_moves:
+- Develop groundwater and recycled water sources
+- Irrigation shift to drought-resistant crops
+- Water storage and catchment management
+tensions:
+- High infrastructure costs; technology uncertainty
+- Farmer adoption barriers
+addresses:
+- problem.otago.climate.drought_central_otago
+interventions:
+- description: Reduce irrigation demand by 20% over 10 years
+  state_variable: irrigation_efficiency
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

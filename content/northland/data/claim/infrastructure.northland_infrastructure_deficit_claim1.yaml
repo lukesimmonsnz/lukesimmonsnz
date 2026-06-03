@@ -1,0 +1,20 @@
+id: claim.northland.infrastructure.northland_infrastructure_deficit_claim1
+statement: Northland faces significant infrastructure deficit in roading, water services,
+  and stormwater management. SH1 sections require safety upgrades; water treatment
+  systems in provincial areas are aging; coordination across Far North, Whangarei,
+  and Kaipara councils is fragmented and underfunded.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

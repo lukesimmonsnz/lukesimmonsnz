@@ -1,0 +1,12 @@
+id: driver.southland.housing.rural_stock_aging
+name: Rural Housing Stock Age and Maintenance
+description: Farming community housing built pre-1970; costly maintenance; limited
+  new construction.
+theme: housing
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.housing.rural_housing
+claim_ids: []

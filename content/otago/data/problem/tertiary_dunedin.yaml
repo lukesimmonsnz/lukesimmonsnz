@@ -1,0 +1,34 @@
+id: problem.otago.education.tertiary_dunedin
+title: Tertiary Sector Student Wellbeing and Outcomes
+theme: education
+section: education
+subpage: tertiary_dunedin
+parent: problem.otago.education.achievement
+order: 4
+updated: '2026-04-26'
+summary: University of Otago and Otago Polytechnic have strong enrollment but mental
+  health, housing, and graduate job placement challenges for regional students.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: University of Otago and Otago Polytechnic have strong enrollment but mental
+    health, housing, and graduate job placement challenges for regional students.
+claim_ids:
+- claim.otago.education.secondary_trend
+- claim.otago.education.early_childhood_trend
+- claim.otago.education.achievement_trend
+- claim.otago.education.early_childhood_prevalence
+- claim.otago.education.achievement_prevalence
+- claim.otago.education.tertiary_dunedin_trend
+- claim.otago.education.tertiary_dunedin_prevalence
+- claim.otago.education.secondary_prevalence
+status: draft
+time_horizons: [decade, generation]

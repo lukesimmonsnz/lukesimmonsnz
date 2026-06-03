@@ -1,0 +1,25 @@
+id: claim.nelson.transport.connectivity_claim
+statement: Nelson's regional connectivity is constrained by the absence of rail and
+  limited air capacity. The region relies on State Highway 6 (to Blenheim/Marlborough
+  and south) and SH60 (to Tasman); both are single-lane in sections, creating bottlenecks
+  during peak travel and poor resilience to closures. No direct rail service to Wellington
+  or Christchurch exists; long-distance coach services (Intercity, regional operators)
+  provide 2–3 daily services, with journey times 5–7 hours. Nelson Airport handles
+  ~280,000 passengers annually (primarily domestic); international routes are limited
+  to seasonal charters. Road transport dominance creates cost, emissions, and resilience
+  vulnerabilities.
+value: null
+unit: null
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: null
+notes: null

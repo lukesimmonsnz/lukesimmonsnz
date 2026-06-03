@@ -1,0 +1,22 @@
+id: camp.wellington.crime.family_violence_system_reform
+name: Family Violence System Reform
+theme: crime
+core_claim: An integrated family violence response system with perpetrator accountability and victim support pathways will
+  reduce recurrence.
+flagship_moves:
+- Te Aorerekura (National Strategy) full implementation in Wellington
+- Integrated Safety Response (ISR) programme expansion to all Wellington territorial authorities
+- Perpetrator-focused intervention programme funding with clear accountability measures
+tensions:
+- System reform requires sustained cross-agency coordination that is institutionally difficult
+- Perpetrator programmes require significant voluntary participation and have variable completion rates
+addresses:
+- problem.wellington.crime.family_violence
+interventions:
+- description: Fully resource Integrated Safety Response in all Wellington TAs with co-location of Police, MSD, and health
+    navigators
+  state_variable: family_violence_recurrence_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

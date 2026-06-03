@@ -1,0 +1,24 @@
+id: claim.west_coast.infrastructure.infrastructure_3_claim
+statement: Digital infrastructure (broadband internet) coverage in West Coast is poor.
+  Rural and remote areas have <10 Mbps download speeds; some valleys lack any broadband
+  access. Mobile phone coverage has significant blackspots, particularly in Haast,
+  Karamea, and inland river valleys. Government subsidized broadband programs (such
+  as Rural Broadband Initiative extension) have improved urban coverage but rural
+  gaps remain. Distance learning for students and telework for residents are constrained.
+value: null
+unit: null
+time_period: 2015-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.moe_west_coast_achievement_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Broadband coverage from government digital infrastructure mapping; education
+  impact from MOE regional data.

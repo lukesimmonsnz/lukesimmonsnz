@@ -1,0 +1,12 @@
+id: source.gwrc_harbour_water_quality_2023
+title: Wellington Harbour Water Quality Monitoring Report 2023
+author: null
+publisher: Greater Wellington Regional Council
+year: 2023
+url: https://www.gw.govt.nz/environment/harbours-and-estuaries/wellington-harbour/
+type: primary-data
+credibility: official
+geo_granularity:
+- wellington
+notes: Annual harbour water quality monitoring including E. coli levels, stormwater discharge events, and swimming suitability
+  assessments.

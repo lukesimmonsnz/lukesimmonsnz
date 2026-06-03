@@ -1,0 +1,29 @@
+id: problem.taranaki.governance.local_govt
+title: Local government capacity and resilience
+theme: governance
+section: governance
+subpage: local_govt
+parent: problem.taranaki.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: Councils face funding constraints and capacity limits. Three-waters reform
+  and co-governance implementation lags.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - local_govt_index
+  inputs:
+  - local_govt_input_1
+  constraints:
+  - local_govt_constraint
+  feedback_loops:
+  - 'Feedback: local_govt'
+narrative:
+- heading: Local government capacity and resilience in Taranaki
+  body: Councils face funding constraints and capacity limits. Three-waters reform
+    and co-governance implementation lags.
+claim_ids:
+- claim.taranaki.governance.local_govt_01
+status: draft
+time_horizons: [decade, generation, century]

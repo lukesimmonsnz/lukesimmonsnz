@@ -1,0 +1,36 @@
+id: problem.nelson.transport.connectivity
+title: 'Constrained regional connectivity: no rail, limited air'
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Nelson's regional connectivity rests on State Highway 6 (to Blenheim and the Cook Strait ferries) and SH60 (to Tasman); both are single-lane in sections and create bottlenecks at peak and during closures. There is no direct rail to Wellington or Christchurch. Long-distance coach gives 2-3 daily services with 5-7 hour journeys. Nelson Airport handles around 280,000 passengers per year, mostly domestic.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - sh6_daily_vehicle_km
+  - freight_mode_share_road_pct
+  - regional_air_passengers_per_year
+  inputs:
+  - nzta_capex_allocation
+  - airport_route_settings
+  constraints:
+  - absence_of_rail
+  - topography
+  - airport_runway_length
+  feedback_loops:
+  - 'Road-only feedback: in the absence of mode alternatives, every additional freight or passenger trip lands on the road network, raising congestion and resilience exposure on the same single corridor.'
+narrative:
+- heading: Two-lane geography
+  body: Nelson is a two-lane region in a country where every other city its size has either rail, motorway, or major airport redundancy (claim.nelson.transport.connectivity_claim). Every freight tonne and every visitor moves on the same two state highways or through one regional airport.
+- heading: Freight, emissions, and resilience
+  body: 'Road dominance imposes three concurrent costs: per-tonne freight cost is higher than rail-served regions, transport emissions per capita are elevated, and the network is exposed to single-point closures (slips, weather, accidents).'
+claim_ids:
+- claim.nelson.transport.connectivity_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,0 +1,34 @@
+id: problem.otago.infrastructure.infrastructure
+title: Infrastructure Resilience and Upgrade Backlog
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Otago faces aging water/wastewater systems, major hospital rebuild project,
+  rural digital divide, and seismic upgrade pressures on heritage buildings in Dunedin.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Otago faces aging water/wastewater systems, major hospital rebuild project,
+    rural digital divide, and seismic upgrade pressures on heritage buildings in Dunedin.
+claim_ids:
+- claim.otago.infrastructure.otago_hospital_rebuild_trend
+- claim.otago.infrastructure.infrastructure_trend
+- claim.otago.infrastructure.wakatipu_water_prevalence
+- claim.otago.infrastructure.infrastructure_prevalence
+- claim.otago.infrastructure.wakatipu_water_trend
+- claim.otago.infrastructure.digital_rural_trend
+- claim.otago.infrastructure.digital_rural_prevalence
+- claim.otago.infrastructure.otago_hospital_rebuild_prevalence
+status: draft
+time_horizons: [decade, generation]

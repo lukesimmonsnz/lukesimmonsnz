@@ -1,0 +1,14 @@
+id: driver.tasman.governance.driver_2
+name: Reform overlay on top of inherited delivery load
+description: Three-waters reform, RMA reform, climate-adaptation planning, and Treaty-partnership operationalisation
+  impose new process load on the same officer cohort that is already carrying renewal and growth-management delivery.
+theme: governance
+consensus: consensus
+category: regulatory
+timescale: medium
+scope: national
+problem_ids:
+- problem.tasman.governance.governance
+- problem.tasman.governance.treaty
+- problem.tasman.governance.capacity
+claim_ids: []

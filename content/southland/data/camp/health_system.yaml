@@ -1,0 +1,20 @@
+id: camp.southland.health.health_system
+name: Southland Health System Strengthening
+theme: health
+core_claim: Strengthening health workforce and services improves health outcomes.
+flagship_moves:
+- Rural health workforce recruitment and retention
+- Primary care access expansion
+- Health promotion and prevention programs
+tensions:
+- Recruitment difficulty
+- Funding constraints
+addresses:
+- problem.southland.health.health_outcomes
+interventions:
+- description: Improve rural health access
+  state_variable: health_access_equity
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

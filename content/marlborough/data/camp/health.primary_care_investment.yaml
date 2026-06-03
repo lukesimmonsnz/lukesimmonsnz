@@ -1,0 +1,21 @@
+id: camp.marlborough.health.primary_care_investment
+name: Primary Care Investment
+theme: health
+core_claim: GP and nursing support in rural areas.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.housing.worker_accommodation
+interventions:
+- description: 'Action 1: Primary Care Investment'
+- description: 'Action 2: Primary Care Investment'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

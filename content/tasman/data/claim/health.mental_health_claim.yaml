@@ -1,0 +1,21 @@
+id: claim.tasman.health.mental_health_claim
+statement: Health NZ Tasman (2023) documents mental health service utilisation at
+  8.2% of population, vs national average 9.1%. However, referral wait times exceed
+  8 weeks in Golden Bay; rural isolation and limited counsellor availability are barriers.
+  Suicide rate stands at 16.4 per 100,000, above national rate of 15.1.
+value: 16.4
+unit: suicides per 100,000
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_tasman_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

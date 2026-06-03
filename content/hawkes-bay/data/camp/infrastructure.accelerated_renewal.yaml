@@ -1,0 +1,20 @@
+id: camp.hawkes_bay.infrastructure.accelerated_renewal
+name: Accelerated infrastructure renewal programme
+theme: infrastructure
+core_claim: Accelerated infrastructure renewal programme is the primary strategy.
+flagship_moves:
+- Implement Accelerated infrastructure renewal programme across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+- problem.hawkes_bay.infrastructure.flood_protection
+- problem.hawkes_bay.infrastructure.wastewater
+interventions:
+- description: Accelerated infrastructure renewal programme intervention
+  state_variable: accelerated_renewal_index
+  constraint_relaxed: accelerated_renewal_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

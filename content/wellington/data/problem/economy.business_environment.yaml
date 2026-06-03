@@ -1,0 +1,39 @@
+id: problem.wellington.economy.business_environment
+title: Business environment and economic diversification in Wellington
+theme: economy
+section: economy
+subpage: business-environment
+parent: problem.wellington.economy.public_sector_dependence
+order: 4
+updated: '2026-04-26'
+summary: Wellington's private sector remains smaller and less diversified than its government sector. Technology, creative
+  industries, and tourism offer growth potential, but business confidence has declined post-2024 restructuring, and Wellington
+  faces cost competitiveness challenges as a business location relative to Auckland and offshore centres.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - business_confidence_index
+  - startup_formation_rate
+  inputs:
+  - government_procurement_policy
+  - innovation_ecosystem_investment
+  constraints:
+  - distance_from_export_markets
+  - commercial_property_cost
+  feedback_loops:
+  - 'Government dependence lock-in: a business environment built around government clients is unattractive to export-oriented
+    firms; without export-oriented growth, the economy remains government-dependent.'
+narrative:
+- heading: Business confidence post-restructuring
+  body: Wellington business confidence indices declined sharply following the 2024 public sector restructuring, as reduced
+    government spending contracts and workforce displacement reduced demand in the local service economy (claim.wellington.economy.business_confidence_2024).
+- heading: Innovation sector potential
+  body: Wellington hosts a cluster of technology, creative, and knowledge-intensive firms including the film and visual effects
+    industry, fintech, and government IT — but this cluster remains smaller than what Wellington's human capital base would
+    suggest (claim.wellington.economy.innovation_sector_employment).
+claim_ids:
+- claim.wellington.economy.business_confidence_2024
+- claim.wellington.economy.innovation_sector_employment
+status: draft
+time_horizons: [decade, generation]

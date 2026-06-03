@@ -1,5 +1,12 @@
 id: source.mfe_emissions_2023
-title: "Ministry for the Environment New Zealand Greenhouse Gas Inventory 2023"
+title: "New Zealand's Greenhouse Gas Inventory 1990-2021"
+author: "Ministry for the Environment"
+publisher: "Ministry for the Environment"
 type: government-report
+credibility: official
 year: 2023
-url: "https://environment.govt.nz/publications/new-zealand-greenhouse-gas-inventory-1990-2021/"
+url: "https://environment.govt.nz/publications/new-zealands-greenhouse-gas-inventory-1990-2021/"
+notes: >
+  Annual NZ GHG inventory submitted under UNFCCC; primary source for
+  sectoral and regional emissions data. (Newer 1990-2022 release at
+  /new-zealands-greenhouse-gas-inventory-1990-2022/.)

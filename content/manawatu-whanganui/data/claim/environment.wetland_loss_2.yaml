@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.environment.wetland_loss_2
+statement: Wetland restoration initiatives in Manawatū-Whanganui cover approximately
+  200-250 hectares (organised through Horizons, DOC, and community groups), but restoration
+  is slow (10-15 hectares/year) relative to the scale of loss. Funding for wetland
+  projects is constrained. Long-term degradation of remaining wetlands from nutrient
+  loading (agricultural runoff, point-source discharge) threatens aquatic biodiversity
+  and migratory bird populations (shoveller, grey teal). Invasive species (crack willow,
+  raupo monoculture) further reduce ecological value.
+value: null
+unit: null
+time_period: 2010-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.horizons_one_plan_2024
+- source.horizons_data_services_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

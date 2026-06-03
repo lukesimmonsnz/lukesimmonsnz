@@ -1,0 +1,13 @@
+id: driver.tasman.environment.driver_1
+name: Land-use intensification on Waimea catchments
+description: Conversion to intensive horticulture, viticulture, and dairy on Waimea Plains catchments raises diffuse
+  nutrient, sediment, and irrigation-demand pressure on the aquifer and the Waimea Inlet.
+theme: environment
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.environment.coastal_environment
+- problem.tasman.environment.sea_level_risk
+claim_ids: []

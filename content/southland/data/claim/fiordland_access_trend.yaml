@@ -1,0 +1,22 @@
+id: claim.southland.transport.fiordland_access_trend
+statement: 'Fiordland access infrastructure under pressure. Visitor numbers recovering
+  post-COVID; Milford Road capacity at peak during peak season (December-February).
+  Homer Tunnel: 60-year-old single-lane tunnel; replacement discussed but cost (~$1B)
+  prohibitive. DOC maintenance adequate but not growth-oriented. Te Anau accommodation
+  capacity limiting visitor growth. Helicopter/small plane access alternative but
+  expensive.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

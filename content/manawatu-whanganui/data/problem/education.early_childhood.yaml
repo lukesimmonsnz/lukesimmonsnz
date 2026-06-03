@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.education.early_childhood
+title: Early Childhood Education Access and Quality
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.manawatu_whanganui.education.achievement
+order: 1
+updated: '2026-04-26'
+summary: ECE participation gaps; funding constraints; qualified teacher shortages;
+  unequal quality.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: ECE participation gaps; funding constraints; qualified teacher shortages;
+    unequal quality.
+claim_ids:
+- claim.manawatu_whanganui.education.early_childhood_1
+- claim.manawatu_whanganui.education.early_childhood_2
+status: draft
+time_horizons: [decade, generation]

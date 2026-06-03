@@ -1,0 +1,39 @@
+id: problem.wellington.economy.labour_market
+title: Wellington labour market fragility after public sector restructuring
+theme: economy
+section: economy
+subpage: labour-market
+parent: problem.wellington.economy.public_sector_dependence
+order: 2
+updated: '2026-04-26'
+summary: The 2024 public sector restructuring has displaced a significant cohort of mid-career policy and administrative workers
+  into a Wellington labour market that does not have adequate private sector depth to absorb them at comparable wages. The
+  result is elevated unemployment, wage pressure, and out-migration risk for skilled workers.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - unemployment_rate
+  - labour_underutilisation_rate
+  inputs:
+  - public_sector_headcount
+  - private_sector_hiring
+  constraints:
+  - private_sector_size_relative_to_government
+  - geographic_labour_market_depth
+  feedback_loops:
+  - 'Out-migration feedback: displaced workers unable to find comparable employment locally leave Wellington, reducing the
+    local skill base and amplifying the economic contraction.'
+narrative:
+- heading: Post-restructuring unemployment
+  body: Wellington's unemployment rate rose measurably following the 2024 public sector restructuring, with the displacement
+    concentrated among policy analysts, project managers, and communications professionals — roles that have limited private
+    sector equivalents in Wellington (claim.wellington.economy.unemployment_rate_post_restructure).
+- heading: Skills displacement challenge
+  body: The skills displaced by the public sector restructuring do not map cleanly onto the Wellington private sector's demand
+    profile, creating a structural mismatch that slows labour market reabsorption (claim.wellington.economy.skills_displacement_public_sector).
+claim_ids:
+- claim.wellington.economy.unemployment_rate_post_restructure
+- claim.wellington.economy.skills_displacement_public_sector
+status: draft
+time_horizons: [decade, generation]

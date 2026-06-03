@@ -1,0 +1,20 @@
+id: claim.wellington.transport.state_highway_congestion_index
+statement: Wellington's morning peak travel time index on key CBD-approach corridors
+  is among the highest in New Zealand relative to city size, reflecting the geometric
+  constraints imposed by harbour coastline and hills on road network capacity expansion.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_wellington_transport_2023
+- source.gwrc_regional_land_transport_2021
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.travel_time_index_v1
+notes: null

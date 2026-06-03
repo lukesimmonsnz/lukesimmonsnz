@@ -1,0 +1,20 @@
+id: camp.gisborne.transport.active_modes_approach
+name: Strategic approach for active_modes
+theme: transport
+core_claim: Strategic intervention on active_modes will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting active_modes
+- Priority action 2 targeting active_modes
+- Institutional coordination mechanism for active_modes
+tensions:
+- 'Tension 1: active_modes'
+- 'Tension 2: active_modes'
+addresses:
+- problem.gisborne.transport.active_modes
+interventions:
+- description: Primary intervention for active_modes
+  state_variable: active_modes_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

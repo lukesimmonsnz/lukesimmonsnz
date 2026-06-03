@@ -1,0 +1,13 @@
+id: driver.taranaki.climate.coastal_agricultural_risk
+name: Coastal erosion and agricultural climate risk
+theme: climate-adaptation
+category: climate
+description: Rising sea levels and intensifying weather events threaten Taranaki's
+  coastal infrastructure and agricultural productivity.
+problem_ids:
+- problem.taranaki.climate.coastal_risk
+claim_ids:
+- claim.taranaki.climate.coastal_risk_01
+timescale: long
+consensus: contested
+scope: regional

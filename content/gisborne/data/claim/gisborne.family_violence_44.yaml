@@ -1,0 +1,19 @@
+id: claim.gisborne.crime.family_violence_44
+statement: 'Family violence service capacity is constrained: one specialist family
+  violence team operates from Gisborne city. East Cape communities rely on generalist
+  police and occasional outreach; 24/7 crisis response unavailable.'
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: null

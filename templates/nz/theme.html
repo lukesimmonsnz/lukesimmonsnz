@@ -1,10 +1,13 @@
 {% extends "research/_layout.html" %}
 {% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/cite.html" import cite_block %}
 
 {% block title %}{{ theme_title }} — Aotearoa NZ · Research · Luke Simmons{% endblock %}
 {% block meta_description %}Cross-regional patterns in {{ theme_title | lower }} observed across Aotearoa New Zealand, grounded in region-specific evidence from the typed entity graph.{% endblock %}
 
 {% block content %}
+{% set _intro = nz_intro_render(theme) %}
+{% if _intro %}<div class="page-intro">{{ _intro | safe }}</div>{% endif %}
 <div class="page">
   {{ breadcrumbs([
     ('Home', url_for('main.home')),
@@ -19,8 +22,8 @@
     <hr class="rule">
     <p class="lede">
       Patterns in {{ theme_title | lower }} observed across two or more regions
-      of Aotearoa. Each pattern is a cross-regional generalisation; the
-      underlying region-specific claims are the evidence base.
+      of Aotearoa. Each pattern is a cross-regional generalisation grounded in
+      region-specific evidence.
     </p>
   </header>
 
@@ -31,10 +34,17 @@
 
     {% for p in patterns %}
     <section>
-      <h2>{{ p.name }}</h2>
+      <h2>{{ p.title }}</h2>
 
-      {% if p.statement %}
-      <p>{{ p.statement }}</p>
+      {% if p.summary %}
+      <p>{{ p.summary }}</p>
+      {% endif %}
+
+      {% if p.narrative %}
+        {% for section in p.narrative %}
+        <h3>{{ section.heading }}</h3>
+        <p>{{ section.body }}</p>
+        {% endfor %}
       {% endif %}
 
       <dl>
@@ -45,11 +55,11 @@
           {% endfor %}
         </dd>
 
-        {% if p.evidenced_by %}
-        <dt>Supporting claims</dt>
+        {% if p.claim_ids %}
+        <dt>Evidence</dt>
         <dd>
           <ul>
-            {% for claim_id in p.evidenced_by %}
+            {% for claim_id in p.claim_ids %}
             <li><code>{{ claim_id }}</code></li>
             {% endfor %}
           </ul>
@@ -60,7 +70,8 @@
     {% endfor %}
 
     <hr class="rule">
-    <p><a href="{{ url_for('nz.index') }}">&larr; All national themes</a></p>
+    {{ cite_block(title=theme_title ~ " — Aotearoa NZ patterns", path=request.path, site_url=site_url, current_quarter=current_quarter) }}
+    <p><a href="{{ url_for('nz.index') }}">&larr; All national patterns</a></p>
   </article>
 </div>
 {% endblock %}

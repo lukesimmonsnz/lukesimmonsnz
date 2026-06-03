@@ -1,0 +1,17 @@
+id: source.icnz_january_floods_2023
+title: "Cost of natural disasters - insured loss summary, 2023"
+author: "Insurance Council of New Zealand (Te Kahui Inihua o Aotearoa)"
+publisher: "Insurance Council of New Zealand"
+year: 2023
+url: "https://www.icnz.org.nz/industry/cost-of-natural-disasters/"
+type: primary-data
+credibility: official
+geo_granularity:
+  - auckland
+  - nz
+notes: >
+  ICNZ publishes industry-aggregated insured-loss totals for natural-hazard
+  events; the January-February 2023 Auckland Anniversary floods and Cyclone
+  Gabrielle are itemised separately. Auckland Anniversary floods alone account
+  for roughly NZD 1.7-1.8 billion of insured losses, making it the
+  second-largest insured weather event in NZ history at time of publication.

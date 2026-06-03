@@ -1,0 +1,5 @@
+{% set ctype = attrs.type | default('info') %}
+<aside class="block-callout callout-{{ ctype }}" role="note" aria-label="{{ ctype }} callout">
+  {% if attrs.title %}<div class="callout-title">{{ attrs.title }}</div>{% endif %}
+  <div class="callout-body">{{ body | safe }}</div>
+</aside>

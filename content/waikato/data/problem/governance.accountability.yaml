@@ -1,0 +1,24 @@
+id: 'problem.waikato.governance.accountability'
+title: 'Waikato: accountability'
+theme: 'governance'
+section: 'governance'
+subpage: 'accountability'
+parent: 'problem.waikato.governance.challenges'
+order: 5
+updated: '2026-04-26'
+summary: 'Government accountability is weak.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Government accountability is weak.'
+claim_ids:
+- 'claim.waikato.governance.accountability_claim1'
+- 'claim.waikato.governance.accountability_claim2'
+status: 'draft'

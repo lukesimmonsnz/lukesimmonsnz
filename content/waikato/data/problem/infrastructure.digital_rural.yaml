@@ -1,0 +1,30 @@
+id: problem.waikato.infrastructure.digital_rural
+title: Rural digital connectivity
+theme: infrastructure
+section: infrastructure
+subpage: digital_rural
+parent: problem.waikato.infrastructure.waikato_infrastructure
+order: 3
+updated: '2026-04-26'
+summary: Rural broadband gaps limit productivity and service access in Waikato's agricultural
+  communities.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - infrastructure_condition_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing digital rural creates feedback on regional outcomes.
+narrative:
+- heading: Rural digital connectivity
+  body: Rural broadband gaps limit productivity and service access in Waikato's agricultural
+    communities.
+claim_ids:
+- claim.waikato.infrastructure.rural_broadband_gap
+status: draft
+time_horizons: [decade, generation]

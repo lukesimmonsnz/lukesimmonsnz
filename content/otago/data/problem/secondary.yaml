@@ -1,0 +1,34 @@
+id: problem.otago.education.secondary
+title: Secondary Achievement and Retention
+theme: education
+section: education
+subpage: secondary
+parent: problem.otago.education.achievement
+order: 3
+updated: '2026-04-26'
+summary: NCEA pass rates lower in rural and low-income Dunedin schools; higher stand-down/suspension
+  rates; pastoral support systems under-resourced.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: NCEA pass rates lower in rural and low-income Dunedin schools; higher stand-down/suspension
+    rates; pastoral support systems under-resourced.
+claim_ids:
+- claim.otago.education.secondary_trend
+- claim.otago.education.early_childhood_trend
+- claim.otago.education.achievement_trend
+- claim.otago.education.early_childhood_prevalence
+- claim.otago.education.achievement_prevalence
+- claim.otago.education.tertiary_dunedin_trend
+- claim.otago.education.tertiary_dunedin_prevalence
+- claim.otago.education.secondary_prevalence
+status: draft
+time_horizons: [decade, generation]

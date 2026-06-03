@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.housing.coastal_housing_intervention
+name: Intervention for coastal_housing
+theme: housing
+core_claim: Targeted intervention on coastal_housing will improve outcomes.
+flagship_moves:
+- Policy measure 1 for coastal_housing
+- Policy measure 2 for coastal_housing
+- Implementation mechanism for coastal_housing
+tensions:
+- Trade-off A for coastal_housing
+- Trade-off B for coastal_housing
+addresses:
+- problem.bay_of_plenty.housing.coastal_housing
+interventions:
+- description: Core intervention targeting coastal_housing
+  state_variable: coastal_housing_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

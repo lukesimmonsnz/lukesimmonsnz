@@ -1,0 +1,27 @@
+id: claim.auckland.economy.automation_exposure_share_2018
+statement: >
+  In the OECD's cross-country task-based assessment, around 10% of New
+  Zealand jobs are at high risk of automation (>70% of constituent
+  tasks automatable), and a further ~25% face significant change to
+  their task composition. New Zealand sits near the OECD median; the
+  exposure is concentrated in routine clerical, transport, and
+  production occupations rather than evenly across the workforce.
+value: 10
+unit: percent of jobs at high automation risk
+time_period: '2018'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.oecd_automation_jobs_risk_2018
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.labour_productivity_index_v1
+notes: >
+  Underlying methodology is the Nedelkoska-Quintini occupation-task
+  model applied to PIAAC. Generative-AI exposure (Eloundou et al.,
+  Felten-Raj-Seamans) shifts the distribution toward higher-skill
+  cognitive work but does not yet have a comparably-validated NZ
+  estimate; this claim is the OECD floor.

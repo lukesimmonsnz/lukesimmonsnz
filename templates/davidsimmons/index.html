@@ -5,6 +5,8 @@
 {% block meta_description %}An archive of the life and works of David Roy Simmons (Rawiri Te Puru Terehou, 1930–2015), New Zealand ethnologist and M.B.E.{% endblock %}
 
 {% block content %}
+{% set _slot = page_slot_render('davidsimmons') %}
+{% if _slot %}<div class="page-intro">{{ _slot | safe }}</div>{% endif %}
 <div class="page">
   {{ breadcrumbs([('Home', url_for('main.home')), ('David Simmons', None)]) }}
 
@@ -51,6 +53,26 @@
         <dd>{{ person.residence }}</dd>
       </dl>
     </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">On video</span>
+    <h2>Guardians of Polynesia</h2>
+    <p class="prose">
+      Recorded talk by David Simmons on Polynesian and M&#257;ori taonga.
+    </p>
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/Icr5aVHRXto?rel=0"
+        title="David Simmons - Guardians of Polynesia"
+        loading="lazy"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <p class="small" style="margin-top: var(--s-2);">
+      Hosted on YouTube; loaded only when this page is opened. Click anywhere on the player to start.
+    </p>
   </section>
 
   <section>

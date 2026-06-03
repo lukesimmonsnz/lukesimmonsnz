@@ -1,0 +1,21 @@
+id: claim.southland.infrastructure.manapouri_power_trend
+statement: Manapouri Power Station faces strategic uncertainty due to smelter dependency.
+  Power contract extended to end 2026; post-2026 generation direction unconfirmed.
+  Aging infrastructure (built 1969); refurbishment under way. Renewable energy policy
+  unclear; hydro capacity available but no alternative major users committed. Meridian
+  exploring battery storage/demand flexibility.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

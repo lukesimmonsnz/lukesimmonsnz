@@ -1,0 +1,10 @@
+id: driver.northland.housing.land_scarcity
+name: Limited developable land
+description: Limited developable land in the regional context.
+theme: housing
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

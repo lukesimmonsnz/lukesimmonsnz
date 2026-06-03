@@ -1,0 +1,30 @@
+id: problem.waikato.infrastructure.waikato_infrastructure
+title: Infrastructure capacity and renewal deficit
+theme: infrastructure
+section: infrastructure
+subpage: waikato_infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waikato's infrastructure faces a significant renewal backlog, particularly
+  in three waters and road networks.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - infrastructure_condition_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional infrastructure dynamics create self-reinforcing feedback.
+narrative:
+- heading: Infrastructure capacity and renewal deficit
+  body: Waikato's infrastructure faces a significant renewal backlog, particularly
+    in three waters and road networks.
+claim_ids:
+- claim.waikato.infrastructure.waikato_infrastructure_root
+status: draft
+time_horizons: [decade, generation]

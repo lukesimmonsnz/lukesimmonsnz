@@ -1,0 +1,22 @@
+{% set url = attrs.url | default('') %}
+{% set provider = attrs.provider | default('') %}
+<div class="block-embed">
+  {% if provider == 'youtube' or 'youtube.com' in url or 'youtu.be' in url %}
+    {% if 'v=' in url %}
+      {% set vid = url.split('v=')[1].split('&')[0] %}
+    {% else %}
+      {% set vid = url.rstrip('/').split('/')[-1] %}
+    {% endif %}
+    <iframe src="https://www.youtube.com/embed/{{ vid }}"
+            title="YouTube video" allowfullscreen loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+  {% elif provider == 'vimeo' or 'vimeo.com' in url %}
+    {% set vid = url.rstrip('/').split('/')[-1] %}
+    <iframe src="https://player.vimeo.com/video/{{ vid }}"
+            title="Vimeo video" allowfullscreen loading="lazy">
+    </iframe>
+  {% else %}
+    <a class="embed-fallback" href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ body | safe or url }}</a>
+  {% endif %}
+</div>

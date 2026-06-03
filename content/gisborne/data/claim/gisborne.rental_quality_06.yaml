@@ -1,0 +1,19 @@
+id: claim.gisborne.housing.rental_quality_06
+statement: Rental vacancy is extremely low (~2–3%); many landlords practice informal
+  screening excluding households with children or on benefits. Emergency housing motel
+  usage remains elevated post-Gabrielle.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.homeownership_rate_v1
+notes: null

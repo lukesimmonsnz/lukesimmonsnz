@@ -1,0 +1,21 @@
+id: claim.northland.transport.freight_connectivity_claim1
+statement: SH1 (primary spine north-south through Whangārei-Pūhoi corridor) carries
+  60-70% of regional freight. Pūhoi-Warkworth expressway opened 2021 reduced Auckland-Whangārei
+  travel by ~20 min. Warkworth-Wellsford section not yet funded. Northland Rail (Otiria-Whangārei
+  freight only) operates intermittently; Marsden Point log spur handles export volumes
+  but aging infrastructure limits capacity.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

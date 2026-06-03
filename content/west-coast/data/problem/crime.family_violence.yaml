@@ -1,0 +1,40 @@
+id: problem.west_coast.crime.family_violence
+title: Family violence in economically stressed towns
+theme: crime
+section: crime
+subpage: family_violence
+parent: safety
+order: 2
+updated: '2026-04-26'
+summary: Family violence reporting in Buller and Grey districts is elevated, in a context of sharp income shocks from coal-sector
+  decline, alcohol and substance use, and small-town social isolation that limits access to refuge and support services.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - family_violence_reports_per_capita
+  - refuge_bed_capacity
+  - alcohol_outlet_density
+  inputs:
+  - msd_family_violence_funding
+  - police_co_response_resourcing
+  constraints:
+  - small_population_service_thinness
+  - geographic_isolation
+  feedback_loops:
+  - Job loss and income shock raise household stress; thin refuge and counselling capacity means many incidents go unsupported,
+    normalising patterns that are then transmitted intergenerationally.
+narrative:
+- heading: Income shock and household stress
+  body: The 2015-2018 Solid Energy collapse and the long wind-down of Stockton mine removed a layer of well-paid male employment
+    from the Buller district in particular, and the income shock has tracked into elevated household-stress indicators (claim.west_coast.crime.family_violence_claim).
+    Alcohol and substance use compound the picture.
+- heading: Geographic isolation and service thinness
+  body: Refuge capacity, specialist family-violence services and women's safe accommodation on the West Coast are thin, and
+    distances between settlements limit the reach of urban-model services. Police-led co-response models exist but are constrained
+    by the same thin staffing footprint that shapes the wider safety picture.
+claim_ids:
+- claim.west_coast.crime.family_violence_claim
+status: draft
+time_horizons:
+- decade

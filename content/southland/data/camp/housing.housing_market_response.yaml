@@ -1,0 +1,23 @@
+id: camp.southland.housing.housing_market_response
+name: Market Stabilisation and Affordable Housing Supply
+theme: housing
+core_claim: Building social and affordable housing in Invercargill addresses deprivation
+  and prevents homelessness even in a low-price market.
+flagship_moves:
+- Fund Kāinga Ora build programme in Invercargill east
+- Establish community land trust for affordable homeownership
+- Renovate and retrofit existing state housing stock
+tensions:
+- Low land prices reduce developer incentive — public subsidy needed to make affordable
+  builds viable
+- Population decline reduces the case for large-scale new supply
+addresses:
+- problem.southland.housing.housing_market
+interventions:
+- description: Commission 200 new social housing units in high-deprivation Invercargill
+    suburbs
+  state_variable: social_housing_waitlist
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

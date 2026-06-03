@@ -1,0 +1,13 @@
+id: source.stats_nz_deprivation_2018
+title: New Zealand Deprivation Index 2018 (NZDep2018)
+author: Atkinson J, Salmond C, Crampton P
+publisher: University of Otago / Ministry of Health
+year: 2019
+url: https://www.otago.ac.nz/wellington/departments/publichealth/research/hirp/otago020194.html
+type: academic
+credibility: peer-reviewed
+geo_granularity:
+- wellington
+- nz
+notes: Small-area deprivation index at meshblock level. Used to identify Porirua and Hutt Valley concentration of high-deprivation
+  areas. 2023 update pending.

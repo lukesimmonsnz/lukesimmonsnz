@@ -1,0 +1,11 @@
+id: driver.canterbury.health.post_earthquake_trauma_persistence
+name: Post-Earthquake Psychological Trauma Persistence
+description: Post-Earthquake Psychological Trauma Persistence
+theme: health
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.health.mental_health
+claim_ids: []

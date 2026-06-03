@@ -1,0 +1,19 @@
+id: claim.wellington.governance.audit_findings_wcc
+statement: Audit New Zealand has raised findings on Wellington City Council's financial
+  management and project governance processes in recent years, pointing to weaknesses
+  in internal control and project oversight that require sustained management attention.
+value: null
+unit: null
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

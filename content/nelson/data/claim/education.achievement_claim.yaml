@@ -1,0 +1,22 @@
+id: claim.nelson.education.achievement_claim
+statement: 'NCEA achievement in Nelson schools shows mixed outcomes. 2023 MOE data
+  reports that 72% of Nelson secondary students achieved NCEA Level 2 or above, compared
+  to 78% nationally. Achievement gaps are significant by decile and ethnicity: Maori
+  students achieve Level 2 at 58% vs. 80% for Pakeha; students in decile 1-3 schools
+  achieve at 64% vs. 82% in decile 9-10 schools. Transitions to tertiary or trades
+  remain below optimal.'
+value: 72
+unit: percent achieving NCEA Level 2 or above
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_nelson_achievement_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

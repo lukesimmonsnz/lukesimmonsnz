@@ -1,0 +1,12 @@
+id: driver.otago.housing.low_wage_sector_dominance
+name: Low-Wage Sector Employment Dominance
+description: Hospitality, retail, care work dominate employment; median wages lag
+  cost of living growth.
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.housing.worker_housing
+claim_ids: []

@@ -59,4 +59,6 @@ claim_ids:
   - claim.auckland.governance.local_govt_amalgamation_lessons
   - claim.auckland.governance.cco_accountability_gap
   - claim.auckland.governance.three_waters_centralisation
+  - claim.auckland.governance.future_for_local_govt_review_2023
 status: draft
+time_horizons: [decade, generation, century]

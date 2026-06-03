@@ -1,0 +1,14 @@
+id: driver.wellington.crime.substance_use_violence
+name: Substance use and family violence co-occurrence
+description: Alcohol and methamphetamine use are co-occurring factors in the majority of serious family violence incidents
+  in Wellington, with high-deprivation areas having elevated substance use rates driven by the same economic and social conditions.
+theme: crime
+consensus: consensus
+category: cultural
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.crime.family_violence
+- problem.wellington.crime.organised_crime
+claim_ids:
+- claim.wellington.crime.fv_police_call_rate

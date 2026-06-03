@@ -1,0 +1,21 @@
+id: camp.marlborough.economy.worker_cooperative_development
+name: Worker Cooperative Development
+theme: economy
+core_claim: Support for cooperative and mutual ownership models.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.education.early_childhood
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

@@ -74,4 +74,6 @@ claim_ids:
   - claim.auckland.housing.affordability_ratio_2023
   - claim.auckland.housing.supply_deficit_2010s
   - claim.auckland.housing.nps_ud_upzoning
+  - claim.auckland.housing.npc_planning_recommendation_2017
 status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,21 @@
+id: claim.otago.crime.youth_offending_trend
+statement: 'Youth crime trends show strong seasonal and demographic patterns: Dunedin
+  peaks at O-Week (March, return to academic year) and university breaks; Queenstown
+  volatile with visitor season; rural youth offending (Balclutha, Oamaru) low volume,
+  property-focused (farm machinery theft). National youth offending targets being
+  met unevenly; Otago pockets of concern in university and tourism epicentres.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

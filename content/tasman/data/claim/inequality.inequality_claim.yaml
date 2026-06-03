@@ -1,0 +1,21 @@
+id: claim.tasman.inequality.inequality_claim
+statement: Census income distribution (2023) shows Gini coefficient for Tasman at
+  0.38, above national average of 0.35. Top 20% of earners command 38% of total income;
+  bottom 20% earn 8%. Lifestyle migration influx has widened the income gap; newcomers
+  from Auckland/Wellington bring capital while displacing lower-income locals.
+value: 0.38
+unit: Gini coefficient
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.census_income_tasman_2023
+- source.tasman_housing_demand_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.gini_coefficient_v1
+notes: null

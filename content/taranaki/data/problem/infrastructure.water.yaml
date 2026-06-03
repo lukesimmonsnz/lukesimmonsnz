@@ -1,0 +1,27 @@
+id: problem.taranaki.infrastructure.water
+title: Water supply and quality
+theme: infrastructure
+section: infrastructure
+subpage: water
+parent: problem.taranaki.infrastructure.infrastructure
+order: 2
+updated: '2026-04-26'
+summary: Rural water supplies are aging. Dairy farm runoff affects water quality.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - water_index
+  inputs:
+  - water_input_1
+  constraints:
+  - water_constraint
+  feedback_loops:
+  - 'Feedback: water'
+narrative:
+- heading: Water supply and quality in Taranaki
+  body: Rural water supplies are aging. Dairy farm runoff affects water quality.
+claim_ids:
+- claim.taranaki.infrastructure.water_01
+status: draft
+time_horizons: [decade, generation]

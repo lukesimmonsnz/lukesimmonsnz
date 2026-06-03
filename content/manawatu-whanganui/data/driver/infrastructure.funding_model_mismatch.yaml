@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.infrastructure.funding_model_mismatch
+name: Local Government Funding Model Constraints
+description: Local government funding model constraints. This driver operates at national
+  scale with mostly-agreed consensus.
+theme: infrastructure
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.digital_rural
+claim_ids: []

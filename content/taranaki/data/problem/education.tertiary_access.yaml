@@ -1,0 +1,29 @@
+id: problem.taranaki.education.tertiary_access
+title: Tertiary education access and participation
+theme: education
+section: education
+subpage: tertiary_access
+parent: problem.taranaki.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: Tertiary participation is 36%. Distance to universities (Massey 1.5h, Waikato
+  2h) is a barrier.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - tertiary_access_index
+  inputs:
+  - tertiary_access_input_1
+  constraints:
+  - tertiary_access_constraint
+  feedback_loops:
+  - 'Feedback: tertiary_access'
+narrative:
+- heading: Tertiary education access and participation in Taranaki
+  body: Tertiary participation is 36%. Distance to universities (Massey 1.5h, Waikato
+    2h) is a barrier.
+claim_ids:
+- claim.taranaki.education.tertiary_access_01
+status: draft
+time_horizons: [decade, generation]

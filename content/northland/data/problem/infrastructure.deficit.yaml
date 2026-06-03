@@ -1,0 +1,24 @@
+id: 'problem.northland.infrastructure.deficit'
+title: 'Te Tai Tokerau Northland: infrastructure deficit'
+theme: 'infrastructure'
+section: 'infrastructure'
+subpage: 'deficit'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Infrastructure is aging and insufficient.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Infrastructure is aging and insufficient.'
+claim_ids:
+- 'claim.northland.infrastructure.deficit_claim1'
+- 'claim.northland.infrastructure.deficit_claim2'
+status: 'draft'

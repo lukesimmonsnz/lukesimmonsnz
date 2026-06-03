@@ -1,0 +1,24 @@
+id: camp.otago.crime.queenstown_visitor_management
+name: Queenstown Visitor Management and Safety
+theme: crime
+core_claim: Visitor information, venue management, and police visibility reduce visitor
+  crime.
+flagship_moves:
+- Visitor safety orientation and conduct expectations
+- Enhanced venue safety standards and training
+- Increased police patrols in CBD
+tensions:
+- Tourism image concerns
+- Police resource constraints
+addresses:
+- problem.otago.crime.queenstown_visitor_crime
+interventions:
+- description: Establish visitor conduct expectations and safety orientation
+  state_variable: visitor_awareness
+  expected_sign: '+'
+- description: Increase police presence and enforcement in CBD
+  state_variable: police_visibility
+  expected_sign: '+'
+applicable_in:
+- otago
+tensions_with: []

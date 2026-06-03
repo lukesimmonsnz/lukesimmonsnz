@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.housing.land_supply_growth
+name: Driver for land_supply
+description: "This driver exacerbates the land_supply pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: housing
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.housing.land_supply
+claim_ids:
+- claim.bay_of_plenty.housing.land_supply_03

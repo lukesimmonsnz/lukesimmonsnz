@@ -1,0 +1,12 @@
+id: driver.marlborough.climate.just_transition_gap
+name: Just Transition Funding And Support Gaps
+description: Just transition funding and support gaps.
+theme: climate-adaptation
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.climate.fire_risk
+claim_ids: []

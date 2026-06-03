@@ -1,0 +1,23 @@
+id: claim.canterbury.environment.n_loading_source_apportionment_2023
+statement: Nitrogen loading apportionment in Canterbury shows 70% derives from dairy
+  farming (urine/faeces and fertilizer), 15% from sheep/beef, and 15% from other sources
+  (urban, industrial). This skew toward dairy reflects the ~650,000-head dairy herd
+  concentrated on the Canterbury Plains. ECan's nitrogen management strategy targets
+  a 20% reduction in new-farm dairy nitrogen, but legacy nitrogen in groundwater ensures
+  continued exceedance of guidelines through 2050.
+value: 70
+unit: percent from dairy
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_state_environment_2023
+- source.ecan_cwms_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

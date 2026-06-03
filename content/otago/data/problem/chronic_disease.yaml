@@ -1,0 +1,34 @@
+id: problem.otago.health.chronic_disease
+title: Chronic Disease Burden
+theme: health
+section: health
+subpage: chronic_disease
+parent: problem.otago.health.health_outcomes
+order: 3
+updated: '2026-04-26'
+summary: Dunedin and rural Otago have higher rates of type 2 diabetes, cardiovascular
+  disease, obesity; lifestyle and nutrition factors; access to preventive care limited.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Dunedin and rural Otago have higher rates of type 2 diabetes, cardiovascular
+    disease, obesity; lifestyle and nutrition factors; access to preventive care limited.
+claim_ids:
+- claim.otago.health.chronic_disease_trend
+- claim.otago.health.mental_health_prevalence
+- claim.otago.health.health_outcomes_trend
+- claim.otago.health.rural_workforce_trend
+- claim.otago.health.health_outcomes_prevalence
+- claim.otago.health.rural_workforce_prevalence
+- claim.otago.health.mental_health_trend
+- claim.otago.health.chronic_disease_prevalence
+status: draft
+time_horizons: [decade, generation]

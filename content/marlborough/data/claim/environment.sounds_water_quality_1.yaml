@@ -1,0 +1,21 @@
+id: claim.marlborough.environment.sounds_water_quality_1
+statement: 'Marlborough Sounds (Pelorus, Kenepuru, Queen Charlotte) water quality:
+  elevated nitrogen (nitrate 2–5 mg/L) and phosphorus (0.05–0.15 mg/L) in enclosed
+  bays from aquaculture discharge and terrestrial runoff; dissolved oxygen minima
+  in deep basin areas (anoxic layers forming seasonally).'
+value: 3.5
+unit: mg/L mid-range nitrate concentration
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.marlborough_sounds_plan_2023
+- source.aquaculture_nz_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.water_quality_index_v1
+notes: null

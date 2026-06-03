@@ -1,0 +1,21 @@
+id: claim.southland.inequality.invercargill_east_poverty_trend
+statement: Invercargill East poverty is persistent despite recent economic growth
+  in other city areas. Median household income $40-45K (compared to $60K+ in western
+  suburbs). School rolls declining; early childhood participation low. Family violence
+  and substance abuse rates elevated. Community support services concentrated in city
+  centre; access barriers for East residents.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

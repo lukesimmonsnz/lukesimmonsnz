@@ -1,0 +1,12 @@
+id: driver.marlborough.economy.climate_terroir_risk
+name: Climate Change Threat To Wine Terroir
+description: Climate change threat to wine terroir with regional implications.
+theme: economy
+consensus: mostly-agreed
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.economy.wine_economy
+claim_ids: []

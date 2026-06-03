@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.environment.ahuriri_estuary
+title: Ahuriri Estuary water quality and ecology
+theme: environment
+section: environment
+subpage: ahuriri-estuary
+parent: problem.hawkes_bay.environment.environmental_pressure
+order: 2
+updated: '2026-04-26'
+summary: 'Ahuriri Estuary near Napier is heavily polluted by stormwater discharge, urban runoff, and agricultural nutrient loading. Macroalgal blooms, low oxygen zones, and fish community decline are evident. Ecosystem services (fishery, recreation) are compromised.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - dissolved_oxygen_concentration_mg_per_litre
+    - fish_diversity_index
+  inputs:
+    - urban_stormwater_loading
+    - agricultural_nutrient_runoff
+  constraints:
+    - tidal_flushing_limitation
+    - estuary_catchment_land_use
+  feedback_loops:
+    - 'Nutrient loading causes eutrophication; algal blooms consume oxygen; fish suffocate; fishery value declines; restoration funding deferred.'
+narrative:
+  - heading: Pollution Loading
+    body: 'Napier urban stormwater system discharges untreated runoff directly into Ahuriri Estuary during wet weather. Agricultural runoff from surrounding catchment adds nutrients.'
+  - heading: Ecological Decline
+    body: 'Fish catches in Ahuriri have declined by 60% over 20 years. Macroalgal blooms now occur in summer, smothering benthic habitats.'
+claim_ids:
+  - claim.hawkes_bay.environment.fish_catch_decline_60_percent
+status: draft
+time_horizons: [generation, century]

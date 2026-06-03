@@ -1,0 +1,22 @@
+id: camp.canterbury.housing.build_to_rent
+name: Build-to-Rent & Institutional Investment Housing
+theme: housing
+core_claim: Attracting institutional investors (super funds, REITs) to build large
+  multi-unit rental portfolios with long-term hold horizons reduces reliance on owner-occupiers
+  and stabilizes rental supply.
+flagship_moves:
+- Key intervention for Build-to-Rent & Institutional Investment Housing
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.housing.rental_market
+interventions:
+- description: Attracting institutional investors (super funds, REITs) to build large
+    multi-unit rental portfolios with long-term hold horizons reduces reliance on
+    owner-occupiers and stabilizes rental supply.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

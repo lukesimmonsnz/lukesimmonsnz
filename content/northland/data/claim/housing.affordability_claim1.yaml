@@ -1,0 +1,22 @@
+id: claim.northland.housing.affordability_claim1
+statement: 'Whangarei median house price NZD 550-600k (2024); Kerikeri NZD 650-700k;
+  Far North provincial towns NZD 350-450k. First-time buyer deposit requirement (20%)
+  = NZD 110-140k, beyond reach for 65% of Northland households earning <60k/year.
+  Rental market: median rent Whangarei NZD 400-450/week, consuming 40-50% of household
+  income for low-wage workers (tourism, retail, agriculture average 35-45k/year).
+  Homelessness rising: Whangarei emergency housing units at 95%+ capacity year-round.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.government_housing_data_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

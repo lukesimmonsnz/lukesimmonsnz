@@ -1,0 +1,24 @@
+id: 'problem.northland.climate.flooding'
+title: 'Te Tai Tokerau Northland: flood resilience'
+theme: 'climate-adaptation'
+section: 'climate'
+subpage: 'flooding'
+parent: 'problem.northland.climate.risk'
+order: 3
+updated: '2026-04-26'
+summary: 'Flood risk is increasing.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Flood risk is increasing.'
+claim_ids:
+- 'claim.northland.climate.flooding_claim1'
+- 'claim.northland.climate.flooding_claim2'
+status: 'draft'

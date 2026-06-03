@@ -1,0 +1,29 @@
+id: problem.taranaki.climate.coastal_risk
+title: Coastal hazards and sea-level rise adaptation
+theme: climate-adaptation
+section: climate
+subpage: coastal_risk
+parent: problem.taranaki.climate.climate_emissions
+order: 2
+updated: '2026-04-26'
+summary: Coastal areas including New Plymouth face sea-level rise and storm surge
+  risk. Adaptation options are underdeveloped.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - coastal_risk_index
+  inputs:
+  - coastal_risk_input_1
+  constraints:
+  - coastal_risk_constraint
+  feedback_loops:
+  - 'Feedback: coastal_risk'
+narrative:
+- heading: Coastal hazards and sea-level rise adaptation in Taranaki
+  body: Coastal areas including New Plymouth face sea-level rise and storm surge risk.
+    Adaptation options are underdeveloped.
+claim_ids:
+- claim.taranaki.climate.coastal_risk_01
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,138 @@
+# content/_schema/edges.yaml
+#
+# Edge target-type registry (§0 row 2, §4.2 of DASHBOARD-SPEC.md).
+#
+# Maps (entity_type, field_name) → {target, arity, scope}.
+#   target : entity type the field references; list when polymorphic.
+#   arity  : "one" (scalar field) or "many" (array field).
+#   scope  : "region" — candidates filtered to the entity's region directory.
+#            "union"  — candidates pulled from all regions (Methodology,
+#                       Source registry shared across the corpus).
+#            "nz"     — Pattern lives only under content/nz/data/pattern/.
+#
+# This file is loaded once at admin-blueprint startup; the schema walker
+# (§4.1) consults it when it encounters a ref-typed field.
+
+claim:
+  source_ids:
+    target: source
+    arity: many
+    scope: union
+  methodology_tag:
+    target: methodology
+    arity: one
+    scope: union
+  supersedes_id:
+    target: claim
+    arity: one
+    scope: region
+  invokes_ids:
+    target: pattern
+    arity: many
+    scope: nz
+  measured_by_ids:
+    target: indicator
+    arity: many
+    scope: region
+
+problem:
+  parent:
+    target: problem
+    arity: one
+    scope: region
+  claim_ids:
+    target: claim
+    arity: many
+    scope: region
+
+driver:
+  problem_ids:
+    target: problem
+    arity: many
+    scope: region
+  claim_ids:
+    target: claim
+    arity: many
+    scope: region
+
+camp:
+  addresses:
+    target: problem
+    arity: many
+    scope: region
+  actor_ids:
+    target: actor
+    arity: many
+    scope: union
+  claim_ids:
+    target: claim
+    arity: many
+    scope: region
+  tensions_with:
+    target: camp
+    arity: many
+    scope: region
+
+response:
+  actor_id:
+    target: actor
+    arity: one
+    scope: union
+  problem_ids:
+    target: problem
+    arity: many
+    scope: region
+  claim_ids:
+    target: claim
+    arity: many
+    scope: region
+
+pattern:
+  claim_ids:
+    target: claim
+    arity: many
+    scope: region    # claims that invoke this pattern; cross-regional in practice
+
+indicator:
+  problem_ids:
+    target: problem
+    arity: many
+    scope: region
+  source_ids:
+    target: source
+    arity: many
+    scope: union
+
+actor:
+  source_ids:
+    target: source
+    arity: many
+    scope: union
+
+ibis_node:
+  parent_ids:
+    target: ibis_node
+    arity: many
+    scope: region
+  supports:
+    target: ibis_node
+    arity: many
+    scope: region
+  objects:
+    target: ibis_node
+    arity: many
+    scope: region
+  problem_ids:
+    target: problem
+    arity: many
+    scope: region
+  claim_ids:
+    target: claim
+    arity: many
+    scope: region
+
+methodology:
+  source_ids:
+    target: source
+    arity: many
+    scope: union

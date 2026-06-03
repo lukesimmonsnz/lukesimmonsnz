@@ -1,0 +1,21 @@
+id: camp.canterbury.transport.rapid_transit_investment
+name: Rapid Transit Investment (Light Rail, Mass Transit)
+theme: transport
+core_claim: Rapid transit infrastructure (light rail, mass rapid transit) is essential
+  to shift mode share and reduce congestion in key corridors.
+flagship_moves:
+- Key intervention for Rapid Transit Investment (Light Rail, Mass Transit)
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.transport.christchurch_congestion
+- problem.canterbury.transport.light_rail_planning
+interventions:
+- description: Rapid transit infrastructure (light rail, mass rapid transit) is essential
+    to shift mode share and reduce congestion in key corridors.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

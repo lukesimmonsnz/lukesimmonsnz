@@ -1,0 +1,25 @@
+id: camp.west_coast.housing.stabilising_housing_supply_in_
+name: Stabilising Housing Supply in Depopulating Communities
+theme: housing
+core_claim: West Coast's depopulation creates vacant and deteriorating housing stock
+  in some towns alongside genuine unmet need for quality affordable housing in Greymouth
+  and Hokitika.
+flagship_moves:
+- Establish West Coast Housing Trust to acquire, remediate, and manage affordable
+  rental stock
+- Create land banking mechanism for strategic housing sites in Greymouth
+- Fund emergency housing provision for people leaving unsafe situations
+tensions:
+- Population decline limits long-term demand for new social housing
+- Vacant housing in depopulating towns is hard to repurpose without demolition costs
+addresses:
+- problem.west_coast.housing.affordability
+- problem.west_coast.housing.rental_market
+- problem.west_coast.housing.infrastructure_cost
+interventions:
+- description: Establish West Coast Housing Trust for affordable rental provision
+  state_variable: social_housing_waitlist
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.southland.climate.pastoral_growing_season_shift
+name: Pastoral System Growing Season and Moisture Shift
+description: Dairy and sheep pastoral systems face changing rainfall distribution,
+  temperature; adaptation slow.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.climate.drought_agricultural
+claim_ids: []

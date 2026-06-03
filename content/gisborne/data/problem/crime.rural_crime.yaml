@@ -1,0 +1,33 @@
+id: problem.gisborne.crime.rural_crime
+title: Rural crime and property theft in Gisborne — Te Tairāwhiti
+theme: crime
+section: crime
+subpage: rural_crime
+parent: problem.gisborne.crime.safety
+order: 24
+updated: '2026-04-26'
+summary: Rural crime and property theft is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - rural_crime_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Rural crime and property theft is a key facet of the broader pressure facing
+    the region.
+claim_ids:
+- claim.gisborne.crime.rural_crime_47
+- claim.gisborne.crime.rural_crime_48
+status: draft
+time_horizons: [decade]

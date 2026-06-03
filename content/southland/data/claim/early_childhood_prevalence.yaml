@@ -1,0 +1,20 @@
+id: claim.southland.education.early_childhood_prevalence
+statement: Early childhood education (ECE) accessibility in Southland is limited in
+  rural areas. Invercargill has adequate licensed ECE providers (~12); rural and coastal
+  areas (Te Anau, Orepuki, Catlins, Bluff) have sparse provision. Cost barriers and
+  workforce shortages affect availability; low-income families face access constraints.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

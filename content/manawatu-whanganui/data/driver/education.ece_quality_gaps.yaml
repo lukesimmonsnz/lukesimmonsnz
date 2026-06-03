@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.education.ece_quality_gaps
+name: Early Childhood Education Quality Variation
+description: Early childhood education quality variation with regional implications.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.governance.governance
+claim_ids: []

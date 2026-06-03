@@ -1,0 +1,12 @@
+id: driver.otago.infrastructure.population_growth_pressure
+name: Rapid Population Growth in Queenstown-Lakes
+description: Queenstown-Lakes population growing >3% p.a., outpacing infrastructure
+  capacity.
+theme: infrastructure
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.infrastructure.wakatipu_water
+claim_ids: []

@@ -1,0 +1,20 @@
+id: claim.waikato.transport.active_mode_share_4
+statement: Low cycling and walking mode share in Waikato reflects inadequate infrastructure
+  investment and sprawling development patterns. Protected cycleways are limited to
+  Hamilton CBD; rural communities lack safe networks; investment in cycling infrastructure
+  could increase mode share from 5% to 12-15%.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato active_transport claim

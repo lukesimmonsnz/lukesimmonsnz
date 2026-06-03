@@ -1,0 +1,11 @@
+id: driver.otago.inequality.rural_service_distance
+name: Rural Service Distance and Transport Costs
+description: Central Otago and remote areas far from services; transport costs high.
+theme: inequality
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.otago.inequality.rural_isolation
+claim_ids: []

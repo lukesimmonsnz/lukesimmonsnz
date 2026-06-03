@@ -1,0 +1,40 @@
+id: problem.tasman.crime.drug_crime
+title: Methamphetamine supply via SH6/SH60 corridor
+theme: crime
+section: crime
+subpage: drug_crime
+parent: safety
+order: 4
+updated: '2026-04-26'
+summary: NZ Police statistics show drug-related offences in Tasman up around 12 percent year-on-year in 2023. Methamphetamine
+  supply via SH6 and SH60 and the relative isolation of Golden Bay are identified police priorities in the Tasman
+  District Council community-safety plan.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - drug_offence_count_yoy
+  - supply_route_seizure_volume
+  inputs:
+  - police_interdiction_effort
+  - addiction_treatment_capacity
+  constraints:
+  - single_corridor_supply_geography
+  - rural_treatment_service_thinness
+  feedback_loops:
+  - Successful supply interdiction without matching demand-side capacity shifts use to alternative substances, displacing
+    rather than reducing harm.
+narrative:
+- heading: Supply geography matches access geography
+  body: 'The same single-corridor structure that constrains legitimate transport also structures the methamphetamine
+    supply chain: SH6 from the north and SH60 to Mohua. Police interdiction effort concentrates on those routes
+    (claim.tasman.crime.drug_crime_claim).'
+- heading: Demand-side picture less visible
+  body: Recorded supply-side offences are easier to count than demand-side use. The 12 percent year-on-year rise
+    in offences may reflect a real rise in supply, a real rise in enforcement effort, or some mix; the underlying
+    demand prevalence is harder to infer from offence statistics alone.
+claim_ids:
+- claim.tasman.crime.drug_crime_claim
+status: draft
+time_horizons:
+- decade

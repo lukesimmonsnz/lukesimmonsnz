@@ -1,0 +1,41 @@
+id: problem.tasman.climate.climate_risk
+title: Concentrated rainfall events on Motueka and Waimea floodplains
+theme: climate-adaptation
+section: climate
+subpage: climate_risk
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Motueka and Waimea valley floodplains face elevated flood risk from concentrated rainfall events; 2022
+  and 2023 produced multiple storms exceeding 100 mm in 24 hours. Tasman District Council has upgraded drainage
+  and stormwater infrastructure in Richmond and Motueka to a 1-in-50-year design standard.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - annual_count_100mm_24h_events
+  - stormwater_design_return_period
+  inputs:
+  - stormwater_capex
+  - river_channel_management
+  constraints:
+  - topography_motueka_waimea_valleys
+  - climate_trajectory_uncertainty
+  feedback_loops:
+  - Each 100 mm-in-24-hours event raises insurance premiums, which redistributes risk-bearing from insurers to households
+    without changing physical exposure.
+narrative:
+- heading: More water in less time
+  body: The pattern that matters for flood risk is not annual rainfall — Tasman remains a high-sunshine region —
+    but the proportion of annual rainfall that arrives in 100 mm-in-24-hours bursts. Recent years have included
+    multiple such events (claim.tasman.climate.climate_risk_claim).
+- heading: Design standard versus residual risk
+  body: Upgrading reticulated stormwater to a 1-in-50-year standard reduces the frequency of urban inundation but
+    does not eliminate it. Floodplain land use, river-channel management, and climate-driven shifts in event frequency
+    all remain in play.
+claim_ids:
+- claim.tasman.climate.climate_risk_claim
+status: draft
+time_horizons:
+- generation
+- century

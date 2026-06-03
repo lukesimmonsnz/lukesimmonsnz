@@ -1,0 +1,21 @@
+id: camp.otago.infrastructure.hospital_rebuild
+name: Dunedin Hospital Rebuild and Modernization
+theme: infrastructure
+core_claim: Completion of seismic and capacity upgrade improves healthcare resilience
+  and capacity.
+flagship_moves:
+- Complete Dunedin hospital rebuild by 2032
+- Ensure 21st-century facility standards (IT, disaster recovery)
+- Co-locate with research and teaching infrastructure
+tensions:
+- Construction cost escalation and timeline risk
+- Interim service disruptions during rebuild
+addresses:
+- problem.otago.infrastructure.otago_hospital_rebuild
+interventions:
+- description: Secure full Crown funding commitment for hospital rebuild
+  state_variable: hospital_capacity
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

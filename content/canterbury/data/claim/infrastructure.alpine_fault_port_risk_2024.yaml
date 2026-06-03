@@ -1,0 +1,20 @@
+id: claim.canterbury.infrastructure.alpine_fault_port_risk_2024
+statement: Alpine Fault seismic hazard in Canterbury remains elevated. GNS Science
+  (2022) estimated 15% probability of M7.0+ rupture within 50 years; such an event
+  would cause widespread damage to critical infrastructure (Lyttelton Port, Christchurch
+  Hospital, SH1/73).
+value: 9
+unit: months estimated downtime
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gns_alpine_fault_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.median_multiple_v1
+notes: null

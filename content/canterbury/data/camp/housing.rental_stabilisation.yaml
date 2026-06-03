@@ -1,0 +1,20 @@
+id: camp.canterbury.housing.rental_stabilisation
+name: Rent Stabilisation & Tenant Protection
+theme: housing
+core_claim: Implementing rent controls and strengthening tenant protections addresses
+  rental market stress without affecting supply-side affordability.
+flagship_moves:
+- Key intervention for Rent Stabilisation & Tenant Protection
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.housing.rental_market
+interventions:
+- description: Implementing rent controls and strengthening tenant protections addresses
+    rental market stress without affecting supply-side affordability.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

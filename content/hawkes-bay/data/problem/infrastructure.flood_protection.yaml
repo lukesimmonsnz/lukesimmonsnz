@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.infrastructure.flood_protection
+title: Flood protection and drainage infrastructure
+theme: infrastructure
+section: infrastructure
+subpage: flood-protection
+parent: problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+order: 2
+updated: '2026-04-26'
+summary: "Napier and Hastings urban areas are in low-lying zones prone to river and coastal flooding. Stopbanks and stormwater systems are aging and undersized for climate-intensified rainfall. Hawke's Bay Regional Council is under-resourced for upgrades."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - stopbank_standard_exceedance_days
+    - flood_prone_dwelling_count
+  inputs:
+    - rainfall_intensification_trend
+    - river_stage_increase
+  constraints:
+    - riparian_land_acquisition_cost
+    - engineering_standard_cycles
+  feedback_loops:
+    - 'Floods damage property; repairs deplete budgets; deferred maintenance increases future flood risk.'
+narrative:
+  - heading: Flooding Extent
+    body: 'Cyclone Gabrielle caused historic flooding in Hastings, Napier, and rural river valleys. Approximately 2,500 homes experienced inundation.'
+  - heading: Aging Infrastructure
+    body: 'Napier and Hastings flood protection systems were designed for 1-in-50-year events; climate change means such events are now occurring at 1-in-20 frequency.'
+claim_ids:
+  - claim.hawkes_bay.infrastructure.2500_homes_flooded
+status: draft
+time_horizons: [decade, generation]

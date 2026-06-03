@@ -1,0 +1,23 @@
+id: claim.auckland.economy.median_age_trajectory_2048
+statement: >
+  Stats NZ's medium population projection has New Zealand's median age
+  rising from 38 years (2023) to around 43 years by 2048, with the
+  population aged 65+ growing from approximately 16% to 23-25% of the
+  population. The growth is heavily concentrated in older-old (75+)
+  cohorts, where per-capita demand on health and aged care is highest.
+value: 43
+unit: median age (years), Stats NZ medium projection 2048
+time_period: 2023-2048
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.stats_nz_population_projections_2024
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.admin_count_v1
+notes: >
+  Stats NZ medium projection. Lower and upper variants give a 2048
+  median age range of approximately 41-45.

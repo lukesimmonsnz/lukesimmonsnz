@@ -1,0 +1,12 @@
+id: driver.otago.economy.university_public_funding_cuts
+name: University Sector Public Funding Pressure
+description: Crown funding to universities constrained; University of Otago faces
+  budget pressures.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.economy.university_economy
+claim_ids: []

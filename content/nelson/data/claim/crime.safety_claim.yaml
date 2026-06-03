@@ -1,0 +1,22 @@
+id: claim.nelson.crime.safety_claim
+statement: Nelson's overall crime rate is 9% above the national average, with burglary
+  and vehicle crime as highest-volume property offences. 2023 NZ Police data reports
+  3,650 total notifiable offences in Nelson district (rate 66 per 1,000 population
+  vs. national 60 per 1,000), driven by property crime in high-turnover transient
+  areas (city centre, rental suburbs). Community perception of safety has declined
+  14% since 2020, particularly at night.
+value: 66
+unit: notifiable offences per 1,000 population (2023)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

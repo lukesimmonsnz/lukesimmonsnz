@@ -1,0 +1,22 @@
+id: camp.wellington.housing.managed_densification
+name: Managed Densification with Infrastructure Sequencing
+theme: housing
+core_claim: Density increases must be sequenced with infrastructure investment; unmanaged intensification exacerbates flooding,
+  wastewater, and transport stress.
+flagship_moves:
+- Infrastructure-led precinct planning before rezoning approvals
+- Developer-funded infrastructure bonds tied to consent capacity
+- Strategic growth nodes at Tawa, Porirua, and Hutt Valley rail corridors
+tensions:
+- Slower rollout delays affordability relief for current renters
+- Cost of infrastructure bonds may be passed to purchasers, limiting affordability gains
+addresses:
+- problem.wellington.housing.affordability
+- problem.wellington.housing.land_supply
+interventions:
+- description: Require infrastructure capacity certificates before residential rezoning takes effect
+  state_variable: infrastructure_capacity
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

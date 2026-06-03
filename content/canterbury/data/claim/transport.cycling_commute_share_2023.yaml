@@ -1,0 +1,21 @@
+id: claim.canterbury.transport.cycling_commute_share_2023
+statement: Cycling commute share in Christchurch remains 2-3% despite flat terrain
+  and post-earthquake planning opportunities. Recent cycleways (Willow-Avon, Cashmere)
+  show promise; further investment requires $50-100M; integration with rapid transit
+  is planned.
+value: 5.2
+unit: percent
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+- source.ccc_transport_strategy_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

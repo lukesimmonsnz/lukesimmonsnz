@@ -1,0 +1,19 @@
+id: claim.marlborough.inequality.child_poverty_1
+statement: 'Child poverty (material hardship) in Marlborough: 16–18% of children (0–17)
+  in material hardship (national 15–16%); higher in Wairoa, Awatere rural areas; linked
+  to seasonal employment instability and low parental educational attainment.'
+value: 17
+unit: percent of children in material hardship (estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2018_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

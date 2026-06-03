@@ -2,7 +2,7 @@
 title: "{{ problem.title }}"
 section: {{ problem.section }}
 subpage: {{ problem.subpage }}
-order: {{ problem.order|default(99) }}
+order: {{ problem.order | default(99) }}
 updated: {{ problem.updated }}
 summary: >
 {{ problem.summary | indent(2, True) }}
@@ -11,6 +11,9 @@ generated_from: {{ problem.id }}
 ---
 
 # {{ problem.title.split('—')[0] | trim }}
+{% if problem.time_horizons %}
+<p class="horizon-band">Analysis horizon: {% for h in problem.time_horizons %}{% if h == 'decade' %}10yr{% elif h == 'generation' %}50yr{% elif h == 'century' %}100yr{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% endif %}
 {% for section in problem.narrative %}
 
 ## {{ section.heading }}
@@ -18,28 +21,43 @@ generated_from: {{ problem.id }}
 {{ section.body | trim }}
 {% endfor %}
 
-## The systems view
-{%- set sm = problem.systems_model %}
-
-*State variables:* {{ sm.state_variables | join(', ') }}.
-
-*Inputs:* {{ sm.inputs | join(', ') }}.
-
-*Constraints:* {{ sm.constraints | join(', ') }}.
-
-*Feedback loops:*
-{% for fb in sm.feedback_loops %}
-- `{{ fb }}`
-{%- endfor %}
-
 ---
 
-## Solution camps
+## References
 
-A number of distinct positions recur in Auckland's land debate. Each is defensible on its own terms, none is obviously correct, and in practice most real policy programmes combine elements of several. They are presented here in alphabetical order and without ranking.
+{% set seen = [] %}
+{% for claim in claims %}{% for source_id in claim.source_ids %}{% if source_id not in seen %}{% set _ = seen.append(source_id) %}{% set src = sources_by_id.get(source_id) %}{% if src %}
+- **{{ src.title }}**{% if src.author %} — {{ src.author }}{% endif %}{% if src.publisher %} ({{ src.publisher }}){% endif %}{% if src.year %}, {{ src.year }}{% endif %}{% if src.url %} — <{{ src.url }}>{% endif %}
+{% endif %}{% endif %}{% endfor %}{% endfor %}
+
+<details class="technical-appendix" markdown="1">
+<summary><strong>Technical details</strong> — drivers, solution camps, claims, and systems model</summary>
+
+### Drivers
+{% if drivers %}
+
+The following structural drivers contribute to this problem.
+{% for d in drivers %}
+
+#### {{ d.name }}
+
+{{ d.core_claim | default('') | trim }}
+
+- **Category:** {{ d.category | default('—') }}
+- **Timescale:** {{ d.timescale | default('—') }}
+- **Consensus:** {{ d.consensus | default('—') }}
+{%- endfor %}
+{% else %}
+
+*No drivers linked.*
+{% endif %}
+
+### Solution camps
+
+A number of distinct positions recur in policy debates on this issue. Each is defensible on its own terms; none is obviously correct. Presented in alphabetical order without ranking.
 {% for camp in camps %}
 
-### {{ camp.name }}
+#### {{ camp.name }}
 
 {{ camp.core_claim | trim }}
 
@@ -62,20 +80,29 @@ A number of distinct positions recur in Auckland's land debate. Each is defensib
 {% endif %}
 {%- endfor %}
 
----
-
-## Evidence cited on this page
-{% for ev in evidence %}
-- **{{ ev.statement }}**{% if ev.confidence != 'high' or ev.verification_status != 'verified' %} *(confidence: {{ ev.confidence }}; {{ ev.verification_status | replace('_', ' ') }})*{% endif %} — {% for source_id in ev.source_ids %}{% set src = sources_by_id[source_id] %}{% if src %}{{ src.title }}{% if not loop.last %}; {% endif %}{% else %}{{ source_id }}{% endif %}{% endfor %}.
+### Claims cited on this page
+{% for claim in claims %}
+- **{{ claim.statement }}**{% if claim.value is not none %} [value: {{ claim.value }}{% if claim.unit %} {{ claim.unit }}{% endif %}; {{ claim.time_period | default('') }}]{% endif %}{% if claim.confidence != 'high' %} *(confidence: {{ claim.confidence }})*{% endif %} — {% for source_id in claim.source_ids %}{% set src = sources_by_id.get(source_id) %}{% if src %}{{ src.title }}{% if not loop.last %}; {% endif %}{% else %}{{ source_id }}{% endif %}{% endfor %}.
 {%- endfor %}
 
----
+### Systems-model notes
+{%- set sm = problem.systems_model %}
 
-## Further reading
-{% for src in sources %}
-- **{{ src.title }}**{% if src.author %} — {{ src.author }}{% endif %}{% if src.publisher %} ({{ src.publisher }}){% endif %}{% if src.url %} — <{{ src.url }}>{% endif %}
+*State variables:* {{ sm.state_variables | join(', ') }}.
+
+*Constraints:* {{ sm.constraints | join(', ') }}.
+{% if sm.inputs %}
+*Inputs:* {{ sm.inputs | join(', ') }}.
+{% endif %}
+{% if sm.feedback_loops %}
+*Feedback loops:*
+{% for fb in sm.feedback_loops %}
+- `{{ fb }}`
 {%- endfor %}
+{% endif %}
+
+</details>
 
 ---
 
-*Generated from `{{ problem.id }}` on {{ generated_at }}. Do not hand-edit. Edit the entity files under `content/auckland/data/` and re-run `python tools/render.py {{ problem.id }}`.*
+*Generated from `{{ problem.id }}` on {{ generated_at }}. Do not hand-edit. Edit the entity files under the region's `data/` directory and re-run the region's render.py.*

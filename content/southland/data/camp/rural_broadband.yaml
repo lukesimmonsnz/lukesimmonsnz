@@ -1,0 +1,21 @@
+id: camp.southland.infrastructure.rural_broadband
+name: Rural Broadband Expansion via Subsidy and 5G
+theme: infrastructure
+core_claim: Subsidized fibre and 5G deployment enable agritech adoption and rural
+  business growth.
+flagship_moves:
+- Extend fibre to rural towns
+- Deploy 5G towers in underserved areas
+- Subsidize rural broadband access
+tensions:
+- Subsidy costs; limited business case
+- Technology obsolescence risk
+addresses:
+- problem.southland.infrastructure.digital_rural
+interventions:
+- description: Achieve 95% rural broadband coverage by 2030
+  state_variable: broadband_coverage
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

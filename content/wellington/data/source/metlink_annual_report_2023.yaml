@@ -1,0 +1,12 @@
+id: source.metlink_annual_report_2023
+title: Metlink Annual Report and Patronage Statistics 2022/23
+author: null
+publisher: Greater Wellington Regional Council / Metlink
+year: 2023
+url: https://www.metlink.org.nz/about-us/our-organisation/key-statistics
+type: primary-data
+credibility: official
+geo_granularity:
+- wellington
+notes: Official patronage counts and performance statistics for Wellington public transport network including rail, bus, and
+  ferry.

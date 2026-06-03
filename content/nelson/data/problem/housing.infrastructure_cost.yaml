@@ -1,0 +1,37 @@
+id: problem.nelson.housing.infrastructure_cost
+title: High per-lot infrastructure cost in greenfield development
+theme: housing
+section: housing
+subpage: infrastructure_cost
+parent: affordability
+order: 4
+updated: '2026-04-26'
+summary: New subdivision in Nelson is constrained by high per-lot infrastructure cost. Water reticulation extension averages $35,000-50,000 per lot (versus $15,000-25,000 nationally), wastewater treatment augmentation $28,000-42,000 per lot, and stormwater plus roading another $20,000-35,000 per lot. Total greenfield development cost runs $83,000-127,000 per lot before land cost, pushing minimum lot values above $180,000 and new-build price points above $800,000.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - per_lot_three_waters_cost
+  - development_contribution_per_lot
+  - minimum_section_price_nzd
+  inputs:
+  - central_co_funding
+  - council_capex_envelope
+  constraints:
+  - terrain
+  - asset_age
+  - treatment_plant_capacity
+  feedback_loops:
+  - 'Cost-affordability feedback: high per-lot cost lifts entry-price floor, suppressing first-home-buyer demand for new builds, which slows uptake and stretches per-lot capex recovery over fewer lots, raising costs further.'
+narrative:
+- heading: Why costs are higher here
+  body: Nelson's terrain (steep, dispersed catchments) and the ageing Maitai-anchored bulk-water network mean reticulation extensions have higher per-lot capital cost than flat-metro greenfield (claim.nelson.housing.infrastructure_cost_claim). Wastewater treatment augmentation at Bells Island is at a stage in its asset life where augmentation costs are being capitalised into new connections.
+- heading: Cost-shifting versus affordability outcome
+  body: Per-lot cost recovery via development contributions is structurally fair (existing ratepayers do not subsidise new arrivals) but pushes the lot-price floor above the level entry buyers can finance. The question is which cost mechanism (development contributions, rates, central co-funding) results in housing actually being built.
+claim_ids:
+- claim.nelson.housing.infrastructure_cost_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

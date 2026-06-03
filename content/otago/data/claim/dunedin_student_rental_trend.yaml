@@ -1,0 +1,23 @@
+id: claim.otago.housing.dunedin_student_rental_trend
+statement: 'Student rental market degradation accelerating: mould issues and overcrowding
+  in North Dunedin intensifying (landlord underinvestment); rents rising 3-5% annually
+  (outpacing student allowance/parent support); university housing provision flat
+  (insufficient capital allocation); private landlord exit / holiday-let conversion
+  reducing long-term stock; student food/transport hardship rising (welfare demand
+  at Otago University increasing); health outcomes (respiratory, mental health) worsening
+  in overcrowded rental precinct.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

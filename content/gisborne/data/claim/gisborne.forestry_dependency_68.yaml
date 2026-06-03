@@ -1,0 +1,21 @@
+id: claim.gisborne.economy.forestry_dependency_68
+statement: Economic dependency on forestry in Gisborne creates environmental trade-offs
+  including erosion, reduced biodiversity, and slash hazards. Sustainable forestry
+  practices (longer rotation, native admixture, riparian buffers) remain limited due
+  to financial pressures and limited market demand for alternative products.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.voter_turnout_rate_v1
+notes: null

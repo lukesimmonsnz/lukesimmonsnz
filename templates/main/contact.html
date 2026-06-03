@@ -5,6 +5,8 @@
 {% block meta_description %}Send a message to Luke Simmons via the site contact form.{% endblock %}
 
 {% block content %}
+{% set _slot = page_slot_render('contact') %}
+{% if _slot %}<div class="page-intro">{{ _slot | safe }}</div>{% endif %}
 <div class="page">
   {{ breadcrumbs([('Home', url_for('main.home')), ('Contact', None)]) }}
 
@@ -142,9 +144,6 @@
         <a href="https://instagram.com/nzgamerluke" target="_blank" rel="noopener">@nzgamerluke</a>
       </li>
     </ul>
-    <p class="small" style="margin-top: var(--s-3);">
-      For anything that deserves a reply, please use the form above &mdash; I read it more reliably than any feed.
-    </p>
   </section>
 </div>
 {% endblock %}

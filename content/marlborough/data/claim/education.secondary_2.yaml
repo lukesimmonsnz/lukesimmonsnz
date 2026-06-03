@@ -1,0 +1,19 @@
+id: claim.marlborough.education.secondary_2
+statement: 'Secondary school leaver pathways: 65–70% progress to tertiary (university,
+  polytechnic, trades); 20–25% enter employment (viticulture, aquaculture, hospitality);
+  5–10% NEET (not in employment, education, training).'
+value: 67.5
+unit: percent progressing to tertiary (estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_achievement_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

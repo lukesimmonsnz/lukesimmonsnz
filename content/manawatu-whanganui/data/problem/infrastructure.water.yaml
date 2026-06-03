@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.infrastructure.water
+title: Water Supply and Demand Management
+theme: infrastructure
+section: infrastructure
+subpage: water
+parent: problem.manawatu_whanganui.infrastructure.infrastructure
+order: 1
+updated: '2026-04-26'
+summary: Growth outpacing water capacity; aquifer stress in dry seasons; competing
+  agricultural demand.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Growth outpacing water capacity; aquifer stress in dry seasons; competing
+    agricultural demand.
+claim_ids:
+- claim.manawatu_whanganui.infrastructure.water_1
+- claim.manawatu_whanganui.infrastructure.water_2
+status: draft
+time_horizons: [decade, generation]

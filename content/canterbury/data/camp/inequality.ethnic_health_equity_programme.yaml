@@ -1,0 +1,20 @@
+id: camp.canterbury.inequality.ethnic_health_equity_programme
+name: Culturally-Responsive Health & Iwi-Led Health Services
+theme: inequality
+core_claim: Iwi-led health services and culturally tailored chronic disease management
+  improve Māori/Pacific health outcomes.
+flagship_moves:
+- Key intervention for Culturally-Responsive Health & Iwi-Led Health Services
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.inequality.ethnic_gap
+interventions:
+- description: Iwi-led health services and culturally tailored chronic disease management
+    improve Māori/Pacific health outcomes.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

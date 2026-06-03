@@ -1,0 +1,12 @@
+id: source.treasury_economic_outlook_mbl_2024
+title: 'Treasury Economic Outlook 2024: Top of South Region'
+author: null
+publisher: Treasury
+year: 2024
+url: https://www.treasury.govt.nz
+type: government-report
+credibility: official
+geo_granularity:
+- marlborough
+- nz
+notes: National economic trends applied to region.

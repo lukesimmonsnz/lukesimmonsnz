@@ -1,0 +1,34 @@
+id: problem.taranaki.inequality.ethnic_gap
+title: Ethnic income and health gaps
+theme: inequality
+section: inequality
+subpage: ethnic_gap
+parent: problem.taranaki.inequality.deprivation
+order: 2
+updated: '2026-04-26'
+summary: Taranaki has a structural income gap between high-deprivation communities and the regional average;
+  median income in the most affected communities is approximately 28% below the regional average, reflecting
+  occupational concentration in lower-wage roles and limited upward mobility pathways. Health outcome
+  disparities are concentrated in the same communities, reflecting the interaction of income, housing
+  quality, and healthcare access.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - ethnic_gap_index
+  inputs:
+  - ethnic_gap_input_1
+  constraints:
+  - ethnic_gap_constraint
+  feedback_loops:
+  - 'Feedback: ethnic_gap'
+narrative:
+- heading: Income and health disparities in Taranaki
+  body: Taranaki's primary-sector economy (oil and gas, dairy) generates above-average regional incomes,
+    but these are unevenly distributed. Workers in lower-wage agricultural and processing roles earn substantially less,
+    and communities with higher concentrations of lower-wage workers experience worse health outcomes.
+    A significant 28% median household income gap reflects occupational and geographic stratification.
+claim_ids:
+- claim.taranaki.inequality.ethnic_gap_01
+status: draft
+time_horizons: [decade, generation, century]

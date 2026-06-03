@@ -1,0 +1,21 @@
+id: camp.otago.economy.agricultural_innovation
+name: Agricultural Sector Innovation and Adaptation
+theme: economy
+core_claim: R&D support, organic and high-value crops, and climate adaptation improve
+  viability.
+flagship_moves:
+- AgTech innovation hub in Central Otago
+- Organic and specialty crop transition support
+- Climate-adaptive rootstock breeding
+tensions:
+- Transition costs for farmers; commodity preference
+- Long innovation development timelines
+addresses:
+- problem.otago.economy.agri_primary
+interventions:
+- description: Establish innovation hub with 20 startup company incubators
+  state_variable: agri_productivity
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,22 @@
+id: claim.otago.inequality.inequality_trend
+statement: 'Otago inequality is accelerating: Queenstown median-multiple growth outpacing
+  wage growth; Dunedin wage stagnation in service sectors (hospitality, retail) while
+  housing costs rise; rural primary sector employment declining (mechanization, consolidation);
+  Māori and Pasifika graduate retention very low (leave region at higher rates seeking
+  better opportunity); gender wage gaps widening in tourism/hospitality; intergenerational
+  mobility constrained in low-income households.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

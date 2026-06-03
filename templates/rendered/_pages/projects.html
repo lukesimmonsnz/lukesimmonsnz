@@ -1,0 +1,62 @@
+<h1>Projects</h1>
+<p>A working portfolio. Each entry links to a longer build log or
+post-mortem on the <a href="/blog/">blog</a> — what I built, what worked, what
+broke, and what I would do differently. Most of these are
+open-source on <a href="https://github.com/lukesimmonsnz">GitHub</a>.</p>
+<h2>Local AI on my own hardware</h2><div class="block-section-feature-grid sfg-cols-2">
+  <div class="sfg-inner">
+    <div class="block-column"><h3><a href="/blog/2026-05-28-why-i-dropped-a-7b-local-llm-from-my-job-aggregator/">Job Scout — post-mortem</a></h3>
+<p>A job-aggregator that asked a local 7B model to score listings. The
+scoring layer is the part I retired — what I built, why I thought
+local-AI judgment would work, what actually broke, and what replaced
+it. A companion post traces a single listing
+<a href="/blog/2026-05-28-how-the-7b-llm-processes-information/">through the transformer forward pass, layer by layer</a>,
+for the curious about why &ldquo;let the LLM decide&rdquo; was the wrong abstraction.</p></div><div class="block-column"><h3><a href="/blog/2026-05-27-cloning-my-own-voice/">Voice clone</a></h3>
+<p>A voice-cloning pipeline trained on my own audio — what it took to make
+it convincing, how the listener test went, and where I will actually use
+it.</p></div><div class="block-column"><h3><a href="/blog/2026-05-24-organising-the-files-on-my-machine/">File organiser</a></h3>
+<p>A Windows file-organisation system built around the rule that no
+automation touches my filesystem without a dry-run first. Everything +
+Python <code>organize</code> + digiKam, with JSONL logs of every move.</p></div><div class="block-column"><h3><a href="/blog/2026-05-26-a-smart-home-on-my-terms/">Smart-home design log</a></h3>
+<p>A home-automation design built around what I want my house to do — and,
+just as importantly, what I do not want it to do. Principles are locked;
+hardware is not on the network yet.</p></div>
+  </div>
+</div><h2>New Zealand–specific tools</h2><div class="block-section-feature-grid sfg-cols-2">
+  <div class="sfg-inner">
+    <div class="block-column"><h3><a href="/blog/2026-05-22-streamfinder-a-streaming-aggregator-that-knows-about-nz-free-tv/">streamfinder</a></h3>
+<p>An NZ-specific streaming aggregator that combines TMDB provider data
+with sitemaps from TVNZ+ and ThreeNow — so &ldquo;free to watch right now in
+New Zealand&rdquo; actually means something. FTS5 search, sitemap parsing, and
+what is still ahead.</p></div><div class="block-column"><h3><a href="/blog/2026-05-23-a-political-research-tool-for-new-zealand/">Political research tool</a></h3>
+<p>A local Flask app combining NZ politician profiles with a Vote Compass
+/ Political Compass questionnaire mapped against the actual platforms of
+NZ parties. What I built, what I left out, and why.</p></div>
+  </div>
+</div><h2>Personal infrastructure</h2><div class="block-section-feature-grid sfg-cols-2">
+  <div class="sfg-inner">
+    <div class="block-column"><h3><a href="/blog/2026-05-25-a-personal-finance-dashboard-with-akahu/">Personal finance dashboard</a></h3>
+<p>A dashboard built around the <a href="https://www.akahu.nz/">Akahu</a> open banking
+API to stop manually reconciling bank exports. Node and React —
+which I would choose differently today. The Akahu integration is the
+leverage that actually matters.</p></div><div class="block-column"><h3><a href="https://github.com/lukesimmonsnz">This site</a></h3>
+<p>Flask, Jinja, a single hand-written stylesheet, no JavaScript framework,
+no third-party scripts beyond Google Fonts. Frozen to static HTML and
+deployed to Cloudflare Pages. The contact form is a Pages Function.
+The weekly digest you may have noticed is written by a local agent on
+my own hardware.</p></div>
+  </div>
+</div><h2>Retired, with lessons</h2><div class="block-section-feature-grid sfg-cols-2">
+  <div class="sfg-inner">
+    <div class="block-column"><h3><a href="/blog/2026-05-21-the-rust-project-i-retired-and-why/">MiniKV — a Bitcask-style KV store in Rust</a></h3>
+<p>Designed to teach me Rust the hard way: a Bitcask-style key-value store
+with a Rust core and PyO3 Python bindings. I retired it. The post explains
+why, and what I am doing instead to learn the same material.</p></div>
+  </div>
+</div><h2>What is not here</h2>
+<p>The <a href="/research/aotearoa/">Aotearoa research project</a> is the largest
+thing on this site, but it lives under
+<a href="/research/">Research</a> because it is closer in shape to a
+long-form research artefact than to a discrete build. The
+<a href="/davidsimmons/">Wāhi Pounamu / David Simmons biography</a> is its own
+thing too.</p>

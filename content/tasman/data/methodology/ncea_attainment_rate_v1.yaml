@@ -1,0 +1,11 @@
+id: methodology.ncea_attainment_rate_v1
+name: NCEA Level 2 Attainment Rate
+version: 1
+kind: measurement
+applies_to:
+- Claim
+discharged_by: json_schema
+description: Percentage of school leavers achieving NCEA Level 2 or equivalent; disaggregated
+  by ethnicity, school decile, and region. Threshold credential for further education
+  and skilled employment.
+source_ids: []

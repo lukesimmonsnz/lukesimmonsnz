@@ -1,0 +1,12 @@
+id: driver.nelson.health.driver_1
+name: Health-workforce supply gap in a small region
+description: Nelson's GP, nursing, and specialist workforces are structurally below national-target ratios. Recruitment is constrained by housing affordability and career-path narrowness; retention from NMIT health programmes is well below national average.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.nelson.health.health_outcomes
+- problem.nelson.health.mental_health
+claim_ids: []

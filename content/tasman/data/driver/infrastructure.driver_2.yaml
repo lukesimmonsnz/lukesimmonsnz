@@ -1,0 +1,14 @@
+id: driver.tasman.infrastructure.driver_2
+name: Single-route exposure to weather and geology
+description: Critical infrastructure links — SH60 over the Takaka Hill, Waimea water supply, the Murchison spine
+  — depend on routes with no realistic redundancy, so single-event closures translate into region-wide service disruption.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.tasman.infrastructure.infrastructure
+- problem.tasman.infrastructure.infrastructure_3
+- problem.tasman.infrastructure.infrastructure_4
+claim_ids: []

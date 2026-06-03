@@ -1,0 +1,14 @@
+id: driver.wellington.crime.repeat_victimisation_family
+name: Repeat victimisation concentration in family harm contexts
+description: Family violence repeat victimisation is the primary mechanism by which a small population accounts for a large
+  share of total incidents; inadequate service response and victim safety planning sustain repeat cycles.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.crime.victimisation
+- problem.wellington.crime.family_violence
+claim_ids:
+- claim.wellington.crime.repeat_victimisation_concentration

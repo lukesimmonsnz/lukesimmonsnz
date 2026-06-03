@@ -1,0 +1,21 @@
+id: camp.canterbury.climate.integrated_hazard_planning
+name: Integrated Hazard Planning & Critical Infrastructure Resilience
+theme: climate-adaptation
+core_claim: Unified climate and seismic risk planning ensures critical infrastructure
+  (port, hospital, water, transport) is resilient to compound hazards.
+flagship_moves:
+- Key intervention for Integrated Hazard Planning & Critical Infrastructure Resilience
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.climate.climate_risk
+- problem.canterbury.climate.alpine_fault_earthquake
+interventions:
+- description: Unified climate and seismic risk planning ensures critical infrastructure
+    (port, hospital, water, transport) is resilient to compound hazards.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -70,6 +70,51 @@ def lint(path: Path) -> list[str]:
     if word_count > MAX_WORDS:
         errors.append(f"Body is suspiciously long ({word_count} words; max {MAX_WORDS}).")
 
+    # Bare URLs in parens — e.g. "(https://example.com/...)" — render as
+    # plain text, not clickable links. The prompt forbids these. Match
+    # only URLs NOT preceded by `]` (which would be a proper markdown
+    # link). Allow inline `(http...)` only inside code spans (between
+    # backticks) by stripping those first.
+    body_no_code = re.sub(r"`[^`]*`", "", body)
+    bare_urls = re.findall(
+        r"(?<!\])\((https?://[^\s)]+)\)",
+        body_no_code,
+    )
+    if bare_urls:
+        sample = ", ".join(bare_urls[:3])
+        more = f" (+{len(bare_urls) - 3} more)" if len(bare_urls) > 3 else ""
+        errors.append(
+            f"Bare URL in parens ({len(bare_urls)} found): {sample}{more}. "
+            f"Rewrite as [descriptive text](URL)."
+        )
+
+    # H3+ section headings — the prompt allows at most one H2, no H3+.
+    # AI-generated drafts default to "### Section / ### Section / ### Conclusion".
+    h3_plus = re.findall(r"^#{3,}\s.+$", body, flags=re.MULTILINE)
+    if h3_plus:
+        errors.append(
+            f"H3+ heading(s) found ({len(h3_plus)}). Use prose transitions, "
+            f"at most one H2. Offenders: {h3_plus[:2]}"
+        )
+
+    # Banned AI-summary phrases. Case-insensitive whole-word-ish match.
+    banned = [
+        "synergistic", "synergy",
+        "underscore", "underscores", "underscoring",
+        "broader implications", "wider implications",
+        "the promise of", "holds promise",
+        "stands out as", "noteworthy",
+        "opens up new avenues", "paves the way",
+        "various scientific disciplines", "various fields", "various domains",
+        "in conclusion", "to conclude",
+        "time will tell", "watch this space",
+        "game-changer", "revolutionary",
+        "leverage", "unlock", "harness",
+    ]
+    hits = [p for p in banned if re.search(rf"\b{re.escape(p)}\b", body, re.IGNORECASE)]
+    if hits:
+        errors.append(f"Banned phrase(s) in body: {hits}")
+
     # Slug collision: any other file with same stem (shouldn't happen,
     # but check for typos / manual edits). Compare resolved paths so
     # relative-vs-absolute Path inputs don't false-positive.

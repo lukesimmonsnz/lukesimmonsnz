@@ -1,0 +1,42 @@
+id: problem.tasman.education.achievement
+title: Achievement averages above national, gaps below
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'NZQF Level 3+ attainment for Tasman adults aged 15-64 sits at roughly 78 percent, slightly above the national
+  76 percent. The headline figure conceals persistent gaps: Māori attainment around 64 percent and Pasifika around
+  59 percent, against European/other at 82 percent.'
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - nzqf_level_3_plus_attainment
+  - achievement_gap_maori_european
+  inputs:
+  - ece_participation_rate
+  - secondary_retention_to_year_13
+  constraints:
+  - deprivation_distribution
+  - limited_local_tertiary_options
+  feedback_loops:
+  - Lower local tertiary participation reduces the locally-resident graduate pool, which limits the role-model and
+    aspiration channel for the next cohort.
+narrative:
+- heading: The aggregate hides the distribution
+  body: On region-wide averages, Tasman looks like a slightly-better-than-national education performer. Disaggregated
+    by ethnicity and by deprivation decile, the picture is much closer to the national pattern of stratified outcomes
+    (claim.tasman.education.achievement_claim).
+- heading: Geography compounds the structural gap
+  body: Lower-income and Māori households are concentrated in Motueka and parts of Mohua where school choice is
+    constrained, ECE supply is thinner, and tertiary pathways require relocation. The structural drivers are largely
+    the same as elsewhere in New Zealand, but the rural geography removes some of the compensating options available
+    in metropolitan regions.
+claim_ids:
+- claim.tasman.education.achievement_claim
+status: draft
+time_horizons:
+- decade
+- generation

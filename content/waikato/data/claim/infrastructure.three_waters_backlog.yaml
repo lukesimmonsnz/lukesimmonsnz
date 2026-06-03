@@ -1,0 +1,22 @@
+id: claim.waikato.infrastructure.three_waters_backlog
+statement: Hamilton water supply and wastewater systems face significant renewal backlog.
+  The Waikato River abstraction supplies approximately 170K residents; aging pipe
+  network has high leakage of 17-22% non-revenue water. Wastewater treatment at Ruakura
+  requires capacity expansion to serve Peacocke growth. Three Waters Reform (now Local
+  Water Done Well) created transition costs; small TAs struggle with asset replacement
+  funding.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato three_waters claim

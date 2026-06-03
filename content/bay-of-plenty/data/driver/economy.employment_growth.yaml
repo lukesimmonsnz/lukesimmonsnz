@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.economy.employment_growth
+name: Driver for employment
+description: "This driver exacerbates the employment pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: economy
+consensus: contested
+category: regulatory
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.economy.employment
+claim_ids:
+- claim.bay_of_plenty.economy.employment_69

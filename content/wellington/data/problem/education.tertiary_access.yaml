@@ -1,0 +1,41 @@
+id: problem.wellington.education.tertiary_access
+title: Tertiary access and completion gaps in Wellington
+theme: education
+section: education
+subpage: tertiary-access
+parent: problem.wellington.education.achievement
+order: 4
+updated: '2026-04-26'
+summary: Wellington's tertiary participation rate is high by New Zealand standards due to Victoria University
+  and other institutions, but completion rates for students from high-deprivation backgrounds remain below
+  average. Financial pressure — student debt, employment obligations, and high cost of living — is the
+  primary barrier to completion for students from low-income households.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - tertiary_participation_rate
+  - maori_completion_rate
+  inputs:
+  - student_loan_burden
+  - culturally_responsive_support_funding
+  constraints:
+  - living_cost_affordability_in_wellington
+  - first_generation_tertiary_barriers
+  feedback_loops:
+  - 'Debt-dropout loop: accumulating student debt increases financial pressure on low-income students;
+    those with greatest debt burden relative to family support are most at risk of dropout before completion.'
+narrative:
+- heading: Participation and completion
+  body: Wellington's tertiary participation rate is above the national average due to the concentration
+    of universities and polytechnics, but completion rates for Māori and Pacific students remain 15–20
+    percentage points below those for European students (claim.wellington.education.tertiary_participation_rate).
+- heading: Student debt burden
+  body: Wellington's high cost of living makes student debt burden disproportionately high for students
+    from low-income backgrounds, who face higher living costs than students in smaller cities while on
+    the same student loan entitlement (claim.wellington.education.student_debt_burden).
+claim_ids:
+- claim.wellington.education.tertiary_participation_rate
+- claim.wellington.education.student_debt_burden
+status: draft
+time_horizons: [decade, generation]

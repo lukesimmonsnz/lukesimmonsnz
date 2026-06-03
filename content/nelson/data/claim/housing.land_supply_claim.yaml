@@ -1,0 +1,23 @@
+id: claim.nelson.housing.land_supply_claim
+statement: Buildable land supply in Nelson is constrained by natural and planning
+  boundaries. Approximately 800 hectares of zoned residential and mixed-use land are
+  available for development over 15 years (medium growth scenario); however, ~220
+  hectares are encumbered by heritage overlays, flood risk zones, or cultural heritage
+  sites that limit developability. Current take-up is 45–55 hectares/year; at this
+  rate, competitive supply pressure will intensify 2026 onward. Tasman District has
+  marginally more supply (950 hectares) but weaker demand; coordination is weak.
+value: 800
+unit: hectares available residential land over 15 years
+time_period: 2024-2039
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_housing_demand_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

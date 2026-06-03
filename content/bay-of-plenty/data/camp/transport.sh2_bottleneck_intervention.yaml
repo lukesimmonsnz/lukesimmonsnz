@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.transport.sh2_bottleneck_intervention
+name: Intervention for sh2_bottleneck
+theme: transport
+core_claim: Targeted intervention on sh2_bottleneck will improve outcomes.
+flagship_moves:
+- Policy measure 1 for sh2_bottleneck
+- Policy measure 2 for sh2_bottleneck
+- Implementation mechanism for sh2_bottleneck
+tensions:
+- Trade-off A for sh2_bottleneck
+- Trade-off B for sh2_bottleneck
+addresses:
+- problem.bay_of_plenty.transport.sh2_bottleneck
+interventions:
+- description: Core intervention targeting sh2_bottleneck
+  state_variable: sh2_bottleneck_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

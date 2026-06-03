@@ -1,0 +1,18 @@
+id: claim.northland.inequality.rural_deprivation_claim1
+statement: Rural Far North faces extreme service isolation and deprivation. Towns
+  like Rawene, Kawakawa, Te Hapua, Mitimiti lack access to tertiary healthcare, supermarkets,
+  banking, and reliable public transport. Commuting to Whangārei or Auckland costs
+  time and money; essential journey burdens fall heaviest on low-income whānau. Rural
+  property ownership costs (maintenance, rates, insurance) suppress household savings.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

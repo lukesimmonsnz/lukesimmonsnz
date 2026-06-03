@@ -1,0 +1,24 @@
+id: camp.west_coast.transport.pass_route_resilience_and_emer
+name: Pass Route Resilience and Emergency Access
+theme: transport
+core_claim: West Coast communities need guaranteed road access via alpine passes year-round;
+  NZTA investment in pass resilience and alternative transport is a strategic national
+  priority.
+flagship_moves:
+- Upgrade weather resilience of Arthur's Pass SH73, Lewis Pass SH7, and Haast Pass
+  SH6
+- Develop contingency air freight and passenger access for extended closure events
+- Establish real-time pass condition monitoring and early warning systems
+tensions:
+- Full climate-proofing of alpine passes is technically and financially prohibitive
+- Some level of weather closure is unavoidable given geography
+addresses:
+- problem.west_coast.transport.connectivity
+- problem.west_coast.transport.connectivity_2
+interventions:
+- description: Fund West Coast alpine highway resilience upgrades
+  state_variable: alpine_pass_closure_days
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

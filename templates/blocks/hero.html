@@ -1,0 +1,4 @@
+<div class="block-hero{% if attrs.align %} align-{{ attrs.align }}{% endif %}{% if attrs.height %} height-{{ attrs.height }}{% endif %}"
+     {% if attrs.image %}style="background-image: url('{{ attrs.image }}')"{% endif %}>
+  <div class="hero-content">{{ body | safe }}</div>
+</div>

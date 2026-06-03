@@ -1,0 +1,19 @@
+id: claim.marlborough.climate.fire_risk_placeholder
+statement: Marlborough grassland and shrubland fire risk increasing; Awatere Valley
+  and eastern Wairau are fire-prone; wildfire season extending October–May; largest
+  recorded fire (2015) burned 2,840 hectares in Molesworth Station catchment.
+value: 2840
+unit: hectares (2015 Molesworth fire)
+time_period: '2015'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_climate_projections_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

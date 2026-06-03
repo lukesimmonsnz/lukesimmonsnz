@@ -1,0 +1,12 @@
+id: driver.southland.health.mental_health_service_shortfall
+name: Mental Health Service Under-Resourcing
+description: Southland mental health services oversubscribed; long waitlists; rural
+  access barriers.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.health.mental_health
+claim_ids: []

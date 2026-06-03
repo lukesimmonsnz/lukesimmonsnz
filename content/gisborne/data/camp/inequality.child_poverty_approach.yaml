@@ -1,0 +1,20 @@
+id: camp.gisborne.inequality.child_poverty_approach
+name: Strategic approach for child_poverty
+theme: inequality
+core_claim: Strategic intervention on child_poverty will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting child_poverty
+- Priority action 2 targeting child_poverty
+- Institutional coordination mechanism for child_poverty
+tensions:
+- 'Tension 1: child_poverty'
+- 'Tension 2: child_poverty'
+addresses:
+- problem.gisborne.inequality.child_poverty
+interventions:
+- description: Primary intervention for child_poverty
+  state_variable: child_poverty_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

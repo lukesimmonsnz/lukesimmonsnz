@@ -1,22 +1,22 @@
 id: claim.auckland.governance.conflict_of_interest_risk
-statement: >
-  Auckland's development and infrastructure sector is characterised
-  by recurrent conflict of interest concerns; the concentration of
-  large contracts with a small number of suppliers, and the revolving
-  door between council staff, CCO management, and private development
-  consultancies, creates procurement integrity risks that have been
-  identified in multiple audit reports.
+statement: 'Auckland''s development and infrastructure sector is characterised by
+  recurrent conflict of interest concerns; the concentration of large contracts with
+  a small number of suppliers, and the revolving door between council staff, CCO management,
+  and private development consultancies, creates procurement integrity risks that
+  have been identified in multiple audit reports.
+
+  '
 value: null
 unit: null
-time_period: "2018-2023"
+time_period: 2018-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.ombudsman_nz_2023
-  - source.auckland_council_ltp_2024
+- source.ombudsman_nz_2023
+- source.auckland_council_ltp_2024
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

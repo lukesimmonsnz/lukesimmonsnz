@@ -1,0 +1,16 @@
+id: driver.northland.health.workforce_supply_driver
+name: Health workforce pipeline insufficiency
+description: Insufficient training of health professionals and difficulty attracting
+  graduates to rural Northland creates chronic staffing deficits.
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.health.northland_health_inequity
+- problem.northland.health.health_workforce
+- problem.northland.health.maori_health_gap
+- problem.northland.health.mental_health
+claim_ids:
+- claim.northland.health.northland_health_inequity_claim1

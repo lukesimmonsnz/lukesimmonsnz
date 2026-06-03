@@ -1,0 +1,30 @@
+id: problem.waikato.inequality.waikato_inequality
+title: Income inequality and social deprivation
+theme: inequality
+section: inequality
+subpage: waikato_inequality
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waikato has significant pockets of concentrated deprivation, particularly
+  in Hamilton East/West and rural towns.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gini_coefficient
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional inequality dynamics create self-reinforcing feedback.
+narrative:
+- heading: Income inequality and social deprivation
+  body: Waikato has significant pockets of concentrated deprivation, particularly
+    in Hamilton East/West and rural towns.
+claim_ids:
+- claim.waikato.inequality.waikato_inequality_root
+status: draft
+time_horizons: [decade, generation, century]

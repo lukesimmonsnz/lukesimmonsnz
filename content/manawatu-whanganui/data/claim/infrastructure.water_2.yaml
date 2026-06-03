@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.infrastructure.water_2
+statement: Rural water supply in Manawatū-Whanganui is highly fragmented; approximately
+  45-50% of rural communities rely on small local schemes with limited treatment and
+  storage. These systems are vulnerable to contamination (boil-water notices are common)
+  and drought. Upgrade and consolidation of rural water schemes is a priority; estimated
+  investment is NZ$80-120 million over 10 years. Whanganui District and smaller councils
+  are coordinating scheme upgrades with central government support (Three Waters Reform).
+  Challenges include funding, affordability for rural users, and water availability
+  under climate stress in hill-country areas.
+value: null
+unit: null
+time_period: 2024-2034
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.whanganui_city_council_2023
+- source.horizons_one_plan_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

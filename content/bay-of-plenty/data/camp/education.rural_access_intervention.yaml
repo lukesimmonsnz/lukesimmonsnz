@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.education.rural_access_intervention
+name: Intervention for rural_access
+theme: education
+core_claim: Targeted intervention on rural_access will improve outcomes.
+flagship_moves:
+- Policy measure 1 for rural_access
+- Policy measure 2 for rural_access
+- Implementation mechanism for rural_access
+tensions:
+- Trade-off A for rural_access
+- Trade-off B for rural_access
+addresses:
+- problem.bay_of_plenty.education.rural_access
+interventions:
+- description: Core intervention targeting rural_access
+  state_variable: rural_access_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

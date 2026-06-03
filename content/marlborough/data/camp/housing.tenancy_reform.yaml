@@ -1,0 +1,21 @@
+id: camp.marlborough.housing.tenancy_reform
+name: Tenancy Law Reform
+theme: housing
+core_claim: Reform rental tenancy laws to improve security and affordability.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.inequality.seasonal_worker_conditions
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

@@ -1,0 +1,19 @@
+id: claim.marlborough.crime.seasonal_crime_2
+statement: Backpacker/hostel-related theft and assault incidents concentrated in Picton;
+  40–50% of summer holiday season offences occur in central Picton waterfront precinct;
+  tourist-on-tourist and visitor-resident conflicts reported.
+value: 45
+unit: percent of summer offences in central Picton (estimate)
+time_period: 2021-2023
+confidence: low
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

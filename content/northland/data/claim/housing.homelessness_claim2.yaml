@@ -1,0 +1,19 @@
+id: claim.northland.housing.homelessness_claim2
+statement: Hidden homelessness (living with multiple families, in vehicles, overcrowded
+  rentals) likely exceeds absolute homelessness in Northland by 5-10x. Far North whānau
+  double up to share rent; "couch-surfing" among young adults in Whangārei is common
+  de facto homelessness. Domestic violence survivors often cycle through temporary
+  shelter → motel → family → back to insecure rental due to insufficient specialist
+  housing.
+value: null
+unit: null
+time_period: '2023'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

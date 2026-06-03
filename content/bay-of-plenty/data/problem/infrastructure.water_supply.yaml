@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.infrastructure.water_supply
+title: Water supply reliability and allocation in Bay of Plenty — Te Moana-a-Toi
+theme: infrastructure
+section: infrastructure
+subpage: water_supply
+parent: problem.bay_of_plenty.infrastructure.infrastructure_pressure
+order: 10
+updated: '2026-04-26'
+summary: Water supply reliability and allocation is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - water_supply_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Water supply reliability and allocation is a specific manifestation of the
+    broader pressure.
+claim_ids:
+- claim.bay_of_plenty.infrastructure.water_supply_19
+- claim.bay_of_plenty.infrastructure.water_supply_20
+status: draft
+time_horizons: [decade, generation]

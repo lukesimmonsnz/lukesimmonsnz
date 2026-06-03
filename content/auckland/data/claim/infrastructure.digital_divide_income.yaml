@@ -1,27 +1,28 @@
 id: claim.auckland.infrastructure.digital_divide_income
-statement: >
-  Broadband uptake in Auckland's lowest-income decile households is
-  substantially below the city average. Cost is the primary barrier:
-  entry-level fibre plans require $60–80/month, representing 3–5% of
-  gross income for a household on the minimum wage. The digital divide
-  compounds other disadvantage: households without internet access face
-  barriers to online job applications, telehealth, school homework,
-  and government services that have shifted predominantly online.
+statement: 'Broadband uptake in Auckland''s lowest-income decile households is substantially
+  below the city average. Cost is the primary barrier: entry-level fibre plans require
+  $60–80/month, representing 3–5% of gross income for a household on the minimum wage.
+  The digital divide compounds other disadvantage: households without internet access
+  face barriers to online job applications, telehealth, school homework, and government
+  services that have shifted predominantly online.
+
+  '
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.mbie_digital_connectivity_2023
-  - source.stats_nz_census_2023
+- source.mbie_digital_connectivity_2023
+- source.stats_nz_census_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  Income-disaggregated uptake data is available from MBIE's annual
-  affordability survey. The cost-as-share-of-income calculation uses
-  2023 minimum wage and entry-level plan pricing.
+- auckland
+notes: 'Income-disaggregated uptake data is available from MBIE''s annual affordability
+  survey. The cost-as-share-of-income calculation uses 2023 minimum wage and entry-level
+  plan pricing.
+
+  '

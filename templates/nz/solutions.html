@@ -1,0 +1,356 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Solution space · Aotearoa Research · Luke Simmons{% endblock %}
+{% block meta_description %}A cross-pattern analytical essay on the solution space for New Zealand's structural problems — interventions sorted by mechanism, not by theme. Covers infrastructure-led unlock, land-use reform, risk-based pricing, polycentric urban form, economic diversification, and the AI / migration / ageing synthesis.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Aotearoa Research', url_for('research.aotearoa_index')),
+    ('National summary', url_for('nz.index')),
+    ('Solution space', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Cross-pattern analysis</span>
+    <h1>Solution space</h1>
+    <hr class="rule">
+    <p class="lede">
+      The regional corpus on this site catalogues 37 cross-regional
+      structural patterns across 11 themes. This page reasons in the
+      opposite direction: starting from the levers — mechanisms by
+      which the patterns can be moved — and noting which patterns each
+      lever bites on. Where a regional research page asks <em>what is
+      happening here?</em>, this essay asks <em>which interventions
+      actually do work, and where do their costs land?</em>
+    </p>
+  </header>
+
+  <article class="prose nz-essay">
+
+    <p>
+      Each section names a concrete lever, lists the specific tools
+      already on the shelf in New Zealand (named statutes, agencies,
+      and programmes), and flags the trade-off — who pays, what gets
+      sacrificed, and on what time horizon. Levers overlap: housing
+      supply can be moved through infrastructure, zoning, or pricing
+      simultaneously, and the most realistic path on most patterns
+      uses several at once. The essay is not prescriptive — the choice
+      between tools is a values question — but it tries to be
+      specific enough that the cost of inaction is also visible.
+    </p>
+
+    <h2 id="infrastructure-led-unlock">1. Infrastructure-led unlock</h2>
+
+    <p>
+      Front-loaded three-waters and transport infrastructure unlocks
+      land for development at density. The bottleneck is fiscal: a
+      typical greenfield growth area needs $30k–$80k of trunk
+      infrastructure per dwelling before a single building consent can
+      be issued, and council balance sheets cannot fund this at the
+      scale the
+      <a href="{{ url_for('nz.theme', theme='housing') }}#pattern.housing.supply_side_constraint">housing supply-side constraint</a>
+      requires without a new revenue instrument.
+    </p>
+
+    <p>
+      Concrete tools available:
+      Infrastructure Funding and Financing Act 2020 (IFF) levies — used
+      for Tauranga's Tauriko West and Wellington's Eastern Porirua,
+      with a debt-service levy on the benefiting properties for up
+      to 50 years; targeted-rate value capture (Auckland's Watercare
+      Infrastructure Growth Charge); development contributions
+      (Section 199 LGA, currently capped well below true marginal
+      cost). Crown Infrastructure Partners and the
+      <a href="https://www.infracom.govt.nz/">National Infrastructure Commission</a>
+      can underwrite trunk infrastructure ahead of demand. Three-waters
+      reform (now Local Water Done Well) is the structural pathway for
+      consolidating the
+      <a href="{{ url_for('nz.theme', theme='infrastructure') }}#pattern.infrastructure.small_council_fiscal_gap">small-council fiscal gap</a>:
+      Council-Controlled Organisations or shared-service entities can
+      borrow at scale where individual councils cannot.
+    </p>
+
+    <p>
+      Trade-off: IFF levies and targeted rates work, but transfer cost
+      visibly to specific properties; political durability has been
+      mixed. Pure rate-funded build is more equitable but slower. Crown
+      grants are fast but compete with health and education in the
+      same fiscal envelope.
+    </p>
+
+    <h2 id="land-use-reform">2. Land-use reform</h2>
+
+    <p>
+      Auckland's 2016 Unitary Plan upzoning is the largest natural
+      experiment available. Greenaway-McGrevy and Phillips (2023) found
+      that the upzoned tier produced roughly 5× the consent rate of the
+      previous decade, with rents in upzoned suburbs growing 14–35%
+      slower than control suburbs over 2016–2021. The Medium Density
+      Residential Standards (MDRS, 2021) extended the principle
+      nationally; the 2024 Government partly retracted them, leaving
+      councils to opt in.
+    </p>
+
+    <p>
+      Concrete tools: reinstate or strengthen MDRS at council level
+      (Christchurch's "City Plan 2024" went further than the central
+      mandate); abolish parking minimums (already national since 2022);
+      remove minimum lot sizes; enable up-to-six-storeys around
+      transit stations (the original MDRS three-storey rule was a
+      partial measure); fast-track consenting for projects above a
+      density threshold. The cost to government is near zero; the
+      political cost lands on incumbent owners whose viewshafts and
+      neighbourhood character protections are removed.
+    </p>
+
+    <p>
+      Trade-off: zoning reform addresses the
+      <a href="{{ url_for('nz.theme', theme='housing') }}#pattern.housing.supply_side_constraint">housing supply pattern</a>
+      directly but cannot work where infrastructure is already at
+      capacity (paper upzoning). It is the cheapest lever and the
+      politically hardest: there is no fiscal cost to spread, only a
+      capital-gain redistribution from owners of currently-protected
+      single-house land to owners of newly-developable parcels.
+    </p>
+
+    <h2 id="risk-based-pricing">3. Risk-based pricing and managed retreat</h2>
+
+    <p>
+      Cyclone Gabrielle's $9–14B national damage and the Auckland 2023
+      Anniversary floods exposed the
+      <a href="{{ url_for('nz.theme', theme='climate-adaptation') }}#pattern.climate.compound_hazard_exposure">compound hazard exposure pattern</a>:
+      property is being built and re-built in locations where physical
+      risk is rising faster than insurance and rates can absorb
+      privately. Toka Tū Ake EQC caps natural-hazard cover at $300k
+      (residential), with the private market layered above; private
+      insurers are already withdrawing or risk-pricing flood cover in
+      coastal Hawke's Bay and Tairāwhiti.
+    </p>
+
+    <p>
+      Concrete tools: extend Toka Tū Ake EQC's risk-based premium
+      pricing (currently flat by region); mandate hazard disclosure on
+      property sale via the LIM (currently inconsistent across
+      councils); fund a managed-retreat statute (the Climate Adaptation
+      Bill, 2024 select committee, was the vehicle and is currently
+      stalled); allow councils to refuse new consents in modelled high-
+      risk zones (NZ Coastal Policy Statement 2010 already permits
+      this; few councils use it). The
+      <a href="{{ url_for('nz.theme', theme='climate-adaptation') }}#pattern.climate.low_adaptive_capacity">low adaptive capacity pattern</a>
+      is largely about these tools sitting idle.
+    </p>
+
+    <p>
+      Trade-off: every step transfers cost from future general
+      taxpayers to current homeowners in identified hazard zones. The
+      precedent in NZ — Christchurch red zone, Hawke's Bay and Auckland
+      voluntary buyouts — is for the Crown to cover roughly 100% of
+      pre-event valuation; risk pricing would shift that closer to
+      market value and lose owners equity. There is no version of this
+      lever that does not generate that distributional fight.
+    </p>
+
+    <h2 id="polycentric-urban-form">4. Rapid transit and the agglomeration premium</h2>
+
+    <p>
+      Effective density (jobs and workers reachable within 30–45 minutes)
+      drives the productivity gain from city scale that the
+      <a href="{{ url_for('nz.theme', theme='economy') }}#pattern.economy.agglomeration_deficit">agglomeration deficit pattern</a>
+      identifies as missing. Auckland's Northern Busway demonstrates the
+      mechanism domestically: opened 2008, by 2019 carrying 5.4M
+      annual trips and supporting roughly 30% population growth in
+      catchment suburbs above the regional average. The City Rail Link
+      (open 2026) doubles inner-rail capacity and is forecast to lift
+      central-city employment access by 30% within 30 minutes by rail.
+    </p>
+
+    <p>
+      Concrete near-term moves available: complete the Northwest Busway
+      (Auckland) — currently consented, awaiting funding allocation in
+      the 2027–30 GPS; reinstate Auckland light rail in some form
+      (cancelled 2024) or commit to a heavy-rail extension to the
+      airport; deliver the Wellington Airport-to-Hospital mass transit
+      proposal (Let's Get Wellington Moving residual); progress the
+      Christchurch Mass Rapid Transit business case (Greater
+      Christchurch Spatial Plan 2024). Each is shovel-ready or
+      near-ready; each requires a 10-year capital commitment that
+      crosses electoral cycles.
+    </p>
+
+    <p>
+      Trade-off: rapid transit is high-capex, slow-payoff. Capital
+      cost runs $200M–$400M per kilometre for surface rail/light
+      rail, with break-even on agglomeration benefit measured in
+      decades. Politically, rapid transit projects compete for the
+      same NLTF and Crown capital as state highways with shorter
+      payback periods and clearer regional vote distributions.
+    </p>
+
+    <h2 id="economic-diversification">5. Economic diversification beyond commodity exports</h2>
+
+    <p>
+      The
+      <a href="{{ url_for('nz.theme', theme='economy') }}#pattern.economy.primary_sector_concentration">primary sector concentration pattern</a>
+      and the
+      <a href="{{ url_for('nz.theme', theme='economy') }}#pattern.economy.tourism_sector_volatility">tourism volatility pattern</a>
+      describe regions where one or two price-taking sectors dominate
+      employment: Southland's Tiwai Point smelter (~1,000 direct jobs,
+      13% of NZ electricity consumption); Marlborough's wine (~28,000
+      ha, ~$2B exports); the East Coast's plantation forestry; Otago's
+      Queenstown tourism (~2M pre-COVID visitors). Each is a regional
+      concentration risk, not a national one — the policy lever has to
+      be regional too.
+    </p>
+
+    <p>
+      Concrete tools available:
+      <strong>R&amp;D Tax Incentive</strong> (15% credit, ~$650M annual
+      uptake by 2024) for companies expanding non-commodity capability;
+      <strong>Callaghan Innovation</strong> grants (Project Grants up
+      to $400k, R&amp;D Loans, Student/Career grants) — Callaghan was
+      announced for restructure in 2024 but the funding envelope
+      remains; <strong>NZ Trade and Enterprise</strong> Better by
+      Lift programme for export-ready firms; <strong>Regional
+      Strategic Partnership Fund</strong> ($150M reset 2024) for
+      anchor-project investment in transition regions like Southland
+      and the West Coast. Specific national success cases —
+      Rocket Lab, Xero, A2 Milk, Fisher &amp; Paykel Healthcare,
+      Pushpay — show that high-value export specialisation does scale
+      from NZ; the question is whether the policy stack reproduces
+      it deliberately or only by accident.
+    </p>
+
+    <p>
+      Trade-off: regional diversification works at decade-plus
+      horizons; the affected workforce needs interim income support.
+      Just Transitions Partnership (Taranaki, Southland) is the
+      closest existing template — a regional taskforce co-funded by
+      central government with iwi and industry seats — but it has
+      delivered limited measurable workforce transition to date.
+      The
+      <a href="{{ url_for('nz.theme', theme='infrastructure') }}#pattern.infrastructure.digital_connectivity_gap">digital connectivity gap</a>
+      is a precondition: any cloud-software, design, or remote-services
+      sector needs symmetric fibre and 5G coverage that the Rural
+      Capacity Upgrade and RBI extensions are still rolling out.
+    </p>
+
+    <h2 id="ai-migration-ageing">6. AI, migration, and ageing — the synthesis lever</h2>
+
+    <p>
+      The four patterns added in 2026 —
+      <a href="{{ url_for('nz.theme', theme='economy') }}#pattern.economy.ai_automation_labour_exposure">AI/automation labour exposure</a>,
+      <a href="{{ url_for('nz.theme', theme='economy') }}#pattern.economy.ai_productivity_capture_asymmetry">AI productivity capture asymmetry</a>,
+      <a href="{{ url_for('nz.theme', theme='economy') }}#pattern.economy.ageing_workforce_shortage">ageing workforce shortage</a>,
+      and
+      <a href="{{ url_for('nz.theme', theme='inequality') }}#pattern.inequality.rural_population_decline">rural population decline</a>
+      — are not independent. They interact in ways that change which
+      levers above are still available.
+    </p>
+
+    <p>
+      Ageing reduces working-age population (the old-age dependency
+      ratio rises from 26 to ~42 per 100 working-age by 2048); AI
+      offers a productivity offset, but mostly to frontier firms in
+      Auckland/Wellington; rural regions face the steepest demographic
+      contraction with the least capacity to capture the AI offset;
+      net migration lands disproportionately in Auckland. The four
+      patterns reinforce each other.
+    </p>
+
+    <p>
+      Concrete tools, ordered roughly by readiness:
+    </p>
+    <ul>
+      <li>
+        <strong>SME AI diffusion.</strong> Extend the R&amp;D Tax
+        Incentive to cover off-the-shelf AI tooling adoption (currently
+        excluded as "routine"); fund Callaghan management-capability
+        vouchers for firms with &lt;100 staff; replicate Singapore's
+        SkillsFuture credit at NZ scale (~$500/working-age adult/year)
+        as a portable training entitlement. Cost: ~$200–400M/year for
+        meaningful coverage.
+      </li>
+      <li>
+        <strong>Regional immigration loading.</strong> The Skilled
+        Migrant Category already includes a "regional area" bonus
+        (30 points). Deepen it: time-limit Auckland-region work
+        rights for some visa categories (already done partially under
+        Accredited Employer Work Visa); create a streamlined regional
+        residency pathway for health, education, and trades workers
+        outside Auckland. Cost: low; this is mostly Immigration NZ
+        rule-change.
+      </li>
+      <li>
+        <strong>Active labour-market policy.</strong> The Income
+        Insurance Scheme (deferred 2023, design ratified) would
+        provide 80%-of-wage cover for up to 6 months following
+        redundancy with active reskilling tied in. Specific design
+        choice: whether levy is on employers, employees, or general
+        taxation determines who bears displacement cost. Cost:
+        actuarially ~1.4% combined levy.
+      </li>
+      <li>
+        <strong>Health workforce.</strong> Te Whatu Ora's Health
+        Workforce Plan needs a near-term capacity injection: bonded
+        scholarships for nursing/medicine in exchange for 3-year
+        rural posting; recognition of overseas qualifications for
+        registered nurses (currently a 6–18 month bottleneck);
+        immigration fast-track for senior medical officers (already
+        on the green list). Cost: low compared to the cost of
+        unfilled positions.
+      </li>
+    </ul>
+
+    <p>
+      None of these tools is a New Zealand original; all are
+      represented in the OECD policy literature. What is locally
+      distinctive is the constraint set: a small economy with thin
+      institutional capacity outside the main centres, a fiscal
+      trajectory that is tightening not loosening, and a political
+      economy in which 25-year structural levers compete for attention
+      with three-year electoral cycles.
+    </p>
+
+    <h2 id="constraints">7. What the corpus does not solve</h2>
+
+    <p>
+      Two structural constraints are background to all of the above
+      and cannot be solved by them. The first is geographic: New
+      Zealand's distance from major markets and its small population
+      density set hard limits on the agglomeration economies and
+      market sizes that the OECD comparators take for granted. The
+      second is fiscal: the Crown's net debt trajectory, the
+      old-age dependency ratio, and the deferred infrastructure
+      backlog are jointly tightening — every lever above competes
+      for the same fiscal envelope, and not all of them can be
+      pursued at the scale that would move the patterns they bite on.
+    </p>
+
+    <p>
+      The honest framing of the solution space is therefore not
+      <em>which lever fixes the country</em> but <em>which subset of
+      these levers, pursued at credible scale and sustained across
+      electoral cycles, would meaningfully shift the patterns visible
+      in the regional corpus over a 25-year horizon</em>. The
+      regional research is the input to that question; this page is
+      not its answer.
+    </p>
+
+    <hr class="rule">
+    <p class="small muted">
+      The patterns referenced above are derived from the regional
+      research corpus and link back to the specific claims that
+      ground them. The full schema, the cross-entity invariants, and
+      the methodology registry are described in the
+      <a href="{{ url_for('research.methodology') }}">methodology document</a>.
+      This solutions essay is analytical commentary across the
+      pattern corpus rather than primary research; it is more
+      interpretive than the underlying claims it cites.
+    </p>
+  </article>
+</div>
+{% endblock %}

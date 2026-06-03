@@ -1,0 +1,24 @@
+id: camp.waikato.transport.active_mobility
+name: Active transport network investment
+theme: transport
+core_claim: Building a connected cycling and walking network alongside land use changes
+  enables mode shift at low cost.
+flagship_moves:
+- Complete the Hamilton Urban Cycleways network by 2028
+- Mandate active transport infrastructure in all new subdivisions
+- Introduce a safe routes to school programme across the region
+tensions:
+- Active transport investment requires sustained political commitment against roads
+  lobby
+- Low population density limits cycling uptake outside Hamilton core
+interventions:
+- description: Complete the Hamilton Urban Cycleways network by 2028
+  state_variable: transport_accessibility
+  expected_sign: +
+addresses:
+- problem.waikato.transport.hamilton_congestion
+- problem.waikato.transport.regional_connectivity
+- problem.waikato.transport.active_transport
+applicable_in:
+- waikato
+tensions_with: []

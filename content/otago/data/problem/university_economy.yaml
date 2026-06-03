@@ -1,0 +1,34 @@
+id: problem.otago.economy.university_economy
+title: Dunedin University Sector Dependence
+theme: economy
+section: economy
+subpage: university_economy
+parent: problem.otago.economy.economic_structure
+order: 4
+updated: '2026-04-26'
+summary: University of Otago is major employer and economic anchor; public funding
+  cuts risk Dunedin's vitality; limited economic diversification.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: University of Otago is major employer and economic anchor; public funding
+    cuts risk Dunedin's vitality; limited economic diversification.
+claim_ids:
+- claim.otago.economy.university_economy_trend
+- claim.otago.economy.agri_primary_trend
+- claim.otago.economy.agri_primary_prevalence
+- claim.otago.economy.tourism_queenstown_trend
+- claim.otago.economy.university_economy_prevalence
+- claim.otago.economy.economic_structure_trend
+- claim.otago.economy.tourism_queenstown_prevalence
+- claim.otago.economy.economic_structure_prevalence
+status: draft
+time_horizons: [decade, generation]

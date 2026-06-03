@@ -1,0 +1,12 @@
+id: driver.otago.infrastructure.aging_assets
+name: Aging Infrastructure Stock
+description: Dunedin and Otago infrastructure increasingly aging; replacement cycles
+  accelerating.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.infrastructure.infrastructure
+claim_ids: []

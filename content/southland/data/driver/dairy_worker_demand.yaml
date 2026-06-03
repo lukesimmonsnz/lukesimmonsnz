@@ -1,0 +1,12 @@
+id: driver.southland.housing.dairy_worker_demand
+name: Dairy and Processing Sector Worker Demand
+description: Rapid dairy expansion (1990s–2010s) drove worker demand; tight rental
+  markets near farms/plants.
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.housing.worker_housing
+claim_ids: []

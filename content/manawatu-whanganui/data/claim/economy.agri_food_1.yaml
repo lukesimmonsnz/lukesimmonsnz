@@ -1,0 +1,22 @@
+id: claim.manawatu_whanganui.economy.agri_food_1
+statement: Manawatū-Whanganui is one of New Zealand's most productive agricultural
+  regions, with dairy farming dominating. Approximately 8,000 dairy farms and supporting
+  pastoral operations generate NZ$4.2-4.8 billion in annual farm-gate value. Palmerston
+  North serves as a regional agricultural services and logistics hub for processing
+  and distribution networks.
+value: 4500
+unit: million_nzd
+time_period: 2022-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_mw_2024
+- source.horizons_data_services_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: Annual farm-gate value estimate

@@ -1,0 +1,35 @@
+id: problem.otago.environment.freshwater_stress
+title: Freshwater Stress and Environmental Degradation
+theme: environment
+section: environment
+subpage: freshwater_stress
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Otago's irrigation expansion and pastoral farming intensify pressure on Clutha/Mata-au
+  river system; lake eutrophication (Lakes Wakatipu, Wanaka); coastal ecosystem decline.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Otago's irrigation expansion and pastoral farming intensify pressure on Clutha/Mata-au
+    river system; lake eutrophication (Lakes Wakatipu, Wanaka); coastal ecosystem
+    decline.
+claim_ids:
+- claim.otago.environment.lake_eutrophication_trend
+- claim.otago.environment.freshwater_stress_prevalence
+- claim.otago.environment.irrigation_water_quality_prevalence
+- claim.otago.environment.freshwater_stress_trend
+- claim.otago.environment.coastal_otago_trend
+- claim.otago.environment.irrigation_water_quality_trend
+- claim.otago.environment.coastal_otago_prevalence
+- claim.otago.environment.lake_eutrophication_prevalence
+status: draft
+time_horizons: [generation, century]

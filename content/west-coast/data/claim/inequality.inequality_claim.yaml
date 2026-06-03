@@ -1,0 +1,23 @@
+id: claim.west_coast.inequality.inequality_claim
+statement: 'Income inequality in West Coast is elevated in mining-dependent communities
+  (Westport, Buller). The 2015-2018 Solid Energy collapse created binary income distribution:
+  miners and service workers with high wages (now absent) versus those in remaining
+  low-wage sectors (retail, tourism, aged care). Median household income ($52,000)
+  masks high variance. Gini coefficient for West Coast exceeds national average.'
+value: 52000
+unit: NZD median household income
+time_period: 2020-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.census_income_west_coast_2023
+- source.mining_industry_association_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.gini_coefficient_v1
+notes: Income distribution from Census 2023; wage history context from mining industry
+  transition reports.

@@ -1,0 +1,20 @@
+id: claim.wellington.economy.productivity_public_sector_drag
+statement: The high share of public sector employment in Wellington's economy contributes
+  to measured productivity stagnation, because government services are measured at
+  input cost rather than market value — understating real economic output but inflating
+  the apparent productivity gap relative to private-sector-dominated cities.
+value: null
+unit: null
+time_period: 2020-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

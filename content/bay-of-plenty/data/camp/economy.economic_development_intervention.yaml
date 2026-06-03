@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.economy.economic_development_intervention
+name: Intervention for economic_development
+theme: economy
+core_claim: Targeted intervention on economic_development will improve outcomes.
+flagship_moves:
+- Policy measure 1 for economic_development
+- Policy measure 2 for economic_development
+- Implementation mechanism for economic_development
+tensions:
+- Trade-off A for economic_development
+- Trade-off B for economic_development
+addresses:
+- problem.bay_of_plenty.economy.economic_development
+interventions:
+- description: Core intervention targeting economic_development
+  state_variable: economic_development_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

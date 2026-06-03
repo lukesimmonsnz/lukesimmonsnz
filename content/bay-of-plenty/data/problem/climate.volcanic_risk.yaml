@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.climate.volcanic_risk
+title: Volcanic and geothermal hazard exposure in Bay of Plenty — Te Moana-a-Toi
+theme: climate-adaptation
+section: climate
+subpage: volcanic_risk
+parent: problem.bay_of_plenty.climate.climate_risk
+order: 42
+updated: '2026-04-26'
+summary: Volcanic and geothermal hazard exposure is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - volcanic_risk_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Volcanic and geothermal hazard exposure is a specific manifestation of the
+    broader pressure.
+claim_ids:
+- claim.bay_of_plenty.climate.volcanic_risk_83
+- claim.bay_of_plenty.climate.volcanic_risk_84
+status: draft
+time_horizons: [generation, century]

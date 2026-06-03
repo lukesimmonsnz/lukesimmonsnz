@@ -1,0 +1,19 @@
+id: claim.taranaki.transport.cbd_delay_15_20_minutes
+statement: Transport connectivity in Taranaki is constrained by limited public transit
+  outside major urban centers, forcing private vehicle dependence. Road freight and
+  rural accessibility challenges increase logistics costs and limit business competitiveness.
+value: 17.5
+unit: minutes
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_taranaki
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Taranaki regional claim

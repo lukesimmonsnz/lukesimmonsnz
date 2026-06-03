@@ -1,0 +1,24 @@
+id: 'problem.northland.governance.treaty'
+title: 'Te Tai Tokerau Northland: Treaty partnership'
+theme: 'governance'
+section: 'governance'
+subpage: 'treaty'
+parent: 'problem.northland.governance.challenges'
+order: 4
+updated: '2026-04-26'
+summary: 'Māori partnership is incomplete.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Māori partnership is incomplete.'
+claim_ids:
+- 'claim.northland.governance.treaty_claim1'
+- 'claim.northland.governance.treaty_claim2'
+status: 'draft'

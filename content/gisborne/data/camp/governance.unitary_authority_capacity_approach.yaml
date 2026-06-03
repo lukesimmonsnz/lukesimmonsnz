@@ -1,0 +1,21 @@
+id: camp.gisborne.governance.unitary_authority_capacity_approach
+name: Strategic approach for unitary_authority_capacity
+theme: governance
+core_claim: Strategic intervention on unitary_authority_capacity will drive measurable
+  improvement.
+flagship_moves:
+- Priority action 1 targeting unitary_authority_capacity
+- Priority action 2 targeting unitary_authority_capacity
+- Institutional coordination mechanism for unitary_authority_capacity
+tensions:
+- 'Tension 1: unitary_authority_capacity'
+- 'Tension 2: unitary_authority_capacity'
+addresses:
+- problem.gisborne.governance.unitary_authority_capacity
+interventions:
+- description: Primary intervention for unitary_authority_capacity
+  state_variable: unitary_authority_capacity_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

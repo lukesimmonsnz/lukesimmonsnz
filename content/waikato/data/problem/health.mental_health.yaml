@@ -1,0 +1,28 @@
+id: problem.waikato.health.mental_health
+title: Mental health service demand
+theme: health
+section: health
+subpage: mental_health
+parent: problem.waikato.health.waikato_health_inequity
+order: 4
+updated: '2026-04-26'
+summary: Demand for mental health services substantially exceeds capacity across Waikato.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - health_outcome_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing mental health creates feedback on regional outcomes.
+narrative:
+- heading: Mental health service demand
+  body: Demand for mental health services substantially exceeds capacity across Waikato.
+claim_ids:
+- claim.waikato.health.mental_health_waitlist
+status: draft
+time_horizons: [decade, generation]

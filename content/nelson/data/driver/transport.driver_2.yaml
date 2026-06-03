@@ -1,0 +1,13 @@
+id: driver.nelson.transport.driver_2
+name: Topographic and demographic limits on active and public transport
+description: Nelson's hill suburbs, dispersed Tasman settlements, and small population base limit the frequency and coverage at which public transport becomes viable. Active-transport potential exists in the basin but requires dedicated infrastructure that competes for the same constrained roading-corridor widths.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.transport.connectivity
+- problem.nelson.transport.connectivity_3
+- problem.nelson.transport.connectivity_4
+claim_ids: []

@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.infrastructure.water_supply_growth
+name: Driver for water_supply
+description: "This driver exacerbates the water_supply pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.infrastructure.water_supply
+claim_ids:
+- claim.bay_of_plenty.infrastructure.water_supply_19

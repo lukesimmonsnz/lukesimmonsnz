@@ -1,0 +1,32 @@
+id: problem.manawatu_whanganui.economy.economic_structure
+title: Regional Economic Structure and Diversification
+theme: economy
+section: economy
+subpage: economic_structure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Heavy reliance on agriculture and defence; limited diversification; logistics
+  hub growth in PN.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Heavy reliance on agriculture and defence; limited diversification; logistics
+    hub growth in PN.
+claim_ids:
+- claim.manawatu_whanganui.economy.economic_structure_placeholder
+status: draft
+time_horizons: [decade, generation]

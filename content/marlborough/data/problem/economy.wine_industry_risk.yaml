@@ -1,0 +1,31 @@
+id: problem.marlborough.economy.wine_industry_risk
+title: Wine Industry Climate Vulnerability and Market Risk
+theme: economy
+section: economy
+subpage: wine_industry_risk
+parent: problem.marlborough.economy.wine_economy
+order: 1
+updated: '2026-04-26'
+summary: Terroir climate change threat; vintage volatility; market concentration;
+  export price exposure.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Terroir climate change threat; vintage volatility; market concentration; export
+    price exposure.
+claim_ids:
+- claim.marlborough.economy.wine_industry_risk_1
+- claim.marlborough.economy.wine_industry_risk_2
+status: draft
+time_horizons: [decade, generation]

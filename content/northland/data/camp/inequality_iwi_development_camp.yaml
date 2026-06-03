@@ -1,0 +1,25 @@
+id: camp.northland.inequality.iwi_development_camp
+name: Iwi-led economic development and Treaty settlements
+theme: inequality
+core_claim: Treaty settlements and iwi investment arms are the most effective mechanism
+  for rebuilding Māori economic participation in Northland.
+flagship_moves:
+- Progress remaining Treaty settlements with Te Tai Tokerau iwi
+- Direct Crown investment to iwi-owned enterprise and land development
+- Fund Māori housing development on papakāinga land
+tensions:
+- Settlement pace is constrained by Crown fiscal limits
+- Benefits of iwi investment take decades to reach whānau level
+- Internal iwi governance challenges affect delivery
+interventions:
+- description: Progress remaining Treaty settlements with Te Tai Tokerau iwi
+  state_variable: inequality_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.inequality.northland_inequality
+- problem.northland.inequality.maori_income_gap
+- problem.northland.inequality.child_poverty
+- problem.northland.inequality.rural_deprivation
+applicable_in:
+- northland
+tensions_with: []

@@ -1,0 +1,12 @@
+id: source.stats_nz_census_2023_mw
+title: 'Census 2023: Manawatū-Whanganui Regional Profile'
+author: null
+publisher: Stats NZ
+year: 2023
+url: https://www.stats.govt.nz/tools/2023-census-place-summaries/manawatu-whanganui-region
+type: primary-data
+credibility: official
+geo_granularity:
+- manawatu-whanganui
+- nz
+notes: Primary census data for Manawatū-Whanganui region.

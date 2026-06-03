@@ -1,0 +1,21 @@
+id: camp.canterbury.inequality.child_poverty_reduction_programme
+name: Child Poverty Reduction & Early Childhood Investment
+theme: inequality
+core_claim: Universal free ECE and targeted early literacy/numeracy intervention can
+  reduce achievement gaps by age 8.
+flagship_moves:
+- Key intervention for Child Poverty Reduction & Early Childhood Investment
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.inequality.child_poverty
+- problem.canterbury.inequality.inequality
+interventions:
+- description: Universal free ECE and targeted early literacy/numeracy intervention
+    can reduce achievement gaps by age 8.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

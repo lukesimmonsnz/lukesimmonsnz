@@ -1,5 +1,13 @@
 id: source.electoral_commission_2023
-title: "Electoral Commission Participation Statistics 2023"
+title: "2023 General Election: Official Results and Voter Turnout Statistics"
+author: "Electoral Commission Te Kaitiaki Take Kōwhiri"
+publisher: "Electoral Commission Te Kaitiaki Take Kōwhiri"
 type: government-report
+credibility: official
 year: 2023
-url: "https://www.electionresults.govt.nz"
+url: "https://www.electionresults.govt.nz/electionresults_2023/statistics/index.html"
+geo_granularity:
+  - nz
+notes: >
+  Official 2023 General Election results and turnout by electorate, age band,
+  and party vote share. Primary source for participation/turnout claims.

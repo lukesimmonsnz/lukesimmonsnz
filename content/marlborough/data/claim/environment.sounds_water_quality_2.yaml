@@ -1,0 +1,21 @@
+id: claim.marlborough.environment.sounds_water_quality_2
+statement: 'Picton waterfront (Queen Charlotte Sound): boat traffic (inter-island
+  ferry 3,600 sailings per annum, cruise ships 80–100 per season, commercial fishing)
+  generates noise, fuel spills, and sediment disturbance; no dedicated marine protection
+  zone.'
+value: 3600
+unit: inter-island ferry sailings per annum
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.picton_ferry_services_2023
+- source.marlborough_sounds_plan_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

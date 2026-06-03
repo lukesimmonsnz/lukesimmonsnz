@@ -1,0 +1,21 @@
+id: claim.southland.governance.treaty_ngai_tahu_trend
+statement: Ngai Tahu partnership in Southland governance is deepening. Co-governance
+  arrangements expanding to health, education, infrastructure planning. Murihiku Regeneration
+  programme receiving Government co-funding; iwi-led health service development underway.
+  Freshwater policy increasingly reflects te ao Maori values; co-management of Fiordland
+  National Park expanding.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

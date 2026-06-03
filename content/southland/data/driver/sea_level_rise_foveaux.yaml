@@ -1,0 +1,12 @@
+id: driver.southland.climate.sea_level_rise_foveaux
+name: Sea Level Rise and Coastal Inundation Risk
+description: Foveaux Strait coastal communities (Riverton, Aparima) face 0.5–1.0m
+  SLR by 2100.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.climate.coastal_foveaux_rise
+claim_ids: []

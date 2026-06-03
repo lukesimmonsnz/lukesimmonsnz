@@ -1,0 +1,56 @@
+id: pattern.inequality.rural_population_decline
+title: Rural and small-region population decline
+theme: inequality
+summary: >
+  Stats NZ subnational projections show working-age population decline
+  over 2023-2048 in several rural and small-population regions —
+  including West Coast, Gisborne, parts of Manawatu-Whanganui, and
+  Southland — while metropolitan regions (Auckland, Wellington,
+  Canterbury) continue to grow. The divergence concentrates fiscal
+  capacity, labour markets, and amenities in the larger centres and
+  hollows out the demographic base of provincial New Zealand.
+manifests_in:
+- west-coast
+- gisborne
+- manawatu-whanganui
+- southland
+- northland
+- marlborough
+- tasman
+- nz
+claim_ids:
+- claim.auckland.inequality.rural_population_decline_2048
+- claim.auckland.inequality.youth_outflow_provincial_2024
+- claim.auckland.economy.regional_aged_share_divergence_2048
+narrative:
+- heading: The mechanism
+  body: >
+    Rural population decline is the joint output of three trends:
+    youth outflow to metropolitan labour markets, low natural increase
+    in older age structures, and net migration that lands
+    disproportionately in Auckland. The mechanisms are not new — what
+    is new is the projection horizon at which they tip multiple
+    regions into outright decline. Once a region's working-age cohort
+    falls below the threshold needed to sustain its services, the
+    decline self-reinforces (school closures, hospital
+    consolidations, retail withdrawal, further outflow).
+- heading: Regional service viability
+  body: >
+    Below a population-density threshold, services priced under
+    average-cost models become non-viable: the patient list per GP
+    drops, the cost per kilometre of road served rises, the marginal
+    student per teacher pushes class viability under. The policy
+    debate is between accepting consolidation (closing services,
+    forcing travel to hubs) and cross-subsidising regional service
+    delivery — the second-best problem after the demographic decline
+    itself.
+- heading: Counter-currents
+  body: >
+    Some sub-regions buck the decline through specialisation: wine
+    country in Marlborough and Central Otago, the Queenstown lakes
+    tourism economy, lifestyle migration to Tasman and the Bay of
+    Plenty. These are exceptions that depend on specific endowments
+    (climate, scenery, established industry); they cannot be
+    replicated as a general policy template.
+status: draft
+updated: '2026-05-06'

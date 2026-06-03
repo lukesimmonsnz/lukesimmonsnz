@@ -1,0 +1,44 @@
+id: problem.canterbury.education.achievement
+title: Canterbury Education Achievement & Equity
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury''s education system shows significant equity gaps. NCEA Level
+  2 pass rates in decile 1-3 schools exceed 90%; in decile 9-10 schools, they fall
+  to 55-65%. Early childhood participation is correlated with deprivation. Tertiary
+  pathways (especially from South Canterbury) are narrower. Lincoln University provides
+  agricultural research but faces funding pressure.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - ncea_level_2_pass_rate_by_decile
+  - early_childhood_participation_rate
+  - tertiary_enrollment_rate_by_decile
+  - teacher_vacancy_rate
+  inputs:
+  - school_funding_equity
+  - teacher_quality_and_retention
+  - parental_education_attainment
+  constraints:
+  - deprivation_concentration
+  - teacher_recruitment_rural
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury education achievement & equity.
+narrative:
+- heading: Equity gaps from early years
+  body: 'Language and numeracy assessments at age 5 show 2-3 year lags in high-deprivation
+    schools. By NCEA, cumulative disadvantage is entrenched. Tertiary enrollment in
+    decile 9-10 areas is <30%; in decile 1-3 areas, >70%.
+
+    '
+claim_ids:
+- claim.canterbury.education.ncea_pass_rate_equity_gap_2023
+- claim.canterbury.education.tertiary_enrollment_disparity_2023
+status: draft
+time_horizons: [decade, generation]

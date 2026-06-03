@@ -1,0 +1,13 @@
+id: driver.gisborne.environment.erosion_escalation
+name: Driver escalating erosion
+description: "This driver exacerbates the erosion challenge in Gisborne \u2014 Te\
+  \ Tair\u0101whiti."
+theme: environment
+consensus: contested
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.environment.erosion
+claim_ids:
+- claim.gisborne.environment.erosion_27

@@ -1,0 +1,13 @@
+id: driver.gisborne.crime.youth_offending_escalation
+name: Driver escalating youth_offending
+description: "This driver exacerbates the youth_offending challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: crime
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.crime.youth_offending
+claim_ids:
+- claim.gisborne.crime.youth_offending_45

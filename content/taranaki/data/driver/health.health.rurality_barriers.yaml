@@ -1,0 +1,14 @@
+id: driver.taranaki.health.health.rurality_barriers
+name: Rural healthcare access barriers
+description: Rural healthcare access barriers
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.health.health_outcomes
+- problem.taranaki.health.chronic_disease
+- problem.taranaki.health.mental_health
+- problem.taranaki.health.workforce
+claim_ids: []

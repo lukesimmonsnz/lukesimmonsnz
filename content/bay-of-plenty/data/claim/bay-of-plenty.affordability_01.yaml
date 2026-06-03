@@ -1,0 +1,21 @@
+id: claim.bay_of_plenty.housing.affordability_01
+statement: Housing affordability crisis in Bay of Plenty, particularly Tauranga, reflects
+  NZ's fastest-growing city status. Median house prices in Tauranga reached $750K+
+  by 2024, up 120% from 2015, driving essential worker shortages (nurses, teachers)
+  and forcing commuting from rural areas.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.consent_rate_v1
+notes: null

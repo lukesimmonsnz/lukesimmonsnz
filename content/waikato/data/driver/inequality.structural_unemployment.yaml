@@ -1,0 +1,15 @@
+id: driver.waikato.inequality.structural_unemployment
+name: Structural unemployment in deprived areas
+description: Concentrations of unemployment in Hamilton's eastern suburbs and rural
+  towns perpetuate intergenerational disadvantage.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.inequality.waikato_inequality
+- problem.waikato.inequality.child_poverty
+- problem.waikato.inequality.ethnic_gap
+- problem.waikato.inequality.rural_poverty
+claim_ids: []

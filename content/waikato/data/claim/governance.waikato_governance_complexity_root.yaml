@@ -1,0 +1,20 @@
+id: claim.waikato.governance.waikato_governance_complexity_root
+statement: Climate change impacts in Waikato include increased temperatures, altered
+  precipitation patterns, sea-level rise, and intensified extreme weather events.
+  These changes threaten agriculture, water supply, infrastructure, and human health,
+  requiring proactive adaptation and mitigation strategies across all sectors.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato governance

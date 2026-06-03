@@ -1,0 +1,29 @@
+id: claim.canterbury.climate.af8_response_planning_2021
+statement: >
+  Project AF8 is a multi-agency South Island civil-defence planning
+  programme that prepares for the response to an anticipated
+  magnitude-8 Alpine Fault earthquake. The project models a multi-day
+  to multi-week disruption of South Island critical infrastructure -
+  road and rail corridors (especially SH73 / TranzAlpine), Lyttelton
+  Port, electricity and telecommunications networks - with Christchurch
+  as the major population centre most exposed to ground-shaking and
+  cascading service-disruption effects.
+value: 8
+unit: moment magnitude (anticipated rupture)
+time_period: '2021'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.af8_project_2021
+scoped_to:
+  - canterbury
+national_assertion: false
+region_mentions:
+  - canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: >
+  methodology_tag here is a placeholder following an existing pattern in the
+  Canterbury corpus (alpine_fault_rupture_probability_2022 also uses
+  water_quality_index_v1) pending registration of a dedicated
+  seismic_hazard_probability_v1 methodology.

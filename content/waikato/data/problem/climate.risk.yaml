@@ -1,0 +1,24 @@
+id: 'problem.waikato.climate.risk'
+title: 'Waikato: climate adaptation'
+theme: 'climate-adaptation'
+section: 'climate'
+subpage: 'risk'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Climate change poses multiple hazards.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Climate change poses multiple hazards.'
+claim_ids:
+- 'claim.waikato.climate.risk_claim1'
+- 'claim.waikato.climate.risk_claim2'
+status: 'draft'

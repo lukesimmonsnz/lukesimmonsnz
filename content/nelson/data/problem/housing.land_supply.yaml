@@ -1,0 +1,37 @@
+id: problem.nelson.housing.land_supply
+title: Constrained buildable land in the Nelson basin
+theme: housing
+section: housing
+subpage: land_supply
+parent: affordability
+order: 2
+updated: '2026-04-26'
+summary: Approximately 800 hectares of zoned residential and mixed-use land are available for development over 15 years (medium-growth scenario), but around 220 hectares are encumbered by heritage overlays, flood-risk zones, or cultural-heritage sites that limit developability. Take-up runs at 45-55 hectares per year; at that rate, competitive supply pressure intensifies from 2026 onward.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - zoned_residential_hectares
+  - annual_take_up_hectares
+  - feasible_intensification_capacity
+  inputs:
+  - plan_change_throughput
+  - infrastructure_co_funding
+  constraints:
+  - fault_lines
+  - elite_soils
+  - heritage_overlays
+  feedback_loops:
+  - 'Constraint-overlay feedback: each successive overlay (heritage, hazard, character) defends a specific value but compounds with the others to shrink the practical feasible-supply envelope below what aggregate demand requires.'
+narrative:
+- heading: Geography and overlays compound
+  body: The Nelson basin is small, hill-bounded, and overlain by fault lines and coastal hazard zones (claim.nelson.housing.land_supply_claim). On top of those physical constraints sit heritage-character overlays that further reduce feasible intensification.
+- heading: Cross-boundary supply not in scope
+  body: Tasman District has marginally more available residential land but weaker demand. Coordination across the two unitary councils on a joint growth programme is improving but not yet at the level of pooled supply or shared intensification mandates.
+claim_ids:
+- claim.nelson.housing.land_supply_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,20 @@
+id: camp.gisborne.health.health_outcomes_approach
+name: Strategic approach for health_outcomes
+theme: health
+core_claim: Strategic intervention on health_outcomes will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting health_outcomes
+- Priority action 2 targeting health_outcomes
+- Institutional coordination mechanism for health_outcomes
+tensions:
+- 'Tension 1: health_outcomes'
+- 'Tension 2: health_outcomes'
+addresses:
+- problem.gisborne.health.health_outcomes
+interventions:
+- description: Primary intervention for health_outcomes
+  state_variable: health_outcomes_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

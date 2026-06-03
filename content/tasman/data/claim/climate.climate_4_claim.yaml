@@ -1,0 +1,21 @@
+id: claim.tasman.climate.climate_4_claim
+statement: Waimea Aquifer Stress Study (2023) documents water allocation at 85-90%
+  of sustainable yield under current climate. Horticulture relies on irrigation for
+  apples, kiwifruit, and hops; prolonged drought in 2022-2023 prompted TDC to commission
+  limits on new allocation and encourage efficiency retrofits.
+value: 87.5
+unit: percent of sustainable yield
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.waimea_aquifer_study_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

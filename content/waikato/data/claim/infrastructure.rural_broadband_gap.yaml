@@ -1,0 +1,21 @@
+id: claim.waikato.infrastructure.rural_broadband_gap
+statement: Rural broadband coverage in Waikato beyond Hamilton metro remains below
+  urban speeds. South Waikato and Coromandel hinterland have limited fibre; wireless-only
+  coverage has reliability issues. AgResearch and DairyNZ leverage broadband for precision
+  agriculture, but farm broadband gaps constrain adoption of monitoring technology.
+  Rural economic development and remote work are limited by connectivity.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato digital_rural claim

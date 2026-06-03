@@ -1,0 +1,38 @@
+id: problem.wellington.education.secondary_transition
+title: Secondary-to-employment transition failures in Wellington
+theme: education
+section: education
+subpage: secondary-transition
+parent: problem.wellington.education.achievement
+order: 3
+updated: '2026-04-26'
+summary: A significant proportion of Wellington's secondary school leavers — concentrated in Porirua and Hutt Valley — are
+  not in employment, education, or training (NEET) within 12 months of leaving school. Vocational pathway provision is insufficient
+  for students who do not follow academic routes.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - neet_rate_age_15_24
+  - vocational_qualification_completion_rate
+  inputs:
+  - employer_apprenticeship_take_up
+  - alternative_education_provision
+  constraints:
+  - mismatch_of_qualification_supply_to_employer_demand
+  feedback_loops:
+  - 'Disengagement persistence: students who leave secondary school without qualifications face significant barriers to re-entry
+    into education and have lower lifetime earnings trajectories.'
+narrative:
+- heading: NEET concentration
+  body: The proportion of 15–24-year-olds not in employment, education, or training (NEET) is substantially higher in Porirua
+    and Hutt Valley than in Wellington City, reflecting school disengagement, limited local employment options, and inadequate
+    transition support (claim.wellington.education.neet_rate_wellington).
+- heading: Vocational pathway gap
+  body: Wellington's secondary education system offers limited vocational pathway provision relative to the academic track,
+    leaving students whose strengths lie in trade and technical areas without a clear post-school route (claim.wellington.education.vocational_pathway_gap).
+claim_ids:
+- claim.wellington.education.neet_rate_wellington
+- claim.wellington.education.vocational_pathway_gap
+status: draft
+time_horizons: [decade, generation]

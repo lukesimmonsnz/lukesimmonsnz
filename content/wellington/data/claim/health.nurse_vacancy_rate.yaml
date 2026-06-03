@@ -1,0 +1,20 @@
+id: claim.wellington.health.nurse_vacancy_rate
+statement: Wellington Regional Hospital and affiliated DHB services reported nursing
+  vacancies above 15% in 2023-2024, driven by burnout from pandemic response, Wellington
+  Fault earthquake preparedness planning, and workforce migration to regional areas
+  with lower cost-of-living pressure.
+value: 15
+unit: percent nurse vacancy rate
+time_period: 2022-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_wellington_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: null

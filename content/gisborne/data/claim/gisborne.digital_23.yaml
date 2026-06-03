@@ -1,0 +1,19 @@
+id: claim.gisborne.infrastructure.digital_23
+statement: Rural East Cape communities have minimal fibre broadband access. Starlink
+  satellite internet (uncapped, ~80 Mbps) is becoming the primary connectivity option
+  for isolated farms and small settlements.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mode_share_v1
+notes: null

@@ -1,0 +1,24 @@
+id: camp.nelson.governance.camp_1
+name: 'Response: Camp 1'
+theme: governance
+core_claim: A response strategy addressing governance challenges.
+flagship_moves:
+- Implement evidence-based governance policy in Nelson
+- Increase investment in governance services and infrastructure
+- Build cross-sector partnerships to address governance challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.nelson.governance.governance_root
+- problem.nelson.governance.growth_management
+interventions:
+- description: Primary intervention for governance
+  state_variable: governance_outcome_index
+  expected_sign: +
+- description: Secondary intervention for governance
+  state_variable: governance_service_access
+  expected_sign: +
+applicable_in:
+- nelson
+tensions_with: []

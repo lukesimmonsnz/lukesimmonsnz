@@ -1,0 +1,38 @@
+id: problem.northland.governance.northland_governance_capacity
+title: Governance capacity in Te Tai Tokerau
+theme: governance
+section: governance
+subpage: governance-capacity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Northland's governance landscape is fragmented across multiple local authorities
+  with thin capacity relative to the region's challenges.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - governance_pressure_index
+  - governance_system_capacity
+  inputs:
+  - central_government_investment
+  - population_change
+  constraints:
+  - fiscal_capacity
+  - geographic_isolation
+  feedback_loops:
+  - 'Pressure accumulation: deteriorating governance conditions compound inequality
+    and constrain economic recovery.'
+narrative:
+- heading: Regional context
+  body: Governance capacity in Te Tai Tokerau is a defining challenge for Te Tai Tokerau,
+    reflecting both structural disadvantage and underinvestment relative to national
+    averages.
+- heading: System dynamics
+  body: Northland's governance landscape is fragmented across multiple local authorities
+    with thin capacity relative to the region's challenges.
+claim_ids:
+- claim.northland.governance.northland_governance_capacity_claim1
+- claim.northland.governance.northland_governance_capacity_claim2
+status: draft
+time_horizons: [decade, generation, century]

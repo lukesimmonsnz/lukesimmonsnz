@@ -1,0 +1,21 @@
+id: camp.wellington.economy.productivity_investment
+name: Innovation and Productivity Investment
+theme: economy
+core_claim: Targeted R&D investment and technology adoption support for Wellington SMEs will lift productivity and reduce
+  the public sector dependency risk.
+flagship_moves:
+- R&D tax credit uptake campaign for Wellington businesses
+- Digital transformation support fund for SMEs through NZTE
+- University-industry research partnership fund at Victoria University of Wellington
+tensions:
+- R&D tax credits disproportionately benefit larger firms with existing R&D capability
+- SME digital transformation requires management capability, not just capital
+addresses:
+- problem.wellington.economy.productivity
+interventions:
+- description: Wellington SME Digital Transformation Fund providing $30k matching grants to 200 Wellington businesses
+  state_variable: wellington_sme_productivity_index
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

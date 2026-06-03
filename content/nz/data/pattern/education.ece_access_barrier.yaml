@@ -1,0 +1,33 @@
+id: pattern.education.ece_access_barrier
+title: Early childhood education access barriers in low-income communities
+theme: education
+summary: Participation in early childhood education is lower in high-deprivation communities
+  across all regions, driven by cost, supply gaps, and cultural fit — with long-run
+  consequences for school readiness and achievement.
+manifests_in:
+- auckland
+- wellington
+- northland
+- waikato
+- gisborne
+- canterbury
+- manawatu-whanganui
+claim_ids:
+- claim.wellington.education.ece_participation_porirua
+- claim.auckland.education.attendance_crisis
+- claim.canterbury.education.ece_affordability_barrier_2023
+- claim.northland.education.maori_education_claim1
+- claim.manawatu_whanganui.education.achievement_placeholder
+narrative:
+- heading: Access gap
+  body: '20 hours'' free ECE is nominally universal but in practice inaccessible to
+    many families in low-income communities: no local supply, full-fee topping-up
+    beyond 20 hours, transport costs, and culturally inappropriate services all reduce
+    effective participation.'
+- heading: Downstream effects
+  body: 'ECE participation is one of the strongest predictors of school readiness
+    and long-run educational outcomes. The access gap therefore front-loads inequality:
+    children from low-income families enter school less prepared, and the gap compounds
+    through schooling.'
+status: draft
+updated: '2026-04-26'

@@ -1,0 +1,10 @@
+id: driver.northland.transport.mode_fragmentation
+name: Fragmented transport mode integration
+description: Fragmented transport mode integration in the regional context.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

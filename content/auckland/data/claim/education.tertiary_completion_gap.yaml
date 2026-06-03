@@ -1,20 +1,20 @@
 id: claim.auckland.education.tertiary_completion_gap
-statement: >
-  Maori and Pacific students enrolled in Auckland tertiary institutions
-  have completion rates approximately 15-20 percentage points below
-  NZ European students; financial stress, housing instability, and
-  work obligations are the primary cited reasons for withdrawal, not
-  academic performance.
+statement: 'Tertiary completion in Auckland is sharply correlated with secondary school
+  decile and student income. Students from low-income families entering tertiary study
+  face barriers to completion: housing cost burden, part-time work, inadequate student
+  support. Completion rates are lowest among students from high-deprivation neighborhoods
+  and low-decile schools; Māori and Pacific students are concentrated in these cohorts,
+  producing gaps in credentials and long-term income outcomes.'
 value: null
 unit: null
-time_period: "2021-2023"
+time_period: 2021-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.tertiary_education_commission_2023
+- source.tertiary_education_commission_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

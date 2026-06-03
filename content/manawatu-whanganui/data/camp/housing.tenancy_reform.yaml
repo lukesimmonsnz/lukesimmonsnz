@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.housing.tenancy_reform
+name: Tenancy Law Reform
+theme: housing
+core_claim: Reform rental tenancy laws to improve security and affordability.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.housing.rural_housing
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

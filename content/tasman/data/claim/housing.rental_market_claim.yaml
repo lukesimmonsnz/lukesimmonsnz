@@ -1,0 +1,21 @@
+id: claim.tasman.housing.rental_market_claim
+statement: Rental market in Tasman is extremely tight; vacancy rate hovers near 1%
+  (2023). Median rent for a three-bedroom property is NZD 420/week in Motueka and
+  Richmond, consuming 35-40% of median income for sole earners. Golden Bay has almost
+  no rental stock; waitlists extend 3+ months.
+value: 1
+unit: percent vacancy rate
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_housing_demand_2024
+- source.mhud_housing_aotearoa_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

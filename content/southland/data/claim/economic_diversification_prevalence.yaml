@@ -1,0 +1,21 @@
+id: claim.southland.economy.economic_diversification_prevalence
+statement: Southland's economy is narrowly dependent on primary industries. Dairy
+  (Fonterra Edendale, Mataura Valley Milk), pastoral farming, and Tiwai Point Aluminium
+  Smelter collectively represent >65% of regional employment. Limited secondary/tertiary
+  sectors; tourism (Fiordland) is underdeveloped relative to pre-COVID potential.
+  Manufacturing and professional services underrepresented.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

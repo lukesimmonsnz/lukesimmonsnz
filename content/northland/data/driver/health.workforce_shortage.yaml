@@ -1,0 +1,10 @@
+id: driver.northland.health.workforce_shortage
+name: Health workforce shortage
+description: Health workforce shortage in the regional context.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

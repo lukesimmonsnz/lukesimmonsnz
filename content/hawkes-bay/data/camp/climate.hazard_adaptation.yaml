@@ -1,0 +1,18 @@
+id: camp.hawkes_bay.climate.hazard_adaptation
+name: Hazard adaptation and resilience planning
+theme: climate-adaptation
+core_claim: Hazard adaptation and resilience planning is the primary strategy.
+flagship_moves:
+- Implement Hazard adaptation and resilience planning across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.climate.climate_vulnerability
+interventions:
+- description: Hazard adaptation and resilience planning intervention
+  state_variable: hazard_adaptation_index
+  constraint_relaxed: hazard_adaptation_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

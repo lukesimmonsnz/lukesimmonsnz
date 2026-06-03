@@ -1,0 +1,21 @@
+id: claim.waikato.governance.small_ta_capacity
+statement: Small territorial authorities in Waikato have limited rates revenue and
+  technical capacity for major infrastructure projects. Waitomo, South Waikato, and
+  Thames-Coromandel rely on regional council coordination for transport and resource
+  management. Three Waters Reform and Local Water Done Well created administrative
+  burden without corresponding funding, straining already-constrained councils.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato local_govt_capacity claim

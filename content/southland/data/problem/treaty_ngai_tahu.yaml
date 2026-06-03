@@ -1,0 +1,34 @@
+id: problem.southland.governance.treaty_ngai_tahu
+title: Treaty Settlements and Ngāi Tahu Rights
+theme: governance
+section: governance
+subpage: treaty_ngai_tahu
+parent: problem.southland.governance.governance
+order: 3
+updated: '2026-04-26'
+summary: Ngāi Tahu Murihiku settlement ongoing; co-governance roles expanding in resource
+  management; iwi consultation requirements increasing.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Ngāi Tahu Murihiku settlement ongoing; co-governance roles expanding in resource
+    management; iwi consultation requirements increasing.
+claim_ids:
+- claim.southland.governance.governance_prevalence
+- claim.southland.governance.treaty_ngai_tahu_prevalence
+- claim.southland.governance.smelter_energy_policy_trend
+- claim.southland.governance.local_govt_reform_prevalence
+- claim.southland.governance.local_govt_reform_trend
+- claim.southland.governance.treaty_ngai_tahu_trend
+- claim.southland.governance.smelter_energy_policy_prevalence
+- claim.southland.governance.governance_trend
+status: draft
+time_horizons: [decade, generation, century]

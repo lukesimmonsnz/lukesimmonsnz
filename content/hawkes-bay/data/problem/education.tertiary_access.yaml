@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.education.tertiary_access
+title: Tertiary education access and completion
+theme: education
+section: education
+subpage: tertiary-access
+parent: problem.hawkes_bay.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: "Tertiary education participation in Hawke's Bay is below national average. Cost barriers, limited vocational pathway support, and distance to universities (Massey in Palmerston North, 1.5 hours away) are barriers. Living cost support is inadequate."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - tertiary_participation_rate_percent
+    - tertiary_completion_rate_percent
+  inputs:
+    - student_loan_burden
+    - living_cost_barriers
+  constraints:
+    - local_tertiary_provision
+    - vocational_training_availability
+  feedback_loops:
+    - 'High loan debt deters participation; low participation limits skill supply; wage suppression follows; tertiary access remains unaffordable.'
+narrative:
+  - heading: Participation
+    body: "Tertiary education participation in Hawke's Bay is approximately 35%, compared to 42% nationally. Pacific student participation is 18%."
+  - heading: Cost Barrier
+    body: 'Students attending Massey University in Palmerston North face minimum living costs of $25,000 per year (rent, food, transport). Student loan debt averages $28,000 at graduation.'
+claim_ids:
+  - claim.hawkes_bay.education.tertiary_participation_35_percent
+status: draft
+time_horizons: [decade, generation]

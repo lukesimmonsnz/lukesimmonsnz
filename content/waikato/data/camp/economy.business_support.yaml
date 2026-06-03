@@ -1,0 +1,20 @@
+id: camp.waikato.economy.business_support
+name: Small business support and development
+theme: economy
+core_claim: Small business support and development is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement small business support and development
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

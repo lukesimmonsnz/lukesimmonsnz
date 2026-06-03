@@ -1,0 +1,14 @@
+id: source.stats_nz_housing_2023
+title: Aotearoa New Zealand 2023 Census Dwelling Counts and Housing Characteristics
+author: Statistics New Zealand Tatauranga Aotearoa
+publisher: Stats NZ
+year: 2024
+url: https://www.stats.govt.nz/information-releases/aotearoa-new-zealand-2023-census-dwelling-counts/
+type: primary-data
+credibility: official
+geo_granularity:
+- bay-of-plenty
+- gisborne
+- nz
+notes: 'Primary 2023 Census release on dwellings: occupied/unoccupied counts, tenure, crowding, and housing-stock characteristics
+  by region and territorial authority. Replaces homepage URL.'

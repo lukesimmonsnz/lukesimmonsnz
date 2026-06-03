@@ -1,0 +1,10 @@
+id: 'driver.waikato.economy.driver_1'
+name: 'Policy and institutional barriers in economy'
+description: 'Policy and institutional barriers in economy in regional context.'
+theme: 'economy'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

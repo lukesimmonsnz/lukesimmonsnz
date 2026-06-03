@@ -1,0 +1,7 @@
+id: methodology.voter_turnout_rate_v1
+name: "Voter Turnout Rate"
+version: 1
+kind: measurement
+applies_to: [Claim]
+discharged_by: "json_schema"
+description: "Percentage of enrolled voters who cast a valid vote in a given election; disaggregated by age, ethnicity, and deprivation for local body elections in Auckland."

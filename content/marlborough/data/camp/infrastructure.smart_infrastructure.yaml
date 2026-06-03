@@ -1,0 +1,21 @@
+id: camp.marlborough.infrastructure.smart_infrastructure
+name: Smart Infrastructure Management
+theme: infrastructure
+core_claim: IoT monitoring and adaptive resource management.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.infrastructure.port_infrastructure
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

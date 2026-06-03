@@ -1,0 +1,26 @@
+id: claim.auckland.economy.health_workforce_retirement_2024
+statement: >
+  Te Whatu Ora's national health workforce plan reports persistent
+  vacancy rates in nursing, GP, and senior medical roles, with a
+  significant share of the existing workforce (particularly senior
+  nurses and GPs) within ten years of retirement. The same demographic
+  trend that is increasing demand for health services is removing
+  capacity from the workforce that supplies them.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.te_whatu_ora_workforce_plan_2024
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.admin_count_v1
+notes: >
+  The double-bind (rising demand from ageing + falling supply from
+  retiring workforce) is the structural mechanism that distinguishes
+  the ageing-workforce shortage from a generic health workforce
+  shortage. Provincial regions are most exposed.

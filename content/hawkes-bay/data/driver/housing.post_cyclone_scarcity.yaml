@@ -1,0 +1,15 @@
+id: driver.hawkes_bay.housing.post_cyclone_scarcity
+name: Post-Cyclone Gabrielle housing scarcity and repair backlog
+description: Cyclone Gabrielle destroyed and damaged thousands of homes. Repair and rebuild are progressing slowly due to builder shortage, material supply delays, and insurance claim resolution lags. Supply constraints push prices higher.
+theme: housing
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+  - problem.hawkes_bay.housing.affordability
+  - problem.hawkes_bay.housing.cyclone_damaged_stock
+  - problem.hawkes_bay.housing.rental_market
+claim_ids:
+  - claim.hawkes_bay.housing.cyclone_damage_extent
+  - claim.hawkes_bay.housing.damaged_dwellings_3600

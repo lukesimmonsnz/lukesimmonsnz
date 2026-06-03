@@ -1,0 +1,21 @@
+id: camp.southland.crime.community_safety
+name: Community Safety and Youth Engagement
+theme: crime
+core_claim: Community-based crime prevention and youth engagement reduce crime and
+  offending.
+flagship_moves:
+- Youth mentoring and engagement programs
+- Community policing and partnerships
+- Crime prevention through environmental design
+tensions:
+- Community engagement difficulty
+- Police resource constraints
+addresses:
+- problem.southland.crime.safety
+interventions:
+- description: Establish youth mentoring program
+  state_variable: youth_engagement_rate
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

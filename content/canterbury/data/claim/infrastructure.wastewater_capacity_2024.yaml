@@ -1,0 +1,22 @@
+id: claim.canterbury.infrastructure.wastewater_capacity_2024
+statement: Christchurch's main wastewater treatment plants (Bromley, Kingsford Terrace,
+  Pūrāngī) operate at 85% capacity utilization, with peak wet-weather flows occasionally
+  exceeding design. Projected growth in Selwyn and Waimakariri districts (fastest-growing
+  regions in NZ, +3–4% annually) will exceed current capacity by 2035 without investment.
+  Overflows to the Avon-Heathcote estuary remain a compliance risk in extreme rainfall
+  events; stormwater separation in key drainage zones is an emerging priority.
+value: 85
+unit: percent utilization
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_annual_plan_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

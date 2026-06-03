@@ -1,0 +1,21 @@
+id: camp.marlborough.inequality.community_wealth_building
+name: Community Wealth Building
+theme: inequality
+core_claim: Local economic self-reliance and cooperative models.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.infrastructure.infrastructure
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

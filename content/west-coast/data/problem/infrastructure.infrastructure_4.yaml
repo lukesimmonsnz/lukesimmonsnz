@@ -1,0 +1,42 @@
+id: problem.west_coast.infrastructure.infrastructure_4
+title: Three-waters reconstruction and the Westport recovery bill
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_4
+parent: infrastructure
+order: 4
+updated: '2026-04-26'
+summary: Westport water and wastewater systems were severely damaged in 2021-22, with post-flood repair estimated at $50 million-plus.
+  Across the three districts, climate-resilience three-waters upgrades over the next two decades are likely to require capex
+  in the low hundreds of millions on a small ratepayer base.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - three_waters_capex_pipeline
+  - boil_water_notice_count
+  - treatment_plant_compliance_share
+  inputs:
+  - central_govt_water_reform_funding
+  - council_long_term_plan_capex
+  constraints:
+  - small_ratepayer_base
+  - geographic_dispersion
+  feedback_loops:
+  - Each event-driven repair consumes capex that was nominally reserved for preventive renewal, deferring the renewal further
+    and ensuring the next event presents a similar repair bill on still older underlying assets.
+narrative:
+- heading: Westport rebuild is the immediate task
+  body: Treatment plant repair, pipe-network relocation and stormwater redesign in Westport are estimated at $50 million-plus
+    and remain the immediate three-waters priority (claim.west_coast.infrastructure.infrastructure_4_claim). Buller's rateable
+    base is too small to fund this from rates alone.
+- heading: Adaptation capex over the next twenty years
+  body: Across Buller, Grey and Westland, climate-resilience three-waters upgrades — flood-resistant treatment plants, redundant
+    trunk mains, separated stormwater networks — are likely to total in the low hundreds of millions over twenty years. The
+    funding model for that pipeline is the central unresolved policy question.
+claim_ids:
+- claim.west_coast.infrastructure.infrastructure_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

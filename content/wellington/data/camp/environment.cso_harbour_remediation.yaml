@@ -1,0 +1,21 @@
+id: camp.wellington.environment.cso_harbour_remediation
+name: CSO Reduction and Harbour Water Quality Programme
+theme: environment
+core_claim: Reducing combined sewer overflows is the single most effective intervention for improving Wellington Harbour water
+  quality.
+flagship_moves:
+- Real-time CSO monitoring network across Wellington Harbour catchment
+- Priority sewer separation in highest-overflow suburbs
+- Stormwater detention basins to buffer peak flows
+tensions:
+- Full separation is a multi-decade programme; interim water quality improvement is limited
+- Stormwater detention land acquisition is expensive in the dense inner city
+addresses:
+- problem.wellington.environment.harbour_health
+interventions:
+- description: Install 80 CSO monitoring sensors across Wellington Harbour tributaries and publish real-time data
+  state_variable: harbour_ecoli_concentration
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

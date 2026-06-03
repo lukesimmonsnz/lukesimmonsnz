@@ -1,23 +1,23 @@
 id: claim.auckland.climate.transition_jobs_risk
-statement: >
-  Auckland's fossil fuel-dependent sectors (transport, logistics,
-  construction with petrol/diesel machinery) employ approximately
-  80,000 workers who face transition risk as decarbonisation proceeds;
-  without just transition investment, the economic disruption of
-  decarbonisation falls disproportionately on lower-skilled workers
+statement: 'Auckland''s fossil fuel-dependent sectors (transport, logistics, construction
+  with petrol/diesel machinery) employ approximately 80,000 workers who face transition
+  risk as decarbonisation proceeds; without just transition investment, the economic
+  disruption of decarbonisation falls disproportionately on lower-skilled workers
   in these sectors.
+
+  '
 value: 80000
-unit: "workers"
-time_period: "2022-2023"
+unit: workers
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.mfe_emissions_2023
-  - source.stats_nz_labour_market_2023
+- source.mfe_emissions_2023
+- source.stats_nz_labour_market_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.labour_productivity_index_v1

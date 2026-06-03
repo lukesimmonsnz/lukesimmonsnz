@@ -1,0 +1,24 @@
+id: camp.southland.housing.invercargill_affordability_response
+name: Targeted Affordable Housing in Invercargill
+theme: housing
+core_claim: Despite low median prices, Invercargill's most deprived households face
+  affordability stress due to low incomes; targeted affordable rental supply addresses
+  this.
+flagship_moves:
+- Expand Housing First programme in Invercargill
+- Partner with iwi housing providers for culturally appropriate social housing
+- Reform HUD funding criteria to recognise low-income rather than high-price stress
+tensions:
+- National housing metrics mask Invercargill's affordability stress for low-income
+  earners
+- Limited local developer capacity for affordable builds
+addresses:
+- problem.southland.housing.invercargill_affordability
+interventions:
+- description: Expand Housing First to 100 Invercargill households with wrap-around
+    support services
+  state_variable: homelessness_rate
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

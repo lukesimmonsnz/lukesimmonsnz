@@ -43,6 +43,7 @@ THEME_TITLES: dict[str, str] = {
     "education": "Education",
     "economy": "Economy",
     "governance": "Governance",
+    "climate-adaptation": "Climate adaptation",
     "climate": "Climate adaptation",
 }
 
@@ -125,7 +126,7 @@ def query_patterns(
     results.sort(
         key=lambda p: (
             p.get("theme") or "",
-            -(len(p.get("evidenced_by") or [])),
+            -(len(p.get("claim_ids") or [])),
             p.get("id") or "",
         )
     )

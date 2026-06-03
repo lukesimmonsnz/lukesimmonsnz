@@ -1,0 +1,12 @@
+id: driver.canterbury.environment.climate_warming_alpine_shift
+name: Climate Warming & Alpine Vegetation Shift
+description: Climate Warming & Alpine Vegetation Shift
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.environment.alpine_biodiversity
+claim_ids:
+- claim.canterbury.environment.alpine_range_contraction_2023

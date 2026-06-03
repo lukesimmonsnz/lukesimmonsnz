@@ -1,0 +1,22 @@
+id: camp.wellington.inequality.labour_market_equity
+name: Labour Market Equity and Living Wage Policy
+theme: inequality
+core_claim: Living wage mandates and pay equity enforcement across public sector contracts will reduce Wellington's ethnic
+  and gender wealth gaps.
+flagship_moves:
+- Extend Wellington City Council living wage requirement to all council contractors
+- Accelerate pay equity settlements in care and education sectors
+- Ethnic pay gap reporting requirement for all Wellington employers >50 FTE
+tensions:
+- Living wage mandates may reduce employment for marginal workers through labour substitution
+- Pay equity process is slow; administrative burden on smaller employers is high
+addresses:
+- problem.wellington.inequality.ethnic_wealth_gap
+- problem.wellington.inequality.economic_disadvantage
+interventions:
+- description: Mandate living wage ($26.50/hr 2024) for all Wellington City Council service contracts from 2025
+  state_variable: low_wage_employment_share
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

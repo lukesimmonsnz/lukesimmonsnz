@@ -1,0 +1,24 @@
+id: camp.west_coast.inequality.child_poverty_reduction_and_wh
+name: Child Poverty Reduction and Whānau Wellbeing
+theme: inequality
+core_claim: High child poverty rates on the West Coast, concentrated in mining-transition
+  communities, require targeted whānau wellbeing investment alongside economic diversification.
+flagship_moves:
+- Expand Family Start and home visiting programme to all West Coast towns
+- Fund after-school programmes and holiday food provision in Westport and Greymouth
+- Co-fund Poutini Ngāi Tahu whānau wellbeing service
+tensions:
+- Child poverty is driven by adult economic precarity that social services alone cannot
+  address
+- Small community size makes service delivery economically inefficient
+addresses:
+- problem.west_coast.inequality.inequality
+- problem.west_coast.inequality.child_poverty
+interventions:
+- description: Expand child poverty reduction programmes in West Coast high-deprivation
+    communities
+  state_variable: child_poverty_rate
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

@@ -1,0 +1,12 @@
+id: source.ecan_state_environment_2023
+title: State of the Environment Report—Freshwater and Land 2023
+author: null
+publisher: Environment Canterbury
+year: 2023
+url: https://www.ecan.govt.nz/about-us/planning/state-of-the-environment/
+type: primary-data
+credibility: official
+geo_granularity:
+- canterbury
+notes: Water quality (nitrate, E. coli), aquifer levels, stream condition, wetland
+  loss, lowland ecosystem health.

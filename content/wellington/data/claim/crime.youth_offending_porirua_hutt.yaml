@@ -1,0 +1,21 @@
+id: claim.wellington.crime.youth_offending_porirua_hutt
+statement: Youth offending in Wellington is geographically concentrated in Porirua
+  and Hutt Valley, mirroring the deprivation concentration in these communities; the
+  same areas record the highest rates of school truancy, gang recruitment risk, and
+  youth unemployment.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.stats_nz_deprivation_2018
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

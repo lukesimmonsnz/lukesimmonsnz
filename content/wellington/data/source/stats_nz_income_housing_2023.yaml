@@ -1,0 +1,12 @@
+id: source.stats_nz_income_housing_2023
+title: Stats NZ Household Income and Housing Cost Statistics 2023
+author: null
+publisher: Stats NZ
+year: 2023
+url: https://www.stats.govt.nz/information-releases/household-income-and-housing-cost-statistics-new-zealand-year-ended-june-2023
+type: primary-data
+credibility: official
+geo_granularity:
+- wellington
+- nz
+notes: Rent-to-income ratios, homeownership rates, housing cost burden by region and ethnic group.

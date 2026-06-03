@@ -1,0 +1,25 @@
+id: camp.tasman.climate.camp_2
+name: 'Response: Camp 2'
+theme: climate-adaptation
+core_claim: A response strategy addressing climate challenges.
+flagship_moves:
+- Implement evidence-based climate policy in Tasman
+- Increase investment in climate services and infrastructure
+- Build cross-sector partnerships to address climate challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.climate.climate_risk
+- problem.tasman.climate.climate_3
+- problem.tasman.climate.climate_4
+interventions:
+- description: Primary intervention for climate
+  state_variable: climate_outcome_index
+  expected_sign: +
+- description: Secondary intervention for climate
+  state_variable: climate_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

@@ -1,0 +1,44 @@
+id: problem.west_coast.transport.connectivity_4
+title: Active transport and cycle network underdevelopment
+theme: transport
+section: transport
+subpage: connectivity_4
+parent: connectivity
+order: 4
+updated: '2026-04-26'
+summary: West Coast towns have minimal separated cycling infrastructure and incomplete footpath networks, despite the presence
+  of the West Coast Wilderness Trail as a tourism asset. Weather, terrain and dispersed schools push more trips into private
+  cars, with knock-on effects on emissions, household transport costs, and child physical activity.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - separated_cycleway_km
+  - footpath_completeness_index
+  - bike_to_school_share
+  inputs:
+  - waka_kotahi_active_modes_funding
+  - council_capex_active_transport
+  constraints:
+  - rainfall_and_wind_exposure
+  - hilly_terrain
+  feedback_loops:
+  - A walking-and-cycling strategy weighted toward tourism trails crowds out everyday utility networks; commuters and school
+    children continue to compete with through-traffic on SH6, and the political case for utility-mode investment fails to
+    consolidate.
+narrative:
+- heading: Tourism trail, but no commuter network
+  body: The West Coast Wilderness Trail (Greymouth-Ross) is a successful tourism asset, but day-to-day separated cycling inside
+    Westport, Greymouth and Hokitika is fragmentary, and footpaths in newer or low-density streets are incomplete (claim.west_coast.transport.connectivity_4_claim).
+    Weather and terrain are real headwinds, but the larger barrier is that active transport has not been prioritised in regional
+    transport budgets.
+- heading: Equity and emissions consequences
+  body: Car dependence weighs disproportionately on low-income households, who spend a higher share of income on fuel and
+    vehicle costs. The same dependence is the largest contributor to regional transport emissions and to the deconditioning
+    of children who would otherwise walk or cycle to school.
+claim_ids:
+- claim.west_coast.transport.connectivity_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,0 +1,24 @@
+id: 'problem.waikato.inequality.geographic'
+title: 'Waikato: geographic deprivation'
+theme: 'inequality'
+section: 'inequality'
+subpage: 'geographic'
+parent: 'problem.waikato.inequality.deprivation'
+order: 5
+updated: '2026-04-26'
+summary: 'Remote areas experience decline.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Remote areas experience decline.'
+claim_ids:
+- 'claim.waikato.inequality.geographic_claim1'
+- 'claim.waikato.inequality.geographic_claim2'
+status: 'draft'

@@ -1,0 +1,21 @@
+id: claim.southland.governance.governance_prevalence
+statement: 'Southland governance includes three local authorities: Invercargill City
+  Council (46K residents), Southland District Council (26K residents, large geographic
+  footprint), and Environment Southland (regional council). Multiple competing priorities:
+  infrastructure renewal, climate adaptation, economic development, freshwater management.
+  Ngai Tahu co-governance partnership evolving.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

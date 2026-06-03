@@ -59,4 +59,7 @@ claim_ids:
   - claim.auckland.economy.nz_productivity_gap
   - claim.auckland.economy.low_rd_investment
   - claim.auckland.economy.congestion_productivity_cost
+  - claim.auckland.economy.frontier_firm_productivity_gap_2021
+  - claim.auckland.economy.ai_diffusion_lag_2021
 status: draft
+time_horizons: [decade, generation]

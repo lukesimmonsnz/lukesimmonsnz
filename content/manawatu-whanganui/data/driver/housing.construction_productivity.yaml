@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.housing.construction_productivity
+name: Construction Sector Productivity Constraints
+description: Construction sector productivity constraints. This driver operates at
+  regional scale with contested consensus.
+theme: housing
+consensus: contested
+category: economic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.regional_roading
+claim_ids: []

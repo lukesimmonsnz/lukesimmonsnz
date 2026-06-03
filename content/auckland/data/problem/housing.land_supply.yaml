@@ -73,3 +73,4 @@ claim_ids:
   - claim.auckland.housing.infrastructure_barrier
   - claim.auckland.housing.infill_greenfield_split
 status: draft
+time_horizons: [decade, generation, century]

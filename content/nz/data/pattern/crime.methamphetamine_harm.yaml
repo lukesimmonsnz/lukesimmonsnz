@@ -1,0 +1,34 @@
+id: pattern.crime.methamphetamine_harm
+title: Methamphetamine harm as cross-regional public health and crime challenge
+theme: crime
+summary: Methamphetamine is the dominant illicit drug driving property crime, family
+  violence, and acute mental health presentations across all New Zealand regions,
+  with supply networks serving even remote communities.
+manifests_in:
+- northland
+- auckland
+- waikato
+- bay-of-plenty
+- gisborne
+- wellington
+- canterbury
+- otago
+- southland
+claim_ids:
+- claim.waikato.crime.drug_crime_methamphetamine
+- claim.northland.crime.family_violence_claim1
+- claim.wellington.crime.drug_market_deprivation_link
+- claim.bay_of_plenty.crime.drug_crime_47
+- claim.otago.crime.family_violence_prevalence
+narrative:
+- heading: Supply network geography
+  body: Methamphetamine supply reaches all regions, including remote rural communities.
+    Distribution networks operate through existing social connections rather than
+    requiring urban proximity. Supply-side disruption through enforcement has produced
+    limited sustained reduction in availability.
+- heading: Demand and harm
+  body: Methamphetamine use drives property crime, family violence, and acute psychiatric
+    presentations across all regions. The harm profile is similar whether the region
+    is urban or rural; treatment and harm reduction capacity is not.
+status: draft
+updated: '2026-04-26'

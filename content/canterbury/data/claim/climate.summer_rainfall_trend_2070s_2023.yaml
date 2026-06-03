@@ -1,0 +1,22 @@
+id: claim.canterbury.climate.summer_rainfall_trend_2070s_2023
+statement: Canterbury's climate projections indicate a 15% reduction in summer rainfall
+  by 2070 under moderate emissions scenarios. This trend threatens agricultural productivity
+  across the Canterbury Plains, where irrigation-dependent dairy, arable crops, and
+  sheep farming represent the regional economy's largest sector. Declining rainfall
+  compounds groundwater stress already evident in nitrate contamination of shallow
+  aquifers, necessitating adaptation in irrigation management and land use planning.
+value: 15
+unit: percent reduction
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfe_nz_sea_level_guidance_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

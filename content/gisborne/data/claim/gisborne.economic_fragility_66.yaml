@@ -1,0 +1,19 @@
+id: claim.gisborne.economy.economic_fragility_66
+statement: 'Cyclone Gabrielle disrupted all primary sectors simultaneously: viticulture
+  harvest delayed, horticulture exports paused, forestry operations halted. Economic
+  recovery extends 2–3 years post-cyclone.'
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mode_share_v1
+notes: null

@@ -1,0 +1,27 @@
+id: problem.taranaki.crime.youth_offending
+title: Youth offending and disengagement
+theme: crime
+section: crime
+subpage: youth_offending
+parent: problem.taranaki.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: Youth offending is near national average but elevated among Māori youth.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - youth_offending_index
+  inputs:
+  - youth_offending_input_1
+  constraints:
+  - youth_offending_constraint
+  feedback_loops:
+  - 'Feedback: youth_offending'
+narrative:
+- heading: Youth offending and disengagement in Taranaki
+  body: Youth offending is near national average but elevated among Māori youth.
+claim_ids:
+- claim.taranaki.crime.youth_offending_01
+status: draft
+time_horizons: [decade]

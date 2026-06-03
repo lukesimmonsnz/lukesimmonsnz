@@ -1,0 +1,22 @@
+id: claim.otago.education.tertiary_dunedin_prevalence
+statement: 'Tertiary education in Dunedin anchors the regional economy: University
+  of Otago (~20,000 EFTS), Otago Polytechnic/Te Pūkenga (trades, health, applied);
+  strong in health sciences, engineering, commerce, arts. Student population (~20,000+)
+  dominates Dunedin demographics, creates rental demand, and generates service sector
+  activity. Graduate employment outcomes strong in health, engineering; humanities
+  graduate retention lowest (60%+ leave region).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

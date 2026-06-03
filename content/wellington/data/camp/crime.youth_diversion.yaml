@@ -1,0 +1,21 @@
+id: camp.wellington.crime.youth_diversion
+name: Youth Diversion and Restorative Justice
+theme: crime
+core_claim: Youth offending responds strongly to diversion away from the criminal justice system; restorative justice and
+  rangatahi courts are more effective than custody.
+flagship_moves:
+- Expand Rangatahi Court programme across Wellington District Court
+- Police youth diversion target of 85% (from ~70% current)
+- School-based restorative practice programme in Porirua and Hutt colleges
+tensions:
+- High diversion rates may be perceived by communities as insufficient accountability
+- Restorative justice requires victim willingness to participate; uptake varies
+addresses:
+- problem.wellington.crime.youth_offending
+interventions:
+- description: Extend Rangatahi Court to all Wellington District Court locations with tikanga Māori process
+  state_variable: youth_reoffending_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

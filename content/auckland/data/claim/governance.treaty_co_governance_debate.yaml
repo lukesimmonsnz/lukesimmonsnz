@@ -1,21 +1,21 @@
 id: claim.auckland.governance.treaty_co_governance_debate
-statement: >
-  Treaty of Waitangi co-governance arrangements — where Crown and Maori
-  exercise joint decision-making authority over natural resources,
-  public services, or geographical areas — have expanded significantly
-  since the 2017 Whanganui River and 2021 Three Waters reform
-  proposals; the model is contested, with supporters arguing it
-  fulfils Treaty obligations and critics arguing it creates a parallel
+statement: 'Treaty of Waitangi co-governance arrangements — where Crown and Maori
+  exercise joint decision-making authority over natural resources, public services,
+  or geographical areas — have expanded significantly since the 2017 Whanganui River
+  and 2021 Three Waters reform proposals; the model is contested, with supporters
+  arguing it fulfils Treaty obligations and critics arguing it creates a parallel
   governance structure inconsistent with democratic equality.
+
+  '
 value: null
 unit: null
-time_period: "2017-2023"
+time_period: 2017-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.waitangi_tribunal_2023
+- source.waitangi_tribunal_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

@@ -1,0 +1,21 @@
+id: camp.southland.governance.iwi_partnership
+name: Ngāi Tahu Partnership and Co-Governance
+theme: governance
+core_claim: Formalizing Ngāi Tahu partnerships in resource and economic decisions
+  improves legitimacy.
+flagship_moves:
+- Joint governance boards for key resources
+- Co-management agreements
+- Mātauranga Māori integration
+tensions:
+- Colonial power imbalances; contentious process
+- Resource allocation from partnerships
+addresses:
+- problem.southland.governance.treaty_ngai_tahu
+interventions:
+- description: Establish joint decision-making framework
+  state_variable: governance_legitimacy
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

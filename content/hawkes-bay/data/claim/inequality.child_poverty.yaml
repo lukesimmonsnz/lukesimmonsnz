@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.inequality.child_poverty_28_percent
+statement: Child poverty (living in households below 50% of median income) affects
+  28% of Hawke's Bay children, above the national average of 20%. Hastings and Wairoa
+  report the highest rates at 35%+; Flaxmere schools serve predominantly below-threshold
+  families. Food insecurity, inadequate housing, and parental underemployment (RSE,
+  seasonal work) chain disadvantage across educational, health, and wellbeing outcomes.
+value: 28
+unit: percent of children in poverty
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

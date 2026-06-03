@@ -1,0 +1,16 @@
+id: driver.northland.education.poverty_driver
+name: Child poverty and material hardship barriers
+description: Material deprivation — hunger, overcrowding, inability to afford uniforms
+  and transport — is the strongest predictor of non-attendance and underachievement.
+theme: education
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.education.northland_education_inequity
+- problem.northland.education.school_attendance
+- problem.northland.education.tertiary_access
+- problem.northland.education.maori_education
+claim_ids:
+- claim.northland.education.northland_education_inequity_claim1

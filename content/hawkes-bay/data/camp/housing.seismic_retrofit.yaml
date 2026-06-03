@@ -1,0 +1,24 @@
+id: camp.hawkes_bay.housing.seismic_retrofit_mandate
+name: Seismic retrofit mandate for vulnerable housing stock
+theme: housing
+core_claim: Systematic seismic strengthening of earthquake-prone buildings and vulnerable housing stock reduces risk and supports post-cyclone resilience.
+flagship_moves:
+  - Mandate seismic strengthening of all territorial authority-owned buildings within 10 years
+  - Offer ratepayer-funded seismic retrofit grants for private residential properties in high-risk zones
+  - Integrate seismic strengthening into rebuild support post-Cyclone Gabrielle
+tensions:
+  - High upfront retrofit costs create affordability barriers for low-income homeowners
+  - Retrofit requirements may trigger property sales if owners cannot afford costs
+addresses:
+  - problem.hawkes_bay.housing.cyclone_damaged_stock
+  - problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+interventions:
+  - description: Identify and retrofit earthquake-prone residential buildings in Napier and Hastings
+    state_variable: seismic_stock_vulnerability_index
+    expected_sign: '-'
+  - description: Establish ratepayer-funded retrofit grant scheme for owner-occupiers
+    state_variable: retrofit_completion_rate
+    expected_sign: '+'
+applicable_in:
+  - hawkes-bay
+tensions_with: []

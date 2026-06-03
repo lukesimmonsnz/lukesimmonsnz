@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.education.achievement_growth
+name: Driver for achievement
+description: "This driver exacerbates the achievement pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: education
+consensus: contested
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.education.achievement
+claim_ids:
+- claim.bay_of_plenty.education.achievement_57

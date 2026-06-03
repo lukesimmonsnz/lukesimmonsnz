@@ -1,0 +1,22 @@
+id: claim.nelson.crime.family_violence_claim
+statement: Family violence is the most prevalent form of criminal harm in Nelson-Tasman
+  district. NZ Police recorded 1,240 family violence notifications in Nelson city
+  and district 2023, representing 34% of all serious offences reported. Incident frequency
+  has grown 7% year-on-year; intimate partner violence and child abuse cases each
+  comprise approximately 40% of notifications, with barriers to reporting (isolation
+  in rural areas, economic dependency) limiting identification of cases.
+value: 1240
+unit: family violence notifications 2023
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

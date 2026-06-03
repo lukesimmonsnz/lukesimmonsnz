@@ -1,62 +1,56 @@
 id: problem.auckland.health.chronic_disease
-title: "Chronic Disease Burden and Inequity"
+title: Chronic Disease Burden and Inequity
 theme: health
 section: health
 subpage: chronic-disease
 parent: problem.auckland.health.system_access
 order: 2
-updated: "2026-04-26"
-summary: >
-  Chronic disease (diabetes, cardiovascular disease, respiratory disease)
-  is concentrated in high-deprivation Auckland communities; Pacific
-  Aucklanders have diabetes rates approximately three times the national
-  average. Late diagnosis due to primary care access barriers generates
-  higher-acuity presentations and worse outcomes. The food environment,
-  housing quality, and urban form are upstream structural drivers that
+updated: '2026-04-26'
+summary: Chronic disease — diabetes, cardiovascular disease, respiratory disease — is concentrated in
+  high-deprivation Auckland communities, where rates are two to three times those in lower-deprivation
+  areas. Late diagnosis due to primary care cost barriers generates higher-acuity presentations and worse
+  outcomes. The food environment, housing quality, and urban form are upstream structural drivers that
   clinical care alone cannot address.
 manifests_in:
-  - auckland
+- auckland
 systems_model:
   state_variables:
-    - "chronic_disease_hospitalisation_rate"
-    - "diabetes_late_diagnosis_rate"
-    - "obesogenic_environment_index"
-    - "diet_quality_index_low_income"
+  - chronic_disease_hospitalisation_rate
+  - diabetes_late_diagnosis_rate
+  - obesogenic_environment_index
+  - diet_quality_index_low_income
   inputs:
-    - "vlca_nurse_care_coordinator_count"
-    - "screening_programme_reach"
-    - "food_environment_regulation"
-    - "housing_quality_intervention"
+  - vlca_nurse_care_coordinator_count
+  - screening_programme_reach
+  - food_environment_regulation
+  - housing_quality_intervention
   constraints:
-    - "Upstream-downstream gap: clinical care cannot fix housing or food environment"
-    - "Ethnic targeting: Pacific-specific screening requires community trust and culturally safe delivery"
-    - "Prevention lag: population-level prevention takes 10-20 years to register in hospital stats"
+  - 'Upstream-downstream gap: clinical care cannot fix housing or food environment'
+  - 'Ethnic targeting: Pacific-specific screening requires community trust and culturally safe delivery'
+  - 'Prevention lag: population-level prevention takes 10-20 years to register in hospital stats'
   feedback_loops:
-    - "Late diagnosis → advanced disease → hospitalisation → healthcare cost → crowded-out prevention funding"
-    - "Housing damp/cold → respiratory disease → reduced activity → cardiovascular risk"
+  - Late diagnosis → advanced disease → hospitalisation → healthcare cost → crowded-out prevention funding
+  - Housing damp/cold → respiratory disease → reduced activity → cardiovascular risk
 narrative:
-  - heading: "A Pacific health emergency"
-    body: >
-      Type 2 diabetes prevalence in Auckland's Pacific communities is
-      not a statistical artefact — it reflects a food environment,
-      housing quality, and economic stress profile that makes chronic
-      disease physiologically probable. The clinical response (insulin,
-      dialysis, amputation) treats the consequence while the cause
-      persists. Pacific community health workers, culturally safe
-      screening, and community-based management represent a different
-      model: meeting people in their communities before they need
-      hospital care.
-  - heading: "Built environment as health infrastructure"
-    body: >
-      Car-dependent Auckland constrains physical activity; the density
-      of fast food near schools in South and West Auckland is not
-      accidental — it is an economically rational response to the
-      concentration of low-income households in those areas. Planning
-      tools that restrict unhealthy food environments are slow and
-      contested but address the chronic disease driver that clinical
-      medicine cannot reach.
+- heading: A Pacific health emergency
+  body: 'Type 2 diabetes prevalence in Auckland''s Pacific communities is not a statistical artefact —
+    it reflects a food environment, housing quality, and economic stress profile that makes chronic disease
+    physiologically probable. The clinical response (insulin, dialysis, amputation) treats the consequence
+    while the cause persists. Pacific community health workers, culturally safe screening, and community-based
+    management represent a different model: meeting people in their communities before they need hospital
+    care.
+
+    '
+- heading: Built environment as health infrastructure
+  body: 'Car-dependent Auckland constrains physical activity; the density of fast food near schools in
+    South and West Auckland is not accidental — it is an economically rational response to the concentration
+    of low-income households in those areas. Planning tools that restrict unhealthy food environments
+    are slow and contested but address the chronic disease driver that clinical medicine cannot reach.
+
+    '
 claim_ids:
-  - claim.auckland.health.diabetes_prevalence_auckland
-  - claim.auckland.health.chronic_disease_deprivation_link
-  - claim.auckland.health.food_environment_inequality
+- claim.auckland.health.diabetes_prevalence_auckland
+- claim.auckland.health.chronic_disease_deprivation_link
+- claim.auckland.health.food_environment_inequality
 status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,23 @@
+id: claim.west_coast.housing.affordability_claim
+statement: West Coast house prices are among the lowest in New Zealand (median ~$280,000
+  in Westport, ~$320,000 in Greymouth), yet local median household income is only
+  $52,000 annually. Price-to-income ratio exceeds 5:1, making homeownership unaffordable
+  for local workers. Post-flood insurance withdrawal has collapsed property values
+  further, trapping owners in negative equity.
+value: 280000
+unit: NZD median house price (Westport)
+time_period: 2023-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_housing_2024
+- source.census_income_west_coast_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: House price and income data from REINZ and Stats NZ; insurance impacts from
+  housing market reports.

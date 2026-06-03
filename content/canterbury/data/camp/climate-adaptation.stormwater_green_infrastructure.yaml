@@ -1,0 +1,22 @@
+id: camp.canterbury.climate.stormwater_green_infrastructure
+name: Green Infrastructure & Nature-Based Flood Management
+theme: climate-adaptation
+core_claim: Replacing gray stormwater infrastructure with green infrastructure (rain
+  gardens, wetlands, permeable pavements) reduces flood risk while improving water
+  quality and urban ecology.
+flagship_moves:
+- Key intervention for Green Infrastructure & Nature-Based Flood Management
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.climate.flooding_plains
+interventions:
+- description: Replacing gray stormwater infrastructure with green infrastructure
+    (rain gardens, wetlands, permeable pavements) reduces flood risk while improving
+    water quality and urban ecology.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

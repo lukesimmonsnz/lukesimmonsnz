@@ -1,0 +1,34 @@
+id: problem.northland.economy.business_investment
+title: Private investment and business development deficit
+theme: economy
+section: economy
+subpage: business-investment
+parent: problem.northland.economy.northland_economic_underperformance
+order: 4
+updated: '2026-04-26'
+summary: Low levels of private investment and business formation limit economic diversification
+  and employment growth.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - economy_pressure_index
+  inputs:
+  - policy_intervention
+  - external_shock
+  constraints:
+  - fiscal_capacity
+  feedback_loops:
+  - 'Feedback: deteriorating business investment conditions reinforce systemic disadvantage.'
+narrative:
+- heading: Scale and distribution
+  body: Low levels of private investment and business formation limit economic diversification
+    and employment growth.
+- heading: Key drivers
+  body: The primary drivers of private investment and business development deficit
+    are structural and systemic, requiring both investment and institutional reform.
+claim_ids:
+- claim.northland.economy.business_investment_claim1
+- claim.northland.economy.business_investment_claim2
+status: draft
+time_horizons: [decade, generation]

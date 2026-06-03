@@ -1,0 +1,23 @@
+id: camp.west_coast.climate.managed_retreat_and_climate_ad
+name: Managed Retreat and Climate Adaptation Planning
+theme: climate-adaptation
+core_claim: Low-lying West Coast communities face rising flood and coastal inundation
+  risk; managed retreat and climate-adaptive land use planning are necessary before
+  the next major event.
+flagship_moves:
+- Develop Westland and Buller managed retreat frameworks for flood-prone communities
+- Map 50-year climate risk zones along coastal and river flood plains
+- Fund managed retreat of highest-risk properties near Hokitika, Westport, and Greymouth
+tensions:
+- Managed retreat is politically contentious and traumatic for affected communities
+- Low property values make compensation schemes costly relative to asset value
+addresses:
+- problem.west_coast.climate.climate_risk
+- problem.west_coast.climate.climate_2
+interventions:
+- description: Establish West Coast Climate Adaptation Fund
+  state_variable: flood_exposed_properties
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

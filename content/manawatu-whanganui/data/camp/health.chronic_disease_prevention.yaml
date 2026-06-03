@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.health.chronic_disease_prevention
+name: Chronic disease prevention
+theme: health
+core_claim: Population-level prevention (nutrition, physical activity, smoking).
+flagship_moves:
+- Flagship move 1 for Chronic disease prevention
+- Flagship move 2 for Chronic disease prevention
+tensions:
+- Internal tension 1 of Chronic disease prevention
+addresses:
+- problem.manawatu_whanganui.infrastructure.infrastructure
+interventions:
+- description: 'Intervention 1: Chronic disease prevention detail 1'
+- description: 'Intervention 2: Chronic disease prevention detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

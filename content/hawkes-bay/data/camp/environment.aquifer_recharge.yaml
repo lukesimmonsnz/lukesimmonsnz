@@ -1,0 +1,31 @@
+id: camp.hawkes_bay.environment.aquifer_recharge_management
+name: Aquifer recharge management and extraction limits
+theme: environment
+core_claim: Implementing science-based limits on groundwater extraction and investing
+  in aquifer recharge infrastructure sustains water supply for horticulture and urban
+  use.
+flagship_moves:
+- Set annual extraction limits for Napier and Hastings aquifers based on recharge
+  rates
+- Invest in stormwater harvesting and aquifer injection to boost recharge
+- Phase out over-allocated irrigation consents and consolidate to sustainable allocations
+tensions:
+- Extraction limits threaten horticulture expansion and farm profitability
+- Consolidation requires large growers to purchase allocation from smaller farmers,
+  consolidating land ownership
+addresses:
+- problem.hawkes_bay.environment.aquifer_stress
+- problem.hawkes_bay.infrastructure.water
+- problem.hawkes_bay.economy.horticulture_rse
+- problem.hawkes_bay.climate.drought_water_stress
+interventions:
+- description: Lower annual extraction ceiling for Napier and Hastings aquifers to
+    match recharge rate
+  state_variable: aquifer_extraction_sustainability_ratio
+  expected_sign: +
+- description: Build stormwater harvesting and aquifer recharge systems
+  state_variable: recharge_infrastructure_coverage
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

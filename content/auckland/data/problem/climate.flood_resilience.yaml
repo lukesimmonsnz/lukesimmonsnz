@@ -63,4 +63,6 @@ claim_ids:
   - claim.auckland.climate.stormwater_upgrade_cost
   - claim.auckland.climate.repetitive_flood_loss
   - claim.auckland.climate.insurance_withdrawal_risk
+  - claim.auckland.climate.january_floods_insured_loss_2023
 status: draft
+time_horizons: [generation, century]

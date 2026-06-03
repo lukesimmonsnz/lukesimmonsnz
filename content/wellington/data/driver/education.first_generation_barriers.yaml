@@ -1,0 +1,14 @@
+id: driver.wellington.education.first_generation_barriers
+name: First-generation tertiary student barriers
+description: Māori and Pacific students in Wellington are more likely to be the first in their family to attend university,
+  lacking the social capital, role models, and institutional familiarity that support completion for students from tertiary-educated
+  families.
+theme: education
+consensus: consensus
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.education.tertiary_access
+claim_ids:
+- claim.wellington.education.tertiary_participation_rate

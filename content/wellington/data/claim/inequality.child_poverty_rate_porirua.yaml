@@ -1,0 +1,21 @@
+id: claim.wellington.inequality.child_poverty_rate_porirua
+statement: Child poverty rates in Porirua's high-deprivation sub-areas are substantially
+  above the Wellington City average, with material hardship measures indicating that
+  a significant proportion of children lack adequate food, warm clothing, or access
+  to healthcare in any given year.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+- source.stats_nz_deprivation_2018
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

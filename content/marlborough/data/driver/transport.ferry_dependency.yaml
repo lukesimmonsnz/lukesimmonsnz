@@ -1,0 +1,12 @@
+id: driver.marlborough.transport.ferry_dependency
+name: Ferry Service Dependency For Connectivity
+description: Ferry service dependency for connectivity with regional implications.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.active_modes
+claim_ids: []

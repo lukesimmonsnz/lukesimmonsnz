@@ -47,8 +47,6 @@ AUCKLAND_PAGES = AUCKLAND_ROOT / "pages"
 
 MAIN_ROUTES = [
     ("/", "main.home", "Home page."),
-    ("/projects/", "main.projects", "Projects list (data/projects.py)."),
-    ("/now/", "main.now", "What I'm working on."),
     ("/contact/", "main.contact", "Contact form (no email addresses)."),
     ("/sitemap/", "main.sitemap_html", "Human-readable sitemap (renders docs/SITEMAP.md)."),
 ]
@@ -148,15 +146,6 @@ def _auckland_page_paths() -> list[Path]:
     return sorted(AUCKLAND_PAGES.rglob("*.md"))
 
 
-def _projects_count() -> int:
-    try:
-        from data.projects import PROJECTS  # type: ignore
-
-        return len(PROJECTS)
-    except Exception:
-        return 0
-
-
 def _url_rule_count() -> int:
     return sum(1 for _ in app.url_map.iter_rules())
 
@@ -184,8 +173,6 @@ def _tree_block() -> str:
     out: list[str] = []
 
     out.append("- [Home](/)")
-    out.append("- [Projects](/projects/)")
-    out.append("- [Now](/now/)")
     out.append("- [Contact](/contact/)")
     out.append("- [Blog](/blog/) — recent posts and archive")
     out.append("    - [Atom feed](/blog/feed.xml)")
@@ -204,12 +191,45 @@ def _tree_block() -> str:
             slug = url.rstrip("/").rsplit("/", 1)[-1]
             nice = slug_label_overrides.get(slug) or (slug.replace("-", " ")[:1].upper() + slug.replace("-", " ")[1:])
             out.append(f"        - [{nice}]({url})")
-    out.append("    - [Auckland — problems and solutions](/research/auckland/)")
-    out.append("        - [Housing](/research/auckland/housing/)")
-    out.append("            - [Land](/research/auckland/housing/land/)")
-    out.append("            - [Supply economics](/research/auckland/housing/supply-economics/)")
-    out.append("            - [Affordability](/research/auckland/housing/affordability/)")
-    out.append("        - *Transport, Infrastructure, Environment, Inequality, Crime & safety, Health, Education, Economy, Governance, Climate adaptation — in progress*")
+    out.append("    - [Methodology](/research/methodology/)")
+    out.append("    - [National summary](/research/nz/) — cross-regional pattern rollup")
+    out.append("        - [Solution space](/research/nz/solutions/) — interventions sorted by mechanism")
+    # Aotearoa regional research: 16 regional councils, each with 11 themes.
+    aotearoa_regions = [
+        ("auckland", "Auckland"),
+        ("wellington", "Wellington"),
+        ("northland", "Northland"),
+        ("waikato", "Waikato"),
+        ("bay-of-plenty", "Bay of Plenty"),
+        ("gisborne", "Gisborne"),
+        ("hawkes-bay", "Hawke's Bay"),
+        ("taranaki", "Taranaki"),
+        ("manawatu-whanganui", "Manawatū-Whanganui"),
+        ("nelson", "Nelson"),
+        ("tasman", "Tasman"),
+        ("marlborough", "Marlborough"),
+        ("west-coast", "West Coast"),
+        ("canterbury", "Canterbury"),
+        ("otago", "Otago"),
+        ("southland", "Southland"),
+    ]
+    aotearoa_themes = [
+        ("housing", "Housing"),
+        ("transport", "Transport"),
+        ("infrastructure", "Infrastructure"),
+        ("environment", "Environment"),
+        ("climate", "Climate adaptation"),
+        ("inequality", "Inequality"),
+        ("crime", "Crime & safety"),
+        ("health", "Health"),
+        ("education", "Education"),
+        ("economy", "Economy"),
+        ("governance", "Governance"),
+    ]
+    for slug, region_label in aotearoa_regions:
+        out.append(f"    - [{region_label}](/research/{slug}/)")
+        for theme_slug, theme_label in aotearoa_themes:
+            out.append(f"        - [{theme_label}](/research/{slug}/{theme_slug}/)")
     out.append("- [David Simmons biography](/davidsimmons/)")
     out.append("    - [About](/davidsimmons/about/)")
     out.append("    - [Timeline](/davidsimmons/timeline/)")
@@ -223,7 +243,6 @@ def _tree_block() -> str:
 
 def _counts_table(
     blog_count: int,
-    projects_count: int,
     auckland_by_type: dict[str, int],
     auckland_pages_count: int,
 ) -> str:
@@ -237,7 +256,6 @@ def _counts_table(
 
     lines = [
         f"- **Blog posts:** {blog_count}",
-        f"- **Projects listed:** {projects_count}",
         f"- **Research branches:** 4 (Computer Science, Climate Science & AI, Medical Science, Auckland)",
         f"- **Auckland — Problems published:** {problems} (of an 11-section scope; the rest are in progress)",
         f"- **Auckland — evidence graph:** {drivers} drivers, {camps} camps, {evidence} evidence claims, {sources} cited sources",
@@ -391,7 +409,6 @@ def regenerate() -> None:
     auckland_pages = _auckland_page_paths()
     auckland_pages_count = len(auckland_pages)
     total_entities = sum(auckland_by_type.values())
-    projects_count = _projects_count()
     url_rules = _url_rule_count()
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
@@ -402,7 +419,6 @@ def regenerate() -> None:
         tree=_tree_block(),
         counts=_counts_table(
             blog_count=blog_count,
-            projects_count=projects_count,
             auckland_by_type=auckland_by_type,
             auckland_pages_count=auckland_pages_count,
         ),

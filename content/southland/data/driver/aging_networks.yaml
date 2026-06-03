@@ -1,0 +1,11 @@
+id: driver.southland.infrastructure.aging_networks
+name: Aging Infrastructure Networks
+description: Southland water, wastewater, and roading infrastructure aging.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.infrastructure.infrastructure
+claim_ids: []

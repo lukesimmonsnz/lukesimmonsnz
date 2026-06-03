@@ -1,0 +1,21 @@
+id: camp.wellington.infrastructure.community_resilience_hubs
+name: Community Resilience Hubs for Post-Earthquake Response
+theme: infrastructure
+core_claim: Decentralised community hubs with food, water, and communications ensure neighbourhood-level resilience without
+  relying on utility restoration.
+flagship_moves:
+- Establish 20 community resilience hubs in Wellington suburbs
+- Water storage tanks (10,000L) at each hub with purification capability
+- Battery-backed radio communications independent of telecoms grid
+tensions:
+- Hub model addresses symptoms not causes; does not reduce earthquake damage to infrastructure
+- Ongoing maintenance and stock rotation costs fall to councils or communities
+addresses:
+- problem.wellington.infrastructure.earthquake_lifelines
+interventions:
+- description: Fund 20 community resilience hubs using CDEM budget with co-governance by local community groups
+  state_variable: community_resilience_coverage
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

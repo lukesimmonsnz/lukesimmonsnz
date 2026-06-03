@@ -1,0 +1,12 @@
+id: source.horizons_data_services_2024
+title: Horizons Regional Council State of the Environment Monitoring
+author: Horizons Regional Council
+publisher: Horizons Regional Council
+year: 2024
+url: https://www.horizons.govt.nz/managing-natural-resources/research/state-of-the-environment-monitoring
+type: primary-data
+credibility: official
+geo_granularity:
+- manawatu-whanganui
+notes: Horizons' state-of-environment monitoring data covering rivers, lakes, groundwater, and air quality across the Manawatū-Whanganui
+  region. Replaces homepage URL.

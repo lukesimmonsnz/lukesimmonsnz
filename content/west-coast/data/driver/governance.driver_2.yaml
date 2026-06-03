@@ -1,0 +1,15 @@
+id: driver.west_coast.governance.driver_2
+name: Treaty partnership and council technical capacity
+description: Ngāi Tahu Treaty settlement and the takiwā of Te Rūnanga o Makaawhio and Te Rūnanga o Ngāti Waewae give iwi a
+  clear and resourced co-governance role, but council-side technical capacity for resilience, adaptation and managed retreat
+  is thin and inconsistent across the four councils.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.governance.governance
+- problem.west_coast.governance.treaty
+- problem.west_coast.governance.capacity
+claim_ids: []

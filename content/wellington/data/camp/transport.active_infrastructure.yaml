@@ -1,0 +1,20 @@
+id: camp.wellington.transport.active_infrastructure
+name: Protected Active Mode Network
+theme: transport
+core_claim: A connected, safe cycling and walking network will shift short trips from cars and reduce transport system pressure.
+flagship_moves:
+- Complete the Wellington Urban Cycleways Programme gaps on key arterials
+- Install protected intersections at all school zones within 5 years
+- Continuous waterfront-to-hills greenway connection
+tensions:
+- Lane reallocation for cycleways increases vehicle congestion on constrained corridors
+- Hilly topography limits cycling uptake to a small share of trips citywide
+addresses:
+- problem.wellington.transport.active_modes
+interventions:
+- description: Fund $30M protected cycleway gap-fill programme across Wellington City's arterial network
+  state_variable: protected_cycleway_km
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

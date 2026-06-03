@@ -1,0 +1,21 @@
+id: camp.southland.housing.build_to_rent
+name: Build-to-Rent and Worker Housing
+theme: housing
+core_claim: Institutional BTR and dairy worker housing support improve rental supply
+  and affordability.
+flagship_moves:
+- Dairy sector housing standards for workers
+- Council-led BTR projects in Invercargill
+- Rental subsidies for agriculture and processing workers
+tensions:
+- BTR investor returns limited in Southland market
+- Worker housing costs reduce farm viability
+addresses:
+- problem.southland.housing.worker_housing
+interventions:
+- description: Create 500 dairy worker housing units over 5 years
+  state_variable: worker_housing_stock
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

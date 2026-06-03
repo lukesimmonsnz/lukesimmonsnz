@@ -1,0 +1,19 @@
+id: driver.hawkes_bay.environment.irrigation_demand
+name: Agricultural irrigation demand exceeding sustainable supply
+description: Horticulture and viticulture expansion has driven irrigation demand in
+  Napier-Hastings region. Extraction from aquifers now exceeds recharge rates. Over-extraction
+  lowers groundwater tables and threatens long-term supply viability.
+theme: environment
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.environment.environmental_pressure
+- problem.hawkes_bay.environment.aquifer_stress
+- problem.hawkes_bay.infrastructure.water
+- problem.hawkes_bay.climate.drought_water_stress
+- problem.hawkes_bay.environment.biodiversity
+claim_ids:
+- claim.hawkes_bay.environment.aquifer_decline_2_4_metres
+- claim.hawkes_bay.infrastructure.aquifer_stress_indices

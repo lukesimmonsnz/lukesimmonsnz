@@ -1,0 +1,16 @@
+id: driver.northland.infrastructure.dispersal_driver
+name: Geographic dispersal increasing infrastructure cost
+description: Low population density over a large area raises per-household infrastructure
+  costs above viable private or council investment thresholds.
+theme: infrastructure
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.infrastructure.northland_infrastructure_deficit
+- problem.northland.infrastructure.water_wastewater
+- problem.northland.infrastructure.digital_divide
+- problem.northland.infrastructure.flood_resilience
+claim_ids:
+- claim.northland.infrastructure.flood_resilience_claim1

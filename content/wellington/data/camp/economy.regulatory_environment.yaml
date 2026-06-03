@@ -1,0 +1,21 @@
+id: camp.wellington.economy.regulatory_environment
+name: Regulatory Environment Improvement
+theme: economy
+core_claim: Reducing compliance burden for Wellington businesses through council process improvement and national regulatory
+  reform will improve the business environment.
+flagship_moves:
+- Wellington City Council consent processing time target of 20 working days
+- Business liaison officer programme for Wellington CBD businesses
+- Reduce cumulative regulatory burden on hospitality and retail sectors
+tensions:
+- Faster consenting risks inadequate environmental and safety scrutiny
+- Regulatory streamlining may benefit large businesses more than SMEs
+addresses:
+- problem.wellington.economy.business_environment
+interventions:
+- description: Implement Wellington City Council Building Consent processing SLA of 20 working days with public dashboard
+  state_variable: consent_processing_days
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

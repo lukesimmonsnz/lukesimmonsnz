@@ -1,0 +1,14 @@
+id: driver.waikato.environment.regulatory_gaps
+name: Weak freshwater regulatory enforcement
+description: Insufficient monitoring and enforcement of NPSFM freshwater limits allows
+  continued degradation.
+theme: environment
+consensus: consensus
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.environment.freshwater_quality
+- problem.waikato.environment.biodiversity_loss
+- problem.waikato.environment.peat_soil_degradation
+claim_ids: []

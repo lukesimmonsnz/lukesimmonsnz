@@ -1,0 +1,34 @@
+id: problem.otago.climate.alpine_hazards
+title: 'Alpine Hazards: Avalanche and Glacial Lake Hazards'
+theme: climate-adaptation
+section: climate
+subpage: alpine_hazards
+parent: problem.otago.climate.climate_risk
+order: 3
+updated: '2026-04-26'
+summary: Queenstown-Lakes faces avalanche risk in ski areas and transport corridors;
+  glacial lake outburst flood potential in Fiordland headwaters.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Queenstown-Lakes faces avalanche risk in ski areas and transport corridors;
+    glacial lake outburst flood potential in Fiordland headwaters.
+claim_ids:
+- claim.otago.climate.coastal_dunedin_prevalence
+- claim.otago.climate.alpine_hazards_prevalence
+- claim.otago.climate.climate_risk_trend
+- claim.otago.climate.drought_central_otago_trend
+- claim.otago.climate.climate_risk_prevalence
+- claim.otago.climate.drought_central_otago_prevalence
+- claim.otago.climate.coastal_dunedin_trend
+- claim.otago.climate.alpine_hazards_trend
+status: draft
+time_horizons: [generation, century]

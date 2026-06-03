@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.health.health_workforce_shortage
+name: Health Workforce Shortage And Burnout
+description: Health workforce shortage and burnout. This driver operates at national
+  scale with consensus consensus.
+theme: health
+consensus: consensus
+category: demographic
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.infrastructure
+claim_ids: []

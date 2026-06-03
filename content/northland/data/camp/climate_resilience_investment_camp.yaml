@@ -1,0 +1,26 @@
+id: camp.northland.climate.resilience_investment_camp
+name: Climate-resilient infrastructure and primary sector adaptation
+theme: climate-adaptation
+core_claim: Investing in flood-resilient infrastructure and primary sector adaptation
+  tools reduces climate damage costs over time.
+flagship_moves:
+- Fund cyclone-resilient roading and bridge replacements in vulnerable catchments
+- Invest in drought-tolerant crop research and water storage for Northland farming
+- Establish community-led climate resilience hubs on marae
+tensions:
+- Infrastructure investment costs are high relative to Northland's fiscal base
+- Adaptation does not address the underlying emissions trajectory
+- Agricultural transition timelines exceed many farmers' planning horizons
+interventions:
+- description: Fund cyclone-resilient roading and bridge replacements in vulnerable
+    catchments
+  state_variable: climate_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.climate.northland_climate
+- problem.northland.climate.coastal_flooding
+- problem.northland.climate.drought_risk
+- problem.northland.climate.cyclone_exposure
+applicable_in:
+- northland
+tensions_with: []

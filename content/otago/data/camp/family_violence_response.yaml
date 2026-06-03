@@ -1,0 +1,21 @@
+id: camp.otago.crime.family_violence_response
+name: Family Violence Prevention and Support
+theme: crime
+core_claim: Integrated prevention (education, therapy), perpetrator accountability,
+  and survivor support reduce family violence.
+flagship_moves:
+- Expand family violence services capacity
+- Implement universal relationship and consent education in schools
+- Strengthen perpetrator accountability and rehabilitation programs
+tensions:
+- Cultural change requirement; resource intensity
+- Survivor safety prioritization requires specialized housing and support
+addresses:
+- problem.otago.crime.family_violence
+interventions:
+- description: Increase family violence service capacity by 50%
+  state_variable: fv_service_access
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,21 @@
+id: claim.gisborne.housing.affordability_03
+statement: Housing affordability in Gisborne paradoxically coexists with high homelessness
+  and housing stress. Median house prices ($300-350K) are lower than national averages,
+  but median household incomes are 30-40% below national average, creating relative
+  unaffordability and forcing multi-family occupancy.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: null

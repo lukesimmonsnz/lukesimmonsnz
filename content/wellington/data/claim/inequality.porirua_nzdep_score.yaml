@@ -1,0 +1,20 @@
+id: claim.wellington.inequality.porirua_nzdep_score
+statement: Porirua City contains the highest concentration of NZDep2018 decile 9–10
+  meshblocks in the Wellington region, with Cannons Creek, Titahi Bay, and parts of
+  Porirua East recording persistent multi-generational deprivation scores above the
+  90th percentile.
+value: null
+unit: null
+time_period: '2018'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2018
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,39 @@
+id: problem.wellington.inequality.economic_disadvantage
+title: Working poverty and economic disadvantage in Wellington
+theme: inequality
+section: inequality
+subpage: economic-disadvantage
+parent: problem.wellington.inequality.geographic_deprivation
+order: 4
+updated: '2026-04-26'
+summary: 'Wellington''s high cost of living — driven primarily by housing — has expanded the working poor: households in formal
+  employment but unable to meet basic living costs. Income inequality in Wellington is growing as high-wage professional employment
+  expands while low-wage service sector work stagnates in real terms.'
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - gini_coefficient
+  - working_poverty_rate
+  inputs:
+  - wage_growth_rate
+  - housing_cost_growth_rate
+  constraints:
+  - minimum_wage_relative_to_living_cost
+  - collective_bargaining_coverage
+  feedback_loops:
+  - 'Cost-wage divergence: housing cost inflation exceeding wage growth expands the working-poor population even during periods
+    of nominal employment growth.'
+narrative:
+- heading: Growing income inequality
+  body: Wellington's income Gini coefficient reflects a widening gap between high-wage professional and government employees
+    and low-wage service, retail, and hospitality workers, with the latter group particularly exposed to housing cost inflation
+    (claim.wellington.inequality.gini_coefficient_wellington).
+- heading: Working poverty
+  body: A growing share of Wellington workers in full-time employment cannot afford market-rate housing without spending more
+    than 40% of income on rent — qualifying as severely housing-cost-burdened even while in work (claim.wellington.inequality.working_poverty_prevalence).
+claim_ids:
+- claim.wellington.inequality.gini_coefficient_wellington
+- claim.wellington.inequality.working_poverty_prevalence
+status: draft
+time_horizons: [decade, generation, century]

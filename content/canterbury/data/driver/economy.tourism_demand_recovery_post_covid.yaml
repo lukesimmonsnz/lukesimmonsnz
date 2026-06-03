@@ -1,0 +1,11 @@
+id: driver.canterbury.economy.tourism_demand_recovery_post_covid
+name: International Tourism Demand Recovery (Post-COVID)
+description: International Tourism Demand Recovery (Post-COVID)
+theme: economy
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.economy.tourism_recovery
+claim_ids: []

@@ -1,0 +1,21 @@
+id: claim.otago.crime.family_violence_trend
+statement: 'Family violence presentation is increasing in rural Otago: Clutha district
+  (Balclutha, surrounding farming area) and Waitaki (Oamaru, Palmerston) showing upward
+  3-year trend; service access gaps worsening as rural GPs and nurses retire; alcohol
+  and economic stress correlated with incident frequency; prevention funding gaps
+  in small towns.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

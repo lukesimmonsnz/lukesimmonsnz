@@ -1,0 +1,15 @@
+id: source.health_nz_survey_2023
+title: Annual Update of Key Results 2022/23 — New Zealand Health Survey
+author: Ministry of Health Manatū Hauora
+publisher: Ministry of Health Manatū Hauora
+year: 2023
+url: https://www.health.govt.nz/publications/annual-update-of-key-results-2022-23-new-zealand-health-survey
+type: primary-data
+credibility: official
+geo_granularity:
+- bay-of-plenty
+- gisborne
+- nz
+notes: 'Annual nationally representative survey of adults and children: chronic conditions, mental health indicators, smoking,
+  alcohol use, GP and ED access. Region-level estimates available via the Stats NZ Aotearoa Data Explorer linked from the
+  release.'

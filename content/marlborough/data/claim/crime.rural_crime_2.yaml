@@ -1,0 +1,19 @@
+id: claim.marlborough.crime.rural_crime_2
+statement: Organized theft of vineyard inputs (grape bins, trellis clips, hail netting)
+  during harvest season (March–April) estimated at NZD 500k–1M annually; insurance
+  underwriting difficult in remote viticultural areas.
+value: 750000
+unit: NZD (mid-range annual loss estimate)
+time_period: 2021-2023
+confidence: low
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

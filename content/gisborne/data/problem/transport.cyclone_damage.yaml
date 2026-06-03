@@ -1,0 +1,33 @@
+id: problem.gisborne.transport.cyclone_damage
+title: Post-cyclone roading damage and repair backlog in Gisborne — Te Tairāwhiti
+theme: transport
+section: transport
+subpage: cyclone_damage
+parent: problem.gisborne.transport.isolation
+order: 7
+updated: '2026-04-26'
+summary: Post-cyclone roading damage and repair backlog is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - cyclone_damage_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Post-cyclone roading damage and repair backlog is a key facet of the broader
+    pressure facing the region.
+claim_ids:
+- claim.gisborne.transport.cyclone_damage_13
+- claim.gisborne.transport.cyclone_damage_14
+status: draft
+time_horizons: [decade, generation]

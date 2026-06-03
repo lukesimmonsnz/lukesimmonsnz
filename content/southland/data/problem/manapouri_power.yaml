@@ -1,0 +1,36 @@
+id: problem.southland.infrastructure.manapouri_power
+title: Manapōuri Hydroelectric Power and Smelter Dependency
+theme: infrastructure
+section: infrastructure
+subpage: manapouri_power
+parent: problem.southland.infrastructure.infrastructure
+order: 3
+updated: '2026-04-26'
+summary: NZAS smelter depends on Manapōuri-Meridian power contract; smelter closure
+  would free 550+ MW to grid but devastate Southland economy. Contract negotiations
+  critical.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: NZAS smelter depends on Manapōuri-Meridian power contract; smelter closure
+    would free 550+ MW to grid but devastate Southland economy. Contract negotiations
+    critical.
+claim_ids:
+- claim.southland.infrastructure.digital_rural_prevalence
+- claim.southland.infrastructure.manapouri_power_prevalence
+- claim.southland.infrastructure.manapouri_power_trend
+- claim.southland.infrastructure.digital_rural_trend
+- claim.southland.infrastructure.water_wastewater_trend
+- claim.southland.infrastructure.water_wastewater_prevalence
+- claim.southland.infrastructure.infrastructure_trend
+- claim.southland.infrastructure.infrastructure_prevalence
+status: draft
+time_horizons: [decade, generation]

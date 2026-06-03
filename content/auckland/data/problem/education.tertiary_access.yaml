@@ -61,3 +61,4 @@ claim_ids:
   - claim.auckland.education.student_loan_housing_barrier
   - claim.auckland.education.skills_mismatch
 status: draft
+time_horizons: [decade, generation]

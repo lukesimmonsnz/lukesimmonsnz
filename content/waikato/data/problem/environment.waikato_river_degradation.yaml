@@ -1,0 +1,30 @@
+id: problem.waikato.environment.waikato_river_degradation
+title: Waikato River and freshwater degradation
+theme: environment
+section: environment
+subpage: waikato_river_degradation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Decades of agricultural intensification and urban runoff have severely degraded
+  the Waikato River and its catchment.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - environmental_quality_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional environment dynamics create self-reinforcing feedback.
+narrative:
+- heading: Waikato River and freshwater degradation
+  body: Decades of agricultural intensification and urban runoff have severely degraded
+    the Waikato River and its catchment.
+claim_ids:
+- claim.waikato.environment.waikato_river_degradation_root
+status: draft
+time_horizons: [generation, century]

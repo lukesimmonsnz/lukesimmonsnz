@@ -1,0 +1,21 @@
+id: claim.tasman.education.achievement_claim
+statement: 'MOE Education Outcomes Tasman Region (2023) show NZQF Level 3+ attainment
+  at 78% (age 15-64), slightly above national average of 76%. Achievement gaps persist:
+  Māori attainment 64%, Pasifika 59%, European/other 82%, reflective of socioeconomic
+  and rurality factors.'
+value: 78
+unit: percent NZQF L3+ attainment
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_tasman_achievement_2023
+- source.stats_nz_census_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

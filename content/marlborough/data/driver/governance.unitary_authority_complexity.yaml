@@ -1,0 +1,12 @@
+id: driver.marlborough.governance.unitary_authority_complexity
+name: Unitary Authority Structural Complexity
+description: Unitary authority structural complexity with regional implications.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.health.rural_workforce
+claim_ids: []

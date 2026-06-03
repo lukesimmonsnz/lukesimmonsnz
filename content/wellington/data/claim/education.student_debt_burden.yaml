@@ -1,0 +1,19 @@
+id: claim.wellington.education.student_debt_burden
+statement: Wellington's high cost of living makes student debt accumulation disproportionately
+  rapid for students from low-income backgrounds, who face higher living costs than
+  students in smaller cities while on the same student loan entitlement.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_income_housing_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

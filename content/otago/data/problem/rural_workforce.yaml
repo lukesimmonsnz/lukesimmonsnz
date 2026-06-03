@@ -1,0 +1,34 @@
+id: problem.otago.health.rural_workforce
+title: Rural Health Workforce Shortage
+theme: health
+section: health
+subpage: rural_workforce
+parent: problem.otago.health.health_outcomes
+order: 4
+updated: '2026-04-26'
+summary: Central Otago and rural areas struggle to attract and retain GPs and nurses;
+  locum costs escalate; remote area classification may improve incentives.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Central Otago and rural areas struggle to attract and retain GPs and nurses;
+    locum costs escalate; remote area classification may improve incentives.
+claim_ids:
+- claim.otago.health.chronic_disease_trend
+- claim.otago.health.mental_health_prevalence
+- claim.otago.health.health_outcomes_trend
+- claim.otago.health.rural_workforce_trend
+- claim.otago.health.health_outcomes_prevalence
+- claim.otago.health.rural_workforce_prevalence
+- claim.otago.health.mental_health_trend
+- claim.otago.health.chronic_disease_prevalence
+status: draft
+time_horizons: [decade, generation]

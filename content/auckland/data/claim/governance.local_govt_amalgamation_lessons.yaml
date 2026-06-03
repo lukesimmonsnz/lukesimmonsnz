@@ -1,21 +1,21 @@
 id: claim.auckland.governance.local_govt_amalgamation_lessons
-statement: >
-  Auckland's 2010 super-city amalgamation reduced council numbers from
-  8 to 1 and was projected to deliver $2.9 billion in efficiency savings;
-  independent reviews have found that savings have not materialised at
-  projected scale, coordination costs increased, and community
-  representation in local decision-making has diminished, particularly
-  outside the urban core.
+statement: 'Auckland''s 2010 super-city amalgamation reduced council numbers from
+  8 to 1 and was projected to deliver $2.9 billion in efficiency savings; independent
+  reviews have found that savings have not materialised at projected scale, coordination
+  costs increased, and community representation in local decision-making has diminished,
+  particularly outside the urban core.
+
+  '
 value: null
 unit: null
-time_period: "2010-2023"
+time_period: 2010-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_ltp_2024
+- source.auckland_council_ltp_2024
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

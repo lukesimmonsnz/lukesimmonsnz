@@ -1,0 +1,24 @@
+id: claim.tasman.climate.climate_3_claim
+statement: The January 2022 Nelson-Tasman wildfires burned across the Pigeon Valley
+  and Moutere Hills area straddling the Nelson-Tasman boundary, with the Tasman portion
+  accounting for the majority of the approximately 2,200-hectare total burn area.
+  Hotter, drier summers are increasing wildfire frequency; Tasman District Council
+  emergency management plans now flag October-April as high-risk season.
+value: 2200
+unit: hectares burned (Nelson-Tasman combined, 2022)
+time_period: '2022'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: Original claim stated 4,000+ ha "across Canterbury, Marlborough, and Tasman"
+  — geographic scope was wrong (fire was Nelson-Tasman only). Figure revised to ~2,200
+  ha combined (Nelson+Tasman), consistent with nelson.climate.climate_3_claim. Confidence
+  downgraded to medium pending verified per-region hectare split.

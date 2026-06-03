@@ -1,0 +1,23 @@
+id: claim.west_coast.governance.growth_management_claim
+statement: Westport Council is implementing managed retreat policy following 2021
+  and 2022 catastrophic floods. Residential and commercial properties in flood-prone
+  zones are targeted for voluntary acquisition and relocation to higher ground. Council
+  faces resource constraints and community resistance. Property owners face loss of
+  equity as insurance withdraws and land values collapse in inundated areas.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_housing_2024
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Managed retreat policy from Buller DC official plans and announcements; property
+  market impacts from REINZ housing market data.

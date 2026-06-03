@@ -1,11 +1,40 @@
-from flask import Blueprint, render_template
+from pathlib import Path
+
+import markdown
+from flask import Blueprint, abort, render_template
 
 research_bp = Blueprint("research", __name__)
+
+_DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
+
+
+@research_bp.route("/methodology/")
+def methodology():
+    path = _DOCS_DIR / "METHODOLOGY.md"
+    if not path.is_file():
+        abort(404)
+    text = path.read_text(encoding="utf-8")
+    md = markdown.Markdown(
+        extensions=["extra", "sane_lists", "smarty", "tables"],
+        output_format="html5",
+    )
+    body_html = md.convert(text)
+    return render_template("research/methodology.html", body_html=body_html)
 
 
 @research_bp.route("/")
 def index():
     return render_template("research/index.html")
+
+
+@research_bp.route("/aotearoa/")
+def aotearoa_index():
+    return render_template("research/aotearoa.html")
+
+
+@research_bp.route("/science/")
+def science_index():
+    return render_template("research/science.html")
 
 
 @research_bp.route("/computer-science/")

@@ -1,0 +1,23 @@
+id: claim.northland.health.health_workforce_claim2
+statement: 'Salary differential: regional DHB offer 5-10% discount vs. Auckland DHB
+  for equivalent roles; cost-of-living advantage minimal (housing affordability limited
+  to provincial towns). Aging workforce: Northland DHB median age 49 (vs. national
+  45); high burnout (rural isolation, shift patterns). Recruitment pipeline weak:
+  Northland limited tertiary health education (Whangarei nursing school ~100 graduates/year).
+  Rural practice conditions (on-call requirements, limited specialist backup) deter
+  younger professionals.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

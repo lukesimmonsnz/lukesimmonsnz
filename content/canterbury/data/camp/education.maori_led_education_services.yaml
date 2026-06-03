@@ -1,0 +1,23 @@
+id: camp.canterbury.education.maori_led_education_services
+name: Māori-Led Education & Kōhanga Reo Expansion
+theme: education
+core_claim: Expanding kōhanga reo (Māori language immersion ECE) and Māori-medium
+  schools increases cultural engagement and improves educational outcomes for Māori
+  learners.
+flagship_moves:
+- Key intervention for Māori-Led Education & Kōhanga Reo Expansion
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.education.early_childhood
+- problem.canterbury.education.achievement
+interventions:
+- description: Expanding kōhanga reo (Māori language immersion ECE) and Māori-medium
+    schools increases cultural engagement and improves educational outcomes for Māori
+    learners.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

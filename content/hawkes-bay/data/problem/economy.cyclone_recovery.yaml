@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.economy.cyclone_recovery
+title: Cyclone Gabrielle economic recovery and rebuilding
+theme: economy
+section: economy
+subpage: cyclone-recovery
+parent: problem.hawkes_bay.economy.economic_structure
+order: 2
+updated: '2026-04-26'
+summary: "Cyclone Gabrielle caused estimated $6-8 billion in damages to Hawke's Bay economy. Rebuild lags damage; business closures continue; household wealth lost; confidence is low. Insurance gaps mean direct government support is needed."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - gdp_growth_rate_percent
+    - business_confidence_index
+  inputs:
+    - insurance_coverage_gaps
+    - builder_capacity_constraint
+  constraints:
+    - government_support_funding
+    - household_repair_financing
+  feedback_loops:
+    - 'Slow rebuild reduces short-term spending; confidence drops; investment defers; recovery stutters.'
+narrative:
+  - heading: Damage Magnitude
+    body: 'Cyclone Gabrielle caused estimated $6-8 billion in direct economic damages. Approximately 3,600 homes severely damaged; 1,200+ businesses impacted.'
+  - heading: Recovery Lag
+    body: 'As of April 2026 (over 3 years later), approximately 45% of damaged homes had been repaired or rebuilt. Some residential areas remain abandoned.'
+claim_ids:
+  - claim.hawkes_bay.economy.cyclone_damage_6_8_billion
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,12 @@
+id: source.census_income_nelson_2023
+title: Income and Inequality in Nelson Census 2023
+author: Stats NZ
+publisher: Statistics New Zealand
+year: 2023
+url: https://www.stats.nz
+type: government-report
+credibility: official
+geo_granularity:
+- nelson
+- nz
+notes: Median income, income inequality, deprivation indices by meshblock.

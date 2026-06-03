@@ -1,0 +1,19 @@
+id: claim.waikato.housing.hamilton_housing_crisis_root
+statement: High house prices relative to income make homeownership unattainable for
+  many households in Waikato. Rural housing stock is aging; rural rental vacancies
+  below 1% create pressure on farm workers and essential services staff.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.hamilton_city_housing_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato housing

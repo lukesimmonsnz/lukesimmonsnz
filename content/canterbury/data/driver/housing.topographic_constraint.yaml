@@ -1,0 +1,12 @@
+id: driver.canterbury.housing.topographic_constraint
+name: Limited Developable Topography
+description: Limited Developable Topography
+theme: housing
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.canterbury.housing.affordability_christchurch
+- problem.canterbury.housing.market
+claim_ids: []

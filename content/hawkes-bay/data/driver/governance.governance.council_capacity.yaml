@@ -1,0 +1,14 @@
+id: driver.hawkes_bay.governance.governance.council_capacity
+name: Limited council capacity and three-way fragmentation
+description: Limited council capacity and three-way fragmentation
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.governance.governance
+- problem.hawkes_bay.governance.cyclone_recovery_coordination
+- problem.hawkes_bay.governance.regional_planning
+- problem.hawkes_bay.governance.treaty
+claim_ids: []

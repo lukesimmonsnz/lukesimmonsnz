@@ -1,0 +1,39 @@
+id: problem.wellington.climate.flood_resilience
+title: Flood resilience gaps in Wellington low-lying areas
+theme: climate-adaptation
+section: climate
+subpage: flood-resilience
+parent: problem.wellington.climate.compound_hazard_risk
+order: 3
+updated: '2026-04-26'
+summary: Wellington faces increasing flood risk in low-lying areas of the Hutt Valley and Porirua catchments from both river
+  flooding and urban flash flooding. Climate change is projected to intensify peak rainfall events and increase river flood
+  frequency. Existing flood protection infrastructure was designed to older rainfall standards.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - flood_event_frequency_hutt
+  - stormwater_design_standard_gap
+  inputs:
+  - rainfall_intensity_increase
+  - floodplain_development_density
+  constraints:
+  - flood_protection_design_standard_vintage
+  - hutt_river_floodplain_development
+  feedback_loops:
+  - 'Development-exposure amplification: residential development on Hutt Valley floodplain increases total exposure; increased
+    exposure raises the expected damage from each flood event.'
+narrative:
+- heading: Hutt Valley flood risk
+  body: The Hutt River catchment is Wellington's most significant flood hazard, with the Lower Hutt floodplain containing
+    a large residential and commercial population. GW's flood protection works were designed to historic flood frequencies
+    that are being exceeded as rainfall intensifies (claim.wellington.climate.flash_flood_frequency_hutt).
+- heading: Stormwater design gap
+  body: Wellington's urban stormwater infrastructure was designed to rainfall intensity standards that underestimate current
+    and projected storm event intensities, creating a growing design standard gap across the urban network (claim.wellington.climate.stormwater_infrastructure_capacity).
+claim_ids:
+- claim.wellington.climate.flash_flood_frequency_hutt
+- claim.wellington.climate.stormwater_infrastructure_capacity
+status: draft
+time_horizons: [generation, century]

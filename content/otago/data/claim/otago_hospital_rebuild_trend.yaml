@@ -1,0 +1,23 @@
+id: claim.otago.infrastructure.otago_hospital_rebuild_trend
+statement: 'Hospital rebuild is on critical path for South Island health system: multi-year
+  project (2024-2030) with escalating costs; operational disruptions during demolition/construction;
+  recruit and retain specialist workforce challenges (competition with other regions);
+  bed capacity during transition period managed via temporary facilities/regional
+  redistribution; post-completion, new facility designed for 2050 population (with
+  growth assumptions for Queenstown, Otago); financing via crown debt / partnership
+  models under negotiation.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

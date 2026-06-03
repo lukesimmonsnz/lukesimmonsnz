@@ -1,0 +1,30 @@
+id: problem.marlborough.health.health_outcomes
+title: Health Outcomes and Equity in Marlborough
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Mental health crisis; chronic disease burden; rural health workforce shortage;
+  Māori health disparities.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Mental health crisis; chronic disease burden; rural health workforce shortage;
+    Māori health disparities.
+claim_ids:
+- claim.marlborough.health.health_outcomes_placeholder
+status: draft
+time_horizons: [decade, generation]

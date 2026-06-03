@@ -1,0 +1,20 @@
+id: 'camp.northland.economy.camp_4'
+name: 'Technology and innovation in economy'
+theme: 'economy'
+core_claim: 'Technology and innovation in economy is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement technology and innovation in economy'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'northland'
+tensions_with: []

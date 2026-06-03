@@ -1,0 +1,27 @@
+id: problem.taranaki.education.early_childhood
+title: Early childhood education participation
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.taranaki.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: ECE participation is 79%, slightly above national average.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - early_childhood_index
+  inputs:
+  - early_childhood_input_1
+  constraints:
+  - early_childhood_constraint
+  feedback_loops:
+  - 'Feedback: early_childhood'
+narrative:
+- heading: Early childhood education participation in Taranaki
+  body: ECE participation is 79%, slightly above national average.
+claim_ids:
+- claim.taranaki.education.early_childhood_01
+status: draft
+time_horizons: [decade, generation]

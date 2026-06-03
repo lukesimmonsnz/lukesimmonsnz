@@ -1,0 +1,22 @@
+id: claim.otago.economy.university_economy_trend
+statement: 'Tertiary education economy in Dunedin faces structural headwinds: University
+  of Otago enrolments stable to declining (sector-wide funding pressure); Otago Polytechnic
+  integration into Te Pūkenga creating uncertainty; graduate retention declining (more
+  20-35 age cohort leaving for Auckland/Wellington); Dunedin student housing remains
+  affordable but precarious (mould, overcrowding, poor standards in North Dunedin
+  rental stock); sector employment growth flat.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

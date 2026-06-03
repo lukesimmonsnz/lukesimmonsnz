@@ -1,0 +1,24 @@
+id: camp.west_coast.education.small_school_sustainability_an
+name: Small School Sustainability and Digital Learning
+theme: education
+core_claim: West Coast's very small rural schools face closure pressure; digital learning
+  hubs and multi-school clusters can sustain educational provision without large-scale
+  consolidation.
+flagship_moves:
+- Establish digital learning hub network across West Coast small schools
+- Fund itinerant specialist teachers (arts, STEM, te reo Māori) across school clusters
+- Provide high-quality fibre to all West Coast schools
+tensions:
+- Digital learning cannot fully replace in-person specialist teaching
+- Some families will still relocate for larger school options regardless of quality
+  improvements
+addresses:
+- problem.west_coast.education.achievement
+- problem.west_coast.education.early_childhood
+interventions:
+- description: Fund digital learning cluster programme for West Coast small schools
+  state_variable: student_achievement_ncea
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

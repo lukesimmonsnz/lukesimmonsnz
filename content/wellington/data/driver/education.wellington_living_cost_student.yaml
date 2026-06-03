@@ -1,0 +1,13 @@
+id: driver.wellington.education.wellington_living_cost_student
+name: Wellington living costs eroding student financial viability
+description: Wellington's elevated housing and living costs relative to other New Zealand cities reduce the practical financial
+  viability of full-time tertiary study for students from low-income backgrounds, increasing dropout risk.
+theme: education
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.education.tertiary_access
+claim_ids:
+- claim.wellington.education.student_debt_burden

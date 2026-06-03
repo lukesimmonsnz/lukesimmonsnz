@@ -1,0 +1,13 @@
+id: driver.gisborne.governance.unitary_authority_capacity_escalation
+name: Driver escalating unitary_authority_capacity
+description: "This driver exacerbates the unitary_authority_capacity challenge in\
+  \ Gisborne \u2014 Te Tair\u0101whiti."
+theme: governance
+consensus: contested
+category: climate
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.governance.unitary_authority_capacity
+claim_ids:
+- claim.gisborne.governance.unitary_authority_capacity_75

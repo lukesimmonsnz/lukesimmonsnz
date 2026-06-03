@@ -2,11 +2,9 @@
 title: "Down the length of the South Island"
 date: 2024-12-08
 author: luke
-summary: Three weeks in November, working south through Otago into the Mackenzie country. Photos and rough notes — I'll tidy the words later.
+summary: Three weeks in November, working south through Otago into the Mackenzie country.
 tags: [travel, new-zealand, south-island, 2024]
 ---
-
-> Note to self: this is placeholder prose I'll rewrite properly later. The photos are the real thing; the words between them are scaffolding.
 
 Three weeks in November moving down the South Island, mostly by road, mostly stopping in smaller towns rather than the tourist circuits. Nothing ambitious — just the kind of trip where the plan is "drive until somewhere looks good, stop there."
 

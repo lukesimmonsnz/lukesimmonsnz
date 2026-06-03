@@ -1,0 +1,24 @@
+id: claim.nelson.governance.growth_management_claim
+statement: Rapid lifestyle-driven population growth (forecast +1.8% p.a. 2023-2038)
+  is outpacing infrastructure and planning capacity. Nelson's urban boundaries are
+  constrained by the Moutere and Waimea faults, coastal hazard zones, and conservation
+  areas; buildable land supply is limited to ~800 hectares over 15 years. Housing
+  intensification policies in the District Plan are contested; feasibility of intensification
+  is constrained by heritage character overlays and narrow lot patterns. Growth management
+  frameworks exist but enforcement is weak relative to development pressure.
+value: 1.8
+unit: percent annual population growth forecast
+time_period: 2023-2038
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_housing_demand_2024
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,50 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Auckland · Research · Luke Simmons{% endblock %}
+{% block meta_description %}A long-horizon, systems-engineering analysis of Auckland's problems and the solution camps that address them.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Auckland', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research project</span>
+    <h1>Auckland</h1>
+    <hr class="rule">
+    <p class="lede">
+      A long-horizon, systems-engineering analysis of Auckland's problems and
+      the solution camps that address them. Written on a 10 / 50 / 100-year
+      frame, presented neutrally, and generated from a typed entity graph so
+      every claim is traceable to a source.
+    </p>
+  </header>
+
+  <article class="prose">
+    {% if by_section %}
+      <ul class="theme-list">
+      {% for section_slug, pages in by_section.items() %}
+      {% if section_slug != 'framing' %}
+        <li>
+          <a href="{{ url_for('auckland.section', section=section_slug) }}">
+            {{ section_titles.get(section_slug, section_slug.replace('_', ' ').title()) }}
+          </a>
+          <span class="muted small">({{ pages | length }} issue{{ 's' if pages | length != 1 }})</span>
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    {% else %}
+      <aside class="notice">
+        <strong>No pages yet.</strong> Pages are generated from entity data under
+        <code>content/auckland/data/</code>. Run
+        <code>python tools/render.py --all</code> from <code>content/auckland/</code>
+        to produce them.
+      </aside>
+    {% endif %}
+  </article>
+{% endblock %}

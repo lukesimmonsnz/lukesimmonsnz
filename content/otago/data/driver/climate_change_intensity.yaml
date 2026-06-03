@@ -1,0 +1,11 @@
+id: driver.otago.climate.climate_change_intensity
+name: Climate Change Intensity
+description: Climate change accelerates; impacts on water, temperature, extreme events.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.climate.climate_risk
+claim_ids: []

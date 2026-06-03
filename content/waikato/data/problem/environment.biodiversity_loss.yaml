@@ -1,0 +1,28 @@
+id: problem.waikato.environment.biodiversity_loss
+title: Native biodiversity loss
+theme: environment
+section: environment
+subpage: biodiversity_loss
+parent: problem.waikato.environment.waikato_river_degradation
+order: 3
+updated: '2026-04-26'
+summary: Loss of native wetlands and riparian vegetation accelerates ecosystem decline.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - environmental_quality_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing biodiversity loss creates feedback on regional outcomes.
+narrative:
+- heading: Native biodiversity loss
+  body: Loss of native wetlands and riparian vegetation accelerates ecosystem decline.
+claim_ids:
+- claim.waikato.environment.wetland_loss_90pct
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.infrastructure.digital_cost_rural
+name: Cost Barriers To Digital Infrastructure Extension
+description: Cost barriers to digital infrastructure extension with regional implications.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.water
+claim_ids: []

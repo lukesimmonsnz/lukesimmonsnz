@@ -1,0 +1,12 @@
+id: driver.canterbury.education.teacher_recruitment_retention_rural
+name: Teacher Recruitment & Retention Challenges (Rural)
+description: Teacher Recruitment & Retention Challenges (Rural)
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.education.secondary
+- problem.canterbury.education.achievement
+claim_ids: []

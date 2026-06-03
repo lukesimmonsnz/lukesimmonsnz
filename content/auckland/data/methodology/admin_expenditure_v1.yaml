@@ -1,0 +1,19 @@
+id: methodology.admin_expenditure_v1
+name: "Administrative expenditure report"
+version: 1
+kind: measurement
+applies_to:
+  - Claim
+predicate: null
+discharged_by: python_invariant
+description: >
+  Administrative expenditure methodology operationalises a Claim's value as
+  a government-reported spending figure drawn from budget documents,
+  ministerial releases, or agency annual reports — as opposed to a modelled
+  cost estimate or survey-derived figure. Claims use value (the expenditure
+  amount), unit (currency and period, e.g. "NZD million annual"), and
+  time_period (the financial year or period reported). Where the figure is
+  an approximate or widely-cited range rather than an audited line item,
+  confidence should be set to medium and the approximation noted. Comparison
+  claims across periods trigger P5' and require singleton Instance-level
+  Claims per period compared.

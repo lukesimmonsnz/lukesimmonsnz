@@ -1,0 +1,21 @@
+id: camp.otago.economy.university_anchor
+name: 'University as Economic Anchor: Research Spin-Offs'
+theme: economy
+core_claim: Supporting university research commercialization and spin-off companies
+  drives innovation-sector jobs.
+flagship_moves:
+- Venture capital fund for Otago research commercialization
+- Incubator and co-working spaces in Dunedin
+- Bilateral programs with technology companies
+tensions:
+- Capital requirements and success uncertainty
+- Potential IP conflicts with university mission
+addresses:
+- problem.otago.economy.economic_structure
+interventions:
+- description: Support 10 university research spin-offs over 5 years
+  state_variable: startup_job_creation
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,39 @@
+id: problem.tasman.climate.climate_4
+title: Waimea aquifer at 85-90 percent of sustainable yield
+theme: climate-adaptation
+section: climate
+subpage: climate_4
+parent: climate_risk
+order: 4
+updated: '2026-04-26'
+summary: The 2023 Waimea Aquifer Stress Study documents allocation at 85-90 percent of sustainable yield under current
+  climate. Horticulture relies on irrigation for apples, kiwifruit and hops; the prolonged 2022-2023 dry period
+  prompted Tasman District Council to limit new allocation and encourage efficiency retrofits.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - share_of_sustainable_yield_allocated
+  - active_allocation_consents
+  inputs:
+  - efficiency_retrofit_uptake
+  - winter_storage_capacity
+  constraints:
+  - physical_aquifer_recharge_rate
+  - existing_consent_durations
+  feedback_loops:
+  - Approaching the ceiling raises the value of existing consents, which lengthens the political tail on reform.
+narrative:
+- heading: Approaching the allocation ceiling
+  body: An aquifer at 85-90 percent of sustainable yield has very little headroom for either growth or for the kind
+    of drought-year buffering that horticulture historically relied on (claim.tasman.climate.climate_4_claim).
+- heading: Allocation reform as the next-decade question
+  body: Voluntary efficiency retrofits and a moratorium on new allocations are first-order responses. Second-order
+    responses — tradable allocation, sectoral caps, winter-storage capture — are politically harder and become more
+    salient as the ceiling is approached.
+claim_ids:
+- claim.tasman.climate.climate_4_claim
+status: draft
+time_horizons:
+- generation
+- century

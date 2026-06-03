@@ -1,0 +1,21 @@
+id: claim.southland.environment.freshwater_degradation_trend
+statement: Freshwater degradation in Southland is progressive. Dairy farm nitrogen
+  excretion increasing; riparian strip adoption slow; municipal wastewater treatment
+  (Invercargill) upgraded but small town systems aging. Southland Water and Land Plan
+  2022 targets phased improvement; industry adoption of best practice (nutrient budgets,
+  rotational grazing) variable. Agricultural lobby resists stringent limits.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

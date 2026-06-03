@@ -1,0 +1,22 @@
+id: claim.otago.environment.freshwater_stress_trend
+statement: 'Freshwater stress is intensifying: Clutha allocations approaching physical
+  limit (climate variability reducing reliability); Central Otago irrigation heavily
+  dependent on snowmelt and dam releases (Clyde/Roxburgh); drought 2022-2023 stressed
+  schemes; Queenstown Wakatipu lake-level management contested (summer drawdown for
+  irrigation vs recreation); groundwater depletion in schist soils evident; ORC allocation
+  review likely to restrict new consents.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

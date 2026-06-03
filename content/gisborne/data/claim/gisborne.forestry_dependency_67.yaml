@@ -1,0 +1,21 @@
+id: claim.gisborne.economy.forestry_dependency_67
+statement: Gisborne's forestry sector (radiata pine, 35-40% of land use) creates landscape
+  vulnerabilities including erosion risk and fire hazard. Slash management during
+  harvest is inadequate; transition toward native forestry is limited by economic
+  pressures; regional policy coordination is weak.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

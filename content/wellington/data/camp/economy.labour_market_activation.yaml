@@ -1,0 +1,21 @@
+id: camp.wellington.economy.labour_market_activation
+name: Labour Market Activation for Displaced Workers
+theme: economy
+core_claim: Rapid retraining and employment brokering for public sector redundancy-affected workers can reduce long-term unemployment
+  scarring.
+flagship_moves:
+- Rapid retraining fund for public sector workers displaced by 2024 restructuring
+- Employment broker service co-located with MSD in Wellington CBD
+- Wage subsidy for private sector employers taking on displaced public servants
+tensions:
+- Wage subsidies distort private sector hiring decisions and create deadweight cost
+- Retraining timelines may not align with available job vacancies
+addresses:
+- problem.wellington.economy.labour_market
+interventions:
+- description: Fund $20M rapid retraining and employment brokering programme for Wellington public sector displaced workers
+  state_variable: long_term_unemployment_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

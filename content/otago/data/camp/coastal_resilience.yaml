@@ -1,0 +1,21 @@
+id: camp.otago.climate.coastal_resilience
+name: Dunedin Coastal Adaptation and Managed Retreat
+theme: climate-adaptation
+core_claim: Seawalls, nature-based solutions, and managed retreat protect Dunedin
+  from sea-level rise.
+flagship_moves:
+- Dunedin CBD seawall and stormwater upgrade
+- Mangrove and salt marsh restoration
+- Managed retreat policy for Port Chalmers
+tensions:
+- High capital cost; long-term commitment required
+- Tension between protection and retreat approaches
+addresses:
+- problem.otago.climate.coastal_dunedin
+interventions:
+- description: Complete Dunedin coastal protection strategy
+  state_variable: coastal_resilience
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

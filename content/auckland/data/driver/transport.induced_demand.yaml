@@ -19,4 +19,4 @@ problem_ids:
   - problem.auckland.transport.congestion
 claim_ids:
   - claim.auckland.transport.induced_demand_evidence
-  - claim.auckland.transport.congestion_rank_international
+  - claim.auckland.transport.congestion_economic_cost

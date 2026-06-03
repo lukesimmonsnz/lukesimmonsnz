@@ -1,0 +1,34 @@
+id: problem.otago.transport.queenstown_congestion
+title: Queenstown-Lakes Traffic Congestion
+theme: transport
+section: transport
+subpage: queenstown_congestion
+parent: problem.otago.transport.connectivity
+order: 2
+updated: '2026-04-26'
+summary: Tourism and population growth drive extreme seasonal congestion on State
+  Highway 6; limited alt routes; parking and air quality deteriorate.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Tourism and population growth drive extreme seasonal congestion on State Highway
+    6; limited alt routes; parking and air quality deteriorate.
+claim_ids:
+- claim.otago.transport.dunedin_southern_link_trend
+- claim.otago.transport.connectivity_prevalence
+- claim.otago.transport.connectivity_trend
+- claim.otago.transport.queenstown_congestion_prevalence
+- claim.otago.transport.active_modes_prevalence
+- claim.otago.transport.dunedin_southern_link_prevalence
+- claim.otago.transport.active_modes_trend
+- claim.otago.transport.queenstown_congestion_trend
+status: draft
+time_horizons: [decade, generation]

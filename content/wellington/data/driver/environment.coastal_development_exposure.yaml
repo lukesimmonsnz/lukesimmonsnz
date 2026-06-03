@@ -1,0 +1,13 @@
+id: driver.wellington.environment.coastal_development_exposure
+name: Legacy coastal development in hazard zones
+description: Decades of coastal and near-coastal residential and commercial development in Wellington have created a large
+  property and infrastructure exposure that cannot easily be relocated, locking in long-term flood and erosion risk.
+theme: environment
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.environment.coastal_hazard
+claim_ids:
+- claim.wellington.environment.coastal_erosion_rate

@@ -1,0 +1,15 @@
+id: driver.tasman.education.driver_2
+name: Tertiary-relocation cost as a class filter
+description: With no university campus inside Tasman, direct tertiary participation requires relocation to Christchurch,
+  Wellington, or further. Relocation cost — bond, rent, separation from family — disproportionately filters out
+  lower-income households.
+theme: education
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.education.achievement
+- problem.tasman.education.secondary
+- problem.tasman.education.tertiary_access
+claim_ids: []

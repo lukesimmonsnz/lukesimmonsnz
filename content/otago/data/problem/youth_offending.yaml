@@ -1,0 +1,34 @@
+id: problem.otago.crime.youth_offending
+title: Youth Offending in Dunedin
+theme: crime
+section: crime
+subpage: youth_offending
+parent: problem.otago.crime.safety
+order: 3
+updated: '2026-04-26'
+summary: East Dunedin has elevated youth crime; gang activity, lack of community engagement,
+  limited diversion programs.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: East Dunedin has elevated youth crime; gang activity, lack of community engagement,
+    limited diversion programs.
+claim_ids:
+- claim.otago.crime.family_violence_prevalence
+- claim.otago.crime.youth_offending_prevalence
+- claim.otago.crime.family_violence_trend
+- claim.otago.crime.safety_prevalence
+- claim.otago.crime.safety_trend
+- claim.otago.crime.queenstown_visitor_crime_prevalence
+- claim.otago.crime.queenstown_visitor_crime_trend
+- claim.otago.crime.youth_offending_trend
+status: draft
+time_horizons: [decade]

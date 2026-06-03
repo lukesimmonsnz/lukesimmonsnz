@@ -1,0 +1,30 @@
+id: problem.waikato.governance.waikato_governance_complexity
+title: Fragmented governance and strategic capacity
+theme: governance
+section: governance
+subpage: waikato_governance_complexity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waikato's 11 territorial authorities and Waikato Regional Council create
+  fragmented governance, complicating regional planning.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - governance_effectiveness
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional governance dynamics create self-reinforcing feedback.
+narrative:
+- heading: Fragmented governance and strategic capacity
+  body: Waikato's 11 territorial authorities and Waikato Regional Council create fragmented
+    governance, complicating regional planning.
+claim_ids:
+- claim.waikato.governance.waikato_governance_complexity_root
+status: draft
+time_horizons: [decade, generation, century]

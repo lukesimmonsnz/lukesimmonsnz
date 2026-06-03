@@ -1,0 +1,20 @@
+id: camp.gisborne.crime.safety_approach
+name: Strategic approach for safety
+theme: crime
+core_claim: Strategic intervention on safety will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting safety
+- Priority action 2 targeting safety
+- Institutional coordination mechanism for safety
+tensions:
+- 'Tension 1: safety'
+- 'Tension 2: safety'
+addresses:
+- problem.gisborne.crime.safety
+interventions:
+- description: Primary intervention for safety
+  state_variable: safety_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

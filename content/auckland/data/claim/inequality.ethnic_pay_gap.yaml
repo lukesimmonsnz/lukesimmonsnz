@@ -1,18 +1,18 @@
 id: claim.auckland.inequality.ethnic_pay_gap
-statement: >
-  Maori and Pacific workers in Auckland earn median wages approximately
-  20-25% below Pakeha workers, reflecting occupational segregation,
-  credential gaps, and concentration in lower-wage service sectors.
+statement: Workers concentrated in high-deprivation communities of South and West
+  Auckland earn median wages approximately 20-25% below the regional average, reflecting
+  occupational segregation, credential gaps, and concentration in lower-wage retail,
+  hospitality, and care-sector roles.
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.stats_nz_income_survey_2023
+- source.stats_nz_income_survey_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

@@ -1,0 +1,37 @@
+id: problem.nelson.governance.growth_management
+title: Growth pressure outpacing planning capacity
+theme: governance
+section: governance
+subpage: growth_management
+parent: governance_root
+order: 2
+updated: '2026-04-26'
+summary: Nelson is forecast to grow at around 1.8 percent per year through 2038, driven mainly by lifestyle migration. Urban boundaries are constrained by the Moutere and Waimea faults, coastal hazard zones, and conservation land. Buildable residential supply is around 800 hectares over 15 years; intensification policy in the District Plan is contested and slowed by heritage-character overlays and narrow lot patterns.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - residential_zoned_land_hectares
+  - annual_consents_per_1000_dwellings
+  - intensification_uptake_ratio
+  inputs:
+  - population_growth_rate
+  - national_policy_statement_settings
+  constraints:
+  - fault_lines
+  - elite_soils
+  - heritage_overlays
+  feedback_loops:
+  - 'Heritage-affordability feedback: heritage-protective overlays preserve character but suppress feasible supply, raising prices, raising the political cost of relaxing the same overlays.'
+narrative:
+- heading: Geography as the binding constraint
+  body: 'Unlike larger metros, Nelson cannot easily extend its urban boundary outward: the basin is hemmed in by hills, fault lines, and high-quality horticultural soils that the regional policy statement protects (claim.nelson.governance.growth_management_claim). The growth lever is therefore predominantly intensification.'
+- heading: Intensification versus character
+  body: Intensification within Nelson city collides with heritage-character overlays and lot patterns inherited from the 1860-1920 settlement period. Each individual variation is defensible in heritage terms; in aggregate they keep feasible intensification well below the trajectory housing demand requires.
+claim_ids:
+- claim.nelson.governance.growth_management_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

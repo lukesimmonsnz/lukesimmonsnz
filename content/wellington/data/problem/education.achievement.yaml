@@ -1,0 +1,41 @@
+id: problem.wellington.education.achievement
+title: Education achievement gaps in Wellington
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wellington's education system produces strongly divergent outcomes across socioeconomic and geographic
+  lines. Students in Porirua and Hutt Valley schools — serving high-deprivation communities — achieve
+  substantially below Wellington City averages at NCEA Level 2. The achievement gap reflects school resourcing
+  differentials, persistent absenteeism, financial pressure to work, and the compounding effect of household
+  poverty on out-of-school study conditions.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - ncea_l2_attainment_rate_maori
+  - achievement_gap_pakeha_maori
+  inputs:
+  - school_resource_equity
+  - teacher_quality_distribution
+  constraints:
+  - poverty_and_learning_readiness
+  - teacher_supply_to_high_need_schools
+  feedback_loops:
+  - 'School-sorting amplification: school choice mechanisms allow higher-income families to concentrate
+    in higher-decile schools; lower-decile schools face increasing resource and reputational disadvantage.'
+narrative:
+- heading: NCEA attainment gap
+  body: Māori students in Wellington achieve NCEA Level 2 at approximately 74%, compared to 90% for European
+    students — a persistent gap that has not significantly closed over the past decade despite targeted
+    interventions (claim.wellington.education.ncea_l2_maori_gap).
+- heading: Pacific achievement gap
+  body: Pacific students in Wellington, concentrated in Porirua schools, face similar achievement gaps
+    compounded by language factors and school-community cultural mismatch (claim.wellington.education.pacific_achievement_gap).
+claim_ids:
+- claim.wellington.education.ncea_l2_maori_gap
+- claim.wellington.education.pacific_achievement_gap
+status: draft
+time_horizons: [decade, generation]

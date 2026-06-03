@@ -1,0 +1,21 @@
+id: claim.wellington.climate.compound_hazard_infrastructure_risk
+statement: 'Standard single-hazard risk assessments underestimate Wellington''s actual
+  infrastructure exposure because earthquake and sea-level rise hazards interact:
+  fault rupture can permanently subside coastal land, while infrastructure damaged
+  by earthquake reduces climate resilience of the built environment.'
+value: null
+unit: null
+time_period: 2022-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gns_wellington_fault_2022
+- source.mfe_nz_sea_level_guidance_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

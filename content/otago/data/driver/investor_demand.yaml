@@ -1,0 +1,12 @@
+id: driver.otago.housing.investor_demand
+name: Property Investor Capital Inflows
+description: Queenstown investment property purchases from external capital (domestic
+  and international); speculative demand.
+theme: housing
+consensus: contested
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.housing.queenstown_affordability
+claim_ids: []

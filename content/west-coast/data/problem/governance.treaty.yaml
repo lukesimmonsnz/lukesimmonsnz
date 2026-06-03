@@ -1,0 +1,43 @@
+id: problem.west_coast.governance.treaty
+title: Ngāi Tahu mana whenua and West Coast co-governance
+theme: governance
+section: governance
+subpage: treaty
+parent: governance
+order: 3
+updated: '2026-04-26'
+summary: Te Rūnanga o Ngāi Tahu and its papatipu rūnanga — Te Rūnanga o Makaawhio (south Westland) and Te Rūnanga o Ngāti
+  Waewae (north of the Arahura) — hold mana whenua across the West Coast. Co-governance frameworks with WCRC and the territorial
+  authorities have advanced but are not yet fully resourced.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - co_governance_arrangement_count
+  - iwi_technical_fte
+  - joint_decision_share
+  inputs:
+  - te_runanga_o_ngai_tahu_resourcing
+  - council_iwi_partnership_funding
+  constraints:
+  - council_capacity_asymmetry
+  - statutory_decision_rights
+  feedback_loops:
+  - Where co-governance is well-resourced on both sides, joint decisions accumulate institutional learning; where it is under-resourced,
+    partnership formality outruns substance and trust erodes, slowing the next round of devolution.
+narrative:
+- heading: Settled iwi, mana whenua across the region
+  body: Unlike many North Island regions, Ngāi Tahu's Treaty settlement is established, and the rūnanga Makaawhio and Ngāti
+    Waewae have clearly defined takiwā across the West Coast (claim.west_coast.governance.treaty_claim). The Pounamu Vesting
+    Act 1997 returned ownership and management of pounamu (greenstone) to Ngāi Tahu specifically.
+- heading: Co-governance in resource management
+  body: Co-governance arrangements over freshwater, coastal management and conservation land are at varying stages of implementation
+    across the four councils. Effective co-governance requires iwi-side technical capacity that Ngāi Tahu has built more strongly
+    than most iwi, but resourcing of the partnership at a council scale remains uneven.
+claim_ids:
+- claim.west_coast.governance.treaty_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

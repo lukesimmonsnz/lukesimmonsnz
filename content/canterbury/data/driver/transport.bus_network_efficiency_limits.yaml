@@ -1,0 +1,12 @@
+id: driver.canterbury.transport.bus_network_efficiency_limits
+name: Bus Network Operational Efficiency Limits
+description: Bus Network Operational Efficiency Limits
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.transport.network
+claim_ids:
+- claim.canterbury.transport.bus_patronage_decline_2023

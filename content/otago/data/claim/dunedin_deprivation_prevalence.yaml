@@ -1,0 +1,23 @@
+id: claim.otago.inequality.dunedin_deprivation_prevalence
+statement: 'Dunedin deprivation is concentrated in specific zones: North Dunedin student
+  precinct (overcrowded rental, hardship); South Dunedin (elderly, limited mobility,
+  rental dependence); West Dunedin suburbs (Kenmure, Mornington) show higher deprivation
+  index scores. NZDep2018 decile 8-10 (most deprived) pockets significant; Māori and
+  Pasifika residents overrepresented. University student population masks income inequality
+  (bimodal: wealthy parents + hardship); older renters on fixed income vulnerable
+  to rental inflation.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

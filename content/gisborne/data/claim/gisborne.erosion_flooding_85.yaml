@@ -1,0 +1,21 @@
+id: claim.gisborne.climate.erosion_flooding_85
+statement: Erosion and flooding are compounded hazards in Gisborne, with Cyclone Gabrielle
+  demonstrating catastrophic risk. Forestry slash debris blocked waterways during
+  the cyclone; erosion-control and catchment-management funding faces constraints;
+  community recovery infrastructure requires climate-adapted design.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mode_share_v1
+notes: null

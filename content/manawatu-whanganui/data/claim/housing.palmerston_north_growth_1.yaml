@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.housing.palmerston_north_growth_1
+statement: 'Palmerston North city is experiencing rapid population growth (approximately
+  2.5-3% per annum), driven by Massey University expansion (student intake target:
+  6,500), logistics sector growth, and urban migration. Housing demand significantly
+  outpaces supply; new residential zoning under the Spatial Plan (2024) targets 4,000-5,000
+  new dwellings over 10 years. Construction is concentrated in Kelvin Grove, Highbury,
+  and eastern suburbs, but affordable housing shortage persists; first-home buyer
+  affordability has worsened substantially (median price-to-income ratio now 8.5x,
+  up from 6.2x in 2018).'
+value: 2.75
+unit: percent_annual_growth
+time_period: 2019-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.palmerston_north_city_council_2023
+- source.mfd_housing_aotearoa_mw_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

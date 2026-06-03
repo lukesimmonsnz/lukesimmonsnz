@@ -1,0 +1,12 @@
+id: driver.otago.crime.youth_gang_recruitment
+name: Gang Recruitment and Youth Engagement
+description: East Dunedin gang presence attracts disengaged youth; limited mentoring
+  alternatives.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.crime.youth_offending
+claim_ids: []

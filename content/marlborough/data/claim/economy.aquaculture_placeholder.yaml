@@ -1,0 +1,19 @@
+id: claim.marlborough.economy.aquaculture_placeholder
+statement: 'Marlborough aquaculture: green-lipped mussels produce approximately 100,000
+  tonnes per annum (~95% of NZ volume); King salmon farmed in Pelorus Sound and Kenepuru
+  Sound cages (NZ King Salmon); combined aquaculture export value NZD 200–300M annually.'
+value: 100000
+unit: tonnes green-lipped mussel per annum
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.aquaculture_nz_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

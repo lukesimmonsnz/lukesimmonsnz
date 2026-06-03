@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.infrastructure.smart_infrastructure
+name: Smart Infrastructure Management
+theme: infrastructure
+core_claim: IoT monitoring and adaptive resource management.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.infrastructure.water
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

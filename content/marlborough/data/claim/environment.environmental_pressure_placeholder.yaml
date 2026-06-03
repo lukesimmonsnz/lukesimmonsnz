@@ -1,0 +1,21 @@
+id: claim.marlborough.environment.environmental_pressure_placeholder
+statement: 'Marlborough environmental pressures: land-use intensification (viticulture
+  expansion 27,000 ha to 30,000 ha 2010–2023), nutrient loading in Sounds (aquaculture),
+  and freshwater over-allocation (irrigation) in Wairau Aquifer; native biodiversity
+  habitat loss 85% pre-2000, recovery rate 2% per annum.'
+value: 2
+unit: percent native habitat recovery rate per annum (estimate)
+time_period: '2023'
+confidence: low
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wairau_catchment_study_2023
+- source.marlborough_sounds_plan_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

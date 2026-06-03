@@ -1,0 +1,22 @@
+id: claim.wellington.infrastructure.wastewater_overflow_events
+statement: Wellington Water recorded approximately 120 wastewater overflow events
+  annually (2020-2023), exceeding design standards during heavy rain. Aging pipe networks
+  require replacement; inflow and infiltration management remains a $200M+ investment
+  priority to comply with environmental standards and protect public health.
+value: 120
+unit: overflow events per year
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wellington_water_asset_plan_2023
+- source.gwrc_harbour_water_quality_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: Figure is an approximate annual average; varies significantly with rainfall
+  year.

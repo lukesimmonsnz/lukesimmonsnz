@@ -1,0 +1,22 @@
+id: camp.canterbury.governance.water_collaborative_management
+name: Collaborative Water Management & Community Engagement
+theme: governance
+core_claim: Establishing water user forums (farmers, environmental groups, urban councils,
+  iwi) for collaborative CWMS zone management improves compliance and conflict resolution.
+flagship_moves:
+- Key intervention for Collaborative Water Management & Community Engagement
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.governance.water_management
+- problem.canterbury.environment.freshwater_stress
+interventions:
+- description: Establishing water user forums (farmers, environmental groups, urban
+    councils, iwi) for collaborative CWMS zone management improves compliance and
+    conflict resolution.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

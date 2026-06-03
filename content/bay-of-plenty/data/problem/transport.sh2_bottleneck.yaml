@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.transport.sh2_bottleneck
+title: State Highway 2 and 29 corridor congestion in Bay of Plenty — Te Moana-a-Toi
+theme: transport
+section: transport
+subpage: sh2_bottleneck
+parent: problem.bay_of_plenty.transport.connectivity
+order: 7
+updated: '2026-04-26'
+summary: State Highway 2 and 29 corridor congestion is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - sh2_bottleneck_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: State Highway 2 and 29 corridor congestion is a specific manifestation of
+    the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.transport.sh2_bottleneck_13
+- claim.bay_of_plenty.transport.sh2_bottleneck_14
+status: draft
+time_horizons: [decade, generation]

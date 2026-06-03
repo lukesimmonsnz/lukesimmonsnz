@@ -1,0 +1,14 @@
+id: driver.taranaki.environment.environment.dairy_intensification
+name: Dairy farming intensification
+description: Dairy farming intensification
+theme: environment
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.environment.freshwater_degradation
+- problem.taranaki.environment.coastal_ecology
+- problem.taranaki.environment.dairy_runoff
+- problem.taranaki.environment.emissions
+claim_ids: []

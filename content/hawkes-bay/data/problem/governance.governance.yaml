@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.governance.governance
+title: Governance capacity and coordination
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: "Hawke's Bay governance is fragmented across three territorial authorities (Napier, Hastings, Wairoa) and one regional council. Coordination on cyclone recovery, three-waters reform, and iwi partnership is weak. Political divisions hamper strategic planning."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - inter_council_coordination_index
+    - long_term_plan_alignment_percent
+  inputs:
+    - territorial_authority_fragmentation
+    - political_polarisation
+  constraints:
+    - local_govt_funding_constraints
+    - co_governance_implementation_lag
+  feedback_loops:
+    - 'Weak coordination delays recovery; competing priorities emerge; resources are inefficient; outcomes are suboptimal.'
+narrative:
+  - heading: Fragmentation
+    body: "Three territorial authorities (Napier, Hastings, Wairoa) operate independently with limited formal coordination mechanisms. Hawke's Bay Regional Council has limited direct service delivery powers."
+  - heading: Cyclone Coordination
+    body: 'Cyclone Gabrielle recovery has been hampered by unclear responsibility division. Some recovery initiatives overlap; others have gaps. Residents report confusion about which council to approach.'
+claim_ids:
+  - claim.hawkes_bay.governance.three_councils_fragmentation
+status: draft
+time_horizons: [decade, generation, century]

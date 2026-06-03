@@ -1,0 +1,18 @@
+id: claim.northland.housing.rental_market_claim1
+statement: Rental market in Whangārei and surrounds is tight; vacancy rates below
+  2% historically.
+value: null
+unit: null
+time_period: '2023'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.government_housing_data_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

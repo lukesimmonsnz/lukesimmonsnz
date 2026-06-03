@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.economy.green_economy_transition
+name: Green Economy Transition Fund
+theme: economy
+core_claim: Support for transition to clean industries.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.education.secondary
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

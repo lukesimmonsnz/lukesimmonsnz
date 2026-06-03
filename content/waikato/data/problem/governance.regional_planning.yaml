@@ -1,0 +1,30 @@
+id: problem.waikato.governance.regional_planning
+title: Regional plan fragmentation
+theme: governance
+section: governance
+subpage: regional_planning
+parent: problem.waikato.governance.waikato_governance_complexity
+order: 2
+updated: '2026-04-26'
+summary: Multiple district plans with inconsistent zoning and development rules create
+  uncertainty for investors.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - governance_effectiveness
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing regional planning creates feedback on regional outcomes.
+narrative:
+- heading: Regional plan fragmentation
+  body: Multiple district plans with inconsistent zoning and development rules create
+    uncertainty for investors.
+claim_ids:
+- claim.waikato.governance.plan_inconsistency
+status: draft
+time_horizons: [decade, generation, century]

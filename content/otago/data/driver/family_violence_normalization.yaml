@@ -1,0 +1,12 @@
+id: driver.otago.crime.family_violence_normalization
+name: Family Violence Normalization in High-Deprivation Areas
+description: Dunedin East and rural Otago have intergenerational family violence;
+  social tolerance high.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.otago.crime.family_violence
+claim_ids: []

@@ -1,0 +1,21 @@
+id: claim.southland.transport.invercargill_roading_trend
+statement: Invercargill City Council roading maintenance has deferred ~$15-20M of
+  planned renewals due to funding pressures. Annual maintenance backlog growing 5-8%
+  annually. Heavy vehicle usage (Fonterra milk tankers, log trucks to Bluff) accelerates
+  deterioration on peripheral routes. Pothole repair reactive rather than preventive;
+  asset condition index declining.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

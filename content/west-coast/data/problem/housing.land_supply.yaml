@@ -1,0 +1,43 @@
+id: problem.west_coast.housing.land_supply
+title: Abandoned stock and the productive-housing gap
+theme: housing
+section: housing
+subpage: land_supply
+parent: affordability
+order: 2
+updated: '2026-04-26'
+summary: West Coast towns contain hundreds of abandoned, derelict or absentee-owned residential and commercial buildings.
+  Despite apparent land supply, productive housing stock is constrained by building condition, complex titles, and environmental
+  hazards that suppress renovation incentives.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - derelict_building_count
+  - median_building_age
+  - renovation_consent_volume
+  inputs:
+  - mbie_housing_acceleration_fund
+  - council_property_acquisition_capex
+  constraints:
+  - complex_title_inheritance
+  - low_value_renovation_economics
+  feedback_loops:
+  - Visible dereliction depresses neighbouring property values and amenity, lowering the renovation incentive next door and
+    propagating decline along streets — a slow form of contagion that municipal regulation has not yet arrested.
+narrative:
+- heading: Visible vacancy in declining towns
+  body: Estimated counts of derelict or unoccupied residential and commercial buildings across Westport, Hokitika and Greymouth
+    run into the hundreds (claim.west_coast.housing.land_supply_claim). Absentee ownership, deceased estates with complex
+    title histories, and very low land values that discourage renovation investment are all contributors.
+- heading: Apparent supply, real scarcity
+  body: The paradox is that the towns simultaneously have abundant 'apparent' land and a real shortage of productive, weather-tight,
+    insurable housing stock. Closing that gap requires acquisition, remediation and rezoning at scale — instruments that small
+    councils struggle to wield.
+claim_ids:
+- claim.west_coast.housing.land_supply_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

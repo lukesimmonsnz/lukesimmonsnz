@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.inequality.maori_unemployment_12_percent
+statement: Unemployment in Hawke's Bay's high-deprivation communities is approximately
+  12%, roughly twice the regional average, reflecting dependence on seasonal horticultural
+  and agricultural labour with high variability and limited year-round employment
+  pathways.
+value: 12
+unit: percent unemployment
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Hawke's Bay

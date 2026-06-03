@@ -1,0 +1,28 @@
+id: problem.waikato.crime.youth_offending
+title: Youth offending and gang involvement
+theme: crime
+section: crime
+subpage: youth_offending
+parent: problem.waikato.crime.waikato_crime
+order: 3
+updated: '2026-04-26'
+summary: Hamilton has elevated rates of youth offending and gang associate membership.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - recorded_crime_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing youth offending creates feedback on regional outcomes.
+narrative:
+- heading: Youth offending and gang involvement
+  body: Hamilton has elevated rates of youth offending and gang associate membership.
+claim_ids:
+- claim.waikato.crime.youth_offending_rate
+status: draft
+time_horizons: [decade]

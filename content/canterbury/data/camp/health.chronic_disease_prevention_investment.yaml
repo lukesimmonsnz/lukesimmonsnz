@@ -1,0 +1,22 @@
+id: camp.canterbury.health.chronic_disease_prevention_investment
+name: Chronic Disease Prevention & Lifestyle Intervention
+theme: health
+core_claim: Targeted prevention (weight management, dietary support, physical activity
+  promotion) in high-risk populations prevents diabetes and cardiovascular disease
+  onset.
+flagship_moves:
+- Key intervention for Chronic Disease Prevention & Lifestyle Intervention
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.health.chronic_disease
+interventions:
+- description: Targeted prevention (weight management, dietary support, physical activity
+    promotion) in high-risk populations prevents diabetes and cardiovascular disease
+    onset.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

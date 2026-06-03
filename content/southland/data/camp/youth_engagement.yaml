@@ -1,0 +1,21 @@
+id: camp.southland.crime.youth_engagement
+name: Youth Mentoring and Engagement Programs
+theme: crime
+core_claim: Mentoring, sports, arts, and positive role models reduce youth offending
+  and gang recruitment.
+flagship_moves:
+- Youth mentoring program expansion
+- Sports and arts programs
+- Restorative justice and police youth liaison
+tensions:
+- Program effectiveness variability
+- Sustained funding and cultural change
+addresses:
+- problem.southland.crime.youth_offending
+interventions:
+- description: Mentor 150 at-risk youth
+  state_variable: youth_engagement_rate
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

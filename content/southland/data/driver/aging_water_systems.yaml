@@ -1,0 +1,12 @@
+id: driver.southland.infrastructure.aging_water_systems
+name: Aging Water and Wastewater Systems
+description: Invercargill and district water systems built 1960s–80s; renewal costs
+  escalating.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.infrastructure.water_wastewater
+claim_ids: []

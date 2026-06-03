@@ -1,0 +1,22 @@
+id: camp.wellington.health.mental_health_community
+name: Community Mental Health System Expansion
+theme: health
+core_claim: Investment in community mental health services and kaupapa Māori providers reduces acute crisis presentations
+  and hospitalisations.
+flagship_moves:
+- Double community mental health worker capacity in Wellington region
+- Kaupapa Māori mental health service expansion in Porirua and Hutt
+- 24/7 community crisis response teams as alternative to police attendance
+tensions:
+- Community mental health workforce pipeline is constrained by training and retention issues
+- Community services require hospital backup; ring-fencing community investment is politically difficult
+addresses:
+- problem.wellington.health.mental_health
+- problem.wellington.health.system_access
+interventions:
+- description: Fund 50 additional community mental health workers across Wellington region with Māori-led service options
+  state_variable: mental_health_ed_presentations
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

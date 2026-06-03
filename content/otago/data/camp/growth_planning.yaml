@@ -1,0 +1,21 @@
+id: camp.otago.governance.growth_planning
+name: Integrated Growth Management and Spatial Planning
+theme: governance
+core_claim: Coordinated spatial planning across three TAs aligns infrastructure and
+  housing with growth.
+flagship_moves:
+- Unified Otago growth management strategy
+- Development sequencing with infrastructure capacity
+- Mandatory developer contributions
+tensions:
+- TA autonomy and coordination challenges
+- Development timing uncertainty
+addresses:
+- problem.otago.governance.queenstown_growth_management
+interventions:
+- description: Adopt integrated growth strategy by 2027
+  state_variable: planning_coordination
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,22 @@
+id: methodology.zoned_capacity_v1
+name: Zoned Residential Capacity (dwelling yield estimate)
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: 'Zoned capacity estimates the maximum potential dwelling yield derivable
+  from all residentially zoned land parcels under current planning rules, assuming
+  full development to the permitted envelope. Operationalised by summing per- parcel
+  yield estimates (site area divided by minimum lot size, adjusted for height limits,
+  setbacks, and coverage maxima). Used by MfE, Auckland Council, and HUD to assess
+  whether zoned supply is sufficient to meet projected 30-year household demand. Claims
+  using this methodology supply value (the estimated dwelling count), unit ("dwellings
+  (potential capacity)"), and time_period. The methodology is a theoretical ceiling:
+  feasibility constraints (developer economics, infrastructure staging, heritage protections)
+  reduce achievable yield; comparison with demand projections is the primary analytical
+  use.
+
+  '
+source_ids: []

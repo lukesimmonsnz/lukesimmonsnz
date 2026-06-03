@@ -1,0 +1,39 @@
+id: problem.wellington.governance.accountability
+title: Accountability and transparency challenges in Wellington City Council
+theme: governance
+section: governance
+subpage: accountability
+parent: problem.wellington.governance.local_govt_reform
+order: 4
+updated: '2026-04-26'
+summary: Wellington City Council has experienced repeated leadership instability, CEO turnover, and audit findings over the
+  past decade, indicating systemic governance and accountability challenges. The Council's track record on major infrastructure
+  projects — particularly the town hall earthquake strengthening — has attracted public and media criticism.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - ceo_tenure_years
+  - audit_nz_grade
+  inputs:
+  - mayor_and_council_stability
+  - chief_executive_recruitment
+  constraints:
+  - politicised_council_culture
+  - limited_local_govt_management_talent_pool
+  feedback_loops:
+  - 'Leadership instability loop: CEO departures disrupt organisational memory and strategy; replacement search periods reduce
+    executive capacity; new CEOs face a learning curve in complex organisations.'
+narrative:
+- heading: CEO turnover
+  body: Wellington City Council has had multiple CEOs in the past decade, with shorter-than-average tenures indicating a challenging
+    organisational environment and governance tensions between elected officials and management (claim.wellington.governance.ceo_turnover_wcc).
+- heading: Audit findings
+  body: Audit New Zealand has raised findings on Wellington City Council's financial management and project oversight processes
+    in recent years, pointing to weaknesses in internal control and project governance that require sustained management attention
+    (claim.wellington.governance.audit_findings_wcc).
+claim_ids:
+- claim.wellington.governance.ceo_turnover_wcc
+- claim.wellington.governance.audit_findings_wcc
+status: draft
+time_horizons: [decade, generation, century]

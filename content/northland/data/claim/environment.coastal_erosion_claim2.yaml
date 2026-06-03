@@ -1,0 +1,22 @@
+id: claim.northland.environment.coastal_erosion_claim2
+statement: 'Northland coastline (1,600+ km, longest per km² after Marlborough) experiences
+  active erosion: Bream Bay sand spit system retreating; Mangawhai sand spit system
+  shifting; Hokianga Harbour entrance shifting. Multiple coastal communities face
+  seawall loss and road inundation risk (Dargaville, Paparoa, Mangawhai, Baylys Beach).
+  Coastal retreat rates 0.3–0.8 m/year in erosion hotspots; climate projections (sea-level
+  rise 0.5–1.0 m by 2100) will accelerate.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

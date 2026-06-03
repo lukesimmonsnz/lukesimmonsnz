@@ -1,0 +1,41 @@
+id: problem.west_coast.education.early_childhood
+title: Fragmented early-childhood provision across three districts
+theme: education
+section: education
+subpage: early_childhood
+parent: achievement
+order: 2
+updated: '2026-04-26'
+summary: Early-childhood education on the West Coast is delivered across three territorial authorities with variable centre
+  coverage and quality. Smaller towns face staffing pressure and enrolment volatility, and Māori-medium and bilingual options
+  are limited.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - ece_enrolment_rate
+  - qualified_teacher_ratio
+  - kohanga_reo_seat_count
+  inputs:
+  - moe_ece_subsidy
+  - iwi_education_partnership_funding
+  constraints:
+  - recruitment_isolation
+  - dispersed_population
+  feedback_loops:
+  - Thin ECE access lowers school-entry readiness, which raises the support load on small primary schools that are already
+    understaffed — extending the achievement gap into the primary years.
+narrative:
+- heading: Coverage is uneven, particularly outside the main towns
+  body: Centres concentrate in Greymouth, Westport and Hokitika; smaller settlements rely on home-based, playgroup or kohanga-style
+    provision (claim.west_coast.education.early_childhood_claim). Recruitment of qualified early-childhood teachers is structurally
+    difficult in remote locations.
+- heading: Māori-medium provision is thin
+  body: Kōhanga reo and bilingual ECE provision in Te Tai Poutini is limited despite Ngāi Tahu mana whenua presence and active
+    iwi education partnerships, leaving an early-intervention gap that disadvantages tamariki Māori before they reach school.
+claim_ids:
+- claim.west_coast.education.early_childhood_claim
+status: draft
+time_horizons:
+- decade
+- generation

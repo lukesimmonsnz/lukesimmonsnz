@@ -1,0 +1,33 @@
+id: problem.hawkes_bay.environment.environmental_pressure
+title: Environmental degradation and biodiversity pressure
+theme: environment
+section: environment
+subpage: environmental-pressure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: "Hawke's Bay faces compounded environmental pressures: aquifer depletion, estuary pollution, native forest loss, invasive species, and coastal hazards. Agricultural intensification and urban sprawl drive habitat loss. Recovery lags impact."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - native_forest_cover_percent
+    - estuarine_water_quality_index
+  inputs:
+    - agricultural_chemical_inputs
+    - urban_land_conversion
+  constraints:
+    - protection_planning_lags
+    - restoration_funding_scarcity
+  feedback_loops:
+    - 'Habitat loss reduces ecosystem services; water quality declines; recreational value drops; investment in restoration shrinks.'
+narrative:
+  - heading: Biodiversity Decline
+    body: "Native forest cover in Hawke's Bay is approximately 24% of the region, down from 60% pre-European settlement. Many endemic species are endangered."
+  - heading: Estuary Degradation
+    body: 'Ahuriri Estuary near Napier is polluted by stormwater and agricultural runoff. Fish diversity has declined; recreational value is compromised.'
+claim_ids:
+  - claim.hawkes_bay.environment.forest_cover_24_percent
+  - claim.hawkes_bay.environment.ahuriri_water_quality_poor
+status: draft
+time_horizons: [generation, century]

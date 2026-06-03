@@ -1,0 +1,13 @@
+id: driver.gisborne.governance.treaty_co_governance_escalation
+name: Driver escalating treaty_co_governance
+description: "This driver exacerbates the treaty_co_governance challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: governance
+consensus: disputed
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.governance.treaty_co_governance
+claim_ids:
+- claim.gisborne.governance.treaty_co_governance_77

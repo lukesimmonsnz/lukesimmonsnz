@@ -1,0 +1,34 @@
+id: problem.gisborne.governance.governance
+title: Governance capacity and decision-making in Gisborne — Te Tairāwhiti
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 37
+updated: '2026-04-26'
+summary: Governance capacity and decision-making represents a critical systemic challenge
+  for Gisborne — Te Tairāwhiti.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - governance_index
+  inputs:
+  - policy_change
+  - investment_level
+  - community_effort
+  constraints:
+  - fiscal_capacity
+  - institutional_capacity
+  - geographic_isolation
+  feedback_loops:
+  - Deprivation and isolation reinforce economic fragility and limit recovery.
+narrative:
+- heading: Core systemic challenge
+  body: The governance capacity and decision-making is a defining constraint for Gisborne's
+    development.
+claim_ids:
+- claim.gisborne.governance.governance_73
+- claim.gisborne.governance.governance_74
+status: draft
+time_horizons: [decade, generation, century]

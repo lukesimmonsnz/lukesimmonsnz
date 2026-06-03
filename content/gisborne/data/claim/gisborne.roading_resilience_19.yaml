@@ -1,0 +1,20 @@
+id: claim.gisborne.infrastructure.roading_resilience_19
+statement: Roading resilience in Gisborne is severely constrained by single-route
+  access, aging pavement, and landslide/flooding vulnerability. SH2 experiences frequent
+  closures during heavy rain; detours require 2+ hour journeys; investment in resilient
+  roading is critical for economic and social connectivity.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.sea_level_projection_v1
+notes: null

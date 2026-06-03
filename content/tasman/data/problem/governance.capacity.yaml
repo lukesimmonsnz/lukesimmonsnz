@@ -1,0 +1,42 @@
+id: problem.tasman.governance.capacity
+title: Council capacity strained by reform and renewals
+theme: governance
+section: governance
+subpage: capacity
+parent: governance
+order: 4
+updated: '2026-04-26'
+summary: Tasman District Council operates with an annual budget of around NZD 287 million and 380 FTE staff. Three-waters
+  reform and climate-adaptation planning are absorbing significant share of capacity; the infrastructure-maintenance
+  backlog is estimated at NZD 42 million. Recruitment and retention of specialist engineers and planners remain
+  persistent challenges.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - council_fte
+  - maintenance_backlog_njd_m
+  inputs:
+  - specialist_recruitment_capacity
+  - central_government_co_funding
+  constraints:
+  - metro_council_wage_differential
+  - rate_increase_political_ceiling
+  feedback_loops:
+  - Capacity gaps slow consenting and project delivery, which raises rates pressure for fewer outputs, which weakens
+    public confidence in capacity-building investment.
+narrative:
+- heading: Reform overlays on existing renewal load
+  body: Three-waters reform, RMA reform, and climate-adaptation planning each impose new process and engagement
+    burdens on a council whose existing renewal pipeline is already underweight to its asset base (claim.tasman.governance.capacity_claim).
+- heading: Specialist labour is the binding constraint
+  body: Engineers, planners, and asset-management specialists are scarce nationally and scarcer in regional councils
+    that cannot match metro-council salaries. The capacity ceiling is set by who can be hired and retained, not
+    by the headline budget figure.
+claim_ids:
+- claim.tasman.governance.capacity_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

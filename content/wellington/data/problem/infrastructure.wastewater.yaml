@@ -1,0 +1,40 @@
+id: problem.wellington.infrastructure.wastewater
+title: Wastewater overflows contaminating Wellington Harbour
+theme: infrastructure
+section: infrastructure
+subpage: wastewater
+parent: problem.wellington.infrastructure.water_resilience
+order: 2
+updated: '2026-04-26'
+summary: Wellington's combined stormwater and wastewater network produces regular overflow events during heavy rainfall, discharging
+  untreated sewage into Wellington Harbour. These events trigger beach closures and ecosystem damage and reflect decades of
+  underinvestment in separation of stormwater and wastewater infrastructure.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - overflow_events_per_year
+  - harbour_ecoli_concentration
+  inputs:
+  - rainfall_intensity
+  - stormwater_inflow_to_sewer
+  constraints:
+  - combined_sewer_overflow_capacity
+  - separation_programme_funding
+  feedback_loops:
+  - 'Rainfall intensification loop: increasing storm intensity under climate change increases overflow frequency, accelerating
+    public demand for remediation while capital costs also rise.'
+narrative:
+- heading: Overflow events and harbour health
+  body: Wellington Water records approximately 120 wastewater overflow events annually, the majority occurring during rainfall
+    events that cause stormwater inflow into the combined sewer network (claim.wellington.infrastructure.wastewater_overflow_events).
+    These discharges elevate harbour E. coli concentrations and trigger swimming advisories.
+- heading: Beach closures
+  body: Harbour beaches including Oriental Bay and Kilbirnie Park beach regularly exceed E. coli safety thresholds following
+    rainfall events (claim.wellington.infrastructure.harbour_ecoli_exceedances), directly affecting recreational use and public
+    health.
+claim_ids:
+- claim.wellington.infrastructure.wastewater_overflow_events
+- claim.wellington.infrastructure.harbour_ecoli_exceedances
+status: draft
+time_horizons: [decade, generation]

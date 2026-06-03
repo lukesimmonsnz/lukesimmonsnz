@@ -1,0 +1,29 @@
+id: problem.taranaki.economy.diversification
+title: Economic diversification away from energy
+theme: economy
+section: economy
+subpage: diversification
+parent: problem.taranaki.economy.energy_transition
+order: 2
+updated: '2026-04-26'
+summary: Taranaki lacks diversified economy. Agriculture, manufacturing, and services
+  offer limited job growth.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - diversification_index
+  inputs:
+  - diversification_input_1
+  constraints:
+  - diversification_constraint
+  feedback_loops:
+  - 'Feedback: diversification'
+narrative:
+- heading: Economic diversification away from energy in Taranaki
+  body: Taranaki lacks diversified economy. Agriculture, manufacturing, and services
+    offer limited job growth.
+claim_ids:
+- claim.taranaki.economy.diversification_01
+status: draft
+time_horizons: [decade, generation]

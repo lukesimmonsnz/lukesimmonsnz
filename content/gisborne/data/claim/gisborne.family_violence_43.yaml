@@ -1,0 +1,19 @@
+id: claim.gisborne.crime.family_violence_43
+statement: Gisborne Police District records elevated family violence call-out rates,
+  consistently above national average. Calls correlate with high deprivation, limited
+  mental health services, and alcohol availability.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: null

@@ -1,0 +1,21 @@
+id: claim.southland.inequality.rural_isolation_prevalence
+statement: 'Rural isolation in Southland affects ~15,000 residents spread across Southland
+  District and southern Invercargill. Communities >40km from Invercargill (Catlins,
+  Mataura Valley, Western Te Anau, Stewart Island) face service access constraints:
+  health (>45min to hospital), education (boarding/relocation for secondary), emergency
+  response (>2 hours for police/ambulance in extremes).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

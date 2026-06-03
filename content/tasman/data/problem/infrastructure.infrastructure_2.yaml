@@ -1,0 +1,41 @@
+id: problem.tasman.infrastructure.infrastructure_2
+title: Waimea water-supply efficiency and metering gaps
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_2
+parent: infrastructure
+order: 2
+updated: '2026-04-26'
+summary: The Waimea reticulated water supply draws around 18,500 cubic metres per day from the Waimea Aquifer, with
+  documented network leakage near 25 percent and around 1,850 connections still unmetered. Estimated capital required
+  for distribution-main upgrades, smart metering, and demand-management retrofits is around NZD 42 million.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - network_leakage_rate
+  - share_connections_metered
+  inputs:
+  - waimea_distribution_capex
+  - demand_management_programme
+  constraints:
+  - aquifer_sustainable_yield
+  - rates_funded_capex_ceiling
+  feedback_loops:
+  - Unmetered connections weaken demand response in dry seasons, which forces reliance on supply-side abstraction
+    increases that further stress the aquifer.
+narrative:
+- heading: Leakage at one in four litres
+  body: Roughly 25 percent of treated water put into the Waimea network does not reach a metered customer (claim.tasman.infrastructure.infrastructure_2_claim).
+    At a time of aquifer stress, that physical loss is also a water-allocation loss — the abstracted water counts
+    against the same sustainable-yield envelope as horticultural use.
+- heading: Demand management starts at the meter
+  body: 1,850 unmetered connections cannot be priced or load-shifted; behavioural demand-management tools assume
+    a meter. Metering retrofits are therefore a prerequisite for credible drought response, not just a billing-fairness
+    measure.
+claim_ids:
+- claim.tasman.infrastructure.infrastructure_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

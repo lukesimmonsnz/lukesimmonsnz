@@ -1,0 +1,25 @@
+id: claim.nelson.governance.governance_root_claim
+statement: Nelson governance faces systemic challenges rooted in fragmented jurisdiction,
+  growth pressure, and fiscal constraint. Nelson City Council and Tasman District
+  Council are separate authorities with overlapping service areas, creating coordination
+  friction on water, transport, and regional development. Combined operational spending
+  ($320+ million) is partially constrained by ratepayer resistance; capital spending
+  on deferred maintenance and new infrastructure ($420+ million over 10 years) exceeds
+  projected capacity. Treaty partnership engagement with mana whenua (Ngāti Koata,
+  Ngāti Rārua, Te Ātiawa) is improving but remains asymmetric in resource allocation.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+- source.nelson_tasman_iwi_partnership_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: null
+notes: null

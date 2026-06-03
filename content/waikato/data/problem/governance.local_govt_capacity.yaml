@@ -1,0 +1,30 @@
+id: problem.waikato.governance.local_govt_capacity
+title: Small council capacity constraints
+theme: governance
+section: governance
+subpage: local_govt_capacity
+parent: problem.waikato.governance.waikato_governance_complexity
+order: 4
+updated: '2026-04-26'
+summary: Rural and small territorial authorities lack capacity for infrastructure
+  planning and consenting.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - governance_effectiveness
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing local govt capacity creates feedback on regional outcomes.
+narrative:
+- heading: Small council capacity constraints
+  body: Rural and small territorial authorities lack capacity for infrastructure planning
+    and consenting.
+claim_ids:
+- claim.waikato.governance.small_ta_capacity
+status: draft
+time_horizons: [decade, generation, century]

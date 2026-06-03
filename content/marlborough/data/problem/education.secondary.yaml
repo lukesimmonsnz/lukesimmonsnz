@@ -1,0 +1,31 @@
+id: problem.marlborough.education.secondary
+title: Secondary School Engagement and Achievement
+theme: education
+section: education
+subpage: secondary
+parent: problem.marlborough.education.achievement
+order: 1
+updated: '2026-04-26'
+summary: Rural school viability; student engagement gaps; limited subject breadth;
+  transition barriers.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Rural school viability; student engagement gaps; limited subject breadth;
+    transition barriers.
+claim_ids:
+- claim.marlborough.education.secondary_1
+- claim.marlborough.education.secondary_2
+status: draft
+time_horizons: [decade, generation]

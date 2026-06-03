@@ -1,0 +1,13 @@
+id: driver.wellington.health.mental_health_underinvestment
+name: Community mental health service underinvestment
+description: Wellington's community mental health service capacity has not kept pace with population growth and rising mental
+  health burden, producing structural waitlists that defer care and allow deterioration to acute levels.
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: national
+problem_ids:
+- problem.wellington.health.mental_health
+claim_ids:
+- claim.wellington.health.mental_health_waitlist_length

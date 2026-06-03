@@ -1,0 +1,14 @@
+id: driver.tasman.environment.driver_2
+name: Climate-driven warming of bays and aquifers
+description: Trend warming of Tasman Bay sea temperatures and increased evapotranspiration on land shift the operating
+  envelopes of marine farming, freshwater ecology, and groundwater balance simultaneously.
+theme: environment
+consensus: consensus
+category: climate
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.environment.coastal_environment
+- problem.tasman.environment.water_quality
+- problem.tasman.environment.marine_ecosystem
+claim_ids: []

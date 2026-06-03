@@ -1,0 +1,10 @@
+id: 'driver.northland.economy.driver_4'
+name: 'Behavioral and systemic factors in economy'
+description: 'Behavioral and systemic factors in economy in regional context.'
+theme: 'economy'
+consensus: 'consensus'
+category: 'institutional'
+timescale: 'medium'
+scope: 'regional'
+problem_ids: []
+claim_ids: []

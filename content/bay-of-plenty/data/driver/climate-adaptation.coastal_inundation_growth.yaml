@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.climate.coastal_inundation_growth
+name: Driver for coastal_inundation
+description: "This driver exacerbates the coastal_inundation pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: climate-adaptation
+consensus: contested
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.climate.coastal_inundation
+claim_ids:
+- claim.bay_of_plenty.climate.coastal_inundation_87

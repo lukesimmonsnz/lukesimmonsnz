@@ -1,0 +1,11 @@
+id: driver.canterbury.crime.drug_supply_network_distribution
+name: Methamphetamine Supply Network Distribution
+description: Methamphetamine Supply Network Distribution
+theme: crime
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.canterbury.crime.organised_crime
+claim_ids: []

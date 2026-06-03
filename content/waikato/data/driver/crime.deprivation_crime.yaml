@@ -1,0 +1,15 @@
+id: driver.waikato.crime.deprivation_crime
+name: Deprivation as driver of crime
+description: Concentrated disadvantage in Hamilton's eastern suburbs creates conditions
+  for higher crime rates.
+theme: crime
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.crime.waikato_crime
+- problem.waikato.crime.family_violence
+- problem.waikato.crime.youth_offending
+- problem.waikato.crime.drug_crime
+claim_ids: []

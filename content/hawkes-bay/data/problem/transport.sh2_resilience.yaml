@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.transport.sh2_resilience
+title: State Highway 2 flood and slip resilience
+theme: transport
+section: transport
+subpage: sh2-resilience
+parent: problem.hawkes_bay.transport.connectivity
+order: 2
+updated: '2026-04-26'
+summary: 'SH2 is vulnerable to landslides and flooding through Kaweka and Kawekas gaps. Cyclone Gabrielle caused multi-week closures. Limited alternate routes force diversions 100+ km. Maintenance and resilience investment is underfunded.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - sh2_closure_days_per_year
+    - resilience_investment_gap_dollars
+  inputs:
+    - terrain_slope_steepness
+    - rainfall_intensification
+  constraints:
+    - maintenance_budget_constraint
+    - terrain_engineering_cost
+  feedback_loops:
+    - 'Underfunded maintenance increases closure frequency; business relocates; tax base erodes; maintenance budget shrinks further.'
+narrative:
+  - heading: Vulnerability
+    body: 'SH2 passes through three narrow gorges (Gentle Annie, Kaweka, Kawekas) prone to landslips. Cyclone Gabrielle caused four major slips blocking all traffic.'
+  - heading: Economic Impact
+    body: 'Each SH2 closure forces trucks onto 130km+ alternate routes (via Waipawa/Taihape), adding 4+ hours to transit time and raising logistics costs region-wide.'
+claim_ids:
+  - claim.hawkes_bay.transport.sh2_cyclone_closure_4weeks
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,21 @@
+id: camp.marlborough.governance.regional_coordination
+name: Regional Coordination and Integration
+theme: governance
+core_claim: Cross-council and iwi collaboration frameworks.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.health.chronic_disease
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

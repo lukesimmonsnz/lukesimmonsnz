@@ -1,0 +1,12 @@
+id: driver.otago.health.chronic_disease_lifestyle
+name: Lifestyle Risk Factor Prevalence
+description: Dunedin and rural Otago higher rates of obesity, sedentary behavior,
+  smoking.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.health.chronic_disease
+claim_ids: []

@@ -1,0 +1,20 @@
+id: claim.canterbury.governance.water_allocation_iwi_2024
+statement: Governance structures in Canterbury are fragmented across multiple councils
+  and agencies, creating coordination challenges. Limited council capacity constrains
+  strategic planning, infrastructure delivery, and climate adaptation; funding gaps
+  prevent implementation of identified priorities.
+value: 0
+unit: cubic meters per second allocated
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_cwms_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

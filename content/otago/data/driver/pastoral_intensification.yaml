@@ -1,0 +1,11 @@
+id: driver.otago.environment.pastoral_intensification
+name: Pastoral Farming Intensification
+description: Nutrient loading from pastoral systems; fencing removal, riparian degradation.
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.environment.lake_eutrophication
+claim_ids: []

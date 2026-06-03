@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.governance.devolution_local
+name: Devolution and local control
+theme: governance
+core_claim: Devolve decision-making and funding to regional and iwi authorities.
+flagship_moves:
+- Flagship move 1 for Devolution and local control
+- Flagship move 2 for Devolution and local control
+tensions:
+- Internal tension 1 of Devolution and local control
+addresses:
+- problem.manawatu_whanganui.housing.whanganui_deprivation
+interventions:
+- description: 'Intervention 1: Devolution and local control detail 1'
+- description: 'Intervention 2: Devolution and local control detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

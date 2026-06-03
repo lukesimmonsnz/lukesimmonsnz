@@ -1,0 +1,29 @@
+id: problem.taranaki.environment.emissions
+title: Industrial and agricultural emissions
+theme: environment
+section: environment
+subpage: emissions
+parent: problem.taranaki.environment.freshwater_degradation
+order: 2
+updated: '2026-04-26'
+summary: Oil and gas production, methanol synthesis, and dairy farming generate significant
+  greenhouse gas and air pollution emissions.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - emissions_index
+  inputs:
+  - emissions_input_1
+  constraints:
+  - emissions_constraint
+  feedback_loops:
+  - 'Feedback: emissions'
+narrative:
+- heading: Industrial and agricultural emissions in Taranaki
+  body: Oil and gas production, methanol synthesis, and dairy farming generate significant
+    greenhouse gas and air pollution emissions.
+claim_ids:
+- claim.taranaki.environment.emissions_01
+status: draft
+time_horizons: [generation, century]

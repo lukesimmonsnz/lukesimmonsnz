@@ -1,0 +1,21 @@
+id: camp.southland.economy.dairy_sustainability
+name: Dairy Sector Sustainability and Margins
+theme: economy
+core_claim: Supporting organic transition, feed efficiency, and reduced input costs
+  improve dairy viability.
+flagship_moves:
+- Organic transition subsidies
+- Feed efficiency R&D support
+- Cooperative model expansion
+tensions:
+- Commodity price dependency remains
+- Farmer adoption barriers
+addresses:
+- problem.southland.economy.agri_commodity
+interventions:
+- description: Support 50 farms to transition to organic
+  state_variable: organic_dairy_adoption
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

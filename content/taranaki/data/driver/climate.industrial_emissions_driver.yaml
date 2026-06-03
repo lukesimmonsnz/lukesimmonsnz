@@ -1,0 +1,15 @@
+id: driver.taranaki.climate.industrial_emissions_driver
+name: Industrial emissions and energy transition pressures
+theme: climate-adaptation
+category: economic
+description: Taranaki's dependence on oil, gas, and petrochemical industries creates
+  both high emissions and transition risk as decarbonisation policy tightens.
+problem_ids:
+- problem.taranaki.climate.agricultural_emissions
+- problem.taranaki.climate.climate_emissions
+- problem.taranaki.climate.industrial_emissions
+claim_ids:
+- claim.taranaki.climate.agricultural_emissions_01
+timescale: medium
+consensus: contested
+scope: regional

@@ -1,19 +1,20 @@
 id: claim.auckland.crime.police_workforce_gap
-statement: >
-  Auckland is under-policed relative to comparable cities; the ratio of
-  sworn officers to population is among the lowest in the OECD, and
-  response times in South and West Auckland exceed national targets,
-  contributing to low reporting rates and under-deterrence.
+statement: 'Auckland is under-policed relative to comparable cities; the ratio of
+  sworn officers to population is among the lowest in the OECD, and response times
+  in South and West Auckland exceed national targets, contributing to low reporting
+  rates and under-deterrence.
+
+  '
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.nz_police_recorded_crime_2023
+- source.nz_police_recorded_crime_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

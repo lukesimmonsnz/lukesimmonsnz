@@ -1,21 +1,21 @@
 id: claim.auckland.health.youth_mental_health_crisis
-statement: >
-  Youth mental health presentations to Auckland EDs have increased by
-  approximately 50% since 2018; youth (15-24) are the fastest growing
-  group presenting to acute mental health services, yet specialist child
-  and adolescent mental health service (CAMHS) waitlists in Auckland
-  exceed 12 months for non-acute referrals.
+statement: 'Youth mental health presentations to Auckland EDs have increased by approximately
+  50% since 2018; youth (15-24) are the fastest growing group presenting to acute
+  mental health services, yet specialist child and adolescent mental health service
+  (CAMHS) waitlists in Auckland exceed 12 months for non-acute referrals.
+
+  '
 value: 50
-unit: "percent increase"
-time_period: "2018-2023"
+unit: percent increase
+time_period: 2018-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.health_nz_annual_report_2023
+- source.health_nz_annual_report_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.mental_health_service_rate_v1

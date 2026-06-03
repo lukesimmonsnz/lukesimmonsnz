@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.education.rural_access_growth
+name: Driver for rural_access
+description: "This driver exacerbates the rural_access pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: education
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.education.rural_access
+claim_ids:
+- claim.bay_of_plenty.education.rural_access_61

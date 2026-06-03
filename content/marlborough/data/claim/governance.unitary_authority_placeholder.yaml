@@ -1,0 +1,20 @@
+id: claim.marlborough.governance.unitary_authority_placeholder
+statement: 'Marlborough unitary status (since 1989): regional council and territorial
+  authority functions combined; unique in NZ alongside Tasman, Nelson; advantages:
+  integrated water/land planning; challenges: competing rural/urban priorities; governance
+  review recommended 2026.'
+value: null
+unit: null
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.marlborough_council_ltc_2024
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

@@ -1,0 +1,13 @@
+id: driver.gisborne.crime.family_violence_escalation
+name: Driver escalating family_violence
+description: "This driver exacerbates the family_violence challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: crime
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.crime.family_violence
+claim_ids:
+- claim.gisborne.crime.family_violence_43

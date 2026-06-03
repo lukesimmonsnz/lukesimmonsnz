@@ -1,0 +1,21 @@
+id: camp.marlborough.environment.marine_spatial_planning
+name: Marine Spatial Planning and Protection
+theme: environment
+core_claim: Integrated marine zone management.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.environment.water_allocation
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

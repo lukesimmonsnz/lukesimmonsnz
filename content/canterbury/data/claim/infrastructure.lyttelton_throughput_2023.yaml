@@ -1,0 +1,23 @@
+id: claim.canterbury.infrastructure.lyttelton_throughput_2023
+statement: Lyttelton Port of Christchurch handled 2.1 million TEU (Twenty-foot Equivalent
+  Units) in 2023, serving South Island import/export traffic. The port is South Island's
+  busiest, handling ~40% of South Island container traffic and serving as the primary
+  gateway for Canterbury's $40 billion rebuild, dairy exports (milk powder, cheese),
+  and wine shipments (Waipara region). Post-COVID recovery to 2.1M TEU represents
+  85% of pre-2020 peak; seasonal fluctuation is pronounced due to agricultural export
+  concentration.
+value: 2.1
+unit: million TEU
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_annual_plan_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.median_multiple_v1
+notes: null

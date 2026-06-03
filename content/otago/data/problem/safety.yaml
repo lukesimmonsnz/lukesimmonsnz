@@ -1,0 +1,34 @@
+id: problem.otago.crime.safety
+title: Crime and Community Safety
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Family violence rates exceed national average in Dunedin and rural Otago;
+  youth offending in East Dunedin; visitor crime in Queenstown (assaults, theft).
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Family violence rates exceed national average in Dunedin and rural Otago;
+    youth offending in East Dunedin; visitor crime in Queenstown (assaults, theft).
+claim_ids:
+- claim.otago.crime.family_violence_prevalence
+- claim.otago.crime.youth_offending_prevalence
+- claim.otago.crime.family_violence_trend
+- claim.otago.crime.safety_prevalence
+- claim.otago.crime.safety_trend
+- claim.otago.crime.queenstown_visitor_crime_prevalence
+- claim.otago.crime.queenstown_visitor_crime_trend
+- claim.otago.crime.youth_offending_trend
+status: draft
+time_horizons: [decade]

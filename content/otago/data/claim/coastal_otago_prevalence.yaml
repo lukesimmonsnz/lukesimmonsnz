@@ -1,0 +1,22 @@
+id: claim.otago.environment.coastal_otago_prevalence
+statement: 'Coastal Otago (Otago Peninsula, Catlins, Kaka Point) is a biodiversity
+  hotspot and vulnerable marine zone: hoiho (yellow-eyed penguin) critical habitat;
+  Hector''s dolphin; fur seal colonies. Otago Harbour (Port Chalmers, Port Otago container
+  terminal) is high-use multi-purpose port; commercial fishing grounds; recreational
+  areas (Tomahawk, Aramoana). Coastal squeeze from development (residential, holiday
+  lets) and sea-level rise; marine pollution and introduced species management ongoing.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

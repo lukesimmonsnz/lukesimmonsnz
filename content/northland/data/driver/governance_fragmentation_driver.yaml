@@ -1,0 +1,16 @@
+id: driver.northland.governance.fragmentation_driver
+name: Local authority fragmentation and ratepayer base limits
+description: Northland has four territorial authorities serving a population base
+  that struggles to fund adequate governance and infrastructure.
+theme: governance
+consensus: contested
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.governance.northland_governance_capacity
+- problem.northland.governance.council_capacity
+- problem.northland.governance.coordination_deficit
+- problem.northland.governance.maori_representation
+claim_ids:
+- claim.northland.governance.northland_governance_capacity_claim1

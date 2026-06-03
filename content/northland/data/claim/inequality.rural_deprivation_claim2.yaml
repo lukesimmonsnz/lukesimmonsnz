@@ -1,0 +1,18 @@
+id: claim.northland.inequality.rural_deprivation_claim2
+statement: Agricultural employment in Far North (dairy, horticulture, sheep/beef)
+  offers seasonal, low-wage, precarious work; farm labour often under-documented and
+  under-paid. Employment in primary sectors does not offer pathways to skill development
+  or career progression; workers trapped in low-income cycles. Rural unemployment
+  follows seasonal patterns; winter months see income collapse for seasonal workers.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

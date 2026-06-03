@@ -1,0 +1,21 @@
+id: camp.otago.economy.tourism_resilience
+name: Tourism Sector Resilience and Diversification
+theme: economy
+core_claim: Developing high-value, low-impact tourism and supporting alternative sectors
+  reduces dependency.
+flagship_moves:
+- Visitor capacity limits in Queenstown CBD and Milford Sound
+- Sustainable tourism certification scheme
+- Support for outdoor recreation and wellness tourism
+tensions:
+- Revenue reductions from visitor limits
+- International competition for tourism
+addresses:
+- problem.otago.economy.tourism_queenstown
+interventions:
+- description: Transition 20% of tourism jobs to higher-wage roles
+  state_variable: tourism_job_quality
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

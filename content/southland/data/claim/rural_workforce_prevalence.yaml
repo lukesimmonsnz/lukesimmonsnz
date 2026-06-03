@@ -1,0 +1,22 @@
+id: claim.southland.health.rural_workforce_prevalence
+statement: Rural health workforce shortage in Southland is severe. GP vacancies in
+  Gore, Winton, Te Anau, Riverton; locum dependence high; nursing vacancies above
+  15% at Southland Hospital. Specialist services (cardiologists, oncologists, surgeons)
+  require Dunedin travel (3+ hours). Rural midwifery services limited; home birth
+  access restricted. Dental services (fluoride Invercargill, mobile clinics rural
+  areas) insufficient for demand.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

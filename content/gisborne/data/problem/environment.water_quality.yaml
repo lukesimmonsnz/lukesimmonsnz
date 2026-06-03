@@ -1,0 +1,33 @@
+id: problem.gisborne.environment.water_quality
+title: Freshwater quality degradation in Gisborne — Te Tairāwhiti
+theme: environment
+section: environment
+subpage: water_quality
+parent: problem.gisborne.environment.environmental_degradation
+order: 15
+updated: '2026-04-26'
+summary: Freshwater quality degradation is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - water_quality_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Freshwater quality degradation is a key facet of the broader pressure facing
+    the region.
+claim_ids:
+- claim.gisborne.environment.water_quality_29
+- claim.gisborne.environment.water_quality_30
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,22 @@
+id: claim.northland.environment.coastal_erosion_claim1
+statement: 'Kauri dieback (Phytophthora agathidicida) is Northland''s primary biosecurity
+  threat to native forest. Waipoua Forest (Tāne Mahuta, Te Mātua Ngahere) under strict
+  protocols: boardwalks mandatory at key sites, vehicle/boot-washing stations mandatory,
+  some tracks permanently closed. No cure currently available; treatment focused on
+  biosecurity containment (soil hygiene, quarantine). Spread mechanism: soil on footwear,
+  vehicles, animals.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

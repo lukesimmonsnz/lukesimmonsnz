@@ -1,0 +1,33 @@
+id: problem.gisborne.economy.post_cyclone_recovery
+title: Post-cyclone economic recovery and business disruption in Gisborne — Te Tairāwhiti
+theme: economy
+section: economy
+subpage: post_cyclone_recovery
+parent: problem.gisborne.economy.economic_fragility
+order: 36
+updated: '2026-04-26'
+summary: Post-cyclone economic recovery and business disruption is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - post_cyclone_recovery_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Post-cyclone economic recovery and business disruption is a key facet of the
+    broader pressure facing the region.
+claim_ids:
+- claim.gisborne.economy.post_cyclone_recovery_71
+- claim.gisborne.economy.post_cyclone_recovery_72
+status: draft
+time_horizons: [decade, generation]

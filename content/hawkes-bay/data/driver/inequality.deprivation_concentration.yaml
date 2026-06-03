@@ -1,0 +1,18 @@
+id: driver.hawkes_bay.inequality.deprivation_concentration
+name: Geographic concentration of deprivation
+description: Deprivation is concentrated in specific suburbs (Flaxmere in Hastings,
+  West Napier suburbs) creating neighbourhood effects. Schools, health services, and
+  businesses concentrate in affluent areas, leaving deprived neighbourhoods under-resourced.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.inequality.deprivation
+- problem.hawkes_bay.inequality.flaxmere_poverty
+- problem.hawkes_bay.inequality.child_poverty
+- problem.hawkes_bay.inequality.ethnic_gap
+claim_ids:
+- claim.hawkes_bay.inequality.deprivation_35_percent_households
+- claim.hawkes_bay.inequality.flaxmere_unemployment_15_18_percent

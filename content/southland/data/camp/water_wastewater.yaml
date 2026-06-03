@@ -1,0 +1,21 @@
+id: camp.southland.infrastructure.water_wastewater
+name: Water and Wastewater System Renewal
+theme: infrastructure
+core_claim: Infrastructure renewal improves water quality, wastewater treatment, and
+  resilience.
+flagship_moves:
+- Replace aging water pipes; target loss reduction
+- Modern wastewater treatment in Invercargill
+- Rural septic system upgrade support
+tensions:
+- High renewal cost and ratepayer impact
+- Timing and prioritization challenges
+addresses:
+- problem.southland.infrastructure.water_wastewater
+interventions:
+- description: Reduce water loss from 40% to 25% by 2035
+  state_variable: water_loss_ratio
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

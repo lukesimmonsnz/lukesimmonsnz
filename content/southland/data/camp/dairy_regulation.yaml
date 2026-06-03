@@ -1,0 +1,21 @@
+id: camp.southland.environment.dairy_regulation
+name: Dairy Industry Nutrient Reduction Regulation
+theme: environment
+core_claim: Nutrient application caps, riparian fencing, and stock exclusion reduce
+  river pollution.
+flagship_moves:
+- Nitrogen application caps on dairy farms
+- Mandatory riparian buffers (5m minimum)
+- Stock exclusion from waterways by 2027
+tensions:
+- Farmer opposition and compliance cost
+- Revenue and production reductions
+addresses:
+- problem.southland.environment.southland_river_quality
+interventions:
+- description: Reduce Mataura and Oreti river nitrogen by 40%
+  state_variable: river_nitrogen_concentration
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

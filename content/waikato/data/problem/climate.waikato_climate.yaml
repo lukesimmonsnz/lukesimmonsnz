@@ -1,0 +1,30 @@
+id: problem.waikato.climate.waikato_climate
+title: Climate change vulnerability and adaptation
+theme: climate-adaptation
+section: climate
+subpage: waikato_climate
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waikato faces significant climate risks including increased flood frequency,
+  drought intensification, and agricultural emissions pressure.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - climate_risk_exposure
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional climate dynamics create self-reinforcing feedback.
+narrative:
+- heading: Climate change vulnerability and adaptation
+  body: Waikato faces significant climate risks including increased flood frequency,
+    drought intensification, and agricultural emissions pressure.
+claim_ids:
+- claim.waikato.climate.waikato_climate_root
+status: draft
+time_horizons: [generation, century]

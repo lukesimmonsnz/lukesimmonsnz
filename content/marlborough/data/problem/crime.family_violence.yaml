@@ -1,0 +1,31 @@
+id: problem.marlborough.crime.family_violence
+title: Family and Intimate Partner Violence
+theme: crime
+section: crime
+subpage: family_violence
+parent: problem.marlborough.crime.safety
+order: 1
+updated: '2026-04-26'
+summary: High family violence rates; seasonal worker vulnerability; underreporting;
+  system capacity gaps.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: High family violence rates; seasonal worker vulnerability; underreporting;
+    system capacity gaps.
+claim_ids:
+- claim.marlborough.crime.family_violence_1
+- claim.marlborough.crime.family_violence_2
+status: draft
+time_horizons: [decade]

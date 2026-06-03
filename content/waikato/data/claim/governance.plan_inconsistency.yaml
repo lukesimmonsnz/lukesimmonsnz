@@ -1,0 +1,22 @@
+id: claim.waikato.governance.plan_inconsistency
+statement: 'Waikato Regional Plan, Hamilton City Council Long-Term Plan, and district
+  plans across seven local authorities show inconsistencies on key issues. Freshwater
+  targets diverge: WRC aims for 10-year nitrate decline while some territorial authorities
+  resist dairying restrictions. Transport investment priorities conflict between SH1,
+  rail, and active modes funding. Climate adaptation mechanisms are uncoordinated.
+  Lack of unified governance framework impedes regional response.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato regional_planning claim

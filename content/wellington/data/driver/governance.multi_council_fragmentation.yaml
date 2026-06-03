@@ -1,0 +1,13 @@
+id: driver.wellington.governance.multi_council_fragmentation
+name: Multi-council structural fragmentation
+description: Seven separate councils governing an integrated 450,000-person city-region create coordination costs, strategic
+  incoherence, and accountability diffusion that impede effective regional governance.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.governance.local_govt_reform
+claim_ids:
+- claim.wellington.governance.wcc_dysfunction_indicators

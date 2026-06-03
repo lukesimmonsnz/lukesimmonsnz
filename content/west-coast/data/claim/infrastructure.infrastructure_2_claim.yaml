@@ -1,0 +1,25 @@
+id: claim.west_coast.infrastructure.infrastructure_2_claim
+statement: State Highway 6 is the only road connecting West Coast to the rest of New
+  Zealand. It experiences frequent closures from flooding (average 5-10 days/year),
+  slips, and rockfall, particularly around Haast Pass and South Westland. Recent major
+  closures occurred May 2022 (12 days), July 2023 (8 days). Road is single-lane in
+  many sections; alternate route does not exist. Road maintenance budget is inadequate
+  for climate resilience. Closure impacts economy directly (tourism isolation, freight
+  delays).
+value: 8
+unit: days closure (July 2023 event)
+time_period: 2015-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_west_coast_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Closure frequency and duration from Waka Kotahi road management data; economic
+  impact from council economic assessment.

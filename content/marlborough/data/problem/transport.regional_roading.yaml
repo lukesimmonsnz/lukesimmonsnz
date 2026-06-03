@@ -1,0 +1,31 @@
+id: problem.marlborough.transport.regional_roading
+title: Regional Roading Network and Maintenance
+theme: transport
+section: transport
+subpage: regional_roading
+parent: problem.marlborough.transport.connectivity
+order: 1
+updated: '2026-04-26'
+summary: State highway and rural road network condition; funding constraints; Wairau
+  Valley congestion.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: State highway and rural road network condition; funding constraints; Wairau
+    Valley congestion.
+claim_ids:
+- claim.marlborough.transport.regional_roading_1
+- claim.marlborough.transport.regional_roading_2
+status: draft
+time_horizons: [decade, generation]

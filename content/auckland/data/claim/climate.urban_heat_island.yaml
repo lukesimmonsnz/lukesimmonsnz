@@ -1,23 +1,23 @@
 id: claim.auckland.climate.urban_heat_island
-statement: >
-  Auckland's urban core is 2-4 degrees Celsius warmer than surrounding
-  rural areas due to the urban heat island effect; impervious surfaces,
-  reduced tree canopy, and waste heat from buildings and transport
-  amplify ambient temperature. Increasing ambient temperatures are
-  projected to increase heat-related mortality by 30-50% by 2050,
-  with elderly, outdoor workers, and South Auckland residents in lower-
-  quality housing most exposed.
+statement: 'Auckland''s urban core is 2-4 degrees Celsius warmer than surrounding
+  rural areas due to the urban heat island effect; impervious surfaces, reduced tree
+  canopy, and waste heat from buildings and transport amplify ambient temperature.
+  Increasing ambient temperatures are projected to increase heat-related mortality
+  by 30-50% by 2050, with elderly, outdoor workers, and South Auckland residents in
+  lower- quality housing most exposed.
+
+  '
 value: null
 unit: null
-time_period: "2020-2050"
+time_period: 2020-2050
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.niwa_climate_auckland_2023
-  - source.auckland_council_climate_plan_2023
+- source.niwa_climate_auckland_2023
+- source.auckland_council_climate_plan_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

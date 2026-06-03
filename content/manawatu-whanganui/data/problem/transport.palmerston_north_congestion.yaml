@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.transport.palmerston_north_congestion
+title: Palmerston North Traffic Congestion and Parking
+theme: transport
+section: transport
+subpage: palmerston_north_congestion
+parent: problem.manawatu_whanganui.transport.connectivity
+order: 1
+updated: '2026-04-26'
+summary: Growth-driven congestion on main corridors; parking shortages in CBD; bus
+  network underinvestment.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Growth-driven congestion on main corridors; parking shortages in CBD; bus
+    network underinvestment.
+claim_ids:
+- claim.manawatu_whanganui.transport.palmerston_north_congestion_1
+- claim.manawatu_whanganui.transport.palmerston_north_congestion_2
+status: draft
+time_horizons: [decade, generation]

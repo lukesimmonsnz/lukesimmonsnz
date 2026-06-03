@@ -1,0 +1,42 @@
+id: problem.tasman.housing.affordability
+title: Lifestyle-migration housing-cost pressure
+theme: housing
+section: housing
+subpage: affordability
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Tasman's median house price rose roughly 68 percent between 2016 and 2022 (NZD 385,000 to NZD 647,000)
+  while median household income grew far more slowly, pushing the price-to-income ratio to 7.4 — well above the
+  conventional affordability threshold of 5.0 and squeezing first-home buyers out of Richmond and Motueka.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - median_house_price
+  - price_to_income_ratio
+  inputs:
+  - external_buyer_demand
+  - consented_dwellings_per_year
+  constraints:
+  - land_supply_pipeline
+  - construction_capacity
+  feedback_loops:
+  - Capital-gain expectations attract more lifestyle buyers, which raises prices, which reinforces capital-gain
+    expectations.
+narrative:
+- heading: External demand sets local prices
+  body: Lifestyle migration from Auckland and Wellington has been the dominant driver of house-price inflation in
+    Richmond, Motueka and parts of Mohua. Buyers arriving with metropolitan equity outbid local first-home purchasers,
+    raising the effective entry price into Tasman's housing market (claim.tasman.housing.affordability_claim).
+- heading: Local incomes do not track local prices
+  body: Median household income in Tasman is around NZD 87,400, anchored by horticulture, tourism, and small-business
+    work. With prices reaching 7.4 times that figure, only high-equity or dual-high-income buyers can transact at
+    current prices, and the ownership rate among 25-34-year-olds is falling.
+claim_ids:
+- claim.tasman.housing.affordability_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

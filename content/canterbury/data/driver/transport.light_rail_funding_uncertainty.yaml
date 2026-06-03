@@ -1,0 +1,12 @@
+id: driver.canterbury.transport.light_rail_funding_uncertainty
+name: Light Rail Funding Uncertainty & Cost Escalation
+description: Light Rail Funding Uncertainty & Cost Escalation
+theme: transport
+consensus: contested
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.transport.light_rail_planning
+claim_ids:
+- claim.canterbury.transport.light_rail_delay_2026

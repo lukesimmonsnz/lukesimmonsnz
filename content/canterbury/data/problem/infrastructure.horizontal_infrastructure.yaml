@@ -1,0 +1,45 @@
+id: problem.canterbury.infrastructure.horizontal_infrastructure
+title: Horizontal Infrastructure Servicing Strain
+theme: infrastructure
+section: infrastructure
+subpage: horizontal_infrastructure
+parent: problem.canterbury.infrastructure.rebuild
+order: 1
+updated: '2026-04-26'
+summary: 'Water supply, wastewater, and stormwater networks across Christchurch and
+  growth districts are strained by urban densification and greenfield expansion. Water
+  losses in aging pipelines exceed 25%; wastewater capacity in Christchurch CBD is
+  near saturation; stormwater systems fail in heavy rainfall events (>50mm/24hr).
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - water_main_asset_condition_index
+  - water_loss_percentage
+  - wastewater_treatment_capacity_utilization
+  - stormwater_flooding_event_frequency
+  inputs:
+  - population_growth
+  - urban_intensification_rate
+  - rainfall_intensity
+  - asset_renewal_investment
+  constraints:
+  - three_waters_infrastructure_debt
+  - climate_change_rainfall_intensification
+  feedback_loops:
+  - Dynamic feedback mechanisms drive horizontal infrastructure servicing strain.
+narrative:
+- heading: Aging and expanding networks collide
+  body: 'Christchurch''s water and wastewater networks contain significant pre-1970s
+    assets (~35% of pipes). Replacement rates lag deterioration; water loss in some
+    suburbs reaches 30%. Simultaneous growth in Waimakariri/Selwyn requires new trunk
+    infrastructure, straining budgets.
+
+    '
+claim_ids:
+- claim.canterbury.infrastructure.water_loss_rate_2023
+- claim.canterbury.infrastructure.wastewater_capacity_2024
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,15 @@
+id: driver.waikato.governance.institutional_fragmentation
+name: Fragmented institutional landscape
+description: Eleven territorial authorities with separate planning processes produce
+  inconsistent outcomes and duplication.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.governance.waikato_governance_complexity
+- problem.waikato.governance.regional_planning
+- problem.waikato.governance.maori_co_governance
+- problem.waikato.governance.local_govt_capacity
+claim_ids: []

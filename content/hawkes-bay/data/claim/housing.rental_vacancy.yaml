@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.housing.rental_vacancy_1_5_percent
+statement: Rental vacancy rates in Hawke's Bay stand at 1.5%, well below the 2.0%
+  functional vacancy threshold. Napier and Hastings city centers report near-zero
+  vacancy (< 0.5%), constraining search time for renters and shifting bargaining power
+  entirely to landlords. Post-Cyclone Gabrielle scarcity has locked in higher rents;
+  investors have deferred repairs to new-build properties, further restricting supply
+  and affordability.
+value: 1.5
+unit: percent
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

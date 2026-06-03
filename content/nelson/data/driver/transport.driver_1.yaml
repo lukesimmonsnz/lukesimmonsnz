@@ -1,0 +1,12 @@
+id: driver.nelson.transport.driver_1
+name: Single-corridor road dependence and absence of rail
+description: All Nelson freight and passenger movement north-south runs on SH6, and east-west on SH60. There is no rail to Nelson. This structural dependence creates congestion at peak, exposes the region to single-point closure risk, and concentrates emissions in road transport.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.nelson.transport.connectivity
+- problem.nelson.transport.connectivity_2
+claim_ids: []

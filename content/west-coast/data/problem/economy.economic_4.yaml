@@ -1,0 +1,43 @@
+id: problem.west_coast.economy.economic_4
+title: Dairy, forestry and the resilience-exposed primary base
+theme: economy
+section: economy
+subpage: economic_4
+parent: economic_structure
+order: 4
+updated: '2026-04-26'
+summary: Dairy farming on the Buller and Grey plains, plus native and plantation forestry across the region, together employ
+  several hundred workers and generate the bulk of non-mining primary-sector revenue. Both are exposed to flood damage, road-closure
+  risk and water-quality regulation.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - dairy_milking_platform_ha
+  - forestry_harvest_volume
+  - primary_sector_revenue
+  inputs:
+  - mpi_extension_services
+  - regional_water_quality_capex
+  constraints:
+  - floodplain_concentration
+  - freshwater_regulation_settings
+  feedback_loops:
+  - Compliance capex pressure favours larger operators and accelerates consolidation, reducing the diversity of the primary
+    base and concentrating regional risk on fewer farms and forestry blocks.
+narrative:
+- heading: Pasture and plantation, exposed to weather
+  body: West Coast dairy is concentrated on the lower river plains, with dairy processing capacity at a Westland Milk Products
+    plant in Hokitika (claim.west_coast.economy.economic_4_claim). Forestry operations span both indigenous management and
+    exotic plantations on cutover land, with harvest cycles long enough to make any single road-closure event a significant
+    cash-flow event.
+- heading: Regulatory headwinds
+  body: Tightening freshwater rules, animal-welfare expectations and forestry-slash regulation following Cyclone Gabrielle
+    elsewhere in the country all change the economics of these sectors. The West Coast's high-rainfall environment is both
+    an advantage (pasture growth, regenerating native bush) and a risk (sediment loss, slash mobilisation).
+claim_ids:
+- claim.west_coast.economy.economic_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

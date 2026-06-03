@@ -1,0 +1,21 @@
+id: claim.southland.transport.connectivity_prevalence
+statement: 'Transport connectivity in Southland faces geographic challenges. SH1 spine
+  (Invercargill-Gore-Balclutha); SH6 to Queenstown (Kingston route, scenic); SH99
+  to Catlins. Fiordland: Milford Road (SH94) single access (119km Queenstown to Milford,
+  Homer Tunnel single-lane with traffic lights, avalanche closures 10-20 days/year).
+  Stewart Island: ferry only (60min Bluff-Oban).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

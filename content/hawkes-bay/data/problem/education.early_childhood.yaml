@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.education.early_childhood
+title: Early childhood education participation and quality
+theme: education
+section: education
+subpage: early-childhood
+parent: problem.hawkes_bay.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: "Early childhood education (ECE) participation in Hawke's Bay is below national average, particularly among low-income families. Cost barriers, quality variation, and workforce shortages are issues."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - ece_participation_rate_percent
+    - ece_quality_rating_distribution
+  inputs:
+    - cost_barrier_families
+    - ece_educator_shortage
+  constraints:
+    - ece_provider_financial_sustainability
+    - early_learning_literacy_gap
+  feedback_loops:
+    - 'Low ECE participation widows literacy development; school entry gap emerges; achievement gap perpetuates through primary school.'
+narrative:
+  - heading: Participation Gap
+    body: "ECE participation in Hawke's Bay is 76%, compared to 81% nationally. Low-income families in Flaxmere and Hastings have particularly low participation (62%)."
+  - heading: Cost Barrier
+    body: "Average ECE fees in Hawke's Bay are approximately $180/week. For low-income families, this represents 15-20% of household income, prohibitive for many."
+claim_ids:
+  - claim.hawkes_bay.education.ece_participation_76_percent
+status: draft
+time_horizons: [decade, generation]

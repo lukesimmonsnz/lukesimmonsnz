@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.inequality.inadequate_benefits
+name: Inadequate Benefit Levels And Income Floor
+description: Inadequate benefit levels and income floor. This driver operates at national
+  scale with mostly-agreed consensus.
+theme: inequality
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.inequality.whanganui_poverty
+claim_ids: []

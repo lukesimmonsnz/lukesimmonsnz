@@ -1,0 +1,23 @@
+id: claim.west_coast.health.mental_health_claim
+statement: Mental health presentation and hospital admission rates in West Coast are
+  elevated, driven by economic stress from mining job losses, geographic isolation,
+  weak social networks in declining towns, and substance abuse. Suicide rates exceed
+  national average. Mental health service capacity (counsellors, psychiatrists, crisis
+  teams) is severely constrained. Waitlists exceed 12 months for specialist assessment.
+value: null
+unit: null
+time_period: 2015-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_west_coast_2023
+- source.mining_industry_association_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Mental health presentation data from Health NZ regional data; economic stress
+  drivers from mining transition reports; service capacity from health workforce data.

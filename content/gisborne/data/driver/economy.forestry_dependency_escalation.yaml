@@ -1,0 +1,13 @@
+id: driver.gisborne.economy.forestry_dependency_escalation
+name: Driver escalating forestry_dependency
+description: "This driver exacerbates the forestry_dependency challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: economy
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.economy.forestry_dependency
+claim_ids:
+- claim.gisborne.economy.forestry_dependency_67

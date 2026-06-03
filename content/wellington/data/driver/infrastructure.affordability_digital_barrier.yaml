@@ -1,0 +1,13 @@
+id: driver.wellington.infrastructure.affordability_digital_barrier
+name: Broadband affordability barrier
+description: In high-deprivation areas of Wellington, broadband plan costs represent a significant share of household income,
+  constituting a financial barrier to digital inclusion even where fibre infrastructure is available.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.infrastructure.digital_connectivity
+claim_ids:
+- claim.wellington.infrastructure.digital_inclusion_gap

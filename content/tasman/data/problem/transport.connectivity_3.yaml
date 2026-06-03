@@ -1,0 +1,42 @@
+id: problem.tasman.transport.connectivity_3
+title: Car-dependent town form in Richmond and Motueka
+theme: transport
+section: transport
+subpage: connectivity_3
+parent: connectivity
+order: 3
+updated: '2026-04-26'
+summary: Richmond and Motueka have grown around state highways and low-density residential subdivisions, producing
+  a 92 percent private-vehicle mode share and only 2 percent public-transport share. SH6 bisects Richmond's town
+  centre, creating air quality, severance, and pedestrian-safety issues.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - private_vehicle_mode_share
+  - town_centre_pedestrian_severance
+  inputs:
+  - brt_corridor_capex
+  - urban_form_zoning_settings
+  constraints:
+  - existing_highway_alignment
+  - low_density_zoning_legacy
+  feedback_loops:
+  - Highway-fronting development draws trips onto the highway, which justifies further road widening, which entrenches
+    highway-fronting development.
+narrative:
+- heading: Sprawl-by-default in the regional centres
+  body: The two main towns expanded as ribbon developments along state highways rather than compact, walkable centres.
+    Public-transport mode share is roughly 2 percent and active-transport share around 4 percent, with the remaining
+    92 percent of trips taken by private vehicle (claim.tasman.transport.connectivity_3_claim).
+- heading: Highway-through-town pattern
+  body: SH6 runs straight through Richmond's main retail strip, mixing freight, commuter and pedestrian flows. Tasman
+    District Council is planning a Richmond-Motueka bus-rapid-transit corridor with a 20-minute service frequency,
+    supported by NZD 85 million of central funding committed for 2025-2028, but delivery and patronage lag the population
+    growth the new corridor is meant to absorb.
+claim_ids:
+- claim.tasman.transport.connectivity_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,0 +1,47 @@
+id: problem.canterbury.economy.economic_structure
+title: Canterbury Economic Diversification & Resilience
+theme: economy
+section: economy
+subpage: economic_structure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury''s economy remains heavily dependent on primary production (dairy,
+  arable) and construction (post-earthquake rebuild). High-value-added sectors (tech,
+  professional services, biotech) are emerging but remain small. Earthquake rebuild
+  stimulus is waning; labor productivity growth is slower than national average. Regional
+  economic resilience to commodity price shocks and climate stress is questionable.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - gvp_composition_by_sector
+  - employment_concentration_by_sector
+  - labor_productivity_growth_rate
+  - business_startup_rate
+  inputs:
+  - primary_sector_commodity_prices
+  - construction_demand_rebuild
+  - technological_innovation_adoption
+  constraints:
+  - labor_force_size
+  - capital_investment_rate
+  - infrastructure_capacity
+  feedback_loops:
+  - 'Primary sector risk: commodity price downturns (dairy) reduce household income
+    and investment, dampening broader economy.'
+narrative:
+- heading: Rebuild boost fading
+  body: 'Post-2011, earthquake rebuild spending ($40B over 15 years) sustained construction
+    employment and related sectors. That stimulus is ending (2024). Canterbury must
+    transition to organic growth; tech/innovation sectors are nascent (Lincoln, UC,
+    EPIC Innovation Precinct).
+
+    '
+claim_ids:
+- claim.canterbury.economy.gvp_composition_2023
+- claim.canterbury.economy.private_sector_employment_concentration_2023
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,24 @@
+id: 'problem.waikato.transport.connectivity'
+title: 'Waikato: transport connectivity'
+theme: 'transport'
+section: 'transport'
+subpage: 'connectivity'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Networks constrain regional connectivity.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Networks constrain regional connectivity.'
+claim_ids:
+- 'claim.waikato.transport.connectivity_claim1'
+- 'claim.waikato.transport.connectivity_claim2'
+status: 'draft'

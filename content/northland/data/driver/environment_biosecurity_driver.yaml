@@ -1,0 +1,16 @@
+id: driver.northland.environment.biosecurity_driver
+name: Biosecurity pathway complexity and visitor pressure
+description: High visitor numbers and informal access to kauri forests create biosecurity
+  pathways that are difficult to close.
+theme: environment
+consensus: consensus
+category: cultural
+timescale: medium
+scope: regional
+problem_ids:
+- problem.northland.environment.northland_environment_pressures
+- problem.northland.environment.kauri_dieback
+- problem.northland.environment.freshwater_quality
+- problem.northland.environment.coastal_erosion
+claim_ids:
+- claim.northland.environment.coastal_erosion_claim1

@@ -1,0 +1,13 @@
+id: driver.tasman.crime.driver_1
+name: Low-density policing geography
+description: Tasman's dispersed population produces long response times and low clearance rates for rural property
+  offences, which suppresses reporting and structures the recorded-crime profile around property and vehicle offences.
+theme: crime
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.crime.safety
+- problem.tasman.crime.family_violence
+claim_ids: []

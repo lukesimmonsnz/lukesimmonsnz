@@ -1,0 +1,23 @@
+id: claim.otago.infrastructure.infrastructure_trend
+statement: 'Infrastructure deficits accumulating: Dunedin water main breaks increasing
+  (2-3 per month, aging cast iron pipes); Queenstown growth outpacing three waters
+  capacity (development consents now conditional on infrastructure funding); Dunedin
+  Hospital rebuild ($2.3B+) consuming public capital (other assets deferred); road
+  maintenance backlogs on secondary routes (rural Clutha, Waitaki); Forsyth Barr Stadium
+  debt servicing limiting DCC capital for other priorities; earthquake-prone building
+  (EPB) compliance costs rising in Dunedin CBD.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

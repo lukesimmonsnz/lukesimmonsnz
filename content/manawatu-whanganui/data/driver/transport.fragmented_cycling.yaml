@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.transport.fragmented_cycling
+name: Fragmented Cycling Network
+description: Fragmented cycling network. This driver operates at regional scale with
+  mostly-agreed consensus.
+theme: transport
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.active_modes
+claim_ids: []

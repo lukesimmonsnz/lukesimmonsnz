@@ -1,0 +1,43 @@
+id: problem.west_coast.transport.connectivity
+title: West Coast's single-corridor isolation from the national network
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: West Coast's transport connectivity to the rest of New Zealand depends on a single state highway corridor (SH6),
+  with no rail (closed 1987) and only a thin scheduled bus and air service overlay. Internal movement between Westport, Greymouth
+  and Hokitika depends on the same vulnerable road, exposing supply chains, health referrals and tourism to any closure event.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - sh6_open_days_per_year
+  - rail_freight_alternatives
+  - regional_passenger_seat_capacity
+  inputs:
+  - waka_kotahi_maintenance_budget
+  - regional_aviation_subsidy
+  constraints:
+  - alpine_geographic_corridor
+  - rail_route_decommissioned_1987
+  feedback_loops:
+  - Out-migration weakens the patronage and freight base that would justify route redundancy investment, which in turn deepens
+    isolation and accelerates further out-migration.
+narrative:
+- heading: One road, no rail, sparse air
+  body: SH6 is the only road link from the West Coast to the rest of the country, and the rail line that once ran from Greymouth
+    to Christchurch closed to passengers in 1987 (claim.west_coast.transport.connectivity_claim). Scheduled intercity bus
+    services are infrequent, and air travel is limited to small turboprop services and emergency medical flights. Settlements
+    south of Haast can only be reached by SH6, with no inland alternative.
+- heading: Brittle supply and emergency response
+  body: Because freight, supermarket restocking, fuel deliveries, hospital transfers and tourism arrivals all depend on the
+    same corridor, even short closures cascade through the regional economy. The structural absence of an alternate alignment
+    means that resilience must be bought through hardening rather than redundancy.
+claim_ids:
+- claim.west_coast.transport.connectivity_claim
+status: draft
+time_horizons:
+- decade
+- generation

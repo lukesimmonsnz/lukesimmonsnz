@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.economy.labour_market_dualism
+name: Labour Market Dualism And Segmentation
+description: Labour market dualism and segmentation. This driver operates at national
+  scale with mostly-agreed consensus.
+theme: economy
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.education.tertiary
+claim_ids: []

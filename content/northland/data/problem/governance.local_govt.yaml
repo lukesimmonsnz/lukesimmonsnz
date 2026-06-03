@@ -1,0 +1,24 @@
+id: 'problem.northland.governance.local_govt'
+title: 'Te Tai Tokerau Northland: local government'
+theme: 'governance'
+section: 'governance'
+subpage: 'local-govt'
+parent: 'problem.northland.governance.challenges'
+order: 3
+updated: '2026-04-26'
+summary: 'Local government lacks capacity.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Local government lacks capacity.'
+claim_ids:
+- 'claim.northland.governance.local_govt_claim1'
+- 'claim.northland.governance.local_govt_claim2'
+status: 'draft'

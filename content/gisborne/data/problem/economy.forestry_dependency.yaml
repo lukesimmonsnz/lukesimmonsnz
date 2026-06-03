@@ -1,0 +1,33 @@
+id: problem.gisborne.economy.forestry_dependency
+title: Exotic forestry sector concentration and vulnerability in Gisborne — Te Tairāwhiti
+theme: economy
+section: economy
+subpage: forestry_dependency
+parent: problem.gisborne.economy.economic_fragility
+order: 34
+updated: '2026-04-26'
+summary: Exotic forestry sector concentration and vulnerability is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - forestry_dependency_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Exotic forestry sector concentration and vulnerability is a key facet of the
+    broader pressure facing the region.
+claim_ids:
+- claim.gisborne.economy.forestry_dependency_67
+- claim.gisborne.economy.forestry_dependency_68
+status: draft
+time_horizons: [decade, generation]

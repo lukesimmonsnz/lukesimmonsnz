@@ -1,0 +1,22 @@
+id: camp.canterbury.environment.irrigation_efficiency_improvement
+name: Irrigation Efficiency & Best Practice Adoption
+theme: environment
+core_claim: Voluntary and incentivized uptake of precision irrigation (drip, variable
+  rate), soil moisture monitoring, and scheduled watering reduces water demand without
+  yield loss.
+flagship_moves:
+- Key intervention for Irrigation Efficiency & Best Practice Adoption
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.environment.freshwater_stress
+interventions:
+- description: Voluntary and incentivized uptake of precision irrigation (drip, variable
+    rate), soil moisture monitoring, and scheduled watering reduces water demand without
+    yield loss.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

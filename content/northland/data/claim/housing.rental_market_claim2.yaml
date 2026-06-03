@@ -1,0 +1,18 @@
+id: claim.northland.housing.rental_market_claim2
+statement: Far North rental market is more limited; Kaitāia, Kerikeri, Bay of Islands
+  rentals scarce and expensive relative to local incomes. Landlords exercise greater
+  tenant selectivity (employment history, credit checks); benefit-dependent and precarious-income
+  households face discrimination. Seasonal tourism workers (fruit pickers, hospitality)
+  cycle through temporary rental contracts and struggle with reference requirements.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

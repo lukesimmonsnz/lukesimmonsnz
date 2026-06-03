@@ -1,0 +1,34 @@
+id: problem.otago.crime.family_violence
+title: Family Violence Prevalence
+theme: crime
+section: crime
+subpage: family_violence
+parent: problem.otago.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: Dunedin and rural Otago have high reported family violence; barriers to disclosure
+  and prosecution; inadequate support services reach.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Dunedin and rural Otago have high reported family violence; barriers to disclosure
+    and prosecution; inadequate support services reach.
+claim_ids:
+- claim.otago.crime.family_violence_prevalence
+- claim.otago.crime.youth_offending_prevalence
+- claim.otago.crime.family_violence_trend
+- claim.otago.crime.safety_prevalence
+- claim.otago.crime.safety_trend
+- claim.otago.crime.queenstown_visitor_crime_prevalence
+- claim.otago.crime.queenstown_visitor_crime_trend
+- claim.otago.crime.youth_offending_trend
+status: draft
+time_horizons: [decade]

@@ -1,0 +1,20 @@
+id: claim.otago.housing.housing_market_prevalence
+statement: Housing affordability in Otago has deteriorated sharply, with median house
+  prices in Dunedin rising 65%+ from 2015-2023 (now $550K+) and Queenstown exceeding
+  $800K. Rental vacancy rates have fallen below 1% in Dunedin and Queenstown, increasing
+  homelessness and housing stress for essential services workers.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

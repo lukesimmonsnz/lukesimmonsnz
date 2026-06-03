@@ -1,0 +1,24 @@
+id: claim.nelson.transport.connectivity_3_claim
+statement: State Highway vulnerability in Nelson creates resilience risk. SH6 is the
+  sole north-south route; sections between Nelson and Blenheim (particularly Wither
+  Hills Pass) are prone to closure from avalanche, slips, and snow in winter. SH60
+  (to Tasman) traverses unstable terrain east of Ruby Bay; slips have caused 4-week
+  closures in the last decade. Alternative routes add >90 minutes to journeys. Climate
+  change will increase closure frequency and duration; Waka Kotahi assessments project
+  2–4 major disruptions annually by 2050. Freight corridors and emergency access are
+  vulnerable; resilience investment in alternative routing or rail is uncertain.
+value: 4
+unit: week-long closures on SH60 over past decade
+time_period: 2014-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_transport_agency_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

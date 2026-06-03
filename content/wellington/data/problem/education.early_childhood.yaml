@@ -1,0 +1,41 @@
+id: problem.wellington.education.early_childhood
+title: ECE access and quality gaps in Wellington
+theme: education
+section: education
+subpage: early-childhood
+parent: problem.wellington.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: ECE participation rates in Porirua and Hutt Valley are below the Wellington average, and quality
+  varies substantially between lower-income and higher-income communities. Cost, physical access, and
+  the availability of community-responsive provision are the primary barriers for families in high-deprivation
+  areas.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - ece_participation_rate
+  - ece_quality_rating_distribution
+  inputs:
+  - ece_subsidy_level
+  - provider_supply_in_low_income_areas
+  constraints:
+  - cost_per_hour_relative_to_income
+  - transport_access_to_ece
+  feedback_loops:
+  - 'Quality-demand feedback: low-quality ECE services in high-deprivation areas fail to demonstrate the
+    learning value that would increase demand and political priority for quality improvement.'
+narrative:
+- heading: Participation gap in Porirua
+  body: ECE participation rates in Porirua are approximately 10 percentage points below Wellington City,
+    reflecting a combination of cost barriers, limited provider supply, and cultural mismatch for Māori
+    and Pacific families (claim.wellington.education.ece_participation_porirua).
+- heading: Quality variation
+  body: ECE quality ratings — as assessed under the Education Review Office framework — show systematic
+    variation across Wellington, with lower-income communities more likely to be served by services rated
+    as needing development (claim.wellington.education.ece_quality_distribution).
+claim_ids:
+- claim.wellington.education.ece_participation_porirua
+- claim.wellington.education.ece_quality_distribution
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,21 @@
+id: camp.wellington.housing.seismic_market_led
+name: Market-Led Seismic Risk Management
+theme: housing
+core_claim: Insurance pricing and mandatory disclosure will incentivise voluntary retrofit and redevelopment without public
+  subsidy distortions.
+flagship_moves:
+- Require seismic engineering report at every property sale
+- Allow insurers to price earthquake-prone status explicitly in premiums
+- Fast-track consent pathways for replacement buildings on EPB sites
+tensions:
+- Market signals may be too slow relative to earthquake probability windows
+- Low-income renters bear disproportionate risk exposure while owners act slowly
+addresses:
+- problem.wellington.housing.earthquake_risk_buildings
+interventions:
+- description: Introduce standardised public seismic-rating register for all buildings ≥2 storeys
+  state_variable: information_transparency
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

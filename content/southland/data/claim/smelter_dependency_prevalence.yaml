@@ -1,0 +1,21 @@
+id: claim.southland.economy.smelter_dependency_prevalence
+statement: Southland's economic dependency on Tiwai Point Aluminium Smelter is substantial
+  and entrenched. NZAS operates 850 MW Manapouri hydroelectric station supply contract;
+  smelter represents ~1,000 direct jobs (~1% regional employment) and ~2,000 indirect
+  jobs in logistics, power generation, and services. Rio Tinto (79.4%) + Sumitomo
+  (20.6%) ownership; strategic closure decisions made offshore.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

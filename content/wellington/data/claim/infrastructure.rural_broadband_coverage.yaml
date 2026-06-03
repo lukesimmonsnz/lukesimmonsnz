@@ -1,0 +1,20 @@
+id: claim.wellington.infrastructure.rural_broadband_coverage
+statement: Rural Wairarapa and Kāpiti hinterland areas within the Wellington region
+  remain dependent on fixed-wireless or copper broadband connections that do not reliably
+  meet the 50 Mbps download / 10 Mbps upload benchmark for modern digital service
+  delivery.
+value: null
+unit: null
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

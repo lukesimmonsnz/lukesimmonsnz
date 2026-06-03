@@ -1,0 +1,24 @@
+id: claim.nelson.infrastructure.infrastructure_3_claim
+statement: Port Nelson infrastructure is being upgraded to meet container and bulk
+  export demand growth. Current facilities handle 130,000–160,000 tonnes of fish/seafood
+  annually and increasing volumes of timber, fruit, and general cargo; container equivalent
+  units (TEU) have grown 6% annually 2019-2023. Wharf and berth capacity are adequate,
+  but stormwater and wastewater treatment at the port require $18–24 million in upgrades
+  to meet discharge standards and sea level rise mitigation. Truck access to the port
+  from SH6 is congested during peak seasons; port–city logistics connectivity requires
+  SH6 widening investment estimated at $45–65 million.
+value: 160000
+unit: tonnes/year throughput (fish, cargo combined)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.port_nelson_annual_report_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

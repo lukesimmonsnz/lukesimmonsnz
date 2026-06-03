@@ -1,0 +1,14 @@
+id: driver.wellington.environment.urban_stormwater_runoff
+name: Urban stormwater contaminant load
+description: Wellington's large impervious urban surface generates stormwater runoff carrying road contaminants, animal waste,
+  and litter directly to harbour and streams. This is the dominant non-event contamination pathway.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.environment.harbour_health
+- problem.wellington.environment.waterway_quality
+claim_ids:
+- claim.wellington.environment.harbour_stormwater_contamination

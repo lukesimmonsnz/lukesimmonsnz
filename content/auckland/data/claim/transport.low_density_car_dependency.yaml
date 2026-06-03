@@ -1,27 +1,28 @@
 id: claim.auckland.transport.low_density_car_dependency
-statement: >
-  Auckland's urban area has an average residential density well below
-  the threshold typically required for frequent, high-patronage public
-  transport — approximately 35–40 dwellings per hectare. The majority
-  of Auckland's land area is zoned at densities that make bus headways
-  under 15 minutes economically unviable without substantial subsidy,
-  structurally embedding car dependency into trip behaviour regardless
-  of service quality improvements.
+statement: 'Auckland''s urban area has an average residential density well below the
+  threshold typically required for frequent, high-patronage public transport — approximately
+  35–40 dwellings per hectare. The majority of Auckland''s land area is zoned at densities
+  that make bus headways under 15 minutes economically unviable without substantial
+  subsidy, structurally embedding car dependency into trip behaviour regardless of
+  service quality improvements.
+
+  '
 value: null
 unit: null
-time_period: "2020-2023"
+time_period: 2020-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_dev_strategy_2022
-  - source.ministry_of_transport_hts_2023
+- source.auckland_council_dev_strategy_2022
+- source.ministry_of_transport_hts_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  Density threshold for viable frequent PT is approximately 35 dwellings/ha
-  for bus, higher for rail. Auckland's average gross density across the
-  urban area is substantially below this across most of its land area.
+- auckland
+notes: 'Density threshold for viable frequent PT is approximately 35 dwellings/ha
+  for bus, higher for rail. Auckland''s average gross density across the urban area
+  is substantially below this across most of its land area.
+
+  '

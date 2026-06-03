@@ -1,0 +1,24 @@
+id: 'problem.northland.economy.employment'
+title: 'Te Tai Tokerau Northland: employment and jobs'
+theme: 'economy'
+section: 'economy'
+subpage: 'employment'
+parent: 'problem.northland.economy.development'
+order: 3
+updated: '2026-04-26'
+summary: 'Employment is low-wage and insecure.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Employment is low-wage and insecure.'
+claim_ids:
+- 'claim.northland.economy.employment_claim1'
+- 'claim.northland.economy.employment_claim2'
+status: 'draft'

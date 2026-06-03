@@ -1,0 +1,22 @@
+id: claim.northland.transport.rural_road_quality_claim1
+statement: 'Far North District Council (FNDC) manages ~5,000 km sealed roading and
+  ~3,500 km unsealed roading; unsealed network (40%) is nationally high ratio. Kauri
+  dieback biosecurity controls restrict vehicle access to Waipoua Forest tracks (mandatory
+  foot-washing stations). Flood damage annual repair cost $20–40M (SH1 closures, local
+  road slips). SH1 safety concerns: narrow passing lanes, steep grades near Brynderwyn
+  Hills.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

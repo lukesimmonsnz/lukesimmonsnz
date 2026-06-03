@@ -1,0 +1,30 @@
+id: problem.waikato.education.waikato_education_inequity
+title: Educational achievement inequity
+theme: education
+section: education
+subpage: waikato_education_inequity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Significant educational achievement gaps persist across Waikato, particularly
+  for Māori students and those in rural areas.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - ncea_attainment_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Regional education dynamics create self-reinforcing feedback.
+narrative:
+- heading: Educational achievement inequity
+  body: Significant educational achievement gaps persist across Waikato, particularly
+    for Māori students and those in rural areas.
+claim_ids:
+- claim.waikato.education.waikato_education_inequity_root
+status: draft
+time_horizons: [decade, generation]

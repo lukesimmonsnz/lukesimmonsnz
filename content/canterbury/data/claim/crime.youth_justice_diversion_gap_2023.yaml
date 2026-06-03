@@ -1,0 +1,20 @@
+id: claim.canterbury.crime.youth_justice_diversion_gap_2023
+statement: Crime patterns in Canterbury reflect geographic, economic, and social vulnerabilities.
+  Property crime, family violence, and drug-related offenses impact community safety;
+  police response capacity is constrained in rural areas, limiting prevention effectiveness
+  and victim support services.
+value: 40
+unit: percent capacity
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_canterbury_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: null

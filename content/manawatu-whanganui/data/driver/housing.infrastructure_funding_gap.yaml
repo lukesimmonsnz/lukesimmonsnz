@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.housing.infrastructure_funding_gap
+name: Infrastructure Funding And Network Capacity
+description: Infrastructure funding and network capacity. This driver operates at
+  regional scale with consensus consensus.
+theme: housing
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.palmerston_north_growth
+claim_ids: []

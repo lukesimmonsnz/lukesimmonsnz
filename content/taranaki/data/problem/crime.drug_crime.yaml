@@ -1,0 +1,29 @@
+id: problem.taranaki.crime.drug_crime
+title: Drug-related crime and substance abuse
+theme: crime
+section: crime
+subpage: drug_crime
+parent: problem.taranaki.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: Methamphetamine markets are present. Drug-related crime and treatment demand
+  are rising.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - drug_crime_index
+  inputs:
+  - drug_crime_input_1
+  constraints:
+  - drug_crime_constraint
+  feedback_loops:
+  - 'Feedback: drug_crime'
+narrative:
+- heading: Drug-related crime and substance abuse in Taranaki
+  body: Methamphetamine markets are present. Drug-related crime and treatment demand
+    are rising.
+claim_ids:
+- claim.taranaki.crime.drug_crime_01
+status: draft
+time_horizons: [decade]

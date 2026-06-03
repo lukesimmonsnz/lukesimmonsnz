@@ -1,0 +1,22 @@
+id: claim.otago.infrastructure.digital_rural_prevalence
+statement: 'Rural Otago digital infrastructure is mixed: Dunedin/Queenstown have fiber
+  and 5G coverage; rural areas (Cromwell, Arrowtown, South Otago) have fiber rollout
+  underway (Crown Fibre Initiative); remote Catlins (Kaka Point, Owaka) remain broadband-limited
+  (fixed wireless, satellite fallback options). Digital divide in older demographic
+  (low adoption); agriculture and small business increasingly dependent on connectivity;
+  distance learning feasibility varies widely by location.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

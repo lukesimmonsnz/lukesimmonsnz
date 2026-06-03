@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.climate.flooding_intervention
+name: Intervention for flooding
+theme: climate-adaptation
+core_claim: Targeted intervention on flooding will improve outcomes.
+flagship_moves:
+- Policy measure 1 for flooding
+- Policy measure 2 for flooding
+- Implementation mechanism for flooding
+tensions:
+- Trade-off A for flooding
+- Trade-off B for flooding
+addresses:
+- problem.bay_of_plenty.climate.flooding
+interventions:
+- description: Core intervention targeting flooding
+  state_variable: flooding_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

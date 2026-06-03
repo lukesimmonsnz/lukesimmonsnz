@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.climate.car_dependent_emissions
+name: Car-Dependent Transport And Emissions
+description: Car-dependent transport and emissions. This driver operates at regional
+  scale with consensus consensus.
+theme: climate-adaptation
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.climate.drought_agricultural
+claim_ids: []

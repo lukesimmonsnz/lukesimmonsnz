@@ -1,0 +1,11 @@
+id: driver.canterbury.infrastructure.rural_broadband_investment_lag
+name: Rural Broadband Investment Lag
+description: Rural Broadband Investment Lag
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.infrastructure.digital
+claim_ids: []

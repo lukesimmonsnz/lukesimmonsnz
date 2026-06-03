@@ -1,0 +1,27 @@
+id: problem.taranaki.transport.active_modes
+title: Active transport uptake and safety
+theme: transport
+section: transport
+subpage: active_modes
+parent: problem.taranaki.transport.connectivity
+order: 2
+updated: '2026-04-26'
+summary: Walking and cycling are low-mode-share in Taranaki. Cycle networks are fragmented.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - active_modes_index
+  inputs:
+  - active_modes_input_1
+  constraints:
+  - active_modes_constraint
+  feedback_loops:
+  - 'Feedback: active_modes'
+narrative:
+- heading: Active transport uptake and safety in Taranaki
+  body: Walking and cycling are low-mode-share in Taranaki. Cycle networks are fragmented.
+claim_ids:
+- claim.taranaki.transport.active_modes_01
+status: draft
+time_horizons: [decade, generation]

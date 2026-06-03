@@ -1,0 +1,34 @@
+id: problem.southland.education.early_childhood
+title: Early Childhood Education Participation
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.southland.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: Rural Southland ECE enrollment low; affordability and access barriers; long
+  waiting lists; impacts primary readiness and achievement trajectories.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Rural Southland ECE enrollment low; affordability and access barriers; long
+    waiting lists; impacts primary readiness and achievement trajectories.
+claim_ids:
+- claim.southland.education.early_childhood_prevalence
+- claim.southland.education.tertiary_access_prevalence
+- claim.southland.education.tertiary_access_trend
+- claim.southland.education.achievement_prevalence
+- claim.southland.education.achievement_trend
+- claim.southland.education.early_childhood_trend
+- claim.southland.education.secondary_trend
+- claim.southland.education.secondary_prevalence
+status: draft
+time_horizons: [decade, generation]

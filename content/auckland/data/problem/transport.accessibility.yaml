@@ -84,3 +84,4 @@ claim_ids:
   - claim.auckland.transport.congestion_economic_cost
   - claim.auckland.transport.low_density_car_dependency
 status: draft
+time_horizons: [decade, generation, century]

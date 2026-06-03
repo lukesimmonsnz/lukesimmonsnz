@@ -1,0 +1,24 @@
+id: claim.nelson.housing.affordability_claim
+statement: Housing affordability in Nelson has deteriorated sharply due to lifestyle
+  migration. Median house price is $725,000 (April 2024) vs. median household income
+  of $62,400, generating a price-to-income ratio of 11.6× (vs. national 8.2×). Real
+  price growth was 58% 2018-2022, then declined 14% 2022-2024 but remains 40% above
+  2018 baseline. First-home buyers are priced out of the central market; 38% of owner-occupiers
+  have a mortgage, and principal-and-interest repayments consume 32–38% of household
+  income for buyers in 2023-2024 vs. 24% national average.
+value: 11.6
+unit: price-to-income ratio
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_housing_demand_2024
+- source.mhud_housing_aotearoa_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

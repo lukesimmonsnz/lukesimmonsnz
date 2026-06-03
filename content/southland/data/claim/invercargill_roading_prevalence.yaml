@@ -1,0 +1,21 @@
+id: claim.southland.transport.invercargill_roading_prevalence
+statement: Invercargill roading network faces aging infrastructure. City arterials
+  (Dee Street, Spey Street, Esk Street) show deteriorating surface with potholes and
+  flooding during heavy rain. Suburb connecting roads (northern suburbs, eastern suburbs)
+  deferred maintenance evident. Rural state highways (SH1, SH6, SH99) maintained to
+  standard but narrow sections create bottlenecks.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

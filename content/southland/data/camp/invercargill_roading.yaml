@@ -1,0 +1,21 @@
+id: camp.southland.transport.invercargill_roading
+name: Invercargill CBD Roading Upgrade and Congestion Management
+theme: transport
+core_claim: Roading network upgrade and traffic management improve CBD flow and pedestrian
+  safety.
+flagship_moves:
+- Upgrade key intersections with modern signals
+- Implement congestion pricing or parking controls
+- Bus priority lanes on main routes
+tensions:
+- Traffic diversion and merchant opposition
+- High upfront capital cost
+addresses:
+- problem.southland.transport.invercargill_roading
+interventions:
+- description: Reduce CBD peak hour congestion by 15%
+  state_variable: travel_time_index
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

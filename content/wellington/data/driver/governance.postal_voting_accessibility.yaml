@@ -1,0 +1,13 @@
+id: driver.wellington.governance.postal_voting_accessibility
+name: Postal voting accessibility limitations
+description: Wellington's postal voting system creates friction for younger voters and those without stable postal addresses
+  — particularly renters in high-deprivation areas — systematically underrepresenting these groups in local election results.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+- problem.wellington.governance.democratic_participation
+claim_ids:
+- claim.wellington.governance.civic_engagement_deficit

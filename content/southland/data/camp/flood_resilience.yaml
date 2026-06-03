@@ -1,0 +1,21 @@
+id: camp.southland.climate.flood_resilience
+name: Flood Risk Management and Resilience
+theme: climate-adaptation
+core_claim: Improved drainage, floodplain management, and building standards reduce
+  flood impacts.
+flagship_moves:
+- Mataura and Oreti river drainage upgrade
+- Floodplain zoning and land-use restrictions
+- Building code updates for flood resilience
+tensions:
+- High capital cost; agricultural land-use conflicts
+- Insurance and property value concerns
+addresses:
+- problem.southland.climate.flooding_rivers
+interventions:
+- description: Reduce 1-in-100-year flood damage by 40%
+  state_variable: flood_resilience
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

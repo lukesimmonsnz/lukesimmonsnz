@@ -1,0 +1,20 @@
+id: camp.gisborne.infrastructure.roading_resilience_approach
+name: Strategic approach for roading_resilience
+theme: infrastructure
+core_claim: Strategic intervention on roading_resilience will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting roading_resilience
+- Priority action 2 targeting roading_resilience
+- Institutional coordination mechanism for roading_resilience
+tensions:
+- 'Tension 1: roading_resilience'
+- 'Tension 2: roading_resilience'
+addresses:
+- problem.gisborne.infrastructure.roading_resilience
+interventions:
+- description: Primary intervention for roading_resilience
+  state_variable: roading_resilience_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

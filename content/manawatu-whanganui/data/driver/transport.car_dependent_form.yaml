@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.transport.car_dependent_form
+name: Car-Oriented Urban Form
+description: Car-oriented urban form. This driver operates at regional scale with
+  mostly-agreed consensus.
+theme: transport
+consensus: mostly-agreed
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.active_modes
+claim_ids: []

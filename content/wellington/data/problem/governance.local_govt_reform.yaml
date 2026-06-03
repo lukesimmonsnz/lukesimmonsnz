@@ -1,0 +1,40 @@
+id: problem.wellington.governance.local_govt_reform
+title: Wellington local government dysfunction and reform pressure
+theme: governance
+section: governance
+subpage: local-govt-reform
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wellington's local government structure — seven councils managing an integrated city-region of 450,000 people — is
+  widely considered inefficient and unfit for purpose. Proposals for amalgamation into a unitary authority have recurred for
+  decades without resolution. The fragmentation hampers strategic infrastructure investment, planning, and emergency management.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - council_count
+  - cross_council_coordination_cost
+  inputs:
+  - amalgamation_policy
+  - minister_of_local_govt_direction
+  constraints:
+  - community_identity_resistance
+  - political_incumbent_self_interest
+  feedback_loops:
+  - 'Status quo bias: each council''s elected members have incentives to preserve the existing structure; absence of a compelling
+    forcing event prevents the coordination needed for amalgamation.'
+narrative:
+- heading: Structural fragmentation
+  body: The Wellington city-region is governed by Wellington City Council, Greater Wellington Regional Council, Hutt City,
+    Upper Hutt City, Porirua City, Kāpiti Coast District, and South Wairarapa District — seven separate entities with overlapping
+    geographic interests and costly coordination requirements (claim.wellington.governance.wcc_dysfunction_indicators).
+- heading: Recurring reform failure
+  body: Amalgamation proposals for the Wellington region have been advanced multiple times since the 1980s, most recently
+    in 2014 when a Local Government Commission proposal was rejected. The debate has not resolved, and the structural inefficiencies
+    persist (claim.wellington.governance.amalgamation_debate_history).
+claim_ids:
+- claim.wellington.governance.wcc_dysfunction_indicators
+- claim.wellington.governance.amalgamation_debate_history
+status: draft
+time_horizons: [decade, generation, century]

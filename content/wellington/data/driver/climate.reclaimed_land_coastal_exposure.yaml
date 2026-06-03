@@ -1,0 +1,13 @@
+id: driver.wellington.climate.reclaimed_land_coastal_exposure
+name: Reclaimed land coastal exposure to sea-level rise
+description: Wellington's Petone Foreshore, Rongotai isthmus, and harbour-edge transport corridors sit on low-lying reclaimed
+  land that is acutely exposed to sea-level rise and storm surge events.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.climate.sea_level_rise
+claim_ids:
+- claim.wellington.climate.low_lying_area_exposure

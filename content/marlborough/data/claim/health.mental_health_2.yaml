@@ -1,0 +1,19 @@
+id: claim.marlborough.health.mental_health_2
+statement: 'Seasonal worker mental health: migrant health screening identifies language
+  barriers and social isolation; suicide/self-harm rates among transient workers underestimated;
+  temporary visa holders limited access to primary mental health subsidies.'
+value: null
+unit: null
+time_period: '2023'
+confidence: low
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

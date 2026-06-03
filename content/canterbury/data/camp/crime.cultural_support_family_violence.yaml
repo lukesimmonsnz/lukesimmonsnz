@@ -1,0 +1,22 @@
+id: camp.canterbury.crime.cultural_support_family_violence
+name: Culturally-Responsive Family Violence Prevention (Māori/Pacific)
+theme: crime
+core_claim: Iwi and Pacific-led family violence prevention (whānau conferencing, cultural
+  accountability frameworks) achieves better outcomes than mainstream justice system
+  for Māori/Pacific families.
+flagship_moves:
+- Key intervention for Culturally-Responsive Family Violence Prevention (Māori/Pacific)
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.crime.family_violence
+interventions:
+- description: Iwi and Pacific-led family violence prevention (whānau conferencing,
+    cultural accountability frameworks) achieves better outcomes than mainstream justice
+    system for Māori/Pacific families.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -1,0 +1,32 @@
+id: problem.bay_of_plenty.housing.affordability
+title: Housing unaffordability in Bay of Plenty in Bay of Plenty — Te Moana-a-Toi
+theme: housing
+section: housing
+subpage: affordability
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Housing unaffordability in Bay of Plenty represents a key systemic pressure
+  for Bay of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - affordability_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The housing unaffordability in bay of plenty is a pressing concern for the
+    region.
+claim_ids:
+- claim.bay_of_plenty.housing.affordability_01
+- claim.bay_of_plenty.housing.affordability_02
+status: draft
+time_horizons: [decade, generation, century]

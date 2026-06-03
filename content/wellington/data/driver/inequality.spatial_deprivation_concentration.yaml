@@ -1,0 +1,13 @@
+id: driver.wellington.inequality.spatial_deprivation_concentration
+name: Geographic concentration of social housing
+description: Wellington's social housing stock is concentrated in Porirua and specific Hutt Valley sub-areas, creating high-deprivation
+  neighbourhoods that amplify disadvantage through school quality sorting, service reduction, and neighbourhood stigma.
+theme: inequality
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.inequality.geographic_deprivation
+claim_ids:
+- claim.wellington.inequality.porirua_nzdep_score

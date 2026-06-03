@@ -1,0 +1,19 @@
+id: claim.marlborough.housing.affordability_2
+statement: 'Rental affordability: median rent NZD 380–420 per week; rent-to-income
+  ratio 20–22% (national average 18–20%); low-income renters (bottom 20% income) pay
+  35–40% of gross income for housing.'
+value: 400
+unit: NZD median weekly rent
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mbl
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.rent_to_income_v1
+notes: null

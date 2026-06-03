@@ -1,0 +1,24 @@
+id: 'problem.northland.economy.business'
+title: 'Te Tai Tokerau Northland: small business'
+theme: 'economy'
+section: 'economy'
+subpage: 'business'
+parent: 'problem.northland.economy.development'
+order: 5
+updated: '2026-04-26'
+summary: 'Business formation is limited.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Business formation is limited.'
+claim_ids:
+- 'claim.northland.economy.business_claim1'
+- 'claim.northland.economy.business_claim2'
+status: 'draft'

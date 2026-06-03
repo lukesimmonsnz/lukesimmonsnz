@@ -1,0 +1,42 @@
+id: problem.west_coast.economy.economic_3
+title: Glacier and conservation-economy tourism dependency
+theme: economy
+section: economy
+subpage: economic_3
+parent: economic_structure
+order: 3
+updated: '2026-04-26'
+summary: Franz Josef and Fox Glaciers, Punakaiki and the West Coast Wilderness Trail anchor a tourism sector drawing roughly
+  half a million annual visitors. Tourism is the single largest replacement employer for departing mining work, but its central
+  asset — the glaciers — is itself in measurable retreat.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - annual_visitor_arrivals
+  - tourism_employment_count
+  - average_visitor_spend
+  inputs:
+  - doc_visitor_infrastructure_capex
+  - tourism_promotion_funding
+  constraints:
+  - climate_vulnerability_of_glaciers
+  - small_operator_capital_thinness
+  feedback_loops:
+  - Reduced glacier accessibility lowers operator margins, which constrains reinvestment in the diversified attractions that
+    would replace the glaciers as the headline asset.
+narrative:
+- heading: A regional sector built on a few hero attractions
+  body: Glacier tourism alone supports around half a million visitor arrivals annually (claim.west_coast.economy.economic_3_claim),
+    with significant additional visitation to Punakaiki, the Heritage Trail and the Wilderness Trail. The sector is dispersed
+    across small operators and highly seasonal.
+- heading: Climate-vulnerability of the asset base
+  body: The same glacier retreat that frames the climate chapter of the region's story also degrades the marketable image
+    and the practical accessibility that drove the earlier visitor boom. Diversification into rainforest walks, cycle trails,
+    marine wildlife and cultural tourism is underway but capital-intensive.
+claim_ids:
+- claim.west_coast.economy.economic_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

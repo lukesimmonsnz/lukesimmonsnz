@@ -1,0 +1,15 @@
+id: driver.west_coast.inequality.driver_2
+name: Geographic isolation and service-deprivation gradient
+description: The further from Greymouth, Westport or Hokitika a settlement sits, the thinner its service profile becomes.
+  Haast, Karamea, Reefton and Ross illustrate a service-deprivation gradient that compounds income inequality with access
+  inequality.
+theme: inequality
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.inequality.inequality
+- problem.west_coast.inequality.rental_affordability_gap
+- problem.west_coast.inequality.rural_isolation
+claim_ids: []

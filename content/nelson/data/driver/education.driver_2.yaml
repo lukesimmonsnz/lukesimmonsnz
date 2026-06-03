@@ -1,0 +1,13 @@
+id: driver.nelson.education.driver_2
+name: Tertiary-pathway thinness and out-migration of leavers
+description: Limited in-region tertiary breadth (NMIT covers trades and applied health well; degree pathways in arts, science, and professional fields require leaving the region) drives out-migration of high-achieving school leavers, with weak return pathways.
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.education.achievement
+- problem.nelson.education.secondary
+- problem.nelson.education.tertiary_access
+claim_ids: []

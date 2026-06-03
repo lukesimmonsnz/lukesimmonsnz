@@ -1,0 +1,20 @@
+id: claim.gisborne.environment.environmental_degradation_25
+statement: Environmental pressures in Gisborne include water quality degradation from
+  agricultural runoff, invasive species impacts, and habitat fragmentation. Climate
+  change amplifies drought and flood risks, requiring adaptive management across multiple
+  stakeholder jurisdictions.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

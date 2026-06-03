@@ -1,0 +1,21 @@
+id: claim.tasman.inequality.child_poverty_claim
+statement: Census income data (2023) indicates 21% of children in Tasman live in low-income
+  households (below 60% of median income). Motueka and rural farm areas have higher
+  child poverty rates (26%) vs Richmond (18%). Limited accessible early intervention
+  services; health disparities begin in childhood.
+value: 21
+unit: percent children in low-income households
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.census_income_tasman_2023
+- source.stats_nz_census_2023
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

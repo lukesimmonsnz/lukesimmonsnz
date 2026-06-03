@@ -1,0 +1,34 @@
+id: problem.otago.environment.coastal_otago
+title: Coastal Ecosystem Degradation
+theme: environment
+section: environment
+subpage: coastal_otago
+parent: problem.otago.environment.freshwater_stress
+order: 4
+updated: '2026-04-26'
+summary: Otago Peninsula and Port Chalmers harbor face stormwater pollution, invasive
+  marine species, and fishing pressure; marine protected area coverage incomplete.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Otago Peninsula and Port Chalmers harbor face stormwater pollution, invasive
+    marine species, and fishing pressure; marine protected area coverage incomplete.
+claim_ids:
+- claim.otago.environment.lake_eutrophication_trend
+- claim.otago.environment.freshwater_stress_prevalence
+- claim.otago.environment.irrigation_water_quality_prevalence
+- claim.otago.environment.freshwater_stress_trend
+- claim.otago.environment.coastal_otago_trend
+- claim.otago.environment.irrigation_water_quality_trend
+- claim.otago.environment.coastal_otago_prevalence
+- claim.otago.environment.lake_eutrophication_prevalence
+status: draft
+time_horizons: [generation, century]

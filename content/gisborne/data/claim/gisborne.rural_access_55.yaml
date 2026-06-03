@@ -1,0 +1,21 @@
+id: claim.gisborne.health.rural_access_55
+statement: Health service access in Gisborne is constrained by workforce shortage
+  and geographic isolation. Nursing vacancies and GP shortages are acute in rural
+  areas; specialist services require travel, delaying diagnoses and treatment for
+  chronic and acute conditions.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

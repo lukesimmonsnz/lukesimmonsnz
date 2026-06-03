@@ -1,0 +1,41 @@
+id: problem.west_coast.crime.drug_crime
+title: Methamphetamine and drug-related offending in the transition economy
+theme: crime
+section: crime
+subpage: drug_crime
+parent: safety
+order: 4
+updated: '2026-04-26'
+summary: Drug-related offences, particularly methamphetamine offences, run elevated relative to national rates in the towns
+  most affected by mining-sector decline. Geographic isolation and thin policing make supply-side interruption and harm-reduction
+  outreach both difficult.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - drug_offence_rate
+  - treatment_seat_per_capita
+  - wastewater_meth_index
+  inputs:
+  - police_specialist_capacity
+  - addiction_treatment_funding
+  constraints:
+  - distance_to_specialist_services
+  - small_caseload_economics
+  feedback_loops:
+  - Drug-driven property and violent offending erodes community confidence and economic activity; the resulting decline narrows
+    the legitimate-employment pathway, broadening the recruitment base for the drug economy.
+narrative:
+- heading: Decline-economy drug markets
+  body: Towns moving through a structural economic transition — well-paid mining work being replaced by lower-paid, more precarious
+    service-sector jobs — have repeatedly shown elevated rates of methamphetamine and related offending (claim.west_coast.crime.drug_crime_claim).
+    The West Coast fits this profile, though the small population means rates are volatile.
+- heading: Distance as an enforcement barrier
+  body: Long distances from Christchurch-based specialist policing, customs and addictions services mean both supply interdiction
+    and treatment access are constrained. Any harm-reduction strategy has to be designed around long travel times, thin out-of-hours
+    capacity and small caseloads.
+claim_ids:
+- claim.west_coast.crime.drug_crime_claim
+status: draft
+time_horizons:
+- decade

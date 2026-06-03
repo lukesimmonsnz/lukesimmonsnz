@@ -1,20 +1,20 @@
 id: claim.auckland.housing.supply_deficit_2010s
-statement: >
-  Auckland experienced a structural housing supply deficit throughout the 2010s,
-  with annual building consents consistently falling short of the dwelling
-  additions required to keep pace with population growth and household
-  formation.
+statement: 'Auckland experienced a structural housing supply deficit throughout the
+  2010s, with annual building consents consistently falling short of the dwelling
+  additions required to keep pace with population growth and household formation.
+
+  '
 value: null
 unit: null
-time_period: "2010-2019"
+time_period: 2010-2019
 confidence: high
 verification_status: verified
-last_verified: "2026-04-01"
+last_verified: '2026-04-27'
 source_ids:
-  - source.mhud_housing_aotearoa_2023
+- source.mhud_housing_aotearoa_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 notes: null

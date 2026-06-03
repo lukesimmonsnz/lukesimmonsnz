@@ -1,0 +1,20 @@
+id: claim.southland.climate.coastal_foveaux_rise_trend
+statement: Foveaux Strait coastal erosion is progressive, with recession rates of
+  0.3-0.5 metres annually in some locations. Climate-driven sea-level rise and increased
+  storminess accelerate erosion; engineering solutions (seawalls) are costly ($100-200M);
+  nature-based adaptation is limited by available space.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

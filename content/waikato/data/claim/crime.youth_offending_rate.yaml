@@ -1,0 +1,21 @@
+id: claim.waikato.crime.youth_offending_rate
+statement: Youth offending in Waikato is elevated in Huntly and south Hamilton. Limited
+  youth diversion services and community programs constrain early intervention; NZDF
+  participation and apprenticeship pathways are underutilized among at-risk youth.
+  Correlation with school disengagement and parental gang involvement is documented
+  in regional surveys.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato youth_offending claim

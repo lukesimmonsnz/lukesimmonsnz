@@ -1,0 +1,20 @@
+id: claim.wellington.governance.ngati_toa_settlement_scope
+statement: The Ngāti Toa Rangatira Treaty settlement (enacted 2014) established significant
+  rights and interests across the greater Wellington region, including co-governance
+  and cultural redress provisions for the Kāpiti and Marlborough coasts and surrounding
+  marine areas, with implementation ongoing.
+value: null
+unit: null
+time_period: 2014-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.iwi_ngati_toa_strategic_plan_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

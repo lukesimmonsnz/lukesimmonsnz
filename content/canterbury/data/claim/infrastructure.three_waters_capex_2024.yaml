@@ -1,0 +1,24 @@
+id: claim.canterbury.infrastructure.three_waters_capex_2024
+statement: Christchurch City Council's Three Waters capital expenditure programme
+  budgets NZD 6 billion through 2054 for water supply, wastewater, and stormwater
+  renewal. This programme targets replacement of aging water mains (50+ years old),
+  wastewater capacity expansion (to accommodate Selwyn/Waimakariri growth), and stormwater
+  resilience (flood mitigation post-2021 events and future climate extremes). Local
+  Water Done Well replaces the failed Three Waters Reform; Council retains asset ownership
+  but faces funding constraints that may delay renewal schedules.
+value: 6
+unit: NZD billions
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_annual_plan_2024
+- source.waimakariri_dc_growth_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

@@ -1,0 +1,21 @@
+id: camp.southland.infrastructure.smelter_transition
+name: Economic Transition Planning for Potential Smelter Closure
+theme: infrastructure
+core_claim: Proactive diversification and business development prepare Southland for
+  smelter exit scenario.
+flagship_moves:
+- Diversification strategy and business incubation
+- Worker retraining programs
+- Alternative uses for smelter site
+tensions:
+- Difficult political messaging; community resistance
+- Economic transition time and costs
+addresses:
+- problem.southland.infrastructure.manapouri_power
+interventions:
+- description: Develop transition plan and create 500 alternative jobs
+  state_variable: economic_diversification
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

@@ -1,0 +1,22 @@
+id: camp.wellington.climate.cool_buildings
+name: Building Performance Standards for Heat Resilience
+theme: climate-adaptation
+core_claim: Mandatory minimum thermal performance standards for new buildings will reduce cooling energy demand and improve
+  heat resilience for residents.
+flagship_moves:
+- Raise NZS 4218 thermal envelope standards to match Australian NatHERS requirements
+- Require passive cooling design in all new residential buildings in Wellington
+- Retrofit thermal insulation support for rental properties
+tensions:
+- Higher building standards increase construction costs and may reduce housing supply
+- Wellington has historically prioritised heating over cooling in building standards
+addresses:
+- problem.wellington.climate.urban_heat
+interventions:
+- description: Update Wellington building consent requirements to require passive cooling compliance in all new dwellings
+    from 2026
+  state_variable: residential_heat_stress_risk
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

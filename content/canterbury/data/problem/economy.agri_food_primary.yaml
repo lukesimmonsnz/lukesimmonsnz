@@ -1,0 +1,48 @@
+id: problem.canterbury.economy.agri_food_primary
+title: Primary Sector Resilience & Climate Adaptation
+theme: economy
+section: economy
+subpage: agri_food_primary
+parent: problem.canterbury.economy.economic_structure
+order: 1
+updated: '2026-04-26'
+summary: 'Dairy farming is Canterbury''s largest agricultural sector (650k dairy cattle,
+  $6B+ output), but faces climate stress (drought, water availability), input cost
+  inflation, and regulatory tightening (nitrogen limits, climate policy). Arable farming
+  also faces margin pressure. Farm debt is elevated; consolidation and land values
+  are rising. Labor shortages in farm work are chronic.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - dairy_herd_size
+  - farm_gross_margin_usd_per_hectare
+  - farm_debt_to_equity_ratio
+  - farm_exit_rate
+  inputs:
+  - milk_price_global_commodity
+  - water_availability
+  - nitrogen_regulation_strictness
+  - input_costs_feed_fuel
+  constraints:
+  - drought_risk_frequency_increasing
+  - environmental_regulation_tightening
+  - labor_availability_rural
+  feedback_loops:
+  - 'Debt-exit loop: rising debt and margin pressure drive farm sales; larger operations
+    consolidate; labor shortage worsens as per-hectare employment falls.'
+narrative:
+- heading: Primary sector under pressure
+  body: 'Dairy farms in Canterbury average $5-7M debt. Milk price volatility (NZD
+    6-9/kg milk solids) creates margin squeeze. Climate stress (drought 2022-2023)
+    reduced production and stressed farmers emotionally. Nitrogen regulation via CWMS
+    limits stocking, further pressuring margins.
+
+    '
+claim_ids:
+- claim.canterbury.economy.dairy_farm_debt_2023
+- claim.canterbury.economy.farm_exit_rate_2023
+status: draft
+time_horizons: [decade, generation]

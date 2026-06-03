@@ -1,0 +1,43 @@
+id: problem.west_coast.climate.climate_risk
+title: Westport flooding and the move toward managed retreat
+theme: climate-adaptation
+section: climate
+subpage: climate_risk
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Westport experienced major flood events in July 2021 and February 2022 that together inundated more than 600 homes.
+  Insurance withdrawal, slow recovery and a depleted rental stock are driving depopulation, and Buller District Council is
+  now planning the first managed retreat of a New Zealand town centre to higher ground.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - homes_in_flood_zone
+  - insurance_retreat_index
+  - managed_retreat_acquisitions
+  inputs:
+  - climate_resilience_capex
+  - epa_emergency_grant
+  - private_insurance_capacity
+  constraints:
+  - floodplain_topography
+  - single_corridor_evacuation_route
+  feedback_loops:
+  - Each flood event accelerates insurance withdrawal, which depresses property values and the rateable base, which constrains
+    the council's ability to fund the very flood-defence and retreat works the next event will require.
+narrative:
+- heading: Two floods in eight months
+  body: The July 2021 and February 2022 Buller River flood events together inundated more than 600 homes, destroyed substantial
+    commercial floor space, and triggered prolonged emergency accommodation costs (claim.west_coast.climate.climate_risk_claim).
+    Insurance retreat from inundated zones has transferred residual risk onto property owners and the Crown.
+- heading: The first managed-retreat town
+  body: Buller DC is now planning relocation of residential and commercial property from flood-prone zones to higher ground
+    — a level of structured retreat without precedent in New Zealand. Equity, compensation, and the future of the existing
+    town centre are unresolved, and the political process will set a template for other coastal and riverine settlements nationally.
+claim_ids:
+- claim.west_coast.climate.climate_risk_claim
+status: draft
+time_horizons:
+- generation
+- century

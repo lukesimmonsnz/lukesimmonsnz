@@ -1,0 +1,11 @@
+id: driver.southland.governance.ngai_tahu_cogovernance
+name: Ngāi Tahu Co-Governance and Consultation Requirements
+description: Treaty settlement expanding Ngāi Tahu co-governance; institutional complexity.
+theme: governance
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.governance.treaty_ngai_tahu
+claim_ids: []

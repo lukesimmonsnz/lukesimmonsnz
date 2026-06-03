@@ -1,0 +1,34 @@
+id: problem.southland.environment.southland_river_quality
+title: Southland Rivers Water Quality Collapse
+theme: environment
+section: environment
+subpage: southland_river_quality
+parent: problem.southland.environment.freshwater_degradation
+order: 2
+updated: '2026-04-26'
+summary: Dairy intensification and conversion drove nutrient and bacterial pollution
+  in Mataura, Oreti, and other rivers; swimming unsafe; ecosystem biodiversity declined.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Dairy intensification and conversion drove nutrient and bacterial pollution
+    in Mataura, Oreti, and other rivers; swimming unsafe; ecosystem biodiversity declined.
+claim_ids:
+- claim.southland.environment.southland_river_quality_trend
+- claim.southland.environment.coastal_foveaux_prevalence
+- claim.southland.environment.southland_river_quality_prevalence
+- claim.southland.environment.freshwater_degradation_trend
+- claim.southland.environment.coastal_foveaux_trend
+- claim.southland.environment.freshwater_degradation_prevalence
+- claim.southland.environment.fiordland_ecosystem_prevalence
+- claim.southland.environment.fiordland_ecosystem_trend
+status: draft
+time_horizons: [generation, century]

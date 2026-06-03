@@ -1,0 +1,19 @@
+id: claim.gisborne.environment.water_quality_30
+statement: Cyclone Gabrielle mobilised massive forestry slash volumes from East Coast
+  plantation forests. Slash debris degraded waterways in Motu, Te Araroa, and Tolaga
+  Bay corridors; sediment load in Poverty Bay elevated for months.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.water_quality_index_v1
+notes: null

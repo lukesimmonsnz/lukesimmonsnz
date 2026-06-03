@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.crime.youth_offending
+title: Youth Offending and Disengagement
+theme: crime
+section: crime
+subpage: youth_offending
+parent: problem.manawatu_whanganui.crime.safety
+order: 1
+updated: '2026-04-26'
+summary: Youth crime clusters; school disengagement; limited diversion and rehabilitation
+  options.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Youth crime clusters; school disengagement; limited diversion and rehabilitation
+    options.
+claim_ids:
+- claim.manawatu_whanganui.crime.youth_offending_1
+- claim.manawatu_whanganui.crime.youth_offending_2
+status: draft
+time_horizons: [decade]

@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.environment.water_quality_intervention
+name: Intervention for water_quality
+theme: environment
+core_claim: Targeted intervention on water_quality will improve outcomes.
+flagship_moves:
+- Policy measure 1 for water_quality
+- Policy measure 2 for water_quality
+- Implementation mechanism for water_quality
+tensions:
+- Trade-off A for water_quality
+- Trade-off B for water_quality
+addresses:
+- problem.bay_of_plenty.environment.water_quality
+interventions:
+- description: Core intervention targeting water_quality
+  state_variable: water_quality_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

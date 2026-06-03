@@ -1,0 +1,30 @@
+id: camp.taranaki.climate.just_transition_camp
+name: Just transition planning
+theme: climate-adaptation
+core_claim: Proactive just transition planning that supports workers and communities
+  dependent on fossil fuels is the most equitable path to decarbonisation.
+flagship_moves:
+- Establish a Taranaki Just Transition Fund funded by a levy on oil and gas production
+- Develop retraining programmes for energy sector workers in renewable energy and
+  hydrogen
+- Create a regional economic diversification strategy reducing fossil fuel dependence
+  by 2040
+tensions:
+- Just transition investment may not move fast enough to prevent community economic
+  disruption
+- State support for fossil fuel workers may reduce urgency of decarbonisation action
+interventions:
+- description: Establish Taranaki Just Transition Fund
+  state_variable: fossil_fuel_employment_share
+  expected_sign: '-'
+- description: Retraining programmes for energy workers
+  state_variable: renewable_energy_employment
+  expected_sign: +
+addresses:
+- problem.taranaki.climate.agricultural_emissions
+- problem.taranaki.climate.climate_emissions
+- problem.taranaki.climate.industrial_emissions
+- problem.taranaki.climate.coastal_risk
+applicable_in:
+- taranaki
+tensions_with: []

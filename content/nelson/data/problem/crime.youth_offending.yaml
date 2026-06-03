@@ -1,0 +1,34 @@
+id: problem.nelson.crime.youth_offending
+title: Concentrated youth offending and school disengagement
+theme: crime
+section: crime
+subpage: youth_offending
+parent: safety
+order: 3
+updated: '2026-04-26'
+summary: 'Nelson recorded around 680 youth offences (ages 10-24) in 2023, concentrated in the 14-19 cohort, with vehicle crime, burglary, and disorder offences as the primary categories. School disengagement is a leading precursor: chronic absenteeism in Nelson secondary schools sits at around 8.2 percent against a national 6.1 percent.'
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - youth_offences_per_year
+  - secondary_chronic_absenteeism_pct
+  - alternative_education_seats
+  inputs:
+  - mentoring_programme_funding
+  - school_engagement_resourcing
+  constraints:
+  - specialist_youth_workforce
+  - transport_to_alt_ed_sites
+  feedback_loops:
+  - 'Disengagement-offending feedback: school disengagement raises offending risk; offending records reduce school re-engagement options; the cycle compounds across the 14-19 window.'
+narrative:
+- heading: Pathway from disengagement to offending
+  body: Most youth offending in Nelson is committed by a small, repeat-contact cohort already known to schools, Oranga Tamariki, and Police (claim.nelson.crime.youth_offending_claim). School absenteeism, family instability, and unaddressed neurodevelopmental needs are the consistent precursors. Maori and Pacific youth are over-represented (around 44 percent of offenders against 22 percent of the youth population), with deprivation as the dominant mediating variable.
+- heading: Service-coverage gap for the 14-19 cohort
+  body: Wraparound services for under-12s and structured youth-justice pathways from 17 are reasonably well-mapped; the 13-16 window, where most first offences occur, has thinner coverage. Mentoring, alternative-education, and trades-pathway capacity is intermittent and grant-dependent rather than baseline-funded.
+claim_ids:
+- claim.nelson.crime.youth_offending_claim
+status: draft
+time_horizons:
+- decade

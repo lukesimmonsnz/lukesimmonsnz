@@ -1,0 +1,21 @@
+id: claim.otago.climate.coastal_dunedin_trend
+statement: 'Coastal risk is accelerating: Port Chalmers and Port Otago (NZ''s multi-use
+  container and log-export port, ~1M tonnes annually) face increasing high-tide inundation
+  during storm surge events; Otago Peninsula hoiho habitat degradation accelerating;
+  Catlins coastal villages experiencing erosion rates of 0.5-1.0 m/year in some sectors;
+  adaptation funding gaps limiting defence options.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

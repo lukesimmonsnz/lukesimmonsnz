@@ -1,0 +1,21 @@
+id: claim.waikato.environment.wetland_loss_90pct
+statement: Waikato wetlands have declined approximately 90% since 1840 due to agricultural
+  drainage and land conversion. The Waikato Lowlands originally hosted extensive wetland
+  complexes; surviving remnants at Whangamarino and Kopuatai are now DOC-managed reserves.
+  Peat bog loss in the central Waikato plains reduced carbon sequestration capacity
+  and increased flood severity.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_waikato_climate_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato biodiversity_loss claim

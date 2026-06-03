@@ -1,26 +1,27 @@
 id: claim.auckland.infrastructure.wastewater_overflow_events
-statement: >
-  Auckland's combined wastewater and stormwater network experiences
-  hundreds of overflow events annually during heavy rainfall, discharging
-  partially treated or untreated wastewater to waterways and harbours.
-  The Waitemata Harbour and Manukau Harbour both receive chronic stormwater
-  and wastewater contamination that causes persistent beach closures and
-  ecological damage. Overflow events are a direct consequence of undersized
-  network capacity relative to current rainfall intensity and impervious
+statement: 'Auckland''s combined wastewater and stormwater network experiences hundreds
+  of overflow events annually during heavy rainfall, discharging partially treated
+  or untreated wastewater to waterways and harbours. The Waitemata Harbour and Manukau
+  Harbour both receive chronic stormwater and wastewater contamination that causes
+  persistent beach closures and ecological damage. Overflow events are a direct consequence
+  of undersized network capacity relative to current rainfall intensity and impervious
   surface coverage.
+
+  '
 value: null
 unit: null
-time_period: "2020-2023"
+time_period: 2020-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.watercare_annual_2023
+- source.watercare_annual_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  Watercare and Auckland Council publish annual overflow event data.
-  The claim is directional; exact event counts vary by year and rainfall.
+- auckland
+notes: 'Watercare and Auckland Council publish annual overflow event data. The claim
+  is directional; exact event counts vary by year and rainfall.
+
+  '

@@ -1,0 +1,10 @@
+id: driver.waikato.transport.funding_gap
+name: Transport funding shortfall
+description: Transport funding shortfall in the regional context.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

@@ -1,0 +1,29 @@
+id: problem.taranaki.inequality.rural_isolation
+title: Rural isolation and service gaps
+theme: inequality
+section: inequality
+subpage: rural_isolation
+parent: problem.taranaki.inequality.deprivation
+order: 2
+updated: '2026-04-26'
+summary: Remote rural farms have limited access to services. Limited employment diversity
+  outside dairy.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - rural_isolation_index
+  inputs:
+  - rural_isolation_input_1
+  constraints:
+  - rural_isolation_constraint
+  feedback_loops:
+  - 'Feedback: rural_isolation'
+narrative:
+- heading: Rural isolation and service gaps in Taranaki
+  body: Remote rural farms have limited access to services. Limited employment diversity
+    outside dairy.
+claim_ids:
+- claim.taranaki.inequality.rural_isolation_01
+status: draft
+time_horizons: [decade, generation, century]

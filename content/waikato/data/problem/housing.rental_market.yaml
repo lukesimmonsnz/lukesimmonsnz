@@ -1,0 +1,28 @@
+id: problem.waikato.housing.rental_market
+title: Rental market stress
+theme: housing
+section: housing
+subpage: rental_market
+parent: problem.waikato.housing.hamilton_housing_crisis
+order: 3
+updated: '2026-04-26'
+summary: Low rental vacancy and high rent-to-income ratios create severe rental stress.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - housing_affordability_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing rental market creates feedback on regional outcomes.
+narrative:
+- heading: Rental market stress
+  body: Low rental vacancy and high rent-to-income ratios create severe rental stress.
+claim_ids:
+- claim.waikato.housing.rental_vacancy_1_8
+status: draft
+time_horizons: [decade, generation, century]

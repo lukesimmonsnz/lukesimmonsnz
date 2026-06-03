@@ -1,0 +1,21 @@
+id: camp.gisborne.environment.environmental_degradation_approach
+name: Strategic approach for environmental_degradation
+theme: environment
+core_claim: Strategic intervention on environmental_degradation will drive measurable
+  improvement.
+flagship_moves:
+- Priority action 1 targeting environmental_degradation
+- Priority action 2 targeting environmental_degradation
+- Institutional coordination mechanism for environmental_degradation
+tensions:
+- 'Tension 1: environmental_degradation'
+- 'Tension 2: environmental_degradation'
+addresses:
+- problem.gisborne.environment.environmental_degradation
+interventions:
+- description: Primary intervention for environmental_degradation
+  state_variable: environmental_degradation_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

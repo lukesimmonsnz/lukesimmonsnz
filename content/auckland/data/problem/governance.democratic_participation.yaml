@@ -59,3 +59,4 @@ claim_ids:
   - claim.auckland.governance.democratic_deficit_south_auckland
   - claim.auckland.governance.council_complexity
 status: draft
+time_horizons: [decade, generation, century]

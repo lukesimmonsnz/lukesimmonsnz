@@ -1,0 +1,13 @@
+id: driver.tasman.infrastructure.driver_1
+name: Renewal backlog inherited from a small ratepayer base
+description: An aging three-waters and roading asset base sits behind a relatively small ratepayer base, producing
+  a structural mismatch between renewal need and rates-funded renewal capacity.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.infrastructure.infrastructure
+- problem.tasman.infrastructure.infrastructure_2
+claim_ids: []

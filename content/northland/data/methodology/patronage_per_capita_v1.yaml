@@ -1,0 +1,16 @@
+applies_to:
+- Claim
+description: 'Annual public transport boardings divided by resident population of
+  the defined region. Normalises raw patronage figures for population size, enabling
+  comparison across cities and over time as population grows. Drawn from Auckland
+  Transport patronage statistics and Stats NZ population estimates. P5'' triggers
+  on cross-region patronage-per-capita comparison claims.
+
+  '
+discharged_by: python_invariant
+id: methodology.patronage_per_capita_v1
+kind: measurement
+name: PT Patronage per Capita (annual trips)
+predicate: null
+source_ids: []
+version: 1

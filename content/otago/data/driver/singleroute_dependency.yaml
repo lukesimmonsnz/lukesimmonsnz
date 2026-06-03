@@ -1,0 +1,12 @@
+id: driver.otago.transport.singleroute_dependency
+name: Single-Route Dependency (SH6, SH94)
+description: Queenstown-Lakes and Fiordland access via single highways; no alternative
+  routes.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.otago.transport.queenstown_congestion
+claim_ids: []

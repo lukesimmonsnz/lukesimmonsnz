@@ -1,0 +1,26 @@
+id: claim.manawatu_whanganui.transport.active_modes_1
+statement: 'Active transport (walking, cycling) usage in Manawatū-Whanganui is limited;
+  approximately 8-10% of commute trips are active (below national 12-15%). Palmerston
+  North has invested in cycle lanes and pedestrian infrastructure; the city targets
+  12-15% mode share by 2030. Whanganui and rural areas have minimal cycle infrastructure.
+  Weather (high rainfall, wind), terrain, and distance to work/school limit active
+  mode adoption. Equity gaps exist: lower-income households are more likely to walk
+  but face unsafe conditions; children''s independent mobility is constrained by traffic
+  speeds and road design. Cycling and walking initiatives focus on school routes and
+  urban centres.'
+value: 9
+unit: percent_active_mode_commute
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_transport_mw_2023
+- source.palmerston_north_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.mode_share_v1
+notes: null

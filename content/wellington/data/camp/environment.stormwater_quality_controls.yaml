@@ -1,0 +1,20 @@
+id: camp.wellington.environment.stormwater_quality_controls
+name: Stormwater Source Control and Treatment
+theme: environment
+core_claim: Low-impact urban design and stormwater treatment trains will reduce contaminant loads to waterways at source.
+flagship_moves:
+- Mandatory rain gardens and permeable paving in all new developments
+- Retrofit stormwater treatment in legacy industrial catchments
+- Zinc and copper source controls on roofing and brake materials
+tensions:
+- Retrofit programmes in existing urban areas are expensive and require access to private land
+- Source controls on materials require national-level regulation, not just local action
+addresses:
+- problem.wellington.environment.waterway_quality
+interventions:
+- description: Require low-impact stormwater design for all new development consents in Wellington Region from 2025
+  state_variable: stormwater_contaminant_load
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

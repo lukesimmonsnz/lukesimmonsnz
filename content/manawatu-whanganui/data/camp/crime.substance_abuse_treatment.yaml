@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.crime.substance_abuse_treatment
+name: Substance Abuse Treatment and Support
+theme: crime
+core_claim: Integrated addiction services and harm reduction.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.economy.logistics_defence
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

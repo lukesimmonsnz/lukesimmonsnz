@@ -1,0 +1,23 @@
+id: claim.otago.governance.queenstown_growth_management_prevalence
+statement: 'Queenstown-Lakes District Council is managing explosive growth (fastest
+  NZ district, 5-8% annual rolls 2020-2023): housing shortage (median multiple >15×
+  in 2021-2022 peak), school capacity constraints, visitor infrastructure stress,
+  worker accommodation crisis. Community Housing Trust established (2022+); three
+  waters upgrades underway; Frankton development (major new suburb) and Arrowtown
+  expansion planned. Growth management contested between development / infrastructure
+  capacity.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

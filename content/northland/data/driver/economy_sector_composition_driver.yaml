@@ -1,0 +1,16 @@
+id: driver.northland.economy.sector_composition_driver
+name: Primary-sector economic structure
+description: Northland's economy is concentrated in agriculture, forestry, and horticulture
+  — sectors with low labour productivity and limited wage growth.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.economy.northland_economic_underperformance
+- problem.northland.economy.low_wages
+- problem.northland.economy.tourism_dependence
+- problem.northland.economy.business_investment
+claim_ids:
+- claim.northland.economy.northland_economic_underperformance_claim1

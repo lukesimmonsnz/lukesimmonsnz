@@ -1,0 +1,13 @@
+id: driver.nelson.housing.driver_2
+name: Lifestyle in-migration and short-term rental conversion
+description: Wealth-bearing in-migration during 2018-2022 imported substantial demand into a shallow housing market; ongoing short-term rental conversion further reduces the long-term rental pool. Both operate on the demand and tenure-mix side of the housing system.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.nelson.housing.affordability
+- problem.nelson.housing.rental_market
+- problem.nelson.housing.infrastructure_cost
+claim_ids: []

@@ -1,0 +1,35 @@
+id: pattern.health.workforce_shortage
+title: Health workforce shortage as a cross-regional structural constraint
+theme: health
+summary: New Zealand faces a structural health workforce deficit — GPs, nurses, specialists,
+  and allied health — concentrated in rural and provincial regions but present as
+  a constraint across the system.
+manifests_in:
+- northland
+- waikato
+- gisborne
+- hawkes-bay
+- taranaki
+- west-coast
+- nelson
+- marlborough
+- southland
+claim_ids:
+- claim.northland.health.health_workforce_claim1
+- claim.canterbury.health.gp_vacancy_rate_rural_2023
+- claim.marlborough.health.chronic_disease_1
+- claim.west_coast.health.chronic_disease_claim
+- claim.nelson.health.chronic_disease_claim
+narrative:
+- heading: Structural shortage
+  body: New Zealand trains insufficient health professionals relative to its population
+    and geography. Rural and provincial regions compete poorly for graduates who have
+    accumulated debt and seek urban lifestyle. The shortage is structural, not cyclical,
+    and is not addressable by individual incentive packages alone.
+- heading: Workforce pipeline
+  body: International recruitment fills gaps in the short term but does not build
+    domestic capability. Māori and Pasifika workforce development — with culturally
+    competent care as a co-benefit — is both an equity imperative and a structural
+    solution to workforce in underserved communities.
+status: draft
+updated: '2026-04-26'

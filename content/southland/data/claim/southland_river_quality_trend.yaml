@@ -1,0 +1,22 @@
+id: claim.southland.environment.southland_river_quality_trend
+statement: Southland river quality improvement is slow despite regulatory efforts.
+  Southland Water and Land Plan 2022 sets 2030 nitrogen reduction targets; uptake
+  of riparian planting and nutrient management practices variable. Climate change
+  (summer drying, high-flow events) adds stress. Indigenous species recovery (lamprey,
+  native fish) hampered by habitat degradation. Recreational use (fishing, water sports)
+  increasingly constrained by quality concerns.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

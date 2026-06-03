@@ -1,0 +1,30 @@
+id: problem.marlborough.climate.climate_risk
+title: Climate Change Risks and Regional Adaptation
+theme: climate-adaptation
+section: climate
+subpage: climate_risk
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Drought threatens wine terroir; sea-level rise affects Sounds; fire risk
+  increases; glacier retreat.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Drought threatens wine terroir; sea-level rise affects Sounds; fire risk increases;
+    glacier retreat.
+claim_ids:
+- claim.marlborough.climate.climate_risk_placeholder
+status: draft
+time_horizons: [generation, century]

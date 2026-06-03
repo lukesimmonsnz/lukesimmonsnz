@@ -1,0 +1,20 @@
+id: claim.taranaki.crime.youth_offending_01
+statement: Youth offending in Taranaki (15-17 year olds) represents 6-8% of regional
+  police apprehensions, with property crime (burglary, vehicle theft) dominant. Limited
+  recreational opportunities in rural centers and high youth unemployment following
+  agricultural contraction contribute to offending rates.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki youth_offending

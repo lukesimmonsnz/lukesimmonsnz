@@ -1,0 +1,14 @@
+id: driver.canterbury.environment.dairy_intensification_irrigation
+name: Dairy Intensification via Irrigation Expansion
+description: Dairy Intensification via Irrigation Expansion
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.environment.aquifer_nitrate_contamination
+- problem.canterbury.environment.freshwater_stress
+claim_ids:
+- claim.canterbury.environment.dairy_intensification_2023
+- claim.canterbury.environment.n_loading_source_apportionment_2023

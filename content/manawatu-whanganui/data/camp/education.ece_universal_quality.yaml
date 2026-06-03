@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.education.ece_universal_quality
+name: Universal ECE quality investment
+theme: education
+core_claim: Public funding and qualified teacher investment in early childhood.
+flagship_moves:
+- Flagship move 1 for Universal ECE quality investment
+- Flagship move 2 for Universal ECE quality investment
+tensions:
+- Internal tension 1 of Universal ECE quality investment
+addresses:
+- problem.manawatu_whanganui.governance.freshwater_management
+interventions:
+- description: 'Intervention 1: Universal ECE quality investment detail 1'
+- description: 'Intervention 2: Universal ECE quality investment detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

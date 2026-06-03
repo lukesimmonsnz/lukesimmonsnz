@@ -1,0 +1,20 @@
+id: claim.wellington.economy.skills_displacement_public_sector
+statement: The skills displaced by Wellington's 2024 public sector restructuring do
+  not map cleanly onto the private sector's demand profile, creating a structural
+  mismatch that slows labour market reabsorption and increases the risk of sustained
+  out-migration of skilled workers.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

@@ -1,0 +1,31 @@
+id: problem.taranaki.transport.connectivity
+title: Regional transport connectivity and mode options
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Taranaki is geographically isolated, with limited air and rail connectivity. Car dependence is high (88% commute mode share). Coastal location and narrow State Highway 3 create vulnerability.'
+manifests_in:
+  - taranaki
+systems_model:
+  state_variables:
+    - car_mode_share_percent
+    - air_route_frequency
+  inputs:
+    - geographic_isolation
+    - modal_alternatives_scarcity
+  constraints:
+    - population_density_below_viability_thresholds
+  feedback_loops:
+    - 'Low population makes transit unviable; car dependence entrenches.'
+narrative:
+  - heading: Isolation
+    body: 'Taranaki is 2+ hours from nearest major centres (Hamilton, Whanganui). Limited scheduled flights and rail services.'
+  - heading: Car Dependence
+    body: 'Approximately 88% of commute trips are by private car, driven by sprawl and limited alternatives.'
+claim_ids:
+  - claim.taranaki.transport.car_share_88_percent
+status: draft
+time_horizons: [decade, generation]

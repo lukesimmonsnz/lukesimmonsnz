@@ -1,0 +1,21 @@
+id: camp.marlborough.economy.diversification_support
+name: Economic Diversification Programme
+theme: economy
+core_claim: Support for non-wine sector development.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.economy.economic_diversification
+interventions:
+- description: 'Action 1: Economic Diversification Programme'
+- description: 'Action 2: Economic Diversification Programme'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

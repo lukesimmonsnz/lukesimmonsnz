@@ -1,0 +1,45 @@
+id: problem.canterbury.health.mental_health
+title: Mental Health Service Access & Capacity
+theme: health
+section: health
+subpage: mental_health
+parent: problem.canterbury.health.health_outcomes
+order: 1
+updated: '2026-04-26'
+summary: 'Mental health service utilization is rising (24% population contacts annually),
+  but waitlists for specialist counseling exceed 12 weeks. Community mental health
+  (primary care-based) is underfunded. Youth mental health services are particularly
+  constrained; suicide rates in Canterbury remain above NZ average. Earthquake-related
+  trauma and ongoing rebuilding stress contribute.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - mental_health_service_utilization_rate
+  - specialist_counseling_waitlist_weeks
+  - youth_mental_health_service_access_rate
+  - suicide_rate_per_100k
+  inputs:
+  - deprivation_stress
+  - earthquake_trauma_exposure
+  - substance_abuse_comorbidity
+  constraints:
+  - mental_health_workforce_supply
+  - community_mental_health_funding
+  feedback_loops:
+  - Dynamic feedback mechanisms drive mental health service access & capacity.
+narrative:
+- heading: Post-earthquake trauma persists
+  body: 'Mental health presentations increased post-quake and have stabilized at elevated
+    levels. Earthquake anxiety, depression, and PTSD remain prevalent. Youth mental
+    health (anxiety, depression, self-harm) is rising faster than service expansion.
+    GPs manage most cases due to waitlists, reducing specialist intervention capacity.
+
+    '
+claim_ids:
+- claim.canterbury.health.mental_health_utilization_2023
+- claim.canterbury.health.youth_mental_health_crisis_2023
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,20 @@
+id: camp.gisborne.housing.affordability_approach
+name: Strategic approach for affordability
+theme: housing
+core_claim: Strategic intervention on affordability will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting affordability
+- Priority action 2 targeting affordability
+- Institutional coordination mechanism for affordability
+tensions:
+- 'Tension 1: affordability'
+- 'Tension 2: affordability'
+addresses:
+- problem.gisborne.housing.affordability
+interventions:
+- description: Primary intervention for affordability
+  state_variable: affordability_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

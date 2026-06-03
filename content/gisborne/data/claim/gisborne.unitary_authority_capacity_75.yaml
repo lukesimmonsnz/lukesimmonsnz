@@ -1,0 +1,19 @@
+id: claim.gisborne.governance.unitary_authority_capacity_75
+statement: Gisborne District Council is a unitary authority combining regional and
+  territorial functions. Post-Gabrielle recovery demands strained staff and budget;
+  ratepayers face significant rate increases for infrastructure repair.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.admin_count_v1
+notes: null

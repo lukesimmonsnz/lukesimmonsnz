@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.crime.drug_crime_growth
+name: Driver for drug_crime
+description: "This driver exacerbates the drug_crime pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: crime
+consensus: disputed
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.crime.drug_crime
+claim_ids:
+- claim.bay_of_plenty.crime.drug_crime_47

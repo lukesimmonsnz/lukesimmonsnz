@@ -1,0 +1,12 @@
+id: driver.nelson.climate.driver_1
+name: Anthropogenic climate change in the Tasman-Nelson region
+description: Long-run warming and rainfall variability changes driven by global greenhouse-gas accumulation, expressed locally as elevated mean temperature, intensified summer drought, and heavier individual rainfall events. Operates over generations, beyond the lever of any single regional policy.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.climate.climate_risk
+- problem.nelson.climate.climate_2
+claim_ids: []

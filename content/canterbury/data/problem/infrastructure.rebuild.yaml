@@ -1,0 +1,45 @@
+id: problem.canterbury.infrastructure.rebuild
+title: Canterbury Infrastructure Rebuild & Debt Management
+theme: infrastructure
+section: infrastructure
+subpage: rebuild
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury''s horizontal infrastructure was severely damaged in the 2011
+  earthquakes, requiring a 15-year rebuild programme costing billions. CCC still carries
+  earthquake-related debt; water, wastewater, stormwater networks require ongoing
+  replacement. Growth in outer districts (Waimakariri, Selwyn) demands parallel new
+  infrastructure before full debt repayment.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - earthquake_debt_balance
+  - water_network_renewal_rate
+  - wastewater_system_capacity_utilization
+  - stormwater_network_compliance
+  inputs:
+  - central_govt_grants_to_disaster_recovery
+  - council_rate_revenue
+  - development_contributions
+  constraints:
+  - debt_service_burden_on_rates
+  - three_waters_legacy_assets_age
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury infrastructure rebuild & debt management.
+narrative:
+- heading: Ongoing earthquake debt legacy
+  body: 'CCC''s earthquake-related debt peaked at NZD 2.4B (2014) and remains above
+    NZD 1B (2024). Rate funding and central government support have repaid ~60%, but
+    full recovery extends to 2040+. Meanwhile, growth regions (Waimakariri, Selwyn)
+    demand new infrastructure, creating parallel funding pressure.
+
+    '
+claim_ids:
+- claim.canterbury.infrastructure.earthquake_debt_2024
+- claim.canterbury.infrastructure.three_waters_capex_2024
+status: draft
+time_horizons: [decade, generation]

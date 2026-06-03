@@ -1,0 +1,29 @@
+id: problem.waikato.health.rural_access
+title: Rural health service access
+theme: health
+section: health
+subpage: rural_access
+parent: problem.waikato.health.waikato_health_inequity
+order: 3
+updated: '2026-04-26'
+summary: Remote rural communities in Waikato face long travel times to specialist
+  services.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - health_outcome_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing rural access creates feedback on regional outcomes.
+narrative:
+- heading: Rural health service access
+  body: Remote rural communities in Waikato face long travel times to specialist services.
+claim_ids:
+- claim.waikato.health.rural_gp_ratio
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,22 @@
+id: camp.taranaki.governance.governance.collaboration
+name: Enhanced council collaboration
+theme: governance
+core_claim: Enhanced council collaboration addresses governance.
+flagship_moves:
+- Implement Enhanced council collaboration
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.governance.governance
+- problem.taranaki.governance.energy_transition_planning
+- problem.taranaki.governance.local_govt
+- problem.taranaki.governance.treaty_iwi
+interventions:
+- description: Enhanced council collaboration action
+  state_variable: governance.collaboration_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

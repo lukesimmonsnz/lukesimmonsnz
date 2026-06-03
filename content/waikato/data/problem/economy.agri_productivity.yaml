@@ -1,0 +1,30 @@
+id: problem.waikato.economy.agri_productivity
+title: Agricultural productivity and transition
+theme: economy
+section: economy
+subpage: agri_productivity
+parent: problem.waikato.economy.waikato_economic_concentration
+order: 2
+updated: '2026-04-26'
+summary: Dairy and agri sector faces emissions obligations, input cost pressures,
+  and global commodity price volatility.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gdp_per_capita_growth
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing agri productivity creates feedback on regional outcomes.
+narrative:
+- heading: Agricultural productivity and transition
+  body: Dairy and agri sector faces emissions obligations, input cost pressures, and
+    global commodity price volatility.
+claim_ids:
+- claim.waikato.economy.agri_gdp_share_28pct
+status: draft
+time_horizons: [decade, generation]

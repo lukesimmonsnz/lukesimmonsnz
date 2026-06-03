@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.inequality.rural_isolation_1
+statement: Rural isolation in Manawatū-Whanganui affects approximately 15,000-18,000
+  people living in dispersed settlements (Taihape, Ohakune, Raurimu, Taumarunui, Waiouru,
+  rural Rangitikei). Limited public transport, high vehicle dependency, and geographic
+  distance from services create structural isolation. Rural youth (ages 15-24) face
+  limited employment and education opportunities; out-migration to Palmerston North
+  or Wellington is significant (net outflow approx. 2-3% p.a.). Broadband gaps and
+  mobile coverage dead zones exacerbate isolation by limiting digital access to employment,
+  education, and social connection.
+value: 16500
+unit: people_in_rural_isolation
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023_mw
+- source.nzta_transport_mw_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

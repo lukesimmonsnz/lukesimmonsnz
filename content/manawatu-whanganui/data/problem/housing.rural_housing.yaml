@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.housing.rural_housing
+title: Rural Housing Decline and Accessibility
+theme: housing
+section: housing
+subpage: rural_housing
+parent: problem.manawatu_whanganui.housing.housing_market
+order: 1
+updated: '2026-04-26'
+summary: Rural population decline limits housing demand and investment in remote areas;
+  rising housing costs.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Rural population decline limits housing demand and investment in remote areas;
+    rising housing costs.
+claim_ids:
+- claim.manawatu_whanganui.housing.rural_housing_1
+- claim.manawatu_whanganui.housing.rural_housing_2
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,39 @@
+id: problem.wellington.environment.waterway_quality
+title: Degraded urban freshwater quality in Wellington streams
+theme: environment
+section: environment
+subpage: waterway-quality
+parent: problem.wellington.environment.harbour_health
+order: 3
+updated: '2026-04-26'
+summary: Wellington's urban streams — including the Kaiwharawhara, Korokoro, and Waiwhetu — are significantly degraded by
+  urban runoff, stormwater infrastructure, and historical channelisation. Most urban streams fail to meet the water quality
+  and ecological standards set by the Whaitua te Whanganui-a-Tara freshwater planning process.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - stream_water_quality_index
+  - macroinvertebrate_community_index
+  inputs:
+  - urban_runoff_contaminant_load
+  - riparian_restoration_investment
+  constraints:
+  - piped_and_channelised_stream_sections
+  - impervious_catchment_surface
+  feedback_loops:
+  - 'Impervious surface amplification: urban infill increases impervious surface, intensifying stormwater runoff and contaminant
+    pulses into streams.'
+narrative:
+- heading: Whaitua baseline findings
+  body: The Whaitua te Whanganui-a-Tara process found that the majority of Wellington's monitored urban streams fail to achieve
+    the desired water quality state for swimming, ecological health, or kai gathering (claim.wellington.environment.stream_water_quality_index).
+- heading: Channelisation legacy
+  body: Many Wellington urban streams were piped or channelised during mid-twentieth century urban development, eliminating
+    the natural filtering, buffering, and habitat functions that support stream health. Daylighting and restoration is technically
+    feasible but costly in built-up areas (claim.wellington.environment.urban_stream_degradation).
+claim_ids:
+- claim.wellington.environment.stream_water_quality_index
+- claim.wellington.environment.urban_stream_degradation
+status: draft
+time_horizons: [generation, century]

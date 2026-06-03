@@ -1,0 +1,20 @@
+id: camp.canterbury.infrastructure.lyttelton_port_resilience
+name: Lyttelton Port Seismic Resilience Upgrade
+theme: infrastructure
+core_claim: Targeted capital investment in berth seismic strengthening and operational
+  redundancy (satellite container handling) reduces Alpine Fault rupture exposure.
+flagship_moves:
+- Key intervention for Lyttelton Port Seismic Resilience Upgrade
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.infrastructure.lyttelton_port
+interventions:
+- description: Targeted capital investment in berth seismic strengthening and operational
+    redundancy (satellite container handling) reduces Alpine Fault rupture exposure.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.inequality.ethnic_gap_growth
+name: Driver for ethnic_gap
+description: "This driver exacerbates the ethnic_gap pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: inequality
+consensus: contested
+category: regulatory
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.inequality.ethnic_gap
+claim_ids:
+- claim.bay_of_plenty.inequality.ethnic_gap_39

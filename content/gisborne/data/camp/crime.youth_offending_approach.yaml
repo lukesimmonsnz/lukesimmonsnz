@@ -1,0 +1,20 @@
+id: camp.gisborne.crime.youth_offending_approach
+name: Strategic approach for youth_offending
+theme: crime
+core_claim: Strategic intervention on youth_offending will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting youth_offending
+- Priority action 2 targeting youth_offending
+- Institutional coordination mechanism for youth_offending
+tensions:
+- 'Tension 1: youth_offending'
+- 'Tension 2: youth_offending'
+addresses:
+- problem.gisborne.crime.youth_offending
+interventions:
+- description: Primary intervention for youth_offending
+  state_variable: youth_offending_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

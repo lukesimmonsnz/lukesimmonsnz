@@ -1,0 +1,32 @@
+id: problem.manawatu_whanganui.health.health_outcomes
+title: Health Outcomes and Health Equity
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Mental health crisis; chronic disease burden; rural health workforce shortages;
+  Māori health disparities.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Mental health crisis; chronic disease burden; rural health workforce shortages;
+    Māori health disparities.
+claim_ids:
+- claim.manawatu_whanganui.health.health_outcomes_placeholder
+status: draft
+time_horizons: [decade, generation]

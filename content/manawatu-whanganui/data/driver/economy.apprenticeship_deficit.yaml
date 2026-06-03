@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.economy.apprenticeship_deficit
+name: Apprenticeship And Vocational Training Deficit
+description: Apprenticeship and vocational training deficit with regional implications.
+theme: economy
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.education.early_childhood
+claim_ids: []

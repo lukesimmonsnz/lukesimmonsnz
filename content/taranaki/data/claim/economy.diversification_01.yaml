@@ -1,0 +1,20 @@
+id: claim.taranaki.economy.diversification_01
+statement: Taranaki's economy remains heavily concentrated in dairy (35-40% of primary
+  sector output) and oil/gas (8-12% of regional GDP as of 2022). Economic diversification
+  efforts toward horticulture (kiwifruit, apples), specialty crops, and renewable
+  energy remain limited by regional transport isolation and capital constraints.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki diversification

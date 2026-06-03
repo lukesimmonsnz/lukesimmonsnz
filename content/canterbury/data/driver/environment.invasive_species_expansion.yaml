@@ -1,0 +1,12 @@
+id: driver.canterbury.environment.invasive_species_expansion
+name: Invasive Species (Stoats, Possums) Range Expansion
+description: Invasive Species (Stoats, Possums) Range Expansion
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.environment.alpine_biodiversity
+claim_ids:
+- claim.canterbury.environment.invasive_predator_expansion_2023

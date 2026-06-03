@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.transport.port_congestion_growth
+name: Driver for port_congestion
+description: "This driver exacerbates the port_congestion pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: transport
+consensus: disputed
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.transport.port_congestion
+claim_ids:
+- claim.bay_of_plenty.transport.port_congestion_11

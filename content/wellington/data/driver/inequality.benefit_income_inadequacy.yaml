@@ -1,0 +1,13 @@
+id: driver.wellington.inequality.benefit_income_inadequacy
+name: Benefit income inadequacy in Wellington's high-cost environment
+description: Welfare benefit levels were not designed to be adequate in one of New Zealand's most expensive cities; benefit
+  income relative to Wellington housing and living costs leaves recipients in structural poverty.
+theme: inequality
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+- problem.wellington.inequality.child_poverty
+claim_ids:
+- claim.wellington.inequality.child_poverty_rate_porirua

@@ -1,0 +1,13 @@
+id: driver.wellington.infrastructure.reclaimed_land_liquefaction
+name: Liquefaction risk on reclaimed harbour land
+description: Significant Wellington infrastructure — CentrePort, the foreshore rail corridor, and road networks — sits on
+  reclaimed harbour land susceptible to liquefaction during earthquake shaking, as demonstrated by the 2016 Kaikōura event.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.infrastructure.earthquake_lifelines
+claim_ids:
+- claim.wellington.infrastructure.centreport_kaikoura_damage

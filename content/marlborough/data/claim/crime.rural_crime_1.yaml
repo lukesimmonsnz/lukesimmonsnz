@@ -1,0 +1,19 @@
+id: claim.marlborough.crime.rural_crime_1
+statement: Rural property crime (vineyard equipment theft, irrigation system vandalism,
+  livestock rustling) reported to Marlborough Police at 45–55 incidents per annum;
+  response times 45–90 minutes for outlying areas (Awatere, Pelorus).
+value: 50
+unit: incidents per annum (2021–2023 estimate)
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

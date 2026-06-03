@@ -1,0 +1,21 @@
+id: claim.wellington.transport.active_travel_infrastructure_gap
+statement: Wellington's cycling network consists of largely disconnected segments
+  with significant gaps on major commuter corridors between suburbs and the CBD; the
+  absence of protected lanes on key arterials is the primary deterrent to uptake among
+  potential but cautious cyclists.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_regional_land_transport_2021
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

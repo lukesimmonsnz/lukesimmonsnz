@@ -1,0 +1,20 @@
+id: camp.gisborne.environment.erosion_approach
+name: Strategic approach for erosion
+theme: environment
+core_claim: Strategic intervention on erosion will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting erosion
+- Priority action 2 targeting erosion
+- Institutional coordination mechanism for erosion
+tensions:
+- 'Tension 1: erosion'
+- 'Tension 2: erosion'
+addresses:
+- problem.gisborne.environment.erosion
+interventions:
+- description: Primary intervention for erosion
+  state_variable: erosion_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

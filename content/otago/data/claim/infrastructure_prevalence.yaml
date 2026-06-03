@@ -1,0 +1,23 @@
+id: claim.otago.infrastructure.infrastructure_prevalence
+statement: 'Otago core infrastructure faces aging asset backlogs: Dunedin three waters
+  (water, wastewater, stormwater) network aging (pipes 40-60 years old, replacement
+  rates insufficient); Queenstown three waters under growth pressure (supply, treatment,
+  discharge capacity); ORC bus fleet aging (Dunedin); road network (SH1, SH8 Lindis
+  Pass, SH6 Frankton) maintenance costs rising; Port Chalmers / Port Otago aging container
+  and log-handling facilities; electricity distribution (Meridian, Otago Energy) undergoing
+  network hardening.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

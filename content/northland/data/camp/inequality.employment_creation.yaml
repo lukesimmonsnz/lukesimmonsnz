@@ -1,0 +1,20 @@
+id: camp.northland.inequality.employment_creation
+name: Local employment creation and training
+theme: inequality
+core_claim: Local employment creation and training is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement local employment creation and training
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- northland
+tensions_with: []

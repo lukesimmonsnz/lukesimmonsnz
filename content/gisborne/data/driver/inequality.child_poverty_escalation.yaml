@@ -1,0 +1,13 @@
+id: driver.gisborne.inequality.child_poverty_escalation
+name: Driver escalating child_poverty
+description: "This driver exacerbates the child_poverty challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.inequality.child_poverty
+claim_ids:
+- claim.gisborne.inequality.child_poverty_35

@@ -1,0 +1,20 @@
+id: claim.gisborne.health.mental_health_51
+statement: Health service accessibility in Gisborne is severely constrained by workforce
+  shortage and geographic isolation. Hauora Tairāwhiti faces GP shortages, nursing
+  vacancies above 20%, and mental health service gaps; specialist services require
+  2-4 hour travel to Rotorua or Whanganui.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.median_multiple_v1
+notes: null

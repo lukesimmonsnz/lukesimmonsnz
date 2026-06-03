@@ -1,0 +1,24 @@
+id: 'problem.waikato.environment.biodiversity'
+title: 'Waikato: biodiversity loss'
+theme: 'environment'
+section: 'environment'
+subpage: 'biodiversity'
+parent: 'problem.waikato.environment.degradation'
+order: 4
+updated: '2026-04-26'
+summary: 'Native biodiversity is threatened.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Native biodiversity is threatened.'
+claim_ids:
+- 'claim.waikato.environment.biodiversity_claim1'
+- 'claim.waikato.environment.biodiversity_claim2'
+status: 'draft'

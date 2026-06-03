@@ -1,0 +1,21 @@
+id: claim.waikato.health.maori_life_expectancy_gap_7yr
+statement: Excess mortality in Waikato's primary-industry workforce from cardiovascular disease,
+  respiratory illness, and diabetes reflects occupational exposure (dairy farming, forestry), health service access barriers,
+  and socioeconomic stress. A 7-year life expectancy gap (71 versus 78 years) separates affected communities. Waikato Māori
+  are disproportionately concentrated in these high-exposure and low-access health geographies. Waikato DHB Midlands Hauora
+  partnership addresses equity but faces chronic underfunding relative to population health need.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato maori_health_gap claim

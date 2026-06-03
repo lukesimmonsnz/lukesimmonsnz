@@ -1,0 +1,47 @@
+id: problem.canterbury.governance.treaty_ngai_tahu
+title: Treaty Settlement, Iwi Rights & Co-Governance
+theme: governance
+section: governance
+subpage: treaty_ngai_tahu
+parent: problem.canterbury.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: 'Ngāi Tahu (Te Rūnanga o Ngāi Tahu) is Canterbury''s major iwi with significant
+  Treaty settlement assets (land, cash, commercial entities). Co-governance arrangements
+  exist in some areas (e.g., Water Council, CCC Mayoralty election co-design proposals)
+  but are contested politically. Iwi land rights, water rights (especially under CWMS),
+  and cultural site protection remain contentious. Iwi economic development (tourism,
+  farming, energy) is growing but benefit distribution to community is debated.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - co_governance_mechanism_count
+  - iwi_land_asset_value
+  - water_allocation_to_iwi_percentage
+  - maori_community_economic_participation_rate
+  inputs:
+  - treaty_settlement_assets
+  - political_support_co_governance
+  - iwi_capacity_governance
+  constraints:
+  - political_contestation_indigenous_rights
+  - power_asymmetry_councils_vs_iwi
+  feedback_loops:
+  - Dynamic feedback mechanisms drive treaty settlement, iwi rights & co-governance.
+narrative:
+- heading: Settlement assets without guarantee of benefit
+  body: 'Ngāi Tahu Holdings operates successful commercial entities (farming, tourism,
+    energy). However, benefit flows to iwi membership vary; some argue holdings prioritize
+    shareholder returns over community benefit. Water allocation to iwi is contested
+    (CWMS allows for allocation but magnitude disputed). Co-governance proposals (e.g.,
+    mayoralty co-election with iwi representative) face political opposition.
+
+    '
+claim_ids:
+- claim.canterbury.governance.ngai_tahu_asset_value_2023
+- claim.canterbury.governance.water_allocation_iwi_2024
+status: draft
+time_horizons: [decade, generation, century]

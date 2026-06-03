@@ -1,0 +1,11 @@
+id: source.mbd_wine_industry_research
+title: 'Marlborough Wine Research Consortium: Industry Economic Data 2023'
+author: null
+publisher: Marlborough Wine Council
+year: 2023
+url: https://www.marboroughwine.co.nz
+type: academic
+credibility: reputable
+geo_granularity:
+- marlborough
+notes: Wine industry economic and production data.

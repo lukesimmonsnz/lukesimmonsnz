@@ -1,0 +1,29 @@
+id: problem.taranaki.economy.methanol_dependency
+title: Methanol production and energy dependence
+theme: economy
+section: economy
+subpage: methanol_dependency
+parent: problem.taranaki.economy.energy_transition
+order: 2
+updated: '2026-04-26'
+summary: Methanex methanol plant is a major employer (600+ jobs) and revenue source,
+  but faces global competition and transition pressure.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - methanol_dependency_index
+  inputs:
+  - methanol_dependency_input_1
+  constraints:
+  - methanol_dependency_constraint
+  feedback_loops:
+  - 'Feedback: methanol_dependency'
+narrative:
+- heading: Methanol production and energy dependence in Taranaki
+  body: Methanex methanol plant is a major employer (600+ jobs) and revenue source,
+    but faces global competition and transition pressure.
+claim_ids:
+- claim.taranaki.economy.methanol_dependency_01
+status: draft
+time_horizons: [decade, generation]

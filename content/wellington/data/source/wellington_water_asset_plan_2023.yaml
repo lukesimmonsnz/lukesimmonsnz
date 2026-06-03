@@ -1,0 +1,12 @@
+id: source.wellington_water_asset_plan_2023
+title: Wellington Water Asset Management Plan 2023
+author: null
+publisher: Wellington Water Limited
+year: 2023
+url: https://www.wellingtonwater.co.nz/your-water/infrastructure/
+type: government-report
+credibility: official
+geo_granularity:
+- wellington
+notes: Describes condition, age profile, and investment requirements for water and wastewater assets across greater Wellington.
+  Key source for pipe age and break frequency data.

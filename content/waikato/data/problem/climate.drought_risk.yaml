@@ -1,0 +1,30 @@
+id: problem.waikato.climate.drought_risk
+title: Drought and water security
+theme: climate-adaptation
+section: climate
+subpage: drought_risk
+parent: problem.waikato.climate.waikato_climate
+order: 4
+updated: '2026-04-26'
+summary: Increased drought frequency under climate projections threatens irrigation-dependent
+  agriculture.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - climate_risk_exposure
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing drought risk creates feedback on regional outcomes.
+narrative:
+- heading: Drought and water security
+  body: Increased drought frequency under climate projections threatens irrigation-dependent
+    agriculture.
+claim_ids:
+- claim.waikato.climate.drought_return_period_halved
+status: draft
+time_horizons: [generation, century]

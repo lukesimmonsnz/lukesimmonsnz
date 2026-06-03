@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.transport.connectivity_intervention
+name: Intervention for connectivity
+theme: transport
+core_claim: Targeted intervention on connectivity will improve outcomes.
+flagship_moves:
+- Policy measure 1 for connectivity
+- Policy measure 2 for connectivity
+- Implementation mechanism for connectivity
+tensions:
+- Trade-off A for connectivity
+- Trade-off B for connectivity
+addresses:
+- problem.bay_of_plenty.transport.connectivity
+interventions:
+- description: Core intervention targeting connectivity
+  state_variable: connectivity_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

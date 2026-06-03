@@ -1,0 +1,23 @@
+id: camp.waikato.environment.restorative_farming
+name: Regenerative and restorative farming transition
+theme: environment
+core_claim: Transitioning to lower-intensity and regenerative farming practices reduces
+  contaminant loads while maintaining rural livelihoods.
+flagship_moves:
+- Fund transition to lower-input farming systems via co-investment fund
+- Expand riparian planting programmes with Te Awa Tupua
+- Provide incentives for organic conversion in critical catchments
+tensions:
+- Voluntary transition is too slow without regulatory backstop
+- Economic viability of low-intensity farming varies by soil type and market access
+interventions:
+- description: Fund transition to lower-input farming systems via co-investment fund
+  state_variable: environmental_quality_index
+  expected_sign: +
+addresses:
+- problem.waikato.environment.freshwater_quality
+- problem.waikato.environment.biodiversity_loss
+- problem.waikato.environment.peat_soil_degradation
+applicable_in:
+- waikato
+tensions_with: []

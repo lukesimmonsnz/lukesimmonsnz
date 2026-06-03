@@ -1,0 +1,23 @@
+id: claim.nelson.housing.infrastructure_cost_claim
+statement: 'Infrastructure cost barriers to housing development are material in Nelson.
+  New subdivision development is constrained by high per-lot infrastructure costs:
+  water reticulation extension averages $35,000–50,000/lot (vs. $15,000–25,000 nationally
+  due to geographic dispersion and aging Maitai Dam dependency); wastewater treatment
+  augmentation costs $28,000–42,000/lot; stormwater and roading add another $20,000–35,000/lot.
+  Total greenfield development cost is $83,000–127,000/lot before land cost, pushing
+  minimum lot values above $180,000 and new-build price points above $800,000.'
+value: 100
+unit: thousand NZD average infrastructure cost per lot
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_housing_demand_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

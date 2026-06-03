@@ -1,0 +1,23 @@
+id: claim.nelson.health.health_outcomes_claim
+statement: Overall health outcomes in Nelson show variation by ethnicity and deprivation.
+  Life expectancy is 79.2 years for Pakeha and 74.1 years for Maori (5.1-year gap);
+  infant mortality is 6.2 per 1,000 live births nationally but 9.4 per 1,000 for Maori
+  infants in Nelson district. Hospital admission rates for acute and preventable conditions
+  are 12% above national average. Health service access is constrained by GP shortages
+  (ratios 1:1,900 patients vs. 1:1,400 nationally) and waiting times for elective
+  procedures averaging 16 weeks.
+value: 5.1
+unit: year life expectancy gap (Maori vs Pakeha)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_nelson_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

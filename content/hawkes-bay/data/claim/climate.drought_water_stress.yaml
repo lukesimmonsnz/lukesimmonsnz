@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.climate.drought_frequency_increase_1_in_4_years
+statement: Dry years are projected to increase from 1-in-7 years (historical, 1960-2020)
+  to 1-in-4 years under RCP 6.0 by 2070 in Hawke's Bay. Horticulture (apples, wine
+  grapes in Gimblett Gravels) and dairy face heightened irrigation demand and aquifer
+  depletion risk.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Hawke's Bay

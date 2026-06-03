@@ -1,0 +1,13 @@
+id: driver.gisborne.economy.post_cyclone_recovery_escalation
+name: Driver escalating post_cyclone_recovery
+description: "This driver exacerbates the post_cyclone_recovery challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: economy
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.economy.post_cyclone_recovery
+claim_ids:
+- claim.gisborne.economy.post_cyclone_recovery_71

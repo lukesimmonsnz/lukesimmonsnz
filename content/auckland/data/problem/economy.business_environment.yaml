@@ -60,3 +60,4 @@ claim_ids:
   - claim.auckland.economy.sme_capital_access
   - claim.auckland.economy.auckland_business_cost
 status: draft
+time_horizons: [decade, generation]

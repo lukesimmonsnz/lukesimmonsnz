@@ -1,0 +1,19 @@
+id: claim.marlborough.infrastructure.digital_2
+statement: 'Rural broadband initiative: government co-funding (first-generation rural
+  broadband, UFB Stage 2) brought fiber to approximately 60% of rural Marlborough
+  by 2023; remaining 40% (Sounds, Awatere remote areas) uneconomic for telecom investment.'
+value: 60
+unit: percent rural Marlborough fiber coverage 2023
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.marlborough_council_ltc_2024
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

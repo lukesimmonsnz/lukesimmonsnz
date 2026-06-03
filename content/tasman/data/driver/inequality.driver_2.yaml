@@ -1,0 +1,15 @@
+id: driver.tasman.inequality.driver_2
+name: Geographic concentration of disadvantage
+description: Lower-income households cluster in Motueka, parts of Mohua, and Murchison, where service supply is
+  thinnest and service-access cost highest, producing relative-poverty profiles that headline regional averages
+  obscure.
+theme: inequality
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.inequality.inequality
+- problem.tasman.inequality.rental_affordability_gap
+- problem.tasman.inequality.rural_isolation
+claim_ids: []

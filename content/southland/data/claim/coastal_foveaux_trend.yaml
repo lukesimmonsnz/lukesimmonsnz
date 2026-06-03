@@ -1,0 +1,21 @@
+id: claim.southland.environment.coastal_foveaux_trend
+statement: Foveaux Strait marine ecosystem is under sustained pressure. Oyster stock
+  fluctuations (Bonamia risk); fishing effort management contested; shipping lane
+  expansion proposed. Sea temperature rise affecting fish distribution; algal bloom
+  frequency increasing. Maori customary fishery rights (Ngai Tahu) increasingly contested
+  for sustainability vs livelihood balance.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

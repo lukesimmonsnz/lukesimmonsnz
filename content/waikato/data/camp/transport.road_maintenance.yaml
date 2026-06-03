@@ -1,0 +1,20 @@
+id: camp.waikato.transport.road_maintenance
+name: Road maintenance and safety investment
+theme: transport
+core_claim: Road maintenance and safety investment is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement road maintenance and safety investment
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

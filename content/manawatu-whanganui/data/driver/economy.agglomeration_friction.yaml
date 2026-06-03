@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.economy.agglomeration_friction
+name: Agglomeration Friction In Secondary Cities
+description: Agglomeration friction in secondary cities. This driver operates at regional
+  scale with mostly-agreed consensus.
+theme: economy
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.education.achievement
+claim_ids: []

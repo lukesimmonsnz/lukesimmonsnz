@@ -1,0 +1,33 @@
+id: problem.gisborne.crime.family_violence
+title: Family violence prevalence and severity in Gisborne — Te Tairāwhiti
+theme: crime
+section: crime
+subpage: family_violence
+parent: problem.gisborne.crime.safety
+order: 22
+updated: '2026-04-26'
+summary: Family violence prevalence and severity is a specific manifestation of the
+  regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - family_violence_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Family violence prevalence and severity is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.crime.family_violence_43
+- claim.gisborne.crime.family_violence_44
+status: draft
+time_horizons: [decade]

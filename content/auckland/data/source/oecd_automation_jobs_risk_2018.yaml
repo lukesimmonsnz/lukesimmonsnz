@@ -1,0 +1,18 @@
+id: source.oecd_automation_jobs_risk_2018
+title: "Automation, skills use and training (OECD Social, Employment and Migration Working Paper 202)"
+type: academic
+credibility: peer-reviewed
+url: "https://www.oecd.org/en/publications/automation-skills-use-and-training_2e2f4eea-en.html"
+year: 2018
+publisher: "OECD"
+author: "Nedelkoska, L. and Quintini, G."
+geo_granularity:
+- nz
+notes: >
+  The standard cross-country reference for the share of jobs at high
+  risk of automation and the share at risk of significant change. Uses
+  PIAAC task data and an occupational-task model. New Zealand is one
+  of the 32 OECD countries scored, with around 10% of jobs at high
+  automation risk and a further ~25% likely to undergo significant
+  change. Provides the methodological floor for any AI/automation
+  labour-exposure claim on this site.

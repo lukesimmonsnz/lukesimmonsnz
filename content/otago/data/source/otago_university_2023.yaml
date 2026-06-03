@@ -1,0 +1,12 @@
+id: source.otago_university_2023
+title: University of Otago Institutional Research 2023
+author: University of Otago
+publisher: UO
+year: 2023
+url: https://www.otago.ac.nz
+type: academic
+credibility: peer-reviewed
+geo_granularity:
+- otago
+- nz
+notes: Student population, economic impact.

@@ -1,0 +1,13 @@
+id: driver.canterbury.inequality.housing_affordability_barrier
+name: Housing Affordability as Inequality Amplifier
+description: Housing Affordability as Inequality Amplifier
+theme: inequality
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.inequality.inequality
+- problem.canterbury.inequality.east_christchurch_deprivation
+- problem.canterbury.inequality.child_poverty
+claim_ids: []

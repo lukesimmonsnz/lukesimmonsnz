@@ -1,0 +1,25 @@
+id: camp.northland.education.wraparound_camp
+name: Wraparound support and social investment in schools
+theme: education
+core_claim: Embedding social services within schools addresses attendance and achievement
+  barriers at point of need.
+flagship_moves:
+- Fund Community of Learning clusters with wraparound social workers
+- Expand free school meals and material assistance programmes
+- Develop family-school liaison roles for high-deprivation schools
+tensions:
+- Requires cross-agency data sharing and accountability
+- Sustainable funding beyond pilot phases is uncertain
+- Teacher capacity consumed by pastoral demands reduces teaching time
+interventions:
+- description: Fund Community of Learning clusters with wraparound social workers
+  state_variable: education_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.education.northland_education_inequity
+- problem.northland.education.school_attendance
+- problem.northland.education.tertiary_access
+- problem.northland.education.maori_education
+applicable_in:
+- northland
+tensions_with: []

@@ -1,0 +1,34 @@
+id: problem.southland.governance.governance
+title: Governance and Strategic Direction
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Southland RC and territorial authorities face capacity and funding constraints.
+  Smelter energy negotiations complex; Ngāi Tahu co-governance expanding.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland RC and territorial authorities face capacity and funding constraints.
+    Smelter energy negotiations complex; Ngāi Tahu co-governance expanding.
+claim_ids:
+- claim.southland.governance.governance_prevalence
+- claim.southland.governance.treaty_ngai_tahu_prevalence
+- claim.southland.governance.smelter_energy_policy_trend
+- claim.southland.governance.local_govt_reform_prevalence
+- claim.southland.governance.local_govt_reform_trend
+- claim.southland.governance.treaty_ngai_tahu_trend
+- claim.southland.governance.smelter_energy_policy_prevalence
+- claim.southland.governance.governance_trend
+status: draft
+time_horizons: [decade, generation, century]

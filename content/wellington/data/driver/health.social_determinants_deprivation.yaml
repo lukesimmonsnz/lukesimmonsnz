@@ -1,0 +1,14 @@
+id: driver.wellington.health.social_determinants_deprivation
+name: Social determinants of health in high-deprivation communities
+description: Housing conditions, income adequacy, diet quality, and safe physical activity — the social determinants of health
+  — are systematically worse in Porirua and Hutt Valley, driving higher chronic disease burden and lower health outcomes.
+theme: health
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.health.system_access
+- problem.wellington.health.chronic_disease
+claim_ids:
+- claim.wellington.health.amenable_mortality_rate

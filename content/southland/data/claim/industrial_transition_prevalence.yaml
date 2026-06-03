@@ -1,0 +1,21 @@
+id: claim.southland.economy.industrial_transition_prevalence
+statement: Industrial transition in Southland is primarily Tiwai-centric. Smelter
+  uncertainty (closure threats 2012, 2020-21) creates regional economic anxiety. ~1,000
+  direct jobs + ~2,000 indirect; power supply (850 MW Manapouri) inextricably linked.
+  No alternative large-scale industrial base; downstream processing (freezing works,
+  dairy) dependent on agricultural input supply.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

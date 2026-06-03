@@ -1,0 +1,48 @@
+id: problem.canterbury.climate.climate_risk
+title: Canterbury Climate Risk & Adaptation Urgency
+theme: climate-adaptation
+section: climate
+subpage: climate_risk
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury faces compounding climate risks: Alpine Fault rupture (M7+, ~15%
+  in 50yr window), increased rainfall intensity and drought frequency, sea level rise
+  (affecting Lyttelton, coastal regions), and warming temperatures pressuring alpine
+  ecosystems and agricultural systems. Adaptation planning is sector-siloed; integrated
+  risk frameworks are nascent. Critical infrastructure (port, water, transport) is
+  vulnerable.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - temperature_increase_trend_celsius
+  - rainfall_intensity_100yr_events_frequency
+  - sea_level_rise_rate_mm_per_year
+  - alpine_fault_rupture_probability_50yr
+  - critical_infrastructure_climate_risk_index
+  inputs:
+  - ghg_emission_pathway_global
+  - regional_adaptation_investment
+  constraints:
+  - existing_infrastructure_lock_in
+  - fiscal_constraints_adaptation_capex
+  feedback_loops:
+  - 'Maladaptation loop: high debt service constrains adaptation spending; delayed
+    adaptation increases future damage costs.'
+narrative:
+- heading: Cascading climate and seismic risks
+  body: 'Alpine Fault rupture (expected this century) could trigger M7.0+ earthquake,
+    causing devastation exceeding 2011. Simultaneously, rainfall intensification (10-30%
+    increase by 2070s) increases flood and storm surge risk in Christchurch and coastal
+    areas. Adaptation requires integrated planning; siloed responses (water strategy,
+    transport strategy, climate plan) are insufficient.
+
+    '
+claim_ids:
+- claim.canterbury.climate.alpine_fault_rupture_probability_2022
+- claim.canterbury.climate.rainfall_intensification_2070s_2023
+status: draft
+time_horizons: [generation, century]

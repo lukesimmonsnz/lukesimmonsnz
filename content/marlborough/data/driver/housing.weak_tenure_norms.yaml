@@ -1,0 +1,12 @@
+id: driver.marlborough.housing.weak_tenure_norms
+name: Weak Rental Tenure And Security Norms
+description: Weak rental tenure and security norms.
+theme: housing
+consensus: mostly-agreed
+category: cultural
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.infrastructure.port_infrastructure
+claim_ids: []

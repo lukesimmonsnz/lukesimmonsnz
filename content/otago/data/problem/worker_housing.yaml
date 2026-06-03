@@ -1,0 +1,34 @@
+id: problem.otago.housing.worker_housing
+title: Essential Worker Housing Shortage
+theme: housing
+section: housing
+subpage: worker_housing
+parent: problem.otago.housing.housing_market
+order: 4
+updated: '2026-04-26'
+summary: Healthcare, hospitality, education workers cannot afford market rents; difficulty
+  recruiting and retaining essential workforce across the region.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Healthcare, hospitality, education workers cannot afford market rents; difficulty
+    recruiting and retaining essential workforce across the region.
+claim_ids:
+- claim.otago.housing.dunedin_student_rental_prevalence
+- claim.otago.housing.housing_market_prevalence
+- claim.otago.housing.worker_housing_trend
+- claim.otago.housing.queenstown_affordability_prevalence
+- claim.otago.housing.queenstown_affordability_trend
+- claim.otago.housing.worker_housing_prevalence
+- claim.otago.housing.housing_market_trend
+- claim.otago.housing.dunedin_student_rental_trend
+status: draft
+time_horizons: [decade, generation, century]

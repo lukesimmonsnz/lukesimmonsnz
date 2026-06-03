@@ -1,0 +1,22 @@
+id: camp.taranaki.economy.economy.just_transition
+name: Just transition programme
+theme: economy
+core_claim: Just transition programme addresses energy_transition.
+flagship_moves:
+- Implement Just transition programme
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.economy.energy_transition
+- problem.taranaki.economy.diversification
+- problem.taranaki.economy.methanol_dependency
+- problem.taranaki.economy.oil_gas_decline
+interventions:
+- description: Just transition programme action
+  state_variable: economy.just_transition_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.southland.environment.tourism_pressure_fiordland
+name: Fiordland Tourism Visitor Pressure
+description: Milford Sound visitor numbers pre-COVID >500k annually; infrastructure
+  and ecosystem strain.
+theme: environment
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.southland.environment.fiordland_ecosystem
+claim_ids: []

@@ -1,0 +1,22 @@
+id: claim.canterbury.infrastructure.debt_repayment_schedule_2024
+statement: Christchurch City Council's earthquake-rebuild debt burden projects debt
+  repayment completion by 2040, 29 years post-2011 earthquakes. The Crown contributed
+  ~NZD 15 billion to the ~NZD 40 billion total rebuild; the Council funded the balance
+  through rates, insurance, and borrowing. Current debt service consumes ~8% of rates
+  revenue. Asset renewal backlogs in Three Waters, roading, and community facilities
+  post-rebuild now trigger additional capital expenditure waves, delaying debt reduction.
+value: 2040
+unit: projected year
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_annual_plan_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

@@ -1,0 +1,10 @@
+id: driver.northland.crime.deprivation_concentration
+name: Deprivation-crime nexus concentration
+description: Deprivation-crime nexus concentration in the regional context.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

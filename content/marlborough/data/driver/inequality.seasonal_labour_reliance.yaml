@@ -1,0 +1,12 @@
+id: driver.marlborough.inequality.seasonal_labour_reliance
+name: Reliance On Seasonal Migrant Labour
+description: Reliance on seasonal migrant labour with regional implications.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.inequality.child_poverty
+claim_ids: []

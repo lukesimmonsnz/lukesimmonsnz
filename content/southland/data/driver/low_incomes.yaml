@@ -1,0 +1,12 @@
+id: driver.southland.housing.low_incomes
+name: Low Income Levels
+description: Southland median incomes below national average; affordability ratio
+  inflated.
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.housing.invercargill_affordability
+claim_ids: []

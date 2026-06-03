@@ -1,0 +1,13 @@
+id: driver.hawkes_bay.housing.restrictive_zoning
+name: Restrictive residential zoning and development constraints
+description: Pre-NPS-UD planning rules restricted residential density in Napier and Hastings areas, limiting supply response to demand. Even after upzoning, practical development remains constrained by infrastructure and flood hazard limitations.
+theme: housing
+consensus: consensus
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+  - problem.hawkes_bay.housing.affordability
+  - problem.hawkes_bay.housing.cyclone_damaged_stock
+claim_ids:
+  - claim.hawkes_bay.housing.median_multiple_2024

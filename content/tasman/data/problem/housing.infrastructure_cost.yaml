@@ -1,0 +1,42 @@
+id: problem.tasman.housing.infrastructure_cost
+title: Per-dwelling infrastructure cost in a low-density region
+theme: housing
+section: housing
+subpage: infrastructure_cost
+parent: affordability
+order: 4
+updated: '2026-04-26'
+summary: Tasman District Council's growth-management modelling projects development contributions of around NZD
+  28,500 per new dwelling — three-waters, roading and reserves combined — and around NZD 156 million of infrastructure
+  investment to deliver 450 dwellings per year through to 2050.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - development_contribution_per_dwelling
+  - growth_capex_pipeline
+  inputs:
+  - rates_base_growth
+  - crown_co_investment
+  constraints:
+  - lgfa_borrowing_caps
+  - renewal_backlog
+  feedback_loops:
+  - High per-dwelling infrastructure cost raises section prices, which raises end-house prices, which suppresses
+    demand for the very dwellings the infrastructure was sized for.
+narrative:
+- heading: Sprawl is expensive per house
+  body: Low-density growth pushes pipes and roads further per dwelling than compact development. With a development
+    contribution near NZD 28,500 per new dwelling, much of that cost is either capitalised into section prices or
+    back-loaded onto the rates base (claim.tasman.housing.infrastructure_cost_claim).
+- heading: Funding model under pressure
+  body: Tasman District Council's NZD 287 million annual budget is already absorbing three-waters reform transition
+    costs and a maintenance backlog. Funding the growth programme from rates, development contributions, and Crown
+    co-investment without displacing renewals is the binding fiscal constraint.
+claim_ids:
+- claim.tasman.housing.infrastructure_cost_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

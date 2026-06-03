@@ -1,0 +1,12 @@
+id: driver.marlborough.infrastructure.aquifer_stress
+name: Groundwater Aquifer Stress From Irrigation
+description: Groundwater aquifer stress from irrigation with regional implications.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.infrastructure.digital
+claim_ids: []

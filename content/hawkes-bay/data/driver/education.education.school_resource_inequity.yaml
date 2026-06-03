@@ -1,0 +1,12 @@
+id: driver.hawkes_bay.education.education.school_resource_inequity
+name: School resource allocation inequity
+description: School resource allocation inequity
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.education.achievement
+- problem.hawkes_bay.education.tertiary_access
+claim_ids: []

@@ -1,0 +1,45 @@
+id: problem.canterbury.crime.family_violence
+title: Family Violence Prevention & Intervention
+theme: crime
+section: crime
+subpage: family_violence
+parent: problem.canterbury.crime.safety
+order: 1
+updated: '2026-04-26'
+summary: 'Family violence notifications in Canterbury average 15-18/1000 population
+  (2023), with hotspots in high-deprivation suburbs (East Christchurch, outer Selwyn).
+  Housing stress, substance abuse, and limited mental health service access amplify
+  risk. Multi-agency response capacity (police, Oranga Tamariki, women''s refuge)
+  is strained in growth districts.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - family_violence_notifications_per_1000
+  - repeat_victimization_rate
+  - perpetrator_prosecution_rate
+  - victim_safety_planning_completion_rate
+  inputs:
+  - housing_affordability_stress
+  - substance_abuse_prevalence
+  - mental_health_service_access
+  - social_cohesion_index
+  feedback_loops:
+  - Dynamic feedback mechanisms drive family violence prevention & intervention.
+  constraints:
+  - Budget and institutional capacity limits
+narrative:
+- heading: Housing stress amplifies violence risk
+  body: 'Households in severe housing stress (rental insecurity, overcrowding, substandard
+    conditions) report family violence 3-4x more frequently. Post-quake, displacement
+    stress drove acute increases; that receded but baseline remains elevated in deprived
+    areas.
+
+    '
+claim_ids:
+- claim.canterbury.crime.family_violence_notifications_2023
+- claim.canterbury.crime.housing_violence_correlation_2023
+status: draft
+time_horizons: [decade]

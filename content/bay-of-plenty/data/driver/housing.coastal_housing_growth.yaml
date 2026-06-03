@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.housing.coastal_housing_growth
+name: Driver for coastal_housing
+description: "This driver exacerbates the coastal_housing pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: housing
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.housing.coastal_housing
+claim_ids:
+- claim.bay_of_plenty.housing.coastal_housing_07

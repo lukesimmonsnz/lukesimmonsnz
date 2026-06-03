@@ -1,0 +1,20 @@
+id: camp.waikato.economy.regional_investment
+name: Regional investment attraction
+theme: economy
+core_claim: Regional investment attraction is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement regional investment attraction
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

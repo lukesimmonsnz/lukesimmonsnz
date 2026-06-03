@@ -1,0 +1,32 @@
+id: pattern.environment.coastal_erosion
+title: Coastal erosion and shoreline retreat
+theme: environment
+summary: Sea-level rise and storm intensification are accelerating coastal erosion
+  around New Zealand's extensive coastline, threatening low-lying communities, Māori
+  coastal land, and infrastructure.
+manifests_in:
+- northland
+- bay-of-plenty
+- gisborne
+- hawkes-bay
+- wellington
+- tasman
+- marlborough
+- southland
+claim_ids:
+- claim.wellington.environment.coastal_erosion_rate
+- claim.northland.environment.coastal_erosion_claim1
+- claim.southland.environment.coastal_foveaux_prevalence
+- claim.gisborne.environment.biodiversity_loss_31
+narrative:
+- heading: Physical process
+  body: Even under conservative sea-level rise scenarios, storm surge superimposed
+    on a higher baseline produces significantly greater erosion and inundation frequency.
+    New Zealand's long coastline relative to land area means coastal exposure is disproportionate.
+- heading: Managed retreat imperative
+  body: Many coastal communities cannot be permanently protected against a 1m+ sea-level
+    rise scenario. The national coastal policy gap — no formal managed retreat framework
+    — means regions are making inconsistent decisions about protection versus retreat
+    with little Crown support.
+status: draft
+updated: '2026-04-26'

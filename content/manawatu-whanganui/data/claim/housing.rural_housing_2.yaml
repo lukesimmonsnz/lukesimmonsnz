@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.housing.rural_housing_2
+statement: Rural housing in Manawatū-Whanganui faces climate and infrastructure challenges.
+  Flooding risk (Manawatū River, tributary overtopping) affects properties in Foxton,
+  Levin, and scattered rural homes; flood insurance has become prohibitively expensive
+  or unavailable. Rural broadband and mobile coverage gaps affect housing attractiveness;
+  high-speed internet access is available in <40% of rural properties, limiting remote
+  work options for young families. Wastewater and water supply infrastructure in small
+  communities is aging; capacity for new development is constrained by network limitations.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfd_housing_aotearoa_mw_2023
+- source.nzta_transport_mw_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

@@ -1,0 +1,13 @@
+id: driver.wellington.education.limited_vocational_pathways
+name: Insufficient vocational education pathways at secondary level
+description: Wellington secondary schools offer limited vocational and trades pathways relative to the academic curriculum,
+  failing students whose skills and preferences align with applied and vocational learning rather than tertiary academic study.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+problem_ids:
+- problem.wellington.education.secondary_transition
+claim_ids:
+- claim.wellington.education.vocational_pathway_gap

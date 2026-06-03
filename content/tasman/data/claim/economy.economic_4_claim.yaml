@@ -1,0 +1,21 @@
+id: claim.tasman.economy.economic_4_claim
+statement: Abel Tasman National Park attracts 230,000+ visitors annually, generating
+  estimated NZD 62 million in regional tourism revenue (2023). DOC and private operators
+  employ 180+ FTE; seasonal lodges and water taxi services rely on February-April
+  and December summer peaks.
+value: 230000
+unit: annual visitors
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_tourism_impact_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

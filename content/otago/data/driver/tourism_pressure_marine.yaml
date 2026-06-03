@@ -1,0 +1,11 @@
+id: driver.otago.environment.tourism_pressure_marine
+name: Marine Tourism Pressure
+description: Boat traffic, fishing, invasive species transport via tourism activities.
+theme: environment
+consensus: mostly-agreed
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.environment.coastal_otago
+claim_ids: []

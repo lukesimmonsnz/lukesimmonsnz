@@ -1,0 +1,22 @@
+id: camp.wellington.environment.coastal_managed_retreat
+name: Managed Coastal Retreat
+theme: environment
+core_claim: Low-lying coastal properties in Wellington should be subject to planned retreat as sea-level rise projections
+  make long-term protection uneconomic.
+flagship_moves:
+- Establish rolling easement policy for Petone Foreshore and Miramar low-lying areas
+- Voluntary buy-out scheme for highest-risk coastal properties
+- Prohibit new insurance-ineligible development in 1-in-100-year coastal flood zones
+tensions:
+- Property rights implications of managed retreat are legally and politically contested
+- Buy-out valuations may be insufficient to fund equivalent housing elsewhere
+addresses:
+- problem.wellington.environment.coastal_hazard
+interventions:
+- description: Designate Petone Foreshore and Seaview as priority coastal adaptation zones with planning controls reflecting
+    2100 SLR projections
+  state_variable: coastal_exposure_population
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

@@ -1,0 +1,21 @@
+id: claim.waikato.climate.agri_emissions_45pct_regional
+statement: Waikato's dairy sector (>60% of regional agricultural output) faces He
+  Waka Eka Noa climate commitments and consumer market pressure to reduce agricultural
+  methane emissions. The region is responsible for ~3.5% of NZ's total methane and
+  ~7% of agricultural emissions, making sector transition critical to national climate
+  targets.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_waikato_climate_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato agricultural_emissions claim

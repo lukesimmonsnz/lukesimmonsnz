@@ -1,0 +1,22 @@
+id: camp.canterbury.housing.seismic_retrofit_mandate
+name: Seismic Retrofit Mandate & Accelerated Consenting
+theme: housing
+core_claim: Mandatory seismic retrofit for EPBs with government co-funding (50-70%
+  grants) and fast-tracked consenting (6-month target) releases supply in CBD and
+  inner suburbs.
+flagship_moves:
+- Key intervention for Seismic Retrofit Mandate & Accelerated Consenting
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.housing.affordability_christchurch
+interventions:
+- description: Mandatory seismic retrofit for EPBs with government co-funding (50-70%
+    grants) and fast-tracked consenting (6-month target) releases supply in CBD and
+    inner suburbs.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

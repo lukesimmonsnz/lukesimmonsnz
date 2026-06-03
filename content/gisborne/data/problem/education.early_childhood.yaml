@@ -1,0 +1,33 @@
+id: problem.gisborne.education.early_childhood
+title: Early childhood education participation in Gisborne — Te Tairāwhiti
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.gisborne.education.achievement
+order: 30
+updated: '2026-04-26'
+summary: Early childhood education participation is a specific manifestation of the
+  regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - early_childhood_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Early childhood education participation is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.education.early_childhood_59
+- claim.gisborne.education.early_childhood_60
+status: draft
+time_horizons: [decade, generation]

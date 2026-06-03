@@ -1,0 +1,19 @@
+id: claim.gisborne.education.early_childhood_59
+statement: Early childhood education participation in East Cape is below national
+  average. Distance to ECE centres (often ≥10 km in rural areas), transport constraints,
+  and rural deprivation limit engagement.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

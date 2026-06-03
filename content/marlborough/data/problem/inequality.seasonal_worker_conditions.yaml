@@ -1,0 +1,31 @@
+id: problem.marlborough.inequality.seasonal_worker_conditions
+title: Seasonal Worker Rights and Living Conditions
+theme: inequality
+section: inequality
+subpage: seasonal_worker_conditions
+parent: problem.marlborough.inequality.deprivation
+order: 1
+updated: '2026-04-26'
+summary: RSE worker exploitation; poor housing; wage vulnerability; limited access
+  to services.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: RSE worker exploitation; poor housing; wage vulnerability; limited access
+    to services.
+claim_ids:
+- claim.marlborough.inequality.seasonal_worker_conditions_1
+- claim.marlborough.inequality.seasonal_worker_conditions_2
+status: draft
+time_horizons: [decade, generation, century]

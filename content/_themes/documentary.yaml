@@ -1,0 +1,56 @@
+# documentary preset — research-corpus aesthetic.
+#
+# Sans-serif, dense, grid-friendly. Built for the typed-graph pages
+# (corpus problem leaves, NZ pattern rollups). Higher information
+# density than editorial; more neutral than classic.
+
+typography:
+  scale:                 1.2                           # minor third — tight steps
+  font-family-body:      "'IBM Plex Sans', 'Inter', system-ui, sans-serif"
+  font-family-heading:   "'IBM Plex Sans', 'Inter', system-ui, sans-serif"
+  font-family-mono:      "'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace"
+  line-height-body:      1.55                          # tighter than classic
+  line-height-heading:   1.2
+  weight-body:           400
+  weight-bold:           600
+  weight-heading:        600
+
+spacing:
+  unit:                  "4px"                         # tighter base step
+
+color:
+  primary:               "#1f4068"                     # research blue
+  primary-fg:            "#ffffff"
+  bg:                    "#fcfcfd"                     # near-white
+  fg:                    "#0f1419"                     # near-black, neutral
+  muted:                 "#5a6573"
+  accent:                "#2a8c7c"                     # teal
+  danger:                "#b53737"
+  success:               "#2d8659"
+  surface-1:             "#f7f8fa"
+  surface-2:             "#eef0f4"
+  border:                "#d0d4dc"
+
+radius:
+  sm:                    "3px"
+  md:                    "5px"
+  lg:                    "8px"
+  full:                  "9999px"
+
+shadow:
+  sm:                    "0 1px 1px rgba(15,20,25,0.05)"
+  md:                    "0 2px 4px rgba(15,20,25,0.08)"
+  lg:                    "0 8px 16px rgba(15,20,25,0.10)"
+
+motion:
+  duration-fast:         "100ms"
+  duration-base:         "200ms"
+  easing-standard:       "cubic-bezier(0.2, 0, 0, 1)"
+  easing-emphasised:     "cubic-bezier(0.3, 0, 0, 1)"
+
+layout:
+  max-width:             "84rem"                       # wider than classic for grids
+  gutter:                "1.25rem"
+  breakpoint-sm:         "40rem"
+  breakpoint-md:         "48rem"
+  breakpoint-lg:         "72rem"

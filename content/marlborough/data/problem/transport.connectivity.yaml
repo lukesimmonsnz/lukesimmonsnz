@@ -1,0 +1,30 @@
+id: problem.marlborough.transport.connectivity
+title: Regional Transport and Ferry Connectivity
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Ferry dependency for Wellington link; limited regional roading; active transport
+  infrastructure gaps.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Ferry dependency for Wellington link; limited regional roading; active transport
+    infrastructure gaps.
+claim_ids:
+- claim.marlborough.transport.connectivity_placeholder
+status: draft
+time_horizons: [decade, generation]

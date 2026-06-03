@@ -1,0 +1,11 @@
+id: driver.canterbury.housing.investor_divestment_post_quake
+name: Post-Earthquake Investor Divestment
+description: Post-Earthquake Investor Divestment
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.housing.rental_market
+claim_ids: []

@@ -1,0 +1,42 @@
+id: problem.tasman.transport.connectivity_4
+title: Fragmented active-transport network
+theme: transport
+section: transport
+subpage: connectivity_4
+parent: connectivity
+order: 4
+updated: '2026-04-26'
+summary: Tasman has roughly 18 km of dedicated cycleway, mostly in Richmond and Motueka, but the network is discontinuous
+  and does not connect schools, employment centres, or rural villages. Tasman District Council's Last Kilometre
+  Plan (2024-2027) aims to add 45 km of urban cycleway and footpath and lift the active-commute share to 35 percent
+  by 2030.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - active_transport_mode_share
+  - km_protected_cycleway
+  inputs:
+  - active_modes_capex
+  - school_travel_planning
+  constraints:
+  - rural_distances
+  - fragmented_existing_network
+  feedback_loops:
+  - Disconnected segments fail to attract riders, which reduces political appetite for the next segment, which keeps
+    the network disconnected.
+narrative:
+- heading: A network of fragments
+  body: 'The 18 km of existing cycleway in Tasman is a series of fragments: short rail-trail links, recreational
+    waterfront paths, and a few protected lanes. Suburban schools report active-commute rates below 30 percent,
+    partly because parents do not consider the network safe between home and school gate (claim.tasman.transport.connectivity_4_claim).'
+- heading: Connection is the binding constraint
+  body: Building the missing links — particularly between residential growth areas and town centres — is what unlocks
+    modal shift. The Last Kilometre Plan targets that gap, but delivery depends on co-funding from Waka Kotahi and
+    on land negotiations with horticultural blocks that abut planned alignments.
+claim_ids:
+- claim.tasman.transport.connectivity_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

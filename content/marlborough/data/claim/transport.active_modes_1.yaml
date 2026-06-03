@@ -1,0 +1,20 @@
+id: claim.marlborough.transport.active_modes_1
+statement: 'Active transport (cycling, walking) infrastructure in Marlborough: 40
+  km of dedicated urban cycle lanes in Blenheim (completed 2015–2023); rural areas
+  minimal cycle infrastructure; Blenheim–Nelson rail trail (62 km, completed 2018)
+  heavily used recreation/commute.'
+value: 40
+unit: km urban cycle lanes Blenheim
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_top_south_transport_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.mode_share_v1
+notes: null

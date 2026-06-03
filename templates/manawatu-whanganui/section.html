@@ -1,0 +1,58 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/cite.html" import cite_block %}
+
+{% block title %}{{ section_title }} · Manawatū-Whanganui · Research · Luke Simmons{% endblock %}
+{% block meta_description %}{{ section_title }} in Manawatū-Whanganui — a consolidated overview of all problems in this section, with claims, drivers, solution camps, and sources.{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ("Manawatū-Whanganui", url_for('manawatu-whanganui.index')),
+    (section_title, None),
+  ]) }}
+
+  {% if consolidated and consolidated.body_html %}
+  <header class="page-header">
+    <span class="eyebrow">Manawatū-Whanganui &middot; Section</span>
+    <hr class="rule">
+  </header>
+  <article class="prose section-essay">
+    {{ consolidated.body_html | safe }}
+  </article>
+  {% else %}
+  <header class="page-header">
+    <span class="eyebrow">Manawatū-Whanganui &middot; Section</span>
+    <h1>{{ section_title }}</h1>
+    <hr class="rule">
+  </header>
+  <aside class="notice">
+    <strong>No content yet</strong> for this section.
+  </aside>
+  {% endif %}
+
+  {{ cite_block(title=section_title ~ " — Manawatū-Whanganui", path=request.path, site_url=site_url, current_quarter=current_quarter) }}
+
+  <nav class="pagination-pair" aria-label="Adjacent research themes">
+    {% if prev_section %}
+      <a class="prev" href="{{ url_for('manawatu-whanganui.section', section=prev_section.slug) }}">
+        <span class="label">&larr; Previous theme</span>
+        <span class="title">{{ prev_section.title }}</span>
+      </a>
+    {% else %}
+      <span class="prev empty" aria-hidden="true"></span>
+    {% endif %}
+
+    {% if next_section %}
+      <a class="next" href="{{ url_for('manawatu-whanganui.section', section=next_section.slug) }}">
+        <span class="label">Next theme &rarr;</span>
+        <span class="title">{{ next_section.title }}</span>
+      </a>
+    {% else %}
+      <span class="next empty" aria-hidden="true"></span>
+    {% endif %}
+  </nav>
+</div>
+{% endblock %}

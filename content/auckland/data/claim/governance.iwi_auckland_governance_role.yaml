@@ -1,23 +1,23 @@
 id: claim.auckland.governance.iwi_auckland_governance_role
-statement: >
-  Auckland's mana whenua iwi (Ngati Whatua Orakei, Te Kawerau a Maki,
-  and others) have statutory roles in Auckland Council decision-making
-  through the Independent Maori Statutory Board and various RMA
-  processes; these roles have not consistently translated into
-  substantive influence over decisions affecting Maori communities,
-  particularly in South Auckland where many Maori are urban migrants
-  disconnected from their rohe.
+statement: 'Auckland''s mana whenua iwi (Ngati Whatua Orakei, Te Kawerau a Maki, and
+  others) have statutory roles in Auckland Council decision-making through the Independent
+  Maori Statutory Board and various RMA processes; these roles have not consistently
+  translated into substantive influence over decisions affecting Maori communities,
+  particularly in South Auckland where many Maori are urban migrants disconnected
+  from their rohe.
+
+  '
 value: null
 unit: null
-time_period: "2013-2023"
+time_period: 2013-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_ltp_2024
-  - source.waitangi_tribunal_2023
+- source.auckland_council_ltp_2024
+- source.waitangi_tribunal_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

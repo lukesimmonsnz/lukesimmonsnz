@@ -1,0 +1,20 @@
+id: claim.wellington.transport.transmission_gully_opened_2022
+statement: Transmission Gully motorway opened in March 2022 as a tolled inland alternative
+  to the coastal SH1 between Mackays Crossing and Linden, providing route redundancy
+  for the northern Wellington corridor but not resolving congestion through the inner-city
+  tunnel bottlenecks.
+value: null
+unit: null
+time_period: '2022'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_wellington_transport_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

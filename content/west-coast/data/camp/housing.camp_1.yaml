@@ -1,0 +1,23 @@
+id: camp.west_coast.housing.housing_quality_improvement_an
+name: Housing Quality Improvement and Warm Homes
+theme: housing
+core_claim: West Coast's cold, wet climate combined with poor housing stock quality
+  creates significant health risk; targeted retrofit programmes address both energy
+  poverty and health outcomes.
+flagship_moves:
+- Fund West Coast Warm Homes programme targeting pre-1980 housing stock
+- Establish mould remediation support programme for rental properties
+- Co-fund insulation and heating upgrades for low-income owner-occupiers
+tensions:
+- Landlords resist mandatory retrofit requirements without subsidy
+- Low property values reduce retrofit investment incentive
+addresses:
+- problem.west_coast.housing.affordability
+- problem.west_coast.housing.land_supply
+interventions:
+- description: Fund West Coast Warm Homes retrofit programme targeting 500 homes
+  state_variable: cold_home_proportion
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

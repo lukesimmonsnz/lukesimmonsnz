@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.climate.drought_water_stress
+title: Drought and water stress
+theme: climate-adaptation
+section: climate
+subpage: drought-water-stress
+parent: problem.hawkes_bay.climate.climate_vulnerability
+order: 2
+updated: '2026-04-26'
+summary: "Hawke's Bay faces increased drought risk and water stress. Horticulture, dairy, and municipal supplies are vulnerable. Aquifer recharge is declining relative to extraction. Seasonal water restrictions will become more frequent."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - drought_duration_days_per_year
+    - water_deficit_index
+  inputs:
+    - rainfall_seasonality_shift
+    - irrigation_demand_growth
+  constraints:
+    - groundwater_recharge_rate
+    - water_storage_capacity
+  feedback_loops:
+    - 'Drought increases water demand; over-extraction lowers aquifer; crop failures follow; agricultural viability declines; diversification becomes urgent.'
+narrative:
+  - heading: Recent Droughts
+    body: "Hawke's Bay experienced severe drought in 2022-2023. Water restrictions were imposed on non-essential use. Some irrigation was rationed."
+  - heading: Frequency Increase
+    body: 'Dry years are projected to increase from 1-in-7 years (historical) to 1-in-4 years by 2050. Summer irrigation demand will exceed reliable supply.'
+claim_ids:
+  - claim.hawkes_bay.climate.drought_frequency_increase_1_in_4_years
+status: draft
+time_horizons: [generation, century]

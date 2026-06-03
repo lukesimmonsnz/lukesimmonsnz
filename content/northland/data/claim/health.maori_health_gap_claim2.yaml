@@ -1,0 +1,18 @@
+id: claim.northland.health.maori_health_gap_claim2
+statement: Northland has high smoking prevalence (35-40% in some communities) and childhood obesity rates (40-45% in Far North)
+  driving respiratory and cardiovascular mortality. Oral health access is severely limited in geographically remote areas;
+  dental disease prevalence is high. Mental health and addiction support services are culturally responsive but operate at
+  insufficient scale relative to need. These health behaviours and service gaps are concentrated in Northland's highest-deprivation
+  communities where Māori whānau are disproportionately concentrated.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

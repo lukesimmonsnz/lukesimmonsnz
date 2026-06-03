@@ -1,0 +1,20 @@
+id: camp.waikato.climate.water_management
+name: Water management and drought preparedness
+theme: climate-adaptation
+core_claim: Water management and drought preparedness is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement water management and drought preparedness
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

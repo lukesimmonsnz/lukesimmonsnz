@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.governance.local_govt_reform_placeholder
+statement: Local government reform proposals (2024) would consolidate Manawatū-Whanganui's
+  seven territorial authorities into 2-3 larger councils to reduce administrative
+  costs and improve service coordination. Proposed models include Palmerston North/Manawatū
+  merger and separate Whanganui/Rangitikei/Horowhenua cluster. Councils estimate 10-15%
+  cost savings but face implementation risks (staff redundancy, service delivery gaps
+  during transition). Consultation with community is ongoing; reform implementation
+  timeline uncertain (2025-2028 proposed).
+value: null
+unit: null
+time_period: 2024-2028
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.palmerston_north_city_council_2023
+- source.whanganui_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

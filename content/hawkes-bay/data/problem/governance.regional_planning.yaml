@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.governance.regional_planning
+title: Regional planning and long-term strategic direction
+theme: governance
+section: governance
+subpage: regional-planning
+parent: problem.hawkes_bay.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: "Hawke's Bay lacks integrated long-term regional strategy. Individual council long-term plans are siloed. Climate adaptation, economic diversification, and population projections are not coordinated. Investment priorities conflict."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - regional_strategy_alignment_percent
+    - infrastructure_investment_coordination_index
+  inputs:
+    - territorial_fragmentation
+    - short_term_political_cycles
+  constraints:
+    - strategic_planning_capacity
+    - funding_integration_barriers
+  feedback_loops:
+    - 'Uncoordinated planning leads to infrastructure duplication and gaps; efficiency is lost; regional competitiveness declines.'
+narrative:
+  - heading: Planning Fragmentation
+    body: 'Each council has separate long-term plans with different timeframes. Regional Council regional plans exist but lack enforcement mechanisms.'
+  - heading: Climate Adaptation
+    body: 'No integrated regional climate adaptation strategy exists. Individual councils are developing separate climate action plans at different paces.'
+claim_ids:
+  - claim.hawkes_bay.governance.no_integrated_regional_strategy
+status: draft
+time_horizons: [decade, generation, century]

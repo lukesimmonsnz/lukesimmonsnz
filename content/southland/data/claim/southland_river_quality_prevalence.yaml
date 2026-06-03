@@ -1,0 +1,21 @@
+id: claim.southland.environment.southland_river_quality_prevalence
+statement: 'Southland river quality degradation is widespread and measurable. Mataura
+  River: nitrate 4-8mg/L (target <4); E. coli exceedances frequent. Oreti River: similar
+  nitrogen loading. Waiau (Manapouri outlet): clearer but downstream degradation.
+  Aparima: rural runoff pressures. Fish populations (native galaxias, banded kokopu)
+  declining in degraded reaches.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

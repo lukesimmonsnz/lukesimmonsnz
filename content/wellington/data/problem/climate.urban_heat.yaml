@@ -1,0 +1,40 @@
+id: problem.wellington.climate.urban_heat
+title: Urban heat island effects in Wellington
+theme: climate-adaptation
+section: climate
+subpage: urban-heat
+parent: problem.wellington.climate.compound_hazard_risk
+order: 4
+updated: '2026-04-26'
+summary: While Wellington's temperate maritime climate provides some natural cooling, urban heat island effects are measurable
+  in the CBD and intensifying with infill development and reduced urban canopy. Vulnerable populations — elderly, infants,
+  those in poorly insulated housing — face growing heat stress risk.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - urban_heat_island_intensity_c
+  - heat_mortality_risk_index
+  inputs:
+  - impervious_surface_growth
+  - urban_tree_canopy_pct
+  constraints:
+  - infill_housing_density_policy
+  - green_space_protection
+  feedback_loops:
+  - 'Infill-heat amplification: residential densification increases impervious surface and reduces vegetation cover; rising
+    urban temperatures increase air conditioning demand; increased energy use further warms the urban environment.'
+narrative:
+- heading: Urban heat island effect
+  body: Wellington's CBD and lower-density inner suburbs record surface temperatures 2–4°C above surrounding rural areas on
+    calm, clear summer days, an urban heat island effect that is growing with increased impervious surface and reduced tree
+    canopy from infill development (claim.wellington.climate.urban_heat_island_effect).
+- heading: Canopy mitigation potential
+  body: Urban tree canopy provides the most cost-effective mitigation of urban heat island effects in Wellington's climate,
+    but canopy is being lost faster than it is being replaced in many inner suburbs due to development pressure and insufficient
+    protections (claim.wellington.climate.tree_canopy_heat_mitigation).
+claim_ids:
+- claim.wellington.climate.urban_heat_island_effect
+- claim.wellington.climate.tree_canopy_heat_mitigation
+status: draft
+time_horizons: [generation, century]

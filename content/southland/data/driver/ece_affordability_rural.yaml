@@ -1,0 +1,11 @@
+id: driver.southland.education.ece_affordability_rural
+name: ECE Affordability Barriers in Rural Areas
+description: Rural ECE providers limited; parent fees high; transport barriers.
+theme: education
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.education.early_childhood
+claim_ids: []

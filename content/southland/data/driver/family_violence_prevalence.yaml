@@ -1,0 +1,12 @@
+id: driver.southland.crime.family_violence_prevalence
+name: Family Violence Normalization
+description: High family violence call-out rates; intergenerational trauma; reporting
+  barriers.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.crime.family_violence
+claim_ids: []

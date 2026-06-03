@@ -1,0 +1,23 @@
+id: claim.nelson.housing.rental_market_claim
+statement: The rental market in Nelson is tight and expensive. Median rent for a 3-bedroom
+  house is $480–520/week (April 2024), representing 35–42% of median gross household
+  income for rental households vs. 28% national benchmark. Vacancy rate is 2.1% (vs.
+  4–5% neutral level); advertised listings rarely remain unfilled >5 days. Rental
+  bond levels have increased 12% 2020-2024. Landlord exit rates have increased due
+  to interest rate rises; 44 residential rentals were sold out of tenancy in 2023.
+  Tenants report difficulty in securing tenure or exercising repairs rights.
+value: 510
+unit: median weekly rent for 3-bed house
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_housing_demand_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.rent_to_income_v1
+notes: null

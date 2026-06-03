@@ -1,0 +1,37 @@
+id: problem.nelson.economy.economic_2
+title: Port Nelson and the seafood cluster
+theme: economy
+section: economy
+subpage: economic_2
+parent: economic_structure
+order: 2
+updated: '2026-04-26'
+summary: Port Nelson is New Zealand's largest commercial fishing port by volume, handling roughly 25 percent of national landings and between 130,000 and 160,000 tonnes annually. The port directly employs over 1,200 workers in fishing, processing, and logistics, with annual export revenue of $620-750 million. Stock-sustainability pressures and quota reductions are constraining catch growth.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - annual_landings_tonnes
+  - seafood_export_revenue_nzd_m
+  - direct_seafood_employment
+  inputs:
+  - quota_settings
+  - fuel_cost
+  - international_seafood_price
+  constraints:
+  - stock_sustainability
+  - port_water_depth
+  - labour_supply
+  feedback_loops:
+  - 'Catch-investment feedback: tighter quotas reduce expected returns on new vessels and processing lines; reduced reinvestment lowers the ceiling on future productivity gains, amplifying margin pressure.'
+narrative:
+- heading: An industry-anchor port
+  body: Port Nelson and the surrounding seafood cluster are the dominant single anchor of Nelson's tradable economy (claim.nelson.economy.economic_2_claim). Sealord, Talley's, United Fisheries, and a tier of smaller processors employ directly and through a thick network of marine engineering, vessel maintenance, and logistics suppliers.
+- heading: Stock, quota, and climate constraints
+  body: The Quota Management System and ongoing stock assessments have already tightened catch limits in several Nelson-landed fisheries; rock-lobster catch has fallen around 22 percent since 2015. Marine heatwaves and shifting species ranges add a climate-risk overlay that is not yet fully priced into long-run capital investment in the cluster.
+claim_ids:
+- claim.nelson.economy.economic_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

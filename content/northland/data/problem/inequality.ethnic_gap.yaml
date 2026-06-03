@@ -1,0 +1,24 @@
+id: 'problem.northland.inequality.ethnic_gap'
+title: 'Te Tai Tokerau Northland: ethnic outcome gaps'
+theme: 'inequality'
+section: 'inequality'
+subpage: 'ethnic-gap'
+parent: 'problem.northland.inequality.deprivation'
+order: 4
+updated: '2026-04-26'
+summary: 'Persistent gaps exist for Māori.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Persistent gaps exist for Māori.'
+claim_ids:
+- 'claim.northland.inequality.ethnic_gap_claim1'
+- 'claim.northland.inequality.ethnic_gap_claim2'
+status: 'draft'

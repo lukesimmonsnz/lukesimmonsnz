@@ -1,0 +1,21 @@
+id: camp.southland.health.rural_health_workforce
+name: Rural Health Workforce Recruitment and Retention
+theme: health
+core_claim: Student loan forgiveness, housing subsidies, and professional development
+  attract health workers.
+flagship_moves:
+- Rural health worker loan forgiveness
+- Housing subsidy for rural practices
+- Extended professional development support
+tensions:
+- Ongoing subsidy cost
+- Rural lifestyle appeal limitations
+addresses:
+- problem.southland.health.rural_workforce
+interventions:
+- description: Place 10 additional GPs in rural Southland
+  state_variable: gp_density_rural
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

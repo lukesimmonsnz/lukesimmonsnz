@@ -1,0 +1,30 @@
+id: problem.bay_of_plenty.environment.coastal_erosion
+title: Coastal erosion and inundation risk in Bay of Plenty — Te Moana-a-Toi
+theme: environment
+section: environment
+subpage: coastal_erosion
+parent: problem.bay_of_plenty.environment.environmental_pressure
+order: 15
+updated: '2026-04-26'
+summary: Coastal erosion and inundation risk is a sub-dimension of the regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - coastal_erosion_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Coastal erosion and inundation risk is a specific manifestation of the broader
+    pressure.
+claim_ids:
+- claim.bay_of_plenty.environment.coastal_erosion_29
+- claim.bay_of_plenty.environment.coastal_erosion_30
+status: draft
+time_horizons: [generation, century]

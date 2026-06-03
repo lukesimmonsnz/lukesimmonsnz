@@ -1,0 +1,14 @@
+id: driver.tasman.inequality.driver_1
+name: Wage compression at the bottom, capital inflow at the top
+description: Horticultural and hospitality wage floors compress earnings at the lower end of the distribution, while
+  metropolitan-equity inflows raise effective wealth at the top, stretching the within-region income and wealth
+  distribution.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.inequality.inequality
+- problem.tasman.inequality.child_poverty
+claim_ids: []

@@ -1,0 +1,25 @@
+id: camp.northland.environment.catchment_collaboration_camp
+name: Catchment-scale collaborative restoration
+theme: environment
+core_claim: Voluntary landowner-led catchment restoration programmes achieve compliance
+  and ecological outcomes more effectively than regulation alone.
+flagship_moves:
+- Fund catchment restoration coordinators in priority waterways
+- Incentivise riparian fencing and planting via Emissions Trading Scheme
+- Support iwi-led environmental monitoring and kaitiakitanga
+tensions:
+- Voluntary participation insufficient to achieve system-level change
+- Long lead times before ecological outcomes are measurable
+- Requires sustained funding beyond initial project periods
+interventions:
+- description: Fund catchment restoration coordinators in priority waterways
+  state_variable: environment_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.environment.northland_environment_pressures
+- problem.northland.environment.kauri_dieback
+- problem.northland.environment.freshwater_quality
+- problem.northland.environment.coastal_erosion
+applicable_in:
+- northland
+tensions_with: []

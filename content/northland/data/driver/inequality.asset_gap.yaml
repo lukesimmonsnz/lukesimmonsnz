@@ -1,0 +1,10 @@
+id: driver.northland.inequality.asset_gap
+name: Intergenerational asset and wealth gap
+description: Intergenerational asset and wealth gap in the regional context.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

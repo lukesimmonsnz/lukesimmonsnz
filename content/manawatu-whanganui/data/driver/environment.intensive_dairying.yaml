@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.environment.intensive_dairying
+name: Intensive Dairy Farming Impacts
+description: Intensive dairy farming impacts with regional implications.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.housing_market
+claim_ids: []

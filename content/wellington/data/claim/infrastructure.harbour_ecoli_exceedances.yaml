@@ -1,0 +1,19 @@
+id: claim.wellington.infrastructure.harbour_ecoli_exceedances
+statement: Wellington Harbour beaches regularly exceed the E. coli safety threshold
+  for swimming following rainfall events, with swimming advisories issued for Oriental
+  Bay, Kio Bay, and other popular locations multiple times per year.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_harbour_water_quality_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

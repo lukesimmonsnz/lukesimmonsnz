@@ -1,0 +1,21 @@
+id: claim.southland.infrastructure.water_wastewater_prevalence
+statement: 'Water and wastewater systems in Southland face renewal pressures. Invercargill:
+  water supply (Waihōpai River); treatment works aging (constructed 1960s); storage
+  capacity adequate. Wastewater: central treatment plant; ocean outfall discharge.
+  Southland District: small town systems (Gore, Winton, Mataura) aging; septic dependence
+  in rural areas. Three Waters reform implementation uncertain.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

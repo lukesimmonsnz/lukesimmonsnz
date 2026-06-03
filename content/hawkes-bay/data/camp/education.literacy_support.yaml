@@ -1,0 +1,19 @@
+id: camp.hawkes_bay.education.literacy_support
+name: Literacy and numeracy support programmes
+theme: education
+core_claim: Literacy and numeracy support programmes is the primary strategy.
+flagship_moves:
+- Implement Literacy and numeracy support programmes across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.education.achievement
+- problem.hawkes_bay.education.tertiary_access
+interventions:
+- description: Literacy and numeracy support programmes intervention
+  state_variable: literacy_support_index
+  constraint_relaxed: literacy_support_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

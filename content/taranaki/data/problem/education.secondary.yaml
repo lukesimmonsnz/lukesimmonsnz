@@ -1,0 +1,27 @@
+id: problem.taranaki.education.secondary
+title: Secondary school engagement and completion
+theme: education
+section: education
+subpage: secondary
+parent: problem.taranaki.education.achievement
+order: 2
+updated: '2026-04-26'
+summary: Secondary completion is 82%. Rural schools have higher disengagement rates.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - secondary_index
+  inputs:
+  - secondary_input_1
+  constraints:
+  - secondary_constraint
+  feedback_loops:
+  - 'Feedback: secondary'
+narrative:
+- heading: Secondary school engagement and completion in Taranaki
+  body: Secondary completion is 82%. Rural schools have higher disengagement rates.
+claim_ids:
+- claim.taranaki.education.secondary_01
+status: draft
+time_horizons: [decade, generation]

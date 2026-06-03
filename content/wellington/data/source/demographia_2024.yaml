@@ -1,0 +1,14 @@
+id: source.demographia_2024
+title: 17th Annual Demographia International Housing Affordability Survey
+author: Wendell Cox and Hugh Pavletich
+publisher: Demographia
+year: 2024
+url: http://www.demographia.com/dhi.pdf
+type: commentary
+credibility: reputable
+geo_granularity:
+- wellington
+- auckland
+- nz
+notes: Uses median multiple methodology; Wellington ranked among least affordable markets. Authors hold pro-supply advocacy
+  positions; assessed reputable (widely cited, consistent methodology).

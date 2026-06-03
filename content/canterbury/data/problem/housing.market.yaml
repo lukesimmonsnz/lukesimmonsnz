@@ -1,0 +1,67 @@
+id: problem.canterbury.housing.market
+title: Canterbury Housing Market Dysfunction
+theme: housing
+section: housing
+subpage: market
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury''s housing market exhibits chronic unaffordability across Christchurch,
+  Waimakariri, and Selwyn districts, driven by post-earthquake rebuild dynamics, rapid
+  greenfield-led growth in outer districts, and constrained density development in
+  Christchurch CBD. Median multiples have stabilized around 6.5-7.0 regionally while
+  local pressure zones (Selwyn, Waimakariri) face affordability crises for first-time
+  buyers.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - median_house_price_christchurch
+  - median_house_price_waimakariri
+  - median_house_price_selwyn
+  - housing_affordability_ratio_regional
+  - greenfield_release_uptake
+  inputs:
+  - net_internal_migration
+  - residential_building_consents
+  - infrastructure_investment_rate
+  - interest_rates
+  constraints:
+  - earthquake_prone_building_remediation_cost
+  - cera_red_zone_housing_loss
+  - horizontal_infrastructure_debt
+  - rural_land_availability
+  feedback_loops:
+  - 'Post-earthquake greenfield release: large suburban land release post-2011 temporarily
+    dampened prices but growth management infrastructure costs now feedback into outer-district
+    affordability.'
+  - 'Rebuild momentum attenuation: strong construction sector capacity from earthquake
+    rebuild sustains supply response but labour cost inflation erodes gains.'
+narrative:
+- heading: The Canterbury earthquake dislocation
+  body: 'The 2010-2011 Canterbury earthquakes destroyed or damaged significant portions
+    of the residential stock, with CERA demolishing over 8,000 red-zone homes. The
+    rebuild phase (2012-2020) created one of NZ''s strongest construction booms, but
+    concentrated replacement housing in suburban greenfields (Waimakariri, Selwyn)
+    rather than CBD intensification, raising long-run infrastructure servicing costs
+    and suburban sprawl dependencies.
+
+    '
+- heading: Current affordability pressure
+  body: 'Despite earthquake-driven supply expansion, Christchurch''s median multiple
+    reached 7.1 in 2023 (claim.canterbury.housing.median_multiple_2023). Waimakariri
+    and Selwyn face sharper affordability crises—first-time buyer deposits require
+    8-12 years of combined household savings—as in-migration from higher-cost centres
+    (Auckland, Wellington) sustains demand while greenfield development runs ahead
+    of infrastructure capacity (claim.canterbury.housing.infrastructure_gap_2024).
+
+    '
+claim_ids:
+- claim.canterbury.housing.median_multiple_2023
+- claim.canterbury.housing.infrastructure_gap_2024
+- claim.canterbury.housing.red_zone_properties_2017
+- claim.canterbury.housing.quakecore_seismic_research_2023
+status: draft
+time_horizons: [decade, generation, century]

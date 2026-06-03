@@ -1,0 +1,23 @@
+id: claim.nelson.crime.youth_offending_claim
+statement: Youth offending in Nelson is concentrated in ages 14-19, with 680+ youth
+  offences recorded 2023 (ages 10-24 category). Vehicle crime, burglary, and disorder
+  offences are primary categories. School disengagement is a known precursor; MOE
+  data shows 8.2% absenteeism rate in Nelson secondary schools vs. 6.1% national average.
+  Maori and Pacific youth are disproportionately represented, comprising 44% of youth
+  offenders despite representing 22% of the youth population.
+value: 680
+unit: youth offences (ages 10-24) in 2023
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.moe_nelson_achievement_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

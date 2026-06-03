@@ -1,0 +1,21 @@
+id: claim.wellington.education.tertiary_participation_rate
+statement: Wellington's tertiary participation rate is above the national average
+  due to the concentration of universities and polytechnics in the region, but Māori
+  and Pacific completion rates remain 15–20 percentage points below European completion
+  rates.
+value: null
+unit: null
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_wellington_achievement_2023
+- source.stats_nz_census_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

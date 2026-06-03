@@ -1,0 +1,24 @@
+id: claim.canterbury.environment.aquifer_nitrate_2023
+statement: 'Median groundwater nitrate in Canterbury''s dairy-intensive zones reaches
+  11 mg/L, at the WHO drinking water standard threshold. This concentration stems
+  from intensive dairy intensification since the 1990s—Canterbury now operates ~650,000
+  dairy cattle—coupled with the region''s vulnerability: shallow, unconfined aquifer
+  systems with short residence times in some zones, particularly in the Waimakariri,
+  Selwyn, and Hinds plains. ECan projections show continued increase in some zones
+  through 2050 even under best-practice land management.'
+value: 11
+unit: mg/L nitrate
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_state_environment_2023
+- source.ecan_cwms_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

@@ -1,0 +1,19 @@
+id: claim.northland.inequality.northland_inequality_claim2
+statement: Digital divide in Northland correlates with deprivation; Far North has
+  lowest broadband access (15-20% lacking reliable connection) and highest digital
+  exclusion. Rural Northland households lack laptops, internet connectivity necessary
+  for online banking, government services, and work. School-child digital device ownership
+  skews by school decile; lower-decile schools have higher rates of students without
+  home devices.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

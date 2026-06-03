@@ -1,0 +1,16 @@
+id: methodology.mode_share_v1
+name: Mode Share (% of trips by transport mode)
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: 'Percentage of total person-trips made by a given transport mode in a defined region and time period. Drawn from
+  the Ministry of Transport Household Travel Survey (HTS) or Auckland Transport patronage counts. Mode share is the primary
+  metric for tracking the shift from private vehicle dependency toward public transport and active modes. Denominator is all
+  person-trips regardless of trip purpose or distance. P5'' triggers on cross-region mode-share comparison claims.
+
+  '
+source_ids:
+- source.gwrc_regional_land_transport_2021

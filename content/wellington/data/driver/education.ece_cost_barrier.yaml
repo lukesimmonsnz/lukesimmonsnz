@@ -1,0 +1,13 @@
+id: driver.wellington.education.ece_cost_barrier
+name: ECE cost barrier for low-income families
+description: ECE costs in Wellington, net of subsidies, remain a significant barrier for low-income families; the out-of-pocket
+  cost relative to income is higher in Wellington than in lower-cost cities due to Wellington's elevated living costs.
+theme: education
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.education.early_childhood
+claim_ids:
+- claim.wellington.education.ece_participation_porirua

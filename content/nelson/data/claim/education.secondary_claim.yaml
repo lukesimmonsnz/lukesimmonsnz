@@ -1,0 +1,22 @@
+id: claim.nelson.education.secondary_claim
+statement: Secondary school engagement in Nelson is tracking below national benchmarks.
+  Chronic absenteeism (≥10% absence rate) affects 8.2% of secondary students in Nelson,
+  compared to 6.1% nationally. Suspension and Stand-Down rates are 4.8 per 1,000 students
+  vs. 3.9 nationally, with disproportionate impact on Maori and Pacific students (6.2
+  per 1,000). Early leaving patterns (before Year 12 completion) remain concerning,
+  particularly in outer suburbs and rural areas.
+value: 8.2
+unit: percent chronic absenteeism rate
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_nelson_achievement_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,22 @@
+id: claim.northland.transport.freight_connectivity_claim2
+statement: Road freight dominates regional logistics; heavy reliance on SH1 creates
+  vulnerability to closure (flooding, accidents). No alternative north-south routing.
+  Far North regional council manages ~8,500 km roading network (highest km-per-ratepayer
+  ratio nationally); unsealed roads (40%) require continuous maintenance. Limited
+  interregional bus services (Auckland-Whangārei-Far North) operate with subsidy;
+  passenger rail patronage recovery remains political impasse.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

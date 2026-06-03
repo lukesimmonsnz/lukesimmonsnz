@@ -1,0 +1,13 @@
+id: driver.hawkes_bay.health.health.preventive_care_gaps
+name: Limited preventive care and health promotion investment
+description: Limited preventive care and health promotion investment
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.health.health_outcomes
+- problem.hawkes_bay.health.chronic_disease
+- problem.hawkes_bay.health.rural_access
+claim_ids: []

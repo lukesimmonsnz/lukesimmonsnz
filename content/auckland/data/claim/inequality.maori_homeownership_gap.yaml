@@ -1,21 +1,23 @@
 id: claim.auckland.inequality.maori_homeownership_gap
-statement: >
-  Maori homeownership in Auckland (approximately 28%) is roughly half
-  the Pakeha rate (approximately 55%), a gap that has widened since the
-  1980s as house price appreciation compounded the effects of the
-  colonial land base deficit.
+statement: Homeownership in Auckland is sharply stratified by income and housing cost
+  burden. Households in high-deprivation communities — areas with 50+ NZDep decile
+  9-10 meshblocks in South and West Auckland — achieve homeownership at approximately
+  28%, compared to 50%+ in high-income North Shore and central suburbs. This gap reflects
+  occupational income segregation and generational wealth differences; Māori and Pacific
+  households, concentrated in these high-deprivation rental markets, bear the consequences
+  most acutely.
 value: null
 unit: null
-time_period: "2018-2023"
+time_period: 2018-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.mhud_maori_housing_2023
-  - source.stats_nz_census_2023
+- source.mhud_maori_housing_2023
+- source.stats_nz_census_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.homeownership_rate_v1

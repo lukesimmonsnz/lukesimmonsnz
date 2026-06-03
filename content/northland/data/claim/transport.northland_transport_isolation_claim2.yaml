@@ -1,0 +1,22 @@
+id: claim.northland.transport.northland_transport_isolation_claim2
+statement: 'Air services remain essential: Whangārei Airport (subsidised Air NZ essential
+  air service to Auckland); Kaitāia Airport (essential air service); Kerikeri Airport
+  (tourist route). No international capacity. Public transport minimal outside Whangārei
+  CBD; rural communities entirely car-dependent. Northland Regional Council subsidises
+  urban bus routes; future electrification unfunded. Far North passenger rail advocacy
+  (Whangārei-Auckland service) unresolved for 20+ years.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

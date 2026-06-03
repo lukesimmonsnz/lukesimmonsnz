@@ -1,0 +1,24 @@
+id: 'problem.northland.crime.drug_crime'
+title: 'Te Tai Tokerau Northland: drug-related crime'
+theme: 'crime'
+section: 'crime'
+subpage: 'drug-crime'
+parent: 'problem.northland.crime.safety'
+order: 5
+updated: '2026-04-26'
+summary: 'Methamphetamine fuels crime.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Methamphetamine fuels crime.'
+claim_ids:
+- 'claim.northland.crime.drug_crime_claim1'
+- 'claim.northland.crime.drug_crime_claim2'
+status: 'draft'

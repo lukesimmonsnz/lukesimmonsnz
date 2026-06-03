@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.health.mental_health_growth
+name: Driver for mental_health
+description: "This driver exacerbates the mental_health pressure in Bay of Plenty\
+  \ \u2014 Te Moana-a-Toi."
+theme: health
+consensus: contested
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.health.mental_health
+claim_ids:
+- claim.bay_of_plenty.health.mental_health_51

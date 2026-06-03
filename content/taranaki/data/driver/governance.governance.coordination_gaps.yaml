@@ -1,0 +1,14 @@
+id: driver.taranaki.governance.governance.coordination_gaps
+name: Multi-council coordination gaps
+description: Multi-council coordination gaps
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.governance.governance
+- problem.taranaki.governance.energy_transition_planning
+- problem.taranaki.governance.local_govt
+- problem.taranaki.governance.treaty_iwi
+claim_ids: []

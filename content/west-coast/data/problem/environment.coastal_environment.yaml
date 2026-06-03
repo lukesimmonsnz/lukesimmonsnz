@@ -1,0 +1,42 @@
+id: problem.west_coast.environment.coastal_environment
+title: Coastal erosion and the legacy of historical land use
+theme: environment
+section: environment
+subpage: coastal_environment
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: West Coast shorelines are exposed to accelerating erosion from sea-level rise and storm surge, with Westport, Greymouth
+  and Hokitika seafronts under direct pressure. Coastal wetlands and estuaries also carry the legacy footprint of historical
+  mining and logging that constrains ecological recovery.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - shoreline_position_index
+  - wetland_area_recovered
+  - storm_surge_event_count
+  inputs:
+  - doc_coastal_restoration_funding
+  - council_coastal_protection_capex
+  constraints:
+  - legacy_land_use_footprint
+  - town_location_at_river_mouths
+  feedback_loops:
+  - Coastal protection works at one stretch can transfer erosion pressure along-shore, which creates a treadmill of localised
+    hardening that defers — but does not resolve — the underlying retreat question.
+narrative:
+- heading: Erosion at the town edge
+  body: Westport, Greymouth and Hokitika have all developed at the river-mouth interface where prograding and eroding shorelines
+    meet (claim.west_coast.environment.coastal_environment_claim). Increased storm intensity and rising mean sea level shift
+    the long-run sediment balance toward erosion at exactly the locations where infrastructure is concentrated.
+- heading: Legacy land-use and ecological recovery
+  body: Historical mining (alluvial gold dredging, coal cuts) and native-forest logging across the nineteenth and twentieth
+    centuries left a legacy of altered hydrology, sediment loads and drained wetlands. Regenerating coastal vegetation, fixing
+    dunes, and restoring estuarine function are slow processes that compete with continuing development pressure on the coast.
+claim_ids:
+- claim.west_coast.environment.coastal_environment_claim
+status: draft
+time_horizons:
+- generation
+- century

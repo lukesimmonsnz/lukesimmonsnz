@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.housing.land_use_constraints
+name: Land Use Planning Constraints
+description: Land use planning constraints. This driver operates at regional scale
+  with mostly-agreed consensus.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.housing.palmerston_north_growth
+claim_ids: []

@@ -1,0 +1,13 @@
+id: driver.wellington.health.australia_wage_differential
+name: Australia-NZ nurse wage differential
+description: Australian nursing wages are substantially higher than New Zealand wages; the differential drives ongoing emigration
+  of trained Wellington nurses to Australia, contributing to chronic vacancy rates.
+theme: health
+consensus: consensus
+category: economic
+timescale: long
+scope: national
+problem_ids:
+- problem.wellington.health.workforce_shortage
+claim_ids:
+- claim.wellington.health.nurse_vacancy_rate

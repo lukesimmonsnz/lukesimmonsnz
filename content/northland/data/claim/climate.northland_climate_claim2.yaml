@@ -1,0 +1,22 @@
+id: claim.northland.climate.northland_climate_claim2
+statement: 'Kauri dieback (Phytophthora agathidicida) thrives in warmer, wetter conditions;
+  climate projections suggest expanded suitable habitat range for pathogen in Northland
+  hill country. Compounding threat: increasing rainfall intensity saturates soils
+  and facilitates spore dispersal; warmer winters reduce pathogen dormancy pressure.
+  Combined climate-biosecurity stress on native forest recovery unprecedented; management
+  strategies (assisted migration, genetic screening) remain experimental.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

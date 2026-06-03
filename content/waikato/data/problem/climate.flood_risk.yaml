@@ -1,0 +1,30 @@
+id: problem.waikato.climate.flood_risk
+title: Flood risk and river management
+theme: climate-adaptation
+section: climate
+subpage: flood_risk
+parent: problem.waikato.climate.waikato_climate
+order: 2
+updated: '2026-04-26'
+summary: The Waikato River floodplain faces increased flood frequency under climate
+  change scenarios.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - climate_risk_exposure
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing flood risk creates feedback on regional outcomes.
+narrative:
+- heading: Flood risk and river management
+  body: The Waikato River floodplain faces increased flood frequency under climate
+    change scenarios.
+claim_ids:
+- claim.waikato.climate.flood_frequency_increase
+status: draft
+time_horizons: [generation, century]

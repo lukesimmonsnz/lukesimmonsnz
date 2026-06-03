@@ -1,0 +1,20 @@
+id: camp.gisborne.environment.biodiversity_loss_approach
+name: Strategic approach for biodiversity_loss
+theme: environment
+core_claim: Strategic intervention on biodiversity_loss will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting biodiversity_loss
+- Priority action 2 targeting biodiversity_loss
+- Institutional coordination mechanism for biodiversity_loss
+tensions:
+- 'Tension 1: biodiversity_loss'
+- 'Tension 2: biodiversity_loss'
+addresses:
+- problem.gisborne.environment.biodiversity_loss
+interventions:
+- description: Primary intervention for biodiversity_loss
+  state_variable: biodiversity_loss_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

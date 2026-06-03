@@ -1,0 +1,21 @@
+id: claim.northland.climate.cyclone_exposure_claim1
+statement: Northland experiences elevated cyclone exposure compared to national average,
+  with tropical cyclones affecting the region 0.5-1.5 times per decade on average.
+  The region's geographic isolation (no rail connections south of Whangārei) and aging
+  transport infrastructure increase vulnerability to cyclone-induced isolation and
+  infrastructure damage.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

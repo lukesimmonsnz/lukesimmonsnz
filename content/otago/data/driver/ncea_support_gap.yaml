@@ -1,0 +1,12 @@
+id: driver.otago.education.ncea_support_gap
+name: NCEA Pastoral Support System Under-Resourcing
+description: Rural schools lack counsellors, learning support staff; pastoral response
+  limited.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.education.secondary
+claim_ids: []

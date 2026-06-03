@@ -1,0 +1,11 @@
+id: driver.canterbury.health.mental_health_service_capacity_lag
+name: Mental Health Service Capacity Lag vs. Demand
+description: Mental Health Service Capacity Lag vs. Demand
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.health.mental_health
+claim_ids: []

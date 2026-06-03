@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.crime.family_violence
+title: Family violence prevalence
+theme: crime
+section: crime
+subpage: family-violence
+parent: problem.hawkes_bay.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: "Family violence is a leading cause of death and injury for Hawke's Bay women and children. Housing stress, isolation in rural areas, and substance abuse are risk factors. Service capacity is limited."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - family_violence_incidents_per_annum
+    - domestic_homicide_rate_per_capita
+  inputs:
+    - housing_stress_and_overcrowding
+    - substance_abuse_correlation
+  constraints:
+    - women_shelter_bed_capacity
+    - counselling_service_availability
+  feedback_loops:
+    - 'Violence escalates when victims lack exit options (housing, income); service shortages perpetuate victim trap.'
+narrative:
+  - heading: Incident Rate
+    body: "Police record approximately 2,100-2,400 family violence incidents annually in Hawke's Bay, affecting approximately 1,500+ households."
+  - heading: Victim Support Gap
+    body: "Shortage of women's shelter beds and counselling services limits victim options. Waiting lists for therapy are 6-12 months in some areas."
+claim_ids:
+  - claim.hawkes_bay.crime.family_violence_2100_2400_incidents
+status: draft
+time_horizons: [decade]

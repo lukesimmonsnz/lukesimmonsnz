@@ -61,3 +61,4 @@ claim_ids:
   - claim.auckland.infrastructure.auckland_grid_vulnerability
   - claim.auckland.infrastructure.ev_and_electrification_demand
 status: draft
+time_horizons: [decade, generation]

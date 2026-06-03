@@ -1,0 +1,20 @@
+id: camp.otago.environment.coast_protection
+name: Coastal Ecosystem Protection
+theme: environment
+core_claim: Marine protected areas and fishing restrictions restore Otago coast ecosystem.
+flagship_moves:
+- Expand marine protected areas to 30% of Otago coast
+- Strengthen fishing regulations and enforcement
+- Invasive species control program
+tensions:
+- Fishing community resistance
+- DOC resourcing constraints
+addresses:
+- problem.otago.environment.coastal_otago
+interventions:
+- description: Restore kelp forest and fish populations
+  state_variable: coastal_ecosystem_health
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,30 @@
+id: problem.marlborough.economy.aquaculture
+title: Aquaculture Development and Sustainability
+theme: economy
+section: economy
+subpage: aquaculture
+parent: problem.marlborough.economy.wine_economy
+order: 1
+updated: '2026-04-26'
+summary: Mussel and salmon farming expansion; environmental trade-offs; market volatility;
+  employment growth.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Mussel and salmon farming expansion; environmental trade-offs; market volatility;
+    employment growth.
+claim_ids:
+- claim.marlborough.economy.aquaculture_placeholder
+status: draft
+time_horizons: [decade, generation]

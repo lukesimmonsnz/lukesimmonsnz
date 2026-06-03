@@ -1,0 +1,27 @@
+id: problem.taranaki.infrastructure.wastewater
+title: Wastewater treatment and management
+theme: infrastructure
+section: infrastructure
+subpage: wastewater
+parent: problem.taranaki.infrastructure.infrastructure
+order: 2
+updated: '2026-04-26'
+summary: Treatment plants operate near capacity in New Plymouth.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - wastewater_index
+  inputs:
+  - wastewater_input_1
+  constraints:
+  - wastewater_constraint
+  feedback_loops:
+  - 'Feedback: wastewater'
+narrative:
+- heading: Wastewater treatment and management in Taranaki
+  body: Treatment plants operate near capacity in New Plymouth.
+claim_ids:
+- claim.taranaki.infrastructure.wastewater_01
+status: draft
+time_horizons: [decade, generation]

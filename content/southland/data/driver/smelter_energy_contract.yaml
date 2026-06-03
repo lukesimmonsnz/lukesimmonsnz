@@ -1,0 +1,12 @@
+id: driver.southland.infrastructure.smelter_energy_contract
+name: NZAS-Meridian Power Contract Dependency
+description: Smelter depends on long-term Manapōuri-Meridian contract; renegotiation
+  risk high.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.southland.infrastructure.manapouri_power
+claim_ids: []

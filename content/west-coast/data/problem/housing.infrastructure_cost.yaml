@@ -1,0 +1,44 @@
+id: problem.west_coast.housing.infrastructure_cost
+title: Three-waters cost burden and post-flood repair
+theme: housing
+section: housing
+subpage: infrastructure_cost
+parent: affordability
+order: 4
+updated: '2026-04-26'
+summary: West Coast territorial authorities face high per-capita three-waters costs from dispersed populations and aging pipe
+  networks. Westport post-flood infrastructure repairs alone are estimated at $50 million-plus, with climate-resilience upgrades
+  stacking further long-run capex onto a small ratepayer base.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - three_waters_capex_per_capita
+  - boil_water_notice_count
+  - pipe_renewal_backlog_km
+  inputs:
+  - taumata_arowai_compliance_funding
+  - central_govt_three_waters_grants
+  constraints:
+  - dispersed_settlement_pattern
+  - small_ratepayer_base
+  feedback_loops:
+  - High per-capita three-waters costs pressure rates, eroding affordability for low-income households; political resistance
+    to rate rises then constrains the capex needed to close the compliance gap that drives the boil-water notices in the first
+    place.
+narrative:
+- heading: Per-capita cost runs high
+  body: Three-waters infrastructure (water supply, wastewater, stormwater) costs per capita in dispersed rural districts run
+    well above urban benchmarks (claim.west_coast.housing.infrastructure_cost_claim). Aging pipe networks compound the renewal
+    demand, and post-flood repair adds an event-specific layer of capex.
+- heading: Boil-water notices are a leading indicator
+  body: 'Repeat boil-water notices across small West Coast supplies are a visible symptom of the broader three-waters pressure:
+    small treatment plants, long pipe runs, low ratepayer counts and a tightening drinking-water regulatory environment. The
+    Affordable Water Reform debate has not resolved how this is paid for.'
+claim_ids:
+- claim.west_coast.housing.infrastructure_cost_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

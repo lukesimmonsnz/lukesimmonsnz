@@ -1,0 +1,12 @@
+id: driver.marlborough.environment.intensive_dairying
+name: Intensive Dairy Farming Impacts
+description: Intensive dairy farming impacts.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.governance.unitary_authority
+claim_ids: []

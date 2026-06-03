@@ -1,0 +1,14 @@
+id: driver.taranaki.economy.economy.fossil_fuel_decline
+name: Fossil fuel sector structural decline
+description: Fossil fuel sector structural decline
+theme: economy
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.economy.energy_transition
+- problem.taranaki.economy.diversification
+- problem.taranaki.economy.methanol_dependency
+- problem.taranaki.economy.oil_gas_decline
+claim_ids: []

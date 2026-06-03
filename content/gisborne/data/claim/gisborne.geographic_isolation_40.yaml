@@ -1,0 +1,21 @@
+id: claim.gisborne.inequality.geographic_isolation_40
+statement: Gisborne's geographic isolation creates structural economic disadvantages
+  and service-delivery challenges. Distance from Auckland limits supply-chain efficiency;
+  air freight costs are 2-3x ground freight; isolation contributes to 2-3% population
+  outmigration annually, particularly young professionals.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.zoned_capacity_v1
+notes: null

@@ -1,0 +1,20 @@
+id: camp.waikato.crime.youth_diversion
+name: Youth diversion and engagement
+theme: crime
+core_claim: Youth diversion and engagement is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement youth diversion and engagement
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

@@ -1,0 +1,11 @@
+id: driver.otago.transport.climate_winter
+name: Winter Weather Cycle
+description: Central Otago alpine pass closures; winter cold discourages walking/cycling.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.otago.transport.active_modes
+claim_ids: []

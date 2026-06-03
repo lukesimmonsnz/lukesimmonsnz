@@ -1,0 +1,12 @@
+id: driver.marlborough.housing.population_growth
+name: Population And Household Growth
+description: Population and household growth with regional implications.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.infrastructure.digital
+claim_ids: []

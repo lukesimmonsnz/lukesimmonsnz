@@ -1,0 +1,21 @@
+id: claim.tasman.governance.treaty_claim
+statement: Te Ātiawa o Te Waka-a-Māui, Ngāti Koata, Ngāti Rārua, and Ngāti Tama ki
+  Te Tau Ihu hold mana whenua in Tasman. Te Ātiawa co-management of Kahurangi National
+  Park (2022 Deed of Partnership) established joint decision-making on conservation;
+  Waimea Inlet restoration involves iwi in freshwater and estuarine ecology planning.
+value: 4
+unit: iwi with mana whenua
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_iwi_partnership_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

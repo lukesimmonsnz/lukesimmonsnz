@@ -1,0 +1,19 @@
+id: claim.marlborough.infrastructure.water_irrigation_1
+statement: 'Wairau Aquifer extraction infrastructure: 180–200 irrigation schemes (pivot,
+  drip, flood); combined annual extraction 250–280 million m³; infrastructure aging
+  (many pump stations 30–40 years old); maintenance costs rising, efficiency declining.'
+value: 265
+unit: million m³ annual irrigation extraction (mid-range)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wairau_catchment_study_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

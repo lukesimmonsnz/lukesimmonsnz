@@ -1,0 +1,20 @@
+id: claim.southland.transport.active_modes_trend
+statement: Active transport adoption in Southland shows slow growth. Invercargill
+  city council investment in cycling lanes and walkways increasing; school bike-bus
+  programs piloted. Rural cycling infrastructure remains minimal; topography and weather
+  constraints limit adoption potential. E-bike uptake modest but growing.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

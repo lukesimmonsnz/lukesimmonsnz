@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.housing.median_rent_550_2026
+statement: Median weekly rent in Hawke's Bay reached NZD 550 by 2024, with Napier
+  CBD and Hastings inner suburbs commanding NZD 600-700 per week. The median rent-to-income
+  ratio is 26% (versus the national figure of 23%), indicating elevated rental burden.
+  Cyclone Gabrielle damage reduced available rental stock by an estimated 3-5%, pushing
+  landlords toward rapid rent escalation; low-income families face displacement into
+  emergency housing or informal arrangements.
+value: 550
+unit: NZD per week (median rent)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.rent_to_income_v1
+notes: null

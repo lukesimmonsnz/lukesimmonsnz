@@ -1,0 +1,21 @@
+id: camp.southland.transport.connectivity_response
+name: Public Transport and Active Travel Investment
+theme: transport
+core_claim: Investing in bus services in Invercargill and active travel infrastructure
+  reduces transport disadvantage and vehicle dependence.
+flagship_moves:
+- Establish Invercargill urban bus network with hourly frequency
+- Build cycling lanes on main arterials
+- Subsidise community transport for rural residents
+tensions:
+- Low density and spread-out settlement pattern makes public transport uneconomic
+- Rural distances make active travel impractical for most trips
+addresses:
+- problem.southland.transport.connectivity
+interventions:
+- description: Fund Invercargill urban bus service
+  state_variable: public_transport_trips
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

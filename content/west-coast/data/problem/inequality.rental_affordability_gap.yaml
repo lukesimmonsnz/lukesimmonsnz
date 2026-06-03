@@ -1,0 +1,43 @@
+id: problem.west_coast.inequality.rental_affordability_gap
+title: Rent-to-income gap for low-income West Coast households
+theme: inequality
+section: inequality
+subpage: rental_affordability_gap
+parent: inequality
+order: 3
+updated: '2026-04-26'
+summary: Median household income on the West Coast is around $52,000 and median two-bedroom rent in Westport or Greymouth
+  is around $280 per week. For households at the median this is around 28 percent of gross income; for the 40th-percentile
+  household it exceeds 40 percent, leaving little for food, heating and transport.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - rent_to_income_below_median
+  - energy_hardship_rate
+  - as_payment_volume
+  inputs:
+  - wff_accommodation_supplement
+  - energy_efficiency_subsidy
+  constraints:
+  - low_income_distribution_tail
+  - old_uninsulated_stock
+  feedback_loops:
+  - Energy hardship and rent burden together produce material deprivation that erodes employability and health, lowering income
+    further and entrenching the same affordability gap that produced the deprivation.
+narrative:
+- heading: Affordability burden concentrates below median
+  body: Rent-to-income ratios at the regional median look unremarkable, but the distribution behind that median is what matters
+    (claim.west_coast.inequality.rental_affordability_gap_claim). Households below median income in West Coast towns face
+    rent-to-income ratios above 40 percent, the international threshold for severe rent burden.
+- heading: Heating cost is the regional twist
+  body: Cold, damp West Coast winters mean the residual income left after rent has to cover a higher heating bill than households
+    elsewhere face — particularly in old, poorly insulated rental stock. Energy hardship and rent burden interact in ways
+    that aggregate housing-affordability metrics miss.
+claim_ids:
+- claim.west_coast.inequality.rental_affordability_gap_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

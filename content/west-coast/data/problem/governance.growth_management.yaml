@@ -1,0 +1,43 @@
+id: problem.west_coast.governance.growth_management
+title: Westport managed retreat and the politics of relocation
+theme: governance
+section: governance
+subpage: growth_management
+parent: governance
+order: 2
+updated: '2026-04-26'
+summary: Following the 2021 and 2022 Buller floods, Buller District Council is implementing managed retreat policy for parts
+  of Westport. Voluntary acquisition and relocation of property to higher ground is novel in New Zealand at this scale, and
+  the equity, compensation and place-attachment questions are unresolved.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - acquisitions_completed
+  - voluntary_uptake_rate
+  - rezoned_hectares
+  inputs:
+  - central_govt_buyout_funding
+  - council_planning_capacity
+  constraints:
+  - place_attachment_political_economy
+  - compensation_funding_envelope
+  feedback_loops:
+  - A slow buyout pace leaves residents in flood-prone properties for additional events, eroding political and community support
+    for the policy itself, while abrupt acceleration risks under-compensation grievances that would entrench legal challenge.
+narrative:
+- heading: First-of-its-kind in NZ
+  body: Buller DC's managed retreat work is the first New Zealand example of structured relocation of a town centre on climate-risk
+    grounds (claim.west_coast.governance.growth_management_claim). The programme combines voluntary acquisition, rezoning
+    of inundation-prone land, and progressive infrastructure decommissioning.
+- heading: Equity, compensation, and the place itself
+  body: Acquisition price-setting against pre-flood market values, treatment of uninsured owners, and the future identity
+    of the town centre are unresolved political and legal questions. The design choices Buller makes in this decade will set
+    precedent for many other coastal and riverine settlements nationally.
+claim_ids:
+- claim.west_coast.governance.growth_management_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

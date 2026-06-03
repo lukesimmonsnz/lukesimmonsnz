@@ -1,0 +1,13 @@
+id: driver.nelson.economy.driver_2
+name: Constrained skilled labour and absence of research-university anchor
+description: Nelson trains trades and applied-health workers through NMIT but loses school leavers to research-university campuses elsewhere, and retains only a fraction on return. The result is a thin senior-skill labour pool that limits diversification options and reinforces the existing sector concentration.
+theme: economy
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.economy.economic_structure
+- problem.nelson.economy.economic_3
+- problem.nelson.economy.economic_4
+claim_ids: []

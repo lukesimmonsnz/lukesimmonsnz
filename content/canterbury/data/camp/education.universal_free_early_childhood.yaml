@@ -1,0 +1,21 @@
+id: camp.canterbury.education.universal_free_early_childhood
+name: Universal Free Early Childhood Education
+theme: education
+core_claim: Removing affordability barriers to ECE participation (free or deeply subsidized)
+  increases enrollment in high-deprivation areas and reduces achievement gaps.
+flagship_moves:
+- Key intervention for Universal Free Early Childhood Education
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.education.early_childhood
+interventions:
+- description: Removing affordability barriers to ECE participation (free or deeply
+    subsidized) increases enrollment in high-deprivation areas and reduces achievement
+    gaps.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

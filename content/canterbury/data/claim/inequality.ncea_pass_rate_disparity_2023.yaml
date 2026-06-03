@@ -1,0 +1,20 @@
+id: claim.canterbury.inequality.ncea_pass_rate_disparity_2023
+statement: Educational outcomes in Canterbury are below national averages, with significant
+  disparities by area and demographic group. Rural schools face teacher recruitment
+  challenges; tertiary participation and attainment rates lag urban areas, limiting
+  skill development and career opportunities.
+value: 25
+unit: percentage point gap
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_canterbury_achievement_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

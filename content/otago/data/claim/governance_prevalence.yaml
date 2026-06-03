@@ -1,0 +1,23 @@
+id: claim.otago.governance.governance_prevalence
+statement: Otago governance spans local councils (Dunedin City, Queenstown Lakes DC,
+  Waitaki DC, Clutha DC), Otago Regional Council (ORC), and statutory Māori representatives
+  (Te Rūnanga o Ngāi Tahu). DCC manages large EPB stock and stadium debt (Forsyth
+  Barr, opened 2011); QLDC fastest-growing NZ district; ORC manages water allocation
+  and regional transport (bus Dunedin). Ngāi Tahu / Kāi Tahu mana whenua across most
+  of Otago; 2013 Treaty settlement major; Ngāi Tahu Holdings significant South Island
+  commercial entity.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

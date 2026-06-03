@@ -1,0 +1,12 @@
+id: driver.otago.transport.modal_bias_cars
+name: Car-Oriented Land Use and Modal Bias
+description: Urban sprawl, parking-free development, limited pedestrian/cycle infrastructure
+  encourage vehicle use.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.transport.active_modes
+claim_ids: []

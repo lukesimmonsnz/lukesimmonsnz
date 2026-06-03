@@ -1,0 +1,13 @@
+id: driver.wellington.education.teacher_distribution_inequity
+name: Inequitable teacher quality distribution
+description: Wellington's more experienced and qualified teachers disproportionately work in higher-decile schools, leaving
+  high-need Porirua and Hutt Valley schools relying more heavily on new-graduate and reliever teachers.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.education.achievement
+claim_ids:
+- claim.wellington.education.pacific_achievement_gap

@@ -1,0 +1,11 @@
+id: driver.canterbury.crime.housing_stress_violence_amplifier
+name: Housing Stress & Overcrowding as Violence Risk Factor
+description: Housing Stress & Overcrowding as Violence Risk Factor
+theme: crime
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.crime.family_violence
+claim_ids: []

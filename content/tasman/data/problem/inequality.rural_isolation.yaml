@@ -1,0 +1,43 @@
+id: problem.tasman.inequality.rural_isolation
+title: Mohua relative-poverty profile despite cheaper housing
+theme: inequality
+section: inequality
+subpage: rural_isolation
+parent: inequality
+order: 4
+updated: '2026-04-26'
+summary: Golden Bay is geographically isolated — the nearest supermarket is in Motueka, around 45 minutes over the
+  Takaka Hill. Population sits around 3,200, with one medical practice, one secondary school, and no tertiary provision.
+  Rental and purchase prices are lower than Richmond, but local incomes are roughly 12 percent below the regional
+  median, producing relative poverty despite lower housing costs.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - minutes_to_nearest_supermarket
+  - local_income_vs_regional_median
+  inputs:
+  - rural_service_subsidies
+  - telehealth_and_online_service_capacity
+  constraints:
+  - single_road_corridor
+  - low_density_service_economics
+  feedback_loops:
+  - Each service withdrawal accelerates outmigration of working-age residents, which weakens the demand case for
+    the next service, which accelerates withdrawal.
+narrative:
+- heading: Cheaper houses, more expensive lives
+  body: 'Lower house prices in Mohua are partly compensation for the additional cost of living there: longer drives
+    to specialist services, more expensive groceries, more exposure to road closures. The net effect is relative
+    poverty inside a community that looks affordable on a price-only metric (claim.tasman.inequality.rural_isolation_claim).'
+- heading: Service thinning is the underlying mechanism
+  body: A single medical practice, a single secondary school, and no tertiary provider give residents very narrow
+    choice sets. Each service withdrawal — a closing branch, a retiring GP, a discontinued bus route — has outsized
+    effects because there is no parallel option.
+claim_ids:
+- claim.tasman.inequality.rural_isolation_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

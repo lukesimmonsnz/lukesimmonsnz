@@ -1,0 +1,17 @@
+id: driver.waikato.health.socioeconomic_determinants
+name: Socioeconomic determinants of health
+description: Poverty, poor housing, and unemployment create the social conditions underpinning poor health
+  outcomes in Waikato's high-deprivation communities. These structural drivers operate through reduced
+  preventive care access, overcrowded housing increasing infectious disease transmission, and income constraints
+  limiting nutritional quality and the ability to manage chronic conditions effectively.
+theme: health
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.health.waikato_health_inequity
+- problem.waikato.health.maori_health_gap
+- problem.waikato.health.rural_access
+- problem.waikato.health.mental_health
+claim_ids: []

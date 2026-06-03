@@ -1,0 +1,29 @@
+id: problem.taranaki.governance.treaty_iwi
+title: Treaty settlement and iwi partnership
+theme: governance
+section: governance
+subpage: treaty_iwi
+parent: problem.taranaki.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: Te Ātiawa, Ngāti Ruanui, Ngāruahine iwi have claims and partnership agreements
+  with councils. Implementation is patchy.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - treaty_iwi_index
+  inputs:
+  - treaty_iwi_input_1
+  constraints:
+  - treaty_iwi_constraint
+  feedback_loops:
+  - 'Feedback: treaty_iwi'
+narrative:
+- heading: Treaty settlement and iwi partnership in Taranaki
+  body: Te Ātiawa, Ngāti Ruanui, Ngāruahine iwi have claims and partnership agreements
+    with councils. Implementation is patchy.
+claim_ids:
+- claim.taranaki.governance.treaty_iwi_01
+status: draft
+time_horizons: [decade, generation, century]

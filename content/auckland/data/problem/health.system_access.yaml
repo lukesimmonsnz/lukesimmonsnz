@@ -1,60 +1,56 @@
 id: problem.auckland.health.system_access
-title: "Health System Access and Equity"
+title: Health System Access and Equity
 theme: health
 section: health
 subpage: system-access
 parent: null
 order: 0
-updated: "2026-04-26"
-summary: >
-  Auckland's health system is under significant capacity pressure;
-  Middlemore operates at 120-130% occupancy and consistently misses
-  six-hour ED departure targets. Amenable mortality for Maori and Pacific
-  Aucklanders is 2-3 times the NZ European rate — a gap that has not
-  narrowed in two decades. The primary care cost barrier drives avoidable
-  ED demand; approximately 20% of Aucklanders forgo GP visits due to cost.
-  The debate centres on whether primary care free access or hospital
-  capacity investment is the higher-return intervention.
+updated: '2026-04-26'
+summary: Auckland's health system is under significant capacity pressure; Middlemore operates at 120-130%
+  occupancy and consistently misses six-hour ED departure targets. Amenable mortality in South Auckland's
+  high-deprivation communities is 2-3 times the rate in lower-deprivation areas — a gap that has not narrowed
+  in two decades. The primary care cost barrier drives avoidable ED demand; approximately 20% of Aucklanders
+  forgo GP visits due to cost.
 manifests_in:
-  - auckland
+- auckland
 systems_model:
   state_variables:
-    - "primary_care_utilisation_rate"
-    - "avoidable_ed_presentation_rate"
-    - "hospital_occupancy_rate"
-    - "amenable_mortality_rate"
+  - primary_care_utilisation_rate
+  - avoidable_ed_presentation_rate
+  - hospital_occupancy_rate
+  - amenable_mortality_rate
   inputs:
-    - "vlca_eligibility_coverage"
-    - "community_health_centre_count"
-    - "hospital_bed_capacity"
-    - "health_workforce_count"
+  - vlca_eligibility_coverage
+  - community_health_centre_count
+  - hospital_bed_capacity
+  - health_workforce_count
   constraints:
-    - "Workforce: GP and specialist shortage is national; Auckland competes with Australia for retention"
-    - "Infrastructure: Middlemore redevelopment is multi-year capital project; no short-run capacity fix"
-    - "Equity gap: Maori and Pacific access barriers require culturally specific responses, not just price removal"
+  - 'Workforce: GP and specialist shortage is national; Auckland competes with Australia for retention'
+  - 'Infrastructure: Middlemore redevelopment is multi-year capital project; no short-run capacity fix'
+  - 'Equity gap: Maori and Pacific access barriers require culturally specific responses, not just price
+    removal'
   feedback_loops:
-    - "No primary care → late diagnosis → complex hospital presentation → longer stay → higher occupancy"
-    - "ED overcrowding → ambulance ramping → delayed acute response → worse outcomes"
+  - No primary care → late diagnosis → complex hospital presentation → longer stay → higher occupancy
+  - ED overcrowding → ambulance ramping → delayed acute response → worse outcomes
 narrative:
-  - heading: "The equity gap that won't close"
-    body: >
-      Amenable mortality measures deaths that should not have happened
-      with timely, effective care. When Maori Aucklanders die at two to
-      three times the rate of NZ Europeans from preventable conditions,
-      the health system is not delivering on its equity mandate. This
-      gap has persisted through multiple health system reforms, suggesting
-      it is not primarily a structural organisation problem but a
-      resourcing and access problem concentrated in specific geographies.
-  - heading: "Primary care as the leverage point"
-    body: >
-      Every avoidable ED presentation represents a primary care access
-      failure. Middlemore's overcrowding is partly driven by patients
-      who could have been seen by a GP three days earlier but could not
-      afford the co-payment. Fixing primary care access is cheaper and
-      faster than building new hospital beds, but requires a sustained
-      co-payment subsidy that is fiscally contested.
+- heading: The equity gap that won't close
+  body: 'Amenable mortality measures deaths that should not have happened with timely, effective care.
+    When Maori Aucklanders die at two to three times the rate of NZ Europeans from preventable conditions,
+    the health system is not delivering on its equity mandate. This gap has persisted through multiple
+    health system reforms, suggesting it is not primarily a structural organisation problem but a resourcing
+    and access problem concentrated in specific geographies.
+
+    '
+- heading: Primary care as the leverage point
+  body: 'Every avoidable ED presentation represents a primary care access failure. Middlemore''s overcrowding
+    is partly driven by patients who could have been seen by a GP three days earlier but could not afford
+    the co-payment. Fixing primary care access is cheaper and faster than building new hospital beds,
+    but requires a sustained co-payment subsidy that is fiscally contested.
+
+    '
 claim_ids:
-  - claim.auckland.health.auckland_ed_wait_times
-  - claim.auckland.health.maori_pacific_amenable_mortality
-  - claim.auckland.health.primary_care_cost_barrier
+- claim.auckland.health.auckland_ed_wait_times
+- claim.auckland.health.maori_pacific_amenable_mortality
+- claim.auckland.health.primary_care_cost_barrier
 status: draft
+time_horizons: [decade, generation]

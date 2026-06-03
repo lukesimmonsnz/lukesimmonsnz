@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.housing.damaged_dwellings_3600
+statement: Cyclone Gabrielle damaged stock remains estimated at 3,600 dwellings; 12
+  months post-event (Feb 2024) approximately 40% were still in repair or temporary
+  accommodation. Rental market tightness intensified post-Cyclone as insurers moved
+  repairs out-of-scope and landlords deferred reinstatement. Repair cost inflation
+  (labour, materials) and supply chain constraints extended timelines, deepening housing
+  crisis for displaced low-income households.
+value: 3600
+unit: dwellings
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

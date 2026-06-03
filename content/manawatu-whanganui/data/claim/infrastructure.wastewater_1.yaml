@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.infrastructure.wastewater_1
+statement: Wastewater treatment in Manawatū-Whanganui is managed by territorial authorities;
+  systems vary from modern treatment plants (Palmerston North) to aging systems (Whanganui,
+  small rural towns). Palmerston North's treatment plant (Riverside) processes approx.
+  35,000 m3/day; compliance with environmental discharge standards is generally met
+  but margins are tight during wet weather. Whanganui's plant operates at 70-75% capacity;
+  upgrades are planned (2025-2030). Rural schemes often use on-site or small community
+  systems; approximately 20-25% of rural properties rely on septic tanks or poorly
+  maintained systems, with occasional contamination of groundwater.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.palmerston_north_city_council_2023
+- source.whanganui_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: null
+notes: null

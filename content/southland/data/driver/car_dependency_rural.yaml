@@ -1,0 +1,11 @@
+id: driver.southland.transport.car_dependency_rural
+name: Car Dependency in Rural and Urban Areas
+description: Limited public transit; low population density drives car use.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.southland.transport.active_modes
+claim_ids: []

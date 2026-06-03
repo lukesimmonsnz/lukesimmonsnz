@@ -1,0 +1,21 @@
+id: claim.waikato.economy.tech_employment_6pct
+statement: Technology sector employment in Waikato is approximately 6% of workforce,
+  significantly below Auckland at 16% and Wellington at 18%. The Waikato lacks a concentrated
+  tech hub outside Hamilton CBD; most tech roles are in software services and digital
+  marketing for agricultural businesses. Ruakura Superhub and logistics development
+  may create tech-adjacent jobs but do not replace high-skill digital employment.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_economic_profile_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato tech_sector_gap claim

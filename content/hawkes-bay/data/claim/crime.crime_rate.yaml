@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.crime.crime_rate_7200_per_100k
+statement: Hawke's Bay crime rates (7,200 offences per 100,000 population annually)
+  reflect geographic, economic, and social vulnerabilities. Property crime, family
+  violence, and drug-related offenses impact community safety; police response capacity
+  is constrained in rural and remote areas like Wairoa, limiting prevention effectiveness
+  and victim support services.
+value: 7200
+unit: offences per 100k population
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1

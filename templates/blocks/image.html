@@ -1,0 +1,6 @@
+<figure class="block-image{% if attrs.align %} align-{{ attrs.align }}{% endif %}">
+  <img src="{{ attrs.src }}" alt="{{ attrs.alt | default('') }}"
+       loading="lazy"
+       {% if attrs.focal %}style="object-position: {{ attrs.focal }}"{% endif %}>
+  {% if attrs.caption %}<figcaption>{{ attrs.caption }}</figcaption>{% endif %}
+</figure>

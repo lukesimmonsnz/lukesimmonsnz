@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.health.free_primary_care
+name: Free primary care and preventive health
+theme: health
+core_claim: Universal primary care access to reduce access barriers.
+flagship_moves:
+- Flagship move 1 for Free primary care and preventive health
+- Flagship move 2 for Free primary care and preventive health
+tensions:
+- Internal tension 1 of Free primary care and preventive health
+addresses:
+- problem.manawatu_whanganui.infrastructure.wastewater
+interventions:
+- description: 'Intervention 1: Free primary care and preventive health detail 1'
+- description: 'Intervention 2: Free primary care and preventive health detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

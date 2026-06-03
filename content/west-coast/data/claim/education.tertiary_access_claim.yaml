@@ -1,0 +1,23 @@
+id: claim.west_coast.education.tertiary_access_claim
+statement: Tertiary education access is severely constrained. No university campus
+  exists on West Coast; nearest options are Christchurch (4+ hours south) or Dunedin
+  (8+ hours). Distance learning and online study are prevalent but limited by digital
+  infrastructure gaps in rural areas. Polytechnic places are limited. Young people
+  pursuing tertiary education typically out-migrate and do not return.
+value: null
+unit: null
+time_period: 2015-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_west_coast_achievement_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Institutional distances from geographic data; digital access barriers from
+  broadband coverage reports; out-migration from Census migration tables.

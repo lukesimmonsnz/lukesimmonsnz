@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.environment.environmental_pressure_growth
+name: Driver for environmental_pressure
+description: "This driver exacerbates the environmental_pressure pressure in Bay of\
+  \ Plenty \u2014 Te Moana-a-Toi."
+theme: environment
+consensus: consensus
+category: cultural
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.environment.environmental_pressure
+claim_ids:
+- claim.bay_of_plenty.environment.environmental_pressure_25

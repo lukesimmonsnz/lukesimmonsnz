@@ -1,0 +1,11 @@
+id: driver.canterbury.environment.aquifer_recharge_uncertainty
+name: Aquifer Recharge Rate Uncertainty
+description: Aquifer Recharge Rate Uncertainty
+theme: environment
+consensus: contested
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.environment.freshwater_stress
+claim_ids: []

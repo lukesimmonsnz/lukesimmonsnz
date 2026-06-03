@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.health.preventive_public_health
+name: Preventive Public Health and Health Promotion
+theme: health
+core_claim: Population-level health behaviour change.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

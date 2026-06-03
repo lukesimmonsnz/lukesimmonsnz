@@ -1,0 +1,25 @@
+id: camp.tasman.health.camp_2
+name: 'Response: Camp 2'
+theme: health
+core_claim: A response strategy addressing health challenges.
+flagship_moves:
+- Implement evidence-based health policy in Tasman
+- Increase investment in health services and infrastructure
+- Build cross-sector partnerships to address health challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.health.health_outcomes
+- problem.tasman.health.chronic_disease
+- problem.tasman.health.workforce
+interventions:
+- description: Primary intervention for health
+  state_variable: health_outcome_index
+  expected_sign: +
+- description: Secondary intervention for health
+  state_variable: health_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

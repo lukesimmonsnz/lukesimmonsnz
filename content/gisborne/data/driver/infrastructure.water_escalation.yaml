@@ -1,0 +1,13 @@
+id: driver.gisborne.infrastructure.water_escalation
+name: Driver escalating water
+description: "This driver exacerbates the water challenge in Gisborne \u2014 Te Tair\u0101\
+  whiti."
+theme: infrastructure
+consensus: contested
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.infrastructure.water
+claim_ids:
+- claim.gisborne.infrastructure.water_21

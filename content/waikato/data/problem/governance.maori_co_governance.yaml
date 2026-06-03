@@ -1,0 +1,30 @@
+id: problem.waikato.governance.maori_co_governance
+title: Māori co-governance implementation
+theme: governance
+section: governance
+subpage: maori_co_governance
+parent: problem.waikato.governance.waikato_governance_complexity
+order: 3
+updated: '2026-04-26'
+summary: Te Awa Tupua co-governance arrangements for the Waikato River require institutional
+  adaptation.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - governance_effectiveness
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing maori co governance creates feedback on regional outcomes.
+narrative:
+- heading: Māori co-governance implementation
+  body: Te Awa Tupua co-governance arrangements for the Waikato River require institutional
+    adaptation.
+claim_ids:
+- claim.waikato.governance.co_governance_capacity
+status: draft
+time_horizons: [decade, generation, century]

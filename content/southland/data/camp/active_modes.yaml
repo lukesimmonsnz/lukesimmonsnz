@@ -1,0 +1,21 @@
+id: camp.southland.transport.active_modes
+name: Active Transport Infrastructure and Modal Shift
+theme: transport
+core_claim: Cycleways, pedestrian infrastructure, and transit investment increase
+  walking and cycling.
+flagship_moves:
+- Protected cycleways on Invercargill arterials
+- Car-free streets in CBD
+- Bus frequency increase on main routes
+tensions:
+- Parking loss resistance
+- Climate and population density limit uptake
+addresses:
+- problem.southland.transport.active_modes
+interventions:
+- description: Build 30 km of protected cycleways
+  state_variable: mode_share_cycling
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

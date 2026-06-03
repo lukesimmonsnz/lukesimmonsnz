@@ -1,0 +1,12 @@
+id: driver.marlborough.inequality.limited_opportunity
+name: Limited Local Economic Opportunity
+description: Limited local economic opportunity with regional implications.
+theme: inequality
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.picton_ferry
+claim_ids: []

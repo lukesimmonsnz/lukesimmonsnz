@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.transport.connectivity_growth
+name: Driver for connectivity
+description: "This driver exacerbates the connectivity pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: transport
+consensus: contested
+category: regulatory
+timescale: medium
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.transport.connectivity
+claim_ids:
+- claim.bay_of_plenty.transport.connectivity_09

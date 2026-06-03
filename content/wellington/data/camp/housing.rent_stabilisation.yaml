@@ -1,0 +1,20 @@
+id: camp.wellington.housing.rent_stabilisation
+name: Rent Stabilisation and Tenancy Reform
+theme: housing
+core_claim: Rent control mechanisms combined with stronger tenancy security would reduce displacement and rental market volatility.
+flagship_moves:
+- Cap annual rent increases to CPI + 2%
+- Extend notice periods for no-cause terminations to 90 days
+- Mandate WOF-standard minimum habitability requirements
+tensions:
+- Rent caps reduce landlord incentives to maintain and invest in rental stock
+- Supply-side economists argue rent stabilisation reduces new rental construction
+addresses:
+- problem.wellington.housing.rental_market
+interventions:
+- description: Introduce Residential Tenancies Act amendment capping in-tenancy rent increases to CPI + 2%
+  state_variable: rent_affordability
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

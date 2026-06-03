@@ -1,0 +1,37 @@
+id: problem.nelson.climate.climate_4
+title: Water availability under sustained pressure
+theme: climate-adaptation
+section: climate
+subpage: climate_4
+parent: climate_risk
+order: 4
+updated: '2026-04-26'
+summary: Nelson-Tasman water supply is approaching a binding constraint. The Waimea Plains aquifer supplies roughly 70 percent of municipal and agricultural water; summer restrictions are now standard. Maitai Dam yield is running 8-12 percent below its design assumptions, and demand is projected to exceed sustainable yield by around 2035 without active demand reduction.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - annual_yield_million_m3
+  - summer_demand_million_m3
+  - aquifer_drawdown_metres_per_year
+  inputs:
+  - population_growth
+  - irrigation_demand
+  - rainfall_anomaly
+  constraints:
+  - catchment_size
+  - aquifer_safe_yield
+  - interagency_coordination
+  feedback_loops:
+  - 'Yield-demand feedback: as climate-altered yield falls and growth-driven demand rises, the headroom for restrictions narrows year-on-year, accelerating the date of binding shortage.'
+narrative:
+- heading: A small region, two squeezed supplies
+  body: 'Nelson City draws from the Maitai Dam and the Roding River; Tasman District draws heavily on the Waimea aquifer through an irrigation-and-supply scheme augmented by the recently completed Waimea Community Dam (claim.nelson.climate.climate_4_claim). Both sources show climate-altered yield: snowmelt timing and rainfall pattern shifts have reduced reliable yield even before population growth is layered in.'
+- heading: Demand-management policy gap
+  body: Nelson and Tasman councils operate independent water networks, and demand-management instruments (universal metering, restrictions, pricing) are unevenly applied. Without coordinated demand management, the projected 2035 supply gap will arrive earlier in dry years.
+claim_ids:
+- claim.nelson.climate.climate_4_claim
+status: draft
+time_horizons:
+- generation
+- century

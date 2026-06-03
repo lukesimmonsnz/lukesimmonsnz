@@ -1,0 +1,19 @@
+id: claim.marlborough.crime.family_violence_2
+statement: Nelson Marlborough District Court processes 150–180 family violence charges
+  annually; legal aid availability constrained by limited public defender capacity
+  in Marlborough; conviction rate 65–70%.
+value: 67.5
+unit: percent conviction rate (2021–2023)
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: null

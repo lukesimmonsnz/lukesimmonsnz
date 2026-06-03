@@ -1,0 +1,22 @@
+id: claim.southland.climate.climate_risk_trend
+statement: Climate risks in Southland are intensifying. Drought frequency in eastern
+  Southland increasing (dry summers now 1-in-5 year rather than 1-in-10 year); Fiordland
+  rainfall variability increasing; coastal sea-level rise acceleration (0.5-1.2m by
+  2100 RCP 6.0) combined with storm surge intensification. Adaptation investments
+  (flood defences, irrigation infrastructure, coastal realignment) face significant
+  funding constraints.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

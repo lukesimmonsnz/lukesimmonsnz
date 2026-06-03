@@ -1,0 +1,12 @@
+id: driver.otago.governance.ngai_tahu_cogovernance_expansion
+name: Ngāi Tahu Co-Governance Rights Expansion
+description: Treaty settlement and co-governance mandate expanding; institutional
+  complexity increasing.
+theme: governance
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.governance.treaty_ngai_tahu
+claim_ids: []

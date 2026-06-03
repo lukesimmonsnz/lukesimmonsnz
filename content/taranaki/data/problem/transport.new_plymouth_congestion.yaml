@@ -1,0 +1,29 @@
+id: problem.taranaki.transport.new_plymouth_congestion
+title: New Plymouth urban congestion
+theme: transport
+section: transport
+subpage: new-plymouth-congestion
+parent: problem.taranaki.transport.connectivity
+order: 2
+updated: '2026-04-26'
+summary: 'New Plymouth CBD experiences peak-hour congestion as commuters from surrounding suburbs converge. Limited bypass routes and single-direction heavy streets create bottlenecks.'
+manifests_in:
+  - taranaki
+systems_model:
+  state_variables:
+    - peak_hour_congestion_index
+    - vehicle_count_cbd_peak
+  inputs:
+    - suburban_sprawl
+    - limited_bypass_capacity
+  constraints:
+    - urban_street_network_topology
+  feedback_loops:
+    - 'Congestion discourages CBD employment; business relocates; congestion worsens.'
+narrative:
+  - heading: Morning Peak
+    body: 'New Plymouth CBD experiences 15-20 minute peak hour delays (2024), affecting 8,000+ daily commuters.'
+claim_ids:
+  - claim.taranaki.transport.cbd_delay_15_20_minutes
+status: draft
+time_horizons: [decade, generation]

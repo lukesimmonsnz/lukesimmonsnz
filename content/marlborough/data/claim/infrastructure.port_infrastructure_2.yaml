@@ -1,0 +1,20 @@
+id: claim.marlborough.infrastructure.port_infrastructure_2
+statement: 'KiwiRail new ferry procurement (Kaiarahi class): two ships ordered (Kaiarahi,
+  Aratere replacement), delivery delayed from 2024 to 2026; interim fleet operated
+  beyond design life (35+ years old); terminal capital works stalled pending new vessel
+  arrival.'
+value: null
+unit: null
+time_period: 2024-2026
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.picton_ferry_services_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

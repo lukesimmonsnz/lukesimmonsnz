@@ -1,0 +1,35 @@
+id: problem.southland.health.health_outcomes
+title: Health Outcomes and Health System Pressures
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Southland has higher chronic disease burden; rural workforce shortages (GPs,
+  nurses); mental health services oversubscribed; deprivation drives poor health outcomes.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland has higher chronic disease burden; rural workforce shortages (GPs,
+    nurses); mental health services oversubscribed; deprivation drives poor health
+    outcomes.
+claim_ids:
+- claim.southland.health.health_outcomes_prevalence
+- claim.southland.health.chronic_disease_trend
+- claim.southland.health.rural_workforce_trend
+- claim.southland.health.mental_health_trend
+- claim.southland.health.health_outcomes_trend
+- claim.southland.health.mental_health_prevalence
+- claim.southland.health.rural_workforce_prevalence
+- claim.southland.health.chronic_disease_prevalence
+status: draft
+time_horizons: [decade, generation]

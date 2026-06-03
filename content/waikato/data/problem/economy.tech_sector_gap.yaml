@@ -1,0 +1,30 @@
+id: problem.waikato.economy.tech_sector_gap
+title: Technology and knowledge sector underdevelopment
+theme: economy
+section: economy
+subpage: tech_sector_gap
+parent: problem.waikato.economy.waikato_economic_concentration
+order: 3
+updated: '2026-04-26'
+summary: Hamilton lacks the tech sector density of Auckland, limiting high-wage job
+  creation.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gdp_per_capita_growth
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing tech sector gap creates feedback on regional outcomes.
+narrative:
+- heading: Technology and knowledge sector underdevelopment
+  body: Hamilton lacks the tech sector density of Auckland, limiting high-wage job
+    creation.
+claim_ids:
+- claim.waikato.economy.tech_employment_6pct
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,21 @@
+id: claim.wellington.environment.urban_stream_degradation
+statement: Many Wellington urban streams were piped or channelised during mid-twentieth
+  century urban development, eliminating natural filtering, buffering, and habitat
+  functions; daylighting and ecological restoration is technically feasible but costly
+  in built-up areas.
+value: null
+unit: null
+time_period: 2020-2022
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_state_environment_2022
+- source.gwrc_whaitua_2021
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

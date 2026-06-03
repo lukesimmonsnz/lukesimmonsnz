@@ -1,0 +1,13 @@
+id: driver.gisborne.inequality.ethnic_gap_escalation
+name: Driver escalating ethnic_gap
+description: "This driver exacerbates the ethnic_gap challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: inequality
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.inequality.ethnic_gap
+claim_ids:
+- claim.gisborne.inequality.ethnic_gap_37

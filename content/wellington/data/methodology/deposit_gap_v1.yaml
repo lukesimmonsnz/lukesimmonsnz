@@ -1,0 +1,17 @@
+id: methodology.deposit_gap_v1
+name: "Deposit Gap (years to 20% deposit)"
+version: 1
+kind: measurement
+applies_to: [Claim]
+predicate: null
+discharged_by: python_invariant
+description: >
+  Number of years of median gross household saving required to accumulate
+  a 20% deposit on a median-priced Auckland dwelling. Computed as:
+  (0.20 × median_dwelling_price) / (savings_rate × median_household_income).
+  Assumes a fixed savings rate (typically 20% of gross income); results are
+  sensitive to this assumption and should be presented as a plausible range.
+  P5' triggers on cross-region deposit-gap comparison claims.
+source_ids:
+  - source.stats_nz_census_2023
+  - source.demographia_2024

@@ -1,0 +1,25 @@
+id: claim.nelson.infrastructure.infrastructure_claim
+statement: Nelson's core infrastructure faces cumulative deferred maintenance and
+  capacity constraints. Three Waters (water, wastewater, stormwater) assets require
+  $180–220 million in maintenance and renewal over 10 years; current budget allocation
+  is $120 million, creating a backlog. Stormwater management is undersized for climate-altered
+  rainfall intensity; three flood events in 2021-2023 caused $8–12 million in damage.
+  Wastewater treatment plant at Bells Island requires $35–45 million upgrade by 2028.
+  Roading network maintenance backlog is $45 million; SH6 and SH60 are under-resourced
+  for growing traffic. Asset management systems are incomplete; condition data are
+  fragmented across systems.
+value: 200
+unit: million NZD infrastructure gap over 10 years
+time_period: 2024-2034
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

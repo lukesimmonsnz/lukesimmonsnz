@@ -1,0 +1,19 @@
+id: claim.gisborne.crime.safety_41
+statement: Youth justice referrals in Gisborne exceed national rates. Limited youth
+  diversion programme capacity in a provincial setting results in higher court appearance
+  and custody rates among young people.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.maori_youth_offending_index_v1
+notes: null

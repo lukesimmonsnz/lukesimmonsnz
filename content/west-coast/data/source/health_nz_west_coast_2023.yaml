@@ -1,0 +1,12 @@
+id: source.health_nz_west_coast_2023
+title: Health Outcomes West Coast Region 2023
+author: Health New Zealand
+publisher: Health New Zealand
+year: 2023
+url: https://www.health.govt.nz
+type: government-report
+credibility: official
+geo_granularity:
+- west-coast
+- nz
+notes: Rural health access, mental health, aging population health issues, workforce.

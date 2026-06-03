@@ -1,0 +1,20 @@
+id: camp.southland.inequality.deprivation_reduction
+name: Deprivation and Inequality Reduction
+theme: inequality
+core_claim: Targeted support for high-deprivation communities reduces structural inequality.
+flagship_moves:
+- Community-led economic development
+- Social service and support coordination
+- Youth opportunity pathways
+tensions:
+- Community trust and engagement
+- Sustained funding requirement
+addresses:
+- problem.southland.inequality.deprivation
+interventions:
+- description: Reduce deprivation index in high-deprivation areas
+  state_variable: deprivation_index
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.otago.housing.student_population_inelastic
+name: Inelastic Student Rental Demand
+description: University of Otago ~20k students with limited off-campus alternatives;
+  landlords have pricing power.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.housing.dunedin_student_rental
+claim_ids: []

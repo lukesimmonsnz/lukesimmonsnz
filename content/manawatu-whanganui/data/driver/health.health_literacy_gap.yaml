@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.health.health_literacy_gap
+name: Health Literacy And Preventive Behaviour Gaps
+description: Health literacy and preventive behaviour gaps with regional implications.
+theme: health
+consensus: mostly-agreed
+category: cultural
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.digital_rural
+claim_ids: []

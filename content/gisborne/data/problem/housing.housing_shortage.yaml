@@ -1,0 +1,34 @@
+id: problem.gisborne.housing.housing_shortage
+title: Housing shortage and market failure in Gisborne — Te Tairāwhiti
+theme: housing
+section: housing
+subpage: housing_shortage
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Housing shortage and market failure represents a critical systemic challenge
+  for Gisborne — Te Tairāwhiti.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - housing_shortage_index
+  inputs:
+  - policy_change
+  - investment_level
+  - community_effort
+  constraints:
+  - fiscal_capacity
+  - institutional_capacity
+  - geographic_isolation
+  feedback_loops:
+  - Deprivation and isolation reinforce economic fragility and limit recovery.
+narrative:
+- heading: Core systemic challenge
+  body: The housing shortage and market failure is a defining constraint for Gisborne's
+    development.
+claim_ids:
+- claim.gisborne.housing.housing_shortage_01
+- claim.gisborne.housing.housing_shortage_02
+status: draft
+time_horizons: [decade, generation, century]

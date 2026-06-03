@@ -1,0 +1,22 @@
+id: claim.nelson.climate.climate_4_claim
+statement: Nelson-Tasman water availability is under sustained pressure. The Waimea
+  Plains aquifer supplies 70% of municipal and agricultural water; summer restrictions
+  are now standard (last five years all had seasonal restrictions July-February).
+  Maitai Dam yield has declined 8-12% relative to design assumptions due to climate-altered
+  snowmelt and rainfall patterns; demand is projected to exceed sustainable yield
+  by 2035 without demand reduction.
+value: 70
+unit: percent of water supply from Waimea aquifer
+time_period: 2019-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_tasman_water_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,13 @@
+id: driver.wellington.governance.project_governance_weakness
+name: Project governance and financial management weaknesses
+description: Wellington City Council has experienced cost escalations and governance failures on major capital projects —
+  most notably the Town Hall earthquake strengthening — reflecting systemic project oversight weaknesses.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.governance.accountability
+claim_ids:
+- claim.wellington.governance.audit_findings_wcc

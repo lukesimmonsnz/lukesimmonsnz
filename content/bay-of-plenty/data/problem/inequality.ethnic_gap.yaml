@@ -1,0 +1,33 @@
+id: problem.bay_of_plenty.inequality.ethnic_gap
+title: Ethnic socioeconomic and health gaps in Bay of Plenty — Te Moana-a-Toi
+theme: inequality
+section: inequality
+subpage: ethnic_gap
+parent: problem.bay_of_plenty.inequality.regional_disparity
+order: 20
+updated: '2026-04-26'
+summary: The Bay of Plenty has significant intraregional income inequality. High-deprivation communities
+  — concentrated in the eastern Bay (Ōpōtiki, Whakatāne) and parts of Rotorua — have median household
+  incomes 25-30% below the regional average, high rates of material hardship, and limited access to the
+  regional economy's higher-wage sectors. The primary structural drivers are geographic isolation, seasonal
+  labour market dependence, and limited tertiary infrastructure in affected areas.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - ethnic_gap_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Ethnic socioeconomic and health gaps is a specific manifestation of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.inequality.ethnic_gap_39
+- claim.bay_of_plenty.inequality.ethnic_gap_40
+status: draft
+time_horizons: [decade, generation, century]

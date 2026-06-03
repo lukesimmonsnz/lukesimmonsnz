@@ -1,0 +1,12 @@
+id: driver.marlborough.inequality.disability_employment_gap
+name: Disability Employment Rate Gap
+description: Disability employment rate gap.
+theme: inequality
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.infrastructure.water_irrigation
+claim_ids: []

@@ -1,0 +1,27 @@
+id: problem.taranaki.environment.coastal_ecology
+title: Coastal marine ecosystem degradation
+theme: environment
+section: environment
+subpage: coastal_ecology
+parent: problem.taranaki.environment.freshwater_degradation
+order: 2
+updated: '2026-04-26'
+summary: Coastal waters near New Plymouth show low biodiversity and shellfish contamination.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - coastal_ecology_index
+  inputs:
+  - coastal_ecology_input_1
+  constraints:
+  - coastal_ecology_constraint
+  feedback_loops:
+  - 'Feedback: coastal_ecology'
+narrative:
+- heading: Coastal marine ecosystem degradation in Taranaki
+  body: Coastal waters near New Plymouth show low biodiversity and shellfish contamination.
+claim_ids:
+- claim.taranaki.environment.coastal_ecology_01
+status: draft
+time_horizons: [generation, century]

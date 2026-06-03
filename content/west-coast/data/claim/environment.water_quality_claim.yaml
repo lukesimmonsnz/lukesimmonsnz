@@ -1,0 +1,23 @@
+id: claim.west_coast.environment.water_quality_claim
+statement: West Coast river and stream water quality is degraded by acid mine drainage
+  from historical coal mining, with pH levels in Buller waterways dropping below 6.0
+  in some catchments. Ongoing coal operations continue to contribute dissolved metals
+  and sulfates. Native fish populations are reduced; macroinvertebrate diversity is
+  impaired. Remediation efforts are ongoing but funding is limited.
+value: 6.0
+unit: pH threshold (impaired)
+time_period: 2010-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.west_coast_regional_council_annual_plan_2024
+- source.mining_industry_association_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Water quality monitoring data from WCRC environmental reporting; historical
+  mining context from mining industry transition reports.

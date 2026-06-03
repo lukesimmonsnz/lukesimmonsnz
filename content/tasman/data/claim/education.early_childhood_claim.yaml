@@ -1,0 +1,20 @@
+id: claim.tasman.education.early_childhood_claim
+statement: MOE Tasman region data (2023) shows 67% of 3-4 year-olds enrolled in early
+  childhood education, below national target of 95%. Golden Bay has only one subsidised
+  centre; Motueka and rural areas face long waitlists and limited Māori-medium options.
+value: 67
+unit: percent enrolled age 3-4
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_tasman_achievement_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

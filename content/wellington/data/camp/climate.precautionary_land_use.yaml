@@ -1,0 +1,22 @@
+id: camp.wellington.climate.precautionary_land_use
+name: Precautionary Land Use Controls for Hazard Zones
+theme: climate-adaptation
+core_claim: Prohibiting new development in compound hazard zones (fault lines + flood plains + liquefaction) is the safest
+  long-term approach.
+flagship_moves:
+- Map all Wellington compound hazard zones in District Plans
+- Prohibition on new residential development in category 3 hazard zones
+- Incentive-based voluntary relocation from highest-risk existing residential areas
+tensions:
+- Development prohibitions may worsen housing supply in an already constrained market
+- Category boundaries are contested; property owners dispute zone classifications
+addresses:
+- problem.wellington.climate.compound_hazard_risk
+- problem.wellington.housing.earthquake_risk_buildings
+interventions:
+- description: Require multi-hazard risk overlay in all Wellington District Plan reviews under RMA
+  state_variable: development_in_hazard_zones
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

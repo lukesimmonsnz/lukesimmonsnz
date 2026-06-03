@@ -1,0 +1,12 @@
+id: driver.marlborough.housing.development_constraints
+name: Development Approval Process Constraints
+description: Development approval process constraints.
+theme: housing
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.inequality.deprivation
+claim_ids: []

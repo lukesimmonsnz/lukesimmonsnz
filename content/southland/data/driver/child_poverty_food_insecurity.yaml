@@ -1,0 +1,11 @@
+id: driver.southland.inequality.child_poverty_food_insecurity
+name: Child Poverty and Food Insecurity
+description: High proportion of Southland children in poverty; food bank demand elevated.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.inequality.child_poverty
+claim_ids: []

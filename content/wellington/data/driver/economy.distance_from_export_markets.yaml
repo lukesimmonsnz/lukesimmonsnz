@@ -1,0 +1,14 @@
+id: driver.wellington.economy.distance_from_export_markets
+name: Geographic distance from export markets
+description: Wellington's distance from major international markets raises transaction costs for export-oriented firms and
+  reduces Wellington's attractiveness relative to Auckland as a location for internationally connected businesses.
+theme: economy
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.wellington.economy.productivity
+- problem.wellington.economy.business_environment
+claim_ids:
+- claim.wellington.economy.labour_productivity_index

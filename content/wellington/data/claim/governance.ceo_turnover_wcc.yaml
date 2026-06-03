@@ -1,0 +1,22 @@
+id: claim.wellington.governance.ceo_turnover_wcc
+statement: Wellington City Council experienced rapid CEO turnover in the 2020-2024
+  period, including interim appointments during major infrastructure project transitions
+  including the Town Hall earthquake-strengthening, the Let's Get Wellington Moving
+  transport programme, and central city recovery from COVID-19. Sustained leadership
+  instability has complicated delivery of long-duration capital programmes requiring
+  consistent executive commitment.
+value: null
+unit: null
+time_period: 2015-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_annual_plan_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,22 @@
+id: claim.otago.education.tertiary_dunedin_trend
+statement: 'Tertiary sector in Dunedin faces consolidation: University of Otago enrolments
+  stable but with increasing focus on STEM/health (government funding shift); Otago
+  Polytechnic integration into Te Pūkenga creating curriculum changes; student housing
+  market tight (North Dunedin mould issues, overcrowding, high rents relative to income);
+  graduate retention declining (Auckland/Wellington attract 40-50% of cohort within
+  5 years); international student numbers recovering 2023-2024.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

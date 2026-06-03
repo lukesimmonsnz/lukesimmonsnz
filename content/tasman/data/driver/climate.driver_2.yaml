@@ -1,0 +1,14 @@
+id: driver.tasman.climate.driver_2
+name: Concentrated-rainfall event frequency
+description: Rising frequency of high-intensity rainfall events on Motueka and Waimea valley floodplains drives
+  flood risk, channel-management costs, and stormwater-network design loadings.
+theme: climate-adaptation
+consensus: consensus
+category: climate
+timescale: long
+scope: regional
+problem_ids:
+- problem.tasman.climate.climate_risk
+- problem.tasman.climate.climate_3
+- problem.tasman.climate.climate_4
+claim_ids: []

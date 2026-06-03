@@ -1,0 +1,12 @@
+id: driver.marlborough.education.rural_school_viability
+name: Rural School Viability And Retention
+description: Rural school viability and retention with regional implications.
+theme: education
+consensus: mostly-agreed
+category: demographic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.environment.marine_ecosystem
+claim_ids: []

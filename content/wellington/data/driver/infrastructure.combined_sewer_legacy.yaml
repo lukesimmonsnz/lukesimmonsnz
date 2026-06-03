@@ -1,0 +1,14 @@
+id: driver.wellington.infrastructure.combined_sewer_legacy
+name: Combined stormwater-wastewater sewer network
+description: Wellington's inner-city sewer network combines stormwater and wastewater in a single pipe, producing mandatory
+  overflows into the harbour during rainfall events. Separating the network is highly costly in built-up areas.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.infrastructure.wastewater
+- problem.wellington.environment.harbour_health
+claim_ids:
+- claim.wellington.infrastructure.wastewater_overflow_events

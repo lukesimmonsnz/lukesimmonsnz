@@ -1,0 +1,35 @@
+id: problem.nelson.education.early_childhood
+title: Early childhood education access and cost
+theme: education
+section: education
+subpage: early_childhood
+parent: achievement
+order: 2
+updated: '2026-04-26'
+summary: Licensed ECE centres in Nelson-Tasman serve about 3,100 children (ages 0-5), but roughly 28 percent of eligible children are not in any formal ECE. Full-time fees at community centres average $185-210 per week, equating to 16-19 percent of median household income for low-income families against 6-7 percent for above-median earners.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - ece_participation_rate_pct
+  - median_weekly_fee_nzd
+  - 0_2_age_band_waitlist
+  inputs:
+  - ece_subsidy_settings
+  - centre_workforce_supply
+  constraints:
+  - qualified_teacher_supply
+  - centre_property_costs
+  feedback_loops:
+  - 'Cost-participation feedback: high fees deter low-income participation, which reduces enrolment-driven revenue, which limits centres'' ability to absorb workforce-cost rises without further fee increases.'
+narrative:
+- heading: Cost as the binding constraint
+  body: ECE attendance in Nelson is broadly available in central suburbs but unaffordable for the lowest income quintile without subsidy support (claim.nelson.education.early_childhood_claim). Waitlists are common in peak seasons, particularly for 0-2 places, which limits parental return to work.
+- heading: Geographic gaps and rural ECE
+  body: Outside Nelson city, coverage thins quickly. Golden Bay, the upper Maitai, and rural Tasman have far fewer licensed places per child, and home-based or playgroup options carry their own quality and consistency challenges. The downstream effect is uneven school-readiness at Year 0.
+claim_ids:
+- claim.nelson.education.early_childhood_claim
+status: draft
+time_horizons:
+- decade
+- generation

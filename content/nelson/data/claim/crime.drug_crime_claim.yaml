@@ -1,0 +1,21 @@
+id: claim.nelson.crime.drug_crime_claim
+statement: Drug-related offending in Nelson has increased 18% 2019-2023, with methamphetamine
+  availability and use becoming the primary driver of acquisitive crime. NZ Police
+  data shows 340+ drug-related offences recorded in Nelson district in 2023, with
+  synthetic drugs (methamphetamine, fentanyl derivatives) comprising 62% of seizures.
+  Retail supply networks are increasingly active in outer suburbs.
+value: 18
+unit: percent increase in drug offences 2019-2023
+time_period: 2019-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

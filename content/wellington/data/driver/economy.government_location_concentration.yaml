@@ -1,0 +1,13 @@
+id: driver.wellington.economy.government_location_concentration
+name: Government location policy concentrating employment in Wellington
+description: New Zealand's tradition of locating most central government departments in Wellington has created a path-dependent
+  concentration of public sector employment that makes the city structurally dependent on government headcount decisions.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: permanent
+scope: national
+problem_ids:
+- problem.wellington.economy.public_sector_dependence
+claim_ids:
+- claim.wellington.economy.public_sector_employment_share

@@ -1,0 +1,22 @@
+id: claim.otago.climate.drought_central_otago_trend
+statement: 'Drought pressure is mounting: Central Otago irrigation schemes experienced
+  water availability stress in 2022-2023; vine and stone fruit yields at risk under
+  extended dry spells; Clutha River flow variability (influenced by Clyde/Roxburgh
+  hydro dams and upstream snowmelt) increasingly unpredictable; groundwater depletion
+  in schist-soil regions rising; ORC and Fonterra (Edendale milk supply, Clutha dairy)
+  managing competing allocation demands.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

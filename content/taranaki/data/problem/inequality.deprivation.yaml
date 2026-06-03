@@ -1,0 +1,29 @@
+id: problem.taranaki.inequality.deprivation
+title: Deprivation and poverty concentration
+theme: inequality
+section: inequality
+subpage: deprivation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Taranaki has moderate deprivation rates, concentrated in New Plymouth suburbs.
+  Rural isolation increases rural poverty.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - deprivation_index
+  inputs:
+  - deprivation_input_1
+  constraints:
+  - deprivation_constraint
+  feedback_loops:
+  - 'Feedback: deprivation'
+narrative:
+- heading: Deprivation and poverty concentration in Taranaki
+  body: Taranaki has moderate deprivation rates, concentrated in New Plymouth suburbs.
+    Rural isolation increases rural poverty.
+claim_ids:
+- claim.taranaki.inequality.deprivation_01
+status: draft
+time_horizons: [decade, generation, century]

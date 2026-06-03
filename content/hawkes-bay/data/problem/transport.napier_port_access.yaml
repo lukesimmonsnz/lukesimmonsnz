@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.transport.napier_port_access
+title: Port of Napier access and efficiency
+theme: transport
+section: transport
+subpage: napier-port-access
+parent: problem.hawkes_bay.transport.connectivity
+order: 2
+updated: '2026-04-26'
+summary: "Port of Napier is NZ's second-busiest export port. Road congestion in Napier central to port affects efficiency; rail access is underused; coastal hazards threaten port infrastructure expansion and long-term viability."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - port_throughput_million_tonnes
+    - urban_port_congestion_index
+  inputs:
+    - sh2_port_access_bottleneck
+    - urban_land_use_constraint
+  constraints:
+    - central_business_district_footprint
+    - coastal_hazard_exposure
+  feedback_loops:
+    - 'Congestion increases transport costs; some exports bypass Napier; port revenue constraints limit expansion; infrastructure renewal deferred.'
+narrative:
+  - heading: Export Dependency
+    body: "Napier port handles approximately 8 million tonnes annually, including apple, wine, and general cargo exports essential to Hawke's Bay economy."
+  - heading: Urban Congestion
+    body: 'Port trucks compete for road space with urban traffic. Peak-hour congestion around Napier CBD extends port dwell times and raises logistics costs.'
+claim_ids:
+  - claim.hawkes_bay.transport.napier_port_8m_tonnes
+status: draft
+time_horizons: [decade, generation]

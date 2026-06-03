@@ -1,0 +1,13 @@
+id: driver.nelson.crime.driver_2
+name: Methamphetamine supply network and treatment-capacity gap
+description: National methamphetamine supply has reached saturation in Nelson retail markets while local addiction-treatment capacity is configured for moderate caseloads. The gap between supply intensity and treatment throughput is the proximate driver of drug-related and acquisitive offending.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.nelson.crime.safety
+- problem.nelson.crime.youth_offending
+- problem.nelson.crime.drug_crime
+claim_ids: []

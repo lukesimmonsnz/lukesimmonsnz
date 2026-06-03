@@ -1,0 +1,12 @@
+id: driver.canterbury.governance.cwms_allocation_enforcement_weakness
+name: CWMS Allocation Enforcement Weakness
+description: CWMS Allocation Enforcement Weakness
+theme: governance
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.governance.water_management
+- problem.canterbury.environment.freshwater_stress
+claim_ids: []

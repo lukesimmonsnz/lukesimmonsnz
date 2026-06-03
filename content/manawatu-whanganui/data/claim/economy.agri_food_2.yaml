@@ -1,0 +1,22 @@
+id: claim.manawatu_whanganui.economy.agri_food_2
+statement: Fonterra (dairy processing) and Silver Fern Farms (meat processing) operate
+  major plants in the region (Linton, Feilding, Whanganui areas), employing approximately
+  2,200-2,500 direct workers. These anchor tenants generate significant downstream
+  employment in transport, logistics, and food manufacturing. Food manufacturing is
+  the region's second-largest employment sector after agriculture.
+value: 2350
+unit: direct_employees
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_mw_2024
+- source.palmerston_north_city_council_2023
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: Major food processing employers

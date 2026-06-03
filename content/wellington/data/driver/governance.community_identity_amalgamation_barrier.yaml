@@ -1,0 +1,14 @@
+id: driver.wellington.governance.community_identity_amalgamation_barrier
+name: Community identity barrier to amalgamation
+description: 'Strong community identity in separate Wellington sub-regions (Hutt Valley, Porirua, Kāpiti) creates a democratic
+  barrier to amalgamation: communities vote to preserve their local councils even when the efficiency case for amalgamation
+  is acknowledged.'
+theme: governance
+consensus: mostly-agreed
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.governance.local_govt_reform
+claim_ids:
+- claim.wellington.governance.amalgamation_debate_history

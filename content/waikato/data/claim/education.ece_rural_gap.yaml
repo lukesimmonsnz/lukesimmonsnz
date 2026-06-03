@@ -1,0 +1,21 @@
+id: claim.waikato.education.ece_rural_gap
+statement: Rural early childhood education participation in Waikato (South Waikato
+  and Waitomo districts) is lower than Hamilton urban average, driven by cost of 8
+  to 12K annually versus Hamilton 6 to 8K average and limited ECE center density outside
+  major towns. Takaka and small rural communities have zero licensed ECE options;
+  families travel 30-45 minutes to nearest center.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_waikato_achievement_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato early_childhood claim

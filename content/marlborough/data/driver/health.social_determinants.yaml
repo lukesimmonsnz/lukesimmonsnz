@@ -1,0 +1,12 @@
+id: driver.marlborough.health.social_determinants
+name: Social Determinants Of Poor Health
+description: Social determinants of poor health.
+theme: health
+consensus: consensus
+category: physical
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.inequality.child_poverty
+claim_ids: []

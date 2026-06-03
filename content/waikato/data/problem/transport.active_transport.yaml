@@ -1,0 +1,28 @@
+id: problem.waikato.transport.active_transport
+title: Active transport and walkability deficit
+theme: transport
+section: transport
+subpage: active_transport
+parent: problem.waikato.transport.waikato_transport_dependence
+order: 4
+updated: '2026-04-26'
+summary: Low cycling and walking mode share reflects inadequate infrastructure investment.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - transport_accessibility
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing active transport creates feedback on regional outcomes.
+narrative:
+- heading: Active transport and walkability deficit
+  body: Low cycling and walking mode share reflects inadequate infrastructure investment.
+claim_ids:
+- claim.waikato.transport.active_mode_share_4
+status: draft
+time_horizons: [decade, generation]

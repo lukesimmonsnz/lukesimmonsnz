@@ -1,0 +1,10 @@
+id: driver.waikato.inequality.spatial_concentration
+name: Geographic concentration of deprivation
+description: Geographic concentration of deprivation in the regional context.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

@@ -1,0 +1,14 @@
+id: driver.waikato.health.workforce_shortage
+name: Health workforce shortages in rural and specialist areas
+description: Difficulty attracting and retaining health workers outside Hamilton constrains
+  service access in rural and provincial areas.
+theme: health
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.health.maori_health_gap
+- problem.waikato.health.rural_access
+- problem.waikato.health.mental_health
+claim_ids: []

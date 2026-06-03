@@ -1,0 +1,42 @@
+id: problem.wellington.crime.youth_offending
+title: Youth offending in Porirua and Hutt Valley
+theme: crime
+section: crime
+subpage: youth-offending
+parent: problem.wellington.crime.victimisation
+order: 3
+updated: '2026-04-26'
+summary: 'Youth offending in Wellington is geographically concentrated in Porirua and Hutt Valley, reflecting
+  structural drivers: economic deprivation, housing instability, high school disengagement rates, and
+  limited supervised youth development infrastructure. Young people in high-deprivation areas are substantially
+  overrepresented in justice system contact, and early intervention programmes are underfunded relative
+  to need.'
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - youth_offending_rate
+  - maori_youth_justice_referral_rate
+  inputs:
+  - school_engagement_rate
+  - family_stability_index
+  constraints:
+  - youth_support_service_capacity
+  - early_intervention_funding
+  feedback_loops:
+  - 'Disengagement amplification: school disengagement, often precipitated by deprivation, increases available
+    time for offending and reduces stake in conventional norms.'
+narrative:
+- heading: Geographic concentration
+  body: Youth offending in Wellington is geographically concentrated in Porirua and Hutt Valley, mirroring
+    the deprivation concentration. The same areas record the highest rates of truancy, gang recruitment,
+    and youth unemployment (claim.wellington.crime.youth_offending_porirua_hutt).
+- heading: Māori overrepresentation
+  body: Māori youth in Wellington are overrepresented at every stage of the youth justice system — from
+    Police Youth Aid contact through to Family Group Conferences and Youth Court — at rates that substantially
+    exceed population share (claim.wellington.crime.maori_youth_justice_overrepresentation).
+claim_ids:
+- claim.wellington.crime.youth_offending_porirua_hutt
+- claim.wellington.crime.maori_youth_justice_overrepresentation
+status: draft
+time_horizons: [decade]

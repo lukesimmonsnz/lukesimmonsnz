@@ -1,0 +1,12 @@
+id: driver.otago.health.student_mental_health_stress
+name: Student Mental Health Stress
+description: University of Otago students face isolation, financial stress, competitive
+  pressure; mental health crisis.
+theme: health
+consensus: consensus
+category: institutional
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.health.mental_health
+claim_ids: []

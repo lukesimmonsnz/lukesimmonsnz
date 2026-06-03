@@ -1,0 +1,19 @@
+id: claim.gisborne.governance.disaster_recovery_79
+statement: Cyclone Gabrielle (February 2023) triggered Category 3 conditions across
+  Tairāwhiti, causing an estimated $500M–$1B in direct regional damage, distinguishing
+  it as the worst natural disaster in living memory for Gisborne.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.admin_count_v1
+notes: null

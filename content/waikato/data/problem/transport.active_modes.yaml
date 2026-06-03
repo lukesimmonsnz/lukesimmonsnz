@@ -1,0 +1,24 @@
+id: 'problem.waikato.transport.active_modes'
+title: 'Waikato: active travel infrastructure'
+theme: 'transport'
+section: 'transport'
+subpage: 'active-modes'
+parent: 'problem.waikato.transport.connectivity'
+order: 5
+updated: '2026-04-26'
+summary: 'Walking and cycling infrastructure gaps exist.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Walking and cycling infrastructure gaps exist.'
+claim_ids:
+- 'claim.waikato.transport.active_modes_claim1'
+- 'claim.waikato.transport.active_modes_claim2'
+status: 'draft'

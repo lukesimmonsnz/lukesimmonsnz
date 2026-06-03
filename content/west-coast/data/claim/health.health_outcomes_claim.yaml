@@ -1,0 +1,23 @@
+id: claim.west_coast.health.health_outcomes_claim
+statement: 'West Coast health outcomes rank among the worst in the South Island and
+  below New Zealand national average across all major indicators: life expectancy,
+  infant mortality, hospitalization rates for preventable conditions, and self-reported
+  health status. Māori health outcomes are particularly poor. Underlying drivers include
+  poverty, workforce shortages, geographic isolation, and lifestyle risk factors.'
+value: null
+unit: null
+time_period: 2015-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_west_coast_2023
+- source.census_income_west_coast_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Outcome metrics from Health NZ Public Health and Disability services national
+  reporting; socioeconomic context from Census data.

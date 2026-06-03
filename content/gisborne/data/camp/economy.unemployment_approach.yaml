@@ -1,0 +1,20 @@
+id: camp.gisborne.economy.unemployment_approach
+name: Strategic approach for unemployment
+theme: economy
+core_claim: Strategic intervention on unemployment will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting unemployment
+- Priority action 2 targeting unemployment
+- Institutional coordination mechanism for unemployment
+tensions:
+- 'Tension 1: unemployment'
+- 'Tension 2: unemployment'
+addresses:
+- problem.gisborne.economy.unemployment
+interventions:
+- description: Primary intervention for unemployment
+  state_variable: unemployment_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

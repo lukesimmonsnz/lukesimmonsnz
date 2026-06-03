@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.transport.regional_roading
+title: Regional Roading Network Condition and Funding
+theme: transport
+section: transport
+subpage: regional_roading
+parent: problem.manawatu_whanganui.transport.connectivity
+order: 1
+updated: '2026-04-26'
+summary: Aging state highway and rural road network; deferred maintenance due to funding
+  constraints.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Aging state highway and rural road network; deferred maintenance due to funding
+    constraints.
+claim_ids:
+- claim.manawatu_whanganui.transport.regional_roading_1
+- claim.manawatu_whanganui.transport.regional_roading_2
+status: draft
+time_horizons: [decade, generation]

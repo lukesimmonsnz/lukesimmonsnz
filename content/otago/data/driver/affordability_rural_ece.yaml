@@ -1,0 +1,11 @@
+id: driver.otago.education.affordability_rural_ece
+name: ECE Affordability Barrier in Rural Areas
+description: Rural Otago ECE providers struggle with funding; parent fees high.
+theme: education
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.education.early_childhood
+claim_ids: []

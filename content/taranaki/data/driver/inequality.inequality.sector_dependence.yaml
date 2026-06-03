@@ -1,0 +1,14 @@
+id: driver.taranaki.inequality.inequality.sector_dependence
+name: Economic dependence on declining sector
+description: Economic dependence on declining sector
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.inequality.deprivation
+- problem.taranaki.inequality.child_poverty
+- problem.taranaki.inequality.ethnic_gap
+- problem.taranaki.inequality.rural_isolation
+claim_ids: []

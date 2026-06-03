@@ -1,0 +1,13 @@
+id: source.niwa_waikato_climate_2024
+title: Climate Change Projections for New Zealand — 2nd Edition (Waikato slice)
+author: NIWA Taihoro Nukurangi
+type: academic
+credibility: peer-reviewed
+publisher: NIWA / Ministry for the Environment
+url: https://environment.govt.nz/publications/climate-change-projections-for-new-zealand-atmospheric-projections-based-on-simulations-from-the-ipcc-sixth-assessment-2nd-edition/
+year: 2024
+geo_granularity:
+- waikato
+- nz
+notes: Second edition NIWA-MfE downscaled climate projections (CMIP6, IPCC AR6 SSP scenarios); Waikato regional outputs include
+  temperature, rainfall, drought, and extreme rainfall projections.

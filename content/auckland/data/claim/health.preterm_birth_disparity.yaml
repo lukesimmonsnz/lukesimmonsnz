@@ -1,19 +1,19 @@
 id: claim.auckland.health.preterm_birth_disparity
-statement: >
-  Preterm birth rates for Maori and Pacific mothers in Auckland are
-  approximately 1.5-2 times those of NZ European mothers; preterm birth
-  is a primary predictor of long-run developmental disadvantage and
-  generates disproportionate neonatal intensive care costs.
+statement: Preterm birth rates in South Auckland are approximately 1.5-2 times those
+  in lower-deprivation Auckland suburbs; preterm birth is a primary predictor of long-run
+  developmental disadvantage and generates disproportionate neonatal intensive care
+  costs. The gap tracks deprivation and antenatal care access rather than any factor
+  specific to population group.
 value: null
 unit: null
-time_period: "2020-2023"
+time_period: 2020-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.moh_maternal_child_health_2023
+- source.moh_maternal_child_health_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

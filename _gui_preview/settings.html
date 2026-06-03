@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings — CMS</title>
+  <style>
+    body { font-family: ui-sans-serif, system-ui, sans-serif;
+           max-width: 56rem; margin: 2rem auto; padding: 0 1rem;
+           line-height: 1.5; color: #222; }
+    nav { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+    nav a { color: #1a73e8; text-decoration: none; margin-right: 0.75rem; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+    .subtitle { color: #666; font-size: 0.9rem; margin-top: 0; }
+    .groups { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .groups li { padding: 0.6rem 0.75rem; border: 1px solid #ddd;
+                 border-radius: 4px; margin-bottom: 0.5rem;
+                 display: flex; align-items: baseline; gap: 0.75rem; }
+    .groups a { color: #1a73e8; font-weight: 500; text-decoration: none;
+                min-width: 12rem; }
+    .groups .preview { font-family: ui-monospace, monospace;
+                       font-size: 0.8rem; color: #666;
+                       white-space: nowrap; overflow: hidden;
+                       text-overflow: ellipsis; flex-grow: 1; }
+    .actions { margin-top: 1.5rem; padding: 1rem;
+               background: #fafafa; border: 1px solid #ddd;
+               border-radius: 4px; }
+    button { font-size: 0.9rem; padding: 0.4rem 1rem;
+             border: 1px solid #ddd; background: #fff;
+             border-radius: 4px; cursor: pointer; }
+    button.primary { background: #1a73e8; color: #fff;
+                     border-color: #1a73e8; }
+    .status { margin-left: 0.75rem; font-size: 0.85rem;
+              font-family: ui-monospace, monospace; color: #666; }
+    .status.ok  { color: #2e7d32; }
+    .status.err { color: #c00; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/admin/">← CMS</a>
+    <a href="/">public site</a>
+  </nav>
+
+  <h1>Settings</h1>
+  <p class="subtitle">
+    Five groups; each is a JSON blob in <code>cms.db.settings</code>.
+    Publish exports to <code>instance/site_settings.json</code> and
+    regenerates <code>static/theme.css</code>.
+  </p>
+
+  <ul class="groups">
+    
+    <li>
+      <a href="/admin/settings/site/">Site identity</a>
+      <span class="preview">
+        
+        
+          name, tagline, url, favicon, og_image
+        
+      </span>
+    </li>
+    
+    <li>
+      <a href="/admin/settings/nav/">Navigation</a>
+      <span class="preview">
+        
+        
+          0 items
+        
+      </span>
+    </li>
+    
+    <li>
+      <a href="/admin/settings/theme/">Theme tokens</a>
+      <span class="preview">
+        
+        
+          color, font_stack, max_width
+        
+      </span>
+    </li>
+    
+    <li>
+      <a href="/admin/settings/contact/">Contact form</a>
+      <span class="preview">
+        
+        
+          turnstile_site_key, submit_url
+        
+      </span>
+    </li>
+    
+    <li>
+      <a href="/admin/settings/footer/">Footer</a>
+      <span class="preview">
+        
+        
+          copyright, social
+        
+      </span>
+    </li>
+    
+  </ul>
+
+  <div class="actions">
+    <button id="btn-publish" class="primary">Publish all</button>
+    <span class="status" id="status">click Publish to export to instance/site_settings.json</span>
+  </div>
+
+<script>
+  const status = document.getElementById('status');
+  document.getElementById('btn-publish').addEventListener('click', async () => {
+    status.textContent = 'publishing…';
+    status.className = 'status';
+    try {
+      const r = await fetch('/admin/api/settings/publish/', {method: 'POST'});
+      const d = await r.json();
+      if (d.ok) {
+        status.textContent = 'published · ' + d.site_settings.split(/[\\\\/]/).pop()
+                           + ' (theme bust ' + d.theme_css_bust + ')';
+        status.className = 'status ok';
+      } else {
+        status.textContent = 'publish failed';
+        status.className = 'status err';
+      }
+    } catch (e) {
+      status.textContent = 'publish error: ' + e.message;
+      status.className = 'status err';
+    }
+  });
+</script>
+</body>
+</html>

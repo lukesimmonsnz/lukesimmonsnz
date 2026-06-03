@@ -1,0 +1,36 @@
+id: pattern.education.maori_achievement_gap
+title: Māori educational achievement gap
+theme: education
+summary: Māori students achieve NCEA and higher qualifications at significantly lower
+  rates than non-Māori in every region, reflecting systemic barriers in curriculum,
+  pedagogy, and the relationship between mainstream schooling and Māori culture.
+manifests_in:
+- northland
+- auckland
+- waikato
+- gisborne
+- bay-of-plenty
+- hawkes-bay
+- wellington
+- manawatu-whanganui
+claim_ids:
+- claim.waikato.education.ncea_maori_gap_15pt
+- claim.northland.education.maori_education_claim1
+- claim.auckland.education.attendance_crisis
+- claim.gisborne.education.achievement_57
+- claim.bay_of_plenty.education.achievement_57
+- claim.manawatu_whanganui.education.achievement_placeholder
+narrative:
+- heading: Persistent gap
+  body: 'The Māori–non-Māori NCEA Level 2 gap has persisted at 10–20 percentage points
+    for decades despite targeted programmes. It is present in every region and is
+    not fully explained by socioeconomic differences: a gap remains after controlling
+    for deprivation.'
+- heading: Structural explanation
+  body: Mainstream schooling was designed around and for a Pākehā cultural context.
+    Curriculum, pedagogy, and institutional culture create barriers for Māori students
+    that are distinct from socioeconomic barriers. Kura kaupapa consistently produce
+    higher Māori achievement outcomes, which is direct evidence for the cultural fit
+    hypothesis.
+status: draft
+updated: '2026-04-26'

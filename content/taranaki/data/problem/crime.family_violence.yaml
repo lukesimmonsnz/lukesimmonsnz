@@ -1,0 +1,27 @@
+id: problem.taranaki.crime.family_violence
+title: Family violence prevalence
+theme: crime
+section: crime
+subpage: family_violence
+parent: problem.taranaki.crime.safety
+order: 2
+updated: '2026-04-26'
+summary: Family violence incidents in Taranaki increased 18% over 2020-2024.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - family_violence_index
+  inputs:
+  - family_violence_input_1
+  constraints:
+  - family_violence_constraint
+  feedback_loops:
+  - 'Feedback: family_violence'
+narrative:
+- heading: Family violence prevalence in Taranaki
+  body: Family violence incidents in Taranaki increased 18% over 2020-2024.
+claim_ids:
+- claim.taranaki.crime.family_violence_01
+status: draft
+time_horizons: [decade]

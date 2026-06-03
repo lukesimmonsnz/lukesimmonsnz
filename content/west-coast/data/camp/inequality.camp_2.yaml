@@ -1,0 +1,26 @@
+id: camp.west_coast.inequality.geographic_isolation_and_servi
+name: Geographic Isolation and Service Equity
+theme: inequality
+core_claim: Residents of Haast, Karamea, and other isolated West Coast communities
+  face significant service access disadvantage; mobile service delivery and digital
+  access address this.
+flagship_moves:
+- Fund mobile health, justice, and welfare service circuits for isolated West Coast
+  communities
+- Establish community hubs providing co-located services in Haast and Karamea
+- Expand digital connectivity to enable online service access
+tensions:
+- Mobile services are expensive and the coverage areas are very large
+- Digital services cannot substitute for all in-person support needs
+addresses:
+- problem.west_coast.inequality.inequality
+- problem.west_coast.inequality.rental_affordability_gap
+- problem.west_coast.inequality.rural_isolation
+interventions:
+- description: Establish mobile government services circuit for isolated West Coast
+    communities
+  state_variable: service_access_index
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

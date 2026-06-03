@@ -1,0 +1,25 @@
+id: camp.northland.health.kaupapa_maori_camp
+name: Kaupapa Māori health services and tino rangatiratanga
+theme: health
+core_claim: Expanding kaupapa Māori health providers is the most effective pathway
+  to closing the Māori health gap in Northland.
+flagship_moves:
+- Increase direct funding to Māori health providers in Te Tai Tokerau
+- Fund Māori-led mental health and addiction services
+- Establish rongoā Māori and integrative health pathways
+tensions:
+- Scale of need exceeds current kaupapa Māori provider capacity
+- Workforce with both clinical and tikanga Māori competence is scarce
+- Integration with mainstream health system creates governance complexity
+interventions:
+- description: Increase direct funding to Māori health providers in Te Tai Tokerau
+  state_variable: health_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.health.northland_health_inequity
+- problem.northland.health.health_workforce
+- problem.northland.health.maori_health_gap
+- problem.northland.health.mental_health
+applicable_in:
+- northland
+tensions_with: []

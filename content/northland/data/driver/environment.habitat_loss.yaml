@@ -1,0 +1,10 @@
+id: driver.northland.environment.habitat_loss
+name: Habitat loss and fragmentation
+description: Habitat loss and fragmentation in the regional context.
+theme: environment
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

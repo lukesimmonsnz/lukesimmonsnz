@@ -1,20 +1,20 @@
 id: claim.auckland.health.mh_workforce_vacancy
-statement: >
-  Mental health and addiction workforce vacancy rates in Auckland exceed
-  20% for clinical psychology and psychiatry posts; the median wait for
-  a first psychiatry appointment in the community sector is over six
-  months, and training pipeline numbers are insufficient to close the gap
-  within a decade at current enrolment rates.
+statement: 'Mental health and addiction workforce vacancy rates in Auckland exceed
+  20% for clinical psychology and psychiatry posts; the median wait for a first psychiatry
+  appointment in the community sector is over six months, and training pipeline numbers
+  are insufficient to close the gap within a decade at current enrolment rates.
+
+  '
 value: 20
-unit: "percent vacancy"
-time_period: "2022-2023"
+unit: percent vacancy
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.te_pou_mental_health_2023
+- source.te_pou_mental_health_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []
 methodology_tag: methodology.mental_health_service_rate_v1

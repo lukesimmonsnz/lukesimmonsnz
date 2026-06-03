@@ -1,0 +1,20 @@
+id: camp.canterbury.environment.riparian_restoration_stream_recovery
+name: Riparian Restoration & Native Stream Rehabilitation
+theme: environment
+core_claim: Riparian fencing, native planting, and sediment management restore lowland
+  stream habitat and reduce nutrient loading.
+flagship_moves:
+- Key intervention for Riparian Restoration & Native Stream Rehabilitation
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.environment.lowland_stream_quality
+interventions:
+- description: Riparian fencing, native planting, and sediment management restore
+    lowland stream habitat and reduce nutrient loading.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

@@ -1,0 +1,21 @@
+id: claim.gisborne.governance.treaty_co_governance_78
+statement: Governance structures in Gisborne are fragmented across multiple councils
+  and agencies, creating coordination challenges. Limited council capacity constrains
+  strategic planning, infrastructure delivery, and climate adaptation; funding gaps
+  prevent implementation of identified priorities.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: null

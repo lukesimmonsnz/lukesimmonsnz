@@ -1,0 +1,23 @@
+id: claim.wellington.housing.seismic_retrofit_cost_barrier
+statement: Seismic retrofit costs for pre-1976 unreinforced masonry residential buildings
+  in Wellington often exceed the post-retrofit market value of the building, creating
+  a financial barrier that deters compliance and suppresses residential redevelopment
+  in earthquake-prone zones.
+value: null
+unit: null
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_seismic_policy_2023
+- source.motu_housing_wellington_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: 'Confidence medium: cost-value calculations are building-specific and vary
+  by location; the general pattern is widely reported but aggregate estimates are
+  uncertain.'

@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.crime.prevention_diversion
+name: Prevention and diversion
+theme: crime
+core_claim: Youth prevention, early intervention, and diversion programmes.
+flagship_moves:
+- Flagship move 1 for Prevention and diversion
+- Flagship move 2 for Prevention and diversion
+tensions:
+- Internal tension 1 of Prevention and diversion
+addresses:
+- problem.manawatu_whanganui.economy.economic_structure
+interventions:
+- description: 'Intervention 1: Prevention and diversion detail 1'
+- description: 'Intervention 2: Prevention and diversion detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

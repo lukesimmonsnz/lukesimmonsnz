@@ -1,0 +1,18 @@
+id: 'claim.waikato.infrastructure.deficit_claim2'
+statement: 'Deferred maintenance creates service delivery risks.'
+value: null
+unit: null
+time_period: '2024'
+confidence: 'medium'
+verification_status: 'cited_only'
+last_verified: null
+source_ids:
+- 'source.waikato_council_2023'
+- 'source.hamilton_city_council_growth_2023'
+scoped_to:
+- 'waikato'
+national_assertion: false
+region_mentions:
+- 'waikato'
+methodology_tag: null
+notes: null

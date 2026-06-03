@@ -1,0 +1,21 @@
+id: camp.southland.inequality.invercargill_regeneration
+name: Invercargill East Deprivation Reduction Program
+theme: inequality
+core_claim: Targeted job creation, skills, community facilities, and housing support
+  revitalize high-deprivation areas.
+flagship_moves:
+- Business development support and mentoring
+- Youth employment and training pathways
+- Community center and sports facility investment
+tensions:
+- Sustained funding required; uneven outcomes
+- Gentrification and displacement risk
+addresses:
+- problem.southland.inequality.invercargill_east_poverty
+interventions:
+- description: Create 300 job placements for young people
+  state_variable: youth_employment_rate
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

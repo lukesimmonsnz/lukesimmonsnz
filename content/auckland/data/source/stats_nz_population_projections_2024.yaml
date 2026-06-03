@@ -1,0 +1,16 @@
+id: source.stats_nz_population_projections_2024
+title: "National and subnational population projections, 2018(base)–2048"
+type: primary-data
+credibility: official
+url: "https://www.stats.govt.nz/topics/population"
+year: 2023
+publisher: "Stats NZ Tatauranga Aotearoa"
+author: "Stats NZ"
+geo_granularity:
+- nz
+notes: >
+  The official New Zealand population projections published by Stats NZ.
+  Provides national and subnational projections of population by age and
+  sex over a 30-year horizon, including median-age trajectories and
+  dependency-ratio projections used to plan workforce, housing, and
+  health-system capacity.

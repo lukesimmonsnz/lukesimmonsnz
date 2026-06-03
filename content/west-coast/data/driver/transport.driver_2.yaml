@@ -1,0 +1,15 @@
+id: driver.west_coast.transport.driver_2
+name: Small dispersed population and shrinking ratepayer base
+description: Around 32,000 people are spread over a long, narrow region of more than 23,000 square kilometres. The low population
+  density and slow decline of the ratepayer base make scheduled public transport, active modes and corridor resilience structurally
+  hard to fund from rates alone.
+theme: transport
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.transport.connectivity
+- problem.west_coast.transport.connectivity_3
+- problem.west_coast.transport.connectivity_4
+claim_ids: []

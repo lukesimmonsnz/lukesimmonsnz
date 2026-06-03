@@ -1,0 +1,21 @@
+id: camp.marlborough.housing.affordability_policy
+name: Housing Affordability Policy
+theme: housing
+core_claim: Targeted affordability interventions for Marlborough.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.inequality.child_poverty
+interventions:
+- description: 'Action 1: Housing Affordability Policy'
+- description: 'Action 2: Housing Affordability Policy'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

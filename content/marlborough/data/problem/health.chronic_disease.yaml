@@ -1,0 +1,31 @@
+id: problem.marlborough.health.chronic_disease
+title: Chronic Disease and Prevention
+theme: health
+section: health
+subpage: chronic_disease
+parent: problem.marlborough.health.health_outcomes
+order: 1
+updated: '2026-04-26'
+summary: Lifestyle disease burden; preventable mortality; rural GP access; specialist
+  services gaps.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Lifestyle disease burden; preventable mortality; rural GP access; specialist
+    services gaps.
+claim_ids:
+- claim.marlborough.health.chronic_disease_1
+- claim.marlborough.health.chronic_disease_2
+status: draft
+time_horizons: [decade, generation]

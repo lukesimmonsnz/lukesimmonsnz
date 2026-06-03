@@ -1,0 +1,25 @@
+id: claim.west_coast.transport.connectivity_3_claim
+statement: 'Westport and Greymouth face internal transport challenges: hilly terrain,
+  weather exposure, aging road stock, and limited public transport. No urban bus service;
+  private vehicle dependence is high. For residents without personal vehicles, mobility
+  is severely constrained. School transport costs are high. Aging population faces
+  safety concerns crossing busy roads (SH6 passes through both towns). Active transport
+  (walking, cycling) is limited by terrain and weather. Transport disadvantage compounds
+  economic and social isolation.'
+value: null
+unit: null
+time_period: 2015-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+- source.west_coast_regional_council_annual_plan_2024
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Transport mode availability from census and council data; demographic impacts
+  from population profile and aging trends.

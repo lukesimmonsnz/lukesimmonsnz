@@ -1,0 +1,12 @@
+id: driver.otago.climate.alpine_snowpack_decline
+name: Alpine Snowpack and Glacier Decline
+description: Otago alps losing glaciers and snowpack; impacts hydro supply, water
+  availability, avalanche risk.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.climate.alpine_hazards
+claim_ids: []

@@ -1,0 +1,34 @@
+id: problem.nelson.crime.drug_crime
+title: Methamphetamine supply driving acquisitive crime
+theme: crime
+section: crime
+subpage: drug_crime
+parent: safety
+order: 4
+updated: '2026-04-26'
+summary: Drug-related offending in Nelson rose around 18 percent between 2019 and 2023, with methamphetamine and synthetic-opioid availability now the primary driver of acquisitive crime. About 340 drug offences were recorded in 2023, with synthetic drugs comprising roughly 62 percent of seizures.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - drug_offences_per_year
+  - meth_seizure_grams_per_year
+  - addiction_treatment_waitlist
+  inputs:
+  - national_supply_pressure
+  - treatment_funding
+  constraints:
+  - specialist_clinician_workforce
+  - border_interdiction_capacity
+  feedback_loops:
+  - 'Supply-treatment feedback: rising supply pulls more users into dependence faster than treatment slots open, expanding the dependent population and the acquisitive-crime base.'
+narrative:
+- heading: Supply, demand, and downstream offending
+  body: Methamphetamine is now reliably available across Nelson, with retail networks active in outer suburbs and rural fringe (claim.nelson.crime.drug_crime_claim). Police, ED, and corrections data all point to a substantial and growing share of property offending and family-violence escalation linked to dependence.
+- heading: Treatment capacity vs supply intensity
+  body: Specialist addiction treatment in Nelson-Tasman is configured for moderate caseloads and has long waiting lists. The capacity gap between supply intensity and treatment throughput pushes more cases into the criminal-justice and emergency-health systems instead, where unit costs are far higher and rehabilitation outcomes weaker.
+claim_ids:
+- claim.nelson.crime.drug_crime_claim
+status: draft
+time_horizons:
+- decade

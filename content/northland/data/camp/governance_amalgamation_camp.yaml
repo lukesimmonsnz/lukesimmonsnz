@@ -1,0 +1,25 @@
+id: camp.northland.governance.amalgamation_camp
+name: Local government reform and amalgamation
+theme: governance
+core_claim: Amalgamating Northland's local authorities into a single unitary body
+  would improve capacity and reduce duplication.
+flagship_moves:
+- Establish a Northland unitary authority covering all district functions
+- Transfer strategic planning and infrastructure functions to a single body
+- Negotiate Māori wards and Treaty partnership seats into the new structure
+tensions:
+- Loss of local representation and accountability to communities
+- Transition costs and disruption to services during amalgamation
+- Historical opposition to amalgamation from Northland communities
+interventions:
+- description: Establish a Northland unitary authority covering all district functions
+  state_variable: governance_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.governance.northland_governance_capacity
+- problem.northland.governance.council_capacity
+- problem.northland.governance.coordination_deficit
+- problem.northland.governance.maori_representation
+applicable_in:
+- northland
+tensions_with: []

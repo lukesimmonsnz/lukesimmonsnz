@@ -1,0 +1,40 @@
+id: problem.wellington.governance.democratic_participation
+title: Low democratic participation in Wellington elections
+theme: governance
+section: governance
+subpage: democratic-participation
+parent: problem.wellington.governance.local_govt_reform
+order: 2
+updated: '2026-04-26'
+summary: Local government voter turnout in Wellington has declined to around 34% in recent elections, raising concerns about
+  the democratic legitimacy of elected councils and the representativeness of local decision-making. Turnout is especially
+  low among younger voters and in high-deprivation communities.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - local_govt_voter_turnout_pct
+  - youth_voter_turnout_pct
+  inputs:
+  - electoral_system_design
+  - civic_education_investment
+  constraints:
+  - low_perceived_local_govt_efficacy
+  - postal_voting_accessibility_limits
+  feedback_loops:
+  - 'Disengagement-unrepresentativeness loop: low participation produces councils less representative of community diversity;
+    unrepresentative councils make decisions that further alienate non-participants.'
+narrative:
+- heading: Turnout decline
+  body: Wellington City Council voter turnout fell to approximately 34% in the 2022 elections — below the already-low national
+    local government average — continuing a multi-decade decline that reflects growing disengagement from local democratic
+    processes (claim.wellington.governance.voter_turnout_rate_2022).
+- heading: Civic engagement deficit
+  body: Survey data indicates that many Wellington residents cannot name their local councillors, do not follow council proceedings,
+    and do not believe their participation affects outcomes — a civic engagement deficit that undermines the accountability
+    function of local democracy (claim.wellington.governance.civic_engagement_deficit).
+claim_ids:
+- claim.wellington.governance.voter_turnout_rate_2022
+- claim.wellington.governance.civic_engagement_deficit
+status: draft
+time_horizons: [decade, generation, century]

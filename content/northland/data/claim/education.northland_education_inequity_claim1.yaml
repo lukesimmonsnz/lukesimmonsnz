@@ -1,0 +1,18 @@
+id: claim.northland.education.northland_education_inequity_claim1
+statement: NCEA Level 2 attainment gaps by school decile are sharp; decile 1-4 schools
+  20-30 percentage points below decile 9-10. Rural schools (isolated small schools)
+  struggle with curriculum breadth and specialist teachers; multi-level teaching reduces
+  instructional quality. Whangārei schools (decile 4-5) show recovery; Far North small
+  schools face constant churn and isolation.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

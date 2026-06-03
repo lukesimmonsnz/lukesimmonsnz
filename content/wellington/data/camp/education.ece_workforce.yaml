@@ -1,0 +1,20 @@
+id: camp.wellington.education.ece_workforce
+name: ECE Workforce Development and Pay Equity
+theme: education
+core_claim: Addressing ECE workforce shortage requires pay parity with primary teaching and improved training pathways.
+flagship_moves:
+- Complete pay equity settlement aligning ECE teacher rates with primary school teachers
+- Government-funded ECE degree training with student loan forgiveness for in-service teachers
+- Recognition of Pacific ECE cultural models as equivalent pathways
+tensions:
+- Pay equity requires significant Crown fiscal commitment
+- Longer training requirements reduce near-term supply while pipeline develops
+addresses:
+- problem.wellington.education.early_childhood
+interventions:
+- description: Implement full pay equity settlement for ECE teachers to Level 1 primary teacher rate
+  state_variable: ece_workforce_vacancy_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

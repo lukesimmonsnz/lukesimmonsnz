@@ -1,0 +1,21 @@
+id: claim.southland.governance.smelter_energy_policy_prevalence
+statement: Smelter energy policy dominates Southland governance energy discussions.
+  Tiwai Point power contract (850 MW Manapouri supply) centrally managed by Meridian
+  Energy and NZAS; regional council limited leverage. Renewable energy policy (wind,
+  solar on Southland Plains, marine options in Foveaux Strait) underdeveloped. Regional
+  Council energy strategy absent.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

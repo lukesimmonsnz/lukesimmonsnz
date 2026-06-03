@@ -1,0 +1,14 @@
+id: driver.wellington.housing.earthquake_prone_stock
+name: Earthquake-prone building stock
+description: Wellington's large stock of pre-1976 unreinforced masonry buildings requires seismic remediation before residential
+  redevelopment, imposing compliance costs that frequently exceed post-retrofit market values.
+theme: housing
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.housing.earthquake_risk_buildings
+- problem.wellington.housing.land_supply
+claim_ids:
+- claim.wellington.housing.earthquake_prone_building_count

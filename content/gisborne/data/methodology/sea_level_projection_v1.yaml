@@ -1,0 +1,11 @@
+id: methodology.sea_level_projection_v1
+name: Sea Level Rise Projection
+version: 1
+kind: measurement
+applies_to:
+- Claim
+discharged_by: json_schema
+description: Projected sea level rise in metres under IPCC AR6 scenarios (SSP1-2.6,
+  SSP2-4.5, SSP5-8.5) relative to 1995-2014 baseline; used to assess coastal exposure
+  and plan adaptation responses.
+source_ids: []

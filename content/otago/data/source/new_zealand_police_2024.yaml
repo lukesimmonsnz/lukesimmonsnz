@@ -1,0 +1,13 @@
+id: source.new_zealand_police_2024
+title: 'New Zealand Police Victimisation Time and Place Statistics 2024: Southern District'
+author: New Zealand Police Ngā Pirihimana o Aotearoa
+publisher: New Zealand Police
+year: 2024
+url: https://www.police.govt.nz/about-us/statistics-and-publications/data-and-statistics/policedatanz/victimisation-time-and-place
+type: primary-data
+credibility: official
+geo_granularity:
+- otago
+- nz
+notes: Police victimisation time-series at police district / area unit level. Otago sits within the Southern Police District;
+  granular Dunedin / Queenstown area data is available via the policedata.nz dashboard linked from the page.

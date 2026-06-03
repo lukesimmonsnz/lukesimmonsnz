@@ -1,0 +1,19 @@
+id: claim.marlborough.crime.family_violence_1
+statement: Family violence call-outs to Marlborough Police (Blenheim area command)
+  represent approximately 28–32% of total police response volume annually; seasonal
+  worker influx (November–April) correlates with elevated hospitality/assault incidents.
+value: 30
+unit: percent of police call-outs (2021–2023 estimate)
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.family_violence_call_rate_v1
+notes: null

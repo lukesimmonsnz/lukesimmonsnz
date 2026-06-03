@@ -1,0 +1,24 @@
+id: 'problem.northland.health.outcomes'
+title: 'Te Tai Tokerau Northland: health outcomes'
+theme: 'health'
+section: 'health'
+subpage: 'outcomes'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Health outcomes are poor and inequitable.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Health outcomes are poor and inequitable.'
+claim_ids:
+- 'claim.northland.health.outcomes_claim1'
+- 'claim.northland.health.outcomes_claim2'
+status: 'draft'

@@ -1,0 +1,42 @@
+id: problem.west_coast.education.achievement
+title: NCEA achievement and the tertiary participation gap
+theme: education
+section: education
+subpage: achievement
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: West Coast NCEA achievement runs below national average in mathematics and English, and tertiary participation is
+  roughly twenty percentage points below the national rate. School roll decline, recruitment difficulty and a thin post-school
+  pathway set together produce a structural achievement gap.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - ncea_l2_pass_rate
+  - tertiary_participation_rate
+  - small_school_roll
+  inputs:
+  - moe_decile_funding
+  - regional_skills_leadership_pool
+  constraints:
+  - staff_recruitment_isolation
+  - small_roll_curriculum_economics
+  feedback_loops:
+  - Out-migration of high-achieving leavers thins the role-model pool for younger cohorts; in turn, narrower aspiration sets
+    reduce the demand for advanced courses, which schools then struggle to staff.
+narrative:
+- heading: Achievement runs below national average
+  body: Ministry of Education regional data show West Coast NCEA outcomes below national averages, with particular weakness
+    in mathematics and English, and a tertiary participation gap of around twenty percentage points (claim.west_coast.education.achievement_claim).
+    The gap is largest in small-roll rural schools where the curriculum is thinly staffed.
+- heading: A pathway problem, not just a school problem
+  body: Without a university campus on the Coast, students aiming at degree-level study must out-migrate in their late teens,
+    and many do not return. The region's achievement problem is therefore as much about the credibility of the post-school
+    pathway as about classroom inputs.
+claim_ids:
+- claim.west_coast.education.achievement_claim
+status: draft
+time_horizons:
+- decade
+- generation

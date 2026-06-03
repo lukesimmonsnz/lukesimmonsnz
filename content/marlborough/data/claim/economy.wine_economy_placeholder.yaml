@@ -1,0 +1,21 @@
+id: claim.marlborough.economy.wine_economy_placeholder
+statement: 'Marlborough wine exports reached NZD 1.8B (2022/23); domestic wholesale
+  value NZD 400–500M; Sauvignon Blanc represents 73% of plantings, Pinot Noir 14%;
+  wine production employs 8,000–9,000 FTE (direct + cellar door + support); Blenheim
+  wine region rank: largest NZ wine region by volume.'
+value: 1800000000
+unit: NZD wine exports 2022/23
+time_period: 2022-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mbd_wine_industry_research
+- source.wine_industry_climate_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.labour_productivity_index_v1
+notes: null

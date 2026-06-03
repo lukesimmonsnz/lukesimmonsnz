@@ -1,5 +1,15 @@
 id: source.tertiary_education_commission_2023
-title: "Tertiary Education Commission Annual Report 2023"
+title: "Tertiary Education Commission Annual Report 2022/23"
+author: "Tertiary Education Commission Te Amorangi Mātauranga Matua"
+publisher: "Tertiary Education Commission"
 type: government-report
+credibility: official
 year: 2023
-url: "https://www.tec.govt.nz/about/publications/"
+url: "https://www.tec.govt.nz/about-us/publications/annual-reports/annual-report-2023/"
+geo_granularity:
+  - nz
+notes: >
+  TEC's 2022/23 annual report covers tertiary enrolments, completion rates, and
+  funding allocation across universities, polytechnics (Te Pūkenga), and
+  workplace-learning providers. Used here for Auckland tertiary participation
+  context; granular institution-level data is on educationcounts.govt.nz.

@@ -1,0 +1,20 @@
+id: claim.gisborne.environment.erosion_28
+statement: Erosion pressures in Gisborne are driven by forestry slash, pastoral conversion,
+  and intense rainfall on steep slopes. Catchment sediment loads have increased 30-40%
+  since 1990; community-scale erosion control projects are underfunded; regional coordination
+  on forestry practices is inadequate.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: null

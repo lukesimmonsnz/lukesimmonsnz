@@ -1,0 +1,20 @@
+id: claim.tasman.crime.family_violence_claim
+statement: Health NZ Tasman (2023) reports family violence notifications increased
+  18% in 2023 vs 2022. Golden Bay and rural Tasman have limited access to specialist
+  support; referral times to regional services (Nelson) exceed 4 weeks.
+value: 18
+unit: percent increase
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_tasman_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

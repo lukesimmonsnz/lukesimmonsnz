@@ -1,0 +1,24 @@
+id: 'problem.northland.environment.biodiversity'
+title: 'Te Tai Tokerau Northland: biodiversity loss'
+theme: 'environment'
+section: 'environment'
+subpage: 'biodiversity'
+parent: 'problem.northland.environment.degradation'
+order: 4
+updated: '2026-04-26'
+summary: 'Native biodiversity is threatened.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Native biodiversity is threatened.'
+claim_ids:
+- 'claim.northland.environment.biodiversity_claim1'
+- 'claim.northland.environment.biodiversity_claim2'
+status: 'draft'

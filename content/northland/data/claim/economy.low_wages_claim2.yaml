@@ -1,0 +1,18 @@
+id: claim.northland.economy.low_wages_claim2
+statement: Part-time and seasonal employment concentrated in tourism and horticulture;
+  full-time permanent roles scarce. Precarious employment limits access to mortgages,
+  rental security; work-life instability documented among fruit pickers, hospitality
+  workers, forestry contractors. Occupational health and safety violations more prevalent
+  in low-wage sectors.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

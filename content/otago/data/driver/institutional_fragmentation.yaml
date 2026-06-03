@@ -1,0 +1,13 @@
+id: driver.otago.governance.institutional_fragmentation
+name: Institutional Fragmentation
+description: Multiple governance layers (Regional, three TAs, DHB) create coordination
+  challenges.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.otago.governance.governance
+- problem.otago.governance.otago_hospital_governance
+claim_ids: []

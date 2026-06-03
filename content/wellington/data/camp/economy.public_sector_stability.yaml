@@ -1,0 +1,23 @@
+id: camp.wellington.economy.public_sector_stability
+name: Public Sector Employment Stability and Anchor Role
+theme: economy
+core_claim: Wellington's public sector concentration is a stability asset, not a liability; policy should focus on anchoring
+  Crown functions in Wellington rather than diversifying away.
+flagship_moves:
+- Legislate minimum Crown agency headcount floors for Wellington
+- Reverse 2024 public sector restructuring redundancies
+- Expand public service graduate intake in Wellington
+tensions:
+- Legislating employment floors limits government operational flexibility
+- Reversing restructuring requires significant fiscal reversal
+addresses:
+- problem.wellington.economy.public_sector_dependence
+- problem.wellington.economy.labour_market
+interventions:
+- description: Introduce Public Service Crown Functions Wellington Policy requiring ministerial sign-off for relocations out
+    of Wellington
+  state_variable: public_sector_employment_level
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

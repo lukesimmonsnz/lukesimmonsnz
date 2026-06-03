@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Theme · CMS — Aotearoa corpus dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+  <style>
+    :root {
+      --fg: #1a1a1a; --bg: #fafafa; --accent: #205493;
+      --warn: #b58900; --err: #b22222; --ok: #2c7a2c; --muted: #666;
+      --rule: #ddd; --code-bg: #f0f0f0;
+    }
+    body { font: 15px/1.5 system-ui, sans-serif; color: var(--fg);
+           background: var(--bg); margin: 0; padding: 0; }
+    header { background: #222; color: #fff; padding: .6em 1.2em; }
+    header a { color: #fff; text-decoration: none; margin-right: 1em; }
+    header a:hover { text-decoration: underline; }
+    main { max-width: 1100px; margin: 0 auto; padding: 1.4em 1.2em 4em; }
+    h1 { font-size: 1.6em; margin-top: 0; }
+    h2 { font-size: 1.2em; border-bottom: 1px solid var(--rule); padding-bottom: .2em; }
+    a { color: var(--accent); }
+    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    th, td { border-bottom: 1px solid var(--rule); padding: .35em .6em; text-align: left; vertical-align: top; }
+    th { background: #eee; font-weight: 600; }
+    .grid { display: grid; gap: .4em; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+    .card { padding: .6em .8em; background: #fff; border: 1px solid var(--rule); border-radius: 4px; }
+    .card a { font-weight: 600; }
+    .badge { display: inline-block; padding: .05em .5em; border-radius: 9px;
+             font-size: .8em; background: var(--code-bg); color: var(--muted); }
+    .banner { padding: .7em 1em; border-radius: 4px; margin: 1em 0; }
+    .banner.ok   { background: #e7f4e7; border: 1px solid var(--ok);   color: var(--ok); }
+    .banner.warn { background: #fdf6e3; border: 1px solid var(--warn); color: var(--warn); }
+    .banner.err  { background: #fbebeb; border: 1px solid var(--err);  color: var(--err); }
+    code, pre { font-family: ui-monospace, SFMono-Regular, monospace; background: var(--code-bg); }
+    pre { padding: .8em; overflow: auto; border-radius: 4px; }
+    label { display: block; font-weight: 600; margin: 1em 0 .2em; }
+    input[type=text], input[type=number], input[type=date], select, textarea {
+      width: 100%; box-sizing: border-box; padding: .35em .5em;
+      border: 1px solid var(--rule); border-radius: 3px; font-family: inherit;
+    }
+    textarea { min-height: 6em; font-family: ui-monospace, SFMono-Regular, monospace; font-size: .9em; }
+    .req { color: var(--err); }
+    .hint { color: var(--muted); font-size: .85em; margin: .15em 0 0; }
+    .toolbar { display: flex; gap: .6em; flex-wrap: wrap; align-items: center; margin: .8em 0; }
+    button { padding: .4em 1em; background: var(--accent); color: #fff;
+             border: 0; border-radius: 3px; cursor: pointer; font-size: 1em; }
+    button.secondary { background: #888; }
+    .crumbs { color: var(--muted); margin-bottom: .8em; }
+    .crumbs a { color: var(--muted); }
+  </style>
+</head>
+<body>
+<header>
+  <a href="/admin/yaml/"><strong>⌂ Admin</strong></a>
+  <a href="/">Public site →</a>
+  <span style="float:right; color:#aaa; font-size:.85em;">localhost only · per-save commit</span>
+</header>
+<main>
+
+<style>
+  body.cms { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; color: #222; background: #fafafa; margin: 0; }
+  .cms-shell { max-width: 1100px; margin: 0 auto; padding: 24px 32px; }
+  h1 { font-size: 22px; margin: 0 0 8px; font-weight: 600; }
+  .crumb { color: #999; font-size: 13px; margin-bottom: 24px; }
+  .crumb a { color: #1a73e8; text-decoration: none; }
+  .layout { display: grid; grid-template-columns: 280px 1fr; gap: 32px; }
+  .preset-rail { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; height: fit-content; }
+  .preset-rail h2 { font-size: 14px; margin: 0 0 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #666; font-weight: 600; }
+  .preset-opt { display: block; padding: 12px 14px; margin: 6px 0; border-radius: 6px; cursor: pointer; border: 2px solid transparent; transition: all 0.12s; }
+  .preset-opt:hover { background: #f4f7fb; }
+  .preset-opt.active { border-color: #1a73e8; background: #eaf2fc; }
+  .preset-opt input { margin-right: 8px; }
+  .preset-opt .meta { font-size: 12px; color: #888; margin-top: 4px; }
+  .form-pane { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 24px; }
+  .form-pane h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: #666; margin: 24px 0 12px; font-weight: 600; }
+  .form-pane h2:first-child { margin-top: 0; }
+  .token-row { display: grid; grid-template-columns: 200px 1fr 80px; gap: 12px; align-items: center; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+  .token-row:last-child { border-bottom: none; }
+  .token-row label { font-size: 13px; color: #444; font-family: ui-monospace, monospace; }
+  .token-row input[type=text], .token-row input[type=color] { padding: 6px 8px; border: 1px solid #d0d0d0; border-radius: 4px; font-size: 13px; font-family: ui-monospace, monospace; width: 100%; box-sizing: border-box; }
+  .token-row input[type=color] { padding: 2px; height: 32px; cursor: pointer; }
+  .reset-btn { font-size: 11px; padding: 4px 10px; border: 1px solid #d0d0d0; border-radius: 4px; background: #fff; cursor: pointer; color: #666; }
+  .reset-btn:hover { background: #f0f0f0; }
+  .actions { margin: 24px 0 0; padding: 16px 24px; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; display: flex; gap: 12px; align-items: center; }
+  .btn { padding: 8px 16px; border: 1px solid #1a73e8; background: #1a73e8; color: #fff; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; }
+  .btn:hover { background: #1664c8; }
+  .btn-secondary { background: #fff; color: #1a73e8; }
+  .btn-secondary:hover { background: #eaf2fc; }
+  #status { margin-left: auto; color: #666; font-size: 13px; }
+  .swatch { display: inline-block; width: 28px; height: 28px; border-radius: 4px; vertical-align: middle; margin-right: 8px; border: 1px solid #d0d0d0; }
+</style>
+
+<div class="cms-shell">
+  <div class="crumb"><a href="/admin/">/admin/</a> &raquo; theme</div>
+  <h1>Theme customizer</h1>
+
+  <div class="layout">
+    <div class="preset-rail">
+      <h2>Preset</h2>
+      
+      <label class="preset-opt " data-preset="editorial">
+        <input type="radio" name="preset" value="editorial" >
+        <strong>editorial</strong>
+        <div class="meta">
+          Serif, narrow, generous spacing
+          
+        </div>
+      </label>
+      
+      <label class="preset-opt " data-preset="documentary">
+        <input type="radio" name="preset" value="documentary" >
+        <strong>documentary</strong>
+        <div class="meta">
+          Sans-serif, dense grid
+          
+        </div>
+      </label>
+      
+      <label class="preset-opt active" data-preset="classic">
+        <input type="radio" name="preset" value="classic" checked>
+        <strong>classic</strong>
+        <div class="meta">
+          Current site (Inter + Fraunces)
+          
+        </div>
+      </label>
+      
+      <label class="preset-opt " data-preset="custom">
+        <input type="radio" name="preset" value="custom" >
+        <strong>custom</strong>
+        <div class="meta">No preset; raw override</div>
+      </label>
+    </div>
+
+    <div class="form-pane">
+      <h2>Color</h2>
+      
+        
+        <div class="token-row">
+          <label>color.primary</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#1a73e8;"></span>
+            <input type="color" value="#1a73e8"
+                   data-token="color.primary" data-kind="color">
+            <input type="text" value="#1a73e8" data-token="color.primary" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.primary">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.primary-fg</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#fbf8f0;"></span>
+            <input type="color" value="#fbf8f0"
+                   data-token="color.primary-fg" data-kind="color">
+            <input type="text" value="#fbf8f0" data-token="color.primary-fg" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.primary-fg">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.bg</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#fff;"></span>
+            <input type="color" value="#fff"
+                   data-token="color.bg" data-kind="color">
+            <input type="text" value="#fff" data-token="color.bg" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.bg">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.fg</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#1a1613;"></span>
+            <input type="color" value="#1a1613"
+                   data-token="color.fg" data-kind="color">
+            <input type="text" value="#1a1613" data-token="color.fg" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.fg">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.muted</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#777;"></span>
+            <input type="color" value="#777"
+                   data-token="color.muted" data-kind="color">
+            <input type="text" value="#777" data-token="color.muted" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.muted">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.accent</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#c4956a;"></span>
+            <input type="color" value="#c4956a"
+                   data-token="color.accent" data-kind="color">
+            <input type="text" value="#c4956a" data-token="color.accent" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.accent">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.danger</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#a04030;"></span>
+            <input type="color" value="#a04030"
+                   data-token="color.danger" data-kind="color">
+            <input type="text" value="#a04030" data-token="color.danger" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.danger">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.success</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#3a7050;"></span>
+            <input type="color" value="#3a7050"
+                   data-token="color.success" data-kind="color">
+            <input type="text" value="#3a7050" data-token="color.success" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.success">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.surface-1</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#fbf8f0;"></span>
+            <input type="color" value="#fbf8f0"
+                   data-token="color.surface-1" data-kind="color">
+            <input type="text" value="#fbf8f0" data-token="color.surface-1" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.surface-1">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.surface-2</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#ece5d4;"></span>
+            <input type="color" value="#ece5d4"
+                   data-token="color.surface-2" data-kind="color">
+            <input type="text" value="#ece5d4" data-token="color.surface-2" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.surface-2">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>color.border</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="swatch" style="background:#d9d0bf;"></span>
+            <input type="color" value="#d9d0bf"
+                   data-token="color.border" data-kind="color">
+            <input type="text" value="#d9d0bf" data-token="color.border" data-kind="text" style="flex:1;">
+          </div>
+          <button class="reset-btn" data-reset="color.border">reset</button>
+        </div>
+      
+
+      <h2>Typography</h2>
+      
+        
+        <div class="token-row">
+          <label>typography.scale</label>
+          <input type="text" value="1.25" data-token="typography.scale" data-kind="text">
+          <button class="reset-btn" data-reset="typography.scale">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.font-family-body</label>
+          <input type="text" value="&#39;Inter&#39;, system-ui, -apple-system, &#39;Segoe UI&#39;, sans-serif" data-token="typography.font-family-body" data-kind="text">
+          <button class="reset-btn" data-reset="typography.font-family-body">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.font-family-heading</label>
+          <input type="text" value="&#39;Fraunces&#39;, &#39;Cormorant Garamond&#39;, Georgia, serif" data-token="typography.font-family-heading" data-kind="text">
+          <button class="reset-btn" data-reset="typography.font-family-heading">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.font-family-mono</label>
+          <input type="text" value="ui-monospace, &#39;SF Mono&#39;, Menlo, Consolas, monospace" data-token="typography.font-family-mono" data-kind="text">
+          <button class="reset-btn" data-reset="typography.font-family-mono">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.line-height-body</label>
+          <input type="text" value="1.65" data-token="typography.line-height-body" data-kind="text">
+          <button class="reset-btn" data-reset="typography.line-height-body">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.line-height-heading</label>
+          <input type="text" value="1.15" data-token="typography.line-height-heading" data-kind="text">
+          <button class="reset-btn" data-reset="typography.line-height-heading">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.weight-body</label>
+          <input type="text" value="400" data-token="typography.weight-body" data-kind="text">
+          <button class="reset-btn" data-reset="typography.weight-body">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.weight-bold</label>
+          <input type="text" value="500" data-token="typography.weight-bold" data-kind="text">
+          <button class="reset-btn" data-reset="typography.weight-bold">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>typography.weight-heading</label>
+          <input type="text" value="500" data-token="typography.weight-heading" data-kind="text">
+          <button class="reset-btn" data-reset="typography.weight-heading">reset</button>
+        </div>
+      
+
+      <h2>Spacing</h2>
+      
+        
+        <div class="token-row">
+          <label>spacing.unit</label>
+          <input type="text" value="8px" data-token="spacing.unit" data-kind="text">
+          <button class="reset-btn" data-reset="spacing.unit">reset</button>
+        </div>
+      
+
+      <h2>Layout</h2>
+      
+        
+        <div class="token-row">
+          <label>layout.max-width</label>
+          <input type="text" value="72rem" data-token="layout.max-width" data-kind="text">
+          <button class="reset-btn" data-reset="layout.max-width">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>layout.gutter</label>
+          <input type="text" value="2rem" data-token="layout.gutter" data-kind="text">
+          <button class="reset-btn" data-reset="layout.gutter">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>layout.breakpoint-sm</label>
+          <input type="text" value="40rem" data-token="layout.breakpoint-sm" data-kind="text">
+          <button class="reset-btn" data-reset="layout.breakpoint-sm">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>layout.breakpoint-md</label>
+          <input type="text" value="48rem" data-token="layout.breakpoint-md" data-kind="text">
+          <button class="reset-btn" data-reset="layout.breakpoint-md">reset</button>
+        </div>
+      
+        
+        <div class="token-row">
+          <label>layout.breakpoint-lg</label>
+          <input type="text" value="64rem" data-token="layout.breakpoint-lg" data-kind="text">
+          <button class="reset-btn" data-reset="layout.breakpoint-lg">reset</button>
+        </div>
+      
+
+      <h2>Radius / Shadow / Motion</h2>
+      
+        
+        <div class="token-row">
+          <label>radius.sm</label>
+          <input type="text" value="2px" data-token="radius.sm" data-kind="text">
+          <button class="reset-btn" data-reset="radius.sm">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>radius.md</label>
+          <input type="text" value="2px" data-token="radius.md" data-kind="text">
+          <button class="reset-btn" data-reset="radius.md">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>radius.lg</label>
+          <input type="text" value="4px" data-token="radius.lg" data-kind="text">
+          <button class="reset-btn" data-reset="radius.lg">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>radius.full</label>
+          <input type="text" value="9999px" data-token="radius.full" data-kind="text">
+          <button class="reset-btn" data-reset="radius.full">reset</button>
+        </div>
+        
+      
+        
+        <div class="token-row">
+          <label>shadow.sm</label>
+          <input type="text" value="0 1px 2px rgba(26,22,19,0.04)" data-token="shadow.sm" data-kind="text">
+          <button class="reset-btn" data-reset="shadow.sm">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>shadow.md</label>
+          <input type="text" value="0 2px 6px rgba(26,22,19,0.08)" data-token="shadow.md" data-kind="text">
+          <button class="reset-btn" data-reset="shadow.md">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>shadow.lg</label>
+          <input type="text" value="0 8px 24px rgba(26,22,19,0.12)" data-token="shadow.lg" data-kind="text">
+          <button class="reset-btn" data-reset="shadow.lg">reset</button>
+        </div>
+        
+      
+        
+        <div class="token-row">
+          <label>motion.duration-fast</label>
+          <input type="text" value="120ms" data-token="motion.duration-fast" data-kind="text">
+          <button class="reset-btn" data-reset="motion.duration-fast">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>motion.duration-base</label>
+          <input type="text" value="200ms" data-token="motion.duration-base" data-kind="text">
+          <button class="reset-btn" data-reset="motion.duration-base">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>motion.easing-standard</label>
+          <input type="text" value="cubic-bezier(0.2, 0, 0, 1)" data-token="motion.easing-standard" data-kind="text">
+          <button class="reset-btn" data-reset="motion.easing-standard">reset</button>
+        </div>
+        
+        <div class="token-row">
+          <label>motion.easing-emphasised</label>
+          <input type="text" value="cubic-bezier(0.3, 0, 0, 1)" data-token="motion.easing-emphasised" data-kind="text">
+          <button class="reset-btn" data-reset="motion.easing-emphasised">reset</button>
+        </div>
+        
+      
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" id="save">Save override</button>
+    <button class="btn btn-secondary" id="publish">Publish theme.css</button>
+    <span id="status"></span>
+  </div>
+
+  <details style="margin-top:24px;">
+    <summary style="cursor:pointer;color:#666;font-size:13px;">Raw override JSON</summary>
+    <pre style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:12px;font-size:12px;overflow-x:auto;">{
+  &#34;color&#34;: {
+    &#34;primary&#34;: &#34;#1a73e8&#34;,
+    &#34;text&#34;: &#34;#222&#34;,
+    &#34;bg&#34;: &#34;#fff&#34;,
+    &#34;muted&#34;: &#34;#777&#34;
+  },
+  &#34;font_stack&#34;: &#34;ui-sans-serif, system-ui, -apple-system, sans-serif&#34;,
+  &#34;max_width&#34;: &#34;70ch&#34;
+}</pre>
+  </details>
+</div>
+
+<script>
+  // Preset switching.
+  document.querySelectorAll('input[name=preset]').forEach(r => {
+    r.addEventListener('change', async () => {
+      const name = r.value;
+      const resp = await fetch('/admin/api/theme/preset/', {
+        method: 'PUT', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({name})
+      });
+      if (resp.ok) {
+        location.reload();
+      } else {
+        document.getElementById('status').textContent = 'preset failed';
+      }
+    });
+  });
+
+  // Color picker ↔ text sync.
+  document.querySelectorAll('input[type=color]').forEach(c => {
+    const sib = document.querySelector(`input[type=text][data-token="${c.dataset.token}"][data-kind=text]`);
+    if (sib) c.addEventListener('input', () => { sib.value = c.value; });
+  });
+
+  // Reset buttons (clears the override for that token; effective falls back to preset).
+  document.querySelectorAll('.reset-btn').forEach(b => {
+    b.addEventListener('click', async () => {
+      const tok = b.dataset.reset;
+      const inp = document.querySelector(`input[data-kind=text][data-token="${tok}"]`);
+      if (inp) inp.value = '';
+      document.getElementById('status').textContent = `reset ${tok}`;
+    });
+  });
+
+  // Save: collect all non-empty text inputs into a nested override dict.
+  document.getElementById('save').addEventListener('click', async () => {
+    const override = {};
+    document.querySelectorAll('input[data-kind=text][data-token]').forEach(inp => {
+      if (!inp.value) return;
+      const [ns, key] = inp.dataset.token.split('.');
+      if (!override[ns]) override[ns] = {};
+      override[ns][key] = inp.value;
+    });
+    const resp = await fetch('/admin/api/theme/override/', {
+      method: 'PUT', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({value: override})
+    });
+    document.getElementById('status').textContent = resp.ok ? 'saved' : 'save failed';
+  });
+
+  // Publish: regenerate theme.css.
+  document.getElementById('publish').addEventListener('click', async () => {
+    const resp = await fetch('/admin/api/theme/publish/', {method: 'POST'});
+    const data = await resp.json();
+    document.getElementById('status').textContent = data.ok ? 'theme.css regenerated · ' + data.theme_css_bust : 'publish failed';
+  });
+</script>
+
+</main>
+</body>
+</html>

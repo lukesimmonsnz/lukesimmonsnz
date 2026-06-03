@@ -1,0 +1,34 @@
+id: problem.southland.environment.coastal_foveaux
+title: Foveaux Strait Coastal Degradation and Fisheries Stress
+theme: environment
+section: environment
+subpage: coastal_foveaux
+parent: problem.southland.environment.freshwater_degradation
+order: 4
+updated: '2026-04-26'
+summary: Foveaux Strait ecosystem stressed by overfishing, sea urchin barrens, marine
+  invasives; Southland fisheries income declining; aquaculture conflicts.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Foveaux Strait ecosystem stressed by overfishing, sea urchin barrens, marine
+    invasives; Southland fisheries income declining; aquaculture conflicts.
+claim_ids:
+- claim.southland.environment.southland_river_quality_trend
+- claim.southland.environment.coastal_foveaux_prevalence
+- claim.southland.environment.southland_river_quality_prevalence
+- claim.southland.environment.freshwater_degradation_trend
+- claim.southland.environment.coastal_foveaux_trend
+- claim.southland.environment.freshwater_degradation_prevalence
+- claim.southland.environment.fiordland_ecosystem_prevalence
+- claim.southland.environment.fiordland_ecosystem_trend
+status: draft
+time_horizons: [generation, century]

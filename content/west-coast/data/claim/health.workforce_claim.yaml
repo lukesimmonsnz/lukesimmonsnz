@@ -1,0 +1,24 @@
+id: claim.west_coast.health.workforce_claim
+statement: Grey Base Hospital (Greymouth) and West Coast primary care face acute workforce
+  shortages. Approximately 40 percent of GP and nursing positions are unfilled or
+  covered by locums. Specialist services are severely limited; cardiology, oncology,
+  and many surgical services require referral to Christchurch (200+ km away). Recruitment
+  and retention are difficult due to professional isolation, limited partner employment,
+  and geographic constraints.
+value: 40
+unit: percent unfilled GP/nursing positions
+time_period: 2018-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_west_coast_2023
+- source.stats_nz_census_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Workforce data from Health NZ workforce reporting and hospital vacancy records;
+  geographic context from Census location and occupation tables.

@@ -1,0 +1,23 @@
+id: claim.otago.economy.economic_structure_prevalence
+statement: 'Otago''s economy is tri-partite: (1) Tourism anchored in Queenstown-Lakes
+  District (~$2.5-3B visitor spend pre-COVID, 80-90% recovered 2023); (2) Wine + stone
+  fruit agri-export (Central Otago Pinot Noir $180M+ export, cherries/apricots major
+  China market); (3) Tertiary institutions (University of Otago ~$1.5B GDP contribution,
+  Otago Polytechnic trades/health), health services (Dunedin Hospital regional hub),
+  and Clutha dairy (Fonterra Edendale supply). Structural dependency on tourism and
+  education creates economic volatility.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

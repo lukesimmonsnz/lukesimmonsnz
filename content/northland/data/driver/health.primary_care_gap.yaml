@@ -1,0 +1,10 @@
+id: driver.northland.health.primary_care_gap
+name: Primary healthcare access gap
+description: Primary healthcare access gap in the regional context.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

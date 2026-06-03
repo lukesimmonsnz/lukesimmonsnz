@@ -5,6 +5,8 @@
 {% block meta_description %}A chronological record of the life and career of David Roy Simmons (1930–2015).{% endblock %}
 
 {% block content %}
+{% set _ds_intro = davidsimmons_slot_render('timeline') %}
+{% if _ds_intro %}<div class="page-intro">{{ _ds_intro | safe }}</div>{% endif %}
 <div class="page">
   {{ breadcrumbs([
     ('Home', url_for('main.home')),

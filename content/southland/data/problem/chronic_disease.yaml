@@ -1,0 +1,34 @@
+id: problem.southland.health.chronic_disease
+title: Chronic Disease and Preventable Illness
+theme: health
+section: health
+subpage: chronic_disease
+parent: problem.southland.health.health_outcomes
+order: 3
+updated: '2026-04-26'
+summary: Southland has higher type 2 diabetes, obesity, cardiovascular disease; lifestyle
+  factors (food security, activity, smoking); health promotion limited.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland has higher type 2 diabetes, obesity, cardiovascular disease; lifestyle
+    factors (food security, activity, smoking); health promotion limited.
+claim_ids:
+- claim.southland.health.health_outcomes_prevalence
+- claim.southland.health.chronic_disease_trend
+- claim.southland.health.rural_workforce_trend
+- claim.southland.health.mental_health_trend
+- claim.southland.health.health_outcomes_trend
+- claim.southland.health.mental_health_prevalence
+- claim.southland.health.rural_workforce_prevalence
+- claim.southland.health.chronic_disease_prevalence
+status: draft
+time_horizons: [decade, generation]

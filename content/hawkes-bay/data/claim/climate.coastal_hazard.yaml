@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.climate.coastal_erosion_0_3_0_5_metres_per_year
+statement: Napier coastline is eroding at 0.3-0.5 metres per year in some locations
+  (Ahuriri, Westshore), accelerated by sea-level rise and increased stormwater discharge.
+  Coastal retreat threatens municipal infrastructure and necessitates managed realignment
+  planning.
+value: 0.4
+unit: metres per year erosion
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Hawke's Bay

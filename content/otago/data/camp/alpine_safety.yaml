@@ -1,0 +1,21 @@
+id: camp.otago.climate.alpine_safety
+name: Alpine Hazard Management and Warning Systems
+theme: climate-adaptation
+core_claim: Avalanche forecasting, GLOF monitoring, and infrastructure resilience
+  reduce alpine hazard impacts.
+flagship_moves:
+- Avalanche forecasting and control program
+- GLOF monitoring for Fiordland lakes
+- Hazard-resilient infrastructure design for SH6
+tensions:
+- High operational costs; technical uncertainty
+- Risk tolerance and road closure decisions
+addresses:
+- problem.otago.climate.alpine_hazards
+interventions:
+- description: Establish alpine hazard monitoring network
+  state_variable: hazard_warning_lead_time
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

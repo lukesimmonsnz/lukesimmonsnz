@@ -1,0 +1,29 @@
+id: problem.taranaki.governance.governance
+title: Governance and regional coordination
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Taranaki has three councils (New Plymouth, Stratford, South Taranaki) plus
+  Taranaki Regional Council. Coordination is weak.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - governance_index
+  inputs:
+  - governance_input_1
+  constraints:
+  - governance_constraint
+  feedback_loops:
+  - 'Feedback: governance'
+narrative:
+- heading: Governance and regional coordination in Taranaki
+  body: Taranaki has three councils (New Plymouth, Stratford, South Taranaki) plus
+    Taranaki Regional Council. Coordination is weak.
+claim_ids:
+- claim.taranaki.governance.governance_01
+status: draft
+time_horizons: [decade, generation, century]

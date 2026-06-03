@@ -1,0 +1,21 @@
+id: claim.gisborne.transport.cyclone_damage_13
+statement: Cyclone Gabrielle (February 2023) damaged infrastructure across Gisborne,
+  destroying water supply lines, roading, and power systems. Wairoa district experienced
+  most severe damage; infrastructure recovery cost $300-400M; climate resilience of
+  rebuilt systems remains questionable without enhanced design standards.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+- source.stats_nz_deprivation_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

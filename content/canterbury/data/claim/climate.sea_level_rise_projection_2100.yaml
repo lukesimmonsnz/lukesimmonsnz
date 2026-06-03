@@ -1,0 +1,20 @@
+id: claim.canterbury.climate.sea_level_rise_projection_2100
+statement: Sea level rise projections for Canterbury coast by 2100 range 0.5-1.0m
+  under RCP 6.0, threatening Lyttelton Port ($3B+ asset value) and coastal settlements.
+  Tectonic subsidence on Banks Peninsula coast compounds inundation risk, requiring
+  managed realignment planning.
+value: 0.75
+unit: meters
+time_period: '2100'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfe_nz_sea_level_guidance_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

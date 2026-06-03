@@ -1,0 +1,13 @@
+id: driver.nelson.inequality.driver_2
+name: Geographic isolation of rural communities from specialist services
+description: Distance from Nelson city to outlying communities (notably Golden Bay, around 105 km via Takaka Hill) creates a structural service-access gap that interacts with household income to produce compounded inequality of outcome.
+theme: inequality
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.nelson.inequality.inequality_root
+- problem.nelson.inequality.rental_affordability_gap
+- problem.nelson.inequality.rural_isolation
+claim_ids: []

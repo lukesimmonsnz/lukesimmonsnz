@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.crime.enforcement_deterrence
+name: Enforcement and deterrence
+theme: crime
+core_claim: Increased policing presence and criminal justice capacity.
+flagship_moves:
+- Flagship move 1 for Enforcement and deterrence
+- Flagship move 2 for Enforcement and deterrence
+tensions:
+- Internal tension 1 of Enforcement and deterrence
+addresses:
+- problem.manawatu_whanganui.economy.agri_food
+interventions:
+- description: 'Intervention 1: Enforcement and deterrence detail 1'
+- description: 'Intervention 2: Enforcement and deterrence detail 2'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

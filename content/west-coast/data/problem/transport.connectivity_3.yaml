@@ -1,0 +1,43 @@
+id: problem.west_coast.transport.connectivity_3
+title: Internal mobility deficit in Westport, Greymouth and Hokitika
+theme: transport
+section: transport
+subpage: connectivity_3
+parent: connectivity
+order: 3
+updated: '2026-04-26'
+summary: West Coast towns have no urban bus service, and SH6 runs through the central business districts of Westport and Greymouth
+  as a busy through-route. Without a private vehicle, residents face acute mobility deprivation, and pedestrian safety along
+  the highway corridor is a chronic concern, particularly for older residents and school children.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - households_without_vehicle
+  - sh6_through_traffic_volume
+  - school_transport_unit_cost
+  inputs:
+  - territorial_authority_transport_levy
+  - school_bus_funding_pool
+  constraints:
+  - dispersed_low_density_settlement
+  - terrain_and_weather_exposure
+  feedback_loops:
+  - Low patronage discourages investment in scheduled services, which in turn raises the cost of car-free living and pushes
+    more households into car dependence — entrenching the empty-bus baseline.
+narrative:
+- heading: Cars by default, isolation if not
+  body: Census occupation and commute data show overwhelming reliance on private vehicles in West Coast towns, and there is
+    no urban bus service in either Westport or Greymouth (claim.west_coast.transport.connectivity_3_claim). For households
+    without a working car — disproportionately older, lower-income, or with disability — accessing health care, school and
+    employment becomes a logistical challenge that scheduled rural services cannot solve.
+- heading: SH6 as main street
+  body: Both Westport and Greymouth have SH6 running through their central retail strips, mixing heavy freight with pedestrian
+    and cyclist movements. Aging demographics and limited active-transport infrastructure mean the safety burden falls hardest
+    on those least able to absorb it.
+claim_ids:
+- claim.west_coast.transport.connectivity_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

@@ -1,0 +1,13 @@
+id: driver.wellington.health.preventive_care_gaps
+name: Gaps in preventive and primary chronic disease care
+description: Insufficient preventive healthcare — particularly diabetes screening, nutrition support, and chronic disease
+  management — in high-deprivation Wellington communities allows preventable conditions to escalate to expensive acute presentations.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.health.chronic_disease
+claim_ids:
+- claim.wellington.health.preventable_hospitalisations

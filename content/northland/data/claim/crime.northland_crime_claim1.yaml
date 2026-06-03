@@ -1,0 +1,19 @@
+id: claim.northland.crime.northland_crime_claim1
+statement: Property crime rates in Northland are elevated relative to national average.
+  Rural property crime (vehicle theft, tool theft, livestock theft, farm equipment
+  damage) is significant; remote properties face limited police response. Vehicle
+  theft increasingly involves export to overseas markets or wrecking operations; Whangārei
+  is a regional hub. Residential burglary correlates with deprivation and substance
+  abuse.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

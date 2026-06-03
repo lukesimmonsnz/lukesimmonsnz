@@ -1,0 +1,21 @@
+id: claim.marlborough.transport.picton_ferry_2
+statement: 'Ferry impact on Marlborough economy: tourism (40–50% of Picton visitor
+  spend ferry-dependent); freight (wine, aquaculture exports, container goods); employment
+  (ferry workers, tourism operators, truck drivers); supply chain disruption cost
+  NZD 500k–1M per month if both ferries down.'
+value: 750000
+unit: NZD mid-range monthly disruption cost estimate
+time_period: '2024'
+confidence: low
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.picton_ferry_services_2023
+- source.mbd_wine_industry_research
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

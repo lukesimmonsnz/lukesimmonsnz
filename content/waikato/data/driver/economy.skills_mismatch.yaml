@@ -1,0 +1,10 @@
+id: driver.waikato.economy.skills_mismatch
+name: Skills-labour market mismatch
+description: Skills-labour market mismatch in the regional context.
+theme: economy
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

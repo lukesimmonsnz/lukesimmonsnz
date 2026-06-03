@@ -1,0 +1,22 @@
+id: claim.otago.education.secondary_trend
+statement: 'Secondary school rolls are polarizing: Queenstown/Central Otago growing
+  (new schools needed; capital projects behind demand); rural secondary (Waitaki,
+  Clutha) consolidation pressure (small rolls, aging infrastructure); teacher supply
+  crisis acute in Queenstown (high cost of living); NCEA attainment gaps widening
+  (Dunedin vs provincial); Māori and Pasifika student outcomes below regional average,
+  particularly in rural areas.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

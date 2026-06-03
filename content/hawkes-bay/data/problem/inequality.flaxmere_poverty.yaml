@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.inequality.flaxmere_poverty
+title: Flaxmere suburban deprivation
+theme: inequality
+section: inequality
+subpage: flaxmere-poverty
+parent: problem.hawkes_bay.inequality.deprivation
+order: 2
+updated: '2026-04-26'
+summary: "Flaxmere is one of NZ's most deprived suburbs (NZDep decile 10). Unemployment is 15%+ among residents. Youth opportunity pathways are limited. Housing stock is often poor quality. Community assets and services are under-resourced."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - unemployment_rate_percent
+    - neighbourhood_deprivation_index_decile
+  inputs:
+    - school_achievement_gaps
+    - health_service_access_gaps
+  constraints:
+    - transport_to_employment_centres
+    - property_value_stagnation
+  feedback_loops:
+    - 'Unemployment limits household income; inability to afford quality housing; neighbourhood deteriorates; business disinvestment; job availability falls.'
+narrative:
+  - heading: Deprivation Ranking
+    body: 'Flaxmere is consistently ranked decile 10 on the NZ Deprivation Index, indicating the highest concentration of socioeconomic disadvantage.'
+  - heading: Unemployment
+    body: 'Unemployment in Flaxmere is approximately 15-18%, compared to 4% nationally. Many residents are on long-term welfare.'
+claim_ids:
+  - claim.hawkes_bay.inequality.flaxmere_unemployment_15_18_percent
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,25 @@
+id: camp.hawkes_bay.housing.upzone_supply
+name: Upzoning and intensification
+theme: housing
+core_claim: Removing zoning restrictions and enabling medium-density development across Napier and Hastings urban areas is the primary lever to improve housing affordability.
+flagship_moves:
+  - Implement NPS-UD density requirements across all territorial authorities
+  - Permit 6-storey residential buildings within 800m of Napier CBD and Hastings CBD
+  - Remove minimum car-parking requirements in city centres
+tensions:
+  - Intensification in flood-prone and post-cyclone-damaged land raises safety risks
+  - Infrastructure capacity (water, wastewater) is strained in rebuilt areas
+  - Heritage character areas create political resistance to blanket upzoning
+addresses:
+  - problem.hawkes_bay.housing.affordability
+  - problem.hawkes_bay.housing.cyclone_damaged_stock
+interventions:
+  - description: Amend district plans to allow 3-6 storey residential development in urban zones
+    state_variable: residential_density_allowance
+    expected_sign: '+'
+  - description: Fast-track resource consent for developments meeting design standards
+    state_variable: housing_consent_processing_time
+    expected_sign: '-'
+applicable_in:
+  - hawkes-bay
+tensions_with: []

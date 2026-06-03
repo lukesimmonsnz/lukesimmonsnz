@@ -1,0 +1,22 @@
+id: camp.canterbury.crime.methamphetamine_harm_reduction
+name: Methamphetamine Harm Reduction & Supply Disruption
+theme: crime
+core_claim: Combined harm reduction (treatment, naloxone distribution), supply-side
+  disruption (police operations), and demand reduction (prevention) are required for
+  effectiveness.
+flagship_moves:
+- Key intervention for Methamphetamine Harm Reduction & Supply Disruption
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.crime.organised_crime
+interventions:
+- description: Combined harm reduction (treatment, naloxone distribution), supply-side
+    disruption (police operations), and demand reduction (prevention) are required
+    for effectiveness.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

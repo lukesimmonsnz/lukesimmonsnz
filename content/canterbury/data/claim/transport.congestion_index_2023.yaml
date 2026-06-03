@@ -1,0 +1,19 @@
+id: claim.canterbury.transport.congestion_index_2023
+statement: Christchurch congestion index increased from 5-10% (2015) to 12-15% (2023),
+  placing the city in NZ's top 5 for urban congestion. Private vehicle share remains
+  75-80%; public transport mode share is stagnant at 4-5%.
+value: 13.5
+unit: minutes delay
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_transport_strategy_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

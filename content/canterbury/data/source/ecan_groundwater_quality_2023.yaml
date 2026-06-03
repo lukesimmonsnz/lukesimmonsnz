@@ -1,0 +1,16 @@
+id: source.ecan_groundwater_quality_2023
+title: "Canterbury Groundwater Quality Survey - Annual Update"
+author: "Environment Canterbury (Environment Canterbury Regional Council)"
+publisher: "Environment Canterbury"
+year: 2023
+url: "https://www.ecan.govt.nz/data/groundwater-quality-survey/"
+type: primary-data
+credibility: official
+geo_granularity:
+  - canterbury
+notes: >
+  ECan's regional groundwater quality monitoring programme. Reports nitrate
+  concentration distributions across the Canterbury Plains aquifer system,
+  with breakdowns of bores exceeding the Maximum Acceptable Value for
+  drinking water (11.3 mg/L NO3-N). Underpins the Canterbury Water
+  Management Strategy (CWMS) and the freshwater nutrient debates.

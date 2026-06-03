@@ -1,20 +1,20 @@
 id: claim.auckland.economy.regulatory_compliance_cost
-statement: >
-  Auckland small and medium businesses report regulatory compliance
-  costs (RMA consenting, employment law, health and safety, tax)
-  consuming 5-8% of total management time; compliance cost falls
-  disproportionately on SMEs relative to large firms who can amortise
-  it across scale.
+statement: 'Auckland small and medium businesses report regulatory compliance costs
+  (RMA consenting, employment law, health and safety, tax) consuming 5-8% of total
+  management time; compliance cost falls disproportionately on SMEs relative to large
+  firms who can amortise it across scale.
+
+  '
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.mbie_business_nz_2023
+- source.mbie_business_nz_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

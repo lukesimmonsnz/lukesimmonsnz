@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.health.maori_health_disparity
+name: Māori Health Disparities And Systemic Racism
+description: Māori health disparities and systemic racism with regional implications.
+theme: health
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.water
+claim_ids: []

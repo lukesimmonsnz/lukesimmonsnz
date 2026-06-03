@@ -1,0 +1,33 @@
+id: pattern.climate.compound_hazard_exposure
+title: Compound climate and seismic hazard exposure
+theme: climate-adaptation
+summary: New Zealand's unique position on tectonic plate boundaries combined with
+  Southern Ocean weather systems produces compound hazard exposure — earthquake, flood,
+  storm, sea-level rise — that is greater than the sum of individual risks.
+manifests_in:
+- wellington
+- northland
+- gisborne
+- hawkes-bay
+- canterbury
+- marlborough
+- west-coast
+claim_ids:
+- claim.wellington.climate.compound_hazard_infrastructure_risk
+- claim.northland.climate.coastal_flooding_claim1
+- claim.gisborne.climate.climate_vulnerability_81
+- claim.hawkes_bay.housing.cyclone_damage_extent
+- claim.canterbury.climate.alpine_fault_rupture_probability_2022
+narrative:
+- heading: Compound risk
+  body: A major Alpine Fault earthquake could disrupt the national economy for months.
+    Combined with sea-level rise accelerating coastal erosion, increasing storm intensity,
+    and drought frequency, New Zealand's physical environment presents compound rather
+    than sequential hazards that standard risk assessment tools underweight.
+- heading: Infrastructure exposure
+  body: 'Infrastructure designed and costed for single-hazard scenarios is typically
+    under-built for compound events. Cyclone Gabrielle demonstrated this: roads, bridges,
+    and stormwater infrastructure built to flood standards were overwhelmed by the
+    combination of cyclone intensity and saturated catchments.'
+status: draft
+updated: '2026-04-26'

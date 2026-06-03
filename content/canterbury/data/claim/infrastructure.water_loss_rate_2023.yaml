@@ -1,0 +1,23 @@
+id: claim.canterbury.infrastructure.water_loss_rate_2023
+statement: Christchurch's water supply distribution network loses approximately 25%
+  of treated water to leaks, pipe breaks, and theft. This loss rate is above the national
+  urban average (23%) and reflects aging water mains (many 50+ years old installed
+  post-1960s rapid suburban expansion). Network age, corrosive soils in some zones,
+  and deferred maintenance from earthquake rebuild prioritization are primary drivers.
+  Council's pipe replacement programme targets a reduction to 18% by 2035, requiring
+  NZD 1.2 billion capital investment.
+value: 25
+unit: percent water loss
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_state_environment_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

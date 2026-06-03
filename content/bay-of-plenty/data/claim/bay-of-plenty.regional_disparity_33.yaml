@@ -1,0 +1,21 @@
+id: claim.bay_of_plenty.inequality.regional_disparity_33
+statement: Structural inequality in Bay Of Plenty persists across income, education,
+  health, and housing domains. Intergenerational poverty limits opportunity for disadvantaged
+  communities; spatial disparities concentrate deprivation in specific areas with
+  constrained service access.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- bay-of-plenty
+national_assertion: false
+region_mentions:
+- bay-of-plenty
+methodology_tag: methodology.victimisation_rate_v1
+notes: null

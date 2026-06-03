@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.climate.impervious_expansion
+name: Impervious Surface Expansion And Stormwater Risk
+description: Impervious surface expansion and stormwater risk. This driver operates
+  at local scale with consensus consensus.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: local
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.climate.volcanic_risk
+claim_ids: []

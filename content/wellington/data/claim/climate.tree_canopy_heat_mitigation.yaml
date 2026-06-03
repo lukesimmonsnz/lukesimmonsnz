@@ -1,0 +1,20 @@
+id: claim.wellington.climate.tree_canopy_heat_mitigation
+statement: Urban tree canopy provides the most cost-effective mitigation of urban
+  heat island effects in Wellington's climate, but canopy is being lost faster than
+  it is being replaced in many inner suburbs due to development pressure and insufficient
+  regulatory protections for established trees.
+value: null
+unit: null
+time_period: 2021-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wcc_climate_action_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

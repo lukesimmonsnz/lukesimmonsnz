@@ -1,0 +1,11 @@
+id: driver.southland.crime.invercargill_youth_gang
+name: Invercargill Youth Gang Activity
+description: Gang presence in Invercargill recruiting disengaged youth.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.crime.youth_offending
+claim_ids: []

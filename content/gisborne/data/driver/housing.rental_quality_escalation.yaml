@@ -1,0 +1,13 @@
+id: driver.gisborne.housing.rental_quality_escalation
+name: Driver escalating rental_quality
+description: "This driver exacerbates the rental_quality challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: housing
+consensus: consensus
+category: climate
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.housing.rental_quality
+claim_ids:
+- claim.gisborne.housing.rental_quality_05

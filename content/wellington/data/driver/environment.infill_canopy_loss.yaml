@@ -1,0 +1,14 @@
+id: driver.wellington.environment.infill_canopy_loss
+name: Infill development canopy removal
+description: Residential infill in Wellington's inner suburbs removes established trees at a faster rate than replacement
+  planting, driven by development economics and insufficient regulatory protection for existing urban canopy.
+theme: environment
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.environment.urban_biodiversity
+- problem.wellington.climate.urban_heat
+claim_ids:
+- claim.wellington.environment.urban_tree_canopy_cover

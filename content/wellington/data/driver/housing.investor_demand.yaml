@@ -1,0 +1,14 @@
+id: driver.wellington.housing.investor_demand
+name: Residential property as investment asset
+description: Investor demand for Wellington rental properties, driven by favourable returns in a low-vacancy market, competes
+  with owner-occupier demand at the margin and sustains price levels above what incomes alone would support.
+theme: housing
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.housing.affordability
+- problem.wellington.housing.rental_market
+claim_ids:
+- claim.wellington.housing.vacancy_rate_low

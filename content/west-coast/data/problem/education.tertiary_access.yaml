@@ -1,0 +1,42 @@
+id: problem.west_coast.education.tertiary_access
+title: No university campus and constrained tertiary pathways
+theme: education
+section: education
+subpage: tertiary_access
+parent: achievement
+order: 4
+updated: '2026-04-26'
+summary: There is no university campus on the West Coast. The nearest options are Christchurch (around four hours by road
+  from Greymouth via Arthur's Pass) and Dunedin (eight or more hours). Tertiary-aged students must out-migrate or rely on
+  distance learning, which is constrained by patchy rural broadband.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - tertiary_enrolment_rate
+  - broadband_speed_below_50mbps_share
+  - polytechnic_seat_count
+  inputs:
+  - te_pukenga_regional_funding
+  - rural_broadband_initiative_capex
+  constraints:
+  - geographic_distance_to_universities
+  - small_cohort_economics
+  feedback_loops:
+  - Each cohort of out-migrating tertiary students reduces the pool of returning graduates, which depresses the supply of
+    professional skills needed to grow the on-Coast service sector that would, in turn, retain future cohorts.
+narrative:
+- heading: Distance to degree-level study
+  body: The University of Canterbury, Lincoln, and the University of Otago are all out-of-region for West Coast students (claim.west_coast.education.tertiary_access_claim).
+    Te Pūkenga (Tai Poutini Polytechnic) provides some on-Coast vocational training, but the polytechnic restructure has thinned
+    local capacity.
+- heading: Distance learning, but not universal
+  body: Online and distance-learning study works for some students, but rural broadband gaps in Buller, Westland and inland
+    river valleys mean it is far from a universal substitute. The pattern is an out-migration of high-achieving leavers, with
+    limited subsequent return.
+claim_ids:
+- claim.west_coast.education.tertiary_access_claim
+status: draft
+time_horizons:
+- decade
+- generation

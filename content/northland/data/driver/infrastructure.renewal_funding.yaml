@@ -1,0 +1,10 @@
+id: driver.northland.infrastructure.renewal_funding
+name: Insufficient renewal funding
+description: Insufficient renewal funding in the regional context.
+theme: infrastructure
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

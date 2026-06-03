@@ -1,0 +1,23 @@
+id: claim.west_coast.crime.youth_offending_claim
+statement: Youth offending in West Coast regions correlates with limited educational
+  and employment pathways, school closures in smaller towns, and lack of structured
+  youth services. Greymouth, Hokitika, and Westport have experienced disproportionate
+  youth crime relative to their population as young people lack positive engagement
+  opportunities.
+value: null
+unit: null
+time_period: 2018-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.moe_west_coast_achievement_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Youth offending data from NZ Police; education pathway contraction from MOE
+  regional data and school roll declines.

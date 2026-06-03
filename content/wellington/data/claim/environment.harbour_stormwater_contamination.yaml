@@ -1,0 +1,21 @@
+id: claim.wellington.environment.harbour_stormwater_contamination
+statement: Stormwater discharges from Wellington's urban catchments are the dominant
+  contamination pathway for Wellington Harbour during and immediately after rainfall
+  events, carrying surface contaminants including animal waste, litter, sediment,
+  and heavy metals from road runoff.
+value: null
+unit: null
+time_period: 2021-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_harbour_water_quality_2023
+- source.gwrc_state_environment_2022
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

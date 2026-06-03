@@ -1,0 +1,25 @@
+id: camp.west_coast.economy.mining_transition_and_green_ec
+name: Mining Transition and Green Economy Development
+theme: economy
+core_claim: Coal mining decline is inevitable; West Coast needs proactive just-transition
+  investment to develop alternative economic sectors including renewable energy, conservation
+  economy, and value-add food production.
+flagship_moves:
+- Establish West Coast Just Transition Fund from Crown-Māori partnership
+- Develop pumped hydro or green hydrogen facility leveraging existing generation capacity
+- Support conservation tourism economy through DOC partnership
+tensions:
+- Mining communities have deep cultural attachment to the industry beyond economics
+- Green economy development requires sustained long-term investment before employment
+  returns
+addresses:
+- problem.west_coast.economy.economic_structure
+- problem.west_coast.economy.economic_2
+interventions:
+- description: Create West Coast Economic Diversification Fund targeting 200 new jobs
+    by 2030
+  state_variable: employment_outside_mining
+  expected_sign: +
+applicable_in:
+- west-coast
+tensions_with: []

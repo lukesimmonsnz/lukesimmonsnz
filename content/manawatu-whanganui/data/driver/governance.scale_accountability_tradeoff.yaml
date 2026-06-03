@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.governance.scale_accountability_tradeoff
+name: Scale And Accountability Tradeoff In Regional Bodies
+description: Scale and accountability tradeoff in regional bodies. This driver operates
+  at regional scale with mostly-agreed consensus.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.inequality.rural_isolation
+claim_ids: []

@@ -1,0 +1,11 @@
+id: driver.canterbury.governance.political_contestation_iwi_cogovernance
+name: Political Contestation of Iwi Co-Governance
+description: Political Contestation of Iwi Co-Governance
+theme: governance
+consensus: contested
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.governance.treaty_ngai_tahu
+claim_ids: []

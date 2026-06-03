@@ -1,0 +1,42 @@
+id: problem.canterbury.inequality.ethnic_gap
+title: Ethnic Health & Income Equity Gaps
+theme: inequality
+section: inequality
+subpage: ethnic_gap
+parent: problem.canterbury.inequality.inequality
+order: 3
+updated: '2026-04-26'
+summary: Canterbury has a significant income and health inequality gap between high-deprivation and lower-deprivation
+  communities. Median household income in the most affected communities is 25-30% below the Canterbury
+  average; chronic disease rates are substantially higher; arrest rates are elevated. These disparities
+  are geographically concentrated in Christchurch's eastern suburbs and in rural Canterbury, reflecting
+  occupational concentration and limited public service access.
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - median_income_by_ethnicity
+  - chronic_disease_prevalence_by_ethnicity
+  - arrest_rate_by_ethnicity
+  - homeownership_rate_by_ethnicity
+  inputs:
+  - employment_opportunity_by_ethnicity
+  - health_service_cultural_competency
+  - criminal_justice_system_bias
+  constraints:
+  - historical_colonialism_land_dispossession
+  - systemic_racism_institutional
+  feedback_loops:
+  - Dynamic feedback mechanisms drive ethnic health & income equity gaps.
+narrative:
+- heading: Intersecting disparities
+  body: 'Māori and Pacific populations are overrepresented in East Christchurch deprivation clusters.
+    They experience health inequities, lower education attainment, and lower incomes. Ngāi Tahu as the
+    region''s iwi has significant economic assets but community-level benefit concentration is contested.
+
+    '
+claim_ids:
+- claim.canterbury.inequality.ethnic_income_gap_2023
+- claim.canterbury.inequality.chronic_disease_ethnic_gap_2023
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,27 @@
+id: problem.taranaki.infrastructure.digital_rural
+title: Digital connectivity for rural Taranaki
+theme: infrastructure
+section: infrastructure
+subpage: digital_rural
+parent: problem.taranaki.infrastructure.infrastructure
+order: 2
+updated: '2026-04-26'
+summary: Rural broadband availability lags. Some farms have <5Mbps speed.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - digital_rural_index
+  inputs:
+  - digital_rural_input_1
+  constraints:
+  - digital_rural_constraint
+  feedback_loops:
+  - 'Feedback: digital_rural'
+narrative:
+- heading: Digital connectivity for rural Taranaki in Taranaki
+  body: Rural broadband availability lags. Some farms have <5Mbps speed.
+claim_ids:
+- claim.taranaki.infrastructure.digital_rural_01
+status: draft
+time_horizons: [decade, generation]

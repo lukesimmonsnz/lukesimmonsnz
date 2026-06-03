@@ -1,0 +1,15 @@
+id: driver.west_coast.environment.driver_2
+name: Legacy land-use and active extractive footprint
+description: Historical alluvial mining, native-forest logging and ongoing coal extraction continue to shape freshwater chemistry,
+  sediment loads, wetland extent and marine-ecosystem condition. The legacy is long-tailed and the remediation funding is
+  intermittent.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.environment.coastal_environment
+- problem.west_coast.environment.water_quality
+- problem.west_coast.environment.marine_ecosystem
+claim_ids: []

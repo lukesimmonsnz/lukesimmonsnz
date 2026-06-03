@@ -1,0 +1,24 @@
+id: camp.west_coast.health.mental_health_and_isolation_su
+name: Mental Health and Isolation Support
+theme: health
+core_claim: Geographic isolation, economic precarity from mining transition, and extreme
+  weather events create elevated mental health risk in West Coast communities.
+flagship_moves:
+- Expand rural mental health outreach to Haast, Karamea, Reefton, and Westport
+- Train community health workers in mental health first aid in isolated areas
+- Develop peer support programme for mining transition-affected workers
+tensions:
+- Stigma around mental health help-seeking is high in male-dominated mining culture
+- Workforce cannot be sustained in isolated communities without addressing social
+  determinants
+addresses:
+- problem.west_coast.health.health_outcomes
+- problem.west_coast.health.chronic_disease
+- problem.west_coast.health.workforce
+interventions:
+- description: Expand West Coast mental health outreach programme
+  state_variable: mental_health_hospitalisations
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

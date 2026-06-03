@@ -1,0 +1,39 @@
+id: problem.wellington.economy.public_sector_dependence
+title: Wellington's structural dependence on public sector employment
+theme: economy
+section: economy
+subpage: public-sector-dependence
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wellington's economy is structurally dependent on public sector employment to a degree unmatched in any other New
+  Zealand city. This dependence creates acute vulnerability to government policy shifts — as demonstrated by the 2024 public
+  sector restructuring — and limits the economy's resilience and private sector diversification.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - public_sector_employment_share
+  - private_sector_gdp_share
+  inputs:
+  - government_headcount_policy
+  - private_sector_investment
+  constraints:
+  - government_location_policy
+  - economic_diversification_barriers
+  feedback_loops:
+  - 'Government-anchor feedback: high government employment sustains demand for services and housing, which in turn maintains
+    a business environment dependent on government-derived incomes — reducing diversification incentive.'
+narrative:
+- heading: Public sector concentration
+  body: Approximately 28% of Wellington's employed workforce is in the public sector — central government, state-owned enterprises,
+    and local government combined — compared to approximately 16% nationally (claim.wellington.economy.public_sector_employment_share).
+- heading: 2024 restructuring impact
+  body: The 2024 public sector restructuring resulted in thousands of redundancies across Wellington-based government agencies,
+    producing the largest single-year contraction in Wellington's public sector employment in decades and triggering measurable
+    local economic effects (claim.wellington.economy.public_sector_restructuring_2024).
+claim_ids:
+- claim.wellington.economy.public_sector_employment_share
+- claim.wellington.economy.public_sector_restructuring_2024
+status: draft
+time_horizons: [decade, generation]

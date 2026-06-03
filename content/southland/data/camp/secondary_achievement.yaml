@@ -1,0 +1,20 @@
+id: camp.southland.education.secondary_achievement
+name: Secondary School Support and NCEA Achievement
+theme: education
+core_claim: School counselors, learning support, and attendance programs improve achievement.
+flagship_moves:
+- School counselor hiring for all secondary schools
+- Learning support aide programs
+- Attendance improvement incentives
+tensions:
+- Rural school funding constraints
+- Student engagement variability
+addresses:
+- problem.southland.education.secondary
+interventions:
+- description: Increase NCEA Level 2+ pass rate to 78%
+  state_variable: ncea_pass_rate
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

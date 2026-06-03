@@ -1,0 +1,21 @@
+id: camp.wellington.crime.family_violence_housing
+name: Safe Housing for Family Violence Survivors
+theme: crime
+core_claim: Housing insecurity is a primary barrier to leaving abusive situations; emergency and transitional housing supply
+  must be urgently expanded.
+flagship_moves:
+- 24/7 emergency refuge capacity in all Wellington districts
+- Rapid rehousing fund with Kāinga Ora priority allocation for FV survivors
+- Landlord engagement programme to reduce discrimination against FV survivors
+tensions:
+- Housing supply constraints mean priority allocation displaces other vulnerable groups
+- Emergency accommodation does not address perpetrator behaviour
+addresses:
+- problem.wellington.crime.family_violence
+interventions:
+- description: Fund 50 additional emergency FV refuge beds across Wellington region with specialist support staffing
+  state_variable: fv_emergency_housing_capacity
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

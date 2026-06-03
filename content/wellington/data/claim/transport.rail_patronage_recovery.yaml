@@ -1,0 +1,21 @@
+id: claim.wellington.transport.rail_patronage_recovery
+statement: Wellington's suburban rail network had recovered approximately 85% of pre-COVID
+  patronage levels by 2022-2023, with recovery uneven across lines. The Hutt Valley
+  and Kapiti lines recovered faster than the Johnsonville and Melling lines, and peak-period
+  services remained below 2019 baselines due to persistent hybrid-work patterns among
+  government employees who form the majority of commuter demand.
+value: 85
+unit: percent of pre-COVID patronage level
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.metlink_annual_report_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

@@ -1,0 +1,13 @@
+id: driver.gisborne.economy.economic_fragility_escalation
+name: Driver escalating economic_fragility
+description: "This driver exacerbates the economic_fragility challenge in Gisborne\
+  \ \u2014 Te Tair\u0101whiti."
+theme: economy
+consensus: disputed
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+- problem.gisborne.economy.economic_fragility
+claim_ids:
+- claim.gisborne.economy.economic_fragility_65

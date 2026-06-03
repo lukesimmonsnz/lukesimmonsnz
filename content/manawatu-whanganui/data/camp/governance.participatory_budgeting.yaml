@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.governance.participatory_budgeting
+name: Participatory Budgeting and Community Decision-Making
+theme: governance
+core_claim: Direct community control over funding allocation.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.inequality.child_poverty
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

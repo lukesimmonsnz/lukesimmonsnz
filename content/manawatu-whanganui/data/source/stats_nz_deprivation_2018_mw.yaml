@@ -1,0 +1,11 @@
+id: source.stats_nz_deprivation_2018_mw
+title: 'NZ Deprivation Index 2018: Manawatū-Whanganui Data'
+author: null
+publisher: Stats NZ
+year: 2018
+url: https://www.stats.govt.nz/tools/nzdeuii
+type: primary-data
+credibility: official
+geo_granularity:
+- manawatu-whanganui
+notes: Socioeconomic deprivation mapping.

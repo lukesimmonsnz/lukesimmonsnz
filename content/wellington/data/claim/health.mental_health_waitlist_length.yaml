@@ -1,0 +1,20 @@
+id: claim.wellington.health.mental_health_waitlist_length
+statement: Community mental health services in Wellington consistently operate with
+  waitlists of several months for non-urgent presentations, meaning individuals in
+  sub-acute psychological distress typically receive no support during the period
+  most critical for early intervention.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_wellington_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: null

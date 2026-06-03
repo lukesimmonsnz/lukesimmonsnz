@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.health.workforce_growth
+name: Driver for workforce
+description: "This driver exacerbates the workforce pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: health
+consensus: consensus
+category: cultural
+timescale: short
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.health.workforce
+claim_ids:
+- claim.bay_of_plenty.health.workforce_55

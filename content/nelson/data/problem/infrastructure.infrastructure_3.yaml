@@ -1,0 +1,35 @@
+id: problem.nelson.infrastructure.infrastructure_3
+title: Port Nelson capacity and access upgrades
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_3
+parent: infrastructure
+order: 3
+updated: '2026-04-26'
+summary: Port Nelson is upgrading to meet container and bulk-export demand growth. Throughput is 130,000-160,000 tonnes of fish and seafood annually plus growing volumes of timber, fruit, and general cargo, with TEU growth around 6 percent per year 2019-2023. Stormwater and wastewater treatment at the port require $18-24 million in upgrades, and SH6 truck access is congested in peak season, with an estimated $45-65 million in widening investment required.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - annual_throughput_tonnes
+  - teu_growth_rate_pct
+  - sh6_peak_truck_queue_minutes
+  inputs:
+  - nzta_capex_allocation
+  - port_company_capex
+  constraints:
+  - consent_discharge_limits
+  - land_access_to_port
+  feedback_loops:
+  - 'Throughput-amenity feedback: rising throughput grows truck flow, eroding amenity around the port and city interface, which builds political resistance to further capacity expansion.'
+narrative:
+- heading: Throughput growth versus environmental discharge standards
+  body: Port Nelson is under cumulative pressure to grow throughput while tightening discharge to Tasman Bay (claim.nelson.infrastructure.infrastructure_3_claim). Both are real; meeting both simultaneously requires capital investment that neither the port company nor the council can fully self-fund.
+- heading: The SH6 last-mile problem
+  body: Trucks access Port Nelson via SH6 and the Haven Road interchange. Peak-season queueing imposes both economic and amenity costs. Widening estimates are large and compete against other Waka Kotahi priorities; rail alternatives are not on the table because there is no rail to Nelson.
+claim_ids:
+- claim.nelson.infrastructure.infrastructure_3_claim
+status: draft
+time_horizons:
+- decade
+- generation

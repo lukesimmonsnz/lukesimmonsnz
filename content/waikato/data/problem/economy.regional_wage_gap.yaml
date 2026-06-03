@@ -1,0 +1,28 @@
+id: problem.waikato.economy.regional_wage_gap
+title: Regional wage gap with Auckland
+theme: economy
+section: economy
+subpage: regional_wage_gap
+parent: problem.waikato.economy.waikato_economic_concentration
+order: 4
+updated: '2026-04-26'
+summary: Average wages in Waikato are 12% below Auckland, driving skilled worker outflow.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gdp_per_capita_growth
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing regional wage gap creates feedback on regional outcomes.
+narrative:
+- heading: Regional wage gap with Auckland
+  body: Average wages in Waikato are 12% below Auckland, driving skilled worker outflow.
+claim_ids:
+- claim.waikato.economy.wage_gap_12pct
+status: draft
+time_horizons: [decade, generation]

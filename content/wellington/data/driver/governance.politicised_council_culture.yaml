@@ -1,0 +1,13 @@
+id: driver.wellington.governance.politicised_council_culture
+name: Politicised council culture and leadership instability
+description: Wellington City Council has a documented pattern of political tension between elected members and management,
+  contributing to CEO departures and undermining organisational stability and long-term strategy execution.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.governance.accountability
+claim_ids:
+- claim.wellington.governance.ceo_turnover_wcc

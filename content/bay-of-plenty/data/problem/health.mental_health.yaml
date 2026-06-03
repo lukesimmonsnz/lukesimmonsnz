@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.health.mental_health
+title: Mental health crisis in youth and adults in Bay of Plenty — Te Moana-a-Toi
+theme: health
+section: health
+subpage: mental_health
+parent: problem.bay_of_plenty.health.health_outcomes
+order: 26
+updated: '2026-04-26'
+summary: Mental health crisis in youth and adults is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - mental_health_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Mental health crisis in youth and adults is a specific manifestation of the
+    broader pressure.
+claim_ids:
+- claim.bay_of_plenty.health.mental_health_51
+- claim.bay_of_plenty.health.mental_health_52
+status: draft
+time_horizons: [decade, generation]

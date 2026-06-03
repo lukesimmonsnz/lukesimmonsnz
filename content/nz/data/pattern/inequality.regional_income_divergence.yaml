@@ -1,0 +1,34 @@
+id: pattern.inequality.regional_income_divergence
+title: Regional income divergence from national median
+theme: inequality
+summary: Per-capita income and median wage levels in most New Zealand regions diverge
+  significantly from the Auckland and Wellington metropolitan medians, reflecting
+  agglomeration effects and limited high-productivity sector presence outside the
+  main centres.
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- taranaki
+- marlborough
+- nelson
+- tasman
+- southland
+claim_ids:
+- claim.northland.economy.business_investment_claim1
+- claim.west_coast.economy.economic_2_claim
+- claim.gisborne.economy.economic_fragility_65
+- claim.southland.economy.agri_commodity_prevalence
+narrative:
+- heading: Divergence pattern
+  body: Regional median wages in Northland, Gisborne, and the West Coast are 15–25%
+    below the national median. The gap reflects both sector composition (primary industries,
+    low-productivity services) and the limited agglomeration benefits available in
+    small labour markets.
+- heading: Policy responses
+  body: Regional development policy has repeatedly attempted to address income divergence
+    through targeted investment and industry development. Sustained closing of the
+    gap requires either raising productivity in existing sectors or developing new
+    ones — both difficult without sustained Crown co-investment.
+status: draft
+updated: '2026-04-26'

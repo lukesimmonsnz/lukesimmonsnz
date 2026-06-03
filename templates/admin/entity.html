@@ -1,0 +1,63 @@
+{% extends "admin/base.html" %}
+{% block title %}edit {{ entity_id }}{% endblock %}
+{% block content %}
+<div class="crumbs">
+  <a href="{{ url_for('admin.home') }}">⌂</a> ›
+  <a href="{{ url_for('admin.region_view', region=region) }}">{{ region_label }}</a> ›
+  <a href="{{ url_for('admin.list_view', region=region, entity_type=entity_type) }}">{{ entity_type }}</a> ›
+  <strong>{{ entity_id }}</strong>
+</div>
+
+<h1>{{ entity_id }}</h1>
+
+{% if report %}
+  {% if report.status == 'ok' %}
+    <div class="banner ok">
+      ✓ Saved. lint clean ({{ report.lint_warnings|length }} warning(s)).
+      Render: {{ report.render_status }}. Git: {{ report.git_status }}.
+      File: <code>{{ report.file_path }}</code>.
+    </div>
+  {% elif report.status == 'lint_failed' %}
+    <div class="banner warn">
+      ⚠ Saved (soft-block) — write succeeded but invariants failed.
+      Git: {{ report.git_status }}. Fix and re-save.
+    </div>
+    <ul>
+      {% for e in report.lint_errors %}<li><code>{{ e }}</code></li>{% endfor %}
+    </ul>
+  {% elif report.status == 'schema_failed' %}
+    <div class="banner err">
+      ✗ Not saved — JSON Schema validation failed.
+    </div>
+    <ul>
+      {% for e in report.schema_errors %}<li><code>{{ e }}</code></li>{% endfor %}
+    </ul>
+  {% endif %}
+  {% if report.lint_warnings %}
+    <details>
+      <summary>{{ report.lint_warnings|length }} warning(s)</summary>
+      <ul>{% for w in report.lint_warnings %}<li><code>{{ w }}</code></li>{% endfor %}</ul>
+    </details>
+  {% endif %}
+{% endif %}
+
+<h2>Schema-driven form</h2>
+<p class="hint">
+  Generated from <code>content/_schema/{{ entity_type }}.schema.json</code> by
+  <code>schema_walker.schema_to_form</code>. Fields below are read-only previews
+  for v1 — edit the YAML pane underneath, which is the authoritative input.
+</p>
+{% include "admin/_form_preview.html" %}
+
+<h2>YAML</h2>
+<form method="post">
+  <textarea name="_yaml" rows="32" spellcheck="false">{{ raw_yaml }}</textarea>
+  <div class="toolbar">
+    <button type="submit">Save</button>
+    <button type="button" class="secondary" onclick="history.back()">Cancel</button>
+    <span class="hint">
+      Save runs: schema → atomic write → invariants → render → git commit.
+    </span>
+  </div>
+</form>
+{% endblock %}

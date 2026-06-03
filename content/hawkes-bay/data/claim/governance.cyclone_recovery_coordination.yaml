@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.governance.recovery_processing_60_90_days
+statement: Governance structures in Hawkes Bay are fragmented across multiple councils
+  and agencies, creating coordination challenges. Limited council capacity constrains
+  strategic planning, infrastructure delivery, and climate adaptation; funding gaps
+  prevent implementation of identified priorities.
+value: 75
+unit: days
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Hawke's Bay

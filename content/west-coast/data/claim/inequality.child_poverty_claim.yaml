@@ -1,0 +1,24 @@
+id: claim.west_coast.inequality.child_poverty_claim
+statement: Child poverty (living below 50% median household income) in West Coast
+  exceeds national average, with estimated 25-30 percent of children in low-income
+  households. Buller and Grey districts are particularly affected. School breakfast
+  programs and food insecurity referrals have doubled since 2016. Limited childcare
+  affordability restricts parental employment participation and intergenerational
+  mobility.
+value: 27
+unit: percent children in poverty (estimated)
+time_period: 2015-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.census_income_west_coast_2023
+- source.moe_west_coast_achievement_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: methodology.admin_count_v1
+notes: Child poverty rates derived from Census income tables; school program expansion
+  from MOE educational outcome data and council reports.

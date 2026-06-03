@@ -1,0 +1,12 @@
+id: driver.marlborough.education.ece_quality_gaps
+name: Early Childhood Education Quality Variation
+description: Early childhood education quality variation.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.education.tertiary_access
+claim_ids: []

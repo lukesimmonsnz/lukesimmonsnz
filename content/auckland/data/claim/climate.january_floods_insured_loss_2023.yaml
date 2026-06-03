@@ -1,0 +1,23 @@
+id: claim.auckland.climate.january_floods_insured_loss_2023
+statement: >
+  The January 2023 Auckland Anniversary Weekend floods produced
+  approximately NZD 1.78 billion of insured losses according to
+  Insurance Council of New Zealand industry-aggregated figures,
+  making it the most expensive insured weather event in Auckland's
+  history at time of publication and the second-most expensive
+  insured weather event in New Zealand history (surpassed only by
+  Cyclone Gabrielle's NZD 2.1 billion later that year).
+value: 1780
+unit: NZD millions (insured losses)
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.icnz_january_floods_2023
+scoped_to:
+  - auckland
+national_assertion: false
+region_mentions:
+  - auckland
+methodology_tag: methodology.admin_expenditure_v1

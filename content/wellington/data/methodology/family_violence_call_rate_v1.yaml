@@ -1,0 +1,7 @@
+id: methodology.family_violence_call_rate_v1
+name: "Family Violence Police Call Rate"
+version: 1
+kind: measurement
+applies_to: [Claim]
+discharged_by: "json_schema"
+description: "Number of family violence-related police calls per 100,000 population per year; lower bound on prevalence since most incidents are not reported."

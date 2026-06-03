@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.infrastructure.water_supply_interruption_weeks
+statement: Infrastructure in Hawkes Bay faces aging assets, deferred maintenance,
+  and resilience gaps. Funding constraints limit system upgrades for climate adaptation,
+  population growth, and earthquake/flood preparedness; coordination challenges delay
+  critical projects.
+value: 2.5
+unit: weeks
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Hawke's Bay

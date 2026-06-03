@@ -1,0 +1,21 @@
+id: camp.wellington.infrastructure.smart_network_monitoring
+name: Smart Network Monitoring and Demand Management
+theme: infrastructure
+core_claim: Real-time pressure monitoring and leak detection technology can reduce non-revenue water loss and delay the need
+  for capital renewal.
+flagship_moves:
+- District metering across all Wellington Water zones by 2027
+- AI-based burst prediction using pressure transient analysis
+- Tiered pricing to reduce per-capita consumption and peak demand
+tensions:
+- Technology investment may delay structural renewal, deferring risk rather than eliminating it
+- Tiered pricing without income exemptions is regressive
+addresses:
+- problem.wellington.infrastructure.water_resilience
+interventions:
+- description: Deploy district metering area (DMA) monitoring across all Wellington Water supply zones
+  state_variable: non_revenue_water_pct
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

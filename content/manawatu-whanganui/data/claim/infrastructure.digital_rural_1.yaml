@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.infrastructure.digital_rural_1
+statement: Rural digital infrastructure in Manawatū-Whanganui is fragmented. Broadband
+  availability (10 Mbps or higher) covers approximately 65-70% of rural areas; the
+  remaining 30-35% have unreliable 4G mobile or satellite-only options. Deployment
+  costs for fibre and fixed wireless access are high in dispersed communities; uptake
+  has been slower than urban areas. The National Broadband Initiative (2019-2028)
+  targets 99%+ coverage, but rural implementation lags. Digital divide disadvantages
+  rural businesses (agritech adoption, precision farming), remote workers, and education
+  access.
+value: 67.5
+unit: percent_rural_broadband_adequate
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_transport_mw_2023
+- source.horizons_data_services_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

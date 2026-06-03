@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.transport.port_congestion_intervention
+name: Intervention for port_congestion
+theme: transport
+core_claim: Targeted intervention on port_congestion will improve outcomes.
+flagship_moves:
+- Policy measure 1 for port_congestion
+- Policy measure 2 for port_congestion
+- Implementation mechanism for port_congestion
+tensions:
+- Trade-off A for port_congestion
+- Trade-off B for port_congestion
+addresses:
+- problem.bay_of_plenty.transport.port_congestion
+interventions:
+- description: Core intervention targeting port_congestion
+  state_variable: port_congestion_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

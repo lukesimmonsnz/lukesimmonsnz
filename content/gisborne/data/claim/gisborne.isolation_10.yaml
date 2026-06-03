@@ -1,0 +1,19 @@
+id: claim.gisborne.transport.isolation_10
+statement: Gisborne Airport operates daily Air NZ services to Auckland only. No regional
+  rail exists; Gisborne-to-Hawke's Bay rail was closed in 1942. East Cape communities
+  are entirely car-dependent or air-reliant.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

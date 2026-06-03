@@ -1,0 +1,36 @@
+id: problem.nelson.governance.capacity
+title: Council workforce and institutional knowledge gap
+theme: governance
+section: governance
+subpage: capacity
+parent: governance_root
+order: 4
+updated: '2026-04-26'
+summary: Nelson City Council manages a budget of more than $220 million for a population of around 55,000 with staffing roughly 8-12 percent below functional requirements in planning, resource management, and infrastructure delivery. Senior leadership turnover has been high (around 40 percent change between 2019 and 2024), and specialist roles (hydrogeologist, infrastructure engineer, transport planner) are chronically vacant.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - specialist_role_vacancy_rate
+  - senior_leadership_turnover_pct_5yr
+  - consultant_spend_share_of_personnel
+  inputs:
+  - salary_settings
+  - career_pathway_design
+  constraints:
+  - small_labour_market
+  - rates_funded_personnel_cost
+  feedback_loops:
+  - 'Turnover-cost feedback: vacancies raise consultant reliance, which crowds personnel budget, which limits salary competitiveness, which sustains turnover.'
+narrative:
+- heading: A council the size of a large company
+  body: Nelson City Council has the operational complexity of a large multi-utility but the staffing scale of a small one (claim.nelson.governance.capacity_claim). It cannot easily compete with metro councils on salary or with central agencies on career path, particularly for technical specialists.
+- heading: Knowledge loss and project delay
+  body: 'Each senior departure removes accumulated context about infrastructure history, consenting precedent, and iwi relationship. The visible result is project delay: planning workstreams stall mid-stream, and consultants are engaged at premium rates to rebuild knowledge that left with the previous staff member.'
+claim_ids:
+- claim.nelson.governance.capacity_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

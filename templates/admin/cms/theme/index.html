@@ -1,0 +1,236 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Theme customizer{% endblock %}
+{% set active = 'theme' %}
+{% set crumbs = [{'label': 'Theme'}] %}
+
+{% block extra_css %}
+.theme-grid { display: grid; grid-template-columns: 260px 1fr 360px; gap: 18px; }
+.preset-rail { padding: 14px; }
+.preset-rail h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #8a7a66; margin: 0 0 10px; font-weight: 500; }
+.preset-opt { display: block; padding: 12px 14px; margin: 6px 0; border-radius: 6px; cursor: pointer; border: 2px solid transparent; transition: all 0.12s; background: #fff; }
+.preset-opt:hover { background: #f5f1e8; }
+.preset-opt.active { border-color: #c4956a; background: #fdf4e8; }
+.preset-opt input { margin-right: 8px; }
+.preset-opt strong { font-size: 13px; }
+.preset-opt .meta { font-size: 11px; color: #8a7a66; margin-top: 4px; }
+.token-form { padding: 18px 22px; }
+.token-form h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #8a7a66; margin: 22px 0 10px; font-weight: 500; }
+.token-form h3:first-child { margin-top: 0; }
+.token-row { display: grid; grid-template-columns: 160px 1fr 50px; gap: 10px; align-items: center; padding: 5px 0; border-bottom: 0.5px solid #f0e8d8; }
+.token-row:last-child { border-bottom: none; }
+.token-row label { font-size: 12px; font-family: ui-monospace, monospace; color: #4b3f30; }
+.token-row .colour-input { display: flex; gap: 8px; align-items: center; }
+.token-row .swatch { display: inline-block; width: 26px; height: 26px; border-radius: 3px; border: 0.5px solid #d9d0bf; flex-shrink: 0; }
+.token-row input[type=text] { flex: 1; font-family: ui-monospace, monospace; font-size: 12px; padding: 4px 7px; }
+.token-row .reset-btn { font-size: 10px; padding: 3px 7px; background: transparent; border: 0.5px solid #d9d0bf; border-radius: 3px; cursor: pointer; color: #8a7a66; }
+.token-row .reset-btn:hover { background: #f5f1e8; color: #1a1613; }
+.live-preview-box { padding: 0; overflow: hidden; position: sticky; top: 24px; }
+.live-preview-box .pane-h { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #8a7a66; padding: 14px 18px 8px; font-weight: 500; }
+.preview-iframe-theme { width: 100%; border: none; height: 540px; background: #fff; border-top: 0.5px solid #d9d0bf; }
+.specimen { padding: 0; background: #fbf8f0; border-top: 0.5px solid #d9d0bf; padding: 18px; font-family: var(--preview-body, system-ui); }
+.specimen .h1 { font-family: var(--preview-heading, serif); font-size: 24px; line-height: 1.15; margin: 0 0 6px; color: var(--preview-fg, #1a1613); }
+.specimen .body { font-size: 13px; line-height: 1.55; color: var(--preview-fg, #1a1613); }
+.specimen .accent { color: var(--preview-accent, #8a5a2a); font-weight: 500; }
+{% endblock %}
+
+{% block head_actions %}
+<button class="btn btn-ghost" id="btn-revert">Revert</button>
+<button class="btn btn-secondary" id="btn-save">Save override</button>
+<button class="btn btn-primary" id="btn-publish">Publish theme.css</button>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">Theme customizer</h1>
+<p class="page-sub">Compose a preset $\Theta_p$ with a sparse override $\Delta$ to produce $\Theta_	ext{eff} = \Theta_p \oplus \Delta$. Empty values inherit from preset.</p>
+
+<div class="theme-grid">
+
+<div class="card preset-rail">
+<h3>Preset</h3>
+{% for p in known_presets %}
+<label class="preset-opt {% if p == active_preset %}active{% endif %}">
+<input type="radio" name="preset" value="{{ p }}" {% if p == active_preset %}checked{% endif %}>
+<strong>{{ p }}</strong>
+<div class="meta">
+{% if p == 'editorial' %}Cormorant + parchment · narrow column · sharp corners
+{% elif p == 'documentary' %}IBM Plex · dense grid · 4px base unit
+{% elif p == 'classic' %}Inter + Fraunces · current site palette{% endif %}
+</div>
+</label>
+{% endfor %}
+<label class="preset-opt {% if active_preset == 'custom' %}active{% endif %}">
+<input type="radio" name="preset" value="custom" {% if active_preset == 'custom' %}checked{% endif %}>
+<strong>custom</strong>
+<div class="meta">No preset · raw override only</div>
+</label>
+</div>
+
+<div class="card token-form">
+<h3>Color</h3>
+{% for k in ['primary','primary-fg','bg','fg','muted','accent','danger','success','surface-1','surface-2','border'] %}
+{% set v = (effective.color or {}).get(k, '') %}
+<div class="token-row">
+<label>color.{{ k }}</label>
+<div class="colour-input">
+<span class="swatch" style="background: {{ v }};"></span>
+<input type="color" value="{{ v if v.startswith('#') else '#000000' }}" data-token="color.{{ k }}" data-kind="color">
+<input type="text" value="{{ v }}" data-token="color.{{ k }}" data-kind="text">
+</div>
+<button class="reset-btn" data-reset="color.{{ k }}">reset</button>
+</div>
+{% endfor %}
+
+<h3>Typography</h3>
+{% for k in ['scale','font-family-body','font-family-heading','font-family-mono','line-height-body','line-height-heading','weight-body','weight-bold','weight-heading'] %}
+{% set v = (effective.typography or {}).get(k, '') %}
+<div class="token-row">
+<label>typography.{{ k }}</label>
+<input type="text" value="{{ v }}" data-token="typography.{{ k }}" data-kind="text">
+<button class="reset-btn" data-reset="typography.{{ k }}">reset</button>
+</div>
+{% endfor %}
+
+<h3>Spacing &amp; layout</h3>
+{% for k in ['unit'] %}
+{% set v = (effective.spacing or {}).get(k, '') %}
+<div class="token-row">
+<label>spacing.{{ k }}</label>
+<input type="text" value="{{ v }}" data-token="spacing.{{ k }}" data-kind="text">
+<button class="reset-btn" data-reset="spacing.{{ k }}">reset</button>
+</div>
+{% endfor %}
+{% for k in ['max-width','gutter','breakpoint-sm','breakpoint-md','breakpoint-lg'] %}
+{% set v = (effective.layout or {}).get(k, '') %}
+<div class="token-row">
+<label>layout.{{ k }}</label>
+<input type="text" value="{{ v }}" data-token="layout.{{ k }}" data-kind="text">
+<button class="reset-btn" data-reset="layout.{{ k }}">reset</button>
+</div>
+{% endfor %}
+
+<h3>Radius / Shadow / Motion</h3>
+{% for ns in ['radius','shadow','motion'] %}
+{% for k, v in (effective[ns] or {}).items() %}
+<div class="token-row">
+<label>{{ ns }}.{{ k }}</label>
+<input type="text" value="{{ v }}" data-token="{{ ns }}.{{ k }}" data-kind="text">
+<button class="reset-btn" data-reset="{{ ns }}.{{ k }}">reset</button>
+</div>
+{% endfor %}
+{% endfor %}
+</div>
+
+<div class="card live-preview-box">
+<div class="pane-h">Live preview <span style="margin-left:auto;font-size:10px;color:#8a7a66;">δ overlay sandbox</span></div>
+<div class="specimen" id="specimen">
+<div class="h1">A page rendered with the active theme</div>
+<div class="body">
+This panel shows how the <span class="accent">classic preset</span> renders headings,
+body text, and accents. Adjust tokens on the left and click Save to update.
+</div>
+<div style="margin-top:14px;display:flex;gap:8px;">
+<button class="btn btn-primary" style="background:var(--preview-primary, #8a5a2a);border-color:var(--preview-primary, #8a5a2a);">Primary action</button>
+<button class="btn btn-secondary">Secondary</button>
+</div>
+</div>
+<iframe class="preview-iframe-theme" src="/" id="theme-iframe-preview"></iframe>
+</div>
+
+</div>
+
+<details style="margin-top:24px;max-width:900px;">
+<summary style="cursor:pointer;color:#8a7a66;font-size:12px;">Raw override JSON</summary>
+<pre style="background:#fff;border:0.5px solid #d9d0bf;border-radius:6px;padding:12px;font-size:12px;font-family:ui-monospace,monospace;overflow-x:auto;margin-top:8px;">{{ override_json }}</pre>
+</details>
+
+<script>
+function rebuildSpecimen() {
+  var byTok = {};
+  document.querySelectorAll('input[data-kind=text][data-token]').forEach(function(i){
+    if (i.value) byTok[i.dataset.token] = i.value;
+  });
+  var s = document.getElementById('specimen');
+  s.style.setProperty('--preview-body', byTok['typography.font-family-body'] || '');
+  s.style.setProperty('--preview-heading', byTok['typography.font-family-heading'] || '');
+  s.style.setProperty('--preview-fg', byTok['color.fg'] || '');
+  s.style.setProperty('--preview-accent', byTok['color.accent'] || byTok['color.primary'] || '');
+  s.style.setProperty('--preview-primary', byTok['color.primary'] || '');
+  s.style.background = byTok['color.bg'] || '';
+}
+rebuildSpecimen();
+
+document.querySelectorAll('input[name=preset]').forEach(function(r) {
+  r.addEventListener('change', function() {
+    fetch({{ url_for('cms.api_theme_preset')|tojson }}, {
+      method: 'PUT', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name: r.value})
+    }).then(function(resp) {
+      if (resp.ok) { window.toast('Preset switched · ' + r.value); setTimeout(function(){ location.reload(); }, 600); }
+      else window.toast('Preset switch failed');
+    });
+  });
+});
+
+document.querySelectorAll('input[type=color]').forEach(function(c) {
+  var sib = document.querySelector('input[type=text][data-token="' + c.dataset.token + '"][data-kind=text]');
+  if (sib) c.addEventListener('input', function(){ sib.value = c.value; rebuildSpecimen(); refreshSwatch(c.dataset.token); });
+});
+document.querySelectorAll('input[data-kind=text][data-token]').forEach(function(i){
+  i.addEventListener('input', function(){ rebuildSpecimen(); refreshSwatch(i.dataset.token); });
+});
+function refreshSwatch(tok) {
+  var v = (document.querySelector('input[data-kind=text][data-token="' + tok + '"]') || {}).value;
+  var swatch = document.querySelector('input[data-token="' + tok + '"][data-kind=color]');
+  if (swatch && v) swatch.previousElementSibling.style.background = v;
+}
+
+document.querySelectorAll('.reset-btn').forEach(function(b) {
+  b.addEventListener('click', function() {
+    var tok = b.dataset.reset;
+    var inp = document.querySelector('input[data-kind=text][data-token="' + tok + '"]');
+    if (inp) inp.value = '';
+    rebuildSpecimen();
+    window.toast('reset ' + tok);
+  });
+});
+
+document.getElementById('btn-save').addEventListener('click', function() {
+  var override = {};
+  document.querySelectorAll('input[data-kind=text][data-token]').forEach(function(inp) {
+    if (!inp.value) return;
+    var parts = inp.dataset.token.split('.');
+    var ns = parts[0], key = parts.slice(1).join('.');
+    if (!override[ns]) override[ns] = {};
+    override[ns][key] = inp.value;
+  });
+  fetch({{ url_for('cms.api_theme_override')|tojson }}, {
+    method: 'PUT', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({value: override})
+  }).then(function(r){ return r.json(); }).then(function(j){
+    if (j.ok) window.toast('Override saved');
+    else window.toast('Save failed');
+  });
+});
+
+document.getElementById('btn-publish').addEventListener('click', function() {
+  fetch({{ url_for('cms.api_theme_publish')|tojson }}, {method: 'POST'})
+    .then(function(r){ return r.json(); }).then(function(j){
+      if (j.ok) {
+        window.toast('Published · theme.css regenerated');
+        var ifr = document.getElementById('theme-iframe-preview');
+        ifr.src = ifr.src.split('?')[0] + '?_=' + Date.now();
+      } else window.toast('Publish failed');
+    });
+});
+
+document.getElementById('btn-revert').addEventListener('click', function() {
+  if (!confirm('Clear all override values and reload?')) return;
+  document.querySelectorAll('input[data-kind=text][data-token]').forEach(function(i){ i.value = ''; });
+  fetch({{ url_for('cms.api_theme_override')|tojson }}, {
+    method: 'PUT', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({value: {}})
+  }).then(function(){ location.reload(); });
+});
+</script>
+
+{% endblock %}

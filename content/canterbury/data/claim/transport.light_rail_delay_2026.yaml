@@ -1,0 +1,20 @@
+id: claim.canterbury.transport.light_rail_delay_2026
+statement: Christchurch Light Rail project is delayed beyond original 2024 completion;
+  construction now expected 2026-2028. Cost escalation ($1.5B+) and procurement delays
+  frustrate transport mode-shift goals; project remains critical to congestion and
+  carbon reduction.
+value: 2035
+unit: estimated completion year
+time_period: '2022'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_transport_strategy_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

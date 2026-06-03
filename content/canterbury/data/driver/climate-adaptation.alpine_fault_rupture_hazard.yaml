@@ -1,0 +1,11 @@
+id: driver.canterbury.climate.alpine_fault_rupture_hazard
+name: Alpine Fault Seismic Hazard (M7+ probability ~15% in 50yr)
+description: Alpine Fault Seismic Hazard (M7+ probability ~15% in 50yr)
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.climate.alpine_fault_earthquake
+claim_ids: []

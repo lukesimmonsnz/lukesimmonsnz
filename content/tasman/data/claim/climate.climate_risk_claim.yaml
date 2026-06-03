@@ -1,0 +1,21 @@
+id: claim.tasman.climate.climate_risk_claim
+statement: Motueka and Waimea valley floodplains face elevated flood risk from concentrated
+  rainfall events; 2022 and 2023 experienced multiple heavy rain events exceeding
+  100mm in 24 hours. TDC has upgraded drainage and stormwater infrastructure in Richmond
+  and Motueka to 1-in-50-year standard.
+value: 100
+unit: mm rainfall (24-hour event)
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_district_council_annual_plan_2024
+- source.tasman_housing_demand_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

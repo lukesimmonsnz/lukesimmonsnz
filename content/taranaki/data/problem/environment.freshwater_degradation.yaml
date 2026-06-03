@@ -1,0 +1,29 @@
+id: problem.taranaki.environment.freshwater_degradation
+title: Freshwater degradation from dairy farming
+theme: environment
+section: environment
+subpage: freshwater_degradation
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Taranaki rivers and streams are polluted by dairy farm runoff. Nitrogen and
+  E. coli levels exceed safe limits.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - freshwater_degradation_index
+  inputs:
+  - freshwater_degradation_input_1
+  constraints:
+  - freshwater_degradation_constraint
+  feedback_loops:
+  - 'Feedback: freshwater_degradation'
+narrative:
+- heading: Freshwater degradation from dairy farming in Taranaki
+  body: Taranaki rivers and streams are polluted by dairy farm runoff. Nitrogen and
+    E. coli levels exceed safe limits.
+claim_ids:
+- claim.taranaki.environment.freshwater_degradation_01
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,27 @@
+id: camp.otago.housing.upzone_supply
+name: Upzoning and Intensification
+theme: housing
+core_claim: Upzoning and medium-density development reduces housing scarcity in Queenstown
+  and Dunedin.
+flagship_moves:
+- Upzone Queenstown CBD and arterial corridors to 6+ storeys
+- Permit medium-density (4-6 units) in all residential zones within 800m transit stops
+- Remove car-parking minimums
+tensions:
+- Fault-zone and liquefaction risk in Queenstown increases with density
+- Dunedin heritage preservation conflicts with densification
+addresses:
+- problem.otago.housing.housing_market
+- problem.otago.housing.queenstown_affordability
+interventions:
+- description: Rezone Queenstown CBD and lakefront precincts for 8+ storey mixed-use
+  state_variable: zoned_capacity
+  constraint_relaxed: height_limit
+  expected_sign: +
+- description: Permit medium-density (4-6 unit) developments in low-density residential
+  state_variable: zoned_capacity
+  constraint_relaxed: building_form_limit
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

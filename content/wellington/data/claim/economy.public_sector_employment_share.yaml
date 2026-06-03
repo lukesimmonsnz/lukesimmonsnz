@@ -1,0 +1,22 @@
+id: claim.wellington.economy.public_sector_employment_share
+statement: Approximately 28% of Wellington's employed workforce is in the public sector
+  (central government, state-owned enterprises, and local government combined), compared
+  to approximately 16% nationally — reflecting Wellington's role as the national capital
+  and seat of government.
+value: 28
+unit: percent of employed workforce in public sector
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+- source.treasury_economic_outlook_2024
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: Estimate based on Census 2023 industry classification; public sector definition
+  includes central government, education, health, and local government.

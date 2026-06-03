@@ -1,0 +1,23 @@
+id: claim.otago.transport.queenstown_congestion_prevalence
+statement: 'Queenstown congestion is endemic, particularly on SH6A Frankton corridor
+  (link to Wanaka/Arrow/Arrowtown): summer visitor season and daily commutes converge;
+  intersection capacity (Milford/Mall St junction) frequently gridlocked (4pm-6pm
+  peak); parking availability critical for CBD retail/hospitality. Visitor vehicle
+  share (40-50% of traffic) high during peak season; public transport mode share low
+  (3-5%); active transport infrastructure (cycling) developing but limited. Airport
+  access (15km Frankton direction) generates constant traffic flow.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

@@ -76,3 +76,4 @@ claim_ids:
   - claim.auckland.environment.native_species_decline
   - claim.auckland.environment.tree_canopy_inequity
 status: draft
+time_horizons: [generation, century]

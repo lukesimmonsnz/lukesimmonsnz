@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.infrastructure.infrastructure_pressure_growth
+name: Driver for infrastructure_pressure
+description: "This driver exacerbates the infrastructure_pressure pressure in Bay\
+  \ of Plenty \u2014 Te Moana-a-Toi."
+theme: infrastructure
+consensus: contested
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.infrastructure.infrastructure_pressure
+claim_ids:
+- claim.bay_of_plenty.infrastructure.infrastructure_pressure_17

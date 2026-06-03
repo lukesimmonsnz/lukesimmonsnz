@@ -1,0 +1,12 @@
+id: driver.marlborough.environment.urban_expansion
+name: Urban Expansion And Loss Of Productive Land
+description: Urban expansion and loss of productive land.
+theme: environment
+consensus: mostly-agreed
+category: physical
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.health.chronic_disease
+claim_ids: []

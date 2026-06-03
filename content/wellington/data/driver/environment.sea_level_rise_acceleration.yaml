@@ -1,0 +1,14 @@
+id: driver.wellington.environment.sea_level_rise_acceleration
+name: Sea-level rise under climate change
+description: Global sea-level rise driven by thermal expansion and ice melt is projected to raise Wellington harbour baseline
+  levels by 0.4–1.0 m by 2100, accelerating coastal erosion and increasing storm-surge overtopping frequency.
+theme: environment
+consensus: consensus
+category: climate
+timescale: long
+scope: global
+problem_ids:
+- problem.wellington.environment.coastal_hazard
+- problem.wellington.climate.sea_level_rise
+claim_ids:
+- claim.wellington.environment.sea_level_projection_2100

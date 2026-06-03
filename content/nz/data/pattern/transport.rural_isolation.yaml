@@ -1,0 +1,32 @@
+id: pattern.transport.rural_isolation
+title: Rural transport isolation and access inequity
+theme: transport
+summary: Rural and remote communities across New Zealand face severe transport isolation
+  — poor road quality, zero public transport, and long distances to services — creating
+  compounding social and economic disadvantage.
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- southland
+- taranaki
+- hawkes-bay
+- manawatu-whanganui
+claim_ids:
+- claim.northland.transport.freight_connectivity_claim1
+- claim.west_coast.transport.connectivity_2_claim
+- claim.tasman.transport.connectivity_2_claim
+- claim.gisborne.economy.economic_fragility_65
+narrative:
+- heading: Scale
+  body: Transport isolation is most acute in Northland, Gisborne, and the West Coast,
+    where state highway quality is poor, alternative modes absent, and emergency response
+    times long. But the pattern recurs wherever population density falls below the
+    threshold for viable services.
+- heading: Compounding effects
+  body: 'Transport isolation compounds other disadvantages: it raises costs for health
+    access, reduces employment options, increases educational disengagement, and isolates
+    elderly and disabled people. It is both a cause and a consequence of regional
+    deprivation.'
+status: draft
+updated: '2026-04-26'

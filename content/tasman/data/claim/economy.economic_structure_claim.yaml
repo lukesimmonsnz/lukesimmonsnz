@@ -1,0 +1,21 @@
+id: claim.tasman.economy.economic_structure_claim
+statement: 'Tasman''s economy rests on four primary pillars: horticulture (22% of
+  regional GDP), hops and viticulture (8%), tourism and recreation (11%), and aquaculture/forestry
+  (6%). Manufacturing and services comprise 45%; unemployment stands at 3.1% (2023),
+  below national average of 3.8%.'
+value: 3.1
+unit: percent unemployment
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

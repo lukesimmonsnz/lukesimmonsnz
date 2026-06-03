@@ -1,28 +1,35 @@
 id: claim.auckland.transport.pt_fare_affordability
-statement: >
-  Public transport fares in Auckland consume a higher proportion of
-  low-income household budgets than in comparable cities with fully
-  integrated fare systems. The introduction of AT HOP and integrated
-  ticketing has improved convenience, but flat or near-flat fare
-  structures mean longer trips — disproportionately made by lower-income
-  households in outer suburbs — are more expensive in absolute terms,
-  creating a regressivity that penalises the households most dependent
-  on PT.
+statement: 'Auckland public transport fares impose a structurally regressive burden
+  on outer-suburban, lower-income households. An AT HOP return trip from Papakura
+  or Manukau to the CBD costs approximately $10-14 per day (2023 fares); for a minimum-wage
+  worker earning approximately $22.70/hr gross, that represents roughly 7-9% of gross
+  daily earnings consumed by commuting alone before food, housing, or childcare. The
+  Ministry of Transport Household Travel Survey consistently shows lower-income households
+  in outer Auckland are more PT-dependent yet face the highest absolute fares. Following
+  the lapse of the half-price public transport subsidy in 2023, outer-zone AT HOP
+  fares reverted to pre-subsidy levels, disproportionately affecting the Papakura,
+  Manukau, Henderson-Massey, and Pukekohe corridors where car ownership rates are
+  lowest relative to population.
+
+  '
 value: null
 unit: null
-time_period: "2021-2023"
+time_period: 2021-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.at_patronage_data_2023
-  - source.ministry_of_transport_hts_2023
+- source.at_patronage_data_2023
+- source.ministry_of_transport_hts_2023
+- source.msd_household_incomes_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  The fare affordability claim is descriptive and comparative. A quantitative
-  version would require a fare-as-share-of-income analysis by decile,
-  which has not been published in a citable form at time of authoring.
+- auckland
+notes: 'Outer-zone return-trip cost estimated from AT published fare tables (2023);
+  minimum-wage figure from Employment NZ April 2023 rate $22.70/hr. A formally published
+  fare-as-share-of-income analysis by decile has not been released at time of authoring;
+  the percentage range is a derived estimate, not a direct citation.
+
+  '

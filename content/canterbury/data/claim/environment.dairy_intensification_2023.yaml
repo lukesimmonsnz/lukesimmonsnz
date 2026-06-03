@@ -1,0 +1,23 @@
+id: claim.canterbury.environment.dairy_intensification_2023
+statement: 'Canterbury dairy herd reached 650,000 head by 2023, representing the largest
+  concentration of dairy cattle in any NZ region. This intensification, accelerated
+  by irrigation expansion since 1995 (Central Plains Water, Rakaia, Rangitata schemes),
+  has driven sustained agricultural GDP but created corresponding nitrogen loading:
+  70% of Canterbury''s regional nitrogen load derives from dairy grazing and effluent.
+  Milk production now constitutes ~35% of Canterbury''s agricultural output by value.'
+value: 650000
+unit: dairy cattle
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_cwms_2022
+- source.lincoln_university_research_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

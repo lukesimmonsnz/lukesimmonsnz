@@ -1,0 +1,21 @@
+id: claim.tasman.environment.water_quality_claim
+statement: Waimea Aquifer Study (2023) reports nitrate concentrations in shallow monitoring
+  wells averaging 4.2 mg/L (safe drinking water <11.3 mg/L) but rising 0.3 mg/L annually.
+  Horticultural intensification and high stocking density are primary drivers; TDC
+  is piloting nutrient management zones in Waimea Plains.
+value: 4.2
+unit: mg/L nitrate concentration
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.waimea_aquifer_study_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

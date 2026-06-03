@@ -1,0 +1,29 @@
+id: problem.taranaki.climate.climate_emissions
+title: Regional greenhouse gas emissions and reduction
+theme: climate-adaptation
+section: climate
+subpage: climate_emissions
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Taranaki emissions are driven by oil/gas production, methanol synthesis,
+  and agricultural emissions. Emissions are 2.5x national per-capita average.
+manifests_in:
+- taranaki
+systems_model:
+  state_variables:
+  - climate_emissions_index
+  inputs:
+  - climate_emissions_input_1
+  constraints:
+  - climate_emissions_constraint
+  feedback_loops:
+  - 'Feedback: climate_emissions'
+narrative:
+- heading: Regional greenhouse gas emissions and reduction in Taranaki
+  body: Taranaki emissions are driven by oil/gas production, methanol synthesis, and
+    agricultural emissions. Emissions are 2.5x national per-capita average.
+claim_ids:
+- claim.taranaki.climate.climate_emissions_01
+status: draft
+time_horizons: [generation, century]

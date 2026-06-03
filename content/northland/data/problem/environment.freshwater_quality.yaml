@@ -1,0 +1,34 @@
+id: problem.northland.environment.freshwater_quality
+title: Freshwater quality degradation in catchments
+theme: environment
+section: environment
+subpage: freshwater-quality
+parent: problem.northland.environment.northland_environment_pressures
+order: 3
+updated: '2026-04-26'
+summary: Pastoral intensification and land-use change have degraded water quality
+  in Northland's rivers and harbours.
+manifests_in:
+- northland
+systems_model:
+  state_variables:
+  - environment_pressure_index
+  inputs:
+  - policy_intervention
+  - external_shock
+  constraints:
+  - fiscal_capacity
+  feedback_loops:
+  - 'Feedback: deteriorating freshwater quality conditions reinforce systemic disadvantage.'
+narrative:
+- heading: Scale and distribution
+  body: Pastoral intensification and land-use change have degraded water quality in
+    Northland's rivers and harbours.
+- heading: Key drivers
+  body: The primary drivers of freshwater quality degradation in catchments are structural
+    and systemic, requiring both investment and institutional reform.
+claim_ids:
+- claim.northland.environment.freshwater_quality_claim1
+- claim.northland.environment.freshwater_quality_claim2
+status: draft
+time_horizons: [generation, century]

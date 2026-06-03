@@ -1,0 +1,30 @@
+id: problem.marlborough.economy.wine_economy
+title: Wine Industry and Economic Dependence
+theme: economy
+section: economy
+subpage: wine_economy
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wine industry dominance; climate vulnerability; export price volatility;
+  aquaculture growth.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Wine industry dominance; climate vulnerability; export price volatility; aquaculture
+    growth.
+claim_ids:
+- claim.marlborough.economy.wine_economy_placeholder
+status: draft
+time_horizons: [decade, generation]

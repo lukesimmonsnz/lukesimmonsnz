@@ -1,0 +1,20 @@
+id: camp.gisborne.climate.erosion_flooding_approach
+name: Strategic approach for erosion_flooding
+theme: climate-adaptation
+core_claim: Strategic intervention on erosion_flooding will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting erosion_flooding
+- Priority action 2 targeting erosion_flooding
+- Institutional coordination mechanism for erosion_flooding
+tensions:
+- 'Tension 1: erosion_flooding'
+- 'Tension 2: erosion_flooding'
+addresses:
+- problem.gisborne.climate.erosion_flooding
+interventions:
+- description: Primary intervention for erosion_flooding
+  state_variable: erosion_flooding_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

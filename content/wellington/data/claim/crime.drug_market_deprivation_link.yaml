@@ -1,0 +1,20 @@
+id: claim.wellington.crime.drug_market_deprivation_link
+statement: Drug market activity in Wellington is most strongly associated with areas
+  of concentrated deprivation, where limited legitimate economic opportunity and high
+  social need create conditions for both drug supply and demand.
+value: null
+unit: null
+time_period: 2020-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.stats_nz_deprivation_2018
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

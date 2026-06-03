@@ -1,0 +1,11 @@
+id: driver.canterbury.housing.govt_employment_concentration
+name: Government Employment Sector Concentration
+description: Government Employment Sector Concentration
+theme: housing
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.housing.market
+claim_ids: []

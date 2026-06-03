@@ -1,0 +1,21 @@
+id: camp.wellington.environment.harbour_ecology_restoration
+name: Harbour Ecology and Seagrass Restoration
+theme: environment
+core_claim: Active restoration of seagrass beds and intertidal zones will rebuild harbour ecology beyond just reducing pollution
+  inputs.
+flagship_moves:
+- Seagrass restoration trials in Evans Bay and Porirua Harbour
+- Expand marine reserve zones in Wellington Harbour
+- Community-led predator control on harbour-edge restoration areas
+tensions:
+- Ecological restoration is ineffective while CSO contamination continues
+- Marine reserve expansion creates tensions with recreational fishing communities
+addresses:
+- problem.wellington.environment.harbour_health
+interventions:
+- description: Fund 5-year seagrass restoration programme across 3 Evans Bay and Porirua Harbour sites
+  state_variable: harbour_seagrass_coverage_ha
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

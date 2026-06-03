@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.environment.water_quality
+title: Freshwater and coastal water quality decline in Bay of Plenty — Te Moana-a-Toi
+theme: environment
+section: environment
+subpage: water_quality
+parent: problem.bay_of_plenty.environment.environmental_pressure
+order: 14
+updated: '2026-04-26'
+summary: Freshwater and coastal water quality decline is a sub-dimension of the regional
+  pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - water_quality_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Freshwater and coastal water quality decline is a specific manifestation of
+    the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.environment.water_quality_27
+- claim.bay_of_plenty.environment.water_quality_28
+status: draft
+time_horizons: [generation, century]

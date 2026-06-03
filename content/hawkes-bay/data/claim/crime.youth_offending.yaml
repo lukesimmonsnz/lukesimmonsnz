@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.crime.youth_offending_35_percent_above_national
+statement: Youth offending rates in Hawke's Bay are 35% above the national average,
+  with Māori youth significantly overrepresented. Limited employment pathways, school
+  disengagement, substance abuse, and family violence exposure drive youth into the
+  justice system; rehabilitation and diversion programmes face resource constraints
+  in Hastings and Wairoa.
+value: 35
+unit: percent above national
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1

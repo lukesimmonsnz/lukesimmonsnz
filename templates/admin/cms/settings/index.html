@@ -1,0 +1,47 @@
+{% extends "admin/cms/_shell.html" %}
+{% block title %}Settings{% endblock %}
+{% set active = 'settings' %}
+{% set crumbs = [{'label': 'Settings'}] %}
+
+{% block extra_css %}
+.group-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.group-card { display: block; background: #fff; border: 0.5px solid #d9d0bf; border-radius: 8px; padding: 18px 22px; text-decoration: none; color: inherit; transition: all 0.12s; }
+.group-card:hover { border-color: #c4956a; transform: translateY(-1px); text-decoration: none; }
+.group-card h3 { margin: 0 0 6px; font-size: 14px; font-weight: 500; color: #1a1613; }
+.group-card .desc { font-size: 12px; color: #8a7a66; }
+.group-card .keys { font-family: ui-monospace, monospace; font-size: 11px; color: #4b3f30; margin-top: 10px; padding-top: 10px; border-top: 0.5px solid #ece5d4; }
+{% endblock %}
+
+{% block head_actions %}
+<button class="btn btn-primary" id="btn-publish-all">Publish all to disk</button>
+{% endblock %}
+
+{% block content %}
+<h1 class="page-h">Settings</h1>
+<p class="page-sub">Five groups stored as JSON blobs in <code>cms.db.settings</code>; published atomically to <code>instance/site_settings.json</code> + regenerates <code>static/theme.css</code>.</p>
+
+<div class="group-grid">
+{% for g in groups %}
+<a class="group-card" href="{{ url_for('cms.settings_group', group=g) }}">
+<h3>{{ labels[g] }}</h3>
+<div class="desc">
+{% if g == 'site' %}Identity — site name, tagline, URL, favicon.
+{% elif g == 'nav' %}Top navigation menu.
+{% elif g == 'theme' %}Token override (composed with active preset).
+{% elif g == 'contact' %}Contact form Turnstile + submit URL.
+{% elif g == 'footer' %}Copyright + social links.{% endif %}
+</div>
+<div class="keys">{{ snapshot[g].keys()|list|join(', ') if snapshot[g] is mapping else '(list)' }}</div>
+</a>
+{% endfor %}
+</div>
+
+<script>
+document.getElementById('btn-publish-all').addEventListener('click', function() {
+  fetch({{ url_for('cms.api_settings_publish')|tojson }}, {method: 'POST'})
+    .then(function(r){ return r.json(); }).then(function(j){
+      window.toast(j.ok ? 'Published to ' + j.theme_css : 'Publish failed');
+    });
+});
+</script>
+{% endblock %}

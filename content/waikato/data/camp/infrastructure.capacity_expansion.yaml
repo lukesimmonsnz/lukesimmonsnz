@@ -1,0 +1,19 @@
+id: camp.waikato.infrastructure.capacity_expansion
+name: Service capacity expansion
+theme: infrastructure
+core_claim: Service capacity expansion is a key strategy for addressing regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement service capacity expansion
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

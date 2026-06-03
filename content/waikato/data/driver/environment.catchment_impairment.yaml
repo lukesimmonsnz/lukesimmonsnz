@@ -1,0 +1,10 @@
+id: driver.waikato.environment.catchment_impairment
+name: Catchment impairment and runoff
+description: Catchment impairment and runoff in the regional context.
+theme: environment
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

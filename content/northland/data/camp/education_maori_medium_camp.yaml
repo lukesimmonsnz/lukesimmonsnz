@@ -1,0 +1,25 @@
+id: camp.northland.education.maori_medium_camp
+name: Kura kaupapa and te reo Māori investment
+theme: education
+core_claim: Investing in Māori-medium education builds language revitalisation alongside
+  stronger educational outcomes for Māori learners.
+flagship_moves:
+- Increase per-pupil funding for kura kaupapa to parity with mainstream
+- Fund te reo Māori teacher training scholarships in Northland
+- Support wānanga expansion to improve regional tertiary access
+tensions:
+- Shortage of qualified kaiako constrains expansion pace
+- Curriculum alignment between Māori and mainstream creates transition barriers
+- Parents face choice complexity between medium options
+interventions:
+- description: Increase per-pupil funding for kura kaupapa to parity with mainstream
+  state_variable: education_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.education.northland_education_inequity
+- problem.northland.education.school_attendance
+- problem.northland.education.tertiary_access
+- problem.northland.education.maori_education
+applicable_in:
+- northland
+tensions_with: []

@@ -1,0 +1,13 @@
+id: driver.gisborne.housing.housing_shortage_escalation
+name: Driver escalating housing_shortage
+description: "This driver exacerbates the housing_shortage challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: housing
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.gisborne.housing.housing_shortage
+claim_ids:
+- claim.gisborne.housing.housing_shortage_01

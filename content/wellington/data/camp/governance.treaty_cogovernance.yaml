@@ -1,0 +1,22 @@
+id: camp.wellington.governance.treaty_cogovernance
+name: Treaty Co-Governance Implementation
+theme: governance
+core_claim: Meaningful Treaty co-governance with Ngāti Toa, Te Ātiawa, and other mana whenua across Wellington's resource
+  and planning decisions fulfils Treaty obligations and improves outcomes.
+flagship_moves:
+- Establish statutory co-governance arrangements for Wellington Harbour under RMA
+- Mana whenua seats on Wellington Water governance board
+- Treaty audit of all Wellington City Council bylaws and planning instruments
+tensions:
+- Co-governance raises questions about democratic accountability in a one-person-one-vote framework
+- Multiple iwi with overlapping rohe in Wellington creates complexity in determining mana whenua representation
+addresses:
+- problem.wellington.governance.treaty_co_governance
+interventions:
+- description: Establish Wellington Harbour co-governance entity with equal mana whenua and council representation under RMA
+    s.33
+  state_variable: treaty_cogovernance_implementation_score
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

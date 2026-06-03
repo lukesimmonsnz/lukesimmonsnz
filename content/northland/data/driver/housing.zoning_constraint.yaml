@@ -1,0 +1,16 @@
+id: driver.northland.housing.zoning_constraint
+name: Restrictive residential zoning and planning rules
+description: Zoning restrictions and planning rules limit residential density and
+  supply response to demand in Northland.
+theme: housing
+consensus: consensus
+category: regulatory
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.housing.affordability
+- problem.northland.housing.land_supply
+- problem.northland.housing.homelessness
+- problem.northland.housing.rental_market
+claim_ids:
+- claim.northland.housing.affordability_claim1

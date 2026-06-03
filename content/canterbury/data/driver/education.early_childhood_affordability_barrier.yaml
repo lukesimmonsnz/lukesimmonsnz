@@ -1,0 +1,11 @@
+id: driver.canterbury.education.early_childhood_affordability_barrier
+name: ECE Affordability Barrier in High-Deprivation Families
+description: ECE Affordability Barrier in High-Deprivation Families
+theme: education
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.education.early_childhood
+claim_ids: []

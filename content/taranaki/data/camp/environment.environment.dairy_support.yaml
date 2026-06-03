@@ -1,0 +1,22 @@
+id: camp.taranaki.environment.environment.dairy_support
+name: Dairy sector environmental support
+theme: environment
+core_claim: Dairy sector environmental support addresses freshwater_degradation.
+flagship_moves:
+- Implement Dairy sector environmental support
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.environment.freshwater_degradation
+- problem.taranaki.environment.coastal_ecology
+- problem.taranaki.environment.dairy_runoff
+- problem.taranaki.environment.emissions
+interventions:
+- description: Dairy sector environmental support action
+  state_variable: environment.dairy_support_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

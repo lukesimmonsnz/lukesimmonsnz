@@ -1,0 +1,47 @@
+id: problem.canterbury.health.health_outcomes
+title: Canterbury Health Outcomes & System Access
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury''s health outcomes are mixed: life expectancy is near NZ average
+  overall but varies 7+ years by deprivation decile. Chronic disease prevalence (type
+  2 diabetes, obesity, cardiovascular) is rising. Primary care is fragmented; secondary
+  care (especially mental health) has significant waitlists. Rural and provincial
+  areas face recruitment and retention challenges.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - life_expectancy_by_deprivation_decile
+  - chronic_disease_prevalence_obesity_diabetes
+  - mental_health_service_utilization_rate
+  - primary_care_access_wait_time
+  - rural_gp_vacancy_rate
+  inputs:
+  - deprivation_concentration
+  - lifestyle_risk_factors
+  - health_service_funding
+  constraints:
+  - health_workforce_supply
+  - health_service_geography
+  - preventive_care_uptake
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury health outcomes & system access.
+narrative:
+- heading: Deprivation-driven health inequities
+  body: 'Life expectancy in East Christchurch (decile 9-10) is 70-72 years; in Merivale/Fendalton
+    (decile 1-3), it exceeds 81 years. Type 2 diabetes prevalence is 2.5x higher in
+    Māori/Pacific populations. Mental health service access times are 8-12 weeks for
+    counseling (specialist 16+ weeks).
+
+    '
+claim_ids:
+- claim.canterbury.health.life_expectancy_deprivation_gap_2023
+- claim.canterbury.health.mental_health_waitlist_2024
+status: draft
+time_horizons: [decade, generation]

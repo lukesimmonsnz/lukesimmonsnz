@@ -1,0 +1,22 @@
+id: claim.nelson.education.tertiary_access_claim
+statement: Tertiary access in Nelson is supported by the Nelson Marlborough Institute
+  of Technology (NMIT, est. 1904), offering level 3-7 qualifications in trades, hospitality,
+  nursing, and applied technology to 4,200+ enrolments (full-time and part-time).
+  However, only 32% of Nelson secondary leavers progress directly to tertiary education,
+  vs. 48% nationally. Students frequently leave the region for university (Victoria,
+  Otago, Massey), with limited return-to-work pathways.
+value: 32
+unit: percent progressing directly to tertiary
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_nelson_achievement_2023
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

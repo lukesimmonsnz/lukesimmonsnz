@@ -1,0 +1,21 @@
+id: claim.southland.inequality.rural_isolation_trend
+statement: Rural isolation in Southland is increasing. Population drift to Invercargill
+  accelerates as schools consolidate and farm numbers decline. Broadband rollout improving
+  access but not fully compensating for geographic remoteness. Healthcare workforce
+  shortages increase rural service vulnerability; GP locum dependence high. Community
+  resilience threatened by outmigration.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

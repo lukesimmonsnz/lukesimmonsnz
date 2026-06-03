@@ -1,0 +1,22 @@
+id: claim.northland.health.mental_health_claim1
+statement: 'Mental health service access constrained by geographic isolation and staffing
+  shortage: DHB funds ~6-8 FTE psychiatrists for ~170k population (vs. national ratio
+  ~1 per 100k, suggesting need for 1.7 FTE). Crisis response time in Far North 2-4
+  hours (vs. urban <30 min). Waitlist for community mental health: 8-12 weeks (national
+  6-8 weeks). Kauri dieback-era research documents kauri dieback-associated ecological
+  grief among Maori communities; mental health services lack specific cultural protocols.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

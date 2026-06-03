@@ -1,0 +1,24 @@
+id: 'problem.northland.education.tertiary'
+title: 'Te Tai Tokerau Northland: tertiary access'
+theme: 'education'
+section: 'education'
+subpage: 'tertiary'
+parent: 'problem.northland.education.achievement'
+order: 5
+updated: '2026-04-26'
+summary: 'Tertiary participation is limited.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Tertiary participation is limited.'
+claim_ids:
+- 'claim.northland.education.tertiary_claim1'
+- 'claim.northland.education.tertiary_claim2'
+status: 'draft'

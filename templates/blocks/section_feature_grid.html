@@ -1,0 +1,14 @@
+{#- Section Feature Grid — 2- or 3-column grid of feature cards.
+    Spec: docs/CMS-SPEC-v2.md §9
+    Attrs:
+      cols — 2 | 3 (required)
+    Body (container):
+      Inner BlockTree; typically column blocks, each containing a
+      heading and paragraph.
+-#}
+{%- set cols = attrs.cols | default('3') -%}
+<div class="block-section-feature-grid sfg-cols-{{ cols }}">
+  <div class="sfg-inner">
+    {{ body | safe }}
+  </div>
+</div>

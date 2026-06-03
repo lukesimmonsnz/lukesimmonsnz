@@ -1,0 +1,40 @@
+id: problem.tasman.environment.marine_ecosystem
+title: Salmon-farm load on Tasman Bay benthic habitat
+theme: environment
+section: environment
+subpage: marine_ecosystem
+parent: coastal_environment
+order: 4
+updated: '2026-04-26'
+summary: Tasman Bay and the Marlborough Sounds host eleven King Salmon farms producing around 8,400 tonnes of salmon
+  a year. Sea-lice management and feed-waste deposition produce ongoing environmental pressures; Department of Conservation
+  monitoring flags elevated localised benthic-impact zones near pen footprints.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - benthic_impact_area_ha
+  - salmon_production_tonnes
+  inputs:
+  - consent_conditions_monitoring
+  - fallowing_rotation_period
+  constraints:
+  - sea_temperature_trajectory
+  - disease_pressure_baseline
+  feedback_loops:
+  - Warmer summers raise mortality risk, which encourages denser stocking earlier in the season to compensate, which
+    raises localised loading on the seabed.
+narrative:
+- heading: Production at scale, impact at the seabed
+  body: The benthic-impact zones beneath salmon pens are localised and monitored. The regulatory question is the
+    size of the acceptable footprint and the monitoring of recovery between farm cycles (claim.tasman.environment.marine_ecosystem_claim).
+- heading: Climate and disease as compounding risks
+  body: Warming Tasman Bay water temperatures push the operating window for salmon culture closer to its physiological
+    limits; episodic warm-water events have already produced fish-mortality losses. Disease and lice management
+    at the pen scale interacts with regional sea-temperature trajectories.
+claim_ids:
+- claim.tasman.environment.marine_ecosystem_claim
+status: draft
+time_horizons:
+- generation
+- century

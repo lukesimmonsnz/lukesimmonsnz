@@ -1,0 +1,22 @@
+id: camp.wellington.infrastructure.wastewater_separation
+name: Combined Sewer Separation Programme
+theme: infrastructure
+core_claim: Eliminating combined sewer overflows requires full separation of storm and wastewater in affected catchments.
+flagship_moves:
+- Complete sewer separation in Brooklyn and Newtown by 2030
+- Private property drain separation subsidy scheme
+- Real-time overflow monitoring and public reporting dashboard
+tensions:
+- Full separation is extremely costly ($1B+ estimated for Wellington City alone)
+- Stormwater separation diverts volume to receiving environments, requiring separate treatment
+addresses:
+- problem.wellington.infrastructure.wastewater
+- problem.wellington.environment.harbour_health
+interventions:
+- description: Prioritise sewer separation in the 10 highest-overflow-frequency catchments using current WW monitoring data
+  state_variable: cso_frequency
+  constraint_relaxed: combined_sewer_legacy
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

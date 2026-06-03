@@ -1,0 +1,21 @@
+id: claim.southland.inequality.child_poverty_prevalence
+statement: Child poverty in Southland shows concentration in specific areas. Invercargill
+  East (NZDep score 8-10) has high child poverty prevalence; Gore and Winton show
+  elevated disadvantage. Rural poverty rates difficult to measure but concentrated
+  in remote farming communities. Family income vulnerability linked to agricultural
+  commodity dependence and seasonal employment.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

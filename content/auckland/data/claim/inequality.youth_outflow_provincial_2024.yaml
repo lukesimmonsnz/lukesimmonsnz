@@ -1,0 +1,26 @@
+id: claim.auckland.inequality.youth_outflow_provincial_2024
+statement: >
+  Stats NZ inter-regional migration data show net outflow of working-
+  age population (particularly 18-29) from provincial and small
+  regions to Auckland and Wellington over the last decade. The flow
+  removes both the demographic dividend (working-age peak earnings
+  and tax) and the social infrastructure (school enrolments, sports
+  clubs, community organisations) from the regions that lose the
+  cohort.
+value: null
+unit: null
+time_period: 2013-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.stats_nz_population_projections_2024
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.admin_count_v1
+notes: >
+  The youth-outflow mechanism connects rural population decline to
+  regional ageing: cohorts that leave do not return at sufficient
+  scale, leaving an older residual population.

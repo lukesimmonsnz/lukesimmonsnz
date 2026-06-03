@@ -1,0 +1,11 @@
+id: driver.canterbury.health.chronic_disease_lifestyle_risk_factors
+name: Lifestyle Risk Factors (Obesity, Sedentary, Diet)
+description: Lifestyle Risk Factors (Obesity, Sedentary, Diet)
+theme: health
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.health.chronic_disease
+claim_ids: []

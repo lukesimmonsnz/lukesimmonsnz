@@ -1,0 +1,30 @@
+id: problem.waikato.transport.regional_connectivity
+title: Regional road and rail connectivity
+theme: transport
+section: transport
+subpage: regional_connectivity
+parent: problem.waikato.transport.waikato_transport_dependence
+order: 3
+updated: '2026-04-26'
+summary: SH1 capacity and Auckland-Hamilton rail frequency constrain regional economic
+  integration.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - transport_accessibility
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing regional connectivity creates feedback on regional outcomes.
+narrative:
+- heading: Regional road and rail connectivity
+  body: SH1 capacity and Auckland-Hamilton rail frequency constrain regional economic
+    integration.
+claim_ids:
+- claim.waikato.transport.rail_frequency_constraint
+status: draft
+time_horizons: [decade, generation]

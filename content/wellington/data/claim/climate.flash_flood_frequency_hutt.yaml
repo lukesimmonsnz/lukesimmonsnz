@@ -1,0 +1,21 @@
+id: claim.wellington.climate.flash_flood_frequency_hutt
+statement: The Hutt River catchment is Wellington's most significant fluvial flood
+  hazard, with existing flood protection infrastructure designed to historical flood
+  frequency standards that are increasingly exceeded as rainfall intensification under
+  climate change increases peak river flows.
+value: null
+unit: null
+time_period: 2020-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_state_environment_2022
+- source.wcc_climate_action_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

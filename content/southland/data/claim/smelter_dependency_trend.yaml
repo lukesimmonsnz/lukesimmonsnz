@@ -1,0 +1,21 @@
+id: claim.southland.economy.smelter_dependency_trend
+statement: Smelter dependency creates regional economic vulnerability. Power contract
+  extended to end 2026 (then under review); no long-term commitment beyond this date.
+  Closure would trigger ~3,000 job loss, regional output contraction >8%, multiplier
+  effects on retail/services employment. Regional economic development strategy absent;
+  diversification efforts underfunded relative to smelter transition risk.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

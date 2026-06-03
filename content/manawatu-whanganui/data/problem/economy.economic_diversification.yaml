@@ -1,0 +1,32 @@
+id: problem.manawatu_whanganui.economy.economic_diversification
+title: Economic Diversification and Innovation
+theme: economy
+section: economy
+subpage: economic_diversification
+parent: problem.manawatu_whanganui.economy.economic_structure
+order: 1
+updated: '2026-04-26'
+summary: Limited startup ecosystem; brain drain to larger centres; underutilized innovation
+  capacity.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Limited startup ecosystem; brain drain to larger centres; underutilized innovation
+    capacity.
+claim_ids:
+- claim.manawatu_whanganui.economy.economic_diversification_placeholder
+status: draft
+time_horizons: [decade, generation]

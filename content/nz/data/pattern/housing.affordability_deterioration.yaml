@@ -1,0 +1,32 @@
+id: pattern.housing.affordability_deterioration
+title: Housing affordability deterioration across urban and peri-urban regions
+theme: housing
+summary: Median house price-to-income multiples have risen to structurally unaffordable
+  levels across New Zealand's urban regions, driven by supply constraints, low interest
+  rates, and investor demand outpacing income growth.
+manifests_in:
+- auckland
+- wellington
+- waikato
+- canterbury
+- northland
+- marlborough
+- nelson
+- tasman
+claim_ids:
+- claim.auckland.housing.affordability_ratio_2023
+- claim.waikato.housing.median_multiple_8x
+- claim.canterbury.housing.affordability_ratio_2023
+- claim.marlborough.housing.affordability_1
+- claim.nelson.housing.affordability_claim
+narrative:
+- heading: Scale
+  body: Housing affordability has deteriorated in every urban and peri-urban region.
+    Median multiples of 7–10× annual income are now common outside Auckland, compared
+    with the international benchmark of 3× considered affordable.
+- heading: Structural drivers
+  body: Supply-side constraints — restrictive zoning, infrastructure funding gaps,
+    and planning delays — interact with demand-side factors including migration, investment,
+    and historically low real interest rates to produce persistent affordability decline.
+status: draft
+updated: '2026-04-26'

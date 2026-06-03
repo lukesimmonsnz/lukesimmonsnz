@@ -1,0 +1,19 @@
+id: claim.wellington.infrastructure.water_main_break_frequency
+statement: Wellington Water reports approximately 500 water main breaks per year across
+  the greater Wellington network, reflecting the age and material composition of the
+  pipe stock, much of which is cast iron laid before 1950.
+value: 500
+unit: water main breaks per year
+time_period: 2022-2023
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wellington_water_asset_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.admin_count_v1
+notes: null

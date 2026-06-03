@@ -1,0 +1,41 @@
+id: problem.tasman.education.early_childhood
+title: Sub-national ECE participation, especially in Mohua
+theme: education
+section: education
+subpage: early_childhood
+parent: achievement
+order: 2
+updated: '2026-04-26'
+summary: Around 67 percent of Tasman 3-4 year olds are enrolled in early childhood education, well below the national
+  95 percent target. Golden Bay has only one subsidised centre; Motueka and rural areas face long waitlists and
+  very limited Māori-medium options.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - ece_participation_rate_3_4
+  - subsidised_ece_places_per_1000_children
+  inputs:
+  - ece_capital_funding
+  - workforce_pipeline_qualified_teachers
+  constraints:
+  - land_and_premises_costs
+  - low_density_catchment_economics
+  feedback_loops:
+  - Low participation weakens transition-to-school outcomes, which reinforces the achievement gap that the schools
+    then need to close.
+narrative:
+- heading: Capacity is the binding constraint
+  body: ECE participation in Tasman is not low because demand is low — it is low because supply, particularly subsidised
+    supply outside Richmond, is thin. Single-centre communities like Takaka have no slack for population growth
+    or for sick-staff days (claim.tasman.education.early_childhood_claim).
+- heading: Choice is even thinner for Māori-medium
+  body: Across the district, Māori-medium ECE provision is limited to a small number of kōhanga reo and bilingual
+    centres. Whānau seeking te reo Māori-medium ECE often face travel times that make the option non-viable for
+    working parents.
+claim_ids:
+- claim.tasman.education.early_childhood_claim
+status: draft
+time_horizons:
+- decade
+- generation

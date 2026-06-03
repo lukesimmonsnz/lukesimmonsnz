@@ -1,0 +1,53 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+
+{% block title %}Northland · Research · Luke Simmons{% endblock %}
+{% block meta_description %}A long-horizon, systems-engineering analysis of Northland's problems and the solution camps that address them.{% endblock %}
+
+{% block content %}
+{% set _intro = region_intro_render('northland') %}
+{% if _intro %}<div class="page-intro">{{ _intro | safe }}</div>{% endif %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Northland — Te Tai Tokerau', None),
+  ]) }}
+
+  <header class="page-header">
+    <span class="eyebrow">Research project</span>
+    <h1>Northland — Te Tai Tokerau</h1>
+    <hr class="rule">
+    <p class="lede">
+      A long-horizon, systems-engineering analysis of Northland&rsquo;s problems and
+      the solution camps that address them. Written on a 10 / 50 / 100-year
+      frame, presented neutrally, and generated from a typed entity graph so
+      every claim is traceable to a source.
+    </p>
+  </header>
+
+  <article class="prose">
+    {% if by_section %}
+      <ul class="theme-list">
+      {% for section_slug, pages in by_section.items() %}
+      {% if section_slug != 'framing' %}
+        <li class="theme-list-item">
+          <a class="theme-title" href="{{ url_for('northland.section', section=section_slug) }}">
+            {{ section_titles.get(section_slug, section_slug.replace('_', ' ').title()) }}
+          </a>
+          {% if section_blurbs.get(section_slug) %}
+          <p class="theme-blurb">{{ section_blurbs[section_slug] }}</p>
+          {% endif %}
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    {% else %}
+      <aside class="notice">
+        <strong>No pages yet.</strong> Pages are generated from entity data under
+        <code>content/northland/data/</code>.
+      </aside>
+    {% endif %}
+  </article>
+</div>
+{% endblock %}

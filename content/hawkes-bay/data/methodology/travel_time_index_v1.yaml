@@ -1,0 +1,16 @@
+id: methodology.travel_time_index_v1
+name: Travel Time Index (TTI)
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: 'Ratio of peak-period travel time to free-flow travel time on a defined
+  road network. A TTI of 1.5 means peak travel takes 50% longer than free-flow. Measured
+  using GPS probe data aggregated over a calendar year. Primary source: TomTom Traffic
+  Index. Used to compare congestion severity across cities and track trends over time.
+  P5'' triggers on cross-region TTI comparison claims.
+
+  '
+source_ids: []

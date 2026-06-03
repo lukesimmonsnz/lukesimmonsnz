@@ -1,0 +1,23 @@
+id: claim.west_coast.crime.family_violence_claim
+statement: Family violence incidents in West Coast communities are elevated in economically
+  stressed areas, particularly in Buller and Grey districts where coal mining job
+  losses have driven income collapse and increased alcohol and substance use. Social
+  isolation in small towns limits access to support services and perpetuates cycles
+  of harm.
+value: null
+unit: null
+time_period: 2018-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nz_police_crime_stats_2023
+- source.census_income_west_coast_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Incidents correlated with income decline and employment shock from mining sector
+  data; geographic and service isolation from census geography.

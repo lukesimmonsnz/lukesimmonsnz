@@ -1,0 +1,25 @@
+id: camp.tasman.governance.camp_2
+name: 'Response: Camp 2'
+theme: governance
+core_claim: A response strategy addressing governance challenges.
+flagship_moves:
+- Implement evidence-based governance policy in Tasman
+- Increase investment in governance services and infrastructure
+- Build cross-sector partnerships to address governance challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.governance.governance
+- problem.tasman.governance.treaty
+- problem.tasman.governance.capacity
+interventions:
+- description: Primary intervention for governance
+  state_variable: governance_outcome_index
+  expected_sign: +
+- description: Secondary intervention for governance
+  state_variable: governance_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

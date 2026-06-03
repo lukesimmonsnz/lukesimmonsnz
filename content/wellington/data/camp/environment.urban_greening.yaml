@@ -1,0 +1,21 @@
+id: camp.wellington.environment.urban_greening
+name: Urban Tree Canopy and Greening Policy
+theme: environment
+core_claim: Mandating minimum canopy cover in intensification zones will offset biodiversity loss from infill development.
+flagship_moves:
+- 30% minimum canopy cover requirement in all residential zones
+- Street tree replacement at 3:1 ratio for any removal
+- Green roof and wall incentives for new commercial builds
+tensions:
+- Canopy requirements may conflict with intensification goals in constrained sections
+- Street tree roots interact poorly with aging water and wastewater pipes
+addresses:
+- problem.wellington.environment.urban_biodiversity
+interventions:
+- description: Introduce Urban Tree Canopy Policy requiring 30% canopy coverage in all Wellington City residential zones by
+    2035
+  state_variable: urban_canopy_cover_pct
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

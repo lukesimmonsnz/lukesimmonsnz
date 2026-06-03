@@ -1,0 +1,24 @@
+id: 'problem.northland.health.workforce'
+title: 'Te Tai Tokerau Northland: health workforce'
+theme: 'health'
+section: 'health'
+subpage: 'workforce'
+parent: 'problem.northland.health.outcomes'
+order: 5
+updated: '2026-04-26'
+summary: 'Health workforce shortages limit services.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Health workforce shortages limit services.'
+claim_ids:
+- 'claim.northland.health.workforce_claim1'
+- 'claim.northland.health.workforce_claim2'
+status: 'draft'

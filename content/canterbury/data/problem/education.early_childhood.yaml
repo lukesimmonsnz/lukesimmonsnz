@@ -1,0 +1,41 @@
+id: problem.canterbury.education.early_childhood
+title: Early Childhood Education Access & Quality
+theme: education
+section: education
+subpage: early_childhood
+parent: problem.canterbury.education.achievement
+order: 1
+updated: '2026-04-26'
+summary: ECE participation in Canterbury is 85% overall but drops to 60-65% in high-deprivation areas,
+  where cost (averaging NZD 150-200 per week), transport barriers, and limited community-responsive provision
+  constrain access. Quality variance is significant; higher-deprivation ECE services often lack specialist
+  staff and stable funding. The participation gap in high-deprivation communities creates a school-entry
+  disadvantage that compounds across the education system.
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - ece_participation_rate_by_deprivation
+  - ece_affordability_cost_to_family
+  - maori_ece_provision_percentage
+  - teacher_qualification_level_ece
+  inputs:
+  - parental_employment_rates
+  - government_ece_funding
+  - early_childhood_workforce_supply
+  constraints:
+  - affordability_and_deprivation_correlation
+  - maori_ece_provider_capacity
+  feedback_loops:
+  - Dynamic feedback mechanisms drive early childhood education access & quality.
+narrative:
+- heading: Affordability barriers in high-need areas
+  body: 'ECE fees absorb 20-30% of household income in deprived single-income families. Culturally responsive
+    Māori-led services (kōhanga reo, Māori playcentres) are underrepresented and have waitlists in Canterbury.
+
+    '
+claim_ids:
+- claim.canterbury.education.ece_participation_gap_deprivation_2023
+- claim.canterbury.education.ece_affordability_barrier_2023
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,35 @@
+id: problem.nelson.health.health_outcomes
+title: Variation in health outcomes by ethnicity and deprivation
+theme: health
+section: health
+subpage: health_outcomes
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Life expectancy in Nelson is 79.2 years for Pakeha and 74.1 years for Maori (a 5.1-year gap). Infant mortality runs around 6.2 per 1,000 live births overall but 9.4 per 1,000 for Maori infants in Nelson district. Hospital admissions for acute and preventable conditions are around 12 percent above national average, and access is constrained by GP shortages and elective-procedure waiting times averaging 16 weeks.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - life_expectancy_years_total
+  - life_expectancy_gap_years
+  - asis_admission_rate_per_1000
+  inputs:
+  - primary_care_funding
+  - specialist_workforce_supply
+  constraints:
+  - gp_supply
+  - elective_capacity
+  feedback_loops:
+  - 'Access-acuity feedback: limited primary-care access raises the share of conditions presenting acutely, increasing hospital load and crowding out the elective capacity that would relieve primary care.'
+narrative:
+- heading: Headline outcomes mask within-region gaps
+  body: Average outcomes for Nelson are reasonable on a national comparison but conceal substantial gaps by deprivation decile and ethnicity (claim.nelson.health.health_outcomes_claim). The 5-year life-expectancy gap is the most visible single indicator and is structurally similar to the national Maori-Pakeha gap.
+- heading: Access as a structural limit
+  body: GP-to-patient ratios in Nelson sit around 1:1,900 against a national target of 1:1,400. That access constraint shows up downstream as later presentation, more acute admissions, and worse outcomes for chronic conditions that benefit from early management.
+claim_ids:
+- claim.nelson.health.health_outcomes_claim
+status: draft
+time_horizons:
+- decade
+- generation

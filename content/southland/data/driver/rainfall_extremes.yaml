@@ -1,0 +1,12 @@
+id: driver.southland.climate.rainfall_extremes
+name: Rainfall Intensity and Flood Risk Increase
+description: Climate change intensifies rainfall events; Southland river flood risk
+  rising.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.climate.flooding_rivers
+claim_ids: []

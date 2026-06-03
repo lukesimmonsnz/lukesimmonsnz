@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.environment.biodiversity
+title: Native biodiversity loss and fragmentation
+theme: environment
+section: environment
+subpage: biodiversity
+parent: problem.hawkes_bay.environment.environmental_pressure
+order: 2
+updated: '2026-04-26'
+summary: "Native forest in Hawke's Bay has been reduced to fragmented remnants. Hawea and Kawekas forests are under pressure from logging, possum damage, and lack of active management. Endemic plant and bird species are endangered."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - native_forest_extent_hectares
+    - conservation_predator_control_coverage_percent
+  inputs:
+    - forest_harvesting_pressure
+    - invasive_mammal_density
+  constraints:
+    - forest_restoration_funding
+    - land_use_competing_values
+  feedback_loops:
+    - 'Forest loss removes predator habitat; invasive species explode; native birds decline; ecosystem services degrade; restoration incentive weakens.'
+narrative:
+  - heading: Forest Remnants
+    body: "Native forest remnants in Hawke's Bay total approximately 45k hectares (24% of regional area), fragmented into isolated patches."
+  - heading: Conservation Status
+    body: 'Hawea National Reserve is managed actively; Kawekas Forest Park has limited resources for predator control. Many endemic invertebrates and birds are classified as threatened.'
+claim_ids:
+  - claim.hawkes_bay.environment.forest_45k_hectares
+status: draft
+time_horizons: [generation, century]

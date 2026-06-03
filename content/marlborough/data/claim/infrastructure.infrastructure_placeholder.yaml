@@ -1,0 +1,21 @@
+id: claim.marlborough.infrastructure.infrastructure_placeholder
+statement: 'Marlborough infrastructure age profile: Picton ferry terminal (aging vessel
+  fleet, new procurement delayed 2024–2026); Wairau River bridges (SH1, SH6) original
+  1950s–1970s, approaching end-of-life; water supply reticulation in smaller towns
+  aging.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.marlborough_council_ltc_2024
+- source.picton_ferry_services_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

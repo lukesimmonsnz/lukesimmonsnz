@@ -1,0 +1,20 @@
+id: claim.taranaki.climate.climate_emissions_01
+statement: Taranaki's industrial emissions from oil and gas operations (Methanex,
+  Todd Energy, OMV) historically represented 5-8% of NZ's greenhouse gas inventory.
+  The region accounts for ~4-5% of NZ's total emissions, dominated by energy sector
+  processing and fugitive methane from natural gas extraction.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki climate_emissions

@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.infrastructure.wastewater_intervention
+name: Intervention for wastewater
+theme: infrastructure
+core_claim: Targeted intervention on wastewater will improve outcomes.
+flagship_moves:
+- Policy measure 1 for wastewater
+- Policy measure 2 for wastewater
+- Implementation mechanism for wastewater
+tensions:
+- Trade-off A for wastewater
+- Trade-off B for wastewater
+addresses:
+- problem.bay_of_plenty.infrastructure.wastewater
+interventions:
+- description: Core intervention targeting wastewater
+  state_variable: wastewater_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

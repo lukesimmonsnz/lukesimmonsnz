@@ -1,0 +1,13 @@
+id: driver.otago.environment.irrigation_expansion
+name: Irrigation Expansion in Central Otago
+description: Wine and horticulture growth drives irrigation demand and water allocation
+  pressure.
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.environment.freshwater_stress
+- problem.otago.environment.irrigation_water_quality
+claim_ids: []

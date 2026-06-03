@@ -1,0 +1,23 @@
+id: claim.northland.infrastructure.water_wastewater_claim2
+statement: 'Northland water service providers (Watercare regional, ~15 community schemes)
+  face treatment and supply reliability challenges: boil-water notices endemic in
+  rural Far North (Ministry of Health data shows Northland highest per-capita notices
+  nationally, 15–20 notices/year across region). Infrastructure investment: estimated
+  NZD 150–200M needed over 10 years for rural scheme upgrades, treatment plant replacements,
+  pipe renewals. Three Waters reform (central government co-funding) creates opportunity;
+  delays to national framework (2024 decision deferred) slow rural scheme progress.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

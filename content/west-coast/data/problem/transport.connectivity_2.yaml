@@ -1,0 +1,43 @@
+id: problem.west_coast.transport.connectivity_2
+title: Haast Pass and Arthur's Pass closures sever East-South links
+theme: transport
+section: transport
+subpage: connectivity_2
+parent: connectivity
+order: 2
+updated: '2026-04-26'
+summary: Haast Pass (SH6) is the sole road connection between West Coast and Otago/Southland, and Arthur's Pass (SH73) is
+  the only east-west route to Canterbury. Both routes experience recurrent closures from rockfall, slips and snow, with no
+  equivalent inland detour, leaving the region exposed whenever a single alpine pass is shut.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - haast_pass_closure_days
+  - arthurs_pass_closure_days
+  - detour_distance_when_closed
+  inputs:
+  - alpine_engineering_capex
+  - winter_road_management_budget
+  constraints:
+  - active_landslip_terrain
+  - avalanche_path_density
+  feedback_loops:
+  - Closure events generate political attention and short-term repair funding, but the long-term capital required to structurally
+    harden alpine passes is rarely committed before the next closure resets the cycle.
+narrative:
+- heading: Two alpine passes, no fallback
+  body: A closure on Haast Pass forces freight and travellers into a multi-hour additional detour via Arthur's Pass and Lewis
+    Pass; a simultaneous closure on Arthur's Pass cuts the region off from Canterbury entirely (claim.west_coast.transport.connectivity_2_claim).
+    Avalanche risk, rockfall and winter ice mean closure days are routine rather than exceptional, and climate change is intensifying
+    the rainfall events that trigger slips.
+- heading: Resilience is a function of pass engineering
+  body: 'Hardening single-corridor alpine routes is engineering-intensive: rockfall canopies, avalanche bunds, slope drainage
+    and bridge replacements all carry costs disproportionate to the small population served. Without a multi-decade resilience
+    programme, the region will remain a single-pass economy.'
+claim_ids:
+- claim.west_coast.transport.connectivity_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

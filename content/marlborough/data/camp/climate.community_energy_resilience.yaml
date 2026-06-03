@@ -1,0 +1,21 @@
+id: camp.marlborough.climate.community_energy_resilience
+name: Community Energy and Resilience Networks
+theme: climate-adaptation
+core_claim: Local energy generation and micro-grids.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.climate.fire_risk
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

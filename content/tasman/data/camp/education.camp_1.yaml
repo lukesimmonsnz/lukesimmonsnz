@@ -1,0 +1,24 @@
+id: camp.tasman.education.camp_1
+name: 'Response: Camp 1'
+theme: education
+core_claim: A response strategy addressing education challenges.
+flagship_moves:
+- Implement evidence-based education policy in Tasman
+- Increase investment in education services and infrastructure
+- Build cross-sector partnerships to address education challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.tasman.education.achievement
+- problem.tasman.education.early_childhood
+interventions:
+- description: Primary intervention for education
+  state_variable: education_outcome_index
+  expected_sign: +
+- description: Secondary intervention for education
+  state_variable: education_service_access
+  expected_sign: +
+applicable_in:
+- tasman
+tensions_with: []

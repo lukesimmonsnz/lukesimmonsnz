@@ -1,0 +1,21 @@
+id: camp.marlborough.education.holistic_student_support
+name: Holistic Student Support Services
+theme: education
+core_claim: Mental health, nutrition, transport, counselling.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.education.tertiary_access
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

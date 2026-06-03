@@ -1,20 +1,20 @@
 id: claim.auckland.economy.nz_public_debt_trajectory
-statement: >
-  New Zealand's net Crown debt has increased from approximately 20%
-  to 35-40% of GDP following COVID fiscal responses; the trajectory
-  over 10 years under current settings projects continued growth,
-  constraining the Crown's ability to fund capital investment in
-  Auckland infrastructure, health, and education without new revenue
-  instruments or significant spending reprioritisation.
+statement: 'New Zealand''s net Crown debt has increased from approximately 20% to
+  35-40% of GDP following COVID fiscal responses; the trajectory over 10 years under
+  current settings projects continued growth, constraining the Crown''s ability to
+  fund capital investment in Auckland infrastructure, health, and education without
+  new revenue instruments or significant spending reprioritisation.
+
+  '
 value: null
 unit: null
-time_period: "2020-2033"
+time_period: 2020-2033
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.treasury_lsf_2023
+- source.treasury_lsf_2023
 scoped_to:
-  - nz
+- nz
 national_assertion: true
 region_mentions: []

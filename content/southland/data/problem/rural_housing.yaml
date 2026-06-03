@@ -1,0 +1,34 @@
+id: problem.southland.housing.rural_housing
+title: Rural Housing Stock Aging and Maintenance
+theme: housing
+section: housing
+subpage: rural_housing
+parent: problem.southland.housing.housing_market
+order: 3
+updated: '2026-04-26'
+summary: Southland farming communities have aging housing stock; high maintenance
+  costs; limited new construction; affects workforce retention.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland farming communities have aging housing stock; high maintenance costs;
+    limited new construction; affects workforce retention.
+claim_ids:
+- claim.southland.housing.housing_market_prevalence
+- claim.southland.housing.invercargill_affordability_trend
+- claim.southland.housing.housing_market_trend
+- claim.southland.housing.rural_housing_trend
+- claim.southland.housing.worker_housing_prevalence
+- claim.southland.housing.rural_housing_prevalence
+- claim.southland.housing.worker_housing_trend
+- claim.southland.housing.invercargill_affordability_prevalence
+status: draft
+time_horizons: [decade, generation, century]

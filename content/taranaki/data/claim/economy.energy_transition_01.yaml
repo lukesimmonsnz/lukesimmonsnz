@@ -1,0 +1,20 @@
+id: claim.taranaki.economy.energy_transition_01
+statement: Taranaki faces significant energy transition risk as oil and gas operations
+  (Todd, OMV, Methanex) employ ~3,000 workers directly and support ~8,000 indirect
+  jobs. Transition planning toward renewable energy and hydrogen production remains
+  nascent, with community resistance to rapid phase-out of existing energy infrastructure.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki energy_transition

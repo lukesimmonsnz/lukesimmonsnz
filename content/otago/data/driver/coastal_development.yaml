@@ -1,0 +1,11 @@
+id: driver.otago.environment.coastal_development
+name: Coastal Urban and Industrial Development
+description: Dunedin and Port Chalmers development increases coastal ecosystem pressure.
+theme: environment
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.environment.coastal_otago
+claim_ids: []

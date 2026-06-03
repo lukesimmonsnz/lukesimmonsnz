@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.governance.governance_intervention
+name: Intervention for governance
+theme: governance
+core_claim: Targeted intervention on governance will improve outcomes.
+flagship_moves:
+- Policy measure 1 for governance
+- Policy measure 2 for governance
+- Implementation mechanism for governance
+tensions:
+- Trade-off A for governance
+- Trade-off B for governance
+addresses:
+- problem.bay_of_plenty.governance.governance
+interventions:
+- description: Core intervention targeting governance
+  state_variable: governance_index
+  expected_sign: +
+applicable_in:
+- bay-of-plenty
+tensions_with: []

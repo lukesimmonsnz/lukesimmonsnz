@@ -1,0 +1,21 @@
+id: claim.southland.inequality.child_poverty_trend
+statement: Child poverty trends in Southland reflect economic vulnerability. Dairy
+  income volatility (20-40% farm-gate price fluctuation annually) directly affects
+  dependent children in farming families. Invercargill East deprivation persistent;
+  limited pathways to economic mobility. Rural isolation compounds disadvantage (limited
+  service access).
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

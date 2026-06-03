@@ -1,0 +1,36 @@
+id: problem.nelson.environment.marine_ecosystem
+title: Fishing pressure and aquaculture footprint in Tasman Bay
+theme: environment
+section: environment
+subpage: marine_ecosystem
+parent: coastal_environment
+order: 4
+updated: '2026-04-26'
+summary: The marine ecosystem around Port Nelson is shaped by high-volume extraction. Around 130,000-160,000 tonnes of fish and seafood are landed annually; rock-lobster catch has fallen 22 percent between 2015 and 2023 and snapper stocks remain under pressure. Aquaculture expansion (salmon, mussels) in Tasman and Golden Bay creates localised impacts on benthic habitat and water quality even within spatial-planning constraints.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - rock_lobster_cpue
+  - aquaculture_production_tonnes
+  - benthic_habitat_quality_index
+  inputs:
+  - quota_settings
+  - consent_regime
+  - international_seafood_demand
+  constraints:
+  - stock_rebuild_time
+  - siting_constraints
+  feedback_loops:
+  - 'Quota-investment-effort feedback: quota cuts reduce expected returns, prompting fleet consolidation and higher per-vessel effort intensity, partially offsetting the conservation benefit of the cut.'
+narrative:
+- heading: Extraction and trophic structure
+  body: Sustained high extraction across multiple species reshapes trophic structure rather than simply reducing target-species biomass (claim.nelson.environment.marine_ecosystem_claim). Recovery rates are slow even after quota cuts, because habitat (kelp, scallop, seagrass beds) takes longer to rebuild than fish biomass.
+- heading: Aquaculture as substitution, not solution
+  body: Mussel farming is a relatively low-impact production system, but salmon farming in particular has localised nitrogen and benthic effects. Aquaculture relieves pressure on wild stocks only at high industry scale, and siting decisions are politically contested in Golden Bay and Tasman Bay.
+claim_ids:
+- claim.nelson.environment.marine_ecosystem_claim
+status: draft
+time_horizons:
+- generation
+- century

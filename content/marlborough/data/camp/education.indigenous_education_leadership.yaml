@@ -1,0 +1,21 @@
+id: camp.marlborough.education.indigenous_education_leadership
+name: Indigenous Education Leadership
+theme: education
+core_claim: Māori-led curriculum and kaupapa Māori schools.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.environment.environmental_pressure
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

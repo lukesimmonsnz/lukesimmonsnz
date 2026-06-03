@@ -1,0 +1,19 @@
+id: claim.wellington.health.acute_bed_shortage
+statement: Wellington Regional Hospital's acute mental health inpatient unit regularly
+  operates above capacity, with patients in acute crisis sometimes held in emergency
+  department settings for extended periods awaiting an inpatient bed.
+value: null
+unit: null
+time_period: 2022-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_wellington_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

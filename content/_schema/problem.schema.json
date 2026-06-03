@@ -121,6 +121,14 @@
     },
     "status": {
       "enum": ["draft-v0", "draft", "review", "published"]
+    },
+    "time_horizons": {
+      "description": "Structural time horizons over which this problem is analytically meaningful. 'decade' approx 10yr; 'generation' approx 50yr; 'century' approx 100yr. Optional.",
+      "type": "array",
+      "items": {
+        "enum": ["decade", "generation", "century"]
+      },
+      "minItems": 1
     }
   }
 }

@@ -1,0 +1,19 @@
+id: claim.gisborne.education.early_childhood_60
+statement: Gisborne District Council supports only 4 community-funded ECE centres
+  serving ~200 children. Private providers cluster in Gisborne city; East Cape communities
+  rely on whānau care and distance education.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_education_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.consent_rate_v1
+notes: null

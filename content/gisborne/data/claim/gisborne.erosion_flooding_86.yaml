@@ -1,0 +1,21 @@
+id: claim.gisborne.climate.erosion_flooding_86
+statement: Gisborne communities face cascading erosion-flooding-debris hazards that
+  intensify under extreme rainfall. Waiotahi, Uawa, and coastal communities experience
+  recurrent flooding; debris flows from forestry erosion compound damage; adaptive
+  management requires catchment-scale coordination and long-term funding.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2023
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.ncea_attainment_rate_v1
+notes: null

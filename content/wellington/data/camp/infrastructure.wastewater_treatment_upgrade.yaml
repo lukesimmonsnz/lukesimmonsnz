@@ -1,0 +1,20 @@
+id: camp.wellington.infrastructure.wastewater_treatment_upgrade
+name: Wastewater Treatment Technology Upgrade
+theme: infrastructure
+core_claim: Upgrading Moa Point WWTP to tertiary treatment reduces harbour contamination without requiring full pipe separation.
+flagship_moves:
+- Tertiary treatment upgrade at Moa Point to reduce nitrogen and phosphorus discharge
+- UV disinfection upgrade for wet-weather peak flow treatment
+- Real-time harbour water quality notifications linked to overflow events
+tensions:
+- Treatment upgrades do not address combined overflow events during heavy rain
+- Downstream focus may be cheaper short-term but does not resolve the ageing network root cause
+addresses:
+- problem.wellington.infrastructure.wastewater
+interventions:
+- description: Fund Moa Point tertiary treatment upgrade to reduce nitrogen to <5mg/L
+  state_variable: harbour_nutrient_load
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

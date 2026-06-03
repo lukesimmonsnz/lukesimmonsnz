@@ -1,0 +1,31 @@
+id: problem.marlborough.crime.seasonal_crime
+title: Seasonal Worker-Related Crime and Exploitation
+theme: crime
+section: crime
+subpage: seasonal_crime
+parent: problem.marlborough.crime.safety
+order: 1
+updated: '2026-04-26'
+summary: Crime clusters during harvest season; RSE worker vulnerability; limited police
+  presence.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Crime clusters during harvest season; RSE worker vulnerability; limited police
+    presence.
+claim_ids:
+- claim.marlborough.crime.seasonal_crime_1
+- claim.marlborough.crime.seasonal_crime_2
+status: draft
+time_horizons: [decade]

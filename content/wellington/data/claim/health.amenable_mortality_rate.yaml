@@ -1,0 +1,20 @@
+id: claim.wellington.health.amenable_mortality_rate
+statement: Wellington's amenable mortality rate — deaths preventable through timely
+  access to appropriate healthcare — is elevated in high-deprivation communities in
+  Porirua and Hutt Valley, indicating that access barriers translate into avoidable
+  premature deaths.
+value: null
+unit: null
+time_period: 2020-2022
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_wellington_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.amenable_mortality_rate_v1
+notes: null

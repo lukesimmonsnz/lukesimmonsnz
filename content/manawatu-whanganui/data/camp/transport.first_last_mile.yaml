@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.transport.first_last_mile
+name: First/Last-Mile Micro-Mobility
+theme: transport
+core_claim: E-bike and scooter integration with public transport.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

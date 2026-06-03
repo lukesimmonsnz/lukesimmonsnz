@@ -1,0 +1,22 @@
+id: claim.canterbury.environment.alpine_range_contraction_2023
+statement: Alpine glaciers in the Southern Alps (Tasman, Franz Josef, Fox) are retreating
+  at an accelerated pace, with elevation contraction reaching approximately 50 metres
+  per decade. Tasman Glacier, visible from Lake Pukaki, has receded >3 km since the
+  1970s. This contraction threatens alpine water storage, hydroelectric generation
+  (Manapouri, Waitaki scheme, Pukaki), and the ecological viability of braided river
+  systems dependent on glacial melt runoff (Rakaia, Rangitata, Waitaki).
+value: 50
+unit: meters elevation per decade
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gns_alpine_fault_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

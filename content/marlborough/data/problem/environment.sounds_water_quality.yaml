@@ -1,0 +1,31 @@
+id: problem.marlborough.environment.sounds_water_quality
+title: Marlborough Sounds Water Quality and Aquaculture
+theme: environment
+section: environment
+subpage: sounds_water_quality
+parent: problem.marlborough.environment.environmental_pressure
+order: 1
+updated: '2026-04-26'
+summary: Aquaculture impacts (mussel and salmon farming); coastal water quality; nutrient
+  loading; waste management.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Aquaculture impacts (mussel and salmon farming); coastal water quality; nutrient
+    loading; waste management.
+claim_ids:
+- claim.marlborough.environment.sounds_water_quality_1
+- claim.marlborough.environment.sounds_water_quality_2
+status: draft
+time_horizons: [generation, century]

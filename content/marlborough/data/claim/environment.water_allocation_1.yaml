@@ -1,0 +1,20 @@
+id: claim.marlborough.environment.water_allocation_1
+statement: 'Wairau Aquifer: primary freshwater source; irrigation consents total 250–280
+  million m³ per annum (cumulative); annual recharge estimated 200–220 million m³;
+  allocation ratio 115–140% of recharge (over-allocated); maturity date 2030–2040
+  for most consents.'
+value: 130
+unit: percent allocation vs recharge ratio
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wairau_catchment_study_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.water_quality_index_v1
+notes: null

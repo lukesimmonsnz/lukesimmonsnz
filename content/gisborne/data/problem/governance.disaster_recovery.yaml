@@ -1,0 +1,33 @@
+id: problem.gisborne.governance.disaster_recovery
+title: Disaster recovery coordination and funding in Gisborne — Te Tairāwhiti
+theme: governance
+section: governance
+subpage: disaster_recovery
+parent: problem.gisborne.governance.governance
+order: 40
+updated: '2026-04-26'
+summary: Disaster recovery coordination and funding is a specific manifestation of
+  the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - disaster_recovery_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Disaster recovery coordination and funding is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.governance.disaster_recovery_79
+- claim.gisborne.governance.disaster_recovery_80
+status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,36 @@
+id: problem.nelson.economy.economic_4
+title: 'Tourism: high brand strength, narrow shoulder season'
+theme: economy
+section: economy
+subpage: economic_4
+parent: economic_structure
+order: 4
+updated: '2026-04-26'
+summary: Tourism contributes around $180-210 million to Nelson regional GDP and supports approximately 3,200 FTE jobs across hospitality, accommodation, attractions, and transport. The region attracts 1.2-1.5 million visitor nights annually, anchored by Abel Tasman and Kahurangi national parks, the arts and crafts scene, and the wine and food cluster. Capacity utilisation outside peak summer averages around 68 percent.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - visitor_nights_per_year
+  - tourism_gdp_contribution_nzd_m
+  - off_peak_occupancy_rate
+  inputs:
+  - international_arrivals
+  - marketing_spend
+  - fuel_cost
+  constraints:
+  - hospitality_labour_supply
+  - short_term_rental_conversion
+  feedback_loops:
+  - 'STR-housing-labour feedback: short-term rental conversion lifts off-peak revenue for property owners but reduces affordable rental supply for hospitality workers, tightening the labour constraint that limits sector growth.'
+narrative:
+- heading: Brand strength, demand seasonality
+  body: Nelson's tourism brand is unusually strong for a region of its size, but the high season is concentrated in approximately 12 weeks around Christmas and the Abel Tasman walking window (claim.nelson.economy.economic_4_claim). Year-round operating costs are carried against a peaked revenue curve, leaving operators thinly capitalised.
+- heading: Labour, housing, and resilience
+  body: 'Hospitality labour shortages are structural: workers cannot afford to live in central Nelson on hospitality wages, and short-term rental conversion has further compressed entry-level housing. Tourism is also geographically exposed -- SH6 closures, ferry disruption, and wildfire seasons all translate quickly into booking cancellations.'
+claim_ids:
+- claim.nelson.economy.economic_4_claim
+status: draft
+time_horizons:
+- decade
+- generation

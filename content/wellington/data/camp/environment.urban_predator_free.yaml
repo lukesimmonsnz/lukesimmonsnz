@@ -1,0 +1,20 @@
+id: camp.wellington.environment.urban_predator_free
+name: Urban Predator-Free Wellington Expansion
+theme: environment
+core_claim: Extending Predator Free Wellington to all urban suburbs will enable native biodiversity recovery across the city.
+flagship_moves:
+- Achieve predator-free status in all Wellington City suburbs by 2030
+- Mandatory trap networks in new subdivisions as consent condition
+- Community volunteer network expansion with app-based monitoring
+tensions:
+- Urban predator control requires sustained community engagement; volunteer fatigue is a real risk
+- Free-ranging cats are politically contested as predators
+addresses:
+- problem.wellington.environment.urban_biodiversity
+interventions:
+- description: Expand Predator Free Wellington programme to cover all remaining suburban gaps with funded trap networks
+  state_variable: urban_predator_pressure
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

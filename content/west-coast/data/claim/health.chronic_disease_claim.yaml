@@ -1,0 +1,23 @@
+id: claim.west_coast.health.chronic_disease_claim
+statement: Chronic disease prevalence (diabetes, cardiovascular disease, chronic respiratory
+  disease) in West Coast is elevated relative to national average, driven by high
+  smoking rates, obesity prevalence, and socioeconomic stress. Ageing population and
+  limited specialist services restrict disease management options. Primary care capacity
+  is insufficient for preventive screening and chronic disease management programs.
+value: null
+unit: null
+time_period: 2015-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_west_coast_2023
+- source.census_income_west_coast_2023
+scoped_to:
+- west-coast
+national_assertion: false
+region_mentions:
+- west-coast
+methodology_tag: null
+notes: Disease prevalence from Health NZ regional health needs assessments; socioeconomic
+  drivers from Census income and employment data.

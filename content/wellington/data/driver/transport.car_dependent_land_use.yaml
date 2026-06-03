@@ -1,0 +1,14 @@
+id: driver.wellington.transport.car_dependent_land_use
+name: Car-dependent suburban land-use pattern
+description: Wellington's suburban development pattern — spread across hills and valleys with limited density — creates trip
+  distances and origins that make active travel non-viable for many journeys, sustaining high private vehicle dependency.
+theme: transport
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.transport.highway_bottleneck
+- problem.wellington.transport.active_modes
+claim_ids:
+- claim.wellington.transport.cycling_mode_share_low

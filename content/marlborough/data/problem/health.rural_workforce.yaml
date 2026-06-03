@@ -1,0 +1,31 @@
+id: problem.marlborough.health.rural_workforce
+title: Rural Health Workforce and Service Access
+theme: health
+section: health
+subpage: rural_workforce
+parent: problem.marlborough.health.health_outcomes
+order: 1
+updated: '2026-04-26'
+summary: GP and specialist shortages; workforce burnout; retention challenges; after-hours
+  care gaps.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: GP and specialist shortages; workforce burnout; retention challenges; after-hours
+    care gaps.
+claim_ids:
+- claim.marlborough.health.rural_workforce_1
+- claim.marlborough.health.rural_workforce_2
+status: draft
+time_horizons: [decade, generation]

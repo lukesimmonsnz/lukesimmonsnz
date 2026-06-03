@@ -1,0 +1,21 @@
+id: camp.marlborough.infrastructure.water_efficiency
+name: Irrigation Water Efficiency
+theme: infrastructure
+core_claim: Improve irrigation efficiency and reduce allocation pressure.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.infrastructure.digital
+interventions:
+- description: 'Action 1: Irrigation Water Efficiency'
+- description: 'Action 2: Irrigation Water Efficiency'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

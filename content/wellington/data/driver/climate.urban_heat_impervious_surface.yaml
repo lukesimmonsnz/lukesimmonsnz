@@ -1,0 +1,13 @@
+id: driver.wellington.climate.urban_heat_impervious_surface
+name: Urban impervious surface expansion and heat island
+description: Wellington's growing impervious surface from infill residential and commercial development replaces vegetation
+  with heat-absorbing materials, intensifying the urban heat island effect in the inner city.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.climate.urban_heat
+claim_ids:
+- claim.wellington.climate.urban_heat_island_effect

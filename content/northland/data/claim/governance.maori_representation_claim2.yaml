@@ -1,0 +1,19 @@
+id: claim.northland.governance.maori_representation_claim2
+statement: Northland has significant proportion of Māori-led service providers and
+  kaupapa Māori organizations (Whānau Ora, health, education). Iwi economic development
+  initiatives (aquaculture, tourism, forestry) operate largely outside formal council
+  structures. Co-investment models between government agencies and iwi are under-developed;
+  historical Crown-iwi relationships remain tense.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland

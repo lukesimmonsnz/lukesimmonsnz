@@ -1,0 +1,21 @@
+id: claim.otago.crime.queenstown_visitor_crime_trend
+statement: 'Crime trends in Queenstown are seasonal and volatile: visitor season (Dec-Mar)
+  sees 3-4× increase in liquor-fuelled offending vs winter; bar closures and hospitality
+  industry contraction 2020-2021 reduced incidents, recovery 2023-2024 reversing that
+  trend; RSE and seasonal worker housing pressure (Arrowtown, Cromwell, Frankton)
+  creating satellite crime foci.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

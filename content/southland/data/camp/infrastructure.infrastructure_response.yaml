@@ -1,0 +1,23 @@
+id: camp.southland.infrastructure.infrastructure_response
+name: Infrastructure Renewal and Climate Resilience
+theme: infrastructure
+core_claim: Prioritising maintenance and climate-proofing of Southland's ageing infrastructure
+  prevents cascading failure in a low-density, remote region.
+flagship_moves:
+- Fund three-waters renewal in small Southland towns (Gore, Winton, Te Anau)
+- Upgrade flood protection on key Southland rivers
+- Extend fibre broadband to rural Southland
+tensions:
+- Thin rate base makes infrastructure renewal unaffordable without central government
+  co-investment
+- Competing priorities between urban and rural infrastructure needs
+addresses:
+- problem.southland.infrastructure.infrastructure
+interventions:
+- description: Co-fund water infrastructure renewal for small Southland towns through
+    three waters reform mechanisms
+  state_variable: infrastructure_condition_index
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

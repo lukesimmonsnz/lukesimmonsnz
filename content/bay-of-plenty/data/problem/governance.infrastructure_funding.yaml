@@ -1,0 +1,32 @@
+id: problem.bay_of_plenty.governance.infrastructure_funding
+title: Infrastructure funding constraints and regional equity in Bay of Plenty — Te
+  Moana-a-Toi
+theme: governance
+section: governance
+subpage: infrastructure_funding
+parent: problem.bay_of_plenty.governance.governance
+order: 40
+updated: '2026-04-26'
+summary: Infrastructure funding constraints and regional equity is a sub-dimension
+  of the regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - infrastructure_funding_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Infrastructure funding constraints and regional equity is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.governance.infrastructure_funding_79
+- claim.bay_of_plenty.governance.infrastructure_funding_80
+status: draft
+time_horizons: [decade, generation, century]

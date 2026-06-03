@@ -1,0 +1,12 @@
+id: driver.otago.economy.tourism_dependency_queenstown
+name: Tourism Sector Single-Dependency
+description: Queenstown economy >40% from tourism; external shocks (COVID, currency)
+  create volatility.
+theme: economy
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.economy.tourism_queenstown
+claim_ids: []

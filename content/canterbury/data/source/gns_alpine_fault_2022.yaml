@@ -1,0 +1,13 @@
+id: source.gns_alpine_fault_2022
+title: GNS Science Alpine Fault Hazard Assessment 2022
+author: null
+publisher: GNS Science
+year: 2022
+url: https://www.gns.cri.nz/
+type: academic
+credibility: official
+geo_granularity:
+- canterbury
+- nz
+notes: M7.0+ rupture probability, ground motion modelling, tsunami risk for South
+  Island west coast.

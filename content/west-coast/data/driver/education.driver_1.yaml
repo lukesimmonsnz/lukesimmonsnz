@@ -1,0 +1,14 @@
+id: driver.west_coast.education.driver_1
+name: Small dispersed school network and recruitment isolation
+description: Schools across the West Coast operate on small rolls in geographically dispersed communities. Teacher recruitment
+  and retention is structurally difficult, narrowing curriculum offerings and producing below-national achievement on most
+  NCEA indicators.
+theme: education
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.education.achievement
+- problem.west_coast.education.early_childhood
+claim_ids: []

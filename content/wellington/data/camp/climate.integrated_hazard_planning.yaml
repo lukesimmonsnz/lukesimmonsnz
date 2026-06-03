@@ -1,0 +1,21 @@
+id: camp.wellington.climate.integrated_hazard_planning
+name: Integrated Multi-Hazard Risk Planning
+theme: climate-adaptation
+core_claim: Wellington's compound hazard profile (earthquake + climate) requires integrated risk planning that cross-references
+  both hazard types in land use and infrastructure decisions.
+flagship_moves:
+- Joint earthquake-climate adaptation planning unit across all Wellington TAs
+- Mandatory multi-hazard risk assessment for all major infrastructure consents
+- Scenario planning for earthquake + storm compound event with CDEM
+tensions:
+- Multi-hazard integration requires significant analytical capability not currently in most TAs
+- Comprehensive risk planning may paralyse decision-making in the short term
+addresses:
+- problem.wellington.climate.compound_hazard_risk
+interventions:
+- description: Establish Wellington Multi-Hazard Planning Unit shared across GWRC and all TAs
+  state_variable: integrated_hazard_planning_coverage
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

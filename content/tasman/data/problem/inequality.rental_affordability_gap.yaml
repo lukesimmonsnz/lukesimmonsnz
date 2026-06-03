@@ -1,0 +1,42 @@
+id: problem.tasman.inequality.rental_affordability_gap
+title: Rents up 54 percent against incomes up 22 percent
+theme: inequality
+section: inequality
+subpage: rental_affordability_gap
+parent: inequality
+order: 3
+updated: '2026-04-26'
+summary: Between 2016 and 2023, Tasman median rents rose around 54 percent while median incomes rose around 22 percent.
+  Sole-income households earning under NZD 50,000 now spend 45-50 percent of gross income on rent; two-income families
+  typically 25-30 percent. Temporary and part-time workers carry the heaviest burden.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - median_rent_to_median_income_ratio
+  - share_households_50pct_rent_burden
+  inputs:
+  - new_rental_supply
+  - income_support_settings
+  constraints:
+  - regional_wage_growth
+  - rental_market_concentration
+  feedback_loops:
+  - High rent burden suppresses discretionary spending, which weakens local hospitality and retail employers, which
+    suppresses wages further.
+narrative:
+- heading: An affordability scissor
+  body: When rents rise more than twice as fast as incomes for seven years, the cumulative gap is structural rather
+    than cyclical. The threshold of 'rent eating half of gross income' is now routine for sole earners on regional
+    wages (claim.tasman.inequality.rental_affordability_gap_claim).
+- heading: Burden distribution is uneven by household type
+  body: Two-income families absorb the rise more easily than sole earners; permanent employees absorb it more easily
+    than seasonal and part-time workers. The rent rise therefore widens within-region inequality even before any
+    change in headline wage distribution.
+claim_ids:
+- claim.tasman.inequality.rental_affordability_gap_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,21 @@
+id: camp.marlborough.climate.coastal_adaptation
+name: Coastal Adaptation and Managed Retreat
+theme: climate-adaptation
+core_claim: Picton and Sounds area resilience planning.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.climate.drought_wine_industry
+interventions:
+- description: 'Action 1: Coastal Adaptation and Managed Retreat'
+- description: 'Action 2: Coastal Adaptation and Managed Retreat'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

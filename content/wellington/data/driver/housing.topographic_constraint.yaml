@@ -1,0 +1,14 @@
+id: driver.wellington.housing.topographic_constraint
+name: Topographic land supply constraint
+description: Approximately 60% of Wellington City has slopes exceeding 15 degrees, severely limiting cost-effective residential
+  construction and concentrating all development pressure on a small stock of flat and low-slope land.
+theme: housing
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.wellington.housing.affordability
+- problem.wellington.housing.land_supply
+claim_ids:
+- claim.wellington.housing.greenfield_constraint_topography

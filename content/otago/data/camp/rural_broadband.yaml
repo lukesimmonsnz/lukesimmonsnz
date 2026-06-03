@@ -1,0 +1,21 @@
+id: camp.otago.infrastructure.rural_broadband
+name: Rural Broadband Rollout and Subsidy
+theme: infrastructure
+core_claim: Government subsidies for fibre and wireless broadband enable rural digital
+  participation.
+flagship_moves:
+- Subsidize fibre deployment to rural Otago
+- Deploy 5G wireless towers in coverage gaps
+- Lower broadband price caps through competition
+tensions:
+- High subsidy costs; limited revenue recapture
+- Technology obsolescence risk
+addresses:
+- problem.otago.infrastructure.digital_rural
+interventions:
+- description: Extend fibre to 95% of Central Otago population centers by 2030
+  state_variable: broadband_coverage
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

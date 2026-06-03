@@ -1,0 +1,11 @@
+id: driver.canterbury.climate.sea_level_rise_coastal_exposure
+name: Sea Level Rise (0.5-1.0m by 2100)
+description: Sea Level Rise (0.5-1.0m by 2100)
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.climate.climate_risk
+claim_ids: []

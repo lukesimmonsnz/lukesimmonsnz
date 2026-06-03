@@ -1,0 +1,11 @@
+id: source.stats_nz_census_2023
+title: "Census 2023: Hawke''s Bay Regional Profile"
+author: null
+publisher: Stats NZ
+year: 2023
+url: https://www.stats.govt.nz/tools/2023-census-place-summaries/hawkes-bay-region
+type: primary-data
+credibility: official
+geo_granularity:
+- hawkes-bay
+notes: "Primary census data for Hawke's Bay region and sub-areas."

@@ -1,0 +1,24 @@
+id: camp.wellington.inequality.place_based_investment
+name: Place-Based Investment in Porirua and Hutt Valley
+theme: inequality
+core_claim: Concentrating social investment in high-deprivation communities through integrated wraparound services is more
+  effective than generic transfers.
+flagship_moves:
+- Establish place-based investment hubs in Cannons Creek, Naenae, and Wainuiomata
+- Co-locate housing, health, education, and employment services
+- Iwi-led commissioning of social services in high-Māori-population areas
+tensions:
+- Place-based models risk stigmatising communities through geographic targeting
+- Effectiveness evidence is mixed; sustained political commitment is difficult
+addresses:
+- problem.wellington.inequality.geographic_deprivation
+- problem.wellington.inequality.child_poverty
+interventions:
+- description: Establish 3 place-based investment hubs in Cannons Creek, Naenae, and Wainuiomata with 5-year Crown funding
+    commitment
+  state_variable: service_access_deprived_areas
+  constraint_relaxed: geographic_service_gap
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

@@ -1,0 +1,20 @@
+id: claim.waikato.climate.flood_frequency_increase
+statement: The Waikato River floodplain (hosting major urban areas including Hamilton,
+  NZ's 4th city) faces increased flood frequency under climate projections, with 1-in-100-year
+  flood depths projected to increase 0.5-1.0m by 2100, threatening ~$8B in property
+  assets.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_waikato_climate_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato flood_risk claim

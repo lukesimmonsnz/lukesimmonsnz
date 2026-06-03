@@ -1,0 +1,16 @@
+id: driver.northland.crime.drug_supply_driver
+name: Drug supply networks and organised crime
+description: Northland's geographic position and sparse surveillance make it a transit
+  and distribution point for drug supply networks.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.northland.crime.northland_crime
+- problem.northland.crime.family_violence
+- problem.northland.crime.methamphetamine
+- problem.northland.crime.rural_policing
+claim_ids:
+- claim.northland.crime.rural_policing_claim1

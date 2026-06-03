@@ -1,0 +1,12 @@
+id: driver.canterbury.health.deprivation_health_inequality
+name: Deprivation-Health Inequity Correlation
+description: Deprivation-Health Inequity Correlation
+theme: health
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.health.health_outcomes
+- problem.canterbury.health.chronic_disease
+claim_ids: []

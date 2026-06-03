@@ -1,0 +1,20 @@
+id: camp.otago.education.ece_subsidy
+name: Early Childhood Education Expansion and Subsidies
+theme: education
+core_claim: Free or subsidized ECE increases enrollment and primary school readiness.
+flagship_moves:
+- Subsidize ECE to $20/week parent cost
+- Rural mobile ECE services
+- Teacher qualifications and wage support
+tensions:
+- Ongoing subsidy cost; provider resourcing
+- Quality variability across providers
+addresses:
+- problem.otago.education.early_childhood
+interventions:
+- description: Increase rural ECE enrollment to 80% by age 3
+  state_variable: ece_participation_rate
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

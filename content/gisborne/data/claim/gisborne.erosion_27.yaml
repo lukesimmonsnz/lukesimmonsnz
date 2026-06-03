@@ -1,0 +1,21 @@
+id: claim.gisborne.environment.erosion_27
+statement: Soil erosion in Gisborne is extensive due to steep terrain, forestry harvest
+  practices, and rainfall intensity. Erosion damages productive land at 200-300 hectares
+  annually; sedimentation of waterways reduces fishery productivity and water quality,
+  affecting downstream users.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.niwa_climate_projections_2024
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.median_multiple_v1
+notes: null

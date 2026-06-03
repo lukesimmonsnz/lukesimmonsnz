@@ -1,0 +1,42 @@
+id: problem.west_coast.climate.climate_2
+title: Highest-rainfall region with chronic flooding exposure
+theme: climate-adaptation
+section: climate
+subpage: climate_2
+parent: climate_risk
+order: 2
+updated: '2026-04-26'
+summary: The West Coast receives 5,000-10,000 mm of rainfall annually in the ranges, by far the highest in New Zealand. Combined
+  with steep catchment topography and short concentration times, this produces chronic flooding exposure for Greymouth, Hokitika
+  and Westport, with major events in 2021 and 2022 inundating hundreds of homes.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - annual_rainfall_mm
+  - stopbank_design_return_period
+  - homes_inundated_per_event
+  inputs:
+  - wcrc_river_management_budget
+  - central_government_resilience_co_funding
+  constraints:
+  - alpine_catchment_topography
+  - narrow_coastal_floodplain
+  feedback_loops:
+  - Each major flood reveals undersized infrastructure and raises the engineering standard for replacement, which lifts long-run
+    capex demand on a small ratepayer base — sustaining a permanent infrastructure deficit.
+narrative:
+- heading: Rainfall as a structural condition
+  body: Annual rainfall on the West Coast ranges from roughly 2,500 mm at the coast to over 10,000 mm in the headwaters of
+    the Southern Alps catchments (claim.west_coast.climate.climate_2_claim). Climate-change projections point to more intense
+    atmospheric-river events, lifting both peak discharge and the frequency of flood events that overtop existing stopbanks.
+- heading: Catchments without storage
+  body: Most West Coast rivers run from alpine source to sea in tens of kilometres, with little natural storage to attenuate
+    peak flows. Stopbanks, channel works and gravel management are the dominant tools, and the maintenance burden is large
+    relative to the rateable base of the three territorial authorities that share it.
+claim_ids:
+- claim.west_coast.climate.climate_2_claim
+status: draft
+time_horizons:
+- generation
+- century

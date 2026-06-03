@@ -1,0 +1,30 @@
+id: problem.waikato.inequality.child_poverty
+title: Child poverty and material hardship
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: problem.waikato.inequality.waikato_inequality
+order: 2
+updated: '2026-04-26'
+summary: Over 25% of Waikato children experience material hardship, concentrated in
+  Hamilton's high-deprivation suburbs.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - gini_coefficient
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing child poverty creates feedback on regional outcomes.
+narrative:
+- heading: Child poverty and material hardship
+  body: Over 25% of Waikato children experience material hardship, concentrated in
+    Hamilton's high-deprivation suburbs.
+claim_ids:
+- claim.waikato.inequality.child_poverty_25pct
+status: draft
+time_horizons: [decade, generation, century]

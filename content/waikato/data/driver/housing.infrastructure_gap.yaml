@@ -1,0 +1,10 @@
+id: driver.waikato.housing.infrastructure_gap
+name: Infrastructure servicing capacity gap
+description: Infrastructure servicing capacity gap in the regional context.
+theme: housing
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

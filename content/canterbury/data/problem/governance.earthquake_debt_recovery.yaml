@@ -1,0 +1,46 @@
+id: problem.canterbury.governance.earthquake_debt_recovery
+title: Earthquake Debt & Long-Term Financial Recovery
+theme: governance
+section: governance
+subpage: earthquake_debt_recovery
+parent: problem.canterbury.governance.governance
+order: 1
+updated: '2026-04-26'
+summary: 'CCC''s earthquake debt ($1.1B, 2024) constrains long-term capital investment
+  in climate adaptation, housing, and transport. Debt repayment extends to 2040+.
+  Rate base is strained (rates rising faster than inflation). Central government support
+  ($5.5B total, recovered 2011-2024) has ended. Future capital projects (light rail,
+  major cycling, green infrastructure) compete with debt service for limited resources.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - council_debt_balance
+  - annual_debt_service_cost
+  - rate_revenue_growth_rate
+  - deferred_capital_project_backlog_value
+  inputs:
+  - central_govt_assistance_availability
+  - local_development_contributions
+  - rate_tolerance_political
+  constraints:
+  - debt_repayment_schedule
+  - rate_equity_and_affordability
+  feedback_loops:
+  - Dynamic feedback mechanisms drive earthquake debt & long-term financial recovery.
+narrative:
+- heading: Debt service crowding out climate & growth investment
+  body: 'CCC rates have risen 30% since 2011 as debt service consumes ~NZD 100M/year.
+    Climate adaptation infrastructure (stormwater, flood management) and growth infrastructure
+    (water, wastewater) compete for funding against debt repayment. Light rail, for
+    example, is not fundable without central govt grants that are uncertain.
+
+    '
+claim_ids:
+- claim.canterbury.governance.council_debt_balance_2024
+- claim.canterbury.governance.council_rate_growth_2023
+- claim.canterbury.governance.cera_recovery_programme_2016
+status: draft
+time_horizons: [decade, generation, century]

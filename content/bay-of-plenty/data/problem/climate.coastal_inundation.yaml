@@ -1,0 +1,31 @@
+id: problem.bay_of_plenty.climate.coastal_inundation
+title: Sea-level rise and coastal inundation exposure in Bay of Plenty — Te Moana-a-Toi
+theme: climate-adaptation
+section: climate
+subpage: coastal_inundation
+parent: problem.bay_of_plenty.climate.climate_risk
+order: 44
+updated: '2026-04-26'
+summary: Sea-level rise and coastal inundation exposure is a sub-dimension of the
+  regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - coastal_inundation_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Sea-level rise and coastal inundation exposure is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.climate.coastal_inundation_87
+- claim.bay_of_plenty.climate.coastal_inundation_88
+status: draft
+time_horizons: [generation, century]

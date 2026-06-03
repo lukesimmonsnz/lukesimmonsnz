@@ -1,0 +1,20 @@
+id: camp.gisborne.education.achievement_approach
+name: Strategic approach for achievement
+theme: education
+core_claim: Strategic intervention on achievement will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting achievement
+- Priority action 2 targeting achievement
+- Institutional coordination mechanism for achievement
+tensions:
+- 'Tension 1: achievement'
+- 'Tension 2: achievement'
+addresses:
+- problem.gisborne.education.achievement
+interventions:
+- description: Primary intervention for achievement
+  state_variable: achievement_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

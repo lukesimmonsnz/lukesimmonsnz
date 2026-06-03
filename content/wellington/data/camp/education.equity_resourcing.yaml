@@ -1,0 +1,22 @@
+id: camp.wellington.education.equity_resourcing
+name: Equity-Weighted School Resourcing
+theme: education
+core_claim: Directing additional teacher and resource funding to high-deprivation schools in Porirua and Hutt Valley is the
+  most direct lever for closing the achievement gap.
+flagship_moves:
+- Implement equity index funding with 1.5× teacher allocation for decile 1–3 schools
+- Specialist literacy and numeracy teacher deployment in lowest-performing schools
+- Community education hubs open outside school hours in high-deprivation areas
+tensions:
+- Teacher allocation without addressing teacher supply does not produce actual teachers
+- Equity funding is contested by suburban schools who perceive disadvantage
+addresses:
+- problem.wellington.education.achievement
+interventions:
+- description: Implement equity index teacher ratio of 1:15 for all Porirua and Hutt Valley decile 1–3 schools
+  state_variable: ncea_l2_attainment_low_decile
+  constraint_relaxed: teacher_resource_inequity
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

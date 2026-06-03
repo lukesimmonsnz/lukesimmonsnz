@@ -1,0 +1,21 @@
+id: camp.marlborough.governance.water_co_governance
+name: Water Allocation Co-governance
+theme: governance
+core_claim: Iwi partnership in water decision-making.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.health.mental_health
+interventions:
+- description: 'Action 1: Water Allocation Co-governance'
+- description: 'Action 2: Water Allocation Co-governance'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

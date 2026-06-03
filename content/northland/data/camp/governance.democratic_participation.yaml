@@ -1,0 +1,20 @@
+id: camp.northland.governance.democratic_participation
+name: Democratic participation and engagement
+theme: governance
+core_claim: Democratic participation and engagement is a key strategy for addressing
+  regional challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement democratic participation and engagement
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- northland
+tensions_with: []

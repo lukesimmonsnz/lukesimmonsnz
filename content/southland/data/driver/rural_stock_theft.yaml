@@ -1,0 +1,12 @@
+id: driver.southland.crime.rural_stock_theft
+name: Rural Stock Theft and Farm Burglary
+description: Farming community experiences regular stock theft, vehicle theft; limited
+  police patrol.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.crime.rural_crime
+claim_ids: []

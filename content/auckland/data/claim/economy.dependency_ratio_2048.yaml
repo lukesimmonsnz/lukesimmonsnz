@@ -1,0 +1,27 @@
+id: claim.auckland.economy.dependency_ratio_2048
+statement: >
+  The old-age dependency ratio (population aged 65+ per 100 of
+  working-age 15-64) is projected to rise from approximately 26 in
+  2023 to 40-45 by 2048 under Stats NZ's medium projection, depending
+  on net migration assumptions. The fiscal implications — superannuation,
+  health and long-term care — are the central long-run pressure on the
+  Crown balance sheet identified in successive Long-Term Insights
+  Briefings.
+value: 42
+unit: old-age dependency ratio (mid-point of medium projection range)
+time_period: 2023-2048
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+- source.stats_nz_population_projections_2024
+scoped_to:
+- nz
+national_assertion: true
+region_mentions: []
+methodology_tag: methodology.admin_count_v1
+notes: >
+  Treasury Long-Term Insights Briefing uses Stats NZ projections as
+  the demographic input to its fiscal sustainability modelling. This
+  claim is the demographic primitive; the fiscal flow-through is
+  treated under the existing nz_public_debt_trajectory claim.

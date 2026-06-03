@@ -1,0 +1,22 @@
+id: camp.wellington.crime.drug_harm_reduction
+name: Drug Harm Reduction and Treatment
+theme: crime
+core_claim: Treating drug dependency as a health issue rather than a criminal one reduces organised crime revenue and reduces
+  harm to users.
+flagship_moves:
+- Drug checking services at Wellington venues and events
+- Opioid substitution therapy access without waitlists
+- Decriminalise personal-use possession and redirect enforcement to supply
+tensions:
+- Decriminalisation may face strong political opposition nationally
+- Treatment availability is constrained by workforce shortage in addiction medicine
+addresses:
+- problem.wellington.crime.organised_crime
+interventions:
+- description: Fund drug checking services and opioid substitution therapy expansion in Wellington, reducing demand-side organised
+    crime revenue
+  state_variable: drug_related_harm_index
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

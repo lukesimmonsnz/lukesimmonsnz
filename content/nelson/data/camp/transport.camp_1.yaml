@@ -1,0 +1,25 @@
+id: camp.nelson.transport.camp_1
+name: 'Response: Camp 1'
+theme: transport
+core_claim: A response strategy addressing transport challenges.
+flagship_moves:
+- Build dedicated cycling and walking infrastructure connecting Nelson urban centres
+- Expand bus frequency and coverage on key corridors
+- Develop park-and-ride facilities at key transport nodes
+tensions:
+- Transport investment requires sustained funding and may face competing regional
+  priorities.
+- Mode shift away from private cars faces social resistance in car-dependent communities.
+addresses:
+- problem.nelson.transport.connectivity
+- problem.nelson.transport.connectivity_2
+interventions:
+- description: Improve transport connectivity and mode choice in Nelson
+  state_variable: transport_accessibility
+  expected_sign: +
+- description: Invest in active transport infrastructure
+  state_variable: active_mode_share
+  expected_sign: +
+applicable_in:
+- nelson
+tensions_with: []

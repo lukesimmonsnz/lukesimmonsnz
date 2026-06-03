@@ -1,0 +1,11 @@
+id: driver.otago.economy.commodity_price_volatility
+name: Agricultural Commodity Price Volatility
+description: Wine, fruit, pastoral prices volatile; margins compressed.
+theme: economy
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.economy.agri_primary
+claim_ids: []

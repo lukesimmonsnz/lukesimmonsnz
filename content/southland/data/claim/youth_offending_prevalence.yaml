@@ -1,0 +1,21 @@
+id: claim.southland.crime.youth_offending_prevalence
+statement: Youth offending in Southland shows concentration in Gore and Winton. Youth
+  justice referrals from secondary schools in smaller towns exceed Invercargill rates
+  on per-capita basis. Limited youth employment/activity programmes outside Invercargill;
+  rural youth service gaps documented. Substance misuse (alcohol, cannabis, methamphetamine)
+  associated with offending.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

@@ -1,0 +1,11 @@
+id: driver.southland.education.rural_school_capacity
+name: Rural School Capacity and Resourcing Constraints
+description: Small rural schools struggle with funding, staffing, and curriculum breadth.
+theme: education
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.education.achievement
+claim_ids: []

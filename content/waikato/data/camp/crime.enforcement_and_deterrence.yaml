@@ -1,0 +1,23 @@
+id: camp.waikato.crime.enforcement_and_deterrence
+name: Targeted enforcement and deterrence
+theme: crime
+core_claim: Targeted policing of high-harm offending, particularly family violence
+  and drug supply, reduces crime at lower cost than broad enforcement.
+flagship_moves:
+- Increase Hamilton Police family harm prevention units
+- Expand drug rehabilitation courts as alternative to incarceration
+- Implement place-based policing in high-crime Hamilton suburbs
+tensions:
+- Enforcement focus without prevention investment addresses symptoms not causes
+- Community-police trust is lower in Māori communities, reducing effectiveness
+interventions:
+- description: Increase Hamilton Police family harm prevention units
+  state_variable: recorded_crime_rate
+  expected_sign: +
+addresses:
+- problem.waikato.crime.family_violence
+- problem.waikato.crime.youth_offending
+- problem.waikato.crime.drug_crime
+applicable_in:
+- waikato
+tensions_with: []

@@ -5,6 +5,8 @@
 {% block meta_description %}Biographical essay on David Roy Simmons — his early life, study in France, museum career, and scholarship on Māori art and history.{% endblock %}
 
 {% block content %}
+{% set _ds_intro = davidsimmons_slot_render('about') %}
+{% if _ds_intro %}<div class="page-intro">{{ _ds_intro | safe }}</div>{% endif %}
 <div class="page">
   {{ breadcrumbs([
     ('Home', url_for('main.home')),

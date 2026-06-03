@@ -1,0 +1,25 @@
+id: claim.canterbury.housing.quakecore_seismic_research_2023
+statement: >
+  QuakeCoRE - New Zealand's Centre of Research Excellence for earthquake
+  resilience, hosted at the University of Canterbury - has produced
+  the post-2011 evidence base on building performance during the
+  Canterbury earthquake sequence. Its peer-reviewed research underpins
+  current Building Code seismic provisions for unreinforced masonry,
+  multi-storey reinforced concrete, and geotechnical liquefaction
+  design - with Christchurch's residential and commercial rebuild
+  serving as the working dataset for revised national standards.
+value: null
+unit: null
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-05-06'
+source_ids:
+  - source.quakecore_canterbury_research_2023
+scoped_to:
+  - canterbury
+national_assertion: false
+region_mentions:
+  - canterbury
+methodology_tag: null
+notes: null

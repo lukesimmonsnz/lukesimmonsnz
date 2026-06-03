@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.infrastructure.wastewater
+title: Wastewater collection and treatment
+theme: infrastructure
+section: infrastructure
+subpage: wastewater
+parent: problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+order: 2
+updated: '2026-04-26'
+summary: 'Wastewater treatment plants in Napier and Hastings operate near capacity. Aging pipes have high infiltration. Cyclone Gabrielle damaged treatment facilities. Expansion of capacity is deferred due to financing constraints and co-governance delays.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - treatment_plant_capacity_percent_used
+    - pipe_condition_index
+  inputs:
+    - urban_intensification_demand
+    - extreme_rainfall_infiltration
+  constraints:
+    - treatment_plant_siting_constraints
+    - council_funding_availability
+  feedback_loops:
+    - 'Capacity constraints limit development; growth pressure increases; systems overflow; environmental damage increases regulatory burden.'
+narrative:
+  - heading: Capacity Constraints
+    body: 'Napier and Hastings wastewater plants currently operate at 85-90% capacity. Development contributions are insufficient to fund expansions.'
+  - heading: Asset Deterioration
+    body: 'Many gravity sewer mains are 50+ years old. Cyclone flooding damaged lining; infiltration rates are rising, overloading treatment plants.'
+claim_ids:
+  - claim.hawkes_bay.infrastructure.wastewater_capacity_85_percent
+status: draft
+time_horizons: [decade, generation]

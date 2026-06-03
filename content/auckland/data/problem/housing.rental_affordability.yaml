@@ -72,3 +72,4 @@ claim_ids:
   - claim.auckland.housing.rental_cost_burden
   - claim.auckland.housing.rental_tenure_insecurity
 status: draft
+time_horizons: [decade, generation, century]

@@ -1,0 +1,24 @@
+id: 'problem.northland.transport.connectivity'
+title: 'Te Tai Tokerau Northland: transport connectivity'
+theme: 'transport'
+section: 'transport'
+subpage: 'connectivity'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Networks constrain regional connectivity.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Networks constrain regional connectivity.'
+claim_ids:
+- 'claim.northland.transport.connectivity_claim1'
+- 'claim.northland.transport.connectivity_claim2'
+status: 'draft'

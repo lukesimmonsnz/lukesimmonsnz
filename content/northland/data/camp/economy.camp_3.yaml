@@ -1,0 +1,20 @@
+id: 'camp.northland.economy.camp_3'
+name: 'Community engagement and co-design in economy'
+theme: 'economy'
+core_claim: 'Community engagement and co-design in economy is a key strategy.'
+flagship_moves:
+- 'Establish governance'
+- 'Allocate funding'
+- 'Build engagement'
+tensions:
+- 'Implementation requires coordination'
+- 'Resource constraints limit scale'
+addresses: []
+interventions:
+- 
+  description: 'Implement community engagement and co-design in economy'
+  state_variable: null
+  expected_sign: '+'
+applicable_in:
+- 'northland'
+tensions_with: []

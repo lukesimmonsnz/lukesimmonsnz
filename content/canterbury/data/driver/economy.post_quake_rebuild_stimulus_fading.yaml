@@ -1,0 +1,11 @@
+id: driver.canterbury.economy.post_quake_rebuild_stimulus_fading
+name: Post-Earthquake Rebuild Stimulus Fading (2024+)
+description: Post-Earthquake Rebuild Stimulus Fading (2024+)
+theme: economy
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.canterbury.economy.economic_structure
+claim_ids: []

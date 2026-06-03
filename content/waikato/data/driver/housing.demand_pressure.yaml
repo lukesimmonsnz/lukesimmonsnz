@@ -1,0 +1,10 @@
+id: driver.waikato.housing.demand_pressure
+name: Strong migration and in-migration demand
+description: Strong migration and in-migration demand in the regional context.
+theme: housing
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids: []
+claim_ids: []

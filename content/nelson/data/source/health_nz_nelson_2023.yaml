@@ -1,0 +1,12 @@
+id: source.health_nz_nelson_2023
+title: Health Outcomes Nelson Region 2023
+author: Health New Zealand
+publisher: Health New Zealand
+year: 2023
+url: https://www.health.govt.nz
+type: government-report
+credibility: official
+geo_granularity:
+- nelson
+- nz
+notes: Mental health access, waiting times, chronic disease prevalence.

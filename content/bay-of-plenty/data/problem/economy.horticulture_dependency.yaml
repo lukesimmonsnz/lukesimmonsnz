@@ -1,0 +1,32 @@
+id: problem.bay_of_plenty.economy.horticulture_dependency
+title: Horticulture sector concentration and labour dependency in Bay of Plenty —
+  Te Moana-a-Toi
+theme: economy
+section: economy
+subpage: horticulture_dependency
+parent: problem.bay_of_plenty.economy.economic_development
+order: 34
+updated: '2026-04-26'
+summary: Horticulture sector concentration and labour dependency is a sub-dimension
+  of the regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - horticulture_dependency_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Horticulture sector concentration and labour dependency is a specific manifestation
+    of the broader pressure.
+claim_ids:
+- claim.bay_of_plenty.economy.horticulture_dependency_67
+- claim.bay_of_plenty.economy.horticulture_dependency_68
+status: draft
+time_horizons: [decade, generation]

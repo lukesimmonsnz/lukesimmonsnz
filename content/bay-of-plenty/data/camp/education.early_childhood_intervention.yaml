@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.education.early_childhood_intervention
+name: Intervention for early_childhood
+theme: education
+core_claim: Targeted intervention on early_childhood will improve outcomes.
+flagship_moves:
+- Policy measure 1 for early_childhood
+- Policy measure 2 for early_childhood
+- Implementation mechanism for early_childhood
+tensions:
+- Trade-off A for early_childhood
+- Trade-off B for early_childhood
+addresses:
+- problem.bay_of_plenty.education.early_childhood
+interventions:
+- description: Core intervention targeting early_childhood
+  state_variable: early_childhood_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

@@ -1,0 +1,23 @@
+id: camp.waikato.inequality.place_based_investment
+name: Place-based investment in deprived communities
+theme: inequality
+core_claim: Targeted investment in Hamilton's high-deprivation suburbs and rural towns
+  addresses spatial concentration of disadvantage.
+flagship_moves:
+- Fund Hamilton East and Nawton intensive wraparound social services
+- Establish community development trusts in deprived Hamilton suburbs
+- Pilot universal basic services in Waikato rural communities
+tensions:
+- Place-based approaches risk stigmatising target communities
+- Resource-intensive models are difficult to sustain at scale
+interventions:
+- description: Fund Hamilton East and Nawton intensive wraparound social services
+  state_variable: gini_coefficient
+  expected_sign: +
+addresses:
+- problem.waikato.inequality.child_poverty
+- problem.waikato.inequality.ethnic_gap
+- problem.waikato.inequality.rural_poverty
+applicable_in:
+- waikato
+tensions_with: []

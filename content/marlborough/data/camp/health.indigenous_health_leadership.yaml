@@ -1,0 +1,21 @@
+id: camp.marlborough.health.indigenous_health_leadership
+name: Indigenous Health Leadership and Provision
+theme: health
+core_claim: Māori-led health service design and delivery.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.health.rural_workforce
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

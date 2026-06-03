@@ -1,0 +1,35 @@
+id: problem.nelson.climate.climate_2
+title: Warming trend stressing water, agriculture, and infrastructure
+theme: climate-adaptation
+section: climate
+subpage: climate_2
+parent: climate_risk
+order: 2
+updated: '2026-04-26'
+summary: Mean temperature in Nelson has risen approximately 1.1 degrees C between the 1970-1999 baseline and the 2000-2022 period, and annual rainfall variability has increased about 12 percent over the same window. The result is more intense summer drought punctuated by heavier individual rainfall events, stressing horticulture, water supply, and stormwater systems together.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - mean_annual_temperature_c
+  - summer_rainfall_deficit_mm
+  - irrigation_demand_index
+  inputs:
+  - greenhouse_gas_concentration
+  - land_use_intensity
+  constraints:
+  - catchment_storage_capacity
+  - aquifer_recharge_rate
+  feedback_loops:
+  - 'Drought-demand feedback: drier summers raise irrigation demand at the same time that surface and aquifer yields fall, sharpening the same-year deficit.'
+narrative:
+- heading: Warming and rainfall variability
+  body: Local NIWA station records and Nelson Tasman water-supply monitoring show a consistent warming signal layered onto high natural variability (claim.nelson.climate.climate_2_claim). Summer dry spells have lengthened, raising irrigation demand in the Waimea Plains and the apple/hops belt at the same time river and aquifer recharge is falling.
+- heading: Cascading effects on small infrastructure
+  body: 'Nelson''s small ratepayer base means there is little spare capacity in either water-supply yield or stormwater conveyance. A warming trend that would be manageable in a larger metro becomes binding here: summer water restrictions are now routine, and individual storm events repeatedly exceed pre-2000 design assumptions for culverts, drains, and the Maitai network.'
+claim_ids:
+- claim.nelson.climate.climate_2_claim
+status: draft
+time_horizons:
+- generation
+- century

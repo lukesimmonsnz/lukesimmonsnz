@@ -1,0 +1,21 @@
+id: camp.marlborough.environment.marine_protection
+name: Marine Ecosystem Protection
+theme: environment
+core_claim: Expanded marine protected areas and aquaculture regulation.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.environment.sounds_water_quality
+interventions:
+- description: 'Action 1: Marine Ecosystem Protection'
+- description: 'Action 2: Marine Ecosystem Protection'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

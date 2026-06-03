@@ -1,0 +1,13 @@
+id: driver.wellington.transport.deferred_rail_investment
+name: Deferred rail infrastructure investment
+description: Wellington's suburban rail network carries a significant deferred maintenance and renewal backlog accumulated
+  over decades of under-investment relative to asset condition and demand growth.
+theme: transport
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.transport.rail_network
+claim_ids:
+- claim.wellington.transport.rail_infrastructure_backlog

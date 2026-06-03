@@ -1,0 +1,21 @@
+id: claim.southland.education.tertiary_access_prevalence
+statement: Tertiary education access in Southland is constrained by lack of local
+  university provision. Southern Institute of Technology (now Te Pūkenga Southland
+  campus) offers trades/vocational training; no undergraduate degree pathways locally.
+  University study requires relocation to Dunedin (Otago University), Christchurch,
+  or Auckland; financial and social barriers limit participation.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

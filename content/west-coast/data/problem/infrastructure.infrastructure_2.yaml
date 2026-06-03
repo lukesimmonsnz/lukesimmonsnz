@@ -1,0 +1,42 @@
+id: problem.west_coast.infrastructure.infrastructure_2
+title: SH6 lifeline route and the closure-day budget
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_2
+parent: infrastructure
+order: 2
+updated: '2026-04-26'
+summary: State Highway 6 is the only road connection between the West Coast and the rest of New Zealand, and experiences frequent
+  closures from flooding, slips and rockfall — with major events such as the 2022 Haast Pass closure (12 days) and 2023 Buller
+  closures (8 days) becoming routine rather than exceptional.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - sh6_closure_days_per_year
+  - median_closure_duration_hours
+  - freight_detour_kilometres
+  inputs:
+  - waka_kotahi_state_highway_capex
+  - emergency_works_funding
+  constraints:
+  - alpine_terrain
+  - single_corridor_route
+  feedback_loops:
+  - Reactive emergency repair consumes the maintenance budget that would otherwise fund preventive resilience works, ensuring
+    that each event is followed by a similar event before structural hardening is delivered.
+narrative:
+- heading: The corridor as a single point of failure
+  body: SH6 is the lifeline route for fuel, food, freight, ambulance transfers and tourism, and it has no alternate alignment
+    (claim.west_coast.infrastructure.infrastructure_2_claim). Closure days are increasing, both in count and in median duration,
+    as catchments saturate faster under intensifying rainfall.
+- heading: Maintenance budget versus climate trajectory
+  body: Waka Kotahi's road-maintenance budget for the SH6 corridor is set by a national-prioritisation framework that does
+    not yet fully internalise the regional resilience cost. Each major repair is funded reactively, and the long-run capex
+    required to harden the route is not yet committed.
+claim_ids:
+- claim.west_coast.infrastructure.infrastructure_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

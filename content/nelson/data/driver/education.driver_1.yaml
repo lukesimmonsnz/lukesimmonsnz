@@ -1,0 +1,12 @@
+id: driver.nelson.education.driver_1
+name: Household material deprivation and school-readiness gap
+description: Concentrated material deprivation in particular suburbs depresses school-readiness at Year 0 and persists through Year 13 attainment. ECE cost barriers, household instability, and food insecurity all interact upstream of the schooling system.
+theme: education
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.education.achievement
+- problem.nelson.education.early_childhood
+claim_ids: []

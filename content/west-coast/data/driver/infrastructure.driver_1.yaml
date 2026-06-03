@@ -1,0 +1,14 @@
+id: driver.west_coast.infrastructure.driver_1
+name: Compounded hazard envelope (flood, fault, sea)
+description: The West Coast carries unusually high simultaneous exposure to riverine flooding, Alpine Fault seismic rupture
+  and sea-level rise. Infrastructure resilience design has to reason about the joint distribution of these hazards rather
+  than each in isolation.
+theme: infrastructure
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.west_coast.infrastructure.infrastructure
+- problem.west_coast.infrastructure.infrastructure_2
+claim_ids: []

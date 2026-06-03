@@ -1,0 +1,60 @@
+{% extends "research/_layout.html" %}
+{% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/cite.html" import cite_block %}
+
+{% block title %}{{ page.title }} · {{ section_title }} · Northland · Research · Luke Simmons{% endblock %}
+{% block meta_description %}{{ page.summary or page.title }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_title %}{{ page.title }}{% endblock %}
+{% block og_description %}{{ page.summary or page.title }}{% endblock %}
+
+{% block content %}
+<div class="page">
+  {{ breadcrumbs([
+    ('Home', url_for('main.home')),
+    ('Research', url_for('research.index')),
+    ('Northland — Te Tai Tokerau', url_for('northland.index')),
+    (section_title, url_for('northland.section', section=section)),
+    (page.title, None),
+  ]) }}
+
+  <header class="page-header">
+    <div class="post-meta">
+      {% if page.updated_display %}<time>Updated {{ page.updated_display }}</time>{% endif %}
+      {% if page.status %}<span class="chip">{{ page.status }}</span>{% endif %}
+      {% if page.generated_from %}<span class="chip" title="Generated from entity {{ page.generated_from }}">generated</span>{% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}
+    <hr class="rule">
+    <p class="lede">{{ page.summary }}</p>
+    {% endif %}
+  </header>
+
+  <article class="prose">
+    {{ page.body_html | safe }}
+  </article>
+
+  {{ cite_block(title=page.title, path=request.path, site_url=site_url, current_quarter=current_quarter) }}
+
+  <nav class="pagination-pair" aria-label="Adjacent pages in section">
+    {% if prev_page %}
+      <a class="prev" href="{{ url_for('northland.page', section=prev_page.section, subpage=prev_page.subpage) }}">
+        <span class="label">&larr; Previous</span>
+        <span class="title">{{ prev_page.title }}</span>
+      </a>
+    {% else %}
+      <span class="prev empty" aria-hidden="true"></span>
+    {% endif %}
+
+    {% if next_page %}
+      <a class="next" href="{{ url_for('northland.page', section=next_page.section, subpage=next_page.subpage) }}">
+        <span class="label">Next &rarr;</span>
+        <span class="title">{{ next_page.title }}</span>
+      </a>
+    {% else %}
+      <span class="next empty" aria-hidden="true"></span>
+    {% endif %}
+  </nav>
+</div>
+{% endblock %}

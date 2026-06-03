@@ -1,0 +1,24 @@
+id: 'problem.northland.education.achievement'
+title: 'Te Tai Tokerau Northland: educational achievement'
+theme: 'education'
+section: 'education'
+subpage: 'achievement'
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Achievement is low and unequal.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Achievement is low and unequal.'
+claim_ids:
+- 'claim.northland.education.achievement_claim1'
+- 'claim.northland.education.achievement_claim2'
+status: 'draft'

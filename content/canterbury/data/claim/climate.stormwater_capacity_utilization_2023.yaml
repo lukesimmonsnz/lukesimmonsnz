@@ -1,0 +1,20 @@
+id: claim.canterbury.climate.stormwater_capacity_utilization_2023
+statement: Christchurch stormwater system capacity utilization during 1-in-50-year
+  storm events reaches 85-95%, with projected 1-in-100-year events overtopping pipes
+  and inundating low-lying suburbs. The 2023 King Tide and rainfall events caused
+  $15M+ in localized flooding; system upgrades are scheduled through 2030.
+value: 90
+unit: percent utilization
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_annual_plan_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

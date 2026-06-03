@@ -1,0 +1,33 @@
+id: claim.auckland.transport.light_rail_cancellation
+statement: 'The National-led government cancelled Auckland''s light rail programme
+  in late 2023, terminating both the Dominion Road/City-to-Mangere corridor and the
+  City-to-Airport route. The project had received over $300 million in planning, design,
+  and preliminary works expenditure under the Labour government before cancellation.
+  The decision reversed a decade-long process that included two separate business
+  cases and a competitive procurement process reaching preferred-bidder stage. Auckland
+  Transport and Waka Kotahi estimate the cancellation leaves the Northwest and southern
+  isthmus corridors without a rapid transit upgrade pathway for at least a generation,
+  given the capital and political cycle required to restart any equivalent project.
+
+  '
+value: null
+unit: null
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.auckland_council_ltp_2024
+- source.auckland_transport_annual_2023
+scoped_to:
+- auckland
+national_assertion: false
+region_mentions:
+- auckland
+notes: 'Sunk cost figure ($300M+) circulated in media reports and parliamentary debates;
+  the precise committed/spent breakdown depends on what is counted (Crown payments
+  to preferred-bidder consortium vs internal planning costs). The directional claim
+  (large sunk cost, cancelled at preferred-bidder stage) is well-evidenced. Dominion
+  Road was the primary surface corridor; the airport branch was a secondary spine.
+
+  '

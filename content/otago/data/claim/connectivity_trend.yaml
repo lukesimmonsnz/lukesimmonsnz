@@ -1,0 +1,22 @@
+id: claim.otago.transport.connectivity_trend
+statement: 'Regional connectivity is improving marginally: SH1/SH8 maintenance ongoing
+  but capacity not growing; Frankton congestion worsening with Queenstown tourism/population
+  growth (weekend/holiday peaks); bus services stable (ORC Dunedin) to declining (rural
+  InterCity reductions); Dunedin Airport recovering (1.2M passengers pre-COVID, 80-90%
+  recovery 2023); Queenstown Airport capacity-constrained (expansion proposal contested).
+  Dunedin-Queenstown direct flight service limited; most connections via Auckland/Christchurch.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

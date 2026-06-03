@@ -1,0 +1,12 @@
+id: driver.canterbury.infrastructure.earthquake_debt_service_burden
+name: Earthquake Debt Service Burden
+description: Earthquake Debt Service Burden
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.infrastructure.rebuild
+claim_ids:
+- claim.canterbury.infrastructure.earthquake_debt_2024

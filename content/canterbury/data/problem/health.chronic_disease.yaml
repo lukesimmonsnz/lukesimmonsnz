@@ -1,0 +1,42 @@
+id: problem.canterbury.health.chronic_disease
+title: Chronic Disease Prevention & Management
+theme: health
+section: health
+subpage: chronic_disease
+parent: problem.canterbury.health.health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: Type 2 diabetes prevalence in Canterbury is 8-10% overall, rising to 15% in high-deprivation
+  communities; obesity rates are approximately 33% overall and 41% in high-deprivation areas; cardiovascular
+  disease hospitalisations are rising. Primary prevention is underfunded relative to demand. Chronic disease
+  outcomes track strongly with deprivation and healthcare access, with the largest gaps in Christchurch's
+  eastern suburbs and rural communities.
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - type_2_diabetes_prevalence_rate
+  - obesity_prevalence_by_ethnicity
+  - cardiovascular_hospitalization_rate
+  - preventive_care_uptake_rate
+  inputs:
+  - dietary_environment_quality
+  - physical_activity_opportunity
+  - health_literacy
+  constraints:
+  - preventive_care_funding
+  - lifestyle_program_capacity
+  feedback_loops:
+  - Dynamic feedback mechanisms drive chronic disease prevention & management.
+narrative:
+- heading: Lifestyle disease epidemiology
+  body: 'Canterbury''s chronic disease profile reflects both NZ-wide trends (obesity, sedentary work)
+    and local factors (post-quake stress, deprivation concentration). Preventive services (diabetes education,
+    cardiac rehabilitation) have long waitlists.
+
+    '
+claim_ids:
+- claim.canterbury.health.type_2_diabetes_prevalence_2023
+- claim.canterbury.health.obesity_prevalence_ethnic_disparity_2023
+status: draft
+time_horizons: [decade, generation]

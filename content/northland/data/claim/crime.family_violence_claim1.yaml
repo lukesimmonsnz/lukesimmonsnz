@@ -1,0 +1,20 @@
+id: claim.northland.crime.family_violence_claim1
+statement: Recorded crime in Northland includes family violence, drug-related offenses,
+  and property crime. Police response in rural areas faces geographic delays; family
+  violence notifications have increased 20-30% since 2015, reflecting stress from
+  economic contraction and geographic isolation.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

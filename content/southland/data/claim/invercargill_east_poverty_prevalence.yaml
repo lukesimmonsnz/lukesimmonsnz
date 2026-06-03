@@ -1,0 +1,20 @@
+id: claim.southland.inequality.invercargill_east_poverty_prevalence
+statement: Invercargill East poverty concentration is documented in multiple domains.
+  NZDep deciles 8-10 across contiguous suburbs; child poverty rate >30%; unemployment
+  above city average; health outcomes worse (obesity, diabetes, respiratory disease).
+  Housing quality issues (damp, cold, condensation) documented.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

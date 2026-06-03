@@ -1,0 +1,24 @@
+id: camp.waikato.health.kaupapa_maori_health
+name: Kaupapa Māori health service expansion
+theme: health
+core_claim: Expanding kaupapa Māori health providers and community health workers
+  reduces inequity through culturally appropriate care.
+flagship_moves:
+- Fund 15 additional Māori health providers in the Waikato region
+- Expand community health workers in high-deprivation areas
+- Integrate whānau ora into primary care pathways
+tensions:
+- Kaupapa Māori health requires sustained workforce development pipeline
+- Integration with mainstream health system requires institutional change
+interventions:
+- description: Fund 15 additional Māori health providers in the Waikato region
+  state_variable: health_outcome_index
+  expected_sign: +
+addresses:
+- problem.waikato.health.waikato_health_inequity
+- problem.waikato.health.maori_health_gap
+- problem.waikato.health.rural_access
+- problem.waikato.health.mental_health
+applicable_in:
+- waikato
+tensions_with: []

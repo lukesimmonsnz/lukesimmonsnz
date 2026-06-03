@@ -1,0 +1,48 @@
+id: problem.canterbury.climate.alpine_fault_earthquake
+title: Alpine Fault Seismic Hazard & Preparedness
+theme: climate-adaptation
+section: climate
+subpage: alpine_fault_earthquake
+parent: problem.canterbury.climate.climate_risk
+order: 1
+updated: '2026-04-26'
+summary: 'The Alpine Fault has ruptured in M7+ earthquakes every 200-350 years; last
+  rupture was ~1717. Seismic science (GNS 2022) estimates ~15% probability of M7+
+  rupture in next 50 years. Canterbury lies in the rupture zone; ground shaking, landslides,
+  liquefaction, and possible tsunami are severe. Critical infrastructure (Lyttelton
+  Port, Christchurch Hospital, transport corridors) would be severely disrupted for
+  months. Preparedness and resilience planning is incomplete.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - critical_infrastructure_seismic_resilience_score
+  - building_code_compliance_rate_essential_facilities
+  - emergency_response_supply_stockpile_adequacy
+  - insurance_underwriting_in_high_hazard_zones
+  inputs:
+  - building_retrofit_investment_rate
+  - emergency_preparedness_funding
+  - insurance_market_pricing
+  constraints:
+  - retrofit_cost_and_funding
+  - seismic_uncertainty
+  feedback_loops:
+  - Dynamic feedback mechanisms drive alpine fault seismic hazard & preparedness.
+narrative:
+- heading: Historic hazard, modern risk
+  body: '1717 Alpine Fault rupture caused widespread damage (documented in oral histories,
+    geological evidence). Modern Christchurch (1.4M population, $200B+ assets) is
+    far more vulnerable. Hospital, airport, water systems, port are not seismically
+    resilient to M7+. Post-2011 earthquake improvements help but are incomplete. Insurance
+    for Alpine Fault risk is increasingly expensive or unavailable.
+
+    '
+claim_ids:
+- claim.canterbury.climate.alpine_fault_rupture_probability_2022
+- claim.canterbury.climate.critical_infrastructure_seismic_readiness_2023
+- claim.canterbury.climate.af8_response_planning_2021
+status: draft
+time_horizons: [generation, century]

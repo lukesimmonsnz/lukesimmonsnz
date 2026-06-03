@@ -1,0 +1,14 @@
+id: driver.wellington.housing.retrofit_cost_barrier
+name: Seismic retrofit financial barrier
+description: Seismic retrofit costs for earthquake-prone residential buildings frequently exceed the post-retrofit market
+  value, creating a rational economic barrier to compliance and suppressing residential redevelopment in earthquake-prone
+  zones.
+theme: housing
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.housing.earthquake_risk_buildings
+claim_ids:
+- claim.wellington.housing.seismic_retrofit_cost_barrier

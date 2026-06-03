@@ -1,0 +1,30 @@
+id: problem.bay_of_plenty.crime.youth_offending
+title: Youth offending and gang activity in Bay of Plenty — Te Moana-a-Toi
+theme: crime
+section: crime
+subpage: youth_offending
+parent: problem.bay_of_plenty.crime.safety
+order: 23
+updated: '2026-04-26'
+summary: Youth offending and gang activity is a sub-dimension of the regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - youth_offending_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Youth offending and gang activity is a specific manifestation of the broader
+    pressure.
+claim_ids:
+- claim.bay_of_plenty.crime.youth_offending_45
+- claim.bay_of_plenty.crime.youth_offending_46
+status: draft
+time_horizons: [decade]

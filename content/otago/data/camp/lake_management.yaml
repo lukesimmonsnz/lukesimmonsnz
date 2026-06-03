@@ -1,0 +1,22 @@
+id: camp.otago.environment.lake_management
+name: Lake Water Quality and Algal Bloom Prevention
+theme: environment
+core_claim: Integrated lake management (nutrient load reduction, aeration, invasive
+  control) restores ecosystem health.
+flagship_moves:
+- Target 30% nutrient load reduction to Lakes Wanaka and Wakatipu
+- Install aeration and oxidation systems where needed
+- Control invasive fish species
+tensions:
+- Nutrient reduction requires upstream agricultural change
+- Aeration energy costs and chemical inputs
+addresses:
+- problem.otago.environment.lake_eutrophication
+interventions:
+- description: Install aeration buoys and water quality monitoring in Lakes Wanaka,
+    Wakatipu
+  state_variable: lake_dissolved_oxygen
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.marlborough.economy.apprenticeship_deficit
+name: Apprenticeship And Vocational Training Deficit
+description: Apprenticeship and vocational training deficit.
+theme: economy
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.economy.economic_diversification
+claim_ids: []

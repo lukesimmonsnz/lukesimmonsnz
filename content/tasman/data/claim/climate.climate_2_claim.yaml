@@ -1,0 +1,21 @@
+id: claim.tasman.climate.climate_2_claim
+statement: Tasman region experiences high sunshine hours (2,400+ annually) yet faces
+  increasing drought risk due to warming trends. Waimea Plains aquifer, critical for
+  horticulture, shows documented stress from intensifying dry periods and over-allocation
+  of water rights, with summer irrigation demand projected to grow 15-20% by 2030.
+value: 2400
+unit: hours/year sunshine
+time_period: 2020-2024
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.waimea_aquifer_study_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.transport.pt_coverage_gaps
+name: Public Transport Network Coverage And Frequency Gaps
+description: Public transport network coverage and frequency gaps. This driver operates
+  at regional scale with consensus consensus.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.palmerston_north_congestion
+claim_ids: []

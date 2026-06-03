@@ -1,0 +1,14 @@
+id: driver.waikato.crime.gang_presence
+name: Organised gang presence
+description: Waikato Mongrel Mob and other gangs provide criminal employment alternatives
+  in low-income communities.
+theme: crime
+consensus: consensus
+category: cultural
+timescale: long
+scope: regional
+problem_ids:
+- problem.waikato.crime.family_violence
+- problem.waikato.crime.youth_offending
+- problem.waikato.crime.drug_crime
+claim_ids: []

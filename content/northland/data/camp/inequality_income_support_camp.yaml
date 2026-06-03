@@ -1,0 +1,25 @@
+id: camp.northland.inequality.income_support_camp
+name: Targeted income and social support expansion
+theme: inequality
+core_claim: Expanding income support, social services, and regional development funding
+  reduces the immediate effects of poverty.
+flagship_moves:
+- Increase Working for Families thresholds for regional cost of living
+- Expand social housing in Whangārei and Kaitāia
+- Fund community social workers in high-deprivation areas
+tensions:
+- Transfer payments reduce poverty but do not build economic capacity
+- Service access in rural areas remains constrained
+- Political resistance to regionally differentiated welfare settings
+interventions:
+- description: Increase Working for Families thresholds for regional cost of living
+  state_variable: inequality_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.inequality.northland_inequality
+- problem.northland.inequality.maori_income_gap
+- problem.northland.inequality.child_poverty
+- problem.northland.inequality.rural_deprivation
+applicable_in:
+- northland
+tensions_with: []

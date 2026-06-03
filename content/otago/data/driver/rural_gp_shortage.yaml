@@ -1,0 +1,11 @@
+id: driver.otago.health.rural_gp_shortage
+name: Rural GP Recruitment and Retention Crisis
+description: Central Otago GPs aging; training pipeline short; locum reliance high.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.health.rural_workforce
+claim_ids: []

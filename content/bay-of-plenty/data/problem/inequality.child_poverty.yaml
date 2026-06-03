@@ -1,0 +1,30 @@
+id: problem.bay_of_plenty.inequality.child_poverty
+title: Child poverty and material hardship in Bay of Plenty — Te Moana-a-Toi
+theme: inequality
+section: inequality
+subpage: child_poverty
+parent: problem.bay_of_plenty.inequality.regional_disparity
+order: 19
+updated: '2026-04-26'
+summary: Child poverty and material hardship is a sub-dimension of the regional pressure.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - child_poverty_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Dynamic feedback reinforces or ameliorates the condition.
+narrative:
+- heading: Dimension
+  body: Child poverty and material hardship is a specific manifestation of the broader
+    pressure.
+claim_ids:
+- claim.bay_of_plenty.inequality.child_poverty_37
+- claim.bay_of_plenty.inequality.child_poverty_38
+status: draft
+time_horizons: [decade, generation, century]

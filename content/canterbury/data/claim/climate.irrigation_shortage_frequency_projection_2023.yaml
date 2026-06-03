@@ -1,0 +1,19 @@
+id: claim.canterbury.climate.irrigation_shortage_frequency_projection_2023
+statement: Irrigation allocation shortfall frequency in Canterbury is projected to
+  increase from ~7 years in 20 (current, ~1 in 2.8 yrs) to ~10 years in 20 by 2050s
+  (~1 in 2 yrs).
+value: 2.5
+unit: frequency (years between shortfalls)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ecan_cwms_2022
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.rent_to_income_v1
+notes: null

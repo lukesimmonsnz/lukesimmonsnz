@@ -1,0 +1,21 @@
+id: claim.waikato.health.rural_gp_ratio
+statement: Rural GP supply in Waikato South is critically low. Tokoroa (pop 18K) and
+  Putāruru have one GP practice each serving wider districts; rural GPs are approximately
+  5 years older on average than urban peers with limited locum cover for leave. Thames
+  Hospital serves Coromandel Peninsula but recruitment is difficult; rural practitioners
+  report burnout from on-call rotations and small-town social pressure.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_waikato_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: waikato rural_access claim

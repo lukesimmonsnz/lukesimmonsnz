@@ -1,0 +1,11 @@
+id: driver.otago.climate.drought_aridity
+name: Central Otago Aridity and Drought Frequency
+description: Central Otago NZ's driest region; climate change extends dry season.
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.climate.drought_central_otago
+claim_ids: []

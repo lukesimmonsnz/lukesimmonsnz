@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.governance.disengagement_driver
+name: Community Disengagement From Local Governance
+description: Community disengagement from local governance. This driver operates at
+  regional scale with mostly-agreed consensus.
+theme: governance
+consensus: mostly-agreed
+category: cultural
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.inequality.child_poverty
+claim_ids: []

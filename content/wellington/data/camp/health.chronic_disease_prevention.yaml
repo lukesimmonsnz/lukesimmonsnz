@@ -1,0 +1,21 @@
+id: camp.wellington.health.chronic_disease_prevention
+name: Chronic Disease Prevention Through Healthy Environments
+theme: health
+core_claim: Reducing chronic disease burden requires upstream action on food environments, physical activity infrastructure,
+  and tobacco/alcohol availability.
+flagship_moves:
+- Restrict fast food outlets near schools
+- Subsidised healthy food access in high-deprivation areas
+- Smokefree generation policy enforcement in Wellington
+tensions:
+- Regulatory interventions on food and retail face industry resistance and local economic concerns
+- Effectiveness varies by deprivation; universal policies may miss highest-risk groups
+addresses:
+- problem.wellington.health.chronic_disease
+interventions:
+- description: Establish 500m exclusion zone for new fast food outlets near schools across Wellington City
+  state_variable: unhealthy_food_environment_density
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

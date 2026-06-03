@@ -1,0 +1,11 @@
+id: driver.southland.economy.limited_diversification
+name: Limited Economic Diversification
+description: Economy locked in commodities (dairy, smelter, fisheries); limited alternatives.
+theme: economy
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.economy.industrial_transition
+claim_ids: []

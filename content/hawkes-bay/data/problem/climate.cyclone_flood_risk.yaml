@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.climate.cyclone_flood_risk
+title: Cyclone and flood risk
+theme: climate-adaptation
+section: climate
+subpage: cyclone-flood-risk
+parent: problem.hawkes_bay.climate.climate_vulnerability
+order: 2
+updated: '2026-04-26'
+summary: "Hawke's Bay is exposed to tropical cyclone risk and extreme rainfall flooding. Napier, Hastings, and river valleys face inundation risk. Stopbanks and drainage systems are undersized for climate-intensified rainfall. Flood damage costs are rising."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - flood_annual_exceedance_probability
+    - flood_prone_assets_dollars_billions
+  inputs:
+    - rainfall_intensification
+    - urban_sprawl_into_flood_zones
+  constraints:
+    - flood_protection_infrastructure_standard
+    - maintenance_and_renewal_funding
+  feedback_loops:
+    - 'Floods damage infrastructure; repairs consume budgets; deferred maintenance worsens future flood risk.'
+narrative:
+  - heading: Cyclone Gabrielle Impact
+    body: 'Cyclone Gabrielle flooded approximately 2,500 homes and 1,200 businesses in Napier and Hastings. Estimated flood damage was $2-3 billion.'
+  - heading: Repeat Risk
+    body: "Hawke's Bay will likely experience similar-magnitude cyclone and extreme rainfall events every 15-25 years under current climate trajectory. Probability is rising."
+claim_ids:
+  - claim.hawkes_bay.climate.flood_damage_2_3_billion
+status: draft
+time_horizons: [generation, century]

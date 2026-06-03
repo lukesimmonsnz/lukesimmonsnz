@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.infrastructure.cyclone_recovery_infrastructure
+title: Cyclone recovery and infrastructure resilience
+theme: infrastructure
+section: infrastructure
+subpage: cyclone-recovery-infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Cyclone Gabrielle exposed severe gaps in water supply, wastewater, and flood protection infrastructure. Recovery is slow and underfunded. Aging pipe assets face mounting climate hazards. Councils struggle with financing resilience upgrades.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - three-waters_asset_condition_index
+    - post_cyclone_recovery_percent_complete
+  inputs:
+    - extreme_rainfall_frequency
+    - infrastructure_age_profile
+  constraints:
+    - local_govt_funding_constraints
+    - central_govt_coordination_delays
+  feedback_loops:
+    - 'Underfunded renewal accelerates asset deterioration; failures increase emergency repair costs; maintenance budgets get consumed by reactive work.'
+narrative:
+  - heading: Water Supply Damage
+    body: 'Cyclone Gabrielle damaged water mains across Napier, Hastings, and rural areas. Some communities were without potable water for weeks.'
+  - heading: Wastewater Infrastructure
+    body: 'Treatment plants were inundated; capacity constraints limit new development. Recovery and resilience upgrades face multi-year backlogs.'
+claim_ids:
+  - claim.hawkes_bay.infrastructure.water_supply_interruption_weeks
+status: draft
+time_horizons: [decade, generation]

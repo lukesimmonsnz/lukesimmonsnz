@@ -1,0 +1,30 @@
+id: problem.waikato.infrastructure.roading
+title: State highway and local road condition
+theme: infrastructure
+section: infrastructure
+subpage: roading
+parent: problem.waikato.infrastructure.waikato_infrastructure
+order: 4
+updated: '2026-04-26'
+summary: Road condition ratings in rural Waikato are below national standards in multiple
+  TAs.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - infrastructure_condition_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing roading creates feedback on regional outcomes.
+narrative:
+- heading: State highway and local road condition
+  body: Road condition ratings in rural Waikato are below national standards in multiple
+    TAs.
+claim_ids:
+- claim.waikato.infrastructure.road_condition_index
+status: draft
+time_horizons: [decade, generation]

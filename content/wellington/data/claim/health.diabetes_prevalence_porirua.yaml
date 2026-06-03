@@ -1,0 +1,20 @@
+id: claim.wellington.health.diabetes_prevalence_porirua
+statement: Diabetes prevalence in Porirua is substantially above the Wellington regional
+  average, reflecting the interaction of ethnicity (high Māori and Pacific populations),
+  diet, housing conditions, and constrained access to preventive healthcare.
+value: null
+unit: null
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_wellington_2023
+- source.stats_nz_census_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

@@ -1,0 +1,20 @@
+id: claim.gisborne.transport.active_modes_16
+statement: Active transport mode share in Gisborne is 8-12% of commute journeys, well
+  below national urban averages. Limited cycling infrastructure and geographic isolation
+  from major urban centers limit public transport options; communities rely on private
+  vehicles or subsidized regional services.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.deposit_gap_v1
+notes: null

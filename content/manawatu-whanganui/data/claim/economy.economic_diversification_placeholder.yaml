@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.economy.economic_diversification_placeholder
+statement: Economic diversification remains limited in Manawatū-Whanganui; 45-48%
+  of regional employment concentrates in agriculture, food processing, and logistics.
+  Palmerston North's knowledge economy (Massey University, AgResearch, NZ Food Innovation
+  Network, tech startups) employs approximately 4,500 workers and contributes NZ$800-900
+  million to regional GDP, but growth is constrained by urban sprawl and talent retention
+  challenges.
+value: 46.5
+unit: percent_agri_food_logistics
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_mw_2024
+- source.palmerston_north_city_council_2023
+- source.massey_university_research
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

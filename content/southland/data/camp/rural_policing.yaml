@@ -1,0 +1,20 @@
+id: camp.southland.crime.rural_policing
+name: Rural Policing and Farm Security Support
+theme: crime
+core_claim: Enhanced police presence and farm security support reduce rural crime.
+flagship_moves:
+- Rural police patrol frequency increase
+- Farm security subsidy program
+- Farm-to-police reporting network
+tensions:
+- Police resource constraints
+- Cost-benefit of rural policing investment
+addresses:
+- problem.southland.crime.rural_crime
+interventions:
+- description: Reduce rural crime rate by 20%
+  state_variable: rural_crime_rate
+  expected_sign: '-'
+applicable_in:
+- southland
+tensions_with: []

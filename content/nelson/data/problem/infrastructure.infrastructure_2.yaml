@@ -1,0 +1,36 @@
+id: problem.nelson.infrastructure.infrastructure_2
+title: Bulk water supply at a binding constraint
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure_2
+parent: infrastructure
+order: 2
+updated: '2026-04-26'
+summary: Maitai Dam (built 1957) has a design yield of 38 million cubic metres per year; actual yield has fallen to 33-35 million m3/year from climate-altered snowmelt and rainfall. Demand is rising around 2 percent annually; without demand reduction, deficit will reach 8-12 million m3/year by 2035. The Waimea Plains aquifer (supplying around 70 percent of water) is being drawn down 0.5-0.8 m/year faster than recharge rates, with sustainability thresholds expected 2028-2032.
+manifests_in:
+- nelson
+systems_model:
+  state_variables:
+  - annual_yield_million_m3
+  - annual_demand_million_m3
+  - aquifer_drawdown_metres_per_year
+  inputs:
+  - augmentation_capex
+  - demand_management_policy
+  constraints:
+  - catchment_size
+  - consenting_lead_time
+  - iwi_partnership_process
+  feedback_loops:
+  - 'Augmentation-demand feedback: announced augmentation reduces near-term political pressure for demand management, allowing demand to grow into the eventual delivered capacity, deferring rather than resolving the constraint.'
+narrative:
+- heading: Two stressed sources, one demand curve
+  body: 'Both the surface and aquifer supplies are now operating below their design assumptions (claim.nelson.infrastructure.infrastructure_2_claim). The demand curve has not slowed: population growth and irrigation growth combine.'
+- heading: Augmentation pathway and risk
+  body: Planning for a new bulk-water scheme (Bossons Aquifer, around 80 km north of central Nelson) began in 2023, but consenting, iwi engagement, and capital cost mean the scheme cannot deliver before the projected deficit window. Demand-side management (universal metering, restrictions, pricing) is the only short-term lever available.
+claim_ids:
+- claim.nelson.infrastructure.infrastructure_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

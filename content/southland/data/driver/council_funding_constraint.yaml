@@ -1,0 +1,12 @@
+id: driver.southland.governance.council_funding_constraint
+name: Local Government Funding Constraints
+description: Southland councils face rating pressures, limited revenue growth; infrastructure
+  backlog.
+theme: governance
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.governance.local_govt_reform
+claim_ids: []

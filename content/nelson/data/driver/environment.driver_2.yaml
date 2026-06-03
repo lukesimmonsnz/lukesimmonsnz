@@ -1,0 +1,13 @@
+id: driver.nelson.environment.driver_2
+name: Cumulative land-use and discharge pressure on shared catchments
+description: Forestry harvest cycles, pastoral nutrient loss, urban stormwater, and direct port-related discharges combine in the Maitai, Waimea, and Tasman Bay receiving environments. Individual consents do not capture the cumulative load; cross-jurisdictional coordination is partial.
+theme: environment
+consensus: consensus
+category: regulatory
+timescale: medium
+scope: regional
+problem_ids:
+- problem.nelson.environment.coastal_environment
+- problem.nelson.environment.water_quality
+- problem.nelson.environment.marine_ecosystem
+claim_ids: []

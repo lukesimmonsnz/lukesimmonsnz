@@ -1,0 +1,30 @@
+id: problem.waikato.environment.freshwater_quality
+title: Freshwater quality decline
+theme: environment
+section: environment
+subpage: freshwater_quality
+parent: problem.waikato.environment.waikato_river_degradation
+order: 2
+updated: '2026-04-26'
+summary: Nitrate, sediment, and E. coli contamination from dairy farming impairs Waikato
+  River water quality.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - environmental_quality_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing freshwater quality creates feedback on regional outcomes.
+narrative:
+- heading: Freshwater quality decline
+  body: Nitrate, sediment, and E. coli contamination from dairy farming impairs Waikato
+    River water quality.
+claim_ids:
+- claim.waikato.environment.nitrate_exceedance_60pct
+status: draft
+time_horizons: [generation, century]

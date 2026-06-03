@@ -1,0 +1,21 @@
+id: claim.tasman.governance.governance_claim
+statement: 'Tasman District Council comprises 11 elected members (mayor + 10 councillors)
+  representing 3 constituencies: Motueka, Richmond, and Golden Bay. Two iwi advisors
+  sit on committees; Tasman Iwi Partnership Framework (2023) commits council to joint
+  decision-making on resource consent for culturally significant sites.'
+value: 11
+unit: elected council members
+time_period: '2024'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.tasman_iwi_partnership_2023
+- source.tasman_district_council_annual_plan_2024
+scoped_to:
+- tasman
+national_assertion: false
+region_mentions:
+- tasman
+methodology_tag: methodology.admin_count_v1
+notes: null

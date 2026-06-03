@@ -1,0 +1,44 @@
+id: problem.west_coast.governance.capacity
+title: Council technical capacity for resilience and managed retreat
+theme: governance
+section: governance
+subpage: capacity
+parent: governance
+order: 4
+updated: '2026-04-26'
+summary: West Coast Regional Council and the three territorial authorities collectively lack the in-house technical capacity
+  for complex long-term infrastructure planning, climate adaptation modelling and managed-retreat implementation. Reliance
+  on external consultants is high and inconsistent.
+manifests_in:
+- west-coast
+systems_model:
+  state_variables:
+  - specialist_fte_per_council
+  - consultant_spend_share
+  - long_term_plan_capex_quality
+  inputs:
+  - dia_capability_funding
+  - central_government_resilience_grants
+  constraints:
+  - small_council_salary_bands
+  - rural_partner_employment_thinness
+  feedback_loops:
+  - Limited in-house capacity raises consultant spend and delivery risk; that risk discourages central government from devolving
+    funding and authority, which keeps councils dependent on the same external capacity that thins their own.
+narrative:
+- heading: Capacity is thin and turnover is high
+  body: 'Specialist roles in resilience engineering, hydrology, climate adaptation and managed-retreat implementation are
+    sparse across the four councils (claim.west_coast.governance.capacity_claim). Recruitment and retention is structurally
+    difficult: salary bands are smaller than urban councils, and partner-employment opportunities for specialist staff''s
+    families are limited.'
+- heading: Consultant reliance and the institutional memory problem
+  body: External consultants close many capacity gaps but do not build durable institutional memory in the council itself.
+    Each new project tends to start the analysis from scratch, raising both cost and delivery risk on long-horizon programmes
+    such as Westport managed retreat.
+claim_ids:
+- claim.west_coast.governance.capacity_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,11 @@
+id: driver.otago.transport.southern_link_timeline
+name: Southern Link Motorway Project Delays
+description: Dunedin Southern Link project timelines and funding pressures delay relief.
+theme: transport
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.transport.dunedin_southern_link
+claim_ids: []

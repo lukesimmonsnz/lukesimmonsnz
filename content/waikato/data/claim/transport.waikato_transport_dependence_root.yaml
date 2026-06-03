@@ -1,0 +1,20 @@
+id: claim.waikato.transport.waikato_transport_dependence_root
+statement: Waikato transport system is highly dependent on private vehicles for inter-regional
+  mobility. Limited alternatives force reliance on state highways; congestion costs
+  the region $200-300M annually in lost productivity; public transport investment
+  remains constrained by funding limitations.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.waikato_regional_council_annual_plan_2024
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato transport

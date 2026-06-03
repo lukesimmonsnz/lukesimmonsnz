@@ -1,0 +1,29 @@
+id: pattern.infrastructure.digital_connectivity_gap
+title: Digital connectivity gap in rural and remote areas
+theme: infrastructure
+summary: Rural broadband coverage and mobile connectivity remain inadequate across
+  Northland, Gisborne, West Coast, and other sparsely populated regions, limiting
+  remote work, health access, and economic participation.
+manifests_in:
+- northland
+- gisborne
+- west-coast
+- taranaki
+- southland
+- marlborough
+claim_ids:
+- claim.northland.infrastructure.digital_divide_claim1
+- claim.waikato.infrastructure.rural_broadband_gap
+- claim.west_coast.infrastructure.infrastructure_claim
+- claim.gisborne.economy.economic_fragility_65
+narrative:
+- heading: Pattern
+  body: Despite successive rural broadband initiatives, significant gaps in coverage
+    persist wherever population density is below the commercial viability threshold
+    for private investment. Remote communities remain served by satellite or no service.
+- heading: Economic and social cost
+  body: 'Digital exclusion amplifies geographic disadvantage: it restricts access
+    to telehealth, remote employment, online education, and government services, compounding
+    the effects of transport isolation.'
+status: draft
+updated: '2026-04-26'

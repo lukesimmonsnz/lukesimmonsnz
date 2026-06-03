@@ -1,0 +1,21 @@
+id: claim.canterbury.infrastructure.earthquake_debt_2024
+statement: Christchurch City Council earthquake recovery debt stands at approximately
+  NZD 1.1B (2024), related to infrastructure repairs from the 2010-2011 earthquake
+  sequence. Debt servicing constrains council's capital spending capacity for unrelated
+  projects (three-waters, transport, housing development); full repayment timeline
+  extends beyond 2030.
+value: 1.1
+unit: NZD billions
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.ccc_annual_plan_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.median_multiple_v1
+notes: null

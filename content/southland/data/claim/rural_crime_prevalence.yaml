@@ -1,0 +1,20 @@
+id: claim.southland.crime.rural_crime_prevalence
+statement: Rural crime in Southland includes stock theft, agricultural equipment theft,
+  and farm trespass. Farming communities from Invercargill to Mataura Valley report
+  increasing property crime targeting irrigation infrastructure, pumps, and feed storage.
+  Remote farm isolation (>20km from towns) increases offender opportunity.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

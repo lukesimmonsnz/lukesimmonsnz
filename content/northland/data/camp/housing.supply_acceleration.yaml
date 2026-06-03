@@ -1,0 +1,29 @@
+id: camp.northland.housing.supply_acceleration
+name: Supply acceleration and upzoning
+theme: housing
+core_claim: Removing zoning restrictions and enabling medium-density development is
+  the primary lever to improve affordability.
+flagship_moves:
+- Rezone residential land to enable 6-storey mixed-use development
+- Implement development contributions for infrastructure upgrades
+- Remove minimum car-parking requirements citywide
+tensions:
+- Infrastructure capacity constrains achievable density in many suburbs
+- Heritage character areas create political resistance to upzoning
+- Environmental and safety considerations in sensitive locations
+addresses:
+- problem.northland.housing.affordability
+- problem.northland.housing.land_supply
+- problem.northland.housing.homelessness
+- problem.northland.housing.rental_market
+interventions:
+- description: Rezone residential land within key centres to allow 6-storey mixed-use
+  state_variable: zoned_capacity
+  constraint_relaxed: height_limit
+  expected_sign: +
+- description: Implement development contributions schedule to front-fund infrastructure
+  state_variable: infrastructure_capacity
+  expected_sign: +
+applicable_in:
+- northland
+tensions_with: []

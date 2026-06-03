@@ -3,20 +3,53 @@ __pycache__/
 *.pyc
 .env
 data/messages.jsonl
-.server.pid
-server.log
-server.err
 agent/logs/
 agent/daily_drafts/*.md
 _site/
 .wrangler/
 .secrets-*.md
 
-# Layer 0.5b — ML venv and daemon artefacts
+# Layer 0.5b — ML venv
 .venv-ml/
-.ml-daemon.pid
-ml-daemon.log
-ml-daemon.err
+
 # HuggingFace model cache if ever redirected into project dir
 .hf_cache/
 .fuse_hidden*
+
+# Runtime artefacts (post-2026-05 layout): logs/ + instance/ folders.
+logs/*
+!logs/.gitkeep
+instance/*
+!instance/.gitkeep
+# (cms.db and site_settings.json land in instance/ when CMS-SPEC ships.)
+
+# Legacy root-level runtime files — safe to keep ignored even after
+# CLEANUP.ps1 deletes them, in case start.bat is invoked from an old shell.
+.server.pid
+server.log
+server.err
+.ml-daemon.pid
+ml-daemon.log
+ml-daemon.err
+
+# Internal docs and briefings — keep locally, don't publish.
+# - BRIEFINGs are pre-publication operational notes (mention private memory,
+#   describe what is meant to stay private).
+# - MONETIZATION is personal income strategy.
+# - SESSION-HANDOFF / SESSION-PROMPT are working notes between dev sessions.
+# - content/auckland/briefings/ explicitly say "Not for publication" in their
+#   file headers.
+docs/BRIEFING-*.md
+docs/MONETIZATION.md
+docs/SESSION-HANDOFF-*.md
+docs/SESSION-PROMPT-*.md
+content/auckland/briefings/
+
+# Cowork-cleanup junk: directories at project root whose names encode
+# the full path with PUA-character substitutes for `:` and `\` (e.g.
+# "D:ai-website-managerCurrent websitecontentnorthlanddatacamp...").
+# Created by a one-off cowork cleanup pass; the real content/ tree is
+# intact, these are duplicates. Pattern is intentionally specific so it
+# won't accidentally ignore legitimate paths.
+D*ai-website-manager*
+

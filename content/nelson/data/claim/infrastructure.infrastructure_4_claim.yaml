@@ -1,0 +1,24 @@
+id: claim.nelson.infrastructure.infrastructure_4_claim
+statement: Digital infrastructure in Nelson lags urban centers. Fibre-to-the-home
+  coverage is 72% in Nelson city and 38% in Tasman district (vs. 79% nationally).
+  Rural areas (Golden Bay, upper valleys) have coverage <20%, limiting remote work
+  and education options. Mobile network coverage is 94% (voice) and 78% (4G data)
+  in urban areas, with rural gaps significant. Broadband uptake among low-income households
+  is 62% vs. 84% nationally; cost ($89–124/month) and data limits are barriers. Distance
+  learning infrastructure at schools is limited; 12% of teachers lack adequate technology
+  for online teaching delivery. Digital divide is amplifying with remote work expansion.
+value: 72
+unit: percent fibre-to-home coverage in Nelson city
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nelson_city_council_annual_plan_2024
+scoped_to:
+- nelson
+national_assertion: false
+region_mentions:
+- nelson
+methodology_tag: methodology.admin_count_v1
+notes: null

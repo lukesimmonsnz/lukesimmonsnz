@@ -1,0 +1,14 @@
+id: driver.taranaki.education.education.rural_access
+name: Rural education access limitations
+description: Rural education access limitations
+theme: education
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.taranaki.education.achievement
+- problem.taranaki.education.early_childhood
+- problem.taranaki.education.secondary
+- problem.taranaki.education.tertiary_access
+claim_ids: []

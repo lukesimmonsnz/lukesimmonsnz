@@ -1,0 +1,25 @@
+id: camp.northland.crime.prevention_camp
+name: Social prevention and early intervention
+theme: crime
+core_claim: Addressing the social determinants of crime — deprivation, family instability,
+  addiction — is more effective than enforcement alone.
+flagship_moves:
+- Fund whānau ora family support services in high-violence areas
+- Expand drug treatment and harm reduction services in Northland
+- Invest in youth employment and mentoring programmes
+tensions:
+- Outcomes take years to materialise in crime statistics
+- Requires sustained cross-agency coordination difficult to sustain
+- Political pressure for immediate enforcement responses
+interventions:
+- description: Fund whānau ora family support services in high-violence areas
+  state_variable: crime_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.crime.northland_crime
+- problem.northland.crime.family_violence
+- problem.northland.crime.methamphetamine
+- problem.northland.crime.rural_policing
+applicable_in:
+- northland
+tensions_with: []

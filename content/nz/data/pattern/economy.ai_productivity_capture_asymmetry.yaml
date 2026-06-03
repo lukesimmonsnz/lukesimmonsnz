@@ -1,0 +1,58 @@
+id: pattern.economy.ai_productivity_capture_asymmetry
+title: AI productivity gains are likely to be captured asymmetrically
+theme: economy
+summary: >
+  New Zealand's productivity gap with the OECD frontier is a long-tail
+  problem: a small group of frontier firms operate near the international
+  frontier while the median firm lags far behind, with within-industry
+  dispersion larger than in most OECD comparators. AI tooling is most
+  effective when complemented by data, capital, and managerial capacity
+  — all of which are concentrated in the frontier tier. Without
+  diffusion mechanisms, AI sharpens the gap rather than closing it.
+manifests_in:
+- auckland
+- wellington
+- canterbury
+- waikato
+- bay-of-plenty
+- otago
+- nz
+claim_ids:
+- claim.auckland.economy.frontier_firm_productivity_gap_2021
+- claim.auckland.economy.ai_diffusion_lag_2021
+- claim.auckland.economy.ai_capture_distributional_risk_2024
+- claim.auckland.economy.nz_productivity_gap
+- claim.auckland.economy.low_rd_investment
+narrative:
+- heading: Capture mechanics
+  body: >
+    Productivity gains from AI accrue first to firms that already have
+    digitised data, capital to spend on tooling, and managers who can
+    redesign workflows around new tools. Frontier firms in Auckland
+    and Wellington (large banks, telcos, parts of professional services,
+    a small group of tech firms) clear all three bars. The median NZ
+    firm — small-to-medium, paper-based or lightly digitised, with
+    constrained management capacity — clears none of them. AI tooling
+    sharpens this gap before it closes it.
+- heading: Distributional consequences
+  body: >
+    Where productivity gains land in the wage and capital share is
+    determined by firm-level pricing power, contract structure, and
+    labour-market institutions. Concentrated capture pushes value
+    toward capital owners and a narrow professional tier; broad
+    diffusion would distribute it across the labour share and the
+    long tail of firms. New Zealand's mix — concentrated capital
+    ownership, weak union density outside the public sector, no
+    sectoral bargaining — favours the concentrated outcome unless
+    counteracted.
+- heading: Diffusion is the policy lever
+  body: >
+    The Productivity Commission's frontier-firms inquiry identified
+    diffusion (not frontier performance) as the binding NZ constraint.
+    The diffusion lever for AI is a combination of accessible tooling
+    (sovereign or shared cloud and data infrastructure), management
+    capability (formal training programmes targeting SMEs), and a
+    competition-policy frame that prevents incumbent capture of
+    foundation-model access.
+status: draft
+updated: '2026-05-06'

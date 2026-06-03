@@ -1,0 +1,20 @@
+id: claim.southland.transport.active_modes_prevalence
+statement: Active transport mode share in Southland is 10-15% of commute journeys,
+  concentrated in Invercargill (pop 46K). Rural areas and farming communities lack
+  cycling infrastructure, forcing reliance on private vehicles for school/work commutes
+  even short distances.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

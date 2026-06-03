@@ -1,0 +1,21 @@
+id: claim.hawkes_bay.economy.rse_workers_2500_3500
+statement: Horticultural production in Hawke's Bay (apples, kiwifruit, stone fruit,
+  wine grapes) relies on approximately 3,000 seasonal workers via the Recognised Seasonal
+  Employer (RSE) scheme, primarily from Pacific nations. RSE dependency creates labour
+  market rigidity; post-harvest automation gaps and unfamiliarity with workplace rights
+  expose workers to exploitation and wage undercutting.
+value: 3000
+unit: RSE workers (approximate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

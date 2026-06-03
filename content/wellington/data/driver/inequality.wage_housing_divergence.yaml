@@ -1,0 +1,13 @@
+id: driver.wellington.inequality.wage_housing_divergence
+name: Wage and housing cost divergence
+description: 'Wellington housing costs have grown significantly faster than wages for lower-income workers over the past decade,
+  expanding the working poor: households in employment but unable to afford adequate housing without severe cost burden.'
+theme: inequality
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.inequality.economic_disadvantage
+claim_ids:
+- claim.wellington.inequality.working_poverty_prevalence

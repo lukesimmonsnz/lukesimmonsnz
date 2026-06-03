@@ -1,29 +1,30 @@
 id: claim.auckland.transport.cycling_mode_share_low
-statement: >
-  Cycling accounts for approximately 1–2% of Auckland person-trips —
-  among the lowest cycling mode shares of any comparable OECD city with
-  a mild climate. In Dutch cities of comparable topography, cycling
-  accounts for 25–35% of trips. The gap is not primarily climatic or
-  topographic: it reflects the absence of a safe, connected cycling
-  network. Where protected cycleways have been built — the Lightpath,
-  the Northwestern cycleway, the Beach Road corridor — usage has grown
-  faster than AT projections, demonstrating latent demand.
+statement: 'Cycling accounts for approximately 1–2% of Auckland person-trips — among
+  the lowest cycling mode shares of any comparable OECD city with a mild climate.
+  In Dutch cities of comparable topography, cycling accounts for 25–35% of trips.
+  The gap is not primarily climatic or topographic: it reflects the absence of a safe,
+  connected cycling network. Where protected cycleways have been built — the Lightpath,
+  the Northwestern cycleway, the Beach Road corridor — usage has grown faster than
+  AT projections, demonstrating latent demand.
+
+  '
 value: 2
-unit: "percent of person-trips by bicycle"
+unit: percent of person-trips by bicycle
 methodology_tag: methodology.mode_share_v1
-time_period: "2021-2023"
+time_period: 2021-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.ministry_of_transport_hts_2023
+- source.ministry_of_transport_hts_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
-notes: >
-  The 2% figure is the approximate upper bound from HTS data. The
-  Dutch comparison is descriptive context, not a P5' cross-region claim
-  (no methodology_tag match required as no quantitative Auckland–Dutch
-  comparison is asserted with a shared methodology).
+- auckland
+notes: 'The 2% figure is the approximate upper bound from HTS data. The Dutch comparison
+  is descriptive context, not a P5'' cross-region claim (no methodology_tag match
+  required as no quantitative Auckland–Dutch comparison is asserted with a shared
+  methodology).
+
+  '

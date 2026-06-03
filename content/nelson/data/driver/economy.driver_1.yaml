@@ -1,0 +1,12 @@
+id: driver.nelson.economy.driver_1
+name: Sector concentration in primary export and tourism industries
+description: Nelson's tradable economy concentrates in fishing/seafood, horticulture, aquaculture, and tourism, all exposed to commodity cycles, weather, and quota or visa policy. Concentration is a function of population scale, distance from larger labour markets, and a long-run path-dependent industry mix.
+theme: economy
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.economy.economic_structure
+- problem.nelson.economy.economic_2
+claim_ids: []

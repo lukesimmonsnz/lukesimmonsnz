@@ -1,0 +1,20 @@
+id: camp.canterbury.health.rural_health_training_pipeline
+name: Rural Health Workforce Training Pipeline & Rural Attachments
+theme: health
+core_claim: University programs with mandatory rural clinical placements and rural
+  scholarship support (forgiven student loans) grow rural health workforce pipeline.
+flagship_moves:
+- Key intervention for Rural Health Workforce Training Pipeline & Rural Attachments
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.health.workforce_shortage
+interventions:
+- description: University programs with mandatory rural clinical placements and rural
+    scholarship support (forgiven student loans) grow rural health workforce pipeline.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

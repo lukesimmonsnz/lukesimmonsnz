@@ -1,0 +1,21 @@
+id: camp.wellington.health.international_recruitment
+name: International Health Worker Recruitment
+theme: health
+core_claim: Targeted international recruitment with streamlined registration can address Wellington's immediate health workforce
+  shortage within 2–3 years.
+flagship_moves:
+- Fast-track registration for IMGs from comparable healthcare systems
+- Settlement support packages for international health workers in Wellington
+- Telemedicine arrangements with international providers for specialist shortages
+tensions:
+- International recruitment depletes health workforces in lower-income source countries
+- IMGs may not stay in Wellington beyond bonding periods without retention support
+addresses:
+- problem.wellington.health.workforce_shortage
+interventions:
+- description: Run targeted Wellington health workforce recruitment campaign in UK and Australia with settlement support packages
+  state_variable: health_workforce_vacancy_rate
+  expected_sign: '-'
+applicable_in:
+- wellington
+tensions_with: []

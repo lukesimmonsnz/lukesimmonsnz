@@ -1,0 +1,35 @@
+id: problem.otago.infrastructure.otago_hospital_rebuild
+title: Otago Hospital Rebuild Project
+theme: infrastructure
+section: infrastructure
+subpage: otago_hospital_rebuild
+parent: problem.otago.infrastructure.infrastructure
+order: 2
+updated: '2026-04-26'
+summary: Southern DHB's major Dunedin hospital rebuild is critical but faces cost
+  escalation, labor constraints, and timeline uncertainty. Overcapacity in interim
+  period.
+manifests_in:
+- otago
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southern DHB's major Dunedin hospital rebuild is critical but faces cost escalation,
+    labor constraints, and timeline uncertainty. Overcapacity in interim period.
+claim_ids:
+- claim.otago.infrastructure.otago_hospital_rebuild_trend
+- claim.otago.infrastructure.infrastructure_trend
+- claim.otago.infrastructure.wakatipu_water_prevalence
+- claim.otago.infrastructure.infrastructure_prevalence
+- claim.otago.infrastructure.wakatipu_water_trend
+- claim.otago.infrastructure.digital_rural_trend
+- claim.otago.infrastructure.digital_rural_prevalence
+- claim.otago.infrastructure.otago_hospital_rebuild_prevalence
+status: draft
+time_horizons: [decade, generation]

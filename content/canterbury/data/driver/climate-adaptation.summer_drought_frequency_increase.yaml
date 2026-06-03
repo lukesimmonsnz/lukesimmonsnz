@@ -1,0 +1,11 @@
+id: driver.canterbury.climate.summer_drought_frequency_increase
+name: Summer Drought Frequency Increase (1-in-10 → 1-in-5 by 2050s)
+description: Summer Drought Frequency Increase (1-in-10 → 1-in-5 by 2050s)
+theme: climate-adaptation
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.climate.drought_irrigation
+claim_ids: []

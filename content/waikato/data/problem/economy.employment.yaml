@@ -1,0 +1,24 @@
+id: 'problem.waikato.economy.employment'
+title: 'Waikato: employment and jobs'
+theme: 'economy'
+section: 'economy'
+subpage: 'employment'
+parent: 'problem.waikato.economy.development'
+order: 3
+updated: '2026-04-26'
+summary: 'Employment is low-wage and insecure.'
+manifests_in:
+- 'waikato'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'Employment is low-wage and insecure.'
+claim_ids:
+- 'claim.waikato.economy.employment_claim1'
+- 'claim.waikato.economy.employment_claim2'
+status: 'draft'

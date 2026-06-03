@@ -1,0 +1,21 @@
+id: claim.northland.environment.northland_environment_pressures_claim1
+statement: Terrestrial invasive species (possums, rats, stoats, feral cats) and aquatic
+  invasives (didymo in rivers, unwanted freshwater fish) compete with native species.
+  Wilding pine (Pinus contorta) expands across Northland hill country; eradication
+  cost-prohibitive for large landscapes. Community biosecurity initiatives (Northland
+  Regional Council, DOC, tangata whenua agencies) manage prioritized areas but resource-constrained.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

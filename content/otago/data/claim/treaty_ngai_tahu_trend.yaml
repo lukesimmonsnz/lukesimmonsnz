@@ -1,0 +1,22 @@
+id: claim.otago.governance.treaty_ngai_tahu_trend
+statement: 'Treaty obligations to Ngāi Tahu deepening: co-governance frameworks expanding
+  (health, education, resource management); Ngāi Tahu Holdings asserting commercial
+  and cultural interests (tourism footprint, forestry, land purchases); iwi representation
+  in regional/local planning increasingly formal; Ngāi Tahu place names (tohu whenua)
+  adoption in signage/official contexts growing; tensions between commercial interests
+  and cultural stewardship governance arrangements ongoing.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

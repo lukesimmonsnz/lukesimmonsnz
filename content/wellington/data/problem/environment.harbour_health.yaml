@@ -1,0 +1,38 @@
+id: problem.wellington.environment.harbour_health
+title: Degraded water quality in Te Whanganui-a-Tara Wellington Harbour
+theme: environment
+section: environment
+subpage: harbour-health
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Wellington Harbour receives significant stormwater, wastewater overflow, and contaminant loads from the urbanised
+  catchment, resulting in periodic beach closures and impaired ecosystem function. While baseline water quality is moderate,
+  rainfall-driven contamination events are frequent and the long-term trajectory under climate change is adverse.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - harbour_ecoli_concentration
+  - beach_closure_days_per_year
+  inputs:
+  - wastewater_overflow_volume
+  - stormwater_runoff_load
+  constraints:
+  - combined_sewer_system_design
+  - catchment_impervious_surface_area
+  feedback_loops:
+  - 'Rainfall-contamination pulse: each significant rainfall event produces a contamination pulse that temporarily renders
+    recreational zones unsafe, concentrated near stormwater outfalls.'
+narrative:
+- heading: Beach closures and public health
+  body: Several Wellington Harbour beaches experience recurrent E. coli exceedances following rainfall, with beach closure
+    advisories issued multiple times per year at Oriental Bay, Kio Bay, and other popular swimming locations (claim.wellington.environment.harbour_ecoli_beach_closures).
+- heading: Stormwater as primary vector
+  body: Stormwater from urban catchments carrying surface contaminants — animal waste, litter, sediment, heavy metals from
+    road runoff — is the dominant contamination pathway in the harbour during and immediately after rainfall (claim.wellington.environment.harbour_stormwater_contamination).
+claim_ids:
+- claim.wellington.environment.harbour_ecoli_beach_closures
+- claim.wellington.environment.harbour_stormwater_contamination
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,22 @@
+id: camp.taranaki.health.health.service_expansion
+name: Health service expansion
+theme: health
+core_claim: Health service expansion addresses health_outcomes.
+flagship_moves:
+- Implement Health service expansion
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.taranaki.health.health_outcomes
+- problem.taranaki.health.chronic_disease
+- problem.taranaki.health.mental_health
+- problem.taranaki.health.workforce
+interventions:
+- description: Health service expansion action
+  state_variable: health.service_expansion_index
+  constraint_relaxed: ''
+  expected_sign: +
+applicable_in:
+- taranaki
+tensions_with: []

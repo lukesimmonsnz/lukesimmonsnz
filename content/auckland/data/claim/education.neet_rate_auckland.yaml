@@ -1,21 +1,20 @@
 id: claim.auckland.education.neet_rate_auckland
-statement: >
-  Approximately 12-15% of Auckland 15-24 year olds are not in
-  employment, education, or training (NEET); the rate is substantially
-  higher for Maori and Pacific youth in South and West Auckland.
-  NEET status at 18-20 is the strongest predictor of long-run
-  disadvantage in income, health, and housing outcomes.
+statement: Approximately 12-15% of Auckland 15-24 year olds are not in employment,
+  education, or training (NEET); rates are highest in high-deprivation suburbs of
+  South and West Auckland, where barriers to further study and entry-level employment
+  are most acute. NEET status at 18-20 is the strongest predictor of long-run disadvantage
+  in income, health, and housing outcomes.
 value: null
 unit: null
-time_period: "2022-2023"
+time_period: 2022-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.moe_school_performance_2023
-  - source.tertiary_education_commission_2023
+- source.moe_school_performance_2023
+- source.tertiary_education_commission_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

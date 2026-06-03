@@ -80,3 +80,4 @@ claim_ids:
   - claim.auckland.housing.construction_cost_rise
   - claim.auckland.housing.productivity_stagnation
 status: draft
+time_horizons: [decade, generation, century]

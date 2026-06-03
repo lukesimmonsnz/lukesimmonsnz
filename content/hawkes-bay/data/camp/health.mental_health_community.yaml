@@ -1,0 +1,25 @@
+id: camp.hawkes_bay.health.mental_health_community
+name: Community-based mental health and peer support
+theme: health
+core_claim: Expanding community-based mental health services, peer support networks, and social connection reduces reliance on stretched clinical services and improves resilience.
+flagship_moves:
+  - Fund community health workers in Flaxmere and rural areas to provide low-barrier mental health support
+  - Support peer-led recovery groups and kaupapa Maori healing circles
+  - Integrate mental health screening into primary care and employ therapists in GP practices
+tensions:
+  - Community-based care requires ongoing funding and may be seen as underfunding clinical services
+  - Peer support is insufficient for acute mental illness or crisis
+addresses:
+  - problem.hawkes_bay.health.health_outcomes
+  - problem.hawkes_bay.health.mental_health_post_cyclone
+  - problem.hawkes_bay.inequality.deprivation
+interventions:
+  - description: Fund 20 community mental health workers across the region
+    state_variable: community_mental_health_access
+    expected_sign: '+'
+  - description: Establish peer support network with 50 trained peer workers
+    state_variable: mental_health_peer_support_coverage
+    expected_sign: '+'
+applicable_in:
+  - hawkes-bay
+tensions_with: []

@@ -1,0 +1,12 @@
+id: driver.marlborough.infrastructure.digital_cost_rural
+name: Cost Barriers To Digital Infrastructure Extension
+description: Cost barriers to digital infrastructure extension.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.infrastructure.port_infrastructure
+claim_ids: []

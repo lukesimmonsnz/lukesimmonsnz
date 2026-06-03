@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.transport.induced_demand
+name: Induced Demand From Road Expansion
+description: Induced demand from road expansion. This driver operates at regional
+  scale with contested consensus.
+theme: transport
+consensus: contested
+category: economic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.transport.regional_roading
+claim_ids: []

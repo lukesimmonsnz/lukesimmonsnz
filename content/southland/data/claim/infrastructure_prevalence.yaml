@@ -1,0 +1,22 @@
+id: claim.southland.infrastructure.infrastructure_prevalence
+statement: Infrastructure in Southland faces multiple aging assets and renewal pressures.
+  Invercargill water (Waihōpai River source), wastewater (ocean outfall), electricity
+  distribution, roading network, and airport facilities all aging. ILT Stadium Southland
+  redevelopment underway; civic precinct investment planned. Rural water schemes (Gore,
+  Winton, Mataura) aging; septic systems prevalent. Three Waters reform creates uncertainty
+  for funding pathways.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

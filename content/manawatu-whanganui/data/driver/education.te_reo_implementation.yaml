@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.education.te_reo_implementation
+name: Te Reo Māori Curriculum Implementation Gaps
+description: Te Reo Māori curriculum implementation gaps with regional implications.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.health.chronic_disease
+claim_ids: []

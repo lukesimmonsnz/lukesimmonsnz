@@ -1,0 +1,12 @@
+id: driver.marlborough.transport.car_oriented_form
+name: Car-Oriented Development Patterns
+description: Car-oriented development patterns with regional implications.
+theme: transport
+consensus: mostly-agreed
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.picton_ferry
+claim_ids: []

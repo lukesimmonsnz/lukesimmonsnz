@@ -1,0 +1,20 @@
+id: claim.canterbury.health.youth_mental_health_crisis_2023
+statement: Health service access in Canterbury is constrained by workforce shortage
+  and geographic isolation. Nursing vacancies and GP shortages are acute in rural
+  areas; specialist services require travel, delaying diagnoses and treatment for
+  chronic and acute conditions.
+value: 35
+unit: percent increase
+time_period: '2023'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_canterbury_2023
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: null

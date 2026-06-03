@@ -1,0 +1,39 @@
+id: problem.wellington.health.mental_health
+title: Mental health crisis in Wellington
+theme: health
+section: health
+subpage: mental-health
+parent: problem.wellington.health.system_access
+order: 2
+updated: '2026-04-26'
+summary: 'Wellington''s mental health system is under severe strain: community mental health services have long waitlists,
+  acute inpatient beds are routinely insufficient for demand, and workforce shortages are worsening. The crisis affects the
+  full spectrum from mild anxiety and depression through to acute psychosis and suicidality.'
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - community_mh_waitlist_length
+  - acute_mh_bed_occupancy_rate
+  inputs:
+  - mh_service_investment
+  - population_mental_health_burden
+  constraints:
+  - mh_workforce_supply
+  - acute_bed_count
+  feedback_loops:
+  - 'Crisis escalation loop: inadequate community mental health support allows deterioration to acute levels; acute beds then
+    fill with patients who would not have needed admission under better community support.'
+narrative:
+- heading: Waitlist length
+  body: Community mental health services in Wellington consistently operate with waitlists of several months for non-urgent
+    presentations, meaning individuals in sub-acute distress receive no support during the period most critical for early
+    intervention (claim.wellington.health.mental_health_waitlist_length).
+- heading: Acute bed shortage
+  body: Wellington Regional Hospital's acute mental health inpatient unit regularly operates above capacity, with patients
+    in acute crisis sometimes held in emergency department settings for extended periods waiting for an inpatient bed (claim.wellington.health.acute_bed_shortage).
+claim_ids:
+- claim.wellington.health.mental_health_waitlist_length
+- claim.wellington.health.acute_bed_shortage
+status: draft
+time_horizons: [decade, generation]

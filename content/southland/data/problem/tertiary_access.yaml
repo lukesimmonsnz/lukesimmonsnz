@@ -1,0 +1,34 @@
+id: problem.southland.education.tertiary_access
+title: Tertiary Education Access and Local Provision
+theme: education
+section: education
+subpage: tertiary_access
+parent: problem.southland.education.achievement
+order: 4
+updated: '2026-04-26'
+summary: Southland lacks university campus; Southern Institute of Technology provides
+  pathways but brain drain to Dunedin/Auckland; student loan debt burdens.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland lacks university campus; Southern Institute of Technology provides
+    pathways but brain drain to Dunedin/Auckland; student loan debt burdens.
+claim_ids:
+- claim.southland.education.early_childhood_prevalence
+- claim.southland.education.tertiary_access_prevalence
+- claim.southland.education.tertiary_access_trend
+- claim.southland.education.achievement_prevalence
+- claim.southland.education.achievement_trend
+- claim.southland.education.early_childhood_trend
+- claim.southland.education.secondary_trend
+- claim.southland.education.secondary_prevalence
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.environment.agricultural_runoff
+name: Agricultural Nutrient And Sediment Runoff
+description: Agricultural nutrient and sediment runoff. This driver operates at regional
+  scale with consensus consensus.
+theme: environment
+consensus: consensus
+category: physical
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.health.health_outcomes
+claim_ids: []

@@ -1,0 +1,21 @@
+id: camp.southland.climate.pastoral_adaptation
+name: Pastoral System Climate Adaptation
+theme: climate-adaptation
+core_claim: Supporting breed selection, feed diversification, and seasonal management
+  reduces climate vulnerability.
+flagship_moves:
+- Climate-adaptive feed crop varieties
+- Breed selection for climate resilience
+- Seasonal feed storage support
+tensions:
+- Farmer adoption barriers; cost pressure
+- Long breeding cycles
+addresses:
+- problem.southland.climate.drought_agricultural
+interventions:
+- description: Support 100 farms to adopt climate-resilient practices
+  state_variable: pastoral_climate_adaptation
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

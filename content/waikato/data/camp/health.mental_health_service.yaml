@@ -1,0 +1,20 @@
+id: camp.waikato.health.mental_health_service
+name: Mental health service expansion
+theme: health
+core_claim: Mental health service expansion is a key strategy for addressing regional
+  challenges.
+flagship_moves:
+- Establish governance structure
+- Allocate initial funding
+- Build stakeholder engagement
+tensions:
+- Implementation requires coordination across multiple agencies
+- Resource constraints limit scale and pace
+addresses: []
+interventions:
+- description: Implement mental health service expansion
+  state_variable: null
+  expected_sign: +
+applicable_in:
+- waikato
+tensions_with: []

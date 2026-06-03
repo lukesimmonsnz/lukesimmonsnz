@@ -1,0 +1,12 @@
+id: driver.marlborough.transport.service_frequency
+name: Public Transport Service Frequency And Reliability
+description: Public transport service frequency and reliability.
+theme: transport
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.transport.picton_ferry
+claim_ids: []

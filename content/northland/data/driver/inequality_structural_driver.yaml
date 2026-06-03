@@ -1,0 +1,16 @@
+id: driver.northland.inequality.structural_driver
+name: Colonial land alienation and structural exclusion
+description: Historical confiscation and alienation of Māori land reduced the economic
+  base of Te Tai Tokerau communities for generations.
+theme: inequality
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.northland.inequality.northland_inequality
+- problem.northland.inequality.maori_income_gap
+- problem.northland.inequality.child_poverty
+- problem.northland.inequality.rural_deprivation
+claim_ids:
+- claim.northland.inequality.northland_inequality_claim1

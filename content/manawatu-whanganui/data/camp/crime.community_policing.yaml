@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.crime.community_policing
+name: Community Policing and Relationship Building
+theme: crime
+core_claim: Neighbourhood police engagement and prevention.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.crime.youth_offending
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

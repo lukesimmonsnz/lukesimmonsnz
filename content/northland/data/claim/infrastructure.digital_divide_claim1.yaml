@@ -1,0 +1,20 @@
+id: claim.northland.infrastructure.digital_divide_claim1
+statement: Northland faces significant infrastructure constraints in rural digital
+  connectivity, with 15-20% of rural properties lacking reliable broadband access.
+  Fiber deployment lags urban areas by 3-5 years; wireless coverage is patchy; digital
+  infrastructure is critical for farm productivity, education, and service access.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

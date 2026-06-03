@@ -1,0 +1,23 @@
+id: claim.manawatu_whanganui.environment.soil_erosion_2
+statement: Soil carbon stocks in Manawatū-Whanganui agricultural soils have declined
+  approximately 20-25% since 1990 due to intensive tillage, monoculture cropping,
+  and reduced organic matter inputs. This loss reduces soil health, productivity,
+  and carbon sequestration capacity. Regenerative agriculture adoption (cover crops,
+  minimal tillage, rotational grazing) has increased from approx. 5% (2015) to approx.
+  15% (2024), but scaling remains slow due to cost and knowledge barriers.
+value: 22.5
+unit: percent_decline_soil_carbon_since_1990
+time_period: 1990-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.horizons_data_services_2024
+- source.treasury_economic_outlook_mw_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,11 @@
+id: driver.otago.inequality.tourism_jobs_precarity
+name: Seasonal Tourism Employment Precarity
+description: Hospitality jobs seasonal, low-wage, minimal benefits; worker churn high.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.otago.inequality.queenstown_worker_conditions
+claim_ids: []

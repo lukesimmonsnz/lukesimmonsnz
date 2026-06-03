@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.environment.habitat_loss
+name: Habitat Loss And Fragmentation
+description: Habitat loss and fragmentation. This driver operates at regional scale
+  with consensus consensus.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.health.mental_health
+claim_ids: []

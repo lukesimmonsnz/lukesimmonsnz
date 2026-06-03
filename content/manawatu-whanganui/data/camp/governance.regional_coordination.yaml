@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.governance.regional_coordination
+name: Regional Coordination and Integration
+theme: governance
+core_claim: Cross-council and iwi collaboration frameworks.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.inequality.rural_isolation
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

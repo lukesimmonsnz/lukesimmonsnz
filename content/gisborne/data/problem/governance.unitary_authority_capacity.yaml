@@ -1,0 +1,33 @@
+id: problem.gisborne.governance.unitary_authority_capacity
+title: Unitary authority resource constraints in Gisborne — Te Tairāwhiti
+theme: governance
+section: governance
+subpage: unitary_authority_capacity
+parent: problem.gisborne.governance.governance
+order: 38
+updated: '2026-04-26'
+summary: Unitary authority resource constraints is a specific manifestation of the
+  regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - unitary_authority_capacity_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Unitary authority resource constraints is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.governance.unitary_authority_capacity_75
+- claim.gisborne.governance.unitary_authority_capacity_76
+status: draft
+time_horizons: [decade, generation, century]

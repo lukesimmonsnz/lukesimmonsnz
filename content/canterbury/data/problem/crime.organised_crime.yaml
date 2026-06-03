@@ -1,0 +1,43 @@
+id: problem.canterbury.crime.organised_crime
+title: Organized Crime & Methamphetamine Distribution
+theme: crime
+section: crime
+subpage: organised_crime
+parent: problem.canterbury.crime.safety
+order: 3
+updated: '2026-04-26'
+summary: 'Organized crime groups are active in Canterbury, particularly in methamphetamine
+  distribution (manufacturing and supply). Street-level dealing correlates with gang
+  affiliations; violence (turf disputes) is increasing. Police Operations continue;
+  community reporting and intelligence remain limited in high-prevalence areas.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - methamphetamine_seizure_kg_annual
+  - organized_crime_violence_incidents
+  - gang_affiliated_population_estimate
+  inputs:
+  - drug_market_demand
+  - gangs_membership_recruitment
+  - police_enforcement_intensity
+  constraints:
+  - supply_chain_disruption_difficulty
+  - treatment_programme_capacity
+  feedback_loops:
+  - Dynamic feedback mechanisms drive organized crime & methamphetamine distribution.
+narrative:
+- heading: Methamphetamine as structural problem
+  body: 'Methamphetamine distribution networks operate across Canterbury, with manufacturing
+    facilities in Selwyn/Waimakariri. Community harm (overdose, crime victimization)
+    is acute. Police seizure operations are reactive; supply-side disruption remains
+    elusive.
+
+    '
+claim_ids:
+- claim.canterbury.crime.methamphetamine_seizures_2023
+- claim.canterbury.crime.organized_crime_violence_incidents_2023
+status: draft
+time_horizons: [decade]

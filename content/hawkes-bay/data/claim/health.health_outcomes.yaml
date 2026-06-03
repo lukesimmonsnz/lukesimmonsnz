@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.health.mental_health_diagnoses_40_percent_increase
+statement: Mental health diagnoses increased 40% in Hawke's Bay 2019-2023, outpacing
+  national growth (25%), reflecting post-COVID mental health crisis and Cyclone Gabrielle
+  (2023) psychological impacts. Demand for primary mental health services exceeds
+  supply; waitlists in Napier and Hastings exceed 8 weeks; rural Wairoa residents
+  lack local counselling access (requires 90+ min travel to Napier). Māori mental
+  health prevalence and suicide rates significantly elevated.
+value: 40
+unit: percent increase
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

@@ -1,0 +1,20 @@
+id: claim.wellington.housing.rental_affordability_ratio_2023
+statement: Rental costs consume approximately 38% of median household income for households
+  in the bottom two income quintiles in Wellington, exceeding the 30% affordability
+  threshold widely used in housing policy analysis.
+value: 38
+unit: percent of median household income
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_income_housing_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.rent_to_income_v1
+notes: Figure applies to bottom two quintile households; median household figure is
+  lower.

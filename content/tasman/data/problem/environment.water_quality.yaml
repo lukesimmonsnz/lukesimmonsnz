@@ -1,0 +1,42 @@
+id: problem.tasman.environment.water_quality
+title: Rising nitrate concentrations in shallow Waimea wells
+theme: environment
+section: environment
+subpage: water_quality
+parent: coastal_environment
+order: 3
+updated: '2026-04-26'
+summary: Shallow monitoring wells in the Waimea aquifer show average nitrate concentrations around 4.2 mg/L — well
+  below the 11.3 mg/L drinking-water threshold but rising at roughly 0.3 mg/L per year. Horticultural intensification
+  and high stocking density are the primary drivers; Tasman District Council is piloting nutrient-management zones
+  in the Waimea Plains.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - shallow_well_nitrate_avg_mg_l
+  - nitrate_annual_trend
+  inputs:
+  - fertiliser_management_uptake
+  - irrigation_efficiency_retrofit
+  constraints:
+  - horticultural_economic_returns
+  - voluntary_compliance_baseline
+  feedback_loops:
+  - Slow groundwater turnover means today's nitrate-loading decisions show up at the wellhead decades later, weakening
+    the political feedback that would otherwise drive action.
+narrative:
+- heading: Below threshold but trending up
+  body: Nitrate concentrations are rising at roughly 0.3 mg/L per year — a slow trajectory, but a directional one.
+    At that rate, parts of the shallow aquifer reach the drinking-water threshold within a generation absent intervention
+    (claim.tasman.environment.water_quality_claim).
+- heading: Nutrient-management zones as a soft policy lever
+  body: The pilot zones aim to shift fertiliser timing and rate, irrigation efficiency, and stocking-density choices
+    on the most vulnerable soils. They are voluntary and advisory at first; the question is whether voluntary uptake
+    is sufficient to bend the trajectory or whether regulatory limits become necessary.
+claim_ids:
+- claim.tasman.environment.water_quality_claim
+status: draft
+time_horizons:
+- generation
+- century

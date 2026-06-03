@@ -1,0 +1,21 @@
+id: camp.otago.climate.adaptation_framework
+name: Climate Change Adaptation Framework
+theme: climate-adaptation
+core_claim: Region-wide climate adaptation planning and investment reduces climate
+  risk.
+flagship_moves:
+- Climate risk assessment and adaptation planning
+- Infrastructure climate resilience investment
+- Sector-specific adaptation pathways
+tensions:
+- Upfront investment cost
+- Uncertainty in climate impacts
+addresses:
+- problem.otago.climate.climate_risk
+interventions:
+- description: Develop and implement region-wide climate adaptation strategy
+  state_variable: climate_adaptation_readiness
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

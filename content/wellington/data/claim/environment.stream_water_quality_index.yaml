@@ -1,0 +1,20 @@
+id: claim.wellington.environment.stream_water_quality_index
+statement: The Whaitua te Whanganui-a-Tara freshwater planning process found that
+  the majority of Wellington's monitored urban streams fail to achieve the desired
+  state for swimming, ecological health, or kai gathering, with urban contaminants
+  and channelisation as primary causes.
+value: null
+unit: null
+time_period: '2021'
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.gwrc_whaitua_2021
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: methodology.water_quality_index_v1
+notes: null

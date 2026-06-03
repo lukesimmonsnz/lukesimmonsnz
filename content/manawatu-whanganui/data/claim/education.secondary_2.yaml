@@ -1,0 +1,22 @@
+id: claim.manawatu_whanganui.education.secondary_2
+statement: School disengagement and truancy rates in Manawatū-Whanganui are elevated
+  in high-deprivation areas. Whanganui reports 18-22% chronic absenteeism (>50 days/year
+  absent), compared to 8-10% in Palmerston North and 10-15% rural. Secondary retention
+  to Year 13 is 71-75% regionally, below the national average of 78-80%. Socioeconomic
+  stress and limited post-secondary employment pathways drive early school leaving.
+value: 16
+unit: percent_average_chronic_absenteeism
+time_period: 2022-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_achievement_mw_2023
+- source.stats_nz_deprivation_2018_mw
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

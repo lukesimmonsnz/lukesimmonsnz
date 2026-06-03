@@ -1,0 +1,22 @@
+id: claim.northland.transport.public_transport_gap_claim1
+statement: Northland Regional Council subsidises limited urban bus services in Whangārei
+  (~15 routes); rural Northland has no scheduled bus services. No rail passenger service
+  since 1995 Auckland-Whangārei passenger rail closed. Proposed light rail feasibility
+  studies (Auckland-North Auckland corridor) exclude Northland from planning horizon.
+  Car dependency forces households to maintain private vehicles despite fuel-cost
+  pressures.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

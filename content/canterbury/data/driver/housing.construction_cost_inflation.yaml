@@ -1,0 +1,12 @@
+id: driver.canterbury.housing.construction_cost_inflation
+name: Construction Cost Inflation
+description: Construction Cost Inflation
+theme: housing
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.housing.market
+- problem.canterbury.housing.affordability_christchurch
+claim_ids: []

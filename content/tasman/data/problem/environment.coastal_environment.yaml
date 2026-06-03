@@ -1,0 +1,42 @@
+id: problem.tasman.environment.coastal_environment
+title: Waimea Inlet ecological pressure
+theme: environment
+section: environment
+subpage: coastal_environment
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Waimea Inlet is a nationally significant estuarine habitat supporting 34 wading-bird species and threatened
+  native fish (redfin bully, giant kōkopu). Aquaculture run-off, horticultural nutrient leachate, and stormwater
+  from Richmond and Motueka have raised sediment and nutrient loads; ecological-health monitoring rates the inlet
+  'poor' as of 2023.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - ecological_health_score
+  - wading_bird_species_count
+  inputs:
+  - riparian_restoration_extent
+  - stormwater_treatment_capex
+  constraints:
+  - land_use_legacy
+  - diffuse_pollutant_pathways
+  feedback_loops:
+  - Sediment loads reduce eelgrass and shellfish habitat, which reduces the biological filtering capacity that would
+    otherwise dampen further sediment pressure.
+narrative:
+- heading: An estuary at the receiving end of three pressures
+  body: 'Waimea Inlet sits at the bottom of three converging catchments: horticultural land, the Richmond urban
+    area, and a small but growing aquaculture footprint. Each contributes a different pollutant mix; the cumulative
+    effect is what the monitoring programme is reading (claim.tasman.environment.coastal_environment_claim).'
+- heading: Restoration without source control is partial
+  body: Iwi-led restoration of inlet margins, riparian planting, and saltmarsh recovery improve the receiving environment,
+    but they cannot fully compensate for the incoming nutrient and sediment load. Source-control measures in horticulture
+    and stormwater are the medium-term lever.
+claim_ids:
+- claim.tasman.environment.coastal_environment_claim
+status: draft
+time_horizons:
+- generation
+- century

@@ -1,0 +1,33 @@
+id: problem.gisborne.climate.cyclone_risk
+title: Tropical cyclone and extreme weather exposure in Gisborne — Te Tairāwhiti
+theme: climate-adaptation
+section: climate
+subpage: cyclone_risk
+parent: problem.gisborne.climate.climate_vulnerability
+order: 42
+updated: '2026-04-26'
+summary: Tropical cyclone and extreme weather exposure is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - cyclone_risk_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Tropical cyclone and extreme weather exposure is a key facet of the broader
+    pressure facing the region.
+claim_ids:
+- claim.gisborne.climate.cyclone_risk_83
+- claim.gisborne.climate.cyclone_risk_84
+status: draft
+time_horizons: [generation, century]

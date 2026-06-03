@@ -1,0 +1,21 @@
+id: claim.waikato.education.waikato_education_inequity_root
+statement: Waikato's rural schools face persistent teacher recruitment and retention challenges; tertiary participation
+  in provincial areas (38-42%) is substantially below urban centres (48%). Geographic isolation from higher education and
+  limited tertiary access in South Waikato and rural areas produce structural barriers. Students in these geographies
+  achieve NCEA Level 2 at lower rates (15-20 percentage points below regional average). Māori and Pasifika students are
+  disproportionately concentrated in these lower-resourced rural and provincial areas.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.moe_waikato_achievement_2023
+scoped_to:
+- waikato
+national_assertion: false
+region_mentions:
+- waikato
+methodology_tag: methodology.admin_count_v1
+notes: Root claim for waikato education

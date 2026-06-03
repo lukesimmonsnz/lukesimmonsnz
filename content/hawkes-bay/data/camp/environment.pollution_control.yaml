@@ -1,0 +1,20 @@
+id: camp.hawkes_bay.environment.pollution_control
+name: Stormwater and runoff pollution control
+theme: environment
+core_claim: Stormwater and runoff pollution control is the primary strategy.
+flagship_moves:
+- Implement Stormwater and runoff pollution control across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.environment.environmental_pressure
+- problem.hawkes_bay.environment.ahuriri_estuary
+- problem.hawkes_bay.environment.biodiversity
+interventions:
+- description: Stormwater and runoff pollution control intervention
+  state_variable: pollution_control_index
+  constraint_relaxed: pollution_control_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

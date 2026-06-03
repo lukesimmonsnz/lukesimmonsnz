@@ -1,0 +1,20 @@
+id: camp.canterbury.environment.alpine_conservation_biodiversity
+name: Alpine Conservation & Invasive Predator Control
+theme: environment
+core_claim: Integrated pest control (stoats, possums) and alpine habitat restoration
+  maintain endemic species populations in face of climate change.
+flagship_moves:
+- Key intervention for Alpine Conservation & Invasive Predator Control
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.environment.alpine_biodiversity
+interventions:
+- description: Integrated pest control (stoats, possums) and alpine habitat restoration
+    maintain endemic species populations in face of climate change.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

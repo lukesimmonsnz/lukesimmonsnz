@@ -1,0 +1,21 @@
+id: camp.southland.crime.family_violence
+name: Family Violence Prevention and Response
+theme: crime
+core_claim: Expanded services, education, and perpetrator accountability reduce family
+  violence.
+flagship_moves:
+- Family violence service capacity increase
+- School-based relationship education
+- Perpetrator accountability programs
+tensions:
+- Resource intensity; cultural change required
+- Survivor safety and housing needs
+addresses:
+- problem.southland.crime.family_violence
+interventions:
+- description: Increase FV service capacity by 50%
+  state_variable: fv_service_access
+  expected_sign: +
+applicable_in:
+- southland
+tensions_with: []

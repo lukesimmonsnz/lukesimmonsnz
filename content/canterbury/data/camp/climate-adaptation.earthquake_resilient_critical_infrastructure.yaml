@@ -1,0 +1,21 @@
+id: camp.canterbury.climate.earthquake_resilient_critical_infrastructure
+name: Earthquake-Resilient Critical Infrastructure Upgrade
+theme: climate-adaptation
+core_claim: Prioritized seismic upgrade of critical infrastructure (hospital, water
+  treatment, port) to M7+ standards ensures continuity during Alpine Fault rupture.
+flagship_moves:
+- Key intervention for Earthquake-Resilient Critical Infrastructure Upgrade
+tensions:
+- Implementation complexity in multi-stakeholder environment
+addresses:
+- problem.canterbury.climate.alpine_fault_earthquake
+- problem.canterbury.climate.climate_risk
+interventions:
+- description: Prioritized seismic upgrade of critical infrastructure (hospital, water
+    treatment, port) to M7+ standards ensures continuity during Alpine Fault rupture.
+  state_variable: outcome_metric
+  constraint_relaxed: constraint_type
+  expected_sign: +
+applicable_in:
+- canterbury
+tensions_with: []

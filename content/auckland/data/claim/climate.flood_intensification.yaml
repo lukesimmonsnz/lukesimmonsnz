@@ -1,22 +1,25 @@
 id: claim.auckland.climate.flood_intensification
-statement: >
-  Auckland's January 2023 flooding event — a 1-in-200-year rainfall
-  in a single day — caused over $200M in damage and demonstrated
-  the vulnerability of Auckland's stormwater infrastructure to
-  intensified precipitation; climate models project increasing
-  frequency and intensity of extreme rainfall events in Auckland
-  under all emissions scenarios.
-value: 200
-unit: "NZD millions damage"
-time_period: "2023"
+statement: 'Auckland''s January 2023 flooding event — a 1-in-200-year or greater rainfall
+  intensity in a single day — caused approximately $2 billion in direct economic losses,
+  with insured losses alone reaching approximately NZD 1.5 billion (Insurance Council
+  of NZ 2023). The event demonstrated acute vulnerability in Auckland''s stormwater
+  infrastructure, which was designed to handle substantially lower peak rainfall intensities
+  than those now projected under mid-century climate scenarios. intensified precipitation;
+  climate models project increasing frequency and intensity of extreme rainfall events
+  in Auckland under all emissions scenarios.
+
+  '
+value: 1500
+unit: NZD millions (insured losses)
+time_period: '2023'
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.niwa_climate_auckland_2023
+- source.niwa_climate_auckland_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.sea_level_projection_v1

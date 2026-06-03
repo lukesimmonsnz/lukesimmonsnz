@@ -1,0 +1,41 @@
+id: problem.tasman.climate.climate_2
+title: Drought stress on Waimea aquifer and horticulture
+theme: climate-adaptation
+section: climate
+subpage: climate_2
+parent: climate_risk
+order: 2
+updated: '2026-04-26'
+summary: Tasman benefits from 2,400-plus annual sunshine hours — and faces growing drought risk as warming trends
+  extend dry periods. The Waimea Plains aquifer, on which much of the region's horticulture depends, shows documented
+  stress from over-allocation; summer irrigation demand is projected to grow 15-20 percent by 2030.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - summer_irrigation_demand_index
+  - consecutive_dry_days
+  inputs:
+  - irrigation_efficiency_capex
+  - water_storage_investment
+  constraints:
+  - aquifer_sustainable_yield
+  - horticulture_capital_lock_in
+  feedback_loops:
+  - Drought-induced yield losses encourage growers to plant more drought-resilient varieties, which take 5-10 years
+    to bear, leaving a transition gap during which exposure is highest.
+narrative:
+- heading: Sunshine becomes a liability without water
+  body: High sunshine hours that historically supported orchards now compound drought risk as the dry season lengthens.
+    Without storage and demand management, additional evapotranspiration draws against an aquifer already running
+    near its sustainable yield (claim.tasman.climate.climate_2_claim).
+- heading: Demand growth meets supply ceiling
+  body: Projected 15-20 percent growth in summer irrigation demand by 2030 collides with an aquifer already at 85-90
+    percent of sustainable yield (claim.tasman.climate.climate_4_claim). Closing that gap requires some combination
+    of storage, efficiency retrofits, allocation reform, and crop-mix change.
+claim_ids:
+- claim.tasman.climate.climate_2_claim
+status: draft
+time_horizons:
+- generation
+- century

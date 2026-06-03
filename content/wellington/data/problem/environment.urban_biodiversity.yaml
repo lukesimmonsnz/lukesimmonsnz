@@ -1,0 +1,41 @@
+id: problem.wellington.environment.urban_biodiversity
+title: Urban biodiversity pressures in Wellington
+theme: environment
+section: environment
+subpage: urban-biodiversity
+parent: problem.wellington.environment.harbour_health
+order: 2
+updated: '2026-04-26'
+summary: Wellington hosts nationally significant urban biodiversity including the Zealandia/Karori wildlife sanctuary, but
+  urban expansion, predator pressure, and habitat fragmentation continue to threaten indigenous species and ecosystem connectivity
+  across the wider city. The success of Zealandia demonstrates what is achievable but also highlights how much of the urban
+  landscape remains hostile to native biodiversity.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - urban_tree_canopy_pct
+  - predator_tracking_tunnel_density
+  inputs:
+  - pest_control_investment
+  - urban_greening_policy
+  constraints:
+  - cat_and_rodent_pressure_in_urban_matrix
+  - habitat_patch_isolation
+  feedback_loops:
+  - 'Predator rebound loop: cessation of community predator control in any neighbourhood allows rat and possum populations
+    to rebound within months, reversing gains.'
+narrative:
+- heading: Zealandia success and its limits
+  body: Zealandia has demonstrated that a fenced urban sanctuary can support breeding populations of kākā, kiwi, and tuatara
+    in a city environment. Kākā now range freely across much of suburban Wellington. However, this success is confined to
+    areas near the sanctuary perimeter; the broader urban matrix remains heavily predator-affected (claim.wellington.environment.pest_free_progress).
+- heading: Canopy and urban greening gaps
+  body: Wellington's urban tree canopy coverage varies significantly across neighbourhoods, with lower-income and higher-density
+    areas having less canopy than affluent hillside suburbs. Loss of urban canopy through infill development is occurring
+    faster than replacement planting in some zones (claim.wellington.environment.urban_tree_canopy_cover).
+claim_ids:
+- claim.wellington.environment.pest_free_progress
+- claim.wellington.environment.urban_tree_canopy_cover
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,21 @@
+id: camp.otago.transport.dunedin_southern_link_completion
+name: Southern Link Project Completion
+theme: transport
+core_claim: Completing Dunedin Southern Link motorway relieves congestion and improves
+  regional connectivity.
+flagship_moves:
+- Secure full project funding and accelerate construction
+- Manage traffic diversion during construction
+- Integrate with public transit planning
+tensions:
+- Construction cost and timeline uncertainty
+- Environmental impacts and community disruption
+addresses:
+- problem.otago.transport.dunedin_southern_link
+interventions:
+- description: Complete Southern Link by 2030
+  state_variable: motorway_capacity
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

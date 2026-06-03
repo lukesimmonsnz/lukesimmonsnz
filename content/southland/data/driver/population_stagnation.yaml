@@ -1,0 +1,11 @@
+id: driver.southland.housing.population_stagnation
+name: Southland Population Stagnation and Out-Migration
+description: Southland population declining or flat; reduces housing demand.
+theme: housing
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.southland.housing.housing_market
+claim_ids: []

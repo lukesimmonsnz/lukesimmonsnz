@@ -1,0 +1,23 @@
+id: claim.otago.inequality.rural_isolation_trend
+statement: 'Rural isolation is intensifying: young people leaving (education/employment
+  opportunity in Dunedin/Queenstown); aged population increasing (health service demand
+  rising); community infrastructure declining (school closures, shop closures); transport
+  connectivity worsening (bus routes reduction); mental health and suicide risk elevated
+  (isolation, economic stress); digital services (telehealth, broadband) expanding
+  but gaps remain; regional attraction programmes (regional apprenticeships) insufficient
+  to offset outmigration.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

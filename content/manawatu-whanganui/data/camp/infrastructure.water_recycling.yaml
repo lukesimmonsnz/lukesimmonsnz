@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.infrastructure.water_recycling
+name: Water Recycling and Reuse
+theme: infrastructure
+core_claim: Greywater and stormwater recycling.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.infrastructure.digital_rural
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

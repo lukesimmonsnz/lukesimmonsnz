@@ -1,0 +1,28 @@
+id: problem.waikato.crime.family_violence
+title: Family violence
+theme: crime
+section: crime
+subpage: family_violence
+parent: problem.waikato.crime.waikato_crime
+order: 2
+updated: '2026-04-26'
+summary: Family violence call rates in Waikato are 20% above the national average.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - recorded_crime_rate
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing family violence creates feedback on regional outcomes.
+narrative:
+- heading: Family violence
+  body: Family violence call rates in Waikato are 20% above the national average.
+claim_ids:
+- claim.waikato.crime.family_violence_rate_20pct
+status: draft
+time_horizons: [decade]

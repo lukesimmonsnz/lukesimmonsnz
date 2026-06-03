@@ -1,0 +1,32 @@
+id: problem.bay_of_plenty.transport.connectivity
+title: Regional transport connectivity constraints in Bay of Plenty — Te Moana-a-Toi
+theme: transport
+section: transport
+subpage: connectivity
+parent: null
+order: 5
+updated: '2026-04-26'
+summary: Regional transport connectivity constraints represents a key systemic pressure
+  for Bay of Plenty — Te Moana-a-Toi.
+manifests_in:
+- bay-of-plenty
+systems_model:
+  state_variables:
+  - connectivity_index
+  inputs:
+  - policy_change
+  - investment_level
+  constraints:
+  - fiscal_capacity
+  - institutional_inertia
+  feedback_loops:
+  - Reinforcing feedback drives escalation of the core pressure.
+narrative:
+- heading: Core pressure
+  body: The regional transport connectivity constraints is a pressing concern for
+    the region.
+claim_ids:
+- claim.bay_of_plenty.transport.connectivity_09
+- claim.bay_of_plenty.transport.connectivity_10
+status: draft
+time_horizons: [decade, generation]

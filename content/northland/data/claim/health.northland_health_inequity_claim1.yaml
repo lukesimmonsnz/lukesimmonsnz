@@ -1,0 +1,18 @@
+id: claim.northland.health.northland_health_inequity_claim1
+statement: Northland has critical shortage of GPs, dentists, and mental health professionals.
+  Dental care access poor in Far North; patient-to-dentist ratio 5x+ urban areas.
+  Whangārei Hospital waiting times for elective surgery (orthopaedics, urology) exceed
+  12-18 months nationally. Community health centre closures in small towns force reliance
+  on hospital emergency departments.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

@@ -1,0 +1,20 @@
+id: claim.hawkes_bay.health.mental_health_demand_300_percent_increase
+statement: Health service access in Hawkes Bay is constrained by workforce shortage
+  and geographic isolation. Nursing vacancies and GP shortages are acute in rural
+  areas; specialist services require travel, delaying diagnoses and treatment for
+  chronic and acute conditions.
+value: 300
+unit: percent increase
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: Regional claim for Hawke's Bay

@@ -1,0 +1,33 @@
+id: problem.hawkes_bay.housing.affordability
+title: "Housing affordability in Hawke's Bay"
+theme: housing
+section: housing
+subpage: affordability
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: "Hawke's Bay faces growing supply-demand imbalance and cost-income divergence. Median house prices have risen significantly relative to incomes, exacerbated by Cyclone Gabrielle damage, limited new supply, and investor demand. Agricultural workers and seasonal labourers particularly affected."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - median_multiple_ratio
+    - price_to_income_gap
+  inputs:
+    - housing_supply_constraint
+    - investor_demand_pressure
+  constraints:
+    - topographic_and_flood_limitations
+    - post_cyclone_repair_backlog
+  feedback_loops:
+    - 'Affordability decline reduces labour supply attraction; worker shortages raise business costs; investment in growth slows.'
+narrative:
+  - heading: Median Multiple Rising
+    body: "Hawke's Bay median multiple (price-to-income ratio) has risen to approximately 6.8 in 2024, indicating severely unaffordable housing by Demographia standards. Average house prices exceed $600k while median incomes are approximately $90k annual."
+  - heading: Post-Cyclone Damage and Supply Crunch
+    body: 'Cyclone Gabrielle damaged or destroyed thousands of homes in February 2023. Repair and rebuild backlogs have compressed available rental and owned stock, pushing prices higher.'
+claim_ids:
+  - claim.hawkes_bay.housing.median_multiple_2024
+  - claim.hawkes_bay.housing.cyclone_damage_extent
+status: draft
+time_horizons: [decade, generation, century]

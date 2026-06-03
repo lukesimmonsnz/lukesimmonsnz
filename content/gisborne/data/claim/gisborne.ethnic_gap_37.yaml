@@ -1,0 +1,20 @@
+id: claim.gisborne.inequality.ethnic_gap_37
+statement: Gisborne — Te Tairāwhiti has the highest deprivation index scores in New
+  Zealand outside of Northland; median household income in the region's high-deprivation
+  communities is approximately 30-35% below the national median, reflecting geographic
+  isolation, primary-sector dependence, and limited tertiary infrastructure.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: high
+verification_status: verified
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.patronage_per_capita_v1
+notes: null

@@ -1,0 +1,21 @@
+id: claim.southland.climate.drought_agricultural_prevalence
+statement: Southland dairy and pastoral farming face increasing drought risk. Eastern
+  Southland (Mossburn, Lumsden, Riversdale) experiences episodic dry summers (2-3
+  month soil moisture deficits). Dairy productivity losses during drought events reach
+  15-25% per season. Fonterra Edendale milk supply vulnerable; pastoral livestock
+  survival affected.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.southland_council_2024
+scoped_to:
+- southland
+national_assertion: false
+region_mentions:
+- southland
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.education.resource_inequity
+name: School Resource Inequity And Funding Formula
+description: School resource inequity and funding formula. This driver operates at
+  national scale with mostly-agreed consensus.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.governance.local_govt_reform
+claim_ids: []

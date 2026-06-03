@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.crime.underfunded_police
+name: Underfunded Police And Justice System
+description: Underfunded police and justice system with regional implications.
+theme: crime
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: national
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.economy.logistics_defence
+claim_ids: []

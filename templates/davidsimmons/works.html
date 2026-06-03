@@ -5,6 +5,8 @@
 {% block meta_description %}Publications and exhibitions of David Roy Simmons — a major bibliography of Māori ethnology and art scholarship.{% endblock %}
 
 {% block content %}
+{% set _ds_intro = davidsimmons_slot_render('works') %}
+{% if _ds_intro %}<div class="page-intro">{{ _ds_intro | safe }}</div>{% endif %}
 <div class="page">
   {{ breadcrumbs([
     ('Home', url_for('main.home')),

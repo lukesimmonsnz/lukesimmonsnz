@@ -1,0 +1,24 @@
+id: camp.nelson.health.camp_1
+name: 'Response: Camp 1'
+theme: health
+core_claim: A response strategy addressing health challenges.
+flagship_moves:
+- Implement evidence-based health policy in Nelson
+- Increase investment in health services and infrastructure
+- Build cross-sector partnerships to address health challenges
+tensions:
+- Implementation requires sustained political will and cross-sector coordination.
+- Resource constraints may limit the pace of change.
+addresses:
+- problem.nelson.health.health_outcomes
+- problem.nelson.health.mental_health
+interventions:
+- description: Primary intervention for health
+  state_variable: health_outcome_index
+  expected_sign: +
+- description: Secondary intervention for health
+  state_variable: health_service_access
+  expected_sign: +
+applicable_in:
+- nelson
+tensions_with: []

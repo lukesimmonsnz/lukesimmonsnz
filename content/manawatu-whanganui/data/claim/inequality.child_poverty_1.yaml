@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.inequality.child_poverty_1
+statement: Child poverty (0-17 years) in Manawatū-Whanganui affects approximately
+  20-24% of children, above the national average (approx. 17-19%). Whanganui city
+  has the highest rate (28-32%), followed by rural areas with dispersed poverty. Child
+  poverty correlates strongly with parental unemployment, single-parent households,
+  and benefit dependency. Food insecurity, educational underachievement, and health
+  disparities (dental neglect, respiratory illness, obesity) are associated. School
+  holiday and weekend meal programmes operate in Whanganui and Palmerston North disadvantaged
+  zones to address gaps.
+value: 22
+unit: percent_child_poverty
+time_period: 2021-2023
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_deprivation_2018_mw
+- source.stats_nz_census_2023_mw
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

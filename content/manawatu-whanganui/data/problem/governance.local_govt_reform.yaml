@@ -1,0 +1,32 @@
+id: problem.manawatu_whanganui.governance.local_govt_reform
+title: Local Government Reform and Service Delivery
+theme: governance
+section: governance
+subpage: local_govt_reform
+parent: problem.manawatu_whanganui.governance.governance
+order: 1
+updated: '2026-04-26'
+summary: Three-waters reform; council amalgamation proposals; rating burden; service
+  equity across district.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Three-waters reform; council amalgamation proposals; rating burden; service
+    equity across district.
+claim_ids:
+- claim.manawatu_whanganui.governance.local_govt_reform_placeholder
+status: draft
+time_horizons: [decade, generation, century]

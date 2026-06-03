@@ -1,0 +1,25 @@
+id: camp.northland.infrastructure.three_waters_camp
+name: Central government water services reform
+theme: infrastructure
+core_claim: Centralising water services delivery allows infrastructure investment
+  at scale that individual councils cannot achieve.
+flagship_moves:
+- Reform water services entities to enable regional-scale investment
+- Establish dedicated infrastructure funding for small communities
+- Require co-investment from Crown for community water schemes
+tensions:
+- Loss of local accountability for water services
+- Transition costs and service disruption during reform
+- Political opposition from ratepayers preferring local control
+interventions:
+- description: Reform water services entities to enable regional-scale investment
+  state_variable: infrastructure_pressure_index
+  expected_sign: +
+addresses:
+- problem.northland.infrastructure.northland_infrastructure_deficit
+- problem.northland.infrastructure.water_wastewater
+- problem.northland.infrastructure.digital_divide
+- problem.northland.infrastructure.flood_resilience
+applicable_in:
+- northland
+tensions_with: []

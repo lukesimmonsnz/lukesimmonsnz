@@ -1,0 +1,19 @@
+id: claim.gisborne.economy.unemployment_70
+statement: Cyclone Gabrielle displaced workers in tourism, horticulture, and forestry.
+  Recovery-phase employment opportunities are project-based and temporary, slowing
+  transition back to full-time work.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_housing_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mode_share_v1
+notes: null

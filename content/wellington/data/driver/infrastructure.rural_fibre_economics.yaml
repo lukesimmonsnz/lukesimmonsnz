@@ -1,0 +1,13 @@
+id: driver.wellington.infrastructure.rural_fibre_economics
+name: Rural fibre deployment economics
+description: The cost per premises of fibre deployment in rural Wairarapa and Kāpiti hinterlands is prohibitive at commercial
+  rates, requiring ongoing public subsidy to extend comparable connectivity to rural Wellington communities.
+theme: infrastructure
+consensus: consensus
+category: economic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.infrastructure.digital_connectivity
+claim_ids:
+- claim.wellington.infrastructure.rural_broadband_coverage

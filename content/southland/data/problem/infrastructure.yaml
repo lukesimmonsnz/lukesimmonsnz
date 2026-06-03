@@ -1,0 +1,36 @@
+id: problem.southland.infrastructure.infrastructure
+title: 'Infrastructure: Water, Wastewater, Power, Digital'
+theme: infrastructure
+section: infrastructure
+subpage: infrastructure
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: Southland faces aging water and wastewater systems; Manapōuri hydroelectric
+  power uniquely supports smelter; rural digital divide; Fiordland tourist infrastructure
+  under pressure.
+manifests_in:
+- southland
+systems_model:
+  state_variables:
+  - problem_indicator_1
+  inputs: []
+  constraints:
+  - institutional_or_physical_constraint
+  feedback_loops: []
+narrative:
+- heading: Overview
+  body: Southland faces aging water and wastewater systems; Manapōuri hydroelectric
+    power uniquely supports smelter; rural digital divide; Fiordland tourist infrastructure
+    under pressure.
+claim_ids:
+- claim.southland.infrastructure.digital_rural_prevalence
+- claim.southland.infrastructure.manapouri_power_prevalence
+- claim.southland.infrastructure.manapouri_power_trend
+- claim.southland.infrastructure.digital_rural_trend
+- claim.southland.infrastructure.water_wastewater_trend
+- claim.southland.infrastructure.water_wastewater_prevalence
+- claim.southland.infrastructure.infrastructure_trend
+- claim.southland.infrastructure.infrastructure_prevalence
+status: draft
+time_horizons: [decade, generation]

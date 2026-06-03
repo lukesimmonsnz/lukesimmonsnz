@@ -1,0 +1,42 @@
+id: problem.tasman.transport.connectivity_2
+title: Golden Bay road-access dependence on a single hill route
+theme: transport
+section: transport
+subpage: connectivity_2
+parent: connectivity
+order: 2
+updated: '2026-04-26'
+summary: Golden Bay / Mohua is reached by road only via SH60 over the Takaka Hill — roughly 105 km and 90 minutes
+  to Nelson Hospital. The hill is exposed to slips, washouts, and fog; closures isolate the community for days at
+  a time and force medical emergencies onto helicopter evacuation.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - takaka_hill_open_days_per_year
+  - minutes_to_nelson_hospital
+  inputs:
+  - sh60_resilience_capex
+  - rescue_helicopter_capacity
+  constraints:
+  - single_road_alignment
+  - geological_instability_takaka_hill
+  feedback_loops:
+  - Each major closure reinforces population thinning of younger and medically-vulnerable residents in Golden Bay,
+    which reduces the political return on resilience investment.
+narrative:
+- heading: One hill between Mohua and the rest of the region
+  body: Takaka, Collingwood and the wider Golden Bay community depend on SH60 over the Takaka Hill for almost all
+    goods, services, and emergency access. Motueka is roughly 45 minutes away and provides community health services
+    only; the nearest hospital with emergency and maternity capacity is Nelson Hospital, around 90 minutes away
+    (claim.tasman.transport.connectivity_2_claim).
+- heading: Closure cost is borne mostly by residents
+  body: Twelve major Takaka Hill closures between 2018 and 2023 isolated Golden Bay for two-to-five days each (claim.tasman.infrastructure.infrastructure_4_claim).
+    During those windows, helicopter evacuation costs of NZD 4,500-6,000 per trip act as a regressive surcharge
+    on rural and lower-income households who cannot self-insure against isolation.
+claim_ids:
+- claim.tasman.transport.connectivity_2_claim
+status: draft
+time_horizons:
+- decade
+- generation

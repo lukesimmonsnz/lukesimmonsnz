@@ -1,0 +1,20 @@
+id: claim.canterbury.housing.three_waters_capacity_gap_2024
+statement: Water supply, wastewater, and stormwater systems in Waimakariri and Selwyn
+  are at or near capacity; expansion of 2,500-3,000 additional residential connections
+  requires trunk infrastructure augmentation not yet funded or approved.
+value: 2750
+unit: additional residential connections needed
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.waimakariri_dc_growth_2024
+- source.selwyn_dc_growth_2024
+scoped_to:
+- canterbury
+national_assertion: false
+region_mentions:
+- canterbury
+methodology_tag: methodology.water_quality_index_v1
+notes: null

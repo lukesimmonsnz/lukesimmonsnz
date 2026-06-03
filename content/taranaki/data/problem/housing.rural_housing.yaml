@@ -1,0 +1,31 @@
+id: problem.taranaki.housing.rural_housing
+title: Rural housing and infrastructure servicing
+theme: housing
+section: housing
+subpage: rural-housing
+parent: problem.taranaki.housing.housing_market
+order: 2
+updated: '2026-04-26'
+summary: 'Rural Taranaki farming communities face aging housing stock, limited broadband access, and high infrastructure servicing costs. Dairy and sheep farm incomes are declining.'
+manifests_in:
+  - taranaki
+systems_model:
+  state_variables:
+    - rural_housing_stock_age
+    - broadband_access_coverage_percent
+  inputs:
+    - dairy_farm_income_decline
+    - service_centralisation
+  constraints:
+    - infrastructure_cost_per_capita
+  feedback_loops:
+    - 'Farm profitability decline limits housing investment; stock deteriorates; young people leave.'
+narrative:
+  - heading: Aging Stock
+    body: 'Rural housing in Taranaki is 45+ years old on average, with poor thermal performance and limited broadband.'
+  - heading: Farm Viability
+    body: 'Dairy farm profitability has declined 40% over 2010-2024. Housing investment is deferred.'
+claim_ids:
+  - claim.taranaki.housing.rural_stock_45_years_old
+status: draft
+time_horizons: [decade, generation, century]

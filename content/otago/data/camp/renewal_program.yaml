@@ -1,0 +1,20 @@
+id: camp.otago.infrastructure.renewal_program
+name: Infrastructure Renewal and Upgrade Program
+theme: infrastructure
+core_claim: Systematic infrastructure renewal improves resilience and service quality.
+flagship_moves:
+- Infrastructure condition assessment and planning
+- Prioritized renewal schedule and funding
+- Asset management and maintenance
+tensions:
+- High cost and funding constraints
+- Service disruption during renewal
+addresses:
+- problem.otago.infrastructure.infrastructure
+interventions:
+- description: Implement 10-year infrastructure renewal program
+  state_variable: infrastructure_condition
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

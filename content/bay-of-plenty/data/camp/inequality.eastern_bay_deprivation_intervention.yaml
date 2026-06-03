@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.inequality.eastern_bay_deprivation_intervention
+name: Intervention for eastern_bay_deprivation
+theme: inequality
+core_claim: Targeted intervention on eastern_bay_deprivation will improve outcomes.
+flagship_moves:
+- Policy measure 1 for eastern_bay_deprivation
+- Policy measure 2 for eastern_bay_deprivation
+- Implementation mechanism for eastern_bay_deprivation
+tensions:
+- Trade-off A for eastern_bay_deprivation
+- Trade-off B for eastern_bay_deprivation
+addresses:
+- problem.bay_of_plenty.inequality.eastern_bay_deprivation
+interventions:
+- description: Core intervention targeting eastern_bay_deprivation
+  state_variable: eastern_bay_deprivation_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

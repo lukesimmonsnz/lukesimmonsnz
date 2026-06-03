@@ -1,0 +1,20 @@
+id: camp.bay_of_plenty.health.workforce_intervention
+name: Intervention for workforce
+theme: health
+core_claim: Targeted intervention on workforce will improve outcomes.
+flagship_moves:
+- Policy measure 1 for workforce
+- Policy measure 2 for workforce
+- Implementation mechanism for workforce
+tensions:
+- Trade-off A for workforce
+- Trade-off B for workforce
+addresses:
+- problem.bay_of_plenty.health.workforce
+interventions:
+- description: Core intervention targeting workforce
+  state_variable: workforce_index
+  expected_sign: '-'
+applicable_in:
+- bay-of-plenty
+tensions_with: []

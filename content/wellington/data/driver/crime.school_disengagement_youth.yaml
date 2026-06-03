@@ -1,0 +1,13 @@
+id: driver.wellington.crime.school_disengagement_youth
+name: School disengagement in high-deprivation areas
+description: School truancy and disengagement rates in Porirua and Hutt Valley are substantially above Wellington averages,
+  creating unsupervised time and reducing the conventional stakes that deter youth offending.
+theme: crime
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.wellington.crime.youth_offending
+claim_ids:
+- claim.wellington.crime.youth_offending_porirua_hutt

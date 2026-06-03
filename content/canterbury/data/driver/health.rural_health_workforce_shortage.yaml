@@ -1,0 +1,11 @@
+id: driver.canterbury.health.rural_health_workforce_shortage
+name: Rural Health Workforce Recruitment & Retention Challenges
+description: Rural Health Workforce Recruitment & Retention Challenges
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.health.workforce_shortage
+claim_ids: []

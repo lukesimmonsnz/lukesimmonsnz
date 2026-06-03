@@ -1,0 +1,18 @@
+id: claim.northland.education.maori_education_claim2
+statement: Whānau Ora and school-based kaupapa Māori initiatives improve engagement
+  and retention;
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

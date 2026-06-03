@@ -1,0 +1,12 @@
+id: driver.otago.crime.visitor_alcohol_environment
+name: Visitor Alcohol Consumption and Venue Culture
+description: Queenstown CBD late-night alcohol venues; high BAC assault rates among
+  visitors.
+theme: crime
+consensus: consensus
+category: demographic
+timescale: short
+scope: regional
+problem_ids:
+- problem.otago.crime.queenstown_visitor_crime
+claim_ids: []

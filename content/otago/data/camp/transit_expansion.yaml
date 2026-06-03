@@ -1,0 +1,24 @@
+id: camp.otago.transport.transit_expansion
+name: Public Transit Expansion
+theme: transport
+core_claim: Investing in frequent public transit (bus, light rail) reduces car dependency.
+flagship_moves:
+- High-frequency bus network (15-min intervals) in Queenstown and Dunedin CBDs
+- Evaluate light rail feasibility for Queenstown-Arrowtown corridor
+- Integrate Dunedin bus network across three TAs
+tensions:
+- Low population density makes transit economically marginal
+- Upfront capital investment competes with maintenance funding
+addresses:
+- problem.otago.transport.connectivity
+- problem.otago.transport.active_modes
+interventions:
+- description: Establish dedicated bus lanes and signal priority in Queenstown CBD
+  state_variable: transit_speed
+  expected_sign: +
+- description: Integrate fares and scheduling across regional operators
+  state_variable: transit_patronage
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

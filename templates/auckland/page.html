@@ -1,5 +1,6 @@
 {% extends "research/_layout.html" %}
 {% from "_partials/breadcrumbs.html" import breadcrumbs %}
+{% from "_partials/cite.html" import cite_block %}
 
 {% block title %}{{ page.title }} · {{ section_title }} · Auckland · Research · Luke Simmons{% endblock %}
 {% block meta_description %}{{ page.summary or page.title }}{% endblock %}
@@ -33,6 +34,8 @@
   <article class="prose">
     {{ page.body_html | safe }}
   </article>
+
+  {{ cite_block(title=page.title, path=request.path, site_url=site_url, current_quarter=current_quarter) }}
 
   <nav class="pagination-pair" aria-label="Adjacent pages in section">
     {% if prev_page %}

@@ -1,0 +1,12 @@
+id: driver.marlborough.governance.iwi_partnership_implementation
+name: Iwi Partnership Implementation Challenges
+description: Iwi partnership implementation challenges.
+theme: governance
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.health.mental_health
+claim_ids: []

@@ -1,0 +1,33 @@
+id: problem.gisborne.crime.youth_offending
+title: Youth offending and gang involvement in Gisborne — Te Tairāwhiti
+theme: crime
+section: crime
+subpage: youth_offending
+parent: problem.gisborne.crime.safety
+order: 23
+updated: '2026-04-26'
+summary: Youth offending and gang involvement is a specific manifestation of the regional
+  challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - youth_offending_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Youth offending and gang involvement is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.crime.youth_offending_45
+- claim.gisborne.crime.youth_offending_46
+status: draft
+time_horizons: [decade]

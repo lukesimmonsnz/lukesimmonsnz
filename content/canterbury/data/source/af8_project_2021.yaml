@@ -1,0 +1,17 @@
+id: source.af8_project_2021
+title: "Project AF8 - South Island Alpine Fault Magnitude 8 Earthquake Response Planning"
+author: "Project AF8 (multi-agency)"
+publisher: "Emergency Management Otago / National Emergency Management Agency"
+year: 2021
+url: "https://www.af8.org.nz/"
+type: government-report
+credibility: official
+geo_granularity:
+  - canterbury
+  - nz
+notes: >
+  Multi-agency planning programme for an anticipated magnitude-8 Alpine Fault
+  earthquake. Cross-references GNS Science seismic hazard estimates and
+  South Island Civil Defence Emergency Management Group response planning.
+  Key reference for Canterbury's seismic-readiness debate; informs ground
+  motion expectations for Christchurch-area infrastructure.

@@ -1,0 +1,19 @@
+{#- Section Hero — full-bleed image background with headline, subhead, and CTA.
+    Spec: docs/CMS-SPEC-v2.md §9
+    Attrs:
+      bg_image  — URL of background image (optional)
+      height    — small | medium | large (default: medium)
+    Body (container):
+      The inner BlockTree is rendered; intended to contain a heading,
+      paragraph (subhead), and optionally a button block.
+-#}
+{%- set height_class = 'sh-' ~ (attrs.height | default('medium')) -%}
+{%- set _has_content = body and body|striptags|trim -%}
+<div class="block-section-hero {{ height_class }}{% if not _has_content %} sh-empty{% endif %}"
+     {% if attrs.bg_image %}style="background-image:url('{{ attrs.bg_image | e }}')"{% endif %}
+     role="banner">
+  <div class="section-overlay" aria-hidden="true"></div>
+  <div class="section-hero-content">
+    {{ body | safe }}
+  </div>
+</div>

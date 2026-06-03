@@ -1,0 +1,38 @@
+id: pattern.crime.family_violence_prevalence
+title: Family violence as the dominant community safety challenge
+theme: crime
+summary: Family violence is the most prevalent and socially costly form of crime in
+  New Zealand across all regions, with call rates and hospitalisation highest in high-deprivation
+  areas, but present at elevated levels everywhere.
+manifests_in:
+- auckland
+- northland
+- waikato
+- gisborne
+- hawkes-bay
+- manawatu-whanganui
+- canterbury
+- southland
+- otago
+claim_ids:
+- claim.auckland.crime.auckland_victimisation_rate
+- claim.northland.crime.family_violence_claim1
+- claim.manawatu_whanganui.crime.family_violence_1
+- claim.southland.crime.family_violence_prevalence
+- claim.otago.crime.family_violence_prevalence
+- claim.gisborne.crime.family_violence_43
+narrative:
+- heading: National pattern
+  body: 'Police respond to a family violence call every four minutes nationally. The
+    pattern is concentrated but not contained in high-deprivation communities: elevated
+    rates appear across socioeconomic spectra. Māori are overrepresented as both victims
+    and perpetrators, reflecting the same structural disadvantage that drives other
+    inequality dimensions.'
+- heading: Prevention gap
+  body: Family violence spending in New Zealand is heavily weighted toward crisis
+    response (police, courts, emergency housing) and lightly weighted toward prevention
+    and primary intervention. This allocation reflects political economy — crisis
+    response produces visible outputs — rather than evidence about where intervention
+    is most effective.
+status: draft
+updated: '2026-04-26'

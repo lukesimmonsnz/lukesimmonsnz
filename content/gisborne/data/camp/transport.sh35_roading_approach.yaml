@@ -1,0 +1,20 @@
+id: camp.gisborne.transport.sh35_roading_approach
+name: Strategic approach for sh35_roading
+theme: transport
+core_claim: Strategic intervention on sh35_roading will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting sh35_roading
+- Priority action 2 targeting sh35_roading
+- Institutional coordination mechanism for sh35_roading
+tensions:
+- 'Tension 1: sh35_roading'
+- 'Tension 2: sh35_roading'
+addresses:
+- problem.gisborne.transport.sh35_roading
+interventions:
+- description: Primary intervention for sh35_roading
+  state_variable: sh35_roading_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

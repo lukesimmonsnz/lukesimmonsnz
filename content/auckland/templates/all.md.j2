@@ -1,0 +1,73 @@
+---
+title: "{{ region_title }} — All themes"
+section: _all
+kind: all
+updated: {{ generated_at }}
+generated_from: all.{{ region }}
+---
+
+# {{ region_title }} — All research themes
+{% if horizon_union %}
+
+<p class="horizon-band">Analysis horizon: {% for h in horizon_union %}{% if h == 'decade' %}10yr{% elif h == 'generation' %}50yr{% elif h == 'century' %}100yr{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% endif %}
+
+A consolidated reading of every research theme for {{ region_title }}, presented back-to-back. Each theme below corresponds to a permanent address (e.g. `/research/{{ region }}/<theme>/`) which is the canonical citation target. References are pooled at the bottom of this page across all themes.
+
+{% for theme in themes %}
+
+---
+
+## {{ theme.section_title }}
+
+{% if section_blurbs.get(theme.section) %}
+{{ section_blurbs[theme.section] }}
+{% endif %}
+
+{% for issue in theme.issues %}
+
+### {{ issue.problem.title }}
+
+{{ issue.problem.summary | trim }}
+{% for nsec in issue.problem.narrative %}
+
+#### {{ nsec.heading }}
+
+{{ nsec.body | trim }}
+{% endfor %}
+
+#### Structural drivers
+
+{% for d in issue.drivers %}
+**{{ d.name }}.** {{ d.description | default('') | trim }}
+
+{% endfor %}
+
+#### Solution camps
+
+{% for camp in issue.camps %}
+**{{ camp.name }}.** {{ camp.core_claim | trim }}{% if camp.flagship_moves %} Key moves include {{ camp.flagship_moves | join('; ') }}.{% endif %}{% if camp.tensions %} The main tensions are: {{ camp.tensions | join('; ') }}.{% endif %}
+
+{% endfor %}
+
+{% endfor %}
+{% endfor %}
+
+---
+
+## References
+
+{% for src in deduped_sources %}
+- **{{ src.title }}**{% if src.author %} — {{ src.author }}{% endif %}{% if src.publisher %} ({{ src.publisher }}){% endif %}{% if src.year %}, {{ src.year }}{% endif %}{% if src.url %} — <{{ src.url }}>{% endif %}
+{%- endfor %}
+
+<details class="technical-appendix" markdown="1">
+<summary><strong>Technical details</strong> — how this page was made</summary>
+
+This page is generated from a typed entity graph: {{ total_issues }} problem entities across {{ themes | length }} themes, with their structural drivers, solution camps, and source-cited claims. The narrative essay above is human-authored; the drivers and camps are structured data woven into the prose by the renderer. Each claim cites a primary source listed in the References section. The full schema and methodology are described in the [methodology document](/research/methodology/). Last regenerated {{ generated_at }} from the entity files under `content/{{ region }}/data/`.
+
+</details>
+
+---
+
+*Generated for `{{ region }}` on {{ generated_at }}. Do not hand-edit. Edit the entity files under the region's `data/` directory and re-run the region's render.py with `--all-page`.*

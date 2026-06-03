@@ -1,0 +1,47 @@
+id: problem.canterbury.crime.safety
+title: Canterbury Community Safety & Crime Prevention
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Canterbury recorded crime rates exceed NZ averages in family violence, assault,
+  and youth offending categories. Family violence (32% of police call-outs) correlates
+  with housing stress and deprivation. Organized retail crime and methamphetamine
+  distribution are growing. Community cohesion impacts are acute in East Christchurch
+  and outer growth districts (Selwyn).
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - family_violence_notifications_rate
+  - assault_recorded_rate
+  - youth_offending_rate
+  - organized_retail_crime_incidents
+  - methamphetamine_seizure_volume
+  inputs:
+  - deprivation_concentration
+  - housing_stress_levels
+  - substance_abuse_prevalence
+  constraints:
+  - police_staffing_levels
+  - mental_health_service_capacity
+  - community_trust_in_police
+  feedback_loops:
+  - Dynamic feedback mechanisms drive canterbury community safety & crime prevention.
+narrative:
+- heading: Earthquake-driven social stress
+  body: 'Post-quake, family violence increased 25% (2011-2013) as housing displacement,
+    financial stress, and psychological trauma compounded pre-existing risk factors.
+    While overall violence has stabilized, concentrations in high-deprivation areas
+    remain acute.
+
+    '
+claim_ids:
+- claim.canterbury.crime.family_violence_rate_2023
+- claim.canterbury.crime.youth_offending_rate_2023
+status: draft
+time_horizons: [decade]

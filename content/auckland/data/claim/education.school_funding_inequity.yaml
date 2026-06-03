@@ -1,21 +1,21 @@
 id: claim.auckland.education.school_funding_inequity
-statement: >
-  Auckland decile 1-3 schools have higher proportions of students with
-  learning needs, English language challenges, and socioeconomic
-  disadvantage, yet per-pupil operational resourcing differences between
-  decile bands are insufficient to equalise effective educational inputs;
-  high-deprivation schools face higher staff turnover and find specialist
-  teacher recruitment more difficult.
+statement: 'Auckland decile 1-3 schools have higher proportions of students with learning
+  needs, English language challenges, and socioeconomic disadvantage, yet per-pupil
+  operational resourcing differences between decile bands are insufficient to equalise
+  effective educational inputs; high-deprivation schools face higher staff turnover
+  and find specialist teacher recruitment more difficult.
+
+  '
 value: null
 unit: null
-time_period: "2021-2023"
+time_period: 2021-2023
 confidence: high
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.moe_school_performance_2023
+- source.moe_school_performance_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

@@ -1,0 +1,23 @@
+id: claim.northland.health.health_workforce_claim1
+statement: 'Northland DHB faces chronic nurse and medical officer shortage: vacancy
+  rate 12-15% (vs. national ~8%). Rural GP shortages especially acute (Far North:
+  15+ GP vacancies, recruitment cycles 12-18 months). Midwife shortage reduces rural
+  birthing capacity; women travel 1.5-2.5 hrs to Whangarei Hospital for delivery.
+  Locum-dependent practices (temporary doctors rotating) reduce continuity of care.
+  Maori health worker recruitment limited (cultural competency premium, low population
+  base).'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_northland_2023
+scoped_to:
+- northland
+national_assertion: false
+region_mentions:
+- northland
+methodology_tag: null
+notes: null

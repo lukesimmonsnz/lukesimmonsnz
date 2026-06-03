@@ -1,0 +1,22 @@
+id: claim.hawkes_bay.transport.sh2_closure_duration
+statement: State Highway 2 closures due to slips, flooding, or earthquakes isolate
+  Wairoa from Napier/Hastings for average 3.5 weeks per major event cycle. Cyclone
+  Gabrielle (Feb 2023) closed SH2 and SH5 for 8+ weeks, stranding Wairoa and cutting
+  agricultural supply chains. Single-road dependency creates critical business continuity
+  and emergency response vulnerabilities; rail infrastructure is freight-only (KiwiRail),
+  lacking passenger resilience alternatives.
+value: 3.5
+unit: weeks
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.stats_nz_census_2023
+scoped_to:
+- hawkes-bay
+national_assertion: false
+region_mentions:
+- hawkes-bay
+methodology_tag: methodology.admin_count_v1
+notes: null

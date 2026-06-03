@@ -1,0 +1,21 @@
+id: claim.marlborough.economy.wine_industry_risk_2
+statement: 'Marlborough wine industry climate risk: SH1 Kaikoura corridor (primary
+  export access route south to Christchurch ports and inland Australia) remains vulnerable
+  to Alpine Fault rupture/landslide closure; closed ~12 months post-2016 earthquake;
+  rebuild cost NZD 1.4B.'
+value: 1400000000
+unit: NZD SH1 Kaikoura earthquake repair cost
+time_period: 2016-2017
+confidence: high
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.treasury_economic_outlook_mbl_2024
+- source.nzta_top_south_transport_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.admin_count_v1
+notes: null

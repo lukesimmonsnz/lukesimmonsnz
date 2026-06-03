@@ -1,0 +1,40 @@
+id: problem.tasman.crime.safety
+title: Property-crime-dominated regional crime profile
+theme: crime
+section: crime
+subpage: safety
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: NZ Police statistics record around 1,247 reported crimes in Tasman in 2023, against a population of roughly
+  58,000 — a rate of 2.15 reported crimes per 100 residents per year. Property crime, including vehicle theft, accounts
+  for around 58 percent of reports; violent crime around 14 percent.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - reported_crime_rate_per_100
+  - property_crime_share
+  inputs:
+  - police_resourcing
+  - community_crime_prevention_programmes
+  constraints:
+  - low_density_response_geography
+  - seasonal_visitor_flux
+  feedback_loops:
+  - Low clearance rates suppress reporting, which understates the true crime base and weakens the case for additional
+    resourcing.
+narrative:
+- heading: A property-crime-shaped profile
+  body: Tasman's reported-crime mix is dominated by property offences — burglary, theft from cars, and vehicle theft
+    — rather than violent crime. The pattern is consistent with a low-density region with seasonal visitor flux
+    and dispersed dwellings (claim.tasman.crime.safety_claim).
+- heading: Reported and actual diverge in low-density areas
+  body: Recorded-crime rates are sensitive to reporting behaviour as well as actual incidence. In thinly-policed
+    rural areas, lower clearance rates can lead to lower reporting in steady-state, which underestimates the true
+    incidence of property offending.
+claim_ids:
+- claim.tasman.crime.safety_claim
+status: draft
+time_horizons:
+- decade

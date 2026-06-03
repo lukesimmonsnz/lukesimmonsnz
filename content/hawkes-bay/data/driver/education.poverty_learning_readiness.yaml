@@ -1,0 +1,18 @@
+id: driver.hawkes_bay.education.poverty_learning_readiness
+name: Childhood poverty limiting learning readiness
+description: Children growing up in deprived households start school with literacy
+  and numeracy gaps. Nutrition insecurity, housing instability, and parental stress
+  undermine school readiness and early learning outcomes.
+theme: education
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.hawkes_bay.education.achievement
+- problem.hawkes_bay.education.early_childhood
+- problem.hawkes_bay.inequality.child_poverty
+- problem.hawkes_bay.education.secondary_completion
+claim_ids:
+- claim.hawkes_bay.inequality.child_poverty_28_percent
+- claim.hawkes_bay.education.ece_participation_76_percent

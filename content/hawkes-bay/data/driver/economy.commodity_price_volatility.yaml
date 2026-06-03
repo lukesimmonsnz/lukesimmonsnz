@@ -1,0 +1,18 @@
+id: driver.hawkes_bay.economy.commodity_price_volatility
+name: Export commodity price volatility
+description: Hawke's Bay economy is heavily dependent on apple, wine, and dairy export
+  prices. Volatility in global commodity markets creates boom-bust economic cycles.
+  Recent wine industry downturn (2023-2025) demonstrates vulnerability.
+theme: economy
+consensus: consensus
+category: economic
+timescale: short
+scope: regional
+problem_ids:
+- problem.hawkes_bay.economy.economic_structure
+- problem.hawkes_bay.economy.cyclone_recovery
+- problem.hawkes_bay.economy.economic_diversification
+- problem.hawkes_bay.economy.horticulture_rse
+claim_ids:
+- claim.hawkes_bay.economy.agriculture_22_percent_gdp
+- claim.hawkes_bay.economy.cyclone_damage_6_8_billion

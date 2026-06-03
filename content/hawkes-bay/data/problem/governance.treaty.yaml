@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.governance.treaty
+title: Treaty settlement and iwi partnership implementation
+theme: governance
+section: governance
+subpage: treaty
+parent: problem.hawkes_bay.governance.governance
+order: 2
+updated: '2026-04-26'
+summary: 'Ngāti Kahungunu and other iwi have co-governance agreements with councils. Implementation is patchy. Resource transfer and decision-making power-sharing lags expectations. Co-governance co-design processes are under-resourced.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - co_governance_implementation_percent_complete
+    - iwi_budget_allocation_dollars
+  inputs:
+    - political_resistance_to_partnership
+    - capacity_building_investment_gap
+  constraints:
+    - funding_for_iwi_governance_capability
+    - reconciliation_and_relationship_building
+  feedback_loops:
+    - 'Poor co-governance performance undermines partnership; trust erodes; future partnership becomes harder.'
+narrative:
+  - heading: Co-Governance Framework
+    body: 'Ngāti Kahungunu have established co-governance rights in three-waters reform, resource management, and regional planning. Implementation is inconsistent.'
+  - heading: Resource Constraints
+    body: 'Iwi governance teams are underfunded. Capacity to meaningfully participate in consent processes and strategic planning is constrained.'
+claim_ids:
+  - claim.hawkes_bay.governance.iwi_partnership_implementation_lag
+status: draft
+time_horizons: [decade, generation, century]

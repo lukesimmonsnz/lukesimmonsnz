@@ -1,0 +1,22 @@
+id: camp.otago.inequality.worker_housing_support
+name: Essential Worker Housing Subsidies and Bonds
+theme: inequality
+core_claim: Subsidized housing allowances and rental guarantees support recruitment
+  and retention.
+flagship_moves:
+- Employer-sponsored housing allowance for healthcare, education workers
+- Community land trusts for affordable rental
+- Rental guarantee bonds from government
+tensions:
+- Ongoing subsidy cost; sustainability concerns
+- 'Equity questions: why some sectors and not others'
+addresses:
+- problem.otago.inequality.queenstown_worker_conditions
+- problem.otago.inequality.rural_isolation
+interventions:
+- description: Establish $10M/year worker housing support fund
+  state_variable: worker_housing_affordability
+  expected_sign: +
+applicable_in:
+- otago
+tensions_with: []

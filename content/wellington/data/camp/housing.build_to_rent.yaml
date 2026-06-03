@@ -1,0 +1,21 @@
+id: camp.wellington.housing.build_to_rent
+name: Institutional Build-to-Rent and Social Housing Expansion
+theme: housing
+core_claim: Professionalised long-term rental providers and expanded Kāinga Ora stock create stable, affordable rental supply.
+flagship_moves:
+- Tax incentives for build-to-rent institutional investment in Wellington
+- Accelerate Kāinga Ora pipeline in Porirua and Hutt Valley
+- Community land trust model for perpetual affordability on Crown land
+tensions:
+- Requires significant Crown capital allocation competing with fiscal consolidation pressures
+- Institutional providers may prioritise mid-market returns over deep affordability
+addresses:
+- problem.wellington.housing.rental_market
+- problem.wellington.housing.affordability
+interventions:
+- description: Allocate surplus Crown land in Wellington region to community land trusts at below-market value
+  state_variable: affordable_rental_stock
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

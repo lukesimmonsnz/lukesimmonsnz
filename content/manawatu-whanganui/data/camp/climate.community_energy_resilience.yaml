@@ -1,0 +1,21 @@
+id: camp.manawatu_whanganui.climate.community_energy_resilience
+name: Community Energy and Resilience Networks
+theme: climate-adaptation
+core_claim: Local energy generation and micro-grids.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off or tension
+addresses:
+- problem.manawatu_whanganui.climate.drought_agricultural
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- manawatu-whanganui
+efficacy_in: []

@@ -1,0 +1,20 @@
+id: camp.hawkes_bay.housing.managed_densification
+name: Managed medium-density development
+theme: housing
+core_claim: Managed medium-density development is the primary strategy.
+flagship_moves:
+- Implement Managed medium-density development across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.housing.affordability
+- problem.hawkes_bay.housing.rental_market
+- problem.hawkes_bay.housing.rural_housing
+interventions:
+- description: Managed medium-density development intervention
+  state_variable: managed_densification_index
+  constraint_relaxed: managed_densification_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

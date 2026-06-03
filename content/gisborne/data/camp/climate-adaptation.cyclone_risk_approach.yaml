@@ -1,0 +1,20 @@
+id: camp.gisborne.climate.cyclone_risk_approach
+name: Strategic approach for cyclone_risk
+theme: climate-adaptation
+core_claim: Strategic intervention on cyclone_risk will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting cyclone_risk
+- Priority action 2 targeting cyclone_risk
+- Institutional coordination mechanism for cyclone_risk
+tensions:
+- 'Tension 1: cyclone_risk'
+- 'Tension 2: cyclone_risk'
+addresses:
+- problem.gisborne.climate.cyclone_risk
+interventions:
+- description: Primary intervention for cyclone_risk
+  state_variable: cyclone_risk_index
+  expected_sign: '-'
+applicable_in:
+- gisborne
+tensions_with: []

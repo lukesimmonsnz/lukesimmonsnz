@@ -1,0 +1,21 @@
+id: camp.marlborough.climate.nature_based_solutions
+name: Nature-Based Climate Solutions
+theme: climate-adaptation
+core_claim: Regeneration, rewilding, and carbon sequestration.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.crime.family_violence
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

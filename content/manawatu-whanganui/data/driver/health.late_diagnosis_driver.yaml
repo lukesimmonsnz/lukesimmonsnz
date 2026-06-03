@@ -1,0 +1,13 @@
+id: driver.manawatu_whanganui.health.late_diagnosis_driver
+name: Late Disease Diagnosis (Preventable Morbidity)
+description: Late disease diagnosis (preventable morbidity). This driver operates
+  at regional scale with consensus consensus.
+theme: health
+consensus: consensus
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.infrastructure.wastewater
+claim_ids: []

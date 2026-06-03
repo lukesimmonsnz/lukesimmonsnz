@@ -1,0 +1,12 @@
+id: driver.manawatu_whanganui.education.school_mental_health
+name: School Mental Health And Wellbeing Support
+description: School mental health and wellbeing support with regional implications.
+theme: education
+consensus: mostly-agreed
+category: institutional
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.manawatu_whanganui.governance.treaty_river
+claim_ids: []

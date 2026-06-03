@@ -1,0 +1,12 @@
+id: driver.nelson.inequality.driver_1
+name: Housing-wealth amplification of income inequality
+description: House-price growth between 2018 and 2022 widened the wealth gap between mortgage-free owners, mortgaged owners, and renters. Income inequality alone understates the resulting distributional effect; the binding distributional question is wealth, not wage.
+theme: inequality
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.inequality.inequality_root
+- problem.nelson.inequality.child_poverty
+claim_ids: []

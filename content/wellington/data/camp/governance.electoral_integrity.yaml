@@ -1,0 +1,21 @@
+id: camp.wellington.governance.electoral_integrity
+name: Electoral Integrity and Local Democracy Standards
+theme: governance
+core_claim: Strengthening local election rules around campaign finance and conflicts of interest will improve accountability
+  and public trust.
+flagship_moves:
+- Lower campaign donation disclosure threshold for Wellington local elections to $1,000
+- Mandatory declaration of pecuniary interest before all council votes
+- Independent commissioner to review conflict-of-interest breaches
+tensions:
+- Lower disclosure thresholds may deter grassroots fundraising
+- Conflict of interest rules vary in interpretation and enforcement
+addresses:
+- problem.wellington.governance.accountability
+interventions:
+- description: Lower Wellington local election donation disclosure threshold to $1,000 with real-time online publication
+  state_variable: campaign_finance_transparency
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

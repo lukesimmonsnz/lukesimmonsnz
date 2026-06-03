@@ -1,0 +1,13 @@
+id: source.stats_nz_southland_2024
+title: 2023 Census Place Summary — Southland Region
+author: Statistics New Zealand Tatauranga Aotearoa
+publisher: Stats NZ
+year: 2024
+url: https://www.stats.govt.nz/tools/2023-census-place-summaries/southland-region
+type: primary-data
+credibility: official
+geo_granularity:
+- southland
+- nz
+notes: 2023 Census place summary for the Southland region — usually-resident population, age, ethnicity, household composition,
+  housing tenure, employment, and median income. Replaces homepage URL.

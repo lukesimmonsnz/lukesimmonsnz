@@ -1,0 +1,22 @@
+id: claim.otago.health.rural_workforce_prevalence
+statement: 'Rural health workforce in Otago is strained: Oamaru (Waitaki), Balclutha
+  (Clutha), small centres have locum-dependent GPs; nursing shortages acute; allied
+  health (physio, mental health, dental) sparse or absent in small towns (>60km travel
+  to Dunedin). Rural practice sustainability challenged by low patient volumes, aging
+  practitioners, and insufficient accommodation/schools for new staff. Telemedicine
+  adoption partial; specialist access requires travel/hospitalization.'
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating problem prevalence.

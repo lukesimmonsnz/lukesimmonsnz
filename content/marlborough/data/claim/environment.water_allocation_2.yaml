@@ -1,0 +1,20 @@
+id: claim.marlborough.environment.water_allocation_2
+statement: 'Awatere Valley water allocation: South Branch and North Branch rivers
+  support agriculture (sheep, beef, forage crops) and limited viticulture; allocation
+  consents renewed 2020; environmental flow requirements contested (native fish habitat
+  vs agricultural extraction).'
+value: null
+unit: null
+time_period: '2020'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.wairau_catchment_study_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: null
+notes: null

@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.economy.business_diversification_growth
+name: Driver for business_diversification
+description: "This driver exacerbates the business_diversification pressure in Bay\
+  \ of Plenty \u2014 Te Moana-a-Toi."
+theme: economy
+consensus: mostly-agreed
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.economy.business_diversification
+claim_ids:
+- claim.bay_of_plenty.economy.business_diversification_71

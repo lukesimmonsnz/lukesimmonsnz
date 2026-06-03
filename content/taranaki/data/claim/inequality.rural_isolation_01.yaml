@@ -1,0 +1,20 @@
+id: claim.taranaki.inequality.rural_isolation_01
+statement: Structural inequality in Taranaki is reflected in persistent income, housing,
+  and health disparities between high- and low-deprivation areas. Intergenerational
+  poverty and limited social mobility create feedback loops constraining opportunity
+  for disadvantaged communities.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: needs_verification
+last_verified: '2026-04-27'
+source_ids:
+- source.new_plymouth_dc_annual_plan_2024
+scoped_to:
+- taranaki
+national_assertion: false
+region_mentions:
+- taranaki
+methodology_tag: methodology.admin_count_v1
+notes: Regional claim for Taranaki rural_isolation

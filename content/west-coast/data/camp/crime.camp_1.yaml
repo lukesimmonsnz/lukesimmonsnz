@@ -1,0 +1,24 @@
+id: camp.west_coast.crime.community_safety_and_alcohol
+name: Community Safety and Alcohol/Drug Harm Reduction
+theme: crime
+core_claim: West Coast's high alcohol and methamphetamine use drives family violence
+  and crime; community-based harm reduction programmes are more effective than enforcement
+  alone.
+flagship_moves:
+- Fund West Coast alcohol and drug harm reduction programmes
+- Expand community outreach for family violence prevention in isolated areas
+- Establish youth diversion programme with Ngāi Tahu partnership
+tensions:
+- Small communities lack anonymity, reducing help-seeking for drug and family violence
+  issues
+- Resource constraints limit both enforcement and support service capacity
+addresses:
+- problem.west_coast.crime.safety
+- problem.west_coast.crime.family_violence
+interventions:
+- description: Establish West Coast Drug and Alcohol Community Support Hub
+  state_variable: drug_harm_index
+  expected_sign: '-'
+applicable_in:
+- west-coast
+tensions_with: []

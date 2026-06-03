@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.environment.aquifer_stress
+title: Aquifer depletion and groundwater stress
+theme: environment
+section: environment
+subpage: aquifer-stress
+parent: problem.hawkes_bay.environment.environmental_pressure
+order: 2
+updated: '2026-04-26'
+summary: 'Napier-Hastings aquifers face unsustainable extraction for irrigation (horticulture, viticulture, dairy pasture). Groundwater tables have declined by 2-4 metres in some catchments over 15 years. Recharge lags extraction.'
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - groundwater_level_decline_metres
+    - irrigation_water_extraction_l_per_sec
+  inputs:
+    - horticulture_expansion
+    - irrigation_intensification
+  constraints:
+    - natural_recharge_rate
+    - environmental_flow_requirements
+  feedback_loops:
+    - 'Extraction lowers water table; users deepen bores; pumping costs rise; marginal farms exit; demand for extraction shrinks (lagged effect).'
+narrative:
+  - heading: Extraction Volume
+    body: "Irrigation extracts approximately 180-220 million cubic metres annually from Hawke's Bay aquifers — approximately 70% of total water take."
+  - heading: Groundwater Decline
+    body: 'Groundwater tables in Napier and Hastings aquifers have declined by 2-4 metres in the past 15 years, with some localised areas experiencing 6+ metre declines.'
+claim_ids:
+  - claim.hawkes_bay.environment.aquifer_decline_2_4_metres
+status: draft
+time_horizons: [generation, century]

@@ -1,0 +1,43 @@
+id: problem.tasman.governance.governance
+title: Three-constituency unitary council
+theme: governance
+section: governance
+subpage: governance
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: 'Tasman District Council comprises 11 elected members — a mayor and 10 councillors — representing three
+  constituencies: Motueka, Richmond, and Golden Bay. Two iwi advisors sit on committees, and the 2023 Tasman Iwi
+  Partnership Framework commits council to joint decision-making on resource consents for culturally significant
+  sites.'
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - elected_members_count
+  - iwi_advisor_seats
+  inputs:
+  - iwi_partnership_engagement
+  - council_committee_structure
+  constraints:
+  - lga_2002_settings
+  - three_constituency_model
+  feedback_loops:
+  - Heavy portfolio load on individual councillors raises the experience cost of turnover, which discourages contested
+    elections, which entrenches incumbency.
+narrative:
+- heading: Unitary authority, three-way representation
+  body: As a unitary authority, Tasman District Council carries both regional-council and territorial-authority
+    functions. The 11-member structure spreads decision-making across the three constituencies, but with only 10
+    councillors plus mayor, individual councillors carry significant portfolio load (claim.tasman.governance.governance_claim).
+- heading: Iwi voice is structured but not voting
+  body: The 2023 Iwi Partnership Framework formalises a joint-decision-making path for resource consents on culturally
+    significant sites. Iwi advisors sit on committees but do not vote in chamber. The shape of co-governance evolution
+    is one of the open political questions for the next council term.
+claim_ids:
+- claim.tasman.governance.governance_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,11 @@
+id: driver.southland.transport.geographic_isolation
+name: Geographic Isolation
+description: Southland far from main population centers; limited transport corridors.
+theme: transport
+consensus: consensus
+category: physical
+timescale: permanent
+scope: regional
+problem_ids:
+- problem.southland.transport.connectivity
+claim_ids: []

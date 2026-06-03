@@ -1,0 +1,19 @@
+id: claim.gisborne.health.chronic_disease_54
+statement: Gisborne Hospital (110 acute beds) lacks endocrinology and specialist services
+  locally. Type 2 diabetes management relies on primary care and nurse-led clinics;
+  patients requiring specialist review must travel to Auckland or Hawke's Bay.
+value: null
+unit: null
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_survey_2023
+scoped_to:
+- gisborne
+national_assertion: false
+region_mentions:
+- gisborne
+methodology_tag: methodology.mental_health_service_rate_v1
+notes: null

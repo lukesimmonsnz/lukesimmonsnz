@@ -1,0 +1,18 @@
+id: claim.northland.health.mental_health_claim2
+statement: Mental health and addiction service waitlists in Northland exceed 6-12
+  months for community services. Suicide rates in Far North among highest in NZ; Māori
+  youth suicide rate 5-7x higher. Whānau-based and kaupapa Māori counselling services
+  operate below capacity; Crown funding inadequate. Methamphetamine and alcohol addiction
+  strains mental health system.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

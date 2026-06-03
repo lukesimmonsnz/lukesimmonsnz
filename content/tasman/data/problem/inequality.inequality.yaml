@@ -1,0 +1,42 @@
+id: problem.tasman.inequality.inequality
+title: Lifestyle-migration-driven income polarisation
+theme: inequality
+section: inequality
+subpage: inequality
+parent: null
+order: 1
+updated: '2026-04-26'
+summary: The Gini coefficient for Tasman sits at around 0.38, above the national 0.35. The top 20 percent of earners
+  command around 38 percent of total income; the bottom 20 percent earn around 8 percent. Lifestyle migration has
+  widened the gap by introducing high-equity newcomers without proportionally lifting local wages.
+manifests_in:
+- tasman
+systems_model:
+  state_variables:
+  - regional_gini_coefficient
+  - p90_p10_income_ratio
+  inputs:
+  - lifestyle_migration_inflow
+  - regional_wage_growth
+  constraints:
+  - primary_sector_wage_floor
+  - national_tax_settings
+  feedback_loops:
+  - Higher inequality raises housing-cost dispersion, which forces lower-wage workers further from employment centres,
+    which raises their effective costs further.
+narrative:
+- heading: Above-national inequality, below-national wages
+  body: Tasman is not a wealthy region in median terms, but its income distribution is more stretched than New Zealand
+    as a whole. The combination of horticultural and hospitality wage compression at the bottom and lifestyle-migrant
+    capital at the top produces the observed Gini (claim.tasman.inequality.inequality_claim).
+- heading: Capital, not wages, drives the top
+  body: Newcomers from Auckland and Wellington are typically arriving with metropolitan housing equity, retirement
+    assets, or consultancy income that travels with them. Their earned income reads like the top decile of Tasman;
+    their wealth reads considerably higher again.
+claim_ids:
+- claim.tasman.inequality.inequality_claim
+status: draft
+time_horizons:
+- decade
+- generation
+- century

@@ -1,0 +1,30 @@
+id: problem.waikato.housing.affordability
+title: Housing affordability in the Waikato
+theme: housing
+section: housing
+subpage: affordability
+parent: problem.waikato.housing.hamilton_housing_crisis
+order: 2
+updated: '2026-04-26'
+summary: High house prices relative to income make homeownership unattainable for
+  most first-home buyers.
+manifests_in:
+- waikato
+systems_model:
+  state_variables:
+  - housing_affordability_index
+  inputs:
+  - policy_intervention
+  - resource_allocation
+  constraints:
+  - implementation_capacity
+  feedback_loops:
+  - Addressing affordability creates feedback on regional outcomes.
+narrative:
+- heading: Housing affordability in the Waikato
+  body: High house prices relative to income make homeownership unattainable for most
+    first-home buyers.
+claim_ids:
+- claim.waikato.housing.median_multiple_8x
+status: draft
+time_horizons: [decade, generation, century]

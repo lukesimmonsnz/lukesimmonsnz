@@ -1,0 +1,11 @@
+id: driver.canterbury.inequality.intergenerational_deprivation_trap
+name: Intergenerational Deprivation & Educational Disadvantage
+description: Intergenerational Deprivation & Educational Disadvantage
+theme: inequality
+consensus: consensus
+category: demographic
+timescale: long
+scope: regional
+problem_ids:
+- problem.canterbury.inequality.child_poverty
+claim_ids: []

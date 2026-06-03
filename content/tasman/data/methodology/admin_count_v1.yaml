@@ -1,0 +1,18 @@
+id: methodology.admin_count_v1
+name: Administrative register count
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: "Administrative count operationalises a Claim's value as a direct tally\
+  \ from an official government register, database, or administrative dataset \u2014\
+  \ as opposed to a survey estimate or model-derived figure. The count is typically\
+  \ exact at the point-in-time snapshot and carries high intrinsic credibility when\
+  \ drawn from a primary-data source. Claims using this methodology supply value (the\
+  \ integer or decimal count), unit (the counted unit, e.g. \"households\", \"consents\"\
+  , \"dwellings\"), and time_period (the snapshot date or period). Comparison claims\
+  \ across time or regions using this methodology trigger P5' and require singleton\
+  \ Instance-level Claims per compared region or period.\n"
+source_ids: []

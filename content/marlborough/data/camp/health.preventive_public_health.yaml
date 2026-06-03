@@ -1,0 +1,21 @@
+id: camp.marlborough.health.preventive_public_health
+name: Preventive Public Health and Health Promotion
+theme: health
+core_claim: Population-level health behaviour change.
+flagship_moves:
+- Initiative 1
+- Initiative 2
+tensions:
+- Internal tension
+addresses:
+- problem.marlborough.housing.rental_market
+interventions:
+- description: Action 1
+- description: Action 2
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

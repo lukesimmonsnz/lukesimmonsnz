@@ -1,0 +1,24 @@
+id: claim.manawatu_whanganui.housing.rural_housing_1
+statement: Rural housing in Manawatū-Whanganui is often in poor condition or owner-lacking
+  maintenance investment. Approximately 12-15% of rural dwellings (particularly in
+  Rangitikei, Tararua, Ruapehu) are substandard or lack adequate water, heating, or
+  sanitation. Farm viability pressures (climatic stress, commodity price volatility)
+  constrain household income for housing maintenance and improvements. Rural housing
+  availability for agricultural workers and service professionals is constrained;
+  limited new construction in small towns (Taihape, Ohakune, Levin) restricts options.
+value: 13.5
+unit: percent_substandard_rural_housing
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfd_housing_aotearoa_mw_2023
+- source.stats_nz_deprivation_2018_mw
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

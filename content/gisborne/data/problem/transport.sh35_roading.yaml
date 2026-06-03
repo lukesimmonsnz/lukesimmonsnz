@@ -1,0 +1,34 @@
+id: problem.gisborne.transport.sh35_roading
+title: State Highway 35 coastal road condition and accessibility in Gisborne — Te
+  Tairāwhiti
+theme: transport
+section: transport
+subpage: sh35_roading
+parent: problem.gisborne.transport.isolation
+order: 6
+updated: '2026-04-26'
+summary: State Highway 35 coastal road condition and accessibility is a specific manifestation
+  of the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - sh35_roading_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: State Highway 35 coastal road condition and accessibility is a key facet of
+    the broader pressure facing the region.
+claim_ids:
+- claim.gisborne.transport.sh35_roading_11
+- claim.gisborne.transport.sh35_roading_12
+status: draft
+time_horizons: [decade, generation]

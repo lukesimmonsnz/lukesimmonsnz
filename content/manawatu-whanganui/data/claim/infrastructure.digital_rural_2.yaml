@@ -1,0 +1,25 @@
+id: claim.manawatu_whanganui.infrastructure.digital_rural_2
+statement: Mobile coverage gaps persist in rural Manawatū-Whanganui; approximately
+  15-20% of rural land area lacks reliable cellular (3G or higher) coverage, particularly
+  in Tararua, Rangitikei, and parts of Ruapehu. Farms, small communities (Taihape,
+  Ohakune, Taumarunui), and state highways have dead zones causing emergency communication
+  delays. Telecommunications companies cite low population density and profitability
+  challenges as barriers to investment. Community-led and council-funded tower projects
+  are emerging but are slow and underfunded. Digital access constraints limit agri-tech
+  adoption, remote healthcare, and youth employment in rural areas.
+value: 17.5
+unit: percent_land_area_no_mobile
+time_period: 2023-2024
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.nzta_transport_mw_2023
+- source.horizons_data_services_2024
+scoped_to:
+- manawatu-whanganui
+national_assertion: false
+region_mentions:
+- manawatu-whanganui
+methodology_tag: methodology.admin_count_v1
+notes: null

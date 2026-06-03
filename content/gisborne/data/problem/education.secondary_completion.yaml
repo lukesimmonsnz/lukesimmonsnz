@@ -1,0 +1,33 @@
+id: problem.gisborne.education.secondary_completion
+title: Secondary school completion and attainment in Gisborne — Te Tairāwhiti
+theme: education
+section: education
+subpage: secondary_completion
+parent: problem.gisborne.education.achievement
+order: 31
+updated: '2026-04-26'
+summary: Secondary school completion and attainment is a specific manifestation of
+  the regional challenge.
+manifests_in:
+- gisborne
+systems_model:
+  state_variables:
+  - secondary_completion_index
+  inputs:
+  - targeted_policy
+  - resource_allocation
+  - community_action
+  constraints:
+  - implementation_capacity
+  - economic_constraints
+  feedback_loops:
+  - Addressing the dimension requires simultaneous action on multiple fronts.
+narrative:
+- heading: Specific dimension
+  body: Secondary school completion and attainment is a key facet of the broader pressure
+    facing the region.
+claim_ids:
+- claim.gisborne.education.secondary_completion_61
+- claim.gisborne.education.secondary_completion_62
+status: draft
+time_horizons: [decade, generation]

@@ -1,0 +1,18 @@
+id: camp.hawkes_bay.inequality.income_support
+name: Expanded income support and job training
+theme: inequality
+core_claim: Expanded income support and job training is the primary strategy.
+flagship_moves:
+- Implement Expanded income support and job training across the region
+tensions:
+- Implementation requires sustained funding
+addresses:
+- problem.hawkes_bay.inequality.deprivation
+interventions:
+- description: Expanded income support and job training intervention
+  state_variable: income_support_index
+  constraint_relaxed: income_support_constraint
+  expected_sign: +
+applicable_in:
+- hawkes-bay
+tensions_with: []

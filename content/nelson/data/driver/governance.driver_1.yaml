@@ -1,0 +1,12 @@
+id: driver.nelson.governance.driver_1
+name: Dual-unitary structure with overlapping functional region
+description: Nelson City Council and Tasman District Council are separate unitary authorities serving a single labour market, hospital catchment, and water-and-horticulture economy. Coordination across boundaries imposes transaction cost on every cross-boundary project.
+theme: governance
+consensus: consensus
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.nelson.governance.governance_root
+- problem.nelson.governance.growth_management
+claim_ids: []

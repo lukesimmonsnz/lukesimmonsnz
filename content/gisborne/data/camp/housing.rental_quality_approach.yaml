@@ -1,0 +1,20 @@
+id: camp.gisborne.housing.rental_quality_approach
+name: Strategic approach for rental_quality
+theme: housing
+core_claim: Strategic intervention on rental_quality will drive measurable improvement.
+flagship_moves:
+- Priority action 1 targeting rental_quality
+- Priority action 2 targeting rental_quality
+- Institutional coordination mechanism for rental_quality
+tensions:
+- 'Tension 1: rental_quality'
+- 'Tension 2: rental_quality'
+addresses:
+- problem.gisborne.housing.rental_quality
+interventions:
+- description: Primary intervention for rental_quality
+  state_variable: rental_quality_index
+  expected_sign: +
+applicable_in:
+- gisborne
+tensions_with: []

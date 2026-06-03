@@ -1,0 +1,21 @@
+id: claim.wellington.climate.low_lying_area_exposure
+statement: Thousands of Wellington region properties and key transport routes — including
+  the Hutt Road, the rail line along the harbour shore, and the Rongotai isthmus —
+  sit in areas projected to experience increased flood and storm-surge frequency within
+  the planning horizon of current infrastructure investments.
+value: null
+unit: null
+time_period: 2050-2100 (projection)
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.mfe_nz_sea_level_guidance_2023
+- source.wcc_climate_action_plan_2023
+scoped_to:
+- wellington
+national_assertion: false
+region_mentions:
+- wellington
+methodology_tag: null
+notes: null

@@ -1,0 +1,31 @@
+id: problem.marlborough.inequality.rural_isolation
+title: Rural Population Isolation and Service Access
+theme: inequality
+section: inequality
+subpage: rural_isolation
+parent: problem.marlborough.inequality.deprivation
+order: 1
+updated: '2026-04-26'
+summary: Geographic isolation; healthcare access gaps; educational opportunity constraints;
+  social fragmentation.
+manifests_in:
+- marlborough
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  constraints:
+  - constraint_1
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Overview
+  body: Geographic isolation; healthcare access gaps; educational opportunity constraints;
+    social fragmentation.
+claim_ids:
+- claim.marlborough.inequality.rural_isolation_1
+- claim.marlborough.inequality.rural_isolation_2
+status: draft
+time_horizons: [decade, generation, century]

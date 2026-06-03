@@ -1,0 +1,11 @@
+id: driver.canterbury.transport.active_mode_safety_perception
+name: Safety Perception Barriers to Active Transport
+description: Safety Perception Barriers to Active Transport
+theme: transport
+consensus: consensus
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.canterbury.transport.active_modes
+claim_ids: []

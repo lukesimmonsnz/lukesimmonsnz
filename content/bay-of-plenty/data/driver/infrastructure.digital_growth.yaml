@@ -1,0 +1,13 @@
+id: driver.bay_of_plenty.infrastructure.digital_growth
+name: Driver for digital
+description: "This driver exacerbates the digital pressure in Bay of Plenty \u2014\
+  \ Te Moana-a-Toi."
+theme: infrastructure
+consensus: mostly-agreed
+category: institutional
+timescale: long
+scope: regional
+problem_ids:
+- problem.bay_of_plenty.infrastructure.digital
+claim_ids:
+- claim.bay_of_plenty.infrastructure.digital_23

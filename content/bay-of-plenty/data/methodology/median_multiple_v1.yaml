@@ -1,0 +1,21 @@
+id: methodology.median_multiple_v1
+name: Median Multiple (housing affordability ratio)
+version: 1
+kind: measurement
+applies_to:
+- Claim
+predicate: null
+discharged_by: python_invariant
+description: 'The Median Multiple is median dwelling price divided by median annual
+  household gross income, expressed as a dimensionless ratio. It operationalises the
+  purchasing-power lens on housing affordability: the ratio gives the number of years
+  of median household income required to purchase a median-priced dwelling at face
+  value, abstracting away nominal price level. Classification bands (Demographia convention,
+  adopted by RBNZ as a benchmark): <= 3.0 affordable; 3.1-4.0 moderately unaffordable;
+  4.1-5.0 seriously unaffordable; >= 5.1 severely unaffordable. Claims using this
+  methodology supply value (the ratio as a number), unit ("ratio (dimensionless)"),
+  and time_period. Comparison claims across regions using this methodology trigger
+  P5'' and require singleton Instance-level Claims per compared region.
+
+  '
+source_ids: []

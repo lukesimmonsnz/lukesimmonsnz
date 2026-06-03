@@ -1,0 +1,22 @@
+id: claim.otago.climate.climate_risk_trend
+statement: 'Climate risks are escalating across multiple threat vectors: Central Otago
+  drought frequency increasing (irrigation schemes stress-tested 2023-2024); Alpine
+  Fault rupture probability remains elevated (Mw8+ hazard zone includes Queenstown,
+  Wanaka, Cromwell); coastal Dunedin faces compound sea-level rise + storm surge risk;
+  flood vulnerability in Arrow River (Arrowtown) and Frankton areas expected to increase
+  15-25% by 2050.'
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

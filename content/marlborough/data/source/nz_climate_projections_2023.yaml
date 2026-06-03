@@ -1,0 +1,13 @@
+id: source.nz_climate_projections_2023
+title: Climate Change Projections for New Zealand — 2nd Edition (Top of South slice)
+author: NIWA Taihoro Nukurangi
+publisher: NIWA / Ministry for the Environment
+year: 2024
+url: https://environment.govt.nz/publications/climate-change-projections-for-new-zealand-atmospheric-projections-based-on-simulations-from-the-ipcc-sixth-assessment-2nd-edition/
+type: academic
+credibility: peer-reviewed
+geo_granularity:
+- marlborough
+- nz
+notes: Second edition NIWA-MfE downscaled climate projections (CMIP6, IPCC AR6 SSP scenarios); Top-of-South slice covers Marlborough,
+  Tasman, and Nelson — temperature, rainfall, and extreme-event projections.

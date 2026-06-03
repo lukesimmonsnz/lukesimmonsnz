@@ -1,0 +1,18 @@
+id: claim.northland.economy.low_wages_claim1
+statement: Median wage in Northland is $25-27/hour vs national $28-30/hour; wage gap
+  persistent across sectors. Low-wage sectors (hospitality, agriculture, retail) dominate
+  regional employment; few high-wage professional roles outside Whangārei. Seasonal
+  employment volatility suppresses annual income; agricultural workers earn 20-30%
+  below manufacturing equivalent roles.
+value: null
+unit: null
+time_period: '2024'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.northland_regional_council_2023
+scoped_to:
+- northland
+region_mentions:
+- northland

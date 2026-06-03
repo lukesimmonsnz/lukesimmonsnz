@@ -1,0 +1,13 @@
+id: driver.gisborne.education.achievement_escalation
+name: Driver escalating achievement
+description: "This driver exacerbates the achievement challenge in Gisborne \u2014\
+  \ Te Tair\u0101whiti."
+theme: education
+consensus: contested
+category: demographic
+timescale: medium
+scope: regional
+problem_ids:
+- problem.gisborne.education.achievement
+claim_ids:
+- claim.gisborne.education.achievement_57

@@ -1,0 +1,160 @@
+name: Quarterly Archive (SEP pattern)
+
+# Runs on the first day of each calendar quarter at 02:00 UTC.
+# Also triggerable manually with an optional quarter override.
+#
+# What it does
+# ------------
+# 1. Checks out the repo (aotearoa-migration branch during active dev,
+#    main in steady-state — controlled by the DEFAULT_BRANCH env below).
+# 2. Builds _site/ via scripts/freeze.py.
+# 3. Runs scripts/archive.py to snapshot _site/ → archives/YYYY-QN/.
+# 4. Commits and pushes the new archive directory.
+# 5. Deploys the full site (live + archives) via scripts/deploy.py
+#    (which calls wrangler pages deploy).
+#
+# Secrets required (set in GitHub → Settings → Secrets → Actions)
+# ---------------------------------------------------------------
+#   CLOUDFLARE_API_TOKEN   — Cloudflare API token with Pages:Edit permission
+#   CLOUDFLARE_ACCOUNT_ID  — Your Cloudflare account ID
+#
+# The GH_TOKEN secret is the built-in GITHUB_TOKEN; no manual setup needed.
+
+on:
+  schedule:
+    # 02:00 UTC on 1 Jan, 1 Apr, 1 Jul, 1 Oct
+    - cron: "0 2 1 1,4,7,10 *"
+
+  workflow_dispatch:
+    inputs:
+      quarter:
+        description: "Quarter label to archive (e.g. 2026-Q2). Leave blank to auto-detect."
+        required: false
+        default: ""
+      force:
+        description: "Force-overwrite an existing archive (emergency use only)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+env:
+  PYTHON_VERSION: "3.11"
+  SITE_URL: "https://lukesimmonsnz.kiwi"
+  CONTACT_SUBMIT_URL: "/api/contact"
+  # Branch to archive from. Switch to main once migration arc is merged.
+  ARCHIVE_BRANCH: "aotearoa-migration"
+
+jobs:
+  archive-and-deploy:
+    name: Archive ${{ github.event.inputs.quarter || 'current quarter' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit and push the archive directory
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.ARCHIVE_BRANCH }}
+          # Full history so git log/blame works; not strictly needed for archiving.
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Node + Wrangler
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Wrangler CLI
+        run: npm install -g wrangler
+
+      - name: Build _site/ (freeze)
+        env:
+          SITE_URL: ${{ env.SITE_URL }}
+          CONTACT_SUBMIT_URL: ${{ env.CONTACT_SUBMIT_URL }}
+          TURNSTILE_SITE_KEY: ${{ secrets.TURNSTILE_SITE_KEY }}
+        run: python scripts/freeze.py
+
+      - name: Create quarterly archive snapshot
+        run: |
+          QUARTER_ARG=""
+          if [ -n "${{ github.event.inputs.quarter }}" ]; then
+            QUARTER_ARG="--quarter ${{ github.event.inputs.quarter }}"
+          fi
+
+          FORCE_ARG=""
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            FORCE_ARG="--force"
+          fi
+
+          python scripts/archive.py $QUARTER_ARG $FORCE_ARG
+
+      - name: Commit archive to git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage only the archives/ directory (never stage _site/).
+          git add archives/
+
+          # Detect the quarter that was just archived.
+          QUARTER=$(python -c "
+          import scripts.archive as a
+          import sys, math
+          from datetime import datetime, timezone
+          q_arg = '${{ github.event.inputs.quarter }}'
+          print(q_arg if q_arg else a.current_quarter())
+          ")
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit (archive already existed and --force was not set)."
+          else
+            git commit -m "archive: add $QUARTER quarterly snapshot [skip ci]"
+            git push origin ${{ env.ARCHIVE_BRANCH }}
+            echo "Committed and pushed archive/$QUARTER."
+          fi
+
+      - name: Merge archives into _site/ and deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          SITE_URL: ${{ env.SITE_URL }}
+          CONTACT_SUBMIT_URL: ${{ env.CONTACT_SUBMIT_URL }}
+          TURNSTILE_SITE_KEY: ${{ secrets.TURNSTILE_SITE_KEY }}
+        run: |
+          # deploy.py: merges archives/ → _site/archives/, then wrangler deploy.
+          # We already have _site/ from the freeze step above; deploy.py will
+          # re-freeze (idempotent) then merge + deploy.
+          python scripts/deploy.py
+
+      - name: Summary
+        run: |
+          QUARTER=$(python -c "
+          import math
+          from datetime import datetime, timezone
+          q_arg = '${{ github.event.inputs.quarter }}'
+          if q_arg:
+              print(q_arg)
+          else:
+              now = datetime.now(tz=timezone.utc)
+              print(f'{now.year}-Q{math.ceil(now.month / 3)}')
+          ")
+          echo "### Archive complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Field | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "| Quarter | \`$QUARTER\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Archive URL | https://lukesimmonsnz.kiwi/archives/$QUARTER/ |" >> $GITHUB_STEP_SUMMARY
+          echo "| Branch | \`${{ env.ARCHIVE_BRANCH }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Triggered by | ${{ github.event_name }} |" >> $GITHUB_STEP_SUMMARY

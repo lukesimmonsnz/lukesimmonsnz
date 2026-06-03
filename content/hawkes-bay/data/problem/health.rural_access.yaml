@@ -1,0 +1,32 @@
+id: problem.hawkes_bay.health.rural_access
+title: Rural health service access and workforce
+theme: health
+section: health
+subpage: rural-access
+parent: problem.hawkes_bay.health.health_outcomes
+order: 2
+updated: '2026-04-26'
+summary: "Rural and remote areas in Hawke's Bay (Taihape, Waipawa, rural Wairarapa) lack primary care access. GP shortages, limited specialist services, and transport barriers are significant. Rural health workforce recruitment and retention is difficult."
+manifests_in:
+  - hawkes-bay
+systems_model:
+  state_variables:
+    - gp_per_capita_ratio
+    - rural_health_service_travel_time_minutes
+  inputs:
+    - gp_workforce_aging
+    - rural_practice_financial_viability
+  constraints:
+    - rural_housing_and_lifestyle_factors
+    - specialist_service_centralization
+  feedback_loops:
+    - 'GPs retire; replacement recruitment fails; service capacity declines; rural population relocates; service closure follows.'
+narrative:
+  - heading: GP Shortage
+    body: "Rural Hawke's Bay has approximately 0.4 GPs per 1,000 population, compared to 0.8 in urban areas. Several rural practices are closing or merging."
+  - heading: Access Barriers
+    body: 'Rural residents in Taihape and Waipawa face 45+ minute drive times to secondary care. Transportation costs and time burden discourage care-seeking.'
+claim_ids:
+  - claim.hawkes_bay.health.rural_gp_0_4_per_1000
+status: draft
+time_horizons: [decade, generation]

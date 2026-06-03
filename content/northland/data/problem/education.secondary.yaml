@@ -1,0 +1,24 @@
+id: 'problem.northland.education.secondary'
+title: 'Te Tai Tokerau Northland: secondary engagement'
+theme: 'education'
+section: 'education'
+subpage: 'secondary'
+parent: 'problem.northland.education.achievement'
+order: 4
+updated: '2026-04-26'
+summary: 'School disengagement is high.'
+manifests_in:
+- 'northland'
+systems_model:
+  state_variables: []
+  inputs: []
+  constraints: []
+  feedback_loops: []
+narrative:
+- 
+  heading: 'Overview'
+  body: 'School disengagement is high.'
+claim_ids:
+- 'claim.northland.education.secondary_claim1'
+- 'claim.northland.education.secondary_claim2'
+status: 'draft'

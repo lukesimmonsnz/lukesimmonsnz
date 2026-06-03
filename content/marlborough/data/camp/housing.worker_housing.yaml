@@ -1,0 +1,21 @@
+id: camp.marlborough.housing.worker_housing
+name: Seasonal Worker Housing Provision
+theme: housing
+core_claim: Dedicated RSE worker accommodation scheme.
+flagship_moves:
+- Key initiative 1
+- Key initiative 2
+tensions:
+- Trade-off 1
+addresses:
+- problem.marlborough.infrastructure.digital
+interventions:
+- description: 'Action 1: Seasonal Worker Housing Provision'
+- description: 'Action 2: Seasonal Worker Housing Provision'
+advocates: []
+actor_ids: []
+claim_ids: []
+tensions_with: []
+applicable_in:
+- marlborough
+efficacy_in: []

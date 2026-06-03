@@ -1,0 +1,33 @@
+id: problem.manawatu_whanganui.inequality.whanganui_poverty
+title: Whanganui City Poverty and Social Isolation
+theme: inequality
+section: inequality
+subpage: whanganui_poverty
+parent: problem.manawatu_whanganui.inequality.deprivation
+order: 1
+updated: '2026-04-26'
+summary: Whanganui among NZ's most deprived; high unemployment; limited economic opportunity;
+  social fragmentation.
+manifests_in:
+- manawatu-whanganui
+systems_model:
+  state_variables:
+  - metric_1
+  - metric_2
+  inputs:
+  - input_1
+  - input_2
+  constraints:
+  - constraint_1
+  - constraint_2
+  feedback_loops:
+  - Feedback loop 1
+narrative:
+- heading: Context
+  body: Whanganui among NZ's most deprived; high unemployment; limited economic opportunity;
+    social fragmentation.
+claim_ids:
+- claim.manawatu_whanganui.inequality.whanganui_poverty_1
+- claim.manawatu_whanganui.inequality.whanganui_poverty_2
+status: draft
+time_horizons: [decade, generation, century]

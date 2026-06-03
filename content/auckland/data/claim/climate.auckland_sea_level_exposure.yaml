@@ -1,21 +1,21 @@
 id: claim.auckland.climate.auckland_sea_level_exposure
-statement: >
-  Under SSP2-4.5 (intermediate emissions), Auckland faces projected
-  sea level rise of 0.3-0.5m by 2070 and 0.5-1.0m by 2120; approximately
-  12,000 properties in Auckland's coastal areas face increased flood
-  risk at the 0.5m threshold, with Tamaki Estuary, the central isthmus,
-  and Manukau Harbour margins most exposed.
+statement: 'Under SSP2-4.5 (intermediate emissions), Auckland faces projected sea
+  level rise of 0.3-0.5m by 2070 and 0.5-1.0m by 2120; approximately 12,000 properties
+  in Auckland''s coastal areas face increased flood risk at the 0.5m threshold, with
+  Tamaki Estuary, the central isthmus, and Manukau Harbour margins most exposed.
+
+  '
 value: null
 unit: null
-time_period: "2023-2120"
+time_period: 2023-2120
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.niwa_climate_auckland_2023
+- source.niwa_climate_auckland_2023
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland
 methodology_tag: methodology.sea_level_projection_v1

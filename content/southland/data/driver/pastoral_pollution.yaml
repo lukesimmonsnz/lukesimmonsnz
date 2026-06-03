@@ -1,0 +1,12 @@
+id: driver.southland.environment.pastoral_pollution
+name: Pastoral Production Pollution Legacy
+description: Decades of pastoral intensification created nutrient and bacterial pollution
+  in rivers.
+theme: environment
+consensus: consensus
+category: economic
+timescale: long
+scope: regional
+problem_ids:
+- problem.southland.environment.freshwater_degradation
+claim_ids: []

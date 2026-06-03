@@ -1,0 +1,45 @@
+id: problem.canterbury.economy.tech_innovation
+title: Tech Innovation & High-Value Sector Development
+theme: economy
+section: economy
+subpage: tech_innovation
+parent: problem.canterbury.economy.economic_structure
+order: 2
+updated: '2026-04-26'
+summary: 'Christchurch''s tech and innovation ecosystem is nascent. EPIC Innovation
+  Precinct (UC, Lincoln, private sector collaboration) aims to grow high-tech startups,
+  but venture capital, skilled workforce, and corporate R&D are limited compared to
+  Auckland/Wellington. Tech sector employment is <2% of regional employment vs 4-5%
+  nationally.
+
+  '
+manifests_in:
+- canterbury
+systems_model:
+  state_variables:
+  - tech_sector_employment_count
+  - startup_funding_amount_annual
+  - venture_capital_attraction
+  - university_commercialization_output
+  inputs:
+  - university_research_funding
+  - skilled_tech_workforce_supply
+  - private_sector_investment_incentive
+  constraints:
+  - regional_venture_capital_scarcity
+  - brain_drain_to_auckland_wellington
+  feedback_loops:
+  - Dynamic feedback mechanisms drive tech innovation & high-value sector development.
+narrative:
+- heading: EPIC Precinct early stage
+  body: 'EPIC (2022-onwards) brings UC, Lincoln, city council, and private firms into
+    shared innovation space. Early outcomes include agritech startups, cleantech spinouts
+    from university research. But funding remains limited; skilled talent is scarce
+    (brain drain to larger metros).
+
+    '
+claim_ids:
+- claim.canterbury.economy.tech_employment_share_2023
+- claim.canterbury.economy.startup_ecosystem_funding_2023
+status: draft
+time_horizons: [decade, generation]

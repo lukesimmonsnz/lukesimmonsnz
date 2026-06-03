@@ -1,0 +1,20 @@
+id: claim.otago.economy.agri_primary_trend
+statement: Otago's primary sector (sheep, beef, deer farming; Central Otago wine —
+  $180M+ annual exports) faces commodity price exposure and climate volatility. Wool
+  and sheep meat prices fluctuated 20-35% annually over 2015-2023, affecting farm
+  viability and rural employment in Oamaru, Balclutha, and surrounding districts.
+value: null
+unit: null
+time_period: 2024-2030
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.otago_stats_2024
+scoped_to:
+- otago
+national_assertion: false
+region_mentions:
+- otago
+methodology_tag: null
+notes: Placeholder claim stating trend or future projection.

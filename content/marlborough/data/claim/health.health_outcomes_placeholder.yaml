@@ -1,0 +1,19 @@
+id: claim.marlborough.health.health_outcomes_placeholder
+statement: 'Marlborough health outcomes: life expectancy 79.5–80.5 years (slightly
+  below national 81.5); infant mortality 5–6 per 1,000 live births (aligned with national);
+  avoidable mortality higher in rural communities due to distance from emergency services.'
+value: 80
+unit: years life expectancy (estimate)
+time_period: '2023'
+confidence: medium
+verification_status: cited_only
+last_verified: '2026-04-27'
+source_ids:
+- source.health_nz_mbl_2023
+scoped_to:
+- marlborough
+national_assertion: false
+region_mentions:
+- marlborough
+methodology_tag: methodology.amenable_mortality_rate_v1
+notes: null

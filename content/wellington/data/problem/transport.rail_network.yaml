@@ -1,0 +1,38 @@
+id: problem.wellington.transport.rail_network
+title: Underinvestment in Wellington's suburban rail network
+theme: transport
+section: transport
+subpage: rail-network
+parent: problem.wellington.transport.network_resilience
+order: 2
+updated: '2026-04-26'
+summary: Wellington's suburban rail network is the backbone of regional commuting but suffers from deferred infrastructure
+  investment, aging rolling stock, and a capacity ceiling on key corridors. Post-COVID patronage recovery has been partial,
+  and the network's ability to absorb future growth is constrained by both physical infrastructure and funding uncertainty.
+manifests_in:
+- wellington
+systems_model:
+  state_variables:
+  - rail_patronage_per_capita
+  - on_time_performance_rate
+  inputs:
+  - capital_investment
+  - service_frequency
+  constraints:
+  - aging_rolling_stock
+  - track_capacity_on_Hutt_Valley_line
+  feedback_loops:
+  - 'Reliability-patronage loop: service unreliability deters mode shift from private cars; low patronage growth reduces the
+    case for investment; underinvestment sustains unreliability.'
+narrative:
+- heading: Patronage recovery and ceiling
+  body: Wellington rail patronage recovered to approximately 85% of pre-COVID levels by 2023 but faces a ceiling imposed by
+    peak-hour capacity constraints on the Hutt Valley and Kapiti lines (claim.wellington.transport.rail_patronage_recovery).
+- heading: Infrastructure investment backlog
+  body: The rail network carries a significant infrastructure maintenance backlog — track renewals, signalling upgrades, and
+    station accessibility improvements — that constrains service frequency improvements and reliability gains (claim.wellington.transport.rail_infrastructure_backlog).
+claim_ids:
+- claim.wellington.transport.rail_patronage_recovery
+- claim.wellington.transport.rail_infrastructure_backlog
+status: draft
+time_horizons: [decade, generation]

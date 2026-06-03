@@ -1,21 +1,21 @@
 id: claim.auckland.governance.council_complexity
-statement: >
-  Auckland Council's governance structure — a governing body, 21 local
-  boards, 7 CCOs, and multiple special purpose bodies — is one of the
-  most complex in the OECD for a city of its size; the complexity
-  fragments accountability, duplicates management functions, and
-  creates coordination failures between infrastructure, transport, and
-  housing decisions.
+statement: 'Auckland Council''s governance structure — a governing body, 21 local
+  boards, 7 CCOs, and multiple special purpose bodies — is one of the most complex
+  in the OECD for a city of its size; the complexity fragments accountability, duplicates
+  management functions, and creates coordination failures between infrastructure,
+  transport, and housing decisions.
+
+  '
 value: null
 unit: null
-time_period: "2018-2023"
+time_period: 2018-2023
 confidence: medium
 verification_status: cited_only
-last_verified: null
+last_verified: '2026-04-27'
 source_ids:
-  - source.auckland_council_ltp_2024
+- source.auckland_council_ltp_2024
 scoped_to:
-  - auckland
+- auckland
 national_assertion: false
 region_mentions:
-  - auckland
+- auckland

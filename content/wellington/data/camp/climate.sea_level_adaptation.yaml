@@ -1,0 +1,23 @@
+id: camp.wellington.climate.sea_level_adaptation
+name: Coastal Adaptation Planning for Sea Level Rise
+theme: climate-adaptation
+core_claim: Wellington requires a funded regional coastal adaptation plan with clear timelines for managed retreat and protection
+  decisions.
+flagship_moves:
+- Commission Wellington Regional Coastal Adaptation Plan under the forthcoming Coastal Adaptation Act
+- Property disclosure scheme for coastal risk within planning horizons
+- Crown-funded buy-out scheme for highest-risk coastal homes (Category 3 equivalent)
+tensions:
+- Property buy-outs require significant Crown funding that competes with other priorities
+- Planning horizons for SLR are inherently uncertain, making firm commitment difficult
+addresses:
+- problem.wellington.climate.sea_level_rise
+- problem.wellington.environment.coastal_hazard
+interventions:
+- description: Develop Wellington Regional Coastal Adaptation Plan with 2040 and 2100 SLR scenarios and clear property-tier
+    categorisation
+  state_variable: coastal_adaptation_plan_completeness
+  expected_sign: +
+applicable_in:
+- wellington
+tensions_with: []

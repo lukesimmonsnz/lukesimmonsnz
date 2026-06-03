@@ -1,0 +1,12 @@
+id: driver.marlborough.housing.rental_affordability
+name: Rental Housing Affordability Crisis
+description: Rental housing affordability crisis.
+theme: housing
+consensus: mostly-agreed
+category: economic
+timescale: medium
+scope: regional
+intensity_by_region: {}
+problem_ids:
+- problem.marlborough.infrastructure.infrastructure
+claim_ids: []

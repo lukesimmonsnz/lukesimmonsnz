@@ -1,0 +1,13 @@
+id: driver.wellington.environment.combined_sewer_discharge
+name: Combined sewer overflow discharge to harbour
+description: Regular wastewater overflow events discharge untreated sewage into Wellington Harbour during rainfall. This is
+  the primary acute contamination driver for harbour water quality and beach safety.
+theme: environment
+consensus: consensus
+category: physical
+timescale: long
+scope: regional
+problem_ids:
+- problem.wellington.environment.harbour_health
+claim_ids:
+- claim.wellington.environment.harbour_ecoli_beach_closures

@@ -1,0 +1,12 @@
+id: source.census_income_west_coast_2023
+title: Income and Inequality in West Coast Census 2023
+author: Stats NZ
+publisher: Statistics New Zealand
+year: 2023
+url: https://www.stats.nz
+type: government-report
+credibility: official
+geo_granularity:
+- west-coast
+- nz
+notes: Unemployment, child poverty, deprivation concentration in small towns.
