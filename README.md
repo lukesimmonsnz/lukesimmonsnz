@@ -1,3 +1,28 @@
+## Hi, I'm Luke 👋
+
+Early-career **software & AI engineer** in Auckland, New Zealand — an
+"AI-leveraged operator": I ship working software fast by pairing first-principles
+thinking with modern AI tooling. SAE-trained **audio engineer** too — audio × AI
+is my niche. Heading toward **AI / Forward-Deployed / Solutions Engineering**.
+
+🌐 [lukesimmonsnz.kiwi](https://lukesimmonsnz.kiwi)  ·  💼 [LinkedIn](https://www.linkedin.com/in/lukesimmonsnz)
+
+### Things I've built
+- 🧭 **[job-scout](https://github.com/lukesimmonsnz/job-scout)** — local-first job aggregator with on-device LLM scoring (Flask · Ollama · SQLite): 10 source adapters, AI ranking with tunable weights, outreach CRM.
+- ⚡ **[server-dashboard](https://github.com/lukesimmonsnz/server-dashboard)** — auto-discovering launcher for local projects: live status + one-click start/stop.
+- 🎬 **[streamfinder-nz](https://github.com/lukesimmonsnz/streamfinder-nz)** — where-to-watch aggregator for NZ streaming (FastAPI · TMDB).
+- 🦀 **[rust-wasm-playground](https://github.com/lukesimmonsnz/rust-wasm-playground)** — interactive Rust → WebAssembly learning playground.
+- 🎙️ **[voice-cloning-pipeline](https://github.com/lukesimmonsnz/voice-cloning-pipeline)** — on-device voice-cloning narration (Chatterbox-Turbo · FFmpeg).
+
+### Toolkit
+`Python` · `Rust` · `JavaScript / TypeScript` · `SQL` · Flask · FastAPI · SQLite · local LLMs (Ollama) · Linux · Git
+
+<sub>Open to early-career engineering roles — Auckland or remote (NZ / APAC / worldwide).</sub>
+
+---
+
+<sub>↓ The rest of this README documents the personal-site app this repository serves.</sub>
+
 # Luke Simmons — personal site
 
 <!-- auto:meta:begin -->
